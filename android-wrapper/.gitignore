@@ -10,6 +10,7 @@ node_modules/
 /android/app/src/main/assets/capacitor.config.json
 /android/app/src/main/assets/capacitor.plugins.json
 /android/app/src/main/res/xml/config.xml
+/android/capacitor.settings.gradle
 
 # Gradle and Android build output
 **/.gradle/
