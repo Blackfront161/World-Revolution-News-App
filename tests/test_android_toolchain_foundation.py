@@ -20,9 +20,9 @@ class AndroidToolchainFoundationTest(unittest.TestCase):
         package = json.loads((WRAPPER / "package.json").read_text(encoding="utf-8"))
         lock = json.loads((WRAPPER / "package-lock.json").read_text(encoding="utf-8"))
 
-        self.assertEqual("2.1.0", package["version"])
-        self.assertEqual("2.1.0", lock["version"])
-        self.assertEqual("2.1.0", lock["packages"][""]["version"])
+        self.assertEqual("2.1.1", package["version"])
+        self.assertEqual("2.1.1", lock["version"])
+        self.assertEqual("2.1.1", lock["packages"][""]["version"])
         for name in CAPACITOR_PACKAGES:
             self.assertEqual("8.4.0", package["dependencies"][name])
             self.assertEqual("8.4.0", lock["packages"][""]["dependencies"][name])
@@ -32,6 +32,10 @@ class AndroidToolchainFoundationTest(unittest.TestCase):
         self.assertEqual("cap open android", package["scripts"]["open:android"])
         self.assertNotIn("npx", package["scripts"]["sync:android"])
         self.assertNotIn("pnpm", package["scripts"]["sync:android"])
+
+        gradle = (WRAPPER / "android/app/build.gradle").read_text(encoding="utf-8")
+        self.assertIn("versionCode 26", gradle)
+        self.assertIn('versionName "2.1.1"', gradle)
 
     def test_generated_capacitor_settings_and_pnpm_workspace_are_not_sources(self) -> None:
         self.assertFalse((WRAPPER / "pnpm-workspace.yaml").exists())

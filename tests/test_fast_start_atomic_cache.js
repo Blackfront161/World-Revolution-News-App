@@ -144,17 +144,17 @@ async function verifyWorker({ workerName, oldCache, newCache, optionalAsset, for
 (async () => {
   await verifyWorker({
     workerName: 'service-worker.js',
-    oldCache: 'wrn-app-v2.1.0-r3',
-    newCache: 'wrn-app-v2.1.0-r4',
+    oldCache: 'wrn-app-v2.1.0-r4',
+    newCache: 'wrn-app-v2.1.1-r1',
     optionalAsset: 'classic.html',
     foreignCaches: ['wrn-news-app-2-v85', 'wrn-foreign-cache-v1', 'unrelated-cache']
   });
   await verifyWorker({
     workerName: 'news-app-2-sw.js',
-    oldCache: 'wrn-news-app-2-v85',
-    newCache: 'wrn-news-app-2-v86',
+    oldCache: 'wrn-news-app-2-v86',
+    newCache: 'wrn-news-app-2-v87',
     optionalAsset: 'next.html',
-    foreignCaches: ['wrn-app-v2.1.0-r3', 'wrn-data-v2.1.0-r2', 'wrn-foreign-cache-v1']
+    foreignCaches: ['wrn-app-v2.1.0-r4', 'wrn-data-v2.1.0-r2', 'wrn-foreign-cache-v1']
   });
   console.log('Fast start and atomic worker installation: OK');
 })().catch(error => {

@@ -1,17 +1,23 @@
 # News App 2 – ehrliche Arbeits- und Release-Checkliste
 
-Stand: 12. August 2026
-Branch: `codex/wrn-2.1-stabilization`
+Stand: 20. August 2026
+Branch: `codex/release-2.1.1-code26`
 
 ## Versionsgrenze
 
 - `2.0.8` bleibt der lokal geprüfte Ausgangsstand. Dieser Arbeitsgang hat ihn
   nicht veröffentlicht, signiert oder hochgeladen.
 - Die nachgereichten Produktfunktionen A–K gehören zur Version `2.1`. Der
-  Produktionspfad ist konsistent auf `2.1.0` promoviert; Test und Vorschau
-  bleiben ausdrücklich `2.1.0-dev.1-test` bzw. `2.1.0-dev.1-preview`.
-- `2.1.0` bezeichnet hier einen lokalen, unsignierten Produktionskandidaten.
+  Produktionspfad ist konsistent auf `2.1.1` promoviert; Test und Vorschau
+  bleiben ausdrücklich `2.1.1-dev.1-test` bzw. `2.1.1-dev.1-preview`.
+- `2.1.1` bezeichnet hier einen lokalen, unsignierten Produktionskandidaten.
   Er wurde nicht hochgeladen, veröffentlicht oder deployt.
+- Android-VersionCode 25 ist verbraucht. Für `2.1.1` ist ausschließlich Code 26
+  zulässig; alte Code-25-Signierhelfer und Nachweise bleiben historische,
+  unveränderliche Bindungen und dürfen nicht für diesen Kandidaten verwendet werden.
+- Der Nutzer hat `2.1.0`/Code 25 als aktuellen signierten Live-/Verteilungsstand
+  bestätigt. Der Play-Console-Trackstatus wurde unter den aktuellen Bedingungen
+  nicht unabhängig geprüft und wird deshalb nicht als zusätzlicher Nachweis behauptet.
 - Vorhandene Überschriften, Zähler, Links, CSS-Klassen oder Schaltflächen gelten
   nicht als Funktionsnachweis.
 
@@ -132,7 +138,7 @@ Branch: `codex/wrn-2.1-stabilization`
   der bereits vorhandenen lokalen Android-Studio-JBR/SDK-36-Toolchain strikt
   offline ausführbar (keine Lizenzannahme, kein Download, kein Schlüsselzugriff).
   Der finale Kandidat wird nach dem sauberen Commit aus exakt diesem Commit als
-  **unsigniertes** `2.1.0`/Code-25-AAB gebaut. SHA-256, Größe, Paket, Ziel-SDK,
+  **unsigniertes** `2.1.1`/Code-26-AAB gebaut. SHA-256, Größe, Paket, Ziel-SDK,
   ZIP/Manifest/Assetprüfung und fehlende Signatur stehen im Übergabebericht;
   das AAB bleibt ohne autorisierte Signierung nicht uploadfähig.
 - [x] Lokale Browserprüfung 390×844, 412×915, 768×1024 und 1440×900 ohne

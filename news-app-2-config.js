@@ -27,15 +27,15 @@ const wrnMirrorDataUrl = filename => WRN_USES_LIVE_DATA
 
 window.WRN_CONFIG = Object.freeze({
   version: WRN_RELEASE_CHANNEL === 'production'
-    ? '2.1.0'
+    ? '2.1.1'
     : WRN_RELEASE_CHANNEL === 'test'
-      ? '2.1.0-dev.1-test'
-      : '2.1.0-dev.1-preview',
+      ? '2.1.1-dev.1-test'
+      : '2.1.1-dev.1-preview',
   build: WRN_RELEASE_CHANNEL === 'production'
-    ? '2026.08.12-wrn-2.1.0-release'
+    ? '2026.08.20-wrn-2.1.1-release'
     : WRN_RELEASE_CHANNEL === 'test'
-      ? '2026.08.12-wrn-2.1-development-test'
-      : '2026.08.12-wrn-2.1-development-preview',
+      ? '2026.08.20-wrn-2.1.1-development-test'
+      : '2026.08.20-wrn-2.1.1-development-preview',
   releaseChannel: WRN_RELEASE_CHANNEL,
   dataMode: WRN_RELEASE_CHANNEL === 'production'
     ? 'live-readonly-with-offline-fallback'

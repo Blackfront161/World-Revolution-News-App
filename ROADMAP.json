@@ -1,14 +1,20 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-20",
   "releasedBaseline": {
     "version": "2.0.8",
     "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
     "note": "2.1-Produktarbeit gehört nicht rückwirkend zum 2.0.8-Funktionsumfang."
   },
-  "current": {
+  "confirmedLiveDistribution": {
     "version": "2.1.0",
-    "branch": "codex/wrn-2.1-stabilization",
+    "versionCode": 25,
+    "status": "vom Nutzer als aktueller signierter Live-/Verteilungsstand bestätigt; Play-Console-Trackstatus nicht unabhängig geprüft",
+    "note": "VersionCode 25 ist verbraucht und darf für keinen neuen Kandidaten wiederverwendet werden."
+  },
+  "current": {
+    "version": "2.1.1",
+    "branch": "codex/release-2.1.1-code26",
     "status": "Lokaler Produktionskandidat; nicht signiert, hochgeladen, veröffentlicht oder deployt"
   },
   "productScope": [
@@ -167,9 +173,9 @@
     "localAndCiMatrix": "derselbe sortierte Discovery-Runner erzwingt alle tests/test_*.js, klassifiziert Python-Verträge über echte Pytest-Collection und führt disjunkt alle expliziten main-only-test_*.py-Skripte aus; helper-via-main wird erkannt, leere Module, Mischformen und Collectionfehler blockieren",
     "verifiedAtThisCorrection": "37 JavaScript-Vertragstests, 102 Pytest-Tests, 4 Python-main()-Vertragsskripte und Read-only-Audit 158/158",
     "auditArtifact": "CI erzeugt und verifiziert den aktuellen Bericht in RUNNER_TEMP; die versionierte release-readiness-183.json bleibt eine historische Baseline und wird nicht als aktuelles CI-Artefakt hochgeladen",
-    "cacheConsistency": "app-check.html wird für App- und Daten-Cache direkt gegen service-worker.js geprüft; Produktionskandidat 2.1.0 nutzt App/Daten r1, Vorschau bleibt getrennt auf 2.1.0-dev.1-preview mit Cache v82",
+    "cacheConsistency": "app-check.html wird für App- und Daten-Cache direkt gegen service-worker.js geprüft; Produktionskandidat 2.1.1 nutzt App/Daten r1, Vorschau bleibt getrennt auf 2.1.1-dev.1-preview mit eigenem Vorschaucache",
     "browserBoundary": "Native Tab/Shift-Tab/Enter-Abnahme in lokal installiertem Chrome: Skip-Link, Headersteuerung, Hauptnavigation, Artikel und Hilfe; Dialoge schließen mit Fokus-Rückgabe auf den jeweiligen Auslöser. Vier Viewports und die bereits nachgewiesenen echten Worker-Offline-Neustartpfade bleiben Teil der Vollmatrix.",
-    "androidCandidate": "Nach dem finalen sauberen Commit ist ein strikt offline gebauter, unsignierter 2.1.0/code25-Kandidat vorgeschrieben; Hash, Größe, ZIP/Manifest/Asset- und Signaturstatus werden im Übergabebericht aus demselben Build belegt. Keine Signierung, kein Upload und kein Deployment.",
+    "androidCandidate": "Nach dem finalen sauberen Commit ist ein strikt offline gebauter, unsignierter 2.1.1/code26-Kandidat vorgeschrieben; Hash, Größe, ZIP/Manifest/Asset- und Signaturstatus werden im Übergabebericht aus demselben Build belegt. Keine Signierung, kein Upload und kein Deployment.",
     "artifactTransaction": "durables Write-Through-Recovery-Journal, exklusiver Lock und Windows-Hartabbruchtests nach Move 1/2/Commit; Traversal/Junction/Hardlink/stale-lock grün"
   },
   "excluded": [
@@ -180,7 +186,7 @@
   ],
   "releaseGates": [
     "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
-    "autorisierte Signierung und Store-Freigabe; der lokale Code-25-Kandidat bleibt bis dahin nicht uploadfähig",
+    "autorisierte Signierung und Store-Freigabe; der lokale Code-26-Kandidat bleibt bis dahin nicht uploadfähig",
     "Signierung, Upload und Deployment sind nicht autorisiert"
   ]
 }

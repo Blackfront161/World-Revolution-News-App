@@ -7,8 +7,8 @@ Capacitor-/Android-Hülle für **World Revolution News**. Dieses Verzeichnis ent
 | Merkmal | Stand |
 |---|---|
 | Android Application ID | `com.world.revolution` |
-| Android `versionName` | `2.1.0` |
-| Android `versionCode` | `25` |
+| Android `versionName` | `2.1.1` |
+| Android `versionCode` | `26` |
 | min / target / compile SDK | 24 / 36 / 36 |
 | Capacitor-Basis | exakt `8.4.0` für Core, Android und CLI |
 | Paketmanager | npm mit versionierter `package-lock.json` |
@@ -22,7 +22,7 @@ Capacitor-/Android-Hülle für **World Revolution News**. Dieses Verzeichnis ent
 
 Zusätzliche Freigabeblocker:
 
-- `package.json` und `package-lock.json` führen Wrapper-Metadaten `2.1.0` und
+- `package.json` und `package-lock.json` führen Wrapper-Metadaten `2.1.1` und
   pinnen `@capacitor/core`, `@capacitor/android` und `@capacitor/cli` gemeinsam
   auf `8.4.0`. npm ist der einzige unterstützte Paketmanager.
 - `android/capacitor.settings.gradle` ist eine Sync-Ausgabe und wird nicht als

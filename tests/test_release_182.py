@@ -19,7 +19,7 @@ language_audit = json.loads((ROOT / 'language-source-audit.json').read_text(enco
 assert "version: '1.8.4'" in config
 assert "sourceCatalog: 'https://blackfront161.github.io/Revolution-News-Data/sources-registry.json'" in config
 assert 'source-filters.js' in config
-assert 'wrn-app-v2.1.0-r4' in worker and 'wrn-data-v2.1.0-r2' in worker
+assert 'wrn-app-v2.1.1-r1' in worker and 'wrn-data-v2.1.1-r1' in worker
 assert 'source-filters.js' in worker
 assert 'source-language-filter' in index and 'source-origin-filter' in index
 assert 'WRN MULTILINGUAL SOURCES 1.8.2 START' in aggregate

@@ -43,11 +43,11 @@ assert "python tests/run_contract_matrix.py" in quality
 assert "const VERSION = '200-action-radar-1';" in config
 assert "source-recovery-ui-183.js" in config
 assert "source-recovery-ui-183.css" in config
-assert "wrn-app-v2.1.0-r4" in worker
-assert "wrn-data-v2.1.0-r2" in worker
+assert "wrn-app-v2.1.1-r1" in worker
+assert "wrn-data-v2.1.1-r1" in worker
 assert "source-recovery-ui-183.js" in worker
 assert "source-recovery-ui-183.css" in worker
-assert 'wrn-app-v2.1.0-r4' in audio_assets_test
+assert 'wrn-app-v2.1.1-r1' in audio_assets_test
 assert 'wrn-app-v1.8.3-b2' not in audio_assets_test
 
 assert '"automaticDeletion": False' in module

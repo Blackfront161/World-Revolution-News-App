@@ -1,8 +1,8 @@
-/* World Revolution News – Offline Service Worker · News App 2 production 2.1.0 */
+/* World Revolution News – Offline Service Worker · News App 2 production 2.1.1 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.0-r4';
-const DATA_CACHE = 'wrn-data-v2.1.0-r2';
+const APP_CACHE = 'wrn-app-v2.1.1-r1';
+const DATA_CACHE = 'wrn-data-v2.1.1-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
 const DATA_CACHE_PREFIX = 'wrn-data-';

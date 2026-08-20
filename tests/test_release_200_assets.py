@@ -14,8 +14,8 @@ freshness = (ROOT / "source-health-freshness.js").read_text(encoding="utf-8")
 checker = (ROOT / "check_news_sources.py").read_text(encoding="utf-8")
 roadmap = json.loads((ROOT / "ROADMAP.json").read_text(encoding="utf-8"))
 
-assert "? '2.1.0'" in release_config
-assert "wrn-app-v2.1.0-r4" in worker
+assert "? '2.1.1'" in release_config
+assert "wrn-app-v2.1.1-r1" in worker
 assert "action-radar.js" in legacy_config and "action-radar.js" in worker
 assert "editorial-review-ui.js" in legacy_config and "editorial-review-ui.js" in worker
 assert "source-health-freshness.js" in legacy_config and "source-health-freshness.js" in worker
@@ -47,7 +47,7 @@ assert '"freshUntil"' in checker
 assert '"workflowIntervalHours": 4' in checker
 assert '"expiredResultsAreNotPresentedAsCurrent": True' in checker
 
-assert roadmap["current"]["version"] == "2.1.0"
+assert roadmap["current"]["version"] == "2.1.1"
 assert roadmap["current"]["status"].startswith("Lokaler Produktionskandidat")
 assert "serverseitige Standortverfolgung" in roadmap["excluded"]
 
