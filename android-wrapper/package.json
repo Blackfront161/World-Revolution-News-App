@@ -1,0 +1,24 @@
+{
+  "name": "world-revolution-news-app",
+  "version": "2.0.8",
+  "description": "Capacitor wrapper for World Revolution News",
+  "main": "index.js",
+  "scripts": {
+    "sync:android": "npx cap sync android",
+    "open:android": "npx cap open android"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
+    "@capacitor/local-notifications": "^8.0.1",
+    "@capacitor/share": "8.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5"
+  }
+}

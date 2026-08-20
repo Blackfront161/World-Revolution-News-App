@@ -1,0 +1,100 @@
+name: App prüfen
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "*.css"
+      - "*.js"
+      - "*.json"
+      - "tests/**"
+      - ".github/workflows/validate-app.yml"
+  pull_request:
+    paths:
+      - "*.html"
+      - "*.css"
+      - "*.js"
+      - "*.json"
+      - "tests/**"
+      - ".github/workflows/validate-app.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Dateien und Syntax prüfen
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python-Abhängigkeiten installieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python -m pip install --upgrade pip
+
+          if [ -f requirements-wrn.lock.txt ]; then
+            python -m pip install -r requirements-wrn.lock.txt
+          elif [ -f requirements-audio.txt ]; then
+            python -m pip install -r requirements-audio.txt
+          elif [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          else
+            python -m pip install "requests>=2.31,<3"
+          fi
+
+          python -m pip check
+
+      - name: App-Struktur und bestehende Releaseverträge prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python tests/validate_app.py
+          python tests/test_release_182.py
+          python tests/test_release_200_assets.py
+          PYTHONPATH=. python tests/test_audio_source_schema.py
+
+      - name: JavaScript-Syntax und Kernlogik prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for file in \
+            config.js \
+            offline-db.js \
+            status-center.js \
+            app.js \
+            service-worker.js \
+            release-1.5-nav.js \
+            audio-region-core.js \
+            audio-tab.js \
+            video-hub.js \
+            source-verification.js \
+            source-filters.js
+          do
+            echo "Prüfe $file"
+            node --check "$file"
+          done
+
+          node tests/test_stories_core.js
+          node tests/test_audio_region_core.js
+          node tests/test_source_filters.js
+          node tests/test_release_200.js
+
+      - name: Python-Dateien kompilieren
+        shell: bash
+        run: |
+          set -e
+          find . -maxdepth 2 -name "*.py" -print0 | xargs -0 -r python -m py_compile
+

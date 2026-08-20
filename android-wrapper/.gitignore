@@ -1,0 +1,92 @@
+# Dependencies and package-manager caches
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# Generated Capacitor web assets
+/www/
+/android/app/src/main/assets/public/
+/android/app/src/main/assets/capacitor.config.json
+/android/app/src/main/assets/capacitor.plugins.json
+/android/app/src/main/res/xml/config.xml
+
+# Gradle and Android build output
+**/.gradle/
+**/build/
+**/out/
+**/.externalNativeBuild/
+**/.cxx/
+*.class
+*.dex
+*.aar
+*.ap_
+
+# IDE and operating-system state
+.idea/
+**/.idea/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.user
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs, reports and local diagnostics
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+captures/
+coverage/
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+test-results/
+
+# Local SDK and machine configuration
+**/local.properties
+.env
+.env.*
+!.env.example
+
+# Signing material and provider configuration
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+**/keystore.properties
+**/signing.properties
+**/secrets.properties
+**/key.properties
+**/google-services.json
+
+# Release binaries, archives and historical local copies
+/release/
+/archive/
+*.aab
+*.apk
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Historical mixed-scope copies; move relevant work to its owning repository
+/Website code/
+/Cloudflare Worker/
+/Bilder/
+
+# Patch and merge leftovers
+*.orig
+*.rej

@@ -1,0 +1,129 @@
+/* World Revolution News 1.8.4 – About */
+.wrn-about-184 {
+  width: min(100% - 1.2rem, 1080px);
+  margin: 1rem auto 5rem;
+  color: var(--text-main);
+}
+
+.wrn-about-184 > header {
+  position: relative !important;
+  top: auto !important;
+  z-index: auto !important;
+  display: block !important;
+  grid-template-columns: none !important;
+  width: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: clamp(1rem, 4vw, 2rem) !important;
+  border: 1px solid rgba(0, 240, 255, .36);
+  border-left: 5px solid var(--color-cyan);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.wrn-about-184 > header span {
+  color: var(--wrn-red, #ff3158);
+  font: 800 .68rem/1 monospace;
+  letter-spacing: .15em;
+}
+
+.wrn-about-184 h2 {
+  margin: .55rem 0 .6rem;
+  color: var(--color-cyan);
+  font-size: clamp(1.35rem, 4vw, 2.1rem);
+  line-height: 1.15;
+}
+
+.wrn-about-184 h3 {
+  margin: 0 0 .5rem;
+  color: var(--color-cyan);
+  font-size: 1rem;
+}
+
+.wrn-about-184 p,
+.wrn-about-184 li {
+  font-size: .88rem;
+  line-height: 1.62;
+}
+
+.wrn-about-grid-184 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .7rem;
+  margin-top: .8rem;
+}
+
+.wrn-about-grid-184 > section,
+.wrn-about-feedback-184,
+.wrn-about-note-184 {
+  padding: 1rem;
+  border: 1px solid var(--border-read, rgba(255,255,255,.14));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--bg-card) 94%, transparent);
+}
+
+.wrn-about-grid-184 ul { margin: 0; padding-left: 1.15rem; }
+.wrn-about-feedback-184 { margin-top: .8rem; }
+.wrn-about-feedback-184 button {
+  min-height: 40px;
+  padding: .55rem .9rem;
+  border: 1px solid var(--wrn-red, #ff3158);
+  border-radius: 999px;
+  background: var(--wrn-red, #ff3158);
+  color: #08090d;
+  font-weight: 850;
+  cursor: pointer;
+}
+.wrn-about-note-184 {
+  margin-top: .8rem;
+  border-style: dashed;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 760px) {
+  .wrn-about-grid-184 { grid-template-columns: 1fr; }
+  .wrn-about-184 { width: 100%; }
+}
+.wrn-about-social-185 {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(0,240,255,.22);
+  border-radius: .85rem;
+  background: rgba(0,240,255,.035);
+}
+
+.wrn-about-social-185 h3 {
+  margin: 0 0 .45rem;
+  color: var(--color-cyan, #00f0ff);
+}
+
+.wrn-about-social-list-185 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .55rem;
+  margin-top: .75rem;
+}
+
+.wrn-about-social-list-185 a {
+  display: grid;
+  gap: .25rem;
+  min-height: 44px;
+  padding: .65rem;
+  border: 1px solid rgba(255,49,88,.3);
+  border-radius: .65rem;
+  color: var(--text-main, #fff);
+  text-decoration: none;
+}
+
+.wrn-about-social-list-185 a:hover {
+  border-color: var(--color-cyan, #00f0ff);
+  background: rgba(0,240,255,.06);
+}
+
+.wrn-about-social-list-185 span {
+  color: var(--text-muted, #aab0c0);
+  font-size: .72rem;
+}

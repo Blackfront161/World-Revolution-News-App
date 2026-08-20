@@ -1,0 +1,46 @@
+/* World Revolution News 1.7.5 – Sprachstatus und Stimmen */
+
+.wrn-language-status {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-green, #39ff88);
+  font-size: 0.59rem;
+  line-height: 1.35;
+}
+
+.wrn-language-status[data-level="extended"] {
+  color: #ffd166;
+}
+
+.wrn-voice-preview-button,
+.wrn-briefing-voice-preview {
+  min-height: 29px;
+  padding: 4px 8px;
+  border: 1px solid rgba(0, 240, 255, 0.32);
+  border-radius: 8px;
+  background: rgba(0, 240, 255, 0.06);
+  color: var(--color-cyan, #00f0ff);
+  font: 750 0.64rem/1.1 inherit;
+}
+
+#podcast-voice-select + .wrn-voice-preview-button {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.wrn-briefing-voice-preview {
+  align-self: end;
+  margin-bottom: 1px;
+}
+
+@media (max-width: 720px) {
+  .wrn-language-status {
+    font-size: 0.56rem;
+  }
+
+  .wrn-voice-preview-button,
+  .wrn-briefing-voice-preview {
+    min-height: 27px;
+    font-size: 0.61rem;
+  }
+}

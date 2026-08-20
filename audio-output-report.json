@@ -1,0 +1,17 @@
+{
+  "files": {
+    "podcasts.json": {
+      "sizeBytes": 1410926,
+      "entryCount": 661
+    },
+    "podcast-health.json": {
+      "sizeBytes": 16458,
+      "entryCount": 43
+    },
+    "audio-health.json": {
+      "sizeBytes": 33615,
+      "entryCount": 29
+    }
+  },
+  "errors": []
+}

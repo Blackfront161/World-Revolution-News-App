@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "url": "https://www.youtube.com/watch?v=lrTzjaXskUU",
+      "title": "How Anarchy Works",
+      "description": "A clear introduction to cooperation and organisation without rulers.",
+      "sourceId": "andrewism",
+      "source": "Andrewism",
+      "language": "en",
+      "region": "Latin America",
+      "topic": "Theory & Strategy",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=o8Btb1sGRK0",
+      "title": "How Does Anarchy Handle “Bad People”?",
+      "description": "Community responses to harm without relying on authoritarian institutions.",
+      "sourceId": "andrewism",
+      "source": "Andrewism",
+      "language": "en",
+      "region": "Latin America",
+      "topic": "Theory & Strategy",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nrm4gj_eDGA",
+      "title": "David Graeber on Democracy and Debt",
+      "description": "An open-air lecture connecting democracy, debt and organising.",
+      "sourceId": "david-graeber-archive",
+      "source": "David Graeber / OWS Free University",
+      "language": "en",
+      "region": "North America",
+      "topic": "Theory & Strategy",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mOlpZzlh09s",
+      "title": "Anarchism: What It Really Stands For",
+      "description": "A volunteer-read introduction to Emma Goldman’s explanation of anarchism.",
+      "sourceId": "audible-anarchist",
+      "source": "Audible Anarchist / Emma Goldman",
+      "language": "en",
+      "region": "Europe",
+      "topic": "Theory & Strategy",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mfEYye6TNlk",
+      "title": "Ecology and Revolutionary Thought",
+      "description": "An introduction to the connection between ecological and social domination.",
+      "sourceId": "audible-anarchist",
+      "source": "Audible Anarchist / Murray Bookchin",
+      "language": "en",
+      "region": "North America",
+      "topic": "Eco-Anarchism",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tDDLFpz7pjE",
+      "title": "Eine kleine Geschichte der Anarchie – Teil 1",
+      "description": "ARTE-Dokumentation über die Entstehung anarchistischer Ideen, soziale Bewegungen und ihre freiheitlichen Gegenentwürfe.",
+      "sourceId": "charly-d-anarchy-documentaries",
+      "source": "Charly D",
+      "language": "de",
+      "region": "Europe",
+      "topic": "Theory & Strategy",
+      "section": "documentaries",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=I0UGM8zeNLw&t=921s",
+      "title": "Eine kleine Geschichte der Anarchie – Teil 2",
+      "description": "Fortsetzung der ARTE-Dokumentation über anarchistische Bewegungen, Revolutionen, Selbstorganisation und gesellschaftliche Alternativen.",
+      "sourceId": "charly-d-anarchy-documentaries",
+      "source": "Charly D",
+      "language": "de",
+      "region": "Europe",
+      "topic": "Theory & Strategy",
+      "section": "documentaries",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0uNSjlCkxwA",
+      "title": "Die Utopie leben – Der Anarchismus in Spanien",
+      "description": "Zeitzeug*innen berichten über anarchosyndikalistische Organisierung, Kollektive, Bildung und Selbstverwaltung während der Spanischen Revolution.",
+      "sourceId": "anarchistische-gemeinschaft-video",
+      "source": "anarchistische Gemeinschaft",
+      "language": "de",
+      "region": "Europe",
+      "topic": "Labor Struggles",
+      "topics": ["Labor Struggles", "Theory & Strategy", "Antifascism"],
+      "section": "documentaries",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AHGl9a8BcqI",
+      "title": "Anarchism in America",
+      "description": "A historical documentary that challenges common misconceptions and follows mutual aid, collective freedom and anarchist organising in the United States.",
+      "sourceId": "anarchism-in-america-archive",
+      "source": "forthedishwasher babylon",
+      "language": "en",
+      "region": "North America",
+      "topic": "Theory & Strategy",
+      "section": "documentaries",
+      "editorialStatus": "approved"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bgmClo2LPls",
+      "title": "Ni Dieu Ni Maître – L’histoire de l’anarchisme mondial",
+      "description": "Documentaire historique en français sur les mouvements anarchistes, leurs luttes sociales et leurs alternatives fondées sur la liberté et la solidarité.",
+      "sourceId": "notre-histoire-anarchism",
+      "source": "Notre Histoire",
+      "language": "fr",
+      "region": "Europe",
+      "topic": "Theory & Strategy",
+      "section": "documentaries",
+      "editorialStatus": "approved"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+/* World Revolution News 1.8.1 – Video-Hub */
+.wrn-video-hub { width:min(1120px, calc(100% - 1rem)); margin:1rem auto 5rem; }
+.wrn-video-hub[hidden] { display:none !important; }
+.wrn-video-head { display:flex; justify-content:space-between; gap:1.1rem; align-items:flex-start; margin-bottom:1rem; padding:.75rem .85rem; border-radius:.75rem; background:var(--bg-card,rgba(8,10,15,.9)); }
+.wrn-video-head > div { display:grid !important; gap:.42rem; min-width:0; }
+.wrn-video-head h2 { margin:0; font-size:clamp(1.15rem,3vw,1.55rem); line-height:1.15; }
+.wrn-video-head p { margin:0; max-width:70ch; opacity:.82; font-size:.86rem; line-height:1.45; }
+.wrn-video-head > strong { flex:0 0 auto; padding-top:.15rem; font-size:.86rem; }
+.wrn-video-modes { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 .8rem; }
+.wrn-video-modes button { min-height:2.25rem; padding:.4rem .8rem; border:1px solid var(--color-red,#ff3157); border-radius:999px; background:transparent; color:inherit; cursor:pointer; font-weight:800; font-size:.82rem; }
+.wrn-video-modes button.active { background:var(--color-red,#ff3157); color:#080a0d; }
+.wrn-video-controls { display:grid; grid-template-columns:minmax(0,1fr) minmax(11rem,auto) minmax(11rem,auto); gap:.6rem; margin-bottom:.7rem; }
+.wrn-video-controls input, .wrn-video-controls select { width:100%; min-height:2.8rem; border:1px solid var(--border-color,rgba(255,255,255,.2)); border-radius:.65rem; background:var(--card-bg,#171717); color:inherit; padding:.55rem .7rem; }
+.wrn-video-privacy { margin:.4rem 0 1rem; font-size:.9rem; opacity:.78; }
+.wrn-video-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:1rem; }
+.wrn-video-card { padding:1rem; border:1px solid var(--border-color,rgba(255,255,255,.18)); border-radius:.9rem; background:var(--card-bg,rgba(20,20,20,.92)); box-shadow:0 .5rem 1.4rem rgba(0,0,0,.18); }
+.wrn-video-card h3 { margin:.55rem 0; }
+.wrn-video-card p { margin:.45rem 0; line-height:1.45; }
+.wrn-video-card small { opacity:.72; }
+.wrn-video-card-meta, .wrn-video-actions { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; }
+.wrn-video-card-meta span { border:1px solid currentColor; border-radius:999px; padding:.18rem .5rem; font-size:.78rem; opacity:.82; }
+.wrn-video-actions { margin-top:.8rem; }
+.wrn-video-actions button, .wrn-video-actions a { border:1px solid currentColor; border-radius:.55rem; padding:.48rem .7rem; background:transparent; color:inherit; text-decoration:none; cursor:pointer; }
+.wrn-video-frame { margin-top:.8rem; aspect-ratio:16/9; }
+.wrn-video-frame:empty { display:none; }
+.wrn-video-frame iframe { width:100%; height:100%; border:0; border-radius:.65rem; background:#000; }
+.wrn-video-empty { grid-column:1/-1; padding:2rem; text-align:center; opacity:.75; }
+@media (max-width:720px) {
+  .wrn-video-head { flex-direction:column; }
+  .wrn-video-controls {
+    grid-template-columns:minmax(8rem,1fr) minmax(6.6rem,.65fr) minmax(6.6rem,.65fr);
+    gap:.35rem;
+  }
+  .wrn-video-controls input,
+  .wrn-video-controls select {
+    min-width:0;
+    min-height:2.45rem;
+    padding:.4rem;
+    font-size:.7rem;
+  }
+}

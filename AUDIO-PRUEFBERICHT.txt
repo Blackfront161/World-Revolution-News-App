@@ -1,0 +1,35 @@
+AUDIO-PRÜFUNG 1.7.1
+
+Bisher funktionierende Podcastquellen laut podcast-health.json:
+- B(A)D News
+- Dissens
+- The Final Straw Radio
+- Radio Blau
+- LORA München
+- Frequenz A
+- It's Going Down
+- freie-radios.net
+
+Bisherige Probleme:
+- Radio CORAX: direkter Website-Feed blockiert den Bot mit HTTP 403.
+  Lösung: freie-radios.net-Feed als erste Quelle.
+- Radio Dreyeckland: bisherige RSS-Adresse lieferte keine Folgen.
+  Lösung: freie-radios.net-Feed als erste Quelle.
+- FSK: drei erratene Feed-Adressen waren 404.
+  Lösung: freie-radios.net-Feed als erste Quelle.
+- Common Voices: Server antwortete zeitweise mit HTTP 503.
+  Lösung: Quelle bleibt enthalten, wird aber als gestört markiert.
+- A-Radio Wien: Domain konnte nicht aufgelöst werden.
+  Lösung: vorläufig deaktiviert, damit der Workflow nicht unnötig wartet.
+- CrimethInc Ex-Worker: bisherige Feed-Adressen waren falsch oder instabil.
+  Lösung: offizieller Podcast-Feed ergänzt, Archivalter erweitert.
+- Der allgemeine freie-radios.net-Feed überschrieb bisher beim Entfernen
+  von Duplikaten die genauere Senderbezeichnung.
+  Lösung: Quellenpriorität; spezifische Sender gewinnen.
+
+Radio:
+- Der Player hatte bereits mehrere Streamkandidaten.
+- Er wechselte aber nur bei einem klaren Medienfehler.
+- Bei endlosem „Verbinde…“ blieb er hängen.
+- 1.7.1 wechselt nach 12 Sekunden zum nächsten Kandidaten.
+- Ein GitHub-Workflow prüft alle Streams und speichert radio-health.json.

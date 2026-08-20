@@ -1,0 +1,165 @@
+/* World Revolution News 1.8.0 – Briefing 2 */
+.wrn-briefing2-panel {
+  margin: 12px 0 16px;
+  padding: 12px;
+  border: 1px solid rgba(255,51,79,.28);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(15,7,12,.88), rgba(5,12,18,.88));
+}
+
+.wrn-briefing2-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.wrn-briefing2-modes {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.wrn-briefing2-modes button,
+.wrn-briefing2-open-stories,
+.wrn-briefing2-watch-form button,
+.wrn-briefing2-watch-chips button {
+  min-height: 32px;
+  padding: 5px 9px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 999px;
+  background: rgba(255,255,255,.04);
+  color: inherit;
+  cursor: pointer;
+  font-size: .7rem;
+}
+
+.wrn-briefing2-modes button.active {
+  border-color: var(--wrn-red, #ff334f);
+  background: rgba(255,51,79,.14);
+  color: #fff;
+}
+
+.wrn-briefing2-open-stories {
+  border-color: rgba(0,240,255,.32);
+  color: var(--color-cyan, #00f0ff);
+}
+
+.wrn-briefing2-content {
+  display: grid;
+  gap: 12px;
+}
+
+.wrn-briefing2-content section h4 {
+  margin: 0 0 7px;
+  color: var(--color-cyan, #00f0ff);
+  font-size: .78rem;
+}
+
+.wrn-briefing2-list,
+.wrn-briefing2-story-list {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.wrn-briefing2-list li {
+  display: grid;
+  gap: 2px;
+}
+
+.wrn-briefing2-list button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-size: .76rem;
+  line-height: 1.35;
+}
+
+.wrn-briefing2-list span,
+.wrn-briefing2-story-list {
+  color: rgba(255,255,255,.62);
+  font-size: .68rem;
+}
+
+.wrn-briefing2-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 8px;
+}
+
+.wrn-briefing2-stats div {
+  display: grid;
+  place-items: center;
+  padding: 9px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  background: rgba(255,255,255,.035);
+}
+
+.wrn-briefing2-stats strong {
+  color: var(--wrn-red, #ff334f);
+  font-size: 1rem;
+}
+
+.wrn-briefing2-stats span {
+  color: rgba(255,255,255,.62);
+  font-size: .65rem;
+}
+
+.wrn-briefing2-source-chips,
+.wrn-briefing2-watch-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.wrn-briefing2-source-chips span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: rgba(0,240,255,.08);
+  color: rgba(255,255,255,.8);
+  font-size: .65rem;
+}
+
+.wrn-briefing2-watch-form {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 7px;
+}
+
+.wrn-briefing2-watch-form input {
+  min-height: 34px;
+  padding: 6px 9px;
+  border: 1px solid rgba(0,240,255,.25);
+  border-radius: 9px;
+  background: rgba(5,8,13,.9);
+  color: #fff;
+}
+
+.wrn-briefing2-watch-chips button {
+  border-color: rgba(255,51,79,.26);
+}
+
+.wrn-briefing2-empty,
+.wrn-briefing2-privacy {
+  margin: 0;
+  color: rgba(255,255,255,.64);
+  font-size: .7rem;
+  line-height: 1.45;
+}
+
+.wrn-briefing2-privacy {
+  margin-top: 11px;
+  color: var(--color-green, #39ff88);
+}
+
+@media (max-width: 600px) {
+  .wrn-briefing2-header { align-items: stretch; flex-direction: column; }
+  .wrn-briefing2-open-stories { width: 100%; }
+}

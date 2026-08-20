@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "curated-foundation",
+  "automaticFeedEnabled": false,
+  "principles": [
+    "Only explicitly reviewed accounts, channels and instances are eligible.",
+    "No engagement-based ranking and no unfiltered federated timeline.",
+    "Every entry keeps its platform, account and original link visible.",
+    "Authoritarian, Stalinist, Maoist and discriminatory propaganda is excluded.",
+    "Users can report entries and propose additional sources."
+  ],
+  "platforms": [
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "contentTypes": ["short-post", "link", "image"],
+      "directory": "https://joinmastodon.org/servers",
+      "plannedIntegration": "Reviewed account lists grouped by region and topic"
+    },
+    {
+      "id": "peertube",
+      "label": "PeerTube",
+      "contentTypes": ["video", "channel"],
+      "directory": "https://joinpeertube.org/browse-content",
+      "plannedIntegration": "Reviewed channels in the existing Video Hub"
+    },
+    {
+      "id": "mobilizon",
+      "label": "Mobilizon",
+      "contentTypes": ["event", "group"],
+      "directory": "https://mobilizon.org/",
+      "plannedIntegration": "Reviewed event collections in Termine"
+    },
+    {
+      "id": "funkwhale",
+      "label": "Funkwhale",
+      "contentTypes": ["audio", "podcast"],
+      "directory": "https://www.funkwhale.audio/",
+      "plannedIntegration": "Reviewed audio channels in the Audio Hub"
+    }
+  ]
+}

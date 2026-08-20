@@ -1,0 +1,23 @@
+/* World Revolution News 1.7.5 – gemeinsamer Übersetzungsstatus */
+
+.wrn-shared-translation-status {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255,255,255,0.60);
+  font-size: 0.58rem;
+  line-height: 1.35;
+}
+.wrn-shared-translation-status[data-state="online"],
+.wrn-shared-translation-status[data-state="hit"] {
+  color: var(--color-green, #39ff88);
+}
+.wrn-shared-translation-status[data-state="miss"] {
+  color: var(--color-cyan, #00f0ff);
+}
+.wrn-shared-translation-status[data-state="warning"],
+.wrn-shared-translation-status[data-state="checking"] {
+  color: #ffd166;
+}
+.wrn-shared-translation-status[data-state="error"] {
+  color: var(--wrn-red, #ff334f);
+}

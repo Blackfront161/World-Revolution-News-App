@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WRN Audio-Test</title>
+<style>
+:root{color-scheme:dark}
+body{margin:0;padding:1rem;background:#07080d;color:#fff;font-family:system-ui,sans-serif}
+main{max-width:900px;margin:auto}h1{color:#00e5ef}
+section{margin:1rem 0;padding:.8rem;border:1px solid #303640;border-radius:7px;background:#10131b}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.45rem}
+.grid div{padding:.6rem;border:1px solid #444;border-radius:6px}
+.grid strong{display:block;font-size:1.3rem}
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body><main>
+<h1>World Revolution News – Audio-Test</h1>
+<p id="status">Lade …</p>
+<div id="content"></div>
+<script>
+const keys=['playable','limited','broken','unknown'];
+const cards=s=>`<div class="grid">${keys.map(k=>`<div><span>${k}</span><strong>${Number(s?.[k]||0)}</strong></div>`).join('')}</div>`;
+(async()=>{
+ try{
+  const r=await fetch(`./audio-health.json?v=${Date.now()}`,{cache:'no-store'});
+  if(!r.ok)throw new Error(`HTTP ${r.status}`);
+  const d=await r.json();
+  document.getElementById('content').innerHTML=`
+   <section><h2>Original-Podcasts</h2>${cards(d.podcasts?.summary)}<p>${Number(d.podcasts?.episodeCount||0)} Episoden</p></section>
+   <section><h2>Live-Radio</h2>${cards(d.radio?.summary)}<p>${Number(d.radio?.stationCount||0)} Stationen</p></section>`;
+  document.getElementById('status').textContent=d.generatedAt?`Geprüft: ${new Date(d.generatedAt).toLocaleString()}`:'Noch nicht geprüft';
+ }catch(e){document.getElementById('status').textContent=`Fehler: ${e}`;}
+})();
+</script></main></body></html>

@@ -1,0 +1,49 @@
+AUSBAUMÖGLICHKEITEN FÜR „MEIN BRIEFING“
+
+Bereits in 1.7.2:
+- bessere lokale Zusammenfassungen
+- Neu-/Update-Erkennung
+- Quellen-, Regionen- und Themenübersicht
+- Nur-Neues-Ansicht
+- Text und Gerätestimmen
+
+Sinnvolle nächste Stufen:
+
+1. Wochenrückblick
+   Aus den letzten sieben gespeicherten Tagesbriefings:
+   - wichtigste Entwicklungen
+   - neu hinzugekommene Quellen
+   - abgeschlossene und weiterlaufende Geschichten
+   - kommende Termine der nächsten Woche
+
+2. Beobachtungsliste
+   Eigene Suchbegriffe, Orte, Organisationen oder Kampagnen lokal speichern.
+   Das Briefing erhält einen Abschnitt „Beobachtet“.
+
+3. Geschichten-Zeitleiste
+   Mehrere Artikel zu einer Entwicklung in chronologischer Reihenfolge.
+   Zeigt, was sich verändert hat und welche Quellen neu dazugekommen sind.
+
+4. Perspektivenvergleich
+   Zwei bis vier Quellen zum selben Ereignis nebeneinander:
+   - gemeinsame Fakten
+   - unterschiedliche Schwerpunkte
+   - fehlende oder widersprüchliche Angaben
+
+5. Lokales Aktionsfenster
+   Passende Termine und Aktionen aus ausgewählten Regionen.
+   Direkte Kalenderübernahme und lokale Erinnerung.
+
+6. Morgen- und Abendmodus
+   Morgens: Was ist neu und was steht heute an?
+   Abends: Was hat sich seit dem Morgen verändert?
+
+7. Briefing-Pakete
+   Ein Briefing als Text, Zine oder teilbaren lokalen Export speichern.
+
+8. Transparenzansicht
+   Für jeden Abschnitt:
+   - warum ausgewählt
+   - welche Filter passten
+   - wie viele Quellen einbezogen wurden
+   - ob es sich um eine automatische Zusammenfassung handelt

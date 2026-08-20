@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporäre Dateien
+*.tmp
+*.temp
+*.log
+
+# Lokale WRN-Sicherungen
+aggregate.py.pre-*.bak
+
+# Umgebungsdateien
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Betriebssystem und Editoren
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Paketmanager und lokale Abdeckungsberichte
+node_modules/
+.pnpm-store/
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+.mypy_cache/
+.ruff_cache/
+
+# Lokale Cloudflare-CLI-Metadaten
+.wrangler/
+.wrangler-proxy-dry-run/
+.wrangler-dry-run/
+
+# Lokale Test- und Vorschauartefakte
+.pytest_cache/
+.tmp/
+
+# Lokal erzeugte, signierte Android-Bundles und Prüfberichte
+outputs/
+*.aab
+*.apk
+*.apks
+*.jks
+*.keystore
+
+# Release- und Übergabearchive
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz

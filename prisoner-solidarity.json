@@ -1,0 +1,1374 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-09T17:10:00+02:00",
+  "reviewWindowDays": 45,
+  "editorialPolicy": {
+    "scope": "A small, curated directory of people publicly listed by established prisoner-solidarity groups.",
+    "addressRule": "Only public prison mailing addresses shared by the prisoner or a trusted support group are published.",
+    "privacyRule": "Private family, legal-team and release addresses are never included.",
+    "staleRule": "Copying, editing and printing are disabled after the next review date until the address is checked again.",
+    "legalNote": "The directory documents solidarity information and does not make a legal assessment of a case."
+  },
+  "sources": [
+    {
+      "id": "nycabc-guide-19-5",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.5",
+      "url": "https://nycabc.wordpress.com/2026/06/27/guide_19_5/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/06/nycabc_polprislisting_june-2026_legal.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "nycabc-write",
+      "name": "NYC Anarchist Black Cross – Write A Letter",
+      "url": "https://nycabc.wordpress.com/write-a-letter/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "abcf-updates",
+      "name": "Anarchist Black Cross Federation – current updates",
+      "url": "https://www.abcf.net/",
+      "kind": "support-network",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "nycabc-guide-19-6",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.6",
+      "url": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/08/nycabc_polprislisting_july-2026_legal.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-09"
+    },
+    {
+      "id": "abc-dresden-prisoners",
+      "name": "Anarchist Black Cross Dresden – Gefangenenliste",
+      "url": "https://abcdd.org/gefangene/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-04"
+    },
+    {
+      "id": "abc-dresden-letter-writing",
+      "name": "Anarchist Black Cross Dresden – Briefeschreiben",
+      "url": "https://abcdd.org/en/letter-writing/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-08-04"
+    },
+    {
+      "id": "prisoners-for-palestine-writing",
+      "name": "Prisoners for Palestine – Writing to Prisoners",
+      "url": "https://prisonersforpalestine.org/writing-to-prisoners/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-07-29"
+    },
+    {
+      "id": "govuk-prison-letters",
+      "name": "GOV.UK – Staying in touch with someone in prison",
+      "url": "https://www.gov.uk/staying-in-touch-with-someone-in-prison",
+      "kind": "official-mail-guidance",
+      "checkedAt": "2026-07-29"
+    },
+    {
+      "id": "abcf-support-guide",
+      "name": "Anarchist Black Cross Federation – Support Guide",
+      "url": "https://www.abcf.net/support-guide/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "abc-belarus-prisoners",
+      "name": "Anarchist Black Cross Belarus – Prisoners",
+      "url": "https://abc-belarus.org/en/prisoners/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "london-abc",
+      "name": "London Anarchist Black Cross – Prison abolition and letter support",
+      "url": "https://network23.org/londonabc/about/",
+      "kind": "support-network",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "secours-rouge-geneve",
+      "name": "Secours Rouge Genève – Prisoner and repression solidarity",
+      "url": "https://secoursrouge.org/orga/secours-rouge-geneve/",
+      "kind": "support-network",
+      "checkedAt": "2026-08-05"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "hridindu-roychowdhury",
+      "publicName": "Hridindu Roychowdhury",
+      "prisonerId": "51111-510",
+      "aliases": [
+        "Hridindu Roychowdhury"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United States",
+      "region": "North America",
+      "institution": "FCI Thomson",
+      "mailingAddress": {
+        "lines": [
+          "Hridindu Roychowdhury #51111-510",
+          "FCI Thomson",
+          "Post Office Box 1002",
+          "Thomson, Illinois 61285",
+          "USA"
+        ],
+        "public": true
+      },
+      "birthday": "02-24",
+      "movementTags": [
+        "anarchism",
+        "bodily autonomy",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von NYC ABC als anarchistischer politischer Gefangener geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by NYC ABC as an anarchist political prisoner. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-06-29",
+        "nextReviewAt": "2026-08-13",
+        "sourceIds": [
+          "nycabc-guide-19-5",
+          "abcf-updates"
+        ],
+        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Bitte vor dem Versand die aktuellen Regeln der Anstalt prüfen. Bilder oder Beilagen sind nicht als erlaubt bestätigt.",
+          "en": "Check the institution's current rules before mailing. Photos or enclosures are not confirmed as permitted."
+        }
+      }
+    },
+    {
+      "id": "malik-muhammed",
+      "publicName": "Malik Muhammed",
+      "prisonerId": "400523",
+      "aliases": [
+        "Malik Muhammed",
+        "Malik Muhammad"
+      ],
+      "pronouns": "they/them",
+      "languages": [
+        "en"
+      ],
+      "country": "United States",
+      "region": "North America",
+      "institution": "Broad River Correctional Institution",
+      "mailingAddress": {
+        "lines": [
+          "Malik Muhammed #400523",
+          "Marion 183",
+          "Broad River Correctional Institution",
+          "4460 Broad River Road",
+          "Columbia, South Carolina 29210",
+          "USA"
+        ],
+        "public": true
+      },
+      "birthday": "02-13",
+      "movementTags": [
+        "anarchism",
+        "antifascism",
+        "antiracism",
+        "abolition"
+      ],
+      "context": {
+        "de": "Wird von NYC ABC und ABCF als anarchistische, antifaschistische und abolitionistische gefangene Person unterstützt. Die Darstellung folgt den Solidaritätsquellen.",
+        "en": "Supported by NYC ABC and ABCF as an anarchist, antifascist and abolitionist prisoner. This description follows the solidarity sources."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-06-28",
+        "nextReviewAt": "2026-08-12",
+        "sourceIds": [
+          "nycabc-guide-19-5",
+          "abcf-updates"
+        ],
+        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuellen Regeln der Haftanstalt prüfen. Der Wohnbereich „Marion 183“ ist Teil der veröffentlichten Adresse.",
+          "en": "Check current institution rules before mailing. The unit “Marion 183” is part of the published address."
+        }
+      }
+    },
+    {
+      "id": "casey-goonan",
+      "publicName": "Casey Goonan",
+      "prisonerId": "24611-511",
+      "aliases": [
+        "Casey Goonan"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United States",
+      "region": "North America",
+      "institution": "FCI Allenwood Medium",
+      "mailingAddress": {
+        "lines": [
+          "Casey Goonan #24611-511",
+          "FCI Allenwood Medium",
+          "Post Office Box 2000",
+          "White Deer, Pennsylvania 17887",
+          "USA"
+        ],
+        "public": true
+      },
+      "birthday": "04-25",
+      "movementTags": [
+        "anarchism",
+        "anti-imperialism",
+        "Palestine solidarity",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von NYC ABC als anarchistische und antiimperialistische gefangene Person unterstützt. Die Darstellung folgt der Solidaritätsquelle.",
+        "en": "Supported by NYC ABC as an anarchist and anti-imperialist prisoner. This description follows the solidarity source."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-06-27",
+        "nextReviewAt": "2026-08-11",
+        "sourceIds": [
+          "nycabc-guide-19-5",
+          "abcf-updates"
+        ],
+        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Bitte aktuelle Bundesgefängnis-Regeln prüfen. Bilder und zusätzliche Ausdrucke sind nicht als erlaubt bestätigt.",
+          "en": "Check current federal prison rules. Photos and additional printouts are not confirmed as permitted."
+        }
+      }
+    },
+    {
+      "id": "bill-dunne",
+      "publicName": "Bill Dunne",
+      "prisonerId": "10916-086",
+      "aliases": [
+        "Bill Dunne"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United States",
+      "region": "North America",
+      "institution": "FCI Butner Medium II",
+      "mailingAddress": {
+        "lines": [
+          "Bill Dunne #10916-086",
+          "FCI Butner Medium II",
+          "Post Office Box 1500",
+          "Butner, North Carolina 27509",
+          "USA"
+        ],
+        "public": true
+      },
+      "birthday": "08-03",
+      "movementTags": [
+        "anarchism",
+        "prison solidarity",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Langjähriger anarchistischer politischer Gefangener, der von NYC ABC und ABCF unterstützt wird. Die Darstellung folgt den Solidaritätsquellen.",
+        "en": "Long-term anarchist political prisoner supported by NYC ABC and ABCF. This description follows the solidarity sources."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-06-25",
+        "nextReviewAt": "2026-08-09",
+        "sourceIds": [
+          "nycabc-guide-19-5",
+          "abcf-updates"
+        ],
+        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Bitte vor jedem Brief die Adresse und die aktuellen Regeln der Anstalt erneut prüfen.",
+          "en": "Recheck the address and current institution rules before each letter."
+        }
+      }
+    },
+    {
+      "id": "oso-blanco",
+      "publicName": "Byron Chubbuck (Oso Blanco)",
+      "prisonerId": "07909-051",
+      "aliases": [
+        "Byron Chubbuck",
+        "Oso Blanco"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United States",
+      "region": "North America",
+      "institution": "USP Atwater",
+      "mailingAddress": {
+        "lines": [
+          "Byron Chubbuck #07909-051",
+          "USP Atwater",
+          "P.O. Box 019001",
+          "Atwater, California 95301",
+          "USA"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Indigenous resistance",
+        "anti-colonialism",
+        "prison solidarity"
+      ],
+      "context": {
+        "de": "Indigener Gefangener und Aktivist, der von ABCF und NYC ABC unterstützt wird. Der Name und die Adresse entsprechen dem öffentlich verbreiteten Solidaritätsaufruf.",
+        "en": "Indigenous prisoner and activist supported by ABCF and NYC ABC. The name and address follow the public solidarity call."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-05",
+        "nextReviewAt": "2026-08-19",
+        "sourceIds": [
+          "abcf-updates",
+          "nycabc-guide-19-5"
+        ],
+        "profileUrl": "https://www.abcf.net/blog/2026/07/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Bitte die aktuelle Adresse und Bundesgefängnis-Regeln prüfen. Bilder oder Beilagen sind nicht als erlaubt bestätigt.",
+          "en": "Check the current address and federal prison rules. Photos or enclosures are not confirmed as permitted."
+        }
+      }
+    },
+    {
+      "id": "mohammed-umer-khalid",
+      "publicName": "Mohammed Umer Khalid",
+      "prisonerId": "A4415FH",
+      "aliases": [
+        "Mohammed Umer Khalid",
+        "Muhammad Umer Khalid"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP Wormwood Scrubs",
+      "mailingAddress": {
+        "lines": [
+          "Mohammed Umer Khalid",
+          "c/o A4415FH",
+          "HMP Wormwood Scrubs",
+          "PO Box 757",
+          "Du Cane Road",
+          "London W12 0AE",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-repression",
+        "prisoner support"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierter Aktivist der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/writing-to-prisoners/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "qesser-zuhrah",
+      "publicName": "Qesser Zuhrah",
+      "prisonerId": "A9259FE",
+      "aliases": [
+        "Qesser Zuhrah"
+      ],
+      "pronouns": "she/her",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP Bronzefield",
+      "mailingAddress": {
+        "lines": [
+          "Qesser Zuhrah",
+          "c/o A9259FE",
+          "Bronzefield Prison",
+          "Woodthorpe Road",
+          "Ashford TW15 3JZ",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-militarism",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierte Aktivistin der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/qesser-zuhrah/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "amu-gib",
+      "publicName": "Amu Gib",
+      "prisonerId": "A1064FH",
+      "aliases": [
+        "Amu Gib"
+      ],
+      "pronouns": "they/them",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP Bronzefield",
+      "mailingAddress": {
+        "lines": [
+          "Amu Gib",
+          "c/o A1064FH",
+          "Bronzefield Prison",
+          "Woodthorpe Road",
+          "Ashford TW15 3JZ",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-militarism",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierte Person der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/amu-gib/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "heba-muraisi",
+      "publicName": "Heba Muraisi",
+      "prisonerId": "A9275FE",
+      "aliases": [
+        "Heba Muraisi"
+      ],
+      "pronouns": "she/her",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP New Hall",
+      "mailingAddress": {
+        "lines": [
+          "Heba Muraisi",
+          "c/o A9275FE",
+          "New Hall Prison",
+          "New Hall Way",
+          "Flockton",
+          "Wakefield WF4 4AX",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-militarism",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierte Aktivistin der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/heba-muraisi/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "jon-cink",
+      "publicName": "Jon Cink",
+      "prisonerId": "A1063FH",
+      "aliases": [
+        "Jon Cink",
+        "Jony Cink"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP Foston Hall",
+      "mailingAddress": {
+        "lines": [
+          "Jon Cink",
+          "c/o A1063FH",
+          "HMP Foston Hall",
+          "Foston",
+          "Derby",
+          "Derbyshire DE65 5DN",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-militarism",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierter Aktivist der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/jon-cink/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "teuta-hoxha",
+      "publicName": "Teuta Hoxha",
+      "prisonerId": "A9261FE",
+      "aliases": [
+        "Teuta Hoxha"
+      ],
+      "pronouns": "she/her",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP Peterborough",
+      "mailingAddress": {
+        "lines": [
+          "Teuta Hoxha",
+          "c/o A9261FE",
+          "Peterborough Prison",
+          "Saville Road",
+          "Peterborough PE3 7PD",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-militarism",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierte Aktivistin der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/teuta-hoxha/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "kamran-ahmed",
+      "publicName": "Kamran Ahmed",
+      "prisonerId": "A9280FE",
+      "aliases": [
+        "Kamran Ahmed"
+      ],
+      "pronouns": "",
+      "languages": [
+        "en"
+      ],
+      "country": "United Kingdom",
+      "region": "Europe",
+      "institution": "HMP Pentonville",
+      "mailingAddress": {
+        "lines": [
+          "Kamran Ahmed",
+          "c/o A9280FE",
+          "Pentonville Prison",
+          "Caledonian Road",
+          "London N7 8TT",
+          "United Kingdom"
+        ],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": [
+        "Palestine solidarity",
+        "anti-militarism",
+        "anti-repression"
+      ],
+      "context": {
+        "de": "Wird von Prisoners for Palestine als inhaftierter Aktivist der Palästina-Solidarität unterstützt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-07-29",
+        "nextReviewAt": "2026-09-12",
+        "sourceIds": [
+          "prisoners-for-palestine-writing",
+          "govuk-prison-letters"
+        ],
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/kamran-ahmed/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": false,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Name und Gefangenennummer auf den Umschlag schreiben. Eigene Absenderadresse und Datum angeben; keine unbestätigten Beilagen mitsenden.",
+          "en": "Put the name and prisoner number on the envelope. Include your own return address and the date; do not send unconfirmed enclosures."
+        }
+      }
+    },
+    {
+      "id": "paul-muentnich",
+      "publicName": "Paul Müntnich",
+      "prisonerId": "",
+      "aliases": ["Paul Müntnich"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Leipzig",
+      "mailingAddress": {
+        "lines": ["Paul Müntnich", "JVA Leipzig", "Leinestraße 111", "04279 Leipzig", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["anarchism", "anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Aufnahme dokumentiert die veröffentlichte Solidaritätsinformation und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden for current letter solidarity. This entry documents published solidarity information and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-08-04",
+        "nextReviewAt": "2026-09-18",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "ABC Dresden bittet darum, keine Zeitungsartikel beizulegen. Vor dem Versand die aktuellen Regeln und die Adresse erneut prüfen.",
+          "en": "ABC Dresden asks supporters not to enclose newspaper articles. Recheck the current address and institution rules before mailing."
+        }
+      }
+    },
+    {
+      "id": "emilie-dieckmann",
+      "publicName": "Emilie Dieckmann (Emmi)",
+      "prisonerId": "",
+      "aliases": ["Emmi", "Emilie Dieckmann"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Luckau-Duben",
+      "mailingAddress": {
+        "lines": ["Emilie Dieckmann", "JVA Luckau-Duben", "Lehmkietenweg 1", "15926 Luckau OT Duben", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Darstellung folgt dieser Solidaritätsquelle.",
+        "en": "Listed by ABC Dresden for current letter solidarity. This description follows that solidarity source."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-08-04",
+        "nextReviewAt": "2026-09-18",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuelle Adresse und die Regeln der JVA prüfen.",
+          "en": "Check the current address and institution rules before mailing."
+        }
+      }
+    },
+    {
+      "id": "hanna-nuernberg",
+      "publicName": "Hanna",
+      "prisonerId": "",
+      "aliases": ["Hanna"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "Post über Rote Hilfe OG Nürnberg",
+      "mailingAddress": {
+        "lines": ["Rote Hilfe OG Nürnberg", "z. H. HANNA", "Eberhardshoferstraße 11", "90429 Nürnberg", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird über die von ABC Dresden veröffentlichte Kontaktadresse der Roten Hilfe Nürnberg für Briefsolidarität geführt. Keine juristische Bewertung des Verfahrens.",
+        "en": "Listed for letter solidarity through the Rote Hilfe Nürnberg contact address published by ABC Dresden. This is not a legal assessment of the case."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-08-04",
+        "nextReviewAt": "2026-09-18",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Nur die veröffentlichte Weiterleitungsadresse verwenden und sie vor dem Versand erneut prüfen.",
+          "en": "Use only the published forwarding address and recheck it before mailing."
+        }
+      }
+    },
+    {
+      "id": "luca-amelie-schaller",
+      "publicName": "Luca Amelie Schaller",
+      "prisonerId": "",
+      "aliases": ["Luca Amelie Schaller"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Bielefeld-Brackwede",
+      "mailingAddress": {
+        "lines": ["Luca Amelie Schaller", "JVA Bielefeld-Brackwede", "Postfach 14 04 40", "33625 Bielefeld", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden for current letter solidarity. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-08-04",
+        "nextReviewAt": "2026-09-18",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuelle Adresse und die Regeln der JVA prüfen.",
+          "en": "Check the current address and institution rules before mailing."
+        }
+      }
+    },
+    {
+      "id": "mumia-abu-jamal",
+      "publicName": "Mumia Abu-Jamal",
+      "prisonerId": "AM8335",
+      "aliases": ["Mumia Abu-Jamal"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "SCI Mahanoy",
+      "mailingAddress": {
+        "lines": ["Mumia Abu-Jamal #AM8335", "SCI Mahanoy", "Post Office Box 33028", "St Petersburg, Florida 33733", "USA"],
+        "public": true
+      },
+      "birthday": "04-24",
+      "movementTags": ["black liberation", "journalism", "prisoner solidarity"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden als politischer Gefangener aus der Schwarzen Befreiungsbewegung geführt. Diese Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide as a political prisoner from the Black liberation movement. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln der Anstalt und des Dienstes prüfen.", "en": "The address uses Smart Communications. Check the institution's and service's current rules before mailing."}
+      }
+    },
+    {
+      "id": "joe-joe-bowen",
+      "publicName": "Joe-Joe Bowen",
+      "prisonerId": "AM4272",
+      "aliases": ["Joe-Joe Bowen", "Joseph Bowen"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "SCI Fayette",
+      "mailingAddress": {
+        "lines": ["Joseph Bowen #AM4272", "SCI Fayette", "Post Office Box 33028", "St Petersburg, Florida 33733", "USA"],
+        "public": true
+      },
+      "birthday": "01-15",
+      "movementTags": ["black liberation", "prisoner solidarity", "anti-repression"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden der Schwarzen Befreiungsbewegung zugeordnet. Diese Darstellung dokumentiert die öffentliche Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide under the Black liberation movement. This entry documents the public solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln prüfen.", "en": "The address uses Smart Communications. Check the current mailing rules before sending."}
+      }
+    },
+    {
+      "id": "ronald-reed",
+      "publicName": "Ronald Reed",
+      "prisonerId": "219531",
+      "aliases": ["Ronald Reed"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "Minnesota Correctional Facility – Lino Lakes",
+      "mailingAddress": {
+        "lines": ["Ronald Reed #219531", "Minnesota Correctional Facility – Lino Lakes", "Post Office Box 247", "Phoenix, Maryland 21131", "USA"],
+        "public": true
+      },
+      "birthday": "08-31",
+      "movementTags": ["black liberation", "civil rights", "prisoner solidarity"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden als ehemaliger Bürgerrechtsaktivist und politischer Gefangener geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide as a former civil-rights activist and political prisoner. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand die aktuellen Regeln der Anstalt und des Postdienstes prüfen.", "en": "Check the institution's and mail service's current rules before sending."}
+      }
+    },
+    {
+      "id": "fred-muhammad-burton",
+      "publicName": "Fred “Muhammad” Burton",
+      "prisonerId": "AF3896",
+      "aliases": ["Fred Burton", "Frederick Burton", "Muhammad Burton"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "SCI Chester",
+      "mailingAddress": {
+        "lines": ["Fred Burton #AF3896", "SCI Chester", "Post Office Box 33028", "St Petersburg, Florida 33733", "USA"],
+        "public": true
+      },
+      "birthday": "12-15",
+      "movementTags": ["black liberation", "prisoner solidarity", "anti-repression"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden der Schwarzen Befreiungsbewegung zugeordnet. Diese Kurzbeschreibung folgt der öffentlichen Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide under the Black liberation movement. This short description follows the public solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln prüfen.", "en": "The address uses Smart Communications. Check the current mailing rules before sending."}
+      }
+    },
+    {
+      "id": "kojo-bomani-sababu",
+      "publicName": "Kojo Bomani Sababu",
+      "prisonerId": "39384-066",
+      "aliases": ["Kojo Bomani Sababu", "Grailing Brown"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "USP Canaan",
+      "mailingAddress": {
+        "lines": ["Grailing Brown #39384-066", "USP Canaan", "Post Office Box 300", "Waymart, Pennsylvania 18472", "USA"],
+        "public": true
+      },
+      "birthday": "05-27",
+      "movementTags": ["black liberation", "prisoner solidarity", "anti-repression"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden als Gefangener der New-Afrikan-Befreiungsbewegung geführt. Diese Einordnung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide as a prisoner from the New Afrikan liberation movement. This classification follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand die aktuellen Bundesgefängnis-Regeln und die Adresse erneut prüfen.", "en": "Recheck the current federal prison mailing rules and address before sending."}
+      }
+    },
+    {
+      "id": "kamau-sadiki",
+      "publicName": "Kamau Sadiki",
+      "prisonerId": "0001150688",
+      "aliases": ["Kamau Sadiki", "Freddie Hilton"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "Augusta State Medical Prison",
+      "mailingAddress": {
+        "lines": ["Freddie Hilton #0001150688", "Augusta State Medical Prison", "3001 Gordon Highway", "Grovetown, Georgia 30813", "USA"],
+        "public": true
+      },
+      "birthday": "02-19",
+      "movementTags": ["black liberation", "black panther party", "prisoner solidarity"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden als früheres Mitglied der Black Panther Party und politischer Gefangener geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide as a former Black Panther Party member and political prisoner. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand die aktuellen Regeln der Anstalt und die Adresse erneut prüfen.", "en": "Recheck the institution's current rules and address before mailing."}
+      }
+    },
+    {
+      "id": "xinachtli",
+      "publicName": "Xinachtli",
+      "prisonerId": "255735",
+      "aliases": ["Xinachtli", "Alvaro Hernández"],
+      "pronouns": "",
+      "languages": ["en", "es"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "Texas Department of Criminal Justice",
+      "mailingAddress": {
+        "lines": ["Alvaro Hernández #255735", "Texas Department of Criminal Justice", "Post Office Box 660400", "Dallas, Texas 75266-0400", "USA"],
+        "public": true
+      },
+      "birthday": "05-12",
+      "movementTags": ["community organising", "indigenous resistance", "prisoner solidarity"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden als Community-Organizer und Gefangener im Kontext nationaler Befreiungsbewegungen geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide as a community organiser and prisoner in the context of national liberation movements. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand die aktuellen TDCJ-Regeln und die zentrale Postadresse prüfen.", "en": "Check the current TDCJ rules and central mail address before sending."}
+      }
+    },
+    {
+      "id": "joy-powell",
+      "publicName": "Joy Powell",
+      "prisonerId": "07-G-0632",
+      "aliases": ["Joy Powell"],
+      "pronouns": "",
+      "languages": ["en"],
+      "country": "United States",
+      "region": "North America",
+      "institution": "Bedford Hills Correctional Facility",
+      "mailingAddress": {
+        "lines": ["Joy Powell #07-G-0632", "Bedford Hills Correctional Facility", "Post Office Box 1000", "Bedford Hills, New York 10507-2499", "USA"],
+        "public": true
+      },
+      "birthday": "03-05",
+      "movementTags": ["anti-police organising", "community organising", "prisoner solidarity"],
+      "context": {
+        "de": "Wird im aktuellen NYC-ABC-Leitfaden im Zusammenhang mit Organisierung gegen Polizeigewalt geführt. Diese Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current NYC ABC guide in connection with organising against police violence. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
+        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
+        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand die aktuellen Regeln der Anstalt und die Adresse erneut prüfen.", "en": "Recheck the institution's current rules and address before mailing."}
+      }
+    },
+    {
+      "id": "nele-aschoff",
+      "publicName": "Nele Aschoff",
+      "prisonerId": "",
+      "aliases": ["Nele Aschoff"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Chemnitz",
+      "mailingAddress": {
+        "lines": ["Nele Aschoff", "JVA Chemnitz", "Thalheimerstraße 29", "09125 Chemnitz", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden for current letter solidarity. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified",
+        "verifiedAt": "2026-08-04",
+        "nextReviewAt": "2026-09-18",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuelle Adresse und die Regeln der JVA prüfen.",
+          "en": "Check the current address and institution rules before mailing."
+        }
+      }
+    },
+    {
+      "id": "finn-siebers",
+      "publicName": "Finn Siebers",
+      "prisonerId": "",
+      "aliases": ["Finn Siebers"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Waldheim",
+      "mailingAddress": {
+        "lines": ["Finn Siebers c/o Scheffel", "JVA Waldheim", "Dresdener Straße 1", "04736 Waldheim", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["environmental movement", "prison conditions", "prisoner solidarity"],
+      "context": {
+        "de": "Wird von ABC Dresden mit öffentlicher Briefadresse geführt und setzt sich laut Quelle gegen Missstände im Gefängnis ein. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden with a public mailing address and, according to the source, active against harmful prison conditions. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+      }
+    },
+    {
+      "id": "nico-stuttgart",
+      "publicName": "Nico",
+      "prisonerId": "",
+      "aliases": ["Nico"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Ulm",
+      "mailingAddress": {
+        "lines": ["Nico", "c/o Rote Hilfe OG Stuttgart", "Böblinger Straße 105", "70199 Stuttgart", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird von ABC Dresden als antifaschistischer Gefangener mit einer öffentlichen Kontaktadresse über die Rote Hilfe geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden as an antifascist prisoner with a public contact address through Rote Hilfe. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand die Weiterleitungsadresse bei der Roten Hilfe prüfen.", "en": "Confirm the forwarding address with Rote Hilfe before mailing."}
+      }
+    },
+    {
+      "id": "andreas-krebs",
+      "publicName": "Andreas Krebs",
+      "prisonerId": "",
+      "aliases": ["Andreas Krebs"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Tegel, Haus 2",
+      "mailingAddress": {
+        "lines": ["Andreas Krebs", "JVA Tegel Haus 2", "Seidelstraße 39", "13507 Berlin", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["prison organising", "prison conditions", "prisoner solidarity"],
+      "context": {
+        "de": "Wird von ABC Dresden als rebellischer Gefangener und Mitorganisator der Gefangenengewerkschaft GG/BO geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden as a rebellious prisoner and co-organiser of the prisoners' union GG/BO. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+      }
+    },
+    {
+      "id": "daniela-klette",
+      "publicName": "Daniela Klette",
+      "prisonerId": "",
+      "aliases": ["Daniela Klette"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "Frauen JVA Vechta",
+      "mailingAddress": {
+        "lines": ["Daniela Klette", "Frauen JVA", "An der Propstei 10", "49377 Vechta", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["anti-repression", "prisoner solidarity"],
+      "context": {
+        "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden mit öffentlicher Briefadresse geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed in the current ABC Dresden prisoner guide with a public mailing address. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+      }
+    },
+    {
+      "id": "carmen-forderer",
+      "publicName": "Carmen Forderer",
+      "prisonerId": "",
+      "aliases": ["Carmen Forderer"],
+      "pronouns": "",
+      "languages": ["de"],
+      "country": "Germany",
+      "region": "Europe",
+      "institution": "JVA Schwäbisch Gmünd",
+      "mailingAddress": {
+        "lines": ["Carmen Forderer", "JVA Schwäbisch Gmünd", "Herlikofer Straße 19", "73527 Schwäbisch Gmünd", "Germany"],
+        "public": true
+      },
+      "birthday": "",
+      "movementTags": ["prison conditions", "anti-isolation", "prisoner solidarity"],
+      "context": {
+        "de": "Wird von ABC Dresden mit öffentlicher Adresse im Kontext langjähriger Isolation und Sicherungsverwahrung geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
+        "en": "Listed by ABC Dresden with a public address in the context of long-term isolation and preventive detention. This description follows the solidarity source and is not a legal assessment."
+      },
+      "verification": {
+        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
+        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
+        "profileUrl": "https://abcdd.org/gefangene/"
+      },
+      "mailRules": {
+        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
+        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+      }
+    }
+  ],
+  "changes": [
+    {
+      "date": "2026-08-11",
+      "type": "abc-dresden-current-list-expansion",
+      "text": "Added five profiles with public mailing addresses from the current ABC Dresden list. All remain subject to the 45-day review window and check-before-mailing rule."
+    },
+    {
+      "date": "2026-08-09",
+      "type": "nycabc-guide-19-6-expansion",
+      "text": "Added eight publicly listed profiles and mailing addresses from NYC ABC Illustrated Guide 19.6. Every new address remains subject to the 45-day review window and check-before-mailing rule."
+    },
+    {
+      "date": "2026-08-05",
+      "type": "support-source-expansion",
+      "text": "Added current support and guidance sources from ABCF, ABC Belarus, London ABC and Secours Rouge Genève. No individual profile or mailing address was added without a current public verification source."
+    },
+    {
+      "date": "2026-08-04",
+      "type": "germany-expansion",
+      "text": "Added five current German prisoner-solidarity profiles from the public ABC Dresden list. No Swiss or French individual was added without a current verifiable public mailing address."
+    },
+    {
+      "date": "2026-07-29",
+      "type": "europe-expansion",
+      "text": "Added seven current United Kingdom prisoner-support profiles from Prisoners for Palestine and linked official GOV.UK mail guidance."
+    },
+    {
+      "date": "2026-07-27",
+      "type": "initial-release",
+      "text": "Initial curated set created from NYC ABC Guide 19.5 and current ABCF updates."
+    }
+  ]
+}

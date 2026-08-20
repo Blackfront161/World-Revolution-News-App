@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-20T19:25:13.664762+00:00",
+  "version": "1.7.21c",
+  "mode": "runtime_only",
+  "workflowModificationEnabled": false,
+  "scope": "/Revolution-News-Data/",
+  "cachePrefix": "wrn-",
+  "changedRuntimeFiles": [
+    "app.js",
+    "data-control.js",
+    "mobile-repair.html",
+    "recovery.html"
+  ],
+  "operationChanges": {
+    "recovery.html": [
+      "caches.keys:1",
+      "serviceWorker.getRegistrations:1"
+    ],
+    "app.js": [
+      "localStorage.clear:1",
+      "caches.keys:1"
+    ],
+    "data-control.js": [
+      "caches.keys:1"
+    ]
+  },
+  "workflowAudit": [
+    {
+      "path": ".github/workflows/apply-origin-safety.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": true,
+        "safePush": true,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/apply-release-1.4.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": false,
+        "safePush": false,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [
+        "missing_wrn_main_write",
+        "missing_safe_push"
+      ],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/design-1.4.1.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": false,
+        "safePush": false,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [
+        "missing_wrn_main_write",
+        "missing_safe_push"
+      ],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/design-1.4.2.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": false,
+        "safePush": false,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [
+        "missing_wrn_main_write",
+        "missing_safe_push"
+      ],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/merge-multilingual-sources.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": true,
+        "safePush": true,
+        "runsNewsSourceCheck": true,
+        "stagesSourceHealth": false,
+        "stagesSourceHealthReport": false,
+        "stagesDiscoveredFeeds": false
+      },
+      "warnings": [
+        "missing_source_health_report_staging",
+        "missing_discovered_feeds_staging"
+      ],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/repair-audio.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": true,
+        "safePush": true,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/update-podcasts.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": false,
+        "safePush": false,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [
+        "missing_wrn_main_write",
+        "missing_safe_push"
+      ],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/update.yml",
+      "checks": {
+        "writer": true,
+        "commonConcurrency": true,
+        "safePush": true,
+        "runsNewsSourceCheck": true,
+        "stagesSourceHealth": true,
+        "stagesSourceHealthReport": true,
+        "stagesDiscoveredFeeds": true
+      },
+      "warnings": [],
+      "modified": false
+    },
+    {
+      "path": ".github/workflows/validate-app.yml",
+      "checks": {
+        "writer": false,
+        "commonConcurrency": null,
+        "safePush": null,
+        "runsNewsSourceCheck": false
+      },
+      "warnings": [],
+      "modified": false
+    }
+  ],
+  "workflowWarningCount": 10,
+  "expectedSourceOutputs": [
+    "source-health.json",
+    "source-health-report.json",
+    "discovered-feeds.json"
+  ]
+}

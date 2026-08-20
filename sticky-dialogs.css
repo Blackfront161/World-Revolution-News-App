@@ -1,0 +1,49 @@
+/* World Revolution News 1.7.16 – feststehende Dialog-Kopfzeilen */
+
+.wrn-sticky-dialog-1716 {
+    overscroll-behavior: contain;
+}
+
+.wrn-sticky-dialog-head-1716 {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 40 !important;
+    background: #090b12 !important;
+    border-bottom: 1px solid rgba(0, 229, 239, 0.38) !important;
+}
+
+.wrn-sticky-close-1716 {
+    position: relative !important;
+    z-index: 41 !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    flex: 0 0 auto !important;
+}
+
+/* Quellenprüfung: nur die Liste scrollt, die Bedienung bleibt erreichbar. */
+.wrn-source-verification-modal
+.wrn-source-verification-head {
+    position: sticky !important;
+    top: -1rem !important;
+    z-index: 42 !important;
+    margin: -1rem -1rem 0.75rem !important;
+    padding: 0.85rem 1rem !important;
+    background: #08090f !important;
+}
+
+/* Artikelansicht besitzt bereits eine eigene feste Zurückleiste. */
+.wrn-article-detail .wrn-sticky-dialog-head-1716 {
+    top: 0 !important;
+}
+
+/* Audio-, Podcast- und Radiofenster */
+[class*="audio"][class*="modal"]
+.wrn-sticky-dialog-head-1716,
+[class*="audio"][class*="panel"]
+.wrn-sticky-dialog-head-1716,
+.podcast-library-modal
+.wrn-sticky-dialog-head-1716,
+.podcast-options-modal
+.wrn-sticky-dialog-head-1716 {
+    top: 0 !important;
+}

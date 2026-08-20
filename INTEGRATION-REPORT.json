@@ -1,0 +1,19 @@
+{
+  "version": "1.7.17",
+  "newsSourcesChanged": false,
+  "podcastRepairs": [
+    "Working Class History",
+    "A-Radio Wien"
+  ],
+  "archivedSafely": [
+    "Common Voices",
+    "standalone B(A)D News feed"
+  ],
+  "newChecks": [
+    "podcast audio URLs",
+    "radio streams and playlists",
+    "runtime data endpoints",
+    "navigation and interaction"
+  ],
+  "next": "1.8 stories, timelines, Briefing 2 and full audio comfort"
+}

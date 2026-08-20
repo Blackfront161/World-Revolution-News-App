@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>World Revolution News</title>
+</head>
+<body>
+  <p>Die Vorschau wird geöffnet. <a href="./index.html?preview=8">World Revolution News öffnen</a>.</p>
+  <script>
+    const target = new URL('./index.html', window.location.href);
+    const parameters = new URLSearchParams(window.location.search);
+    parameters.forEach((value, key) => target.searchParams.set(key, value));
+    if (!target.searchParams.has('preview')) target.searchParams.set('preview', '8');
+    window.location.replace(target.href);
+  </script>
+</body>
+</html>

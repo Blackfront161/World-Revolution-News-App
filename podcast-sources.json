@@ -1,0 +1,1131 @@
+[
+  {
+    "id": "aradio-berlin",
+    "name": "A-Radio Berlin",
+    "homepage": "https://www.aradio-berlin.org/",
+    "feedUrls": [
+      "https://www.aradio-berlin.org/feed/",
+      "https://www.aradio-berlin.org/en/feed/"
+    ],
+    "language": "de",
+    "languages": [
+      "de",
+      "en",
+      "es"
+    ],
+    "country": "DE",
+    "region": "DACH",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 70,
+    "topics": [
+      "Anarchismus",
+      "Antifaschismus",
+      "International"
+    ],
+    "categories": [
+      "Anarchism",
+      "Antifascism",
+      "International"
+    ],
+    "pageAudioFallback": true,
+    "maxAgeDays": 1800
+  },
+  {
+    "id": "dissens",
+    "name": "Dissens Podcast",
+    "homepage": "https://podcast.dissenspodcast.de/",
+    "feedUrls": [
+      "https://dissens.podigee.io/feed/mp3"
+    ],
+    "language": "de",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "country": "DE",
+    "region": "DACH",
+    "license": "CC BY",
+    "sourceKind": "independent-podcast",
+    "priority": 90,
+    "topics": [
+      "Theorie & Strategie",
+      "Antikapitalismus"
+    ],
+    "categories": [
+      "Theory & Strategy",
+      "Anticapitalism"
+    ]
+  },
+  {
+    "id": "final-straw",
+    "name": "The Final Straw Radio",
+    "homepage": "https://thefinalstrawradio.noblogs.org/",
+    "feedUrls": [
+      "https://thefinalstrawradio.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 90,
+    "topics": [
+      "Anarchismus",
+      "Anti-Rep & Knast",
+      "International"
+    ],
+    "categories": [
+      "Anarchism",
+      "Anti-Rep & Prisons",
+      "International"
+    ]
+  },
+  {
+    "id": "radio-corax",
+    "name": "Radio CORAX – Nachhören",
+    "homepage": "https://radiocorax.de/nachhoeren/",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "https://radiocorax.de/feed/"
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "Originalquelle / freie-radios.net",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Antifaschismus",
+      "Arbeitskämpfe"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Antifascism",
+      "Labor Struggles"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "radio-dreyeckland",
+    "name": "Radio Dreyeckland – Mediathek",
+    "homepage": "https://rdl.de/mediathek",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?radio=rdl&rss=",
+      "https://rdl.de/rss.xml",
+      "https://rdl.de/mediathek/rss.xml"
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "Originalquelle / freie-radios.net",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Antifaschismus"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Politics",
+      "Antifascism"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "fsk-hamburg",
+    "name": "FSK Hamburg – Nachhören",
+    "homepage": "https://www.fsk-hh.org/archive",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?radio=fsk&rss=",
+      "https://www.fsk-hh.org/feed.xml"
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "Originalquelle / freie-radios.net",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Antikapitalismus",
+      "Hamburg"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Anticapitalism",
+      "Hamburg"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "radio-blau",
+    "name": "Radio Blau Leipzig",
+    "homepage": "https://www.radioblau.de/nachhoeren/",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?radio=37&rss="
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "freie-radios.net",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Leipzig"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Leipzig"
+    ]
+  },
+  {
+    "id": "coloradio",
+    "name": "coloRadio Dresden",
+    "homepage": "https://coloradio.org/",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?radio=coloradio&rss="
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "freie-radios.net",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Dresden"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Dresden"
+    ]
+  },
+  {
+    "id": "radio-z",
+    "name": "Radio Z Nürnberg",
+    "homepage": "https://www.radio-z.net/",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?radio=radioz&rss="
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "freie-radios.net",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Nürnberg"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Nuremberg"
+    ]
+  },
+  {
+    "id": "lora-muenchen",
+    "name": "LORA München",
+    "homepage": "https://lora924.de/",
+    "feedUrls": [
+      "https://lora924.de/feed/",
+      "https://lora924.de/category/podcast/feed/"
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "Originalquelle",
+    "sourceKind": "free-radio",
+    "priority": 90,
+    "topics": [
+      "Freie Radios",
+      "München"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Munich"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "a-radio-wien",
+    "name": "A-Radio Wien",
+    "homepage": "https://de.cba.media/podcast/anarchistisches-radio",
+    "feedUrls": [
+      "https://de.cba.media/podcast/anarchistisches-radio/feed?limit=100",
+      "https://de.cba.media/podcast/anarchistisches-radio/feed"
+    ],
+    "language": "de",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "country": "AT",
+    "region": "DACH",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 70,
+    "topics": [
+      "Anarchismus",
+      "Österreich"
+    ],
+    "categories": [
+      "Anarchism",
+      "Austria"
+    ],
+    "pageAudioFallback": true,
+    "enabled": true,
+    "feedUrl": "https://de.cba.media/podcast/anarchistisches-radio/feed?limit=100",
+    "repairNote": "Offizieller CBA-Podcastfeed."
+  },
+  {
+    "id": "frequenz-a",
+    "name": "Frequenz A",
+    "homepage": "https://frequenza.noblogs.org/",
+    "feedUrls": [
+      "https://frequenza.noblogs.org/feed/"
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 85,
+    "topics": [
+      "Anarchismus",
+      "International"
+    ],
+    "categories": [
+      "Anarchism",
+      "International"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "crimethinc-ex-worker",
+    "name": "CrimethInc. Ex-Worker",
+    "homepage": "https://crimethinc.com/podcasts/the-ex-worker",
+    "feedUrls": [
+      "https://crimethinc.com/podcast/feed",
+      "https://crimethinc.com/podcasts/the-ex-worker.rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 90,
+    "topics": [
+      "Anarchismus",
+      "Theorie & Strategie"
+    ],
+    "categories": [
+      "Anarchism",
+      "Theory & Strategy"
+    ],
+    "pageAudioFallback": true,
+    "maxAgeDays": 3650
+  },
+  {
+    "id": "its-going-down",
+    "name": "It’s Going Down Podcast",
+    "homepage": "https://itsgoingdown.org/category/podcast/",
+    "feedUrls": [
+      "https://itsgoingdown.org/category/podcast/feed/",
+      "https://itsgoingdown.org/feed/podcast/"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 90,
+    "topics": [
+      "Antifaschismus",
+      "Anarchismus",
+      "Nordamerika"
+    ],
+    "categories": [
+      "Antifascism",
+      "Anarchism",
+      "North America"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "radio-blackout",
+    "name": "Radio Blackout Torino",
+    "homepage": "https://radioblackout.org/",
+    "feedUrls": [
+      "https://radioblackout.org/feed/",
+      "https://radioblackout.org/podcast/feed/"
+    ],
+    "language": "it",
+    "country": "IT",
+    "region": "Europa",
+    "license": "Originalquelle",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Antikapitalismus",
+      "Antimilitarismus"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Anticapitalism",
+      "No War"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "radio-onda-rossa",
+    "name": "Radio Onda Rossa",
+    "homepage": "https://www.ondarossa.info/",
+    "feedUrls": [
+      "https://www.ondarossa.info/rss.xml",
+      "https://www.ondarossa.info/feed"
+    ],
+    "language": "it",
+    "country": "IT",
+    "region": "Europa",
+    "license": "Originalquelle",
+    "sourceKind": "free-radio",
+    "priority": 95,
+    "topics": [
+      "Freie Radios",
+      "Antikapitalismus",
+      "International"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Anticapitalism",
+      "International"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "working-class-history",
+    "name": "Working Class History",
+    "homepage": "https://workingclasshistory.com/podcasts/",
+    "feedUrls": [
+      "https://workingclasshistory.com/category/podcast/feed/",
+      "https://workingclasshistory.com/feed/podcast/"
+    ],
+    "language": "en",
+    "country": "GB",
+    "region": "Europa",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 90,
+    "topics": [
+      "Arbeitskämpfe",
+      "Geschichte",
+      "Antikapitalismus"
+    ],
+    "categories": [
+      "Labor Struggles",
+      "History",
+      "Anticapitalism"
+    ],
+    "pageAudioFallback": true,
+    "feedUrl": "https://www.spreaker.com/show/5711490/episodes/feed",
+    "repairNote": "Offizieller aktueller RSS-Feed."
+  },
+  {
+    "id": "indigenous-action",
+    "name": "Indigenous Action Podcast",
+    "homepage": "https://www.indigenousaction.org/series/indigenous-action/",
+    "feedUrls": [
+      "https://www.indigenousaction.org/feed/podcast/",
+      "https://www.indigenousaction.org/series/indigenous-action/feed/"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 90,
+    "topics": [
+      "Indigene Kämpfe",
+      "Antikolonialismus",
+      "Antifaschismus"
+    ],
+    "categories": [
+      "Indigenous Struggles",
+      "Anticolonialism",
+      "Antifascism"
+    ],
+    "pageAudioFallback": true,
+    "maxAgeDays": 1800
+  },
+  {
+    "id": "rev-left-radio",
+    "name": "Revolutionary Left Radio",
+    "homepage": "https://revolutionaryleftradio.libsyn.com/",
+    "feedUrls": [
+      "https://revolutionaryleftradio.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 75,
+    "topics": [
+      "Theorie & Strategie",
+      "Antikapitalismus",
+      "Geschichte"
+    ],
+    "categories": [
+      "Theory & Strategy",
+      "Anticapitalism",
+      "History"
+    ]
+  },
+  {
+    "id": "red-menace",
+    "name": "Red Menace",
+    "homepage": "https://redmenace.libsyn.com/",
+    "feedUrls": [
+      "https://redmenace.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 70,
+    "topics": [
+      "Theorie & Strategie",
+      "Antikapitalismus"
+    ],
+    "categories": [
+      "Theory & Strategy",
+      "Anticapitalism"
+    ],
+    "maxAgeDays": 1800
+  },
+  {
+    "id": "guerrilla-history",
+    "name": "Guerrilla History",
+    "homepage": "https://guerrillahistory.libsyn.com/",
+    "feedUrls": [
+      "https://guerrillahistory.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 75,
+    "topics": [
+      "Geschichte",
+      "Antikolonialismus",
+      "Anti-Imperialismus"
+    ],
+    "categories": [
+      "History",
+      "Anticolonialism",
+      "Anti-Imperialism"
+    ]
+  },
+  {
+    "id": "millennials-killing-capitalism",
+    "name": "Millennials Are Killing Capitalism",
+    "homepage": "https://millennialsarekillingcapitalism.libsyn.com/",
+    "feedUrls": [
+      "https://millennialsarekillingcapitalism.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 75,
+    "topics": [
+      "Antikapitalismus",
+      "Antikolonialismus",
+      "Arbeitskämpfe"
+    ],
+    "categories": [
+      "Anticapitalism",
+      "Anticolonialism",
+      "Labor Struggles"
+    ]
+  },
+  {
+    "id": "black-myths",
+    "name": "Black Myths Podcast",
+    "homepage": "https://blackmyths.libsyn.com/",
+    "feedUrls": [
+      "https://blackmyths.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 75,
+    "topics": [
+      "Antirassismus",
+      "Geschichte",
+      "Antikolonialismus"
+    ],
+    "categories": [
+      "Antiracism",
+      "History",
+      "Anticolonialism"
+    ]
+  },
+  {
+    "id": "freie-radios",
+    "name": "freie-radios.net – aktuelle Beiträge",
+    "homepage": "https://www.freie-radios.net/",
+    "feedUrls": [
+      "https://www.freie-radios.net/portal/podcast.php?rss="
+    ],
+    "language": "de",
+    "country": "DE",
+    "region": "DACH",
+    "license": "Nichtkommerzieller Programmaustausch",
+    "sourceKind": "aggregator",
+    "priority": 10,
+    "topics": [
+      "Freie Radios",
+      "Politik"
+    ],
+    "categories": [
+      "Freie Radios",
+      "Politics"
+    ]
+  },
+  {
+    "id": "black-autonomy",
+    "name": "Black Autonomy Podcast",
+    "homepage": "https://blackautonomy.libsyn.com/",
+    "feedUrls": [
+      "https://blackautonomy.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 94,
+    "topics": [
+      "Anarchismus",
+      "Antirassismus",
+      "Black Liberation"
+    ],
+    "categories": [
+      "Anarchism",
+      "Antiracism",
+      "Black Liberation"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "the-response",
+    "name": "The Response",
+    "homepage": "https://www.shareable.net/the-response/",
+    "feedUrls": [
+      "https://theresponsepodcast.libsyn.com/rss"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "Nordamerika",
+    "license": "CC BY-NC-SA 4.0 / Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 92,
+    "topics": [
+      "Mutual Aid",
+      "Klima",
+      "Selbstorganisation"
+    ],
+    "categories": [
+      "Mutual Aid",
+      "Climate",
+      "Community Organizing"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "id": "srsly-wrong",
+    "name": "Srsly Wrong",
+    "homepage": "https://srslywrong.com/",
+    "feedUrls": [
+      "https://feeds.feedburner.com/srslywrong",
+      "https://srslywrong.com/feed/podcast/"
+    ],
+    "language": "en",
+    "country": "CA",
+    "region": "Nordamerika",
+    "license": "Originalquelle",
+    "sourceKind": "independent-podcast",
+    "priority": 88,
+    "topics": [
+      "Bibliotheksökonomie",
+      "Soziale Ökologie",
+      "Antikapitalismus"
+    ],
+    "categories": [
+      "Library Socialism",
+      "Social Ecology",
+      "Anticapitalism"
+    ],
+    "pageAudioFallback": true
+  },
+  {
+    "name": "Radio Dreyeckland",
+    "feedUrl": "https://rdl.de/podcasts/all",
+    "homepage": "https://rdl.de/",
+    "language": "de",
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "ar",
+      "und"
+    ],
+    "contentPolicy": "metadata_and_links_only"
+  },
+  {
+      "id":  "radio-ambulante",
+      "name":  "Radio Ambulante",
+      "homepage":  "https://radioambulante.org/",
+      "feedUrls":  [
+                       "https://feeds.npr.org/510315/podcast.xml"
+                   ],
+      "language":  "es",
+      "country":  "CO",
+      "region":  "Latin America",
+      "license":  "Original source",
+      "sourceKind":  "independent-podcast",
+      "priority":  84,
+      "topics":  [
+                     "Latin America",
+                     "Migration",
+                     "Politics"
+                 ],
+      "categories":  [
+                         "Latin America",
+                         "Migration",
+                         "Politics"
+                     ],
+      "pageAudioFallback":  true,
+      "verificationNote":  "Official public podcast feed and official programme website."
+  },
+  {
+      "id": "asian-labor-futures",
+      "name": "Asian Labor Futures Podcast",
+      "homepage": "https://asianlaborfutures.substack.com/",
+      "feedUrls": [
+          "https://api.substack.com/feed/podcast/4848712.rss"
+      ],
+      "language": "en",
+      "country": "TH",
+      "region": "Asia",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 96,
+      "topics": ["Labor Struggles", "Asia", "Anticapitalism"],
+      "categories": ["Asia", "Labor Struggles", "Politics"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Substack podcast feed with public audio enclosures."
+  },
+  {
+      "id": "the-east-is-a-podcast",
+      "name": "The East is a Podcast",
+      "homepage": "https://www.eastpodcast.com/",
+      "feedUrls": [
+          "https://rss.libsyn.com/shows/134978/destinations/831728.xml"
+      ],
+      "language": "en",
+      "country": "LB",
+      "region": "Asia",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 92,
+      "topics": ["West Asia", "Anticolonialism", "Anti-Imperialism"],
+      "categories": ["Asia", "Anticolonialism", "Anti-Imperialism"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Libsyn feed with public audio enclosures."
+  },
+  {
+      "id": "leftover-talk",
+      "name": "Leftover Talk / 边角聊",
+      "homepage": "https://leftovertalk.fm/",
+      "feedUrls": [
+          "https://leftovertalk.fm/rss"
+      ],
+      "language": "zh",
+      "languages": ["zh", "en"],
+      "enabled": false,
+      "disabledReason": "Chinesischsprachige Podcasts sind für WRN 2.1 zurückgestellt.",
+      "country": "CN",
+      "region": "Asia",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 88,
+      "topics": ["China", "Society", "Politics"],
+      "categories": ["Asia", "Politics", "Culture"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Fireside RSS feed with public audio enclosures."
+  },
+  {
+      "id": "real-sankara-hours",
+      "name": "Real Sankara Hours",
+      "homepage": "https://realsankarahours.org/",
+      "feedUrls": [
+          "https://feed.podbean.com/realsankarahours/feed.xml"
+      ],
+      "language": "en",
+      "country": "US",
+      "region": "Africa",
+      "regions": ["Africa", "North America"],
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 94,
+      "topics": ["Pan-Africanism", "Black Radical Thought", "Anticapitalism"],
+      "categories": ["Africa", "Anticolonialism", "Politics"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Podbean RSS feed with public audio enclosures; Africa is the primary coverage region."
+  },
+  {
+      "id": "wise-the-dome",
+      "name": "Wise The Dome TV",
+      "homepage": "https://podcasters.spotify.com/pod/show/rakeem34",
+      "feedUrls": [
+          "https://anchor.fm/s/e0971054/podcast/rss"
+      ],
+      "language": "en",
+      "country": "US",
+      "region": "Africa",
+      "regions": ["Africa", "North America"],
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 90,
+      "topics": ["Pan-Africanism", "Decolonization", "Liberation"],
+      "categories": ["Africa", "Anticolonialism", "Theory & Strategy"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Spotify for Creators RSS feed with public audio enclosures; Africa is the primary coverage region."
+  },
+  {
+      "id": "the-dugout-black-anarchist",
+      "name": "The Dugout – a Black anarchist podcast",
+      "homepage": "https://www.thedugoutpodcast.com/",
+      "feedUrls": [
+          "https://anchor.fm/s/e8e55a68/podcast/rss"
+      ],
+      "language": "en",
+      "country": "US",
+      "region": "Africa",
+      "regions": ["Africa", "North America"],
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 96,
+      "topics": ["Black Anarchism", "Decolonization", "Queer Politics"],
+      "categories": ["Africa", "Anarchism", "Anticolonialism"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Spotify for Creators RSS feed with public audio enclosures; Africa is the primary coverage region."
+  },
+  {
+      "id":  "yeah-nah-pasaran",
+      "name":  "Yeah Nah Pasaran! (3CR)",
+      "homepage":  "https://www.3cr.org.au/yeahnahpasaran",
+      "feedUrls":  [
+                       "https://www.3cr.org.au/yeahnahpasaran/itunes"
+                   ],
+      "language":  "en",
+      "country":  "AU",
+      "region":  "Oceania",
+      "license":  "Original source / community radio",
+      "sourceKind":  "free-radio",
+      "priority":  94,
+      "topics":  [
+                     "Antifascism",
+                     "Oceania",
+                     "Protests"
+                 ],
+      "categories":  [
+                         "Antifascism",
+                         "Oceania",
+                         "Demonstrations"
+                     ],
+      "pageAudioFallback":  true,
+      "verificationNote":  "Official 3CR programme RSS feed."
+  },
+  {
+      "id": "queering-the-air",
+      "name": "Queering The Air (3CR)",
+      "homepage": "https://pod.3cr.org.au/queeringtheair",
+      "feedUrls": ["https://www.3cr.org.au/queeringtheair/itunes"],
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "license": "Original source / community radio",
+      "sourceKind": "free-radio",
+      "priority": 94,
+      "topics": ["Queer Liberation", "Antiracism", "Prison Abolition"],
+      "categories": ["Queer", "Antiracism", "Oceania"],
+      "pageAudioFallback": true,
+      "verificationNote": "Official 3CR programme page and RSS feed; the collective describes the show as queer, anti-racist, feminist and anti-capitalist."
+  },
+  {
+      "id": "out-of-the-pan",
+      "name": "Out of the Pan (3CR)",
+      "homepage": "https://www.3cr.org.au/outofthepan",
+      "feedUrls": ["https://www.3cr.org.au/outofthepan/itunes"],
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "license": "Original source / community radio",
+      "sourceKind": "free-radio",
+      "priority": 88,
+      "topics": ["Queer Liberation", "Trans Rights", "Community"],
+      "categories": ["Queer", "Oceania", "Community"],
+      "pageAudioFallback": true,
+      "verificationNote": "Official 3CR programme page and RSS feed."
+  },
+  {
+      "id": "live-like-the-world-is-dying",
+      "name": "Live Like the World Is Dying",
+      "homepage": "https://live-like-the-world-is-dying.pinecast.co/",
+      "feedUrls": ["https://pinecast.com/feed/live-like-the-world-is-dying"],
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 91,
+      "topics": ["Mutual Aid", "Preparedness", "Community Organizing"],
+      "categories": ["Mutual Aid", "Climate", "North America"],
+      "pageAudioFallback": false,
+      "verificationNote": "Official Pinecast RSS feed of the Tangled Wilderness preparedness and mutual-aid podcast."
+  },
+  {
+      "id": "twelve-rules-for-what",
+      "name": "12 Rules For WHAT",
+      "homepage": "https://soundcloud.com/12rulesforwhat",
+      "feedUrls": ["https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss"],
+      "language": "en",
+      "country": "GB",
+      "region": "Europe",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 92,
+      "topics": ["Antifascism", "Far Right", "Strategy"],
+      "categories": ["Antifascism", "Europe", "Theory & Strategy"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Public RSS feed listed by the podcast directory; the show explicitly covers fascism and the far right from a left perspective."
+  },
+  {
+      "id": "histoires-d-a",
+      "name": "Histoires d'A",
+      "homepage": "https://podcloud.fr/podcast/histoires-d-a",
+      "feedUrls": ["https://histoires-d-a.lepodcast.fr/rss"],
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 94,
+      "topics": ["Anarchism", "Self-management", "Libertarian Feminism"],
+      "categories": ["Anarchism", "Europe", "Theory & Strategy"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official RSS link published by the podcast page; the programme describes itself as a podcast about autonomy, alternatives and anarchy."
+  },
+  {
+      "id": "l-orage",
+      "name": "L'Orage",
+      "homepage": "https://ora-rao.org/",
+      "feedUrls": ["https://rss.buzzsprout.com/2307088.rss"],
+      "language": "fr",
+      "country": "CA",
+      "region": "North America",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 94,
+      "topics": ["Anarchism", "Social Movements", "Montréal"],
+      "categories": ["Anarchism", "North America", "Social Movements"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official public RSS feed of the anarchist current-affairs podcast produced by L'ORA in Montréal."
+  },
+  {
+      "id": "carapatage",
+      "name": "Carapatage – Radio Libertaire",
+      "homepage": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/presentation.html",
+      "feedUrls": ["https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss"],
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "license": "Original source / free radio",
+      "sourceKind": "free-radio",
+      "priority": 93,
+      "topics": ["Prison Abolition", "Antirepression", "Anarchism"],
+      "categories": ["Prisons", "Anarchism", "Europe"],
+      "pageAudioFallback": false,
+      "verificationNote": "Public programme RSS on the Radio Libertaire archive maintained by members of Fédération Anarchiste and Radio Libertaire."
+  },
+  {
+      "id": "chroniques-rebelles",
+      "name": "Chroniques rebelles – Radio Libertaire",
+      "homepage": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/",
+      "feedUrls": ["https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss"],
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "license": "Original source / free radio",
+      "sourceKind": "free-radio",
+      "priority": 90,
+      "topics": ["Anarchism", "Social Movements", "Debate"],
+      "categories": ["Anarchism", "Europe", "Politics"],
+      "pageAudioFallback": false,
+      "verificationNote": "Public programme RSS on the Radio Libertaire archive maintained by members of Fédération Anarchiste and Radio Libertaire."
+  },
+  {
+      "id": "fumaca",
+      "name": "Fumaça",
+      "homepage": "https://fumaca.pt/",
+      "feedUrls": ["https://omny.fm/shows/eapenasfumaca/playlists/podcast.rss"],
+      "language": "pt",
+      "country": "PT",
+      "region": "Europe",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 95,
+      "topics": ["Investigative Journalism", "Human Rights", "Social Justice"],
+      "categories": ["Politics", "Human Rights", "Europe"],
+      "pageAudioFallback": false,
+      "verificationNote": "Official Fumaça website links this public Omny RSS feed; it contains the programme's original Portuguese audio."
+  },
+  {
+      "id": "acik-yesil",
+      "name": "Açık Yeşil – Apaçık Radyo",
+      "homepage": "https://apacikradyo.com.tr/program/84090/kayit-arsivi",
+      "feedUrls": ["https://apacikradyo.com.tr/i/rss/Acik_Yesil.xml"],
+      "language": "tr",
+      "country": "TR",
+      "region": "Europe",
+      "license": "Original source / independent radio",
+      "sourceKind": "free-radio",
+      "priority": 94,
+      "topics": ["Climate Justice", "Ecology", "Politics"],
+      "categories": ["Climate", "Ecology", "Europe"],
+      "pageAudioFallback": false,
+      "verificationNote": "Official Apaçık Radyo programme archive links this RSS feed with original Turkish audio."
+  },
+  {
+      "id": "iklim-kusagi-konusuyor",
+      "name": "İklim Kuşağı Konuşuyor – Apaçık Radyo",
+      "homepage": "https://apacikradyo.com.tr/program/227368/kayit-arsivi",
+      "feedUrls": ["https://apacikradyo.com.tr/i/rss/Iklim_Kusagi_Konusuyor.xml"],
+      "language": "tr",
+      "country": "TR",
+      "region": "Europe",
+      "license": "Original source / independent radio",
+      "sourceKind": "free-radio",
+      "priority": 94,
+      "topics": ["Youth", "Climate Justice", "Activism"],
+      "categories": ["Climate", "Social Movements", "Europe"],
+      "pageAudioFallback": false,
+      "verificationNote": "Official Apaçık Radyo programme archive links this RSS feed with original Turkish audio."
+  },
+  {
+      "id": "contrabanda-specials",
+      "name": "Contrabanda FM – Emissions especials",
+      "homepage": "https://podcast.contrabanda.org/",
+      "feedUrls": ["https://podcast.contrabanda.org/feed/podcast/"],
+      "language": "es",
+      "languages": ["es"],
+      "country": "ES",
+      "region": "Europe",
+      "license": "Original source / free radio",
+      "sourceKind": "free-radio",
+      "priority": 90,
+      "topics": ["Free Radio", "Antifascism", "Social Movements"],
+      "categories": ["Free Radio", "Antifascism", "Europe"],
+      "pageAudioFallback": false,
+      "maxAgeDays": 3650,
+      "verificationNote": "Official Contrabanda FM podcast site publishes this RSS feed with original Spanish and Catalan free-radio audio."
+  },
+  {
+      "id": "infowar-greece",
+      "name": "INFOWAR – Aris Chatzistefanou",
+      "homepage": "https://info-war.gr/",
+      "feedUrls": ["https://podcast.moviementa.com/@infowar/feed.xml"],
+      "language": "el",
+      "country": "GR",
+      "region": "Europe",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 95,
+      "topics": ["Independent Journalism", "Anti-Imperialism", "Politics"],
+      "categories": ["Politics", "Anti-Imperialism", "Europe"],
+      "pageAudioFallback": false,
+      "verificationNote": "Current public RSS feed listed for the official INFOWAR podcast; the programme publishes original Greek-language radio documentaries."
+  },
+  {
+      "id": "epanastasi-greece",
+      "name": "ΕΠΑΝΑΣΤΑΣΗ podcast",
+      "homepage": "https://marxismos.com/",
+      "feedUrls": ["https://anchor.fm/s/3ea3fce4/podcast/rss"],
+      "language": "el",
+      "country": "GR",
+      "region": "Europe",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 86,
+      "topics": ["Labor History", "Marxism", "Internationalism"],
+      "categories": ["Labor Struggles", "Theory & Strategy", "Europe"],
+      "pageAudioFallback": false,
+      "verificationNote": "Public creator RSS feed for the active Greek-language revolutionary history and theory podcast."
+  },
+  {
+      "id": "mudawanat-arabic",
+      "name": "Mudawanat | مدوّنات",
+      "homepage": "https://omny.fm/shows/mudawanat-1",
+      "feedUrls": ["https://omny.fm/shows/mudawanat-1/playlists/podcast.rss"],
+      "language": "ar",
+      "country": "LB",
+      "region": "West Asia",
+      "license": "CC BY-NC-ND 3.0",
+      "sourceKind": "independent-podcast",
+      "priority": 90,
+      "topics": ["Street Art", "Palestine", "Cultural Resistance"],
+      "categories": ["Culture", "Anticolonialism", "West Asia"],
+      "pageAudioFallback": false,
+      "verificationNote": "Official Omny RSS feed for the Arabic cultural archive produced by Al Mawred Al Thaqafy with Sowt."
+  },
+  {
+      "id": "jalsa-arabic",
+      "name": "Jalsa | جلسة",
+      "homepage": "https://www.arab-reform.net/podcast-serie/",
+      "feedUrls": ["https://feeds.buzzsprout.com/1776729.rss"],
+      "language": "ar",
+      "languages": ["ar", "en"],
+      "country": "LB",
+      "region": "West Asia",
+      "license": "Original source",
+      "sourceKind": "independent-podcast",
+      "priority": 92,
+      "topics": ["Feminist Activism", "Environmental Justice", "Palestine"],
+      "categories": ["Feminism", "Climate", "Anticolonialism"],
+      "pageAudioFallback": false,
+      "verificationNote": "Official Arab Reform Initiative RSS feed; multilingual episode language is detected from each episode rather than assigned from the channel default."
+  }
+]

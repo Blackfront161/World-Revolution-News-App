@@ -1,0 +1,233 @@
+name: WRN Quality Gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "**/*.py"
+      - "**/*.js"
+      - "**/*.json"
+      - "**/*.html"
+      - "**/*.css"
+      - "requirements*.txt"
+      - ".github/workflows/**"
+      - "service-worker.js"
+      - "manifest.json"
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.py"
+      - "**/*.js"
+      - "**/*.json"
+      - "**/*.html"
+      - "**/*.css"
+      - "requirements*.txt"
+      - ".github/workflows/**"
+      - "service-worker.js"
+      - "manifest.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wrn-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONUNBUFFERED: "1"
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Python-Abhängigkeiten installieren
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python -m pip install --upgrade pip setuptools wheel
+
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          fi
+
+          if [ -f requirements-audio.txt ]; then
+            python -m pip install -r requirements-audio.txt
+          fi
+
+          python -m pip install pytest
+
+          python -m pip check
+
+      - name: Alle JavaScript-Dateien prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          count=0
+
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+            count=$((count + 1))
+          done < <(
+            find . -type f -name '*.js' \
+              -not -path './.git/*' \
+              -not -path './node_modules/*' \
+              -print0
+          )
+
+          echo "$count JavaScript-Dateien geprüft."
+
+      - name: Vollständige Vertrags- und Pytest-Matrix ausführen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python tests/run_contract_matrix.py
+
+      - name: Spezielle Validator-, Audit- und Worker-Gates prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python tests/validate_app.py
+          python release_audit_183.py --no-write --artifact "${RUNNER_TEMP}/release-readiness-183.json"
+          node tests/test_solidarity_worker_fallback.js
+          node tests/test_runtime_selftest_183.js
+          python tests/test_release_candidate_183.py
+
+      - name: Alle Python-Dateien prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python <<'PY'
+          from pathlib import Path
+          import py_compile
+
+          files = [
+              path
+              for path in Path(".").rglob("*.py")
+              if ".git" not in path.parts
+          ]
+
+          for path in files:
+              py_compile.compile(
+                  str(path),
+                  doraise=True,
+              )
+
+          print(f"{len(files)} Python-Dateien geprüft.")
+          PY
+
+      - name: Alle JSON-Dateien prüfen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python <<'PY'
+          from pathlib import Path
+          import json
+
+          files = [
+              path
+              for path in Path(".").rglob("*.json")
+              if ".git" not in path.parts
+          ]
+
+          for path in files:
+              json.loads(path.read_text(encoding="utf-8"))
+
+          print(f"{len(files)} JSON-Dateien geprüft.")
+          PY
+
+      - name: Gepatchten CSP-Zustand simulieren
+        run: python patch_csp_1722.py
+
+      - name: Quellenregister und Audits erzeugen
+        run: |
+          python build_sources_registry.py
+          python feature_audit.py
+          python language_source_audit.py
+
+      - name: Releaseverträge prüfen
+        run: python validate_release_1722.py --workflow-report "${RUNNER_TEMP}/workflow-audit.json"
+
+      - name: Bestehenden App-Validator ausführen
+        run: |
+          if [ -f tests/validate_app.py ]; then
+            python tests/validate_app.py
+          fi
+
+      - name: Lokalen Pages-Smoke-Test ausführen
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python -m http.server 8765 \
+            > /tmp/wrn-http.log 2>&1 &
+
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+
+          sleep 2
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/index.html \
+            >/dev/null
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/config.js \
+            >/dev/null
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/service-worker.js \
+            >/dev/null
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/app-check.html \
+            >/dev/null
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/runtime-selftest.js \
+            >/dev/null
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/feature-audit.json \
+            >/dev/null
+
+          curl --fail --silent \
+            http://127.0.0.1:8765/language-source-audit.json \
+            >/dev/null
+
+      - name: Prüfberichte hochladen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wrn-quality-reports-${{ github.run_number }}
+          if-no-files-found: ignore
+          retention-days: 14
+          path: |
+            feature-audit.json
+            language-source-audit.json
+            sources-registry.json
+            csp-audit.json
+            ${{ runner.temp }}/workflow-audit.json
+            ${{ runner.temp }}/release-readiness-183.json
+            editorial-review.json

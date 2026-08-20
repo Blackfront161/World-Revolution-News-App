@@ -1,0 +1,16 @@
+{
+  "python": "3.12.13 (main, Jun 16 2026, 22:05:08) [GCC 13.3.0]",
+  "versions": {
+    "beautifulsoup4": "4.15.0",
+    "cloudscraper": "1.2.71",
+    "feedparser": "6.0.12",
+    "lxml": "6.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "requests": "2.34.2"
+  },
+  "missingModules": [],
+  "missingFiles": [],
+  "syntaxErrors": [],
+  "pipCheckReturnCode": 0,
+  "pipCheckOutput": "No broken requirements found."
+}

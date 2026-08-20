@@ -1,0 +1,213 @@
+/* Desktop website layout. Mobile keeps the native app navigation unchanged. */
+@media (min-width: 920px) {
+  :root {
+    --website-content-width: 1400px;
+    --website-nav-height: 60px;
+  }
+
+  .next-header {
+    box-shadow: 0 12px 34px rgba(0, 0, 0, .28);
+  }
+
+  .next-header__inner {
+    width: min(100%, var(--website-content-width));
+    max-width: none;
+    min-height: 112px;
+    padding: 7px clamp(22px, 3.5vw, 52px);
+  }
+
+  .brand img {
+    width: var(--brand-size);
+    height: auto;
+  }
+
+  .brand-edition {
+    min-height: 28px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    font-size: .64rem;
+    letter-spacing: .14em;
+  }
+
+  .classic-link {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+
+  .icon-button,
+  .language-control select {
+    border-radius: 8px;
+  }
+
+  .bottom-nav {
+    position: static;
+    z-index: auto;
+    inset: auto;
+    display: flex;
+    width: 100%;
+    max-width: none;
+    height: var(--website-nav-height);
+    min-height: var(--website-nav-height);
+    padding: 0 clamp(22px, 3.5vw, 52px);
+    border-top: 1px solid var(--border);
+    border-bottom: 0;
+    background: color-mix(in srgb, var(--chrome-strong) 94%, var(--surface-2));
+    backface-visibility: visible;
+    contain: none;
+    justify-content: center;
+    gap: 0;
+    isolation: auto;
+    transform: none;
+    will-change: auto;
+  }
+
+  .bottom-nav button {
+    position: relative;
+    display: flex;
+    width: auto;
+    min-width: 138px;
+    min-height: var(--website-nav-height);
+    padding: 0 24px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--muted);
+    font-size: .82rem;
+    font-weight: 760;
+    place-items: unset;
+    align-content: normal;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
+
+  .bottom-nav button::after {
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+    left: 18px;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+    background: transparent;
+    content: "";
+  }
+
+  .bottom-nav button:hover,
+  .bottom-nav button:focus-visible {
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  .bottom-nav button.active {
+    background: transparent;
+    color: var(--cyan);
+  }
+
+  .bottom-nav button.active::after {
+    background: linear-gradient(90deg, var(--cyan), var(--red));
+  }
+
+  .bottom-nav button span:first-child {
+    font-size: 1.05rem;
+  }
+
+  .global-search {
+    width: min(100%, var(--website-content-width));
+    max-width: none;
+    padding: 14px clamp(22px, 3.5vw, 52px) 18px;
+  }
+
+  #next-main {
+    width: min(var(--website-content-width), calc(100% - 48px));
+    min-height: calc(100vh - 144px);
+    padding: 36px 0 64px;
+  }
+
+  .view-heading {
+    margin-bottom: 26px;
+  }
+
+  .view-heading h1,
+  .view-heading h2 {
+    font-size: clamp(2rem, 3vw, 3.15rem);
+  }
+
+  .home-hero {
+    min-height: 390px;
+    margin-bottom: 36px;
+    border-radius: 16px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(390px, .9fr);
+  }
+
+  .home-hero__content {
+    padding: clamp(30px, 4vw, 58px);
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2rem, 3.3vw, 3.65rem);
+  }
+
+  .home-hero__image {
+    min-height: 360px;
+  }
+
+  .section-heading {
+    margin-top: 38px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.55rem;
+  }
+
+  .home-service-card,
+  .news-card,
+  .feature-card,
+  .media-card,
+  .event-card,
+  .source-card {
+    border-radius: 12px;
+  }
+
+  .news-card {
+    transition: border-color .16s ease, transform .16s ease, box-shadow .16s ease;
+  }
+
+  .news-card:hover {
+    border-color: var(--cyan-border);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, .22);
+    transform: translateY(-2px);
+  }
+
+  .briefing-strip {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .briefing-item {
+    min-height: 136px;
+    align-content: start;
+    align-items: start;
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+
+}
+
+@media (min-width: 920px) and (max-width: 1140px) {
+  .bottom-nav button {
+    min-width: 0;
+    padding-inline: 18px;
+    flex: 1 1 0;
+  }
+
+  .home-hero {
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .article-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

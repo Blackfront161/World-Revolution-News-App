@@ -1,0 +1,26 @@
+.wrn-source-health-freshness {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px 14px;
+    margin: 10px 18px 0;
+    padding: 10px 12px;
+    border: 1px solid #2ee59d88;
+    border-left: 4px solid #2ee59d;
+    border-radius: 10px;
+    background: #2ee59d0c;
+    color: var(--text-muted);
+}
+.wrn-source-health-freshness strong,
+.wrn-source-health-freshness small { grid-column: 1 / -1; }
+.wrn-source-health-freshness strong { color: #2ee59d; }
+.wrn-source-health-freshness.stale {
+    border-color: #ff315888;
+    border-left-color: var(--color-accent);
+    background: #ff31580c;
+}
+.wrn-source-health-freshness.stale strong { color: var(--color-accent); }
+@media (max-width: 640px) {
+    .wrn-source-health-freshness { grid-template-columns: 1fr; margin-inline: 10px; }
+    .wrn-source-health-freshness strong,
+    .wrn-source-health-freshness small { grid-column: 1; }
+}

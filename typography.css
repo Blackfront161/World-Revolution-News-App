@@ -1,0 +1,218 @@
+/* World Revolution News 1.7.5 – offlinefähige Typografie */
+
+:root {
+  --wrn-font-display:
+    "Aptos Display",
+    "Segoe UI Variable Display",
+    "Roboto Condensed",
+    "Arial Narrow",
+    "Noto Sans Display",
+    system-ui,
+    sans-serif;
+
+  --wrn-font-ui:
+    "Aptos",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    Roboto,
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  --wrn-font-reading:
+    "Atkinson Hyperlegible",
+    "Aptos",
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    Roboto,
+    "Noto Sans",
+    system-ui,
+    sans-serif;
+
+  --wrn-font-mono:
+    "Cascadia Mono",
+    "IBM Plex Mono",
+    "Roboto Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  --wrn-reading-size: 1rem;
+  --wrn-reading-line: 1.58;
+  --wrn-ui-letter: 0.005em;
+  --wrn-display-letter: -0.018em;
+}
+
+html[data-wrn-typography="accessible"] {
+  --wrn-reading-size: 1.075rem;
+  --wrn-reading-line: 1.72;
+  --wrn-ui-letter: 0.012em;
+  --wrn-display-letter: -0.008em;
+}
+
+html[data-wrn-typography="compact"] {
+  --wrn-reading-size: 0.94rem;
+  --wrn-reading-line: 1.48;
+  --wrn-ui-letter: 0;
+  --wrn-display-letter: -0.025em;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--wrn-font-ui) !important;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  text-rendering: optimizeLegibility;
+  letter-spacing: var(--wrn-ui-letter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.wrn-brand-text,
+.wrn-tab-label,
+.wrn-briefing-title,
+.wrn-more-title,
+.wrn-audio-catalog-card > h4,
+.original-podcast-card > h4,
+.live-radio-card > h4 {
+  font-family: var(--wrn-font-display) !important;
+  font-stretch: condensed;
+  letter-spacing: var(--wrn-display-letter) !important;
+  line-height: 1.16 !important;
+  text-wrap: balance;
+}
+
+.teaser,
+.full-content,
+.full-content p,
+.full-content li,
+.wrn-detail-content,
+.wrn-summary-body,
+.wrn-summary-lead,
+.wrn-briefing-item-summary,
+.wrn-briefing-body,
+.original-podcast-description,
+.live-radio-description {
+  font-family: var(--wrn-font-reading) !important;
+  font-size: var(--wrn-reading-size);
+  line-height: var(--wrn-reading-line) !important;
+  letter-spacing: 0.006em !important;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.full-content p,
+.wrn-detail-content p,
+.wrn-summary-body p {
+  max-width: 76ch;
+}
+
+.meta,
+.original-podcast-meta,
+.live-radio-meta,
+.wrn-summary-meta,
+.wrn-summary-notice,
+.wrn-audio-meta-chip,
+.wrn-audio-health-badge,
+.wrn-language-status {
+  font-family: var(--wrn-font-ui) !important;
+  line-height: 1.38 !important;
+}
+
+code,
+pre,
+.wrn-diagnostics-raw,
+.wrn-diagnostics-value {
+  font-family: var(--wrn-font-mono) !important;
+}
+
+.card .meta,
+.wrn-audio-meta-chip,
+.wrn-audio-health-badge,
+.wrn-summary-meta,
+.wrn-briefing-stat span {
+  font-size: max(0.68rem, 11px) !important;
+}
+
+.wrn-more-field select,
+.wrn-more-field input,
+.wrn-more-action,
+.wrn-tab-button,
+.wrn-subtab-button {
+  font-weight: 680;
+}
+
+.title,
+.wrn-detail-title {
+  font-weight: 820 !important;
+}
+
+.full-content,
+.wrn-detail-content {
+  font-weight: 430;
+}
+
+html[data-wrn-typography="accessible"] .card,
+html[data-wrn-typography="accessible"] .wrn-briefing-item,
+html[data-wrn-typography="accessible"] .wrn-audio-catalog-card {
+  word-spacing: 0.025em;
+}
+
+html[data-wrn-typography="accessible"] button,
+html[data-wrn-typography="accessible"] select,
+html[data-wrn-typography="accessible"] input {
+  min-height: 34px;
+}
+
+.wrn-typography-field small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255,255,255,0.56);
+  font-size: 0.64rem;
+  line-height: 1.35;
+}
+
+body.theme-light .wrn-typography-field small,
+body.theme-soft .wrn-typography-field small {
+  color: #535866;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --wrn-reading-size: 0.99rem;
+  }
+
+  html[data-wrn-typography="accessible"] {
+    --wrn-reading-size: 1.07rem;
+  }
+
+  html[data-wrn-typography="compact"] {
+    --wrn-reading-size: 0.92rem;
+  }
+
+  .teaser,
+  .full-content,
+  .wrn-detail-content,
+  .wrn-summary-body,
+  .wrn-briefing-item-summary {
+    line-height: var(--wrn-reading-line) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    text-rendering: auto;
+  }
+}

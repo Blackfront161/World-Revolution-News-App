@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-08-12",
+  "releasedBaseline": {
+    "version": "2.0.8",
+    "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
+    "note": "2.1-Produktarbeit gehört nicht rückwirkend zum 2.0.8-Funktionsumfang."
+  },
+  "current": {
+    "version": "2.1.0",
+    "branch": "codex/wrn-2.1-stabilization",
+    "status": "Lokaler Produktionskandidat; nicht signiert, hochgeladen, veröffentlicht oder deployt"
+  },
+  "productScope": [
+    {
+      "id": "A",
+      "name": "Was ist neu seit deinem letzten Besuch?",
+      "status": "partially_implemented",
+      "implemented": [
+        "auf sieben Stände begrenzte lokale Snapshot-Historie mit Schema-Version pro Entwicklungscluster",
+        "Differenzierung neuer explizit bestätigter Claims, Korrekturen/Rücknahmen, Quellen, Medien und vollständig geprüfter Aktionen",
+        "Erkennung gelöschter Claims, verschwundener Cluster und geänderter Clusterzuordnungen",
+        "Dossier-Sprung mit Fokus und Scrollziel",
+        "Tests für Erstbesuch, Folgeaufruf, Korrektur, Löschung, Medienaustausch und Clusterwechsel"
+      ],
+      "missing": [
+        "reale redaktionell strukturierte Claims und Medienbelege im Produktionsfeed",
+        "Browser-Persistenztest über einen echten zweiten Besuch"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Perspektiven-Matrix",
+      "status": "partially_implemented",
+      "implemented": [
+        "acht verlangte Matrixfelder mit Quelle, Sprache/Herkunft, Provenienz, Zeitpunkt und Beleg",
+        "Gruppierungssicherheit und inhaltliche Bestätigung sichtbar getrennt",
+        "keine Wahrheitsableitung; Übereinstimmung nur über gemeinsame strukturierte Claim-ID"
+      ],
+      "missing": [
+        "strukturierte Claim-IDs, Provenienz- und Widerspruchsdaten in der Breite der realen Feeds",
+        "redaktionelle Zuordnung gleichbedeutender Claims"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Verifizierte Solidaritätsaktionen",
+      "status": "partially_implemented",
+      "implemented": [
+        "vollständiges Pflichtschema und strikte Aktivitäts-/Frischeprüfung",
+        "abgelaufene, ungeprüfte, veraltete oder unvollständige Einträge werden ausgeschlossen",
+        "Schlagworttermine werden nicht mehr als geprüft bezeichnet",
+        "Was kannst du jetzt tun? in passenden Dossiers",
+        "bewusst leerer geprüfter Datenbestand statt erfundener Aktionen"
+      ],
+      "missing": [
+        "redaktioneller Prüf- und Freigabeworkflow",
+        "erste real geprüfte Aktionen",
+        "Darstellung direkt unter einzelnen passenden Nachrichten"
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Thematische Live-Dossiers",
+      "status": "partially_implemented",
+      "implemented": [
+        "Kurzüberblick, Zeitachse, Änderungen, Claims, Matrix, Korrekturen, Medien, Aktionen und lokale Beobachtung",
+        "automatische Gruppierung und fehlende Inhaltsbestätigung sichtbar benannt"
+      ],
+      "missing": [
+        "verlässliche Zuordnung relevanter Termine und Karte",
+        "breite Video-, Podcast- und Dokumentzuordnung aus strukturierten Daten",
+        "redaktionell geprüfte Dossierinhalte und dauerhafte URL-Deep-Links"
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Übersehen-Bereich",
+      "status": "partially_implemented",
+      "implemented": [
+        "eigener Bereich innerhalb Entwicklungen",
+        "Messung ausschließlich innerhalb beobachteter WRN-Cluster",
+        "Mindestabdeckung durch zwei lokale, Bewegungs- oder nichtenglische Quellen",
+        "höchstens eine sonstige internationale Quelle",
+        "verbindliche deutsche Formulierung und ehrlicher Leerzustand"
+      ],
+      "missing": [
+        "reale Metadatenverknüpfung für lokale und Bewegungsquellen über den gesamten Quellenbestand",
+        "automatisierter Real-Datenlauf mit echter Registry-Verknüpfung; die manuelle Browserabnahme für Leerzustand und Smartphone ist erfolgt"
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Tagesausgabe",
+      "status": "partially_implemented",
+      "implemented": ["konfigurierbare 5/7/10 Meldungen", "Morgen-, Tages- und Wochenausgabe", "Sprachauswahl und Textvorschau", "beitragsweise Gerätestimme mit Fortsetzung an exakter Beitragsgrenze", "stabiler eigener Dataset-Key je Historieneintrag mit bestätigtem Schreiben und Readback", "offlineReady aus dem tatsächlich passenden Datensatz", "Offline-only-Artikel in gespeicherter Reihenfolge", "zwei getrennte Ausgaben nach vollständigem Offline-Neustart mit 7 und 5 Artikeln im Browser geöffnet", "Abbruch und Fortsetzung bei Beitrag 3 im Browser nachgewiesen", "Gerätestimme und fehlende erzeugte Audiodatei werden klar getrennt"],
+      "missing": ["echte erzeugte Audiodateien oder dokumentierte dauerhafte Produktentscheidung dagegen"]
+    },
+    {
+      "id": "G",
+      "name": "Offline-Aktionskoffer",
+      "status": "partially_implemented",
+      "implemented": ["Link zu Zine und Schablonen", "getrenntes Ressourcenschema mit konkreter Rechte- und Aktualitätsprüfliste", "geprüfte Organisationsprofile als Regionalpakete offline"],
+      "missing": ["eigener vollständiger Downloadbereich", "rechtlich und redaktionell geprüfte Ländergrundlagen, Erste Hilfe, digitale Sicherheit, Festnahme, Briefe, Kontakte und gespeicherte Veranstaltungen", "solidarity-resources.json bleibt bis zum Nachweis der Offline-Verbreitungsrechte leer"]
+    },
+    {
+      "id": "H",
+      "name": "Quellenpass 2.0",
+      "status": "partially_implemented",
+      "implemented": ["alle verlangten Felder und Erklärungen in DE/EN/ES/FR/IT/PT/RU/EL/TR", "Verknüpfung mit lokalem Quellenregister und technischer Feedprüfung", "unbekannte Angaben werden als unbekannt angezeigt", "Warum wird diese Quelle angezeigt?", "keine Qualitätspunktzahl", "Pure Tests gegen reale Registry- und Objekt-Healthmap-Schemata"],
+      "missing": ["automatisierter DOM-/Dialog-Regressionsstest in allen neun Sprachen", "breitere redaktionelle Betreiber-, Finanzierungs-, Nähe- und Provenienzdaten"]
+    },
+    {
+      "id": "I",
+      "name": "Internationales Bewegungswörterbuch",
+      "status": "partially_implemented",
+      "implemented": ["Lexikon, Originalsprache in Artikeln, lokale Änderungs-/Reviewfunktionen"],
+      "missing": ["Terminologieschutz in der Übersetzungspipeline", "regionale Varianten neben Übersetzung", "Vorrang geprüfter Terminologie", "redaktionell geprüfte dauerhafte Übersetzungskorrekturen mit Versionen"]
+    },
+    {
+      "id": "J",
+      "name": "Zine- und Druckstudio",
+      "status": "partially_implemented",
+      "implemented": ["A4/A5/Quadrat/Story, Druckansicht, tintensparende Vorlage, Zines, Plakate und kuratierte Schablonen"],
+      "missing": ["A3", "Stickerbögen", "verlässliche programmgenerierte PDF-Ausgabe", "mehrsprachiger Variantenworkflow", "verifizierte Zitate sowie vollständige Quellen- und Rechteprüfung"]
+    },
+    {
+      "id": "K",
+      "name": "Ehrliche Statusangaben",
+      "status": "fully_newly_implemented",
+      "implemented": ["Status pro A–K mit vorhandenen und fehlenden Funktionen", "Trennung 2.0.8-Baseline und 2.1-Entwicklung", "keine Freigabe aus UI-Texten oder Schaltflächen abgeleitet"],
+      "missing": []
+    }
+  ],
+  "solidarityNetwork": {
+    "status": "partially_implemented",
+    "implemented": [
+      "getrennte Datenmodelle für dauerhafte Organisationen, befristete Aktionen und Offline-Materialien",
+      "sieben gegen offizielle Eigendarstellungen geprüfte Startprofile",
+      "manuelle Region-, Sprach- und Themenfilter ohne Standortübertragung oder Verlaufsablage",
+      "strikte Ablauf-, Erreichbarkeits- und Notfallbelegprüfung",
+      "Kontextzuordnung ausschließlich über redaktionelle helpTopics",
+      "Regionalpakete speichern ausschließlich kanonische Profil-IDs, Region und Prüfmetadaten; Profile werden beim Wiederanlauf nur aus dem validierten app-gecachten kanonischen Register rekonstruiert",
+      "SHA-256 ist ausschließlich Korruptions- und Readback-Prüfung und kein Schutz gegen lokale Angreifer",
+      "erneutes Speichern bindet sourceCheckedAt exakt an sourceUpdatedAt des dabei erneut aus Storage geladenen und validierten kanonischen Registers",
+      "das kanonische Register wird trotz passender neu berechneter Korruptionsprüfsumme abgelehnt, wenn sourceUpdatedAt nach cachedAt oder nach dem injizierten Prüfzeitpunkt liegt; es gibt keine verdeckte Clock-Skew-Toleranz",
+      "veraltete, ungültige oder regionsfremde Offline-Profile werden ausgeschlossen",
+      "offizielle Domains und feldweise Primärbelege für alle sieben Profile",
+      "strikte ISO-Kalender-, Zukunfts- und Prüfintervallvalidierung einschließlich Schaltjahr- und Monatsgrenzen",
+      "nur der eigene Response-Header des synthetischen Service-Worker-Leerfallbacks löst Wiederherstellung aus; Körpermarker werden ignoriert und ehrliche leere Online-Antworten bleiben autoritativ leer",
+      "beide Worker entfernen den reservierten Fallback-Header aus jeder Netzwerk- und Cacheantwort und setzen ihn nur auf der lokal konstruierten synthetischen Leerantwort neu",
+      "Fallback-Vertrauensgrenze ist same-origin Worker/Server und keine kryptografische Attestation",
+      "humanrights.ch als direkte Freiheitsentzugsberatung mit Deutsch/Englisch und Fachkontakt statt Vermischung mit der allgemeinen Adressdatenbank",
+      "bestätigte Beratungssprachen und reine Informationssprachen sind getrennt; nur bestätigte Beratungssprachen wirken als Filter",
+      "Queer Base führt das offizielle Informationsangebot einschließlich Ukrainisch nur als Informationssprachen ohne Beratungszusage",
+      "wiederhergestellte Profile zeigen sichtbar gespeichertes Offline-Regionalpaket, ursprünglichen Prüfstand und fehlende aktuelle Onlinebestätigung",
+      "flüchtige lokale Korrekturentwürfe ohne Übermittlungs- oder Moderationsspeicherbehauptung"
+    ],
+    "missing": [
+      "geprüfte und zur Offline-Verbreitung freigegebene Ratgeber",
+      "dauerhafter sicherer Moderationseingang mit Rollen, Vier-Augen-Freigabe und Korrekturhistorie",
+      "dauerhafte redaktionelle Korrektur- und Prüfoberfläche",
+      "der seltene 200-leer-Service-Worker-Fallback ist in beiden Worker-Runtimes und mit echtem Storage verhaltensbasiert getestet, aber im Browser nicht separat vom normal vorab gecachten vollständigen Datensatz erzwungen"
+    ]
+  },
+  "qualityEvidence": {
+    "localAndCiMatrix": "derselbe sortierte Discovery-Runner erzwingt alle tests/test_*.js, klassifiziert Python-Verträge über echte Pytest-Collection und führt disjunkt alle expliziten main-only-test_*.py-Skripte aus; helper-via-main wird erkannt, leere Module, Mischformen und Collectionfehler blockieren",
+    "verifiedAtThisCorrection": "37 JavaScript-Vertragstests, 102 Pytest-Tests, 4 Python-main()-Vertragsskripte und Read-only-Audit 158/158",
+    "auditArtifact": "CI erzeugt und verifiziert den aktuellen Bericht in RUNNER_TEMP; die versionierte release-readiness-183.json bleibt eine historische Baseline und wird nicht als aktuelles CI-Artefakt hochgeladen",
+    "cacheConsistency": "app-check.html wird für App- und Daten-Cache direkt gegen service-worker.js geprüft; Produktionskandidat 2.1.0 nutzt App/Daten r1, Vorschau bleibt getrennt auf 2.1.0-dev.1-preview mit Cache v82",
+    "browserBoundary": "Native Tab/Shift-Tab/Enter-Abnahme in lokal installiertem Chrome: Skip-Link, Headersteuerung, Hauptnavigation, Artikel und Hilfe; Dialoge schließen mit Fokus-Rückgabe auf den jeweiligen Auslöser. Vier Viewports und die bereits nachgewiesenen echten Worker-Offline-Neustartpfade bleiben Teil der Vollmatrix.",
+    "androidCandidate": "Nach dem finalen sauberen Commit ist ein strikt offline gebauter, unsignierter 2.1.0/code25-Kandidat vorgeschrieben; Hash, Größe, ZIP/Manifest/Asset- und Signaturstatus werden im Übergabebericht aus demselben Build belegt. Keine Signierung, kein Upload und kein Deployment.",
+    "artifactTransaction": "durables Write-Through-Recovery-Journal, exklusiver Lock und Windows-Hartabbruchtests nach Move 1/2/Commit; Traversal/Junction/Hardlink/stale-lock grün"
+  },
+  "excluded": [
+    "öffentliche Kommentare",
+    "Likes",
+    "Popularitätsranglisten",
+    "serverseitige Standortverfolgung"
+  ],
+  "releaseGates": [
+    "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
+    "autorisierte Signierung und Store-Freigabe; der lokale Code-25-Kandidat bleibt bis dahin nicht uploadfähig",
+    "Signierung, Upload und Deployment sind nicht autorisiert"
+  ]
+}

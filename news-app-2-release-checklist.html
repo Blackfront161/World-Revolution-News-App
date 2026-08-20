@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Release-Checkliste – World Revolution News App 2</title>
+  <meta name="theme-color" content="#05080b">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <link rel="stylesheet" href="news-app-2.css?release=13">
+  <link rel="stylesheet" href="news-app-2-release-checklist.css?release=2">
+</head>
+<body class="release-checklist-page">
+  <a class="skip-link" href="#release-checklist-main">Zur Checkliste springen</a>
+
+  <header class="checklist-header">
+    <div class="checklist-header__inner">
+      <a class="checklist-brand" href="next.html?preview=8" aria-label="Zurück zur News App 2">
+        <img src="wrn-logo-preview-transparent.png" alt="" width="144" height="65">
+        <span>
+          <strong>Release-Checkliste</strong>
+          <small>News App 2 · 2.0.8</small>
+        </span>
+      </a>
+      <a class="checklist-back" href="next.html?preview=8" aria-label="Zur Vorschau">← Zur Vorschau</a>
+    </div>
+  </header>
+
+  <main id="release-checklist-main" class="checklist-main">
+    <section class="checklist-hero" aria-labelledby="checklist-title">
+      <p class="checklist-eyebrow">Stand: 5. August 2026</p>
+      <h1 id="checklist-title">Was für die Veröffentlichung bereit ist</h1>
+      <p class="checklist-lead">
+        News App 2 ist die produktive Web-App. Diese Liste trennt bestandene
+        Web-Prüfungen von den letzten Schritten für das neue Android App Bundle.
+      </p>
+      <div class="release-summary" aria-label="Freigabestatus">
+        <article class="release-summary__card release-summary__card--ready">
+          <span>Web-App</span>
+          <strong>Produktiv geprüft</strong>
+        </article>
+        <article class="release-summary__card release-summary__card--protected">
+          <span>Klassische App</span>
+          <strong>Als Rückfall erhalten</strong>
+        </article>
+        <article class="release-summary__card release-summary__card--protected">
+          <span>Android 2.0.8 · Code 23</span>
+          <strong>Build und Bericht ausstehend</strong>
+        </article>
+      </div>
+      <p class="feed-alert feed-alert--passed">
+        <strong>Feed-Pipeline:</strong> Zeitbudget, atomare Prüfpunkte und die
+        gemeinsame Veröffentlichung von <code>news-feed.json</code>,
+        <code>events-feed.json</code> und <code>feed-status.json</code> sind
+        abgesichert. Die Vorschau lädt den aktuellen Live-Datenstand vom
+        5. August 2026; ein älterer Lauf kann ihn nicht mehr überschreiben.
+      </p>
+    </section>
+
+    <nav class="checklist-jump" aria-label="Bereiche der Checkliste">
+      <a href="#schutz">Schutz</a>
+      <a href="#funktionen">Funktionen</a>
+      <a href="#darstellung">Darstellung</a>
+      <a href="#technik">Technik</a>
+      <a href="#offen">Noch offen</a>
+    </nav>
+
+    <section class="checklist-section checklist-legend" aria-labelledby="legend-title">
+      <h2 id="legend-title">So sind die Angaben zu lesen</h2>
+      <div class="legend-grid">
+        <p><span class="status-badge status-badge--passed">Bestanden</span> lokal geprüft und ohne bekannten Fehler.</p>
+        <p><span class="status-badge status-badge--integrated">Integriert</span> vorhanden; ein externer Online- oder Gerätetest ist noch nötig.</p>
+        <p><span class="status-badge status-badge--open">Offen</span> muss vor dem Play-Store-Upload erledigt werden.</p>
+      </div>
+    </section>
+
+    <section class="checklist-section" id="schutz" aria-labelledby="schutz-title">
+      <div class="section-heading">
+        <p class="checklist-eyebrow">Sicherer Übergang</p>
+        <h2 id="schutz-title">Produktion und Rückfall</h2>
+      </div>
+      <ul class="check-list">
+        <li data-status="passed"><span><code>index.html</code> startet News App 2; <code>next.html</code> führt kontrolliert dorthin weiter.</span></li>
+        <li data-status="passed"><span>Die bisherige Oberfläche bleibt getrennt unter <code>classic.html</code> erreichbar.</span></li>
+        <li data-status="passed"><span>Produktions- und Vorschau-Service-Worker verwenden getrennte Gültigkeitsbereiche.</span></li>
+        <li data-status="passed"><span>Google Play wird erst mit dem abschließend geprüften, signierten AAB aktualisiert.</span></li>
+      </ul>
+    </section>
+
+    <section class="checklist-section" id="funktionen" aria-labelledby="funktionen-title">
+      <div class="section-heading">
+        <p class="checklist-eyebrow">Abgleich mit der Live-App</p>
+        <h2 id="funktionen-title">Funktionen im Release-Kandidaten</h2>
+      </div>
+
+      <div class="feature-groups">
+        <article class="feature-group">
+          <h3>Nachrichten &amp; persönlicher Feed</h3>
+          <ul class="check-list check-list--compact">
+            <li data-status="passed"><span>Startseite mit zehn durchmischten Meldungen.</span></li>
+            <li data-status="integrated"><span>„In 5 Minuten“ mit fünf Meldungen und Übersetzung in die gewählte App-Sprache.</span></li>
+            <li data-status="passed"><span>Suche, letzte 7 Tage, letzte 30 Tage und Gesamtarchiv.</span></li>
+            <li data-status="passed"><span>Regionen, redaktionell gruppierte Themen, Sprachen, Herkunft, Formate, Quellen und Sortierung.</span></li>
+            <li data-status="passed"><span>Karten-, Kompakt- und Schlagzeilenansicht.</span></li>
+            <li data-status="passed"><span>Quellen folgen oder ausblenden sowie Gefangene und Entwicklungen beobachten.</span></li>
+            <li data-status="passed"><span>Abruf- und Veröffentlichungszeit mit sichtbarer Verzögerungswarnung.</span></li>
+          </ul>
+        </article>
+
+        <article class="feature-group">
+          <h3>Artikelaktionen</h3>
+          <ul class="check-list check-list--compact">
+            <li data-status="passed"><span>Artikelansicht, vollständige Bilder und Link zum Original.</span></li>
+            <li data-status="passed"><span>Volltext, Auszug und Metadaten sind getrennt; unvollständige Texte erhalten Wiederholen und „Im Original weiterlesen“.</span></li>
+            <li data-status="integrated"><span>Volltextübersetzung, Übersetzungsvergleich und Fehlermeldung.</span></li>
+            <li data-status="passed"><span>Kurze, standardmäßige und ausführliche Zusammenfassung.</span></li>
+            <li data-status="passed"><span>Gerätestimme, Teilen, später lesen, gelesen markieren und Lesefortschritt.</span></li>
+            <li data-status="integrated"><span>Natürliche Podcast-Stimme; Erzeugung über den Onlinedienst muss extern geprüft werden.</span></li>
+            <li data-status="passed"><span>Zine-Auswahl, Gestaltung und PDF-/Druckausgabe.</span></li>
+          </ul>
+        </article>
+
+        <article class="feature-group">
+          <h3>Entdecken, Medien &amp; Termine</h3>
+          <ul class="check-list check-list--compact">
+            <li data-status="passed"><span>Video, Original-Podcasts, erzeugte Podcasts, Radio und Zine als Medienbereiche.</span></li>
+            <li data-status="passed"><span>Audio-Warteschlange, Favoriten, Weiterhören und Timer.</span></li>
+            <li data-status="passed"><span>Termine mit Archiv, Filtern, Umkreis, Karte, Route, Kalenderdatei und lokalen Erinnerungen.</span></li>
+            <li data-status="passed"><span>Lexikon, Quellen sowie Gefangenen-Solidarität mit 12 Profilen, davon 7 aus Europa.</span></li>
+            <li data-status="passed"><span>Briefwerkstatt mit lokaler Starthilfe, Sprachauswahl, Übersetzungsvergleich, Druck und Quellen-Reiter.</span></li>
+            <li data-status="integrated"><span>Entwicklungen mit Mehrquellenabgleich bleiben wie vorgesehen als Beta gekennzeichnet.</span></li>
+            <li data-status="passed"><span>Termine, Lexikon, Bibliothek, Gefangene und Entwicklungen verwenden dieselbe kompakte Reitergröße wie die Zeitfilter.</span></li>
+          </ul>
+        </article>
+
+        <article class="feature-group">
+          <h3>Transparenz &amp; Einstellungen</h3>
+          <ul class="check-list check-list--compact">
+            <li data-status="passed"><span>Quellenprofile, Quellenprüfung und redaktionelle Prüfliste.</span></li>
+            <li data-status="passed"><span>Systemstatus, Export, Import und lokale Datenverwaltung.</span></li>
+            <li data-status="passed"><span>Spendenhinweis und Projektinformationen im Menü.</span></li>
+            <li data-status="passed"><span>Neun App-Sprachen, sechs Farbdarstellungen und Schriftvergrößerung bis 200 Prozent.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="checklist-section" id="darstellung" aria-labelledby="darstellung-title">
+      <div class="section-heading">
+        <p class="checklist-eyebrow">Bedienung</p>
+        <h2 id="darstellung-title">Darstellung und Smartphone-Test</h2>
+      </div>
+      <ul class="check-list">
+        <li data-status="passed"><span>Mobile Ansicht bei 390 × 844 Pixel ohne horizontalen Überlauf.</span></li>
+        <li data-status="passed"><span>Desktop-Ansicht bei 1440 × 900 Pixel ohne horizontalen Überlauf.</span></li>
+        <li data-status="passed"><span>Die untere Navigation bleibt beim Scrollen positionsstabil.</span></li>
+        <li data-status="passed"><span>Artikelbilder werden im richtigen Seitenverhältnis ohne Beschnitt dargestellt.</span></li>
+        <li data-status="passed"><span>Mobile Kartenbilder verwenden automatische Höhe und werden nicht unnötig hochskaliert.</span></li>
+        <li data-status="passed"><span>„Artikel öffnen“ und „Übersetzen“ haben dieselbe Form und Höhe.</span></li>
+        <li data-status="passed"><span>Übersetzungsstern, Medienreiter, Header und Zine wurden an die gewünschte Gestaltung angepasst.</span></li>
+        <li data-status="passed"><span>Die visuelle Android-Smartphone-Vorschau wurde vom Nutzer geprüft.</span></li>
+        <li data-status="integrated"><span>Installation und Offline-Neustart des neuen signierten Android-AAB werden nach dem finalen Build nochmals auf einem Gerät geprüft.</span></li>
+      </ul>
+    </section>
+
+    <section class="checklist-section" id="technik" aria-labelledby="technik-title">
+      <div class="section-heading">
+        <p class="checklist-eyebrow">Qualitätssicherung</p>
+        <h2 id="technik-title">Technische Prüfungen</h2>
+      </div>
+      <ul class="check-list">
+        <li data-status="passed"><span>JavaScript-Syntax sowie Core-, Spezial-, Medien- und Release-Vertragstests.</span></li>
+        <li data-status="passed"><span>Artikelaktionen, Teilen, Podcastlogik und gemeinsamer Übersetzungsclient.</span></li>
+        <li data-status="passed"><span>Assets, Content Security Policy und vollständige Vorschau-Isolation.</span></li>
+        <li data-status="passed"><span>Whitespace-/Patchprüfung sowie sichere HTTPS-Quellenlinks ohne Referrer-Weitergabe.</span></li>
+        <li data-status="passed"><span>Service Worker und Cache-Aktualisierung für die produktive Web-App.</span></li>
+        <li data-status="passed"><span>Automatische Feed-Aggregation beendet rechtzeitig, speichert atomar und veröffentlicht nur konsistente Browser-Feeds.</span></li>
+        <li data-status="passed"><span>59 Python-Tests und 24 JavaScript-Vertragstests bestanden; Browserprüfung meldet keine Laufzeitfehler.</span></li>
+        <li data-status="integrated"><span>AAB 2.0.8, Code 23: R8 und Resource Shrinking bleiben aktiv; Build, Signatur und byteidentischer Webstand werden im abschließenden Prüfbericht verifiziert.</span></li>
+        <li data-status="passed"><span>Android blockiert unverschlüsselte Verbindungen; der FileProvider ist auf app-eigene Datei- und Cacheverzeichnisse beschränkt.</span></li>
+        <li data-status="passed"><span>Übersetzungs- und Podcast-Limits verwenden keine frei wechselbare App-Kennung mehr; Feedback hat Tageslimit und 90-Tage-Löschung.</span></li>
+        <li data-status="passed"><span>Sieben zusätzliche erreichbare RSS-Quellen für Animal Liberation wurden technisch geprüft und registriert.</span></li>
+      </ul>
+    </section>
+
+    <section class="checklist-section checklist-section--open" id="offen" aria-labelledby="offen-title">
+      <div class="section-heading">
+        <p class="checklist-eyebrow">Letzte Auslieferung</p>
+        <h2 id="offen-title">Noch vor dem Play-Store-Upload</h2>
+      </div>
+      <ol class="release-gates">
+        <li>Die Briefübersetzung mit gewählter Zielsprache auf der freigegebenen produktiven HTTPS-Adresse prüfen.</li>
+        <li>Die erzeugte AAB 2.0.8 mit Versionscode 23 in Google Play hochladen und den Gerätekatalog kontrollieren.</li>
+        <li>Installation, Update von der vorherigen Version und Offline-Neustart auf Android testen.</li>
+        <li>Nach dem Rollout Feed-Aktualisierung und erzeugte Podcast-Bibliothek in der installierten App kontrollieren.</li>
+      </ol>
+      <p class="release-decision">
+        <strong>Freigabeentscheidung:</strong> Der Webstand ist vorbereitet.
+        Das AAB gilt nach bestandenem Build- und Signaturbericht als freigegeben;
+        offen bleiben danach Google-Play-, Geräte- und HTTPS-Endtests.
+      </p>
+    </section>
+
+    <section class="checklist-section" aria-labelledby="not-in-release-title">
+      <div class="section-heading">
+        <p class="checklist-eyebrow">Abgrenzung</p>
+        <h2 id="not-in-release-title">Bewusst nicht Teil dieses Releases</h2>
+      </div>
+      <ul class="plain-list">
+        <li>Alternative soziale Medien.</li>
+        <li>Ein späterer Briefing-Verlauf mit Export, Import und Rückmeldungen.</li>
+        <li>Weitere Zukunftsideen, die nicht Bestandteil der bisherigen Live-App waren.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="checklist-footer">
+    <p>World Revolution News · News App 2 · Release 2.0.8 · Code 23</p>
+    <a href="next.html?preview=8">Zurück zur Vorschau</a>
+  </footer>
+</body>
+</html>

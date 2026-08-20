@@ -1,0 +1,282 @@
+/* World Revolution News 1.8.4 – eigenständige Artikel-Zusammenfassung */
+
+.wrn-summary-action {
+  border-color: rgba(0, 240, 255, 0.55) !important;
+  color: var(--color-cyan, #00f0ff) !important;
+  background: rgba(0, 240, 255, 0.07) !important;
+}
+
+.card:not(.wrn-detail-card) .wrn-summary-action {
+  display: none !important;
+}
+
+.wrn-detail-card .wrn-summary-meta-action-184 {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrn-detail-actions .wrn-summary-action {
+  grid-column: auto !important;
+}
+
+body.wrn-summary-view-open {
+  overflow: hidden !important;
+}
+
+.wrn-summary-view[hidden] {
+  display: none !important;
+}
+
+.wrn-summary-view {
+  position: fixed;
+  inset: 0;
+  z-index: 14600;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.92);
+  background:
+    radial-gradient(circle at 86% 8%, rgba(0, 240, 255, 0.11), transparent 34%),
+    radial-gradient(circle at 12% 92%, rgba(255, 51, 79, 0.12), transparent 36%),
+    #06090f;
+}
+
+.wrn-summary-view-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  min-height: 72px;
+  padding: max(12px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left));
+  border-bottom: 1px solid rgba(0, 240, 255, 0.28);
+  background: rgba(6, 9, 15, 0.96);
+  backdrop-filter: blur(14px);
+}
+
+.wrn-summary-view-header h2 {
+  overflow: hidden;
+  margin: 2px 0 0;
+  color: #fff;
+  font-size: clamp(0.92rem, 2.2vw, 1.22rem);
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrn-summary-kicker {
+  color: var(--color-cyan, #00f0ff);
+  font: 800 0.66rem/1.1 inherit;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wrn-summary-private {
+  color: var(--color-green, #39ff88);
+  font: 750 0.64rem/1.2 inherit;
+}
+
+.wrn-summary-back,
+.wrn-summary-length,
+.wrn-summary-secondary {
+  box-sizing: border-box;
+  min-height: 38px;
+  border-radius: 9px;
+  font: 780 0.75rem/1.15 inherit;
+  cursor: pointer;
+}
+
+.wrn-summary-back {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 240, 255, 0.42);
+  color: var(--color-cyan, #00f0ff);
+  background: rgba(0, 240, 255, 0.07);
+}
+
+.wrn-summary-view-main {
+  width: min(820px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: clamp(22px, 5vw, 54px) 0 max(36px, env(safe-area-inset-bottom));
+}
+
+.wrn-summary-chooser,
+.wrn-summary-result {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(12, 16, 25, 0.86);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28);
+}
+
+.wrn-summary-chooser {
+  padding: clamp(18px, 4vw, 28px);
+}
+
+.wrn-summary-chooser h3 {
+  margin: 0 0 7px;
+  color: var(--color-cyan, #00f0ff);
+  font-size: clamp(1.05rem, 3vw, 1.35rem);
+}
+
+.wrn-summary-chooser p {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.wrn-summary-lengths {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.wrn-summary-length,
+.wrn-summary-secondary {
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 51, 79, 0.42);
+  color: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 51, 79, 0.07);
+}
+
+.wrn-summary-length.active {
+  border-color: var(--wrn-red, #ff334f);
+  color: #fff;
+  background: var(--wrn-red, #ff334f);
+}
+
+.wrn-summary-result {
+  margin-top: 14px;
+  padding: clamp(18px, 4vw, 30px);
+}
+
+.wrn-summary-result:empty {
+  display: none;
+}
+
+.wrn-summary-body {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.88rem, 2vw, 1rem);
+  line-height: 1.65;
+}
+
+.wrn-summary-lead {
+  margin: 0 0 14px;
+  font-weight: 760;
+}
+
+.wrn-summary-body ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.wrn-summary-body li {
+  margin-bottom: 9px;
+}
+
+.wrn-summary-meta,
+.wrn-summary-notice,
+.wrn-summary-status,
+.wrn-summary-empty {
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.wrn-summary-meta {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.wrn-summary-notice {
+  margin: 9px 0;
+  color: #ffd166;
+}
+
+.wrn-summary-status {
+  min-height: 1em;
+  margin-top: 8px;
+  color: var(--color-green, #39ff88);
+}
+
+.wrn-summary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.wrn-summary-secondary {
+  min-height: 34px;
+  border-color: rgba(0, 240, 255, 0.3);
+  color: var(--color-cyan, #00f0ff);
+  background: rgba(0, 240, 255, 0.06);
+}
+
+body.theme-light .wrn-summary-view,
+body.theme-soft .wrn-summary-view {
+  color: #171922;
+  background:
+    radial-gradient(circle at 86% 8%, rgba(0, 140, 160, 0.12), transparent 34%),
+    radial-gradient(circle at 12% 92%, rgba(188, 31, 62, 0.1), transparent 36%),
+    #f1eee6;
+}
+
+body.theme-light .wrn-summary-view-header,
+body.theme-soft .wrn-summary-view-header,
+body.theme-light .wrn-summary-chooser,
+body.theme-soft .wrn-summary-chooser,
+body.theme-light .wrn-summary-result,
+body.theme-soft .wrn-summary-result {
+  color: #171922;
+  background: rgba(255, 252, 244, 0.96);
+}
+
+body.theme-light .wrn-summary-view-header h2,
+body.theme-soft .wrn-summary-view-header h2,
+body.theme-light .wrn-summary-body,
+body.theme-soft .wrn-summary-body,
+body.theme-light .wrn-summary-length,
+body.theme-soft .wrn-summary-length {
+  color: #252833;
+}
+
+body.theme-light .wrn-summary-chooser p,
+body.theme-soft .wrn-summary-chooser p,
+body.theme-light .wrn-summary-meta,
+body.theme-soft .wrn-summary-meta {
+  color: rgba(23, 25, 34, 0.64);
+}
+
+@media (max-width: 600px) {
+  .wrn-summary-view-header {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 9px;
+    min-height: 60px;
+  }
+
+  .wrn-summary-private {
+    display: none;
+  }
+
+  .wrn-summary-back {
+    min-height: 34px;
+    padding: 6px 9px;
+    font-size: 0.68rem;
+  }
+
+  .wrn-summary-view-main {
+    width: min(100% - 20px, 820px);
+    padding-top: 16px;
+  }
+
+  .wrn-summary-lengths {
+    grid-template-columns: 1fr;
+  }
+
+  .wrn-summary-length {
+    min-height: 42px;
+  }
+}

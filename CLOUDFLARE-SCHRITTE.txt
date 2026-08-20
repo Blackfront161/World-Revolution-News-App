@@ -1,0 +1,13 @@
+CLOUDFLARE – GEMEINSAME ÜBERSETZUNGEN 1.7.4
+
+1. Worker erstellen und Code aus cloudflare/shared-translation-cache-worker.js einfügen.
+2. Workers-KV-Namespace wrn_shared_translations erstellen.
+3. KV-Binding mit Variablenname TRANSLATIONS an den Worker binden.
+4. Variablen setzen:
+   UPSTREAM_URL = https://revolution-proxy.paghklo.workers.dev
+   ALLOWED_ORIGINS = https://blackfront161.github.io,capacitor://localhost,http://localhost,https://localhost
+   CACHE_TTL_SECONDS = 604800
+5. /health des Workers im Browser öffnen.
+6. Worker-Adresse ohne abschließenden Schrägstrich in config.js eintragen:
+   sharedTranslationUrl: 'https://DEIN-WORKER.DEIN-NAME.workers.dev'
+7. config.js hochladen und ?nav=174 testen.

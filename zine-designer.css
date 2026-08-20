@@ -1,0 +1,280 @@
+/* World Revolution News 1.7.19 – Zine/Flyer-Designer */
+
+.wrn-zine-designer-1719 {
+    margin: 0.65rem 0;
+    padding: 0.75rem;
+    border: 1px solid #8f6cff;
+    border-radius: 7px;
+    background: #0e1018;
+}
+
+.wrn-zine-designer-1719 h2 {
+    margin: 0 0 0.7rem;
+    color: #b39cff;
+    font-size: 1rem;
+}
+
+.wrn-zine-designer-1719 header p {
+    margin: -0.35rem 0 0.8rem;
+    color: #d4d8e3;
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+
+.wrn-zine-designer-copy-1719 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.45rem;
+    margin-bottom: 0.65rem;
+}
+
+.wrn-zine-designer-copy-1719 label,
+.wrn-zine-designer-copy-1719 span {
+    display: block;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.wrn-zine-designer-copy-1719 span {
+    margin-bottom: 0.25rem;
+    color: #aeb3c0;
+    font-size: 0.72rem;
+}
+
+.wrn-zine-designer-copy-1719 input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 42px;
+    border: 1px solid #3a3f4c;
+    border-radius: 5px;
+    background: #11141c;
+    color: #fff;
+    padding: 0.4rem;
+}
+
+.wrn-zine-designer-grid-1719 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+    gap: 0.45rem;
+}
+
+.wrn-zine-designer-grid-1719 label,
+.wrn-zine-designer-grid-1719 span {
+    display: block;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.wrn-zine-designer-grid-1719 span {
+    margin-bottom: 0.25rem;
+    color: #aeb3c0;
+    font-size: 0.72rem;
+}
+
+.wrn-zine-designer-grid-1719 select {
+    width: 100%;
+    min-height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #3a3f4c;
+    border-radius: 5px;
+    background: #11141c;
+    color: #fff;
+    padding: 0.4rem;
+}
+
+.wrn-zine-designer-actions-1719 {
+    display: flex;
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.45rem;
+    margin-top: 0.65rem;
+}
+
+.wrn-zine-designer-actions-1719 button {
+    flex: 1 1 180px;
+    min-width: 0;
+    min-height: 44px;
+    border: 1px solid #8f6cff;
+    border-radius: 5px;
+    background: transparent;
+    color: #b39cff;
+    padding: 0.5rem 0.7rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Format */
+.wrn-zine-design-target-1719 {
+    --wrn-zine-columns: 2;
+    --wrn-zine-gap: 1rem;
+    box-sizing: border-box;
+    margin-inline: auto;
+    background: #fff;
+    color: #111;
+}
+
+.wrn-zine-design-target-1719[data-zine-format="a4"] {
+    width: min(100%, 210mm);
+    min-height: 297mm;
+    padding: 13mm;
+}
+
+.wrn-zine-design-target-1719[data-zine-format="a5"] {
+    width: min(100%, 148mm);
+    min-height: 210mm;
+    padding: 10mm;
+}
+
+.wrn-zine-design-target-1719[data-zine-format="square"] {
+    width: min(100%, 210mm);
+    aspect-ratio: 1;
+    padding: 12mm;
+}
+
+.wrn-zine-design-target-1719[data-zine-format="story"] {
+    width: min(100%, 1080px);
+    aspect-ratio: 9 / 16;
+    padding: 7%;
+}
+
+.wrn-zine-design-target-1719[data-zine-columns="1"] {
+    --wrn-zine-columns: 1;
+}
+
+.wrn-zine-design-target-1719[data-zine-columns="2"] {
+    --wrn-zine-columns: 2;
+}
+
+.wrn-zine-design-target-1719[data-zine-columns="3"] {
+    --wrn-zine-columns: 3;
+}
+
+.wrn-zine-design-target-1719
+:is(.zine-content, .zine-articles, .zine-grid, [data-zine-content]) {
+    columns: var(--wrn-zine-columns);
+    column-gap: var(--wrn-zine-gap);
+}
+
+/* Styles */
+.wrn-zine-design-target-1719[data-zine-style="cyber"] {
+    background:
+        linear-gradient(135deg, #05060b 0%, #101522 100%);
+    color: #f5f7ff;
+    border: 2px solid #00e5ef;
+}
+
+.wrn-zine-design-target-1719[data-zine-style="cyber"]
+:is(h1, h2, h3, strong) {
+    color: #00e5ef;
+}
+
+.wrn-zine-design-target-1719[data-zine-style="newspaper"] {
+    background: #f5f0df;
+    color: #17130d;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.wrn-zine-design-target-1719[data-zine-style="newspaper"]
+:is(h1, h2, h3) {
+    border-bottom: 2px solid currentColor;
+}
+
+.wrn-zine-design-target-1719[data-zine-style="minimal"] {
+    background: #fff;
+    color: #151515;
+    border: 1px solid #ddd;
+}
+
+.wrn-zine-design-target-1719[data-zine-style="contrast"] {
+    background: #fff;
+    color: #000;
+    border: 4px solid #000;
+    font-weight: 600;
+}
+
+.wrn-zine-design-target-1719[data-zine-images="gray"] img {
+    filter: grayscale(1) contrast(1.05);
+}
+
+.wrn-zine-design-target-1719[data-zine-images="none"] img,
+.wrn-zine-design-target-1719[data-zine-images="none"] picture {
+    display: none !important;
+}
+
+.wrn-zine-design-target-1719[data-zine-density="compact"] {
+    --wrn-zine-gap: 0.55rem;
+    font-size: 0.9em;
+    line-height: 1.3;
+}
+
+.wrn-zine-design-target-1719[data-zine-font="sans"] { font-family: Arial, sans-serif; }
+.wrn-zine-design-target-1719[data-zine-font="serif"] { font-family: Georgia, "Times New Roman", serif; }
+.wrn-zine-design-target-1719[data-zine-font="mono"] { font-family: ui-monospace, Consolas, monospace; }
+
+.wrn-zine-design-target-1719[data-zine-accent="cyan"] { --wrn-zine-accent: #00e5ef; }
+.wrn-zine-design-target-1719[data-zine-accent="red"] { --wrn-zine-accent: #ff3158; }
+.wrn-zine-design-target-1719[data-zine-accent="purple"] { --wrn-zine-accent: #9c74ff; }
+.wrn-zine-design-target-1719[data-zine-accent="black"] { --wrn-zine-accent: #111; }
+.wrn-zine-design-target-1719[data-zine-accent] :is(h1, h2, h3, strong) {
+    color: var(--wrn-zine-accent);
+}
+
+@media (max-width: 760px) {
+    .wrn-zine-designer-copy-1719,
+    .wrn-zine-designer-grid-1719 {
+        grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+    }
+
+    .wrn-zine-design-target-1719 {
+        min-height: 0 !important;
+        width: 100% !important;
+        aspect-ratio: auto !important;
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrn-zine-designer-copy-1719 {
+        grid-template-columns: 1fr;
+    }
+
+    .wrn-zine-designer-actions-1719 button {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden !important;
+    }
+
+    .wrn-zine-printing-1719,
+    .wrn-zine-printing-1719 *,
+    .wrn-stencil-printing,
+    .wrn-stencil-printing * {
+        visibility: visible !important;
+    }
+
+    .wrn-zine-printing-1719,
+    .wrn-stencil-printing {
+        position: absolute !important;
+        inset: 0 auto auto 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .wrn-stencil-printing svg,
+    .wrn-stencil-printing img {
+        display: block !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        object-fit: contain !important;
+    }
+
+    .wrn-zine-designer-1719 {
+        display: none !important;
+    }
+}

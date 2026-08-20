@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>WRN Quellenprüfung 1.7.16</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --cyan: #00e5ef;
+            --red: #ff3158;
+            --green: #00d596;
+            --orange: #f0a43c;
+        }
+
+        body {
+            margin: 0;
+            padding: 1rem;
+            background: #07080d;
+            color: #fff;
+            font-family: system-ui, sans-serif;
+        }
+
+        main {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--cyan);
+            font-size: 1.35rem;
+        }
+
+        button {
+            border: 1px solid var(--cyan);
+            border-radius: 6px;
+            background: transparent;
+            color: var(--cyan);
+            padding: 0.7rem 0.9rem;
+            cursor: pointer;
+        }
+
+        #summary {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0.6rem;
+            margin: 1rem 0;
+        }
+
+        .metric,
+        article {
+            border: 1px solid #30343e;
+            border-radius: 7px;
+            padding: 0.75rem;
+            background: #101119;
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 1.4rem;
+        }
+
+        article {
+            margin-bottom: 0.55rem;
+            border-left-width: 4px;
+        }
+
+        article.ok { border-left-color: var(--green); }
+        article.warning { border-left-color: var(--orange); }
+        article.error { border-left-color: var(--red); }
+        article.unknown { border-left-color: #777; }
+
+        article p {
+            color: #b6bac5;
+            overflow-wrap: anywhere;
+        }
+
+        a { color: var(--cyan); }
+
+        @media (max-width: 600px) {
+            #summary {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>World Revolution News – Quellenprüfung</h1>
+    <p>
+        Diese Seite lädt nur die Statusdateien und nicht den
+        vollständigen Nachrichtenfeed.
+    </p>
+    <button id="refresh" type="button">Jetzt prüfen</button>
+    <p id="status" aria-live="polite"></p>
+    <section id="summary"></section>
+    <section id="list"></section>
+</main>
+
+<script>
+'use strict';
+
+const endpoints = [
+    ['Nachrichten', './source-health.json'],
+    ['Katalog', './source-catalog.json'],
+    ['Podcasts', './podcast-health.json'],
+    ['Radio', './radio-health.json']
+];
+
+const asArray = data => {
+    if (data && Array.isArray(data.sources)) {
+        return data.sources;
+    }
+    if (Array.isArray(data)) return data;
+    if (!data || typeof data !== 'object') return [];
+
+    for (const key of ['sources', 'items', 'results', 'entries']) {
+        if (Array.isArray(data[key])) return data[key];
+    }
+
+    return Object.entries(data)
+        .filter(([, value]) => value && typeof value === 'object')
+        .map(([key, value]) => ({ name: key, ...value }));
+};
+
+const statusOf = item => {
+    const raw = String(
+        item.status || item.state || item.result || ''
+    ).toLowerCase();
+    const http = Number(
+        item.httpStatus || item.statusCode || item.code || 0
+    );
+
+    if (
+        item.ok === true
+        || ['ok', 'online', 'success', 'healthy'].includes(raw)
+        || (http >= 200 && http < 400)
+    ) return 'ok';
+
+    if (
+        raw.includes('warn')
+        || raw.includes('partial')
+        || raw.includes('slow')
+    ) return 'warning';
+
+    if (
+        item.ok === false
+        || raw.includes('error')
+        || raw.includes('fail')
+        || raw.includes('offline')
+        || raw.includes('timeout')
+        || raw.includes('blocked')
+        || raw.includes('rate')
+        || String(item.error || item.warning || '')
+            .toLowerCase()
+            .includes('certificate')
+        || [404, 410].includes(http)
+    ) return 'error';
+
+    return 'unknown';
+};
+
+const escapeHtml = value => String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+
+async function refresh() {
+    const status = document.getElementById('status');
+    const list = document.getElementById('list');
+    const summary = document.getElementById('summary');
+
+    status.textContent = 'Prüfung läuft …';
+    list.innerHTML = '';
+    summary.innerHTML = '';
+
+    const rows = [];
+
+    for (const [kind, url] of endpoints) {
+        try {
+            const response = await fetch(
+                `${url}?check=${Date.now()}`,
+                { cache: 'no-store' }
+            );
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            asArray(data).forEach((item, index) => {
+                rows.push({
+                    kind,
+                    name: String(
+                        item.name
+                        || item.sourceName
+                        || item.source
+                        || item.quelleName
+                        || item.title
+                        || `Quelle ${index + 1}`
+                    ),
+                    url: String(
+                        item.url
+                        || item.feedUrl
+                        || item.feed
+                        || item.link
+                        || ''
+                    ),
+                    status: statusOf(item),
+                    detail: String(
+                        item.error
+                        || item.warning
+                        || item.message
+                        || item.reason
+                        || ''
+                    )
+                });
+            });
+        } catch (error) {
+            rows.push({
+                kind,
+                name: `${kind}-Statusdatei`,
+                url,
+                status: 'error',
+                detail: String(error.message || error)
+            });
+        }
+    }
+
+    const counts = {
+        ok: 0,
+        warning: 0,
+        error: 0,
+        unknown: 0
+    };
+
+    rows.forEach(row => {
+        counts[row.status] += 1;
+    });
+
+    summary.innerHTML = Object.entries(counts)
+        .map(([key, value]) => `
+            <div class="metric">
+                <span>${escapeHtml(key)}</span>
+                <strong>${value}</strong>
+            </div>
+        `).join('');
+
+    list.innerHTML = rows
+        .sort((a, b) => a.status.localeCompare(b.status))
+        .slice(0, 400)
+        .map(row => `
+            <article class="${escapeHtml(row.status)}">
+                <strong>${escapeHtml(row.name)}</strong>
+                <small> · ${escapeHtml(row.kind)}</small>
+                ${row.detail
+                    ? `<p>${escapeHtml(row.detail)}</p>`
+                    : ''}
+                ${row.url
+                    ? `<a href="${escapeHtml(row.url)}"
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          ${escapeHtml(row.url)}
+                       </a>`
+                    : ''}
+            </article>
+        `).join('');
+
+    status.textContent =
+        `${rows.length} Einträge geprüft · `
+        + new Date().toLocaleString();
+}
+
+document.getElementById('refresh')
+    .addEventListener('click', refresh);
+
+void refresh();
+</script>
+</body>
+</html>

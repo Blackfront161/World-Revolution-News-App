@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": 1,
+  "app": "World Revolution News",
+  "version": "2.1.0",
+  "build": "2026.08.12-wrn-2.1.0-release",
+  "generatedAt": "2026-08-16T13:16:54.003203+00:00",
+  "readOnlyAudit": false,
+  "summary": {
+    "pass": 163,
+    "warning": 0,
+    "fail": 0,
+    "total": 163
+  },
+  "checks": [
+    {
+      "id": "file:.github/workflows/quality-gate.yml",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: .github/workflows/quality-gate.yml",
+      "detail": ""
+    },
+    {
+      "id": "file:.github/workflows/update.yml",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: .github/workflows/update.yml",
+      "detail": ""
+    },
+    {
+      "id": "file:app-check.html",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: app-check.html",
+      "detail": ""
+    },
+    {
+      "id": "file:app-diagnostics.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: app-diagnostics.js",
+      "detail": ""
+    },
+    {
+      "id": "file:config.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: config.js",
+      "detail": ""
+    },
+    {
+      "id": "file:news-app-2-config.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: news-app-2-config.js",
+      "detail": ""
+    },
+    {
+      "id": "file:manifest.json",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: manifest.json",
+      "detail": ""
+    },
+    {
+      "id": "file:service-worker.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: service-worker.js",
+      "detail": ""
+    },
+    {
+      "id": "file:runtime-selftest.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: runtime-selftest.js",
+      "detail": ""
+    },
+    {
+      "id": "file:runtime-selftest.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: runtime-selftest.css",
+      "detail": ""
+    },
+    {
+      "id": "file:video-hub.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: video-hub.js",
+      "detail": ""
+    },
+    {
+      "id": "file:video-hub.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: video-hub.css",
+      "detail": ""
+    },
+    {
+      "id": "file:lexicon-tab.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: lexicon-tab.js",
+      "detail": ""
+    },
+    {
+      "id": "file:lexicon-tab.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: lexicon-tab.css",
+      "detail": ""
+    },
+    {
+      "id": "file:audio-tab-183.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: audio-tab-183.js",
+      "detail": ""
+    },
+    {
+      "id": "file:audio-tab-183.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: audio-tab-183.css",
+      "detail": ""
+    },
+    {
+      "id": "file:interface-block3.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: interface-block3.js",
+      "detail": ""
+    },
+    {
+      "id": "file:interface-block3.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: interface-block3.css",
+      "detail": ""
+    },
+    {
+      "id": "file:light-theme.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: light-theme.css",
+      "detail": ""
+    },
+    {
+      "id": "file:source-recovery-ui-183.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: source-recovery-ui-183.js",
+      "detail": ""
+    },
+    {
+      "id": "file:source-recovery-ui-183.css",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: source-recovery-ui-183.css",
+      "detail": ""
+    },
+    {
+      "id": "file:source-verification.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: source-verification.js",
+      "detail": ""
+    },
+    {
+      "id": "file:source_recovery.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: source_recovery.py",
+      "detail": ""
+    },
+    {
+      "id": "file:app-background.webp",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: app-background.webp",
+      "detail": ""
+    },
+    {
+      "id": "file:wrn-future-header-white.png",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: wrn-future-header-white.png",
+      "detail": ""
+    },
+    {
+      "id": "file:wrn-product-21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: wrn-product-21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:source-passport-21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: source-passport-21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:solidarity-network-21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: solidarity-network-21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:news-card-copy.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: news-card-copy.js",
+      "detail": ""
+    },
+    {
+      "id": "file:verified-solidarity-actions.json",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: verified-solidarity-actions.json",
+      "detail": ""
+    },
+    {
+      "id": "file:solidarity-network.json",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: solidarity-network.json",
+      "detail": ""
+    },
+    {
+      "id": "file:solidarity-resources.json",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: solidarity-resources.json",
+      "detail": ""
+    },
+    {
+      "id": "file:WEBSITE-PORTING-MANIFEST.md",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: WEBSITE-PORTING-MANIFEST.md",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_news_card_copy.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_news_card_copy.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_next_update_candidate.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_next_update_candidate.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_video_assets.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_video_assets.py",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_audio_block2_assets.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_audio_block2_assets.py",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_source_recovery_assets.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_source_recovery_assets.py",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_runtime_selftest_183.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_runtime_selftest_183.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_release_candidate_183.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_release_candidate_183.py",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_daily_overview.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_daily_overview.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_development_editorial_snapshot.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_development_editorial_snapshot.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_wrn_product_21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_wrn_product_21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_solidarity_network_21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_solidarity_network_21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_solidarity_worker_fallback.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_solidarity_worker_fallback.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_offline_persistence_21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_offline_persistence_21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_product_21_offline_assets.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_product_21_offline_assets.py",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_source_passport_21.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_source_passport_21.js",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/run_contract_matrix.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/run_contract_matrix.py",
+      "detail": ""
+    },
+    {
+      "id": "file:tests/test_quality_gate_discovery.py",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: tests/test_quality_gate_discovery.py",
+      "detail": ""
+    },
+    {
+      "id": "config-version",
+      "category": "release",
+      "status": "pass",
+      "message": "news-app-2-config.js declares production version 2.1.0",
+      "detail": ""
+    },
+    {
+      "id": "config-build",
+      "category": "release",
+      "status": "pass",
+      "message": "Build is marked as the 2.1.0 production candidate",
+      "detail": "2026.08.12-wrn-2.1.0-release"
+    },
+    {
+      "id": "config-recovery-stage",
+      "category": "release",
+      "status": "pass",
+      "message": "Recovery stage is 15",
+      "detail": ""
+    },
+    {
+      "id": "config-loader",
+      "category": "release",
+      "status": "pass",
+      "message": "Dynamic loader uses 200-action-radar-1",
+      "detail": ""
+    },
+    {
+      "id": "config-preserves-dataUrls",
+      "category": "safety",
+      "status": "pass",
+      "message": "Existing config contract remains present: dataUrls:",
+      "detail": ""
+    },
+    {
+      "id": "config-preserves-proxyUrl",
+      "category": "safety",
+      "status": "pass",
+      "message": "Existing config contract remains present: proxyUrl:",
+      "detail": ""
+    },
+    {
+      "id": "config-preserves-sharedTranslationUrl",
+      "category": "safety",
+      "status": "pass",
+      "message": "Existing config contract remains present: sharedTranslationUrl:",
+      "detail": ""
+    },
+    {
+      "id": "worker-app-cache",
+      "category": "offline",
+      "status": "pass",
+      "message": "Service worker uses the release app cache",
+      "detail": ""
+    },
+    {
+      "id": "worker-data-cache",
+      "category": "offline",
+      "status": "pass",
+      "message": "Service worker uses the release data cache",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:app-check.html",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains app-check.html",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:runtime-selftest.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains runtime-selftest.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:runtime-selftest.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains runtime-selftest.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:video-hub.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains video-hub.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:video-hub.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains video-hub.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:lexicon-tab.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains lexicon-tab.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:lexicon-tab.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains lexicon-tab.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:audio-tab-183.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains audio-tab-183.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:audio-tab-183.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains audio-tab-183.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:interface-block3.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains interface-block3.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:interface-block3.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains interface-block3.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:light-theme.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains light-theme.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:source-recovery-ui-183.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains source-recovery-ui-183.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:source-recovery-ui-183.css",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains source-recovery-ui-183.css",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:app-background.webp",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains app-background.webp",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:wrn-future-header-white.png",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains wrn-future-header-white.png",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:wrn-product-21.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains wrn-product-21.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:source-passport-21.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains source-passport-21.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:solidarity-network-21.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains solidarity-network-21.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:news-card-copy.js",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains news-card-copy.js",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:verified-solidarity-actions.json",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains verified-solidarity-actions.json",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:solidarity-network.json",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains solidarity-network.json",
+      "detail": ""
+    },
+    {
+      "id": "app-shell:solidarity-resources.json",
+      "category": "offline",
+      "status": "pass",
+      "message": "App shell contains solidarity-resources.json",
+      "detail": ""
+    },
+    {
+      "id": "worker-preserves:networkFirstNavigation",
+      "category": "offline",
+      "status": "pass",
+      "message": "Offline/fallback contract remains present: networkFirstNavigation",
+      "detail": ""
+    },
+    {
+      "id": "worker-preserves:networkFirstData",
+      "category": "offline",
+      "status": "pass",
+      "message": "Offline/fallback contract remains present: networkFirstData",
+      "detail": ""
+    },
+    {
+      "id": "worker-preserves:networkFirstAsset",
+      "category": "offline",
+      "status": "pass",
+      "message": "Offline/fallback contract remains present: networkFirstAsset",
+      "detail": ""
+    },
+    {
+      "id": "worker-preserves:JSON_FALLBACKS",
+      "category": "offline",
+      "status": "pass",
+      "message": "Offline/fallback contract remains present: JSON_FALLBACKS",
+      "detail": ""
+    },
+    {
+      "id": "worker-preserves:cache: 'no-store'",
+      "category": "offline",
+      "status": "pass",
+      "message": "Offline/fallback contract remains present: cache: 'no-store'",
+      "detail": ""
+    },
+    {
+      "id": "worker-preserves:isIndexNavigation ? './index.html' : request",
+      "category": "offline",
+      "status": "pass",
+      "message": "Offline/fallback contract remains present: isIndexNavigation ? './index.html' : request",
+      "detail": ""
+    },
+    {
+      "id": "manifest-json",
+      "category": "pwa",
+      "status": "pass",
+      "message": "manifest.json is valid JSON",
+      "detail": ""
+    },
+    {
+      "id": "manifest-name",
+      "category": "pwa",
+      "status": "pass",
+      "message": "Manifest name is World Revolution News",
+      "detail": ""
+    },
+    {
+      "id": "manifest-start-url",
+      "category": "pwa",
+      "status": "pass",
+      "message": "Manifest provides start_url",
+      "detail": ""
+    },
+    {
+      "id": "manifest-icon",
+      "category": "pwa",
+      "status": "pass",
+      "message": "Manifest contains icon.svg",
+      "detail": ""
+    },
+    {
+      "id": "csp-present",
+      "category": "security",
+      "status": "pass",
+      "message": "Content Security Policy is present",
+      "detail": ""
+    },
+    {
+      "id": "csp-frame:https://www.youtube-nocookie.com",
+      "category": "security",
+      "status": "pass",
+      "message": "Video CSP allows https://www.youtube-nocookie.com",
+      "detail": ""
+    },
+    {
+      "id": "csp-frame:https://player.vimeo.com",
+      "category": "security",
+      "status": "pass",
+      "message": "Video CSP allows https://player.vimeo.com",
+      "detail": ""
+    },
+    {
+      "id": "csp-frame:https://kolektiva.media",
+      "category": "security",
+      "status": "pass",
+      "message": "Video CSP allows https://kolektiva.media",
+      "detail": ""
+    },
+    {
+      "id": "csp-no-broad-frame-https",
+      "category": "security",
+      "status": "pass",
+      "message": "frame-src does not allow every HTTPS origin",
+      "detail": ""
+    },
+    {
+      "id": "csp-object-none",
+      "category": "security",
+      "status": "pass",
+      "message": "CSP contains object-src 'none'",
+      "detail": ""
+    },
+    {
+      "id": "selftest-version",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test expects 2.1.0",
+      "detail": ""
+    },
+    {
+      "id": "selftest-no-old-version",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test has no obsolete expected version",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:en",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains en",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:de",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains de",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:es",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains es",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:fr",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains fr",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:it",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains it",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:pt",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains pt",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:ru",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains ru",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:el",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains el",
+      "detail": ""
+    },
+    {
+      "id": "selftest-language:tr",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test contains tr",
+      "detail": ""
+    },
+    {
+      "id": "selftest-module:WRNVideoHub",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test checks WRNVideoHub",
+      "detail": ""
+    },
+    {
+      "id": "selftest-module:WRNAudioTab183",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test checks WRNAudioTab183",
+      "detail": ""
+    },
+    {
+      "id": "selftest-module:WRNInterfaceBlock3",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test checks WRNInterfaceBlock3",
+      "detail": ""
+    },
+    {
+      "id": "selftest-module:WRNSourceRecoveryUI183",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test checks WRNSourceRecoveryUI183",
+      "detail": ""
+    },
+    {
+      "id": "selftest-module:WRNSourceVerification",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Runtime self-test checks WRNSourceVerification",
+      "detail": ""
+    },
+    {
+      "id": "selftest-storage-cleanup",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Temporary storage key is removed",
+      "detail": ""
+    },
+    {
+      "id": "selftest-escape",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Escape closes the self-test",
+      "detail": ""
+    },
+    {
+      "id": "selftest-no-store",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Self-test fetches bypass caches",
+      "detail": ""
+    },
+    {
+      "id": "selftest-sw-registration",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Self-test checks service-worker registration",
+      "detail": ""
+    },
+    {
+      "id": "selftest-sw-control",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Self-test checks service-worker control",
+      "detail": ""
+    },
+    {
+      "id": "selftest-manifest",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Self-test checks manifest.json",
+      "detail": ""
+    },
+    {
+      "id": "selftest-report-copy",
+      "category": "selftest",
+      "status": "pass",
+      "message": "Self-test can copy its report",
+      "detail": ""
+    },
+    {
+      "id": "app-check-version",
+      "category": "release-page",
+      "status": "pass",
+      "message": "Release page checks WRN_CONFIG.version",
+      "detail": ""
+    },
+    {
+      "id": "app-check-build",
+      "category": "release-page",
+      "status": "pass",
+      "message": "Release page checks the release build",
+      "detail": ""
+    },
+    {
+      "id": "app-check-manifest",
+      "category": "release-page",
+      "status": "pass",
+      "message": "Release page checks manifest.json",
+      "detail": ""
+    },
+    {
+      "id": "app-check-runtime",
+      "category": "release-page",
+      "status": "pass",
+      "message": "Release page checks runtime self-test",
+      "detail": ""
+    },
+    {
+      "id": "app-check-no-store",
+      "category": "release-page",
+      "status": "pass",
+      "message": "Release page bypasses caches",
+      "detail": ""
+    },
+    {
+      "id": "app-check-read-only",
+      "category": "release-page",
+      "status": "pass",
+      "message": "Release page states its read-only behavior",
+      "detail": ""
+    },
+    {
+      "id": "app-check-app-cache-sync",
+      "category": "release-page",
+      "status": "pass",
+      "message": "App check and service worker agree on the app cache: wrn-app-v2.1.0-r4",
+      "detail": ""
+    },
+    {
+      "id": "app-check-data-cache-sync",
+      "category": "release-page",
+      "status": "pass",
+      "message": "App check and service worker agree on the data cache: wrn-data-v2.1.0-r2",
+      "detail": ""
+    },
+    {
+      "id": "diagnostics-version",
+      "category": "diagnostics",
+      "status": "pass",
+      "message": "App diagnostics expects 2.1.0",
+      "detail": ""
+    },
+    {
+      "id": "diagnostics-no-175",
+      "category": "diagnostics",
+      "status": "pass",
+      "message": "App diagnostics no longer expects 1.7.5",
+      "detail": ""
+    },
+    {
+      "id": "recovery-threshold",
+      "category": "source-recovery",
+      "status": "pass",
+      "message": "Permanent failure threshold remains 4",
+      "detail": ""
+    },
+    {
+      "id": "recovery-min-age",
+      "category": "source-recovery",
+      "status": "pass",
+      "message": "Permanent failure minimum age remains 12 hours",
+      "detail": ""
+    },
+    {
+      "id": "recovery-no-auto-delete",
+      "category": "source-recovery",
+      "status": "pass",
+      "message": "Automatic source deletion remains disabled",
+      "detail": ""
+    },
+    {
+      "id": "recovery-registry-guard",
+      "category": "source-recovery",
+      "status": "pass",
+      "message": "Canonical source registry guard remains documented",
+      "detail": ""
+    },
+    {
+      "id": "recovery-no-delete-api",
+      "category": "source-recovery",
+      "status": "pass",
+      "message": "Source recovery contains no file deletion API",
+      "detail": ""
+    },
+    {
+      "id": "quality-command:python tests/run_contract_matrix.py",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate runs: python tests/run_contract_matrix.py",
+      "detail": ""
+    },
+    {
+      "id": "quality-command:python tests/validate_app.py",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate runs: python tests/validate_app.py",
+      "detail": ""
+    },
+    {
+      "id": "quality-command:python release_audit_183.py --no-write --artifact \"${RUNNER_TEMP}/release-readiness-183.json\"",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate runs: python release_audit_183.py --no-write --artifact \"${RUNNER_TEMP}/release-readiness-183.json\"",
+      "detail": ""
+    },
+    {
+      "id": "quality-command:node tests/test_runtime_selftest_183.js",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate runs: node tests/test_runtime_selftest_183.js",
+      "detail": ""
+    },
+    {
+      "id": "quality-command:python tests/test_release_candidate_183.py",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate runs: python tests/test_release_candidate_183.py",
+      "detail": ""
+    },
+    {
+      "id": "quality-command:node tests/test_solidarity_worker_fallback.js",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate runs: node tests/test_solidarity_worker_fallback.js",
+      "detail": ""
+    },
+    {
+      "id": "quality-js-discovery",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Contract runner recursively discovers every JavaScript contract test",
+      "detail": ""
+    },
+    {
+      "id": "quality-js-order",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Contract runner uses deterministic ordering",
+      "detail": ""
+    },
+    {
+      "id": "quality-full-pytest",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Contract runner executes the complete pytest suite",
+      "detail": ""
+    },
+    {
+      "id": "quality-python-main-discovery",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Contract runner discovers assertion-bearing main-only Python scripts",
+      "detail": ""
+    },
+    {
+      "id": "quality-python-main-execution",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Contract runner executes main-only Python scripts explicitly",
+      "detail": ""
+    },
+    {
+      "id": "quality-audit-no-write",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate only invokes the release audit in read-only mode",
+      "detail": ""
+    },
+    {
+      "id": "quality-current-audit-artifact",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate generates and uploads the current audit from runner temp",
+      "detail": ""
+    },
+    {
+      "id": "quality-test-file:tests/run_contract_matrix.py",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality-gate test path exists: tests/run_contract_matrix.py",
+      "detail": ""
+    },
+    {
+      "id": "quality-test-file:tests/test_release_candidate_183.py",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality-gate test path exists: tests/test_release_candidate_183.py",
+      "detail": ""
+    },
+    {
+      "id": "quality-test-file:tests/test_runtime_selftest_183.js",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality-gate test path exists: tests/test_runtime_selftest_183.js",
+      "detail": ""
+    },
+    {
+      "id": "quality-test-file:tests/test_solidarity_worker_fallback.js",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality-gate test path exists: tests/test_solidarity_worker_fallback.js",
+      "detail": ""
+    },
+    {
+      "id": "quality-test-file:tests/validate_app.py",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality-gate test path exists: tests/validate_app.py",
+      "detail": ""
+    },
+    {
+      "id": "quality-artifact-or-smoke:app-check.html",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate includes app-check.html",
+      "detail": ""
+    },
+    {
+      "id": "quality-artifact-or-smoke:runtime-selftest.js",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate includes runtime-selftest.js",
+      "detail": ""
+    },
+    {
+      "id": "quality-artifact-or-smoke:release-readiness-183.json",
+      "category": "quality-gate",
+      "status": "pass",
+      "message": "Quality gate includes release-readiness-183.json",
+      "detail": ""
+    },
+    {
+      "id": "update-preserves:source-health-history.json",
+      "category": "update-workflow",
+      "status": "pass",
+      "message": "Update workflow preserves source-health-history.json",
+      "detail": ""
+    },
+    {
+      "id": "update-preserves:source-recovery-report.json",
+      "category": "update-workflow",
+      "status": "pass",
+      "message": "Update workflow preserves source-recovery-report.json",
+      "detail": ""
+    },
+    {
+      "id": "header-asset-reference",
+      "category": "header",
+      "status": "pass",
+      "message": "Header script uses the white-title transparent banner",
+      "detail": ""
+    },
+    {
+      "id": "header-asset-offline",
+      "category": "header",
+      "status": "pass",
+      "message": "White-title transparent header banner is in the app shell",
+      "detail": ""
+    },
+    {
+      "id": "header-responsive-size",
+      "category": "header",
+      "status": "pass",
+      "message": "Header banner has bounded responsive sizing",
+      "detail": ""
+    },
+    {
+      "id": "header-accessibility",
+      "category": "header",
+      "status": "pass",
+      "message": "Decorative banner does not duplicate the accessible heading",
+      "detail": ""
+    }
+  ]
+}

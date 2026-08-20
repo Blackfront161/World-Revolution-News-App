@@ -1,0 +1,38 @@
+GEMEINSAME ÜBERSETZUNGEN – VORBEREITUNG 1.7.3
+
+WAS BEREITS FUNKTIONIERT
+Die App speichert übersetzte Abschnitte lokal auf dem jeweiligen Gerät.
+Das verhindert Wiederholungen auf demselben Smartphone, teilt die Übersetzung
+aber nicht mit anderen Nutzer*innen.
+
+WAS 1.7.3 VORBEREITET
+- shared-translation-client.js unterstützt einen gemeinsamen Cache-Endpunkt.
+- cloudflare/shared-translation-cache-worker.js ist ein einsatzbereiter
+  Cloudflare-Worker vor dem vorhandenen Übersetzungsserver.
+- Cache-Schlüssel enthalten Sprache, Modus, Titel und Text als SHA-256-Hash.
+- Der Cache ist nicht durchsuchbar und veröffentlicht kein Übersetzungsverzeichnis.
+- Standardablaufzeit: 7 Tage.
+- Bei einem Cache-Treffer wird kein neuer Übersetzungsaufruf erzeugt.
+- Wenn der gemeinsame Worker ausfällt, fällt die App auf die bisherige
+  Übersetzung zurück.
+
+WARUM DIES NICHT AUTOMATISCH AKTIV IST
+Der Worker muss zuerst im eigenen Cloudflare-Konto bereitgestellt werden.
+Danach wird seine URL in config.js bei sharedTranslationUrl eingetragen.
+Bis dahin bleibt sharedTranslationUrl leer.
+
+AKTIVIERUNG
+1. In Cloudflare einen neuen Worker anlegen.
+2. Inhalt aus cloudflare/shared-translation-cache-worker.js einfügen.
+3. Worker bereitstellen.
+4. Optional UPSTREAM_URL auf den bisherigen Übersetzungsworker setzen.
+5. In config.js eintragen:
+   sharedTranslationUrl: 'https://DEIN-WORKER.workers.dev'
+6. config.js erneut hochladen.
+
+DATENSCHUTZ UND RECHTE
+Beim ersten Aufruf wird der Artikeltext wie bisher an den Übersetzungsdienst
+übermittelt. Der Cache speichert nur die Übersetzungsantwort unter einem Hash,
+nicht den Klartext der Anfrage als öffentliches Verzeichnis.
+Vollständige Artikelübersetzungen können trotzdem urheberrechtlich relevant sein.
+Darum ist die Ablage kurzlebig, nicht indexiert und auf Abruf beschränkt.

@@ -1,0 +1,136 @@
+/* World Revolution News 1.8.3 – Startanimation mit wiederhergestelltem Hintergrund */
+
+html.wrn-intro-active-1720 {
+    overflow: hidden;
+}
+
+.wrn-intro-screen-1720 {
+    position: fixed;
+    inset: 0;
+    z-index: 20000;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #030409;
+    color: #fff;
+    opacity: 0;
+    pointer-events: auto;
+    isolation: isolate;
+    transition: opacity 420ms ease !important;
+}
+
+.wrn-intro-screen-1720.wrn-intro-visible-1720 { opacity: 1; }
+.wrn-intro-screen-1720.wrn-intro-leaving-1720 { opacity: 0; pointer-events: none; }
+
+.wrn-intro-backdrop-1720 {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+    background: #030409 url("./app-background.webp?v=184") center center / contain no-repeat;
+    filter: none;
+    transform: scale(1);
+    animation: wrn-intro-drift-1720 5.5s ease-out both !important;
+}
+
+.wrn-intro-shade-1720 {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:
+        linear-gradient(180deg, transparent 0 54%, rgba(3, 4, 9, 0.12) 70%, rgba(3, 4, 9, 0.48));
+}
+
+.wrn-intro-content-1720 {
+    width: min(86vw, 760px);
+    display: grid;
+    justify-items: center;
+    gap: 0.9rem;
+    padding: 1.2rem;
+    text-align: center;
+    transform: translateY(12px);
+    opacity: 0;
+    animation: wrn-intro-rise-1720 620ms 520ms ease-out forwards !important;
+}
+
+.wrn-intro-logo-1720 {
+    width: clamp(72px, 11vw, 118px);
+    height: auto;
+    filter: drop-shadow(0 0 16px rgba(0, 229, 239, 0.25)) drop-shadow(0 0 22px rgba(255, 49, 88, 0.12));
+}
+
+.wrn-intro-wordmark-1720 {
+    color: #26f5ff;
+    font: 700 clamp(1.05rem, 3.7vw, 2.25rem)/1.15 "Courier New", monospace;
+    letter-spacing: clamp(.08em, .9vw, .22em);
+    text-shadow: 0 0 14px rgba(0, 229, 239, .55), 0 3px 12px #000;
+}
+
+.wrn-intro-progress-track-1720 {
+    width: min(72vw, 430px);
+    height: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(2, 5, 12, 0.72);
+}
+
+.wrn-intro-progress-1720 {
+    display: block;
+    width: 38%;
+    height: 100%;
+    transform: translateX(-120%);
+    background: linear-gradient(90deg, #ff3158 0%, #ff3158 35%, #00e5ef 68%, #7affff 100%);
+    box-shadow: 0 0 14px rgba(0, 229, 239, 0.65), 0 0 9px rgba(255, 49, 88, .55);
+    animation: wrn-intro-sweep-1720 1.15s 520ms ease-in-out infinite !important;
+}
+
+.wrn-intro-status-1720 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: clamp(0.72rem, 1.8vw, 0.9rem);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.wrn-intro-skip-1720 {
+    min-width: 108px;
+    min-height: 42px;
+    margin-top: 0.15rem;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 5px;
+    background: rgba(3, 4, 9, 0.55);
+    color: rgba(255, 255, 255, 0.82);
+    font: inherit;
+    cursor: pointer;
+}
+
+.wrn-intro-skip-1720:focus-visible { outline: 2px solid #00e5ef; outline-offset: 3px; }
+
+@keyframes wrn-intro-rise-1720 { to { transform: translateY(0); opacity: 1; } }
+@keyframes wrn-intro-drift-1720 {
+    from { transform: scale(1.012) translate3d(0, 0, 0); }
+    to { transform: scale(1) translate3d(0, 0, 0); }
+}
+@keyframes wrn-intro-sweep-1720 {
+    from { transform: translateX(-120%); }
+    to { transform: translateX(300%); }
+}
+
+@media (max-width: 520px) {
+    .wrn-intro-content-1720 { width: 92vw; gap: 0.7rem; }
+    .wrn-intro-logo-1720 { width: 78px; }
+    .wrn-intro-wordmark-1720 { font-size: clamp(.95rem, 5.5vw, 1.4rem); }
+    .wrn-intro-progress-track-1720 { width: min(78vw, 320px); }
+    .wrn-intro-backdrop-1720 { background-position: center center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wrn-intro-screen-1720,
+    .wrn-intro-content-1720,
+    .wrn-intro-backdrop-1720,
+    .wrn-intro-progress-1720 {
+        animation: none !important;
+        transition-duration: 1ms !important;
+    }
+    .wrn-intro-content-1720 { opacity: 1; transform: none; }
+}

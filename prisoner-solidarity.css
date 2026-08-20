@@ -1,0 +1,636 @@
+/* World Revolution News 1.9.0 – prisoner solidarity */
+
+.wrn-prisoner-solidarity-190 {
+  width: min(1500px, calc(100% - 32px));
+  margin: 24px auto 110px;
+  color: var(--text-primary, #f3f5fa);
+}
+
+.wrn-solidarity-header-190 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, .8fr);
+  gap: 18px;
+  padding: clamp(20px, 3vw, 36px);
+  border: 1px solid rgba(0, 229, 255, .48);
+  border-radius: 24px;
+  background:
+    linear-gradient(130deg, rgba(0, 229, 255, .08), transparent 42%),
+    linear-gradient(315deg, rgba(255, 42, 78, .09), transparent 48%),
+    rgba(7, 9, 16, .94);
+}
+
+.wrn-solidarity-header-190 > div {
+  display: block !important;
+  min-width: 0;
+  grid-row: span 2;
+}
+
+.wrn-solidarity-header-190 span {
+  display: inline-flex;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 42, 78, .55);
+  border-radius: 999px;
+  color: #ff385a;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.wrn-solidarity-header-190 h2 {
+  margin: 14px 0 8px;
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  line-height: 1;
+}
+
+.wrn-solidarity-header-190 p {
+  margin: 8px 0 0;
+  line-height: 1.55;
+}
+
+.wrn-solidarity-limited-190,
+.wrn-solidarity-privacy-190 {
+  align-self: end;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .04);
+  color: var(--text-secondary, #b7bdcb);
+}
+
+.wrn-solidarity-privacy-190 {
+  align-self: start;
+  border-left: 3px solid #00e5ff;
+}
+
+.wrn-solidarity-content-190 {
+  display: grid;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.wrn-solidarity-profile-190,
+.wrn-solidarity-write-start-190,
+.wrn-solidarity-guidance-190,
+.wrn-solidarity-sources-190 {
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(255, 42, 78, .42);
+  border-radius: 20px;
+  background: rgba(7, 9, 16, .92);
+}
+
+.wrn-solidarity-profile-190.stale {
+  border-color: rgba(255, 185, 59, .55);
+}
+
+.wrn-solidarity-profile-head-190 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.wrn-solidarity-profile-head-190 h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+}
+
+.wrn-solidarity-profile-head-190 p {
+  margin: 6px 0 0;
+  color: var(--text-secondary, #aeb5c5);
+}
+
+.wrn-solidarity-verified-190 {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.wrn-solidarity-verified-190.valid {
+  border: 1px solid rgba(0, 230, 140, .7);
+  color: #00e68c;
+  background: rgba(0, 230, 140, .08);
+}
+
+.wrn-solidarity-verified-190.stale {
+  border: 1px solid rgba(255, 185, 59, .7);
+  color: #ffbd4a;
+  background: rgba(255, 185, 59, .08);
+}
+
+.wrn-solidarity-tags-190 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px 0;
+}
+
+.wrn-solidarity-tags-190 span {
+  padding: 5px 9px;
+  border: 1px solid rgba(0, 229, 255, .35);
+  border-radius: 999px;
+  color: #66efff;
+  font-size: .8rem;
+}
+
+.wrn-solidarity-profile-190 address,
+.wrn-solidarity-workshop-190 address {
+  margin: 14px 0;
+  padding: 16px;
+  border-left: 4px solid #00e5ff;
+  background: rgba(0, 229, 255, .055);
+  color: #fff;
+  font-style: normal;
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
+.wrn-solidarity-review-190 {
+  display: block;
+  color: var(--text-secondary, #abb2c1);
+}
+
+.wrn-solidarity-stale-help-190,
+.wrn-solidarity-notice-190 {
+  padding: 12px 14px;
+  border-left: 3px solid #ffbd4a;
+  background: rgba(255, 189, 74, .07);
+}
+
+.wrn-solidarity-actions-190,
+.wrn-solidarity-workshop-actions-190 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.wrn-solidarity-actions-190 button,
+.wrn-solidarity-actions-190 a,
+.wrn-solidarity-write-start-190 button,
+.wrn-solidarity-write-start-190 select,
+.wrn-solidarity-guidance-190 a,
+.wrn-solidarity-sources-190 button,
+.wrn-solidarity-sources-190 a,
+.wrn-solidarity-workshop-190 button {
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border: 1px solid rgba(0, 229, 255, .55);
+  border-radius: 12px;
+  background: rgba(0, 229, 255, .06);
+  color: #00e5ff;
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrn-solidarity-actions-190 button:first-child,
+.wrn-solidarity-write-start-190 button,
+.wrn-solidarity-workshop-actions-190 .primary {
+  border-color: #ff294e;
+  background: #ff294e;
+  color: #080910;
+}
+
+.wrn-solidarity-actions-190 button:disabled,
+.wrn-solidarity-workshop-190 button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.wrn-solidarity-profile-190 dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0 0;
+}
+
+.wrn-solidarity-profile-190 dl div {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 12px;
+}
+
+.wrn-solidarity-profile-190 dt {
+  color: #00e5ff;
+  font-size: .75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.wrn-solidarity-profile-sources-190 {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.wrn-solidarity-profile-sources-190 a {
+  color: #00e5ff;
+  overflow-wrap: anywhere;
+}
+
+.wrn-solidarity-profile-190 dd {
+  margin: 5px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.wrn-solidarity-search-190,
+.wrn-solidarity-write-start-190 select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid rgba(0, 229, 255, .48);
+  border-radius: 14px;
+  background: #0c0f17;
+  color: #fff;
+  font: inherit;
+}
+
+.wrn-solidarity-related-190 {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.wrn-solidarity-article-190 {
+  display: grid;
+  width: 100%;
+  min-height: 44px;
+  margin: 7px 0;
+  padding: 10px 12px;
+  border: 0;
+  border-left: 3px solid #00e5ff;
+  background: rgba(255, 255, 255, .035);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wrn-solidarity-article-190 small {
+  margin-top: 4px;
+  color: var(--text-secondary, #aab1c0);
+}
+
+.wrn-solidarity-write-start-190 {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(240px, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+}
+
+.wrn-solidarity-guidance-190 li {
+  margin: 12px 0;
+  line-height: 1.55;
+}
+
+.wrn-solidarity-sources-190 article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 12px;
+}
+
+.wrn-solidarity-sources-190 h4 {
+  margin: 0;
+}
+
+.wrn-solidarity-sources-190 small {
+  grid-column: 1;
+}
+
+body.wrn-solidarity-workshop-open {
+  overflow: hidden;
+}
+
+.wrn-solidarity-workshop-190 {
+  position: fixed;
+  z-index: 1000000;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: 100%;
+  height: 100dvh;
+  background: #080a11;
+  color: #f4f6fa;
+}
+
+.wrn-solidarity-workshop-190 > header,
+.wrn-solidarity-workshop-190 > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px clamp(14px, 3vw, 32px);
+  border-bottom: 1px solid rgba(0, 229, 255, .35);
+  background: rgba(8, 10, 17, .98);
+}
+
+.wrn-solidarity-workshop-190 > footer {
+  border-top: 1px solid rgba(0, 229, 255, .35);
+  border-bottom: 0;
+}
+
+.wrn-solidarity-workshop-190 header h2 {
+  margin: 3px 0;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.wrn-solidarity-workshop-190 header span,
+.wrn-solidarity-workshop-190 header small {
+  color: #66efff;
+}
+
+.wrn-solidarity-close-190 {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 !important;
+  border-color: #ff294e !important;
+  color: #ff294e !important;
+  font-size: 1.8rem !important;
+}
+
+.wrn-solidarity-workshop-scroll-190 {
+  overflow: auto;
+  padding: 20px clamp(14px, 3vw, 34px) 40px;
+}
+
+.wrn-solidarity-workshop-privacy-190 {
+  max-width: 1180px;
+  margin: 0 auto 16px;
+  padding: 12px 14px;
+  border-left: 3px solid #00e5ff;
+  background: rgba(0, 229, 255, .06);
+}
+
+.wrn-solidarity-workshop-grid-190 {
+  display: grid;
+  grid-template-columns: minmax(260px, .7fr) minmax(0, 1.7fr);
+  gap: 22px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.wrn-solidarity-workshop-grid-190 aside,
+.wrn-solidarity-workshop-grid-190 main {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .025);
+}
+
+.wrn-solidarity-workshop-grid-190 label {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 14px;
+  color: #66efff;
+  font-weight: 800;
+}
+
+.wrn-solidarity-workshop-grid-190 input,
+.wrn-solidarity-workshop-grid-190 textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 10px;
+  background: #0d1019;
+  color: #fff;
+  font: inherit;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.wrn-solidarity-image-field-190 small {
+  display: block;
+  color: #ffbd4a;
+}
+
+.wrn-solidarity-image-preview-190 img {
+  width: min(100%, 420px);
+  max-height: 300px;
+  margin-top: 12px;
+  object-fit: contain;
+}
+
+.wrn-solidarity-translation-190 {
+  margin-top: 20px;
+}
+
+.wrn-solidarity-translation-190 > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.wrn-solidarity-translation-190 section {
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 12px;
+}
+
+.wrn-solidarity-translation-190 p {
+  white-space: pre-wrap;
+}
+
+.wrn-solidarity-workshop-status-190 {
+  min-width: 170px;
+  color: #00e68c;
+}
+
+.wrn-solidarity-workshop-status-190.error {
+  color: #ff5a71;
+}
+
+.wrn-solidarity-workshop-actions-190 {
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.wrn-solidarity-language-dialog-190 {
+  width: min(480px, calc(100% - 28px));
+  padding: 0;
+  border: 1px solid rgba(0, 229, 255, .55);
+  border-radius: 18px;
+  background: #080d12;
+  color: #f5f7fa;
+}
+
+.wrn-solidarity-language-dialog-190::backdrop {
+  background: rgba(0, 0, 0, .78);
+  backdrop-filter: blur(3px);
+}
+
+.wrn-solidarity-language-dialog-190 form {
+  display: grid;
+  gap: 16px;
+  padding: 22px;
+}
+
+.wrn-solidarity-language-dialog-190 h3,
+.wrn-solidarity-language-dialog-190 p {
+  margin: 0;
+}
+
+.wrn-solidarity-language-dialog-190 label {
+  display: grid;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.wrn-solidarity-language-dialog-190 select {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 229, 255, .45);
+  border-radius: 12px;
+  background: #111923;
+  color: #fff;
+  font: inherit;
+}
+
+.wrn-solidarity-language-dialog-190 form > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.wrn-solidarity-language-dialog-190 .primary {
+  border-color: #ff294e;
+  background: #ff294e;
+  color: #080910;
+}
+
+.wrn-solidarity-language-privacy-190 {
+  color: #abb2c1;
+  font-size: .9rem;
+}
+
+#wrn-solidarity-print-190 {
+  display: none;
+}
+
+body.theme-light .wrn-prisoner-solidarity-190,
+body[data-theme="light"] .wrn-prisoner-solidarity-190 {
+  color: #17202a;
+}
+
+body.theme-light .wrn-solidarity-header-190,
+body.theme-light .wrn-solidarity-profile-190,
+body.theme-light .wrn-solidarity-write-start-190,
+body.theme-light .wrn-solidarity-guidance-190,
+body.theme-light .wrn-solidarity-sources-190,
+body[data-theme="light"] .wrn-solidarity-header-190,
+body[data-theme="light"] .wrn-solidarity-profile-190,
+body[data-theme="light"] .wrn-solidarity-write-start-190,
+body[data-theme="light"] .wrn-solidarity-guidance-190,
+body[data-theme="light"] .wrn-solidarity-sources-190 {
+  background: rgba(248, 250, 252, .96);
+}
+
+body.theme-light .wrn-solidarity-profile-head-190 h3,
+body.theme-light .wrn-solidarity-header-190 h2,
+body[data-theme="light"] .wrn-solidarity-profile-head-190 h3,
+body[data-theme="light"] .wrn-solidarity-header-190 h2 {
+  color: #151923;
+}
+
+@media (max-width: 760px) {
+  .wrn-prisoner-solidarity-190 {
+    width: calc(100% - 20px);
+    margin-top: 12px;
+  }
+
+  .wrn-solidarity-header-190,
+  .wrn-solidarity-write-start-190,
+  .wrn-solidarity-workshop-grid-190 {
+    grid-template-columns: 1fr;
+  }
+
+  .wrn-solidarity-header-190 > div {
+    grid-row: auto;
+  }
+
+  .wrn-solidarity-profile-head-190 {
+    display: grid;
+  }
+
+  .wrn-solidarity-profile-190 dl {
+    grid-template-columns: 1fr;
+  }
+
+  .wrn-solidarity-actions-190 > * {
+    flex: 1 1 calc(50% - 9px);
+    text-align: center;
+  }
+
+  .wrn-solidarity-workshop-190 > header {
+    align-items: flex-start;
+  }
+
+  .wrn-solidarity-workshop-190 > footer {
+    display: block;
+    max-height: 34dvh;
+    overflow: auto;
+  }
+
+  .wrn-solidarity-workshop-actions-190 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8px;
+  }
+
+  .wrn-solidarity-workshop-actions-190 button {
+    width: 100%;
+  }
+
+  .wrn-solidarity-translation-190 > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  body > *:not(#wrn-solidarity-print-190) {
+    display: none !important;
+  }
+
+  #wrn-solidarity-print-190 {
+    display: block !important;
+    color: #000;
+    background: #fff;
+    font: 12pt/1.55 Georgia, serif;
+  }
+
+  #wrn-solidarity-print-190 address {
+    margin: 0 0 24mm;
+    font-style: normal;
+    white-space: pre-line;
+  }
+
+  #wrn-solidarity-print-190 .body {
+    white-space: pre-wrap;
+  }
+
+  #wrn-solidarity-print-190 img {
+    max-width: 100%;
+    max-height: 90mm;
+    object-fit: contain;
+    page-break-inside: avoid;
+  }
+
+  #wrn-solidarity-print-190 footer {
+    margin-top: 24mm;
+    border-top: 1px solid #777;
+    color: #555;
+    font-size: 9pt;
+  }
+}

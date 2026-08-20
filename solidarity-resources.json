@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-12T00:00:00Z",
+  "resources": [],
+  "note": "Absichtlich leer: Offline-Material wird erst nach Prüfung von Aktualität, Urheberrecht, Verbreitungsrecht und regionaler Zuständigkeit aufgenommen.",
+  "editorialInputChecklist": [
+    "offizieller Herausgeber", "Titel und Sprache", "Region und Hilfethema",
+    "Original-URL", "letztes Prüfdatum und nächste Prüfung",
+    "nachgewiesenes Recht zur Offline-Verbreitung"
+  ]
+}

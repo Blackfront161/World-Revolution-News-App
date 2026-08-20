@@ -1,0 +1,64 @@
+:root {
+  color-scheme: dark;
+  --bg: #05080b;
+  --panel: #0b1218;
+  --line: #24313a;
+  --text: #f4f5f6;
+  --muted: #9eabb5;
+  --red: #ff315c;
+  --cyan: #12dbe7;
+  font: 16px/1.5 system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(135deg, #031419, #12080e 65%, #05080b); color: var(--text); min-height: 100vh; }
+header, main { width: min(1180px, calc(100% - 32px)); margin: auto; }
+header { display: flex; align-items: center; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+header a { color: var(--cyan); text-decoration: none; }
+h1, h2, p { margin: 0; }
+header span, .dashboard-head span { color: var(--cyan); font-size: .76rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+main { padding: 28px 0 70px; }
+.login-card, #dashboard { background: rgba(11, 18, 24, .94); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+.login-card { display: grid; grid-template-columns: minmax(220px, .75fr) minmax(300px, 1.25fr); gap: 26px; }
+.login-card p { color: var(--muted); margin-top: 8px; }
+form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; align-items: end; }
+label { display: grid; gap: 6px; }
+label span { font-size: .82rem; color: var(--muted); }
+input, button, select, textarea { min-height: 46px; border-radius: 12px; border: 1px solid var(--line); font: inherit; }
+input, select, textarea { background: #05090d; color: var(--text); padding: 0 12px; }
+textarea { min-height: 96px; padding: 10px 12px; resize: vertical; }
+button { background: var(--red); color: #07090b; font-weight: 800; padding: 0 18px; cursor: pointer; }
+.dashboard-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 26px 0 14px; }
+.dashboard-head:first-child { margin-top: 0; }
+.dashboard-head button { background: transparent; color: var(--text); }
+.quota-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.quota { border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+.quota strong, .quota span { display: block; }
+.quota span { color: var(--muted); font-size: .85rem; }
+.quota progress { width: 100%; accent-color: var(--cyan); }
+.quota.warning progress { accent-color: #ffb347; }
+.quota.danger progress { accent-color: var(--red); }
+.push-card { margin-top: 24px; border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.push-card > p { color: var(--muted); }
+.push-form { margin-top: 16px; display: grid; grid-template-columns: minmax(170px, .6fr) minmax(260px, 1.4fr); gap: 12px; }
+.push-form .push-wide, .push-form button { grid-column: 1 / -1; }
+.push-form button { justify-self: start; }
+#push-status { margin-top: 12px; color: var(--cyan); }
+.inbox-layout { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(340px, 1.2fr); gap: 14px; }
+.feedback-list, .feedback-detail { border: 1px solid var(--line); border-radius: 14px; min-height: 320px; }
+.feedback-list { overflow: auto; max-height: 62vh; }
+.feedback-list button { display: block; width: 100%; height: auto; text-align: left; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--text); padding: 14px; }
+.feedback-list button:hover, .feedback-list button[aria-current=true] { background: #10202a; }
+.feedback-list small, .feedback-list span { display: block; color: var(--muted); }
+.feedback-detail { padding: 20px; white-space: pre-wrap; }
+.feedback-detail dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 14px; }
+.feedback-detail dt { color: var(--muted); }
+.feedback-message { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+#login-status { grid-column: 1 / -1; color: var(--red); }
+@media (max-width: 760px) {
+  .login-card, .inbox-layout { grid-template-columns: 1fr; }
+  form, .push-form { grid-template-columns: 1fr; }
+  .push-form .push-wide, .push-form button { grid-column: 1; }
+  .quota-grid { grid-template-columns: 1fr; }
+  header { align-items: flex-start; flex-direction: column; }
+  .feedback-list { max-height: 40vh; }
+}

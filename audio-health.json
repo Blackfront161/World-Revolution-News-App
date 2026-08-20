@@ -1,0 +1,979 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-25T18:55:46.760761+00:00",
+  "podcasts": {
+    "summary": {
+      "total": 29,
+      "playable": 29,
+      "limited": 0,
+      "broken": 0,
+      "unknown": 0
+    },
+    "checks": [
+      {
+        "name": "A-Radio Berlin",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://archive.org/download/jingle_syndikat1_Prozess/jingle_syndikat1_Prozess_kurz.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://archive.org/download/aradioberlinchile191020valpo1de/A-Radio%20Berlin_Chile_191020_Valpo1_DE.MP3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "A-Radio Wien",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://cba.media/wp-content/uploads/2/6/0000785762/20260719-anarchistisches-radio-lange.mp3?stream",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://cba.media/wp-content/uploads/1/4/0000784341/20260712-anarchistisches-radio.mp3?stream",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Black Autonomy Podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/blackautonomy/Lessons_for_Black_Anarchists_mixdown_V3.mp3?dest-id=2551538",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/blackautonomy/FBP_EP18_CounteringBlackFascism_mixdown_003.mp3?dest-id=2551538",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Black Myths Podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/blackmyths/Obama.mp3?dest-id=1946408",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/blackmyths/Data.mp3?dest-id=1946408",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "CrimethInc. Ex-Worker",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/exworker/115_iran-an-uprising-besieged-from-within-and-without.mp3?dest-id=139038",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/exworker/114_Safeguarding-Our-Movements-against-Repression.mp3?dest-id=139038",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Dissens Podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://audio.podigee-cdn.net/2546647-m-a5bb45e33e3e57d6661519b5cd294c5b.mp3?source=feed",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mp3",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://audio.podigee-cdn.net/2538721-m-13fac1b816f7d44f712a20c1bf4baf0e.mp3?source=feed",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mp3",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Frequenz A",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://ia902908.us.archive.org/15/items/interview-chiapas-full-version/Interview%20Chiapas-full-version.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://ia600806.us.archive.org/14/items/interview-indigenous-struggles-brazil-27-03-2026/Interview-Indigenous-struggles-brazil-27-03-2026.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Guerrilla History",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/guerrillahistory/Sudan_pt._1_mohamed_ruehl.mp3?dest-id=2463146",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/guerrillahistory/counterrevolution_of_1776.mp3?dest-id=2463146",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Indigenous Action Podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://www.indigenousaction.org/podcast-download/21257/indigenous-action-podcast-ep-18-no-settler-future-an-anti-year-in-review-sorta.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://www.indigenousaction.org/podcast-download/21209/indigenous-action-podcast-episode-17-decolonization-isnt-a-holiday.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "It’s Going Down Podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://redirect.zencastr.com/r/episode/6a55a5b46ac47f6f7e51f72c/size/86740461/audio-files/666070b3c98c93cf0982b99f/76f87f71-c19a-4918-8cc7-0bbeb972db96.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://redirect.zencastr.com/r/episode/69f23b6712239e8588aa52aa/size/98703981/audio-files/666070b3c98c93cf0982b99f/de5828d2-7e13-479a-9038-a08f6a919388.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "LORA München",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://stream.lora924.de:8080/lora-mp3-256.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://www.freie-radios.net/mp3/20260722-mnchenerinne-143698.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Leftover Talk / 边角聊",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://aphid.fireside.fm/d/1437767933/f6409c01-42d6-4b5f-abbb-1759bb0a7853/b7a80d74-fc6f-4f9f-a929-9209f2f427c2.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://aphid.fireside.fm/d/1437767933/f6409c01-42d6-4b5f-abbb-1759bb0a7853/a1c373cd-eb24-411d-ad9f-a2cc56ad9032.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Millennials Are Killing Capitalism",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/millennialsarekillingcapitalism/Emmaia_Gelman_Final.mp3?dest-id=583371",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/millennialsarekillingcapitalism/The_Camp_David_Republic_Egypt_Normalization_and_the_Long_Defeat.mp3?dest-id=583371",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Ambulante",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://podtrac.com/pts/redirect.mp3/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/b3c9b6e7-72ba-45c4-aff9-b1e7012d213b/99df0c43-8571-4798-beb5-b48a013de30c/audio.mp3?utm_source=Podcast&in_playlist=092b66a8-4329-4183-bb12-b1e7012d216f",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://podtrac.com/pts/redirect.mp3/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/b3c9b6e7-72ba-45c4-aff9-b1e7012d213b/b7bb29a6-202d-4664-9d7d-b48300fd051f/audio.mp3?utm_source=Podcast&in_playlist=092b66a8-4329-4183-bb12-b1e7012d216f",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Blackout Torino",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://radioblackout.org/wp-content/uploads/2026/07/F_m_21_07_Sandro-CUB-UniTo-su-cambio-appalti-portierato.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://radioblackout.org/wp-content/uploads/2026/07/F_m_21_07_Valeria-Ispettrice-del-lavoro-su-controlli-ispettorato.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Blau Leipzig",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://www.freie-radios.net/mp3/20260725-verweigernun-143729.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://www.freie-radios.net/mp3/20260720-abschiedundn-143677.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio CORAX – Nachhören",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://www.freie-radios.net/mp3/20260724-unerkanntena-143727.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://rdl.de/sites/default/files/audio/2026/07/20260724-hitzetoteins-w39378.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Dreyeckland",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://rdl.de/sites/default/files/audio/2026/07/20260725-ariafrittait-a26692.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://rdl.de/sites/default/files/audio/2026/07/20260725-raicesnomade-a26691.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Onda Rossa",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://media.ondarossa.info/dl/2025/11/NotturnoElettronico-Puntata15-669aen5k.ogg",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "application/ogg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://media.ondarossa.info/dl/2026/7/ror-260724_1208-1212-ValSusa-13o90mgx.ogg",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "application/ogg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Real Sankara Hours",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://mcdn.podbean.com/mf/web/wbt6bp88bhhduimi/RSH_156_-_Republicans_Don_t_Like_Women_672026_7r627.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://mcdn.podbean.com/mf/web/8ngcyi9yd2raxwig/RSH_154_America_Done_F_ed_Up_Now_3222026_8m0ca.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Red Menace",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/redmenace/Philosophy_Patreon.mp3?dest-id=1073807",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/redmenace/DSA_Wins.mp3?dest-id=1073807",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Revolutionary Left Radio",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/revolutionaryleftradio/Philosophy_Patreon.mp3?dest-id=485908",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/revolutionaryleftradio/ep-388-breht-o-shea-converted.mp3?dest-id=485908",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Srsly Wrong",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://media.blubrry.com/srslywrong/audioboom.com/posts/8923218.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://media.blubrry.com/srslywrong/audioboom.com/posts/8910028.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "The Dugout – a Black anarchist podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://anchor.fm/s/e8e55a68/podcast/play/123142710/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-21%2F428381456-44100-2-05d914341dd67.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://anchor.fm/s/e8e55a68/podcast/play/123051744/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-20%2Fd5ca8b27-b98c-4075-3cd7-103e5f4592a0.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "The East is a Podcast",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/eastisapodcast/EIAP_MF072026_fiinal.mp3?dest-id=831728",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/eastisapodcast/BF071426.mp3?dest-id=831728",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "The Final Straw Radio",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/clean/secure/thefinalstrawradio/tfsr-podcast-20260719-Ramana.mp3?dest-id=414278",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/clean/secure/thefinalstrawradio/tfsr-podcast-20260712-BelfastPogrom2026.mp3?dest-id=414278",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "The Response",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://traffic.libsyn.com/secure/theresponsepodcast/The_Response_S6E19__Compassion_in_Crisis.mp3?dest-id=794742",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://traffic.libsyn.com/secure/theresponsepodcast/The_Response_S6E18__New_Stories.mp3?dest-id=794742",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Wise The Dome TV",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://anchor.fm/s/e0971054/podcast/play/123065835/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-20%2Fa0e9c83c-cc10-1c36-6a37-7267792e64d3.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://anchor.fm/s/e0971054/podcast/play/122782531/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-13%2F5d6dd2f0-a0d6-bb6b-5d82-ea0227e41fe2.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Yeah Nah Pasaran! (3CR)",
+        "status": "playable",
+        "testedEpisodes": 2,
+        "checks": [
+          {
+            "url": "https://audio.3cr.org.au/3cr/yeah-nah-pasaran/2026/07/02/1630/202607021630_yeah-nah-pasaran_64.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://audio.3cr.org.au/3cr/yeah-nah-pasaran/2026/06/18/1630/202606181630_yeah-nah-pasaran_64.mp3",
+            "status": "playable",
+            "httpStatus": 206,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      }
+    ],
+    "episodeCount": 746
+  },
+  "radio": {
+    "summary": {
+      "total": 27,
+      "playable": 8,
+      "limited": 0,
+      "broken": 0,
+      "unknown": 19
+    },
+    "checks": [
+      {
+        "name": "Radio CORAX",
+        "url": "https://streaming.fueralle.org/corax_192.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://streaming.fueralle.org/corax_192.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://streaming.fueralle.org/corax_128.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://streaming.fueralle.org/corax_64.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Blau",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Dreyeckland",
+        "url": "https://stream.rdl.de/rdl",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://stream.rdl.de/rdl",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "FSK Hamburg",
+        "url": "https://streaming.fueralle.org/fsk.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://streaming.fueralle.org/fsk.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://streaming.fueralle.org/fsk.ogg",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "application/ogg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "LORA München",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "ORANGE 94.0",
+        "url": "https://securestream.o94.at/live.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://securestream.o94.at/live.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Helsinki",
+        "url": "https://live.helsinki.at:8088/live160.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://live.helsinki.at:8088/live160.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://live.helsinki.at:8088/live128.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "coloRadio",
+        "url": "https://streaming.fueralle.org/coloradio_160.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://streaming.fueralle.org/coloradio_160.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "audio/mpeg",
+            "detail": "Audioantwort erfolgreich."
+          },
+          {
+            "url": "https://streaming.fueralle.org/coloradio_128.mp3",
+            "status": "broken",
+            "httpStatus": 404,
+            "contentType": "text/html; charset=utf-8",
+            "detail": "Nicht gefunden (HTTP 404)."
+          }
+        ]
+      },
+      {
+        "name": "Radio Z",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio F.R.E.I.",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "bermuda.funk",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Querfunk",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio X",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Wüste Welle",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Agora 105.5",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Študent",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "1431 AM",
+        "url": "https://www.1431am.org:8001/1431ogg",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "application/ogg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://www.1431am.org:8001/1431ogg",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "application/ogg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Libertaire",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Blackout",
+        "url": "https://stream.radioblackout.org/blackout.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "application/ogg",
+        "detail": "Audioantwort erfolgreich.",
+        "candidateChecks": [
+          {
+            "url": "https://stream.radioblackout.org/blackout.mp3",
+            "status": "playable",
+            "httpStatus": 200,
+            "contentType": "application/ogg",
+            "detail": "Audioantwort erfolgreich."
+          }
+        ]
+      },
+      {
+        "name": "Radio Onda Rossa",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Onda d’Urto",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Klara",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Canut",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "Radio Kurruf",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "KBOO Community Radio",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "CKUT 90.3 FM",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      },
+      {
+        "name": "WORT 89.9 FM",
+        "url": "",
+        "status": "unknown",
+        "httpStatus": 0,
+        "contentType": "",
+        "detail": "Keine Stream-Adresse im Katalog.",
+        "candidateChecks": []
+      }
+    ],
+    "stationCount": 27
+  }
+}

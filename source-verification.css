@@ -1,0 +1,308 @@
+/* World Revolution News 1.7.14 – Quellenprüfungszentrum */
+
+.wrn-source-verification-open {
+    border: 1px solid var(--color-cyan, #00f0ff);
+    background: transparent;
+    color: var(--color-cyan, #00f0ff);
+    border-radius: 5px;
+    padding: 0.62rem 0.78rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wrn-more-grid .wrn-source-verification-open {
+    width: 100%;
+    min-height: 44px;
+    grid-column: 1 / -1;
+}
+
+.wrn-source-verification-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 11980;
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.wrn-source-verification-modal {
+    position: fixed;
+    z-index: 11990;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(94vw, 920px);
+    max-height: 90vh;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid var(--color-cyan, #00f0ff);
+    border-radius: 8px;
+    background: #08090f;
+    color: var(--text-main, #fff);
+}
+
+.wrn-source-verification-overlay[hidden],
+.wrn-source-verification-modal[hidden] {
+    display: none !important;
+}
+
+.wrn-source-verification-head,
+.wrn-source-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrn-source-verification-head h2 {
+    margin: 0;
+    color: var(--color-cyan, #00f0ff);
+    font-size: 1.22rem;
+}
+
+.wrn-source-verification-head p {
+    margin: 0.25rem 0 0;
+    color: var(--text-muted, #aaa);
+    font-size: 0.78rem;
+}
+
+.wrn-source-close {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ff3158;
+    border-radius: 5px;
+    background: transparent;
+    color: #ff3158;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.wrn-source-summary {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.55rem;
+    margin: 1rem 0;
+}
+
+.wrn-source-metric {
+    border: 1px solid #30333d;
+    border-radius: 6px;
+    padding: 0.7rem;
+    background: #101119;
+}
+
+.wrn-source-metric span {
+    display: block;
+    color: var(--text-muted, #aaa);
+    font-size: 0.72rem;
+}
+
+.wrn-source-metric strong {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 1.32rem;
+}
+
+.wrn-source-metric[data-state="ok"] {
+    border-color: #00d596;
+}
+
+.wrn-source-metric[data-state="warning"] {
+    border-color: #f0a43c;
+}
+
+.wrn-source-metric[data-state="error"] {
+    border-color: #ff3158;
+}
+
+.wrn-source-controls {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) auto;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+#wrn-source-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.72rem;
+    border: 1px solid #3a3e49;
+    border-radius: 5px;
+    background: #11131b;
+    color: #fff;
+    font: inherit;
+}
+
+.wrn-source-filter-row {
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+}
+
+.wrn-source-filter-row button,
+.wrn-source-footer button {
+    border: 1px solid #4a4f5c;
+    border-radius: 5px;
+    background: #11131b;
+    color: #fff;
+    padding: 0.62rem 0.72rem;
+    font: inherit;
+    cursor: pointer;
+}
+
+.wrn-source-filter-row button.active {
+    border-color: var(--color-cyan, #00f0ff);
+    color: var(--color-cyan, #00f0ff);
+}
+
+.wrn-source-status {
+    color: var(--color-cyan, #00f0ff);
+    min-height: 1.3rem;
+    margin-bottom: 0.45rem;
+}
+
+.wrn-source-list {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.wrn-source-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.35rem 0.7rem;
+    border: 1px solid #2e323c;
+    border-left-width: 4px;
+    border-radius: 6px;
+    padding: 0.72rem;
+    background: #0d0f16;
+}
+
+.wrn-source-row[data-state="ok"] {
+    border-left-color: #00d596;
+}
+
+.wrn-source-row[data-state="warning"] {
+    border-left-color: #f0a43c;
+}
+
+.wrn-source-row[data-state="error"] {
+    border-left-color: #ff3158;
+}
+
+.wrn-source-row[data-state="unknown"] {
+    border-left-color: #72798a;
+}
+
+.wrn-source-row-main strong,
+.wrn-source-row-main span {
+    display: block;
+}
+
+.wrn-source-row-main span {
+    color: var(--text-muted, #aaa);
+    font-size: 0.72rem;
+    margin-top: 0.18rem;
+}
+
+.wrn-source-badge {
+    align-self: start;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: 0.18rem 0.48rem;
+    font-size: 0.68rem;
+}
+
+.wrn-source-row p,
+.wrn-source-row a {
+    grid-column: 1 / -1;
+    margin: 0.18rem 0 0;
+    overflow-wrap: anywhere;
+    font-size: 0.76rem;
+}
+
+.wrn-source-row p {
+    color: var(--text-muted, #aaa);
+}
+
+.wrn-source-row a {
+    color: var(--color-cyan, #00f0ff);
+}
+
+.wrn-source-footer {
+    margin-top: 0.85rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #30333d;
+}
+
+.wrn-source-footer small {
+    color: var(--text-muted, #aaa);
+}
+
+.wrn-source-footer > div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+html.wrn-source-modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 720px) {
+    .wrn-source-verification-modal {
+        width: 96vw;
+        max-height: 92vh;
+        padding: 0.75rem;
+    }
+
+    .wrn-source-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wrn-source-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .wrn-source-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* WRN 1.8.2 – Sprach- und Herkunftsfilter */
+.wrn-source-dimension-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+}
+
+.wrn-source-dimension-row label {
+    display: grid;
+    gap: 0.25rem;
+    color: var(--text-muted, #aaa);
+    font-size: 0.72rem;
+}
+
+.wrn-source-dimension-row select {
+    min-height: 42px;
+    border: 1px solid #3a3e49;
+    border-radius: 5px;
+    background: #11131b;
+    color: #fff;
+    padding: 0.55rem;
+    font: inherit;
+}
+
+.wrn-source-meta {
+    display: block;
+    margin-top: 0.24rem;
+    color: var(--color-cyan, #00f0ff);
+    font-size: 0.68rem;
+}
+
+@media (max-width: 720px) {
+    .wrn-source-dimension-row {
+        grid-template-columns: 1fr;
+    }
+}

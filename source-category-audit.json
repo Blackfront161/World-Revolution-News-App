@@ -1,0 +1,2225 @@
+{
+  "schemaVersion": 1,
+  "articleCount": 2000,
+  "configuredSourceCount": 273,
+  "articlesWithoutRegion": 0,
+  "articlesWithoutTopic": 0,
+  "unmatchedStoredSources": {},
+  "sources": {
+    "269 Libération Animale (France)": {
+      "articles": 5,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Animal Liberation"
+      ]
+    },
+    "A Las Barricadas (ES)": {
+      "articles": 23,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Antifascism",
+        "Demonstrations",
+        "Movement News",
+        "No Borders",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "A-Radio Berlin": {
+      "articles": 8,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "A.N.A. Brasil": {
+      "articles": 20,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Demonstrations",
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "ABC Belarus": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "ABC Dresden": {
+      "articles": 8,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "ALF Press Office (North America)": {
+      "articles": 14,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism"
+      ]
+    },
+    "ANRed (Argentina)": {
+      "articles": 47,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Antifascism",
+        "Antiracism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Queer-Feminism",
+        "Squatting & Housing"
+      ]
+    },
+    "APTN News": {
+      "articles": 4,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Indigenous Struggles"
+      ]
+    },
+    "ARIWA – Animal Rights Watch (Germany)": {
+      "articles": 10,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Animal Liberation"
+      ]
+    },
+    "AWID": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antisexism",
+        "Queer-Feminism"
+      ]
+    },
+    "AWSM": {
+      "articles": 2,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "No War",
+        "Theory & Strategy"
+      ]
+    },
+    "Abahlali baseMjondolo (South Africa)": {
+      "articles": 7,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Antiracism",
+        "Movement News",
+        "Squatting & Housing"
+      ]
+    },
+    "Abolish Frontex": {
+      "articles": 8,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Cyberactivism",
+        "No Borders"
+      ]
+    },
+    "Abolition Journal": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "Movement News"
+      ]
+    },
+    "Access Now": {
+      "articles": 12,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Queer-Feminism"
+      ]
+    },
+    "Act for Freedom Now!": {
+      "articles": 29,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antifascism",
+        "Movement News",
+        "No War",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "African Arguments": {
+      "articles": 11,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Antisexism",
+        "Eco-Anarchism",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "African Feminism": {
+      "articles": 7,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Antiracism",
+        "Antisexism",
+        "No Borders",
+        "Queer-Feminism"
+      ]
+    },
+    "Agencia Tierra Viva": {
+      "articles": 9,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Squatting & Housing"
+      ]
+    },
+    "Agency": {
+      "articles": 9,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Movement News",
+        "No Borders"
+      ]
+    },
+    "Agência Pública": {
+      "articles": 24,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Antiracism",
+        "Labor Struggles",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Alarm Phone": {
+      "articles": 3,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Antiracism",
+        "No Borders"
+      ]
+    },
+    "Alerta (GR)": {
+      "articles": 10,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Movement News",
+        "Squatting & Housing"
+      ]
+    },
+    "Anarchist Black Cross": {
+      "articles": 12,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "Anarchist Communist Group": {
+      "articles": 9,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Queer-Feminism",
+        "Theory & Strategy"
+      ]
+    },
+    "Anarchist Federation": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antiracism",
+        "Demonstrations",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Anarchist Library (RU)": {
+      "articles": 10,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Libraries"
+      ]
+    },
+    "Anarchist Library (SV)": {
+      "articles": 19,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Libraries"
+      ]
+    },
+    "Anarchist News": {
+      "articles": 4,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "Anarchistische Bibliothek (DE)": {
+      "articles": 8,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Libraries",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "Anarres Info": {
+      "articles": 7,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Antifascism",
+        "No War"
+      ]
+    },
+    "Anarşist Haberler": {
+      "articles": 3,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "AngryWorkers": {
+      "articles": 9,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Demonstrations",
+        "Labor Struggles"
+      ]
+    },
+    "Animal Equality Deutschland": {
+      "articles": 10,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Animal Liberation"
+      ]
+    },
+    "Animal Rising": {
+      "articles": 9,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Movement News"
+      ]
+    },
+    "Antifa Infoblatt": {
+      "articles": 2,
+      "regions": [
+        "Europe",
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "Antimilitarismus": {
+      "articles": 18,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Theory & Strategy"
+      ]
+    },
+    "Apatris (GR)": {
+      "articles": 9,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Movement News"
+      ]
+    },
+    "Are You Syrious?": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "No Borders"
+      ]
+    },
+    "Asian Labour Review": {
+      "articles": 4,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Labor Struggles"
+      ]
+    },
+    "Autonomies": {
+      "articles": 18,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antifascism",
+        "Antiracism",
+        "Eco-Anarchism",
+        "Movement News",
+        "No Borders",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "Autostraddle News": {
+      "articles": 6,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Queer-Feminism"
+      ]
+    },
+    "Avispa Midia": {
+      "articles": 17,
+      "regions": [
+        "Global",
+        "Latin America"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Movement News",
+        "No War",
+        "Queer-Feminism",
+        "Squatting & Housing"
+      ]
+    },
+    "Avtonom (RU)": {
+      "articles": 11,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Movement News",
+        "No Borders",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "Bianet Kurdî": {
+      "articles": 18,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Movement News",
+        "Queer-Feminism"
+      ]
+    },
+    "Bianet Türkçe": {
+      "articles": 11,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Demonstrations",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Biblioteca Anarquista (ES)": {
+      "articles": 12,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antifascism",
+        "Labor Struggles",
+        "Libraries"
+      ]
+    },
+    "Bibliothèque Anarchiste (FR)": {
+      "articles": 19,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Antifascism",
+        "Libraries"
+      ]
+    },
+    "Black Agenda Report": {
+      "articles": 9,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Movement News"
+      ]
+    },
+    "Black Flag Sydney": {
+      "articles": 4,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticolonialism",
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "Black Rose / Rosa Negra": {
+      "articles": 8,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "Bristol ABC": {
+      "articles": 6,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "Bulatlat (Indigenous)": {
+      "articles": 12,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Eco-Anarchism",
+        "Indigenous Struggles"
+      ]
+    },
+    "Bulatlat (Philippines)": {
+      "articles": 19,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Antisexism",
+        "Cyberactivism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "Queer-Feminism"
+      ]
+    },
+    "C4SS": {
+      "articles": 13,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Anticapitalism",
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Theory & Strategy"
+      ]
+    },
+    "CNT (Spanien)": {
+      "articles": 30,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Antifascism",
+        "Antiracism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "Chuang (CN)": {
+      "articles": 4,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Labor Struggles",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Colorlines": {
+      "articles": 10,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antiracism",
+        "Movement News"
+      ]
+    },
+    "Comunizar": {
+      "articles": 1,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Anticapitalism"
+      ]
+    },
+    "Coordenação Anarquista Brasileira (CAB)": {
+      "articles": 4,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anticapitalism",
+        "Indigenous Struggles",
+        "No War"
+      ]
+    },
+    "CrimethInc. (Global)": {
+      "articles": 2,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Movement News"
+      ]
+    },
+    "Critical Resistance": {
+      "articles": 4,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "Cultural Survival": {
+      "articles": 9,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism",
+        "Indigenous Struggles"
+      ]
+    },
+    "Defend Council Housing (UK)": {
+      "articles": 1,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Squatting & Housing"
+      ]
+    },
+    "Defend the Atlanta Forest": {
+      "articles": 3,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Eco-Anarchism"
+      ]
+    },
+    "Democracy Now! (Global)": {
+      "articles": 56,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Queer-Feminism"
+      ]
+    },
+    "Digitalcourage": {
+      "articles": 7,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "Direkte Aktion (DE)": {
+      "articles": 5,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Antifascism",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "Disability Debrief": {
+      "articles": 16,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism",
+        "No Borders",
+        "Radical Health & Disability"
+      ]
+    },
+    "Disability Visibility": {
+      "articles": 4,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Radical Health & Disability"
+      ]
+    },
+    "Electronic Frontier Foundation": {
+      "articles": 26,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antisexism",
+        "Cyberactivism",
+        "Movement News",
+        "No Borders",
+        "Queer-Feminism"
+      ]
+    },
+    "Elitsha": {
+      "articles": 5,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "Demonstrations",
+        "Labor Struggles",
+        "No Borders"
+      ]
+    },
+    "Ende Gelände": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Movement News"
+      ]
+    },
+    "Enlace Zapatista (EZLN)": {
+      "articles": 22,
+      "regions": [
+        "Global",
+        "Latin America"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Indigenous Struggles",
+        "Movement News",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "Equality Now": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antisexism",
+        "Movement News",
+        "No Borders"
+      ]
+    },
+    "European Digital Rights": {
+      "articles": 14,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Eco-Anarchism"
+      ]
+    },
+    "Evrensel": {
+      "articles": 6,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "FAU (Deutschland)": {
+      "articles": 11,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "Federacja Anarchistyczna (PL)": {
+      "articles": 8,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "Federation of Anarchism Era": {
+      "articles": 5,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anticapitalism",
+        "Antifascism",
+        "Demonstrations"
+      ]
+    },
+    "Feminist Newswire": {
+      "articles": 8,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Antisexism",
+        "Movement News",
+        "Queer-Feminism"
+      ]
+    },
+    "Freedom News": {
+      "articles": 11,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Antiracism",
+        "Antisexism",
+        "Eco-Anarchism",
+        "Movement News",
+        "No Borders",
+        "Queer-Feminism",
+        "Theory & Strategy"
+      ]
+    },
+    "GenderIT (Technofeminism)": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antisexism",
+        "Demonstrations",
+        "Movement News",
+        "Queer-Feminism"
+      ]
+    },
+    "Gods & Radicals": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Indigenous Struggles",
+        "Movement News"
+      ]
+    },
+    "Graswurzelrevolution": {
+      "articles": 4,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Movement News",
+        "No War",
+        "Theory & Strategy"
+      ]
+    },
+    "Green Left": {
+      "articles": 33,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Queer-Feminism"
+      ]
+    },
+    "Grist (Indigenous Affairs)": {
+      "articles": 17,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "No War"
+      ]
+    },
+    "Groundxero": {
+      "articles": 8,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticolonialism",
+        "Demonstrations",
+        "Indigenous Struggles",
+        "Labor Struggles"
+      ]
+    },
+    "Hunt Saboteurs Association (UK)": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Antisexism"
+      ]
+    },
+    "IEN Earth": {
+      "articles": 8,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Indigenous Struggles"
+      ]
+    },
+    "IWA-AIT (Internationale)": {
+      "articles": 4,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "IWOC (Incarcerated Workers)": {
+      "articles": 3,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "IWW (Global)": {
+      "articles": 1,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Labor Struggles"
+      ]
+    },
+    "Ill Will": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "Indigenous Action": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticolonialism",
+        "Indigenous Struggles",
+        "Theory & Strategy"
+      ]
+    },
+    "IndigenousX": {
+      "articles": 2,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Indigenous Struggles"
+      ]
+    },
+    "IndigenousX (Australia)": {
+      "articles": 8,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "Antiracism",
+        "Indigenous Struggles",
+        "Movement News"
+      ]
+    },
+    "IndigiNews": {
+      "articles": 3,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Indigenous Struggles",
+        "No War"
+      ]
+    },
+    "Indymedia Argentina": {
+      "articles": 65,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antiracism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Queer-Feminism"
+      ]
+    },
+    "InfoAut": {
+      "articles": 14,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "Infolibre (GR)": {
+      "articles": 13,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "Squatting & Housing"
+      ]
+    },
+    "Institute of Race Relations": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "It's Going Down": {
+      "articles": 6,
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Antiracism",
+        "Demonstrations",
+        "Indigenous Struggles",
+        "Movement News",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "Jineolojî Academy": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticolonialism",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Karapatan (Human Rights)": {
+      "articles": 3,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Movement News"
+      ]
+    },
+    "Kodao Productions": {
+      "articles": 8,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "Kolektiva Media (Video)": {
+      "articles": 21,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "Kontrapolis": {
+      "articles": 3,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antifascism",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Kontrapolis (DE)": {
+      "articles": 21,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "L214 (France)": {
+      "articles": 4,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Animal Liberation"
+      ]
+    },
+    "La Zarzamora": {
+      "articles": 8,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Demonstrations",
+        "Indigenous Struggles",
+        "Movement News"
+      ]
+    },
+    "Labor Notes": {
+      "articles": 18,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "Labor for Palestine": {
+      "articles": 9,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antiracism",
+        "Labor Struggles",
+        "No War"
+      ]
+    },
+    "LabourNet DE": {
+      "articles": 53,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antifascism",
+        "Antiracism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Squatting & Housing"
+      ]
+    },
+    "Libcom (Global News)": {
+      "articles": 15,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anticapitalism",
+        "Cyberactivism",
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Theory & Strategy"
+      ]
+    },
+    "Libcom (Workplace)": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "Libcom Library": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Libraries"
+      ]
+    },
+    "Lower Class Magazine": {
+      "articles": 15,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Antifascism",
+        "Movement News",
+        "No War",
+        "Squatting & Housing"
+      ]
+    },
+    "MACG": {
+      "articles": 4,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anticapitalism",
+        "Demonstrations",
+        "Labor Struggles",
+        "No War",
+        "Queer-Feminism"
+      ]
+    },
+    "Mad in America": {
+      "articles": 10,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News",
+        "No Borders",
+        "Radical Health & Disability"
+      ]
+    },
+    "Mada Masr (Egypt)": {
+      "articles": 22,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Radical Health & Disability"
+      ]
+    },
+    "Make Rojava Green Again": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism",
+        "Movement News"
+      ]
+    },
+    "Manila Today": {
+      "articles": 2,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Movement News",
+        "Squatting & Housing"
+      ]
+    },
+    "Mapuexpress (Mapuche)": {
+      "articles": 15,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Indigenous Struggles",
+        "Queer-Feminism"
+      ]
+    },
+    "Mekong Review": {
+      "articles": 15,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Antifascism",
+        "Antiracism",
+        "Eco-Anarchism",
+        "Movement News",
+        "No Borders"
+      ]
+    },
+    "Migrant Solidarity Network (CH)": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Movement News",
+        "No Borders"
+      ]
+    },
+    "Minority Africa": {
+      "articles": 7,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "No War",
+        "Queer-Feminism",
+        "Radical Health & Disability"
+      ]
+    },
+    "Missy Magazine (DE)": {
+      "articles": 16,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Antiracism",
+        "Eco-Anarchism",
+        "Movement News",
+        "Queer-Feminism"
+      ]
+    },
+    "Monthly Review": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Eco-Anarchism",
+        "Movement News"
+      ]
+    },
+    "Montreal Antifasciste": {
+      "articles": 1,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Antifascism"
+      ]
+    },
+    "Native News Online": {
+      "articles": 9,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Indigenous Struggles",
+        "Radical Health & Disability"
+      ]
+    },
+    "Nawaat (Tunisia)": {
+      "articles": 8,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "No Borders"
+      ]
+    },
+    "New Bloom (TW)": {
+      "articles": 17,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Queer-Feminism"
+      ]
+    },
+    "Novara Media (UK)": {
+      "articles": 41,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Squatting & Housing"
+      ]
+    },
+    "Nunatsiaq News": {
+      "articles": 7,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Antisexism",
+        "Indigenous Struggles"
+      ]
+    },
+    "OmniaTV (GR)": {
+      "articles": 18,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "Squatting & Housing"
+      ]
+    },
+    "Organise Magazine": {
+      "articles": 6,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Cyberactivism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "No Borders",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "PETA Deutschland": {
+      "articles": 8,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Demonstrations"
+      ]
+    },
+    "Palang Hitam (Indonesia)": {
+      "articles": 5,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "Pinko Magazine": {
+      "articles": 4,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Indigenous Struggles",
+        "Queer-Feminism"
+      ]
+    },
+    "Pressin Kurdî": {
+      "articles": 20,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Anticolonialism",
+        "Movement News",
+        "Squatting & Housing"
+      ]
+    },
+    "Pueblos en Camino": {
+      "articles": 4,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "Queer Anarchism": {
+      "articles": 31,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Antiracism",
+        "Antisexism",
+        "Cyberactivism",
+        "Demonstrations",
+        "Movement News",
+        "Queer-Feminism",
+        "Radical Health & Disability"
+      ]
+    },
+    "ROAPE": {
+      "articles": 10,
+      "regions": [
+        "Africa",
+        "Global"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Anticolonialism",
+        "Antiracism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders"
+      ]
+    },
+    "Radikal Perspektif": {
+      "articles": 8,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Labor Struggles",
+        "Movement News",
+        "Theory & Strategy"
+      ]
+    },
+    "Radio Kurruf Noticias": {
+      "articles": 4,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Indigenous Struggles",
+        "Movement News"
+      ]
+    },
+    "Recht auf Stadt (Hamburg)": {
+      "articles": 1,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "Red Flag (Aus)": {
+      "articles": 36,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antifascism",
+        "Antiracism",
+        "Demonstrations",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Squatting & Housing"
+      ]
+    },
+    "Rheinmetall Entwaffnen": {
+      "articles": 16,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Rojava Info Center": {
+      "articles": 7,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Movement News"
+      ]
+    },
+    "Rote Hilfe": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism"
+      ]
+    },
+    "Round Table India": {
+      "articles": 6,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Antisexism",
+        "Movement News"
+      ]
+    },
+    "Sea-Watch": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "Sicilia Libertaria": {
+      "articles": 9,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anticapitalism",
+        "Antifascism",
+        "Movement News",
+        "No War",
+        "Queer-Feminism"
+      ]
+    },
+    "Slackbastard": {
+      "articles": 13,
+      "regions": [
+        "Australia & NZ"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Demonstrations",
+        "Movement News"
+      ]
+    },
+    "Slingshot Collective": {
+      "articles": 10,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antifascism",
+        "Cyberactivism",
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "Solarpunk Magazine": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Eco-Anarchism",
+        "Movement News"
+      ]
+    },
+    "Sprout Distro": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Libraries"
+      ]
+    },
+    "Squat!net": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Demonstrations",
+        "Squatting & Housing"
+      ]
+    },
+    "SubMedia": {
+      "articles": 9,
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "topics": [
+        "Antifascism",
+        "Eco-Anarchism",
+        "Movement News",
+        "Squatting & Housing",
+        "Theory & Strategy"
+      ]
+    },
+    "Subversiones (Mexico)": {
+      "articles": 3,
+      "regions": [
+        "Latin America"
+      ],
+      "topics": [
+        "Antisexism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "Queer-Feminism"
+      ]
+    },
+    "Systemli": {
+      "articles": 4,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News"
+      ]
+    },
+    "The Anarchist Library (EN)": {
+      "articles": 39,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Anticolonialism",
+        "Antiracism",
+        "Antisexism",
+        "Cyberactivism",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Libraries",
+        "No Borders",
+        "Radical Health & Disability",
+        "Theory & Strategy"
+      ]
+    },
+    "The Appeal": {
+      "articles": 7,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Labor Struggles",
+        "Queer-Feminism"
+      ]
+    },
+    "The Elephant (Kenya)": {
+      "articles": 8,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "Eco-Anarchism",
+        "Movement News",
+        "Squatting & Housing"
+      ]
+    },
+    "The Elephant (Pan-African)": {
+      "articles": 10,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Antiracism",
+        "Demonstrations",
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "The Feminist Wire": {
+      "articles": 4,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Antiracism",
+        "Antisexism",
+        "Queer-Feminism"
+      ]
+    },
+    "The Final Straw Radio": {
+      "articles": 12,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antifascism",
+        "Labor Struggles",
+        "No Borders",
+        "No War"
+      ]
+    },
+    "The New Inquiry": {
+      "articles": 7,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Antiracism",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Squatting & Housing"
+      ]
+    },
+    "The Polis Project (India)": {
+      "articles": 2,
+      "regions": [
+        "Asia"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons"
+      ]
+    },
+    "Tier im Fokus (Switzerland)": {
+      "articles": 7,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Animal Liberation"
+      ]
+    },
+    "Tierbefreier": {
+      "articles": 2,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Animal Liberation"
+      ]
+    },
+    "Transgender Europe (TGEU)": {
+      "articles": 10,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Movement News",
+        "No Borders",
+        "Queer-Feminism"
+      ]
+    },
+    "Tricontinental: Institute for Social Research": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Imperialism",
+        "Anti-Rep & Prisons",
+        "Anticapitalism",
+        "Antiracism",
+        "Labor Struggles",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Truthout": {
+      "articles": 18,
+      "regions": [
+        "North America"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Radical Health & Disability"
+      ]
+    },
+    "Umanita Nova (IT)": {
+      "articles": 6,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Movement News"
+      ]
+    },
+    "Unicorn Riot": {
+      "articles": 10,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Antisexism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "No Borders",
+        "No War",
+        "Queer-Feminism",
+        "Radical Health & Disability"
+      ]
+    },
+    "Unoffensive Animal": {
+      "articles": 9,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Animal Liberation",
+        "Anti-Rep & Prisons",
+        "Theory & Strategy"
+      ]
+    },
+    "Waging Nonviolence": {
+      "articles": 16,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Squatting & Housing"
+      ]
+    },
+    "Warrior Publications": {
+      "articles": 3,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anti-Rep & Prisons",
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Indigenous Struggles"
+      ]
+    },
+    "Winter Oak": {
+      "articles": 3,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antifascism",
+        "Movement News"
+      ]
+    },
+    "WoMin African Alliance": {
+      "articles": 2,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Antiracism",
+        "Eco-Anarchism"
+      ]
+    },
+    "Women Enabled International": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Antisexism",
+        "Queer-Feminism",
+        "Radical Health & Disability"
+      ]
+    },
+    "World BEYOND War": {
+      "articles": 21,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Demonstrations",
+        "Eco-Anarchism",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Yeryüzü Postası": {
+      "articles": 2,
+      "regions": [
+        "Europe"
+      ],
+      "topics": [
+        "Labor Struggles",
+        "Theory & Strategy"
+      ]
+    },
+    "ZNet (Global)": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Demonstrations",
+        "Labor Struggles",
+        "Movement News"
+      ]
+    },
+    "ZNet (International)": {
+      "articles": 6,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticolonialism",
+        "Labor Struggles",
+        "Movement News",
+        "No War"
+      ]
+    },
+    "Zabalaza": {
+      "articles": 1,
+      "regions": [
+        "Africa"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Theory & Strategy"
+      ]
+    },
+    "Zabalaza Books (Africa)": {
+      "articles": 5,
+      "regions": [
+        "Global"
+      ],
+      "topics": [
+        "Anticapitalism",
+        "Libraries",
+        "No War",
+        "Theory & Strategy"
+      ]
+    }
+  }
+}

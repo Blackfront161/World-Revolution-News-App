@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /app-check.html
+Disallow: /audio-check.html
+Disallow: /click-repair.html
+Disallow: /mobile-repair.html
+Disallow: /news-app-2-release-checklist.html
+Disallow: /recovery.html
+Disallow: /source-check.html
+
+Sitemap: https://solinaridao.com/sitemap.xml

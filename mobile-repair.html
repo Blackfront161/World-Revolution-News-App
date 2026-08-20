@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#050508">
+    <meta name="referrer" content="no-referrer">
+    <title>World Revolution News – Notfall-Feed</title>
+    <style>
+        :root { color-scheme: dark; font-family: system-ui, -apple-system, sans-serif; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #050508; color: #f4f4f6; }
+        header { position: sticky; top: 0; z-index: 2; padding: 12px; background: #09090e; border-bottom: 1px solid #33333d; }
+        h1 { margin: 0 0 4px; font-size: 1.15rem; }
+        .sub { margin: 0 0 10px; color: #b8b8c2; font-size: .86rem; }
+        .controls { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+        input, select, button, a.button { min-height: 42px; border: 1px solid #454552; border-radius: 4px; background: #111118; color: #fff; padding: 9px 10px; font: inherit; }
+        a.button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+        main { padding: 10px; max-width: 900px; margin: auto; }
+        #status { padding: 8px 2px; color: #81e6ff; }
+        article { padding: 12px; margin: 0 0 10px; border: 1px solid #30303a; background: #101017; }
+        article h2 { margin: 4px 0 8px; font-size: 1rem; line-height: 1.3; }
+        article p { margin: 0 0 9px; color: #d1d1d8; line-height: 1.45; }
+        article .meta { color: #9b9ba8; font-size: .78rem; }
+        article a { color: #7ee7ff; }
+        .footer-link { display: block; margin: 16px 0 30px; }
+        @media (max-width: 520px) { .controls { grid-template-columns: 1fr; } }
+    </style>
+  <script src="./wrn-origin-safety.js?v=1721c"></script>
+</head>
+<body>
+<header>
+    <h1>World Revolution News – Notfall-Feed 1.7.12</h1>
+    <p class="sub">Nur Text, Suche und Original-Links. Keine Bilder, Animationen, Audio- oder Übersetzungsmodule.</p>
+    <div class="controls">
+        <input id="search" type="search" placeholder="Nachrichten durchsuchen …" autocomplete="off">
+        <select id="limit" aria-label="Anzahl Nachrichten">
+            <option value="30">30 Meldungen</option>
+            <option value="60" selected>60 Meldungen</option>
+            <option value="100">100 Meldungen</option>
+        </select>
+    </div>
+</header>
+<main>
+    <div id="status" role="status">Nachrichten werden geladen …</div>
+    <section id="feed" aria-live="polite"></section>
+    <a class="button footer-link" href="./index.html?emergency=1">Normale App im Notfallmodus öffnen</a>
+</main>
+<script>
+'use strict';
+(() => {
+    const feed = document.getElementById('feed');
+    const status = document.getElementById('status');
+    const search = document.getElementById('search');
+    const limit = document.getElementById('limit');
+    let items = [];
+
+    const render = () => {
+        const term = search.value.trim().toLocaleLowerCase();
+        const max = Number(limit.value) || 60;
+        const filtered = items.filter(item => {
+            if (!term) return true;
+            return [item.title, item.content, item.quelleName, item.kontinent]
+                .some(value => String(value || '').toLocaleLowerCase().includes(term));
+        }).slice(0, max);
+
+        const fragment = document.createDocumentFragment();
+        filtered.forEach(item => {
+            const article = document.createElement('article');
+            const meta = document.createElement('div');
+            const title = document.createElement('h2');
+            const text = document.createElement('p');
+
+            meta.className = 'meta';
+            meta.textContent = [item.quelleName, item.kontinent, item.pubDate ? String(item.pubDate).slice(0, 10) : '']
+                .filter(Boolean).join(' · ');
+            title.textContent = String(item.title || 'Nachricht');
+            text.textContent = String(item.content || '').slice(0, 700);
+            article.append(meta, title, text);
+
+            if (item.link) {
+                const link = document.createElement('a');
+                link.href = String(item.link);
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.textContent = 'Original öffnen';
+                article.appendChild(link);
+            }
+            fragment.appendChild(article);
+        });
+
+        feed.replaceChildren(fragment);
+        status.textContent = `${filtered.length} von ${items.length} Nachrichten angezeigt`;
+    };
+
+    const load = async () => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 9000);
+        try {
+            const response = await fetch(`./news-feed.json?repair=${Date.now()}`, {
+                cache: 'no-store',
+                signal: controller.signal
+            });
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const data = await response.json();
+            if (!Array.isArray(data)) throw new Error('Ungültiger Feed');
+            items = data;
+            render();
+        } catch (error) {
+            status.textContent = `Nachrichten konnten nicht geladen werden: ${error.message}`;
+        } finally {
+            clearTimeout(timer);
+        }
+    };
+
+    search.addEventListener('input', render);
+    limit.addEventListener('change', render);
+    load();
+})();
+</script>
+</body>
+</html>

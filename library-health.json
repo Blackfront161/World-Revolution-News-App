@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T15:22:22.376307+00:00",
+  "itemCount": 609,
+  "sources": {
+    "anarchist-library-en": {
+      "ok": true,
+      "status": "ok",
+      "pages": 35,
+      "items": 169,
+      "errors": [],
+      "checkedAt": "2026-08-05T15:22:08.415610+00:00"
+    },
+    "anarchist-library-de": {
+      "ok": false,
+      "status": "empty",
+      "pages": 1,
+      "items": 0,
+      "errors": [
+        "https://anarchistischebibliothek.org/opds: ConnectionError"
+      ],
+      "checkedAt": "2026-08-05T15:22:10.654164+00:00",
+      "preservedItems": 0
+    },
+    "anarchist-library-es": {
+      "ok": true,
+      "status": "ok",
+      "pages": 35,
+      "items": 152,
+      "errors": [],
+      "checkedAt": "2026-08-05T15:22:14.493242+00:00"
+    },
+    "anarchist-library-fr": {
+      "ok": true,
+      "status": "ok",
+      "pages": 35,
+      "items": 165,
+      "errors": [],
+      "checkedAt": "2026-08-05T15:22:18.395466+00:00"
+    },
+    "anarchist-library-it": {
+      "ok": true,
+      "status": "ok",
+      "pages": 35,
+      "items": 123,
+      "errors": [],
+      "checkedAt": "2026-08-05T15:22:22.365407+00:00"
+    },
+    "libcom-library": {
+      "ok": true,
+      "status": "catalog-link-only",
+      "pages": 0,
+      "items": 0,
+      "preservedItems": 0
+    },
+    "kate-sharpley-library": {
+      "ok": true,
+      "status": "catalog-link-only",
+      "pages": 0,
+      "items": 0,
+      "preservedItems": 0
+    },
+    "zabalaza-books": {
+      "ok": true,
+      "status": "catalog-link-only",
+      "pages": 0,
+      "items": 0,
+      "preservedItems": 0
+    },
+    "anarchist-archive": {
+      "ok": true,
+      "status": "catalog-link-only",
+      "pages": 0,
+      "items": 0,
+      "preservedItems": 0
+    }
+  }
+}

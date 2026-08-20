@@ -1,0 +1,148 @@
+/* World Revolution News 1.8.3 - theme-safe audio hub */
+.wrn-audio-tab-panel-183 {
+  width: min(1180px, 100%);
+  margin: 0 auto 7rem;
+  color: var(--text-main);
+  background: color-mix(in srgb, var(--bg-body) 78%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 50%, transparent);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: clamp(.8rem, 2vw, 1.4rem);
+  backdrop-filter: blur(9px);
+}
+
+.wrn-audio-head-183 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1rem;
+  padding: 0 0 .8rem;
+  border-bottom: 1px solid var(--border-read);
+}
+
+.wrn-audio-head-183 h2 { margin: 0; color: var(--color-cyan); font-size: clamp(1.15rem, 3vw, 1.65rem); }
+.wrn-audio-head-183 p { margin: .35rem 0 0; color: var(--text-muted); line-height: 1.45; }
+.wrn-audio-refresh-183,
+.wrn-audio-tab-183,
+.wrn-audio-region-183 {
+  appearance: none;
+  border: 1px solid var(--color-accent);
+  border-radius: 6px;
+  background: var(--bg-card);
+  color: var(--color-accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.wrn-audio-refresh-183 { padding: .65rem .85rem; white-space: nowrap; }
+.wrn-audio-tabs-183 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; margin-bottom: .85rem; }
+.wrn-audio-tab-183 { min-height: 44px; padding: .55rem .4rem; }
+.wrn-audio-tab-183.active,
+.wrn-audio-region-183.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--bg-body);
+  box-shadow: 0 0 14px var(--shadow-accent);
+}
+
+.wrn-audio-public-note-183,
+.wrn-audio-warning-183 {
+  margin: .7rem 0;
+  padding: .7rem .8rem;
+  border-left: 3px solid var(--color-cyan);
+  background: color-mix(in srgb, var(--bg-card) 84%, transparent);
+  color: var(--text-muted);
+}
+
+.wrn-audio-controls-183 {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) repeat(3, minmax(120px, .42fr));
+  gap: .55rem;
+  margin-bottom: .7rem;
+}
+.wrn-audio-controls-183 input,
+.wrn-audio-controls-183 select {
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-read);
+  border-radius: 5px;
+  background: var(--bg-input);
+  color: var(--text-main);
+  font: inherit;
+  padding: .55rem .65rem;
+}
+.wrn-audio-controls-183 input:focus,
+.wrn-audio-controls-183 select:focus { outline: 2px solid var(--color-cyan); outline-offset: 1px; }
+
+.wrn-audio-regions-183 { display: flex; gap: .45rem; overflow-x: auto; padding: .2rem 0 .7rem; scrollbar-width: thin; }
+.wrn-audio-region-183 { flex: 0 0 auto; min-height: 38px; padding: .45rem .65rem; }
+.wrn-audio-status-183 { min-height: 1.4rem; color: var(--text-muted); margin: .25rem 0 .7rem; }
+.wrn-audio-list-183 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr)); gap: .8rem; }
+.wrn-audio-card-183 {
+  min-width: 0;
+  padding: .9rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 55%, var(--border-read));
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+  color: var(--text-main);
+  box-shadow: 0 4px 18px color-mix(in srgb, var(--shadow-accent) 70%, transparent);
+}
+.wrn-audio-card-183.is-highlighted { outline: 2px solid var(--color-green); outline-offset: 2px; }
+.wrn-audio-card-183 h3 { margin: 0 0 .45rem; color: var(--color-cyan); font-size: 1rem; line-height: 1.3; }
+.wrn-audio-card-183 p { color: var(--text-muted); line-height: 1.45; overflow-wrap: anywhere; }
+.wrn-audio-meta-183 { color: var(--color-accent); font-size: .75rem; font-weight: 700; line-height: 1.45; margin-bottom: .6rem; }
+.wrn-audio-links-183 { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .7rem; }
+.wrn-audio-links-183 a { color: var(--color-cyan); text-underline-offset: 3px; }
+
+.wrn-audio-card-183 .media-button-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
+.wrn-audio-card-183 .media-button-row button { min-height: 40px; }
+.wrn-audio-card-183 .media-progress-row,
+.global-media-progress { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .65rem; width: 100%; }
+.wrn-audio-card-183 input[type="range"],
+#global-media-progress {
+  width: 100%;
+  min-width: 0;
+  height: 28px;
+  cursor: grab;
+  touch-action: none;
+  accent-color: var(--color-accent);
+}
+.wrn-audio-card-183 input[type="range"]:active,
+#global-media-progress:active { cursor: grabbing; }
+.wrn-audio-card-183 input[type="range"]::-webkit-slider-thumb,
+#global-media-progress::-webkit-slider-thumb { min-width: 22px; min-height: 22px; }
+.wrn-audio-card-183 input[type="range"]::-moz-range-thumb,
+#global-media-progress::-moz-range-thumb { width: 22px; height: 22px; }
+.media-time-label,
+#global-media-time { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+body[data-wrn-tab="audio"] .wrn-subtabs-wrap {
+  background: color-mix(in srgb, var(--bg-card) 82%, transparent) !important;
+  border-color: var(--border-read) !important;
+  backdrop-filter: blur(8px);
+}
+body[data-wrn-tab="audio"] .wrn-subtab { background: var(--bg-card) !important; color: var(--text-main) !important; }
+body[data-wrn-tab="audio"] .wrn-subtab.active { background: var(--color-accent) !important; color: var(--bg-body) !important; border-color: var(--color-accent) !important; }
+
+@supports not (background: color-mix(in srgb, white 50%, transparent)) {
+  .wrn-audio-tab-panel-183,
+  .wrn-audio-card-183,
+  .wrn-audio-public-note-183,
+  body[data-wrn-tab="audio"] .wrn-subtabs-wrap { background: var(--bg-card); }
+}
+
+@media (max-width: 720px) {
+  .wrn-audio-tab-panel-183 { border-left: 0; border-right: 0; border-radius: 0; padding: .7rem; }
+  .wrn-audio-head-183 { align-items: stretch; flex-direction: column; }
+  .wrn-audio-controls-183 { grid-template-columns: 1fr; }
+  .wrn-audio-tabs-183 { gap: .35rem; }
+  .wrn-audio-tab-183 { font-size: .76rem; }
+  .wrn-audio-list-183 { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .wrn-audio-tab-panel-183,
+  body[data-wrn-tab="audio"] .wrn-subtabs-wrap { backdrop-filter: none; background: var(--bg-card); }
+}

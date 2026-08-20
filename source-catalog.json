@@ -1,0 +1,3501 @@
+{
+  "generatedAt": "2026-08-11T20:13:26.431738Z",
+  "sourceCount": 193,
+  "sources": [
+    {
+      "name": "269 Libération Animale (France)",
+      "website": "https://www.269liberationanimale.fr/",
+      "domain": "www.269liberationanimale.fr",
+      "articleCount": 5,
+      "languages": [
+        "fr"
+      ],
+      "categories": [
+        "Europe",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2021-11-28T12:52:26Z",
+      "latestArticleTitle": "Tout ce qu’il faut savoir avant d’adopter un animal",
+      "latestArticleUrl": "https://www.269liberationanimale.fr/tout-ce-quil-faut-savoir-avant-dadopter-un-animal/"
+    },
+    {
+      "name": "A Las Barricadas (ES)",
+      "website": "https://www.alasbarricadas.org/",
+      "domain": "www.alasbarricadas.org",
+      "articleCount": 23,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Anticapitalism",
+        "Antifascism",
+        "No Borders",
+        "Squatting & Housing",
+        "Demonstrations",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-08-09T17:22:08Z",
+      "latestArticleTitle": "El Anarquismo de Comités y la Federica del 90 aniversario",
+      "latestArticleUrl": "https://www.alasbarricadas.org/noticias/node/59278"
+    },
+    {
+      "name": "A-Radio Berlin",
+      "website": "https://www.aradio-berlin.org/",
+      "domain": "www.aradio-berlin.org",
+      "articleCount": 8,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2022-11-03T20:52:13Z",
+      "latestArticleTitle": "Gemeinsam anarchistisch durch die Krise",
+      "latestArticleUrl": "https://www.aradio-berlin.org/gemeinsam-anarchistisch-durch-die-krise/"
+    },
+    {
+      "name": "A.N.A. Brasil",
+      "website": "https://noticiasanarquistas.noblogs.org/",
+      "domain": "noticiasanarquistas.noblogs.org",
+      "articleCount": 20,
+      "languages": [
+        "pt"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News",
+        "Antifascism",
+        "Demonstrations",
+        "Anti-Rep & Prisons",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-08-06T14:12:44Z",
+      "latestArticleTitle": "[Chile] 12ª Jornadas Libertárias em Concepción",
+      "latestArticleUrl": "https://noticiasanarquistas.noblogs.org/post/2026/08/06/chile-12a-jornadas-libertarias-em-concepcion/"
+    },
+    {
+      "name": "Abahlali baseMjondolo (South Africa)",
+      "website": "https://abahlali.org/",
+      "domain": "abahlali.org",
+      "articleCount": 7,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Africa",
+        "Squatting & Housing",
+        "Movement News",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-06-17T11:09:42Z",
+      "latestArticleTitle": "Urgent Statement on Fake Poster Circulating Online",
+      "latestArticleUrl": "https://abahlali.org/node/18649/"
+    },
+    {
+      "name": "ABC Belarus",
+      "website": "https://abc-belarus.org/",
+      "domain": "abc-belarus.org",
+      "articleCount": 7,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-06-09T11:41:18Z",
+      "latestArticleTitle": "DRINK TO THE DEATH OF DICTATORS",
+      "latestArticleUrl": "https://abc-belarus.org/en/2026/06/09/drink-to-the-death-of-dictators/"
+    },
+    {
+      "name": "ABC Dresden",
+      "website": "https://abcdd.org/",
+      "domain": "abcdd.org",
+      "articleCount": 8,
+      "languages": [
+        "de"
+      ],
+      "categories": [
+        "Europe",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-06-23T07:43:23Z",
+      "latestArticleTitle": "Unterstützt das Hausprojekt CP3-2 in Odessa",
+      "latestArticleUrl": "https://abcdd.org/2026/06/23/unterstuetzt-das-hausprojekt-cp3-2-in-odessa/"
+    },
+    {
+      "name": "Abolish Frontex",
+      "website": "https://abolishfrontex.org/",
+      "domain": "abolishfrontex.org",
+      "articleCount": 8,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No Borders",
+        "Cyberactivism"
+      ],
+      "latestArticleAt": "2026-07-21T11:22:54Z",
+      "latestArticleTitle": "No new mandate for Frontex!",
+      "latestArticleUrl": "https://abolishfrontex.org/blog/2026/07/21/no-new-mandate-for-frontex/"
+    },
+    {
+      "name": "Abolition Journal",
+      "website": "https://abolitionjournal.org/",
+      "domain": "abolitionjournal.org",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Antiracism",
+        "Anti-Rep & Prisons",
+        "Movement News"
+      ],
+      "latestArticleAt": "2021-06-09T00:45:29Z",
+      "latestArticleTitle": "Black Anonymous Timeline and Analysis",
+      "latestArticleUrl": "https://abolitionjournal.org/black-anonymous-timeline-and-analysis/"
+    },
+    {
+      "name": "Access Now",
+      "website": "https://www.accessnow.org/",
+      "domain": "www.accessnow.org",
+      "articleCount": 12,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-08-11T08:00:00Z",
+      "latestArticleTitle": "#KeepItOn @10: celebrating a decade of fighting internet shutdowns",
+      "latestArticleUrl": "https://www.accessnow.org/keepiton-10-years-fighting-internet-shutdowns/?pk_campaign=feed&pk_kwd=keepiton-10-years-fighting-internet-shutdowns"
+    },
+    {
+      "name": "Act for Freedom Now!",
+      "website": "https://actforfree.noblogs.org/",
+      "domain": "actforfree.noblogs.org",
+      "articleCount": 29,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Antifascism",
+        "Movement News",
+        "Anti-Rep & Prisons",
+        "Theory & Strategy",
+        "Anticapitalism",
+        "No War",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-07-29T08:55:44Z",
+      "latestArticleTitle": "Arson of two ATMs banks, in Kaisariani area by Anarchists (Athens,Greece)",
+      "latestArticleUrl": "https://actforfree.noblogs.org/2026/07/29/arson-of-two-atms-banks-in-kaisariani-area-by-anarchists-athensgreece/"
+    },
+    {
+      "name": "African Arguments",
+      "website": "https://africanarguments.org/",
+      "domain": "africanarguments.org",
+      "articleCount": 11,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Africa",
+        "Movement News",
+        "Eco-Anarchism",
+        "No War",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-09T14:15:59Z",
+      "latestArticleTitle": "What young Kenyan men say when no one is watching",
+      "latestArticleUrl": "https://africanarguments.org/2026/08/what-young-kenyan-men-say-when-no-one-is-watching/?utm_source=rss&utm_medium=rss&utm_campaign=what-young-kenyan-men-say-when-no-one-is-watching"
+    },
+    {
+      "name": "African Feminism",
+      "website": "https://africanfeminism.com/",
+      "domain": "africanfeminism.com",
+      "articleCount": 7,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Africa",
+        "Queer-Feminism",
+        "Antisexism",
+        "Antiracism",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-07-22T16:52:34Z",
+      "latestArticleTitle": "Senegal’s World Cup Exit: The Price of National Honor and Women’s Safety",
+      "latestArticleUrl": "https://africanfeminism.com/senegals-world-cup-exit-the-price-of-national-honor-and-womens-safety/?utm_source=rss&utm_medium=rss&utm_campaign=senegals-world-cup-exit-the-price-of-national-honor-and-womens-safety"
+    },
+    {
+      "name": "Agencia Tierra Viva",
+      "website": "https://agenciatierraviva.com.ar/",
+      "domain": "agenciatierraviva.com.ar",
+      "articleCount": 9,
+      "languages": [
+        "es"
+      ],
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles",
+        "Squatting & Housing",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-11T11:22:57Z",
+      "latestArticleTitle": "Ley de tierras: \"Pretenden despojar a las comunidades indígenas de sus territorios\"",
+      "latestArticleUrl": "https://agenciatierraviva.com.ar/ley-de-tierras-pretenden-despojar-a-las-comunidades-indigenas-de-sus-territorios/"
+    },
+    {
+      "name": "Agency",
+      "website": "https://anarchistagency.com/",
+      "domain": "anarchistagency.com",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Demonstrations",
+        "No Borders",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-07-21T02:12:39Z",
+      "latestArticleTitle": "Press Release: Recently Unsealed Trial Evidence Contradicts Government’s Account of Events During Fourth of July Prairieland Noise Protest",
+      "latestArticleUrl": "https://anarchistagency.com/press-release-recently-unsealed-trial-evidence-contradicts-governments-account-of-events-during-fourth-of-july-prairieland-noise-protest/"
+    },
+    {
+      "name": "Agência Pública",
+      "website": "https://apublica.org/",
+      "domain": "apublica.org",
+      "articleCount": 24,
+      "languages": [
+        "pt"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News",
+        "Labor Struggles",
+        "Investigative",
+        "No War",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-08-11T07:00:00Z",
+      "latestArticleTitle": "Candidato à Presidência, Caiado transformou Goiás em laboratório de leis para Big Techs",
+      "latestArticleUrl": "https://apublica.org/2026/08/candidato-a-presidencia-caiado-transformou-goias-em-laboratorio-de-leis-para-big-techs/"
+    },
+    {
+      "name": "Alarm Phone",
+      "website": "https://alarmphone.org/",
+      "domain": "alarmphone.org",
+      "articleCount": 3,
+      "languages": [],
+      "categories": [
+        "Europe",
+        "No Borders",
+        "Africa",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-05-14T15:01:50Z",
+      "latestArticleTitle": "Visas for Everyone or no Visas at all!",
+      "latestArticleUrl": "https://alarmphone.org/en/2026/05/14/visas-for-everyone-or-no-visas-at-all/"
+    },
+    {
+      "name": "Alerta (GR)",
+      "website": "https://www.alerta.gr/",
+      "domain": "www.alerta.gr",
+      "articleCount": 10,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Squatting & Housing",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-26T18:13:51Z",
+      "latestArticleTitle": "Να φοβάσαι αυτούς που καταδικάζουν τη βία. Είναι αδίστακτοι (Βίντεο)",
+      "latestArticleUrl": "https://www.alerta.gr/archives/39254"
+    },
+    {
+      "name": "ALF Press Office (North America)",
+      "website": "https://animalliberationpressoffice.org/",
+      "domain": "animalliberationpressoffice.org",
+      "articleCount": 14,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Animal Liberation",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-30T21:25:46Z",
+      "latestArticleTitle": "Iceland’s Last Fur Farm Raided!",
+      "latestArticleUrl": "https://animalliberationpressoffice.org/NAALPO/2026/07/30/icelands-last-fur-farm-raided/"
+    },
+    {
+      "name": "Anarchist Black Cross",
+      "website": "https://www.abcf.net/",
+      "domain": "www.abcf.net",
+      "articleCount": 11,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-08-11T00:31:00Z",
+      "latestArticleTitle": "LA ABCF Letter Writing Event- August 23, 2026",
+      "latestArticleUrl": "https://www.abcf.net/blog/la-abcf-letter-writing-event-august-23-2026/"
+    },
+    {
+      "name": "Anarchist Communist Group",
+      "website": "https://www.anarchistcommunism.org/",
+      "domain": "www.anarchistcommunism.org",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Labor Struggles",
+        "Theory & Strategy",
+        "No War",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-07-22T18:01:55Z",
+      "latestArticleTitle": "The Liberal Capture of Anarchism",
+      "latestArticleUrl": "https://www.anarchistcommunism.org/2026/07/22/the-liberal-capture-of-anarchism/"
+    },
+    {
+      "name": "Anarchist Federation",
+      "website": "https://www.anarchistfederation.net/",
+      "domain": "www.anarchistfederation.net",
+      "articleCount": 6,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Antiracism",
+        "Demonstrations",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-15T19:49:57Z",
+      "latestArticleTitle": "အနာခစ်ဝါဒီတွေဟာ အနာခစ်ဝါဒီတွေ ဖြစ်နေကြလို့ အံ့အားသင့်နေကြသူများအတွက်",
+      "latestArticleUrl": "https://www.anarchistfederation.net/%e1%80%a1%e1%80%94%e1%80%ac%e1%80%81%e1%80%85%e1%80%ba%e1%80%9d%e1%80%ab%e1%80%92%e1%80%ae%e1%80%90%e1%80%bd%e1%80%b1%e1%80%9f%e1%80%ac-%e1%80%a1%e1%80%94%e1%80%ac%e1%80%81%e1%80%85%e1%80%ba%e1%80%9d/"
+    },
+    {
+      "name": "Anarchist Library (RU)",
+      "website": "https://ru.anarchistlibraries.net/",
+      "domain": "ru.anarchistlibraries.net",
+      "articleCount": 10,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries"
+      ],
+      "latestArticleAt": "2026-07-29T10:08:43Z",
+      "latestArticleTitle": "Дынник Михаил - От примирения с действительностью к апологии разрушения",
+      "latestArticleUrl": "https://ru.anarchistlibraries.net/library/dynnik-mikhail-ot-primireniia-s-deistvitel-nost-iu-k-apologii-razrusheniia?v=1785319723"
+    },
+    {
+      "name": "Anarchist Library (SV)",
+      "website": "https://www.anarkistiskabiblioteket.se/",
+      "domain": "www.anarkistiskabiblioteket.se",
+      "articleCount": 19,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries",
+        "Anticapitalism"
+      ],
+      "latestArticleAt": "2026-08-11T02:00:00Z",
+      "latestArticleTitle": "Ragnar Johanson - På uppviglare-ståt bland skogsarbetarna",
+      "latestArticleUrl": "https://www.anarkistiskabiblioteket.se/library/ragnar-johanson-pa-uppviglare-stat-bland-skogsarbetarna?v=1786413600"
+    },
+    {
+      "name": "Anarchist News",
+      "website": "http://anarchistnews.org/",
+      "domain": "anarchistnews.org",
+      "articleCount": 4,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-08-05T11:17:37Z",
+      "latestArticleTitle": "Call for Submissions: Wanarchy Journal",
+      "latestArticleUrl": "http://anarchistnews.org/content/call-submissions-wanarchy-journal"
+    },
+    {
+      "name": "Anarchistische Bibliothek (DE)",
+      "website": "https://de.anarchistlibraries.net/",
+      "domain": "de.anarchistlibraries.net",
+      "articleCount": 8,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Libraries",
+        "Anticapitalism",
+        "No War",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-05-21T12:16:56Z",
+      "latestArticleTitle": "Sasha K. - Dreizehn Notizen zum Klassenkampf zur Diskussion",
+      "latestArticleUrl": "https://de.anarchistlibraries.net/library/sasha-k-dreizehn-notizen-zum-klassenkampf-zur-diskussion?v=1779365816"
+    },
+    {
+      "name": "Anarres Info",
+      "website": "https://www.anarresinfo.org/",
+      "domain": "www.anarresinfo.org",
+      "articleCount": 7,
+      "languages": [
+        "it"
+      ],
+      "categories": [
+        "Europe",
+        "No War",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-05-31T08:45:51Z",
+      "latestArticleTitle": "2 giugno dei Senzapatria",
+      "latestArticleUrl": "https://www.anarresinfo.org/2-giugno-dei-senzapatria-2/"
+    },
+    {
+      "name": "Anarşist Haberler",
+      "website": "https://www.anarsisthaberler.net/",
+      "domain": "www.anarsisthaberler.net",
+      "articleCount": 3,
+      "languages": [
+        "tr"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-08-06T18:31:30Z",
+      "latestArticleTitle": "Tekli Bahis Kuponu Nedir ve Nasıl Oynanır? Bonus Veren Siteler",
+      "latestArticleUrl": "https://www.anarsisthaberler.net/tekli-bahis-kuponu-nedir-ve-nasil-oynanir-bonus-veren-siteler/"
+    },
+    {
+      "name": "AngryWorkers",
+      "website": "https://www.angryworkers.org/",
+      "domain": "www.angryworkers.org",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Labor Struggles",
+        "Anticapitalism",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-06-07T10:07:05Z",
+      "latestArticleTitle": "Factory Occupation at Fiat – An excerpt from “March 1973. Red Flags at Mirafiori”",
+      "latestArticleUrl": "https://www.angryworkers.org/2026/06/07/factory-occupation-at-fiat-an-excerpt-from-march-1973-red-flags-at-mirafiori/"
+    },
+    {
+      "name": "Animal Equality Deutschland",
+      "website": "https://animalequality.de/",
+      "domain": "animalequality.de",
+      "articleCount": 10,
+      "languages": [
+        "de"
+      ],
+      "categories": [
+        "Europe",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2026-08-04T08:15:11Z",
+      "latestArticleTitle": "So ist es, als Mutterschwein in der Zucht zu leben",
+      "latestArticleUrl": "https://animalequality.de/blog/mutterschweine-in-der-zucht/"
+    },
+    {
+      "name": "Animal Rising",
+      "website": "https://www.animalrising.org/",
+      "domain": "www.animalrising.org",
+      "articleCount": 9,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Demonstrations",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-07-14T11:26:19Z",
+      "latestArticleTitle": "Victory for Protest Rights as Supreme Court Rejects Public Nuisance Appeal",
+      "latestArticleUrl": "https://www.animalrising.org/post/victory-for-protest-rights-as-supreme-court-rejects-public-nuisance-appeal"
+    },
+    {
+      "name": "Anonymous Comrades Collective",
+      "website": "https://accollective.noblogs.org/",
+      "domain": "accollective.noblogs.org",
+      "articleCount": 5,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "North America",
+        "Movement News",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2024-12-31T19:47:00Z",
+      "latestArticleTitle": "Goodbye 2024, Hello 2025 and The Story of Musktoss",
+      "latestArticleUrl": "https://accollective.noblogs.org/post/2024/12/31/goodbye-2024-hello-2025-and-the-story-of-musktoss/"
+    },
+    {
+      "name": "ANRed (Argentina)",
+      "website": "https://www.anred.org/",
+      "domain": "www.anred.org",
+      "articleCount": 47,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News",
+        "Labor Struggles",
+        "Indigenous Struggles",
+        "Squatting & Housing",
+        "Queer-Feminism",
+        "Antiracism",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-11T11:28:08Z",
+      "latestArticleTitle": "¡Santa sábana, Batman!",
+      "latestArticleUrl": "https://www.anred.org/santa-sabana-batman/?utm_source=rss&utm_medium=rss&utm_campaign=santa-sabana-batman"
+    },
+    {
+      "name": "Anti-Fascistische Actie Nederland",
+      "website": "https://afanederland.org/",
+      "domain": "afanederland.org",
+      "articleCount": 6,
+      "languages": [
+        "nl"
+      ],
+      "categories": [
+        "Europe",
+        "Antifascism",
+        "Movement News",
+        "Antiracism",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-06-11T14:40:09Z",
+      "latestArticleTitle": "Wat er in Nederland gebeurt, gaat ons allemaal aan. Mobiliseer tegen de racistische golf!",
+      "latestArticleUrl": "https://afanederland.org/2026/06/11/wat-er-in-nederland-gebeurt-gaat-ons-allemaal-aan-mobiliseer-tegen-de-racistische-golf/"
+    },
+    {
+      "name": "Antifa Infoblatt",
+      "website": "https://antifainfoblatt.de/",
+      "domain": "antifainfoblatt.de",
+      "articleCount": 2,
+      "languages": [],
+      "categories": [
+        "Movement News",
+        "Global",
+        "Antifascism",
+        "Europe"
+      ],
+      "latestArticleAt": "2020-07-01T06:45:28Z",
+      "latestArticleTitle": "AIB 127",
+      "latestArticleUrl": "https://antifainfoblatt.de/aib127"
+    },
+    {
+      "name": "Antimilitarismus",
+      "website": "https://antimilitarismus.noblogs.org/",
+      "domain": "antimilitarismus.noblogs.org",
+      "articleCount": 18,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No War",
+        "Movement News",
+        "No Borders",
+        "Anticapitalism",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-07-29T20:05:45Z",
+      "latestArticleTitle": "Συγκρούσεις στην Ουκρανία: Πάνω από 200 άτομα επιτέθηκαν σε στρατιώτεςκαι αναποδογύρισαν όχημα στρατολόγησης",
+      "latestArticleUrl": "https://antimilitarismus.noblogs.org/post/2026/07/29/%cf%83%cf%85%ce%b3%ce%ba%cf%81%ce%bf%cf%8d%cf%83%ce%b5%ce%b9%cf%82-%cf%83%cf%84%ce%b7%ce%bd-%ce%bf%cf%85%ce%ba%cf%81%ce%b1%ce%bd%ce%af%ce%b1-%cf%80%ce%ac%ce%bd%cf%89-%ce%b1%cf%80%cf%8c-200-%ce%ac/"
+    },
+    {
+      "name": "Apatris (GR)",
+      "website": "https://apatris.org/",
+      "domain": "apatris.org",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Anti-Rep & Prisons",
+        "Anticapitalism"
+      ],
+      "latestArticleAt": "2026-07-02T02:14:34Z",
+      "latestArticleTitle": "Ανταπόκριση και σχολιασμός από τη δίκη σε α’ βαθμό για την υπόθεση των Αμπελοκήπων (Ένθετο #59)",
+      "latestArticleUrl": "https://apatris.org/antapokrisi-kai-sxoliasmos-apo-ti-diki-ampelokipon/"
+    },
+    {
+      "name": "APTN News",
+      "website": "https://www.aptnnews.ca/",
+      "domain": "www.aptnnews.ca",
+      "articleCount": 4,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "North America",
+        "Indigenous Struggles"
+      ],
+      "latestArticleAt": "2026-08-04T23:20:00Z",
+      "latestArticleTitle": "Banner message along Edmonton area highway ‘racist’ according to First Nations",
+      "latestArticleUrl": "https://www.aptnnews.ca/national-news/banner-message-along-edmonton-area-highway-racist-according-to-first-nations/"
+    },
+    {
+      "name": "Are You Syrious?",
+      "website": "https://medium.com/",
+      "domain": "medium.com",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No Borders"
+      ],
+      "latestArticleAt": "2023-12-12T10:59:46Z",
+      "latestArticleTitle": "AYS News Digest 11/12/23: Frontex share coordinates of refugee boats with militia group",
+      "latestArticleUrl": "https://medium.com/are-you-syrious/ays-news-digest-11-12-23-frontex-share-coordinates-of-refugee-boats-with-militia-group-8b70203fd274?source=rss----d040c2b4fc4b---4"
+    },
+    {
+      "name": "ARIWA – Animal Rights Watch (Germany)",
+      "website": "https://www.ariwa.org/",
+      "domain": "www.ariwa.org",
+      "articleCount": 10,
+      "languages": [
+        "de"
+      ],
+      "categories": [
+        "Europe",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2026-08-06T16:00:54Z",
+      "latestArticleTitle": "Geschützt: Tierwohl-TV: Aufdeckung zeigt Livestream-Lüge aus zwei Hühnerställen",
+      "latestArticleUrl": "https://www.ariwa.org/tierwohl-tv-aufdeckung-zeigt-livestream-luege-aus-zwei-huehnerstaellen/"
+    },
+    {
+      "name": "Asian Labour Review",
+      "website": "https://labourreview.org/",
+      "domain": "labourreview.org",
+      "articleCount": 4,
+      "languages": [],
+      "categories": [
+        "Asia",
+        "Labor Struggles",
+        "Eco-Anarchism",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-05-27T15:48:21Z",
+      "latestArticleTitle": "The Collective Intelligence of Emotional Labour: How Women Workers Organise and Build Power",
+      "latestArticleUrl": "https://labourreview.org/the-collective-intelligence-of-emotional-labour-how-women-workers-organise-and-build-power/"
+    },
+    {
+      "name": "Autonomies",
+      "website": "https://autonomies.org/",
+      "domain": "autonomies.org",
+      "articleCount": 15,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Theory & Strategy",
+        "Squatting & Housing",
+        "Antiracism",
+        "Anticapitalism",
+        "Antifascism",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-09T14:26:42Z",
+      "latestArticleTitle": "Giorgio Agamben: Thought and imagination. More on artificial intelligence",
+      "latestArticleUrl": "https://autonomies.org/2026/08/giorgio-agamben-thought-and-imagination-more-on-artificial-intelligence/"
+    },
+    {
+      "name": "Autostraddle News",
+      "website": "https://www.autostraddle.com/",
+      "domain": "www.autostraddle.com",
+      "articleCount": 6,
+      "languages": [
+        "en",
+        "und"
+      ],
+      "categories": [
+        "North America",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-07-28T11:03:41Z",
+      "latestArticleTitle": "Dylan Mulvaney Says Being Mocked by This Administration Is a Compliment, Actually",
+      "latestArticleUrl": "https://www.autostraddle.com/dylan-mulvaney-says-being-mocked-by-this-administration-is-a-compliment-actually/?utm_source=rss&utm_medium=rss&utm_campaign=dylan-mulvaney-says-being-mocked-by-this-administration-is-a-compliment-actually"
+    },
+    {
+      "name": "Avispa Midia",
+      "website": "https://avispa.org/",
+      "domain": "avispa.org",
+      "articleCount": 17,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News",
+        "Global",
+        "Anticolonialism",
+        "No War",
+        "Demonstrations",
+        "Queer-Feminism",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-08-11T00:30:53Z",
+      "latestArticleTitle": "Comunidades originarias celebran séptima Asamblea Nacional por el Agua",
+      "latestArticleUrl": "https://avispa.org/comunidades-originarias-celebran-septima-asamblea-nacional-por-el-agua/"
+    },
+    {
+      "name": "Avtonom (RU)",
+      "website": "https://avtonom.org/",
+      "domain": "avtonom.org",
+      "articleCount": 11,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Theory & Strategy",
+        "No Borders",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-08-11T07:43:00Z",
+      "latestArticleTitle": "«Мы и наши горы»: анонс просмотра и обсуждения фильма",
+      "latestArticleUrl": "https://avtonom.org/news/my-i-nashi-gory-anons-prosmotra-i-obsuzhdeniya-filma"
+    },
+    {
+      "name": "AWID",
+      "website": "https://www.awid.org/",
+      "domain": "www.awid.org",
+      "articleCount": 5,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Global",
+        "Queer-Feminism",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2025-09-10T19:31:03Z",
+      "latestArticleTitle": "That Feminist Fire Podcast Trailer",
+      "latestArticleUrl": "https://www.awid.org/snippet-feminist-fire-podcast-trailer-en"
+    },
+    {
+      "name": "AWSM",
+      "website": "https://awsm.nz/",
+      "domain": "awsm.nz",
+      "articleCount": 2,
+      "languages": [],
+      "categories": [
+        "Australia & NZ",
+        "No War",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-07-08T07:08:29Z",
+      "latestArticleTitle": "A Kiwi Dies in Ukraine: The War Between Empires and the People Sent to Fight It",
+      "latestArticleUrl": "https://awsm.nz/a-kiwi-dies-in-ukraine-the-war-between-empires-and-the-people-sent-to-fight-it/"
+    },
+    {
+      "name": "Bianet Kurdî",
+      "website": "https://bianet.org/",
+      "domain": "bianet.org",
+      "articleCount": 18,
+      "languages": [
+        "ku"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-07-28T13:15:00Z",
+      "latestArticleTitle": "Li Enqereyê li dijî cihê LGBTÎ+yan operasyon: 7 kes hatin girtin",
+      "latestArticleUrl": "https://bianet.org/haber/li-enqereye-li-diji-cihe-lgbti-yan-operasyon-7-kes-hatin-girtin-321983"
+    },
+    {
+      "name": "Bianet Türkçe",
+      "website": "https://bianet.org/",
+      "domain": "bianet.org",
+      "articleCount": 11,
+      "languages": [
+        "tr"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "No War",
+        "Anti-Rep & Prisons",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-07-28T14:51:00Z",
+      "latestArticleTitle": "Guterres Kıbrıs’ta: \"Barışı yalnızca Kıbrıslılar inşa edebilir\"",
+      "latestArticleUrl": "https://bianet.org/haber/guterres-kibrista-barisi-yalnizca-kibrislilar-insa-edebilir-321984"
+    },
+    {
+      "name": "Biblioteca Anarquista (ES)",
+      "website": "https://es.anarchistlibraries.net/",
+      "domain": "es.anarchistlibraries.net",
+      "articleCount": 11,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-08-06T07:03:19Z",
+      "latestArticleTitle": "Ferdinand Domela Nieuwenhuis - Los Medios del Poder",
+      "latestArticleUrl": "https://es.anarchistlibraries.net/library/ferdinand-domela-nieuwenhuis-los-medios-del-poder?v=1785999799"
+    },
+    {
+      "name": "Bibliothèque Anarchiste (FR)",
+      "website": "https://fr.anarchistlibraries.net/",
+      "domain": "fr.anarchistlibraries.net",
+      "articleCount": 19,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries",
+        "Anticapitalism",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-08-09T15:30:56Z",
+      "latestArticleTitle": "Miguel Amorós - Urbanisme et ordre",
+      "latestArticleUrl": "https://fr.anarchistlibraries.net/library/miguel-amoros-urbanisme-et-ordre?v=1786289456"
+    },
+    {
+      "name": "Black Agenda Report",
+      "website": "https://www.blackagendareport.com/",
+      "domain": "www.blackagendareport.com",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Africa",
+        "Anti-Rep & Prisons",
+        "Movement News",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-08-04T19:52:17Z",
+      "latestArticleTitle": "Iran, China, Fascism, and Boycotting FIFA",
+      "latestArticleUrl": "https://www.blackagendareport.com/iran-china-fascism-and-boycotting-fifa"
+    },
+    {
+      "name": "Black Flag Sydney",
+      "website": "https://blackflagsydney.com/",
+      "domain": "blackflagsydney.com",
+      "articleCount": 4,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Australia & NZ",
+        "Anticolonialism",
+        "Labor Struggles",
+        "Anti-Rep & Prisons",
+        "Movement News"
+      ],
+      "latestArticleAt": "2024-09-12T04:32:30Z",
+      "latestArticleTitle": "On Kanaky-New Caledonia",
+      "latestArticleUrl": "https://blackflagsydney.com/on-kanaky-new-caledonia/?utm_source=rss&utm_medium=rss&utm_campaign=on-kanaky-new-caledonia"
+    },
+    {
+      "name": "Black Rose / Rosa Negra",
+      "website": "https://www.blackrosefed.org/",
+      "domain": "www.blackrosefed.org",
+      "articleCount": 8,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "North America",
+        "Theory & Strategy",
+        "Squatting & Housing",
+        "Movement News",
+        "Labor Struggles",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-29T00:14:26Z",
+      "latestArticleTitle": "Anarchists in the Tenant Movement #3 – the Southeast",
+      "latestArticleUrl": "https://www.blackrosefed.org/anarchists-tenant-movement-3/"
+    },
+    {
+      "name": "Bristol ABC",
+      "website": "https://bristolabc.org/",
+      "domain": "bristolabc.org",
+      "articleCount": 6,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Europe",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2025-10-28T10:32:55Z",
+      "latestArticleTitle": "Month of Solidarity for Taylor",
+      "latestArticleUrl": "https://bristolabc.org/month-of-solidarity-for-taylor/"
+    },
+    {
+      "name": "Bulatlat (Indigenous)",
+      "website": "https://www.bulatlat.com/",
+      "domain": "www.bulatlat.com",
+      "articleCount": 12,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Anti-Imperialism",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-05T09:56:36Z",
+      "latestArticleTitle": "State surveillance adds to teachers’ multiple burden",
+      "latestArticleUrl": "https://www.bulatlat.com/2026/08/05/state-surveillance-adds-to-teachers-multiple-burden/"
+    },
+    {
+      "name": "Bulatlat (Philippines)",
+      "website": "https://www.bulatlat.com/",
+      "domain": "www.bulatlat.com",
+      "articleCount": 19,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Eco-Anarchism",
+        "Antisexism",
+        "Queer-Feminism",
+        "Labor Struggles",
+        "Indigenous Struggles",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-08-11T10:11:25Z",
+      "latestArticleTitle": "Dead season in Isabela",
+      "latestArticleUrl": "https://www.bulatlat.com/2026/08/11/dead-season-in-isabela/"
+    },
+    {
+      "name": "C4SS",
+      "website": "https://c4ss.org/",
+      "domain": "c4ss.org",
+      "articleCount": 13,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "North America",
+        "Movement News",
+        "Anticapitalism",
+        "Theory & Strategy",
+        "Labor Struggles",
+        "Animal Liberation",
+        "No War"
+      ],
+      "latestArticleAt": "2026-08-11T10:32:56Z",
+      "latestArticleTitle": "Insureksi atau Revolusi?",
+      "latestArticleUrl": "https://c4ss.org/content/61273"
+    },
+    {
+      "name": "Chuang (CN)",
+      "website": "https://chuangcn.org/",
+      "domain": "chuangcn.org",
+      "articleCount": 4,
+      "languages": [],
+      "categories": [
+        "Asia",
+        "No War",
+        "Movement News",
+        "Labor Struggles",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2025-06-03T01:33:04Z",
+      "latestArticleTitle": "TRUMP II: Trade War Gone Global",
+      "latestArticleUrl": "https://chuangcn.org/2025/06/heatwave-trump-tariffs/"
+    },
+    {
+      "name": "CNT (Spanien)",
+      "website": "https://www.cnt.es/",
+      "domain": "www.cnt.es",
+      "articleCount": 30,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Labor Struggles",
+        "Movement News",
+        "No War",
+        "Animal Liberation",
+        "No Borders",
+        "Antifascism",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-08-11T11:10:15Z",
+      "latestArticleTitle": "Paco Ponzán: anarcosindicalismo, revolución y resistencia",
+      "latestArticleUrl": "https://www.cnt.es/noticias/paco-ponzan-anarcosindicalismo-revolucion-y-resistencia/?utm_source=rss&utm_medium=rss&utm_campaign=paco-ponzan-anarcosindicalismo-revolucion-y-resistencia"
+    },
+    {
+      "name": "Colorlines",
+      "website": "https://colorlines.com/",
+      "domain": "colorlines.com",
+      "articleCount": 10,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Antiracism",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-06-24T18:39:10Z",
+      "latestArticleTitle": "The Case for Co-Governance: Our Foundational Argument",
+      "latestArticleUrl": "https://colorlines.com/articles/case-co-governance-our-foundational-argument"
+    },
+    {
+      "name": "Comunizar",
+      "website": "https://comunizar.com.ar/",
+      "domain": "comunizar.com.ar",
+      "articleCount": 1,
+      "languages": [],
+      "categories": [
+        "Latin America",
+        "Anticapitalism"
+      ],
+      "latestArticleAt": "2026-06-02T21:01:00Z",
+      "latestArticleTitle": "Revista Crítica Anticapitalista 6 – Propuesta",
+      "latestArticleUrl": "https://comunizar.com.ar/revista-critica-anticapitalista-6-propuesta/?utm_source=rss&utm_medium=rss&utm_campaign=revista-critica-anticapitalista-6-propuesta"
+    },
+    {
+      "name": "Coordenação Anarquista Brasileira (CAB)",
+      "website": "https://cabanarquista.com.br/",
+      "domain": "cabanarquista.com.br",
+      "articleCount": 4,
+      "languages": [
+        "pt"
+      ],
+      "categories": [
+        "Latin America",
+        "Anticapitalism",
+        "Anti-Imperialism",
+        "Indigenous Struggles",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-01T20:38:56Z",
+      "latestArticleTitle": "PENSAMENTO E BATALHA | Conceitos vigentes de Bakunin. 150 anos depois",
+      "latestArticleUrl": "https://cabanarquista.com.br/pensamento-e-batalha-conceitos-vigentes-de-bakunin-150-anos-depois/"
+    },
+    {
+      "name": "CrimethInc. (Global)",
+      "website": "https://crimethinc.com/",
+      "domain": "crimethinc.com",
+      "articleCount": 2,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-07-16T19:19:10Z",
+      "latestArticleTitle": "Protecting Your Neighbors by Following ICE Vehicles : A Guide from the Bay Area",
+      "latestArticleUrl": "https://crimethinc.com/2026/07/16/protecting-your-neighbors-by-following-ice-vehicles-a-guide-from-the-bay-area"
+    },
+    {
+      "name": "Critical Resistance",
+      "website": "https://criticalresistance.org/",
+      "domain": "criticalresistance.org",
+      "articleCount": 4,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2018-12-19T02:02:13Z",
+      "latestArticleTitle": "CR Conference History Webinar Recording",
+      "latestArticleUrl": "https://criticalresistance.org/cr-conference-history-webinar-recording/"
+    },
+    {
+      "name": "Cultural Survival",
+      "website": "https://www.culturalsurvival.org/",
+      "domain": "www.culturalsurvival.org",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-08-09T13:32:50Z",
+      "latestArticleTitle": "7 Actions to Take on Int'l Day of the World's Indigenous Peoples 2026",
+      "latestArticleUrl": "https://www.culturalsurvival.org/news/7-actions-take-intl-day-worlds-indigenous-peoples-2026"
+    },
+    {
+      "name": "Defend Council Housing (UK)",
+      "website": "https://defendcouncilhousing.org.uk/",
+      "domain": "defendcouncilhousing.org.uk",
+      "articleCount": 1,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2024-10-23T12:14:07Z",
+      "latestArticleTitle": "Labour Conference meeting 2024",
+      "latestArticleUrl": "https://defendcouncilhousing.org.uk/labour-conference-meeting-2024/"
+    },
+    {
+      "name": "Defend the Atlanta Forest",
+      "website": "https://defendtheatlantaforest.org/",
+      "domain": "defendtheatlantaforest.org",
+      "articleCount": 3,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2023-03-07T02:18:28Z",
+      "latestArticleTitle": "Press Release: Elders Say Stop Cop City!",
+      "latestArticleUrl": "https://defendtheatlantaforest.org/2023/03/06/press-release-elders-say-stop-cop-city/"
+    },
+    {
+      "name": "Democracy Now! (Global)",
+      "website": "http://www.democracynow.org/",
+      "domain": "www.democracynow.org",
+      "articleCount": 56,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No War",
+        "Movement News",
+        "No Borders",
+        "Anti-Rep & Prisons",
+        "Demonstrations",
+        "Labor Struggles",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-08-06T12:51:50Z",
+      "latestArticleTitle": "\"Struggle for Dignity\": At Least 40 Killed in Mass Protests in Pakistan-Administered Kashmir",
+      "latestArticleUrl": "http://www.democracynow.org/2026/8/6/kashmir_mass_protests"
+    },
+    {
+      "name": "Digitalcourage",
+      "website": "https://digitalcourage.de/",
+      "domain": "digitalcourage.de",
+      "articleCount": 7,
+      "languages": [
+        "de"
+      ],
+      "categories": [
+        "Europe",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-30T11:40:24Z",
+      "latestArticleTitle": "Gute Preise brauchen keine App",
+      "latestArticleUrl": "https://digitalcourage.de/blog/2026/aldi-gegen-digitalzwang"
+    },
+    {
+      "name": "Direkte Aktion (DE)",
+      "website": "https://direkteaktion.org/",
+      "domain": "direkteaktion.org",
+      "articleCount": 5,
+      "languages": [],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Anticapitalism",
+        "Labor Struggles",
+        "No War",
+        "No Borders",
+        "Antifascism",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-07-15T08:45:20Z",
+      "latestArticleTitle": "Fediverse statt Vergesellschaftung",
+      "latestArticleUrl": "https://direkteaktion.org/2026/07/fediverse-statt-vergesellschaftung/"
+    },
+    {
+      "name": "Disability Debrief",
+      "website": "https://www.disabilitydebrief.org/",
+      "domain": "www.disabilitydebrief.org",
+      "articleCount": 16,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Radical Health & Disability",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-07-15T16:56:39Z",
+      "latestArticleTitle": "A new kind of clock",
+      "latestArticleUrl": "https://www.disabilitydebrief.org/debrief/a-new-kind-of-clock/"
+    },
+    {
+      "name": "Disability Visibility",
+      "website": "https://disabilityvisibilityproject.com/",
+      "domain": "disabilityvisibilityproject.com",
+      "articleCount": 4,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Radical Health & Disability"
+      ],
+      "latestArticleAt": "2025-10-16T06:19:56Z",
+      "latestArticleTitle": "The State of Critical Race Disability Studies A White Paper Report from the Disabled Scholars of Color Collective",
+      "latestArticleUrl": "https://disabilityvisibilityproject.com/2025/10/15/graphic-with-a-white-background-with-text-that-reads-the-state-of-critical-race-disability-studies-a-white-paper-report-from-the-disabled-scholars-of-color-collective/"
+    },
+    {
+      "name": "Electronic Frontier Foundation",
+      "website": "https://www.eff.org/",
+      "domain": "www.eff.org",
+      "articleCount": 26,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Cyberactivism",
+        "Movement News",
+        "Queer-Feminism",
+        "No Borders",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-11T00:00:30Z",
+      "latestArticleTitle": "Dismiss Church’s Trademark Lawsuit Against “Mormon Stories” Podcast, EFF Urges Court",
+      "latestArticleUrl": "https://www.eff.org/deeplinks/2026/08/dismiss-churchs-trademark-lawsuit-against-mormon-stories-podcast-eff-urges-court"
+    },
+    {
+      "name": "Elitsha",
+      "website": "https://elitshanews.org.za/",
+      "domain": "elitshanews.org.za",
+      "articleCount": 5,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Africa",
+        "No Borders",
+        "Antiracism",
+        "Labor Struggles",
+        "Demonstrations",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-26T20:14:41Z",
+      "latestArticleTitle": "An open letter to the Acting Minister of Police, Firoz Cachalia:",
+      "latestArticleUrl": "https://elitshanews.org.za/2026/07/26/an-open-letter-to-the-acting-minister-of-police-firoz-cachalia/"
+    },
+    {
+      "name": "Ende Gelände",
+      "website": "https://www.ende-gelaende.org/",
+      "domain": "www.ende-gelaende.org",
+      "articleCount": 5,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Eco-Anarchism",
+        "Movement News"
+      ],
+      "latestArticleAt": "2022-07-12T17:27:56Z",
+      "latestArticleTitle": "Packliste 2022",
+      "latestArticleUrl": "https://www.ende-gelaende.org/packliste-2022/"
+    },
+    {
+      "name": "Enlace Zapatista (EZLN)",
+      "website": "https://enlacezapatista.ezln.org.mx/",
+      "domain": "enlacezapatista.ezln.org.mx",
+      "articleCount": 22,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Latin America",
+        "No War",
+        "Movement News",
+        "Indigenous Struggles",
+        "Global",
+        "No Borders",
+        "Anticapitalism"
+      ],
+      "latestArticleAt": "2026-08-11T04:43:01Z",
+      "latestArticleTitle": "Bezüglich der Reise. Subcomandante Insurgente Moisés.   Capitán Insurgente Marcos.  Comisión Sexta Zapatista.",
+      "latestArticleUrl": "https://enlacezapatista.ezln.org.mx/2026/08/10/bezuglich-der-reise-subcomandante-insurgente-moises-capitan-insurgente-marcos-comision-sexta-zapatista/"
+    },
+    {
+      "name": "Equality Now",
+      "website": "https://equalitynow.org/",
+      "domain": "equalitynow.org",
+      "articleCount": 6,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Global",
+        "Antisexism",
+        "Movement News",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-08-04T16:32:41Z",
+      "latestArticleTitle": "Justice delayed across borders: What the Tate cases reveal about the cost of system failure",
+      "latestArticleUrl": "https://equalitynow.org/news/news-and-insights/justice-delayed-across-borders-what-the-tate-cases-reveal-about-the-cost-of-system-failure/"
+    },
+    {
+      "name": "European Digital Rights",
+      "website": "https://edri.org/",
+      "domain": "edri.org",
+      "articleCount": 14,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Europe",
+        "Cyberactivism",
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-04T12:36:12Z",
+      "latestArticleTitle": "The “Chat Control 1.0” saga: Big Tech can scan our private messages again – but Parliament sent a strong signal against mass surveillance",
+      "latestArticleUrl": "https://edri.org/our-work/the-chat-control-1-0-saga-big-tech-can-scan-our-private-messages-again-but-parliament-sent-a-strong-signal-against-mass-surveillance/"
+    },
+    {
+      "name": "Evrensel",
+      "website": "https://www.evrensel.net/",
+      "domain": "www.evrensel.net",
+      "articleCount": 6,
+      "languages": [
+        "tr"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-08-05T14:57:00Z",
+      "latestArticleTitle": "Abhazya'ya yönelik izolasyona tepki: Uluslararası hukuk ve evrensel insan hakları ihlal ediliyor",
+      "latestArticleUrl": "https://www.evrensel.net/haber/5995188/abhazya-ya-yonelik-izolasyona-tepki-uluslararasi-hukuk-ve-evrensel-insan-haklari-ihlal-ediliyor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_syndication"
+    },
+    {
+      "name": "FAU (Deutschland)",
+      "website": "https://www.fau.org/",
+      "domain": "www.fau.org",
+      "articleCount": 11,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Labor Struggles",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-07-09T11:57:09Z",
+      "latestArticleTitle": "Freie Arbeiter:innen-Jugend",
+      "latestArticleUrl": "https://www.fau.org/branchen/freie-arbeiter-innen-jugend"
+    },
+    {
+      "name": "Federacja Anarchistyczna (PL)",
+      "website": "https://federacja-anarchistyczna.pl/",
+      "domain": "federacja-anarchistyczna.pl",
+      "articleCount": 8,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Theory & Strategy",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-06T19:34:04Z",
+      "latestArticleTitle": "Rębnie całkowite i zapory na rzekach  nie rozwiązują problemów, one je generują",
+      "latestArticleUrl": "https://federacja-anarchistyczna.pl/2026/08/06/rebnie-calkowite-i-zapory-na-rzekach-nie-rozwiazuja-problemow-one-je-generuja/"
+    },
+    {
+      "name": "Federation of Anarchism Era",
+      "website": "https://asranarshism.com/",
+      "domain": "asranarshism.com",
+      "articleCount": 5,
+      "languages": [],
+      "categories": [
+        "Asia",
+        "Antifascism",
+        "Anti-Imperialism",
+        "Anticapitalism",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2025-03-27T18:09:57Z",
+      "latestArticleTitle": "Argentina: Those who give speech for the poor",
+      "latestArticleUrl": "https://asranarshism.com/1404/01/07/argentina-english/"
+    },
+    {
+      "name": "Feminist Newswire",
+      "website": "https://feminist.org/",
+      "domain": "feminist.org",
+      "articleCount": 8,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "North America",
+        "Antisexism",
+        "Movement News",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-07-30T16:53:09Z",
+      "latestArticleTitle": "Trump Administration Cancels Teen Pregnancy Prevention Funding",
+      "latestArticleUrl": "https://feminist.org/news/trump-administration-cancels-teen-pregnancy-prevention-funding/"
+    },
+    {
+      "name": "Freedom News",
+      "website": "https://freedomnews.org.uk/",
+      "domain": "freedomnews.org.uk",
+      "articleCount": 11,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Theory & Strategy",
+        "Eco-Anarchism",
+        "Queer-Feminism",
+        "No Borders",
+        "Antiracism",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-09T07:30:28Z",
+      "latestArticleTitle": "Reflections on a decade of Black Lives Matter UK",
+      "latestArticleUrl": "https://freedomnews.org.uk/2026/08/09/reflections-on-a-decade-of-uk-black-lives-matter/"
+    },
+    {
+      "name": "GenderIT (Technofeminism)",
+      "website": "https://www.genderit.org/",
+      "domain": "www.genderit.org",
+      "articleCount": 7,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Queer-Feminism",
+        "Movement News",
+        "Antisexism",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2023-05-24T09:00:10Z",
+      "latestArticleTitle": "#SudanUpdates and the weaponization of Internet Access, where are Sudanese Women",
+      "latestArticleUrl": "https://www.genderit.org/feminist-talk/sudanupdates-and-weaponization-internet-access-where-are-sudanese-women"
+    },
+    {
+      "name": "Gods & Radicals",
+      "website": "https://sulbooks.com/",
+      "domain": "sulbooks.com",
+      "articleCount": 6,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Antisexism",
+        "Movement News",
+        "Indigenous Struggles",
+        "Anticapitalism",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-06-11T20:03:37Z",
+      "latestArticleTitle": "Left on Read: On the Puppetry of Passivity",
+      "latestArticleUrl": "https://sulbooks.com/site/2026/6/9/left-on-read"
+    },
+    {
+      "name": "Graswurzelrevolution",
+      "website": "https://www.graswurzel.net/",
+      "domain": "www.graswurzel.net",
+      "articleCount": 4,
+      "languages": [],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Theory & Strategy",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-01T08:05:32Z",
+      "latestArticleTitle": "Radiosendung „Anarchismus – Wo Michail Bakunins Ideen lebendig sind“ von Rolf Cantzen",
+      "latestArticleUrl": "https://www.graswurzel.net/gwr/2026/07/radiosendung-anarchismus-wo-michail-bakunins-ideen-lebendig-sind-von-rolf-cantzen/"
+    },
+    {
+      "name": "Green Left",
+      "website": "https://www.greenleft.org.au/",
+      "domain": "www.greenleft.org.au",
+      "articleCount": 33,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Australia & NZ",
+        "Movement News",
+        "Demonstrations",
+        "Labor Struggles",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons",
+        "Anti-Imperialism",
+        "Indigenous Struggles"
+      ],
+      "latestArticleAt": "2026-08-06T10:11:35Z",
+      "latestArticleTitle": "Green Left Show #89: How India’s ‘Cockroaches’ struck a blow against Modi",
+      "latestArticleUrl": "https://www.greenleft.org.au/2026/1459/world/green-left-show-89-how-indias-cockroaches-struck-blow-against-modi"
+    },
+    {
+      "name": "Grist (Indigenous Affairs)",
+      "website": "https://grist.org/",
+      "domain": "grist.org",
+      "articleCount": 17,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Eco-Anarchism",
+        "No War"
+      ],
+      "latestArticleAt": "2026-08-05T08:15:00Z",
+      "latestArticleTitle": "A controversial plan to update Line 5 just suffered a major loss at the Michigan Supreme Court",
+      "latestArticleUrl": "https://grist.org/energy/controversial-plan-line-5-major-loss-michigan-supreme-court/"
+    },
+    {
+      "name": "Groundxero",
+      "website": "https://www.groundxero.in/",
+      "domain": "www.groundxero.in",
+      "articleCount": 8,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Asia",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Demonstrations",
+        "Anticolonialism",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-08-09T08:50:12Z",
+      "latestArticleTitle": "উচ্ছেদের মুখে দাঁড়িয়ে প্রতিরোধের প্রাচীর তুলছেন ঢাকুরিয়ার বস্তির বাসিন্দারা",
+      "latestArticleUrl": "https://www.groundxero.in/2026/08/09/residents-of-the-dhakuria-slum-build-a-wall-of-resistance-in-the-face-of-eviction/"
+    },
+    {
+      "name": "Hunt Saboteurs Association (UK)",
+      "website": "https://www.huntsabs.org.uk/",
+      "domain": "www.huntsabs.org.uk",
+      "articleCount": 7,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Animal Liberation",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-06T06:55:00Z",
+      "latestArticleTitle": "Wiltshire Hunt Sabs uncover horrific scenes at industrial-scale gamebird rearing site",
+      "latestArticleUrl": "https://www.huntsabs.org.uk/dead-bird-bonfires-at-local-shoot-exposed/?utm_source=rss&utm_medium=rss&utm_campaign=dead-bird-bonfires-at-local-shoot-exposed"
+    },
+    {
+      "name": "IEN Earth",
+      "website": "https://www.ienearth.org/",
+      "domain": "www.ienearth.org",
+      "articleCount": 8,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-07-01T15:50:12Z",
+      "latestArticleTitle": "Perspectives from the Sacred Waters Gathering",
+      "latestArticleUrl": "https://www.ienearth.org/perspectives-from-the-sacred-waters-gathering/"
+    },
+    {
+      "name": "Ill Will",
+      "website": "https://illwill.com/",
+      "domain": "illwill.com",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Theory & Strategy",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-07-01T00:00:00Z",
+      "latestArticleTitle": "Revolution, Dual Power, and the Twin Cities Rapid Response Network",
+      "latestArticleUrl": "https://illwill.com/dual-power"
+    },
+    {
+      "name": "Indigenous Action",
+      "website": "https://www.indigenousaction.org/",
+      "domain": "www.indigenousaction.org",
+      "articleCount": 7,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Anticolonialism",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2024-01-02T18:12:29Z",
+      "latestArticleTitle": "The family of Klee Benally thanks you for the donations!",
+      "latestArticleUrl": "https://www.indigenousaction.org/donations-accepted-for-the-family-of-klee-benally/"
+    },
+    {
+      "name": "IndigenousX",
+      "website": "https://indigenousx.com.au/",
+      "domain": "indigenousx.com.au",
+      "articleCount": 2,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles"
+      ],
+      "latestArticleAt": "2026-08-11T05:28:17Z",
+      "latestArticleTitle": "MEDIA STATEMENT : FELIPE ALVAREZ CORONIAL INQUEST",
+      "latestArticleUrl": "https://indigenousx.com.au/media-statement-felipe-alvarez-coronial-inquest/"
+    },
+    {
+      "name": "IndigenousX (Australia)",
+      "website": "https://indigenousx.com.au/",
+      "domain": "indigenousx.com.au",
+      "articleCount": 8,
+      "languages": [],
+      "categories": [
+        "Australia & NZ",
+        "Indigenous Struggles",
+        "Antiracism",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-04-22T04:20:49Z",
+      "latestArticleTitle": "The ACT appoints its first Aboriginal Chief Coroner, After Years of Calling For Justice for Aboriginal Deaths in Custody",
+      "latestArticleUrl": "https://indigenousx.com.au/the-act-appoints-its-first-aboriginal-chief-coroner-after-years-of-calling-for-justice-for-aboriginal-deaths-in-custody/"
+    },
+    {
+      "name": "IndigiNews",
+      "website": "https://indiginews.com/",
+      "domain": "indiginews.com",
+      "articleCount": 3,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "North America",
+        "Indigenous Struggles",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-21T17:08:22Z",
+      "latestArticleTitle": "Indigenous people demand more say at the UN, as new crises hit their homelands",
+      "latestArticleUrl": "https://indiginews.com/news/indigenous-people-demand-more-say-at-un/"
+    },
+    {
+      "name": "Indymedia Argentina",
+      "website": "https://argentina.indymedia.org/",
+      "domain": "argentina.indymedia.org",
+      "articleCount": 65,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News",
+        "No Borders",
+        "Labor Struggles",
+        "Antiracism",
+        "Indigenous Struggles",
+        "No War",
+        "Anticapitalism"
+      ],
+      "latestArticleAt": "2026-08-09T16:27:49Z",
+      "latestArticleTitle": "Semana 3/08/26 a 9/08/26 – Temas desde las radios populares",
+      "latestArticleUrl": "https://argentina.indymedia.org/2026/08/09/semana-3-08-26-a-9-08-26-temas-desde-las-radios-populares/"
+    },
+    {
+      "name": "InfoAut",
+      "website": "https://infoaut.org/",
+      "domain": "infoaut.org",
+      "articleCount": 14,
+      "languages": [
+        "it"
+      ],
+      "categories": [
+        "Europe",
+        "Anti-Rep & Prisons",
+        "No Borders",
+        "No War"
+      ],
+      "latestArticleAt": "2026-08-09T09:03:08Z",
+      "latestArticleTitle": "Guccini e Radio Onda Rossa",
+      "latestArticleUrl": "https://infoaut.org/culture/guccini-e-radio-onda-rossa/"
+    },
+    {
+      "name": "Infolibre (GR)",
+      "website": "https://infolibre.gr/",
+      "domain": "infolibre.gr",
+      "articleCount": 13,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Squatting & Housing",
+        "Labor Struggles",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-08-09T20:50:08Z",
+      "latestArticleTitle": "Μιά πανελλαδική φωνή για λευτεριά στην Παλαιστίνη!",
+      "latestArticleUrl": "https://infolibre.gr/2026/08/09/mia-panelladiki-foni-gia-leyteria-stin-palaistini/"
+    },
+    {
+      "name": "Institute of Race Relations",
+      "website": "https://irr.org.uk/",
+      "domain": "irr.org.uk",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2024-11-26T12:11:33Z",
+      "latestArticleTitle": "Italy Begins Withdrawing Staff From Albania Offshore Asylum Centers",
+      "latestArticleUrl": "https://irr.org.uk/2024/11/italy-begins-withdrawing-staff-from-albania-offshore-asylum-centers/?utm_source=rss&utm_medium=rss&utm_campaign=italy-begins-withdrawing-staff-from-albania-offshore-asylum-centers"
+    },
+    {
+      "name": "It's Going Down",
+      "website": "https://itsgoingdown.org/",
+      "domain": "itsgoingdown.org",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Demonstrations",
+        "Anti-Rep & Prisons",
+        "North America",
+        "Indigenous Struggles",
+        "No Borders",
+        "Movement News",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2025-10-01T12:26:08Z",
+      "latestArticleTitle": "Zapatista Assemblies Denounce Threats and Intimidation in Recuperated Territories",
+      "latestArticleUrl": "https://itsgoingdown.org/zapatista-assemblies-denounce-threats-and-intimidation/"
+    },
+    {
+      "name": "IWA-AIT (Internationale)",
+      "website": "https://iwa-ait.org/",
+      "domain": "iwa-ait.org",
+      "articleCount": 4,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News"
+      ],
+      "latestArticleAt": "2025-11-13T19:06:13Z",
+      "latestArticleTitle": "CNT-AIT Response to Falsehoods",
+      "latestArticleUrl": "https://iwa-ait.org/content/cnt-ait-response-falsehoods"
+    },
+    {
+      "name": "IWOC (Incarcerated Workers)",
+      "website": "https://incarceratedworkers.org/",
+      "domain": "incarceratedworkers.org",
+      "articleCount": 3,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2025-12-02T16:00:00Z",
+      "latestArticleTitle": "For Incarcerated Students in California, Education Is a Collective Endeavor",
+      "latestArticleUrl": "https://incarceratedworkers.org/2025/12/02/for-incarcerated-students-in-california-education-is-a-collective-endeavor/"
+    },
+    {
+      "name": "IWW (Global)",
+      "website": "https://www.iww.org/",
+      "domain": "www.iww.org",
+      "articleCount": 1,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2022-05-11T00:00:00Z",
+      "latestArticleTitle": "California Public Employment Relations Board Determines Union of Teachers and Support Staff at Caliber Public Schools Must Be Granted Recognition",
+      "latestArticleUrl": "https://www.iww.org/news/california-public-employment-relations-board-determines-union-of-teachers-and-support-staff-at-caliber-public-schools-must-be-granted-recognition/"
+    },
+    {
+      "name": "Jineolojî Academy",
+      "website": "https://jineoloji.eu/",
+      "domain": "jineoloji.eu",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Antisexism",
+        "Movement News",
+        "No War",
+        "Anticolonialism"
+      ],
+      "latestArticleAt": "2026-07-19T18:05:38Z",
+      "latestArticleTitle": "Rojava: A Land of Resistance and Freedom",
+      "latestArticleUrl": "https://jineoloji.eu/en/2026/07/19/rojava-a-land-of-resistance-and-freedom/"
+    },
+    {
+      "name": "Juntas! Brasil",
+      "website": "https://coletivojuntas.com.br/",
+      "domain": "coletivojuntas.com.br",
+      "articleCount": 3,
+      "languages": [
+        "pt"
+      ],
+      "categories": [
+        "Latin America",
+        "Antifascism",
+        "Anticapitalism",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2026-05-21T15:13:42Z",
+      "latestArticleTitle": "19 de maio: Levante feminista nas escolas",
+      "latestArticleUrl": "https://coletivojuntas.com.br/2026/05/19-de-maio-levante-feminista-nas-escolas/"
+    },
+    {
+      "name": "Karapatan (Human Rights)",
+      "website": "https://www.karapatan.org/",
+      "domain": "www.karapatan.org",
+      "articleCount": 3,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-03-26T16:22:01Z",
+      "latestArticleTitle": "2025 Karapatan Year-End Report on the Human Rights Situation in the Philippines",
+      "latestArticleUrl": "https://www.karapatan.org/5303/"
+    },
+    {
+      "name": "Kodao Productions",
+      "website": "https://kodao.org/",
+      "domain": "kodao.org",
+      "articleCount": 8,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Labor Struggles",
+        "Anti-Rep & Prisons",
+        "Anti-Imperialism"
+      ],
+      "latestArticleAt": "2026-08-11T11:13:30Z",
+      "latestArticleTitle": "Millions in prisoner funds missing at women’s correctional",
+      "latestArticleUrl": "https://kodao.org/millions-in-prisoner-funds-missing-at-womens-correctional/"
+    },
+    {
+      "name": "Kolektiva Media (Video)",
+      "website": "https://kolektiva.media/",
+      "domain": "kolektiva.media",
+      "articleCount": 21,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Cyberactivism",
+        "Movement News",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-08-09T08:15:15Z",
+      "latestArticleTitle": "Gear Talk - Die geheimnissvolle Gear Tasche? - 0029",
+      "latestArticleUrl": "https://kolektiva.media/w/fkU9NCtMqPWK7udf97WcXc"
+    },
+    {
+      "name": "Kontrapolis",
+      "website": "https://kontrapolis.info/",
+      "domain": "kontrapolis.info",
+      "articleCount": 3,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Demonstrations",
+        "Antifascism",
+        "Movement News",
+        "No War"
+      ],
+      "latestArticleAt": "2026-08-11T06:07:21Z",
+      "latestArticleTitle": "KI und Rechenzentren: Bundesregierung weiß nicht, wieviel Wasser ihre Ausbaupläne schlucken werden",
+      "latestArticleUrl": "https://kontrapolis.info/18433/"
+    },
+    {
+      "name": "Kontrapolis (DE)",
+      "website": "https://kontrapolis.info/",
+      "domain": "kontrapolis.info",
+      "articleCount": 19,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Antifascism",
+        "Anti-Rep & Prisons",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-07-29T21:29:24Z",
+      "latestArticleTitle": "Freispruch wegen Adbustings gegen Bundeswehr-Naziprepper",
+      "latestArticleUrl": "https://kontrapolis.info/18385/"
+    },
+    {
+      "name": "L214 (France)",
+      "website": "https://www.l214.com/",
+      "domain": "www.l214.com",
+      "articleCount": 4,
+      "languages": [
+        "fr"
+      ],
+      "categories": [
+        "Europe",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2026-07-23T06:22:50Z",
+      "latestArticleTitle": "Enquête dans un élevage de cochons fournissant la marque Jean Floc’h",
+      "latestArticleUrl": "https://www.l214.com/enquetes/2026/elevage-cochons-jean-floch/"
+    },
+    {
+      "name": "La Zarzamora",
+      "website": "https://lazarzamora.cl/",
+      "domain": "lazarzamora.cl",
+      "articleCount": 8,
+      "languages": [
+        "es"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News",
+        "Indigenous Struggles",
+        "Anti-Rep & Prisons",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-08-04T21:58:04Z",
+      "latestArticleTitle": "Escucha: Nueva Edición de Cápsulas Informativas de RLZ- semana del 04 de agosto",
+      "latestArticleUrl": "https://lazarzamora.cl/escucha-nueva-edicion-de-capsulas-informativas-de-rlz-semana-del-04-de-agosto/"
+    },
+    {
+      "name": "Labor for Palestine",
+      "website": "https://laborforpalestine.net/",
+      "domain": "laborforpalestine.net",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No War",
+        "Labor Struggles",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-08-05T20:40:03Z",
+      "latestArticleTitle": "Resources for trade unionists (Palestine Action UK)",
+      "latestArticleUrl": "https://laborforpalestine.net/2026/08/05/resources-for-trade-unionists-palestine-action-uk/"
+    },
+    {
+      "name": "Labor Notes",
+      "website": "https://labornotes.org/",
+      "domain": "labornotes.org",
+      "articleCount": 18,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Labor Struggles",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-08-06T20:36:43Z",
+      "latestArticleTitle": "Labor Notes Crossword: August 2026",
+      "latestArticleUrl": "https://labornotes.org/blogs/2026/08/labor-notes-crossword-august-2026"
+    },
+    {
+      "name": "LabourNet DE",
+      "website": "https://www.labournet.de/",
+      "domain": "www.labournet.de",
+      "articleCount": 53,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Labor Struggles",
+        "Movement News",
+        "No Borders",
+        "No War",
+        "Squatting & Housing",
+        "Anticapitalism",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-08-11T11:19:06Z",
+      "latestArticleTitle": "Antikriegstag 2026: „Friedensfähig statt kriegstüchtig! Gemeinsam für Völkerverständigung, soziale Gerechtigkeit und eine Welt ohne Krieg“ (DGB)",
+      "latestArticleUrl": "https://www.labournet.de/interventionen/kriege/militarisierung-bw/antikriegstag-2026-friedensfaehig-statt-kriegstuechtig-gemeinsam-fuer-voelkerverstaendigung-soziale-gerechtigkeit-und-eine-welt-ohne-krieg-dgb/"
+    },
+    {
+      "name": "Libcom (Global News)",
+      "website": "https://libcom.org/",
+      "domain": "libcom.org",
+      "articleCount": 14,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "Movement News",
+        "Labor Struggles",
+        "Theory & Strategy",
+        "Cyberactivism",
+        "Anti-Imperialism",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-23T09:05:50Z",
+      "latestArticleTitle": "Some Notes on the Reproduction of Human Capital - Robert Cooperstein",
+      "latestArticleUrl": "https://libcom.org/article/some-notes-reproduction-human-capital-robert-cooperstein"
+    },
+    {
+      "name": "Libcom (Workplace)",
+      "website": "https://libcom.org/",
+      "domain": "libcom.org",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-08-09T14:37:12Z",
+      "latestArticleTitle": "ساده کردن\" آثار و آموزشهای مارکس\"",
+      "latestArticleUrl": "https://libcom.org/article/sadh-krdn-athar-w-amwzshhay-marks"
+    },
+    {
+      "name": "Libcom Library",
+      "website": "https://libcom.org/",
+      "domain": "libcom.org",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries"
+      ],
+      "latestArticleAt": "2026-07-28T08:10:56Z",
+      "latestArticleTitle": "DOPE Magazine #5",
+      "latestArticleUrl": "https://libcom.org/article/dope-magazine-5"
+    },
+    {
+      "name": "Lower Class Magazine",
+      "website": "https://lowerclassmag.com/",
+      "domain": "lowerclassmag.com",
+      "articleCount": 15,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "No War",
+        "Antifascism",
+        "Anti-Imperialism",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-07-29T08:02:40Z",
+      "latestArticleTitle": "Die schönsten Geschichten schreibt die Revolution – Über das Leben des Revolutionärs Jakow Michailowitsch Swerdlow",
+      "latestArticleUrl": "https://lowerclassmag.com/2026/07/29/die-schoensten-geschichten-schreibt-die-revolution/"
+    },
+    {
+      "name": "MACG",
+      "website": "https://melbacg.wordpress.com/",
+      "domain": "melbacg.wordpress.com",
+      "articleCount": 3,
+      "languages": [],
+      "categories": [
+        "Australia & NZ",
+        "No War",
+        "Anticapitalism",
+        "Anti-Imperialism",
+        "Demonstrations",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2023-07-12T13:57:02Z",
+      "latestArticleTitle": "THE UKRAINE WAR",
+      "latestArticleUrl": "https://melbacg.wordpress.com/2023/07/12/the-ukraine-war/"
+    },
+    {
+      "name": "Mad in America",
+      "website": "https://www.madinamerica.com/",
+      "domain": "www.madinamerica.com",
+      "articleCount": 10,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Radical Health & Disability",
+        "Movement News",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-08-11T10:00:56Z",
+      "latestArticleTitle": "When Treatment Fails: Why I Relate to Lindsay Clancy",
+      "latestArticleUrl": "https://www.madinamerica.com/2026/08/when-treatment-fails-why-i-relate-to-lindsay-clancy/"
+    },
+    {
+      "name": "Mada Masr (Egypt)",
+      "website": "https://www.madamasr.com/",
+      "domain": "www.madamasr.com",
+      "articleCount": 22,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Africa",
+        "Movement News",
+        "No War",
+        "No Borders",
+        "Labor Struggles",
+        "Eco-Anarchism",
+        "Radical Health & Disability"
+      ],
+      "latestArticleAt": "2026-08-09T17:34:47Z",
+      "latestArticleTitle": "Why Cairo didn’t turn up for the Quad defense pact party",
+      "latestArticleUrl": "https://www.madamasr.com/en/2026/08/09/feature/politics/why-cairo-didnt-turn-up-for-the-quad-defense-pact-party/"
+    },
+    {
+      "name": "Make Rojava Green Again",
+      "website": "https://makerojavagreenagain.org/",
+      "domain": "makerojavagreenagain.org",
+      "articleCount": 5,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Queer-Feminism",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons",
+        "Movement News"
+      ],
+      "latestArticleAt": "2024-10-24T19:20:25Z",
+      "latestArticleTitle": "Attacks on Rojava – Call for action against Turkey’s attacks",
+      "latestArticleUrl": "https://makerojavagreenagain.org/attacks-on-rojava-call-for-action-against-turkeys-attacks/"
+    },
+    {
+      "name": "Manila Today",
+      "website": "https://manilatoday.net/",
+      "domain": "manilatoday.net",
+      "articleCount": 2,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Eco-Anarchism",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-08-05T08:08:41Z",
+      "latestArticleTitle": "Ang Paglalayag sa Kawalan: Isang Pagsusuri sa The Odyssey (2026)",
+      "latestArticleUrl": "https://manilatoday.net/ang-paglalayag-sa-kawalan-isang-pagsusuri-sa-the-odyssey-2026/?utm_source=rss&utm_medium=rss&utm_campaign=ang-paglalayag-sa-kawalan-isang-pagsusuri-sa-the-odyssey-2026"
+    },
+    {
+      "name": "Mapuexpress (Mapuche)",
+      "website": "https://www.mapuexpress.org/",
+      "domain": "www.mapuexpress.org",
+      "articleCount": 14,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Queer-Feminism",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-29T19:34:12Z",
+      "latestArticleTitle": "Chawrakawin: Palimpsesto explora a través del arte las tensiones documentales en la memoria Mapuche",
+      "latestArticleUrl": "https://www.mapuexpress.org/2026/07/29/chawrakawin-palimpsesto-explora-a-traves-del-arte-las-tensiones-documentales-en-la-memoria-mapuche/"
+    },
+    {
+      "name": "Mekong Review",
+      "website": "https://mekongreview.com/",
+      "domain": "mekongreview.com",
+      "articleCount": 15,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Antifascism",
+        "Antiracism",
+        "No Borders",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-09T13:48:11Z",
+      "latestArticleTitle": "Stand and fight Calum Stuart",
+      "latestArticleUrl": "https://mekongreview.com/stand-and-fight/"
+    },
+    {
+      "name": "Migrant Solidarity Network (CH)",
+      "website": "https://migrant-solidarity-network.ch/",
+      "domain": "migrant-solidarity-network.ch",
+      "articleCount": 5,
+      "languages": [],
+      "categories": [
+        "Global",
+        "No Borders",
+        "Movement News",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-06-30T14:58:31Z",
+      "latestArticleTitle": "Hungerstreik: Solidarität mit Welat Aydın",
+      "latestArticleUrl": "https://migrant-solidarity-network.ch/en/2026/06/30/hungerstreik-solidaritaet-mit-welat/"
+    },
+    {
+      "name": "Minority Africa",
+      "website": "https://minorityafrica.org/",
+      "domain": "minorityafrica.org",
+      "articleCount": 7,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Africa",
+        "Queer-Feminism",
+        "Labor Struggles",
+        "Radical Health & Disability",
+        "No War",
+        "Indigenous Struggles"
+      ],
+      "latestArticleAt": "2026-06-03T16:50:32Z",
+      "latestArticleTitle": "‘He was telling the truth’: The queer Zimbabwean artist whose music outlived him",
+      "latestArticleUrl": "https://minorityafrica.org/he-was-telling-the-truth-the-queer-zimbabwean-artist-whose-music-outlived-him/?utm_source=rss&utm_medium=rss&utm_campaign=he-was-telling-the-truth-the-queer-zimbabwean-artist-whose-music-outlived-him"
+    },
+    {
+      "name": "Missy Magazine (DE)",
+      "website": "https://missy-magazine.de/",
+      "domain": "missy-magazine.de",
+      "articleCount": 16,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Antisexism",
+        "Movement News",
+        "Queer-Feminism",
+        "Anticapitalism",
+        "Eco-Anarchism",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-07-07T15:00:55Z",
+      "latestArticleTitle": "Bitches im Stadion",
+      "latestArticleUrl": "https://missy-magazine.de/blog/2026/07/07/bitches-im-stadion/"
+    },
+    {
+      "name": "Monthly Review",
+      "website": "https://monthlyreview.org/",
+      "domain": "monthlyreview.org",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "Eco-Anarchism",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-08-06T05:34:00Z",
+      "latestArticleTitle": "John Bellamy Foster’s “Breaking the Bonds of Fate”",
+      "latestArticleUrl": "https://monthlyreview.org/forthcoming-breaking-the-bonds-of-fate-epicurus-and-marx-excerpt/"
+    },
+    {
+      "name": "Montreal Antifasciste",
+      "website": "https://montreal-antifasciste.info/",
+      "domain": "montreal-antifasciste.info",
+      "articleCount": 1,
+      "languages": [],
+      "categories": [
+        "North America",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-03-04T23:37:40Z",
+      "latestArticleTitle": "Membre clé du Frontenac Active Club identifié : Giulio Zardo",
+      "latestArticleUrl": "https://montreal-antifasciste.info/fr/2026/03/04/membre-cle-du-frontenac-active-club-identifie-giulio-zardo/"
+    },
+    {
+      "name": "Native News Online",
+      "website": "https://nativenewsonline.net/",
+      "domain": "nativenewsonline.net",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Radical Health & Disability"
+      ],
+      "latestArticleAt": "2026-08-11T04:00:00Z",
+      "latestArticleTitle": "Navajo Nation Supreme Court Denies Petition Challenging Budget and Finance Committee Investigation",
+      "latestArticleUrl": "https://nativenewsonline.net/sovereignty/navajo-nation-supreme-court-denies-petition-challenging-budget-and-finance-committee-investigation/"
+    },
+    {
+      "name": "Nawaat (Tunisia)",
+      "website": "https://nawaat.org/",
+      "domain": "nawaat.org",
+      "articleCount": 8,
+      "languages": [],
+      "categories": [
+        "Africa",
+        "Anti-Rep & Prisons",
+        "Anticolonialism",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-07-16T12:54:04Z",
+      "latestArticleTitle": "Liberté d’expression en Tunisie : Recul alarmant sous le joug du décret 54 et de l’article 86",
+      "latestArticleUrl": "https://nawaat.org/2026/07/16/liberte-dexpression-en-tunisie-recul-alarmant-sous-le-joug-du-decret-54-et-de-larticle-86/"
+    },
+    {
+      "name": "New Bloom (TW)",
+      "website": "https://newbloommag.net/",
+      "domain": "newbloommag.net",
+      "articleCount": 17,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Indigenous Struggles",
+        "Demonstrations",
+        "Queer-Feminism",
+        "No War",
+        "Labor Struggles",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-08-11T07:14:05Z",
+      "latestArticleTitle": "「寫作是最後一道防線」：巴勒斯坦詩人亞赫亞·哈馬納專訪",
+      "latestArticleUrl": "https://newbloommag.net/2026/08/11/yahya-al-hamarna-interview-zh/"
+    },
+    {
+      "name": "Novara Media (UK)",
+      "website": "https://novaramedia.com/",
+      "domain": "novaramedia.com",
+      "articleCount": 41,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "Movement News",
+        "No War",
+        "Eco-Anarchism",
+        "Labor Struggles",
+        "No Borders",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-08-11T11:13:39Z",
+      "latestArticleTitle": "Zuckerberg’s $300m Yacht Reportedly Ignored Call for Help From Stranded Boat",
+      "latestArticleUrl": "https://novaramedia.com/2026/08/11/zuckerbergs-300m-yacht-reportedly-ignored-call-for-help-from-stranded-boat/"
+    },
+    {
+      "name": "Nunatsiaq News",
+      "website": "https://nunatsiaq.com/",
+      "domain": "nunatsiaq.com",
+      "articleCount": 7,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "North America",
+        "Indigenous Struggles",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-04T21:34:28Z",
+      "latestArticleTitle": "Gjoa Haven boil water advisory lifted after months-long disruption",
+      "latestArticleUrl": "https://nunatsiaq.com/stories/article/gjoa-haven-boil-water-advisory-lifted-after-months-long-disruption/"
+    },
+    {
+      "name": "OmniaTV (GR)",
+      "website": "https://omniatv.com/",
+      "domain": "omniatv.com",
+      "articleCount": 18,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Anti-Rep & Prisons",
+        "Labor Struggles",
+        "Squatting & Housing",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-07-21T10:45:51Z",
+      "latestArticleTitle": "Ευρύ κίνημα υποστήριξης γύρω από την Κοινότητα Προσφυγικών της Λ. Αλεξάνδρας",
+      "latestArticleUrl": "https://omniatv.com/853520063/pempti-23-ioylioy-synenteyxi-typoy-tis-koinotitas-kateileimmenon-prosfygikon/"
+    },
+    {
+      "name": "Organise Magazine",
+      "website": "https://organisemagazine.org.uk/",
+      "domain": "organisemagazine.org.uk",
+      "articleCount": 6,
+      "languages": [],
+      "categories": [
+        "Europe",
+        "Anti-Rep & Prisons",
+        "Demonstrations",
+        "Antifascism",
+        "Global",
+        "No Borders",
+        "Anticapitalism",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-07-08T18:45:04Z",
+      "latestArticleTitle": "Remembering The Struggle: Claremont Road",
+      "latestArticleUrl": "https://organisemagazine.org.uk/2026/07/08/remembering-the-struggle-claremont-road/"
+    },
+    {
+      "name": "Palang Hitam (Indonesia)",
+      "website": "https://palanghitam.noblogs.org/",
+      "domain": "palanghitam.noblogs.org",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Theory & Strategy",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2018-10-07T13:01:03Z",
+      "latestArticleTitle": "Information “Snitch” Achmad Azwar Darmawan",
+      "latestArticleUrl": "https://palanghitam.noblogs.org/information-snitch-achmad-azwar-darmawan/"
+    },
+    {
+      "name": "PETA Deutschland",
+      "website": "https://www.peta.de/",
+      "domain": "www.peta.de",
+      "articleCount": 8,
+      "languages": [
+        "de"
+      ],
+      "categories": [
+        "Europe",
+        "Animal Liberation",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-08-06T07:17:03Z",
+      "latestArticleTitle": "Katjes: Naschen ohne Tierversuche!",
+      "latestArticleUrl": "https://www.peta.de/neuigkeiten/katjes-tierversuchsfrei/"
+    },
+    {
+      "name": "Pinko Magazine",
+      "website": "https://www.pinko.online/",
+      "domain": "www.pinko.online",
+      "articleCount": 4,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons",
+        "Queer-Feminism",
+        "Indigenous Struggles"
+      ],
+      "latestArticleAt": "2026-03-15T00:14:48Z",
+      "latestArticleTitle": "The Other End of the Erotic",
+      "latestArticleUrl": "https://www.pinko.online/the-other-end-of-the-erotic/"
+    },
+    {
+      "name": "Pressin Kurdî",
+      "website": "https://pressin.info/",
+      "domain": "pressin.info",
+      "articleCount": 20,
+      "languages": [
+        "ku"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Anticolonialism",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-08-05T19:00:14Z",
+      "latestArticleTitle": "Serokê Herêma Kurdistanê û Serokwezîrê Iraqa Federal civiyan",
+      "latestArticleUrl": "https://pressin.info/kurdi/3813"
+    },
+    {
+      "name": "Pueblos en Camino",
+      "website": "https://pueblosencamino.org/",
+      "domain": "pueblosencamino.org",
+      "articleCount": 4,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Latin America",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-04-28T03:07:32Z",
+      "latestArticleTitle": "Entre la cultura narco-capitalista y el abrigo a uma kiwe (Madre Tierra)",
+      "latestArticleUrl": "https://pueblosencamino.org/?p=10063"
+    },
+    {
+      "name": "Queer Anarchism",
+      "website": "https://queeranarchism.tumblr.com/",
+      "domain": "queeranarchism.tumblr.com",
+      "articleCount": 31,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Queer-Feminism",
+        "Movement News",
+        "Demonstrations",
+        "Anticapitalism",
+        "Radical Health & Disability",
+        "Antiracism",
+        "Cyberactivism"
+      ],
+      "latestArticleAt": "2026-08-09T11:00:29Z",
+      "latestArticleTitle": "and my take today is that framing misogynistic writing as an &ldquo;inability to write female characters&rdquo;&hellip;",
+      "latestArticleUrl": "https://queeranarchism.tumblr.com/post/824467238231982080"
+    },
+    {
+      "name": "Radikal Perspektif",
+      "website": "https://rpkolektif.wordpress.com/",
+      "domain": "rpkolektif.wordpress.com",
+      "articleCount": 8,
+      "languages": [
+        "tr"
+      ],
+      "categories": [
+        "Europe",
+        "Theory & Strategy",
+        "Movement News",
+        "Anticapitalism",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-08-05T10:37:35Z",
+      "latestArticleTitle": "İki Diriliş  — Saint-Simonculuk ve Proudhonyenlik",
+      "latestArticleUrl": "https://rpkolektif.wordpress.com/2026/08/05/iki-dirilis-saint-simonculuk-ve-proudhonyenlik/"
+    },
+    {
+      "name": "Radio Kurruf Noticias",
+      "website": "https://radiokurruf.org/",
+      "domain": "radiokurruf.org",
+      "articleCount": 4,
+      "languages": [
+        "es"
+      ],
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-08-04T00:51:55Z",
+      "latestArticleTitle": "Kelluwün ka Yamuwün, Hogar Pelontuwe invita a Peña bailable en Temuco",
+      "latestArticleUrl": "https://radiokurruf.org/kelluwun-ka-yamuwun-hogar-pelontuwe-invita-a-pena-bailable-en-temuco/"
+    },
+    {
+      "name": "Recht auf Stadt (Hamburg)",
+      "website": "https://www.rechtaufstadt.net/",
+      "domain": "www.rechtaufstadt.net",
+      "articleCount": 1,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-05-19T22:56:24Z",
+      "latestArticleTitle": "Holstenareal: Neue Chance für einen demokratischen Planungsprozess",
+      "latestArticleUrl": "https://www.rechtaufstadt.net/holstenareal-neue-chance-fuer-einen-demokratischen-planungsprozess/"
+    },
+    {
+      "name": "Red Flag (Aus)",
+      "website": "https://redflag.org.au/",
+      "domain": "redflag.org.au",
+      "articleCount": 36,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Australia & NZ",
+        "Labor Struggles",
+        "Antifascism",
+        "Antiracism",
+        "Anticapitalism",
+        "Movement News",
+        "Demonstrations",
+        "No War"
+      ],
+      "latestArticleAt": "2026-08-09T02:52:52Z",
+      "latestArticleTitle": "Royal Commission puts pro-Palestine protesters on trial",
+      "latestArticleUrl": "https://redflag.org.au/article/royal-commission-puts-pro-palestine-protesters-on-trial/"
+    },
+    {
+      "name": "Rheinmetall Entwaffnen",
+      "website": "https://rheinmetallentwaffnen.noblogs.org/",
+      "domain": "rheinmetallentwaffnen.noblogs.org",
+      "articleCount": 16,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No War",
+        "Movement News",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-26T12:17:00Z",
+      "latestArticleTitle": "24.-26. September in Hamburg: Nato-Manöver versenken!",
+      "latestArticleUrl": "https://rheinmetallentwaffnen.noblogs.org/post/2026/07/26/24-26-september-in-hamburg-nato-manoever-versenken/"
+    },
+    {
+      "name": "ROAPE",
+      "website": "https://roape.net/",
+      "domain": "roape.net",
+      "articleCount": 10,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Africa",
+        "Anti-Imperialism",
+        "Global",
+        "Anticapitalism",
+        "Movement News",
+        "Labor Struggles",
+        "Anti-Rep & Prisons",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-08-05T05:00:00Z",
+      "latestArticleTitle": "Burkina Faso and the return of political economy",
+      "latestArticleUrl": "https://roape.net/2026/08/05/burkina-faso-and-the-return-of-political-economy/"
+    },
+    {
+      "name": "Rojava Info Center",
+      "website": "https://rojavainformationcenter.org/",
+      "domain": "rojavainformationcenter.org",
+      "articleCount": 7,
+      "languages": [],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-06-18T08:05:00Z",
+      "latestArticleTitle": "Translation: North and East Syria’s Family Law, 2023",
+      "latestArticleUrl": "https://rojavainformationcenter.org/2026/06/19780/"
+    },
+    {
+      "name": "Rote Hilfe",
+      "website": "https://rote-hilfe.de/",
+      "domain": "rote-hilfe.de",
+      "articleCount": 7,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-06-30T22:10:00Z",
+      "latestArticleTitle": "Erneute Beugehaft im Dresdner Großprozess: Antifaschistin Lina wegen Aussageverweigerung festgenommen",
+      "latestArticleUrl": "https://rote-hilfe.de/meldungen/erneute-beugehaft-im-dresdner-grossprozess-antifaschistin-lina-wegen-aussageverweigerung"
+    },
+    {
+      "name": "Round Table India",
+      "website": "https://www.roundtableindia.co.in/",
+      "domain": "www.roundtableindia.co.in",
+      "articleCount": 6,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Asia",
+        "Movement News",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-06T15:14:41Z",
+      "latestArticleTitle": "Does Ambedkar Posthumously Have a ‘Homeland’?",
+      "latestArticleUrl": "https://www.roundtableindia.co.in/does-ambedkar-posthumously-have-a-homeland/"
+    },
+    {
+      "name": "Sea-Watch",
+      "website": "https://sea-watch.org/",
+      "domain": "sea-watch.org",
+      "articleCount": 5,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Movement News",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-07-16T19:37:59Z",
+      "latestArticleTitle": "Die extreme Rechte macht die Rettung von Menschenleben zum Gegenstand einer Verleumdungskampagne",
+      "latestArticleUrl": "https://sea-watch.org/die-extreme-rechte-macht-die-rettung-von-menschenleben-zum-gegenstand-einer-verleumdungskampagne/"
+    },
+    {
+      "name": "Sicilia Libertaria",
+      "website": "https://www.sicilialibertaria.it/",
+      "domain": "www.sicilialibertaria.it",
+      "articleCount": 9,
+      "languages": [
+        "it"
+      ],
+      "categories": [
+        "Europe",
+        "No War",
+        "Movement News",
+        "Antifascism",
+        "Queer-Feminism",
+        "Anticapitalism",
+        "Anti-Imperialism"
+      ],
+      "latestArticleAt": "2026-06-21T16:08:39Z",
+      "latestArticleTitle": "La religione del Pil",
+      "latestArticleUrl": "https://www.sicilialibertaria.it/2026/06/21/la-religione-del-pil/"
+    },
+    {
+      "name": "Slackbastard",
+      "website": "https://slackbastard.anarchobase.com/",
+      "domain": "slackbastard.anarchobase.com",
+      "articleCount": 13,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Australia & NZ",
+        "Antifascism",
+        "Movement News",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-08-11T07:02:21Z",
+      "latestArticleTitle": "Yeah Nah Pasaran #296 w Jason Wilson on imperial decline : August 13, 2026",
+      "latestArticleUrl": "https://slackbastard.anarchobase.com/?p=54473"
+    },
+    {
+      "name": "Slingshot Collective",
+      "website": "https://slingshotcollective.org/",
+      "domain": "slingshotcollective.org",
+      "articleCount": 10,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "Eco-Anarchism",
+        "Indigenous Struggles",
+        "Antifascism",
+        "Anticapitalism"
+      ],
+      "latestArticleAt": "2026-02-26T04:04:39Z",
+      "latestArticleTitle": "a15 – Help Slingshot make the 2027 organizer",
+      "latestArticleUrl": "https://slingshotcollective.org/a15-help-slingshot-make-the-2027-organizer/"
+    },
+    {
+      "name": "Solarpunk Magazine",
+      "website": "https://solarpunkmagazine.com/",
+      "domain": "solarpunkmagazine.com",
+      "articleCount": 7,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Eco-Anarchism",
+        "Movement News"
+      ],
+      "latestArticleAt": "2026-07-16T15:26:29Z",
+      "latestArticleTitle": "We Unknowingly Published AI Slop, and We’re Taking Accountability",
+      "latestArticleUrl": "https://solarpunkmagazine.com/we-unknowingly-published-ai-slop-and-were-taking-accountability/"
+    },
+    {
+      "name": "Sprout Distro",
+      "website": "https://www.sproutdistro.com/",
+      "domain": "www.sproutdistro.com",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries"
+      ],
+      "latestArticleAt": "2025-12-09T14:28:39Z",
+      "latestArticleTitle": "DIY Jail Support",
+      "latestArticleUrl": "https://www.sproutdistro.com/catalog/zines/legal/diy-jail-support/"
+    },
+    {
+      "name": "Squat!net",
+      "website": "https://de.squat.net/",
+      "domain": "de.squat.net",
+      "articleCount": 7,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Squatting & Housing",
+        "Demonstrations",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2026-08-04T16:00:54Z",
+      "latestArticleTitle": "Winterthur: Besetzte Häuser verteidigen, würdigen Wohnraum für alle verteidigen! Gisi bleibt!",
+      "latestArticleUrl": "https://de.squat.net/2026/08/04/winterthur-besetzte-haeuser-verteidigen-wuerdigen-wohnraum-fuer-alle-verteidigen-gisi-bleibt/"
+    },
+    {
+      "name": "SubMedia",
+      "website": "https://sub.media/",
+      "domain": "sub.media",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "North America",
+        "Theory & Strategy",
+        "Movement News",
+        "Squatting & Housing",
+        "Global",
+        "Eco-Anarchism",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-07-21T16:00:00Z",
+      "latestArticleTitle": "This Day in Anarchist History – The Establishment of the Korean Anarchist Federation in Manchuria",
+      "latestArticleUrl": "https://sub.media/this-day-in-anarchist-history-the-establishment-of-the-korean-anarchist-federation-in-manchuria/"
+    },
+    {
+      "name": "Subversiones (Mexico)",
+      "website": "https://subversiones.org/",
+      "domain": "subversiones.org",
+      "articleCount": 3,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Latin America",
+        "Antisexism",
+        "Queer-Feminism",
+        "Indigenous Struggles",
+        "Labor Struggles",
+        "Movement News"
+      ],
+      "latestArticleAt": "2020-09-10T16:10:26Z",
+      "latestArticleTitle": "Boletín de prensa. Caravana nacional por una vida digna para los pueblos indígenas.",
+      "latestArticleUrl": "https://subversiones.org/archivos/137856"
+    },
+    {
+      "name": "Systemli",
+      "website": "",
+      "domain": "",
+      "articleCount": 4,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Cyberactivism"
+      ],
+      "latestArticleAt": "2026-07-09T07:00:00Z",
+      "latestArticleTitle": "Abschaltung von Croodle",
+      "latestArticleUrl": "/2026/07/09/abschaltung-von-croodle/"
+    },
+    {
+      "name": "The Anarchist Library (EN)",
+      "website": "https://theanarchistlibrary.org/",
+      "domain": "theanarchistlibrary.org",
+      "articleCount": 39,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries",
+        "Theory & Strategy",
+        "Anticapitalism",
+        "Anticolonialism",
+        "Anti-Rep & Prisons",
+        "Cyberactivism",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-08-06T12:48:41Z",
+      "latestArticleTitle": "Andy Durgan - Reflexions on the Spanish Revolution of 1936",
+      "latestArticleUrl": "https://theanarchistlibrary.org/library/andy-durgan-reflexions-on-the-spanish-revolution-of-1936?v=1786020521"
+    },
+    {
+      "name": "The Appeal",
+      "website": "https://theappeal.org/",
+      "domain": "theappeal.org",
+      "articleCount": 7,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "North America",
+        "Anti-Rep & Prisons",
+        "Queer-Feminism",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-08-04T14:34:41Z",
+      "latestArticleTitle": "After More Than 20 Years in Prison, Georgia Man Wins New Trial in “Shaken Baby” Case",
+      "latestArticleUrl": "https://theappeal.org/danyel-smith-shaken-baby-syndrome-new-trial-georgia/"
+    },
+    {
+      "name": "The Elephant (Kenya)",
+      "website": "https://www.theelephant.info/",
+      "domain": "www.theelephant.info",
+      "articleCount": 8,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Africa",
+        "Movement News",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons",
+        "Squatting & Housing",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-08-05T13:00:00Z",
+      "latestArticleTitle": "Africa’s Last Philosopher King",
+      "latestArticleUrl": "https://www.theelephant.info/analysis/2026/08/05/africas-last-philosopher-king/"
+    },
+    {
+      "name": "The Elephant (Pan-African)",
+      "website": "https://www.theelephant.info/",
+      "domain": "www.theelephant.info",
+      "articleCount": 9,
+      "languages": [],
+      "categories": [
+        "Africa",
+        "Movement News",
+        "Demonstrations",
+        "Anti-Imperialism",
+        "Anticolonialism",
+        "Antiracism",
+        "Theory & Strategy",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-07-09T11:30:00Z",
+      "latestArticleTitle": "‘Method to the Madness’: Muzzled Media, Shock-and-Awe Succession of House Museveni’s Uganda",
+      "latestArticleUrl": "https://www.theelephant.info/analysis/2026/07/09/method-to-the-madness-muzzled-media-shock-and-awe-succession-of-house-musevenis-uganda/"
+    },
+    {
+      "name": "The Feminist Wire",
+      "website": "https://thefeministwire.com/",
+      "domain": "thefeministwire.com",
+      "articleCount": 4,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "North America",
+        "Antisexism",
+        "Antiracism",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2021-11-21T15:29:30Z",
+      "latestArticleTitle": "DEI Dreaming: Confusing Inclusion and Tokenism",
+      "latestArticleUrl": "https://thefeministwire.com/2021/11/dei-dreaming-confusing-inclusion-and-tokenism/?utm_source=rss&utm_medium=rss&utm_campaign=dei-dreaming-confusing-inclusion-and-tokenism"
+    },
+    {
+      "name": "The Final Straw Radio",
+      "website": "https://thefinalstrawradio.noblogs.org/",
+      "domain": "thefinalstrawradio.noblogs.org",
+      "articleCount": 11,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Anti-Rep & Prisons",
+        "Antifascism",
+        "Theory & Strategy",
+        "No Borders",
+        "Labor Struggles",
+        "Anticapitalism",
+        "No War"
+      ],
+      "latestArticleAt": "2026-07-12T13:00:00Z",
+      "latestArticleTitle": "Pádraig Óg Ó Ruairc on June '26 Anti-Immigrant Pogroms in Belfast, Fascism and Anti-Fascism in Ireland",
+      "latestArticleUrl": "https://thefinalstrawradio.noblogs.org/post/2026/07/12/padraig-og-o-ruairc-on-june-26-anti-immigrant-pogroms-in-belfast-fascism-and-anti-fascism-in-ireland/"
+    },
+    {
+      "name": "The New Inquiry",
+      "website": "https://thenewinquiry.com/",
+      "domain": "thenewinquiry.com",
+      "articleCount": 7,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "Movement News",
+        "Squatting & Housing",
+        "Antiracism",
+        "No War",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-03-04T14:00:27Z",
+      "latestArticleTitle": "Kony 2012 Forever",
+      "latestArticleUrl": "https://thenewinquiry.com/kony-2012-forever/"
+    },
+    {
+      "name": "The Polis Project (India)",
+      "website": "https://thepolisproject.com/",
+      "domain": "thepolisproject.com",
+      "articleCount": 2,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Asia",
+        "Anti-Rep & Prisons"
+      ],
+      "latestArticleAt": "2026-07-02T18:17:47Z",
+      "latestArticleTitle": "Limits of American Revolt: A Conversation on Protest, Power, and the Present Moment",
+      "latestArticleUrl": "https://thepolisproject.com/limits-of-american-revolt-a-conversation-on-protest-power-and-the-present-moment/"
+    },
+    {
+      "name": "Tier im Fokus (Switzerland)",
+      "website": "https://tierimfokus.ch/",
+      "domain": "tierimfokus.ch",
+      "articleCount": 7,
+      "languages": [
+        "de"
+      ],
+      "categories": [
+        "Europe",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2026-07-09T17:29:12Z",
+      "latestArticleTitle": "Rückblick auf die Sommersession 2026",
+      "latestArticleUrl": "https://tierimfokus.ch/tierpolitik-im-bundeshaus/ss26/"
+    },
+    {
+      "name": "Tierbefreier",
+      "website": "https://tierbefreier.org/",
+      "domain": "tierbefreier.org",
+      "articleCount": 2,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Animal Liberation"
+      ],
+      "latestArticleAt": "2026-01-20T08:30:35Z",
+      "latestArticleTitle": "Anarchie & Tierbefreiung – Strategie- und Vernetzungstreffen in Nürnberg",
+      "latestArticleUrl": "https://tierbefreier.org/blog/2026/01/20/anarchie-tierbefreiung-strategie-und-vernetzung-in-zeiten-von-kriegen-rechtsruck-und-klimakollaps/"
+    },
+    {
+      "name": "Transgender Europe (TGEU)",
+      "website": "https://tgeu.org/",
+      "domain": "tgeu.org",
+      "articleCount": 10,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Queer-Feminism",
+        "Movement News",
+        "No Borders"
+      ],
+      "latestArticleAt": "2026-08-06T07:10:08Z",
+      "latestArticleTitle": "TGEU at AIDS 2026: Driving conversations on trans health and HIV prevention",
+      "latestArticleUrl": "https://tgeu.org/tgeu-at-aids-2026-driving-conversations-on-trans-health-and-hiv-prevention/"
+    },
+    {
+      "name": "Tricontinental: Institute for Social Research",
+      "website": "https://thetricontinental.org/",
+      "domain": "thetricontinental.org",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "Anti-Imperialism",
+        "No War",
+        "Movement News",
+        "Anti-Rep & Prisons",
+        "Antiracism"
+      ],
+      "latestArticleAt": "2026-08-11T08:00:28Z",
+      "latestArticleTitle": "A Vietnam in the Field of Culture: The Cultural Congress of Havana, 1968",
+      "latestArticleUrl": "https://thetricontinental.org/dossier-cultural-congress-havana/"
+    },
+    {
+      "name": "Truthout",
+      "website": "https://truthout.org/",
+      "domain": "truthout.org",
+      "articleCount": 18,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "North America",
+        "Movement News",
+        "No War",
+        "Anti-Rep & Prisons",
+        "No Borders",
+        "Indigenous Struggles",
+        "Antiracism",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-08-05T14:32:56Z",
+      "latestArticleTitle": "Abdul El-Sayed Triumphs Over Haley Stevens in $60M Loss for AIPAC, Corporations",
+      "latestArticleUrl": "https://truthout.org/articles/abdul-el-sayed-triumphs-over-haley-stevens-in-60m-loss-for-aipac-corporations/"
+    },
+    {
+      "name": "Umanita Nova (IT)",
+      "website": "https://umanitanova.org/",
+      "domain": "umanitanova.org",
+      "articleCount": 6,
+      "languages": [
+        "it"
+      ],
+      "categories": [
+        "Europe",
+        "Movement News",
+        "Anti-Rep & Prisons",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-07-16T07:00:35Z",
+      "latestArticleTitle": "Fu strage e genocidio. L’Italia fascista al fianco di Franco contro il popolo iberico",
+      "latestArticleUrl": "https://umanitanova.org/fu-strage-e-genocidio-litalia-fascista-al-fianco-di-franco-contro-il-popolo-iberico/"
+    },
+    {
+      "name": "Unicorn Riot",
+      "website": "https://unicornriot.ninja/",
+      "domain": "unicornriot.ninja",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Antifascism",
+        "No Borders",
+        "Queer-Feminism",
+        "Labor Struggles",
+        "Anti-Rep & Prisons",
+        "No War",
+        "Antisexism"
+      ],
+      "latestArticleAt": "2026-08-05T22:19:07Z",
+      "latestArticleTitle": "Locked Up and Criminalized: People on the Move Face a Broken System on Crete’s Shores",
+      "latestArticleUrl": "https://unicornriot.ninja/2026/locked-up-and-criminalized-people-on-the-move-face-a-broken-system-on-cretes-shores/"
+    },
+    {
+      "name": "Unoffensive Animal",
+      "website": "https://unoffensiveanimal.is/",
+      "domain": "unoffensiveanimal.is",
+      "articleCount": 9,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Animal Liberation",
+        "Anti-Rep & Prisons",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2026-07-15T14:14:08Z",
+      "latestArticleTitle": "SUPPORT DES! – PRISONER SUPPORT",
+      "latestArticleUrl": "https://unoffensiveanimal.is/2026/07/15/support-des-prisoner-support/"
+    },
+    {
+      "name": "Waging Nonviolence",
+      "website": "https://wagingnonviolence.org/",
+      "domain": "wagingnonviolence.org",
+      "articleCount": 16,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Eco-Anarchism",
+        "Anti-Rep & Prisons",
+        "Antiracism",
+        "No War",
+        "Movement News",
+        "Demonstrations",
+        "Squatting & Housing"
+      ],
+      "latestArticleAt": "2026-08-06T18:47:09Z",
+      "latestArticleTitle": "What D.C.’s election defense under occupation can teach us",
+      "latestArticleUrl": "https://wagingnonviolence.org/2026/08/free-dc-election-defense-under-occupation/"
+    },
+    {
+      "name": "Warrior Publications",
+      "website": "https://warriorpublications.wordpress.com/",
+      "domain": "warriorpublications.wordpress.com",
+      "articleCount": 3,
+      "languages": [],
+      "categories": [
+        "Global",
+        "Indigenous Struggles",
+        "Anti-Rep & Prisons",
+        "Eco-Anarchism",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2024-01-09T07:27:12Z",
+      "latestArticleTitle": "Trial of prominent Wet’suwet’en leader and land defenders begins",
+      "latestArticleUrl": "https://warriorpublications.wordpress.com/2024/01/08/trial-of-prominent-wetsuweten-leader-and-land-defenders-begins/"
+    },
+    {
+      "name": "Winter Oak",
+      "website": "https://winteroak.org.uk/",
+      "domain": "winteroak.org.uk",
+      "articleCount": 3,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Eco-Anarchism",
+        "Movement News",
+        "Antifascism"
+      ],
+      "latestArticleAt": "2026-07-29T06:23:19Z",
+      "latestArticleTitle": "The Erotic Life of a Mystic",
+      "latestArticleUrl": "https://winteroak.org.uk/2026/07/29/the-erotic-life-of-a-mystic/"
+    },
+    {
+      "name": "Women Enabled International",
+      "website": "https://womenenabled.org/",
+      "domain": "womenenabled.org",
+      "articleCount": 5,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Global",
+        "Antisexism",
+        "Radical Health & Disability",
+        "Queer-Feminism"
+      ],
+      "latestArticleAt": "2024-01-31T18:35:07Z",
+      "latestArticleTitle": "Ford BUILD Fuels WEI’s Resilient Future",
+      "latestArticleUrl": "https://womenenabled.org/ford-build-fuels-weis-resilient-future/"
+    },
+    {
+      "name": "WoMin African Alliance",
+      "website": "https://womin.africa/",
+      "domain": "womin.africa",
+      "articleCount": 2,
+      "languages": [
+        "en"
+      ],
+      "categories": [
+        "Africa",
+        "Antiracism",
+        "Eco-Anarchism"
+      ],
+      "latestArticleAt": "2026-06-30T20:15:51Z",
+      "latestArticleTitle": "WoMin African Alliance Statement on Xenophobia and Afrophobia in South Africa",
+      "latestArticleUrl": "https://womin.africa/womin-african-alliance-statement-on-xenophobia-and-afrophobia-in-south-africa/"
+    },
+    {
+      "name": "World BEYOND War",
+      "website": "https://worldbeyondwar.org/",
+      "domain": "worldbeyondwar.org",
+      "articleCount": 21,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "No War",
+        "Eco-Anarchism",
+        "Movement News",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-08-09T14:59:44Z",
+      "latestArticleTitle": "Between Disaster and Foreign Interference: Lessons in Peace and Solidarity in the Wake of the Earthquake in Venezuela",
+      "latestArticleUrl": "https://worldbeyondwar.org/between-disaster-and-foreign-interference-lessons-in-peace-and-solidarity-in-the-wake-of-the-earthquake-in-venezuela/"
+    },
+    {
+      "name": "Yeryüzü Postası",
+      "website": "https://www.yeryuzupostasi.org/",
+      "domain": "www.yeryuzupostasi.org",
+      "articleCount": 2,
+      "languages": [
+        "tr"
+      ],
+      "categories": [
+        "Europe",
+        "Theory & Strategy",
+        "Labor Struggles"
+      ],
+      "latestArticleAt": "2026-04-08T12:55:28Z",
+      "latestArticleTitle": "Büyük Bahçe: Teori, İdeoloji ve Siyasi Uygulama – Uruguay Anarşist Federasyonu",
+      "latestArticleUrl": "https://www.yeryuzupostasi.org/2026/04/08/buyuk-bahce-teori-ideoloji-ve-siyasi-uygulama-uruguay-anarsist-federasyonu/"
+    },
+    {
+      "name": "Zabalaza",
+      "website": "https://zabalaza.net/",
+      "domain": "zabalaza.net",
+      "articleCount": 1,
+      "languages": [],
+      "categories": [
+        "Africa",
+        "Anticapitalism",
+        "Theory & Strategy"
+      ],
+      "latestArticleAt": "2020-12-17T18:07:23Z",
+      "latestArticleTitle": "The Political Party System: No Friend of the Working Class",
+      "latestArticleUrl": "https://zabalaza.net/2020/12/17/the-political-party-system-no-friend-of-the-working-class/"
+    },
+    {
+      "name": "Zabalaza Books (Africa)",
+      "website": "https://zabalazabooks.net/",
+      "domain": "zabalazabooks.net",
+      "articleCount": 5,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Libraries",
+        "Theory & Strategy",
+        "Anticapitalism",
+        "No War"
+      ],
+      "latestArticleAt": "2025-07-08T18:30:08Z",
+      "latestArticleTitle": "How to Organise a Neighbourhood Popular Assembly",
+      "latestArticleUrl": "https://zabalazabooks.net/2025/07/08/how-to-organise-a-neighbourhood-popular-assembly/"
+    },
+    {
+      "name": "ZNet (Global)",
+      "website": "https://znetwork.org/",
+      "domain": "znetwork.org",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "Movement News",
+        "Demonstrations"
+      ],
+      "latestArticleAt": "2026-07-23T20:09:42Z",
+      "latestArticleTitle": "How Human Ecology Education Can Counter Learned Social Hierarchies",
+      "latestArticleUrl": "https://znetwork.org/znetarticle/how-human-ecology-education-can-counter-learned-social-hierarchies/"
+    },
+    {
+      "name": "ZNet (International)",
+      "website": "https://znetwork.org/",
+      "domain": "znetwork.org",
+      "articleCount": 6,
+      "languages": [
+        "und"
+      ],
+      "categories": [
+        "Global",
+        "Movement News",
+        "Labor Struggles",
+        "Anticolonialism",
+        "No War"
+      ],
+      "latestArticleAt": "2026-08-09T14:20:05Z",
+      "latestArticleTitle": "No, Israel Does Not Have ‘A Right To Exist.’ Quite The Contrary, Actually.",
+      "latestArticleUrl": "https://znetwork.org/znetarticle/no-israel-does-not-have-a-right-to-exist-quite-the-contrary-actually/"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+/* World Revolution News 1.7.19 – Sprachquellen */
+
+.wrn-language-source-open {
+    width: 100%;
+    min-height: 44px;
+    grid-column: 1 / -1;
+    border: 1px solid #f0a43c;
+    border-radius: 5px;
+    background: transparent;
+    color: #f6bd65;
+    font: inherit;
+    font-weight: 700;
+}
+
+.wrn-language-source-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 13480;
+    background: rgba(0, 0, 0, 0.86);
+}
+
+.wrn-language-source-dialog {
+    position: fixed;
+    z-index: 13490;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(92vw, 660px);
+    max-height: 88vh;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #f0a43c;
+    border-radius: 8px;
+    background: #090b11;
+    color: #fff;
+}
+
+.wrn-language-source-overlay[hidden],
+.wrn-language-source-dialog[hidden] {
+    display: none !important;
+}
+
+.wrn-language-source-dialog > header {
+    position: sticky;
+    top: -1rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1rem -1rem 0.8rem;
+    padding: 0.8rem 1rem;
+    background: #090b11;
+    border-bottom: 1px solid #4a3b27;
+}
+
+.wrn-language-source-dialog h2,
+.wrn-language-source-dialog h3 {
+    color: #f6bd65;
+}
+
+.wrn-language-source-dialog h2 {
+    margin: 0;
+}
+
+.wrn-language-source-dialog > header button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ff3158;
+    border-radius: 6px;
+    background: transparent;
+    color: #ff3158;
+}
+
+.wrn-language-source-dialog section {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    border: 1px solid #343947;
+    border-radius: 7px;
+    background: #10131b;
+}
+
+.wrn-language-source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.45rem;
+}
+
+.wrn-language-source-grid > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.55rem;
+    border: 1px solid #3a3f4c;
+    border-radius: 5px;
+}

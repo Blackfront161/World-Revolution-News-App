@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-16T15:16:53.987910+02:00",
+  "workflowCount": 11,
+  "warningCount": 0,
+  "workflows": [
+    {
+      "path": ".github\\workflows\\merge-multilingual-sources.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\operations-monitor.yml",
+      "writer": false,
+      "commonConcurrency": null,
+      "safePush": null,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\quality-gate.yml",
+      "writer": false,
+      "commonConcurrency": null,
+      "safePush": null,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\repair-audio.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\update-events.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\update-fast.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\update-libraries.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\update-podcasts.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\update-videos.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\update.yml",
+      "writer": true,
+      "commonConcurrency": true,
+      "safePush": true,
+      "modifiesWorkflows": false,
+      "warnings": []
+    },
+    {
+      "path": ".github\\workflows\\validate-app.yml",
+      "writer": false,
+      "commonConcurrency": null,
+      "safePush": null,
+      "modifiesWorkflows": false,
+      "warnings": []
+    }
+  ]
+}

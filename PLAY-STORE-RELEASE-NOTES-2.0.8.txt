@@ -1,0 +1,6 @@
+<de-DE>
+Neu: persönliche Tageslage, Offline-Tagesausgabe und streng geprüfte Live-Dossiers. Artikel und Bilder werden vollständiger dargestellt. Mehrsprachige Podcasts, Dokumentationen, Termine und Sprühschablonen wurden erweitert. Übersetzungen, Smartphone-Navigation, Header und Themes wurden verbessert.
+</de-DE>
+<en-US>
+New: a personal daily overview, offline daily edition and editorially approved live dossiers. Article and image delivery is more complete. Multilingual podcasts, documentaries, events and spray stencils were expanded. Translation, mobile navigation, header branding and themes were improved.
+</en-US>

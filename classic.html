@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Revolution News – Klassische App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="release-1.4.css">
+    <link rel="stylesheet" href="prisoner-solidarity.css?v=190-solidarity-2">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#050508">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://revolution-proxy.paghklo.workers.dev https://wrn-translation-cache.paghklo.workers.dev; media-src 'self' blob: https:; worker-src 'self'; manifest-src 'self'; frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com https://kolektiva.media; object-src 'none'; base-uri 'self'; upgrade-insecure-requests;">
+    <style>
+        /* Zwingt den Radar-Button dazu, immer grün zu bleiben! */
+        #cat-radar.active { background-color: var(--color-green) !important; color: #000 !important; border-color: var(--color-green) !important; }
+    </style>
+</head>
+<body class="theme-dark" id="app-body" data-motion="full" data-motion-preference="auto">
+
+    <a class="skip-link" id="skip-to-content" href="#feed-container">Skip to articles</a>
+    <div class="sr-only" id="accessibility-live" aria-live="polite" aria-atomic="true"></div>
+
+    <svg style="width:0;height:0;position:absolute;pointer-events:none;" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="rbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="50%" stop-color="#FF0000" />
+                <stop offset="50%" stop-color="#000000" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="top-action-bar">
+        <button class="btn-micro" style="color:var(--color-accent); border-color:var(--color-accent);" onclick="openDonate()">
+            <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" style="vertical-align: sub;"><path fill="url(#rbGrad)" stroke="currentColor" stroke-width="0.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span id="txt-donate-btn">Donate</span>
+        </button>
+        <button class="btn-micro" style="color:var(--color-cyan); border-color:var(--color-cyan);" onclick="openInfo()" id="btn-open-info">ℹ️ Info</button>
+        <button class="btn-micro" style="color:#B026FF; border-color:#B026FF;" onclick="openFeedback()" id="btn-open-feedback">💬 Contact</button>
+        <button class="btn-micro btn-data-control" onclick="openDataControl()" id="btn-open-data-control" aria-label="Lokalen Speicher verwalten">💾 Speicher</button>
+        <button class="btn-micro btn-system-status" onclick="openSystemStatus()" id="btn-open-system-status" aria-label="Systemstatus öffnen">● Status</button>
+    </div>
+
+    <header>
+        <div>
+            <h1 style="display: inline-block; vertical-align: middle;">World Revolution News</h1>
+            <div class="app-version-inline" id="app-version-inline">v—</div>
+        </div>
+        <div class="header-controls">
+            <div class="dropdown-container">
+                <span class="dropdown-label" id="txt-theme-label">Design</span>
+                <select class="theme-select" id="ui-theme" onchange="changeTheme(this.value)">
+                    <option value="theme-dark" id="opt-theme-dark" selected>Dunkel</option>
+                    <option value="theme-light" id="opt-theme-light">Hell</option>
+                    <option value="theme-oled" id="opt-theme-oled">OLED-Schwarz</option>
+                    <option value="theme-contrast" id="opt-theme-contrast">Hoher Kontrast</option>
+                    <option value="theme-soft" id="opt-theme-soft">Augenschonend</option>
+                </select>
+            </div>
+
+            <div class="dropdown-container">
+                <span class="dropdown-label" id="txt-lang-label">Sprache</span>
+                <select class="lang-select" id="ui-language" onchange="changeLanguage()">
+                    <option value="en" selected>English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <details class="filter-dropdown">
+        <summary id="txt-region-summary">🌍 Region</summary>
+        <div class="nav-bar">
+            <button class="btn-nav active" id="btn-glob" onclick="ladeKontinentNews('Global')">Global</button>
+            <button class="btn-nav" id="btn-eur" onclick="ladeKontinentNews('Europe')">Europe</button>
+            <button class="btn-nav" id="btn-afr" onclick="ladeKontinentNews('Africa')">Africa</button>
+            <button class="btn-nav" id="btn-nam" onclick="ladeKontinentNews('North America')">North Am.</button>
+            <button class="btn-nav" id="btn-lam" onclick="ladeKontinentNews('Latin America')">Latin Am.</button>
+            <button class="btn-nav" id="btn-asi" onclick="ladeKontinentNews('Asia')">Asia</button>
+            <button class="btn-nav" id="btn-aus" onclick="ladeKontinentNews('Australia & NZ')">Oceania</button>
+        </div>
+    </details>
+    
+    <details class="filter-dropdown">
+        <summary id="txt-topic-summary">🏷️ Thema</summary>
+        <div class="nav-bar">
+            <button class="btn-nav" id="cat-labor" onclick="ladeKontinentNews('Labor Struggles')">Labor</button>
+            <button class="btn-nav" id="cat-antifascism" onclick="ladeKontinentNews('Antifascism')">Antifa</button>
+            <button class="btn-nav" id="cat-antisexism" onclick="ladeKontinentNews('Antisexism')">Antisexism</button>
+            <button class="btn-nav" id="cat-queer" onclick="ladeKontinentNews('Queer-Feminism')">Queer</button>
+            <button class="btn-nav" id="cat-antiracism" onclick="ladeKontinentNews('Antiracism')">Antiracism</button>
+            <button class="btn-nav" id="cat-noborders" onclick="ladeKontinentNews('No Borders')">No Borders</button>
+            <button class="btn-nav" id="cat-anticapitalism" onclick="ladeKontinentNews('Anticapitalism')">Anti-Cap</button>
+            <button class="btn-nav" id="cat-theory" onclick="ladeKontinentNews('Theory & Strategy')">Theory</button>
+            <button class="btn-nav" id="cat-anticolonialism" onclick="ladeKontinentNews('Anticolonialism')">Anti-Col</button>
+            <button class="btn-nav" id="cat-antiimperialism" onclick="ladeKontinentNews('Anti-Imperialism')">Anti-Imp</button>
+            <button class="btn-nav" id="cat-squatting" onclick="ladeKontinentNews('Squatting & Housing')">Housing</button>
+            <button class="btn-nav" id="cat-demos" onclick="ladeKontinentNews('Demonstrations')">Demos</button>
+            <button class="btn-nav" id="cat-antirepression" onclick="ladeKontinentNews('Anti-Rep & Prisons')">Anti-Rep</button>
+            <button class="btn-nav" id="cat-cyber" onclick="ladeKontinentNews('Cyberactivism')">Cyber</button>
+            <button class="btn-nav" id="cat-nowar" onclick="ladeKontinentNews('No War')">No War</button>
+            <button class="btn-nav" id="cat-animal" onclick="ladeKontinentNews('Animal Liberation')">Animal Lib</button>
+            <button class="btn-nav" id="cat-eco" onclick="ladeKontinentNews('Eco-Anarchism')">Eco-Anarchy</button>
+            <button class="btn-nav" id="cat-indigenous" onclick="ladeKontinentNews('Indigenous Struggles')">Indigenous</button>
+            <button class="btn-nav" id="cat-health" onclick="ladeKontinentNews('Radical Health & Disability')">Health</button>
+            <button class="btn-nav" id="btn-lib" onclick="ladeKontinentNews('Libraries')">Libraries</button>
+        </div>
+    </details>
+
+    <div class="nav-bar quick-nav-bar">
+        <button class="btn-nav quick-nav-events" id="cat-radar" onclick="ladeKontinentNews('Radar')">
+            <span id="txt-radar-summary">Events</span>
+        </button>
+
+        <button class="btn-nav btn-podcast-nav" id="btn-podcast-library" onclick="openAudioHub('original')">
+            <span id="txt-podcast-library">Podcasts & Radio</span>
+        </button>
+        
+        <button class="btn-nav quick-nav-bookmarks" id="btn-bookmarks" onclick="ladeBookmarks()">
+            <span id="txt-top-bookmarks">Read later</span>
+            <svg viewBox="0 0 24 24" width="1.2em" height="1.2em"><path fill="url(#rbGrad)" stroke="#FF0000" stroke-width="0.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </button>
+
+        <button class="btn-nav quick-nav-read" id="btn-read-articles" onclick="ladeReadArticles()">
+            <span id="txt-top-read">Read</span>
+        </button>
+
+        <button class="btn-nav quick-nav-zine" id="btn-open-zine" onclick="openZineManager()">
+            <span id="txt-zine-count">📄 Zine (0)</span>
+        </button>
+    </div>
+
+    <div class="filter-bar" style="background: rgba(255, 153, 0, 0.05); padding: 10px; border-radius: 4px; margin-bottom: 25px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; width: 100%; box-sizing: border-box;">
+        <button class="btn-micro filter-control filter-control-menu" style="border-color: var(--color-cyan); color: var(--color-cyan);" onclick="openSourcesModal()">☰</button>
+        
+        <select id="sort-select" class="filter-control" onchange="applyFilters()">
+            <option value="new" id="opt-sort-new">Neueste</option>
+            <option value="old" id="opt-sort-old">Älteste</option>
+        </select>
+        
+        <select id="ui-fontsize" class="filter-control" onchange="changeFontSize(this.value)">
+            <option value="100">A: Normal</option>
+            <option value="115">A: Groß</option>
+            <option value="130">A: Größer</option>
+            <option value="150">A: Riesig</option>
+            <option value="180">A: Maximal</option>
+        </select>
+
+        <select id="ui-news-view" class="filter-control" onchange="changeNewsView(this.value)" aria-label="Artikelansicht">
+            <option value="cards" id="opt-view-cards">Standard</option>
+            <option value="compact" id="opt-view-compact">Compact</option>
+            <option value="headlines" id="opt-view-headlines">Headlines</option>
+        </select>
+
+        <select id="content-type-filter" class="filter-control" onchange="applyFilters()" aria-label="All formats">
+            <option value="">All formats</option>
+            <option value="news">News</option>
+            <option value="analysis">Analysis</option>
+            <option value="commentary">Commentary</option>
+            <option value="interview">Interview</option>
+            <option value="press-release">Press release</option>
+            <option value="podcast">Podcast</option>
+            <option value="event">Event</option>
+        </select>
+
+        <select id="source-language-filter" class="filter-control" aria-label="Source language">
+            <option value="">All languages</option>
+        </select>
+
+        <select id="source-origin-filter" class="filter-control" aria-label="Origin">
+            <option value="">All origins</option>
+        </select>
+
+        <div class="search-container" style="flex: 1 1 120px; margin-bottom: 0; margin-left: auto;">
+            <input type="text" id="search-input" class="search-input" placeholder="Search articles..." oninput="applyFilters()" style="width: 100%;">
+        </div>
+    </div>
+
+
+    <section id="event-filter-panel" class="event-filter-panel" hidden aria-label="Event filters">
+        <div class="event-filter-heading">
+            <strong id="txt-event-filter-title">Event filters</strong>
+            <span id="event-filter-count"></span>
+        </div>
+
+        <div class="event-filter-grid">
+            <label class="event-filter-field">
+                <span id="txt-event-country">Country</span>
+                <select id="event-country-filter" onchange="handleEventCountryChange()"><option value="">All</option></select>
+            </label>
+
+            <label class="event-filter-field">
+                <span id="txt-event-city">City</span>
+                <select id="event-city-filter" onchange="applyFilters()"><option value="">All</option></select>
+            </label>
+
+            <label class="event-filter-field">
+                <span id="txt-event-date">Period</span>
+                <select id="event-date-filter" onchange="applyFilters()">
+                    <option value="upcoming">All upcoming</option>
+                </select>
+            </label>
+
+            <label class="event-filter-field">
+                <span id="txt-event-group">Group</span>
+                <select id="event-group-filter" onchange="applyFilters()"><option value="">All</option></select>
+            </label>
+
+            <label class="event-filter-field">
+                <span id="txt-event-category">Category</span>
+                <select id="event-category-filter" onchange="applyFilters()"><option value="">All</option></select>
+            </label>
+
+            <button type="button" class="btn-event-reset" id="btn-event-reset" onclick="resetEventFilters()">Reset filters</button>
+        </div>
+
+        <div class="event-saved-filter-row">
+            <select id="event-saved-filter" aria-label="Saved event filters" onchange="applySavedEventFilter(this.value)">
+                <option value="">Saved filters</option>
+            </select>
+            <button type="button" class="btn-event-saved" id="btn-event-filter-save" onclick="saveCurrentEventFilter()">Save filter</button>
+            <button type="button" class="btn-event-saved delete" id="btn-event-filter-delete" onclick="deleteSelectedEventFilter()" disabled>Delete</button>
+        </div>
+    </section>
+
+    <section id="podcast-player" class="podcast-player" hidden aria-live="polite">
+        <div class="podcast-player-heading">
+            <div>
+                <strong id="podcast-player-title">Podcast</strong>
+                <div id="podcast-player-status" class="podcast-player-status"></div>
+            </div>
+            <span id="podcast-player-progress"></span>
+        </div>
+        <div class="podcast-player-controls">
+            <label class="podcast-control-field">
+                <span id="txt-podcast-voice">Voice</span>
+                <select id="podcast-voice-select" onchange="changePodcastVoice()"></select>
+            </label>
+            <label class="podcast-control-field podcast-rate-field">
+                <span id="txt-podcast-speed">Speed</span>
+                <select id="podcast-rate-select" onchange="changePodcastRate(this.value)">
+                    <option value="0.8">0.8×</option>
+                    <option value="1" selected>1.0×</option>
+                    <option value="1.2">1.2×</option>
+                    <option value="1.4">1.4×</option>
+                    <option value="1.6">1.6×</option>
+                </select>
+            </label>
+            <button type="button" class="btn-podcast-control" id="btn-podcast-pause" onclick="togglePodcastPause()" disabled>Play</button>
+            <button type="button" class="btn-podcast-control btn-podcast-stop" id="btn-podcast-stop" onclick="stopPodcast()">Stop</button>
+        </div>
+    </section>
+
+    <section id="global-media-bar" class="global-media-bar" hidden aria-live="polite">
+        <div class="global-media-info">
+            <strong id="global-media-title">Audio</strong>
+            <span id="global-media-subtitle"></span>
+            <span id="global-media-status"></span>
+        </div>
+        <div class="global-media-progress" id="global-media-progress-row">
+            <input type="range" id="global-media-progress" min="0" max="1" step="0.1" value="0" disabled aria-label="Audio position" oninput="seekGlobalMedia(this.value)">
+            <span id="global-media-time">0:00 / 0:00</span>
+        </div>
+        <div class="global-media-controls">
+            <button type="button" class="btn-media-skip" id="global-media-back" onclick="skipGlobalMedia(-15)" aria-label="15 Sekunden zurück">↶ 15s</button>
+            <button type="button" class="btn-media-play" id="global-media-play" onclick="resumeGlobalMedia()">▶ Play</button>
+            <button type="button" class="btn-media-pause" id="global-media-pause" onclick="pauseGlobalMedia()">❚❚ Pause</button>
+            <button type="button" class="btn-media-skip" id="global-media-forward" onclick="skipGlobalMedia(30)" aria-label="30 Sekunden vor">30s ↷</button>
+            <button type="button" class="btn-media-stop" id="global-media-stop" onclick="stopGlobalMedia()">■ Stop</button>
+        </div>
+        <div class="global-media-tools" aria-label="Audio-Einstellungen">
+            <label class="global-media-tool" id="global-media-speed-field">
+                <span id="global-media-speed-label">Tempo</span>
+                <select id="global-media-speed" onchange="setGlobalPlaybackRate(this.value)">
+                    <option value="0.75">0,75×</option>
+                    <option value="1" selected>1,0×</option>
+                    <option value="1.25">1,25×</option>
+                    <option value="1.5">1,5×</option>
+                    <option value="1.75">1,75×</option>
+                    <option value="2">2,0×</option>
+                </select>
+            </label>
+            <label class="global-media-tool">
+                <span id="global-media-sleep-label">Schlaf-Timer</span>
+                <select id="global-media-sleep" onchange="setGlobalSleepTimer(this.value)">
+                    <option value="off" selected>Aus</option>
+                    <option value="15">15 Min.</option>
+                    <option value="30">30 Min.</option>
+                    <option value="45">45 Min.</option>
+                    <option value="60">60 Min.</option>
+                    <option value="end">Am Ende der Folge</option>
+                </select>
+            </label>
+            <span id="global-media-sleep-status" class="global-media-sleep-status" aria-live="polite"></span>
+        </div>
+    </section>
+    <audio id="global-media-player" preload="none" playsinline></audio>
+    <div id="status-container" class="status-msg">Connecting to server...</div>
+    <div id="feed-container" role="main" tabindex="-1" aria-label="Nachrichten und Events"></div>
+    <h2 class="archive-header" id="txt-archive-title" style="display: none;">🗄️ Archive (> 3 Months)</h2>
+    <div id="archive-container"></div>
+    
+    <div class="feedback-overlay" id="fb-overlay" style="display: none;" onclick="closeAllModals()"></div>
+    
+    <div class="feedback-modal" id="fb-modal" style="display: none;">
+        <h3 id="txt-fb-title">Contact</h3>
+        <textarea class="feedback-textarea" id="fb-text"></textarea>
+        <div style="margin-bottom: 15px; font-size: 0.9rem; color: var(--text-muted); border-top: 1px dashed var(--color-cyan); padding-top: 10px;">
+            <strong style="color: var(--color-cyan);" id="txt-contact-label">Kontakt / Contact:</strong> <br>
+            <a href="mailto:worldrevnews@brief.li" style="color: var(--text-main); text-decoration: underline;">worldrevnews@brief.li</a>
+        </div>
+        <div class="captcha-box">
+            <span id="txt-captcha-q">Captcha:</span> <span id="captcha-num1" style="color:var(--color-green); font-weight:bold;">0</span> + <span id="captcha-num2" style="color:var(--color-green); font-weight:bold;">0</span> ?
+            <input type="number" id="captcha-answer" class="captcha-input">
+        </div>
+        <div class="feedback-actions">
+            <button class="btn-cancel" id="btn-fb-cancel" onclick="closeAllModals()">Cancel</button>
+            <button class="btn-submit" id="btn-fb-send" onclick="submitFeedback()">Send via Mail</button>
+        </div>
+    </div>
+
+    <div class="feedback-modal" id="info-modal" style="display: none;">
+        <h3 id="txt-info-title">App Info & Security</h3>
+        <div class="info-text-box" id="txt-info-body"></div>
+        <div class="feedback-actions"><button class="btn-submit" style="background:var(--color-cyan); color:#000;" onclick="closeAllModals()">Close</button></div>
+    </div>
+
+    <div class="feedback-modal" id="donate-modal" style="display: none;">
+        <h3 id="txt-donate-title">Support Project</h3>
+        <div class="info-text-box">
+            <p id="txt-donate-body">Dieses Projekt läuft unabhängig. Spenden sind freiwillig.</p>
+            <p id="txt-donate-warning" style="color:var(--color-accent); font-weight:bold; margin-top:15px; border:1px dashed var(--color-accent); padding:10px;">
+                ⚠️ HINWEIS: Wenn du fortfährst, verlässt du die anonyme App-Umgebung und wirst zu PayPal weitergeleitet. PayPal erhebt eigene Daten.
+            </p>
+            <a href="https://www.paypal.com/ncp/payment/6FSV9FEN4X7VS" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" class="btn-submit" id="btn-paypal" style="display:block; box-sizing:border-box; margin-top:10px; margin-bottom:10px; width:100%; text-align:center; text-decoration:none;">Weiter zu PayPal</a>
+        </div>
+        <div class="feedback-actions"><button class="btn-cancel" id="btn-donate-cancel" onclick="closeAllModals()">Schließen</button></div>
+    </div>
+
+    <div class="feedback-modal podcast-options-modal" id="podcast-options-modal" style="display: none;">
+        <h3 id="podcast-options-title">Podcast erzeugen</h3>
+        <div id="podcast-options-article-title" class="podcast-options-article-title"></div>
+        <div class="podcast-quota-warning" role="status" aria-live="polite">
+            <strong id="podcast-quota-title">Monatliches Stimmen-Kontingent</strong>
+            <p id="podcast-quota-message"></p>
+            <div id="podcast-quota-status" class="podcast-quota-status checking"></div>
+            <p id="podcast-quota-device" class="podcast-quota-device"></p>
+        </div>
+        <label class="podcast-control-field podcast-azure-voice-field">
+            <span id="txt-podcast-azure-voice">Azure-Stimme</span>
+            <select id="azure-podcast-voice-select" onchange="changeAzurePodcastVoice(this.value)"></select>
+        </label>
+        <p id="txt-podcast-voice-fixed" class="podcast-options-note"></p>
+        <div class="podcast-mode-grid">
+            <button type="button" class="podcast-mode-button" id="btn-podcast-short" onclick="generateAzurePodcast('short')">Kurz-Podcast</button>
+            <p id="txt-podcast-short-help">Eine kompakte Zusammenfassung von etwa 3–5 Minuten.</p>
+            <button type="button" class="podcast-mode-button" id="btn-podcast-full" onclick="generateAzurePodcast('full')">Ganzer Artikel</button>
+            <p id="txt-podcast-full-help">Der übersetzte Artikel, begrenzt auf ungefähr 10 Minuten.</p>
+            <button type="button" class="podcast-mode-button podcast-device-button" id="btn-podcast-device" onclick="startDevicePodcastFromOptions()">Gerätestimme</button>
+            <p id="txt-podcast-device-help">Kostenlose lokale Browserstimme; wird nicht in der gemeinsamen Bibliothek gespeichert.</p>
+        </div>
+        <div id="podcast-options-status" class="podcast-options-status" aria-live="polite"></div>
+        <div class="feedback-actions"><button class="btn-cancel" id="btn-podcast-options-close" onclick="closeAllModals()">Schließen</button></div>
+    </div>
+
+    <div class="feedback-modal podcast-library-modal" id="podcast-library-modal" style="display: none;">
+        <h3 id="podcast-library-title">Podcasts & Live-Radio</h3>
+        <div class="audio-hub-tabs" role="tablist" aria-label="Audio sections">
+            <button type="button" class="audio-hub-tab active" id="tab-original-podcasts" onclick="switchAudioHubTab('original')">Original-Podcasts</button>
+            <button type="button" class="audio-hub-tab" id="tab-generated-podcasts" onclick="switchAudioHubTab('generated')">Erzeugte Podcasts</button>
+            <button type="button" class="audio-hub-tab" id="tab-live-radio" onclick="switchAudioHubTab('radio')">Live-Radio</button>
+        </div>
+
+        <section class="continue-listening" id="continue-listening" hidden aria-live="polite">
+            <div class="continue-listening-copy">
+                <strong id="continue-listening-label">Weiterhören</strong>
+                <span id="continue-listening-title"></span>
+                <small id="continue-listening-meta"></small>
+            </div>
+            <div class="continue-listening-actions">
+                <button type="button" class="btn-media-play" id="continue-listening-play" onclick="resumeContinueListening()">▶ Fortsetzen</button>
+                <button type="button" class="btn-media-clear" id="continue-listening-remove" onclick="clearContinueListening()">Entfernen</button>
+            </div>
+        </section>
+        <section class="audio-queue-panel" id="audio-queue-panel" aria-live="polite">
+            <div class="audio-queue-heading">
+                <strong id="audio-queue-title">Warteschlange (0)</strong>
+                <button type="button" class="btn-media-clear" id="audio-queue-clear" onclick="clearAudioQueue()">Leeren</button>
+            </div>
+            <div id="audio-queue-list" class="audio-queue-list"></div>
+        </section>
+
+        <section id="panel-original-podcasts" class="audio-hub-panel">
+            <div class="podcast-library-toolbar media-filter-toolbar">
+                <select id="original-podcast-source-filter" onchange="renderOriginalPodcastLibrary()"><option value="">Alle Quellen</option></select>
+                <select id="original-podcast-language-filter" onchange="renderOriginalPodcastLibrary()"><option value="">Alle Sprachen</option></select>
+                <input id="original-podcast-search" type="search" placeholder="Podcasts durchsuchen…" oninput="renderOriginalPodcastLibrary()">
+                <label class="audio-favorites-filter">
+                    <input id="original-podcast-favorites-only" type="checkbox" onchange="renderOriginalPodcastLibrary()">
+                    <span id="original-podcast-favorites-label">Nur Favoriten</span>
+                </label>
+                <button type="button" class="btn-podcast-control" id="btn-original-podcast-refresh" onclick="loadOriginalPodcasts(true)">Aktualisieren</button>
+            </div>
+            <div id="original-podcast-list" class="podcast-library-list" aria-live="polite"></div>
+        </section>
+
+        <section id="panel-generated-podcasts" class="audio-hub-panel" hidden>
+            <div class="podcast-library-toolbar">
+                <button type="button" class="btn-podcast-control" id="btn-podcast-library-refresh" onclick="loadPodcastLibrary()">Aktualisieren</button>
+            </div>
+            <div id="podcast-library-list" class="podcast-library-list" aria-live="polite"></div>
+        </section>
+
+        <section id="panel-live-radio" class="audio-hub-panel" hidden>
+            <div class="live-radio-toolbar">
+                <p id="live-radio-note" class="live-radio-note">Live-Sender starten niemals automatisch. Falls ein Stream blockiert ist, öffne die Senderseite.</p>
+                <label class="audio-favorites-filter">
+                    <input id="live-radio-favorites-only" type="checkbox" onchange="renderLiveRadio()">
+                    <span id="live-radio-favorites-label">Nur Favoriten</span>
+                </label>
+            </div>
+            <div id="live-radio-list" class="live-radio-list" aria-live="polite"></div>
+        </section>
+
+        <div class="feedback-actions"><button class="btn-cancel" id="btn-podcast-library-close" onclick="closeAllModals()">Schließen</button></div>
+    </div>
+
+
+    <div class="feedback-modal system-status-modal" id="system-status-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="system-status-title">
+        <h3 id="system-status-title">Systemstatus</h3>
+        <p class="system-status-hint" id="system-status-hint"></p>
+
+        <div class="system-status-version-row">
+            <span id="system-status-version-label">App-Version</span>
+            <strong id="system-status-version">—</strong>
+        </div>
+
+        <div class="system-status-grid" aria-live="polite">
+            <div class="system-status-item" id="system-status-connection">
+                <div class="system-status-item-head"><span class="system-status-name">Verbindung</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-news">
+                <div class="system-status-item-head"><span class="system-status-name">Nachrichten</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-events">
+                <div class="system-status-item-head"><span class="system-status-name">Events</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-podcasts">
+                <div class="system-status-item-head"><span class="system-status-name">Original-Podcasts</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-generated">
+                <div class="system-status-item-head"><span class="system-status-name">Erzeugte Podcasts</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-radio">
+                <div class="system-status-item-head"><span class="system-status-name">Live-Radio</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-source-health">
+                <div class="system-status-item-head"><span class="system-status-name">Nachrichtenquellen</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-podcast-health">
+                <div class="system-status-item-head"><span class="system-status-name">Podcastquellen</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+            <div class="system-status-item" id="system-status-worker">
+                <div class="system-status-item-head"><span class="system-status-name">Azure / R2 / Worker</span><span class="system-status-badge checking">Wird geprüft …</span></div>
+                <div class="system-status-details"></div>
+            </div>
+        </div>
+
+        <div class="system-status-last-check" id="system-status-last-check"></div>
+        <div class="feedback-actions system-status-actions">
+            <button class="btn-submit" id="btn-system-status-refresh" onclick="refreshSystemStatus()">Neu prüfen</button>
+            <button class="btn-cancel" id="btn-system-status-close" onclick="closeAllModals()">Schließen</button>
+        </div>
+    </div>
+
+    <div class="feedback-modal translation-compare-modal" id="translation-compare-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="translation-compare-title">
+        <h3 id="translation-compare-title">Compare original and translation</h3>
+        <p class="translation-modal-meta" id="translation-compare-meta"></p>
+        <div class="translation-compare-grid">
+            <section class="translation-compare-column" aria-labelledby="translation-compare-original-heading">
+                <h4 id="translation-compare-original-heading">Original</h4>
+                <strong id="translation-compare-original-title"></strong>
+                <div class="translation-compare-text" id="translation-compare-original-text"></div>
+            </section>
+            <section class="translation-compare-column" aria-labelledby="translation-compare-translated-heading">
+                <h4 id="translation-compare-translated-heading">Machine translation</h4>
+                <strong id="translation-compare-translated-title"></strong>
+                <div class="translation-compare-text" id="translation-compare-translated-text"></div>
+            </section>
+        </div>
+        <p class="translation-modal-hint" id="translation-compare-hint"></p>
+        <div class="feedback-actions">
+            <button class="btn-cancel" id="btn-translation-compare-close" onclick="closeTranslationModals()">Close</button>
+        </div>
+    </div>
+
+    <div class="feedback-modal translation-report-modal" id="translation-report-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="translation-report-title">
+        <h3 id="translation-report-title">Report a translation problem</h3>
+        <p id="translation-report-intro" class="translation-modal-hint"></p>
+        <label class="translation-report-field">
+            <span id="translation-report-issue-label">Problem</span>
+            <select id="translation-report-issue"></select>
+        </label>
+        <label class="translation-report-field">
+            <span id="translation-report-note-label">Optional note</span>
+            <textarea id="translation-report-note" rows="5"></textarea>
+        </label>
+        <div class="feedback-actions">
+            <button class="btn-submit" id="btn-translation-report-send" onclick="sendTranslationReport()">Prepare email</button>
+            <button class="btn-cancel" id="btn-translation-report-close" onclick="closeTranslationModals()">Close</button>
+        </div>
+    </div>
+
+    <div class="feedback-modal data-control-modal" id="data-control-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="data-control-title">
+        <h3 id="data-control-title">Lokaler Speicher</h3>
+        <p class="data-control-intro" id="data-control-intro"></p>
+
+        <section class="data-control-section" aria-labelledby="data-overview-title">
+            <h4 id="data-overview-title">Auf diesem Gerät gespeichert</h4>
+            <div class="data-control-grid">
+                <div class="data-control-stat"><span id="data-label-bookmarks">Später lesen</span><strong id="data-count-bookmarks">0</strong></div>
+                <div class="data-control-stat"><span id="data-label-read">Gelesene Artikel</span><strong id="data-count-read">0</strong></div>
+                <div class="data-control-stat"><span id="data-label-zine">Zine</span><strong id="data-count-zine">0</strong></div>
+                <div class="data-control-stat"><span id="data-label-offline">Offline-Datensätze</span><strong id="data-count-offline">0</strong></div>
+                <div class="data-control-stat data-control-stat-wide"><span id="data-label-storage">Browser-Speicher</span><strong id="data-storage-total">—</strong></div>
+            </div>
+        </section>
+
+        <section class="data-control-section" aria-labelledby="data-backup-title">
+            <h4 id="data-backup-title">Leselisten sichern</h4>
+            <p id="data-backup-hint" class="data-control-hint"></p>
+            <div class="data-control-actions">
+                <button type="button" class="btn-submit" id="btn-data-export">Sicherung exportieren</button>
+                <button type="button" class="btn-podcast-control" id="btn-data-import">Sicherung importieren</button>
+                <input type="file" id="data-import-file" accept="application/json,.json" hidden>
+            </div>
+        </section>
+
+        <section class="data-control-section" aria-labelledby="data-delete-title">
+            <h4 id="data-delete-title">Speicher freigeben</h4>
+            <div class="data-control-delete-grid">
+                <button type="button" id="btn-data-clear-reading" data-clear-category="reading">Leselisten löschen</button>
+                <button type="button" id="btn-data-clear-offline" data-clear-category="offline">Offline-Speicher löschen</button>
+                <button type="button" class="danger" id="btn-data-clear-all" data-clear-category="all">Cache & lokale App-Daten leeren</button>
+            </div>
+        </section>
+
+        <div class="data-control-status" id="data-control-status" aria-live="polite"></div>
+        <div class="feedback-actions data-control-footer">
+            <button type="button" class="btn-cancel" id="btn-data-close" onclick="closeAllModals()">Schließen</button>
+        </div>
+    </div>
+
+    <div class="feedback-modal zine-modal" id="zine-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="zine-modal-title">
+        <h3 id="zine-modal-title">Zine zusammenstellen</h3>
+        <p class="zine-hint" id="zine-modal-hint">Hier kannst du einzelne Artikel entfernen, die Reihenfolge prüfen und das Zine drucken oder als PDF speichern.</p>
+        <div class="zine-list" id="zine-list" aria-live="polite"></div>
+        <div class="zine-actions">
+            <button type="button" class="btn-submit" id="btn-zine-print" onclick="printZine()">Drucken / PDF</button>
+            <button type="button" class="btn-podcast-control" id="btn-zine-clear" onclick="clearZine()">Zine leeren</button>
+            <button type="button" class="btn-cancel" id="btn-zine-close" onclick="closeAllModals()">Schließen</button>
+        </div>
+    </div>
+
+    <div class="feedback-modal" id="sources-modal" style="display: none;">
+        <h3 style="color: var(--color-cyan); margin-top: 0; text-transform: uppercase; border-bottom: 1px dashed var(--color-cyan); padding-bottom: 8px; font-size: 1.1rem;">Quellen / Portale</h3>
+        <div id="sources-list-container" style="display: flex; flex-direction: column; gap: 6px; margin-top: 10px; max-height: 60vh; overflow-y: auto; padding-right: 5px;">
+        </div>
+        <div class="feedback-actions" style="margin-top: 15px;"><button class="btn-cancel" onclick="closeAllModals()">Schließen</button></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="offline-db.js"></script>
+    <script src="data-control.js"></script>
+    <script src="status-center.js"></script>
+    <script src="utils.js"></script>
+    <script src="source-profiles.js"></script>
+    <script src="language-origin.js?release=1"></script>
+    <script src="news-card-copy.js?release=1"></script>
+    <script src="translation-tools.js?release=2"></script>
+    <script src="accessibility.js"></script>
+    <script src="media-player.js"></script>
+    <script src="audio-tools.js"></script>
+    <script src="events.js"></script>
+    <script src="reading-state.js"></script>
+    <script src="app.js"></script>
+    <script src="prisoner-solidarity.js?v=190-solidarity-3"></script>
+    <script src="audio-hub.js"></script>
+    <script src="release-1.4.js"></script>
+</body>
+</html>

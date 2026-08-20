@@ -1,0 +1,448 @@
+/* World Revolution News 1.4 – mobile release polish */
+.app-version-inline { display: none !important; }
+.mobile-more-menu { display: none; }
+.language-beta-note {
+    margin: -8px 0 14px;
+    padding: 8px 10px;
+    border: 1px dashed var(--color-cyan);
+    border-radius: 5px;
+    color: var(--text-muted);
+    background: rgba(0, 240, 255, 0.045);
+    font-size: 0.72rem;
+    line-height: 1.45;
+}
+.language-beta-note[hidden] { display: none !important; }
+
+@media (max-width: 720px) {
+    body { padding: 10px !important; }
+    .top-action-bar { display: none !important; }
+    .mobile-more-menu {
+        display: block;
+        margin: 0 0 10px;
+        border: 1px solid var(--border-read);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.025);
+    }
+    .mobile-more-menu > summary {
+        min-height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px;
+        color: var(--color-cyan);
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+        list-style: none;
+    }
+    .mobile-more-menu > summary::-webkit-details-marker { display: none; }
+    .mobile-more-menu > summary::before { content: '☰'; margin-right: 8px; font-size: 1.05rem; }
+    .mobile-more-menu[open] > summary::before { content: '×'; }
+    .mobile-more-panel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 7px;
+        padding: 8px;
+        border-top: 1px dashed var(--border-read);
+    }
+    .mobile-more-panel .btn-micro {
+        width: 100%;
+        min-height: 42px;
+        white-space: normal;
+        line-height: 1.25;
+        padding: 7px 8px;
+    }
+
+    header {
+        align-items: stretch !important;
+        gap: 10px !important;
+        margin-bottom: 14px !important;
+    }
+    header > div:first-child { width: 100%; }
+    h1 { font-size: clamp(1rem, 5.5vw, 1.28rem) !important; line-height: 1.25; }
+    .header-controls {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px !important;
+    }
+    .header-controls .dropdown-container,
+    .header-controls select { width: 100%; min-width: 0; }
+
+    .quick-nav-bar {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 7px !important;
+        padding: 2px 0 10px !important;
+    }
+    .quick-nav-bar .btn-nav {
+        width: 100% !important;
+        min-width: 0;
+        min-height: 44px;
+        white-space: normal !important;
+        line-height: 1.2;
+        padding: 7px 6px !important;
+    }
+    .quick-nav-bar #btn-open-zine { grid-column: 1 / -1; }
+
+    .filter-bar {
+        display: grid !important;
+        grid-template-columns: 44px repeat(2, minmax(0, 1fr));
+        gap: 7px !important;
+        padding: 9px !important;
+        align-items: stretch !important;
+    }
+    .filter-bar .filter-control,
+    .filter-bar select {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        height: 40px !important;
+    }
+    .filter-bar .filter-control-menu { width: 44px !important; }
+    .filter-bar .search-container {
+        grid-column: 1 / -1;
+        width: 100% !important;
+        margin: 0 !important;
+        min-width: 0 !important;
+    }
+    .filter-bar .search-input { min-height: 42px !important; font-size: 0.82rem !important; }
+    #content-type-filter { grid-column: span 2; }
+
+    .feedback-modal {
+        width: calc(100vw - 20px) !important;
+        max-height: calc(100vh - 24px) !important;
+        padding: 14px !important;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 390px) {
+    .mobile-more-panel { grid-template-columns: 1fr; }
+    .quick-nav-bar { grid-template-columns: 1fr; }
+    .quick-nav-bar #btn-open-zine { grid-column: auto; }
+    .filter-bar { grid-template-columns: 44px minmax(0, 1fr); }
+    #content-type-filter { grid-column: 1 / -1; }
+    .header-controls { grid-template-columns: 1fr !important; }
+}
+
+/* 1.4.1 – vereinfachte Nutzeroberfläche und klare Farblogik */
+:root {
+    --wrn-red: #ff334f;
+    --wrn-red-soft: rgba(255, 51, 79, 0.08);
+    --wrn-cyan-soft: rgba(0, 240, 255, 0.07);
+}
+
+/* Der technische Systemstatus bleibt vorhanden, ist aber kein normaler Nutzerbereich. */
+.btn-system-status { display: none !important; }
+
+/* Obere Verwaltungsaktionen: Rot und Cyan im Wechsel. */
+.top-action-bar .btn-micro,
+.mobile-more-panel .btn-micro {
+    border-width: 1px !important;
+    box-shadow: none !important;
+}
+
+.top-action-bar .btn-micro:nth-child(1),
+.top-action-bar .btn-micro:nth-child(3),
+.mobile-more-panel .btn-micro:nth-child(1),
+.mobile-more-panel .btn-micro:nth-child(3) {
+    color: var(--wrn-red) !important;
+    border-color: var(--wrn-red) !important;
+}
+
+.top-action-bar .btn-micro:nth-child(2),
+.top-action-bar .btn-micro:nth-child(4),
+.mobile-more-panel .btn-micro:nth-child(2),
+.mobile-more-panel .btn-micro:nth-child(4) {
+    color: var(--color-cyan) !important;
+    border-color: var(--color-cyan) !important;
+}
+
+.top-action-bar .btn-micro:nth-child(1):hover,
+.top-action-bar .btn-micro:nth-child(3):hover,
+.mobile-more-panel .btn-micro:nth-child(1):hover,
+.mobile-more-panel .btn-micro:nth-child(3):hover {
+    background: var(--wrn-red-soft) !important;
+}
+
+.top-action-bar .btn-micro:nth-child(2):hover,
+.top-action-bar .btn-micro:nth-child(4):hover,
+.mobile-more-panel .btn-micro:nth-child(2):hover,
+.mobile-more-panel .btn-micro:nth-child(4):hover {
+    background: var(--wrn-cyan-soft) !important;
+}
+
+/* Hauptnavigation: Entdecken oben in Cyan, persönliche Bereiche unten in Rot. */
+.quick-nav-events,
+.btn-podcast-nav {
+    color: var(--color-cyan) !important;
+    border-color: var(--color-cyan) !important;
+    background: var(--wrn-cyan-soft) !important;
+}
+
+.quick-nav-bookmarks,
+.quick-nav-read {
+    color: var(--wrn-red) !important;
+    border-color: var(--wrn-red) !important;
+    background: var(--wrn-red-soft) !important;
+}
+
+.quick-nav-zine {
+    color: var(--color-cyan) !important;
+    border-color: var(--color-cyan) !important;
+    background: transparent !important;
+}
+
+.quick-nav-bar .btn-nav:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.15);
+}
+
+.quick-nav-bar .btn-nav.active {
+    color: #050508 !important;
+    background: var(--color-cyan) !important;
+    border-color: var(--color-cyan) !important;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.28) !important;
+}
+
+/* Filter werden ruhiger und folgen der Hauptfarbe Cyan. */
+.filter-bar {
+    background: rgba(0, 240, 255, 0.035) !important;
+    border: 1px solid rgba(0, 240, 255, 0.14);
+}
+
+.filter-bar .filter-control,
+.filter-bar .search-input {
+    border-color: rgba(0, 240, 255, 0.42) !important;
+}
+
+.filter-bar .filter-control:focus,
+.filter-bar .search-input:focus {
+    border-color: var(--color-cyan) !important;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.16) !important;
+}
+
+@media (max-width: 720px) {
+    .mobile-more-menu {
+        border-color: rgba(0, 240, 255, 0.34);
+        background: rgba(0, 240, 255, 0.025);
+    }
+
+    .mobile-more-panel {
+        border-top-color: rgba(0, 240, 255, 0.24);
+    }
+}
+
+@media (max-width: 390px) {
+    .quick-nav-bar .btn-nav {
+        min-height: 46px;
+    }
+}
+
+/* 1.4.2 – orange Akzente vollständig durch Rot ersetzt */
+:root,
+body.theme-dark,
+body.theme-oled,
+body.theme-contrast {
+    --wrn-red: #ff334f;
+    --wrn-red-soft: rgba(255, 51, 79, 0.09);
+    --color-accent: #ff334f;
+    --border-dashed: #ff334f;
+    --shadow-accent: rgba(255, 51, 79, 0.17);
+}
+
+/* Auf hellen Hintergründen ein dunkleres, besser lesbares Rot. */
+body.theme-light,
+body.theme-soft {
+    --wrn-red: #b5122f;
+    --wrn-red-soft: rgba(181, 18, 47, 0.08);
+    --color-accent: #b5122f;
+    --border-dashed: #b5122f;
+    --shadow-accent: rgba(181, 18, 47, 0.15);
+}
+
+/* Fest eingetragene Orange-Werte ebenfalls in Rot umwandeln. */
+.btn-expand:hover {
+    background: var(--wrn-red-soft) !important;
+}
+
+.global-media-progress input[type="range"],
+.media-progress-row input[type="range"] {
+    accent-color: var(--wrn-red) !important;
+}
+
+.btn-media-pause {
+    color: var(--wrn-red) !important;
+    border-color: var(--wrn-red) !important;
+}
+
+.btn-media-pause:hover {
+    background: var(--wrn-red-soft) !important;
+}
+
+/* Orangeartige Hintergründe aus früheren Inline-Regeln neutralisieren. */
+.filter-bar {
+    background: rgba(0, 240, 255, 0.035) !important;
+}
+
+/* Aktive Inhalts- und Navigationsakzente folgen nun Rot statt Orange. */
+details.filter-dropdown summary,
+.card,
+.meta,
+.archive-header,
+.btn-expand,
+.info-text-box strong {
+    border-color: var(--color-accent);
+}
+
+/* 1.4.3 – abgedunkelter filmischer App-Hintergrund */
+html {
+    background: #050508;
+}
+
+body {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    background: transparent !important;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(180deg,
+            rgba(3, 5, 9, 0.78) 0%,
+            rgba(3, 5, 9, 0.84) 42%,
+            rgba(3, 5, 9, 0.91) 100%),
+        url('./app-background.webp');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(0);
+}
+
+/* Die Oberfläche bleibt lesbar, ohne das Motiv vollständig zu verdecken. */
+.card {
+    background-color: rgba(13, 13, 20, 0.88) !important;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+header,
+details.filter-dropdown,
+.filter-bar,
+.mobile-more-menu,
+.top-action-bar {
+    background-color: rgba(5, 5, 8, 0.66) !important;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+header {
+    padding: 12px 10px 15px !important;
+    border-radius: 6px;
+}
+
+.feedback-modal,
+.podcast-options-modal,
+.podcast-library-modal,
+.system-status-modal,
+.global-media-bar {
+    background-color: rgba(13, 13, 20, 0.96) !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+/* Helle Designs behalten das Motiv, erhalten aber eine hellere Schutzschicht. */
+body.theme-light::before,
+body.theme-soft::before {
+    background-image:
+        linear-gradient(180deg,
+            rgba(244, 244, 249, 0.78) 0%,
+            rgba(244, 244, 249, 0.84) 48%,
+            rgba(244, 244, 249, 0.92) 100%),
+        url('./app-background.webp');
+    filter: saturate(0.72);
+}
+
+body.theme-light .card,
+body.theme-soft .card {
+    background-color: rgba(255, 255, 255, 0.90) !important;
+}
+
+body.theme-light header,
+body.theme-light details.filter-dropdown,
+body.theme-light .filter-bar,
+body.theme-soft header,
+body.theme-soft details.filter-dropdown,
+body.theme-soft .filter-bar {
+    background-color: rgba(244, 244, 249, 0.80) !important;
+}
+
+@media (max-width: 720px) {
+    body::before {
+        /* Fahne bleibt oben sichtbar; der cyanfarbene Turm liegt hinter dem Feed. */
+        background-position: 52% top;
+    }
+
+    .card {
+        background-color: rgba(13, 13, 20, 0.91) !important;
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .card,
+    header,
+    details.filter-dropdown,
+    .filter-bar,
+    .mobile-more-menu,
+    .top-action-bar,
+    .feedback-modal,
+    .podcast-options-modal,
+    .podcast-library-modal,
+    .system-status-modal,
+    .global-media-bar {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+    }
+}
+/* 1.4.4 – Hintergrund deutlicher sichtbar */
+body::before {
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(3, 5, 9, 0.38) 0%,
+            rgba(3, 5, 9, 0.52) 45%,
+            rgba(3, 5, 9, 0.66) 100%
+        ),
+        url('./app-background.webp') !important;
+
+    background-position: 52% top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.card {
+    background-color: rgba(13, 13, 20, 0.80) !important;
+}
+
+@media (max-width: 720px) {
+    .card {
+        background-color: rgba(13, 13, 20, 0.84) !important;
+    }
+}
+
+header,
+details.filter-dropdown,
+.filter-bar,
+.mobile-more-menu,
+.top-action-bar {
+    background-color: rgba(5, 5, 8, 0.54) !important;
+}

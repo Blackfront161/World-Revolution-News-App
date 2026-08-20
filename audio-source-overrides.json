@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-20T19:20:00+02:00",
+  "replacements": [
+    {
+      "matchNames": [
+        "Working Class History"
+      ],
+      "feedUrl": "https://www.spreaker.com/show/5711490/episodes/feed",
+      "homepage": "https://workingclasshistory.com/podcasts/",
+      "reason": "Offizieller aktueller RSS-Feed."
+    },
+    {
+      "matchNames": [
+        "A-Radio Wien",
+        "Anarchistisches Radio Wien",
+        "Anarchistisches Radio"
+      ],
+      "feedUrl": "https://de.cba.media/podcast/anarchistisches-radio/feed?limit=100",
+      "homepage": "https://de.cba.media/podcast/anarchistisches-radio",
+      "reason": "Offizieller CBA-Podcastfeed."
+    }
+  ],
+  "archive": [
+    {
+      "matchNames": [
+        "Common Voices"
+      ],
+      "reason": "Die ursprünglich gemeinte Quelle ist nicht eindeutig identifizierbar. Ein gleichnamiger, aber thematisch nicht passender Feed wird nicht automatisch importiert."
+    },
+    {
+      "matchNames": [
+        "B(A)D News – A-Radio Network",
+        "B(A)D News - A-Radio Network",
+        "B(A)D News",
+        "BAD News"
+      ],
+      "reason": "Keine verlässliche eigenständige Feedquelle. Die Sendereihe wird stattdessen aus A-Radio Wien und The Final Straw Radio erkannt."
+    }
+  ],
+  "derivedSeries": [
+    {
+      "name": "B(A)D News – A-Radio Network",
+      "sourceNames": [
+        "The Final Straw Radio",
+        "A-Radio Wien",
+        "Anarchistisches Radio"
+      ],
+      "titlePattern": "(?i)B\\s*\\(?A\\)?\\s*D\\s*News|BAD\\s*News",
+      "homepage": "https://www.a-radio-network.org/"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+/* World Revolution News 1.7.1 – Audio-Katalog */
+
+.wrn-audio-submenus {
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 13px;
+  padding: 10px;
+  border: 1px solid rgba(0, 240, 255, 0.22);
+  border-radius: 12px;
+  background: rgba(4, 9, 14, 0.70);
+}
+
+.wrn-audio-filter-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.wrn-audio-filter-label {
+  color: var(--color-cyan, #00f0ff);
+  font-size: 0.72rem;
+  line-height: 1.1;
+}
+
+.wrn-audio-chip-scroll {
+  display: flex;
+  gap: 5px;
+  min-width: 0;
+  overflow-x: auto;
+  padding: 2px 1px 4px;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+
+.wrn-audio-chip-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.wrn-audio-chip {
+  flex: 0 0 auto;
+  min-height: 29px;
+  padding: 4px 9px;
+  border: 1px solid rgba(255, 51, 79, 0.34);
+  border-radius: 999px;
+  background: rgba(255, 51, 79, 0.055);
+  color: var(--wrn-red, #ff334f);
+  font: 750 0.67rem/1.05 inherit;
+  white-space: nowrap;
+  scroll-snap-align: start;
+}
+
+.wrn-audio-chip.active {
+  color: #020507;
+  background: var(--color-cyan, #00f0ff);
+  border-color: var(--color-cyan, #00f0ff);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.30);
+}
+
+.wrn-audio-reset {
+  justify-self: end;
+  min-height: 30px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  color: var(--text-main, #fff);
+  font-size: 0.67rem;
+}
+
+.wrn-audio-search {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 240, 255, 0.28);
+  border-radius: 9px;
+  background: rgba(0,0,0,0.26);
+  color: var(--text-main, #fff);
+}
+
+.wrn-audio-health-summary {
+  margin: 7px 0 10px;
+  padding: 7px 9px;
+  border: 1px solid rgba(0, 240, 255, 0.18);
+  border-radius: 9px;
+  background: rgba(0,0,0,0.20);
+  font-size: 0.70rem;
+}
+
+.wrn-audio-health-summary summary {
+  color: var(--color-cyan, #00f0ff);
+  cursor: pointer;
+}
+
+.wrn-audio-health-body {
+  max-height: 190px;
+  overflow-y: auto;
+  padding-top: 7px;
+}
+
+.wrn-audio-health-body ul {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.wrn-audio-health-body li {
+  margin-bottom: 5px;
+  overflow-wrap: anywhere;
+}
+
+.wrn-audio-catalog-card {
+  position: relative;
+}
+
+.wrn-audio-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  margin: 5px 0 7px;
+}
+
+.wrn-audio-health-badge,
+.wrn-audio-meta-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 21px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 0.60rem;
+  line-height: 1.05;
+}
+
+.wrn-audio-health-badge {
+  border: 1px solid currentColor;
+}
+
+.wrn-audio-health-badge.healthy {
+  color: var(--color-green, #40ff88);
+  background: rgba(64,255,136,0.06);
+}
+
+.wrn-audio-health-badge.stale {
+  color: #ffd166;
+  background: rgba(255,209,102,0.07);
+}
+
+.wrn-audio-health-badge.error {
+  color: var(--wrn-red, #ff334f);
+  background: rgba(255,51,79,0.07);
+}
+
+.wrn-audio-health-badge.unknown {
+  color: var(--text-muted, #b6bdc7);
+  background: rgba(255,255,255,0.04);
+}
+
+.wrn-audio-meta-chip {
+  color: var(--color-cyan, #00f0ff);
+  background: rgba(0,240,255,0.07);
+  border: 1px solid rgba(0,240,255,0.20);
+}
+
+.wrn-audio-unavailable {
+  margin: 8px 0;
+  padding: 7px 9px;
+  border: 1px dashed rgba(255,51,79,0.45);
+  border-radius: 8px;
+  color: var(--wrn-red, #ff334f);
+  font-size: 0.72rem;
+}
+
+@media (max-width: 720px) {
+  .wrn-audio-submenus {
+    margin-inline: -2px;
+    padding: 8px 7px;
+  }
+
+  .wrn-audio-filter-row {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 5px;
+  }
+
+  .wrn-audio-filter-label {
+    font-size: 0.64rem;
+  }
+
+  .wrn-audio-chip {
+    min-height: 27px;
+    padding: 3px 8px;
+    font-size: 0.62rem;
+  }
+}
+
+
+/* WRN 1.7.5 – differenzierter Quellenstatus */
+.wrn-audio-health-badge.degraded {
+  border-color: rgba(255,209,102,0.48);
+  background: rgba(255,209,102,0.08);
+  color: #ffd166;
+}
+
+.wrn-audio-catalog-card.status-degraded {
+  border-color: rgba(255,209,102,0.28);
+}
+
+.wrn-audio-health-badge.unknown {
+  opacity: 0.78;
+}

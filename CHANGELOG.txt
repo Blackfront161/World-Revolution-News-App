@@ -1,0 +1,276 @@
+ÄNDERUNGEN 2.0.8 – TAGESLAGE, VOLLSTÄNDIGERE INHALTE UND MEHR QUELLENVIELFALT
+
+- Die Startseite bündelt neue Meldungen seit dem letzten Besuch, Quellenbreite,
+  blinde Flecken, aktive Dossiers und geprüfte Solidaritätsinformationen in
+  einer kompakten persönlichen Tageslage.
+- Fünf aktuelle Meldungen lassen sich als tägliche Ausgabe öffnen und für die
+  Offline-Nutzung vormerken.
+- Überschriften und Kurztexte oberhalb von „Weitere Nachrichten“ werden in die
+  gewählte App-Sprache übertragen.
+- Artikelbilder behalten ihr vollständiges Seitenverhältnis; Detailpakete und
+  Quellenarchive verbessern das Nachladen vollständiger Artikeltexte.
+- Das neue Header-Logo, der deutlicher erkennbare Webseitenzugang und das pinke
+  Zweifarb-Theme wurden für Smartphone-Bildschirme verfeinert.
+- Podcasts wurden um mehrsprachige Quellen erweitert und anhand von Feedtext,
+  Schrift und redaktionellen Metadaten der gesprochenen Sprache zugeordnet.
+- Termine nutzen ein erweitertes Quellenregister; neue Quellen gelten erst dann
+  als aktiv, wenn sie tatsächlich verwertbare Daten liefern.
+- Videos enthalten zusätzliche Dokumentationen und einen Sprachfilter.
+- Das Zine bietet einen eigenen Bereich mit druckbaren Sprühschablonen und
+  Verweisen auf weitere kuratierte Vorlagen.
+- Android verwendet Version 2.0.8 mit Versionscode 23; R8 und Resource Shrinking
+  bleiben für den Play-Store-Build aktiviert.
+
+ÄNDERUNGEN 2.0.2 – ZUVERLÄSSIGE FEED-WIEDERHERSTELLUNG
+
+- Die App prüft den Erzeugungszeitpunkt des öffentlichen Feeds vor dem Laden.
+- GitHub Pages und der direkte GitHub-Hauptzweig dienen als voneinander
+  unabhängige Live-Datenwege; der frischere erfolgreiche Stand gewinnt.
+- Eine Feed-Revision in der URL verhindert veraltete Android-/CDN-Antworten,
+  ohne den großen Nachrichtenfeed unnötig alle 15 Minuten neu zu laden.
+- Die Startseite zeigt den Zeitpunkt der letzten Live-Feed-Erzeugung sichtbar
+  an und kennzeichnet den eingebetteten Offline-Rückfall deutlich.
+
+ÄNDERUNGEN 2.0.1 – AUTOMATISCHE LIVE-AKTUALISIERUNG
+
+- Die App lädt beim Start zuerst den öffentlichen aktuellen Nachrichtenfeed.
+- Während die App geöffnet ist, prüft sie alle 15 Minuten auf neue Daten.
+- Beim Zurückkehren in die App und nach Wiederherstellung der Verbindung wird
+  der Feed erneut geprüft.
+- Eingebaute Nachrichten dienen nur noch als Offline-Rückfall.
+- Azure- und Gerätestimmen zeigen ihren Verfügbarkeitsstatus getrennt an.
+
+ÄNDERUNGEN 2.0.0 – AKTIONSRADAR UND REDAKTIONELLE QUALITÄT
+
+- Der Terminbereich besitzt jetzt ein Aktionsradar mit den Ansichten
+  „Alle Termine“, „In der Nähe“ und „Erinnerungen“.
+- Die freiwillige Entfernungssuche verarbeitet den Gerätestandort nur im
+  Browser. Er wird weder gespeichert noch an WRN oder einen Kartendienst
+  übertragen.
+- Eine kostenfreie schematische Kartenansicht zeigt Termine mit vorhandenen
+  Koordinaten. Erst ein ausdrücklicher Klick öffnet den exakten Punkt bei
+  OpenStreetMap.
+- Terminerinnerungen werden ausschließlich lokal gespeichert. Wenn die App
+  geöffnet ist, können Browser-/PWA-Benachrichtigungen ausgelöst werden;
+  es gibt keinen kostenpflichtigen Push-Server.
+- Eine redaktionelle Prüfliste unter „Diagnose“ macht unsichere automatische
+  Themen- und Regionszuordnungen filterbar. Entscheidungen lassen sich lokal
+  vormerken und als JSON exportieren.
+- Die automatische Quellenprüfung läuft weiterhin alle vier Stunden. Ihr
+  Bericht enthält jetzt ein 12-Stunden-Ablauffenster; die App warnt sichtbar,
+  wenn Erreichbarkeitswerte nicht mehr aktuell sind.
+- Der geplante Social-Media-Bereich bleibt vollständig zurückgestellt und
+  wurde in diesem Release nicht eingebunden.
+
+ÄNDERUNGEN 1.9.0 – GEFANGENEN-SOLIDARITÄT
+
+SOLIDARITÄTSVERZEICHNIS
+
+- Der neue Hauptreiter „Solidarität“ beginnt mit fünf öffentlich belegten
+  Profilen aus aktuellen Verzeichnissen von NYC ABC und ABCF.
+- Jedes Profil zeigt Prüfdatum, nächste Prüfung, öffentliche Haftadresse,
+  Kontext, Quelle und passende Artikel aus dem WRN-Archiv.
+- Nach Ablauf der Prüffrist werden Kopieren, Schreiben und Drucken automatisch
+  gesperrt, bis die Adresse redaktionell erneut bestätigt wurde.
+- Das Verzeichnis erklärt deutlich, dass es kuratiert, unvollständig und keine
+  juristische Bewertung ist.
+
+PRIVATE SCHREIBWERKSTATT
+
+- Die Schreibwerkstatt füllt den Gerätebildschirm aus und hält Briefentwurf und
+  optionale Absenderadresse ausschließlich im lokalen Browserspeicher.
+- Eine Übersetzung überträgt erst nach ausdrücklicher Bestätigung nur den
+  Brieftext; Namen sowie Haft- und Absenderadresse werden nie mitgesendet.
+- Original und maschinelle Übersetzung werden zum Vergleichen nebeneinander
+  angezeigt. Der Text kann anschließend gedruckt oder als PDF gespeichert
+  werden.
+- Bilder bleiben gesperrt, solange die jeweilige Anstalt sie nicht nachweislich
+  erlaubt. Es erfolgt weder automatischer Versand noch Tracking.
+
+QUELLEN UND TRANSPARENZ
+
+- Allgemeine Briefhinweise, verknüpfte Prüfquellen, Änderungsverlauf und ein
+  JSON-Download sind direkt in der App erreichbar.
+- Der App-Cache und alle Release-Selbsttests wurden auf Version 1.9.0
+  vereinheitlicht.
+
+ÄNDERUNGEN 1.8.6 – QUELLENVIELFALT UND KORRUPTIONS-FIX
+
+QUELLENVIELFALT
+
+- Bianet Türkçe und Bianet Kurdî gelten in der Standardmischung als eine
+  Quellenfamilie und erhalten zusammen höchstens einen Platz unter den ersten
+  zehn Artikeln. Im Quellenfilter bleiben alle Bianet-Artikel erreichbar.
+- Neue geprüfte Feeds erweitern Indien, Südamerika und Italien.
+- European Digital Rights, Access Now, Tactical Tech und Digitalcourage
+  erweitern den Themenbereich Cyber-Aktivismus.
+- Animal Rising und das anarcofeministische, antirassistische und
+  antispeziesistische Medium La Zarzamora erweitern Tierbefreiung.
+- Jeder neue Feed besitzt ein kleines Einleselimit, damit keine neue Quelle
+  die Übersicht dominiert.
+- Die veraltete Feed-Adresse von Umanità Nova wurde repariert.
+
+KORRUPTION
+
+- Der Korruptions-Reiter wird nicht mehr durch ein verspätet eingeblendetes
+  Briefing verdeckt.
+- Einzelne beiläufige Erwähnungen im Volltext reichen nicht mehr aus, um einen
+  Artikel als Korruptionsnachricht einzuordnen.
+
+PLANUNG
+
+- Das Konzept für einen kuratierten Bereich „Gefangenen-Solidarität“ liegt als
+  eigene Sicherheits- und Produktplanung vor. Öffentliche Haftadressen werden
+  erst nach redaktioneller Prüfung in die App übernommen.
+
+ÄNDERUNGEN 1.8.4 – RELEASE
+
+DARSTELLUNG UND SPRACHE
+
+- Der große Header-Schriftzug „WORLD REVOLUTION NEWS“ ist vollständig weiß.
+- Logo, spanische Unterzeile und transparente Flächen bleiben unverändert.
+- Die deutsche Schaltfläche verwendet verbindlich die Schreibweise „Übersetzen“.
+
+RELEASE
+
+- Vorab-Markierungen wurden durch den stabilen 1.8.4-Release-Stand ersetzt.
+- Neue App- und Daten-Caches liefern die korrigierten Texte und Grafiken auch
+  nach einer zuvor zwischengespeicherten Version aus.
+- Der Android-Wrapper wird als Play-Store-Version 1.5 mit versionCode 5
+  vorbereitet; Paketname und Upload-Signatur bleiben unverändert.
+
+ÄNDERUNGEN 1.8.2
+
+NEUE TÜRKISCHE UND KURDISCHE QUELLEN
+
+- Bianet Türkçe und Evrensel werden als türkischsprachige RSS-Quellen ergänzt.
+- Bianet Kurdî und Pressin Kurdî werden als kurdischsprachige RSS-Quellen ergänzt.
+- Alle bestehenden Quellen bleiben erhalten. Democracy Now wird weder entfernt noch erweitert.
+- Die neuen Quellen besitzen explizite Sprach-, Herkunfts- und Kategoriemetadaten.
+
+SPRACH- UND HERKUNFTSFILTER
+
+- Nachrichten können nach Quellsprache und Herkunft gefiltert werden.
+- Türkisch verwendet den Sprachcode tr, Kurdisch den Sprachcode ku.
+- Filterwerte werden lokal gespeichert und bleiben nach einem Neustart erhalten.
+- Alte Artikel ohne Metadaten bleiben sichtbar, solange kein entsprechender Filter aktiv ist.
+
+QUELLENPRÜFUNG UND AUDITS
+
+- Die Quellenprüfung zeigt Sprache und Herkunft und besitzt eigene Filter dafür.
+- Das deklarative Quellenregister ist nun die gemeinsame Kataloggrundlage.
+- Der Quellencheck liest auch die mehrsprachige Registry ein.
+- Das Language Audit verlangt ab 1.8.2 ausdrücklich Quellenabdeckung für tr und ku.
+
+STABILITÄT
+
+- App- und Service-Worker-Version sind auf 1.8.2 vereinheitlicht.
+- Neue Regressionstests schützen Quellenfilter, Registry und tr/ku-Abdeckung.
+- Der in 1.8.1c ergänzte Abhängigkeits-Schritt bleibt im App-Workflow erhalten.
+
+ÄNDERUNGEN 1.8.1
+
+ENTWICKLUNGEN STATT GESCHICHTEN
+
+- Der deutschsprachige Hauptreiter heißt jetzt „Entwicklungen“.
+- Die neue Bezeichnung ist auch in Briefing 2 und der Zeitleistenansicht
+  konsistent.
+- Alle neun Oberflächensprachen besitzen eine passende Übersetzung.
+
+AUDIO
+
+- Audio besitzt die drei klaren Unterreiter Original-Podcasts,
+  Erzeugte Podcasts und Live-Radio.
+- Herkunftsfilter wie Global, Europa, Afrika oder Lateinamerika erscheinen
+  ausschließlich innerhalb von Original-Podcasts.
+- Die Herkunftsfilter arbeiten nun tatsächlich mit Region und Land der
+  Podcastquelle.
+- Beim Wechsel zwischen den Audio-Unterreitern bleiben keine Nachrichten-
+  Regionsfilter mehr sichtbar.
+- Radiosender mit mehreren Streamadressen werden nacheinander geprüft und
+  der beste erreichbare Kandidat wird verwendet.
+
+SPRACHEN
+
+- Deutsch, Englisch, Spanisch, Französisch, Italienisch, Portugiesisch,
+  Russisch, Griechisch und Türkisch sind vollständig auswählbar.
+- Keine dieser Sprachen wird mehr als Beta gekennzeichnet.
+- Navigation, Video-Hub und Quellenprüfung reagieren auf die ausgewählte
+  Sprache.
+
+QUELLENPRÜFUNG
+
+- Noch nicht ausgeführte Audio- und Radio-Prüfungen erscheinen als
+  „Nicht geprüft“ statt fälschlich als „Defekt“.
+- Radioeinträge werden mit dem tatsächlichen Senderkatalog abgeglichen.
+- `streamCandidates`, `workingStream` und Website-Adressen werden erkannt.
+- Fehlende optionale Statusdateien erzeugen Warnungen, aber keine erfundenen
+  defekten Quellen.
+
+VIDEO-HUB
+
+- Neuer Hauptreiter „Video“.
+- Lokale Erkennung von YouTube-, Vimeo- und PeerTube-Links in vorhandenen
+  Nachrichten.
+- Filter nach Plattform, Region und Suchbegriff.
+- Keine automatische Wiedergabe.
+- Externe Einbettungen werden erst nach einer ausdrücklichen Auswahl geladen.
+- YouTube wird über die datenschutzfreundlichere No-Cookie-Domain eingebettet.
+
+STABILITÄT
+
+- App- und Service-Worker-Version sind auf 1.8.1 vereinheitlicht.
+- Neue Regressionstests für Audio-Herkunft, Audioquellenschema, Sprachen,
+  Quellenprüfung und Video-Hub.
+- Die bestehenden Quality Gates prüfen die neuen 1.8.1-Verträge.
+
+ÄNDERUNGEN 1.8.0
+
+ENTWICKLUNGEN UND ZEITLEISTEN
+
+- Neue Hauptansicht „Entwicklungen“.
+- Ähnliche Berichte aus mehreren Quellen werden ausschließlich lokal gebündelt.
+- Jede Entwicklung zeigt eine chronologische Zeitleiste.
+- Bis zu vier unterschiedliche Quellen können nebeneinander verglichen werden.
+- Entwicklungen können lokal auf eine Beobachtungsliste gesetzt und geteilt werden.
+
+BRIEFING 2
+
+- Morgenmodus für neue Entwicklungen und heutige Termine.
+- Abendmodus für veränderte und weiterlaufende Entwicklungen.
+- Wochenrückblick aus bis zu sieben lokal gespeicherten Briefings.
+- Beobachtungsbegriffe für Orte, Organisationen und Kampagnen.
+- Alle Briefing-2-Auswertungen bleiben auf dem Gerät.
+
+STABILITÄT
+
+- Briefing ist wieder die erste Ansicht der App.
+- Service Worker und App-Version sind auf 1.8.0 vereinheitlicht.
+- Der fehlerhafte kombinierte Podcast-Fallback im Service Worker wurde repariert.
+- Entwicklungen-Kernlogik besitzt einen eigenen Node-Regressions-Test.
+- Einmalige Migrationsworkflows und alte Hotfix-Dateien wurden entfernt.
+
+ÄNDERUNGEN 1.7.16
+
+QUELLEN
+
+- RSS-/Atom-/JSON-Feed wird aus HTML-Metadaten automatisch erkannt.
+- Katalogeinträge ohne Feed-Adresse gelten als Nicht geprüft.
+- HTTP 404/410 und DNS-Ausfälle bleiben Defekt.
+- TLS, Rate-Limit, Blockierung und Timeout bleiben Eingeschränkt.
+- Automatisch erkannte Feed-Adressen werden in discovered-feeds.json notiert.
+
+ARTIKEL
+
+- Vor Originalquelle erscheint ein Hinweis:
+  Unabhängige Quellen sind oft auf freiwillige Spenden angewiesen.
+- Übersetzen bleibt allein über den anderen Aktionen.
+- Sechs übrige Aktionen werden in zwei Zeilen mit je drei gleich breiten
+  Schaltflächen dargestellt – auch auf Smartphones.
+
+DIALOGE
+
+- Lange Dialoge erhalten feststehende Kopfzeilen.
+- Schließen-/Zurück-Schaltflächen bleiben erreichbar.
+- Betroffen sind unter anderem Audio, Podcast, Radio, Quellenprüfung,
+  Systemstatus, Briefing, Zine und Artikelansicht.

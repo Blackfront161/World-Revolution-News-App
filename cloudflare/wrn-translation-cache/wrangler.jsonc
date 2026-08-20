@@ -1,0 +1,53 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wrn-translation-cache",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-27",
+  "compatibility_flags": ["global_fetch_strictly_public"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
+  "vars": {
+    "ALLOWED_ORIGINS": "https://blackfront161.github.io,https://solinaridao.com,https://www.solinaridao.com,capacitor://localhost,http://localhost,https://localhost,http://127.0.0.1:8765",
+    "CACHE_TTL_SECONDS": "604800",
+    "UPSTREAM_URL": "https://revolution-proxy.paghklo.workers.dev",
+    "WRN_TRANSLATION_ENABLED": "true",
+    "TRANSLATION_KV_DAILY_WRITE_LIMIT": "950"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "TRANSLATIONS",
+      "id": "bd8fdf0723b148ce90c654cef94b7ef6"
+    }
+  ],
+  "services": [
+    {
+      "binding": "PROXY_SERVICE",
+      "service": "revolution-proxy"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "QUOTA_COORDINATOR",
+        "class_name": "QuotaCoordinator"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "quota-v1",
+      "new_sqlite_classes": ["QuotaCoordinator"]
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "CACHE_RATE_LIMITER",
+      "namespace_id": "1003",
+      "simple": { "limit": 60, "period": 60 }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WRN Smartphone-Vorschau</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      display: grid;
+      margin: 0;
+      padding: 18px;
+      background: #050508;
+      place-items: start center;
+    }
+    .phone {
+      width: min(390px, calc(100vw - 20px));
+      height: min(844px, calc(100vh - 36px));
+      overflow: hidden;
+      border: 2px solid #ff3158;
+      border-radius: 28px;
+      background: #05080b;
+      box-shadow: 0 0 0 6px #111117, 0 22px 70px rgba(255, 18, 65, .28);
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #05080b;
+    }
+  </style>
+</head>
+<body>
+  <main class="phone" aria-label="Interaktive Smartphone-Vorschau">
+    <iframe src="index.html?preview=13&amp;qa=smartphone-r10" title="World Revolution News – Smartphone"></iframe>
+  </main>
+</body>
+</html>

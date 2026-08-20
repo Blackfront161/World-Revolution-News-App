@@ -1,0 +1,105 @@
+/* World Revolution News 1.8.4 – transparenter, leuchtender Header */
+
+header {
+    min-height: 76px;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 60 !important;
+}
+
+header.wrn-future-header-ready {
+    background: transparent !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+
+header > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    flex: 1 1 940px;
+}
+
+header .wrn-future-header-image {
+    display: block;
+    width: min(100%, 1240px);
+    max-width: 1240px;
+    height: auto;
+    max-height: 172px;
+    margin-inline: auto;
+    aspect-ratio: 1908 / 327;
+    object-fit: contain;
+    object-position: center;
+    border: 0;
+    border-radius: 0;
+    pointer-events: none;
+    user-select: none;
+    filter:
+        saturate(1.38)
+        brightness(1.2)
+        contrast(1.08)
+        drop-shadow(0 0 13px rgba(0, 240, 255, 0.72))
+        drop-shadow(0 0 17px rgba(255, 26, 74, 0.56));
+}
+
+header.wrn-future-header-ready h1,
+header.wrn-future-header-ready .wrn-brand-logo,
+header.wrn-future-header-ready img[src*="wrn-logo"],
+header.wrn-future-header-ready .app-version-inline {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+@media (max-width: 1100px) {
+    header .wrn-future-header-image {
+        width: min(100%, 980px);
+        max-width: 980px;
+        height: auto;
+        max-height: 148px;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        min-height: 64px;
+        padding-top: 0.35rem !important;
+        padding-bottom: 0.45rem !important;
+    }
+
+    header > div:first-child {
+        flex: 1 1 100%;
+    }
+
+    header .wrn-future-header-image {
+        width: min(100%, 720px);
+        height: auto;
+        max-height: 116px;
+        object-position: center;
+    }
+}
+
+@media (max-width: 520px) {
+    header .wrn-future-header-image {
+        width: 100%;
+        height: auto;
+        max-height: 94px;
+    }
+}
+
+@media (max-width: 380px) {
+    header .wrn-future-header-image {
+        width: 100%;
+        height: auto;
+        max-height: 82px;
+    }
+}

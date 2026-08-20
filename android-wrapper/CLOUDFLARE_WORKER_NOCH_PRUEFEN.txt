@@ -1,0 +1,11 @@
+Vor dem Play-Upload noch erforderlich:
+
+Die geprüfte Datei liegt jetzt unter:
+Cloudflare Worker/worker.js
+
+Den vorhandenen Code im Cloudflare-Editor vollständig durch diese Datei ersetzen
+und danach auf "Bereitstellen" klicken. Der Worker erlaubt anschließend sowohl
+die GitHub-Webseite als auch die Android-App.
+
+Wichtig: worker.js nicht in "Website code" oder das öffentliche GitHub-Repository
+kopieren. Secrets bleiben ausschließlich in den Cloudflare-Einstellungen.

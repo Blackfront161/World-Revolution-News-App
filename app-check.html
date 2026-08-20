@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
+<title>WRN 2.1.0 – App-Prüfung</title>
+<style>
+:root{color-scheme:dark;--bg:#080a11;--card:#121622;--input:#0c0f18;--text:#f4f6ff;--muted:#aeb6cc;--line:#3c4358;--cyan:#00dce8;--green:#00d596;--yellow:#f0a43c;--red:#ff3158}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;padding:max(1rem,env(safe-area-inset-top)) max(1rem,env(safe-area-inset-right)) max(1rem,env(safe-area-inset-bottom)) max(1rem,env(safe-area-inset-left));background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{width:min(980px,100%);margin:auto}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+h1{margin:0;color:var(--cyan);font-size:clamp(1.35rem,4vw,2rem)}
+header p{margin:.4rem 0 0;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:.55rem}
+button{min-height:44px;padding:.55rem .85rem;border:1px solid var(--line);border-radius:8px;background:var(--input);color:var(--text);font:inherit;font-weight:700;cursor:pointer}
+button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}
+.stat{padding:.75rem;border:1px solid var(--line);border-radius:9px;background:var(--card);text-align:center}
+.stat strong,.stat span{display:block}.stat strong{font-size:1.4rem}.stat span{margin-top:.15rem;color:var(--muted);font-size:.82rem}
+.stat.pass strong{color:var(--green)}.stat.warning strong{color:var(--yellow)}.stat.fail strong{color:var(--red)}.stat.total strong{color:var(--cyan)}
+#status{min-height:1.5em;margin:.4rem 0 1rem;color:var(--muted)}
+#results{display:grid;gap:.55rem}
+article{display:grid;grid-template-columns:32px minmax(0,1fr);gap:.7rem;padding:.72rem;border:1px solid var(--line);border-left-width:4px;border-radius:8px;background:var(--card)}
+article.pass{border-left-color:var(--green)}article.warning{border-left-color:var(--yellow)}article.fail{border-left-color:var(--red)}
+.icon{display:grid;width:30px;height:30px;place-items:center;border-radius:50%;background:var(--input);font-weight:900}
+article.pass .icon{color:var(--green)}article.warning .icon{color:var(--yellow)}article.fail .icon{color:var(--red)}
+article strong{overflow-wrap:anywhere}article p{margin:.25rem 0 0;color:var(--muted);overflow-wrap:anywhere}
+@media(max-width:640px){header{display:block}.actions{margin-top:.75rem}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.actions button{flex:1 1 100%}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div>
+    <h1>World Revolution News – App-Prüfung 2.1.0</h1>
+    <p>Rein lesende Prüfung. Es werden keine App- oder Browserdaten verändert.</p>
+  </div>
+  <div class="actions">
+    <button type="button" id="run">Erneut prüfen</button>
+    <button type="button" id="copy">Bericht kopieren</button>
+  </div>
+</header>
+<section class="summary" id="summary" aria-label="Zusammenfassung"></section>
+<div id="status" role="status" aria-live="polite">Prüfung läuft …</div>
+<section id="results" aria-label="Prüfergebnisse"></section>
+</main>
+<script src="./runtime-selftest.js"></script>
+<script>
+'use strict';
+
+const EXPECTED_VERSION = '2.1.0';
+const EXPECTED_BUILD_MARKER = '2.1.0-release';
+const EXPECTED_APP_CACHE = 'wrn-app-v2.1.0-r4';
+const EXPECTED_DATA_CACHE = 'wrn-data-v2.1.0-r2';
+const REQUIRED_FILES = [
+  'app-check.html',
+  'runtime-selftest.js',
+  'runtime-selftest.css',
+  'video-hub.js',
+  'video-hub.css',
+  'audio-tab-183.js',
+  'audio-tab-183.css',
+  'interface-block3.js',
+  'interface-block3.css',
+  'source-recovery-ui-183.js',
+  'source-recovery-ui-183.css',
+  'wrn-product-21.js',
+  'source-passport-21.js',
+  'verified-solidarity-actions.json',
+  'app-background.webp'
+];
+const DATA_TARGETS = [
+  ['Nachrichten','./news-feed.json'],
+  ['Termine','./events-feed.json'],
+  ['Original-Podcasts','./podcasts.json'],
+  ['Live-Radio','./radio-stations.json'],
+  ['Quellenstatus','./source-health.json'],
+  ['Podcastquellen','./podcast-sources.json']
+];
+
+let latestReport = null;
+const rows = [];
+
+const count = data => {
+  if (Array.isArray(data)) return data.length;
+  if (!data || typeof data !== 'object') return 0;
+  for (const key of ['items','entries','episodes','stations','sources']) {
+    if (Array.isArray(data[key])) return data[key].length;
+  }
+  return Object.keys(data).length;
+};
+
+function add(status, name, detail) {
+  rows.push({status,name,detail:String(detail ?? '')});
+}
+
+const networkStatus = () => navigator.onLine === false ? 'warning' : 'fail';
+
+async function fetchText(url) {
+  const separator = url.includes('?') ? '&' : '?';
+  const response = await fetch(
+    `${url}${separator}release_test=${Date.now()}`,
+    {cache:'no-store'}
+  );
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.text();
+}
+
+async function fetchJson(url) {
+  return JSON.parse(await fetchText(url));
+}
+
+function parseReleaseConfig(source) {
+  const configBlock = source.slice(
+    Math.max(0, source.indexOf('window.WRN_CONFIG'))
+  );
+  const version = configBlock.match(/version:\s*WRN_RELEASE_CHANNEL\s*===\s*['"]production['"]\s*\?\s*['"]([^'"]+)/)?.[1] || '';
+  const build = configBlock.match(/build:\s*WRN_RELEASE_CHANNEL\s*===\s*['"]production['"]\s*\?\s*['"]([^'"]+)/)?.[1] || '';
+  return Object.freeze({version,build});
+}
+
+async function runChecks() {
+  rows.length = 0;
+  const startedAt = new Date().toISOString();
+  document.getElementById('status').textContent = 'Prüfung läuft …';
+
+  add(
+    window.WRNRuntimeSelfTest?.expectedVersion === EXPECTED_VERSION ? 'pass' : 'fail',
+    'Runtime-Selbsttest ausführbar',
+    window.WRNRuntimeSelfTest?.expectedVersion || 'Modul nicht geladen'
+  );
+
+  let configSource = '';
+  try {
+    configSource = await fetchText('./news-app-2-config.js');
+    const WRN_CONFIG = parseReleaseConfig(configSource);
+    add(
+      WRN_CONFIG.version === EXPECTED_VERSION ? 'pass' : 'fail',
+      `WRN_CONFIG.version === ${EXPECTED_VERSION}`,
+      WRN_CONFIG.version || 'Version fehlt'
+    );
+    add(
+      WRN_CONFIG.build.includes(EXPECTED_BUILD_MARKER) ? 'pass' : 'fail',
+      'Produktions-Buildkennung',
+      WRN_CONFIG.build || 'Build fehlt'
+    );
+  } catch (error) {
+    add(networkStatus(),'Release-Konfiguration',error.message);
+  }
+
+  let indexSource = '';
+  try {
+    indexSource = await fetchText('./index.html');
+    add(
+      indexSource.includes("media-src 'self' blob: https:") ? 'pass' : 'fail',
+      'Externe Medien nur nach Nutzeraktion',
+      indexSource.includes("media-src 'self' blob: https:")
+        ? 'Audio/Video ist erlaubt; die Oberfläche startet nichts automatisch.'
+        : 'media-src-Regel fehlt'
+    );
+    add(
+      indexSource.includes('https://revolution-proxy.paghklo.workers.dev') ? 'pass' : 'fail',
+      'Produktions-Worker in connect-src',
+      indexSource.includes('https://revolution-proxy.paghklo.workers.dev')
+        ? 'vorhanden'
+        : 'fehlt'
+    );
+    add(
+      indexSource.includes("object-src 'none'") ? 'pass' : 'fail',
+      "CSP object-src 'none'",
+      indexSource.includes("object-src 'none'") ? 'vorhanden' : 'fehlt'
+    );
+  } catch (error) {
+    add(networkStatus(),'Content Security Policy',error.message);
+  }
+
+  let workerSource = '';
+  try {
+    workerSource = await fetchText('./service-worker.js');
+    add(
+      workerSource.includes(EXPECTED_APP_CACHE) ? 'pass' : 'fail',
+      'Service-Worker-App-Cache 2.1.0',
+      EXPECTED_APP_CACHE
+    );
+    add(
+      workerSource.includes(EXPECTED_DATA_CACHE) ? 'pass' : 'fail',
+      'Service-Worker-Daten-Cache 2.1.0',
+      EXPECTED_DATA_CACHE
+    );
+    add(
+      workerSource.includes("'./runtime-selftest.js'") ? 'pass' : 'fail',
+      'Runtime-Selbsttest im App-Shell',
+      workerSource.includes("'./runtime-selftest.js'") ? 'vorhanden' : 'fehlt'
+    );
+  } catch (error) {
+    add(networkStatus(),'Service Worker',error.message);
+  }
+
+  try {
+    const manifest = await fetchJson('./manifest.json');
+    const valid = manifest.name === 'World Revolution News'
+      && Boolean(manifest.start_url)
+      && Array.isArray(manifest.icons)
+      && manifest.icons.some(icon => icon?.src === 'icon.svg');
+    add(
+      valid ? 'pass' : 'fail',
+      'manifest.json',
+      valid ? `${manifest.name} · ${manifest.start_url}` : 'Pflichtwerte fehlen'
+    );
+  } catch (error) {
+    add(networkStatus(),'manifest.json',error.message);
+  }
+
+  for (const file of REQUIRED_FILES) {
+    try {
+      await fetchText(`./${file}`);
+      add(
+        !workerSource || workerSource.includes(`'./${file}'`) ? 'pass' : 'fail',
+        `Statische Datei: ${file}`,
+        !workerSource || workerSource.includes(`'./${file}'`)
+          ? 'erreichbar und im App-Shell'
+          : 'erreichbar, aber nicht im App-Shell'
+      );
+    } catch (error) {
+      add(networkStatus(),`Statische Datei: ${file}`,error.message);
+    }
+  }
+
+  for (const [name,url] of DATA_TARGETS) {
+    try {
+      const data = await fetchJson(url);
+      const total = count(data);
+      add(total > 0 ? 'pass' : 'warning',name,`${total} Einträge`);
+    } catch (error) {
+      add(networkStatus(),name,error.message);
+    }
+  }
+
+  const counts = {
+    pass: rows.filter(row => row.status === 'pass').length,
+    warning: rows.filter(row => row.status === 'warning').length,
+    fail: rows.filter(row => row.status === 'fail').length,
+    total: rows.length
+  };
+  latestReport = {
+    app:'World Revolution News',
+    expectedVersion:EXPECTED_VERSION,
+    startedAt,
+    completedAt:new Date().toISOString(),
+    online:navigator.onLine,
+    counts,
+    results:[...rows]
+  };
+  render();
+}
+
+function render() {
+  const summary = document.getElementById('summary');
+  const results = document.getElementById('results');
+  summary.textContent = '';
+  results.textContent = '';
+  for (const [key,label] of [
+    ['pass','Bestanden'],['warning','Hinweise'],['fail','Fehler'],['total','Gesamt']
+  ]) {
+    const item = document.createElement('div');
+    item.className = `stat ${key}`;
+    const value = document.createElement('strong');
+    value.textContent = latestReport.counts[key];
+    const caption = document.createElement('span');
+    caption.textContent = label;
+    item.append(value,caption);
+    summary.appendChild(item);
+  }
+  latestReport.results.forEach(row => {
+    const article = document.createElement('article');
+    article.className = row.status;
+    const icon = document.createElement('span');
+    icon.className = 'icon';
+    icon.setAttribute('aria-hidden','true');
+    icon.textContent = row.status === 'pass' ? '✓' : row.status === 'warning' ? '!' : '×';
+    const content = document.createElement('div');
+    const name = document.createElement('strong');
+    name.textContent = row.name;
+    const detail = document.createElement('p');
+    detail.textContent = row.detail;
+    content.append(name,detail);
+    article.append(icon,content);
+    results.appendChild(article);
+  });
+  document.getElementById('status').textContent =
+    navigator.onLine === false
+      ? 'Offline: Netzwerkprobleme wurden als Hinweise gewertet.'
+      : `Geprüft: ${new Date().toLocaleString()}`;
+}
+
+async function copyReport() {
+  const status = document.getElementById('status');
+  try {
+    await navigator.clipboard.writeText(JSON.stringify(latestReport || {},null,2));
+    status.textContent = 'Bericht kopiert.';
+  } catch {
+    status.textContent = 'Bericht konnte nicht kopiert werden.';
+  }
+}
+
+document.getElementById('run').addEventListener('click',runChecks);
+document.getElementById('copy').addEventListener('click',copyReport);
+void runChecks();
+</script>
+</body>
+</html>

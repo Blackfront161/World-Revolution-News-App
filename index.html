@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>World Revolution News</title>
+  <meta name="theme-color" content="#05080b">
+  <meta name="description" content="Unabhängige, mehrsprachige Nachrichten, Termine, Audio- und Videoquellen zu sozialen Bewegungen weltweit.">
+  <meta name="application-name" content="World Revolution News">
+  <meta name="robots" content="index,follow">
+  <meta name="referrer" content="no-referrer">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="World Revolution News">
+  <meta property="og:title" content="World Revolution News">
+  <meta property="og:description" content="Unabhängige, mehrsprachige Nachrichten und Medien zu sozialen Bewegungen weltweit.">
+  <meta property="og:url" content="https://solinaridao.com/">
+  <meta property="og:image" content="https://solinaridao.com/solinaridao-header-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="World Revolution News">
+  <meta name="twitter:description" content="Unabhängige, mehrsprachige Nachrichten und Medien zu sozialen Bewegungen weltweit.">
+  <meta name="twitter:image" content="https://solinaridao.com/solinaridao-header-logo.png">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://blackfront161.github.io https://raw.githubusercontent.com https://wrn-translation-cache.paghklo.workers.dev https://revolution-proxy.paghklo.workers.dev; media-src 'self' blob: https:; worker-src 'self'; manifest-src 'self'; frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com https://kolektiva.media; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="canonical" href="https://solinaridao.com/">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="news-app-2.css?release=43">
+  <link rel="stylesheet" href="news-app-2-release.css?release=5">
+  <link rel="stylesheet" href="prisoner-solidarity.css?release=2">
+  <link rel="stylesheet" href="zine-designer.css?release=5">
+  <link rel="stylesheet" href="source-verification.css?release=1">
+  <link rel="stylesheet" href="editorial-review-ui.css?release=1">
+  <link rel="stylesheet" href="news-app-2-website.css?release=5">
+</head>
+<body>
+  <a class="skip-link" href="#next-main">Zum Inhalt springen</a>
+
+  <header class="next-header">
+    <div class="next-header__inner">
+      <button class="brand" id="next-brand-link" type="button" data-website-open aria-label="Projektwebseite öffnen">
+        <span class="brand__logo">
+          <img src="solinaridao-header-mark-filled.png" alt="Solinaridao" width="1254" height="1068">
+          <span class="brand__subtitle"><span class="brand__subtitle-text">WORLD REVOLUTION NEWS</span></span>
+        </span>
+      </button>
+
+      <div class="header-actions">
+        <button class="website-button" id="next-website-link" type="button" data-website-open aria-label="Projektwebseite öffnen">
+          <span class="website-button__icon" aria-hidden="true">◎</span>
+          <span class="website-button__label" id="next-website-link-label">SOLINARIDAO.COM</span>
+          <span class="website-button__short" aria-hidden="true">WEB</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+        <button class="icon-button menu-button" id="next-menu-toggle" type="button" aria-label="Menü öffnen" aria-haspopup="dialog">
+          <span aria-hidden="true">☰</span>
+        </button>
+        <button class="icon-button" id="next-search-toggle" type="button" aria-label="Suche öffnen" aria-expanded="false">
+          <span aria-hidden="true">⌕</span>
+        </button>
+        <label class="language-control">
+          <span class="sr-only" data-i18n="language">Sprache</span>
+          <select id="next-language" aria-label="Sprache">
+            <option value="de">DE</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+            <option value="it">IT</option>
+            <option value="pt">PT</option>
+            <option value="ru">RU</option>
+            <option value="el">EL</option>
+            <option value="tr">TR</option>
+          </select>
+        </label>
+        <a class="classic-link" href="classic.html" data-i18n="classic">Bisherige App</a>
+      </div>
+    </div>
+
+    <nav class="bottom-nav" aria-label="Hauptnavigation">
+      <button type="button" class="active" data-view-target="home" aria-current="page">
+        <span aria-hidden="true">⌂</span><span data-i18n="home">Start</span>
+      </button>
+      <button type="button" data-view-target="following">
+        <span class="following-star" aria-hidden="true">★</span><span data-i18n="following">Für mich</span>
+      </button>
+      <button type="button" data-view-target="discover">
+        <span aria-hidden="true">◎</span><span data-i18n="discover">Entdecken</span>
+      </button>
+      <button type="button" data-view-target="media">
+        <span aria-hidden="true">▶</span><span data-i18n="media">Medien</span>
+      </button>
+      <button type="button" data-view-target="saved">
+        <span aria-hidden="true">▰</span><span data-i18n="saved">Gespeichert</span>
+      </button>
+    </nav>
+
+    <form class="global-search" id="next-global-search" role="search" hidden>
+      <label for="next-search-input" data-i18n="searchLabel">Nachrichten durchsuchen</label>
+      <div>
+        <input id="next-search-input" type="search" autocomplete="off" inputmode="search" placeholder="Titel, Quelle oder Thema">
+        <button type="submit" data-i18n="search">Suchen</button>
+      </div>
+    </form>
+  </header>
+
+  <main id="next-main" tabindex="-1">
+    <div class="loading-state" id="next-loading" role="status">
+      <span class="red-black-star loading-star" aria-hidden="true">★</span>
+      <strong data-i18n="loading">Nachrichten werden geladen …</strong>
+    </div>
+    <div id="next-view"></div>
+    <div class="sr-only" id="next-view-announcer" role="status" aria-live="polite" aria-atomic="true"></div>
+  </main>
+
+  <dialog class="article-dialog" id="next-article-dialog" aria-labelledby="next-article-title">
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <button type="button" class="dialog-close article-back-button" data-dialog-close aria-label="Artikel schließen">
+          <span aria-hidden="true">←</span><span data-i18n="back">Zurück</span>
+        </button>
+        <div>
+          <small id="next-article-source"></small>
+          <strong id="next-article-title"></strong>
+        </div>
+        <button type="button" class="save-icon" id="next-dialog-save" aria-label="Artikel speichern" aria-pressed="false">☆</button>
+      </header>
+      <article id="next-article-content"></article>
+      <footer class="dialog-actions" aria-label="Artikelaktionen">
+        <button type="button" id="next-dialog-summary" data-action="article-summary"><span aria-hidden="true">✦</span> <span data-i18n="summary">Zusammenfassen</span></button>
+        <button type="button" id="next-dialog-translate" data-action="article-translate"><span class="red-black-star" aria-hidden="true">★</span> <span data-i18n="translate">Übersetzen</span></button>
+        <button type="button" id="next-dialog-podcast" data-action="article-podcast"><span aria-hidden="true">🎧</span> <span data-i18n="podcast">Podcast</span></button>
+        <button type="button" id="next-dialog-zine" data-action="article-zine"><span aria-hidden="true">▤</span> <span data-i18n="zineAdd">Zum Zine</span></button>
+        <button type="button" id="next-dialog-read" data-action="article-read"><span aria-hidden="true">○</span> <span data-i18n="markRead">Als gelesen</span></button>
+        <button type="button" id="next-dialog-share" data-action="article-share"><span aria-hidden="true">↗</span> <span data-i18n="share">Teilen</span></button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="preferences-dialog" id="next-preferences-dialog" aria-labelledby="next-preferences-title">
+    <form method="dialog">
+      <header>
+        <div>
+          <small data-i18n="personalLocal">Nur auf diesem Gerät gespeichert</small>
+          <h2 id="next-preferences-title" data-i18n="personalize">Deinen Feed einrichten</h2>
+        </div>
+        <button value="cancel" aria-label="Schließen">×</button>
+      </header>
+      <section>
+        <h3 data-i18n="chooseRegions">Regionen auswählen</h3>
+        <div class="choice-grid" id="next-region-choices"></div>
+      </section>
+      <section>
+        <h3 data-i18n="chooseTopics">Themen auswählen</h3>
+        <div class="choice-grid choice-grid--topics" id="next-topic-choices"></div>
+      </section>
+      <section>
+        <h3 data-i18n="chooseSources">Quellen priorisieren oder ausblenden</h3>
+        <input class="preference-search" id="next-preference-source-search" type="search" data-i18n-placeholder="sourcePreferenceSearch" placeholder="Quellen durchsuchen">
+        <div class="source-preference-list" id="next-source-choices"></div>
+      </section>
+      <section>
+        <h3 data-i18n="followPrisoners">Politische Gefangene beobachten</h3>
+        <div class="choice-grid" id="next-prisoner-choices"></div>
+      </section>
+      <section>
+        <h3 data-i18n="followDevelopments">Entwicklungen beobachten</h3>
+        <div class="choice-grid choice-grid--developments" id="next-development-choices"></div>
+      </section>
+      <section class="preference-selects">
+        <label>
+          <span data-i18n="feedLanguage">App-Sprache</span>
+          <select id="next-preference-language">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="ru">Русский</option>
+            <option value="el">Ελληνικά</option>
+            <option value="tr">Türkçe</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend data-i18n="preferredBriefingLength">Standardlänge des Briefings</legend>
+          <div class="briefing-lengths preference-briefing-lengths" id="next-preference-briefing-length"></div>
+        </fieldset>
+      </section>
+      <footer>
+        <button class="secondary-button" value="cancel" data-i18n="cancel">Abbrechen</button>
+        <button class="primary-button" value="save" id="next-save-preferences" data-i18n="savePreferences">Auswahl speichern</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <dialog class="menu-dialog" id="next-menu-dialog" aria-labelledby="next-menu-title">
+    <div class="menu-shell">
+      <header>
+        <div>
+          <h2 id="next-menu-title">Menü</h2>
+        </div>
+        <button type="button" class="dialog-close" data-menu-close aria-label="Schließen">×</button>
+      </header>
+      <section class="menu-settings" aria-labelledby="next-menu-display-title">
+        <h3 id="next-menu-display-title">Darstellung</h3>
+        <label>
+          <span id="next-menu-theme-label">Farbdarstellung</span>
+          <select id="next-menu-theme">
+            <option value="dark">Dunkel</option>
+            <option value="oled">OLED-Schwarz</option>
+            <option value="soft">Gedämpft</option>
+            <option value="pink">Pink</option>
+            <option value="light">Hell</option>
+            <option value="system">Systemeinstellung</option>
+            <option value="contrast">Hoher Kontrast</option>
+          </select>
+        </label>
+        <label>
+          <span id="next-menu-font-label">Schriftgröße</span>
+          <select id="next-menu-font-size">
+            <option value="normal">Normal</option>
+            <option value="large">Groß</option>
+            <option value="xlarge">Sehr groß</option>
+            <option value="200">200 %</option>
+          </select>
+        </label>
+        <label>
+          <span id="next-menu-density-label">Artikeldarstellung</span>
+          <select id="next-menu-density">
+            <option value="compact">Kompakt</option>
+            <option value="standard">Standard</option>
+            <option value="spacious">Großzügig</option>
+          </select>
+        </label>
+      </section>
+      <section class="menu-project" aria-labelledby="next-menu-project-title">
+        <h3 id="next-menu-project-title">Projekt</h3>
+        <button class="menu-donate" type="button" id="next-menu-donate">
+          <span aria-hidden="true">♥</span>
+          <span id="next-menu-donate-label">Spenden</span>
+        </button>
+        <button type="button" id="next-menu-share-app" data-action="share-app">
+          <span aria-hidden="true">↗</span>
+          <span id="next-menu-share-app-label">App weiterempfehlen</span>
+        </button>
+        <button type="button" id="next-menu-about" data-action="about">Über das Projekt</button>
+        <button type="button" id="next-menu-feedback" data-action="feedback-open">Feedback &amp; neue Quellen</button>
+        <button type="button" id="next-menu-notifications" data-action="notifications-open">Benachrichtigungen</button>
+        <a href="privacy.html" id="next-menu-privacy">Datenschutz</a>
+        <button type="button" id="next-menu-data" data-action="data-control">Lokale Daten</button>
+      </section>
+      <section class="menu-updates" aria-labelledby="next-menu-updates-title">
+        <h3 id="next-menu-updates-title">Letzte Aktualisierungen</h3>
+        <ul id="next-menu-updates-list"></ul>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog class="donation-dialog" id="next-donation-dialog" aria-labelledby="next-donation-title">
+    <div class="donation-shell">
+      <header>
+        <div>
+          <small id="next-donation-kicker">Freiwillige Unterstützung</small>
+          <h2 id="next-donation-title">Projekt unterstützen</h2>
+        </div>
+        <button type="button" class="dialog-close" data-donation-close aria-label="Schließen">×</button>
+      </header>
+      <div class="donation-content">
+        <p id="next-donation-body">Dieses unabhängige Projekt kann freiwillig unterstützt werden.</p>
+        <p class="donation-warning" id="next-donation-warning">Wenn du fortfährst, verlässt du die App und öffnest PayPal.</p>
+      </div>
+      <footer>
+        <button class="secondary-button" type="button" data-donation-close id="next-donation-cancel">Abbrechen</button>
+        <a class="primary-button" href="https://www.paypal.com/ncp/payment/6FSV9FEN4X7VS" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" id="next-donation-paypal">Weiter zu PayPal</a>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="donation-dialog website-dialog" id="next-website-dialog" aria-labelledby="next-website-dialog-title" aria-describedby="next-website-dialog-body">
+    <div class="donation-shell website-shell">
+      <header>
+        <div>
+          <small id="next-website-dialog-kicker">Unabhängig &amp; werbefrei</small>
+          <h2 id="next-website-dialog-title">Projektwebseite öffnen</h2>
+        </div>
+        <button type="button" class="dialog-close" data-website-close aria-label="Schließen">×</button>
+      </header>
+      <div class="donation-content website-dialog-content">
+        <p id="next-website-dialog-body">World Revolution News ist unabhängig, zeigt keine Werbung und verwendet kein Werbetracking. Damit das Projekt weiterlaufen kann, ist es auf Spenden angewiesen.</p>
+        <p class="donation-warning" id="next-website-dialog-warning">Wenn du fortfährst, verlässt du die App und öffnest solinaridao.com.</p>
+      </div>
+      <footer>
+        <button class="secondary-button" type="button" data-website-close id="next-website-dialog-cancel">Abbrechen</button>
+        <a class="primary-button" href="https://solinaridao.com/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" id="next-website-dialog-continue">Zur Webseite</a>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog class="feedback-dialog" id="next-feedback-dialog" aria-labelledby="next-feedback-title" aria-describedby="next-feedback-intro">
+    <form class="feedback-shell" id="next-feedback-form">
+      <header>
+        <div>
+          <small data-i18n="feedbackKicker">Direkter Kontakt</small>
+          <h2 id="next-feedback-title" data-i18n="feedbackTitle">Feedback schreiben</h2>
+        </div>
+        <button type="button" class="dialog-close" data-feedback-close aria-label="Schließen">×</button>
+      </header>
+      <div class="feedback-content">
+        <p id="next-feedback-intro" data-i18n="feedbackIntro">Schreibe uns Feedback, melde einen Fehler oder schlage eine neue Quelle vor.</p>
+        <label>
+          <span data-i18n="feedbackType">Worum geht es?</span>
+          <select id="next-feedback-type">
+            <option value="feedback" data-i18n="feedbackGeneral">Allgemeines Feedback</option>
+            <option value="source" data-i18n="feedbackSource">Neue Quelle vorschlagen</option>
+            <option value="correction" data-i18n="feedbackCorrection">Korrektur melden</option>
+            <option value="technical" data-i18n="feedbackTechnical">Technisches Problem</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="feedbackReply">E-Mail für eine Antwort (optional)</span>
+          <input id="next-feedback-email" type="email" inputmode="email" autocomplete="email" maxlength="254" placeholder="name@example.org">
+        </label>
+        <label>
+          <span data-i18n="feedbackMessage">Deine Nachricht</span>
+          <textarea id="next-feedback-message" required maxlength="4000" rows="8" data-i18n-placeholder="feedbackPlaceholder" placeholder="Was möchtest du uns mitteilen?"></textarea>
+        </label>
+        <label class="feedback-honeypot" aria-hidden="true">
+          <span>Website</span>
+          <input id="next-feedback-website" type="text" tabindex="-1" autocomplete="off">
+        </label>
+        <small class="feedback-privacy" data-i18n="feedbackPrivacy">Die Nachricht wird verschlüsselt übertragen, nicht in der App gespeichert und im privaten Projekt-Postfach spätestens nach 90 Tagen gelöscht. Es werden keine Analyse- oder Werbedaten angehängt.</small>
+        <p class="feedback-status" id="next-feedback-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <footer>
+        <button class="secondary-button" type="button" data-action="feedback-copy" data-i18n="copyText">Text kopieren</button>
+        <button class="secondary-button" type="button" data-action="feedback-email" data-i18n="openEmail">E-Mail-Alternative</button>
+        <button class="primary-button" id="next-feedback-submit" type="submit" data-i18n="sendFeedback">Direkt senden</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <dialog class="briefing-dialog" id="next-briefing-dialog" aria-labelledby="next-briefing-title">
+    <div class="briefing-shell">
+      <header>
+        <div>
+          <small id="next-briefing-step-label">Schritt 1 von 3</small>
+          <h2 id="next-briefing-title" data-i18n="briefing">In 5 Minuten</h2>
+        </div>
+        <button type="button" class="dialog-close" data-briefing-close aria-label="Schließen">×</button>
+      </header>
+      <div id="next-briefing-content"></div>
+      <footer id="next-briefing-actions"></footer>
+    </div>
+  </dialog>
+
+  <dialog class="development-review-dialog" id="next-development-review-dialog" aria-labelledby="next-development-review-title">
+    <div class="development-review-shell">
+      <header>
+        <div>
+          <small id="next-development-review-kicker">Lokales Prüfprotokoll</small>
+          <h2 id="next-development-review-title">Redaktionelle Prüfliste</h2>
+        </div>
+        <button type="button" class="dialog-close" data-review-close aria-label="Schließen">×</button>
+      </header>
+      <div id="next-development-review-content" class="development-review-content"></div>
+      <footer id="next-development-review-actions"></footer>
+    </div>
+  </dialog>
+
+  <dialog class="release-dialog" id="next-release-dialog" aria-labelledby="next-release-title">
+    <div class="release-shell">
+      <header>
+        <div>
+          <small id="next-release-kicker">World Revolution News</small>
+          <h2 id="next-release-title">Information</h2>
+        </div>
+        <button type="button" class="dialog-close" data-release-close aria-label="Schließen">×</button>
+      </header>
+      <div id="next-release-content" class="release-content"></div>
+      <footer id="next-release-actions"></footer>
+    </div>
+  </dialog>
+  <input id="next-data-import-file" type="file" accept="application/json,.json" hidden>
+
+  <section id="global-media-bar" class="global-media-bar" hidden aria-live="polite">
+    <div class="global-media-info">
+      <strong id="global-media-title">Audio</strong>
+      <span id="global-media-subtitle"></span>
+      <span id="global-media-status"></span>
+    </div>
+    <button type="button" class="global-media-close" id="global-media-close" aria-label="Audioplayer schließen">×</button>
+    <div class="global-media-progress" id="global-media-progress-row">
+      <input type="range" id="global-media-progress" min="0" max="1" step="0.1" value="0" disabled aria-label="Audioposition">
+      <span id="global-media-time">0:00 / 0:00</span>
+    </div>
+    <div class="global-media-controls">
+      <button type="button" class="btn-media-skip" id="global-media-back" aria-label="15 Sekunden zurück">↶ 15s</button>
+      <button type="button" class="btn-media-play" id="global-media-play">▶ Play</button>
+      <button type="button" class="btn-media-pause" id="global-media-pause">❚❚ Pause</button>
+      <button type="button" class="btn-media-skip" id="global-media-forward" aria-label="30 Sekunden vor">30s ↷</button>
+      <button type="button" class="btn-media-stop" id="global-media-stop">■ Stop</button>
+    </div>
+    <div class="global-media-tools" aria-label="Audio-Einstellungen">
+      <label class="global-media-tool" id="global-media-speed-field">
+        <span id="global-media-speed-label">Tempo</span>
+        <select id="global-media-speed">
+          <option value="0.75">0,75×</option>
+          <option value="1" selected>1,0×</option>
+          <option value="1.25">1,25×</option>
+          <option value="1.5">1,5×</option>
+          <option value="1.75">1,75×</option>
+          <option value="2">2,0×</option>
+        </select>
+      </label>
+      <label class="global-media-tool">
+        <span id="global-media-sleep-label">Schlaf-Timer</span>
+        <select id="global-media-sleep">
+          <option value="off" selected>Aus</option>
+          <option value="15">15 Min.</option>
+          <option value="30">30 Min.</option>
+          <option value="45">45 Min.</option>
+          <option value="60">60 Min.</option>
+          <option value="end">Am Ende der Folge</option>
+        </select>
+      </label>
+      <span id="global-media-sleep-status" class="global-media-sleep-status" aria-live="polite"></span>
+    </div>
+  </section>
+  <audio id="global-media-player" preload="none" playsinline></audio>
+
+  <div class="feedback-overlay" id="fb-overlay" hidden></div>
+  <div class="toast" id="next-toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="news-app-2-config.js?release=14"></script>
+  <script src="native-device-bridge.js?release=2"></script>
+  <script src="offline-db.js?release=2"></script>
+  <script src="local-diagnostics.js?release=1"></script>
+  <script src="news-card-copy.js?release=1"></script>
+  <script src="news-app-2-core.js?release=4"></script>
+  <script src="news-app-2-specialty.js?release=3"></script>
+  <script src="wrn-product-21.js?release=1"></script>
+  <script src="news-app-2-media.js?release=2"></script>
+  <script src="news-app-2-release.js?release=2"></script>
+  <script src="article-summary-core.js?release=1"></script>
+  <script src="shared-translation-client.js?release=3"></script>
+  <script src="stories-core.js?release=3"></script>
+  <script src="lexicon-tab.js?release=6"></script>
+  <script src="prisoner-solidarity.js?release=4"></script>
+  <script src="zine-designer.js?release=3"></script>
+  <script src="media-player.js?release=4"></script>
+  <script src="audio-tools.js?release=1"></script>
+  <script src="source-passport-21.js?release=1"></script>
+  <script src="solidarity-network-21.js?release=6"></script>
+  <script src="source-profiles.js?release=1"></script>
+  <script src="source-verification.js?release=1"></script>
+  <script src="source-health-freshness.js?release=1"></script>
+  <script src="editorial-review-ui.js?release=1"></script>
+  <script src="language-origin.js?release=1"></script>
+  <script src="news-app-2.js?release=48"></script>
+</body>
+</html>

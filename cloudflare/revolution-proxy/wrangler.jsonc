@@ -1,0 +1,87 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "revolution-proxy",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
+  "triggers": {
+    "crons": ["23 * * * *"]
+  },
+  "vars": {
+    "ALLOWED_ORIGINS": "https://blackfront161.github.io,https://solinaridao.com,https://www.solinaridao.com,https://localhost,http://localhost,http://127.0.0.1,http://127.0.0.1:8765,capacitor://localhost,ionic://localhost",
+    "WRN_TRANSLATION_ENABLED": "true",
+    "WRN_PODCAST_GENERATION_ENABLED": "true",
+    "TRANSLATION_DAILY_LIMIT": "950",
+    "FEEDBACK_DAILY_LIMIT": "250",
+    "AZURE_MONTHLY_CHAR_LIMIT": "475000",
+    "PODCAST_STORAGE_LIMIT_BYTES": "9663676416",
+    "FEEDBACK_TO_ADDRESS": "worldrevnews@brief.li"
+  },
+  // ADMIN_TOKEN ausschließlich mit `wrangler secret put ADMIN_TOKEN` setzen.
+  // Es schützt die private Feedback-Inbox und den Betriebsstatus.
+  // Für Feedback- und Verbrauchswarnungen nach dem Email-Onboarding ergänzen:
+  // "send_email": [{
+  //   "name": "FEEDBACK_EMAIL",
+  //   "destination_address": "worldrevnews@brief.li"
+  // }]
+  // Außerdem FEEDBACK_FROM_ADDRESS auf eine Absenderadresse der eigenen,
+  // für Cloudflare Email Routing aktivierten Domain setzen.
+  // Für freiwilligen News-Push zusätzlich als Secrets setzen:
+  // VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY und VAPID_SUBJECT.
+  "r2_buckets": [
+    {
+      "binding": "PODCAST_BUCKET",
+      "bucket_name": "worldrevnews-podcasts"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "QUOTA_COORDINATOR",
+        "class_name": "QuotaCoordinator"
+      },
+      {
+        "name": "PUSH_GATEWAY",
+        "class_name": "PushGateway"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "quota-v1",
+      "new_sqlite_classes": ["QuotaCoordinator"]
+    },
+    {
+      "tag": "push-v1",
+      "new_sqlite_classes": ["PushGateway"]
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "TRANSLATION_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 20, "period": 60 }
+    },
+    {
+      "name": "PODCAST_RATE_LIMITER",
+      "namespace_id": "1002",
+      "simple": { "limit": 2, "period": 60 }
+    },
+    {
+      "name": "FEEDBACK_RATE_LIMITER",
+      "namespace_id": "1003",
+      "simple": { "limit": 3, "period": 60 }
+    },
+    {
+      "name": "PUSH_RATE_LIMITER",
+      "namespace_id": "1004",
+      "simple": { "limit": 6, "period": 60 }
+    }
+  ]
+}

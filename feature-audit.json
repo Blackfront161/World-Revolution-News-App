@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-11T11:42:11.790825+00:00",
+  "version": "1.8.2",
+  "summary": {
+    "groups": 11,
+    "groupNames": [
+      "core",
+      "navigation_and_reading",
+      "privacy_and_storage",
+      "news_and_sources",
+      "briefing_and_summaries",
+      "developments_and_timelines",
+      "audio",
+      "video_hub",
+      "translation",
+      "zine_and_flyers",
+      "diagnostics_and_ci"
+    ],
+    "criticalMissing": 0,
+    "optionalMissing": 0,
+    "criticalMissingFiles": [],
+    "optionalMissingFiles": []
+  },
+  "groups": {
+    "core": {
+      "total": 10,
+      "present": 10,
+      "missing": 0,
+      "files": [
+        {
+          "file": "index.html",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 24943,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "app.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 142090,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "config.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 28666,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "service-worker.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 14667,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "manifest.json",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 461,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "styles.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 62986,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "app-background.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 1413,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "app-background.webp",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 81416,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "wrn-header.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 3150,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "wrn-header.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 2516,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "navigation_and_reading": {
+      "total": 6,
+      "present": 6,
+      "missing": 0,
+      "files": [
+        {
+          "file": "release-1.5-nav.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 58503,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "release-1.5-nav.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 41874,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "reading-state.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 16006,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "accessibility.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 12179,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "typography.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 5704,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "typography.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 4416,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "privacy_and_storage": {
+      "total": 6,
+      "present": 6,
+      "missing": 0,
+      "files": [
+        {
+          "file": "wrn-origin-safety.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 12410,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "offline-db.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 11189,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "data-control.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 14765,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "status-center.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 16486,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "recovery.html",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 3350,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "mobile-repair.html",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 5623,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "news_and_sources": {
+      "total": 8,
+      "present": 8,
+      "missing": 0,
+      "files": [
+        {
+          "file": "aggregate.py",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 148999,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "check_news_sources.py",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 36026,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "build_source_catalog.py",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 5386,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "source-verification.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 42307,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "source-verification.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 6258,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "multilingual-source-registry.json",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 4839,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "build_sources_registry.py",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 24597,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "source-filters.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 9811,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "briefing_and_summaries": {
+      "total": 9,
+      "present": 9,
+      "missing": 0,
+      "files": [
+        {
+          "file": "briefing.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 66507,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "briefing.css",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 16097,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "briefing-loader.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 8482,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "briefing-2.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 18926,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "briefing-2.css",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 3323,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "briefing-loader.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 1025,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "article-summary-core.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 8486,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "article-summary.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 16048,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "article-summary.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 6258,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "developments_and_timelines": {
+      "total": 4,
+      "present": 4,
+      "missing": 0,
+      "files": [
+        {
+          "file": "stories-core.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 24531,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "stories-timeline.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 31856,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "stories-timeline.css",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 9256,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "tests/test_stories_core.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 6702,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        }
+      ]
+    },
+    "audio": {
+      "total": 9,
+      "present": 9,
+      "missing": 0,
+      "files": [
+        {
+          "file": "aggregate_podcasts.py",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 26614,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "check_audio_sources.py",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 12746,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "audio-region-core.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 4026,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "audio-tab.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 26149,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "audio-tab.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 7034,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "audio-reliability.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 8787,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "audio-reliability.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 2482,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "radio-stations.json",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 13373,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "podcasts.json",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 1948800,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "video_hub": {
+      "total": 2,
+      "present": 2,
+      "missing": 0,
+      "files": [
+        {
+          "file": "video-hub.js",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 24669,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "video-hub.css",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 3199,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "translation": {
+      "total": 5,
+      "present": 5,
+      "missing": 0,
+      "files": [
+        {
+          "file": "shared-translation-client.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 6215,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "shared-translation-status.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 6204,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "shared-translation-status.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 696,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "translation-dialog-l10n.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 10059,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "wrn-i18n.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 58654,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "zine_and_flyers": {
+      "total": 2,
+      "present": 2,
+      "missing": 0,
+      "files": [
+        {
+          "file": "zine-designer.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 19620,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "zine-designer.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 6881,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    },
+    "diagnostics_and_ci": {
+      "total": 8,
+      "present": 8,
+      "missing": 0,
+      "files": [
+        {
+          "file": "feature_audit.py",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 7368,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "language_source_audit.py",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 6179,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "validate_release_1722.py",
+          "critical": true,
+          "present": true,
+          "sizeBytes": 8396,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "runtime-selftest.js",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 35094,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "runtime-selftest.css",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 7229,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        },
+        {
+          "file": "origin-safety-report.json",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 3909,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "csp-audit.json",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 618,
+          "loadedByConfig": false,
+          "cachedByServiceWorker": false
+        },
+        {
+          "file": "sources-registry.json",
+          "critical": false,
+          "present": true,
+          "sizeBytes": 308244,
+          "loadedByConfig": true,
+          "cachedByServiceWorker": true
+        }
+      ]
+    }
+  }
+}

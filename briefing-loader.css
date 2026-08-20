@@ -1,0 +1,45 @@
+/* World Revolution News 1.7.15 – Briefing-Ladezustand */
+
+.wrn-briefing-loading-panel {
+    margin: 0.75rem 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-cyan, #00f0ff);
+    border-radius: 7px;
+    background: #0c0e15;
+    color: var(--text-main, #fff);
+}
+
+.wrn-briefing-loading-panel[hidden] {
+    display: none !important;
+}
+
+.wrn-briefing-loading-panel p {
+    margin: 0;
+    color: var(--color-cyan, #00f0ff);
+    font-weight: 700;
+}
+
+.wrn-briefing-loading-panel[data-state="error"] {
+    border-color: #ff3158;
+}
+
+.wrn-briefing-loading-panel[data-state="error"] p {
+    color: #ff6b84;
+}
+
+.wrn-briefing-loading-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 0.8rem;
+}
+
+.wrn-briefing-loading-actions button {
+    border: 1px solid var(--color-cyan, #00f0ff);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--color-cyan, #00f0ff);
+    padding: 0.6rem 0.8rem;
+    font: inherit;
+    cursor: pointer;
+}

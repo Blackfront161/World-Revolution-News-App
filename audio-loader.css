@@ -1,0 +1,5 @@
+/* World Revolution News 1.7.17 – Audio loader */
+.wrn-audio-loading {
+    color: var(--color-cyan, #00e5ef);
+    min-height: 44px;
+}

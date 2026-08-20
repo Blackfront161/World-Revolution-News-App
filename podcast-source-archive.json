@@ -1,0 +1,60 @@
+[
+  {
+    "name": "B(A)D News – A-Radio Network",
+    "reason": "Keine verlässliche eigenständige Feedquelle. Die Sendereihe wird stattdessen aus A-Radio Wien und The Final Straw Radio erkannt.",
+    "source": {
+      "id": "bad-news",
+      "name": "B(A)D News – A-Radio Network",
+      "homepage": "https://www.a-radio-network.org/",
+      "feedUrls": [
+        "https://www.a-radio-network.org/feed/",
+        "https://www.a-radio-network.org/category/bad-news/feed/"
+      ],
+      "language": "en",
+      "country": "INT",
+      "region": "International",
+      "license": "Originalquelle",
+      "sourceKind": "independent-podcast",
+      "priority": 80,
+      "topics": [
+        "Anarchismus",
+        "International"
+      ],
+      "categories": [
+        "Anarchism",
+        "International"
+      ],
+      "pageAudioFallback": true
+    }
+  },
+  {
+    "name": "Common Voices",
+    "reason": "Die ursprünglich gemeinte Quelle ist nicht eindeutig identifizierbar. Ein gleichnamiger, aber thematisch nicht passender Feed wird nicht automatisch importiert.",
+    "source": {
+      "id": "common-voices",
+      "name": "Common Voices",
+      "homepage": "https://commonvoices.radiocorax.de/",
+      "feedUrls": [
+        "https://commonvoices.radiocorax.de/feed/",
+        "https://commonvoices.radiocorax.de/feed/podcast/"
+      ],
+      "language": "multi",
+      "country": "DE",
+      "region": "DACH",
+      "license": "Originalquelle",
+      "sourceKind": "free-radio",
+      "priority": 85,
+      "topics": [
+        "Migration",
+        "Mehrsprachig",
+        "Freie Radios"
+      ],
+      "categories": [
+        "Migration",
+        "Multilingual",
+        "Freie Radios"
+      ],
+      "pageAudioFallback": true
+    }
+  }
+]

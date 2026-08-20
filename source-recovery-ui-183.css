@@ -1,0 +1,77 @@
+/* World Revolution News 1.8.3 – source recovery states */
+
+.wrn-source-recovery-controls-183 {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--border-read, #3b414b);
+  border-radius: 7px;
+  background: var(--bg-card, #0d0d14);
+  background: color-mix(in srgb, var(--bg-card, #0d0d14) 88%, transparent);
+}
+
+.wrn-source-recovery-controls-183 > label {
+  display: grid;
+  grid-template-columns: minmax(8rem, auto) minmax(12rem, 1fr);
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--color-cyan, #00f0ff);
+  font-weight: 700;
+}
+
+.wrn-source-recovery-controls-183 select {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--color-cyan, #00f0ff);
+  border-radius: 5px;
+  background: var(--bg-input, #11111a);
+  color: var(--text-main, #fff);
+  font: inherit;
+}
+
+.wrn-source-recovery-summary-183 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.wrn-source-recovery-summary-183 span {
+  padding: 0.25rem 0.45rem;
+  border: 1px solid var(--border-read, #444);
+  border-radius: 999px;
+  color: var(--text-muted, #b3b3cc);
+  font-size: 0.72rem;
+}
+
+.wrn-source-row[data-recovery-state="available"] .wrn-source-badge,
+.wrn-source-row[data-recovery-state="recovered"] .wrn-source-badge {
+  border-color: var(--color-green, #00ff66);
+  color: var(--color-green, #00ff66);
+}
+
+.wrn-source-row[data-recovery-state="temporarily_restricted"] .wrn-source-badge,
+.wrn-source-row[data-recovery-state="website_reachable_feed_broken"] .wrn-source-badge,
+.wrn-source-row[data-recovery-state="feed_broken_unconfirmed"] .wrn-source-badge {
+  border-color: var(--color-accent, #ff9900);
+  color: var(--color-accent, #ff9900);
+}
+
+.wrn-source-row[data-recovery-state="permanently_broken"] .wrn-source-badge {
+  border-color: #ff3158;
+  color: #ff3158;
+}
+
+.wrn-source-row [data-recovery-candidate] {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--color-green, #00ff66);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 620px) {
+  .wrn-source-recovery-controls-183 > label {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}

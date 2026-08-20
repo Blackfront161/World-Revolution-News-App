@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 2,
+  "version": "1.8.2",
+  "policy": {
+    "keepExistingSources": true,
+    "excluded": [
+      "Democracy Now!"
+    ],
+    "fullTextImport": false,
+    "defaultImport": [
+      "title",
+      "author",
+      "date",
+      "shortExcerpt",
+      "source",
+      "language",
+      "categories",
+      "originalUrl"
+    ]
+  },
+  "sources": [
+    {
+      "name": "Freedom News",
+      "kind": "news",
+      "languages": [
+        "en"
+      ],
+      "status": "already_present",
+      "action": "enrich_only"
+    },
+    {
+      "name": "Unicorn Riot",
+      "kind": "news",
+      "languages": [
+        "en"
+      ],
+      "status": "already_present",
+      "action": "enrich_only"
+    },
+    {
+      "name": "Labor Notes",
+      "kind": "news",
+      "languages": [
+        "en"
+      ],
+      "status": "already_present",
+      "action": "enrich_only"
+    },
+    {
+      "name": "Graswurzelrevolution",
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "de"
+      ],
+      "homepage": "https://www.graswurzel.net/gwr/",
+      "feedUrl": "https://www.graswurzel.net/gwr/feed/",
+      "categories": [
+        "Europe",
+        "No War",
+        "Anarchism"
+      ],
+      "status": "approved"
+    },
+    {
+      "name": "Agência Pública",
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "pt"
+      ],
+      "homepage": "https://apublica.org/",
+      "feedUrl": "https://apublica.org/feed/",
+      "categories": [
+        "Latin America",
+        "Environment",
+        "Investigative"
+      ],
+      "status": "approved"
+    },
+    {
+      "name": "Transnational Institute",
+      "kind": "structured_news",
+      "adapter": "structured_page",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "homepage": "https://www.tni.org/en",
+      "alternate": "https://www.tni.org/es",
+      "categories": [
+        "Global",
+        "Anticapitalism",
+        "No War",
+        "Climate Justice",
+        "Labor Struggles"
+      ],
+      "status": "adapter_prepared",
+      "note": "No stable RSS endpoint confirmed; metadata adapter required."
+    },
+    {
+      "name": "Radio Dreyeckland",
+      "kind": "radio_and_podcast",
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "ar",
+        "und"
+      ],
+      "homepage": "https://rdl.de/",
+      "streamUrl": "http://www.rdl.de:8000/rdl.m3u",
+      "podcastFeed": "https://rdl.de/podcasts/all",
+      "newsflashFeed": "https://rdl.de/podcasts/all/newsflash",
+      "status": "approved_audio",
+      "contentPolicy": "metadata_and_links_only"
+    },
+    {
+      "name": "Bianet Türkçe",
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "tr"
+      ],
+      "homepage": "https://bianet.org/",
+      "feedUrl": "https://bianet.org/rss/bianet",
+      "categories": [
+        "Europe",
+        "Labor Struggles",
+        "Antiracism",
+        "Queer-Feminism"
+      ],
+      "originCountry": "Türkiye",
+      "originCountryCode": "TR",
+      "originRegion": "Türkiye",
+      "status": "approved",
+      "addedIn": "1.8.2"
+    },
+    {
+      "name": "Evrensel",
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "tr"
+      ],
+      "homepage": "https://www.evrensel.net/",
+      "feedUrl": "https://www.evrensel.net/rss/?do=rss",
+      "categories": [
+        "Europe",
+        "Labor Struggles",
+        "Anticapitalism",
+        "No War"
+      ],
+      "originCountry": "Türkiye",
+      "originCountryCode": "TR",
+      "originRegion": "Türkiye",
+      "status": "approved",
+      "addedIn": "1.8.2"
+    },
+    {
+      "name": "Bianet Kurdî",
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "ku"
+      ],
+      "homepage": "https://bianet.org/kurdi",
+      "feedUrl": "https://bianet.org/rss/kurdi",
+      "categories": [
+        "Europe",
+        "Anticolonialism",
+        "Antiracism",
+        "No Borders"
+      ],
+      "originCountry": "Türkiye",
+      "originCountryCode": "TR",
+      "originRegion": "Türkiye",
+      "status": "approved",
+      "addedIn": "1.8.2"
+    },
+    {
+      "name": "Pressin Kurdî",
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "ku"
+      ],
+      "homepage": "https://pressin.info/kurdi",
+      "feedUrl": "https://pressin.info/kurdi/rss/latest-posts",
+      "categories": [
+        "Asia",
+        "Anticolonialism",
+        "Anti-Imperialism"
+      ],
+      "originCountry": "Iraq",
+      "originCountryCode": "IQ",
+      "originRegion": "Kurdistan Region",
+      "status": "approved",
+      "addedIn": "1.8.2"
+    }
+  ]
+}

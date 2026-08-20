@@ -1,0 +1,12 @@
+[
+  {
+    "name": "B(A)D News – A-Radio Network",
+    "sourceNames": [
+      "The Final Straw Radio",
+      "A-Radio Wien",
+      "Anarchistisches Radio"
+    ],
+    "titlePattern": "(?i)B\\s*\\(?A\\)?\\s*D\\s*News|BAD\\s*News",
+    "homepage": "https://www.a-radio-network.org/"
+  }
+]

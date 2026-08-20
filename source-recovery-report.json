@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-11T20:13:27.689721+00:00",
+  "policy": {
+    "automaticDeletion": false,
+    "permanentFailureThreshold": 4,
+    "permanentFailureMinimumHours": 12,
+    "crossDomainReplacementRequiresReview": true
+  },
+  "summary": {
+    "available": 216,
+    "recovered": 0,
+    "temporarily_restricted": 40,
+    "website_reachable_feed_broken": 3,
+    "feed_broken_unconfirmed": 0,
+    "permanently_broken": 0,
+    "not_checked": 9,
+    "website_available_without_feed": 2
+  },
+  "replacementCandidates": [
+    {
+      "name": "Alarm Phone",
+      "configuredUrl": "",
+      "replacementUrl": "https://alarmphone.org/en/feed/",
+      "checkedAt": "2026-08-04T15:05:20.303031+00:00"
+    },
+    {
+      "name": "Black Rose (Anti-Colonial)",
+      "configuredUrl": "https://blackrosefed.org/category/anti-colonialism/feed/",
+      "replacementUrl": "https://www.blackrosefed.org/feed/",
+      "checkedAt": "2026-08-04T15:07:10.413761+00:00"
+    },
+    {
+      "name": "Black Rose (Anti-Racism)",
+      "configuredUrl": "https://blackrosefed.org/category/anti-racism/feed/",
+      "replacementUrl": "https://www.blackrosefed.org/feed/",
+      "checkedAt": "2026-08-04T15:07:12.191185+00:00"
+    },
+    {
+      "name": "Black Rose (Feminism)",
+      "configuredUrl": "https://blackrosefed.org/category/anarcha-feminism/feed/",
+      "replacementUrl": "https://www.blackrosefed.org/feed/",
+      "checkedAt": "2026-08-04T15:07:15.137964+00:00"
+    },
+    {
+      "name": "Bulatlat (Indigenous)",
+      "configuredUrl": "",
+      "replacementUrl": "https://www.bulatlat.com/feed/",
+      "checkedAt": "2026-08-04T15:07:18.413878+00:00"
+    },
+    {
+      "name": "Direkte Aktion (DE)",
+      "configuredUrl": "",
+      "replacementUrl": "https://direkteaktion.org/feed/",
+      "checkedAt": "2026-08-04T15:07:49.699097+00:00"
+    },
+    {
+      "name": "Disability Debrief",
+      "configuredUrl": "",
+      "replacementUrl": "https://www.disabilitydebrief.org/rss/",
+      "checkedAt": "2026-08-04T15:07:49.746905+00:00"
+    },
+    {
+      "name": "Fajfa (Antifa)",
+      "configuredUrl": "https://fajfa.noblogs.org/feed/",
+      "replacementUrl": "https://noblogs.org/comments/feed/",
+      "checkedAt": "2026-08-04T15:07:55.651183+00:00"
+    },
+    {
+      "name": "Fauda",
+      "configuredUrl": "https://fauda.noblogs.org/feed/",
+      "replacementUrl": "https://noblogs.org/comments/feed/",
+      "checkedAt": "2026-08-04T15:07:55.808844+00:00"
+    },
+    {
+      "name": "Housing Action",
+      "configuredUrl": "https://housingaction.noblogs.org/feed/",
+      "replacementUrl": "https://noblogs.org/comments/feed/",
+      "checkedAt": "2026-08-04T15:07:57.309435+00:00"
+    },
+    {
+      "name": "Kontrapolis",
+      "configuredUrl": "",
+      "replacementUrl": "https://kontrapolis.info/feed/",
+      "checkedAt": "2026-08-04T15:08:02.942277+00:00"
+    },
+    {
+      "name": "Nawaat (Tunisia)",
+      "configuredUrl": "",
+      "replacementUrl": "https://nawaat.org/feed/",
+      "checkedAt": "2026-08-04T15:08:07.115002+00:00"
+    },
+    {
+      "name": "Organise Magazine",
+      "configuredUrl": "",
+      "replacementUrl": "https://organisemagazine.org.uk/feed/",
+      "checkedAt": "2026-08-04T15:08:08.129101+00:00"
+    },
+    {
+      "name": "Paris-Luttes (Agenda FR)",
+      "configuredUrl": "https://paris-luttes.info/spip.php?page=backend-agenda",
+      "replacementUrl": "https://paris-luttes.info/spip.php?page=backend",
+      "checkedAt": "2026-08-04T15:08:08.853376+00:00"
+    },
+    {
+      "name": "Pramen (BY)",
+      "configuredUrl": "https://pramen.io/feed/",
+      "replacementUrl": "https://pramen.io/ru/2016/10/rss-ad-v-facebook-ad-v-vkontakte-ad-v-twitter-novoe-na-sajte-o-nas-viki-kontakty-sozdat-material-glavnaya-novosti-protesty-anarhisty-antifa-sr-26-10-2016-22-38-redaktsiya-tam-sejchas-vse-kak-v-filme-u/feed/",
+      "checkedAt": "2026-08-04T15:08:09.758278+00:00"
+    },
+    {
+      "name": "Radical Socialist (India)",
+      "configuredUrl": "http://www.radicalsocialist.in/index.php?format=feed&type=rss",
+      "replacementUrl": "http://radicalsocialist.in/feed/",
+      "checkedAt": "2026-08-04T15:08:10.899943+00:00"
+    },
+    {
+      "name": "Radio Dreyeckland",
+      "configuredUrl": "",
+      "replacementUrl": "https://rdl.de/rss.xml",
+      "checkedAt": "2026-08-04T15:08:11.474617+00:00"
+    },
+    {
+      "name": "The Final Straw Radio",
+      "configuredUrl": "",
+      "replacementUrl": "https://thefinalstrawradio.noblogs.org/feed/",
+      "checkedAt": "2026-08-04T15:08:17.882420+00:00"
+    },
+    {
+      "name": "Wildcat",
+      "configuredUrl": "https://www.wildcat-www.de/wildcat.rss",
+      "replacementUrl": "http://www.wildcat-www.de/feed.rss",
+      "checkedAt": "2026-08-04T15:08:21.371033+00:00"
+    },
+    {
+      "name": "ZNet (Global)",
+      "configuredUrl": "",
+      "replacementUrl": "https://znetwork.org/feed/",
+      "checkedAt": "2026-08-04T15:08:22.642923+00:00"
+    }
+  ],
+  "manualReview": [
+    {
+      "name": "DDoSecrets",
+      "url": "https://ddosecrets.com/api.php?action=featuredfeed&feed=rss",
+      "state": "website_reachable_feed_broken",
+      "failureKind": "website_feed_broken",
+      "consecutiveFailures": 3,
+      "replacementUrl": "",
+      "finalUrl": "https://ddosecrets.com/api.php?action=featuredfeed&feed=rss"
+    },
+    {
+      "name": "Lausan (HK)",
+      "url": "https://lausan.hk/feed/",
+      "state": "website_reachable_feed_broken",
+      "failureKind": "website_feed_broken",
+      "consecutiveFailures": 3,
+      "replacementUrl": "",
+      "finalUrl": "https://lausan.hk/feed/"
+    },
+    {
+      "name": "Zwangsräumung Verhindern (Berlin)",
+      "url": "https://zwangsraeumungverhindern.org/feed/",
+      "state": "website_reachable_feed_broken",
+      "failureKind": "website_feed_broken",
+      "consecutiveFailures": 3,
+      "replacementUrl": "",
+      "finalUrl": "https://zwangsraeumungverhindern.org/feed/"
+    }
+  ]
+}

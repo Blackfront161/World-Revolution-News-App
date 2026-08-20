@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-20T19:46:37.033768+00:00",
+  "version": "1.7.22",
+  "status": "ok",
+  "checkOnly": false,
+  "requiredConnectEndpoints": [
+    "https://wrn-translation-cache.paghklo.workers.dev",
+    "https://revolution-proxy.paghklo.workers.dev"
+  ],
+  "declarationCount": 1,
+  "changedFiles": [
+    "index.html"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "declarations": 1,
+      "changed": true,
+      "addedEndpoints": [
+        "https://wrn-translation-cache.paghklo.workers.dev"
+      ],
+      "requiredEndpointPresent": true
+    }
+  ]
+}

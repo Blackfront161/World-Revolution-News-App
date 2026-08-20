@@ -1,0 +1,138 @@
+/* World Revolution News 1.7.18 – Wiederherstellungs-Audit */
+
+.wrn-recovery-audit-open {
+    width: 100%;
+    min-height: 44px;
+    grid-column: 1 / -1;
+    border: 1px solid #00d596;
+    border-radius: 5px;
+    background: transparent;
+    color: #55e8bd;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wrn-recovery-audit-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 13380;
+    background: rgba(0, 0, 0, 0.86);
+}
+
+.wrn-recovery-audit-dialog {
+    position: fixed;
+    z-index: 13390;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(95vw, 880px);
+    max-height: 91vh;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #00d596;
+    border-radius: 8px;
+    background: #080b10;
+    color: #fff;
+}
+
+.wrn-recovery-audit-overlay[hidden],
+.wrn-recovery-audit-dialog[hidden] {
+    display: none !important;
+}
+
+.wrn-recovery-audit-dialog > header {
+    position: sticky;
+    top: -1rem;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: -1rem -1rem 0.85rem;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #31433d;
+    background: #080b10;
+}
+
+.wrn-recovery-audit-dialog h2 {
+    margin: 0;
+    color: #55e8bd;
+}
+
+.wrn-recovery-audit-dialog > header button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ff3158;
+    border-radius: 6px;
+    background: transparent;
+    color: #ff3158;
+    font-size: 1.35rem;
+}
+
+.wrn-recovery-audit-group {
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    border: 1px solid #303b3a;
+    border-radius: 7px;
+    background: #10151a;
+}
+
+.wrn-recovery-audit-group h3 {
+    margin: 0;
+    color: #55e8bd;
+    text-transform: capitalize;
+}
+
+.wrn-recovery-audit-group > p {
+    margin: 0.25rem 0 0.65rem;
+    color: #aeb8b5;
+}
+
+.wrn-recovery-audit-group article {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 0.35rem 0.6rem;
+    align-items: center;
+    padding: 0.52rem 0;
+    border-top: 1px solid #28312f;
+}
+
+.wrn-recovery-audit-group article[data-state="missing"] {
+    color: #ff7088;
+}
+
+.wrn-recovery-audit-group article[data-state="present_lazy"] {
+    color: #f0c36a;
+}
+
+.wrn-recovery-audit-group article span,
+.wrn-recovery-audit-group article small {
+    font-size: 0.72rem;
+}
+
+.wrn-recovery-audit-dialog > footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.wrn-recovery-audit-dialog > footer button {
+    min-height: 44px;
+    border: 1px solid #00d596;
+    border-radius: 5px;
+    background: transparent;
+    color: #55e8bd;
+}
+
+@media (max-width: 560px) {
+    .wrn-recovery-audit-group article {
+        grid-template-columns: 1fr auto;
+    }
+
+    .wrn-recovery-audit-group article small {
+        grid-column: 1 / -1;
+    }
+}

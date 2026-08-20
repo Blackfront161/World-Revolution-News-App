@@ -1,0 +1,201 @@
+/* World Revolution News 1.7.5 – App-Selbsttest */
+
+.wrn-diagnostics-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147482500;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  background: rgba(0,0,0,0.74);
+  backdrop-filter: blur(5px);
+}
+
+.wrn-diagnostics-dialog {
+  width: min(920px, 100%);
+  max-height: min(90vh, 900px);
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid rgba(0,240,255,0.34);
+  border-radius: 15px;
+  background: rgba(7,10,16,0.98);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.62);
+  color: #f5f7fb;
+}
+
+.wrn-diagnostics-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  position: sticky;
+  top: -14px;
+  z-index: 2;
+  margin: -14px -14px 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  background: rgba(7,10,16,0.98);
+}
+
+.wrn-diagnostics-head h2 {
+  margin: 0;
+  color: #00f0ff;
+  font-size: 1.1rem;
+}
+
+.wrn-diagnostics-close {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255,51,79,0.45);
+  border-radius: 9px;
+  background: transparent;
+  color: #ff334f;
+  font-size: 1.2rem;
+}
+
+.wrn-diagnostics-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.wrn-diagnostics-summary > div {
+  padding: 8px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.035);
+  text-align: center;
+}
+
+.wrn-diagnostics-summary strong,
+.wrn-diagnostics-summary span {
+  display: block;
+}
+
+.wrn-diagnostics-summary strong {
+  color: #00f0ff;
+  font-size: 1.05rem;
+}
+
+.wrn-diagnostics-summary span {
+  margin-top: 3px;
+  color: rgba(255,255,255,0.62);
+  font-size: 0.66rem;
+}
+
+.wrn-diagnostics-list {
+  display: grid;
+  gap: 6px;
+}
+
+.wrn-diagnostics-row {
+  display: grid;
+  grid-template-columns: 24px minmax(150px, 0.9fr) minmax(180px, 1.7fr);
+  gap: 8px;
+  align-items: start;
+  padding: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 9px;
+  background: rgba(255,255,255,0.025);
+}
+
+.wrn-diagnostics-row.pass .wrn-diagnostics-icon { color: #39ff88; }
+.wrn-diagnostics-row.warn .wrn-diagnostics-icon { color: #ffd166; }
+.wrn-diagnostics-row.fail .wrn-diagnostics-icon { color: #ff334f; }
+
+.wrn-diagnostics-name {
+  font-weight: 780;
+}
+
+.wrn-diagnostics-value {
+  color: rgba(255,255,255,0.70);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.wrn-diagnostics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  position: sticky;
+  bottom: -14px;
+  margin: 12px -14px -14px;
+  padding: 11px 14px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  background: rgba(7,10,16,0.98);
+}
+
+.wrn-diagnostics-actions button {
+  min-height: 32px;
+  padding: 5px 9px;
+  border: 1px solid rgba(0,240,255,0.34);
+  border-radius: 8px;
+  background: rgba(0,240,255,0.06);
+  color: #00f0ff;
+  font-weight: 760;
+}
+
+.wrn-diagnostics-actions .danger {
+  border-color: rgba(255,51,79,0.45);
+  color: #ff6680;
+}
+
+.wrn-diagnostics-note,
+.wrn-diagnostics-status {
+  margin: 8px 0;
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.wrn-diagnostics-status {
+  color: #39ff88;
+  min-height: 1em;
+}
+
+html.wrn-safe-mode::before {
+  content: 'SAFE';
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  z-index: 2147482000;
+  padding: 3px 6px;
+  border: 1px solid #ffd166;
+  border-radius: 7px;
+  background: #0a0b10;
+  color: #ffd166;
+  font: 800 0.60rem/1 var(--wrn-font-ui, system-ui);
+}
+
+body.theme-light .wrn-diagnostics-dialog,
+body.theme-soft .wrn-diagnostics-dialog {
+  background: rgba(250,251,254,0.98);
+  color: #151820;
+}
+
+body.theme-light .wrn-diagnostics-head,
+body.theme-light .wrn-diagnostics-actions,
+body.theme-soft .wrn-diagnostics-head,
+body.theme-soft .wrn-diagnostics-actions {
+  background: rgba(250,251,254,0.98);
+}
+
+body.theme-light .wrn-diagnostics-value,
+body.theme-soft .wrn-diagnostics-value {
+  color: #414652;
+}
+
+@media (max-width: 720px) {
+  .wrn-diagnostics-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wrn-diagnostics-row {
+    grid-template-columns: 22px 1fr;
+  }
+
+  .wrn-diagnostics-value {
+    grid-column: 2;
+  }
+}

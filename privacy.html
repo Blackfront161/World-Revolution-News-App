@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index,follow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'sha256-QVTkmHRW2NXWxlte1EpPstTwqnGN4FOBHnJ0Av5BP0A='; script-src 'sha256-bTDyVMrrbZThJtCeQy3OlsMEzXiJ+5h3SivT90hH6vw='; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>Privacy · World Revolution News</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #05070a;
+      --surface: #0b1117;
+      --text: #f5f7fa;
+      --muted: #aeb8c4;
+      --cyan: #00e6f0;
+      --red: #ff3158;
+      --border: #24313c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: max(18px, env(safe-area-inset-top)) 18px max(28px, env(safe-area-inset-bottom));
+      background:
+        radial-gradient(circle at 0 0, rgba(0, 230, 240, 0.08), transparent 35rem),
+        radial-gradient(circle at 100% 0, rgba(255, 49, 88, 0.07), transparent 32rem),
+        var(--background);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(780px, 100%);
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      margin-bottom: 22px;
+      padding: 10px 15px;
+      border: 1px solid var(--red);
+      border-radius: 14px;
+      color: var(--text);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      background: rgba(255, 49, 88, 0.13);
+      outline: 3px solid rgba(0, 230, 240, 0.34);
+      outline-offset: 3px;
+    }
+
+    article {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(11, 17, 23, 0.94);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+    }
+
+    header,
+    section,
+    footer { padding: clamp(20px, 4vw, 34px); }
+
+    header { border-bottom: 1px solid var(--border); }
+    section + section { border-top: 1px solid var(--border); }
+
+    h1,
+    h2 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      color: var(--cyan);
+      font-size: clamp(2rem, 6vw, 3.25rem);
+    }
+
+    h2 {
+      font-size: clamp(1.15rem, 3vw, 1.45rem);
+    }
+
+    p { margin: 0; color: var(--muted); }
+    p + p { margin-top: 14px; }
+
+    ul {
+      margin: 16px 0 0;
+      padding-left: 1.35rem;
+      color: var(--muted);
+    }
+
+    li + li { margin-top: 9px; }
+    strong { color: var(--text); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    @media (max-width: 520px) {
+      body { padding-inline: 12px; }
+      header, section, footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" id="privacy-back" href="index.html" data-i18n="back">← Back to the app</a>
+
+    <article>
+      <header>
+        <h1 data-i18n="title">Privacy</h1>
+        <p data-i18n="updated">Last updated: August 5, 2026</p>
+        <p data-i18n="intro">World Revolution News is designed for use without an account, personalised advertising or user profiling.</p>
+      </header>
+
+      <section>
+        <h2 data-i18n="localTitle">1. Data stored on your device</h2>
+        <p data-i18n="localBody">Your settings and personal lists normally remain in the local storage of your device.</p>
+        <ul>
+          <li data-i18n="localAccount"><strong>No account:</strong> Registration is not required.</li>
+          <li data-i18n="localLists"><strong>Local lists:</strong> Saved and read articles, followed topics, regions and sources, Zine selections and preferences are stored locally.</li>
+          <li data-i18n="localControl"><strong>Your control:</strong> Local data can be exported or deleted from the app menu.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 data-i18n="servicesTitle">2. Translation, summaries and audio</h2>
+        <p data-i18n="servicesBody">Only after you select a corresponding function may the required article text and settings be sent to the protected project infrastructure and the service used for that function. Automatic results are labelled and the original remains accessible.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="providersTitle">3. Service providers and technical protection</h2>
+        <p data-i18n="providersBody">Cloudflare delivers the project service and processes request metadata, including the IP address, to prevent misuse. The app code does not store the IP address. Requested translations may be processed by Google Gemini or Hugging Face; natural speech by Microsoft Azure Speech. Generated audio is kept in private Cloudflare R2 storage and delivered through the project service.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="feedbackTitle">4. Feedback</h2>
+        <p data-i18n="feedbackBody">When you send feedback directly, its category, app language, message, optional reply email and a random reference are kept in a private inbox for no more than 90 days. No reading history or advertising identifier is attached. Quote the reference in a deletion request if you want an earlier removal.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="retentionTitle">5. Retention and deletion</h2>
+        <p data-i18n="retentionBody">Local data remains until you delete it. Generated podcasts are automatically removed after 30 days and direct feedback after no more than 90 days. A push subscription remains until notifications are turned off. Technical request metadata is subject to the provider’s limited security and operations retention.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="externalTitle">6. External sources and media</h2>
+        <p data-i18n="externalBody">Opening an original article, map, route, stream, video, PayPal or email leaves the app or contacts an external provider. External media do not start automatically. The provider’s own privacy rules then apply.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="permissionsTitle">7. Device permissions</h2>
+        <p data-i18n="permissionsBody">Functions such as nearby events use a permission only after your request. Location-based filtering is calculated on the device; World Revolution News does not create a central movement profile.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="notificationsTitle">8. Optional notifications</h2>
+        <p data-i18n="notificationsBody">Only after your explicit permission is a pseudonymous push endpoint stored with the selected topics, regions, quiet hours, language and time zone. No reading history or article text is sent. Turning notifications off removes the subscription.</p>
+      </section>
+
+      <section>
+        <h2 data-i18n="changesTitle">9. Changes and contact</h2>
+        <p data-i18n="changesBody">This notice is updated when relevant functions or services change. Questions, corrections and security reports can be sent to worldrevnews@brief.li.</p>
+      </section>
+
+      <footer data-i18n="footer">Independent project. No hidden advertising placement and no sale of personal data.</footer>
+    </article>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const LANGUAGE_KEY = 'wrn_system_lang';
+      const PRIVACY_COPY = {
+        de: {
+          pageTitle:'Datenschutz · World Revolution News', back:'← Zurück zur App', title:'Datenschutz', updated:'Zuletzt aktualisiert: 5. August 2026',
+          intro:'World Revolution News ist für die Nutzung ohne Konto, personalisierte Werbung oder Nutzer*innenprofile konzipiert.',
+          localTitle:'1. Auf deinem Gerät gespeicherte Daten', localBody:'Deine Einstellungen und persönlichen Listen bleiben normalerweise im lokalen Speicher deines Geräts.',
+          localAccount:'Kein Konto: Eine Registrierung ist nicht erforderlich.', localLists:'Lokale Listen: Gespeicherte und gelesene Artikel, gefolgte Themen, Regionen und Quellen, Zine-Auswahl und Einstellungen werden lokal gespeichert.', localControl:'Deine Kontrolle: Lokale Daten können im App-Menü exportiert oder gelöscht werden.',
+          servicesTitle:'2. Übersetzung, Zusammenfassungen und Audio', servicesBody:'Erst nachdem du eine entsprechende Funktion auswählst, können der dafür benötigte Artikeltext und die Einstellungen an die geschützte Projektinfrastruktur und den verwendeten Dienst gesendet werden. Automatische Ergebnisse sind gekennzeichnet; das Original bleibt erreichbar.',
+          providersTitle:'3. Dienstanbieter und technischer Schutz', providersBody:'Cloudflare liefert den Projektdienst aus und verarbeitet zum Schutz vor Missbrauch technische Anfragedaten einschließlich der IP-Adresse. Der App-Code speichert die IP-Adresse nicht. Angeforderte Übersetzungen können von Google Gemini oder Hugging Face verarbeitet werden; natürliche Sprachausgabe von Microsoft Azure Speech. Erzeugtes Audio liegt im privaten Cloudflare-R2-Speicher und wird über den Projektdienst ausgeliefert.',
+          feedbackTitle:'4. Feedback', feedbackBody:'Beim direkten Senden werden Kategorie, App-Sprache, Nachricht, eine freiwillige Antwortadresse und eine zufällige Referenz höchstens 90 Tage in einem privaten Postfach gespeichert. Leseverlauf und Werbe-ID werden nicht angehängt. Mit der Referenz kannst du eine frühere Löschung anfragen.',
+          retentionTitle:'5. Aufbewahrung und Löschung', retentionBody:'Lokale Daten bleiben bis zu deiner Löschung erhalten. Erzeugte Podcasts werden nach 30 Tagen und direktes Feedback spätestens nach 90 Tagen automatisch entfernt. Eine Push-Anmeldung bleibt bis zum Ausschalten der Benachrichtigungen bestehen. Für technische Anfragedaten gelten die begrenzten Sicherheits- und Betriebsfristen der Anbieter.',
+          externalTitle:'6. Externe Quellen und Medien', externalBody:'Beim Öffnen eines Originalartikels, einer Karte, Route, eines Streams, Videos, von PayPal oder E-Mail verlässt du die App oder kontaktierst einen externen Anbieter. Externe Medien starten nicht automatisch. Dann gelten die Datenschutzregeln des jeweiligen Anbieters.',
+          permissionsTitle:'7. Geräteberechtigungen', permissionsBody:'Funktionen wie Termine in der Nähe verwenden eine Berechtigung erst nach deiner Auswahl. Die ortsbezogene Filterung wird auf dem Gerät berechnet; World Revolution News erstellt kein zentrales Bewegungsprofil.',
+          notificationsTitle:'8. Freiwillige Benachrichtigungen', notificationsBody:'Erst nach deiner ausdrücklichen Erlaubnis wird eine pseudonyme Push-Adresse zusammen mit den gewählten Themen, Regionen, Ruhezeiten, Sprache und Zeitzone gespeichert. Leseverlauf und Artikeltexte werden nicht übertragen. Beim Ausschalten wird die Anmeldung entfernt.',
+          changesTitle:'9. Änderungen und Kontakt', changesBody:'Dieser Hinweis wird aktualisiert, wenn sich relevante Funktionen oder Dienste ändern. Fragen, Löschanfragen mit Feedback-Referenz, Korrekturen und Sicherheitsmeldungen kannst du an worldrevnews@brief.li senden.',
+          footer:'Unabhängiges Projekt. Keine versteckte Werbeplatzierung und kein Verkauf persönlicher Daten.'
+        },
+        en: {
+          pageTitle:'Privacy · World Revolution News', back:'← Back to the app', title:'Privacy', updated:'Last updated: August 5, 2026',
+          intro:'World Revolution News is designed for use without an account, personalised advertising or user profiling.',
+          localTitle:'1. Data stored on your device', localBody:'Your settings and personal lists normally remain in the local storage of your device.',
+          localAccount:'No account: Registration is not required.', localLists:'Local lists: Saved and read articles, followed topics, regions and sources, Zine selections and preferences are stored locally.', localControl:'Your control: Local data can be exported or deleted from the app menu.',
+          servicesTitle:'2. Translation, summaries and audio', servicesBody:'Only after you select a corresponding function may the required article text and settings be sent to the protected project infrastructure and the service used for that function. Automatic results are labelled and the original remains accessible.',
+          providersTitle:'3. Service providers and technical protection', providersBody:'Cloudflare delivers the project service and processes request metadata, including the IP address, to prevent misuse. The app code does not store the IP address. Requested translations may be processed by Google Gemini or Hugging Face; natural speech by Microsoft Azure Speech. Generated audio is kept in private Cloudflare R2 storage and delivered through the project service.',
+          feedbackTitle:'4. Feedback', feedbackBody:'When you send feedback directly, its category, app language, message, optional reply email and a random reference are kept in a private inbox for no more than 90 days. No reading history or advertising identifier is attached. Quote the reference in a deletion request if you want an earlier removal.',
+          retentionTitle:'5. Retention and deletion', retentionBody:'Local data remains until you delete it. Generated podcasts are automatically removed after 30 days and direct feedback after no more than 90 days. A push subscription remains until notifications are turned off. Technical request metadata is subject to the provider’s limited security and operations retention.',
+          externalTitle:'6. External sources and media', externalBody:'Opening an original article, map, route, stream, video, PayPal or email leaves the app or contacts an external provider. External media do not start automatically. The provider’s own privacy rules then apply.',
+          permissionsTitle:'7. Device permissions', permissionsBody:'Functions such as nearby events use a permission only after your request. Location-based filtering is calculated on the device; World Revolution News does not create a central movement profile.',
+          notificationsTitle:'8. Optional notifications', notificationsBody:'Only after your explicit permission is a pseudonymous push endpoint stored with the selected topics, regions, quiet hours, language and time zone. No reading history or article text is sent. Turning notifications off removes the subscription.',
+          changesTitle:'9. Changes and contact', changesBody:'This notice is updated when relevant functions or services change. Questions, deletion requests quoting a feedback reference, corrections and security reports can be sent to worldrevnews@brief.li.',
+          footer:'Independent project. No hidden advertising placement and no sale of personal data.'
+        },
+        es: {
+          pageTitle:'Privacidad · World Revolution News', back:'← Volver a la aplicación', title:'Privacidad', updated:'Última actualización: 5 de agosto de 2026',
+          intro:'World Revolution News está diseñada para utilizarse sin cuenta, publicidad personalizada ni perfiles de usuario.',
+          localTitle:'1. Datos guardados en tu dispositivo', localBody:'Tus ajustes y listas personales permanecen normalmente en el almacenamiento local del dispositivo.',
+          localAccount:'Sin cuenta: No es necesario registrarse.', localLists:'Listas locales: Los artículos guardados y leídos, los temas, regiones y fuentes seguidos, la selección del Zine y las preferencias se guardan localmente.', localControl:'Tu control: Puedes exportar o eliminar los datos locales desde el menú de la aplicación.',
+          servicesTitle:'2. Traducción, resúmenes y audio', servicesBody:'Solo después de elegir la función correspondiente, el texto del artículo y los ajustes necesarios pueden enviarse a la infraestructura protegida del proyecto y al servicio utilizado. Los resultados automáticos se identifican y el original sigue accesible.',
+          providersTitle:'3. Proveedores y protección técnica', providersBody:'Cloudflare presta el servicio del proyecto y procesa metadatos técnicos, incluida la dirección IP, para evitar abusos. El código de la aplicación no guarda la IP. Las traducciones solicitadas pueden ser procesadas por Google Gemini o Hugging Face; la voz natural por Microsoft Azure Speech. El audio generado se guarda en almacenamiento privado Cloudflare R2 y se entrega mediante el servicio del proyecto.',
+          feedbackTitle:'4. Comentarios', feedbackBody:'Al enviar un comentario directamente se guardan durante un máximo de 90 días su categoría, idioma de la aplicación, mensaje, correo de respuesta opcional y una referencia aleatoria. No se adjuntan el historial de lectura ni un identificador publicitario. Puedes solicitar antes la eliminación indicando la referencia.',
+          retentionTitle:'5. Conservación y eliminación', retentionBody:'Los datos locales permanecen hasta que los elimines. Los podcasts generados se borran automáticamente tras 30 días y los comentarios directos tras un máximo de 90 días. La suscripción push permanece hasta desactivar las notificaciones. Los metadatos técnicos se rigen por los plazos limitados de seguridad y operación de los proveedores.',
+          externalTitle:'6. Fuentes y medios externos', externalBody:'Al abrir un artículo original, mapa, ruta, emisión, vídeo, PayPal o correo electrónico, sales de la aplicación o contactas con un proveedor externo. Los medios externos no se inician automáticamente. Entonces se aplican las normas de privacidad de ese proveedor.',
+          permissionsTitle:'7. Permisos del dispositivo', permissionsBody:'Funciones como los eventos cercanos solo usan un permiso después de que lo solicites. El filtrado por ubicación se calcula en el dispositivo; World Revolution News no crea un perfil central de movimientos.',
+          notificationsTitle:'8. Notificaciones opcionales', notificationsBody:'Solo tras tu permiso explícito se guarda un destino push seudónimo con los temas, regiones, horas de silencio, idioma y zona horaria elegidos. No se envían el historial de lectura ni textos de artículos. Al desactivarlas se elimina la suscripción.',
+          changesTitle:'9. Cambios y contacto', changesBody:'Este aviso se actualiza cuando cambian funciones o servicios relevantes. Puedes enviar preguntas, solicitudes de eliminación con la referencia, correcciones y avisos de seguridad a worldrevnews@brief.li.',
+          footer:'Proyecto independiente. Sin publicidad oculta ni venta de datos personales.'
+        },
+        fr: {
+          pageTitle:'Confidentialité · World Revolution News', back:'← Retour à l’application', title:'Confidentialité', updated:'Dernière mise à jour : 5 août 2026',
+          intro:'World Revolution News est conçue pour être utilisée sans compte, publicité personnalisée ni profilage des utilisateurs et utilisatrices.',
+          localTitle:'1. Données enregistrées sur votre appareil', localBody:'Vos réglages et listes personnelles restent normalement dans le stockage local de votre appareil.',
+          localAccount:'Aucun compte : Aucune inscription n’est nécessaire.', localLists:'Listes locales : Les articles enregistrés et lus, les thèmes, régions et sources suivis, la sélection Zine et les préférences sont stockés localement.', localControl:'Votre contrôle : Les données locales peuvent être exportées ou supprimées depuis le menu de l’application.',
+          servicesTitle:'2. Traduction, résumés et audio', servicesBody:'Ce n’est qu’après votre sélection d’une fonction que le texte et les réglages nécessaires peuvent être transmis à l’infrastructure protégée du projet et au service utilisé. Les résultats automatiques sont signalés et l’original reste accessible.',
+          providersTitle:'3. Prestataires et protection technique', providersBody:'Cloudflare fournit le service du projet et traite des métadonnées techniques, dont l’adresse IP, afin de prévenir les abus. Le code de l’application ne conserve pas l’adresse IP. Les traductions demandées peuvent être traitées par Google Gemini ou Hugging Face ; la voix naturelle par Microsoft Azure Speech. L’audio généré est conservé dans un stockage Cloudflare R2 privé et fourni par le service du projet.',
+          feedbackTitle:'4. Commentaires', feedbackBody:'Lors d’un envoi direct, la catégorie, la langue de l’application, le message, l’adresse de réponse facultative et une référence aléatoire sont conservés dans une boîte privée pendant 90 jours au maximum. Aucun historique de lecture ni identifiant publicitaire n’est joint. Indiquez la référence pour demander une suppression anticipée.',
+          retentionTitle:'5. Conservation et suppression', retentionBody:'Les données locales restent jusqu’à leur suppression. Les podcasts générés sont supprimés après 30 jours et les commentaires directs après 90 jours au maximum. L’abonnement push reste jusqu’à la désactivation des notifications. Les métadonnées techniques suivent les durées limitées de sécurité et d’exploitation des prestataires.',
+          externalTitle:'6. Sources et médias externes', externalBody:'L’ouverture d’un article original, d’une carte, d’un itinéraire, d’un flux, d’une vidéo, de PayPal ou d’un e-mail quitte l’application ou contacte un service externe. Les médias externes ne démarrent pas automatiquement. Les règles de confidentialité du prestataire s’appliquent alors.',
+          permissionsTitle:'7. Autorisations de l’appareil', permissionsBody:'Les fonctions telles que les événements à proximité n’utilisent une autorisation qu’après votre demande. Le filtrage géographique est calculé sur l’appareil ; World Revolution News ne crée aucun profil central de déplacements.',
+          notificationsTitle:'8. Notifications facultatives', notificationsBody:'Après votre accord explicite seulement, une adresse push pseudonyme est stockée avec les thèmes, régions, heures de silence, langue et fuseau choisis. Aucun historique de lecture ni texte d’article n’est transmis. La désactivation supprime l’abonnement.',
+          changesTitle:'9. Modifications et contact', changesBody:'Cette notice est mise à jour lorsque des fonctions ou services pertinents changent. Questions, demandes de suppression avec référence, corrections et signalements de sécurité peuvent être envoyés à worldrevnews@brief.li.',
+          footer:'Projet indépendant. Aucun placement publicitaire caché et aucune vente de données personnelles.'
+        },
+        it: {
+          pageTitle:'Privacy · World Revolution News', back:'← Torna all’app', title:'Privacy', updated:'Ultimo aggiornamento: 5 agosto 2026',
+          intro:'World Revolution News è progettata per essere usata senza account, pubblicità personalizzata o profilazione degli utenti.',
+          localTitle:'1. Dati salvati sul dispositivo', localBody:'Le impostazioni e le liste personali restano normalmente nella memoria locale del dispositivo.',
+          localAccount:'Nessun account: Non è richiesta la registrazione.', localLists:'Liste locali: Articoli salvati e letti, temi, regioni e fonti seguiti, selezioni Zine e preferenze vengono memorizzati localmente.', localControl:'Il tuo controllo: I dati locali possono essere esportati o eliminati dal menu dell’app.',
+          servicesTitle:'2. Traduzione, riassunti e audio', servicesBody:'Solo dopo aver scelto una funzione, il testo dell’articolo e le impostazioni necessarie possono essere inviati all’infrastruttura protetta del progetto e al servizio utilizzato. I risultati automatici sono segnalati e l’originale resta accessibile.',
+          providersTitle:'3. Fornitori e protezione tecnica', providersBody:'Cloudflare fornisce il servizio del progetto e tratta metadati tecnici, compreso l’indirizzo IP, per prevenire abusi. Il codice dell’app non conserva l’IP. Le traduzioni richieste possono essere elaborate da Google Gemini o Hugging Face; la voce naturale da Microsoft Azure Speech. L’audio generato è conservato in uno spazio privato Cloudflare R2 e distribuito dal servizio del progetto.',
+          feedbackTitle:'4. Feedback', feedbackBody:'Con l’invio diretto, categoria, lingua dell’app, messaggio, e-mail facoltativa e riferimento casuale sono conservati in una casella privata per non più di 90 giorni. Non vengono allegati cronologia di lettura o identificatori pubblicitari. Indica il riferimento per chiedere una cancellazione anticipata.',
+          retentionTitle:'5. Conservazione e cancellazione', retentionBody:'I dati locali restano finché non li elimini. I podcast generati vengono cancellati dopo 30 giorni e il feedback diretto dopo non più di 90 giorni. L’iscrizione push resta finché non disattivi le notifiche. I metadati tecnici seguono i periodi limitati di sicurezza e funzionamento dei fornitori.',
+          externalTitle:'6. Fonti e media esterni', externalBody:'Aprire un articolo originale, una mappa, un percorso, uno stream, un video, PayPal o un’e-mail significa lasciare l’app o contattare un fornitore esterno. I media esterni non partono automaticamente. Si applicano quindi le regole sulla privacy del fornitore.',
+          permissionsTitle:'7. Autorizzazioni del dispositivo', permissionsBody:'Funzioni come gli eventi nelle vicinanze usano un’autorizzazione solo dopo la tua richiesta. Il filtro basato sulla posizione viene calcolato sul dispositivo; World Revolution News non crea un profilo centrale degli spostamenti.',
+          notificationsTitle:'8. Notifiche facoltative', notificationsBody:'Solo dopo il consenso esplicito viene salvato un recapito push pseudonimo con temi, regioni, orari silenziosi, lingua e fuso scelti. Non vengono inviati cronologia di lettura o testi degli articoli. Disattivando le notifiche l’iscrizione viene rimossa.',
+          changesTitle:'9. Modifiche e contatti', changesBody:'Questa informativa viene aggiornata quando cambiano funzioni o servizi rilevanti. Domande, richieste di cancellazione con riferimento, correzioni e segnalazioni di sicurezza possono essere inviate a worldrevnews@brief.li.',
+          footer:'Progetto indipendente. Nessun inserimento pubblicitario nascosto e nessuna vendita di dati personali.'
+        },
+        pt: {
+          pageTitle:'Privacidade · World Revolution News', back:'← Voltar à aplicação', title:'Privacidade', updated:'Última atualização: 5 de agosto de 2026',
+          intro:'A World Revolution News foi concebida para ser utilizada sem conta, publicidade personalizada ou criação de perfis de utilizadores.',
+          localTitle:'1. Dados guardados no dispositivo', localBody:'As tuas definições e listas pessoais permanecem normalmente no armazenamento local do dispositivo.',
+          localAccount:'Sem conta: Não é necessário registo.', localLists:'Listas locais: Artigos guardados e lidos, temas, regiões e fontes seguidos, seleção do Zine e preferências são guardados localmente.', localControl:'O teu controlo: Os dados locais podem ser exportados ou eliminados no menu da aplicação.',
+          servicesTitle:'2. Tradução, resumos e áudio', servicesBody:'Só depois de escolheres uma função é que o texto do artigo e as definições necessárias podem ser enviados para a infraestrutura protegida do projeto e para o serviço utilizado. Os resultados automáticos são identificados e o original continua acessível.',
+          providersTitle:'3. Fornecedores e proteção técnica', providersBody:'A Cloudflare fornece o serviço do projeto e trata metadados técnicos, incluindo o endereço IP, para prevenir abusos. O código da aplicação não guarda o IP. As traduções pedidas podem ser tratadas pelo Google Gemini ou Hugging Face; a voz natural pelo Microsoft Azure Speech. O áudio gerado fica em armazenamento privado Cloudflare R2 e é entregue pelo serviço do projeto.',
+          feedbackTitle:'4. Comentários', feedbackBody:'No envio direto, categoria, idioma da aplicação, mensagem, e-mail opcional e referência aleatória são guardados numa caixa privada por até 90 dias. Não são anexados histórico de leitura nem identificador publicitário. Indica a referência para pedir eliminação antecipada.',
+          retentionTitle:'5. Conservação e eliminação', retentionBody:'Os dados locais ficam até os eliminares. Os podcasts gerados são eliminados após 30 dias e os comentários diretos após no máximo 90 dias. A subscrição push permanece até desativares as notificações. Os metadados técnicos seguem os prazos limitados de segurança e operação dos fornecedores.',
+          externalTitle:'6. Fontes e conteúdos externos', externalBody:'Abrir um artigo original, mapa, rota, transmissão, vídeo, PayPal ou e-mail sai da aplicação ou contacta um fornecedor externo. Os conteúdos externos não começam automaticamente. Aplicam-se então as regras de privacidade do fornecedor.',
+          permissionsTitle:'7. Permissões do dispositivo', permissionsBody:'Funções como eventos próximos só usam uma permissão depois do teu pedido. A filtragem por localização é calculada no dispositivo; a World Revolution News não cria um perfil central de deslocações.',
+          notificationsTitle:'8. Notificações opcionais', notificationsBody:'Só após autorização explícita é guardado um destino push pseudónimo com temas, regiões, período silencioso, idioma e fuso escolhidos. O histórico de leitura e os textos não são enviados. Ao desativar, a subscrição é removida.',
+          changesTitle:'9. Alterações e contacto', changesBody:'Este aviso é atualizado quando funções ou serviços relevantes mudam. Perguntas, pedidos de eliminação com referência, correções e alertas de segurança podem ser enviados para worldrevnews@brief.li.',
+          footer:'Projeto independente. Sem publicidade oculta e sem venda de dados pessoais.'
+        },
+        ru: {
+          pageTitle:'Конфиденциальность · World Revolution News', back:'← Вернуться в приложение', title:'Конфиденциальность', updated:'Последнее обновление: 5 августа 2026 г.',
+          intro:'World Revolution News предназначено для использования без учётной записи, персонализированной рекламы и профилирования пользователей.',
+          localTitle:'1. Данные на вашем устройстве', localBody:'Ваши настройки и личные списки обычно остаются в локальном хранилище устройства.',
+          localAccount:'Без учётной записи: Регистрация не требуется.', localLists:'Локальные списки: Сохранённые и прочитанные статьи, отслеживаемые темы, регионы и источники, подборка Zine и настройки хранятся локально.', localControl:'Ваш контроль: Локальные данные можно экспортировать или удалить в меню приложения.',
+          servicesTitle:'2. Перевод, резюме и аудио', servicesBody:'Только после выбора соответствующей функции необходимые текст статьи и настройки могут быть отправлены в защищённую инфраструктуру проекта и используемый сервис. Автоматические результаты обозначаются, а оригинал остаётся доступным.',
+          providersTitle:'3. Поставщики и техническая защита', providersBody:'Cloudflare обслуживает сервис проекта и обрабатывает технические метаданные, включая IP-адрес, для предотвращения злоупотреблений. Код приложения не сохраняет IP-адрес. Запрошенные переводы могут обрабатываться Google Gemini или Hugging Face, естественная речь — Microsoft Azure Speech. Созданное аудио хранится в закрытом Cloudflare R2 и выдаётся через сервис проекта.',
+          feedbackTitle:'4. Обратная связь', feedbackBody:'При прямой отправке категория, язык приложения, сообщение, необязательный адрес для ответа и случайная ссылка хранятся в закрытом ящике не более 90 дней. История чтения и рекламный идентификатор не прикрепляются. Для досрочного удаления укажите ссылку из подтверждения.',
+          retentionTitle:'5. Хранение и удаление', retentionBody:'Локальные данные остаются до вашего удаления. Созданные подкасты автоматически удаляются через 30 дней, а прямая обратная связь — не позднее 90 дней. Push-подписка хранится до отключения уведомлений. Технические метаданные подчиняются ограниченным срокам безопасности и эксплуатации поставщиков.',
+          externalTitle:'6. Внешние источники и медиа', externalBody:'При открытии оригинальной статьи, карты, маршрута, трансляции, видео, PayPal или электронной почты вы покидаете приложение либо обращаетесь к внешнему сервису. Внешние медиа не запускаются автоматически. После этого действуют правила конфиденциальности соответствующего сервиса.',
+          permissionsTitle:'7. Разрешения устройства', permissionsBody:'Функции вроде событий поблизости используют разрешение только после вашего запроса. Фильтрация по местоположению выполняется на устройстве; World Revolution News не создаёт централизованный профиль перемещений.',
+          notificationsTitle:'8. Добровольные уведомления', notificationsBody:'Только после явного согласия сохраняется псевдонимная push-адресация вместе с выбранными темами, регионами, тихими часами, языком и часовым поясом. История чтения и тексты не передаются. При отключении подписка удаляется.',
+          changesTitle:'9. Изменения и контакты', changesBody:'Это уведомление обновляется при изменении важных функций или сервисов. Вопросы, запросы на удаление со ссылкой, исправления и сообщения о безопасности можно отправлять на worldrevnews@brief.li.',
+          footer:'Независимый проект. Без скрытой рекламы и продажи персональных данных.'
+        },
+        el: {
+          pageTitle:'Απόρρητο · World Revolution News', back:'← Επιστροφή στην εφαρμογή', title:'Απόρρητο', updated:'Τελευταία ενημέρωση: 5 Αυγούστου 2026',
+          intro:'Το World Revolution News έχει σχεδιαστεί για χρήση χωρίς λογαριασμό, εξατομικευμένες διαφημίσεις ή δημιουργία προφίλ χρηστών.',
+          localTitle:'1. Δεδομένα στη συσκευή σας', localBody:'Οι ρυθμίσεις και οι προσωπικές λίστες σας παραμένουν κανονικά στην τοπική αποθήκευση της συσκευής.',
+          localAccount:'Χωρίς λογαριασμό: Δεν απαιτείται εγγραφή.', localLists:'Τοπικές λίστες: Αποθηκευμένα και αναγνωσμένα άρθρα, θέματα, περιοχές και πηγές που ακολουθείτε, επιλογές Zine και προτιμήσεις αποθηκεύονται τοπικά.', localControl:'Ο έλεγχός σας: Τα τοπικά δεδομένα μπορούν να εξαχθούν ή να διαγραφούν από το μενού της εφαρμογής.',
+          servicesTitle:'2. Μετάφραση, περιλήψεις και ήχος', servicesBody:'Μόνο αφού επιλέξετε την αντίστοιχη λειτουργία μπορεί το απαραίτητο κείμενο και οι ρυθμίσεις να σταλούν στην προστατευμένη υποδομή του έργου και στην υπηρεσία που χρησιμοποιείται. Τα αυτόματα αποτελέσματα επισημαίνονται και το πρωτότυπο παραμένει διαθέσιμο.',
+          providersTitle:'3. Πάροχοι και τεχνική προστασία', providersBody:'Η Cloudflare παρέχει την υπηρεσία του έργου και επεξεργάζεται τεχνικά μεταδεδομένα, μαζί με τη διεύθυνση IP, για την αποτροπή κατάχρησης. Ο κώδικας της εφαρμογής δεν αποθηκεύει την IP. Οι μεταφράσεις μπορεί να υποβληθούν σε Google Gemini ή Hugging Face και η φυσική φωνή σε Microsoft Azure Speech. Ο παραγόμενος ήχος φυλάσσεται σε ιδιωτικό Cloudflare R2 και παρέχεται μέσω της υπηρεσίας του έργου.',
+          feedbackTitle:'4. Σχόλια', feedbackBody:'Κατά την άμεση αποστολή, η κατηγορία, η γλώσσα εφαρμογής, το μήνυμα, το προαιρετικό email απάντησης και μια τυχαία αναφορά φυλάσσονται σε ιδιωτικό γραμματοκιβώτιο έως 90 ημέρες. Δεν επισυνάπτονται ιστορικό ανάγνωσης ή διαφημιστικό αναγνωριστικό. Αναφέρετε τον κωδικό για πρόωρη διαγραφή.',
+          retentionTitle:'5. Διατήρηση και διαγραφή', retentionBody:'Τα τοπικά δεδομένα μένουν μέχρι να τα διαγράψετε. Τα παραγόμενα podcast διαγράφονται μετά από 30 ημέρες και τα άμεσα σχόλια το αργότερο μετά από 90 ημέρες. Η συνδρομή push μένει μέχρι να απενεργοποιηθούν οι ειδοποιήσεις. Τα τεχνικά μεταδεδομένα ακολουθούν τα περιορισμένα διαστήματα ασφαλείας και λειτουργίας των παρόχων.',
+          externalTitle:'6. Εξωτερικές πηγές και μέσα', externalBody:'Το άνοιγμα πρωτότυπου άρθρου, χάρτη, διαδρομής, ροής, βίντεο, PayPal ή email σας βγάζει από την εφαρμογή ή επικοινωνεί με εξωτερικό πάροχο. Τα εξωτερικά μέσα δεν ξεκινούν αυτόματα. Τότε ισχύουν οι κανόνες απορρήτου του παρόχου.',
+          permissionsTitle:'7. Άδειες συσκευής', permissionsBody:'Λειτουργίες όπως οι κοντινές εκδηλώσεις χρησιμοποιούν άδεια μόνο μετά από δικό σας αίτημα. Το φιλτράρισμα τοποθεσίας γίνεται στη συσκευή· το World Revolution News δεν δημιουργεί κεντρικό προφίλ μετακινήσεων.',
+          notificationsTitle:'8. Προαιρετικές ειδοποιήσεις', notificationsBody:'Μόνο μετά από ρητή άδεια αποθηκεύεται ψευδωνυμοποιημένος προορισμός push μαζί με θέματα, περιοχές, ώρες ησυχίας, γλώσσα και ζώνη ώρας. Δεν στέλνονται ιστορικό ανάγνωσης ή κείμενα. Η απενεργοποίηση διαγράφει τη συνδρομή.',
+          changesTitle:'9. Αλλαγές και επικοινωνία', changesBody:'Η ενημέρωση αυτή ανανεώνεται όταν αλλάζουν σχετικές λειτουργίες ή υπηρεσίες. Ερωτήσεις, αιτήματα διαγραφής με αναφορά, διορθώσεις και αναφορές ασφαλείας μπορούν να σταλούν στο worldrevnews@brief.li.',
+          footer:'Ανεξάρτητο έργο. Χωρίς κρυφή διαφήμιση και χωρίς πώληση προσωπικών δεδομένων.'
+        },
+        tr: {
+          pageTitle:'Gizlilik · World Revolution News', back:'← Uygulamaya dön', title:'Gizlilik', updated:'Son güncelleme: 5 Ağustos 2026',
+          intro:'World Revolution News; hesap, kişiselleştirilmiş reklam veya kullanıcı profili olmadan kullanılmak üzere tasarlanmıştır.',
+          localTitle:'1. Cihazınızda saklanan veriler', localBody:'Ayarlarınız ve kişisel listeleriniz normalde cihazınızın yerel depolamasında kalır.',
+          localAccount:'Hesap yok: Kayıt gerekli değildir.', localLists:'Yerel listeler: Kaydedilen ve okunan haberler, takip edilen konular, bölgeler ve kaynaklar, Zine seçimi ve tercihler yerel olarak saklanır.', localControl:'Kontrol sizde: Yerel veriler uygulama menüsünden dışa aktarılabilir veya silinebilir.',
+          servicesTitle:'2. Çeviri, özetler ve ses', servicesBody:'Yalnızca ilgili işlevi seçtikten sonra gerekli haber metni ve ayarlar korunan proje altyapısına ve kullanılan hizmete gönderilebilir. Otomatik sonuçlar işaretlenir ve özgün içerik erişilebilir kalır.',
+          providersTitle:'3. Sağlayıcılar ve teknik koruma', providersBody:'Cloudflare proje hizmetini sunar ve kötüye kullanımı önlemek için IP adresi dâhil teknik istek verilerini işler. Uygulama kodu IP adresini saklamaz. İstenen çeviriler Google Gemini veya Hugging Face, doğal ses ise Microsoft Azure Speech tarafından işlenebilir. Üretilen ses özel Cloudflare R2 depolamasında tutulur ve proje hizmeti üzerinden sunulur.',
+          feedbackTitle:'4. Geri bildirim', feedbackBody:'Doğrudan gönderimde kategori, uygulama dili, mesaj, isteğe bağlı yanıt e-postası ve rastgele bir referans özel bir kutuda en fazla 90 gün tutulur. Okuma geçmişi veya reklam kimliği eklenmez. Erken silme talebi için referansı belirtin.',
+          retentionTitle:'5. Saklama ve silme', retentionBody:'Yerel veriler siz silene kadar kalır. Üretilen podcastler 30 gün sonra, doğrudan geri bildirim ise en geç 90 gün sonra otomatik silinir. Push aboneliği bildirimler kapatılana kadar kalır. Teknik istek verileri sağlayıcıların sınırlı güvenlik ve işletim sürelerine tabidir.',
+          externalTitle:'6. Harici kaynaklar ve medya', externalBody:'Özgün bir haber, harita, rota, yayın, video, PayPal veya e-posta açıldığında uygulamadan çıkılır ya da harici bir sağlayıcıyla bağlantı kurulur. Harici medya otomatik başlamaz. Bu durumda sağlayıcının gizlilik kuralları geçerlidir.',
+          permissionsTitle:'7. Cihaz izinleri', permissionsBody:'Yakındaki etkinlikler gibi işlevler yalnızca isteğinizden sonra izin kullanır. Konuma dayalı filtreleme cihazda hesaplanır; World Revolution News merkezi bir hareket profili oluşturmaz.',
+          notificationsTitle:'8. İsteğe bağlı bildirimler', notificationsBody:'Yalnızca açık izinden sonra seçilen konular, bölgeler, sessiz saatler, dil ve saat dilimiyle birlikte takma adlı bir push adresi saklanır. Okuma geçmişi ve makale metinleri gönderilmez. Bildirimler kapatılınca abonelik silinir.',
+          changesTitle:'9. Değişiklikler ve iletişim', changesBody:'Bu bildirim, ilgili işlevler veya hizmetler değiştiğinde güncellenir. Sorular, referanslı silme talepleri, düzeltmeler ve güvenlik bildirimleri worldrevnews@brief.li adresine gönderilebilir.',
+          footer:'Bağımsız proje. Gizli reklam yerleşimi ve kişisel veri satışı yoktur.'
+        }
+      };
+
+      const parameters = new URLSearchParams(location.search);
+      const requestedLanguage = String(parameters.get('lang') || localStorage.getItem(LANGUAGE_KEY) || navigator.language || 'en')
+        .toLowerCase()
+        .split('-')[0];
+      const language = Object.prototype.hasOwnProperty.call(PRIVACY_COPY, requestedLanguage) ? requestedLanguage : 'en';
+      const copy = PRIVACY_COPY[language];
+      const back = document.getElementById('privacy-back');
+
+      document.documentElement.lang = language;
+      document.title = copy.pageTitle;
+      back.href = parameters.get('return') === 'preview' ? 'index.html?preview=8' : 'index.html';
+      back.setAttribute('aria-label', copy.back.replace(/^←\s*/, ''));
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const value = copy[element.dataset.i18n];
+        if (value) element.textContent = value;
+      });
+    })();
+  </script>
+</body>
+</html>

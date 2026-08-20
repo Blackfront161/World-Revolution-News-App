@@ -1,0 +1,586 @@
+[
+  {
+    "id": "corax",
+    "name": "Radio CORAX",
+    "city": "Halle (Saale)",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies Radio im Raum Halle.",
+    "website": "https://radiocorax.de/",
+    "streamCandidates": [
+      "https://streaming.fueralle.org/corax_192.mp3",
+      "https://streaming.fueralle.org/corax_128.mp3",
+      "https://streaming.fueralle.org/corax_64.mp3"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-blau",
+    "name": "Radio Blau",
+    "city": "Leipzig",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies Radio für Leipzig.",
+    "website": "https://www.radioblau.de/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "rdl",
+    "name": "Radio Dreyeckland",
+    "city": "Freiburg",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Antifaschismus"
+    ],
+    "description": "Nichtkommerzielles freies Radio aus Freiburg.",
+    "website": "https://rdl.de/",
+    "streamCandidates": [
+      "https://stream.rdl.de/rdl"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "fsk",
+    "name": "FSK Hamburg",
+    "city": "Hamburg",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies Sender Kombinat – freies Radio in Hamburg.",
+    "website": "https://www.fsk-hh.org/",
+    "streamCandidates": [
+      "https://streaming.fueralle.org/fsk.mp3",
+      "https://streaming.fueralle.org/fsk.ogg"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "lora",
+    "name": "LORA München",
+    "city": "München",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Ökologie"
+    ],
+    "description": "Nichtkommerzielles Lokalradio mit sozialen, ökologischen und politischen Sendungen.",
+    "website": "https://lora924.de/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "orange",
+    "name": "ORANGE 94.0",
+    "city": "Wien",
+    "country": "AT",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Mehrsprachig",
+      "Kultur"
+    ],
+    "description": "Freies Radio Wien mit Sendungen in vielen Sprachen.",
+    "website": "https://o94.at/",
+    "streamCandidates": [
+      "https://securestream.o94.at/live.mp3"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "helsinki",
+    "name": "Radio Helsinki",
+    "city": "Graz",
+    "country": "AT",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Mehrsprachig",
+      "Kultur"
+    ],
+    "description": "Freies Radio aus Graz.",
+    "website": "https://helsinki.at/",
+    "streamCandidates": [
+      "https://live.helsinki.at:8088/live160.mp3",
+      "https://live.helsinki.at:8088/live128.mp3"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "coloradio",
+    "name": "coloRadio",
+    "city": "Dresden",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies Radio in Dresden.",
+    "website": "https://coloradio.org/",
+    "streamCandidates": [
+      "https://streaming.fueralle.org/coloradio_160.mp3",
+      "https://streaming.fueralle.org/coloradio_128.mp3"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-z",
+    "name": "Radio Z",
+    "city": "Nürnberg",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies, nichtkommerzielles Radio aus Nürnberg.",
+    "website": "https://www.radio-z.net/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-frei",
+    "name": "Radio F.R.E.I.",
+    "city": "Erfurt",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies Radio aus Erfurt.",
+    "website": "https://radio-frei.de/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "bermuda-funk",
+    "name": "bermuda.funk",
+    "city": "Mannheim / Heidelberg",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Kultur",
+      "Politik"
+    ],
+    "description": "Freies Radio für Mannheim, Heidelberg und Umgebung.",
+    "website": "https://bermudafunk.org/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "querfunk",
+    "name": "Querfunk",
+    "city": "Karlsruhe",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Kultur",
+      "Politik"
+    ],
+    "description": "Freies Radio Karlsruhe.",
+    "website": "https://querfunk.de/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-x",
+    "name": "Radio X",
+    "city": "Frankfurt am Main",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Kultur",
+      "Politik"
+    ],
+    "description": "Nichtkommerzielles Lokalradio aus Frankfurt.",
+    "website": "https://radiox.de/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "wueste-welle",
+    "name": "Wüste Welle",
+    "city": "Tübingen",
+    "country": "DE",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Kultur",
+      "Mehrsprachig"
+    ],
+    "description": "Freies Radio aus Tübingen und Reutlingen.",
+    "website": "https://www.wueste-welle.de/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-agora",
+    "name": "Radio Agora 105.5",
+    "city": "Klagenfurt",
+    "country": "AT",
+    "region": "DACH",
+    "languages": [
+      "de",
+      "sl",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Mehrsprachig",
+      "Kultur"
+    ],
+    "description": "Mehrsprachiges freies Radio in Kärnten/Koroška.",
+    "website": "https://radioagora.at/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-student",
+    "name": "Radio Študent",
+    "city": "Ljubljana",
+    "country": "SI",
+    "region": "Europa",
+    "languages": [
+      "sl",
+      "en"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Studierende",
+      "Kultur"
+    ],
+    "description": "Unabhängiger studentischer und alternativer Sender aus Ljubljana.",
+    "website": "https://radiostudent.si/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "1431am",
+    "name": "1431 AM",
+    "city": "Thessaloniki",
+    "country": "GR",
+    "region": "Europa",
+    "languages": [
+      "el"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Selbstorganisation",
+      "Anarchismus"
+    ],
+    "description": "Selbstorganisiertes freies Radio aus Thessaloniki.",
+    "website": "https://www.1431am.org/",
+    "streamCandidates": [
+      "https://www.1431am.org:8001/1431ogg"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-libertaire",
+    "name": "Radio Libertaire",
+    "city": "Paris",
+    "country": "FR",
+    "region": "Europa",
+    "languages": [
+      "fr"
+    ],
+    "topics": [
+      "Anarchismus",
+      "Freie Radios",
+      "Politik"
+    ],
+    "description": "Anarchistisches Radio aus Paris.",
+    "website": "https://www.radio-libertaire.com/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-blackout",
+    "name": "Radio Blackout",
+    "city": "Torino",
+    "country": "IT",
+    "region": "Europa",
+    "languages": [
+      "it"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Antikapitalismus",
+      "Politik"
+    ],
+    "description": "Freies und unabhängiges Radio aus Turin.",
+    "website": "https://radioblackout.org/",
+    "streamCandidates": [
+      "https://stream.radioblackout.org/blackout.mp3"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "onda-rossa",
+    "name": "Radio Onda Rossa",
+    "city": "Roma",
+    "country": "IT",
+    "region": "Europa",
+    "languages": [
+      "it"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Antikapitalismus",
+      "Politik"
+    ],
+    "description": "Selbstverwaltetes freies Radio aus Rom.",
+    "website": "https://www.ondarossa.info/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "onda-urto",
+    "name": "Radio Onda d’Urto",
+    "city": "Brescia",
+    "country": "IT",
+    "region": "Europa",
+    "languages": [
+      "it"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Unabhängiges Radio aus Brescia.",
+    "website": "https://www.radiondadurto.org/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-klara",
+    "name": "Radio Klara",
+    "city": "València",
+    "country": "ES",
+    "region": "Europa",
+    "languages": [
+      "es",
+      "ca"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies, selbstverwaltetes Radio aus València.",
+    "website": "https://www.radioklara.org/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-canut",
+    "name": "Radio Canut",
+    "city": "Lyon",
+    "country": "FR",
+    "region": "Europa",
+    "languages": [
+      "fr"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Freies und nichtkommerzielles Radio aus Lyon.",
+    "website": "https://radiocanut.org/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "radio-kurruf",
+    "name": "Radio Kurruf",
+    "city": "Wallmapu",
+    "country": "CL",
+    "region": "Lateinamerika",
+    "languages": [
+      "es",
+      "map"
+    ],
+    "topics": [
+      "Indigene Kämpfe",
+      "Freie Radios",
+      "Antikolonialismus"
+    ],
+    "description": "Mapuche-orientiertes Community-Radio aus Wallmapu.",
+    "website": "https://radiokurruf.org/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "kboo",
+    "name": "KBOO Community Radio",
+    "city": "Portland",
+    "country": "US",
+    "region": "Nordamerika",
+    "languages": [
+      "en",
+      "multi"
+    ],
+    "topics": [
+      "Community Radio",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Hörer*innenfinanziertes Community-Radio aus Portland.",
+    "website": "https://kboo.fm/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "ckut",
+    "name": "CKUT 90.3 FM",
+    "city": "Montréal",
+    "country": "CA",
+    "region": "Nordamerika",
+    "languages": [
+      "en",
+      "fr",
+      "multi"
+    ],
+    "topics": [
+      "Community Radio",
+      "Studierende",
+      "Kultur"
+    ],
+    "description": "Community- und Campus-Radio aus Montréal.",
+    "website": "https://ckut.ca/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  },
+  {
+    "id": "wort",
+    "name": "WORT 89.9 FM",
+    "city": "Madison",
+    "country": "US",
+    "region": "Nordamerika",
+    "languages": [
+      "en",
+      "multi"
+    ],
+    "topics": [
+      "Community Radio",
+      "Politik",
+      "Kultur"
+    ],
+    "description": "Hörer*innenfinanziertes Community-Radio aus Madison.",
+    "website": "https://www.wortfm.org/",
+    "streamCandidates": [],
+    "healthStatus": "unknown",
+    "lastChecked": ""
+  }
+]

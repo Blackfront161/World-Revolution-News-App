@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T15:35:13.340491+00:00",
+  "status": "warning",
+  "healthy": true,
+  "checks": [
+    {
+      "id": "feed-fetch-age",
+      "status": "ok",
+      "value": 0.06,
+      "unit": "hours",
+      "warningAt": 2.5,
+      "errorAt": 5.0
+    },
+    {
+      "id": "newest-article-age",
+      "status": "ok",
+      "value": 0.51,
+      "unit": "hours",
+      "warningAt": 12.0,
+      "errorAt": 24.0
+    },
+    {
+      "id": "source-errors",
+      "status": "warning",
+      "value": 0,
+      "unit": "sources",
+      "warningCount": 45,
+      "totalCount": 257
+    },
+    {
+      "id": "podcast-errors",
+      "status": "ok",
+      "value": 0,
+      "unit": "sources",
+      "warningCount": 0,
+      "totalCount": 43
+    },
+    {
+      "id": "audio-errors",
+      "status": "ok",
+      "value": 0,
+      "unit": "episodes",
+      "warningCount": 0,
+      "totalCount": 29
+    },
+    {
+      "id": "library-errors",
+      "status": "warning",
+      "value": 0,
+      "unit": "sources",
+      "warningCount": 1,
+      "totalCount": 9
+    },
+    {
+      "id": "workflow-errors",
+      "status": "ok",
+      "value": 0,
+      "unit": "workflows"
+    },
+    {
+      "id": "aggregate-budget",
+      "status": "ok",
+      "value": false,
+      "unit": "boolean"
+    }
+  ],
+  "privacy": "Counters and timestamps only; no article, feedback, URL or user content."
+}

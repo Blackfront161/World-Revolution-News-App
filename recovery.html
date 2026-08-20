@@ -1,0 +1,97 @@
+/* WRN 1.7.21c: browser deletion is repository-scoped. */
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WRN Wiederherstellung</title>
+  <meta name="theme-color" content="#050508">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      background: #050508;
+      color: #f5f7fb;
+      font-family: system-ui, sans-serif;
+    }
+    main {
+      width: min(560px, 100%);
+      padding: 20px;
+      border: 1px solid rgba(0,240,255,.4);
+      border-radius: 16px;
+      background: #0b0d14;
+      box-shadow: 0 24px 70px rgba(0,0,0,.6);
+    }
+    h1 { margin-top: 0; color: #00f0ff; font-size: 1.35rem; }
+    p { line-height: 1.55; }
+    button, a {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      border: 1px solid #00f0ff;
+      border-radius: 10px;
+      background: rgba(0,240,255,.08);
+      color: #00f0ff;
+      font: 750 1rem/1 system-ui,sans-serif;
+      text-align: center;
+      text-decoration: none;
+    }
+    #status { min-height: 2.8em; color: #ffd166; }
+    .danger { border-color: #ff334f; color: #ff6680; }
+  </style>
+  <script src="./wrn-origin-safety.js?v=1721c"></script>
+</head>
+<body>
+  <main>
+    <h1>World Revolution News wiederherstellen</h1>
+    <p>Diese Seite funktioniert unabhängig von der normalen App. Sie löscht nur den technischen Browser-Cache und alte Service Worker. Gespeicherte Artikel, Briefing-Einstellungen und Leselisten bleiben erhalten.</p>
+    <p id="status">Bereit.</p>
+    <button id="repair">Cache reparieren und App öffnen</button>
+    <a href="./?nav=1710&amp;safe=1">App direkt im sicheren Modus öffnen</a>
+  </main>
+  <script>
+    'use strict';
+
+    const status = document.getElementById('status');
+    const button = document.getElementById('repair');
+
+    async function repair() {
+      button.disabled = true;
+      status.textContent = 'Alte Service Worker und technische Caches werden entfernt …';
+
+      try {
+        if ('serviceWorker' in navigator) {
+          const registrations = await window.WRNOriginSafety.getOwnedServiceWorkerRegistrations();
+          await Promise.all(registrations.map(registration => registration.unregister()));
+        }
+
+        if ('caches' in window) {
+          const names = await window.WRNOriginSafety.getOwnedCacheNames();
+          await Promise.all(
+            names
+              .filter(name => name.startsWith('wrn-'))
+              .map(name => caches.delete(name))
+          );
+        }
+
+        status.textContent = 'Fertig. Die reparierte App wird geöffnet …';
+        const target = new URL('./', location.href);
+        target.searchParams.set('nav', '1710');
+        target.searchParams.set('recovered', Date.now().toString());
+        location.replace(target.toString());
+      } catch (error) {
+        status.textContent = 'Automatische Reparatur nicht vollständig möglich. Öffne darunter den sicheren Modus.';
+        button.disabled = false;
+      }
+    }
+
+    button.addEventListener('click', repair);
+  </script>
+</body>
+</html>

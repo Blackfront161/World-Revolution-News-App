@@ -1,0 +1,19 @@
+OK JavaScript: config.js
+OK JavaScript: typography.js
+OK JavaScript: service-worker.js
+OK JavaScript: app-safety.js
+OK JavaScript: app-diagnostics.js
+OK JavaScript: release-1.5-nav.js
+OK JavaScript: briefing.js
+OK JavaScript: audio-catalog.js
+OK Integration: Version 1.7.6
+OK Integration: Typografie v176
+OK Integration: CSS-Failsafe
+OK Integration: App nicht mehr vollständig versteckt
+OK Integration: JS-Fallback 6 Sekunden
+OK Integration: Text nur bei Änderung
+OK Integration: Observer gedrosselt
+OK Integration: Service Worker v1.7.6
+OK Integration: Explizite Asset-URL
+OK Integration: Wiederherstellungsseite
+OK Browser-Test: 500 DOM-Änderungen, genau ein Lesemodus-Feld, Browser blieb ansprechbar

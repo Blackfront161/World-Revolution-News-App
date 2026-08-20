@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WRN Klickreparatur</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background: #050508;
+      color: #f5f7fb;
+      font-family: system-ui, sans-serif;
+    }
+    main {
+      width: min(560px, 100%);
+      padding: 20px;
+      border: 1px solid #00f0ff;
+      border-radius: 16px;
+      background: #0b0d14;
+    }
+    h1 { color: #00f0ff; }
+    p { line-height: 1.55; }
+    button, a {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid #00f0ff;
+      border-radius: 10px;
+      background: rgba(0,240,255,.08);
+      color: #00f0ff;
+      font: 750 1rem/1 system-ui,sans-serif;
+      text-align: center;
+      text-decoration: none;
+    }
+    #status { color: #ffd166; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>World Revolution News – Klickreparatur</h1>
+    <p id="status">Bereit.</p>
+    <button id="repair">Caches entfernen und App neu öffnen</button>
+    <a href="./?nav=1711&interaction=reset">Direkt zur App</a>
+  </main>
+  <script>
+    'use strict';
+
+    document.getElementById('repair').addEventListener('click', async () => {
+      const status = document.getElementById('status');
+      status.textContent = 'Alte App-Caches und Service Worker werden entfernt …';
+
+      try {
+        if ('serviceWorker' in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(registrations.map(item => item.unregister()));
+        }
+
+        if ('caches' in window) {
+          const names = await caches.keys();
+          await Promise.all(
+            names
+              .filter(name => name.startsWith('wrn-'))
+              .map(name => caches.delete(name))
+          );
+        }
+
+        status.textContent = 'Fertig. Die App wird neu geöffnet …';
+        const target = new URL('./', location.href);
+        target.searchParams.set('nav', '1711');
+        target.searchParams.set('interaction', Date.now().toString());
+        location.replace(target.toString());
+      } catch (error) {
+        status.textContent =
+          'Nicht vollständig möglich. Öffne darunter die App direkt.';
+      }
+    });
+  </script>
+</body>
+</html>

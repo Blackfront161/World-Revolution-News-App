@@ -1,0 +1,11 @@
+OK JavaScript: config.js
+OK JavaScript: offline-db.js
+OK JavaScript: service-worker.js
+OK Integration: Konfiguration 1.7.9
+OK Integration: Rettungsfeed vorhanden
+OK Integration: Speicher-Startschutz vorhanden
+OK Integration: IndexedDB-Zeitlimit
+OK Integration: Speicherfehler als Fallback
+OK Integration: Service Worker 1.7.9
+OK Integration: Schneller News-Feed im Worker
+OK Integration: Schneller Termin-Feed im Worker
