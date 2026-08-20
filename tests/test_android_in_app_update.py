@@ -29,6 +29,7 @@ class AndroidInAppUpdateContractTest(unittest.TestCase):
 
         for lifecycle in ("onStart", "onResume", "onStop", "onDestroy"):
             self.assertIn(f"appUpdateController.{lifecycle}()", main)
+            self.assertIn(f"public void {lifecycle}()", main)
         self.assertIn("registerListener(installStateListener)", controller)
         self.assertIn("unregisterListener(installStateListener)", controller)
         self.assertIn("InstallStatus.DOWNLOADED", controller)

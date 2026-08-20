@@ -18,25 +18,25 @@ public class MainActivity extends BridgeActivity {
     }
 
     @Override
-    protected void onStart() {
+    public void onStart() {
         super.onStart();
         if (appUpdateController != null) appUpdateController.onStart();
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
         if (appUpdateController != null) appUpdateController.onResume();
     }
 
     @Override
-    protected void onStop() {
+    public void onStop() {
         if (appUpdateController != null) appUpdateController.onStop();
         super.onStop();
     }
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         if (appUpdateController != null) appUpdateController.onDestroy();
         super.onDestroy();
     }
