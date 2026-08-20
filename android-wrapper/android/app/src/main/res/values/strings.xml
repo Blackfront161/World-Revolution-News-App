@@ -4,4 +4,9 @@
     <string name="title_activity_main">World Revolution News</string>
     <string name="package_name">com.world.revolution</string>
     <string name="custom_url_scheme">com.world.revolution</string>
+    <string name="update_ready_title">Update ready</string>
+    <string name="update_ready_message">The update has been downloaded. Restart World Revolution News to install it?</string>
+    <string name="update_restart_action">Restart</string>
+    <string name="update_later_action">Later</string>
+    <string name="update_install_failed">The update could not be installed. Please try again later.</string>
 </resources>

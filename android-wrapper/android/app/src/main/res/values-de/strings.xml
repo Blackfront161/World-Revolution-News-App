@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="update_ready_title">Aktualisierung bereit</string>
+    <string name="update_ready_message">Die Aktualisierung wurde heruntergeladen. World Revolution News jetzt neu starten und installieren?</string>
+    <string name="update_restart_action">Neu starten</string>
+    <string name="update_later_action">Später</string>
+    <string name="update_install_failed">Die Aktualisierung konnte nicht installiert werden. Bitte später erneut versuchen.</string>
+</resources>
