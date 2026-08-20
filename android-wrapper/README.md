@@ -10,19 +10,36 @@ Capacitor-/Android-Hülle für **World Revolution News**. Dieses Verzeichnis ent
 | Android `versionName` | `2.1.0` |
 | Android `versionCode` | `25` |
 | min / target / compile SDK | 24 / 36 / 36 |
-| Deklarierte Capacitor-Basis | `8.4.0` |
-| Autoritative App-Quelle | `C:\Users\patri\Documents\World Rev Ne\revolution-news-app-2` |
+| Capacitor-Basis | exakt `8.4.0` für Core, Android und CLI |
+| Paketmanager | npm mit versionierter `package-lock.json` |
+| Autoritative App-Quelle | Wurzel dieses App-Repositories (`../`) |
 
-> **Kein AAB aus diesem Stand bauen oder veröffentlichen.** Der Webasset-Ordner `www/` ist nicht mit der autoritativen App-Quelle synchron: 13 geprüfte Kerndateien weichen ab und `news-card-copy.js` fehlt. Eine daraus erzeugte AAB wäre nicht der geprüfte App-Stand.
+> **Kein AAB direkt aus dem Repository bauen oder veröffentlichen.** `www/` und
+> `android/app/src/main/assets/public/` sind generierte, nicht versionierte
+> Release-Eingaben. Sie müssen für jeden Kandidaten aus einem ausdrücklich
+> freigegebenen App-Commit erzeugt, synchronisiert und per Hashvergleich geprüft
+> werden.
 
 Zusätzliche Freigabeblocker:
 
-- `package.json` und `package-lock.json` deklarieren Capacitor `^8.4.0`; die aktuell generierte `android/capacitor.settings.gradle` verweist jedoch auf nicht vorhandene pnpm-Pfade einer früheren Capacitor-8.5.0-Installation. Diese Datei muss durch einen kontrollierten Sync aus einer einheitlichen Installation neu erzeugt werden.
-- `package.json` trägt noch die Paketmetadaten-Version `2.0.8`; die Android-Releaseversion kommt derzeit aus `android/app/build.gradle`. Vor dem Release müssen Versionsquellen bewusst vereinheitlicht oder ihre Zuständigkeiten dokumentiert werden.
-- Die instrumentierte Beispielprüfung erwartet noch `com.getcapacitor.app` statt `com.world.revolution`.
+- `package.json` und `package-lock.json` führen Wrapper-Metadaten `2.1.0` und
+  pinnen `@capacitor/core`, `@capacitor/android` und `@capacitor/cli` gemeinsam
+  auf `8.4.0`. npm ist der einzige unterstützte Paketmanager.
+- `android/capacitor.settings.gradle` ist eine Sync-Ausgabe und wird nicht als
+  Quellkonfiguration versioniert. Nach `npm ci` erzeugt das lokale Capacitor-CLI
+  sie neu; ein sauberer Sync darf weder pnpm-Pfade noch Capacitor 8.5.0
+  referenzieren.
+- Der instrumentierte Smoke-Test verwendet die Produktions-ID
+  `com.world.revolution` und startet `MainActivity`; seine Ausführung benötigt
+  weiterhin ein verbundenes Gerät oder einen Emulator und vorher erzeugte
+  Webassets.
 - Google-Play-In-App-Updates sind noch nicht nativ integriert. Ein Service Worker kann die Play-Store-Aktualisierungsaufforderung nicht ersetzen.
 - Eine Release-Signaturkonfiguration ist nicht Teil des öffentlichen Projekts und darf auch keine privaten Schlüssel enthalten.
-- Die lokale Android-SDK-36-Installation ist aktuell nicht buildfähig: Gradle kann `platforms/android-36/package.xml` nicht lesen und findet deshalb das Ziel `android-36` nicht. SDK 36 muss außerhalb des Repositories repariert beziehungsweise sauber neu installiert werden.
+- Die lokalen SDK-36-Dateien sind vorhanden und direkt lesbar; die aktuelle
+  Gradle-Buildfähigkeit ist ohne einen kontrollierten Sync und Build dennoch
+  nicht nachgewiesen. Vor dem Release müssen Android Studio, Plattform 36,
+  Build Tools und Command-line Tools geprüft und die Gradle-Gates ausgeführt
+  werden. API 36 darf dabei nicht abgesenkt werden.
 
 ## Verzeichnisrollen
 
@@ -55,7 +72,7 @@ temporäres, manifestiertes Webasset-Paket
         │ Hash-/Vollständigkeitsprüfung
         ▼
 www/
-        │ npx cap sync android
+        │ npm run sync:android
         ▼
 android/app/src/main/assets/public/
         │ Android-/Gerätetests
@@ -63,7 +80,7 @@ android/app/src/main/assets/public/
 signierte AAB außerhalb des Repositories
 ```
 
-Ein noch zu ergänzendes Sync-Skript soll:
+Das versionierte Release-Skript `../scripts/build-android-release.ps1` muss:
 
 1. ausschließlich von der autoritativen App-Quelle lesen;
 2. eine explizite Dateiliste beziehungsweise ein Manifest verwenden;
@@ -77,28 +94,35 @@ Manuelle Explorer-Kopien sind kein reproduzierbarer Releaseprozess.
 
 ## Abhängigkeiten und Capacitor normalisieren
 
-Es muss genau ein Paketmanager und genau eine Capacitor-Version gelten. Der derzeit nachvollziehbare Ausgangspunkt ist npm mit `package-lock.json` und Capacitor 8.4.0.
+Es gilt genau ein Paketmanager und genau eine Capacitor-Version: npm mit
+`package-lock.json` sowie Capacitor 8.4.0 für Core, Android und CLI. Die
+Lockdatei ist die installierbare Abhängigkeitsautorität; pnpm-Arbeitsbereiche
+und manuell gepflegte generierte Capacitor-Pfade gehören nicht in die Quelle.
 
 Vor dem nächsten Sync:
 
-1. unterstützte Node-LTS-Version festlegen und dokumentieren;
-2. npm als Paketmanager bestätigen oder vollständig auf einen anderen Paketmanager migrieren – keine Mischinstallation;
-3. Abhängigkeiten ausschließlich aus der bestätigten Lockdatei installieren;
-4. `@capacitor/core`, `@capacitor/android` und `@capacitor/cli` auf exakt dieselbe freigegebene Version setzen;
-5. `android/capacitor.settings.gradle`, Plugin-Konfigurationen und kopierte Assets mit `npx cap sync android` neu erzeugen;
-6. prüfen, dass keine alten pnpm-/8.5.0-Pfade mehr enthalten sind.
+1. Node.js 22 oder neuer verwenden;
+2. Abhängigkeiten ausschließlich mit `npm ci` aus der bestätigten Lockdatei
+   installieren;
+3. ausschließlich das lokal installierte Capacitor-CLI verwenden;
+4. `android/capacitor.settings.gradle`, Plugin-Konfigurationen und kopierte
+   Assets mit `npm run sync:android` neu erzeugen;
+5. prüfen, dass keine pnpm-/8.5.0-Pfade enthalten sind.
 
 Geplanter Ablauf nach Umsetzung des Sync-Skripts:
 
 ```powershell
 npm ci
-# geprüftes WRN-Sync-Skript ausführen
-npx cap sync android
+# geprüftes WRN-Release-/Sync-Skript ausführen; das npm-Skript verbietet Downloads
+npm run sync:android
 Set-Location android
 .\gradlew.bat clean test lint assembleDebug
 ```
 
-`npm ci` ist im aktuellen Zustand noch kein Releasegate, solange Paketmanager und Capacitor-Versionen nicht abschließend normalisiert sind.
+`npm run sync:android` ruft ausschließlich das durch npm in
+`node_modules/.bin` bereitgestellte `cap` auf; fehlt die lokal aus der
+Lockdatei installierte CLI, muss der Sync abbrechen statt eine andere Version
+aus dem Netz nachzuladen.
 
 ## Releaseprüfung
 
@@ -106,7 +130,9 @@ Erst nach erfolgreicher Synchronisierung:
 
 1. Quell-Diff und Webasset-Manifest vollständig abnehmen.
 2. `versionName` und `versionCode` erhöhen und mit Releaseinformationen abgleichen.
-3. Unit-, Instrumentierungs- und Lintprüfungen ausführen; den falschen Beispiel-Paketnamen vorher korrigieren.
+3. Unit-, Instrumentierungs- und Lintprüfungen ausführen. Der
+   `AppLaunchInstrumentedTest` muss Produktions-ID und Start von `MainActivity`
+   auf einem verbundenen Gerät oder Emulator bestätigen.
 4. Debug-Build auf einem echten Gerät prüfen.
 5. Kaltstart online, langsames Netz, Flugmodus, Hintergrund/Fortsetzen und zweiten Start nach Cacheaktualisierung testen.
 6. Übersetzung, Teilen, Benachrichtigungen, gespeicherte Artikel, Datenschutz und externe Links testen.
