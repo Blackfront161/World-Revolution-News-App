@@ -119,6 +119,9 @@ def test_build_release_transaction_callbacks_keep_helper_scope(tmp_path: Path) -
     assert "New-WrnVerifiedSignedAab" in transaction_callbacks
     assert "Assert-WrnAabSignature" in transaction_callbacks
 
+    if os.name != "nt":
+        pytest.skip("Artifact transaction scope probe requires Windows path semantics")
+
     output = tmp_path / "scope-probe.txt"
     completed = run_powershell(
         "& { "
