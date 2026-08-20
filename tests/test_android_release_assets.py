@@ -1,11 +1,19 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 import shutil
 import subprocess
 
+import pytest
+
 
 ROOT = Path(__file__).resolve().parents[1]
+
+pytestmark = pytest.mark.skipif(
+    os.name != "nt",
+    reason="Android asset safety regressions require Windows junction semantics",
+)
 
 
 def test_recursive_android_asset_manifest_and_copy() -> None:

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -118,6 +119,8 @@ def test_version_code_contract_distinguishes_local_build_from_play_console() -> 
 
 
 def test_atomic_output_removes_failed_temporary_file_and_allows_retry() -> None:
+    if os.name != "nt":
+        pytest.skip("Atomic AAB regression requires Windows reparse-point semantics")
     powershell = shutil.which("pwsh")
     assert powershell, "PowerShell 7 (pwsh) is required for the atomic AAB regression test"
     script = ROOT / "tests" / "test_aab_atomic_output.ps1"
