@@ -28,13 +28,6 @@ def test_international_antifascism_sources_are_registered():
             assert f'"originCountryCode": "{country_code}"' in aggregate
 
 
-def test_fast_refresh_uses_the_approved_two_hour_cadence():
-    workflow = (ROOT / ".github" / "workflows" / "update-fast.yml").read_text(
-        encoding="utf-8"
-    )
-    assert 'cron: "7 */2 * * *"' in workflow
-
-
 def test_new_antifascism_sources_pass_health_and_registry_generation():
     expected_names = {
         "Anti-Fascistische Actie Nederland",

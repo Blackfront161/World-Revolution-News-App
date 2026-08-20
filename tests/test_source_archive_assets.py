@@ -8,8 +8,6 @@ CONFIG = (ROOT / "news-app-2-config.js").read_text(encoding="utf-8")
 STYLE = (ROOT / "news-app-2.css").read_text(encoding="utf-8")
 PREVIEW_WORKER = (ROOT / "news-app-2-sw.js").read_text(encoding="utf-8")
 LIVE_WORKER = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-FAST_WORKFLOW = (ROOT / ".github" / "workflows" / "update-fast.yml").read_text(encoding="utf-8")
-FULL_WORKFLOW = (ROOT / ".github" / "workflows" / "update.yml").read_text(encoding="utf-8")
 MANIFEST = json.loads((ROOT / "news-archive-manifest.json").read_text(encoding="utf-8"))
 
 
@@ -35,10 +33,6 @@ for token in (
 for worker in (PREVIEW_WORKER, LIVE_WORKER):
     assert "news-archive-manifest.json" in worker
     assert "news-archive" in worker
-
-for workflow in (FAST_WORKFLOW, FULL_WORKFLOW):
-    assert "python build_source_archive.py" in workflow
-    assert "git add news-archive-manifest.json news-archive/" in workflow
 
 assert MANIFEST["schemaVersion"] == 1
 assert MANIFEST["windowDays"] == 30

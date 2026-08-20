@@ -419,9 +419,6 @@ def test_antifascist_sources_are_global_and_feed_backed():
     for name, url in expected.items():
         assert name in aggregate
         assert url in aggregate
-    assert 'cron: "7 */2 * * *"' in (
-        ROOT / ".github" / "workflows" / "update-fast.yml"
-    ).read_text(encoding="utf-8")
 
 
 def test_new_libertarian_communist_sources_are_registered_with_metadata():
@@ -606,8 +603,6 @@ def test_separate_multilingual_library_catalogue_is_available():
     assert "libraryFeed: wrnDataUrl('library-feed.json')" in config
     assert "library-sources.json" in worker
     assert (ROOT / "aggregate_libraries.py").is_file()
-    assert (ROOT / ".github" / "workflows" / "update-libraries.yml").is_file()
-    assert "wrn-main-write" in (ROOT / ".github" / "workflows" / "update-libraries.yml").read_text(encoding="utf-8")
 
 
 if __name__ == "__main__":

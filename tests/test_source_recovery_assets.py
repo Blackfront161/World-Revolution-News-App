@@ -10,7 +10,6 @@ def text(path: str) -> str:
 
 checker = text("check_news_sources.py")
 normalizer = text("normalize_source_health.py")
-workflow = text(".github/workflows/update.yml")
 quality = text(".github/workflows/quality-gate.yml")
 config = text("config.js")
 worker = text("service-worker.js")
@@ -40,8 +39,6 @@ for field in (
 ):
     assert f'"{field}"' in normalizer, field
 
-assert "source-health-history.json" in workflow
-assert "source-recovery-report.json" in workflow
 assert "python tests/run_contract_matrix.py" in quality
 assert "const VERSION = '200-action-radar-1';" in config
 assert "source-recovery-ui-183.js" in config

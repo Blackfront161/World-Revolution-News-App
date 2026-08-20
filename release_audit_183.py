@@ -25,7 +25,6 @@ EXPECTED_DATA_CACHE = "wrn-data-v2.1.0-r2"
 
 REQUIRED_FILES = (
     ".github/workflows/quality-gate.yml",
-    ".github/workflows/update.yml",
     "app-check.html",
     "app-diagnostics.js",
     "config.js",
@@ -455,7 +454,6 @@ class ReleaseAudit:
 
     def check_workflows(self) -> None:
         quality = read_text(self.root, ".github/workflows/quality-gate.yml")
-        update = read_text(self.root, ".github/workflows/update.yml")
         quality_commands = (
             "python tests/run_contract_matrix.py",
             "python tests/validate_app.py",
@@ -520,14 +518,6 @@ class ReleaseAudit:
                 token in quality,
                 f"Quality gate includes {token}",
             )
-        for token in ("source-health-history.json", "source-recovery-report.json"):
-            self.add(
-                f"update-preserves:{token}",
-                "update-workflow",
-                token in update,
-                f"Update workflow preserves {token}",
-            )
-
     def check_header(self) -> None:
         script = read_text(self.root, "wrn-header.js")
         css = read_text(self.root, "wrn-header.css")

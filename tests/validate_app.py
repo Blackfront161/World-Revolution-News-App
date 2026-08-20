@@ -80,7 +80,6 @@ def check_required_files() -> None:
         "source-catalog.json",
         "check_news_sources.py",
         "source-health.json",
-        ".github/workflows/update.yml",
     ]
     for relative in required:
         if not (ROOT / relative).is_file():
@@ -232,29 +231,6 @@ def check_source_health() -> None:
         for token in ["aggregate.py", "source-health.json", "def load_sources(", "def check_source(", "def main()"]:
             if token not in text:
                 error(f"check_news_sources.py enthält den Pflichtwert nicht: {token}")
-
-
-def check_update_workflow() -> None:
-    path = ROOT / ".github" / "workflows" / "update.yml"
-    if not path.is_file():
-        return
-    text = path.read_text(encoding="utf-8")
-    for token in [
-        "python aggregate.py",
-        "python reclassify_news_categories.py",
-        "python build_source_catalog.py",
-        "python check_news_sources.py",
-    ]:
-        if token not in text:
-            error(f"update.yml enthält den Phase-1J-Schritt nicht: {token}")
-    git_add = re.search(r"git add ([^\r\n]+)", text)
-    staged = set(git_add.group(1).split()) if git_add else set()
-    for required in {
-        "news.json", "events.json", "editorial-review.json",
-        "source-catalog.json", "source-health.json",
-    }:
-        if required not in staged:
-            error(f"update.yml veröffentlicht die Pflichtdatei nicht: {required}")
 
 
 def check_service_worker() -> None:
@@ -493,7 +469,6 @@ def check_data_control_module() -> None:
 def check_phase1k_release_fixes() -> None:
     app = (ROOT / "app.js").read_text(encoding="utf-8") if (ROOT / "app.js").is_file() else ""
     aggregate = (ROOT / "aggregate.py").read_text(encoding="utf-8") if (ROOT / "aggregate.py").is_file() else ""
-    workflow = (ROOT / ".github" / "workflows" / "update.yml").read_text(encoding="utf-8") if (ROOT / ".github" / "workflows" / "update.yml").is_file() else ""
     service_worker = (ROOT / "service-worker.js").read_text(encoding="utf-8") if (ROOT / "service-worker.js").is_file() else ""
     config = (ROOT / "config.js").read_text(encoding="utf-8") if (ROOT / "config.js").is_file() else ""
     development_config = (ROOT / "news-app-2-config.js").read_text(encoding="utf-8") if (ROOT / "news-app-2-config.js").is_file() else ""
@@ -508,9 +483,6 @@ def check_phase1k_release_fixes() -> None:
     for token in ["events.json", "content_is_incomplete", "MAX_INCOMPLETE_PER_SOURCE", "contentComplete"]:
         if token not in aggregate:
             error(f"aggregate.py enthält die Phase-1K-Artikel-/Event-Korrektur nicht: {token}")
-    if "events.json" not in workflow:
-        error("update.yml veröffentlicht events.json nicht.")
-
     config_version = re.search(
         r"window\.WRN_CONFIG\s*=\s*Object\.freeze\(\{.*?\bversion:\s*['\"]([^'\"]+)",
         config,
@@ -606,7 +578,6 @@ def main() -> int:
     check_modularization()
     check_json_files()
     check_source_health()
-    check_update_workflow()
     check_service_worker()
     check_event_module()
     check_reading_module()

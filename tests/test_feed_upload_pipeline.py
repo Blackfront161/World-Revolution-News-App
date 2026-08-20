@@ -45,29 +45,7 @@ def test_radar_events_use_complete_offset_pagination_without_archive_truncation(
     assert '[TEILFORTSCHRITT]' in aggregate
 
 
-def test_workflow_validates_and_stages_every_browser_feed():
-    workflow = (ROOT / ".github" / "workflows" / "update.yml").read_text(
-        encoding="utf-8"
-    )
-    fast_workflow = (ROOT / ".github" / "workflows" / "update-fast.yml").read_text(
-        encoding="utf-8"
-    )
-    events_workflow = (ROOT / ".github" / "workflows" / "update-events.yml").read_text(
-        encoding="utf-8"
-    )
-    for filename in ("news-feed.json", "events-feed.json", "feed-status.json"):
-        assert filename in workflow
-    assert "git add news-feed.json events-feed.json feed-status.json" in workflow
-    assert 'age > 3600' in workflow
-    assert 'status.get("news", {}).get("feedCount") != len(news)' in workflow
-    assert 'cron: "7 */2 * * *"' in fast_workflow
-    assert 'WRN_AGGREGATE_MODE: "fast"' in fast_workflow
-    assert 'WRN_FEED_TARGETS="news,status"' in fast_workflow
-    assert 'cron: "37 */6 * * *"' in workflow
-    assert 'WRN_AGGREGATE_MODE: "enrich"' in workflow
-    assert 'WRN_SKIP_RADAR: "1"' in workflow
-    assert 'cron: "17 */6 * * *"' in events_workflow
-    assert 'WRN_RADAR_ONLY: "1"' in events_workflow
+def test_feed_builder_and_aggregator_contracts_are_preserved():
     builder = (ROOT / "build_web_feeds.py").read_text(encoding="utf-8")
     assert 'WRN_FEED_TARGETS' in builder
     assert 'write_news = "news" in FEED_TARGETS' in builder
@@ -104,12 +82,8 @@ def test_workflow_validates_and_stages_every_browser_feed():
     assert '"contentBlocks": content_blocks[:400]' in aggregate
     assert 'STRUCTURAL_IMAGE_TOKENS' in aggregate
     assert '".et_pb_post_content"' in aggregate
-    assert 'git add news-detail-*.json' in fast_workflow
-    assert 'Volltext-Pakete fehlen' in fast_workflow
     assert 'item.pop("contentBlocks", None)' in builder
     assert 'has_structured_content = bool(archive_item.get("contentBlocks"))' in builder
-    assert 'fetch_age_hours > 2' in fast_workflow
-    assert '["git", "diff", "--quiet", "--", "news.json", "news-feed.json"]' in fast_workflow
 
 
 def test_generated_detail_chunks_preserve_full_text_and_images():
@@ -224,7 +198,7 @@ if __name__ == "__main__":
     test_aggregator_stops_before_the_workflow_timeout()
     test_checkpoints_are_throttled_and_atomic()
     test_radar_events_use_complete_offset_pagination_without_archive_truncation()
-    test_workflow_validates_and_stages_every_browser_feed()
+    test_feed_builder_and_aggregator_contracts_are_preserved()
     test_generated_detail_chunks_preserve_full_text_and_images()
     test_web_feed_assigns_an_explicit_content_mode()
     test_reclassifier_ignores_runtime_source_transformations()

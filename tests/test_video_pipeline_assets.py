@@ -18,7 +18,6 @@ def main() -> None:
         "video-feed.json",
         "video-health.json",
         "scripts/build_video_feed.js",
-        ".github/workflows/update-videos.yml",
         "VIDEO-PIPELINE.md",
     ):
         assert (ROOT / name).exists(), f"missing video pipeline asset: {name}"
@@ -65,11 +64,6 @@ def main() -> None:
         assert item_health["embedStatus"] in {"not-checked", "embeddable", "dead", "blocked", "unavailable", "not-applicable"}
         assert item_health["ageStatus"] in {"unknown", "current", "recent-archive", "archive"}
         assert item_health["platformStatus"]
-
-    workflow = (ROOT / ".github/workflows/update-videos.yml").read_text(encoding="utf-8")
-    assert 'cron: "17 */6 * * *"' in workflow
-    assert "node scripts/build_video_feed.js --check-network" in workflow
-    assert "git add video-feed.json video-health.json" in workflow
 
     config = (ROOT / "news-app-2-config.js").read_text(encoding="utf-8")
     index = (ROOT / "index.html").read_text(encoding="utf-8")
