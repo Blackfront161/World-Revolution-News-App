@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">World Revolution News</string>
     <string name="title_activity_main">World Revolution News</string>
-    <string name="package_name">com.world.revolution</string>
-    <string name="custom_url_scheme">com.world.revolution</string>
+    <string name="package_name" translatable="false">com.world.revolution</string>
+    <string name="custom_url_scheme" translatable="false">com.world.revolution</string>
     <string name="update_ready_title">Update ready</string>
     <string name="update_ready_message">The update has been downloaded. Restart World Revolution News to install it?</string>
     <string name="update_restart_action">Restart</string>
