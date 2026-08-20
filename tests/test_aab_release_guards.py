@@ -107,6 +107,40 @@ def test_gui_signer_checks_hash_before_password_dialog_and_refuses_overwrite() -
     assert "Name = 'JsonReport'" in build_script and "Name = 'MarkdownReport'" in build_script
 
 
+def test_build_release_transaction_callbacks_keep_helper_scope(tmp_path: Path) -> None:
+    build_script = (ROOT / "scripts" / "build-android-release.ps1").read_text(encoding="utf-8")
+    transaction_callbacks = build_script[
+        build_script.index("    $prepare = {") : build_script.index("    Invoke-WrnArtifactTransaction")
+    ]
+
+    assert ".GetNewClosure()" not in transaction_callbacks
+    assert "Get-WrnAabWebAssetManifest" in transaction_callbacks
+    assert "Compare-WrnHashManifest" in transaction_callbacks
+    assert "New-WrnVerifiedSignedAab" in transaction_callbacks
+    assert "Assert-WrnAabSignature" in transaction_callbacks
+
+    output = tmp_path / "scope-probe.txt"
+    completed = run_powershell(
+        "& { "
+        f". '{ps_quote(HELPERS)}'; "
+        f"$artifacts = @([pscustomobject]@{{ Name = 'Probe'; FinalPath = '{ps_quote(output)}' }}); "
+        "$expected = @{ 'asset.txt' = 'scope-ok' }; "
+        "$prepare = { param($entries) "
+        "Set-Content -LiteralPath $entries[0].TemporaryPath -Value 'scope-ok' -NoNewline; "
+        "$actual = @{ 'asset.txt' = (Get-Content -LiteralPath $entries[0].TemporaryPath -Raw) }; "
+        "if (@(Compare-WrnHashManifest $expected $actual).Count) { throw 'prepare scope mismatch' } }; "
+        "$validate = { param($entries) "
+        "$actual = @{ 'asset.txt' = (Get-Content -LiteralPath $entries[0].TemporaryPath -Raw) }; "
+        "if (@(Compare-WrnHashManifest $expected $actual).Count) { throw 'validate scope mismatch' }; "
+        "[pscustomobject]@{ Valid = $true } }; "
+        "Invoke-WrnArtifactTransaction -Artifacts $artifacts "
+        f"-BuildRoot '{ps_quote(tmp_path)}' -Prepare $prepare -Validate $validate | Out-Null "
+        "}"
+    )
+    assert completed.returncode == 0, completed.stdout + completed.stderr
+    assert output.read_text(encoding="utf-8") == "scope-ok"
+
+
 def test_version_code_contract_distinguishes_local_build_from_play_console() -> None:
     build_script = (ROOT / "scripts" / "build-android-release.ps1").read_text(encoding="utf-8")
     automation = (ROOT / "RELEASE_AUTOMATION.md").read_text(encoding="utf-8")

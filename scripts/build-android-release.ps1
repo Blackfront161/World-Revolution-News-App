@@ -362,7 +362,7 @@ try {
                 'Der eingebettete Webstand stimmt rekursiv mit den Bytes des detached Commit-Checkouts nach Git-Filter-/Zeilenendennormalisierung überein. Der Kandidat bleibt bis zur Signatur- und Zertifikatsprüfung gesperrt.'
             })
         ) | Set-Content -LiteralPath $markdownEntry.TemporaryPath -Encoding UTF8
-    }.GetNewClosure()
+    }
     $validate = {
         param($entries)
         $aabEntry = @($entries | Where-Object Name -eq 'Aab')[0]
@@ -390,7 +390,7 @@ try {
             Assert-WrnAabSignature -AabPath $aabEntry.TemporaryPath -JarsignerPath $jarsigner -KeytoolPath $keytool -ExpectedCertificateSha256 $ExpectedCertificateSha256 | Out-Null
         }
         return $parsed
-    }.GetNewClosure()
+    }
     Invoke-WrnArtifactTransaction -Artifacts $artifacts -BuildRoot $outputRoot -Prepare $prepare -Validate $validate | Out-Null
 } catch {
     $report.completedAt = (Get-Date).ToUniversalTime().ToString("o")
