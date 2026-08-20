@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
+    <string name="app_name">World Revolution News</string>
+    <string name="title_activity_main">World Revolution News</string>
     <string name="update_ready_title">Aktualisierung bereit</string>
     <string name="update_ready_message">Die Aktualisierung wurde heruntergeladen. World Revolution News jetzt neu starten und installieren?</string>
     <string name="update_restart_action">Neu starten</string>
