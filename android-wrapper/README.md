@@ -33,7 +33,10 @@ Zusätzliche Freigabeblocker:
   `com.world.revolution` und startet `MainActivity`; seine Ausführung benötigt
   weiterhin ein verbundenes Gerät oder einen Emulator und vorher erzeugte
   Webassets.
-- Google-Play-In-App-Updates sind noch nicht nativ integriert. Ein Service Worker kann die Play-Store-Aktualisierungsaufforderung nicht ersetzen.
+- Die native Play-In-App-Update-Grundlage verwendet die offizielle
+  `com.google.android.play:app-update:2.1.0`-Bibliothek. Ihre endgültige
+  Freigabe benötigt noch einen Instrumentierungslauf und einen Play-internen
+  Update-Test mit gleicher App-ID und Signatur.
 - Eine Release-Signaturkonfiguration ist nicht Teil des öffentlichen Projekts und darf auch keine privaten Schlüssel enthalten.
 - Die lokalen SDK-36-Dateien sind vorhanden und direkt lesbar; die aktuelle
   Gradle-Buildfähigkeit ist ohne einen kontrollierten Sync und Build dennoch
@@ -124,6 +127,34 @@ Set-Location android
 Lockdatei installierte CLI, muss der Sync abbrechen statt eine andere Version
 aus dem Netz nachzuladen.
 
+## Google-Play-Aktualisierungen
+
+`WRNAppUpdateController` bindet den Updatefluss an den Lebenszyklus von
+`MainActivity`. Normale Updates verwenden den flexiblen Play-Dialog. Ein
+sofortiger, unterbrechender Updatefluss ist ausschließlich zulässig, wenn
+Google Play eine Updatepriorität von mindestens 4 meldet und den Immediate-
+Typ ausdrücklich erlaubt. Ist Immediate nicht erlaubt, bleibt für ein
+kritisches Update der flexible Fallback möglich.
+
+Nach Ablehnung, Abbruch oder Fehler wird in den privaten App-Einstellungen ein
+24-stündiger Cooldown gespeichert; innerhalb einer Activity-Sitzung wird kein
+zweiter Startversuch ausgelöst. Ein bereits laufender kritischer Immediate-
+Flow darf beim nächsten `onResume` fortgesetzt werden. Der flexible
+Installations-Listener wird in `onStart` registriert und in `onStop` sowie
+abschließend in `onDestroy` abgemeldet.
+
+Ein heruntergeladenes Update wird sowohl über den Listener als auch bei jedem
+`onResume` erkannt. `completeUpdate()` wird niemals automatisch aufgerufen:
+Die Person muss zuerst den nativen Dialog „Restart/Neu starten“ bestätigen.
+„Later/Später“ und das Schließen des Dialogs verschieben die Installation für
+den Rest der Sitzung.
+
+Grundlage sind die offiziellen Android-Anleitungen:
+
+- <https://developer.android.com/guide/playcore/in-app-updates/kotlin-java>
+- <https://developer.android.com/guide/playcore/in-app-updates/test>
+- <https://developer.android.com/reference/com/google/android/play/core/appupdate/testing/FakeAppUpdateManager>
+
 ## Releaseprüfung
 
 Erst nach erfolgreicher Synchronisierung:
@@ -136,7 +167,12 @@ Erst nach erfolgreicher Synchronisierung:
 4. Debug-Build auf einem echten Gerät prüfen.
 5. Kaltstart online, langsames Netz, Flugmodus, Hintergrund/Fortsetzen und zweiten Start nach Cacheaktualisierung testen.
 6. Übersetzung, Teilen, Benachrichtigungen, gespeicherte Artikel, Datenschutz und externe Links testen.
-7. Falls umgesetzt, den flexiblen Google-Play-In-App-Update-Ablauf separat testen.
+7. `WRNAppUpdatePolicyTest` und
+   `WRNAppUpdateFakeManagerInstrumentedTest` ausführen. Danach den echten
+   Updatepfad über Internal App Sharing oder einen internen Play-Test prüfen:
+   niedrigere Version mit bereits integrierter Updatefunktion installieren,
+   höheren Versionscode bereitstellen und Flexible-Akzeptieren, Ablehnen,
+   Download, „Später“, Neustart sowie den kritischen Immediate-Fall testen.
 8. Release ausschließlich mit extern verwalteter Signatur erzeugen:
 
    ```powershell
