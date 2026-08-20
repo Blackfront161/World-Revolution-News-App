@@ -1,4 +1,4 @@
-/* World Revolution News 2.1.0 – App-Selbsttest */
+/* World Revolution News 2.1.1 – App-Selbsttest */
 'use strict';
 
 (() => {
@@ -85,7 +85,7 @@
 
     addResult(
       results,
-      version === '2.1.0' || version === '2.1.0-dev.1-test' || version === '2.1.0-dev.1-preview' ? 'pass' : 'warn',
+      version === '2.1.1' || version === '2.1.1-dev.1-test' || version === '2.1.1-dev.1-preview' ? 'pass' : 'warn',
       'App-Version',
       version
     );

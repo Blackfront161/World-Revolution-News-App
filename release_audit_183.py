@@ -19,9 +19,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parent
 REPORT_PATH = ROOT / "release-readiness-183.json"
-EXPECTED_VERSION = "2.1.0"
-EXPECTED_APP_CACHE = "wrn-app-v2.1.0-r4"
-EXPECTED_DATA_CACHE = "wrn-data-v2.1.0-r2"
+EXPECTED_VERSION = "2.1.1"
+EXPECTED_APP_CACHE = "wrn-app-v2.1.1-r1"
+EXPECTED_DATA_CACHE = "wrn-data-v2.1.1-r1"
 
 REQUIRED_FILES = (
     ".github/workflows/quality-gate.yml",
@@ -209,7 +209,7 @@ class ReleaseAudit:
         self.add(
             "config-build",
             "release",
-            "2.1.0" in build_value and "release" in build_value and "development" not in build_value,
+            EXPECTED_VERSION in build_value and "release" in build_value and "development" not in build_value,
             f"Build is marked as the {EXPECTED_VERSION} production candidate",
             detail=build_value,
         )

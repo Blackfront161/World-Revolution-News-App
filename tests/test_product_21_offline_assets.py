@@ -15,8 +15,8 @@ DATASET = "./verified-solidarity-actions.json"
 
 
 def test_preview_worker_precaches_product_21_and_bumps_cache():
-    assert "`${CACHE_PREFIX}v86`" in PREVIEW
-    assert "`${CACHE_PREFIX}v81`" not in PREVIEW
+    assert "`${CACHE_PREFIX}v87`" in PREVIEW
+    assert "`${CACHE_PREFIX}v86`" not in PREVIEW
     for asset in SCRIPTS:
         assert f"'{asset}'" in PREVIEW
     assert f"'{DATASET}'" in PREVIEW
@@ -38,12 +38,12 @@ def test_workers_keep_distinct_cache_names():
     preview_cache = re.search(r"CACHE_NAME = `\$\{CACHE_PREFIX\}(v\d+)`", PREVIEW)
     production_app = re.search(r"APP_CACHE = '([^']+)'", PRODUCTION)
     production_data = re.search(r"DATA_CACHE = '([^']+)'", PRODUCTION)
-    assert preview_cache and preview_cache.group(1) == "v86"
+    assert preview_cache and preview_cache.group(1) == "v87"
     assert production_app and production_data
-    assert production_app.group(1) == "wrn-app-v2.1.0-r4"
-    assert production_data.group(1) == "wrn-data-v2.1.0-r2"
-    assert "wrn-app-v2.1.0-dev.1-r8" not in PRODUCTION
-    assert "wrn-data-v2.1.0-dev.1-r8" not in PRODUCTION
+    assert production_app.group(1) == "wrn-app-v2.1.1-r1"
+    assert production_data.group(1) == "wrn-data-v2.1.1-r1"
+    assert "wrn-app-v2.1.1-dev.1-r1" not in PRODUCTION
+    assert "wrn-data-v2.1.1-dev.1-r1" not in PRODUCTION
     assert production_app.group(1) != production_data.group(1)
 
 

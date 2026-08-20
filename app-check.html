@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
-<title>WRN 2.1.0 – App-Prüfung</title>
+<title>WRN 2.1.1 – App-Prüfung</title>
 <style>
 :root{color-scheme:dark;--bg:#080a11;--card:#121622;--input:#0c0f18;--text:#f4f6ff;--muted:#aeb6cc;--line:#3c4358;--cyan:#00dce8;--green:#00d596;--yellow:#f0a43c;--red:#ff3158}
 *{box-sizing:border-box}
@@ -36,7 +36,7 @@ article strong{overflow-wrap:anywhere}article p{margin:.25rem 0 0;color:var(--mu
 <main>
 <header>
   <div>
-    <h1>World Revolution News – App-Prüfung 2.1.0</h1>
+    <h1>World Revolution News – App-Prüfung 2.1.1</h1>
     <p>Rein lesende Prüfung. Es werden keine App- oder Browserdaten verändert.</p>
   </div>
   <div class="actions">
@@ -52,10 +52,10 @@ article strong{overflow-wrap:anywhere}article p{margin:.25rem 0 0;color:var(--mu
 <script>
 'use strict';
 
-const EXPECTED_VERSION = '2.1.0';
-const EXPECTED_BUILD_MARKER = '2.1.0-release';
-const EXPECTED_APP_CACHE = 'wrn-app-v2.1.0-r4';
-const EXPECTED_DATA_CACHE = 'wrn-data-v2.1.0-r2';
+const EXPECTED_VERSION = '2.1.1';
+const EXPECTED_BUILD_MARKER = '2.1.1-release';
+const EXPECTED_APP_CACHE = 'wrn-app-v2.1.1-r1';
+const EXPECTED_DATA_CACHE = 'wrn-data-v2.1.1-r1';
 const REQUIRED_FILES = [
   'app-check.html',
   'runtime-selftest.js',
@@ -183,12 +183,12 @@ async function runChecks() {
     workerSource = await fetchText('./service-worker.js');
     add(
       workerSource.includes(EXPECTED_APP_CACHE) ? 'pass' : 'fail',
-      'Service-Worker-App-Cache 2.1.0',
+      'Service-Worker-App-Cache 2.1.1',
       EXPECTED_APP_CACHE
     );
     add(
       workerSource.includes(EXPECTED_DATA_CACHE) ? 'pass' : 'fail',
-      'Service-Worker-Daten-Cache 2.1.0',
+      'Service-Worker-Daten-Cache 2.1.1',
       EXPECTED_DATA_CACHE
     );
     add(

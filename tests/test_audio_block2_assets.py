@@ -13,7 +13,7 @@ assert 'audio-tab-183.css' in config
 assert 'audio-tab-183.js' in config
 assert 'audio-tab-183.css' in worker
 assert 'audio-tab-183.js' in worker
-assert "wrn-app-v2.1.0-r4" in worker
+assert "wrn-app-v2.1.1-r1" in worker
 assert 'seek: seekGlobalMedia' in media
 assert 'skip: skipGlobalMedia' in media
 assert 'python tests/run_contract_matrix.py' in workflow

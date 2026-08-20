@@ -1,6 +1,6 @@
 {
   "name": "world-revolution-news-app",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Capacitor wrapper for World Revolution News",
   "main": "index.js",
   "scripts": {

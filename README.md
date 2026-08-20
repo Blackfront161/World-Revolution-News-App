@@ -9,16 +9,24 @@ libertäre Perspektiven.
 
 | Kanal | Version | Status |
 |---|---:|---|
-| Google-Play-App | 2.0.8 | veröffentlichter mobiler Ausgangsstand |
+| Historische verifizierte Store-Baseline | 2.0.8 | früherer veröffentlichter mobiler Ausgangsstand |
+| Aktuelle Live-/Verteilungs-AAB | 2.1.0, Code 25 | vom Nutzer als aktueller signierter Stand bestätigt; Play-Trackstatus nicht unabhängig geprüft |
 | GitHub-Pages-PWA | 2.0.0 laut öffentlicher Konfiguration | veralteter Legacy-Stand, nicht der 2.0.8-Nachweis |
-| Dieses Arbeitsverzeichnis | 2.1.0 | lokaler, noch nicht veröffentlichter Release-Kandidat |
-| Android / Google Play | 2.1.0, Code 25 | erst nach Webasset-Sync, Gerätetest und autorisierter Signierung |
+| Dieses Arbeitsverzeichnis | 2.1.1 | lokaler, noch nicht veröffentlichter Release-Kandidat |
+| Android / Google Play | 2.1.1, Code 26 | erst nach Webasset-Sync, Gerätetest und autorisierter Signierung |
 
 Der derzeitige GitHub-Pages-Legacy-Stand ist unter
 [blackfront161.github.io/Revolution-News-Data](https://blackfront161.github.io/Revolution-News-Data/)
-erreichbar. Er ist nicht mit der veröffentlichten Google-Play-App 2.0.8
+erreichbar. Er ist weder mit der historischen verifizierten Store-Baseline
+2.0.8 noch mit der vom Nutzer bestätigten Live-/Verteilungs-AAB 2.1.0/Code 25
 gleichzusetzen. Ein Entwicklungsstand darf nicht allein aufgrund seiner
 Versionskennung als veröffentlicht, signiert oder produktiv bezeichnet werden.
+Android-VersionCode 25 ist bereits vergeben und darf nicht erneut verwendet
+werden. Der bekannte lokale Signaturnachweis ist an das erwartete Zertifikat
+`7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8`
+gebunden. Der Play-Console-Trackstatus konnte unter den aktuellen Bedingungen
+nicht unabhängig geprüft werden. Der nächste Release-Kandidat beginnt deshalb
+verbindlich mit Code 26.
 
 ## Produktumfang
 
@@ -165,7 +173,7 @@ wenn Aktualität und Verbreitungsrecht dokumentiert sind.
 1. Risikofreie Altbestände und generierte Artefakte bereinigen; relevante
    Arbeitsstände sichern, den Legacy-Mischbestand kontrolliert in App und Daten
    trennen und GitHub über geprüfte Pull Requests aktualisieren.
-2. Den 2.1.0-Kandidaten einschließlich „Hilfe finden“, Start/Offline-Cache und
+2. Den 2.1.1-Kandidaten einschließlich „Hilfe finden“, Start/Offline-Cache und
    Barrierefreiheit abschließen.
 3. Android-Wrapper versionieren, Webassets atomar synchronisieren, native
    Play-Aktualisierung integrieren und eine vollständig geprüfte AAB erzeugen.
