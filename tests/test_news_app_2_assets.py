@@ -36,7 +36,7 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     redirect = (ROOT / "next.html").read_text(encoding="utf-8")
     service_worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
     assert "language-origin.js?release=1" in index
-    assert "news-app-2.js?release=50" in index
+    assert "news-app-2.js?release=51" in index
     assert "news-app-2.css?release=45" in index
     assert "news-app-2-specialty.js?release=3" in index
     assert "stories-core.js?release=3" in index
@@ -46,7 +46,7 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     assert "preview=8" in redirect
     assert "target.searchParams.has('preview')" in redirect
     assert "language-origin.js?release=1" in service_worker
-    assert "news-app-2.js?release=50" in service_worker
+    assert "news-app-2.js?release=51" in service_worker
     assert "news-app-2-specialty.js?release=3" in service_worker
     assert "stories-core.js?release=3" in service_worker
     assert "classic.html" in service_worker
@@ -135,7 +135,7 @@ def test_specialty_views_are_native_preview_routes():
 
 def test_default_lists_stay_short_and_source_balanced():
     script = (ROOT / "news-app-2.js").read_text(encoding="utf-8")
-    assert "core.balanceEditorially(state.articles, HOME_COUNT" in script
+    assert "core.balanceEditorially(quickArticles, HOME_COUNT" in script
     assert "core.balanceBySource(chosen, HOME_COUNT, 2)" in script
     assert "allDiscoverResults().slice(0, state.discover.limit)" in script
     assert "last7Days" in script
@@ -535,7 +535,7 @@ def test_release_checklist_is_readable_and_available():
     assert 'href="news-app-2-release-checklist.html"' not in html
     assert "news-app-2-release-checklist.html" in worker
     assert "news-app-2-release-checklist.css" in worker
-    assert "`${CACHE_PREFIX}v89`" in worker
+    assert "`${CACHE_PREFIX}v90`" in worker
     assert "if (request.mode === 'navigate')" in worker
     assert 'class="release-checklist-page"' in checklist
     assert "Bestanden" in checklist

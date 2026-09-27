@@ -15,6 +15,7 @@ assert(home.includes('...topStories') && home.includes('...briefingItems'), 'Vis
 assert(!home.includes('...balanced') && !home.includes('...state.articles.slice(0, 5)'), 'Invisible stories must not trigger automatic translation');
 assert(!home.includes('...homeServices.homeEvents.items'), 'Location or preference-based events must not trigger automatic translation');
 assert(home.includes('home-translation-disclosure'), 'Home must disclose automatic translation');
+assert(home.includes('state.quickArticleIds.has(article.id)'), 'Home headlines must stay in the quick feed after archive loading');
 assert(app.includes('Math.min(3, homeTranslationQueue.length)'), 'Automatic requests must have bounded concurrency');
 assert(app.includes('data-action="translate"'), 'Readers need an explicit teaser translation action');
 assert(app.includes('translationFor(event)?.title || event.title'), 'Translated event titles are not rendered');

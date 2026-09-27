@@ -47,7 +47,7 @@ const APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=50',
+  './news-app-2.js?release=51',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -200,7 +200,7 @@ const CORE_APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=50'
+  './news-app-2.js?release=51'
 ];
 const APP_INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${APP_CACHE}`, self.location.href)
