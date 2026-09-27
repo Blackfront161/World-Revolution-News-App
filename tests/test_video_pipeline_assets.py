@@ -67,7 +67,7 @@ def main() -> None:
 
     config = (ROOT / "news-app-2-config.js").read_text(encoding="utf-8")
     index = (ROOT / "index.html").read_text(encoding="utf-8")
-    assert "news-app-2-config.js?release=14" in index
+    assert "news-app-2-config.js?release=15" in index
     for key, filename in (
         ("videoFeed", "video-feed.json"),
         ("videoHealth", "video-health.json"),
@@ -78,7 +78,7 @@ def main() -> None:
         for worker_name in ("news-app-2-sw.js", "service-worker.js"):
             worker = (ROOT / worker_name).read_text(encoding="utf-8")
             assert filename in worker
-            assert "news-app-2-config.js?release=14" in worker
+            assert "news-app-2-config.js?release=15" in worker
 
     print("Video pipeline assets: OK")
 
