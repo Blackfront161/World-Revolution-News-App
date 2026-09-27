@@ -16,6 +16,7 @@
   const TRANSLATIONS_KEY = 'wrn_next_teaser_translations_v1';
   const BOOKMARKS_KEY = 'wrn_bookmarks';
   const READ_KEY = 'wrn_read_list';
+  const READ_SNAPSHOTS_KEY = 'wrn_read_snapshots_v1';
   const ZINE_KEY = 'wrn_zine_articles';
   const LANGUAGE_KEY = 'wrn_system_lang';
   const STORY_WATCH_KEY = 'wrn_next_story_watch_v1';
@@ -93,7 +94,8 @@
       summaryShort:'Kurz', summaryStandard:'Standard', summaryDetailed:'Ausführlich',
       deviceVoice:'Kostenlose Gerätestimme', voice:'Stimme', speed:'Tempo', play:'Abspielen',
       pause:'Pause', stop:'Stopp', ready:'Bereit – startet erst nach deiner Auswahl.',
-      listening:'Wird vorgelesen', finished:'Wiedergabe beendet.'
+      listening:'Wird vorgelesen', finished:'Wiedergabe beendet.',
+      saveLocalFailed:'Speichern auf diesem Gerät fehlgeschlagen. Bitte Speicherplatz prüfen.'
     },
     en: {
       currentPeriod:'Current', last7Days:'Last 7 days', last30Days:'Last 30 days', allArticles:'All articles',
@@ -108,7 +110,8 @@
       summaryShort:'Short', summaryStandard:'Standard', summaryDetailed:'Detailed',
       deviceVoice:'Free device voice', voice:'Voice', speed:'Speed', play:'Play',
       pause:'Pause', stop:'Stop', ready:'Ready – starts only after you choose play.',
-      listening:'Reading aloud', finished:'Playback finished.'
+      listening:'Reading aloud', finished:'Playback finished.',
+      saveLocalFailed:'Could not save on this device. Please check storage space.'
     },
     es: {
       currentPeriod:'Actualidad', last7Days:'Últimos 7 días', last30Days:'Últimos 30 días', allArticles:'Todos los artículos',
@@ -626,7 +629,7 @@
   const SPECIAL_COPY = {
     de: {
       backDiscover:'Zurück zu Entdecken', underConstruction:'Im Aufbau',
-      eventUpcoming:'Kommende Termine', eventArchive:'Archiv', eventSearch:'Termine durchsuchen',
+      eventUpcoming:'Aktuelle und kommende Termine', eventArchive:'Archiv', eventSearch:'Termine durchsuchen',
       eventCountry:'Land', eventAllCountries:'Alle Länder', eventRepeat:'zusammengefasste Termine',
       when:'Wann', where:'Wo', internationalUnknown:'International / unklar', noEvents:'Keine passenden Termine gefunden.',
       glossaryIntro:'Kurze Einordnungen zu Begriffen aus anarchistischen, antiautoritären und linksrevolutionären Bewegungen.',
@@ -669,7 +672,7 @@
     },
     en: {
       backDiscover:'Back to Discover', underConstruction:'Under construction',
-      eventUpcoming:'Upcoming events', eventArchive:'Archive', eventSearch:'Search events', eventCountry:'Country',
+      eventUpcoming:'Current and upcoming events', eventArchive:'Archive', eventSearch:'Search events', eventCountry:'Country',
       eventAllCountries:'All countries', eventRepeat:'grouped dates', when:'When', where:'Where', internationalUnknown:'International / unclear', noEvents:'No matching events found.',
       glossaryIntro:'Short contextual explanations of terms used in anarchist, anti-authoritarian and revolutionary left movements.',
       glossaryNote:'No claim to completeness: words move, are contested and develop through collective use.',
@@ -1030,7 +1033,7 @@
       donate:'Spenden', donateKicker:'Freiwillige Unterstützung', donateTitle:'Projekt unterstützen',
       donateBody:'Dieses unabhängige Projekt kann freiwillig unterstützt werden.',
       donateWarning:'Wenn du fortfährst, verlässt du die App und öffnest PayPal.', donatePaypal:'Weiter zu PayPal',
-      display:'Darstellung', project:'Projekt', theme:'Farbdarstellung', themeDark:'Dunkel', themeLight:'Hell',
+      display:'Darstellung', project:'Projekt', theme:'Farbdarstellung', themeViolet:'Violett / Rot', themeDark:'Rot / Cyan', themeLight:'Hell',
       themeSystem:'Systemeinstellung', themeContrast:'Hoher Kontrast', fontSize:'Schriftgröße', normal:'Normal',
       large:'Groß', xlarge:'Sehr groß', density:'Artikeldarstellung', compact:'Kompakt', standard:'Standard',
       spacious:'Großzügig', settingsLocal:'Diese Einstellungen bleiben auf diesem Gerät.',
@@ -1059,7 +1062,7 @@
       donate:'Donate', donateKicker:'Voluntary support', donateTitle:'Support the project',
       donateBody:'You can voluntarily support this independent project.',
       donateWarning:'If you continue, you will leave the app and open PayPal.', donatePaypal:'Continue to PayPal',
-      display:'Appearance', project:'Project', theme:'Colour theme', themeDark:'Dark', themeLight:'Light',
+      display:'Appearance', project:'Project', theme:'Colour theme', themeViolet:'Violet / Red', themeDark:'Red / Cyan', themeLight:'Light',
       themeSystem:'System setting', themeContrast:'High contrast', fontSize:'Text size', normal:'Normal',
       large:'Large', xlarge:'Very large', density:'Article layout', compact:'Compact', standard:'Standard',
       spacious:'Spacious', settingsLocal:'These settings remain on this device.',
@@ -1817,6 +1820,11 @@
       sourceArchiveLoading:'Quellenarchiv wird nachgeladen …', sourceArchiveComplete:'30-Tage-Abdeckung vollständig',
       sourceArchivePartial:'Verfügbare Archivabdeckung – noch nicht volle 30 Tage',
       sourceArchiveUnavailable:'Quellenarchiv derzeit nicht verfügbar', sourceArchiveNoSources:'Keine passenden Quellen',
+      followingArchiveNote:'Weitere Beiträge aus dem verfügbaren Quellenarchiv sind mit ihrem ursprünglichen Datum gekennzeichnet.',
+      followingFeedEmpty:'Für diese Auswahl gibt es im aktuellen Feed keine Beiträge. Das Quellenarchiv wird geprüft.',
+      followingArchiveUnavailable:'Für diese Auswahl gibt es im aktuellen Feed keine Beiträge. Das Quellenarchiv ist derzeit nicht verfügbar.',
+      followingArchiveNoMatches:'Für diese Auswahl wurden im verfügbaren Quellenarchiv keine weiteren Beiträge gefunden.',
+      followingCurrentEmpty:'Für diese Auswahl gibt es im aktuellen Feed keine Beiträge.',
       sourceArchiveArticle:'Beitrag', sourceArchiveItems:'Beiträge', sourceArchiveMax:'Bis zu 20 Quellen gleichzeitig auswählbar.'
     },
     en: {
@@ -1827,6 +1835,11 @@
       sourceArchiveLoading:'Loading source archive …', sourceArchiveComplete:'Complete 30-day coverage',
       sourceArchivePartial:'Available archive coverage – not yet a full 30 days',
       sourceArchiveUnavailable:'Source archive is currently unavailable', sourceArchiveNoSources:'No matching sources',
+      followingArchiveNote:'Additional items from the available source archive retain their original dates.',
+      followingFeedEmpty:'No items for this selection are in the current feed. Checking the source archive.',
+      followingArchiveUnavailable:'No items for this selection are in the current feed. The source archive is currently unavailable.',
+      followingArchiveNoMatches:'No additional items for this selection were found in the available source archive.',
+      followingCurrentEmpty:'No items for this selection are in the current feed.',
       sourceArchiveArticle:'article', sourceArchiveItems:'articles', sourceArchiveMax:'Up to 20 sources can be selected at once.'
     }
   };
@@ -1949,11 +1962,12 @@
     facets: { regions: [], topics: [], sources: [] },
     view: 'home',
     language: supportedLanguage(localStorage.getItem(LANGUAGE_KEY) || navigator.language || 'de'),
-    ui: readJson(UI_SETTINGS_KEY, { theme: 'dark', fontSize: 'normal', density: 'standard' }),
+    ui: readJson(UI_SETTINGS_KEY, { theme: 'violet', fontSize: 'normal', density: 'standard' }),
     preferences: normalizedPreferences(readJson(PREFS_KEY, {})),
     translations: readJson(TRANSLATIONS_KEY, {}),
     discover: {
       query: '', region: core.text(storedDiscoverFilters.region), topic: core.text(storedDiscoverFilters.topic),
+      sportOnly: false,
       period: ['current', '7d', '30d', 'all'].includes(storedDiscoverFilters.period) ? storedDiscoverFilters.period : 'current',
       limit: 24,
       sort: ['newest', 'oldest'].includes(storedDiscoverFilters.sort) ? storedDiscoverFilters.sort : 'newest',
@@ -1965,6 +1979,7 @@
     },
     sourceArchive: {
       manifest: null, manifestLoading: false, manifestFailed: false,
+      generation: 0,
       selectedSources: storedArchiveSources, loadedSources: new Set(), failedSources: new Set(),
       loadingSources: new Set(), sourceQuery: ''
     },
@@ -2064,10 +2079,15 @@
   const briefingTranslationsInFlight = new Set();
   const briefingTranslationsAttempted = new Set();
   let briefingTranslationWarningShown = false;
+  let articleTranslationGeneration = 0;
   let dataRefreshInFlight = false;
   let lastSuccessfulDataLoad = 0;
   let specialtyHydrationPromise = null;
   let specialtyDataReady = false;
+  let followingArchivesInFlight = false;
+  let sourceArchiveManifestPromise = null;
+  let sourceArchiveManifestGeneration = -1;
+  let savedDataGeneration = 0;
   let restoringAppHistory = false;
   let articleReturnFocus = null;
   let helpReturnFocus = null;
@@ -2329,7 +2349,7 @@
 
   function normalizedUiSettings(value = {}) {
     return {
-      theme: ['dark', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'dark',
+      theme: ['violet', 'dark', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'violet',
       fontSize: ['normal', 'large', 'xlarge', '200'].includes(value.fontSize) ? value.fontSize : 'normal',
       density: ['compact', 'standard', 'spacious'].includes(value.density) ? value.density : 'standard'
     };
@@ -2543,7 +2563,7 @@
     document.getElementById('next-menu-font-label').textContent = t('fontSize');
     document.getElementById('next-menu-density-label').textContent = t('density');
     [
-      [themeSelect, [['dark', 'themeDark'], ['oled', 'themeOled'], ['soft', 'themeSoft'], ['pink', 'themePink'], ['light', 'themeLight'], ['system', 'themeSystem'], ['contrast', 'themeContrast']]],
+      [themeSelect, [['violet', 'themeViolet'], ['dark', 'themeDark'], ['oled', 'themeOled'], ['soft', 'themeSoft'], ['pink', 'themePink'], ['light', 'themeLight'], ['system', 'themeSystem'], ['contrast', 'themeContrast']]],
       [fontSizeSelect, [['normal', 'normal'], ['large', 'large'], ['xlarge', 'xlarge'], ['200', 'font200']]],
       [densitySelect, [['compact', 'compact'], ['standard', 'standard'], ['spacious', 'spacious']]]
     ].forEach(([select, options]) => {
@@ -2789,7 +2809,11 @@
   }
 
   function translationForLanguage(article, language = state.language) {
-    return state.translations?.[language]?.[article.id] || null;
+    if (!article?.id) return null;
+    const cached = state.translations?.[language]?.[article.id];
+    return cached?.sourceFingerprint === core.articleTranslationFingerprint(article)
+      ? cached
+      : null;
   }
 
   function translationFor(article) {
@@ -2824,12 +2848,13 @@
     const entry = {
       title: core.text(translation.title),
       intro: cardCopy.completeFirstSentence(translation.intro, language),
+      sourceFingerprint: core.articleTranslationFingerprint(article),
       storedAt: new Date().toISOString()
     };
     const source = translationSourceLanguage(article, translation);
     if (source) entry.sourceLanguage = source.code;
     if (translation.content) {
-      entry.content = core.text(translation.content);
+      entry.content = String(translation.content).trim();
       entry.fullContent = true;
     }
     state.translations[language][article.id] = entry;
@@ -2876,9 +2901,11 @@
 
   async function syncOfflineBookmarks(items, preferredItems = []) {
     if (!window.WRNStorage?.putDataset) return false;
+    const generation = savedDataGeneration;
     const existing = state.savedArticles.length
       ? state.savedArticles
       : await window.WRNStorage.getDataset?.('news-app-2-saved-articles');
+    if (generation !== savedDataGeneration) return false;
     state.savedArticles = mergeSavedArticles(items, existing, preferredItems);
     const stored = await window.WRNStorage.putDataset(
       'news-app-2-saved-articles',
@@ -2955,7 +2982,10 @@
     const items = bookmarks().map(item => (
       core.articleId(item) === id ? lightweightBookmark(item) : item
     ));
-    writeJson(BOOKMARKS_KEY, items);
+    if (!writeJson(BOOKMARKS_KEY, items)) {
+      showToast(t('saveLocalFailed'));
+      return false;
+    }
     await removeSavedArticleAssets(article, items);
     state.savedArticles = state.savedArticles.map(item => (
       core.articleId(item) === id ? lightweightBookmark(item) : item
@@ -2968,6 +2998,7 @@
 
   async function prepareSavedArticle(article, options = {}) {
     if (!article) return false;
+    const generation = savedDataGeneration;
     const silent = options?.silent === true;
     if (!silent) showToast(t('savingOffline'));
     if (
@@ -2979,6 +3010,7 @@
     ) {
       await hydrateArticleDetail(article);
     }
+    if (generation !== savedDataGeneration || !isSaved(article)) return false;
     const contentMode = core.articleContentMode(article, article.content);
     const offlineArticle = {
       ...article,
@@ -2989,6 +3021,7 @@
       offlineSavedAt: new Date().toISOString()
     };
     await cacheSavedArticleAssets(offlineArticle);
+    if (generation !== savedDataGeneration || !isSaved(article)) return false;
     const stored = await syncOfflineBookmarks(bookmarks(), [offlineArticle]);
     if (stored && !silent) showToast(t(offlineArticle.offlineReady ? 'offlineComplete' : 'offlineExcerptSaved'));
     if (state.view === 'saved') renderSaved();
@@ -2996,8 +3029,11 @@
   }
 
   async function loadOfflineBookmarks() {
+    const generation = savedDataGeneration;
     const stored = await window.WRNStorage?.getDataset?.('news-app-2-saved-articles');
+    if (generation !== savedDataGeneration) return;
     state.savedArticles = mergeSavedArticles(bookmarks(), stored || []);
+    rememberVisibleReadSnapshots(state.savedArticles);
     await syncOfflineBookmarks(bookmarks());
     if (state.view === 'saved') renderSaved();
   }
@@ -3011,7 +3047,10 @@
       items.push(bookmark);
     }
     else items.splice(index, 1);
-    writeJson(BOOKMARKS_KEY, items);
+    if (!writeJson(BOOKMARKS_KEY, items)) {
+      showToast(t('saveLocalFailed'));
+      return !saved;
+    }
     if (saved) void prepareSavedArticle(article);
     else void (async () => {
       await removeSavedArticleAssets(article, items);
@@ -3026,6 +3065,42 @@
     return Array.isArray(values) ? values.filter(Boolean) : [];
   }
 
+  function readSnapshots() {
+    const values = readJson(READ_SNAPSHOTS_KEY, []);
+    return Array.isArray(values) ? values.filter(item => item?.title && item?.link) : [];
+  }
+
+  function rememberReadSnapshot(article) {
+    const key = article?.link || article?.id || '';
+    if (!key || !article?.title || !readArticles().includes(key)) return;
+    const snapshot = {
+      title: article.title,
+      link: article.link || '',
+      quelleName: article.source || article.quelleName || '',
+      pubDate: article.pubDate || '',
+      intro: String(article.intro || '').slice(0, 500),
+      content: String(article.content || '').slice(0, 1500),
+      contentComplete: false,
+      detailPath: article.detailPath || '',
+      detailUrl: article.detailUrl || '',
+      image: article.image || ''
+    };
+    const retained = readSnapshots().filter(item => item.link !== key);
+    writeJson(READ_SNAPSHOTS_KEY, [snapshot, ...retained].slice(0, 200));
+  }
+
+  function rememberVisibleReadSnapshots(items) {
+    const missing = new Set(readArticles());
+    readSnapshots().forEach(item => missing.delete(item.link));
+    for (const article of items || []) {
+      const key = article.link || article.id;
+      if (!missing.has(key)) continue;
+      rememberReadSnapshot(article);
+      missing.delete(key);
+      if (!missing.size) break;
+    }
+  }
+
   function isRead(article) {
     return readArticles().includes(article?.link || article?.id || '');
   }
@@ -3038,7 +3113,12 @@
     const read = index < 0;
     if (read) values.push(key);
     else values.splice(index, 1);
-    writeJson(READ_KEY, values);
+    if (!writeJson(READ_KEY, values)) {
+      showToast(t('saveLocalFailed'));
+      return !read;
+    }
+    if (read) rememberReadSnapshot(article);
+    else writeJson(READ_SNAPSHOTS_KEY, readSnapshots().filter(item => item.link !== key));
     if (read) {
       const positions = readingPositions();
       delete positions[readingKey(article)];
@@ -3078,6 +3158,7 @@
         const values = readArticles();
         values.push(key);
         writeJson(READ_KEY, [...new Set(values)]);
+        rememberReadSnapshot(article);
       }
     } else if (progress > .015) {
       positions[key] = {
@@ -3624,7 +3705,7 @@
     const names = await caches.keys();
     await Promise.all(
       names
-        .filter(name => name.startsWith('wrn-news-app-2-') || name === 'wrn-saved-articles-v1')
+        .filter(name => name.startsWith('wrn-news-app-2-'))
         .map(name => caches.delete(name))
     );
   }
@@ -3632,24 +3713,39 @@
   async function clearLocalData(category) {
     if (category === 'reading') {
       if (!window.confirm(t('clearReadingConfirm'))) return;
-      [BOOKMARKS_KEY, READ_KEY, READING_POSITIONS_KEY, ZINE_KEY, VIDEO_WATCH_LATER_KEY, VIDEO_HISTORY_KEY, BRIEFING_HISTORY_KEY].forEach(key => localStorage.removeItem(key));
-      state.videoWatchLater = [];
-      state.videoHistory = [];
-      state.briefingHistory = [];
+      savedDataGeneration += 1;
+      [BOOKMARKS_KEY, READ_KEY, READ_SNAPSHOTS_KEY, READING_POSITIONS_KEY, ZINE_KEY].forEach(key => localStorage.removeItem(key));
+      state.savedArticles = [];
       await window.WRNStorage?.putDataset?.('news-app-2-saved-articles', []);
       if ('caches' in window) await caches.delete('wrn-saved-articles-v1');
     } else if (category === 'offline') {
       if (!window.confirm(t('clearOfflineConfirm'))) return;
       await clearPreviewCaches();
-      await window.WRNStorage?.clearAll?.();
     } else {
       if (!window.confirm(t('clearAllConfirm'))) return;
+      savedDataGeneration += 1;
+      await Promise.allSettled(Object.values(eventReminders()).map(async reminder => {
+        if (!reminder?.nativeNotificationId) return;
+        await window.WRNDeviceBridge?.cancelReminder?.(reminder.nativeNotificationId);
+      }));
+      await disconnectPushSubscription();
       [...Array(localStorage.length)].map((_, index) => localStorage.key(index))
         .filter(key => key?.startsWith('wrn_'))
         .forEach(key => localStorage.removeItem(key));
       await clearPreviewCaches();
+      if ('caches' in window) await caches.delete('wrn-saved-articles-v1');
       await window.WRNStorage?.clearAll?.();
+      state.savedArticles = [];
+      state.translations = {};
+      state.videoWatchLater = [];
+      state.videoHistory = [];
+      state.briefingHistory = [];
+      state.preferences = normalizedPreferences({});
+      state.developmentWatch = [];
+      state.eventFilter.location = null;
+      state.eventFilter.radius = 0;
     }
+    render();
     showToast(t('selectedDataCleared'));
     renderDataControl();
   }
@@ -3789,7 +3885,7 @@
       return Number(first.start) - Number(second.start);
     });
     return {
-      items: items.slice(0, 2),
+      items: items.slice(0, 5),
       regions: locationActive ? [] : preferredRegions,
       context: locationActive
         ? `${t('nearMe')} · ${state.eventFilter.radius} km`
@@ -3988,21 +4084,73 @@
     </section>`;
   }
 
+  function homeStoryMarkup(article, featured = false, sport = false) {
+    const index = state.cardArticles.push(article) - 1;
+    const translation = translationFor(article);
+    const title = translation?.title || article.title;
+    const intro = newsCardTeaser(article, translation);
+    return `<article class="home-story${featured ? ' home-story--featured' : ''}${article.image ? '' : ' home-story--no-image'}">
+      ${article.image ? `<div class="home-story__image" data-optional-image><img src="${escapeHtml(article.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>` : ''}
+      <div class="home-story__body">
+        ${sport ? `<span class="home-sport__category">${escapeHtml(/\b(fußball|fussball|futbol|football|soccer)\b/i.test(article.title) ? (state.language === 'de' ? 'Fußball' : 'Football') : 'Sport')}</span>` : ''}
+        <small>${escapeHtml(article.source)} · ${escapeHtml(dateLabel(article))}</small>
+        <button type="button" data-action="open" data-index="${index}"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(intro)}</span></button>
+      </div>
+    </article>`;
+  }
+
+  function isSportArticle(article) {
+    const sportWords = /\b(sport|football|fußball|fussball|futbol|soccer|basketball|cycling|radsport|ultras?|fankultur|fan culture)\b/i;
+    return sportWords.test([article.primaryTopic, ...(article.categories || []), article.title].join(' '));
+  }
+
+  function homeSportArticles(excludedIds) {
+    return core.balanceBySource(state.articles.filter(article =>
+      !excludedIds.has(article.id)
+      && core.isLeadEligible(article)
+      && isSportArticle(article)
+    ), 3, 1);
+  }
+
+  function homeSportMarkup(items) {
+    if (!items.length) return '';
+    return `<section class="home-sport" aria-labelledby="home-sport-title">
+      <div class="section-heading"><h2 id="home-sport-title">Sport &amp; Fankultur</h2>
+        <button class="section-text-action" type="button" data-action="home-sport">${escapeHtml(t('allArticles'))} →</button>
+      </div>
+      <div class="home-sport__grid${items.length === 1 ? ' home-sport__grid--single' : ''}">${items.map((article, index) => homeStoryMarkup(article, index === 0, true)).join('')}</div>
+    </section>`;
+  }
+
   function renderHome() {
     state.cardArticles = [];
-    const balanced = core.balanceEditorially(state.articles, HOME_COUNT, {
+    const balanced = core.balanceEditorially(state.articles, HOME_COUNT + 12, {
       maxPerFamily: 2,
-      poolSize: 60
+      poolSize: 90
     });
-    const hero = balanced.find(core.isLeadEligible)
+    const hero = balanced.find(article => core.isLeadEligible(article) && article.image)
+      || balanced.find(core.isLeadEligible)
       || state.articles.find(core.isLeadEligible);
     if (!hero) return renderError();
-    const selected = [hero, ...balanced.filter(article => article.id !== hero.id)]
-      .slice(0, HOME_COUNT);
+    const sportStories = homeSportArticles(new Set([hero.id]));
+    const sportIds = new Set(sportStories.map(article => article.id));
+    const candidates = balanced.filter(article =>
+      article.id !== hero.id
+      && !sportIds.has(article.id)
+      && core.isLeadEligible(article)
+      && newsCardTeaser(article)
+    );
+    const pictured = candidates.filter(article => article.image);
+    const topStories = [...pictured, ...candidates.filter(article => !article.image)].slice(0, 5);
+    const topIds = new Set([hero.id, ...topStories.map(article => article.id)]);
+    const occupiedIds = new Set([...topIds, ...sportStories.map(article => article.id)]);
+    const moreStories = balanced.filter(article => !occupiedIds.has(article.id)).slice(0, HOME_COUNT - 1);
+    const selected = [hero, ...topStories, ...moreStories];
+    const visibleIds = new Set([...selected, ...sportStories].map(article => article.id));
     const briefingSeen = new Set();
-    const briefingItems = [...selected, ...state.articles]
+    const briefingItems = state.articles
       .filter(article => {
-        if (!core.isLeadEligible(article) || briefingSeen.has(article.id)) return false;
+        if (!core.isLeadEligible(article) || visibleIds.has(article.id) || briefingSeen.has(article.id)) return false;
         briefingSeen.add(article.id);
         return true;
       })
@@ -4012,8 +4160,6 @@
     state.editorialQuality = core.editorialQuality(selected);
     viewRoot.dataset.sourceFamilies = String(state.editorialQuality.uniqueSourceFamilies);
     viewRoot.dataset.maxSourceStreak = String(state.editorialQuality.maxSourceStreak);
-    const homeGroups = personalizedHomeGroups(selected.slice(1), [hero.id]);
-
     const heroIndex = state.cardArticles.push(hero) - 1;
     const heroTranslation = translationFor(hero);
     const heroTitle = heroTranslation?.title || hero.title;
@@ -4047,6 +4193,17 @@
           </div>
         </div>
       </article>
+      <section class="home-top-stories" aria-labelledby="home-top-title">
+        <div class="section-heading"><h2 id="home-top-title">${escapeHtml(t('important'))}</h2><small>${topStories.length}</small></div>
+        <div class="home-top-stories__grid">${topStories.map(article => homeStoryMarkup(article)).join('')}</div>
+      </section>
+      ${homeSportMarkup(sportStories)}
+      ${homeServiceMarkup(homeServices)}
+      <div class="section-heading">
+        <h2>${escapeHtml(t('moreNews'))}</h2>
+        <button class="section-text-action" type="button" data-action="open-archive" data-period="7d">${escapeHtml(t('archiveBrowse'))} →</button>
+      </div>
+      ${cardsMarkup(moreStories)}
       <div class="section-heading briefing-heading">
         <div><h2>${escapeHtml(t('briefing'))}</h2><small>${escapeHtml(t('briefingHint'))}</small></div>
         <button class="secondary-button" type="button" data-action="briefing-open">${escapeHtml(t('briefingCreate'))}</button>
@@ -4061,30 +4218,12 @@
         }).join('')}
       </div>
       ${homeTodayMarkup(todayData)}
-      ${homeServiceMarkup(homeServices)}
-      ${personalizedHomeMarkup(homeGroups.personalized)}
-      <div class="section-heading">
-        <h2>${escapeHtml(t('moreNews'))}</h2>
-        <button class="section-text-action" type="button" data-action="open-archive" data-period="7d">${escapeHtml(t('archiveBrowse'))} →</button>
-      </div>
-      ${cardsMarkup(homeGroups.remaining)}
     `;
-    const serviceTranslationItems = [
-      ...homeServices.developments.map(story => Array.isArray(story.items) ? story.items.at(-1) : null),
-      ...homeServices.homeEvents.items
-    ].filter(Boolean);
-    void ensureHomeTranslations([
-      hero,
-      ...briefingItems,
-      ...todayData.newItems.slice(0, 2),
-      ...homeGroups.personalized,
-      ...serviceTranslationItems
-    ]);
   }
 
   function articleNeedsTeaserTranslation(article, targetLanguage) {
     if (!article || translationForLanguage(article, targetLanguage)) return false;
-    const requestKey = `${targetLanguage}::${article.id}`;
+    const requestKey = `${targetLanguage}::${article.id}::${core.articleTranslationFingerprint(article)}`;
     if (briefingTranslationsAttempted.has(requestKey)) return false;
     const sourceLanguage = String(
       article.language || article.lang || article.sprache || ''
@@ -4096,7 +4235,8 @@
     if (!window.WRNSharedTranslations?.request || !articleNeedsTeaserTranslation(article, targetLanguage)) {
       return translationForLanguage(article, targetLanguage);
     }
-    const requestKey = `${targetLanguage}::${article.id}`;
+    const sourceFingerprint = core.articleTranslationFingerprint(article);
+    const requestKey = `${targetLanguage}::${article.id}::${sourceFingerprint}`;
     if (briefingTranslationsInFlight.has(requestKey) || briefingTranslationsAttempted.has(requestKey)) return null;
     briefingTranslationsInFlight.add(requestKey);
     briefingTranslationsAttempted.add(requestKey);
@@ -4108,6 +4248,7 @@
         mode: 'title_and_text'
       });
       if (result?.error || !result?.text) throw new Error(result?.message || 'Translation failed');
+      if (sourceFingerprint !== core.articleTranslationFingerprint(article)) return null;
       const parsed = core.splitTranslatedTeaser(result.text);
       const translated = {
         title: parsed.title || article.title,
@@ -4230,6 +4371,7 @@
 
     const hasArticlePreferences = ['regions', 'topics', 'sources', 'blockedSources']
       .some(key => Array.isArray(state.preferences[key]) && state.preferences[key].length);
+    if (state.preferences.sources?.length) void loadFollowingSourceArchives();
     const chosen = hasArticlePreferences
       ? state.articles.filter(article => core.matchesPreferences(article, state.preferences))
       : [];
@@ -4239,6 +4381,13 @@
       ...classificationList(state.preferences.topics || []),
       ...(state.preferences.sources || [])
     ].slice(0, 5).join(' · ');
+    const followedSources = state.preferences.sources || [];
+    const archiveDone = followedSources.length && followedSources.every(source =>
+      state.sourceArchive.loadedSources.has(source) || state.sourceArchive.failedSources.has(source)
+    );
+    const emptyCopy = !followedSources.length ? 'followingCurrentEmpty'
+      : state.sourceArchive.manifestFailed ? 'followingArchiveUnavailable'
+      : archiveDone ? 'followingArchiveNoMatches' : 'followingFeedEmpty';
 
     viewRoot.innerHTML = `
       ${headingMarkup(t('following'), t('personalTitle'), t('personalIntro'))}
@@ -4247,7 +4396,10 @@
         <button class="secondary-button" type="button" data-action="preferences">${escapeHtml(t('editSelection'))}</button>
       </div>
       ${followedContextMarkup()}
-      ${cardsMarkup(selected)}
+      ${state.sourceArchive.loadedSources.size && selected.length
+        ? `<p class="source-archive-coverage">${escapeHtml(t('followingArchiveNote'))}</p>` : ''}
+      ${selected.length ? cardsMarkup(selected)
+        : `<div class="empty-state"><strong>${escapeHtml(t('noMatches'))}</strong><p>${escapeHtml(t(emptyCopy))}</p></div>`}
     `;
   }
 
@@ -4319,35 +4471,48 @@
 
   async function ensureSourceArchiveManifest() {
     if (state.sourceArchive.manifest) return state.sourceArchive.manifest;
-    if (state.sourceArchive.manifestLoading) return null;
-    state.sourceArchive.manifestLoading = true;
-    state.sourceArchive.manifestFailed = false;
-    const urls = window.WRN_CONFIG?.dataUrls || {};
-    const mirrors = window.WRN_CONFIG?.dataMirrors || {};
-    try {
-      const payload = await fetchFirstJson([
-        mirrors.newsArchiveManifest,
-        urls.newsArchiveManifest,
-        'news-archive-manifest.json'
-      ], {
-        cacheKey: 'wrn_source_archive_manifest',
-        cacheToken: state.dataStatus.revision || Date.now(),
-        timeoutMs: 20000
-      });
-      state.sourceArchive.manifest = normalizedSourceArchiveManifest(payload);
-      void window.WRNStorage?.putDataset?.('news-app-2-source-archive-manifest', payload);
-    } catch (error) {
-      try {
-        const cached = await window.WRNStorage?.getDataset?.('news-app-2-source-archive-manifest');
-        state.sourceArchive.manifest = normalizedSourceArchiveManifest(cached);
-      } catch {
-        state.sourceArchive.manifestFailed = true;
-        console.warn('Source archive manifest unavailable', error);
-      }
-    } finally {
-      state.sourceArchive.manifestLoading = false;
+    const generation = state.sourceArchive.generation;
+    if (sourceArchiveManifestPromise && sourceArchiveManifestGeneration === generation) {
+      return sourceArchiveManifestPromise;
     }
-    return state.sourceArchive.manifest;
+    sourceArchiveManifestGeneration = generation;
+    const request = (async () => {
+      state.sourceArchive.manifestLoading = true;
+      state.sourceArchive.manifestFailed = false;
+      const urls = window.WRN_CONFIG?.dataUrls || {};
+      const mirrors = window.WRN_CONFIG?.dataMirrors || {};
+      try {
+        const payload = await fetchFirstJson([
+          mirrors.newsArchiveManifest,
+          urls.newsArchiveManifest,
+          'news-archive-manifest.json'
+        ], {
+          cacheKey: 'wrn_source_archive_manifest',
+          cacheToken: state.dataStatus.revision || Date.now(),
+          timeoutMs: 20000
+        });
+        if (generation !== state.sourceArchive.generation) return null;
+        state.sourceArchive.manifest = normalizedSourceArchiveManifest(payload);
+        void window.WRNStorage?.putDataset?.('news-app-2-source-archive-manifest', payload);
+      } catch (error) {
+        try {
+          const cached = await window.WRNStorage?.getDataset?.('news-app-2-source-archive-manifest');
+          if (generation !== state.sourceArchive.generation) return null;
+          state.sourceArchive.manifest = normalizedSourceArchiveManifest(cached);
+        } catch {
+          if (generation === state.sourceArchive.generation) state.sourceArchive.manifestFailed = true;
+          console.warn('Source archive manifest unavailable', error);
+        }
+      } finally {
+        if (generation === state.sourceArchive.generation) state.sourceArchive.manifestLoading = false;
+      }
+      return state.sourceArchive.manifest;
+    })();
+    sourceArchiveManifestPromise = request;
+    try { return await request; }
+    finally {
+      if (sourceArchiveManifestPromise === request) sourceArchiveManifestPromise = null;
+    }
   }
 
   function sourceArchiveEntry(sourceName) {
@@ -4360,7 +4525,9 @@
       || state.sourceArchive.loadedSources.has(sourceName)
       || state.sourceArchive.loadingSources.has(sourceName)
     ) return;
+    const generation = state.sourceArchive.generation;
     const manifest = await ensureSourceArchiveManifest();
+    if (generation !== state.sourceArchive.generation) return;
     const source = manifest?.sources?.find(item => item.name === sourceName);
     if (!source) {
       state.sourceArchive.failedSources.add(sourceName);
@@ -4385,11 +4552,13 @@
           timeoutMs: 25000
         });
         if (!Array.isArray(payload)) throw new Error('Invalid source archive chunk');
+        if (generation !== state.sourceArchive.generation) return;
         void window.WRNStorage?.putDataset?.(cacheKey, payload);
       } catch (error) {
         payload = await window.WRNStorage?.getDataset?.(cacheKey);
         if (!Array.isArray(payload)) throw error;
       }
+      if (generation !== state.sourceArchive.generation) return;
       const merged = core.normalizeArticles([...state.articles, ...payload])
         .filter(core.hasCompleteArticle);
       state.articles = core.applyEditorialDecisions(merged, state.editorialDecisions);
@@ -4397,10 +4566,10 @@
       state.sourceArchive.loadedSources.add(sourceName);
       window.WRNSourceProfiles?.setArticles?.(state.articles);
     } catch (error) {
-      state.sourceArchive.failedSources.add(sourceName);
+      if (generation === state.sourceArchive.generation) state.sourceArchive.failedSources.add(sourceName);
       console.warn('Source archive unavailable', sourceName, error);
     } finally {
-      state.sourceArchive.loadingSources.delete(sourceName);
+      if (generation === state.sourceArchive.generation) state.sourceArchive.loadingSources.delete(sourceName);
     }
   }
 
@@ -4410,6 +4579,27 @@
     if (state.view === 'discover') renderDiscover();
     await Promise.all(state.sourceArchive.selectedSources.map(loadSourceArchive));
     if (state.view === 'discover') renderDiscover();
+  }
+
+  async function loadFollowingSourceArchives() {
+    if (followingArchivesInFlight) return;
+    const sources = [...new Set(state.preferences.sources || [])]
+      .filter(source => !state.sourceArchive.loadedSources.has(source)
+        && !state.sourceArchive.failedSources.has(source))
+      .slice(0, 20);
+    if (!sources.length) return;
+    followingArchivesInFlight = true;
+    try {
+      const manifest = await ensureSourceArchiveManifest();
+      if (!manifest) {
+        sources.forEach(source => state.sourceArchive.failedSources.add(source));
+        return;
+      }
+      await Promise.all(sources.map(loadSourceArchive));
+    } finally {
+      followingArchivesInFlight = false;
+      if (state.view === 'following') renderFollowing();
+    }
   }
 
   function sourceArchiveCoverageState() {
@@ -4475,7 +4665,7 @@
       periodItems = periodItems.filter(article => selectedSources.has(article.source));
     }
     const results = release.filterArticles(
-      periodItems,
+      state.discover.sportOnly ? periodItems.filter(isSportArticle) : periodItems,
       state.discover,
       state.sourceIndex
     );
@@ -4596,6 +4786,7 @@
 
     viewRoot.innerHTML = `
       ${headingMarkup(t('discover'), t('discover'), t('discoverIntro'))}
+      ${state.discover.sportOnly ? `<div class="home-sport-filter"><strong>Sport &amp; Fankultur</strong><button type="button" data-action="home-sport-clear">${escapeHtml(state.language === 'de' ? 'Filter löschen' : 'Clear filter')} ×</button></div>` : ''}
       <section class="feature-grid feature-grid--compact" aria-label="${escapeHtml(t('specialty'))}">
         ${featureCard('◷', t('events'), t('eventsText'), 'events')}
         ${featureCard('A–Z', t('lexicon'), lexiconFeatureText(), 'lexicon')}
@@ -6245,8 +6436,19 @@
 
   function renderSaved() {
     state.cardArticles = [];
+    const readCandidates = [
+          ...state.articles,
+          ...state.savedArticles,
+          ...readSnapshots()
+        ];
+    const seenRead = new Set();
     const saved = state.savedMode === 'read'
-      ? state.articles.filter(article => isRead(article))
+      ? core.normalizeArticles(readCandidates.filter(article => {
+          const key = core.articleId(article);
+          if (seenRead.has(key)) return false;
+          seenRead.add(key);
+          return true;
+        })).filter(article => isRead(article))
       : core.normalizeArticles(state.savedArticles.length ? state.savedArticles : bookmarks());
     viewRoot.innerHTML = `
       ${headingMarkup(t('saved'), t('saved'), t('savedIntro'))}
@@ -6488,6 +6690,7 @@
   }
 
   function renderArticleLoadState(article) {
+    articleTranslationGeneration += 1;
     state.activeArticle = article;
     document.getElementById('next-article-source').textContent =
       `${article.source} · ${dateLabel(article)}`;
@@ -6505,7 +6708,12 @@
   }
 
   function openArticle(article, options = {}) {
+    articleTranslationGeneration += 1;
     state.activeArticle = article;
+    const translateButton = document.getElementById('next-dialog-translate');
+    translateButton.disabled = false;
+    translateButton.removeAttribute('aria-busy');
+    translateButton.querySelector('span:last-child').textContent = t('translate');
     const allowPartial = options.allowPartial === true;
     const contentMode = core.articleContentMode(article, article.content);
     article.contentMode = contentMode;
@@ -7155,6 +7363,14 @@
       renderTranslationComparison();
       return;
     }
+    const generation = ++articleTranslationGeneration;
+    const sourceFingerprint = core.articleTranslationFingerprint(article);
+    const targetLanguage = state.language;
+    const stillCurrent = () => articleDialog.open
+      && state.activeArticle === article
+      && generation === articleTranslationGeneration
+      && state.language === targetLanguage
+      && sourceFingerprint === core.articleTranslationFingerprint(article);
     button.disabled = true;
     button.setAttribute('aria-busy', 'true');
 
@@ -7169,9 +7385,10 @@
         const result = await window.WRNSharedTranslations.request({
           title: index === 0 ? article.title : '',
           text: chunks[index],
-          targetLanguage: state.language,
+          targetLanguage,
           mode: index === 0 ? 'title_and_text' : 'continuation'
         });
+        if (!stillCurrent()) return;
         if (result?.error || !result?.text) throw new Error(result?.message || 'Translation failed');
         if (index === 0) {
           const parsed = core.splitTranslatedTeaser(result.text);
@@ -7179,7 +7396,7 @@
           translatedTitle = hasSeparatedTitle ? (parsed.title || article.title) : article.title;
           translatedParts.push(hasSeparatedTitle ? parsed.intro : result.text);
         } else {
-          translatedParts.push(core.text(result.text));
+          translatedParts.push(String(result.text).trim());
         }
       }
       const fullContent = translatedParts.filter(Boolean).join('\n\n');
@@ -7188,7 +7405,8 @@
         intro: core.excerpt(fullContent || article.intro, 230),
         content: fullContent || article.content || article.intro
       };
-      storeTranslation(article, translated);
+      if (!stillCurrent()) return;
+      storeTranslation(article, translated, targetLanguage);
       document.getElementById('next-article-title').textContent = translated.title;
       const content = document.getElementById('next-article-content');
       content.querySelector('h1').textContent = translated.title;
@@ -7198,11 +7416,13 @@
       showToast(t('translationComplete'));
     } catch (error) {
       console.warn('Article translation failed', error);
-      showToast(t('translationFailed'));
+      if (stillCurrent()) showToast(t('translationFailed'));
     } finally {
-      button.disabled = false;
-      button.removeAttribute('aria-busy');
-      button.querySelector('span:last-child').textContent = t('translate');
+      if (generation === articleTranslationGeneration) {
+        button.disabled = false;
+        button.removeAttribute('aria-busy');
+        button.querySelector('span:last-child').textContent = t('translate');
+      }
     }
   }
 
@@ -7740,6 +7960,7 @@
 
       if (target.dataset.viewTarget) {
         if (menuDialog.open) menuDialog.close();
+        if (target.dataset.viewTarget === 'discover') state.discover.sportOnly = false;
         if (target.dataset.viewTarget === 'developments') {
           state.activeDossierId = core.text(target.dataset.dossierId);
         }
@@ -7791,6 +8012,7 @@
       if (action === 'offline-save' && article) void prepareSavedArticle(article);
       if (action === 'offline-remove' && article) void removeArticleOffline(article);
       if (action === 'open-archive') {
+        state.discover.sportOnly = false;
         state.discover.period = ['7d', '30d', 'all'].includes(target.dataset.period)
           ? target.dataset.period
           : 'current';
@@ -7805,6 +8027,18 @@
           ? []
           : [...new Set(state.preferences.regions || [])];
         changeView('events');
+      }
+      if (action === 'home-sport') {
+        state.discover.sportOnly = true;
+        state.discover.period = 'all';
+        state.discover.query = '';
+        state.discover.topic = '';
+        state.discover.limit = 24;
+        changeView('discover');
+      }
+      if (action === 'home-sport-clear') {
+        state.discover.sportOnly = false;
+        renderDiscover();
       }
       if (action === 'discover-period') {
         state.discover.period = ['current', '7d', '30d', 'all'].includes(target.dataset.value)
@@ -8429,7 +8663,12 @@
         closeArticleDialogWithHistory();
       }
     });
+    articleDialog.addEventListener('cancel', event => {
+      event.preventDefault();
+      closeArticleDialogWithHistory();
+    });
     articleDialog.addEventListener('close', () => {
+      articleTranslationGeneration += 1;
       if (state.activeArticle) storeReadingPosition(state.activeArticle, articleContent, true);
       stopArticlePodcast();
       stopArticleCloudPodcast();
@@ -8786,9 +9025,15 @@
 
   function applyNewsPayload(candidate, payload) {
     const completeArticles = normalizedNewsPayload(candidate, payload);
+    rememberVisibleReadSnapshots(completeArticles);
     state.articles = completeArticles;
+    state.sourceArchive.generation += 1;
+    state.sourceArchive.manifest = null;
+    state.sourceArchive.manifestLoading = false;
+    state.sourceArchive.manifestFailed = false;
     state.sourceArchive.loadedSources.clear();
     state.sourceArchive.failedSources.clear();
+    state.sourceArchive.loadingSources.clear();
     state.facets = core.collectFacets(completeArticles);
     state.dataStatus = candidate.live
       ? {
@@ -8815,6 +9060,7 @@
       void window.WRNStorage?.putDataset?.('news-app-2-news', payload);
     }
     lastSuccessfulDataLoad = Date.now();
+    if (specialtyDataReady && state.view === 'discover') void loadSelectedSourceArchives();
     return completeArticles;
   }
 

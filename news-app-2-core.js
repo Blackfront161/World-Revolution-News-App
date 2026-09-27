@@ -182,6 +182,25 @@
     return 'full';
   }
 
+  function articleTranslationFingerprint(article) {
+    const source = JSON.stringify([
+      article?.title || '',
+      article?.content || '',
+      article?.intro || '',
+      article?.pubDate || '',
+      article?.updatedAt || '',
+      article?.correctionNote || ''
+    ]);
+    let first = 2166136261;
+    let second = 2246822519;
+    for (let index = 0; index < source.length; index += 1) {
+      const code = source.charCodeAt(index);
+      first = Math.imul(first ^ code, 16777619);
+      second = Math.imul(second ^ code, 3266489917);
+    }
+    return `${source.length}:${first >>> 0}:${second >>> 0}`;
+  }
+
   function hasCompleteArticle(article) {
     if (!article || articleContentMode(article, article.content) === 'metadata') return false;
     if (article.contentComplete !== false && !article.webFeedTruncated) return true;
@@ -739,6 +758,7 @@
     applyEditorialDecisions,
     articleContentParagraphs,
     articleContentMode,
+    articleTranslationFingerprint,
     hasCompleteArticle,
     articleImageUrls,
     articleId,
