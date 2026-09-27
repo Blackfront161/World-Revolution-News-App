@@ -435,7 +435,11 @@
             <p class="source-profile-note">${escapeHtml(texts.note)}</p>`;
 
         if (website) {
-            const url = getSafeHttpUrl(profile.website || articles[0]?.link || '');
+            let url = getSafeHttpUrl(registry.homepage || '');
+            if (!url) {
+                const candidate = getSafeHttpUrl(registry.canonicalUrl || registry.url || profile.website || articles[0]?.link || '');
+                try { url = candidate ? `${new URL(candidate).origin}/` : ''; } catch { url = ''; }
+            }
             website.hidden = !url;
             if (url) website.href = url;
             website.textContent = texts.website;

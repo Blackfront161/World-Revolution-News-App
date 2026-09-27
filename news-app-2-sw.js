@@ -1,7 +1,7 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v88`;
+const CACHE_NAME = `${CACHE_PREFIX}v89`;
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
@@ -11,7 +11,7 @@ const SHELL = [
   './privacy.html',
   './news-app-2-release-checklist.html',
   './news-app-2-release-checklist.css?preview=1',
-  './news-app-2.css?release=44',
+  './news-app-2.css?release=45',
   './news-app-2-release.css?release=5',
   './news-app-2-website.css?release=5',
   './prisoner-solidarity.css?preview=4',
@@ -38,12 +38,12 @@ const SHELL = [
   './audio-tools.js?preview=1',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
-  './source-profiles.js?preview=1',
+  './source-profiles.js?release=2',
   './source-verification.js?preview=1',
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49',
+  './news-app-2.js?release=50',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -57,7 +57,7 @@ const SHELL = [
 ];
 const CORE_SHELL = [
   './index.html?preview=8',
-  './news-app-2.css?release=44',
+  './news-app-2.css?release=45',
   './news-app-2-release.css?release=5',
   './news-app-2-config.js?release=15',
   './native-device-bridge.js?release=2',
@@ -79,12 +79,12 @@ const CORE_SHELL = [
   './audio-tools.js?preview=1',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
-  './source-profiles.js?preview=1',
+  './source-profiles.js?release=2',
   './source-verification.js?preview=1',
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49'
+  './news-app-2.js?release=50'
 ];
 const INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${CACHE_NAME}`, self.location.href)

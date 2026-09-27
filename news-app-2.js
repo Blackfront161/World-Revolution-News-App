@@ -1950,6 +1950,7 @@
 
   const state = {
     articles: [],
+    quickArticleIds: new Set(),
     facets: { regions: [], topics: [], sources: [] },
     view: 'home',
     language: supportedLanguage(localStorage.getItem(LANGUAGE_KEY) || navigator.language || 'de'),
@@ -2070,6 +2071,9 @@
   const briefingTranslationsInFlight = new Set();
   const briefingTranslationsAttempted = new Set();
   let briefingTranslationWarningShown = false;
+  let homeTranslationRun = null;
+  let homeTranslationQueue = [];
+  let homeTranslationLanguage = '';
   let articleTranslationGeneration = 0;
   let dataRefreshInFlight = false;
   let lastSuccessfulDataLoad = 0;
@@ -4163,6 +4167,17 @@
         ${state.dataStatus.mode === 'snapshot' ? `<button class="tag data-status-action" type="button" data-action="live-data">${escapeHtml(t('openLiveData'))} →</button>` : ''}
       </div>` : ''}
       <div class="section-heading"><h2>${escapeHtml(t('latest'))}</h2><small>${selected.length}</small></div>
+      <p class="home-translation-disclosure">${escapeHtml({
+        de:'Öffentliche Überschriften und Kurztexte werden für deine Sprache automatisch übersetzt.',
+        en:'Public headlines and short teasers are translated automatically for your language.',
+        es:'Los titulares y textos breves públicos se traducen automáticamente a tu idioma.',
+        fr:'Les titres et courts extraits publics sont traduits automatiquement dans votre langue.',
+        it:'Titoli e brevi estratti pubblici vengono tradotti automaticamente nella tua lingua.',
+        pt:'Títulos e excertos públicos são traduzidos automaticamente para o teu idioma.',
+        ru:'Публичные заголовки и краткие описания автоматически переводятся на ваш язык.',
+        el:'Οι δημόσιοι τίτλοι και οι σύντομες περιγραφές μεταφράζονται αυτόματα στη γλώσσα σας.',
+        tr:'Herkese açık başlıklar ve kısa özetler dilinize otomatik olarak çevrilir.'
+      }[state.language] || 'Public headlines and short teasers are translated automatically for your language.')}</p>
       <article class="home-hero">
         ${heroImage}
         <div class="home-hero__content">
@@ -4209,6 +4224,13 @@
       </div>
       ${homeTodayMarkup(todayData)}
     `;
+    void ensureHomeTranslations([
+      hero,
+      ...topStories,
+      ...sportStories,
+      ...briefingItems,
+      ...homeServices.developments.map(story => story.items?.at(-1)).filter(Boolean)
+    ]);
   }
 
   function articleNeedsTeaserTranslation(article, targetLanguage) {
@@ -4289,31 +4311,45 @@
     }));
   }
 
-  async function ensureHomeTranslations(items) {
-    if (!Array.isArray(items) || state.view !== 'home') return;
+  function ensureHomeTranslations(items) {
+    if (!Array.isArray(items) || state.view !== 'home') return Promise.resolve();
     const language = state.language;
-    const uniqueItems = [...new Map(
-      items
-        .filter(item => item?.id)
-        .map(item => [item.id, item])
-    ).values()];
-    const needsTranslation = uniqueItems.filter(item => articleNeedsTeaserTranslation(item, language));
-    if (!needsTranslation.length) return;
-
-    const visibleBriefingIds = new Set(
-      [...viewRoot.querySelectorAll('.briefing-item[data-briefing-id]')]
-        .map(element => element.dataset.briefingId)
-    );
-    await ensureBriefingTranslations(
-      uniqueItems.filter(item => visibleBriefingIds.has(String(item.id)))
-    );
-
-    const remaining = needsTranslation.filter(item => articleNeedsTeaserTranslation(item, language));
-    const results = await Promise.allSettled(
-      remaining.map(item => requestBriefingTranslation(item, language))
-    );
-    const changed = results.some(result => result.status === 'fulfilled' && result.value);
-    if (changed && state.view === 'home' && state.language === language) renderHome();
+    const queue = [...new Map(items.filter(item => item?.id).map(item => [item.id, item])).values()]
+      .filter(item => articleNeedsTeaserTranslation(item, language));
+    if (homeTranslationRun) {
+      if (homeTranslationLanguage === language) {
+        const queuedIds = new Set(homeTranslationQueue.map(item => item.id));
+        queue.forEach(item => {
+          if (!queuedIds.has(item.id)) homeTranslationQueue.push(item);
+        });
+      }
+      return homeTranslationRun;
+    }
+    if (!queue.length) return Promise.resolve();
+    homeTranslationQueue = queue;
+    homeTranslationLanguage = language;
+    let changed = false;
+    let failures = 0;
+    homeTranslationRun = (async () => {
+      for (let attempt = 0; attempt < 12 && !window.WRNSharedTranslations?.request; attempt += 1) {
+        await new Promise(resolve => window.setTimeout(resolve, 250));
+      }
+      if (!window.WRNSharedTranslations?.request) return;
+      await Promise.all(Array.from({ length: Math.min(3, homeTranslationQueue.length) }, async () => {
+        while (homeTranslationQueue.length && failures < 3 && state.view === 'home' && state.language === language) {
+          const article = homeTranslationQueue.shift();
+          if (!articleNeedsTeaserTranslation(article, language)) continue;
+          if (await requestBriefingTranslation(article, language)) changed = true;
+          else failures += 1;
+        }
+      }));
+    })().finally(() => {
+      homeTranslationRun = null;
+      homeTranslationQueue = [];
+      homeTranslationLanguage = '';
+      if (state.view === 'home' && (changed || state.language !== language)) renderHome();
+    });
+    return homeTranslationRun;
   }
 
   function hasPreferences() {
@@ -4405,6 +4441,9 @@
   ];
 
   function periodArticles(items) {
+    if (state.discover.period === 'current') {
+      return items.filter(article => state.quickArticleIds.has(article.id));
+    }
     if (!['7d', '30d'].includes(state.discover.period)) return items;
     const newest = Math.max(...state.articles.map(article => Number(article.timestamp) || 0));
     if (!Number.isFinite(newest) || newest <= 0) return items;
@@ -4756,7 +4795,10 @@
           ${formats.map(([value, label]) => `<option value="${value}"${state.discover.format === value ? ' selected' : ''}>${escapeHtml(label)}</option>`).join('')}
         </select></label>
         <label><span>${escapeHtml(t('exactSource'))}</span><select id="next-discover-source">${
-          selectOptions(state.facets.sources, state.discover.source, 'all', t('allSources'))
+          selectOptions([...new Set([
+            ...state.facets.sources,
+            ...(state.sourceArchive.manifest?.sources || []).map(source => source.name)
+          ])].sort((first, second) => first.localeCompare(second, state.language)), state.discover.source, 'all', t('allSources'))
         }</select></label>
         <div class="view-mode-switch" aria-label="${escapeHtml(t('cardsView'))}">${
           viewModes.map(([value, label]) => `<button type="button" class="${state.discover.viewMode === value ? 'active' : ''}" data-action="discover-view" data-value="${value}" aria-pressed="${state.discover.viewMode === value}">${escapeHtml(label)}</button>`).join('')
@@ -7896,7 +7938,12 @@
     state.view = view;
     render();
     if (view === 'events') void ensureAllEventsLoaded();
-    if (view === 'discover') void loadSelectedSourceArchives();
+    if (view === 'discover') {
+      if (['30d', 'all'].includes(state.discover.period)) void loadSelectedSourceArchives();
+      else void ensureSourceArchiveManifest().then(() => {
+        if (state.view === 'discover') renderDiscover();
+      });
+    }
     const helpTrigger = helpReturnFocus?.isConnected
       ? helpReturnFocus
       : document.querySelector('[data-view-target="help"]');
@@ -7910,8 +7957,81 @@
     if (changed || !history.state?.wrnAppNavigation) writeAppHistory('push');
   }
 
+  const MAIN_VIEW_ORDER = ['home', 'following', 'discover', 'media', 'saved'];
+  const DISCOVER_SUBVIEWS = new Set(['events', 'lexicon', 'library', 'prisoners', 'help', 'developments']);
+
+  function adjacentMainView(direction) {
+    const current = DISCOVER_SUBVIEWS.has(state.view) ? 'discover' : state.view;
+    const index = MAIN_VIEW_ORDER.indexOf(current);
+    return index < 0 ? '' : MAIN_VIEW_ORDER[index + direction] || '';
+  }
+
+  function isHorizontalControl(target) {
+    if (!(target instanceof Element)) return false;
+    if (target.closest('input, textarea, select, [contenteditable="true"], [role="slider"], [data-no-swipe]')) return true;
+    for (let element = target; element && element !== viewRoot; element = element.parentElement) {
+      if (element.scrollWidth <= element.clientWidth + 8) continue;
+      const overflow = window.getComputedStyle(element).overflowX;
+      if (overflow === 'auto' || overflow === 'scroll') return true;
+    }
+    return false;
+  }
+
+  function bindMainViewSwipe() {
+    const main = document.getElementById('next-main');
+    if (!main) return;
+    let touchStart = null;
+    let wheelDistance = 0;
+    let lastWheelAt = 0;
+    let lastNavigationAt = 0;
+    const canNavigate = target => !document.querySelector('dialog[open]')
+      && document.getElementById('fb-overlay')?.hidden !== false
+      && !window.getSelection()?.toString()
+      && !isHorizontalControl(target);
+    const navigate = direction => {
+      const next = adjacentMainView(direction);
+      if (!next || Date.now() - lastNavigationAt < 850) return false;
+      lastNavigationAt = Date.now();
+      changeView(next);
+      return true;
+    };
+    main.addEventListener('touchstart', event => {
+      touchStart = null;
+      if (event.touches.length !== 1 || !canNavigate(event.target)) return;
+      const touch = event.touches[0];
+      touchStart = { x: touch.clientX, y: touch.clientY, at: Date.now() };
+    }, { passive: true });
+    main.addEventListener('touchend', event => {
+      if (!touchStart || event.changedTouches.length !== 1) return;
+      const start = touchStart;
+      touchStart = null;
+      const touch = event.changedTouches[0];
+      const dx = touch.clientX - start.x;
+      const dy = touch.clientY - start.y;
+      if (Date.now() - start.at > 850 || Math.abs(dx) < 65 || Math.abs(dx) < Math.abs(dy) * 1.4) return;
+      if (!canNavigate(event.target)) return;
+      if (navigate(dx < 0 ? 1 : -1)) event.preventDefault();
+    }, { passive: false });
+    main.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
+    main.addEventListener('wheel', event => {
+      if (event.ctrlKey || !canNavigate(event.target)) return;
+      const horizontal = event.deltaX * (event.deltaMode === 1 ? 16 : 1);
+      const vertical = event.deltaY * (event.deltaMode === 1 ? 16 : 1);
+      if (Math.abs(horizontal) <= Math.abs(vertical) * 1.4) return;
+      const now = Date.now();
+      wheelDistance = now - lastWheelAt > 450 || Math.sign(horizontal) !== Math.sign(wheelDistance)
+        ? horizontal : wheelDistance + horizontal;
+      lastWheelAt = now;
+      if (Math.abs(wheelDistance) < 90) return;
+      const direction = wheelDistance > 0 ? 1 : -1;
+      wheelDistance = 0;
+      if (navigate(direction)) event.preventDefault();
+    }, { passive: false });
+  }
+
   function bindEvents() {
     window.speechSynthesis?.addEventListener?.('voiceschanged', refreshArticleVoiceOptions);
+    bindMainViewSwipe();
     viewRoot.addEventListener('error', event => {
       const image = event.target;
       if (!(image instanceof HTMLImageElement)) return;
@@ -8493,8 +8613,10 @@
       };
       if (discoverMap[event.target.id]) {
         state.discover[discoverMap[event.target.id]] = event.target.value;
-        if (discoverMap[event.target.id] === 'source' && event.target.value !== 'all') {
-          state.sourceArchive.selectedSources = [event.target.value];
+        if (discoverMap[event.target.id] === 'source') {
+          state.sourceArchive.selectedSources = event.target.value === 'all'
+            ? [] : [event.target.value];
+          if (event.target.value !== 'all') state.discover.period = 'all';
         }
         state.discover.limit = 24;
         persistArchiveFilters();
@@ -9017,6 +9139,7 @@
     const completeArticles = normalizedNewsPayload(candidate, payload);
     rememberVisibleReadSnapshots(completeArticles);
     state.articles = completeArticles;
+    state.quickArticleIds = new Set(completeArticles.map(article => article.id));
     state.sourceArchive.generation += 1;
     state.sourceArchive.manifest = null;
     state.sourceArchive.manifestLoading = false;

@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r1';
+const APP_CACHE = 'wrn-app-v2.1.2-r2';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -16,7 +16,7 @@ const APP_SHELL = [
   './classic.html',
   './news-app-2-release-checklist.html',
   './news-app-2-release-checklist.css?release=2',
-  './news-app-2.css?release=44',
+  './news-app-2.css?release=45',
   './news-app-2-release.css?release=5',
   './news-app-2-website.css?release=5',
   './prisoner-solidarity.css?release=2',
@@ -42,12 +42,12 @@ const APP_SHELL = [
   './audio-tools.js?release=1',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
-  './source-profiles.js?release=1',
+  './source-profiles.js?release=2',
   './source-verification.js?release=1',
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49',
+  './news-app-2.js?release=50',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -173,7 +173,7 @@ const APP_SHELL = [
 // is an offline enhancement and may be cached best-effort.
 const CORE_APP_SHELL = [
   './index.html',
-  './news-app-2.css?release=44',
+  './news-app-2.css?release=45',
   './news-app-2-release.css?release=5',
   './news-app-2-config.js?release=15',
   './native-device-bridge.js?release=2',
@@ -195,12 +195,12 @@ const CORE_APP_SHELL = [
   './audio-tools.js?release=1',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
-  './source-profiles.js?release=1',
+  './source-profiles.js?release=2',
   './source-verification.js?release=1',
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49'
+  './news-app-2.js?release=50'
 ];
 const APP_INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${APP_CACHE}`, self.location.href)

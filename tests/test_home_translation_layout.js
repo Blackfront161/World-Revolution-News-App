@@ -10,7 +10,12 @@ const css = fs.readFileSync(path.join(root, 'news-app-2.css'), 'utf8');
 const websiteCss = fs.readFileSync(path.join(root, 'news-app-2-website.css'), 'utf8');
 
 const home = app.slice(app.indexOf('function renderHome()'), app.indexOf('function articleNeedsTeaserTranslation('));
-assert(!home.includes('ensureHomeTranslations('), 'Rendering home must not send article text for translation without user action');
+assert(home.includes('void ensureHomeTranslations(['), 'Visible home headlines must be translated automatically');
+assert(home.includes('...topStories') && home.includes('...briefingItems'), 'Visible editorial home stories must be covered');
+assert(!home.includes('...balanced') && !home.includes('...state.articles.slice(0, 5)'), 'Invisible stories must not trigger automatic translation');
+assert(!home.includes('...homeServices.homeEvents.items'), 'Location or preference-based events must not trigger automatic translation');
+assert(home.includes('home-translation-disclosure'), 'Home must disclose automatic translation');
+assert(app.includes('Math.min(3, homeTranslationQueue.length)'), 'Automatic requests must have bounded concurrency');
 assert(app.includes('data-action="translate"'), 'Readers need an explicit teaser translation action');
 assert(app.includes('translationFor(event)?.title || event.title'), 'Translated event titles are not rendered');
 assert(app.includes('developmentHomeTitle(story)'), 'Translated development titles are not rendered');

@@ -918,6 +918,13 @@ img {
   color: var(--muted);
 }
 
+.home-translation-disclosure {
+  margin: -5px 0 14px;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.45;
+}
+
 .section-text-action {
   min-height: 38px;
   padding: 6px 10px;
