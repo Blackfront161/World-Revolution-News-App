@@ -387,7 +387,6 @@
       selectionSaved: 'Deine Auswahl wurde lokal gespeichert.', articleSaved: 'Artikel gespeichert.',
       articleRemoved: 'Artikel entfernt.', translatedTitle: 'Übersetzter Titel und Einleitung',
       previewNotice: 'Parallele Vorschau – die veröffentlichte App bleibt unverändert.',
-      liveNotice: 'Unabhängige Nachrichten aus Bewegungen und sozialen Kämpfen.'
     },
     en: {
       preview: 'News App 2 · Preview', language: 'Language', classic: 'Current app',
@@ -426,7 +425,6 @@
       selectionSaved: 'Your selection was saved locally.', articleSaved: 'Article saved.',
       articleRemoved: 'Article removed.', translatedTitle: 'Translated title and introduction',
       previewNotice: 'Parallel preview – the published app remains unchanged.',
-      liveNotice: 'Independent news from movements and social struggles.'
     },
     es: {
       preview:'News App 2 · Vista previa', language:'Idioma', classic:'Aplicación actual', searchLabel:'Buscar noticias', search:'Buscar',
@@ -454,7 +452,6 @@
       fileModeTitle:'La vista previa se abrió como archivo.', fileModeText:'Las fuentes de noticias no pueden cargarse en modo file://. Abre la vista previa mediante el servidor de prueba local.', openLocalPreview:'Abrir vista previa local',
       articleSaved:'Artículo guardado.', articleRemoved:'Artículo eliminado.', translatedTitle:'Título e introducción traducidos',
       previewNotice:'Vista previa paralela: la aplicación publicada no cambia.',
-      liveNotice:'Noticias independientes de movimientos y luchas sociales.'
     },
     fr: {
       preview:'News App 2 · Aperçu', language:'Langue', classic:'Application actuelle', searchLabel:'Rechercher des actualités', search:'Rechercher',
@@ -482,7 +479,6 @@
       fileModeTitle:'L’aperçu a été ouvert comme fichier.', fileModeText:'Les flux d’actualités ne peuvent pas être chargés en mode file://. Ouvrez l’aperçu avec le serveur de test local.', openLocalPreview:'Ouvrir l’aperçu local',
       articleSaved:'Article enregistré.', articleRemoved:'Article supprimé.', translatedTitle:'Titre et introduction traduits',
       previewNotice:'Aperçu parallèle – l’application publiée reste inchangée.',
-      liveNotice:'Actualités indépendantes des mouvements et des luttes sociales.'
     },
     it: {
       preview:'News App 2 · Anteprima', language:'Lingua', classic:'App attuale', searchLabel:'Cerca notizie', search:'Cerca',
@@ -510,7 +506,6 @@
       fileModeTitle:'L’anteprima è stata aperta come file.', fileModeText:'I feed delle notizie non possono essere caricati in modalità file://. Apri l’anteprima tramite il server di prova locale.', openLocalPreview:'Apri anteprima locale',
       articleSaved:'Articolo salvato.', articleRemoved:'Articolo rimosso.', translatedTitle:'Titolo e introduzione tradotti',
       previewNotice:'Anteprima parallela: l’app pubblicata non cambia.',
-      liveNotice:'Notizie indipendenti da movimenti e lotte sociali.'
     },
     pt: {
       preview:'News App 2 · Pré-visualização', language:'Idioma', classic:'Aplicação atual', searchLabel:'Pesquisar notícias', search:'Pesquisar',
@@ -538,7 +533,6 @@
       fileModeTitle:'A pré-visualização foi aberta como ficheiro.', fileModeText:'Os feeds de notícias não podem ser carregados no modo file://. Abre a pré-visualização através do servidor de teste local.', openLocalPreview:'Abrir pré-visualização local',
       articleSaved:'Artigo guardado.', articleRemoved:'Artigo removido.', translatedTitle:'Título e introdução traduzidos',
       previewNotice:'Pré-visualização paralela: a aplicação publicada não muda.',
-      liveNotice:'Notícias independentes de movimentos e lutas sociais.'
     },
     ru: {
       preview:'News App 2 · Предпросмотр', language:'Язык', classic:'Текущее приложение', searchLabel:'Поиск новостей', search:'Поиск',
@@ -566,7 +560,6 @@
       fileModeTitle:'Предпросмотр открыт как файл.', fileModeText:'Новостные ленты нельзя загрузить в режиме file://. Откройте предпросмотр через локальный тестовый сервер.', openLocalPreview:'Открыть локальный предпросмотр',
       articleSaved:'Статья сохранена.', articleRemoved:'Статья удалена.', translatedTitle:'Переведённые заголовок и введение',
       previewNotice:'Параллельный предпросмотр — опубликованное приложение не меняется.',
-      liveNotice:'Независимые новости движений и социальной борьбы.'
     },
     el: {
       preview:'News App 2 · Προεπισκόπηση', language:'Γλώσσα', classic:'Τρέχουσα εφαρμογή', searchLabel:'Αναζήτηση ειδήσεων', search:'Αναζήτηση',
@@ -594,7 +587,6 @@
       fileModeTitle:'Η προεπισκόπηση ανοίχτηκε ως αρχείο.', fileModeText:'Οι ροές ειδήσεων δεν φορτώνονται σε λειτουργία file://. Ανοίξτε την προεπισκόπηση μέσω του τοπικού διακομιστή δοκιμών.', openLocalPreview:'Άνοιγμα τοπικής προεπισκόπησης',
       articleSaved:'Το άρθρο αποθηκεύτηκε.', articleRemoved:'Το άρθρο αφαιρέθηκε.', translatedTitle:'Μεταφρασμένος τίτλος και εισαγωγή',
       previewNotice:'Παράλληλη προεπισκόπηση — η δημοσιευμένη εφαρμογή δεν αλλάζει.',
-      liveNotice:'Ανεξάρτητες ειδήσεις από κινήματα και κοινωνικούς αγώνες.'
     },
     tr: {
       preview:'News App 2 · Önizleme', language:'Dil', classic:'Mevcut uygulama', searchLabel:'Haberlerde ara', search:'Ara',
@@ -622,7 +614,6 @@
       fileModeTitle:'Önizleme dosya olarak açıldı.', fileModeText:'Haber akışları file:// modunda yüklenemez. Önizlemeyi yerel test sunucusu üzerinden açın.', openLocalPreview:'Yerel önizlemeyi aç',
       articleSaved:'Haber kaydedildi.', articleRemoved:'Haber kaldırıldı.', translatedTitle:'Çevrilmiş başlık ve giriş',
       previewNotice:'Paralel önizleme — yayımlanmış uygulama değişmez.',
-      liveNotice:'Hareketlerden ve toplumsal mücadelelerden bağımsız haberler.'
     }
   };
 
@@ -1962,7 +1953,7 @@
     facets: { regions: [], topics: [], sources: [] },
     view: 'home',
     language: supportedLanguage(localStorage.getItem(LANGUAGE_KEY) || navigator.language || 'de'),
-    ui: readJson(UI_SETTINGS_KEY, { theme: 'violet', fontSize: 'normal', density: 'standard' }),
+    ui: readJson(UI_SETTINGS_KEY, { theme: 'dark', fontSize: 'normal', density: 'standard' }),
     preferences: normalizedPreferences(readJson(PREFS_KEY, {})),
     translations: readJson(TRANSLATIONS_KEY, {}),
     discover: {
@@ -2176,9 +2167,6 @@
 
   function t(key) {
     if (isProduction && key === 'preview') return 'World Revolution News';
-    if (isProduction && key === 'previewNotice') {
-      return COPY[state.language]?.liveNotice || COPY.en.liveNotice;
-    }
     return RELEASE_COPY[state.language]?.[key]
       || RELEASE_COPY.en[key]
       || ARTICLE_COPY[state.language]?.[key]
@@ -2349,7 +2337,7 @@
 
   function normalizedUiSettings(value = {}) {
     return {
-      theme: ['violet', 'dark', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'violet',
+      theme: ['violet', 'dark', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'dark',
       fontSize: ['normal', 'large', 'xlarge', '200'].includes(value.fontSize) ? value.fontSize : 'normal',
       density: ['compact', 'standard', 'spacious'].includes(value.density) ? value.density : 'standard'
     };
@@ -4145,6 +4133,7 @@
     const topIds = new Set([hero.id, ...topStories.map(article => article.id)]);
     const occupiedIds = new Set([...topIds, ...sportStories.map(article => article.id)]);
     const moreStories = balanced.filter(article => !occupiedIds.has(article.id)).slice(0, HOME_COUNT - 1);
+    const homeGroups = personalizedHomeGroups(moreStories, [...occupiedIds]);
     const selected = [hero, ...topStories, ...moreStories];
     const visibleIds = new Set([...selected, ...sportStories].map(article => article.id));
     const briefingSeen = new Set();
@@ -4169,10 +4158,10 @@
       : '';
 
     viewRoot.innerHTML = `
-      <div class="meta-line">
-        <span class="tag">${escapeHtml(t('previewNotice'))}</span>
+      ${!isProduction || state.dataStatus.mode === 'snapshot' ? `<div class="meta-line">
+        ${!isProduction ? `<span class="tag">${escapeHtml(t('previewNotice'))}</span>` : ''}
         ${state.dataStatus.mode === 'snapshot' ? `<button class="tag data-status-action" type="button" data-action="live-data">${escapeHtml(t('openLiveData'))} →</button>` : ''}
-      </div>
+      </div>` : ''}
       <div class="section-heading"><h2>${escapeHtml(t('latest'))}</h2><small>${selected.length}</small></div>
       <article class="home-hero">
         ${heroImage}
@@ -4199,11 +4188,12 @@
       </section>
       ${homeSportMarkup(sportStories)}
       ${homeServiceMarkup(homeServices)}
+      ${personalizedHomeMarkup(homeGroups.personalized)}
       <div class="section-heading">
         <h2>${escapeHtml(t('moreNews'))}</h2>
         <button class="section-text-action" type="button" data-action="open-archive" data-period="7d">${escapeHtml(t('archiveBrowse'))} →</button>
       </div>
-      ${cardsMarkup(moreStories)}
+      ${cardsMarkup(homeGroups.remaining)}
       <div class="section-heading briefing-heading">
         <div><h2>${escapeHtml(t('briefing'))}</h2><small>${escapeHtml(t('briefingHint'))}</small></div>
         <button class="secondary-button" type="button" data-action="briefing-open">${escapeHtml(t('briefingCreate'))}</button>
