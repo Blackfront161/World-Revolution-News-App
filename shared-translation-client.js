@@ -21,12 +21,6 @@
       : 'en';
   }
 
-  async function sha256(value) {
-    const bytes = new TextEncoder().encode(String(value || ''));
-    const digest = await crypto.subtle.digest('SHA-256', bytes);
-    return [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
-  }
-
   function extractText(data) {
     if (typeof window.extractTranslationText === 'function') {
       return window.extractTranslationText(data);
@@ -79,14 +73,6 @@
     const text = String(args.text || '').slice(0, 6000);
     const mode = String(args.mode || 'title_and_text');
     const language = normalizedTargetLanguage(args.targetLanguage || targetLanguage());
-    const cacheKey = await sha256(JSON.stringify({
-      version: 1,
-      language,
-      mode,
-      title,
-      text
-    }));
-
     const controller = new AbortController();
     const timer = window.setTimeout(() => controller.abort(), 45000);
 
@@ -95,8 +81,7 @@
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Client-Id': typeof getClientId === 'function' ? getClientId() : 'wrn-web',
-          'X-WRN-Cache-Key': cacheKey
+          'X-Client-Id': 'wrn-web'
         },
         body: JSON.stringify({
           action: 'translate',
@@ -104,7 +89,6 @@
           mode,
           title,
           text,
-          sharedCacheKey: cacheKey,
           cacheVersion: 1
         }),
         signal: controller.signal
@@ -182,7 +166,6 @@
   window.WRNSharedTranslations = Object.freeze({
     enabled: () => Boolean(String(window.WRN_CONFIG?.sharedTranslationUrl || '').trim()),
     request,
-    health,
-    sha256
+    health
   });
 })();

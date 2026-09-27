@@ -4,6 +4,7 @@ import {
   reserveQuota,
   serviceEnabled
 } from '../../shared/quota-client.js';
+import { translationCacheKey } from '../../shared/translation-cache-key.js';
 
 export { QuotaCoordinator };
 
@@ -77,15 +78,6 @@ function jsonResponse(data, status = 200, headers = {}) {
       ...headers
     }
   });
-}
-
-async function sha256(value) {
-  const bytes = new TextEncoder().encode(String(value || ''));
-  const digest = await crypto.subtle.digest('SHA-256', bytes);
-
-  return [...new Uint8Array(digest)]
-    .map(byte => byte.toString(16).padStart(2, '0'))
-    .join('');
 }
 
 function cacheTtl(env) {
@@ -307,23 +299,13 @@ export default {
       );
     }
 
-    const requestedStableKey =
-      String(
-        body.sharedCacheKey ||
-        request.headers.get('X-WRN-Cache-Key') ||
-        ''
-      ).trim();
-    const stableKey = /^[a-f0-9]{64}$/i.test(requestedStableKey)
-      ? requestedStableKey.toLowerCase()
-      : await sha256(
-        JSON.stringify({
-          version: 1,
-          targetLanguage,
-          mode,
-          title,
-          text
-        })
-      );
+    // A supplied cache key must never select a translation for different text.
+    const stableKey = await translationCacheKey({
+      targetLanguage,
+      mode,
+      title,
+      text
+    });
 
     try {
       const cached = await readCache(env, stableKey);

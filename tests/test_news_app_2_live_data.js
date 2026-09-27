@@ -70,7 +70,7 @@ assert.strictEqual(
 
 const testChannel = configuration('/index.html', '?channel=test');
 assert.strictEqual(testChannel.releaseChannel, 'test');
-assert.strictEqual(testChannel.version, '2.1.1-dev.1-test');
+assert.strictEqual(testChannel.version, '2.1.2-dev.1-test');
 assert.strictEqual(
   testChannel.dataMode,
   'live-readonly-with-offline-fallback',

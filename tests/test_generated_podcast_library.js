@@ -4,6 +4,7 @@ const assert = require('assert');
 const fs = require('fs');
 
 const source = fs.readFileSync('news-app-2.js', 'utf8');
+const html = fs.readFileSync('index.html', 'utf8');
 const workerSource = fs.readFileSync('cloudflare/revolution-proxy/src/index.js', 'utf8');
 
 assert(
@@ -60,12 +61,14 @@ assert(
   'The queue renderer still runs without a visible podcast queue'
 );
 assert(
-  source.includes('function personalizedHomeGroups(items, excludedIds = [])'),
-  'The home page has no dedicated selection for followed regions, topics and sources'
+  html.includes('data-view-target="following"') &&
+  source.includes('function renderFollowing()'),
+  'The personal feed is not reachable from the app navigation'
 );
 assert(
-  source.includes('${personalizedHomeMarkup(homeGroups.personalized)}'),
-  'The personalized news block is not rendered on the home page'
+  source.includes('state.articles.filter(article => core.matchesPreferences(article, state.preferences))') &&
+  source.includes("if (state.view === 'following') renderFollowing()"),
+  'The personal feed does not render followed regions, topics and sources'
 );
 assert(
   source.includes('const BRIEFING_DURATIONS = Object.freeze([3, 5, 10, 20])') &&

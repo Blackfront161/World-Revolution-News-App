@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-09-27",
   "releasedBaseline": {
     "version": "2.0.8",
     "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
@@ -13,8 +13,8 @@
     "note": "VersionCode 25 ist verbraucht und darf für keinen neuen Kandidaten wiederverwendet werden."
   },
   "current": {
-    "version": "2.1.1",
-    "branch": "codex/release-2.1.1-code26",
+    "version": "2.1.2",
+    "branch": "codex/release-2.1.2-code28",
     "status": "Lokaler Produktionskandidat; nicht signiert, hochgeladen, veröffentlicht oder deployt"
   },
   "productScope": [

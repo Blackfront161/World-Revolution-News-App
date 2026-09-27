@@ -20,7 +20,6 @@ const approvedCases = [
   { sources: 'Mapuexpress (Mapuche)|Radio Kurruf Noticias', anchor: 'palimpsesto' }
 ];
 
-assert.ok(clusters.length > 0, 'the current feed contains no approved development grouping');
 assert.ok(clusters.length <= approvedCases.length, 'the editorial snapshot contains an unexpected development grouping');
 for (const cluster of clusters) {
   assert.ok(cluster.matchConfidence >= 0.72, 'snapshot grouping is below the editorial confidence floor');
@@ -35,5 +34,26 @@ for (const cluster of clusters) {
     `unreviewed grouping: ${pair} — ${cluster.title}`
   );
 }
+
+// The rotating feed may contain no reviewed pair. Keep the approval gate covered
+// with a stable case so an unrelated cross-source match cannot become visible.
+const approved = {
+  matchConfidence: 0.9,
+  matchReasons: ['shared title', 'shared entity'],
+  sourceCount: 2,
+  items: [
+    { quelleName: 'ANRed (Argentina)', title: 'Tierra no se vende' },
+    { quelleName: 'Indymedia Argentina', title: 'Tierra no se vende' }
+  ]
+};
+const unreviewed = {
+  ...approved,
+  items: approved.items.map(item => ({ ...item, title: 'Unrelated development' }))
+};
+assert.deepEqual(
+  specialty.developmentClusters([], { clusterStories: () => [approved, unreviewed] }),
+  [approved],
+  'only editorially approved development groups may appear'
+);
 
 console.log('Development editorial snapshot: OK');

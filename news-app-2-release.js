@@ -333,11 +333,13 @@
 
   function backupPayload(localStorageValues, appVersion = '') {
     const allowed = [
-      'wrn_bookmarks', 'wrn_read_list', 'wrn_read_positions', 'wrn_zine_articles',
+      'wrn_bookmarks', 'wrn_read_list', 'wrn_read_snapshots_v1', 'wrn_read_positions', 'wrn_zine_articles',
       'wrn_next_preferences_v1', 'wrn_next_story_watch_v1', 'wrn_next_ui_settings_v1',
       'wrn_next_development_reviews_v1',
       'wrn_system_lang', 'wrn_audio_queue_v1', 'wrn_audio_favorites_v1',
-      'wrn_media_positions_v1', 'wrn_event_reminders_v2', 'wrn_saved_event_filters_v1'
+      'wrn_media_positions_v1', 'wrn_event_reminders_v2', 'wrn_saved_event_filters_v1',
+      'wrn_video_watch_later_v1', 'wrn_video_history_v1', 'wrn_briefing_history_v1',
+      'wrn_next_teaser_translations_v1', 'wrn_source_archive_filters_v1'
     ];
     const localStorage = {};
     allowed.forEach(key => {

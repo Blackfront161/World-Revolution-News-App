@@ -280,4 +280,13 @@ assert.strictEqual(core.isLeadEligible({
   content: 'This report contains a complete and meaningful introduction with enough context to serve as the leading story safely.'
 }), true);
 
+const originalTranslationSource = { title: 'Report', content: 'Original text', pubDate: '2026-09-27' };
+const originalFingerprint = core.articleTranslationFingerprint(originalTranslationSource);
+assert.strictEqual(core.articleTranslationFingerprint({ ...originalTranslationSource }), originalFingerprint);
+assert.notStrictEqual(
+  core.articleTranslationFingerprint({ ...originalTranslationSource, content: 'Corrected text' }),
+  originalFingerprint,
+  'a corrected article must invalidate its cached translation'
+);
+
 console.log('News App 2 core contracts: OK');
