@@ -18,10 +18,12 @@
     "versionCode": 31,
     "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
     "reviewedCommit": "0b315a65f9a52f4274e368d71b1dda35733948b2",
-    "status": "Lokaler Produktionskandidat: Autonom und Quellen lokal umgesetzt; Classic-Rückkehrfokus aus unabhängiger Prüfung korrigiert. Browser sowie isolierte Android-Upgrade-, Offline-Reader- und System-reduced-motion-Prüfungen bestanden. Neuer Code31-Build folgt; Signierung und Veröffentlichung offen.",
-    "artifactReport": "Code31-Bericht folgt; Code30 aus fd2afe0 bleibt historischer Zwischenkandidat.",
+    "status": "Lokaler Produktionskandidat: Autonom und drei Quellen lokal umgesetzt; Classic-Korrekturen unabhängig technisch abgenommen. Code31 commitgenau unsigniert gebaut. Vier echte Zielbreiten mit strenger Geometrieprüfung sowie isoliertes Android-Upgrade, Offline-Reader/Prozessneustart und System-reduced-motion bestanden. Nachweiskorrektur separat zur finalen lesenden Prüfung; Signierung und Veröffentlichung offen.",
+    "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
     "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
-    "sourceCommit": "Korrigierter Quellcommit folgt nach Vertragsprüfung"
+    "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "artifactSha256": "17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7"
   },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
@@ -132,36 +134,38 @@
         "dataCommit": "17b3604979a27411666048c082345b704261af93",
         "dataStatus": "accepted_scoped",
         "finding": "Classic closeAllModals schloss das Quellenprofil und löschte den Rückkehrfokus; lokale Erfassung vor await und Zuweisung nach closeAllModals behebt den Ablauf.",
-        "correctionStatus": "implemented_pending_independent_review"
+        "correctionStatus": "accepted_runtime",
+        "correctedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+        "evidenceStatus": "verified_viewport_replacement_pending_final_documentation_review"
       }
     },
     {
       "id": "RELEASE-29",
       "priority": 1,
       "name": "Korrigierten Autonom-App-Kandidaten mit Code31 abschließen",
-      "status": "in_progress",
+      "status": "unsigned_candidate_built_verified_pending_final_evidence_review",
       "dependsOn": [
         "CONTROL-CORRECTIONS-20260930"
       ],
       "remaining": [
-        "Code31 aus korrigiertem geprüftem Commit bauen und unabhängig abnehmen",
+        "Gesonderten Nachweis-/Roadmap-Commit unabhängig lesend abnehmen",
         "Produktionszertifikat und physisches Gerät nach Signierfreigabe prüfen",
         "Produktionsbrowser bei vollständig fehlendem Netz separat prüfen",
-        "Signierung und Play-Veröffentlichung an neues Artefakt binden"
-      ]
+        "Signierung und Play-Veröffentlichung an Code31 aus8d2ef23 binden"
+      ],
+      "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+      "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json"
     },
     {
       "id": "DESIGN-AUTONOM",
       "priority": 1,
       "name": "Wählbares Design Autonom",
-      "status": "implemented_browser_verified_local",
+      "status": "implemented_browser_android_verified_local",
       "verifiedAt": "2026-10-01",
       "acceptedCommit": "0c8aa3d7972aca99ff8127d917181d2c98a4410b",
       "remaining": [
-        "Systemprüfung für reduzierte Bewegung",
-        "Android-Upgrade",
-        "vollständige Produktions-/Geräte-Offlinestrecke",
-        "commitgenauer Code30-Build und unabhängige Abnahme",
+        "physische Geräte-/Produktionszertifikatsprüfung",
+        "vollständiger Netzausfall des Produktionsbrowsers",
         "Signierung und Veröffentlichung separat"
       ],
       "requestedAt": "2026-09-30",
@@ -175,7 +179,8 @@
         "echte vorhandene Artikel/Bilder; keine erfundenen Beispielmeldungen aus dem Screenshot"
       ],
       "reference20Minutes": "20min.ch und offizielle Play-Store-Appansichten bleiben ungefähre Vorlage für Nachrichtenhierarchie und Navigation; kein Zugriff auf eine installierte native20-Minuten-App behauptet",
-      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md"
+      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
+      "runtimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408"
     },
     {
       "id": "SOURCES-AUTONOM",
@@ -234,7 +239,8 @@
         "directory": "wrn-data-autonom-current",
         "branch": "codex/autonom-sources-20261001",
         "baseCommit": "33509ac",
-        "status": "local_review_pending"
+        "status": "accepted_local_pending_publication",
+        "commit": "17b3604979a27411666048c082345b704261af93"
       },
       "dataCommit": "17b3604979a27411666048c082345b704261af93",
       "reviewStatus": "accepted_scoped_20261001"
@@ -486,13 +492,18 @@
     "androidCandidate": "Nach dem finalen sauberen Commit ist ein strikt offline gebauter, unsignierter 2.1.1/code26-Kandidat vorgeschrieben; Hash, Größe, ZIP/Manifest/Asset- und Signaturstatus werden im Übergabebericht aus demselben Build belegt. Keine Signierung, kein Upload und kein Deployment.",
     "artifactTransaction": "durables Write-Through-Recovery-Journal, exklusiver Lock und Windows-Hartabbruchtests nach Move 1/2/Commit; Traversal/Junction/Hardlink/stale-lock grün",
     "autonomAcceptance20261001": {
-      "status": "data_accepted_app_classic_correction_pending_review",
-      "browser": "12 CUA-Prüfungen bestanden; 200%-Reflow320/390/768/1440, Fokus, Reader-/Quellenaktionen",
+      "status": "runtime_data_build_pass_evidence_commit_pending_final_review",
+      "browser": "12 aktuelle CUA-Checks bestanden. Tatsächliche 320/390/768/1440x900 bei200%; clientWidth=scrollWidth305/375/753/1425, overflow0. Width/height und clientHeight hart geprüft. Vorheriger r7-Beleg verworfen (aktiverTab vs versteckterTab).",
       "offline": "Neuer Tab nach beendetem App-/Daten-Testserver bestanden, gespeicherter Reader6254 Zeichen. Snapshotmodus; Host-Internet aktiv.",
       "sources": "Freiburg/Frankfurt directory-only; UB metadata-only, tatsächlicher Aggregatorzweig geschützt; kanonische Datenbasis33509ac,52 Python-Tests bestanden.",
-      "android": "Separater Testpaketname: Code29->30 install -r mit erhaltenen Einstellungen/Lesezeichen und Autonom-Persistenz bestanden. QA ohne INTERNET-Permission: Volltext nach Activity- und Prozessneustart bestanden; echte Android-reduced-motion-Präferenz und CSS bestanden. Kein physischer Geräte-/Produktionszertifikatsnachweis; neue Korrektur erneut prüfen.",
+      "android": "Code29->31 in separatem Testpaket mit erhaltenen Einstellungen/Lesezeichen und Autonom-Persistenz OK(1)+OK(1). QA ohne INTERNET-Permission: vollständiger gespeicherter Reader und echte Android-reduced-motion-Präferenz/CSS OK(2), nach Prozessstop OK(1). Kein physischer Geräte-/Produktionszertifikatsnachweis.",
       "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
-      "dataCommit": "17b3604979a27411666048c082345b704261af93"
+      "dataCommit": "17b3604979a27411666048c082345b704261af93",
+      "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+      "browserEvidence": "docs/evidence/autonom-2026-09-30/browser-acceptance-verified-viewport.json",
+      "invalidatedBrowserEvidence": "docs/evidence/autonom-2026-09-30/browser-acceptance-r7.json",
+      "androidEvidence": "docs/AUTONOM-ANDROID-CODE31-2026-10-01.md",
+      "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json"
     }
   },
   "excluded": [

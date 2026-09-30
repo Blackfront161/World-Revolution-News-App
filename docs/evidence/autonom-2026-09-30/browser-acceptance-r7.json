@@ -1,5 +1,11 @@
 {
   "runner": "Codex CUA browser API",
+  "valid": false,
+  "invalidation": {
+    "reason": "Viewport capability resized the active tab, while this capture measured a hidden tab at 1280px. The four named target-width passes are invalid; captured results below are preserved as original measurements.",
+    "replacement": "browser-acceptance-verified-viewport.json",
+    "scope": "The Classic focus evidence and original r5 viewport measurements are unaffected."
+  },
   "results": [
     {
       "name": "keyboard-theme-to-font-visible-focus",

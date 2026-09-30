@@ -1,0 +1,137 @@
+{
+  "runner": "Codex CUA browser API",
+  "results": [
+    {
+      "name": "keyboard-theme-to-font-visible-focus",
+      "passed": true,
+      "detail": {
+        "id": "next-menu-font-size",
+        "outline": "solid",
+        "visible": true
+      }
+    },
+    {
+      "name": "escape-restores-menu-trigger",
+      "passed": true,
+      "detail": "next-menu-toggle"
+    },
+    {
+      "name": "autonom-200-percent-320",
+      "passed": true,
+      "detail": {
+        "clientHeight": 900,
+        "clientWidth": 305,
+        "clippedTitles": [],
+        "font": "200",
+        "height": 900,
+        "overflow": 0,
+        "scrollWidth": 305,
+        "theme": "autonom",
+        "width": 320
+      }
+    },
+    {
+      "name": "autonom-200-percent-390",
+      "passed": true,
+      "detail": {
+        "clientHeight": 900,
+        "clientWidth": 375,
+        "clippedTitles": [],
+        "font": "200",
+        "height": 900,
+        "overflow": 0,
+        "scrollWidth": 375,
+        "theme": "autonom",
+        "width": 390
+      }
+    },
+    {
+      "name": "autonom-200-percent-768",
+      "passed": true,
+      "detail": {
+        "clientHeight": 900,
+        "clientWidth": 753,
+        "clippedTitles": [],
+        "font": "200",
+        "height": 900,
+        "overflow": 0,
+        "scrollWidth": 753,
+        "theme": "autonom",
+        "width": 768
+      }
+    },
+    {
+      "name": "autonom-200-percent-1440",
+      "passed": true,
+      "detail": {
+        "clientHeight": 900,
+        "clientWidth": 1425,
+        "clippedTitles": [],
+        "font": "200",
+        "height": 900,
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "theme": "autonom",
+        "width": 1440
+      }
+    },
+    {
+      "name": "switch-back",
+      "passed": true,
+      "detail": {
+        "clientHeight": 900,
+        "clientWidth": 1425,
+        "clippedTitles": [],
+        "font": "normal",
+        "height": 900,
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "theme": "dark",
+        "width": 1440
+      }
+    },
+    {
+      "name": "reload-persists-autonom",
+      "passed": true,
+      "detail": {
+        "clientHeight": 900,
+        "clientWidth": 1425,
+        "clippedTitles": [],
+        "font": "normal",
+        "height": 900,
+        "overflow": 0,
+        "scrollWidth": 1425,
+        "theme": "autonom",
+        "width": 1440
+      }
+    },
+    {
+      "name": "topic-chip-opens-real-discover",
+      "passed": true,
+      "detail": "- link \"Zum Inhalt springen\":\n  - /url: \"#next-main\"\n- banner:\n  - button \"Webseite · Solinaridao.com ↗\":\n    - text: World\n    - emphasis: Revolution\n    - text: News\n  - button \"Webseite · Solinaridao.com ↗\":\n    - generic: ◎\n    - generic: SOLINARIDAO.COM\n    - generic: ↗\n  - button \"Menü öffnen\":\n    - generic: ☰\n  - button \"Suche öffnen\":\n    - generic: ⌕\n  - generic: Sprache\n  - combobox \"Sprache\":\n    - option \"DE\" [selected]\n    - option \"EN\"\n    - option \"ES\"\n    - option \"FR\"\n    - option \"IT\"\n    - option \"PT\"\n    - option \"RU\"\n    - option \"EL\"\n    - option \"TR\"\n  - navigation \"Hauptnavigation\":\n    - button \"Start\":\n      - generic: ⌂\n      - generic: Start\n    - button \"Für mich\":\n      - generic: ★\n      - generic: Für mich\n    - button \"Entdecken\":\n      - generic: ◎\n      - generic: Entdecken\n    - button \"Medien\":\n      - generic: ▶\n      - generic: Medien\n    - button \"Gespeichert\":\n      - generic: ▰\n      - generic: Gespeichert\n- main [active]:\n  - generic: Entdecken\n  - heading \"Entdecken\" [level=1]\n  - paragraph: Durchsuche Regionen, Themen und Quellen, ohne deinen persönlichen Feed zu verändern.\n  - region \"Weitere Bereiche\":\n    - button \"Termine\":\n      - generic: ◷\n      - strong: Termine\n    - button \"Lexikon\":\n      - generic: A–Z\n      - strong: Lexikon\n    - button \"Bibliothek\":\n      - generic: ▤\n      - strong: Bibliothek\n    - button \"Gefangene\":\n      - generic: ✉\n      - strong: Gefangene\n    - button \"Hilfe finden\":\n      - generic: ✚\n      - strong: Hilfe finden\n    - button \"Entwicklungen\":\n      - generic: ↗\n      - strong: Entwicklungen\n  - navigation \"Alle Artikel\":\n    - button \"Aktuell\" [pressed]\n    - button \"Letzte 7 Tage\"\n    - button \"Letzte 30 Tage\"\n    - button \"Alle Artikel\"\n  - searchbox \"Nachrichten durchsuchen\"\n  - g"
+    },
+    {
+      "name": "keyboard-opens-reader",
+      "passed": true,
+      "detail": "ction. Advance polls have been open since Saturday and will close Wednesday. Election day is set for Oct. 5.\n    - heading \"Weitere Nachrichten · Nunatsiaq News\" [level=2]\n    - button \"Modular home factory begins production in Arviat 30. Sept.\":\n      - strong: Modular home factory begins production in Arviat\n      - generic: 30. Sept.\n    - button \"Joy and remembrance on National Day for Truth and Reconciliation schedule 30. Sept.\":\n      - strong: Joy and remembrance on National Day for Truth and Reconciliation schedule\n      - generic: 30. Sept.\n    - button \"Jason Iqaluq wins Hudson Bay byelection 29. Sept.\":\n      - strong: Jason Iqaluq wins Hudson Bay byelection\n      - generic: 29. Sept.\n    - button \"Ungava needs progressive option, Québec solidaire’s Antoine Côté says 29. Sept.\":\n      - strong: Ungava needs progressive option, Québec solidaire’s Antoine Côté says\n      - generic: 29. Sept.\n    - button \"Iqaluit photographer’s Nunavut Quest picture featured in Toronto exhibit 29. Sept.\":\n      - strong: Iqaluit photographer’s Nunavut Quest picture featured in Toronto exhibit\n      - generic: 29. Sept.\n  - contentinfo \"Artikelaktionen\":\n    - button \"Zusammenfassen\":\n      - generic: ✦\n      - generic: Zusammenfassen\n    - button \"Übersetzen\":\n      - generic: ★\n      - generic: Übersetzen\n    - button \"Podcast\":\n      - generic: 🎧\n      - generic: Podcast\n    - button \"Zum Zine\":\n      - generic: ▤\n      - generic: Zum Zine\n    - button \"Als gelesen\":\n      - generic: ○\n      - generic: Als gelesen\n    - button \"Teilen\":\n      - generic: ↗\n      - generic: Teilen"
+    },
+    {
+      "name": "keyboard-opens-source-passport",
+      "passed": true,
+      "detail": "bekannt\n  - generic: Dokumentierte Korrekturen\n  - strong: Unbekannt\n  - generic: Technische Feed-Zuverlässigkeit\n  - strong: available · available\n  - generic: Themen / Regionen\n  - strong: Indigenous Struggles · North America · Anticolonialism\n  - generic: Aktuelle Einträge\n  - strong: \"11\"\n  - generic: Technischer Status\n  - strong: Erreichbar\n  - generic: Letzte erfolgreiche Aktualisierung\n  - strong: 30.9.2026, 21:30:58\n  - heading \"Warum wird diese Quelle angezeigt?\" [level=4]\n  - paragraph: 11 aktuelle WRN-Einträge nennen diese Quelle. Das ist keine Qualitätsbewertung.\n  - heading \"Neueste Einträge\" [level=4]\n  - list:\n    - link \"PQ’s Sonia Caron looks to switch from education to politics\":\n      - /url: https://nunatsiaq.com/stories/article/pqs-sonia-caron-looks-to-switch-from-education-to-politics/\n    - link \"Modular home factory begins production in Arviat\":\n      - /url: https://nunatsiaq.com/stories/article/modular-home-factory-begins-production-in-arviat/\n    - link \"Joy and remembrance on National Day for Truth and Reconciliation schedule\":\n      - /url: https://nunatsiaq.com/stories/article/joy-and-remembrance-on-national-day-for-truth-and-reconciliation-schedule/\n    - link \"Jason Iqaluq wins Hudson Bay byelection\":\n      - /url: https://nunatsiaq.com/stories/article/jason-iqaluq-wins-hudson-bay-byelection/\n    - link \"Ungava needs progressive option, Québec solidaire’s Antoine Côté says\":\n      - /url: https://nunatsiaq.com/stories/article/ungava-needs-progressive-option-quebec-solidaires-antoine-cote-says/\n  - paragraph: Dieses Profil wird aus den verfügbaren App-Daten erzeugt. Es ist keine politische Bewertung oder Empfehlung.\n  - button \"Nur diese Quelle zeigen\"\n  - link \"Webseite\":\n    - /url: https://nunatsiaq.com/\n  - button \"Schließen\" [active]"
+    },
+    {
+      "name": "source-passport-escape-and-return-focus",
+      "passed": true,
+      "detail": {
+        "returnedToSource": true,
+        "visible": false
+      }
+    }
+  ],
+  "limits": [
+    "Reduced-motion system emulation is not exposed by this browser backend.",
+    "Offline restart is a separate server-stop test.",
+    "Android acceptance is separate."
+  ]
+}

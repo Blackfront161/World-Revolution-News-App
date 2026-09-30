@@ -68,7 +68,16 @@ Die Classic-Korrektur erhält zusätzlich einen Test des tatsächlichen
 Kartenhandlers. Finale Matrix: 47 JavaScript-Module, 120 Pytest-Tests,
 drei historische Skips und vier main-only-Skripte bestanden; Validator und
 Read-only-Audit 160/160 bestanden. Belege: `full-contract-matrix-r7.txt`,
-`release-audit-r7.json` und `browser-acceptance-r7.json` (12 Browserchecks).
+`release-audit-r7.json` und `browser-acceptance-verified-viewport.json`.
+Der ursprüngliche r7-Browsernachweis ist ausdrücklich verworfen: Die
+Viewport-Capability skalierte den aktiven Tab, während der versteckte Testtab
+bei 1280 Pixeln blieb. Seine Rohmessungen bleiben mit `valid: false` erhalten.
+Der Replay-Test erzwingt jetzt tatsächliche Breite und Höhe und erfasst zusätzlich
+Client-/Scrollbreite. Am aktiven Tab wurden 320/390/768/1440 jeweils bei 900 Pixeln
+Höhe und 200-%-Schrift erneut geprüft: Client-/Scrollbreite identisch
+305/375/753/1425; kein Überlauf oder beschnittener Titel. Alle zwölf Checks
+bestanden. Die ursprünglichen r5-Messungen hatten bereits echte Zielbreiten;
+ihre Gültigkeit bleibt auf den früheren Stand begrenzt.
 `tests/browser_classic_source_profile.cua.mjs` wiederholt den Classic-Browserlauf.
 
 ## Quellen
@@ -125,10 +134,14 @@ Nach `am force-stop` der Test-App bestand der Offline-Neustart nochmals
 per `finally` durch Löschen der nur vorübergehend gesetzten Testeinstellung
 wiederhergestellt. Host und andere Apps blieben online.
 
-Diese Belege gehören zum Webstand `fd2afe0`; nach der Classic-Korrektur werden
-die Geräteprüfungen am neuen Stand wiederholt. Das ist kein Nachweis einer
+Die ersten Gerätebelege gehören zum Webstand `fd2afe0`. Am korrigierten
+Webstand `8d2ef2346a7ce85e1a07904aef90f21b65657408` wurden alle Geräteprüfungen
+erneut abgeschlossen: Code29->Code31-Vorversionsphase `OK (1 test)`,
+Upgrade/Persistenz `OK (1 test)`, Offline-Reader/Systembewegung `OK (2 tests)`,
+Offline nach Test-App-Prozessstop `OK (1 test)`. Das ist kein Nachweis einer
 Play-Signatur oder eines Updates der produktiven Nutzerinstallation. Ein
 physisches Gerät und vollständiger Produktionsbrowser-Netzausfall bleiben offen.
 Die QA-Quelle `tests/android/AutonomOfflineMotionInstrumentedTest.java` wird
 ausschließlich in die isolierte Wrapperkopie übernommen; sie gehört nicht in
-Produktions-Webassets. Genaue Belegpfade und Varianten stehen im Android-Bericht.
+Produktions-Webassets. Genaue Belegpfade und Varianten stehen im
+[Android-Code31-Bericht](AUTONOM-ANDROID-CODE31-2026-10-01.md).

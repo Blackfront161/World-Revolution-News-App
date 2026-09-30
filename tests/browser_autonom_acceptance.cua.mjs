@@ -11,6 +11,10 @@ export async function runAutonomAcceptance(tab, viewport) {
   const font = () => tab.playwright.getByRole('combobox', {name:'Schriftgröße', exact:true});
   const geometry = () => tab.playwright.evaluate(() => ({
     width: innerWidth,
+    height: innerHeight,
+    clientWidth: document.documentElement.clientWidth,
+    clientHeight: document.documentElement.clientHeight,
+    scrollWidth: document.documentElement.scrollWidth,
     overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
     theme: document.documentElement.dataset.theme,
     font: document.documentElement.dataset.fontSize,
@@ -40,7 +44,10 @@ export async function runAutonomAcceptance(tab, viewport) {
       await viewport.set({width,height:900});
       const detail = await geometry();
       check(`autonom-200-percent-${width}`, detail,
-        detail.theme === 'autonom' && detail.font === '200'
+        detail.width === width && detail.height === 900
+        && detail.clientWidth > 0 && detail.clientWidth <= width
+        && detail.clientHeight > 0 && detail.clientHeight <= detail.height
+        && detail.theme === 'autonom' && detail.font === '200'
         && detail.overflow <= 2 && detail.clippedTitles.length === 0);
     }
     await menu().press('Enter');
@@ -58,6 +65,8 @@ export async function runAutonomAcceptance(tab, viewport) {
     check('topic-chip-opens-real-discover', discover.slice(0,1800),
       discover.includes('Entdecken') && discover.includes('Antifaschismus'));
     await tab.playwright.getByRole('button',{name:'Start',exact:true}).click();
+    await tab.playwright.domSnapshot();
+    await tab.playwright.locator('#next-main').press('Tab');
     await tab.playwright.domSnapshot();
     await tab.playwright.getByRole('button',{name:'Beitrag öffnen',exact:true}).first().press('Enter');
     await tab.playwright.getByRole('dialog').waitFor({state:'visible'});
