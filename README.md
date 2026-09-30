@@ -34,6 +34,9 @@ Der vorhandene Code29-Build
 bleibt die Vorversion für die Upgrade-Prüfung.
 
 Aktuelle Reihenfolge und Quellkandidaten: [ROADMAP.json](ROADMAP.json).
+Ergänzung um Website-Inhaltsparität, gemeinsamen Katalog, Lexikon,
+Wissensbibliothek und Podcastarchive:
+[Inhaltsausbau](docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md).
 Design-/Rechercheauftrag und lokale Prüfergebnisse:
 [Autonom-Abnahme](docs/AUTONOM-ACCEPTANCE-2026-10-01.md).
 Der [erste Designbericht](docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md)

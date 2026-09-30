@@ -247,6 +247,139 @@
       "reviewStatus": "accepted_scoped_20261001"
     },
     {
+      "id": "WEBSITE-CONTENT-PARITY",
+      "priority": 1,
+      "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
+      "status": "local_website_candidate_pending_independent_review_and_publication",
+      "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
+      "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
+      "liveObservation": {
+        "date": "2026-10-01",
+        "url": "https://solinaridao.com/",
+        "productionRevision": "wrn-production-news-2026-09-26-v8",
+        "sourcePassRevision": "wrn-source-pass-2026-09-25-v2",
+        "status": "neue Inhaltsprojektion nicht als live nachgewiesen"
+      },
+      "localWriterReport": {
+        "upstreamCommit": "33509ace3d3b2f7f275ebc05fe3522a59d62964f",
+        "feedRows": 500,
+        "acceptedLinkOnlyRows": 480,
+        "excludedFeedRows": 20,
+        "linksWithoutMatchingSourcePass": 476,
+        "registryEndpoints": 406,
+        "acceptedRegistryEndpoints": 397,
+        "existingAdmittedFullTexts": 12,
+        "status": "Angaben des Website-Schreibers; unabhängige Abschlussabnahme offen"
+      },
+      "scope": [
+        "Nachrichtenlinks und Quellenverzeichnis aus einem gehashten kanonischen Datenstand übernehmen; Endpunkte, Herausgeber und Quellenpässe getrennt zählen",
+        "alle Ausschlüsse mit stabiler ID und Grund belegen; ungeprüfte Links nie als geprüfte Artikel kennzeichnen",
+        "App-exklusive Quellen, Lexikon, Bibliothek und Podcasts als weitere gemeinsame Inhaltsklassen einplanen statt nur Nachrichtenparität zu behaupten",
+        "Aktualisierungen, gespeicherten Stand, Offlinezustand und ausstehende Quellenprüfung in allen neun UI-Sprachen sichtbar machen"
+      ],
+      "acceptance": [
+        "Kontrolleur prüft konkreten Website-Commit, Paket und Paritätsbericht unabhängig",
+        "Widerrufe und Rechteklassen bleiben auf Startseite, Suche, Verzeichnis und gespeicherten Ansichten wirksam",
+        "erst nach gesondert autorisierter Veröffentlichung die reale Live-Website samt Revision, Zählungen, Smartphoneansicht und Aktualisierung prüfen",
+        "Website-Abweichung bleibt bis erfolgreicher Live-Abnahme offen; lokaler Test-PASS ersetzt kein Live-PASS"
+      ],
+      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md"
+    },
+    {
+      "id": "CONTENT-CATALOG-PARITY",
+      "priority": 1,
+      "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
+      "status": "inventory_completed_sync_planned",
+      "baseline": {
+        "appCommit": "a84d979423267187898afdc6ca960600189727bf",
+        "dataCommit": "17b3604979a27411666048c082345b704261af93",
+        "appPodcastSourceRows": 52,
+        "dataPodcastSourceRows": 36,
+        "appEpisodeRows": 908,
+        "dataEpisodeRows": 749,
+        "appLibraryRows": 609,
+        "dataLibraryRows": 266,
+        "podcastSourceIdsOnlyInApp": 16,
+        "note": "Lokale Dateibestände, keine Live- oder Aufnahmebestätigung. Mehr Zeilen bedeutet weder aktueller noch vollständig."
+      },
+      "scope": [
+        "die 16 bislang nur im App-Katalog vorhandenen Podcastquellen im kanonischen Datenrepository einzeln prüfen und freigeben",
+        "den zusätzlichen Radio-Dreyeckland-Eintrag ohne ID und Episoden ohne sourceId auf die vorhandene Identität zurückführen; stabile Episoden-IDs und gespeicherte Zustände erhalten",
+        "Bibliotheksbestände per Werk-/Quellen-ID zusammenführen: 53 deutsche Titel im neueren Datenstand, ältere Titel im App-Paket; Löschung, Widerruf und neue Ausgabe unterscheiden",
+        "bewusst zurückgestellte Sprachen nicht durch einen Datensync aktivieren; Sprach- und Rechteentscheidungen ausdrücklich erhalten",
+        "reproduzierbare gemeinsame Projektionen mit Eingabehash, Zeit, Neuaufnahmen, Ausschlüssen und Last-known-good-Stand für App und Website liefern"
+      ],
+      "acceptance": [
+        "jeder sichtbare Podcast und Bibliothekstitel besitzt eine auflösbare stabile Quellen-ID",
+        "gleiche freigegebene Eingabe erzeugt gleiche zulässige Inhalts-IDs in App und Website; Abweichungen werden begründet",
+        "kein Datensync löscht unbetroffene gültige Archive oder setzt gespeicherte Einträge und Nutzereinstellungen zurück",
+        "Datei-/Netzwerkfehler erhalten den letzten gültigen Stand mit ehrlicher Aktualitätsanzeige"
+      ],
+      "evidence": "docs/CONTENT-EXPANSION-INVENTORY-2026-10-01.json"
+    },
+    {
+      "id": "KNOWLEDGE-LEXICON-LIBRARY",
+      "priority": 2,
+      "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
+      "status": "inventory_completed_expansion_planned",
+      "dependsOn": ["CONTENT-CATALOG-PARITY"],
+      "baseline": {
+        "lexiconTerms": 154,
+        "lexiconReferenceSources": 12,
+        "definitionLanguages": ["de", "en"],
+        "libraryConfiguredSources": 9,
+        "librarySourcesWithIndexedTitlesInApp": 4,
+        "librarySourcesWithIndexedTitlesInData": 5
+      },
+      "scope": [
+        "erste redaktionelle Runde: mindestens 20 neue oder wesentlich überarbeitete Begriffe, nach Dublettenprüfung; Schwerpunkt Ökologie/Gemeingüter, Arbeitskämpfe, autonome Organisierung und regionale Begriffsvarianten",
+        "eigene DE-/EN-Erklärungen mit konkreten Belegen, unterschiedlichen Perspektiven, verwandten Begriffen und datierter Revision; sieben weitere Definitionensprachen schrittweise prüfen und Fallback ehrlich anzeigen",
+        "stabile Direktlinks zwischen Begriff, Bibliothekstitel, Podcastfolge und Dossier statt bloßer Schlagwortähnlichkeit",
+        "erste drei Lernpfade mit jeweils mindestens zehn vorhandenen passenden Texten: Grundlagen/Selbstorganisation, Arbeit/Wohnen sowie Ökologie/Gemeingüter",
+        "Suche und Filter nach Thema, Autor, Originalsprache, Format und Quelle; Einstieg nach Schwierigkeitsgrad und Lesedauer nur mit belegten Angaben",
+        "Katalogadapter für Libcom, Kate Sharpley Library, Zabalaza Books und Anarchist Archive prüfen; bisher nur externe Kataloglinks, kein erfundener importierter Bestand",
+        "Merkliste und kuratierte Offline-Lernpakete erst für tatsächlich freigegebene Texte und Medien; direkte Originaldownloads von WRN-Speicherung unterscheiden"
+      ],
+      "acceptance": [
+        "keine fehlenden Quellen- oder internen Verweisziele; revisionsgebundene Links sind auch nach Aktualisierung auflösbar",
+        "DE-Bibliothekstitel aus dem freigegebenen Datenstand sind tatsächlich auffindbar; Übersetzungen und Originalausgaben bleiben unterscheidbar",
+        "erste 20 Begriffsänderungen und 30 Lernpfadzuordnungen werden inhaltlich geprüft, nicht allein als Test-PASS gezählt",
+        "Suche, Filter, Tastatur, 320/390/768/1440 Pixel und neun UI-Sprachen geprüft; Offlineansicht zeigt Datum und Rechteumfang"
+      ],
+      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md"
+    },
+    {
+      "id": "PODCAST-CATALOG-EXPANSION",
+      "priority": 2,
+      "name": "Podcastquellen und nutzbaren Archivumfang erweitern",
+      "status": "six_programme_candidates_researched_admission_and_implementation_pending",
+      "dependsOn": ["CONTENT-CATALOG-PARITY"],
+      "candidateNames": [
+        "Anarchist World This Week (3CR)",
+        "Stick Together (3CR)",
+        "Green Left Radio (3CR)",
+        "Rebel Steps",
+        "Radio Kurruf – Podcastprogramme",
+        "Radio LoRa Zürich – politische Audiothek"
+      ],
+      "scope": [
+        "zuerst bestehende 16 App-exklusive Quellen im kanonischen Feed erschließen; Sprachabdeckung und tatsächliche Folgenzahl getrennt von konfigurierten Quellen ausweisen",
+        "sechs neue Programme/Kataloge von vier Anbietern einzeln prüfen; Radio LoRa Zürich nicht mit vorhandenem LORA München verwechseln",
+        "offiziell verlinkte RSS-Endpunkte, stabile GUIDs, Sprache, Datum, aktuelle/archivierte Sendung und Herausgeberidentität prüfen; Rechte für Metadaten, Stream, Artwork und Offlineaudio separat dokumentieren",
+        "bisherige 35-Folgen-Grenze je Quelle konfigurierbar machen und zunächst für drei geprüfte Serien bis zu 100 unterschiedliche verfügbare Folgen erschließen",
+        "aktuelle Auswahl von 30 unabhängigen Folgen je Sprache bzw. 50 Radiobeiträgen erhalten und einen getrennten paginierten Serien-/Archivzugang anbieten",
+        "größere Archive nach Quelle und Sprache balancieren; feste 240-Folgen-Sprachgrenze nicht still als Vollarchiv darstellen",
+        "Serienseiten, Themen-/Sprach-/Quellenfilter, Fortsetzen und gespeicherte Folgen mit Lexikon und Lernpfaden verbinden"
+      ],
+      "acceptance": [
+        "jede Aufnahme hat einen belegten Betreiber und Originalpfad; unbekannte Rechte aktivieren keine kopierten Audios, Bilder oder Transkripte",
+        "keine zukünftigen Veröffentlichungen, doppelten GUIDs, fehlenden Quellen-IDs oder vermischten Sprachgruppen",
+        "mindestens drei Serien mit nachvollziehbar erweitertem Archiv oder dokumentierter tatsächlicher Verfügbarkeitsgrenze; keine aufgefüllten Mengen",
+        "Pagination, Ladefehler, Feedausfall, abgesagte/widerrufene Folge und unveränderte gespeicherte IDs geprüft; Start- und Offlinebudgets eingehalten"
+      ],
+      "evidence": "docs/PODCAST-CANDIDATES-2026-10-01.md"
+    },
+    {
       "id": "EDITORIAL-DATA",
       "priority": 2,
       "name": "Echte Inhalte für bestehende2.1-Funktionen",
@@ -412,7 +545,8 @@
         "Terminologieschutz in der Übersetzungspipeline",
         "regionale Varianten neben Übersetzung",
         "Vorrang geprüfter Terminologie",
-        "redaktionell geprüfte dauerhafte Übersetzungskorrekturen mit Versionen"
+        "redaktionell geprüfte dauerhafte Übersetzungskorrekturen mit Versionen",
+        "weitere belegte Begriffe und konkrete Verknüpfung mit Bibliothek, Podcastfolgen und Lernpfaden gemäß KNOWLEDGE-LEXICON-LIBRARY"
       ]
     },
     {

@@ -1,0 +1,38 @@
+# Podcastausbau: recherchierte Kandidaten
+
+Stand: 1. Oktober 2026, Asia/Singapore. Ergänzung zu `PODCAST-CATALOG-EXPANSION` in [ROADMAP.json](../ROADMAP.json). **Recherche abgeschlossen; keine neue Quelle aktiviert, keine Episode importiert.**
+
+Die offiziellen Seiten wurden am 30. September 2026 UTC über Firecrawl mit `maxAge: 0` gelesen. Das ist eine vermittelte Seitenbeobachtung, keine erfolgreiche technische RSS-Abnahme. Vier direkte RSS-Abrufe mit PowerShell scheiterten lokal an der TLS-Verbindung; weder Parser, Enclosures noch Aktualisierungsverhalten gelten damit als bestanden. TLS-Prüfungen wurden nicht abgeschaltet.
+
+Die sechs Kandidaten sind weder im lokalen 52-zeiligen App-Podcastkatalog noch im 36-zeiligen kanonischen Datenkatalog vorhanden. Drei Programme gehören zu 3CR; insgesamt sind es vier Anbieter, nicht sechs neue unabhängige Herausgeber. Bereits vorhandene 3CR-Programme bleiben eigene Serien unter derselben Anbieteridentität.
+
+| Kandidat / offizielle Seite | Beobachtung und möglicher Mehrwert | Offiziell verlinkter Feed / Aufnahmezustand |
+| --- | --- | --- |
+| [Anarchist World This Week · 3CR](https://www.3cr.org.au/anarchistworld) | Die Programmseite bezeichnet die Sendung als anarchistische Analyse. Englische Sendung; Anbieter 3CR in Australien, Moderator laut Seite Dr Joe Toscano. Player nennt 30.09.2026. Die Liste enthält zugleich ein Datum 07.10.2026: diesen zukünftigen Eintrag nicht als erschienene Folge übernehmen. | [RSS](https://www.3cr.org.au/anarchistworld/itunes) auf der Programmseite verlinkt; XML/Enclosures ungeprüft. **Needs-review**, keine Aktivierung. |
+| [Stick Together · 3CR](https://www.3cr.org.au/sticktogether) | Die Seite ordnet die Sendung Gewerkschaften und Arbeitsbedingungen zu und nennt mehrere Verantwortliche. Englisch, Australien. Player und Episodenliste zeigen 30.09.2026. Ergänzt Arbeitskämpfe und betriebliche Organisierung. | [RSS](https://www.3cr.org.au/sticktogether/itunes) offiziell verlinkt; technische Prüfung ausstehend. **Needs-review**. |
+| [Green Left Radio · 3CR](https://www.3cr.org.au/greenleftradio) | Laut eigener Beschreibung politische, soziale und ökologische Berichterstattung; Green Left Radio Collective. Englisch, Australien. Player nennt 25.09.2026, sichtbare Episodenliste beginnt dagegen 31.07.2026. Aktualität deshalb aus dem Feed prüfen, nicht aus dem Seitenlayout ableiten. | [RSS](https://www.3cr.org.au/greenleftweeklyradio/itunes) mit abweichendem historischem Pfad offiziell verlinkt. Keine eigenmächtige URL-Umbenennung. **Needs-review**. |
+| [Rebel Steps](https://rebelsteps.com/subscribe/) | Eigene Aboseite bestätigt die Serienidentität und einen Acast-Feed. Thema laut eigener Suchseitenbeschreibung: Solidarität, Autonomie, gegenseitige Hilfe und politische Beteiligung. Sprache/Betreiber und Serienabschluss im Aufnahmecheck konkret bestätigen; die Aboseite belegt keine aktuelle Folge. | [RSS](https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e) offiziell verlinkt. **Needs-review / möglicher Archivkandidat**. |
+| [Radio Kurruf · Podcastprogramme](https://radiokurruf.org/tag/podcast/) | Offizielle spanische Podcastübersicht nennt unter anderem „Rebrote Comunitario“ (März 2026), „Latinoamerica Rompe el Cerco“ und „La señal del viento“. Potenzieller Ausbau lateinamerikanischer und territorialer Perspektiven. Eigenproduktion, Wiederveröffentlichung und Sprache je Serie unterscheiden; kein pauschaler Betreiber-/Rechtebeleg für alle Gastprogramme. | Kein dedizierter Audio-RSS in der geprüften Übersicht nachgewiesen. **Directory-only-Kandidat**, zunächst Originalseiten; kein erfundener RSS-Endpunkt und kein automatischer Seiten-Audioimport. |
+| [Radio LoRa Zürich · Audiothek](https://www.lora.ch/radio/audiothek) | Offizielle Audiothek enthält politische und mehrsprachige Serien, etwa „LoRa liest das Lamm“, „Internationalistisches Info“, „RADIA Femcast“ und „Info Abya Yala“. Geeignet für Schweizer, feministische und mehrsprachige Perspektiven. Sprache und verantwortliche Redaktion je Sendung prüfen. Radio LoRa Zürich ist ein anderes Projekt als vorhandenes LORA München. | Serienauswahl und Sprachfilter direkt beobachtet; kein Audio-RSS technisch bestätigt. **Directory-only-Kandidat**, anschließend einzelne Serien prüfen. |
+
+## Aufnahme vor Erweiterung
+
+Für jeden Kandidaten fehlen noch konkrete Wiederverwendungsrechte für WRN. Ein Originalplayer, ein Downloadbutton oder ein RSS-Link belegt keine Erlaubnis zur WRN-Kopie von Audio, Cover, Beschreibung oder Transkript. Zunächst Betreiber/Serie, Originalseiten, Datum, GUID, Sprache, technische Zugänglichkeit und Metadatenumfang dokumentieren. Stream, Artwork und Offlineaudio benötigen getrennte Rechteentscheidungen. Keine Qualitätspunktzahl und kein pauschales „verifiziert“ aus einem HTTP-200.
+
+Neue Serien erhalten stabile IDs und eine Beziehung zum vorhandenen Anbieter. Für Radio Kurruf und LoRa müssen tatsächliche Sendungen einzeln gewählt werden; die komplette Audiothek wird nicht als einzelne Podcastserie oder als geprüfter Bestand behandelt. Kontakte nur als offizielle Kontaktseite aufnehmen; keine Kommunikation wurde versandt.
+
+## Umfang bestehender Quellen zuerst erschließen
+
+Der App-Katalog enthält 16 stabile Quellen-IDs, die im kanonischen Datenkatalog fehlen, darunter Fumaça, französische Radio-Libertaire-Programme, türkische Apaçık-Radyo-Programme, griechische und arabische Serien. Der genaue Abgleich steht im [Inventar](CONTENT-EXPANSION-INVENTORY-2026-10-01.json). Aufnahmeentscheidungen, Feedaktualität und Sprachabdeckung zuerst synchronisieren, damit die bereits konfigurierte Vielfalt auch Folgen liefert.
+
+Die App-Pipeline begrenzt aktuell jede Quelle auf 35 Folgen, freie Radios insgesamt auf 600 und unabhängige Archive auf 240 Folgen je Sprache. Die UI wählt daraus 30 unabhängige Folgen pro Sprache bzw. 50 Radiobeiträge. Ausbauziel: separate Serienarchive mit Pagination und einem zunächst bis 100 Folgen konfigurierbaren Quellenlimit für drei geprüfte Serien. Tatsächlich verfügbare ältere Folgen bestimmen den Umfang; keine erfundenen Mindestmengen und kein unbeschränkter Komplettdownload.
+
+Ein zusätzliches Radio-Dreyeckland-Objekt hat keine ID; 33 App-Episoden haben keinen `sourceId`. Vor neuem Intake diese Zuordnung mit der vorhandenen Quelle zusammenführen, ohne stabile Episoden-IDs oder gespeicherte Folgen zu ersetzen. Aktuelle Auswahl, archivierte Sendung, Quelle ohne aktuelle Folgen und ausgeschlossene Quelle getrennt anzeigen.
+
+## Nicht aufnehmen
+
+Die als weiterer möglicher Kandidat geprüfte frühere Domain `coffeewithcomrades.com` lieferte bei dieser Beobachtung eine fremde Glücksspielseite. Daraus lässt sich weder eine bestätigte Nachfolge noch die Ursache ableiten. Diese Domain wird nicht als offizielle Podcastquelle vorgeschlagen; keine Zielseitenlinks oder Medien werden übernommen. Eine spätere Prüfung müsste die heutige offizielle Identität unabhängig bestätigen.
+
+## Nachweise und nächste Abnahme
+
+Die Seitenbeobachtungen belegen nur die oben genannten Angaben und Links. Technische Feedprüfungen, Rechteentscheidungen, Zulassung, Import, Tests und Veröffentlichung sind offene getrennte Schritte. Erste Kandidatenrunde: die drei klar zugeordneten 3CR-Serien und Rebel Steps; parallel je eine tatsächlich passende Serie aus Radio Kurruf und Radio LoRa auswählen. Vor jedem Import mit beiden bestehenden Katalogen nach Identität, Feed und Alias abgleichen.
