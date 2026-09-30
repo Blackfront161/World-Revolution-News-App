@@ -1940,6 +1940,9 @@
     readJson(DEVELOPMENT_SNAPSHOT_KEY, null)
   );
 
+  // Autonom is the name of the optional design in every interface language.
+  Object.values(MEDIA_COPY).forEach(copy => { copy.themeAutonom = 'Autonom'; });
+
   const storedArchiveFilters = readJson(ARCHIVE_FILTERS_KEY, {});
   const storedDiscoverFilters = storedArchiveFilters?.discover && typeof storedArchiveFilters.discover === 'object'
     ? storedArchiveFilters.discover
@@ -2341,7 +2344,7 @@
 
   function normalizedUiSettings(value = {}) {
     return {
-      theme: ['violet', 'dark', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'dark',
+      theme: ['violet', 'dark', 'autonom', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'dark',
       fontSize: ['normal', 'large', 'xlarge', '200'].includes(value.fontSize) ? value.fontSize : 'normal',
       density: ['compact', 'standard', 'spacious'].includes(value.density) ? value.density : 'standard'
     };
@@ -2357,7 +2360,7 @@
     document.documentElement.dataset.density = state.ui.density;
     document.querySelector('meta[name="theme-color"]')?.setAttribute(
       'content',
-      resolvedTheme === 'light' ? '#f3eee5' : resolvedTheme === 'pink' ? '#160710' : '#05080b'
+      resolvedTheme === 'light' ? '#f3eee5' : resolvedTheme === 'pink' ? '#160710' : resolvedTheme === 'autonom' ? '#080a0b' : '#05080b'
     );
     themeSelect.value = state.ui.theme;
     fontSizeSelect.value = state.ui.fontSize;
@@ -2555,7 +2558,7 @@
     document.getElementById('next-menu-font-label').textContent = t('fontSize');
     document.getElementById('next-menu-density-label').textContent = t('density');
     [
-      [themeSelect, [['violet', 'themeViolet'], ['dark', 'themeDark'], ['oled', 'themeOled'], ['soft', 'themeSoft'], ['pink', 'themePink'], ['light', 'themeLight'], ['system', 'themeSystem'], ['contrast', 'themeContrast']]],
+      [themeSelect, [['violet', 'themeViolet'], ['dark', 'themeDark'], ['autonom', 'themeAutonom'], ['oled', 'themeOled'], ['soft', 'themeSoft'], ['pink', 'themePink'], ['light', 'themeLight'], ['system', 'themeSystem'], ['contrast', 'themeContrast']]],
       [fontSizeSelect, [['normal', 'normal'], ['large', 'large'], ['xlarge', 'xlarge'], ['200', 'font200']]],
       [densitySelect, [['compact', 'compact'], ['standard', 'standard'], ['spacious', 'spacious']]]
     ].forEach(([select, options]) => {
@@ -3818,6 +3821,7 @@
           ${readingProgressMarkup(article)}
           <div class="card-actions">
             <button class="small-action" type="button" data-action="open" data-index="${cardIndex}">${escapeHtml(t('openArticle'))}</button>
+            <button class="small-action autonom-source-action" type="button" data-action="source-profile" data-source="${escapeHtml(article.source)}">${escapeHtml(t('sourceProfile'))}</button>
             ${offlineControl}
             <button class="translate-card" type="button" data-action="translate" data-index="${cardIndex}">
               <span class="red-black-star" aria-hidden="true">★</span>
@@ -4087,6 +4091,10 @@
         ${sport ? `<span class="home-sport__category">${escapeHtml(/\b(fußball|fussball|futbol|football|soccer)\b/i.test(article.title) ? (state.language === 'de' ? 'Fußball' : 'Football') : 'Sport')}</span>` : ''}
         <small>${escapeHtml(article.source)} · ${escapeHtml(dateLabel(article))}</small>
         <button type="button" data-action="open" data-index="${index}"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(intro)}</span></button>
+        <div class="autonom-story-actions">
+          <button class="save-card" type="button" data-action="save" data-index="${index}" aria-label="${escapeHtml(isSaved(article) ? t('removeSaved') : t('save'))}" aria-pressed="${isSaved(article)}">${isSaved(article) ? '★' : '☆'}</button>
+          <button class="small-action" type="button" data-action="source-profile" data-source="${escapeHtml(article.source)}">${escapeHtml(t('sourceProfile'))}</button>
+        </div>
       </div>
     </article>`;
   }
@@ -4112,6 +4120,14 @@
       </div>
       <div class="home-sport__grid${items.length === 1 ? ' home-sport__grid--single' : ''}">${items.map((article, index) => homeStoryMarkup(article, index === 0, true)).join('')}</div>
     </section>`;
+  }
+
+  function autonomTopicsMarkup() {
+    const topics = ['Labor Struggles', 'Squatting & Housing', 'Antifascism', 'Queer-Feminism', 'No Borders'];
+    return `<nav class="autonom-topics" aria-label="${escapeHtml(t('topics'))}">
+      <button type="button" class="is-active" data-action="autonom-topic" data-topic="">${escapeHtml(t('all'))}</button>
+      ${topics.map(topic => `<button type="button" data-action="autonom-topic" data-topic="${escapeHtml(topic)}">${escapeHtml(classificationLabel(topic))}</button>`).join('')}
+    </nav>`;
   }
 
   function renderHome() {
@@ -4167,6 +4183,7 @@
         ${!isProduction ? `<span class="tag">${escapeHtml(t('previewNotice'))}</span>` : ''}
         ${state.dataStatus.mode === 'snapshot' ? `<button class="tag data-status-action" type="button" data-action="live-data">${escapeHtml(t('openLiveData'))} →</button>` : ''}
       </div>` : ''}
+      ${autonomTopicsMarkup()}
       <div class="section-heading"><h2>${escapeHtml(t('latest'))}</h2><small>${selected.length}</small></div>
       <p class="home-translation-disclosure">${escapeHtml({
         de:'Öffentliche Überschriften und Kurztexte werden für deine Sprache automatisch übersetzt.',
@@ -4192,6 +4209,7 @@
           ${heroTranslation ? `<small class="translation-note">${escapeHtml(translationNoteLabel(hero, heroTranslation))}</small>` : ''}
           <div class="card-actions">
             <button class="small-action" type="button" data-action="open" data-index="${heroIndex}">${escapeHtml(t('openArticle'))}</button>
+            <button class="small-action autonom-source-action" type="button" data-action="source-profile" data-source="${escapeHtml(hero.source)}">${escapeHtml(t('sourceProfile'))}</button>
             <button class="translate-card" type="button" data-action="translate" data-index="${heroIndex}">
               <span class="red-black-star" aria-hidden="true">★</span><span>${escapeHtml(t('translate'))}</span>
             </button>
@@ -8106,6 +8124,23 @@
       }
 
       const action = target.dataset.action;
+      if (action === 'autonom-topic') {
+        const topic = core.text(target.dataset.topic);
+        if (!['', 'Labor Struggles', 'Squatting & Housing', 'Antifascism', 'Queer-Feminism', 'No Borders'].includes(topic)) return;
+        state.discover.topic = topic;
+        state.discover.query = '';
+        state.discover.sportOnly = false;
+        state.discover.region = '';
+        state.discover.source = 'all';
+        state.discover.language = 'all';
+        state.discover.origin = 'all';
+        state.discover.format = 'all';
+        state.discover.period = 'current';
+        state.discover.limit = 24;
+        persistArchiveFilters();
+        changeView('discover');
+        return;
+      }
       const article = Number.isInteger(Number(target.dataset.index))
         ? state.cardArticles[Number(target.dataset.index)]
         : null;

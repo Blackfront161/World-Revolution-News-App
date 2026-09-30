@@ -1,0 +1,217 @@
+{
+  "checkedAt": "2026-09-30",
+  "baseline": "8e95685 plus local Autonom changes",
+  "assetRevisions": {
+    "css": 47,
+    "js": 53
+  },
+  "themes": [
+    {
+      "resolved": "dark",
+      "selected": "dark",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "violet",
+      "selected": "violet",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "oled",
+      "selected": "oled",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "soft",
+      "selected": "soft",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "pink",
+      "selected": "pink",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "light",
+      "selected": "light",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "contrast",
+      "selected": "contrast",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "light",
+      "selected": "system",
+      "sourceActionVisible": false,
+      "topicsVisible": false,
+      "wordmarkVisible": false
+    },
+    {
+      "resolved": "autonom",
+      "selected": "autonom",
+      "sourceActionVisible": true,
+      "topicsVisible": true,
+      "wordmarkVisible": true
+    }
+  ],
+  "languages": [
+    {
+      "autonomLabel": "Autonom",
+      "lang": "de",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "en",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "es",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "fr",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "it",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "pt",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "ru",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "el",
+      "overflow": false,
+      "theme": "autonom"
+    },
+    {
+      "autonomLabel": "Autonom",
+      "lang": "tr",
+      "overflow": false,
+      "theme": "autonom"
+    }
+  ],
+  "viewports": [
+    {
+      "hero": 288.66668701171875,
+      "navCount": 5,
+      "overflow": false,
+      "theme": "autonom",
+      "width": 320,
+      "wordmark": {
+        "bottom": 51.3125,
+        "height": 38.625,
+        "left": 56,
+        "right": 248.6666717529297,
+        "top": 12.6875,
+        "width": 192.6666717529297,
+        "x": 56,
+        "y": 12.6875
+      }
+    },
+    {
+      "hero": 358.66668701171875,
+      "navCount": 5,
+      "overflow": false,
+      "theme": "autonom",
+      "width": 390,
+      "wordmark": {
+        "bottom": 43.65625,
+        "height": 19.3125,
+        "left": 84.39583587646484,
+        "right": 290.27083587646484,
+        "top": 24.34375,
+        "width": 205.875,
+        "x": 84.39583587646484,
+        "y": 24.34375
+      }
+    },
+    {
+      "hero": 728.6666870117188,
+      "navCount": 5,
+      "overflow": false,
+      "theme": "autonom",
+      "width": 768,
+      "wordmark": {
+        "bottom": 50.78125,
+        "height": 33.5625,
+        "left": 197.5416717529297,
+        "right": 555.1250152587891,
+        "top": 17.21875,
+        "width": 357.5833435058594,
+        "x": 197.5416717529297,
+        "y": 17.21875
+      }
+    },
+    {
+      "hero": 1120,
+      "navCount": 5,
+      "overflow": false,
+      "theme": "autonom",
+      "width": 1440,
+      "wordmark": {
+        "bottom": 55.15625,
+        "height": 42.3125,
+        "left": 486.8854370117187,
+        "right": 937.7708740234376,
+        "top": 12.84375,
+        "width": 450.8854370117187,
+        "x": 486.8854370117187,
+        "y": 12.84375
+      }
+    }
+  ],
+  "font200": {
+    "bodyWidth": 287.3333435058594,
+    "clippedStories": [],
+    "font": "28px",
+    "overflow": false,
+    "viewport": 320
+  },
+  "manualInteractions": {
+    "themePersistsOnReload": true,
+    "antifascismChipFiltersDiscover": true,
+    "sourceProfileDialogOpens": true,
+    "articleReaderOpens": true
+  },
+  "limitations": [
+    "No Android-device or upgrade check for these changes",
+    "No new complete offline-restart check",
+    "UI languages checked; translation-service quality not validated"
+  ]
+}

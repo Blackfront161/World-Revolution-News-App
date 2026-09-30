@@ -25,19 +25,19 @@ def test_current_release_metadata_is_consistent() -> None:
     for version in ("2.1.2", "2.1.2-dev.1-test", "2.1.2-dev.1-preview"):
         assert version in config
     assert "2026.09.27-wrn-2.1.2-release" in config
-    assert "wrn-app-v2.1.2-r1" in worker and "wrn-data-v2.1.2-r1" in worker
-    assert "`${CACHE_PREFIX}v88`" in preview_worker
+    assert "wrn-app-v2.1.2-r4" in worker and "wrn-data-v2.1.2-r1" in worker
+    assert "`${CACHE_PREFIX}v92`" in preview_worker
     for release_contract in (app_check, diagnostics, selftest):
         assert "2.1.2" in release_contract
 
-    assert "versionCode 28" in gradle
+    assert "versionCode 29" in gradle
     assert 'versionName "2.1.2"' in gradle
     assert package["version"] == "2.1.2"
     assert lock["version"] == "2.1.2"
     assert lock["packages"][""]["version"] == "2.1.2"
     assert "Historische verifizierte Store-Baseline | 2.0.8" in readme
     assert "Aktuelle Live-/Verteilungs-AAB | 2.1.0, Code 25" in readme
-    assert "Android / Google Play | 2.1.1, Code 26" in readme
+    assert "Android / Google Play | 2.1.2, Code 29" in readme
     assert "2.1.0`/Code 25 als aktuellen signierten Live-/Verteilungsstand" in checklist
     assert roadmap["confirmedLiveDistribution"]["version"] == "2.1.0"
     assert roadmap["confirmedLiveDistribution"]["versionCode"] == 25

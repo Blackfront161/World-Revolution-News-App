@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CLASSIC_ENTRY = ROOT / "classic.html"
 PUBLISHED_BASELINE_VERSION = "2.0.8"
 CANDIDATE_VERSION = "2.1.2"
-CANDIDATE_APP_CACHE = "wrn-app-v2.1.2-r1"
+CANDIDATE_APP_CACHE = "wrn-app-v2.1.2-r4"
 CANDIDATE_DATA_CACHE = "wrn-data-v2.1.2-r1"
 ERRORS: list[str] = []
 WARNINGS: list[str] = []
@@ -495,7 +495,7 @@ def check_phase1k_release_fixes() -> None:
     for token in [CANDIDATE_APP_CACHE, CANDIDATE_DATA_CACHE]:
         if token not in service_worker:
             error(f"Produktionspfad des 2.1-Workers fehlt: {token}")
-    if "`${CACHE_PREFIX}v88`" not in preview_worker:
+    if "`${CACHE_PREFIX}v92`" not in preview_worker:
         error("Vorschaupfad des 2.1-Entwicklungsworkers muss Cache v88 verwenden.")
 
 

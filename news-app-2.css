@@ -1,3 +1,9 @@
+/* Hidden until the reader explicitly selects the Autonom design. */
+.brand .brand__autonom,
+.autonom-topics,
+:root:not([data-theme="autonom"]) .autonom-story-actions,
+:root:not([data-theme="autonom"]) .card-actions .autonom-source-action { display: none; }
+
 :root {
   color-scheme: dark;
   --bg: #05080b;
@@ -5676,5 +5682,167 @@ button.feature-card {
   .source-archive-source-list {
     grid-template-columns: 1fr;
     max-height: 416px;
+  }
+}
+
+/* Autonom: optional black/red editorial design; no external font or image. */
+@media screen {
+  :root[data-theme="autonom"] {
+    color-scheme: dark;
+    --bg: #080a0b;
+    --surface: #0d1011;
+    --surface-2: #16191b;
+    --surface-3: #202427;
+    --text: #f5f3ef;
+    --muted: #bcbab8;
+    --soft-copy: #c9c6c2;
+    --cyan: #ff565b;
+    --cyan-soft: rgba(255, 86, 91, .12);
+    --cyan-border: rgba(255, 86, 91, .65);
+    --red: #ff565b;
+    --red-soft: rgba(255, 86, 91, .12);
+    --border: #34383b;
+    --chrome: rgba(8, 10, 11, .96);
+    --chrome-strong: #080a0b;
+    --card-bg: #0d1011;
+    --radius: 12px;
+    --autonom-serif: Georgia, "Times New Roman", serif;
+  }
+
+  :root[data-theme="autonom"] body { background: var(--bg); }
+  :root[data-theme="autonom"] .next-header::after { background: var(--border); }
+  :root[data-theme="autonom"] .next-header__inner {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: 6px 10px;
+    min-height: 0;
+    padding: 12px 14px 8px;
+  }
+  :root[data-theme="autonom"] .header-actions { display: contents; }
+  :root[data-theme="autonom"] .brand { grid-area: 1 / 2; width: 100%; justify-content: center; padding: 0; }
+  :root[data-theme="autonom"] .brand .brand__logo { display: none !important; }
+  :root[data-theme="autonom"] .brand .brand__autonom {
+    display: block;
+    font-family: var(--autonom-serif);
+    font-size: clamp(1.05rem, 3.8vw, 2.3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+  :root[data-theme="autonom"] .brand__autonom em { color: var(--red); font-style: normal; }
+  :root[data-theme="autonom"] #next-menu-toggle { grid-area: 1 / 1; }
+  :root[data-theme="autonom"] #next-search-toggle { display: grid; grid-area: 1 / 3; }
+  :root[data-theme="autonom"] .website-button { grid-area: 2 / 2; justify-self: center; width: auto; min-height: 44px; }
+  :root[data-theme="autonom"] .language-control { grid-area: 2 / 3; }
+  :root[data-theme="autonom"] .classic-link { display: none; }
+  :root[data-theme="autonom"] .icon-button { background: transparent; border-color: transparent; color: var(--text); }
+  :root[data-theme="autonom"] .autonom-topics {
+    display: flex;
+    gap: 8px;
+    margin: 4px 0 18px;
+    padding: 4px 1px 8px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    overscroll-behavior-inline: contain;
+  }
+  :root[data-theme="autonom"] .autonom-topics button {
+    flex: 0 0 auto;
+    min-height: 44px;
+    padding: 8px 15px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font: 700 .9rem var(--autonom-serif);
+    cursor: pointer;
+  }
+  :root[data-theme="autonom"] .autonom-topics .is-active {
+    border-color: var(--red);
+    background: #c5222a;
+    color: #fff;
+    box-shadow: 0 0 18px rgba(255, 55, 63, .22);
+  }
+  :root[data-theme="autonom"] .home-hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+  :root[data-theme="autonom"] .home-hero__image {
+    min-height: 0;
+    padding: 0;
+    background: #111;
+  }
+  :root[data-theme="autonom"] .home-hero__image img {
+    width: 100%;
+    height: auto;
+    max-height: min(55vh, 520px);
+    border-radius: 0;
+    object-fit: contain;
+  }
+  :root[data-theme="autonom"] .home-hero__content { padding: 20px; }
+  :root[data-theme="autonom"] .home-hero:has(.home-hero__image) .home-hero__content {
+    position: relative;
+    margin-top: -54px;
+    padding-top: 70px;
+    background: linear-gradient(transparent, var(--surface) 54px);
+  }
+  :root[data-theme="autonom"] .home-hero h1 {
+    font-family: var(--autonom-serif);
+    font-size: clamp(1.55rem, 4.6vw, 2.65rem);
+    line-height: 1.12;
+    letter-spacing: -.02em;
+  }
+  :root[data-theme="autonom"] .home-hero p { font: 1.05rem/1.5 var(--autonom-serif); }
+  :root[data-theme="autonom"] .section-heading h2,
+  :root[data-theme="autonom"] .view-heading h1,
+  :root[data-theme="autonom"] .news-card h3,
+  :root[data-theme="autonom"] .home-story__body button strong,
+  :root[data-theme="autonom"] .article-title { font-family: var(--autonom-serif); }
+  :root[data-theme="autonom"] .home-top-stories__grid { grid-template-columns: minmax(0, 1fr); }
+  :root[data-theme="autonom"] .home-story { border-radius: 12px; }
+  :root[data-theme="autonom"] .home-story__body button strong { font-size: 1.15rem; }
+  :root[data-theme="autonom"] .home-story__body button span { font: .94rem/1.4 var(--autonom-serif); }
+  :root[data-theme="autonom"] .home-story__body button { min-width: 0; overflow-wrap: anywhere; }
+  :root[data-theme="autonom"] .autonom-story-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px; }
+  :root[data-theme="autonom"] .autonom-story-actions button { display: inline-flex; min-height: 44px; min-width: 44px; max-width: 100%; padding: 6px 10px; border: 1px solid var(--cyan-border); border-radius: 8px; justify-content: center; align-items: center; white-space: normal; font: .8rem/1.3 ui-sans-serif, system-ui, sans-serif; }
+  :root[data-theme="autonom"] .home-story__image img { object-fit: contain; background: #111; }
+  :root[data-theme="autonom"] .news-card { grid-template-columns: minmax(0, 1fr); }
+  :root[data-theme="autonom"] .news-card:has(.news-card__image) { grid-template-columns: minmax(100px, 30%) minmax(0, 1fr); }
+  :root[data-theme="autonom"] .news-card__image { grid-area: 1 / 1; padding: 0; min-height: 0; max-height: none; background: #111; }
+  :root[data-theme="autonom"] .news-card__image img { width: 100%; height: 100%; max-height: none; border-radius: 0; object-fit: contain; }
+  :root[data-theme="autonom"] .news-card:has(.news-card__image) .news-card__body { grid-area: 1 / 2; }
+  :root[data-theme="autonom"] .news-card::before { background: var(--red); opacity: 0; }
+  :root[data-theme="autonom"] .news-card:focus-within::before { opacity: 1; }
+  :root[data-theme="autonom"] .card-actions { flex-wrap: wrap; }
+  :root[data-theme="autonom"] .card-actions .autonom-source-action { display: inline-flex; border-color: var(--cyan-border); }
+  :root[data-theme="autonom"] .bottom-nav { background: var(--chrome-strong); }
+  :root[data-theme="autonom"] .bottom-nav button.active { color: var(--red); background: var(--red-soft); }
+  :root[data-theme="autonom"] .section-heading { flex-wrap: wrap; }
+  :root[data-theme="autonom"] .section-heading > * { max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
+  :root[data-theme="autonom"] .bottom-nav button { min-width: 0; }
+  :root[data-theme="autonom"] .bottom-nav button span { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+  :root[data-theme="autonom"][data-font-size="200"] .home-story,
+  :root[data-theme="autonom"][data-font-size="200"] .news-card:has(.news-card__image) { grid-template-columns: minmax(0, 1fr); }
+  :root[data-theme="autonom"][data-font-size="200"] .news-card:has(.news-card__image) .news-card__body { grid-area: 2 / 1; }
+  :root[data-theme="autonom"][data-font-size="200"] .home-story__image { max-height: 220px; }
+
+  @media (min-width: 920px) {
+    :root[data-theme="autonom"] #next-main { max-width: 1120px; }
+    :root[data-theme="autonom"] .next-header__inner { max-width: 1120px; margin-inline: auto; }
+    :root[data-theme="autonom"] .home-top-stories__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 380px) {
+    :root[data-theme="autonom"] .next-header__inner { gap: 4px; padding-inline: 8px; }
+    :root[data-theme="autonom"] .news-card:has(.news-card__image) { grid-template-columns: minmax(0, 1fr); }
+    :root[data-theme="autonom"] .news-card:has(.news-card__image) .news-card__body { grid-area: 2 / 1; }
+    :root[data-theme="autonom"] .news-card__image img { height: auto; max-height: 280px; }
+    :root[data-theme="autonom"] .home-story { grid-template-columns: minmax(84px, 28%) minmax(0, 1fr); }
+    :root[data-theme="autonom"] .home-story--no-image { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root[data-theme="autonom"] .autonom-topics .is-active { box-shadow: none; }
   }
 }

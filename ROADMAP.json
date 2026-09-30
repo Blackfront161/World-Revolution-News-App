@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-30",
   "releasedBaseline": {
     "version": "2.0.8",
     "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
@@ -14,9 +14,91 @@
   },
   "current": {
     "version": "2.1.2",
-    "branch": "codex/release-2.1.2-code28",
-    "status": "Lokaler Produktionskandidat; nicht signiert, hochgeladen, veröffentlicht oder deployt"
+    "branch": "codex/code26-home-correction-20260927",
+    "versionCode": 29,
+    "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
+    "status": "Lokaler Produktionskandidat: 2.1.2/Code29-Baseline unsigniert gebaut; Autonom als Designauswahl lokal umgesetzt. Lokale Vertragsmatrix und Audit bestanden; unabhängige Paketabnahme und weitere Browser-/Gerätegates offen. Kein Build der neuen Änderungen und keine Play-Veröffentlichung belegt.",
+    "artifactReport": "outputs/code29-8e95685-unsigned/release-report-code29.md",
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus"
   },
+  "projectBoundary": {
+    "repository": "World-Revolution-News-App",
+    "sourceDirectory": "wrn-github-app-current",
+    "note": "World-Revolution-News-Next und die separate Website sind eigene Projekte. Deren Funktionen zählen hier erst nach ausdrücklich beauftragter, geprüfter Portierung als umgesetzt."
+  },
+  "nextWork": [
+    {
+      "id": "CONTROL-CORRECTIONS-20260930",
+      "priority": 1,
+      "name": "Kontrolleur-Befunde korrigieren und unabhängig abnehmen",
+      "status": "in_progress",
+      "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
+      "scope": "Bestehende App plus uncommittiertes Autonom-Paket; Zwischenstand46/52/r3/v91 nicht wiederherstellen",
+      "findings": [
+        { "id": "CACHE-ATOMIC", "status": "fixed_local_pending_review", "file": "tests/test_fast_start_atomic_cache.js", "note": "Aktuelle Cachegenerationen r4/v92; echte Fetch-/Promotionfehler und Erhalt alter Caches beibehalten. Direkter Testlauf bestanden, finale Matrix/Abnahme offen." },
+        { "id": "IMAGE-LINE-ENDINGS", "status": "fixed_local_pending_review", "file": "tests/test_news_app_2_release_round.js", "note": "Bildlayout semantisch und unabhängig von CRLF/LF prüfen. Direkter Testlauf bestanden, unabhängige Abnahme offen." },
+        { "id": "ANDROID-POLICY", "status": "fixed_local_pending_review", "files": ["tests/test_android_toolchain_foundation.py", "tests/test_release_211_code26.py"], "note": "VersionName2.1.2 und Code29 konsistent prüfen; finaler Python-Matrixbeleg noch offen." },
+        { "id": "CACHE-ASSET-CONSISTENCY", "status": "fixed_local_pending_review", "files": ["index.html", "app-check.html", "service-worker.js", "news-app-2-sw.js", "tests/test_product_21_offline_assets.py"], "note": "CSS47/JS53, App-Cache2.1.2-r4 und Preview-v92 synchron; Daten-Cache r1 unverändert. Gezielte Assets bestanden; vollständige Matrix offen." },
+        { "id": "PYTHON-POLICY-REMAINDERS", "status": "fixed_local_pending_review", "priority": 1, "files": ["tests/test_audio_block2_assets.py", "tests/test_release_181.py", "tests/test_release_182.py", "tests/test_source_recovery_assets.py", "tests/test_video_assets.py", "tests/validate_app.py", "release_audit_183.py"], "note": "Veraltete App-Cache-/Preview-Erwartungen auf r4/v92 korrigiert; zusätzlicher Audit-Restwert bei echter Collection gefunden. Semantische Garantien erhalten, Daten-Cache r1 unverändert. Vollmatrix und Audit160/160 lokal bestanden." },
+        { "id": "AUTONOM-BEHAVIOR", "status": "partially_implemented", "implemented": ["tests/test_autonom_behavior.js führt tatsächliche App-Funktionen und Dispatchzweige aus", "Auswahl/Persistenz/Rückwechsel, neun UI-Sprachen, reale Core-/Release-Themenfilter und Quellenprofilaktion geprüft"], "remaining": ["reproduzierbare Browserregression für Tastatur/Fokus, reduced motion und 200%-Reflow in allen Zielviewports"], "note": "Vorhandene manuelle Browserbelege bleiben gültig; Node-Verhaltenstests beweisen keine DOM-Geometrie oder native Geräteeigenschaften." },
+        { "id": "FULL-MATRIX", "status": "passed_local_pending_review", "javascript": "45/45 Module einschließlich neuem Autonom-Verhaltenstest bestanden", "python": "Echte Collection;117 bestanden,3 historische AAB-/Signaturfixturetests übersprungen;36 Pytest-Module plus4 main-only-Skripte", "note": "Vorhandene gebündelte Python3.12-Laufzeit und vorhandener lokaler Pytest9.1.1-Paketordner, keine Installation. Vollständige lokale Vertragsmatrix bestanden; CI/Browser/Gerätegates separat, keine Releasefreigabe.", "evidence": "docs/evidence/autonom-2026-09-30/full-contract-matrix.txt" },
+        { "id": "IMMUTABLE-REVIEW", "status": "planned", "note": "Nach fertig gemeldeten Änderungen und grüner Gesamtmatrix einen konkreten Korrekturcommit unabhängig durch WRN Kontrolleur prüfen lassen." }
+      ],
+      "evidence": "docs/COORDINATION-2026-09-30.md"
+    },
+    {
+      "id": "RELEASE-29",
+      "priority": 1,
+      "name": "Aktuellen App-Kandidaten abschließen",
+      "status": "in_progress",
+      "dependsOn": ["CONTROL-CORRECTIONS-20260930"],
+      "remaining": ["frische Browserabnahme von Start, Reader, Quellenarchiv, Übersetzung, Medien und Offline-Neustart", "Android-Upgrade ohne Verlust von Einstellungen und gespeicherten Artikeln", "Änderungen commitgenau prüfen und neuen unsignierten Build erstellen", "Signierung und Play-Veröffentlichung separat an konkretes Artefakt binden"]
+    },
+    {
+      "id": "DESIGN-AUTONOM",
+      "priority": 1,
+      "name": "Wählbares Design Autonom",
+      "status": "implemented_local",
+      "verifiedAt": "2026-09-30",
+      "remaining": ["automatisierte Browserregression und unabhängige Abnahme des Korrekturpakets", "Android-Geräte- und Upgradeprüfung", "vollständigen Offline-Neustart mit neuen Assets prüfen", "neues Buildartefakt und Veröffentlichung separat nachweisen"],
+      "requestedAt": "2026-09-30",
+      "reference": "Vom Nutzer gelieferter Screenshot ChatGPT Image 13. Sept. 2026, 19_55_31.png",
+      "scope": ["explizit wählbar unter Menü / Darstellung; bestehende Themes erhalten", "schwarze Flächen, rote Akzente, weiße Serifentitel und WRN-Wortmarke", "bebilderter Aufmacher, kompakte Bild-/Textkarten und erreichbare Quellenprofile", "Themenchips mit echtem Entdecken-Filter", "lokal gespeicherte Auswahl, neun UI-Sprachen, kleine Displays und große Schrift", "echte vorhandene Artikel/Bilder; keine erfundenen Beispielmeldungen aus dem Screenshot"],
+      "reference20Minutes": "20min.ch und offizielle Play-Store-Appansichten bleiben ungefähre Vorlage für Nachrichtenhierarchie und Navigation; kein Zugriff auf eine installierte native20-Minuten-App behauptet",
+      "evidence": "docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md"
+    },
+    {
+      "id": "SOURCES-AUTONOM",
+      "priority": 2,
+      "name": "Autonome und antifaschistische Quellen erweitern",
+      "status": "in_progress",
+      "scope": ["regionale autonome Antifa und unabhängige Bewegungsmedien", "kanonische Identitäten gegen bestehendes Register abgleichen", "Eigenbeschreibung, Redaktion/Betreiber, Sprache, Region, Aktualität und Feed einzeln belegen", "Rechte für Volltext/Bild/Audio gesondert prüfen", "erst freigegebene Quellen in Datenrepository und Produktprojektion übernehmen"],
+      "candidates": [
+        { "name": "Autonome Antifa Freiburg", "url": "https://autonome-antifa.org/", "status": "needs-review", "observation": "Homepage erreichbar; Titel und Beiträge direkt beobachtet. Feed und Rechte offen." },
+        { "name": "antifa-frankfurt.org", "url": "https://www.antifa-frankfurt.org/", "status": "needs-review", "observation": "Homepage erreichbar; Antifaschismus und weitere Kategorien beobachtet. Betreiber-Selbstdarstellung, Feed, Rechte und Umgang mit sensiblen Beiträgen offen." },
+        { "name": "Untergrund-Blättle", "url": "https://www.xn--untergrund-blttle-2qb.ch/", "status": "needs-review", "observation": "Homepage erreichbar; Selbstdarstellung als kritisches Magazin aus Großraum Zürich und RSS-Verzeichnis beobachtet. Politische Zuordnung nicht aus dem Namen abgeleitet; Feed und Rechte offen." },
+        { "name": "Plattform Radikale Linke / Autonome Antifa Wien", "url": "https://radikale-linke.at/", "status": "pending", "observation": "Suchhinweis vorhanden; direkter Abruf scheitert am Rechercheproxy. Kanonische Beziehung und aktuelle Inhalte nicht bestätigt." },
+        { "name": "Enough 14 D", "url": "https://enough-is-enough14.org/", "status": "needs-review", "observation": "Homepage erreichbar; oberste sichtbare Beiträge aus2023. Archiv-/Aktualitätsprüfung erforderlich; nicht als aktuelle Feedquelle freigegeben." }
+      ],
+      "existingSourcesToReview": ["Antifa Bern", "Antifa Infoblatt", "Barrikade (CH)", "Montreal Antifasciste", "Kontrapolis"],
+      "note": "Keine Duplikate erzeugen. Kontrapolis ist bereits im Register, lieferte bei der heutigen Probe aber HTTP500/Database Error. Recherche ist keine Aufnahme- oder Veröffentlichungsgenehmigung.",
+      "evidence": "docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md"
+    },
+    {
+      "id": "EDITORIAL-DATA",
+      "priority": 2,
+      "name": "Echte Inhalte für bestehende2.1-Funktionen",
+      "status": "planned",
+      "scope": ["strukturierte redaktionelle Claims und Perspektivenvergleich", "erste geprüfte Solidaritätsaktionen", "geprüfte Dossiers mit stabilen Direktlinks", "Quellenpassdaten und Terminpflege"]
+    },
+    {
+      "id": "MEDIA-PRINT-OFFLINE",
+      "priority": 3,
+      "name": "Audio, Druckstudio und Offline-Materialien vervollständigen",
+      "status": "planned",
+      "scope": ["Tagesausgaben-Audioentscheidung", "A3, Stickerbögen und reproduzierbare PDFs", "freigegebene Offline-Materialien", "geprüfte alternative soziale Medien und spätere World-Revolution-Map-Integration"]
+    }
+  ],
   "productScope": [
     {
       "id": "A",
@@ -170,6 +252,16 @@
     ]
   },
   "qualityEvidence": {
+    "scope": "Die bisherigen Vollmatrix- und Android-Angaben in diesem Objekt sind historische Code26-Belege; sie sind keine neue Abnahme des aktuellen Code29-Arbeitsstands.",
+    "autonomLocal20260930": {
+      "status": "passed_local_contract_matrix",
+      "report": "docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md",
+      "browserEvidence": "docs/evidence/autonom-2026-09-30/browser-checks.json",
+      "assetVersions": "CSS47 / JS53; App-Cache2.1.2-r4 / Worker-v92",
+      "checks": "45 JavaScript-Module,117 Pytest-Tests und4 main-only-Skripte bestanden;3 historische Fixturetests übersprungen; echte Collection. Validator und Read-only-Audit160/160 bestanden. Manuelle Browser-Themes, neun UI-Sprachen, vier Viewports, Schrift200%, Reader, Themenfilter und Quellenprofil geprüft.",
+      "matrixEvidence": "docs/evidence/autonom-2026-09-30/full-contract-matrix.txt",
+      "remaining": "automatisierte Browserregression und unabhängige Paketabnahme; kein neuer Android-Build und kein vollständiger Offline-Neustart für diese Änderungen"
+    },
     "localAndCiMatrix": "derselbe sortierte Discovery-Runner erzwingt alle tests/test_*.js, klassifiziert Python-Verträge über echte Pytest-Collection und führt disjunkt alle expliziten main-only-test_*.py-Skripte aus; helper-via-main wird erkannt, leere Module, Mischformen und Collectionfehler blockieren",
     "verifiedAtThisCorrection": "37 JavaScript-Vertragstests, 102 Pytest-Tests, 4 Python-main()-Vertragsskripte und Read-only-Audit 158/158",
     "auditArtifact": "CI erzeugt und verifiziert den aktuellen Bericht in RUNNER_TEMP; die versionierte release-readiness-183.json bleibt eine historische Baseline und wird nicht als aktuelles CI-Artefakt hochgeladen",
@@ -186,7 +278,7 @@
   ],
   "releaseGates": [
     "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
-    "autorisierte Signierung und Store-Freigabe; der lokale Code-26-Kandidat bleibt bis dahin nicht uploadfähig",
+    "autorisierte Signierung und Store-Freigabe an ein konkretes neues Buildartefakt binden; der aktuelle Code29-Baselinebuild enthält Autonom nicht",
     "Signierung, Upload und Deployment sind nicht autorisiert"
   ]
 }
