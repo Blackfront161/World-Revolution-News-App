@@ -305,7 +305,9 @@
         "sharedLibraryTitleIdsWithFieldChanges": 2,
         "dataEpisodesBlockedByExplicitAppPolicy": 35,
         "regressionTests": "11/11 unittest bestanden, einschließlich beider Ausschlusspfade mit Objekt-/Listen-IDs; kein Runtime-/Release-PASS",
-        "reviewStatus": "pending_independent_read_only_review",
+        "reviewStatus": "independent_tool_fix_accepted_20261001",
+        "reviewedCommit": "eaf55e2fdfff3e3bab9b3a08e7a40e2d13c8330b",
+        "reviewScope": "Prüfwerkzeug einschließlich beider adversarial geprüften Ausschlusspfade; keine Inhaltsaufnahme oder Zusammenführung",
         "status": "Prüfwerkzeug umgesetzt; keine Zusammenführung, Aufnahme oder Aktivierung"
       },
       "baseline": {

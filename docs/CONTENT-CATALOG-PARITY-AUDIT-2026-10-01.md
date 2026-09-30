@@ -4,7 +4,7 @@
 
 **Umgesetzt:** ein rein lesendes, offline arbeitendes Prüfwerkzeug mit elf Regressionstests. **Offen:** redaktionelle Zusammenführungsentscheidungen, Quellenaufnahme, App-/Website-Projektion und Veröffentlichung. Das Werkzeug verändert keine Eingaben, holt keine URLs ab und übernimmt keine Inhalte.
 
-Die unabhängige read-only-Abnahme dieses Werkzeugpakets steht aus. Auch der vorherige reine Roadmap-Commit `8f283355` bleibt bis zur späteren Nachprüfung als `review pending` geführt; das verhindert die sichere Vorbereitung weiterer Pakete nicht.
+Der Kontrolleur hat den Korrekturcommit `eaf55e2fdfff3e3bab9b3a08e7a40e2d13c8330b` am 1. Oktober 2026 unabhängig read-only akzeptiert: beide Ausschlusspfade adversarial wiederholt, elf Tests bestanden, Werkzeughash und Berichtbindung geprüft, Arbeitsbäume unverändert. Diese Abnahme betrifft das Prüfwerkzeug; fachliche Aufnahme und Zusammenführung bleiben offen. Der vorherige reine Roadmap-Commit `8f283355` bleibt bis zu seiner gesonderten Abschlussnachprüfung als `review pending` geführt.
 
 Das [Werkzeug](../scripts/audit_content_catalog_parity.py) bindet sechs Eingabedateien je Repository per SHA-256 und Dateigröße. Es dokumentiert den jeweiligen HEAD als Kontext; maßgeblich für den tatsächlich gelesenen Arbeitsbaum sind die zwölf Bytehashes. Ändert sich eine Datei oder HEAD während der Prüfung, wird kein gültiger Bericht geschrieben. Existierende Berichte und Katalogeingaben dürfen nicht als Ausgabe überschrieben werden.
 
@@ -41,7 +41,7 @@ Die Bibliothek enthält keine gefundenen unterschiedlichen IDs mit exakt gleiche
 
 Elf Standardbibliothek-`unittest`-Fälle bestanden. Sie prüfen beschädigte IDs, doppelte IDs, mehrdeutige Hostzuordnung, Erhalt der Metadatenrestriktion, ausgeschlossene Quellen, widersprüchliche App-/Datenpolicy, sichere URL-Identitätsgrenzen, Feldkonflikte ohne Text-/URLausgabe, Drift während der Prüfung sowie Verweigerung des Überschreibens von Eingaben oder Berichten. Zwei zusätzliche Testmethoden prüfen Objekt- und Listen-IDs mit eingebettetem Body und Audio-URL getrennt im Quellen-Ausschlusspfad und im App-Policy-Ausschlusspfad; beide prüfen die Abwesenheit dieser Inhalte im serialisierten Gesamtbericht. Der reguläre pytest-Runner wird weiterhin nicht als bestanden behauptet.
 
-Der Kontrolleur hatte diesen Inhaltsübertrag in den beiden Ausschlusspfaden von `5e12d84` unabhängig reproduziert; die neun damaligen Tests erfassten ihn nicht. Der Fix beschränkt beide `episodeId`-Ausgaben auf Strings, sonst `null`. Die fachlichen Befunde des realen Kataloglaufs bleiben unverändert; nur Zeit, HEAD-Kontext und Werkzeughash wurden neu gebunden. Die erneute unabhängige Abnahme steht noch aus.
+Der Kontrolleur hatte diesen Inhaltsübertrag in den beiden Ausschlusspfaden von `5e12d84` unabhängig reproduziert; die neun damaligen Tests erfassten ihn nicht. Der akzeptierte Fix beschränkt beide `episodeId`-Ausgaben auf Strings, sonst `null`. Die fachlichen Befunde des realen Kataloglaufs bleiben unverändert; nur Zeit, HEAD-Kontext und Werkzeughash wurden neu gebunden. Der Status des fachlichen Berichts bleibt ausdrücklich `review_required_not_admission_not_merge_not_live_parity`.
 
 ```powershell
 # Mit dem vorhandenen Python, ohne zusätzliche Pakete und ohne Netzwerk:
