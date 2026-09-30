@@ -4,7 +4,7 @@ Auftrag vom 1. Oktober 2026: Website-Inhalte und App-Quellen angleichen, Lexikon
 
 ## 1. Website-Abweichung schließen
 
-Die [Live-Startseite](https://solinaridao.com/) wurde über Firecrawl mit `maxAge: 0` gelesen. Sie zeigt weiterhin den Titel „WRN Website Foundation“ und einen Nachrichtenarchiv-Snapshot vom 26. September. Der öffentlich gelesene [Produktionspointer](https://solinaridao.com/wrn-production-content/current.json) bezeichnet `wrn-production-news-2026-09-26-v8`, der [Quellenpasspointer](https://solinaridao.com/wrn-source-passes/current.json) `wrn-source-pass-2026-09-25-v2`. Dies bestätigt keine Veröffentlichung des neuen Website-Kandidaten. Der vermittelte Seitentext ist kein vollständiger interaktiver Browser- oder Offline-Nachweis.
+Ausgangsbeobachtung vom 1. Oktober 2026 vor dem Veröffentlichungsauftrag: Die [Live-Startseite](https://solinaridao.com/) wurde über Firecrawl mit `maxAge: 0` gelesen. Sie zeigte den Titel „WRN Website Foundation“ und einen Nachrichtenarchiv-Snapshot vom 26. September. Der öffentlich gelesene [Produktionspointer](https://solinaridao.com/wrn-production-content/current.json) bezeichnete `wrn-production-news-2026-09-26-v8`, der [Quellenpasspointer](https://solinaridao.com/wrn-source-passes/current.json) `wrn-source-pass-2026-09-25-v2`. Dies bestätigte keine Veröffentlichung des neuen Website-Kandidaten. Der vermittelte Seitentext war kein vollständiger interaktiver Browser- oder Offline-Nachweis.
 
 Der alleinige Website-Schreiber **„WRN Website – Inhaltsparität“** erstellt bereits die Nachrichten-/Quellenprojektion. Laut dessen lokalem Bericht: 500 Eingangsartikel, 480 aufgenommene Metadaten/Originallinks, 20 begründete Ausschlüsse und 397 von 406 Registerendpunkten; 476 Links ohne passenden Quellenpass. Die zwölf zuvor zugelassenen Volltexte bleiben eine separate Klasse. Diese Zahlen sind Writer-Bericht, kein unabhängiges Abschluss-PASS und keine Live-Bestandszählung. Endpunkte dürfen nicht als Anzahl verschiedener Herausgeber ausgegeben werden.
 
@@ -33,7 +33,7 @@ Folgeschritt umgesetzt: [offline Katalogprüfwerkzeug und Zusammenführungswarte
 
 ## 3. Lexikon und Wissensbibliothek ausbauen
 
-Das tatsächlich ausgeführte Lexikonmodul liefert **154 Begriffe und zwölf Referenzquellen**. Definitionen sind DE/EN; neun UI-Sprachen bedeuten noch keine neun Definitionensprachen. Kategorien: Grundlagen 13, Organisierung 33, Gerechtigkeit/Fürsorge 17, Kämpfe/Kritik 22, Herrschaft/Analyse 27, Praxis 34, Ökologie/Gemeingüter 8.
+Das tatsächlich ausgeführte Lexikonmodul lieferte im Ausgangsinventar **154 Begriffe und zwölf Referenzquellen**. Definitionen sind DE/EN; neun UI-Sprachen bedeuten noch keine neun Definitionensprachen. Kategorien des Ausgangsinventars: Grundlagen 13, Organisierung 33, Gerechtigkeit/Fürsorge 17, Kämpfe/Kritik 22, Herrschaft/Analyse 27, Praxis 34, Ökologie/Gemeingüter 8.
 
 Erste Inhaltsrunde: mindestens 20 neue oder wesentlich überarbeitete Begriffe, Schwerpunkt auf dem schmaleren Ökologiebereich sowie Arbeitskämpfen, autonomer Organisierung und regionalen Varianten. Vorher bestehende Begriffe abgleichen. Eigene kurze Texte mit konkretem Quellenbeleg, Praxisbezug, unterschiedlichen Perspektiven und datierter Revision; neue Texte in DE/EN, weitere Sprachen nach inhaltlicher Prüfung. Bestehende Definitionen nicht automatisch als fachlich geprüft ausgeben.
 
@@ -65,5 +65,15 @@ Abnahme: gleiche stabile IDs beim Refresh und Fortsetzen, echte GUID-/URL-Dublet
 Diese Roadmap-Ergänzung verändert keinen Runtime-, Website- oder Datenbestand. Das bereits akzeptierte AAB bleibt Code31 aus Runtime `8d2ef234`, mit unveränderter Artefakthashbindung. Neue Runtimeänderungen benötigen einen neuen Kandidaten und eigenen Build-/Prüfnachweis; sie werden Code31 nicht rückwirkend zugerechnet. Aktueller Datenstand `17b3604` bleibt lokal und unverändert. Keine Signierung, Veröffentlichung oder Deployment durch diesen Auftragsteil.
 
 ## Prüfung dieser Ergänzung
+
+### Fortführung am 1. Oktober 2026
+
+Der Website-Veröffentlichungsauftrag ist inzwischen ausdrücklich erteilt. Nach realen Hosting- und Offlinefehlern wurde der alte Live-Stand wiederhergestellt; das reparierte Paket wird unabhängig geprüft. Die oben beschriebene Ausgangsbeobachtung ist historisch. Ein lokales Paket-PASS wird weiterhin nicht als erfolgreiche Live-Veröffentlichung ausgegeben.
+
+Im App-Arbeitsstand ist die [erste Lexikonrunde](LEXICON-FIRST-CONTENT-BATCH-2026-10-01.md) umgesetzt: ein belegter DE/EN-Begriff zu Faschismus und drei korrigierte Beziehungen zum vorhandenen Begriff Antifaschismus. Der ausgeführte öffentliche Katalog enthält nun 155 eindeutige Begriffe und 13 Referenzen; alle fünf zuvor verwaisten Beziehungen sind aufgelöst. Das entspricht einem von 20 geplanten Begriffsbeiträgen. Weitere 19 Beiträge, drei Lernpfade mit 30 Zuordnungen, Bibliothekssynchronisierung und die spätere Produktabnahme bleiben offen. Dieser lokale Entwurf ist weder Website-Inhalt noch Bestandteil des bestehenden Code31-AAB; die unabhängige Inhaltsprüfung steht aus.
+
+Die [Radio-Dreyeckland-ID-Zuordnung](RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.md) ist als gehashter Vorschlag für 33 App- und 28 Datenzeilen vorbereitet. Sie ist nicht angewendet. Vor der Zuordnung muss die restriktive Metadaten-/Originallinkregel auch in Podcastpipeline und Player wirksam sein.
+
+Vier offizielle RSS-Endpunkte wurden direkt über HTTPS technisch beobachtet: [Feedbericht](PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md). Zusammen enthalten die gelesenen Antworten 1.673 Zeilen; darunter ein zukünftiges Datum, 73 ausschließlich über HTTP referenzierte Audiodateien und ein doppelter Episodenlink. Diese Zeilen sind keine aufgenommenen Folgen. Die drei 3CR-Feeds zeigen grundsätzlich genügend Archivzeilen für eine spätere Erweiterung; Rebel Steps enthält 35 Zeilen und wird als Archiv behandelt. Rechte, erreichbare Einzelmedien, Aufnahme und unabhängige Prüfung bleiben offen.
 
 JSON-Parsing, eindeutige Roadmap-IDs, sämtliche lokalen Nachweislinks, zwölf Eingangshashes des Inventars und die unveränderten Code31-Bindungen bestanden. Die bestehenden Funktionen `test_current_release_metadata_is_consistent` und `test_consumed_code25_bindings_remain_historical` sowie die unveränderten Modulassertions aus `test_release_200_assets.py` wurden direkt mit Python ausgeführt und bestanden; `git diff --check` ist sauber. Das ist kein neuer Runtime- oder Gesamtrelease-Testlauf. Der reguläre pytest-Aufruf war wegen lokaler Dateirechte auf dem pytest-Verzeichnis nicht ausführbar; es wird kein pytest-PASS behauptet.
