@@ -390,8 +390,20 @@
       "id": "PODCAST-CATALOG-EXPANSION",
       "priority": 2,
       "name": "Podcastquellen und nutzbaren Archivumfang erweitern",
-      "status": "six_programme_candidates_researched_admission_and_implementation_pending",
+      "status": "six_candidates_researched_four_rss_metadata_probes_completed_admission_pending",
       "dependsOn": ["CONTENT-CATALOG-PARITY"],
+      "technicalObservation": {
+        "evidence": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.json",
+        "report": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md",
+        "reachableParsedFeeds": 4,
+        "observedFeedRows": 1673,
+        "futureDatedRows": 1,
+        "rowsWithOnlyInsecureEnclosure": 73,
+        "duplicateEpisodeLinkRows": 1,
+        "admittedSources": 0,
+        "importedEpisodes": 0,
+        "remaining": "Betreiber-/Sprachen-/Rechtereview, sichere Originalpfade, Enclosure-Erreichbarkeit und Pagination; Green Left/Rebel Steps als Archiv statt aktuelle Sendungen einordnen"
+      },
       "candidateNames": [
         "Anarchist World This Week (3CR)",
         "Stick Together (3CR)",

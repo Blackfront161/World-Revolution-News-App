@@ -4,6 +4,8 @@ Stand: 1. Oktober 2026, Asia/Singapore. Ergänzung zu `PODCAST-CATALOG-EXPANSION
 
 Die offiziellen Seiten wurden am 30. September 2026 UTC über Firecrawl mit `maxAge: 0` gelesen. Das ist eine vermittelte Seitenbeobachtung, keine erfolgreiche technische RSS-Abnahme. Vier direkte RSS-Abrufe mit PowerShell scheiterten lokal an der TLS-Verbindung; weder Parser, Enclosures noch Aktualisierungsverhalten gelten damit als bestanden. TLS-Prüfungen wurden nicht abgeschaltet.
 
+Fortsetzung am selben Tag um 22:11 UTC: Die vier offiziell verlinkten Feeds wurden mit verifiziertem HTTPS über Python direkt erfolgreich gelesen und als RSS geparst. [Gebundener Beobachtungsbericht](PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.json) und [Auswertung](PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md): 588/669/381/35 Feedzeilen, ein zukünftiges Datum, 73 Zeilen ausschließlich mit HTTP-Enclosure und eine doppelte Episodenseite. Dies ersetzt den früher gescheiterten Abruf als aktuelle technische Beobachtung; die ursprüngliche Tabelle dokumentiert die erste Seitenrecherche. Enclosure-Erreichbarkeit, Pagination, Aktualisierungsverhalten, Aufnahme und Rechte bleiben offen. Keine Folge wurde importiert oder abgespielt.
+
 Die sechs Kandidaten sind weder im lokalen 52-zeiligen App-Podcastkatalog noch im 36-zeiligen kanonischen Datenkatalog vorhanden. Drei Programme gehören zu 3CR; insgesamt sind es vier Anbieter, nicht sechs neue unabhängige Herausgeber. Bereits vorhandene 3CR-Programme bleiben eigene Serien unter derselben Anbieteridentität.
 
 | Kandidat / offizielle Seite | Beobachtung und möglicher Mehrwert | Offiziell verlinkter Feed / Aufnahmezustand |
