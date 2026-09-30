@@ -341,6 +341,8 @@
             .sort((a, b) => (safeDate(b?.pubDate || b?.eventStart)?.getTime() || 0) - (safeDate(a?.pubDate || a?.eventStart)?.getTime() || 0));
     }
 
+    let sourceProfileReturnFocus = null;
+
     function buildModal() {
         if (document.getElementById('source-profile-modal')) return;
         const modal = document.createElement('div');
@@ -350,6 +352,7 @@
         modal.setAttribute('role', 'dialog');
         modal.setAttribute('aria-modal', 'true');
         modal.setAttribute('aria-labelledby', 'source-profile-title');
+        modal.tabIndex = -1;
         modal.innerHTML = `
             <h3 id="source-profile-title"></h3>
             <div id="source-profile-body" class="source-profile-body"></div>
@@ -360,6 +363,24 @@
             </div>`;
         document.body.append(modal);
         document.getElementById('source-profile-close')?.addEventListener('click', close);
+        modal.addEventListener('keydown', event => {
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                event.stopPropagation();
+                close();
+            } else if (event.key === 'Tab') {
+                const controls = [...modal.querySelectorAll('button:not(:disabled), a[href]')]
+                    .filter(control => !control.hidden && control.getClientRects().length);
+                const first = controls[0];
+                const last = controls[controls.length - 1];
+                if (!first) { event.preventDefault(); modal.focus(); }
+                else if (event.shiftKey && (document.activeElement === first || document.activeElement === modal)) {
+                    event.preventDefault(); last.focus();
+                } else if (!event.shiftKey && (document.activeElement === last || document.activeElement === modal)) {
+                    event.preventDefault(); first.focus();
+                }
+            }
+        });
     }
 
     function valueRow(label, value) {
@@ -374,6 +395,7 @@
     }
 
     async function open(name) {
+        sourceProfileReturnFocus = document.activeElement;
         buildModal();
         await loadCatalog(false);
         if (typeof closeAllModals === 'function') closeAllModals();
@@ -454,7 +476,7 @@
         if (closeButton) closeButton.textContent = texts.close;
         if (overlay) overlay.hidden = false;
         modal.hidden = false;
-        modal.focus?.();
+        (closeButton || modal).focus?.();
     }
 
     function findRegistrySource(name) {
@@ -477,6 +499,8 @@
         const overlay = document.getElementById('fb-overlay');
         if (modal) modal.hidden = true;
         if (overlay) overlay.hidden = true;
+        if (sourceProfileReturnFocus?.isConnected) sourceProfileReturnFocus.focus?.();
+        sourceProfileReturnFocus = null;
     }
 
     function updateUi(lang = currentLanguage()) {

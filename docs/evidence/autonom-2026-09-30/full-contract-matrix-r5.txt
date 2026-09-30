@@ -1,0 +1,108 @@
+[js-contract] tests/test_article_interactions.js
+Article translation, share and podcast interaction contract: OK
+[js-contract] tests/test_article_workspace_184.js
+Article workspace 1.8.4 contracts: OK
+[js-contract] tests/test_audio_region_core.js
+Audio-Herkunftsfilter: OK
+[js-contract] tests/test_audio_tab_183.js
+Audio tab 1.8.4 tests passed.
+[js-contract] tests/test_autonom_behavior.js
+Autonom selection/persistence, existing themes, nine UI languages, real filtering and source action: OK
+[js-contract] tests/test_block3_interface.js
+Block 3 interface contract: OK
+[js-contract] tests/test_block3_runtime.js
+Block 3 runtime core: OK
+[js-contract] tests/test_daily_overview.js
+Daily overview and offline edition: OK
+[js-contract] tests/test_development_editorial_snapshot.js
+Development editorial snapshot: OK
+[js-contract] tests/test_fast_start_atomic_cache.js
+WRN offline cache: 1 optionale Dateien konnten nicht gespeichert werden.
+WRN preview cache: 1 optional assets unavailable.
+Fast start and atomic worker installation: OK
+[js-contract] tests/test_feedback_delivery.js
+Direct feedback delivery contract: OK
+[js-contract] tests/test_following_source_archive.js
+Followed source archive loading: OK
+[js-contract] tests/test_full_article_delivery.js
+Full article delivery: OK
+[js-contract] tests/test_generated_podcast_library.js
+Generated podcast loading and generation contract: OK
+[js-contract] tests/test_home_translation_layout.js
+Home translation and full-image layout: OK
+[js-contract] tests/test_i18n_voice_keys.js
+Briefing voice translations: OK
+[js-contract] tests/test_language_origin.js
+language origin assertions passed
+[js-contract] tests/test_navigation_history.js
+Smartphone back navigation: OK
+[js-contract] tests/test_news_app_2_core.js
+News App 2 core contracts: OK
+[js-contract] tests/test_news_app_2_live_data.js
+News App 2 live-data routing: OK
+[js-contract] tests/test_news_app_2_media.js
+News App 2 media contracts: OK
+[js-contract] tests/test_news_app_2_release.js
+News App 2 release helpers: OK
+[js-contract] tests/test_news_app_2_release_round.js
+News App 2 release round contracts: OK
+[js-contract] tests/test_news_app_2_specialty.js
+News App 2 specialty contracts: OK
+[js-contract] tests/test_news_card_copy.js
+Shared one-sentence card copy and translation status: OK
+[js-contract] tests/test_next_update_candidate.js
+Next-update card/help integration contract: OK
+[js-contract] tests/test_offline_persistence_21.js
+WRN 2.1 daily editions and solidarity regional packages survive an offline restart: OK
+[js-contract] tests/test_origin_safety.js
+WRN origin safety tests: OK
+[js-contract] tests/test_prisoner_solidarity.js
+WRN prisoner solidarity contracts: OK
+[js-contract] tests/test_reader_data_controls.js
+Reader data controls: OK
+[js-contract] tests/test_reader_translation_race.js
+Reader stale translation responses: OK
+[js-contract] tests/test_release_200.js
+WRN 2.0 action radar contracts: OK
+[js-contract] tests/test_runtime_selftest_183.js
+WRN 2.1.2 runtime self-test contracts: OK
+[js-contract] tests/test_shared_translation_client.js
+Shared translation client tests passed.
+[js-contract] tests/test_solidarity_network_21.js
+WRN solidarity network schema, verification, filters, offline, moderation and privacy: OK
+[js-contract] tests/test_solidarity_worker_fallback.js
+WRN workers strip spoofed network/cache fallback headers and mark only local synthetic responses: OK
+[js-contract] tests/test_source_filters.js
+WRN source filters: OK
+[js-contract] tests/test_source_passport_21.js
+WRN source passport 2.1 real-schema contracts: OK
+[js-contract] tests/test_source_profile_keyboard.js
+WRN source profile keyboard: actual handler PASS
+[js-contract] tests/test_source_recovery_ui.js
+source recovery UI tests: passed
+[js-contract] tests/test_stories_core.js
+WRN stories core tests: OK
+[js-contract] tests/test_video_hub.js
+Video-Hub tests passed.
+[js-contract] tests/test_video_pipeline.js
+Video pipeline contracts: OK
+[js-contract] tests/test_video_portal_contract.js
+Video portal contracts: OK
+[js-contract] tests/test_wrn_product_21.js
+WRN planned 2.1 product contracts A/C/E: OK
+[js-contract] tests/test_zine_stencils.js
+Zine spray stencils: OK
+[js-contract] 46 tests passed
+.s..s......s............................................................ [ 58%]
+...................................................                      [100%]
+120 passed, 3 skipped in 43.81s
+[pytest-contract] 36 modules managed by pytest
+[python-main-contract] tests/test_block3_assets.py
+Block 3 assets: OK
+[python-main-contract] tests/test_inline_text.py
+Inline HTML text extraction: OK
+[python-main-contract] tests/test_video_assets.py
+Video and background asset tests passed.
+[python-main-contract] tests/test_video_pipeline_assets.py
+Video pipeline assets: OK
+[python-main-contract] 4 scripts passed

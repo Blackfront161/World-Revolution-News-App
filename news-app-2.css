@@ -5477,6 +5477,7 @@ button.feature-card {
   *::after {
     scroll-behavior: auto !important;
     animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
     animation-iteration-count: 1 !important;
   }
 }
@@ -5800,7 +5801,10 @@ button.feature-card {
   :root[data-theme="autonom"] .view-heading h1,
   :root[data-theme="autonom"] .news-card h3,
   :root[data-theme="autonom"] .home-story__body button strong,
-  :root[data-theme="autonom"] .article-title { font-family: var(--autonom-serif); }
+  :root[data-theme="autonom"] .article-title {
+    font-family: var(--autonom-serif);
+    overflow-wrap: anywhere;
+  }
   :root[data-theme="autonom"] .home-top-stories__grid { grid-template-columns: minmax(0, 1fr); }
   :root[data-theme="autonom"] .home-story { border-radius: 12px; }
   :root[data-theme="autonom"] .home-story__body button strong { font-size: 1.15rem; }

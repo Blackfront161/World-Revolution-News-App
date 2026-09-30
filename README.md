@@ -27,12 +27,14 @@ werden. Der bekannte lokale Signaturnachweis ist an das erwartete Zertifikat
 `7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8`
 gebunden. Der Play-Console-Trackstatus konnte unter den aktuellen Bedingungen
 nicht unabhängig geprüft werden. Die frühere Code26-Übergabe ist historisch;
-der aktuelle lokale Kandidat nutzt Code29. Der vorhandene Code29-Build enthält
-noch nicht die Autonom-Änderungen vom30.09.2026.
+der neue lokale Kandidat wird mit Code30 erstellt. Der vorhandene Code29-Build
+bleibt die Vorversion für die Upgrade-Prüfung.
 
 Aktuelle Reihenfolge und Quellkandidaten: [ROADMAP.json](ROADMAP.json).
 Design-/Rechercheauftrag und lokale Prüfergebnisse:
-[Autonom](docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md).
+[Autonom-Abnahme](docs/AUTONOM-ACCEPTANCE-2026-10-01.md).
+Der [erste Designbericht](docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md)
+beschreibt den bereits akzeptierten Ausgangsstand.
 
 ## Produktumfang
 

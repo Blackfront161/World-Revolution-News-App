@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
   "version": "2.1.0",
-  "generatedAt": "2026-08-11T20:13:27.929446+00:00",
-  "sourceCount": 515,
-  "activeSourceCount": 515,
+  "generatedAt": "2026-09-30T15:29:25.174605+00:00",
+  "sourceCount": 518,
+  "activeSourceCount": 516,
   "knownLanguages": [
     "ar",
     "ca",
@@ -25,11 +25,11 @@
     "zh"
   ],
   "metadataCompleteness": {
-    "knownGeography": 377,
-    "explicitGeography": 188,
+    "knownGeography": 380,
+    "explicitGeography": 191,
     "inferredGeography": 189,
     "unknownGeography": 138,
-    "knownLanguage": 223,
+    "knownLanguage": 226,
     "unknownLanguage": 292
   },
   "metadataPolicy": {
@@ -2246,6 +2246,39 @@
       ]
     },
     {
+      "name": "antifa-frankfurt.org",
+      "url": "https://www.antifa-frankfurt.org/",
+      "canonicalUrl": "https://antifa-frankfurt.org/",
+      "homepage": "https://www.antifa-frankfurt.org/",
+      "languages": [
+        "de"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Europa",
+        "Antifaschismus"
+      ],
+      "mediaType": "news",
+      "status": "directory-only",
+      "active": false,
+      "importMode": "disabled",
+      "rightsReview": "Keine allgemeine Weiterveröffentlichungserlaubnis; Beiträge mit Personenbezug einzeln prüfen.",
+      "operator": "Redaktionskollektiv antifa-frankfurt.org (Selbstauskunft)",
+      "sourceType": "Bewegungspublikation",
+      "reviewEvidence": [
+        "https://www.antifa-frankfurt.org/20-jahre-sind-nicht-genug/",
+        "https://www.antifa-frankfurt.org/impressum/",
+        "https://www.antifa-frankfurt.org/feed/"
+      ],
+      "originRegion": "Europa",
+      "originCountry": "Deutschland",
+      "originCountryCode": "DE",
+      "origins": [
+        "multilingual-source-registry.json"
+      ],
+      "geographySource": "explicit"
+    },
+    {
       "name": "Antifa.cz",
       "url": "https://www.antifa.cz/rss.xml",
       "canonicalUrl": "https://antifa.cz/rss.xml",
@@ -2663,6 +2696,38 @@
       "origins": [
         "aggregate.py"
       ]
+    },
+    {
+      "name": "Autonome Antifa Freiburg",
+      "url": "https://autonome-antifa.org/",
+      "canonicalUrl": "https://autonome-antifa.org/",
+      "homepage": "https://autonome-antifa.org/",
+      "languages": [
+        "de"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Europa",
+        "Antifaschismus"
+      ],
+      "mediaType": "news",
+      "status": "directory-only",
+      "active": false,
+      "importMode": "disabled",
+      "rightsReview": "Volltext, Bilder, Audio und Video nicht freigegeben; Beiträge einzeln prüfen.",
+      "operator": "Autonome Antifa Freiburg (Eigenbezeichnung)",
+      "sourceType": "Bewegungspublikation",
+      "reviewEvidence": [
+        "https://autonome-antifa.org/",
+        "https://autonome-antifa.org/spip.php?page=backend"
+      ],
+      "originRegion": "Europa",
+      "originCountry": "Deutschland",
+      "originCountryCode": "DE",
+      "origins": [
+        "multilingual-source-registry.json"
+      ],
+      "geographySource": "explicit"
     },
     {
       "name": "Autonomies",
@@ -12264,6 +12329,38 @@
       "origins": [
         "source-catalog.json"
       ]
+    },
+    {
+      "name": "Untergrund-Blättle",
+      "url": "https://www.xn--untergrund-blttle-2qb.ch/rss/aktuelle_artikel.rss",
+      "canonicalUrl": "https://xn--untergrund-blttle-2qb.ch/rss/aktuelle_artikel.rss",
+      "homepage": "https://www.xn--untergrund-blttle-2qb.ch/",
+      "languages": [
+        "de"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Europa"
+      ],
+      "mediaType": "news",
+      "status": "approved",
+      "active": true,
+      "importMode": "metadata-only",
+      "rightsReview": "Nur Überschrift, Autor, Datum und Originalverweis. Textlizenz gilt laut Impressum bedingt; Fremdtexte und Medien gesondert prüfen.",
+      "operator": "UB-Redaktions-Kollektiv (Selbstauskunft)",
+      "sourceType": "Kritisches Online-Magazin",
+      "reviewEvidence": [
+        "https://www.xn--untergrund-blttle-2qb.ch/impressum/",
+        "https://www.xn--untergrund-blttle-2qb.ch/rss/"
+      ],
+      "originRegion": "Europa",
+      "originCountry": "Schweiz",
+      "originCountryCode": "CH",
+      "origins": [
+        "aggregate.py",
+        "multilingual-source-registry.json"
+      ],
+      "geographySource": "explicit"
     },
     {
       "name": "Vagancio Buenos Aires",

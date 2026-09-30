@@ -1,0 +1,19 @@
+{
+  "css": "news-app-2.css?release=48",
+  "readerCharacters": 6254,
+  "readerTitle": "next-article-title",
+  "sourceProfiles": "source-profiles.js?release=3",
+  "theme": "autonom",
+  "procedure": [
+    "Snapshot-mode origin 127.0.0.1:8795; all feed URLs resolve locally.",
+    "Saved a real LabourNet article and observed Fully offline.",
+    "Closed the original tab; terminated only the dedicated test server.",
+    "Test-NetConnection 127.0.0.1:8795 returned False.",
+    "Opened a new tab and read the saved full text."
+  ],
+  "limits": [
+    "Host Internet remained enabled; this proves unavailable app/data origin in snapshot mode.",
+    "Does not claim production service-worker or Android airplane-mode cold start.",
+    "No new translation, external player, or unsaved article is claimed available offline."
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "runner": "Codex CUA browser API",
+  "results": [
+    {
+      "name": "keyboard-theme-to-font-visible-focus",
+      "passed": true,
+      "detail": {
+        "id": "next-menu-font-size",
+        "outline": "solid",
+        "visible": true
+      }
+    },
+    {
+      "name": "escape-restores-menu-trigger",
+      "passed": true,
+      "detail": "next-menu-toggle"
+    },
+    {
+      "name": "autonom-200-percent-320",
+      "passed": true,
+      "detail": {
+        "clippedTitles": [],
+        "font": "200",
+        "overflow": 0,
+        "theme": "autonom",
+        "width": 320
+      }
+    },
+    {
+      "name": "autonom-200-percent-390",
+      "passed": true,
+      "detail": {
+        "clippedTitles": [],
+        "font": "200",
+        "overflow": 0,
+        "theme": "autonom",
+        "width": 390
+      }
+    },
+    {
+      "name": "autonom-200-percent-768",
+      "passed": true,
+      "detail": {
+        "clippedTitles": [],
+        "font": "200",
+        "overflow": 0,
+        "theme": "autonom",
+        "width": 768
+      }
+    },
+    {
+      "name": "autonom-200-percent-1440",
+      "passed": true,
+      "detail": {
+        "clippedTitles": [],
+        "font": "200",
+        "overflow": 0,
+        "theme": "autonom",
+        "width": 1440
+      }
+    },
+    {
+      "name": "switch-back",
+      "passed": true,
+      "detail": {
+        "clippedTitles": [],
+        "font": "normal",
+        "overflow": 0,
+        "theme": "dark",
+        "width": 1440
+      }
+    },
+    {
+      "name": "reload-persists-autonom",
+      "passed": true,
+      "detail": {
+        "clippedTitles": [],
+        "font": "normal",
+        "overflow": 0,
+        "theme": "autonom",
+        "width": 1440
+      }
+    },
+    {
+      "name": "topic-chip-opens-real-discover",
+      "passed": true,
+      "detail": "- link \"Zum Inhalt springen\":\n  - /url: \"#next-main\"\n- banner:\n  - button \"Webseite · Solinaridao.com ↗\":\n    - text: World\n    - emphasis: Revolution\n    - text: News\n  - button \"Webseite · Solinaridao.com ↗\":\n    - generic: ◎\n    - generic: SOLINARIDAO.COM\n    - generic: ↗\n  - button \"Menü öffnen\":\n    - generic: ☰\n  - button \"Suche öffnen\":\n    - generic: ⌕\n  - generic: Sprache\n  - combobox \"Sprache\":\n    - option \"DE\" [selected]\n    - option \"EN\"\n    - option \"ES\"\n    - option \"FR\"\n    - option \"IT\"\n    - option \"PT\"\n    - option \"RU\"\n    - option \"EL\"\n    - option \"TR\"\n  - navigation \"Hauptnavigation\":\n    - button \"Start\":\n      - generic: ⌂\n      - generic: Start\n    - button \"Für mich\":\n      - generic: ★\n      - generic: Für mich\n    - button \"Entdecken\":\n      - generic: ◎\n      - generic: Entdecken\n    - button \"Medien\":\n      - generic: ▶\n      - generic: Medien\n    - button \"Gespeichert\":\n      - generic: ▰\n      - generic: Gespeichert\n- main [active]:\n  - generic: Entdecken\n  - heading \"Entdecken\" [level=1]\n  - paragraph: Durchsuche Regionen, Themen und Quellen, ohne deinen persönlichen Feed zu verändern.\n  - region \"Weitere Bereiche\":\n    - button \"Termine\":\n      - generic: ◷\n      - strong: Termine\n    - button \"Lexikon\":\n      - generic: A–Z\n      - strong: Lexikon\n    - button \"Bibliothek\":\n      - generic: ▤\n      - strong: Bibliothek\n    - button \"Gefangene\":\n      - generic: ✉\n      - strong: Gefangene\n    - button \"Hilfe finden\":\n      - generic: ✚\n      - strong: Hilfe finden\n    - button \"Entwicklungen\":\n      - generic: ↗\n      - strong: Entwicklungen\n  - navigation \"Alle Artikel\":\n    - button \"Aktuell\" [pressed]\n    - button \"Letzte 7 Tage\"\n    - button \"Letzte 30 Tage\"\n    - button \"Alle Artikel\"\n  - searchbox \"Nachrichten durchsuchen\"\n  - g"
+    },
+    {
+      "name": "keyboard-opens-reader",
+      "passed": true,
+      "detail": "usgabe\n      - strong: 5 Meldungen\n      - paragraph: Wähle 5–10 Meldungen für Morgenlage, Tagesausgabe oder Wochenrückblick.\n      - button \"Ausgabe erstellen\"\n      - button \"Offline sichern\"\n    - article:\n      - generic: ✦\n      - generic: Solidaritätsaktionen\n      - strong: 0 aktuell vollständig geprüfte Aktionen\n      - paragraph: Derzeit liegt keine vollständig geprüfte aktive Aktion vor. Schlagworttreffer aus Terminen werden nicht als geprüft ausgegeben.\n      - generic \"Eingabe- und Prüfliste\"\n      - button \"Solidarität öffnen\"\n      - button \"Live-Dossiers\"\n    - article:\n      - generic: ✂\n      - generic: Aktionspaket\n      - strong: Zine, Schablonen und Solidaritätsinformationen funktionieren auch ohne Konto.\n      - button \"Sprühschablonen →\"\n  - status\n- dialog \"¡Santa sábana, Batman!\":\n  - banner:\n    - button \"Schließen\" [active]:\n      - generic: ←\n      - generic: Zurück\n    - generic: ANRed (Argentina) · 11. Aug.\n    - strong: ¡Santa sábana, Batman!\n    - button \"Später lesen\": ☆\n  - article:\n    - status:\n      - generic: ★\n      - heading \"Vollständiger Artikel wird geladen …\" [level=1]\n  - contentinfo \"Artikelaktionen\":\n    - button \"Zusammenfassen\":\n      - generic: ✦\n      - generic: Zusammenfassen\n    - button \"Übersetzen\":\n      - generic: ★\n      - generic: Übersetzen\n    - button \"Podcast\":\n      - generic: 🎧\n      - generic: Podcast\n    - button \"Zum Zine\":\n      - generic: ▤\n      - generic: Zum Zine\n    - button \"Als gelesen\":\n      - generic: ○\n      - generic: Als gelesen\n    - button \"Teilen\":\n      - generic: ↗\n      - generic: Teilen"
+    },
+    {
+      "name": "keyboard-opens-source-passport",
+      "passed": true,
+      "detail": "trong: unavailable · temporarily_restricted\n  - generic: Themen / Regionen\n  - strong: Latin America\n  - generic: Aktuelle Einträge\n  - strong: \"16\"\n  - generic: Technischer Status\n  - strong: Nicht erreichbar\n  - generic: Letzte erfolgreiche Aktualisierung\n  - strong: 2.8.2026, 19:50:36\n  - heading \"Warum wird diese Quelle angezeigt?\" [level=4]\n  - paragraph: 16 aktuelle WRN-Einträge nennen diese Quelle. Das ist keine Qualitätsbewertung.\n  - heading \"Neueste Einträge\" [level=4]\n  - list:\n    - link \"¡Santa sábana, Batman!\":\n      - /url: https://www.anred.org/santa-sabana-batman/?utm_source=rss&utm_medium=rss&utm_campaign=santa-sabana-batman\n    - link \"La última Ona\":\n      - /url: https://www.anred.org/la-ultima-ona/?utm_source=rss&utm_medium=rss&utm_campaign=la-ultima-ona\n    - 'link \"Desde el territorio-cuerpo: por qué la liberación palestina es una cuestión feminista\"':\n      - /url: https://www.anred.org/desde-el-territorio-cuerpo-por-que-la-liberacion-palestina-es-una-cuestion-feminista/?utm_source=rss&utm_medium=rss&utm_campaign=desde-el-territorio-cuerpo-por-que-la-liberacion-palestina-es-una-cuestion-feminista\n    - 'link \"Agenda Cultural: Segunda semana de Agosto y Anticipos\"':\n      - /url: https://www.anred.org/agenda-cultural-segunda-semana-de-agosto-y-anticipos-5/?utm_source=rss&utm_medium=rss&utm_campaign=agenda-cultural-segunda-semana-de-agosto-y-anticipos-5\n    - link \"Elles a la izquierda\":\n      - /url: https://www.anred.org/elles-a-la-izquierda/?utm_source=rss&utm_medium=rss&utm_campaign=elles-a-la-izquierda\n  - paragraph: Dieses Profil wird aus den verfügbaren App-Daten erzeugt. Es ist keine politische Bewertung oder Empfehlung.\n  - button \"Nur diese Quelle zeigen\"\n  - link \"Webseite\":\n    - /url: https://anred.org/\n  - button \"Schließen\" [active]"
+    },
+    {
+      "name": "source-passport-escape-and-return-focus",
+      "passed": true,
+      "detail": {
+        "returnedToSource": true,
+        "visible": false
+      }
+    }
+  ],
+  "limits": [
+    "Reduced-motion system emulation is not exposed by this browser backend.",
+    "Offline restart is a separate server-stop test.",
+    "Android acceptance is separate."
+  ]
+}

@@ -139,3 +139,16 @@ und [Read-only-Audit](evidence/autonom-2026-09-30/release-audit.json).
 
 Next, die separate Website und historische App-Kopien liegen außerhalb dieser
 Arbeit. Ihre Funktionen oder Releasebelege werden nicht für diese App mitgezählt.
+
+## Folgepaket vom 1. Oktober
+
+Nach akzeptiertem `0b315a6` bearbeitet Head Chief ausschließlich die App und das
+separate Quellenpaket auf aktuellem Daten-main `33509ac`. Der Kontrolleur arbeitet
+daneben an einem eigenständig beauftragten Website-Plan; dafür werden keine App-
+Schreibbereiche freigegeben. Das neue App-/Datenpaket wird ihm mit festen Commits
+zur unabhängigen, lesenden Prüfung übergeben.
+
+Aktuelle Ergebnisse und offene Gerätegates stehen in
+[Autonom-Abnahme](AUTONOM-ACCEPTANCE-2026-10-01.md). Der Code30-Build ist ein
+eigener, unsignierter Kandidat; die früheren akzeptierten Korrekturpakete bleiben
+historisch. Signierung und Veröffentlichung benötigen einen späteren Auftrag.

@@ -1,0 +1,68 @@
+- link "Zum Inhalt springen":
+  - /url: "#next-main"
+- banner:
+  - button "Webseite · Solinaridao.com ↗":
+    - text: World
+    - emphasis: Revolution
+    - text: News
+  - button "Webseite · Solinaridao.com ↗":
+    - generic: ◎
+    - generic: SOLINARIDAO.COM
+    - generic: ↗
+  - button "Menü öffnen":
+    - generic: ☰
+  - button "Suche öffnen":
+    - generic: ⌕
+  - generic: Sprache
+  - combobox "Sprache":
+    - option "DE" [selected]
+    - option "EN"
+    - option "ES"
+    - option "FR"
+    - option "IT"
+    - option "PT"
+    - option "RU"
+    - option "EL"
+    - option "TR"
+  - navigation "Hauptnavigation":
+    - button "Start":
+      - generic: ⌂
+      - generic: Start
+    - button "Für mich":
+      - generic: ★
+      - generic: Für mich
+    - button "Entdecken":
+      - generic: ◎
+      - generic: Entdecken
+    - button "Medien":
+      - generic: ▶
+      - generic: Medien
+    - button "Gespeichert":
+      - generic: ▰
+      - generic: Gespeichert
+- main [active]:
+  - generic: Gespeichert
+  - heading "Gespeichert" [level=1]
+  - paragraph: Lokal gespeicherte Artikel aus beiden App-Oberflächen.
+  - tablist:
+    - tab "☆ Später lesen (1)" [selected]
+    - tab "✓ Gelesen (0)"
+  - article:
+    - 'button "Quellenprofil: LabourNet DE"': LabourNet DE
+    - generic: 11. Aug.
+    - generic "Alle Formate":
+      - generic: Nachricht
+    - 'button "Antikriegstag 2026: „Friedensfähig statt kriegstüchtig! Gemeinsam für Völkerverständigung, soziale Gerechtigkeit und eine Welt ohne Krieg“ (DGB) „Die internationalen Entwicklungen erfüllen den DGB und seine Mitgliedsgewerkschaften mit größter Sorge."':
+      - 'heading "Antikriegstag 2026: „Friedensfähig statt kriegstüchtig! Gemeinsam für Völkerverständigung, soziale Gerechtigkeit und eine Welt ohne Krieg“ (DGB)" [level=3]'
+      - paragraph: „Die internationalen Entwicklungen erfüllen den DGB und seine Mitgliedsgewerkschaften mit größter Sorge.
+    - generic: Global
+    - generic: Gegen Krieg
+    - generic: ✓ Vollständig offline
+    - button "Beitrag öffnen"
+    - button "Quellenprofil"
+    - button "Offline-Dateien entfernen"
+    - button "Übersetzen":
+      - generic: ★
+      - generic: Übersetzen
+    - button "Entfernen" [pressed]: ★
+  - status: Gespeichert
