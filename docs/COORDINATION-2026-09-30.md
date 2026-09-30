@@ -152,3 +152,16 @@ Aktuelle Ergebnisse und offene Gerätegates stehen in
 [Autonom-Abnahme](AUTONOM-ACCEPTANCE-2026-10-01.md). Der Code30-Build ist ein
 eigener, unsignierter Kandidat; die früheren akzeptierten Korrekturpakete bleiben
 historisch. Signierung und Veröffentlichung benötigen einen späteren Auftrag.
+
+## Endabnahme vom 1. Oktober
+
+Head Chief blieb alleiniger App-/Data-Schreiber. WRN Kontrolleur nahm Data
+`17b3604`, Runtime `8d2ef23` und Nachweise `d55e471` unabhängig lesend ab.
+Der gebaute Code31 bleibt ausschließlich an Runtime `8d2ef23` gebunden.
+Die separate Website hat nach Klärung des doppelten Chats genau einen Schreiber
+im eigenen Verzeichnis; keine App-/Data-Schreibfreigabe dort.
+
+Autonom/Classic, echte Zielbreiten und isolierte Android-Prüfungen sind belegt.
+Produktionssignierung, physisches Gerät, vollständiger Produktionsbrowser-
+Netzausfall und Veröffentlichung bleiben externe Gates. Die Statusnachpflege
+nach `d55e471` verändert weder Runtime noch das bereits geprüfte Artefakt.

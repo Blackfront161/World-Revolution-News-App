@@ -4,6 +4,12 @@ Fortsetzung des vom Nutzer beauftragten Pakets, Ausgangsstand `0b315a6`.
 Die vorherigen Pakete `0c8aa3d` und `0b315a6` wurden unabhängig akzeptiert.
 Neue Änderungen und deren Abnahme werden davon getrennt nachgewiesen.
 
+Endabnahme: WRN Kontrolleur akzeptierte Runtime `8d2ef23`, Datenpaket
+`17b3604` und korrigierten Nachweiscommit `d55e471` unabhängig lesend.
+Code31 ist der maximal lokal verifizierte unsignierte Kandidat; diese Abnahme
+ist keine Signier-, Store- oder Veröffentlichungsfreigabe. Die nachfolgende
+Statusnachpflege aktualisiert nur Repository-Metadaten, keine gebaute AAB.
+
 ## Umsetzung
 
 - Autonom bleibt ausdrücklich wählbar; weitere Designs bleiben erhalten.
