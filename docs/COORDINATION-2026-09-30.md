@@ -4,6 +4,27 @@ Nutzerauftrag am 30.09.2026: Autonom als wählbares Design integrieren, Roadmap
 weiterführen und den Kontrolleur nach Befunden, laufender Arbeit und gemeinsamer
 Koordination fragen. Keine neuen Chats angelegt.
 
+## Aktueller Abnahmestand
+
+WRN Kontrolleur hat0c8aa3d7972aca99ff8127d917181d2c98a4410b gegen8e95685 am
+30.09.2026 unabhängig und ausschließlich lesend geprüft und funktional akzeptiert:
+45/45 JS-Module,117 Pytest-Tests bestanden mit3 historischen Skips,4/4 main-only-
+Skripte, Validator und Read-only-Audit160/160 bestanden. Arbeitsbaum unverändert.
+Die noch gemeldete Status-/Diagnosenachpflege ist ein eigenes kleines Folgepaket.
+Offen bleiben Browser-/Fokus-/Reflow-Automation einschließlich reduced motion,
+kompletter Offline-Neustart, Android-Gerät/Upgrade, neuer commitgenauer Build,
+Signierung und Play-Veröffentlichung. Technische Paketabnahme ist keine Storefreigabe.
+
+Status-/Diagnosenachpflege lokal abgeschlossen: Der Validator verwendet für
+Prüfung und Fehlermeldung dieselbe Vorschaucache-Konstante. Ein zusätzlicher
+Verhaltenstest bestätigt, dass der aktuelle Worker akzeptiert, ein veränderter
+Cache abgelehnt und dabei die richtige erforderliche Generation genannt wird.
+Erneuter Original-Matrixlauf:45 JS-Module,118 Pytest-Tests und4 main-only-Skripte
+bestanden,3 historische Skips. Validator und Read-only-Audit160/160 bestanden.
+Die zusätzliche Python-Assertion erklärt den Unterschied zum akzeptierten
+0c8aa3d-Stand mit117 Tests. Diese Nachpflege wird als eigener Folgecommit geprüft;
+Produktdateien, Cachegenerationen und Android-/Builddateien wurden nicht verändert.
+
 ## Ziel und Stand
 
 - Repository: `C:\Users\patri\Documents\World Rev Ne\wrn-github-app-current`
@@ -17,7 +38,7 @@ Autonom ist in der vorhandenen Theme-Auswahl integriert. Der Vorgang benötigt
 keine zweite Designimplementierung. Die manuellen Browserbelege liegen im
 [Designbericht](AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md).
 
-## Befunde und Folgearbeit
+## Historische Übergabe vor der Abnahme von0c8aa3d
 
 Der jüngste Korrekturauftrag von **WRN Kontrolleur** wurde gelesen und eine
 aktuelle Rückmeldung angefordert. Er betrifft die bestehende App; die alte
@@ -108,7 +129,7 @@ und [Read-only-Audit](evidence/autonom-2026-09-30/release-audit.json).
 
 ## Fortsetzung der Roadmap
 
-1. Korrekturpaket mit vollständiger Matrix und unabhängiger Abnahme abschließen.
+1. Status-/Diagnosenachpflege getrennt vom bereits akzeptierten Korrekturpaket prüfen.
 2. Autonom auf Android sowie Offline-Neustart und Upgrade prüfen.
 3. Autonome/antifaschistische Kandidaten aus dem Designbericht anhand Betreiber,
    Feed, Aktualität und Rechte prüfen. Recherche kann unabhängig vom technischen

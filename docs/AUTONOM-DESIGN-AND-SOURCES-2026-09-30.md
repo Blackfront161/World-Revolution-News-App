@@ -69,32 +69,32 @@ Belege: [Browserprüfungen](evidence/autonom-2026-09-30/browser-checks.json),
 Die Screenshots zeigen echte vorhandene Feedartikel. Inhalte werden dadurch
 nicht redaktionell bestätigt.
 
-Bestanden: 35 vorhandene Python-Testfunktionen (27 App-Assets, sechs
-Offline-Assets, zwei Releaseverträge), das Python-Produktions-Assetskript sowie
-die JavaScript-Verträge für Home-/Übersetzungslayout, Updatekandidat und
-Quellenarchiv. Zusätzlich JS-Syntaxprüfung und Git-Diff-Whitespaceprüfung.
-Pytest ist in der verfügbaren Laufzeit nicht installiert; die 35 unveränderten
-Testfunktionen wurden unmittelbar mit ihren eigenen Assertions ausgeführt.
-Es handelt sich um eine gezielte Prüfung, nicht um die komplette CI-Matrix.
+Maßgeblicher Stand: **0c8aa3d7972aca99ff8127d917181d2c98a4410b ist funktional
+akzeptiert.** WRN Kontrolleur hat am 30.09.2026 die vollständige Vertragsmatrix
+ausschließlich lesend reproduziert:45 JavaScript-Module und117 Pytest-Tests
+bestanden,3 historische AAB-/Signaturfixturetests übersprungen;4 main-only-
+Python-Skripte bestanden. Validator bestanden, Read-only-Audit160/160 bestanden.
+Der Arbeitsbaum blieb bei dieser unabhängigen Prüfung sauber und unverändert.
+
+Beleg des Paketlaufs: [vollständige Matrix](evidence/autonom-2026-09-30/full-contract-matrix.txt).
+Die Node-Abdeckung prüft Auswahl/Persistenz/Rückwechsel, neun UI-Sprachen,
+echte Themenfilter und Quellenprofilaktion. Sie ersetzt keine Browsergeometrie-
+oder Geräteprüfung. Status-/Diagnosenachpflege wird separat nachgeprüft.
 
 Assetstand: CSS47 / JS53; App-Cache `wrn-app-v2.1.2-r4`, alternativer Worker v92.
 Der Daten-Cache bleibt unverändert. Android-Gerät/Upgrade, vollständiger
 Offline-Neustart, neuer AAB-Build und Veröffentlichung sind für diese Änderungen
 noch offen. Keine neue Quelle wurde im Produktregister aktiviert.
 
-Nach dem Kontrolleur-Befund wurde die Priorität um das Korrekturpaket mit
-vollständiger Testmatrix und unabhängiger Abnahme ergänzt. Die zwei gemeldeten
-JS-Fehler bestehen nach den lokalen Testkorrekturen bei gezielter Probe nicht
-mehr; Gesamtfreigabe bleibt offen. Zuständigkeiten und Nachweise:
-[Koordination](COORDINATION-2026-09-30.md).
+Offene nächste Gates: automatisierte Browser-/Fokus-/Reflow-Regressionsstrecke
+einschließlich reduced motion, kompletter Offline-Neustart, Android-Geräte-
+und Upgradeprüfung, neuer commitgenauer Build sowie artefaktgebundene Signierung
+und Play-Veröffentlichung. Zuständigkeiten: [Koordination](COORDINATION-2026-09-30.md).
 
-Aktualisierung nach bestätigter Übergabe: Head Chief hat die verbleibende
-Cachepolicy und den Audit-Restwert korrigiert und einen Autonom-Verhaltenstest
-ergänzt. Mit vorhandener lokaler Pytest-Laufzeit bestand anschließend die echte
-vollständige Vertragsmatrix:45 JavaScript-Module,117 Python-Tests und4
-main-only-Skripte;3 historische AAB-/Signaturfixturetests wurden übersprungen.
-App-Validator bestanden, Read-only-Audit160/160 bestanden. Der frühere Hinweis
-auf fehlendes Pytest beschreibt nur die zunächst verwendete Laufzeit.
-Die neue Node-Abdeckung prüft Auswahl/Persistenz/Rückwechsel, neun UI-Sprachen,
-echte Themenfilter und Quellenprofilaktion. Automatisierte Browserregression,
-unabhängige Paketabnahme und Geräte-/Releasegates bleiben offen.
+## Historiennotiz zum initialen Zwischenstand
+
+Zu Beginn wurden35 Testfunktionen unmittelbar mit ihren Assertions ausgeführt;
+in der zunächst isoliert verwendeten Laufzeit war Pytest nicht vorhanden.
+Anschließend wurde der bereits vorhandene lokale Pytest9.1.1-Paketordner mit
+der vorhandenen gebündelten Python-Laufzeit verwendet. Die vollständige Matrix
+oben hat diese Teilprüfung abgelöst; der initiale Befund ist kein aktuelles Gate.

@@ -1,11 +1,43 @@
 from __future__ import annotations
 
 import json
+import importlib.util
+import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 WRAPPER = ROOT / "android-wrapper"
+
+
+def test_preview_cache_diagnostic_matches_rejected_contract(monkeypatch) -> None:
+    spec = importlib.util.spec_from_file_location("wrn_preview_cache_diagnostic", ROOT / "tests/validate_app.py")
+    assert spec and spec.loader
+    validator = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(validator)
+    preview_path = ROOT / "news-app-2-sw.js"
+    preview = preview_path.read_text(encoding="utf-8")
+    generation = re.search(r"const CACHE_NAME = `\$\{CACHE_PREFIX\}(v\d+)`;", preview)
+    assert generation
+    expected = generation.group(1)
+    marker = f"`${{CACHE_PREFIX}}{expected}`"
+    assert marker in preview
+
+    validator.check_phase1k_release_fixes()
+    assert validator.ERRORS == [], "validator must accept the actual current worker"
+
+    original_read = Path.read_text
+
+    def read_with_stale_preview(path, *args, **kwargs):
+        if path == preview_path:
+            return preview.replace(marker, "`${CACHE_PREFIX}stale`", 1)
+        return original_read(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "read_text", read_with_stale_preview)
+    validator.check_phase1k_release_fixes()
+    assert validator.ERRORS == [
+        f"Vorschaupfad des 2.1-Entwicklungsworkers muss Cache {expected} verwenden."
+    ], "a rejected worker must report the same cache generation that the validator enforces"
 
 
 def test_current_release_metadata_is_consistent() -> None:
