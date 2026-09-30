@@ -123,7 +123,7 @@ def podcast_findings(sources: list[dict], episodes: list[dict]) -> dict:
                 "disposition": "review_required_preserve_episode_id_and_restrictions",
             })
         elif by_id[source_id].get("enabled") is False:
-            disabled.append({"episodeId": episode.get("id"), "sourceId": source_id, "disposition": "exclude_from_active_intake_retention_requires_review"})
+            disabled.append({"episodeId": episode.get("id") if isinstance(episode.get("id"), str) else None, "sourceId": source_id, "disposition": "exclude_from_active_intake_retention_requires_review"})
     return {"sourcesWithoutId": missing_sources, "episodesWithoutResolvableSource": unresolved, "episodesFromExplicitlyDisabledSource": disabled}
 
 
@@ -181,7 +181,7 @@ def compare_snapshots(app: dict, data: dict) -> dict:
     books = compare_rows(a["library-feed.json"], d["library-feed.json"], BOOK_FIELDS)
     books["possibleAliasesByExactOriginalLink"] = possible_book_aliases(a["library-feed.json"], d["library-feed.json"])
     app_disabled = {key for key, row in indexed(a["podcast-sources.json"]).items() if row.get("enabled") is False}
-    cross_policy = [{"episodeId": row.get("id"), "sourceId": row["sourceId"], "disposition": "app_policy_blocks_activation_even_if_data_contains_record"} for row in d["podcasts.json"] if isinstance(row.get("sourceId"), str) and row["sourceId"] in app_disabled]
+    cross_policy = [{"episodeId": row.get("id") if isinstance(row.get("id"), str) else None, "sourceId": row["sourceId"], "disposition": "app_policy_blocks_activation_even_if_data_contains_record"} for row in d["podcasts.json"] if isinstance(row.get("sourceId"), str) and row["sourceId"] in app_disabled]
     return {
         "schemaVersion": 1,
         "status": "review_required_not_admission_not_merge_not_live_parity",

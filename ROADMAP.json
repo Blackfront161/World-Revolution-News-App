@@ -293,7 +293,7 @@
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
-        "inputAppCommit": "8f2833557ad35b223331ddd7040b6dbc09963505",
+        "inputAppCommit": "5e12d8433604b078413766b3c22d37022190cae0",
         "inputDataCommit": "17b3604979a27411666048c082345b704261af93",
         "sharedEpisodeIds": 312,
         "episodesOnlyInApp": 596,
@@ -304,7 +304,7 @@
         "libraryTitlesOnlyInData": 106,
         "sharedLibraryTitleIdsWithFieldChanges": 2,
         "dataEpisodesBlockedByExplicitAppPolicy": 35,
-        "regressionTests": "9/9 unittest bestanden; kein Runtime-/Release-PASS",
+        "regressionTests": "11/11 unittest bestanden, einschließlich beider Ausschlusspfade mit Objekt-/Listen-IDs; kein Runtime-/Release-PASS",
         "reviewStatus": "pending_independent_read_only_review",
         "status": "Prüfwerkzeug umgesetzt; keine Zusammenführung, Aufnahme oder Aktivierung"
       },

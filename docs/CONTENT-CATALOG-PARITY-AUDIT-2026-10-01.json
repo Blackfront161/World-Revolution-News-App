@@ -3,7 +3,7 @@
   "status": "review_required_not_admission_not_merge_not_live_parity",
   "bindings": {
     "app": {
-      "commit": "8f2833557ad35b223331ddd7040b6dbc09963505",
+      "commit": "5e12d8433604b078413766b3c22d37022190cae0",
       "inputKind": "worktree_snapshot_hashes_are_authoritative_commit_is_context",
       "files": {
         "podcast-sources.json": {
@@ -2724,6 +2724,6 @@
     "Respect explicit disabled-language/source policy before any active projection.",
     "Do not publish bodies, audio, artwork or descriptions based on a generic license label."
   ],
-  "observedAtUTC": "2026-09-30T18:35:57.580731+00:00",
-  "toolSha256": "980fc34a1cda658f7fa046d3209ad4a309c8cce8d373a0632a35104a62f5efe5"
+  "observedAtUTC": "2026-09-30T18:48:50.540493+00:00",
+  "toolSha256": "ee47eb3899830277834e64beaa3bcab473cfa7f722d24076f69e2f5af15e59a9"
 }

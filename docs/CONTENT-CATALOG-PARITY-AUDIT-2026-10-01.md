@@ -2,13 +2,13 @@
 
 1. Oktober 2026, Asia/Singapore. Arbeitspaket `CONTENT-CATALOG-PARITY` in [ROADMAP.json](../ROADMAP.json).
 
-**Umgesetzt:** ein rein lesendes, offline arbeitendes Prüfwerkzeug mit neun Regressionstests. **Offen:** redaktionelle Zusammenführungsentscheidungen, Quellenaufnahme, App-/Website-Projektion und Veröffentlichung. Das Werkzeug verändert keine Eingaben, holt keine URLs ab und übernimmt keine Inhalte.
+**Umgesetzt:** ein rein lesendes, offline arbeitendes Prüfwerkzeug mit elf Regressionstests. **Offen:** redaktionelle Zusammenführungsentscheidungen, Quellenaufnahme, App-/Website-Projektion und Veröffentlichung. Das Werkzeug verändert keine Eingaben, holt keine URLs ab und übernimmt keine Inhalte.
 
 Die unabhängige read-only-Abnahme dieses Werkzeugpakets steht aus. Auch der vorherige reine Roadmap-Commit `8f283355` bleibt bis zur späteren Nachprüfung als `review pending` geführt; das verhindert die sichere Vorbereitung weiterer Pakete nicht.
 
 Das [Werkzeug](../scripts/audit_content_catalog_parity.py) bindet sechs Eingabedateien je Repository per SHA-256 und Dateigröße. Es dokumentiert den jeweiligen HEAD als Kontext; maßgeblich für den tatsächlich gelesenen Arbeitsbaum sind die zwölf Bytehashes. Ändert sich eine Datei oder HEAD während der Prüfung, wird kein gültiger Bericht geschrieben. Existierende Berichte und Katalogeingaben dürfen nicht als Ausgabe überschrieben werden.
 
-Der [maschinenlesbare Bericht](CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json) bindet App-Basis `8f2833557ad35b223331ddd7040b6dbc09963505` und Datenbasis `17b3604979a27411666048c082345b704261af93` sowie den Hash des Prüfwerkzeugs. Er enthält nur IDs, Zeilenpositionen, geänderte Feldnamen, Mengen, Aufnahmegrenzen und Hashes. Originaltexte, Beschreibungen, Audio-/Bildadressen und Kontaktinformationen werden nicht kopiert. Die Eingabedateien wurden am Ende erneut gehasht und waren unverändert.
+Der [maschinenlesbare Bericht](CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json) bindet App-Basis `5e12d8433604b078413766b3c22d37022190cae0` und Datenbasis `17b3604979a27411666048c082345b704261af93` sowie den Hash des korrigierten Prüfwerkzeugs. Er enthält nur IDs, Zeilenpositionen, geänderte Feldnamen, Mengen, Aufnahmegrenzen und Hashes. Originaltexte, Beschreibungen, Audio-/Bildadressen und Kontaktinformationen werden nicht kopiert. Ungültige Objekt-/Listen-IDs werden auch in den beiden Ausschlusspfaden ausschließlich als `null` ausgegeben. Die Eingabedateien wurden am Ende erneut gehasht und waren unverändert.
 
 ## Befunde
 
@@ -39,7 +39,9 @@ Die Bibliothek enthält keine gefundenen unterschiedlichen IDs mit exakt gleiche
 
 ## Prüfung und Reproduktion
 
-Neun Standardbibliothek-`unittest`-Fälle bestanden. Sie prüfen beschädigte IDs, doppelte IDs, mehrdeutige Hostzuordnung, Erhalt der Metadatenrestriktion, ausgeschlossene Quellen, widersprüchliche App-/Datenpolicy, sichere URL-Identitätsgrenzen, Feldkonflikte ohne Text-/URLausgabe, Drift während der Prüfung sowie Verweigerung des Überschreibens von Eingaben oder Berichten. Die beiden zuletzt genannten Aspekte gehören zu zwei kombinierten Testfällen; gezählt werden neun tatsächliche Testmethoden, nicht einzelne Assertions. Der reguläre pytest-Runner ist wegen lokaler Dateirechte weiterhin nicht als bestanden behauptet.
+Elf Standardbibliothek-`unittest`-Fälle bestanden. Sie prüfen beschädigte IDs, doppelte IDs, mehrdeutige Hostzuordnung, Erhalt der Metadatenrestriktion, ausgeschlossene Quellen, widersprüchliche App-/Datenpolicy, sichere URL-Identitätsgrenzen, Feldkonflikte ohne Text-/URLausgabe, Drift während der Prüfung sowie Verweigerung des Überschreibens von Eingaben oder Berichten. Zwei zusätzliche Testmethoden prüfen Objekt- und Listen-IDs mit eingebettetem Body und Audio-URL getrennt im Quellen-Ausschlusspfad und im App-Policy-Ausschlusspfad; beide prüfen die Abwesenheit dieser Inhalte im serialisierten Gesamtbericht. Der reguläre pytest-Runner wird weiterhin nicht als bestanden behauptet.
+
+Der Kontrolleur hatte diesen Inhaltsübertrag in den beiden Ausschlusspfaden von `5e12d84` unabhängig reproduziert; die neun damaligen Tests erfassten ihn nicht. Der Fix beschränkt beide `episodeId`-Ausgaben auf Strings, sonst `null`. Die fachlichen Befunde des realen Kataloglaufs bleiben unverändert; nur Zeit, HEAD-Kontext und Werkzeughash wurden neu gebunden. Die erneute unabhängige Abnahme steht noch aus.
 
 ```powershell
 # Mit dem vorhandenen Python, ohne zusätzliche Pakete und ohne Netzwerk:

@@ -15,6 +15,34 @@ SPEC.loader.exec_module(AUDIT)
 
 
 class ContentCatalogueAuditTest(unittest.TestCase):
+    @staticmethod
+    def snapshot(sources, episodes):
+        rows = {name: [] if name in AUDIT.ARRAY_FILES else {} for name in AUDIT.FILES}
+        rows['podcast-sources.json'] = sources
+        rows['podcasts.json'] = episodes
+        return {"commit": "fixed", "inputKind": "fixture", "files": {}, "rows": rows}
+
+    def test_disabled_source_malformed_episode_ids_cannot_leak_in_full_report(self):
+        payload = {"body": "PRIVATE_PAYLOAD", "audioUrl": "https://secret.invalid/token"}
+        for malformed in (payload, [payload]):
+            with self.subTest(id_type=type(malformed).__name__):
+                app = self.snapshot([{"id": "blocked", "enabled": False}], [{"id": malformed, "sourceId": "blocked"}])
+                report = AUDIT.compare_snapshots(app, self.snapshot([], []))
+                self.assertIsNone(report['podcastFindings']['app']['episodesFromExplicitlyDisabledSource'][0]['episodeId'])
+                self.assertNotIn("PRIVATE_PAYLOAD", json.dumps(report))
+                self.assertNotIn("https://secret.invalid/token", json.dumps(report))
+
+    def test_cross_policy_malformed_episode_ids_cannot_leak_in_full_report(self):
+        payload = {"body": "PRIVATE_PAYLOAD", "audioUrl": "https://secret.invalid/token"}
+        for malformed in (payload, [payload]):
+            with self.subTest(id_type=type(malformed).__name__):
+                app = self.snapshot([{"id": "blocked", "enabled": False}], [])
+                data = self.snapshot([{"id": "blocked", "enabled": True}], [{"id": malformed, "sourceId": "blocked"}])
+                report = AUDIT.compare_snapshots(app, data)
+                self.assertIsNone(report['dataEpisodesBlockedByExplicitAppPolicy'][0]['episodeId'])
+                self.assertNotIn("PRIVATE_PAYLOAD", json.dumps(report))
+                self.assertNotIn("https://secret.invalid/token", json.dumps(report))
+
     def test_malformed_id_values_remain_findings_and_cannot_leak_payloads(self):
         sources = [{"id": {"body": "PRIVATE"}, "name": "Radio"}]
         episodes = [{"id": {"audioUrl": "PRIVATE"}, "sourceId": [], "sourceName": "Radio"}]
