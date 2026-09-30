@@ -319,6 +319,17 @@
       },
       url: 'https://wri-irg.org/en/programmes/right-refuse-kill',
       downloads: []
+    },
+    {
+      id: 'ushmm-fascism',
+      name: 'United States Holocaust Memorial Museum · Fascism',
+      language: 'English',
+      description: {
+        de: 'Historische Einführung mit konkreten Merkmalen faschistischer Ideologie und Herrschaft.',
+        en: 'A historical introduction to characteristics of fascist ideology and rule.'
+      },
+      url: 'https://encyclopedia.ushmm.org/content/en/article/fascism-1',
+      downloads: []
     }
   ];
 
@@ -1563,11 +1574,11 @@
     ,extraTerm('counter-mobilisation','tactics',['beautiful-trouble','libcom'],'Gegenmobilisierung','Counter-mobilisation',
       'Kollektive Organisierung gegen eine angekündigte rechte, autoritäre oder menschenfeindliche Veranstaltung oder Kampagne.','Collective organising against an announced far-right, authoritarian or dehumanising event or campaign.',
       'Formen reichen von Information, Schutz und Kundgebungen bis zu Blockaden, Kulturprogrammen und langfristiger lokaler Organisierung.','Forms range from information, protection and demonstrations to blockades, cultural programmes and long-term local organising.',
-      'Ziele, Risiken, Zugänglichkeit und die Bedürfnisse direkt betroffener Gruppen sollten gemeinsam geklärt werden.','Goals, risks, accessibility and the needs of directly targeted groups should be agreed collectively.',['antifascism','direct-action','collective-care'])
+      'Ziele, Risiken, Zugänglichkeit und die Bedürfnisse direkt betroffener Gruppen sollten gemeinsam geklärt werden.','Goals, risks, accessibility and the needs of directly targeted groups should be agreed collectively.',['anti-fascism','direct-action','collective-care'])
     ,extraTerm('deplatforming','tactics',['beautiful-trouble','libcom'],'Deplatforming','Deplatforming',
       'Der Entzug von Bühne, Infrastruktur oder Reichweite für organisierte menschenfeindliche Propaganda und Rekrutierung.','Withdrawing platforms, infrastructure or reach from organised dehumanising propaganda and recruitment.',
       'Dazu gehören abgesagte Räume, moderierte Plattformen, Werbeboykotte und öffentliche Aufklärung über Veranstaltende.','It can include cancelled venues, moderated platforms, advertising boycotts and public information about organisers.',
-      'Deplatforming ersetzt keine politische Auseinandersetzung und braucht klare Kriterien, Belege und Möglichkeiten zur Korrektur.','Deplatforming does not replace political struggle and needs clear criteria, evidence and paths for correction.',['antifascism','counter-mobilisation','accountability'])
+      'Deplatforming ersetzt keine politische Auseinandersetzung und braucht klare Kriterien, Belege und Möglichkeiten zur Korrektur.','Deplatforming does not replace political struggle and needs clear criteria, evidence and paths for correction.',['anti-fascism','counter-mobilisation','accountability'])
     ,extraTerm('disinformation','power',['anarchist-library','libcom'],'Desinformation','Disinformation',
       'Absichtlich verbreitete falsche oder irreführende Information, die Wahrnehmung, Verhalten oder politische Entscheidungen beeinflussen soll.','False or misleading information deliberately spread to influence perception, behaviour or political decisions.',
       'Gegenstrategien verbinden Quellenprüfung, Kontext, transparente Korrekturen, Medienkompetenz und langsameres Weiterverbreiten.','Responses combine source checks, context, transparent corrections, media literacy and slower sharing.',
@@ -1579,8 +1590,28 @@
     ,extraTerm('community-self-defence','tactics',['beautiful-trouble','libcom'],'Kollektiver Selbstschutz','Community self-defence',
       'Gemeinsam entwickelte Praxis, mit der bedrohte Gemeinschaften Gewalt vorbeugen, sich gegenseitig schützen und handlungsfähig bleiben.','Collectively developed practice through which threatened communities prevent harm, protect one another and retain agency.',
       'Sie kann Begleitung, sichere Räume, Beobachtung, Notfallketten, rechtliche Unterstützung und öffentliche Gegenwehr verbinden.','It can combine accompaniment, safe spaces, monitoring, emergency networks, legal support and public resistance.',
-      'Selbstschutz muss Betroffenenentscheidungen, Verhältnismäßigkeit, Deeskalation und Verantwortlichkeit einschließen.','Self-defence needs survivor choice, proportionality, de-escalation and accountability.',['collective-care','antifascism','security-culture'])
+      'Selbstschutz muss Betroffenenentscheidungen, Verhältnismäßigkeit, Deeskalation und Verantwortlichkeit einschließen.','Self-defence needs survivor choice, proportionality, de-escalation and accountability.',['collective-care','anti-fascism','security-culture'])
   );
+
+  TERMS.push({
+    id: 'fascism', category: 'power', sources: ['ushmm-fascism'],
+    title: { de: 'Faschismus', en: 'Fascism' },
+    aliases: { de: [], en: [] },
+    summary: {
+      de: 'Eine extrem rechte, ultranationalistische und autoritäre Ideologie, die eine ausschließende nationale Gemeinschaft über individuelle Rechte stellt und pluralistische Demokratie bekämpft.',
+      en: 'A far-right, ultranationalist and authoritarian ideology that places an exclusionary national community above individual rights and opposes pluralist democracy.'
+    },
+    practice: {
+      de: 'Historische Analyse untersucht Führerkult, Feindbilder, politische Gewalt und die Ausschaltung unabhängiger Organisationen; Recherche verbindet Aussagen mit belegten Strukturen und Handlungen.',
+      en: 'Historical analysis examines leader worship, enemy images, political violence and suppression of independent organisations; research connects statements to documented structures and actions.'
+    },
+    debate: {
+      de: 'Die Übertragung historischer Begriffe auf heutige Gruppen verlangt konkrete Belege. Autoritäres Verhalten allein genügt nicht als vollständige Einordnung.',
+      en: 'Applying historical concepts to contemporary groups requires concrete evidence. Authoritarian behaviour alone is insufficient for a complete classification.'
+    },
+    related: ['anti-fascism', 'far-right-monitoring', 'domination'],
+    revision: { version: 'knowledge-expansion-1', date: '2026-10-01', note: 'Original WRN draft with a specific historical reference; independent editorial review pending.' }
+  });
 
   // Keep the public glossary stable when an editorial expansion replaces an older draft entry.
   const uniqueTerms = [...new Map(TERMS.map(term => [term.id, term])).values()];

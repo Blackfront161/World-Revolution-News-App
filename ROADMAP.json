@@ -349,8 +349,18 @@
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
-      "status": "inventory_completed_expansion_planned",
+      "status": "local_first_definition_and_relationship_fix_review_pending",
       "dependsOn": ["CONTENT-CATALOG-PARITY"],
+      "localProgress": {
+        "evidence": "docs/LEXICON-FIRST-CONTENT-BATCH-2026-10-01.md",
+        "lexiconTerms": 155,
+        "lexiconReferenceSources": 13,
+        "newDefinitions": 1,
+        "repairedRelatedReferences": 5,
+        "independentEditorialReview": "pending",
+        "publicationStatus": "local_only_not_in_accepted_code31_or_website",
+        "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat"
+      },
       "baseline": {
         "lexiconTerms": 154,
         "lexiconReferenceSources": 12,
