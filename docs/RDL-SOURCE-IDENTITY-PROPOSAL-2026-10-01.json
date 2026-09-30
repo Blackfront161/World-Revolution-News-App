@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate_only_identity_review_required_not_applied",
+  "observedAtUTC": "2026-09-30T21:46:46.566Z",
+  "canonicalSourceId": "radio-dreyeckland",
+  "officialIssuerSelfIdentification": "Radio Dreyeckland gBetriebs-GmbH",
+  "identityEvidence": [
+    "https://rdl.de/beitrag/impressum",
+    "https://rdl.de/podcasts/all"
+  ],
+  "evidenceClass": "official_site_self_description_and_mediated_live_feed_observation",
+  "feedTechnicalAcceptance": false,
+  "rightsAcceptance": false,
+  "minimumEndpointMode": "metadata_and_links_only",
+  "requiredBeforeApplication": [
+    "Independent source/endpoint identity review; no issuer identity from host alone.",
+    "Preserve per-endpoint and per-episode metadata_and_links_only despite canonical source ID.",
+    "Implement and test restrictive pipeline/player projection before assigning the active canonical ID.",
+    "Keep stable episode IDs; do not rebuild old IDs from the new sourceId.",
+    "Do not activate audio, images, source descriptions or copied transcripts based on this proposal."
+  ],
+  "snapshots": {
+    "app": {
+      "commit": "aa61be2527bd4dcb715c81fbf8e14ac5e607a133",
+      "sourceSha256": "9b5676fa402c060b9ab1a3f29e49dec3b0bcf92199ea36e5c11fcdba599a721e",
+      "episodeSha256": "efc435266d3048c32d6aaa75ba9f18e504155e91a847492863b97bb45b9361d6",
+      "aliasSourceRow": 27,
+      "recordChanges": [
+        {
+          "row": 7,
+          "episodeId": "1c21a4b4bd22aafc9d5a5a83",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 9,
+          "episodeId": "fda3f3204d54ddebd542914d",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 12,
+          "episodeId": "2c55022d783e65b14bca3e63",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 17,
+          "episodeId": "d6273f1588bfc5e0f48080ae",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 18,
+          "episodeId": "2db5eb09f0dcf6760453bb3e",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 22,
+          "episodeId": "30fa5d4dd9714d3624bed9f4",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 23,
+          "episodeId": "9669962751f50b0165a84ee7",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 26,
+          "episodeId": "18f639dd4e83766040d0597e",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 27,
+          "episodeId": "5ae27094f618e991045253d8",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 33,
+          "episodeId": "367f54bed9136a725f8c5532",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 35,
+          "episodeId": "9ae0793ae05ef545b35676ac",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 37,
+          "episodeId": "121f8b6a6c85ef8813557dd7",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 38,
+          "episodeId": "ae7e54d371f97a974127a4d4",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 40,
+          "episodeId": "af68fb7da8ec4388dfe632e3",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 41,
+          "episodeId": "bcacf85a86e87bd11be85f2d",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 44,
+          "episodeId": "ea1beef5d5ae7fa3c7aeeb9a",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 45,
+          "episodeId": "3d868897b62369e190f7abe4",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 46,
+          "episodeId": "4a1654de4e2c08bc7f3d21d7",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 47,
+          "episodeId": "1c70ca886151f8995694ce9f",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 49,
+          "episodeId": "4d7d9cb44df4eba601b5fc81",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 56,
+          "episodeId": "b413f4c2ae4b0742d664e107",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 58,
+          "episodeId": "968295f33bd8206b1a2731fa",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 59,
+          "episodeId": "4535e4f2913a1a68b63cd191",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 64,
+          "episodeId": "aa9c4022c827e2e1a08f26aa",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 69,
+          "episodeId": "b358d4762914593c1fd9bd53",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 71,
+          "episodeId": "61da655f6c09102715dd8e78",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 75,
+          "episodeId": "ca7a1927e68ebd31579022c3",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 76,
+          "episodeId": "0b6c53d803d06ee2a381dc07",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 77,
+          "episodeId": "acc6894cf8629a3d1f85a49f",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 82,
+          "episodeId": "374b7421c927d679bb0a7a43",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 85,
+          "episodeId": "a8b8678d5a94b945d8a6f38b",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 86,
+          "episodeId": "91bf67bb9605c04ccc17294a",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 91,
+          "episodeId": "675d829108754d6e72152629",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        }
+      ]
+    },
+    "data": {
+      "commit": "17b3604979a27411666048c082345b704261af93",
+      "sourceSha256": "398ca567038a97138de82f6baf8057c980c44e8cb87f8cde4120347fb42adc79",
+      "episodeSha256": "e0fcf9c940553b910e38c7ba3aadafa8ee3d8fd7f07cbce69c0a6bde19bca4df",
+      "aliasSourceRow": 27,
+      "recordChanges": [
+        {
+          "row": 3,
+          "episodeId": "5618f6c0ab420bd17335cf97",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 6,
+          "episodeId": "65c459a878241fd5add0d82b",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 16,
+          "episodeId": "bedc5e0aa6ec56ef77e4f2b6",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 17,
+          "episodeId": "4afdadce14a9cc679bc165bf",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 19,
+          "episodeId": "6fd784be5a47e8312486cae3",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 24,
+          "episodeId": "fcca01cdac467eaf5087de42",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 39,
+          "episodeId": "8dfc778a13c272a775617139",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 41,
+          "episodeId": "2b066dfe2c33e0395f75d58c",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 43,
+          "episodeId": "b9b958f99054ef8e42603c67",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 47,
+          "episodeId": "5685023e4c837c499c3bb853",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 56,
+          "episodeId": "3e1bb4d4e8f17bdc3c837def",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 57,
+          "episodeId": "5c450f4379c6d858af74db26",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 58,
+          "episodeId": "3e5b2faf1709a359daffb236",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 61,
+          "episodeId": "26ee86d01d1b5fc2bcf7764c",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 64,
+          "episodeId": "6c4a875cd0e41373c26d5faf",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 66,
+          "episodeId": "0b8d4f62a58ce82f1f25e81d",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 68,
+          "episodeId": "fc3833099383237d9b1913b8",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 69,
+          "episodeId": "d067482ab5c232bfd5918e3e",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 70,
+          "episodeId": "3414c808470f5678cf4c8754",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 71,
+          "episodeId": "584a0c74db4974cc7c51ac39",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 72,
+          "episodeId": "0b17a79217155353ce801410",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 73,
+          "episodeId": "e9c3be6fc46cd9f98e3ec477",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 74,
+          "episodeId": "5b56f93d3ccb4e304d25975f",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 75,
+          "episodeId": "38621fbd726673c048bebcd6",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 76,
+          "episodeId": "068f60cd360acfac6c644d57",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 77,
+          "episodeId": "8491db0ce4f897da14c1758f",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 79,
+          "episodeId": "af50de29217bf7aa1711fe93",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        },
+        {
+          "row": 80,
+          "episodeId": "9b58765d8f8a91a55eb2eeaf",
+          "proposedSourceId": "radio-dreyeckland",
+          "requiredContentPolicy": "metadata_and_links_only",
+          "preserveEpisodeId": true,
+          "applied": false
+        }
+      ]
+    }
+  }
+}

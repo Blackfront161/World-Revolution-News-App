@@ -308,6 +308,14 @@
         "reviewStatus": "independent_tool_fix_accepted_20261001",
         "reviewedCommit": "eaf55e2fdfff3e3bab9b3a08e7a40e2d13c8330b",
         "reviewScope": "Prüfwerkzeug einschließlich beider adversarial geprüften Ausschlusspfade; keine Inhaltsaufnahme oder Zusammenführung",
+        "sourceIdentityPreparation": {
+          "status": "candidate_only_not_applied",
+          "candidate": "docs/RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.json",
+          "evidence": "docs/RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.md",
+          "appRecordChangesProposed": 33,
+          "dataRecordChangesProposed": 28,
+          "requiredBeforeApplication": "Betreiber-/Endpointreview und restriktive Pipeline-/Playerprojektion für metadata_and_links_only; Episoden-IDs erhalten"
+        },
         "status": "Prüfwerkzeug umgesetzt; keine Zusammenführung, Aufnahme oder Aktivierung"
       },
       "baseline": {
