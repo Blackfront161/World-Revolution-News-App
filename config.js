@@ -551,7 +551,8 @@ window.WRN_CONFIG = Object.freeze({
         const script = existing || document.createElement('script');
 
         if (!existing) {
-            script.src = `./${file}?v=${VERSION}`;
+            const assetVersion = file === 'release-1.5-nav.js' ? marker : VERSION;
+            script.src = `./${file}?v=${assetVersion}`;
             script.dataset.wrnModule = marker;
         }
 
@@ -661,7 +662,7 @@ window.WRN_CONFIG = Object.freeze({
             ['article-summary.js', 'article-summary-recovery-184'],
             ['typography.js', 'typography-recovery-10'],
             ['wrn-header.js', 'future-header-recovery-10'],
-            ['release-1.5-nav.js', 'navigation-recovery-10'],
+            ['release-1.5-nav.js', 'navigation-recovery-11'],
             ['source-verification.js', 'source-verification-recovery-10'],
             ['source-health-freshness.js', 'source-health-freshness-recovery-200'],
             ['action-radar.js', 'action-radar-recovery-200'],

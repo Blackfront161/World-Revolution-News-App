@@ -100,7 +100,7 @@ def test_preview_and_production_offline_caches_are_distinct():
     assert "./next.html" in preview_worker
     assert "./index.html?preview=8" in preview_worker
     assert "navigationFirst(request)" in preview_worker
-    assert "wrn-app-v2.1.2-r5" in live_worker
+    assert "wrn-app-v2.1.2-r7" in live_worker
 
 
 def test_specialty_views_are_native_preview_routes():
@@ -484,7 +484,7 @@ def test_release_candidate_restores_existing_live_capabilities():
     assert "event.currentTarget.hidden = true" in script
     assert "overlay.hidden = false" in source_profiles
     assert "modal.hidden = true" in source_profiles
-    assert "if (overlay) overlay.hidden = true" in source_profiles
+    assert "if (overlay) { overlay.hidden = true; overlay.style.display = 'none'; }" in source_profiles
     assert ".bottom-nav .following-star" in style
     assert ".menu-shell > .menu-project > button" in style
     assert ".menu-project > button:not(.menu-donate)" in release_style
@@ -535,7 +535,7 @@ def test_release_checklist_is_readable_and_available():
     assert 'href="news-app-2-release-checklist.html"' not in html
     assert "news-app-2-release-checklist.html" in worker
     assert "news-app-2-release-checklist.css" in worker
-    assert "`${CACHE_PREFIX}v93`" in worker
+    assert "`${CACHE_PREFIX}v95`" in worker
     assert "if (request.mode === 'navigate')" in worker
     assert 'class="release-checklist-page"' in checklist
     assert "Bestanden" in checklist

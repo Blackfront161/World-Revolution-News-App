@@ -27,7 +27,9 @@ werden. Der bekannte lokale Signaturnachweis ist an das erwartete Zertifikat
 `7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8`
 gebunden. Der Play-Console-Trackstatus konnte unter den aktuellen Bedingungen
 nicht unabhängig geprüft werden. Die frühere Code26-Übergabe ist historisch;
-der neue lokale Kandidat wird mit Code30 erstellt. Der vorhandene Code29-Build
+der korrigierte lokale Kandidat wird mit Code31 erstellt. Code30 ist ein
+unabhängig geprüfter unsignierter Zwischenstand vor der Classic-Fokuskorrektur.
+Der vorhandene Code29-Build
 bleibt die Vorversion für die Upgrade-Prüfung.
 
 Aktuelle Reihenfolge und Quellkandidaten: [ROADMAP.json](ROADMAP.json).

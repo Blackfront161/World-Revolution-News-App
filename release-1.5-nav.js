@@ -1189,6 +1189,7 @@
     card.setAttribute('aria-label', `${texts().article}: ${card.querySelector('.title')?.textContent || ''}`);
 
     card.addEventListener('keydown', event => {
+      if (event.target !== card) return;
       if ((event.key === 'Enter' || event.key === ' ') && !detailState) {
         event.preventDefault();
         openArticleDetail(card);

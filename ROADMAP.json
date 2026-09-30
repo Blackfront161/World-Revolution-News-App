@@ -15,12 +15,13 @@
   "current": {
     "version": "2.1.2",
     "branch": "codex/code26-home-correction-20260927",
-    "versionCode": 30,
+    "versionCode": 31,
     "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
     "reviewedCommit": "0b315a65f9a52f4274e368d71b1dda35733948b2",
-    "status": "Lokaler Produktionskandidat: Autonom lokal erweitert; Browserstrecke und Snapshot-Neustart bestanden; drei Quellen additiv aufgenommen. Neuer commitgenauer Code30-Build wird erstellt. Android-Upgrade und Systemprüfung für reduzierte Bewegung offen; keine neue Signierung oder Play-Veröffentlichung.",
-    "artifactReport": "Neuer Code30-Bericht folgt nach dem Build; Code29-Bericht bleibt historisch.",
-    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus"
+    "status": "Lokaler Produktionskandidat: Autonom und Quellen lokal umgesetzt; Classic-Rückkehrfokus aus unabhängiger Prüfung korrigiert. Browser sowie isolierte Android-Upgrade-, Offline-Reader- und System-reduced-motion-Prüfungen bestanden. Neuer Code31-Build folgt; Signierung und Veröffentlichung offen.",
+    "artifactReport": "Code31-Bericht folgt; Code30 aus fd2afe0 bleibt historischer Zwischenkandidat.",
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
+    "sourceCommit": "Korrigierter Quellcommit folgt nach Vertragsprüfung"
   },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
@@ -45,10 +46,8 @@
         "reviewedCommit": "0b315a65f9a52f4274e368d71b1dda35733948b2"
       },
       "externalGates": [
-        "Systempräferenz für reduzierte Bewegung tatsächlich prüfen",
-        "Produktions-/Android-Neustart bei vollständig fehlendem Netz",
-        "Android-Upgrade auf stabilem Testgerät",
-        "neuer Code30-Build und unabhängige Abnahme",
+        "korrigierter Code31-Build und unabhängige Abnahme",
+        "Produktions-/physische Geräteprüfung sowie vollständiger Produktionsbrowser-Netzausfall",
         "artefaktgebundene Signierung und Play-Veröffentlichung"
       ],
       "findings": [
@@ -126,20 +125,28 @@
           "note": "WRN Kontrolleur hat0c8aa3d gegen8e95685 ausschließlich lesend geprüft, funktional akzeptiert und unveränderten sauberen Arbeitsbaum bestätigt. Status-/Diagnosenachpflege gesondert nachprüfen."
         }
       ],
-      "evidence": "docs/COORDINATION-2026-09-30.md"
+      "evidence": "docs/COORDINATION-2026-09-30.md",
+      "newPackageReview": {
+        "appCommit": "fd2afe0d613e769e97bd870e69b889ab3fa26aa3",
+        "appStatus": "changes_requested_classic_focus",
+        "dataCommit": "17b3604979a27411666048c082345b704261af93",
+        "dataStatus": "accepted_scoped",
+        "finding": "Classic closeAllModals schloss das Quellenprofil und löschte den Rückkehrfokus; lokale Erfassung vor await und Zuweisung nach closeAllModals behebt den Ablauf.",
+        "correctionStatus": "implemented_pending_independent_review"
+      }
     },
     {
       "id": "RELEASE-29",
       "priority": 1,
-      "name": "Aktuellen Autonom-App-Kandidaten mit Code30 abschließen",
+      "name": "Korrigierten Autonom-App-Kandidaten mit Code31 abschließen",
       "status": "in_progress",
       "dependsOn": [
         "CONTROL-CORRECTIONS-20260930"
       ],
       "remaining": [
-        "Android-Upgrade ohne Einstellungs-/Lesezeichenverlust; stabiles Testgerät angefragt",
-        "Produktions-/Geräte-Offline-Neustart und reduced motion",
-        "Code30 aus geprüftem Commit bauen",
+        "Code31 aus korrigiertem geprüftem Commit bauen und unabhängig abnehmen",
+        "Produktionszertifikat und physisches Gerät nach Signierfreigabe prüfen",
+        "Produktionsbrowser bei vollständig fehlendem Netz separat prüfen",
         "Signierung und Play-Veröffentlichung an neues Artefakt binden"
       ]
     },
@@ -228,7 +235,9 @@
         "branch": "codex/autonom-sources-20261001",
         "baseCommit": "33509ac",
         "status": "local_review_pending"
-      }
+      },
+      "dataCommit": "17b3604979a27411666048c082345b704261af93",
+      "reviewStatus": "accepted_scoped_20261001"
     },
     {
       "id": "EDITORIAL-DATA",
@@ -477,12 +486,13 @@
     "androidCandidate": "Nach dem finalen sauberen Commit ist ein strikt offline gebauter, unsignierter 2.1.1/code26-Kandidat vorgeschrieben; Hash, Größe, ZIP/Manifest/Asset- und Signaturstatus werden im Übergabebericht aus demselben Build belegt. Keine Signierung, kein Upload und kein Deployment.",
     "artifactTransaction": "durables Write-Through-Recovery-Journal, exklusiver Lock und Windows-Hartabbruchtests nach Move 1/2/Commit; Traversal/Junction/Hardlink/stale-lock grün",
     "autonomAcceptance20261001": {
-      "status": "local_review_pending",
+      "status": "data_accepted_app_classic_correction_pending_review",
       "browser": "12 CUA-Prüfungen bestanden; 200%-Reflow320/390/768/1440, Fokus, Reader-/Quellenaktionen",
       "offline": "Neuer Tab nach beendetem App-/Daten-Testserver bestanden, gespeicherter Reader6254 Zeichen. Snapshotmodus; Host-Internet aktiv.",
       "sources": "Freiburg/Frankfurt directory-only; UB metadata-only, tatsächlicher Aggregatorzweig geschützt; kanonische Datenbasis33509ac,52 Python-Tests bestanden.",
-      "android": "Vorversion gebaut und App-Testpaket kompiliert; Upgrade nicht bestanden, Emulator instabil und kein physisches Gerät verbunden.",
-      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md"
+      "android": "Separater Testpaketname: Code29->30 install -r mit erhaltenen Einstellungen/Lesezeichen und Autonom-Persistenz bestanden. QA ohne INTERNET-Permission: Volltext nach Activity- und Prozessneustart bestanden; echte Android-reduced-motion-Präferenz und CSS bestanden. Kein physischer Geräte-/Produktionszertifikatsnachweis; neue Korrektur erneut prüfen.",
+      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
+      "dataCommit": "17b3604979a27411666048c082345b704261af93"
     }
   },
   "excluded": [
@@ -493,7 +503,7 @@
   ],
   "releaseGates": [
     "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
-    "Autorisierte Signierung und Store-Freigabe an den neuen commitgenauen Code30-Kandidaten binden; Code29-Baseline enthält Autonom nicht.",
+    "Autorisierte Signierung und Store-Freigabe an den neuen commitgenauen Code31-Kandidaten binden; Code29-Baseline enthält Autonom nicht.",
     "Signierung, Upload und Deployment sind nicht autorisiert"
   ]
 }

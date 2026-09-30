@@ -14,8 +14,23 @@ Neue Änderungen und deren Abnahme werden davon getrennt nachgewiesen.
   Shift+Tab auf die Profilaktionen und fokussiert anschließend den Aufrufer.
 - Bei reduzierter Bewegung werden neben Animationen auch Übergänge verkürzt;
   der rote aktive Themenchip besitzt dann keinen Leuchteffekt.
-- CSS48, Quellenprofile3, Haupt-App-JS53; App-Cache `wrn-app-v2.1.2-r5`,
-  alternativer Worker v93. Daten-Cache r1 bleibt unverändert.
+- Der Kontrolleur fand zusätzlich im ausgelieferten Classic-Pfad einen echten
+  Integrationsfehler: `closeAllModals()` schließt selbst das Quellenprofil und
+  löschte den zu früh global gespeicherten Aufrufer. Der Aufrufer wird jetzt
+  vor dem Laden lokal erfasst und erst nach dem gemeinsamen Schließen global
+  gespeichert. Der Test führt die tatsächliche Classic-Funktion aus `app.js`
+  aus und prüft zusätzlich die neue App ohne diese Funktion.
+- Classic-Karten übernehmen Enter/Leertaste nur bei Fokus auf der Karte selbst;
+  eingebettete Quellenschaltflächen und Links behalten ihre native Aktion.
+  Das Profil setzt zusätzlich den von Classic-CSS benötigten Displayzustand und
+  benutzt dort die vorhandene Fokusverwaltung vor deren asynchronem Observer.
+  Ein echter Browserlauf bestätigt: Enter öffnet nur das Profil, Escape verbirgt
+  es und gibt Fokus an LabourNet DE zurück; kein Artikeldetail öffnet sich.
+  Beleg: `classic-profile-browser.json` im Belegordner.
+- CSS48, Quellenprofile4, Haupt-App-JS53; App-Cache `wrn-app-v2.1.2-r7`,
+  alternativer Worker v95. Daten-Cache r1 bleibt unverändert. Das Classic-
+  Navigationsmodul verwendet konsistent `navigation-recovery-11` im Loader
+  und Produktionsworker.
 
 ## Browserbelege
 
@@ -37,17 +52,24 @@ Grenzen: Die Internetverbindung des Hosts blieb aktiv. Der Snapshot-Test weist
 einen fehlenden App-/Datenursprung nach, keinen vollständigen Offlinezustand des
 Produktionsbrowsers. Neue Übersetzungen und externe Player werden nicht als
 offline verfügbar behauptet. Der Browserbackend bietet keine Emulation der
-Betriebssystempräferenz für reduzierte Bewegung; deren Systemprüfung bleibt offen.
+Betriebssystempräferenz für reduzierte Bewegung; die tatsächliche Android-
+Systemprüfung steht separat im Geräteabschnitt.
 
 Belege: `docs/evidence/autonom-2026-09-30/browser-acceptance-r5.json`,
 `offline-restart-r5.json` und `autonom-r5-offline.png`.
 
-Die vollständige Vertragsmatrix bestand: 46 JavaScript-Testmodule,
+Die erste vollständige Vertragsmatrix bestand: 46 JavaScript-Testmodule,
 120 Pytest-Tests, drei historische Skips und vier main-only-Python-Skripte.
 App-Validator bestanden; Read-only-Release-Audit 160/160 ohne Warnungen.
 Die Skips sind keine Android- oder Signaturabnahme des neuen Kandidaten.
 Belege: `full-contract-matrix-r5.txt` und `release-audit-r5.json` im gleichen
 Belegordner. Die neue Tastaturprüfung führt den tatsächlichen Profilhandler aus.
+Die Classic-Korrektur erhält zusätzlich einen Test des tatsächlichen
+Kartenhandlers. Finale Matrix: 47 JavaScript-Module, 120 Pytest-Tests,
+drei historische Skips und vier main-only-Skripte bestanden; Validator und
+Read-only-Audit 160/160 bestanden. Belege: `full-contract-matrix-r7.txt`,
+`release-audit-r7.json` und `browser-acceptance-r7.json` (12 Browserchecks).
+`tests/browser_classic_source_profile.cua.mjs` wiederholt den Classic-Browserlauf.
 
 ## Quellen
 
@@ -59,7 +81,9 @@ Die App erhält drei additive Schema-3-Projektionen mit expliziter Herkunft und
 Rechte-/Importhinweisen. Die App-Projektion aktiviert ihren alten Aggregator nicht.
 
 Kanonisches Datenpaket: `wrn-data-autonom-current`, Branch
-`codex/autonom-sources-20261001`, Basis `33509ac` von origin/main. Vorhandene
+`codex/autonom-sources-20261001`, Basis `33509ac` von origin/main; tatsächlicher
+Quellencommit `17b3604979a27411666048c082345b704261af93` wurde vom Kontrolleur
+unabhängig lesend mit 52 Tests akzeptiert. Vorhandene
 Quellen-URLs bleiben erhalten; die Regeneration bestätigt dieselben Identitäten.
 52 Python-Tests bestanden. Ausführliche Primärbelege, Betreiber-Selbstauskünfte
 und Grenzen stehen im Datenpaket unter
@@ -72,7 +96,10 @@ kein schreibender Update-News-Lauf. Wien und Enough14D bleiben vorgemerkt.
 Eine isolierte Wrapperkopie liegt unter `.tmp/autonom-native`; die normale
 Wrapperquelle und das gespeicherte WRN-AVD wurden nicht mit Testdaten überschrieben.
 Die Vorversion `8e95685` wurde mit Version 2.1.2/Code29 als Grundlage gebaut.
-Der neue Kandidat wird aus dem Commit dieses Änderungssatzes mit Code30 gebaut;
+Der Code30-Zwischenkandidat aus `fd2afe0` wurde gebaut, mit 350 gepackten
+Webdateien ohne inhaltliche Abweichungen nach Git-Zeilenendennormalisierung
+unabhängig geprüft. Wegen des Classic-Fokusbefunds ist er kein finaler Kandidat.
+Der korrigierte Kandidat wird aus seinem festen Quellcommit mit Code31 gebaut;
 Signierung und Store-Veröffentlichung sind getrennte Schritte.
 
 `AutonomUpgradeInstrumentedTest` hat zwei getrennte Phasen: Vorversion mit einem
@@ -80,9 +107,28 @@ realen gepackten Artikel, OLED/Groß/Kompakt befüllen; danach `adb install -r` 
 neuen Pakets und Einstellungen/Lesezeichen sowie Autonom-Persistenz prüfen.
 Das App-Testpaket kompiliert. Es ist ausschließlich für eine isolierte Testinstallation.
 
-Die echte Upgrade-Abnahme ist noch nicht bestanden: kein physisches Gerät
-angeschlossen; Testemulator nach ersten Start-/Installationsschritten unterbrochen,
-weitere Kaltstarts mit eigener Testpartition hängen oder enden. Auch Software-
-emulation lieferte keinen stabilen ADB-Nachweis. Die begonnenen Tests ohne
-abschließendes `OK` zählen nicht als bestanden. Die eigenen Emulatorprozesse
-wurden beendet. Für das Gerätegate wurde ein stabiles Android-Testgerät angefragt.
+Die ersten Emulatorversuche waren instabil und lieferten kein abschließendes
+`OK`; diese Versuche zählen nicht als bestanden. Später wurde der vorhandene
+WRN_API36_Play-Emulator stabil erreichbar. Die darin vorhandene Nutzer-App
+`com.world.revolution`, Code27/2.2.0, wurde weder überschrieben noch gelöscht.
+Stattdessen wurden QA-Varianten mit der eigenen Kennung
+`com.world.revolution.autonomtest` und identischem Debug-Testzertifikat verwendet.
+Code29->Code30 mit `adb install -r`: Vorversionsphase `OK (1 test)`;
+Einstellungen/Lesezeichen/Autonom und neuer Activity-/WebView-Start `OK (1 test)`.
+
+Zusatz-QA mit entferntem INTERNET-Recht ausschließlich im isolierten
+Debugmanifest: vollständiger gespeicherter LabourNet-Reader (>2000 Zeichen)
+nach Activity-Neustart und echte Android-Systempräferenz für reduzierte Bewegung
+einschließlich fehlendem Glow und verkürzten Übergängen `OK (2 tests)`.
+Nach `am force-stop` der Test-App bestand der Offline-Neustart nochmals
+`OK (1 test)`. Der vorherige globale `animator_duration_scale`-Wert `null` wurde
+per `finally` durch Löschen der nur vorübergehend gesetzten Testeinstellung
+wiederhergestellt. Host und andere Apps blieben online.
+
+Diese Belege gehören zum Webstand `fd2afe0`; nach der Classic-Korrektur werden
+die Geräteprüfungen am neuen Stand wiederholt. Das ist kein Nachweis einer
+Play-Signatur oder eines Updates der produktiven Nutzerinstallation. Ein
+physisches Gerät und vollständiger Produktionsbrowser-Netzausfall bleiben offen.
+Die QA-Quelle `tests/android/AutonomOfflineMotionInstrumentedTest.java` wird
+ausschließlich in die isolierte Wrapperkopie übernommen; sie gehört nicht in
+Produktions-Webassets. Genaue Belegpfade und Varianten stehen im Android-Bericht.

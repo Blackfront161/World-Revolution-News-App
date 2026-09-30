@@ -395,10 +395,11 @@
     }
 
     async function open(name) {
-        sourceProfileReturnFocus = document.activeElement;
+        const invokingControl = document.activeElement;
         buildModal();
         await loadCatalog(false);
         if (typeof closeAllModals === 'function') closeAllModals();
+        sourceProfileReturnFocus = invokingControl;
         const texts = textSet();
         const profile = findCatalogSource(name);
         const registry = findRegistrySource(name) || {};
@@ -474,9 +475,14 @@
             };
         }
         if (closeButton) closeButton.textContent = texts.close;
-        if (overlay) overlay.hidden = false;
+        if (overlay) { overlay.hidden = false; overlay.style.display = 'block'; }
         modal.hidden = false;
-        (closeButton || modal).focus?.();
+        modal.style.display = 'block';
+        if (typeof window.WRNAccessibility?.focusModal === 'function') {
+            window.WRNAccessibility.focusModal(modal);
+        } else {
+            (closeButton || modal).focus?.();
+        }
     }
 
     function findRegistrySource(name) {
@@ -497,8 +503,8 @@
     function close() {
         const modal = document.getElementById('source-profile-modal');
         const overlay = document.getElementById('fb-overlay');
-        if (modal) modal.hidden = true;
-        if (overlay) overlay.hidden = true;
+        if (modal) { modal.hidden = true; modal.style.display = 'none'; }
+        if (overlay) { overlay.hidden = true; overlay.style.display = 'none'; }
         if (sourceProfileReturnFocus?.isConnected) sourceProfileReturnFocus.focus?.();
         sourceProfileReturnFocus = null;
     }

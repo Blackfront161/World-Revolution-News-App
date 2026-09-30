@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r5';
+const APP_CACHE = 'wrn-app-v2.1.2-r7';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -42,7 +42,7 @@ const APP_SHELL = [
   './audio-tools.js?release=1',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
-  './source-profiles.js?release=3',
+  './source-profiles.js?release=4',
   './source-verification.js?release=1',
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
@@ -117,7 +117,7 @@ const APP_SHELL = [
   './reading-state.js',
   './audio-hub.js',
   './release-1.4.js',
-  './release-1.5-nav.js',
+  './release-1.5-nav.js?v=navigation-recovery-11',
   './wrn-i18n.js',
   './audio-region-core.js',
   './language-qol.js',
@@ -195,7 +195,7 @@ const CORE_APP_SHELL = [
   './audio-tools.js?release=1',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
-  './source-profiles.js?release=3',
+  './source-profiles.js?release=4',
   './source-verification.js?release=1',
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',

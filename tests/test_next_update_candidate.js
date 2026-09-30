@@ -18,9 +18,9 @@ for (const source of [html, productionWorker, previewWorker]) {
   assert(source.includes('news-app-2.js?release=53'));
   assert(source.includes('news-app-2.css?release=48'));
 }
-assert(productionWorker.includes("wrn-app-v2.1.2-r5"));
+assert(productionWorker.includes("wrn-app-v2.1.2-r7"));
 assert(productionWorker.includes("wrn-data-v2.1.2-r1"));
-assert(previewWorker.includes('`${CACHE_PREFIX}v93`'));
+assert(previewWorker.includes('`${CACHE_PREFIX}v95`'));
 
 assert(app.includes('const storedTranslation = translationFor(article);'));
 assert(app.includes("cardCopy.syncTeaserParagraph(card.querySelector('.news-card__open')"));

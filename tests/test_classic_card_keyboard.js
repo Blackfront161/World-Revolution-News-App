@@ -1,0 +1,28 @@
+'use strict';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const code = fs.readFileSync(require.resolve('../release-1.5-nav.js'),'utf8');
+const actual = code.match(/  function decorateCard\(card\) \{[\s\S]*?\n  \}/);
+assert(actual, 'the actual classic card decorator must be present');
+let opens = 0;
+let prevented = 0;
+const context = {detailState:null, texts:()=>({article:'Article'}), openArticleDetail:()=>opens++};
+vm.createContext(context);
+vm.runInContext(actual[0], context);
+const card={dataset:{},handlers:{},setAttribute(){},querySelector:()=>({textContent:'Title'}),
+    addEventListener(name,handler){this.handlers[name]=handler;}};
+context.decorateCard(card);
+const event = (target,key='Enter')=>({target,key,preventDefault(){prevented++;}});
+card.handlers.keydown(event({tagName:'BUTTON',className:'source-profile-link'}));
+card.handlers.keydown(event({tagName:'A'},' '));
+assert.equal(opens,0,'nested source buttons and links must retain their native keyboard action');
+assert.equal(prevented,0,'nested controls must not lose their default keyboard action');
+card.handlers.keydown(event(card));
+card.handlers.keydown(event(card,' '));
+assert.equal(opens,2,'the card itself still opens with Enter and Space');
+assert.equal(prevented,2);
+context.detailState={};
+card.handlers.keydown(event(card));
+assert.equal(opens,2,'an open detail must not be reopened');
+console.log('Classic nested-control keyboard integration: actual decorator PASS');
