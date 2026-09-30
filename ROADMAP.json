@@ -297,7 +297,10 @@
         "livePublicFilesVerified": 43,
         "fullContentParityComplete": false,
         "offlineVerification": "explicit_UI_save_full_Chrome_process_close_same_profile_restart_without_network",
-        "remaining": "Lexikon, Bibliothek und Podcasts als weitere Inhaltsklassen; keine neuen Volltexte oder Medien aufgenommen"
+        "remaining": "Lexikon, Bibliothek und Podcasts als weitere Inhaltsklassen; keine neuen Volltexte oder Medien aufgenommen",
+        "metadataReview": "accepted_exact_evidence_bindings",
+        "reviewedMetadataCommit": "df82b67f566e52392b9654c8360581ccbe74dc11",
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
       }
     },
     {
@@ -329,7 +332,10 @@
           "evidence": "docs/RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.md",
           "appRecordChangesProposed": 33,
           "dataRecordChangesProposed": 28,
-          "requiredBeforeApplication": "Betreiber-/Endpointreview und restriktive Pipeline-/Playerprojektion für metadata_and_links_only; Episoden-IDs erhalten"
+          "requiredBeforeApplication": "Betreiber-/Endpointreview und restriktive Pipeline-/Playerprojektion für metadata_and_links_only; Episoden-IDs erhalten",
+          "reviewStatus": "accepted_scoped_non_applied_proposal",
+          "reviewedCommit": "a1eea9c9cf4cf5adbad61c71781170c9d847e67d",
+          "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
         },
         "status": "Prüfwerkzeug umgesetzt; keine Zusammenführung, Aufnahme oder Aktivierung"
       },
@@ -364,7 +370,7 @@
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
-      "status": "local_first_definition_and_relationship_fix_review_pending",
+      "status": "local_first_definition_and_relationship_fix_technical_review_accepted_editorial_pending",
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
@@ -376,7 +382,10 @@
         "repairedRelatedReferences": 5,
         "independentEditorialReview": "pending",
         "publicationStatus": "local_only_not_in_accepted_code31_or_website",
-        "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat"
+        "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat",
+        "independentTechnicalReview": "accepted_scoped_local_draft",
+        "reviewedCommit": "d58746d020325ae6357a8f8b4bf268de001c7ef7",
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
       },
       "baseline": {
         "lexiconTerms": 154,
@@ -424,7 +433,10 @@
         "duplicateEpisodeLinkRows": 1,
         "admittedSources": 0,
         "importedEpisodes": 0,
-        "remaining": "Betreiber-/Sprachen-/Rechtereview, sichere Originalpfade, Enclosure-Erreichbarkeit und Pagination; Green Left/Rebel Steps als Archiv statt aktuelle Sendungen einordnen"
+        "remaining": "Betreiber-/Sprachen-/Rechtereview, sichere Originalpfade, Enclosure-Erreichbarkeit und Pagination; Green Left/Rebel Steps als Archiv statt aktuelle Sendungen einordnen",
+        "reviewStatus": "accepted_scoped_observation_not_admission",
+        "reviewedCommit": "22919b351d35cb32fc83efe08471165f0179e786",
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
       },
       "candidateNames": [
         "Anarchist World This Week (3CR)",
