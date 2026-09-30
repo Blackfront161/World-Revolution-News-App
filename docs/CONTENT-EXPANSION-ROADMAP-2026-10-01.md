@@ -62,13 +62,13 @@ Abnahme: gleiche stabile IDs beim Refresh und Fortsetzen, echte GUID-/URL-Dublet
 | Lexikon, Lernpfade und App-Nutzung | folgendes App-Inhalts-/Runtimepaket | geprüfte Inhalte, Beziehungen, Suche, mobile/offline Abnahme |
 | Unabhängige Prüfung | WRN Kontrolleur | konkrete Commits und Belege statt Sammelfreigabe |
 
-Diese Roadmap-Ergänzung verändert keinen Runtime-, Website- oder Datenbestand. Das bereits akzeptierte AAB bleibt Code31 aus Runtime `8d2ef234`, mit unveränderter Artefakthashbindung. Neue Runtimeänderungen benötigen einen neuen Kandidaten und eigenen Build-/Prüfnachweis; sie werden Code31 nicht rückwirkend zugerechnet. Aktueller Datenstand `17b3604` bleibt lokal und unverändert. Keine Signierung, Veröffentlichung oder Deployment durch diesen Auftragsteil.
+Die ursprüngliche Planungsergänzung veränderte keinen Runtime-, Website- oder Datenbestand. Die inzwischen ausgeführten Folgeschritte sind unten ausdrücklich benannt. Das bereits akzeptierte AAB bleibt Code31 aus Runtime `8d2ef234`, mit unveränderter Artefakthashbindung. Neue Runtimeänderungen benötigen einen neuen Kandidaten und eigenen Build-/Prüfnachweis; sie werden Code31 nicht rückwirkend zugerechnet. Aktueller Datenstand `17b3604` bleibt lokal und unverändert. Der gesonderte Website-Veröffentlichungsauftrag erweitert keine Android-Signier- oder Store-Uploadbefugnis.
 
 ## Prüfung dieser Ergänzung
 
 ### Fortführung am 1. Oktober 2026
 
-Der Website-Veröffentlichungsauftrag ist inzwischen ausdrücklich erteilt. Nach realen Hosting- und Offlinefehlern wurde der alte Live-Stand wiederhergestellt; das reparierte Paket wird unabhängig geprüft. Die oben beschriebene Ausgangsbeobachtung ist historisch. Ein lokales Paket-PASS wird weiterhin nicht als erfolgreiche Live-Veröffentlichung ausgegeben.
+Der Website-Veröffentlichungsauftrag wurde ausdrücklich erteilt und ist inzwischen abgeschlossen: [Veröffentlichungsbericht mit unabhängigem Live-PASS](WEBSITE-PUBLICATION-2026-10-01.md). Nach realen Hosting- und Offlinefehlern wurden die fehlgeschlagenen Kandidaten zurückgenommen und gezielt repariert. Der finale Stand `5df01f1` ist live, einschließlich 480 Nachrichtenlinks, 397 Quellenendpunkten und vollständigem Chrome-Prozessneustart ohne Netzwerk. Die oben beschriebene Ausgangsbeobachtung ist historisch. Lexikon, Bibliothek und Podcasts benötigen weiterhin eigene Website-Projektionen; vollständige Inhaltsparität ist damit nicht abgeschlossen.
 
 Im App-Arbeitsstand ist die [erste Lexikonrunde](LEXICON-FIRST-CONTENT-BATCH-2026-10-01.md) umgesetzt: ein belegter DE/EN-Begriff zu Faschismus und drei korrigierte Beziehungen zum vorhandenen Begriff Antifaschismus. Der ausgeführte öffentliche Katalog enthält nun 155 eindeutige Begriffe und 13 Referenzen; alle fünf zuvor verwaisten Beziehungen sind aufgelöst. Das entspricht einem von 20 geplanten Begriffsbeiträgen. Weitere 19 Beiträge, drei Lernpfade mit 30 Zuordnungen, Bibliothekssynchronisierung und die spätere Produktabnahme bleiben offen. Dieser lokale Entwurf ist weder Website-Inhalt noch Bestandteil des bestehenden Code31-AAB; die unabhängige Inhaltsprüfung steht aus.
 

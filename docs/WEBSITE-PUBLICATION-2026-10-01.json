@@ -1,0 +1,397 @@
+{
+  "schema": "wrn.website-publication-receipt.v1",
+  "status": "published_independent_live_pass",
+  "url": "https://solinaridao.com/",
+  "publicationDateLocal": "2026-10-01",
+  "sourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+  "scope": "news_metadata_original_links_and_source_directory_projection_only",
+  "fullAppContentParityComplete": false,
+  "ready": {
+    "relativePath": "work/website-projection-favicon-compression-release-v2/READY.json",
+    "sha256": "8925cd7b1f76942ae3a71ff91f37a40482a23bc62317c2ae774a1cc58b5b0af4",
+    "shellId": "2cf0f8ba57ca78142efbd38fca1197f652ac3b48ff59b7d20044c966a5e7f1cf",
+    "websiteManifestSha256": "4c50b23160a92efa382ba5621113a1181e0a913a7512b707c76fcd78deb3d99a",
+    "hostingManifestSha256": "34a0b8cdf6c7dd425e0e9525e690484aa4eb310c3ec89689e345c668ba62d822"
+  },
+  "projection": {
+    "status": "PASS",
+    "counts": {
+      "feed": 500,
+      "feedSources": 98,
+      "registry": 406,
+      "included": 480,
+      "metadataLinkOnly": 480,
+      "fullTextImported": 0,
+      "directoryOnlySources": 0,
+      "metadataOnlySources": 397,
+      "excluded": 20,
+      "matchedSources": 6,
+      "pendingSources": 391,
+      "excludedSources": 9,
+      "directoryArticles": 961,
+      "directorySources": 532
+    },
+    "sequence": 202609301530,
+    "directorySha256": "72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff",
+    "reportSha256": "46b47f7eb005cd307fda40beae5d6a74bdac9c936e3045ca4382a390803c6b80",
+    "upstreamCommit": "33509ace3d3b2f7f275ebc05fe3522a59d62964f"
+  },
+  "admissionClasses": {
+    "individuallyAdmittedFulltext": {
+      "articles": 12,
+      "sourceProfiles": 3,
+      "revision": "wrn-production-news-2026-09-26-v8",
+      "corpus": "existing-separate-production-admission"
+    },
+    "newFulltextOrMedia": {
+      "articles": 0,
+      "sourceEndpoints": 0
+    },
+    "metadataLinkOnly": {
+      "articles": 480,
+      "sourceEndpoints": 397,
+      "withoutConfirmedSourcePass": 476,
+      "editorialVerification": false,
+      "reuseRightsGranted": false
+    },
+    "directoryOnly": {
+      "articles": 0,
+      "sourceEndpoints": 0
+    },
+    "excluded": {
+      "articles": 20,
+      "sourceEndpoints": 9,
+      "reasons": {
+        "future-published-at": 1,
+        "identity-conflict": 7,
+        "incomplete-source-provenance": 3,
+        "insecure-url": 9
+      }
+    },
+    "upstream": {
+      "articles": 500,
+      "sourceEndpoints": 406,
+      "recordedFeedSourceNames": 98
+    }
+  },
+  "independentReview": {
+    "chat": "WRN Kontrolleur",
+    "threadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+    "frontendTestsPassed": 209,
+    "nodeContractTestsPassed": 82,
+    "typeScriptNoEmit": "PASS",
+    "chromeCore": "PASS",
+    "liveReadbackObservedAtUTC": "2026-09-30T23:20:16.040Z",
+    "liveReadbackSha256": "0c470cd04934e11893de12d308adfb0d1df750d669460df2fa259e55f46e6742",
+    "liveReadbackRelativePath": "work/website-projection-live-20261001/live-full-1790810413005/receipt.json",
+    "liveFileCount": 43,
+    "browserEvidenceSha256": "42adb16051f88ae07cc117730be76322192ffbeb96419c18cb10f24b23b37f41",
+    "browser": {
+      "origin": "https://solinaridao.com",
+      "sourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+      "observedAtUTC": "2026-09-30T23:19:03.342Z",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "live homepage, coverage and original links",
+          "status": "PASS",
+          "ids": [
+            "news-8ababeeeb75fc37dc0d57b88412c3032453e0dea49476cba45cafe4c117f1ad1",
+            "news-42c16a577ae4f5d8feda3f1331221ed9e3fdb7df8c4d4c14cbd0626752dd74c6",
+            "news-8ca1b562638d82e207044e9aee80c7dfe6f4a20c33d3d0d47321d0fedca3a997",
+            "news-1e632c403fa3929019ce963a29f129f3f63b9fbdbb3ef289318c538aa6d16d52",
+            "news-3e4f102d7da6f55b804b6262823f443e2cc1483cdbe4fd3b602975d0f85b6efa",
+            "news-bfe2c200371161d1ba5a7a886e1d8de139536716d601d793ef72d7f8e2449bdf"
+          ],
+          "links": [
+            {
+              "href": "https://english.anf-news.com/rojava-syria/mazloum-abdi-issues-message-on-kurdish-language-education-87460",
+              "rel": "noopener noreferrer",
+              "referrerpolicy": "no-referrer"
+            },
+            {
+              "href": "https://english.anf-news.com/features/mother-of-nato-prisoner-we-are-now-victims-of-the-judiciary-too-87449",
+              "rel": "noopener noreferrer",
+              "referrerpolicy": "no-referrer"
+            },
+            {
+              "href": "https://english.anf-news.com/news/against-male-violence-and-male-domination-87463",
+              "rel": "noopener noreferrer",
+              "referrerpolicy": "no-referrer"
+            },
+            {
+              "href": "https://english.anf-news.com/news/Ocalan-must-be-able-to-carry-out-his-work-as-coordinator-for-peace-and-political-transition-87462",
+              "rel": "noopener noreferrer",
+              "referrerpolicy": "no-referrer"
+            },
+            {
+              "href": "https://nunatsiaq.com/stories/article/pqs-sonia-caron-looks-to-switch-from-education-to-politics/",
+              "rel": "noopener noreferrer",
+              "referrerpolicy": "no-referrer"
+            },
+            {
+              "href": "https://argentina.indymedia.org/2026/09/30/el-pueblo-mbya-resiste-y-lucha/",
+              "rel": "noopener noreferrer",
+              "referrerpolicy": "no-referrer"
+            }
+          ]
+        },
+        {
+          "name": "responsive 1440x900",
+          "status": "PASS"
+        },
+        {
+          "name": "responsive 390x844",
+          "status": "PASS"
+        },
+        {
+          "name": "news and sources deep links with unverified labels",
+          "status": "PASS"
+        },
+        {
+          "name": "Chrome process closed and restarted offline with persistent test profile, metadata and exact favicon",
+          "status": "PASS"
+        }
+      ],
+      "icon": {
+        "href": "/assets/solinaridao-header-mark-filled-D7vg3enZ.png",
+        "bytes": 1123871,
+        "sha256": "9dca207bc008384ef45cf435a134bf170037ae0149d27c43c732b754912b61b9"
+      },
+      "offline": {
+        "href": "/assets/solinaridao-header-mark-filled-D7vg3enZ.png",
+        "width": 1254,
+        "height": 1076,
+        "controlled": true,
+        "mime": "image/png",
+        "bytes": 1123871,
+        "sha256": "9dca207bc008384ef45cf435a134bf170037ae0149d27c43c732b754912b61b9"
+      },
+      "pageErrors": []
+    }
+  },
+  "liveFiles": [
+    {
+      "path": "article-publication-manifest.json",
+      "bytes": 5946,
+      "sha256": "dfd8a56c07709cefe82aa957fa020384f914ad27a8697aa272151a967ae03a30"
+    },
+    {
+      "path": "articles/wrn-art-1530b6ef5a7ab519b7bb4d15cf4af45c/index.html",
+      "bytes": 13852,
+      "sha256": "6e6fb4338b9808a7d2d13ce5736dff640a45d3346c92678ed76cf80eb0c637bc"
+    },
+    {
+      "path": "articles/wrn-art-612a467e3e256a336d6bb635ba3516d0/index.html",
+      "bytes": 170365,
+      "sha256": "57c42e8e095b40ceee9ef9b9388186277269e46b8bf4f7891202612b420081f4"
+    },
+    {
+      "path": "articles/wrn-art-67bca5d4b29dab78f8ae26ccd996a9d8/index.html",
+      "bytes": 25237,
+      "sha256": "2be9b1f542bc80676aa4502d8828b05bc04c525292320437ab4863fdec58b6d5"
+    },
+    {
+      "path": "articles/wrn-art-8a5c375e96abe85721e4ba918c3f73e2/index.html",
+      "bytes": 18777,
+      "sha256": "bec2c15e7eb86f262013336cdc3067ffe08e3a520bb71d6c9ff5e1a991c3ab74"
+    },
+    {
+      "path": "articles/wrn-art-a772ab86c915a036c6177f1bfe958d4d/index.html",
+      "bytes": 218496,
+      "sha256": "53a2940101579c19e1a3139e8fde7f7effef079d357b2c659f92c330a020d897"
+    },
+    {
+      "path": "articles/wrn-art-ba76ef8b7afb34885bd5f64bc7135f6c/index.html",
+      "bytes": 20784,
+      "sha256": "f91341a9ea8c91a7556eb8ca9a222951d1b788ef7047a426688dfcf01b4f2ccd"
+    },
+    {
+      "path": "articles/wrn-art-bdb90712e1c72ee72293c70904b50889/index.html",
+      "bytes": 267350,
+      "sha256": "85070b91f9b11e3e6a9954c42291ee1cad8062c7fa7759475446ae414a06f798"
+    },
+    {
+      "path": "articles/wrn-art-c273494fad3a4c822cb7655ec5e157ef/index.html",
+      "bytes": 261922,
+      "sha256": "208577a9815439fa08ba9a6a32c6b789e509a8f4a514a7ca7b1c4cdf4ba4f261"
+    },
+    {
+      "path": "articles/wrn-art-c6c6c2fd56d7a3965b4da062d0f73981/index.html",
+      "bytes": 14317,
+      "sha256": "48e851cf5a6f29a75e81117e4137413b56a7b3769cc2f448557b1af33d09b305"
+    },
+    {
+      "path": "articles/wrn-art-d96004b71171145d4aab1c6e37eb28ca/index.html",
+      "bytes": 10468,
+      "sha256": "c5ae06dedd9ae4d6a21930cca4e5c751328151a759d2849e025d78b033b63b9e"
+    },
+    {
+      "path": "articles/wrn-art-e9c523735fe8b7a61922b09d2bcc84fb/index.html",
+      "bytes": 110077,
+      "sha256": "3c00081c81696c1ca03e107795674b4654104b5e5cf511894fcadd6b49d201c4"
+    },
+    {
+      "path": "articles/wrn-art-f2ad391804423c87773b3351eb79c802/index.html",
+      "bytes": 199637,
+      "sha256": "9b3d3dfd4b03dc4a045b6cae5e5776966f2f9b2e21490c61b9188731d4191ceb"
+    },
+    {
+      "path": "assets/content-directory-v1-BYqcvYL_.json",
+      "bytes": 1923594,
+      "sha256": "72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff"
+    },
+    {
+      "path": "assets/index-D1tHYQ7a.js",
+      "bytes": 162587,
+      "sha256": "b53516d1e8fa87f27e777b085109c57fd779038b5c0fbf01499d479c44b6d72e"
+    },
+    {
+      "path": "assets/index-DvAbKicR.css",
+      "bytes": 69393,
+      "sha256": "432b125d1da71524d765b9467444f1b204b973d2e4936204ea11005f764f7e35"
+    },
+    {
+      "path": "assets/legacy-knowledge-v1-mfukn68x.json",
+      "bytes": 462654,
+      "sha256": "26eb4c118d0483788f07ef0b103c97e1cf53fbf75d36a61ae47456146240726b"
+    },
+    {
+      "path": "assets/legacy-support-v1-CKf2hNYO.json",
+      "bytes": 41012,
+      "sha256": "9bfaced898bcabca449ab7a9e75db1c7bf5caba496eabae01268a58630039525"
+    },
+    {
+      "path": "assets/production-events-media-v1-DqjyU-f0.json",
+      "bytes": 3317607,
+      "sha256": "003c32358ebe0d5ad22fb9c0b059bf82c242aa0b99a4d869fb67960c86acdc07"
+    },
+    {
+      "path": "assets/react-vendor-YahHAMAi.js",
+      "bytes": 189620,
+      "sha256": "c5f08825cdca736a015fe6303f97a64ec1e4511a38b5f2f6f589ecb35e815c65"
+    },
+    {
+      "path": "assets/solinaridao-header-mark-filled-D7vg3enZ.png",
+      "bytes": 1123871,
+      "sha256": "9dca207bc008384ef45cf435a134bf170037ae0149d27c43c732b754912b61b9"
+    },
+    {
+      "path": "assets/wrn-browser-runtime--mSyaIxC.css",
+      "bytes": 22062,
+      "sha256": "050886f4b2b5aa1221a6b41e2a1016316a350b8a857cc1e73b1e97f3f49e4d46"
+    },
+    {
+      "path": "assets/wrn-browser-runtime-CUU7bftF.js",
+      "bytes": 267628,
+      "sha256": "90f619af7a0f2ed214d766011a51658c082c020f7fc86384ad164f564782bb20"
+    },
+    {
+      "path": "assets/wrn-content-core-DHcBcW6g.js",
+      "bytes": 152898,
+      "sha256": "572929166f463a8ddebf7ef66687458b27fad96a2a97253cf527245ff8eb54d6"
+    },
+    {
+      "path": "assets/wrn-future-header-white-D5q8hgPK.png",
+      "bytes": 212123,
+      "sha256": "9da0e22936304a30a55ba1483c2305c6ad6c3b1a057341af2ab3b16fe98a5e2f"
+    },
+    {
+      "path": "assets/wrn-language-DlPVnXrh.js",
+      "bytes": 418517,
+      "sha256": "9fc03e2601190a116a77ee490f6fc13b58a265d1f9fd22dd78fb806cd0514cd7"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2319,
+      "sha256": "f2f581ce03f1bdb1f49e4d22df225c3fb1b8988fcf4131d564d2b74a7a071f06"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 68,
+      "sha256": "44614f978d8565d1fec4e418bd48a8e2d990c326c6c82aac4ced480d94558e17"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 1646,
+      "sha256": "14dff9adf32197a7cab90a62df217c111356c406e820aba72345ca18af378a20"
+    },
+    {
+      "path": "website-shell-sw.js",
+      "bytes": 27139,
+      "sha256": "af2569bd4bf24e994585aba08665fd1b3073b899f918ce1ead66346c875265e6"
+    },
+    {
+      "path": "wrn-content-directory/current.json",
+      "bytes": 512,
+      "sha256": "437228ff555434a3fa78308db8d53126d747913f8097d9ba881401a0c86a2bfa"
+    },
+    {
+      "path": "wrn-content-directory/snapshots/directory-202609301530-72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff.json",
+      "bytes": 1923594,
+      "sha256": "72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff"
+    },
+    {
+      "path": "wrn-production-content/current.json",
+      "bytes": 276,
+      "sha256": "16c1644e9f4205e334279f206d1d63202603d22adbd47edeb17175e7a65cf8be"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/admission.json",
+      "bytes": 16160,
+      "sha256": "b726c4bc5d669fca1551e2fd736575050b72413e6f25f724ae4947174aded02e"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/archive-lifecycle.json",
+      "bytes": 1822,
+      "sha256": "327d6a623739815db43479471fab25b95bb4038b13145b8c7944f4df20fe8982"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/articles.json",
+      "bytes": 18685,
+      "sha256": "4edd91969f49ff079e23183dec13eae3633f51157dd87b41c9f895f93c09a584"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/discover-index.json",
+      "bytes": 1964,
+      "sha256": "74a42a185d31c85def388f0a5b767d9249ba857af1ce6249b1cc8cba42135433"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/manifest.json",
+      "bytes": 1445,
+      "sha256": "3a397f3b6b9fc912ca92f40bf4942bd072b662b551ccce45ace28cc9a2e8e32e"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/reader-details.json",
+      "bytes": 1243454,
+      "sha256": "6b841a0971e18667325d110601a4c67eca6cf1ac214f023024d521d3126cb079"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/release-descriptor.json",
+      "bytes": 880,
+      "sha256": "811530a2973bcb4a965b81376f0931d9b3b7ea24a7e32d0f78c481d71e72064f"
+    },
+    {
+      "path": "wrn-production-content/wrn-production-news-2026-09-26-v8/website-publication.json",
+      "bytes": 2003,
+      "sha256": "45c62aeb8a11fa82391e342dd5f660a395cdf0935d47536b2c7c88ee8507ecd2"
+    },
+    {
+      "path": "wrn-source-pass-revocations/current.json",
+      "bytes": 161,
+      "sha256": "030aa883148b5378ac0821a7ddc0f48935178fe13058508439155423f83bb617"
+    },
+    {
+      "path": "wrn-source-passes/current.json",
+      "bytes": 83783,
+      "sha256": "bcef5d2fa88ae4acfb0dce294d3d8245598308c99e992de735babcc8717556aa"
+    }
+  ],
+  "remaining": [
+    "lexicon_library_podcast_website_projection",
+    "canonical_catalog_merge",
+    "local_autonom_source_data_publication",
+    "app_runtime_release_and_android_signing_store_upload"
+  ],
+  "note": "Derived from independently executed controller evidence; this metadata recording did not repeat browser tests or deploy files."
+}

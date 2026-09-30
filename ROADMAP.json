@@ -250,7 +250,7 @@
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "local_website_candidate_pending_independent_review_and_publication",
+      "status": "news_directory_projection_published_independent_live_pass_full_content_parity_pending",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -258,7 +258,10 @@
         "url": "https://solinaridao.com/",
         "productionRevision": "wrn-production-news-2026-09-26-v8",
         "sourcePassRevision": "wrn-source-pass-2026-09-25-v2",
-        "status": "neue Inhaltsprojektion nicht als live nachgewiesen"
+        "status": "news_and_directory_projection_independently_live_verified",
+        "websiteSourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+        "directorySequence": 202609301530,
+        "directorySha256": "72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff"
       },
       "localWriterReport": {
         "upstreamCommit": "33509ace3d3b2f7f275ebc05fe3522a59d62964f",
@@ -269,7 +272,7 @@
         "registryEndpoints": 406,
         "acceptedRegistryEndpoints": 397,
         "existingAdmittedFullTexts": 12,
-        "status": "Angaben des Website-Schreibers; unabhängige Abschlussabnahme offen"
+        "status": "projection_counts_independently_accepted_and_live_verified"
       },
       "scope": [
         "Nachrichtenlinks und Quellenverzeichnis aus einem gehashten kanonischen Datenstand übernehmen; Endpunkte, Herausgeber und Quellenpässe getrennt zählen",
@@ -283,7 +286,19 @@
         "erst nach gesondert autorisierter Veröffentlichung die reale Live-Website samt Revision, Zählungen, Smartphoneansicht und Aktualisierung prüfen",
         "Website-Abweichung bleibt bis erfolgreicher Live-Abnahme offen; lokaler Test-PASS ersetzt kein Live-PASS"
       ],
-      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md"
+      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md",
+      "publication": {
+        "status": "published_independent_live_pass",
+        "date": "2026-10-01",
+        "sourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+        "shellId": "2cf0f8ba57ca78142efbd38fca1197f652ac3b48ff59b7d20044c966a5e7f1cf",
+        "evidence": "docs/WEBSITE-PUBLICATION-2026-10-01.json",
+        "report": "docs/WEBSITE-PUBLICATION-2026-10-01.md",
+        "livePublicFilesVerified": 43,
+        "fullContentParityComplete": false,
+        "offlineVerification": "explicit_UI_save_full_Chrome_process_close_same_profile_restart_without_network",
+        "remaining": "Lexikon, Bibliothek und Podcasts als weitere Inhaltsklassen; keine neuen Volltexte oder Medien aufgenommen"
+      }
     },
     {
       "id": "CONTENT-CATALOG-PARITY",
@@ -350,7 +365,9 @@
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
       "status": "local_first_definition_and_relationship_fix_review_pending",
-      "dependsOn": ["CONTENT-CATALOG-PARITY"],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
       "localProgress": {
         "evidence": "docs/LEXICON-FIRST-CONTENT-BATCH-2026-10-01.md",
         "lexiconTerms": 155,
@@ -364,7 +381,10 @@
       "baseline": {
         "lexiconTerms": 154,
         "lexiconReferenceSources": 12,
-        "definitionLanguages": ["de", "en"],
+        "definitionLanguages": [
+          "de",
+          "en"
+        ],
         "libraryConfiguredSources": 9,
         "librarySourcesWithIndexedTitlesInApp": 4,
         "librarySourcesWithIndexedTitlesInData": 5
@@ -391,7 +411,9 @@
       "priority": 2,
       "name": "Podcastquellen und nutzbaren Archivumfang erweitern",
       "status": "six_candidates_researched_four_rss_metadata_probes_completed_admission_pending",
-      "dependsOn": ["CONTENT-CATALOG-PARITY"],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
       "technicalObservation": {
         "evidence": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.json",
         "report": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md",
@@ -702,6 +724,6 @@
   "releaseGates": [
     "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
     "Autorisierte Signierung und Store-Freigabe an den neuen commitgenauen Code31-Kandidaten binden; Code29-Baseline enthält Autonom nicht.",
-    "Signierung, Upload und Deployment sind nicht autorisiert"
+    "Android-Signierung und Store-Upload bleiben nicht autorisiert; separat autorisierte Website-Nachrichten-/Directoryveröffentlichung am 01.10.2026 abgeschlossen."
   ]
 }
