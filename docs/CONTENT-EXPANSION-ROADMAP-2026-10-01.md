@@ -29,6 +29,8 @@ Die App-Bibliotheksdateien stammen laut Healthbericht vom 5. August, der kanonis
 
 Das konkrete erste Implementierungspaket gehört in den kanonischen Datenworkflow: ID-Zuordnung für Radio Dreyeckland, Prüfung der 16 App-exklusiven Quellen, Bibliothekszusammenführung und ein reproduzierbarer Paritätsbericht. App-/Website-Projektionen folgen mit den freigegebenen IDs. Prüfen: gespeicherte Zustände, Sprachregeln, Widerrufe, Teilausfall, letzter gültiger Stand und Zeit-/Hashangabe. Nicht blind eine ältere größere JSON-Datei über einen neueren Bestand kopieren.
 
+Folgeschritt umgesetzt: [offline Katalogprüfwerkzeug und Zusammenführungswarteschlange](CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.md), mit gehashtem Bericht und neun Regressionstests. Die Bestände selbst bleiben unverändert; Aufnahme und Zusammenführung stehen weiterhin aus.
+
 ## 3. Lexikon und Wissensbibliothek ausbauen
 
 Das tatsächlich ausgeführte Lexikonmodul liefert **154 Begriffe und zwölf Referenzquellen**. Definitionen sind DE/EN; neun UI-Sprachen bedeuten noch keine neun Definitionensprachen. Kategorien: Grundlagen 13, Organisierung 33, Gerechtigkeit/Fürsorge 17, Kämpfe/Kritik 22, Herrschaft/Analyse 27, Praxis 34, Ökologie/Gemeingüter 8.
