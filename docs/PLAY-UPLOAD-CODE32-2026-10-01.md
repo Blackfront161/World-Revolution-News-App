@@ -27,3 +27,9 @@ Der vorhandene native Quellcode enthält außerdem einen Immediate-Updatefluss a
 ## Vorbereitete Releasehinweise
 
 Autonom als wählbares Design, Teilen und Kopieren von Radios und Podcastfolgen, erweitertes Lexikon sowie Verbesserungen an Offline-Lesen und Darstellung. Das rot-schwarze Windrosen-Appsymbol bleibt erhalten.
+
+## Erneute Prüfung auf Nutzerauftrag
+
+Auf den Folgeauftrag, Nutzer beim Öffnen zur Aktualisierung aufzufordern, wurden die laufenden Wiederherstellungen für **Code25, Code26 und Code28** einzeln erneut gelesen. Alle drei haben das Targeting **„alle Nutzer dieser Version“** und die aktive Aufforderungsverwaltung. Die Console meldet 12 bereits aufgeforderte Nutzer für Code25, 14 für Code26 und 0 für Code28. Bestehende aktive Aktionen wurden nicht dupliziert. Die Aufforderung erscheint beim Kaltstart als schließbarer Vollbilddialog und wiederholt sich bei weiteren Kaltstarts, sofern sie geschlossen wird. Eine bloße Rückkehr zu einer schon laufenden App ist kein neuer Kaltstart.
+
+Code32 befindet sich inzwischen in der eigentlichen Google-Prüfung: „Deine Änderungen werden jetzt überprüft.“ Die Vorabprüfungen sind in diesem Status nicht mehr angezeigt. Code32 wird weiterhin nicht als bereits öffentlich verfügbar behauptet. Nachweis: `play-update-prompt-recheck.json` und die drei `codeXX-update-prompt-rechecked.txt`-Snapshots; Screenshot `code28-update-prompt-rechecked.jpg`.

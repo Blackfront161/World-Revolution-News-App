@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 aus 6821a02 signiert, geprüft und in Google Play Produktion hochgeladen. Produktionsrelease23 mit 100%-Roll-out in178 Ländern und Storehinweisen in9 Sprachen zur Prüfung gesendet; schnelle Vorabprüfungen/Google-Freigabe laufen. Updateaufforderung für alle Code28-Nutzer aktiviert, 0 bereits aufgeforderte Nutzer gemeldet; kein absoluter Updatezwang. Noch nicht als live bestätigt.",
+    "status": "Code32 aus6821a02 signiert, geprüft und in Google Play Produktion für100%-Roll-out eingereicht. Vorabprüfungen abgeschlossen, Google prüft die Änderungen. Wiederkehrende Vollbild-Updateaufforderungen für alle Nutzer der Produktionsversionen25,26,28 sind aktiv und erneut geprüft. Keine absolute Nutzungssperre; Code32 noch nicht als live bestätigt.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -37,7 +37,7 @@
       "reviewedAt": "2026-10-01",
       "report": "docs/evidence/audio-sharing-2026-10-01/code32-controller-acceptance.json"
     },
-    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
+    "previousSignedCandidate": "Lokaler signierter Code28 aus14bfcf8; Console bestätigt Produktionsrelease28 (2.1.2) als verfügbar. Bytebindung dieses Console-Bundles zum lokalen historischen Artefakt nicht zusätzlich geprüft.",
     "androidVerification": {
       "status": "PASS-emulator",
       "physicalDevice": "user-reported-completed",
@@ -66,7 +66,7 @@
       "evidence": "docs/PLAY-UPLOAD-CODE32-2026-10-01.md"
     },
     "playPublication": {
-      "status": "submitted-production-pending-google-checks",
+      "status": "google-review-in-progress",
       "uploadPerformed": true,
       "submissionConfirmed": true,
       "rolloutRequestedPercent": 100,
@@ -76,8 +76,9 @@
       "managedPublishing": false,
       "report": "docs/evidence/audio-sharing-2026-10-01/code32-play-production-submission.json",
       "releaseUrl": "https://play.google.com/console/u/1/developers/8812037282040696596/app/4974507251844219576/tracks/4697960679555676486/releases/23/details",
-      "recoveryPrompt": "activated for all Code28 users; recurring dismissible full-screen prompt; reported deliveries 0",
-      "testTracks": "unchanged; Code27 recovery unavailable"
+      "recoveryPrompt": "Active for all users of production versions25,26,28; recurring dismissible fullscreen prompt at cold start. Console reported25=12,26=14,28=0 prompted users.",
+      "testTracks": "unchanged; Code27 recovery unavailable",
+      "recoveryVerificationReport": "docs/evidence/audio-sharing-2026-10-01/play-update-prompt-recheck.json"
     }
   },
   "projectBoundary": {

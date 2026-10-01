@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-01T03:26:33.431152+00:00",
+  "timezone": "Asia/Singapore",
+  "packageName": "com.world.revolution",
+  "status": "PASS-active-production-update-prompts",
+  "productionVersions": [
+    {
+      "versionCode": 25,
+      "status": "active-existing-verified",
+      "targeting": "all users of this version",
+      "promptedUsersReported": 12,
+      "snapshot": "code25-update-prompt-rechecked.txt"
+    },
+    {
+      "versionCode": 26,
+      "status": "active-existing-verified",
+      "targeting": "all users of this version",
+      "promptedUsersReported": 14,
+      "snapshot": "code26-update-prompt-rechecked.txt"
+    },
+    {
+      "versionCode": 28,
+      "status": "active-existing-verified",
+      "targeting": "all users of this version",
+      "promptedUsersReported": 0,
+      "snapshot": "code28-update-prompt-rechecked.txt"
+    }
+  ],
+  "behavior": "Dismissible fullscreen prompt on cold app start; repeats on future cold starts if closed",
+  "googleReview": "Code32 review ongoing; prechecks no longer shown, console says changes are now reviewed",
+  "code32LiveVerified": false,
+  "newActionsCreatedThisRecheck": false,
+  "absoluteUsageBlock": false,
+  "limits": [
+    "Delivery and install remain Google-controlled; displayed counts do not imply an upgrade to Code32",
+    "Internal test Code27 remains outside production prompt scope; missing newer test-track releases"
+  ]
+}

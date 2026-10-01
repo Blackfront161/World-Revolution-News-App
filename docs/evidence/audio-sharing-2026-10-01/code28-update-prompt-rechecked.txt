@@ -1,0 +1,129 @@
+- progressbar
+- generic: Google Play Console wird geladen
+- banner:
+  - link "Google Play Console-Logo":
+    - /url: /console/u/1/developers/8812037282040696596/app-list
+    - button "Google Play Console-Logo"
+  - button "Ungelesene Benachrichtigungen Im Benachrichtigungscenter öffnen":
+    - img: notifications_unread
+    - generic: Ungelesene Benachrichtigungen
+  - button "World Revolution News":
+    - generic: World Revolution News
+  - button "Entwicklerkonten wechseln":
+    - img "Entwicklerkonten wechseln"
+- navigation:
+  - link "Alle Apps":
+    - /url: /console/u/1/developers/8812037282040696596/app-list
+    - img: keyboard_backspace
+    - generic: Alle Apps
+  - list:
+    - listitem "Dashboard":
+      - button "Dashboard":
+        - img: dashboard
+        - generic: Dashboard
+    - listitem "Statistiken":
+      - button "Statistiken":
+        - img: bar_chart
+        - generic: Statistiken
+    - listitem "Veröffentlichungen – Übersicht":
+      - button "Veröffentlichungen – Übersicht":
+        - img: overview
+        - generic: Veröffentlichungen – Übersicht
+    - listitem "Mit Google Play geschützt":
+      - button "Mit Google Play geschützt":
+        - img: shield
+        - generic: Mit Google Play geschützt
+    - listitem "Testen und veröffentlichen":
+      - button "Testen und veröffentlichen":
+        - img: rocket_launch
+        - generic: Testen und veröffentlichen
+      - list:
+        - listitem "Neueste Releases und Bundles":
+          - button "Neueste Releases und Bundles":
+            - generic: Neueste Releases und Bundles
+        - listitem "Produktion":
+          - button "Produktion":
+            - generic: Produktion
+        - listitem "Test":
+          - button "Test":
+            - generic: Test
+            - img: expand_more
+        - listitem "Vorregistrierung":
+          - button "Vorregistrierung":
+            - generic: Vorregistrierung
+        - listitem "App-Integrität":
+          - button "App-Integrität":
+            - generic: App-Integrität
+        - listitem "Erweiterte Einstellungen":
+          - button "Erweiterte Einstellungen":
+            - generic: Erweiterte Einstellungen
+    - listitem "Überprüfen und optimieren":
+      - button "Überprüfen und optimieren":
+        - img: vital_signs
+        - generic: Überprüfen und optimieren
+    - listitem "Mehr Nutzer gewinnen":
+      - button "Mehr Nutzer gewinnen":
+        - img: finance_mode
+        - generic: Mehr Nutzer gewinnen
+    - listitem "Mit Google Play monetarisieren":
+      - button "Mit Google Play monetarisieren":
+        - img: sell
+        - generic: Mit Google Play monetarisieren
+- link "Zurück zu Alle App-Bundles":
+  - /url: /console/u/1/developers/8812037282040696596/app/4974507251844219576/bundle-explorer-selector
+  - img: keyboard_backspace
+  - generic: Alle App-Bundles
+- heading "28.aab (2.1.2)" [level=1]:
+  - strong: 28.aab
+  - text: (2.1.2)
+- button "Tools zur Wiederherstellung":
+  - generic: Tools zur Wiederherstellung
+  - img: arrow_drop_down
+- list:
+  - listitem: Archiviert
+  - listitem: Am Sonntag, 19:55 hochgeladen
+- button "Größe für Neuinstallationen"
+- generic: 34.4 MB
+- button "Geschätzte Dauer des Downloads"
+- generic: 20 Sek.
+- button "Größe für Updates"
+- generic: 32.9 MB
+- button "Installationsbasis"
+- generic: ≤ 100
+- tablist:
+  - tab "Details":
+    - generic: Details
+  - tab "Downloads":
+    - generic: Downloads
+  - tab "Bereitstellung":
+    - generic: Bereitstellung
+  - tab "Vergleich":
+    - generic: Vergleich
+  - tab "Wiederherstellung" [selected]:
+    - generic: Wiederherstellung
+- heading "Wiederherstellung" [level=2]
+- heading "Nutzer zum Aktualisieren auffordern" [level=3]
+- button "Aktualisierungsaufforderung verwalten":
+  - generic: Aktualisierungsaufforderung verwalten
+  - img: arrow_drop_down
+- generic: Zuletzt bearbeitet am 1. Okt. 2026 11:08
+- generic: Targeting-Kriterien
+- generic: alle Nutzer dieser Version
+- generic: Nutzer, die zum Aktualisieren aufgefordert wurden
+- generic: "0"
+- generic: Fortschritt der Aufforderung
+- generic: Nutzer, die ein Update heruntergeladen haben
+- generic: Verbleibende betroffene Nutzer
+- link "Produktupdates":
+  - /url: https://play.google.com/console/about/whats-new/
+- link "Status-Dashboard":
+  - /url: https://status.play.google.com/
+- link "Hilfe":
+  - /url: /console/u/1/developers/8812037282040696596/help-and-support?app=4974507251844219576
+- generic: © 2026 Google
+- link "Datenschutz":
+  - /url: https://www.google.com/policies/privacy/
+- link "Vertriebsvereinbarung für Entwickler":
+  - /url: https://play.google.com/about/developer-distribution-agreement.html
+- link "Nutzungsbedingungen":
+  - /url: https://play.google.com/about/console/terms-of-service/
