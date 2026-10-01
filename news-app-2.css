@@ -2850,6 +2850,14 @@ img {
   cursor: pointer;
 }
 
+.audio-share-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; width: 100%; }
+.audio-share-actions button { min-height: 44px; max-width: 100%; overflow-wrap: anywhere; }
+.audio-share-actions button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.audio-share-status { flex-basis: 100%; color: var(--muted); overflow-wrap: anywhere; font-size: .85rem; }
+.audio-share-status:empty { display: none; }
+.audio-share-link { width: 100%; min-width: 0; box-sizing: border-box; padding: 10px; background: var(--surface); color: var(--text); border: 1px solid var(--cyan-border); border-radius: 8px; }
+.audio-share-link[hidden] { display: none; }
+
 .podcast-card .media-play-host .media-button-row {
   display: grid;
   grid-template-columns: 1fr;

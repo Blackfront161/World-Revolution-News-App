@@ -54,6 +54,126 @@
         };
     }
 
+    const shareTexts = {
+        en: ['Share', 'Copy link', 'Link copied.', 'Share dialog closed.', 'Copy this link manually:'],
+        de: ['Teilen', 'Link kopieren', 'Link kopiert.', 'Teilen-Dialog geschlossen.', 'Diesen Link manuell kopieren:'],
+        es: ['Compartir', 'Copiar enlace', 'Enlace copiado.', 'Diálogo de compartir cerrado.', 'Copia este enlace manualmente:'],
+        fr: ['Partager', 'Copier le lien', 'Lien copié.', 'Fenêtre de partage fermée.', 'Copiez ce lien manuellement :'],
+        it: ['Condividi', 'Copia link', 'Link copiato.', 'Finestra di condivisione chiusa.', 'Copia questo link manualmente:'],
+        pt: ['Partilhar', 'Copiar ligação', 'Ligação copiada.', 'Janela de partilha fechada.', 'Copia esta ligação manualmente:'],
+        ru: ['Поделиться', 'Копировать ссылку', 'Ссылка скопирована.', 'Окно отправки закрыто.', 'Скопируйте эту ссылку вручную:'],
+        el: ['Κοινοποίηση', 'Αντιγραφή συνδέσμου', 'Ο σύνδεσμος αντιγράφηκε.', 'Το παράθυρο κοινοποίησης έκλεισε.', 'Αντιγράψτε αυτόν τον σύνδεσμο χειροκίνητα:'],
+        tr: ['Paylaş', 'Bağlantıyı kopyala', 'Bağlantı kopyalandı.', 'Paylaşım penceresi kapandı.', 'Bu bağlantıyı elle kopyalayın:']
+    };
+
+    function publicShareUrl(value) {
+        try {
+            // A relative WebView/cache URL is not useful to a recipient.
+            const url = new URL(String(value || '').trim());
+            if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password) return '';
+            if (/^(localhost|127\..*|\[::1\]|0\.0\.0\.0)$/i.test(url.hostname) || url.hostname.endsWith('.localhost')) return '';
+            return url.href;
+        } catch { return ''; }
+    }
+
+    function getShareData(item) {
+        if (!item) return null;
+        const audio = item.audioUrl || item.streamUrl || item.candidates?.[0];
+        const choices = item.kind === 'radio'
+            ? [item.website || item.originalUrl, audio]
+            : item.kind === 'generated'
+                ? [audio]
+                : [item.episodeUrl, audio];
+        const url = choices.map(publicShareUrl).find(Boolean);
+        if (!url) return null;
+        const title = String(item.title || item.name || 'Audio').trim().slice(0, 500);
+        const source = String(item.source || item.sourceName || item.artist || '').trim().slice(0, 300);
+        return { title, text: source && source !== title ? `${title} · ${source}` : title, url };
+    }
+
+    function shareWasCancelled(error) {
+        return error?.name === 'AbortError' || error?.code === 'USER_CANCELLED'
+            || /(?:share|sharing) (?:canceled|cancelled|dismissed)/i.test(String(error?.message || ''));
+    }
+
+    async function copyAudioLink(url, field) {
+        try {
+            if (navigator.clipboard?.writeText) {
+                await navigator.clipboard.writeText(url);
+                return true;
+            }
+        } catch { /* The visible field also works when clipboard permission is denied. */ }
+        field.hidden = false;
+        field.focus();
+        field.select();
+        try { return document.execCommand?.('copy') === true; } catch { return false; }
+    }
+
+    function appendShareActions(host, item) {
+        const data = getShareData(item);
+        if (!host || !data || host.querySelector('.audio-share-actions')) return;
+        let locale;
+        try { locale = currentLang; } catch { locale = document.documentElement.lang; }
+        const labels = shareTexts[String(locale || 'en').slice(0, 2)] || shareTexts.en;
+        const row = document.createElement('div');
+        row.className = 'audio-share-actions';
+        const status = document.createElement('span');
+        status.className = 'audio-share-status';
+        status.setAttribute('role', 'status');
+        status.setAttribute('aria-live', 'polite');
+        const field = document.createElement('input');
+        field.className = 'audio-share-link';
+        field.type = 'text';
+        field.readOnly = true;
+        field.value = data.url;
+        field.hidden = true;
+        field.setAttribute('aria-label', labels[4]);
+        const share = document.createElement('button');
+        const copy = document.createElement('button');
+        share.type = copy.type = 'button';
+        share.textContent = labels[0];
+        copy.textContent = labels[1];
+        share.setAttribute('aria-label', `${labels[0]}: ${data.title}`);
+        copy.setAttribute('aria-label', `${labels[1]}: ${data.title}`);
+        const run = async (copyOnly) => {
+            if (share.disabled || copy.disabled) return;
+            share.disabled = copy.disabled = true;
+            status.textContent = '';
+            field.hidden = true;
+            try {
+                if (!copyOnly) {
+                    const native = window.Capacitor?.Plugins?.Share;
+                    const isNative = typeof window.Capacitor?.isNativePlatform === 'function'
+                        ? window.Capacitor.isNativePlatform() : Boolean(native);
+                    try {
+                        if (isNative && typeof native?.share === 'function') {
+                            await native.share({ ...data, dialogTitle: labels[0] });
+                            status.textContent = labels[3];
+                            return;
+                        }
+                        if (typeof navigator.share === 'function') {
+                            await navigator.share(data);
+                            status.textContent = labels[3];
+                            return;
+                        }
+                    } catch (error) {
+                        if (shareWasCancelled(error)) return;
+                    }
+                }
+                const copied = await copyAudioLink(data.url, field);
+                field.hidden = copied;
+                if (copied && document.activeElement === field) copy.focus();
+                status.textContent = copied ? labels[2] : labels[4];
+            } finally {
+                share.disabled = copy.disabled = false;
+            }
+        };
+        share.addEventListener('click', () => { void run(false); });
+        copy.addEventListener('click', () => { void run(true); });
+        row.append(share, copy, status, field);
+        host.append(row);
+    }
+
     function readQueue() {
         try {
             const parsed = JSON.parse(localStorage.getItem(QUEUE_KEY) || '[]');
@@ -391,6 +511,8 @@
         clearQueue,
         renderQueue,
         appendCardActions,
+        appendShareActions,
+        getShareData,
         isFavorite,
         favoriteFirst,
         setPlaybackRate,

@@ -6285,7 +6285,7 @@
               data-audio-artist="${escapeHtml(podcast.source)}"
               data-audio-url="${escapeHtml(podcast.audioUrl)}"
               data-audio-artwork="${escapeHtml(podcast.artwork)}"></div>` : generated ? `<p class="media-card-status error">${escapeHtml(t(state.podcastService === 'unavailable' ? 'generatedUnavailableShort' : 'generatedChecking'))}</p>` : ''}
-            <div class="media-links">
+            <div class="media-links" data-audio-share-kind="${generated ? 'generated' : 'original'}" data-audio-share-id="${escapeHtml(podcast.id)}">
               ${podcast.episodeUrl ? `<a href="${escapeHtml(podcast.episodeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}
             </div>
           </div>
@@ -6318,13 +6318,19 @@
                   data-audio-url="${escapeHtml(station.streamUrl)}"
                   data-audio-candidates="${escapeHtml(station.streams.join('|'))}"></div>`
               : `<p class="stream-fallback">${escapeHtml(t('streamFallback'))}</p>`}
-            <div class="media-links">${station.website ? `<a href="${escapeHtml(station.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}</div>
+            <div class="media-links" data-audio-share-kind="radio" data-audio-share-id="${escapeHtml(station.id)}">${station.website ? `<a href="${escapeHtml(station.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}</div>
           </div>
         </article>`).join('')}</div>` : mediaEmpty(t('noMedia'))}
     `;
   }
 
   function installMediaControls(root = viewRoot) {
+    root.querySelectorAll('[data-audio-share-id]').forEach(host => {
+      const kind = host.dataset.audioShareKind;
+      const items = kind === 'radio' ? state.radioStations : kind === 'generated' ? state.generatedPodcasts : state.podcasts;
+      const item = items.find(entry => entry.id === host.dataset.audioShareId);
+      if (item) window.WRNAudioTools?.appendShareActions?.(host, { ...item, kind });
+    });
     root.querySelectorAll('[data-audio-control]').forEach((host, index) => {
       if (host.dataset.audioInstalled === 'true' || !host.dataset.audioUrl) return;
       host.dataset.audioInstalled = 'true';
