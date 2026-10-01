@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "appReviewedCommit": "636359bca295c3388e110419078fc7e9257e2b5d",
+  "dataReviewedCommit": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915",
+  "result": "PASS",
+  "scope": "local RDL identity/metadata batch and legacy Classic follow-up: 33 app/28 data rows, stable IDs, collectors, Current/Autonom, both Classic renderers, player/share/queue; missing-policy failure paths",
+  "appLegacyFollowUp": {
+    "commit": "6d6e1ef49ac087c6bf5da8c39006072250dc3dd4",
+    "status": "PASS"
+  },
+  "rightsAcceptance": false,
+  "liveFeedAcceptance": false,
+  "androidAcceptance": false,
+  "storePublication": false,
+  "evidenceMode": "controller chat result received via send_message_to_thread; tests rerun independently",
+  "code32Sha256Unchanged": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
+  "appReviewedRuntimeCommits": [
+    "636359bca295c3388e110419078fc7e9257e2b5d",
+    "6d6e1ef49ac087c6bf5da8c39006072250dc3dd4"
+  ],
+  "legacyAcceptanceChecks": [
+    "node --check",
+    "article interactions/workspace",
+    "podcast policy contract",
+    "four isolated Chrome fixture paths",
+    "no RDL media request or page error"
+  ]
+}

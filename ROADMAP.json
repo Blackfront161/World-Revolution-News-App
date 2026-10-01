@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "rdl_identity_metadata_batch_implemented_local_full_parity_pending",
+      "status": "rdl_identity_metadata_batch_accepted_local_full_parity_pending",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -501,7 +501,7 @@
       "evidence": "docs/CONTENT-EXPANSION-INVENTORY-2026-10-01.json",
       "firstImplementationBatch": {
         "id": "RDL-METADATA-IDENTITY",
-        "status": "implemented_local_independent_review_pending",
+        "status": "accepted_local_not_published",
         "evidence": "docs/RDL-METADATA-IDENTITY-BATCH-2026-10-01.md",
         "bindings": "docs/evidence/rdl-metadata-2026-10-01/bindings.json",
         "appRowsCorrected": 33,
@@ -512,12 +512,12 @@
         "contentPolicy": "metadata_and_links_only",
         "newPublishersAdmitted": 0,
         "rightsAcceptance": false,
-        "currentAndClassicBrowser": "passed_isolated_fixture",
+        "currentAndClassicBrowser": "passed_isolated_current_classic_and_legacy_with_missing_policy",
         "contractMatrix": "50 JS; 136 Python; 4 subtests; 4 standalone scripts passed; 3 skipped",
         "androidBuild": false,
         "newVersionCode": null,
         "publication": "local_only_not_in_code32",
-        "next": "16 zusätzliche Podcastquellen einzeln prüfen und gemeinsame Bibliotheksprojektion vorbereiten; Sprache, Quellenstatus und Rechtebeschränkungen erhalten",
+        "next": "16 zusätzliche Podcastquellen einzeln abgleichen; danach gemeinsame Bibliotheksprojektion einschließlich der 53 deutschen Datenkatalogtitel vorbereiten",
         "appImplementationCommit": "636359bca295c3388e110419078fc7e9257e2b5d",
         "dataImplementationCommit": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915",
         "postBatchAudit": "docs/CONTENT-CATALOG-PARITY-POST-RDL-2026-10-01.json",
@@ -528,6 +528,12 @@
         "missingOrDuplicateSourceIds": {
           "app": 0,
           "data": 0
+        },
+        "appLegacyFollowUpCommit": "6d6e1ef49ac087c6bf5da8c39006072250dc3dd4",
+        "independentReview": {
+          "evidence": "docs/evidence/rdl-metadata-2026-10-01/controller-review.json",
+          "initialBatch": "PASS",
+          "legacyFollowUp": "PASS"
         }
       }
     },

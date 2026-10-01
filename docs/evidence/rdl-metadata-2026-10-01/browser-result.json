@@ -2,6 +2,8 @@
   "status": "passed",
   "checks": [
     "Current Autonom view: original-link notice, share destination, no copied text/image/playback; unrelated playable card and favorites preserved.",
+    "Legacy Classic renderer: original-link episode retained, no foreign description/play controls, sharing uses original page.",
+    "Legacy renderer without policy module exposes no podcast media or copied description.",
     "Classic view retains the metadata-only episode with its stable raw ID and original link."
   ],
   "remoteMediaRequests": [],
