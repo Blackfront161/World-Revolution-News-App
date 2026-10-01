@@ -34,6 +34,16 @@ assert.equal(normalized.audioUrl, ''); assert.equal(normalized.artwork, '');
 assert.equal(normalized.contentPolicy, 'metadata_and_links_only');
 assert.equal(normalized.sourceKind, 'free-radio');
 const ordinary = { id:'ordinary', audioUrl:'https://example.org/audio.mp3', title:'Normal', language:'de' };
+for (const sourceId of policy.rules.metadataOnlySourceIds || []) {
+  const projected = policy.projectEpisode({id:'new-stale-'+sourceId,sourceId,audioUrl:'https://example.org/foreign.mp3',summary:'foreign',episodeUrl:'https://example.org/episode'});
+  assert.equal(projected.sourceId,sourceId);
+  assert.equal(projected.audioUrl,'');
+  assert.equal(projected.endpointId,undefined);
+  assert.equal(projected.summary,undefined);
+}
+for (const id of policy.rules.metadataOnlyEpisodeIds || []) {
+  assert(policy.isMetadataOnly({id:`original:${id}`,candidates:['https://example.org/foreign.mp3']}));
+}
 assert.equal(media.normalizePodcast(ordinary).audioUrl, ordinary.audioUrl);
 
 const stored = new Map([

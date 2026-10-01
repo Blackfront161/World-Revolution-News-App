@@ -268,7 +268,28 @@
     };
   }
 
+  function mergeLibraryCatalogs(catalogs, sources) {
+    const allowed = new Set((sources || []).filter(source => source?.status === 'active').map(source => source.id));
+    const items = new Map();
+    const withdrawn = new Set();
+    for (const catalog of catalogs) {
+      if (!Array.isArray(catalog)) throw new TypeError('Library catalog must be an array');
+      for (const item of catalog) {
+        if (!item?.id || !allowed.has(item.sourceId)) continue;
+        if (['withdrawn', 'revoked', 'deleted'].includes(item.status) || item.deleted === true) {
+          withdrawn.add(item.id);
+          items.set(item.id, { ...item });
+        } else if (item.title && !withdrawn.has(item.id)) {
+          const previous = items.get(item.id);
+          if (!previous || (Date.parse(item.updatedAt) || 0) >= (Date.parse(previous.updatedAt) || 0)) items.set(item.id, { ...item });
+        }
+      }
+    }
+    return [...items.values()];
+  }
+
   return Object.freeze({
+    mergeLibraryCatalogs,
     text,
     token,
     safeUrl,

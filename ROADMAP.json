@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "rdl_identity_metadata_batch_accepted_local_full_parity_pending",
+      "status": "second_local_batch_implemented_review_pending_full_parity_pending",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -535,6 +535,25 @@
           "initialBatch": "PASS",
           "legacyFollowUp": "PASS"
         }
+      },
+      "secondImplementationBatch": {
+        "id": "EXISTING-PODCASTS-LIBRARY",
+        "status": "implemented_local_independent_review_pending",
+        "registeredExistingSources": 16,
+        "importedExistingEpisodeMetadata": 444,
+        "libraryItems": 715,
+        "germanTitles": 53,
+        "heldFreshIntakeSourceIds": [
+          "twelve-rules-for-what",
+          "l-orage",
+          "contrabanda-specials",
+          "infowar-greece"
+        ],
+        "evidence": "docs/CATALOG-PARITY-SECOND-BATCH-2026-10-01.md",
+        "bindings": "docs/evidence/catalog-parity-2026-10-01/bindings.json",
+        "publication": "local_only_not_in_code32",
+        "versionCode": null,
+        "next": "Unabhängige Abnahme; vollständige gemeinsame Podcastprojektion und Website-Anbindung, danach 19 Lexikonbearbeitungen und drei belegte Lernpfade."
       }
     },
     {
@@ -553,11 +572,12 @@
         "repairedRelatedReferences": 5,
         "independentEditorialReview": "pending",
         "publicationStatus": "included_in_signed_code32_submitted_to_play_production_pending_google_approval; no website publication of this batch",
-        "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat",
+        "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 belegte Lernpfadzuordnungen; neue Begriffsredaktion und Veröffentlichung separat",
         "independentTechnicalReview": "accepted_scoped_local_draft",
         "reviewedCommit": "d58746d020325ae6357a8f8b4bf268de001c7ef7",
         "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md",
-        "userEditorialApproval": "approved 2026-10-01 for Code32"
+        "userEditorialApproval": "approved 2026-10-01 for Code32",
+        "librarySync": "715 gemeinsame Werk-IDs, darunter 53 DE; lokale Runtime/Browserprüfung bestanden, unabhängige Prüfung und Websiteübernahme offen"
       },
       "baseline": {
         "lexiconTerms": 154,
@@ -633,7 +653,14 @@
         "mindestens drei Serien mit nachvollziehbar erweitertem Archiv oder dokumentierter tatsächlicher Verfügbarkeitsgrenze; keine aufgefüllten Mengen",
         "Pagination, Ladefehler, Feedausfall, abgesagte/widerrufene Folge und unveränderte gespeicherte IDs geprüft; Start- und Offlinebudgets eingehalten"
       ],
-      "evidence": "docs/PODCAST-CANDIDATES-2026-10-01.md"
+      "evidence": "docs/PODCAST-CANDIDATES-2026-10-01.md",
+      "existingSourceProgress": {
+        "registeredSources": 16,
+        "retainedEpisodeMetadata": 444,
+        "newPublishersAdmitted": 0,
+        "freshIntakeHolds": 4,
+        "evidence": "docs/CATALOG-PARITY-SECOND-BATCH-2026-10-01.md"
+      }
     },
     {
       "id": "EDITORIAL-DATA",

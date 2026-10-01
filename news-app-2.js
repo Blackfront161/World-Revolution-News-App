@@ -9047,7 +9047,7 @@
       fetchFirstJson([dataMirrors.radioHealth, dataUrls.radioHealth, 'radio-health.json']),
       fetchFirstJson([dataMirrors.sourceCatalog, dataUrls.sourceCatalog, 'sources-registry.json']),
       fetchFirstJson([dataMirrors.librarySources, dataUrls.librarySources, 'library-sources.json']),
-      fetchFirstJson([dataMirrors.libraryFeed, dataUrls.libraryFeed, 'library-feed.json']),
+      Promise.allSettled([...new Set(['library-feed.json', dataUrls.libraryFeed, dataMirrors.libraryFeed].filter(Boolean))].map(url => fetchJson(url))),
       fetchFirstJson([dataMirrors.editorialDecisions, dataUrls.editorialDecisions, 'editorial-decisions.json']),
       fetchFirstJson([dataMirrors.videoFeed, dataUrls.videoFeed, 'video-feed.json']),
       fetchFirstJson([dataMirrors.videoHealth, dataUrls.videoHealth, 'video-health.json'])
@@ -9114,13 +9114,16 @@
       state.librarySources = await window.WRNStorage?.getDataset?.('news-app-2-library-sources') || [];
       console.warn('Library source registry unavailable in preview', librarySourcesResult.reason);
     }
-    if (libraryFeedResult.status === 'fulfilled' && Array.isArray(libraryFeedResult.value)) {
-      state.libraryItems = libraryFeedResult.value.filter(item => item?.id && item?.title);
-      void window.WRNStorage?.putDataset?.('news-app-2-library-feed', state.libraryItems);
-    } else {
-      state.libraryItems = await window.WRNStorage?.getDataset?.('news-app-2-library-feed') || [];
-      console.warn('Library catalogue unavailable in preview', libraryFeedResult.reason);
-    }
+    const cachedLibrary = await window.WRNStorage?.getDataset?.('news-app-2-library-feed');
+    const librarySnapshots = libraryFeedResult.status === 'fulfilled'
+      ? libraryFeedResult.value.filter(result => result.status === 'fulfilled' && Array.isArray(result.value)).map(result => result.value)
+      : [];
+    const libraryCatalog = specialty.mergeLibraryCatalogs(
+      [Array.isArray(cachedLibrary) ? cachedLibrary : [], ...librarySnapshots], state.librarySources
+    );
+    state.libraryItems = libraryCatalog.filter(item => item?.title && !['withdrawn', 'revoked', 'deleted'].includes(item.status) && item.deleted !== true);
+    if (librarySnapshots.length) void window.WRNStorage?.putDataset?.('news-app-2-library-feed', libraryCatalog);
+    else console.warn('Library catalogue unavailable; using last saved catalog');
     if (editorialDecisionsResult.status === 'fulfilled') {
       state.editorialDecisions = editorialDecisionsResult.value;
       state.articles = core.applyEditorialDecisions(state.articles, state.editorialDecisions);

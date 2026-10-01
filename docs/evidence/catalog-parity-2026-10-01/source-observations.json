@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "scope": "16 existing app-only sources; metadata technical observations, no media downloaded or rights/admission PASS",
+  "sources": [
+    {
+      "sourceId": "queering-the-air",
+      "checkedAt": "2026-10-01T09:49:16.603732+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://pod.3cr.org.au/queeringtheair",
+          "error": "SSLError"
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://www.3cr.org.au/queeringtheair/itunes",
+          "status": 200,
+          "finalUrl": "https://www.3cr.org.au/queeringtheair/itunes",
+          "sha256": "81304acb383af72e2641111a5636d2eaec94e0acbf17dca6375a52f5b107a090",
+          "title": "Queering The Air",
+          "language": "en-au",
+          "channelLink": "http://www.3cr.org.au/queeringtheair",
+          "entries": 308,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-06-28T05:00:00+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 308
+        }
+      ]
+    },
+    {
+      "sourceId": "out-of-the-pan",
+      "checkedAt": "2026-10-01T09:49:16.603732+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://www.3cr.org.au/outofthepan",
+          "status": 200,
+          "finalUrl": "https://www.3cr.org.au/outofthepan",
+          "sha256": "7eafe7d3dff48c21e538ce37fcbad1cef415ab72c48d4b82ba8260a82d200e01",
+          "title": "Out of the Pan | 3CR Community Radio",
+          "configuredFeedLinked": true,
+          "relevantLinks": [
+            "https://www.3cr.org.au/outofthepan/itunes"
+          ]
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+          "status": 200,
+          "finalUrl": "https://www.3cr.org.au/outofthepan/itunes",
+          "sha256": "922893c556c898fb5069e2773f1ef368428f5a3bb6f6cf6fe993f39f777ab020",
+          "title": "Out of the Pan",
+          "language": "en-au",
+          "channelLink": "http://www.3cr.org.au/outofthepan",
+          "entries": 522,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-09-27T02:00:00+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 522
+        }
+      ]
+    },
+    {
+      "sourceId": "live-like-the-world-is-dying",
+      "checkedAt": "2026-10-01T09:49:16.603732+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://live-like-the-world-is-dying.pinecast.co/",
+          "status": 200,
+          "finalUrl": "https://live-like-the-world-is-dying.pinecast.co/",
+          "sha256": "99d4a57344730f5720a00128c0d4e156d4cbc8f76be0c72932498ecf71524a7d",
+          "title": "Live Like the World is Dying",
+          "configuredFeedLinked": true,
+          "relevantLinks": [
+            "https://live-like-the-world-is-dying.pinecast.co/",
+            "https://pinecast.com/feed/live-like-the-world-is-dying",
+            "https://live-like-the-world-is-dying.pinecast.co/#content",
+            "https://live-like-the-world-is-dying.pinecast.co/episode/f15a0659/this-week-in-the-apocalypse-fat-bear-week-edition",
+            "https://live-like-the-world-is-dying.pinecast.co/episode/7dfd04f5/circle-aleph-on-publishing-jewish-anarchist-tradition",
+            "https://live-like-the-world-is-dying.pinecast.co/episode/fbc0a77b/this-week-in-the-apocalypse-september-22nd-2026",
+            "https://live-like-the-world-is-dying.pinecast.co/episode/6e5d1126/woven-ends-on-death-dying-pt-i-rerun-",
+            "https://live-like-the-world-is-dying.pinecast.co/episode/ffa1be03/this-week-in-the-apocalypse-sept-15-2026"
+          ]
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+          "status": 200,
+          "finalUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+          "sha256": "6f793ef93a3eff04630deca999d39875b9f2138d6a605eb22328921ac0b1833b",
+          "title": "Live Like the World is Dying",
+          "language": "en-US",
+          "channelLink": "http://www.tangledwilderness.org",
+          "entries": 249,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-09-29T16:28:28+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 249
+        }
+      ]
+    },
+    {
+      "sourceId": "twelve-rules-for-what",
+      "checkedAt": "2026-10-01T09:49:16.603732+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://soundcloud.com/12rulesforwhat",
+          "status": 404,
+          "finalUrl": "https://soundcloud.com/12rulesforwhat",
+          "sha256": "98d0dad811efc31ef686553f93e650a07f1b05e363577fa6199a6a6aa21b0d24",
+          "error": "HTTPError"
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss",
+          "status": 200,
+          "finalUrl": "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss",
+          "sha256": "29deaa6da0fdf86b2dbd255e0e2c70e91be160cd1fd5343bf78fc46600960a29",
+          "title": "Red Flare Podcast",
+          "language": "en",
+          "channelLink": "http://redflare.info/",
+          "entries": 112,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-09-02T07:48:57+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 112
+        }
+      ]
+    },
+    {
+      "sourceId": "histoires-d-a",
+      "checkedAt": "2026-10-01T09:49:16.603732+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://podcloud.fr/podcast/histoires-d-a",
+          "status": 200,
+          "finalUrl": "https://podcloud.fr/podcast/histoires-d-a",
+          "sha256": "0ad8174dd5f4ebb7173505b5eb26c29e57487687f2ee62aa3613636469ae54b2",
+          "title": "Histoires d'A - Emissions | podCloud",
+          "configuredFeedLinked": true,
+          "relevantLinks": [
+            "https://histoires-d-a.lepodcast.fr/rss",
+            "podcast://histoires-d-a.lepodcast.fr/rss"
+          ]
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://histoires-d-a.lepodcast.fr/rss",
+          "status": 200,
+          "finalUrl": "https://histoires-d-a.lepodcast.fr/rss",
+          "sha256": "dfe3d79698300b6b0b8e1441b1c018c9242120bc51449ece634bc2d5baef7b03",
+          "title": "Histoires d'A",
+          "language": "fr",
+          "channelLink": "https://histoires-d-a.lepodcast.fr/",
+          "entries": 25,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-04-16T11:44:00+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 25
+        }
+      ]
+    },
+    {
+      "sourceId": "l-orage",
+      "checkedAt": "2026-10-01T09:49:16.605276+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://ora-rao.org/",
+          "status": 200,
+          "finalUrl": "https://ora-rao.org/",
+          "sha256": "8eb15eca1e9a6de980200d54a9694f545a5fe1d4b97642fbaff6ad31ba3db118",
+          "title": "ORA - Organisation Révolutionnaire Anarchiste |",
+          "configuredFeedLinked": false,
+          "relevantLinks": []
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://rss.buzzsprout.com/2307088.rss",
+          "status": 200,
+          "finalUrl": "https://rss.buzzsprout.com/2307088.rss",
+          "sha256": "63f00df80da2b5a8ec2084c006ca5fe9d18173a86e5ea717ca1823c7792aa906",
+          "title": "L'Orage",
+          "language": "fr-ca",
+          "channelLink": "https://ora-rao.org/",
+          "entries": 19,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-03-09T15:00:00+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 0
+        }
+      ]
+    },
+    {
+      "sourceId": "carapatage",
+      "checkedAt": "2026-10-01T09:49:18.507738+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/presentation.html",
+          "error": "ReadTimeout"
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss",
+          "error": "ReadTimeout"
+        }
+      ]
+    },
+    {
+      "sourceId": "chroniques-rebelles",
+      "checkedAt": "2026-10-01T09:49:20.617842+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/",
+          "error": "ReadTimeout"
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+          "error": "ReadTimeout"
+        }
+      ]
+    },
+    {
+      "sourceId": "fumaca",
+      "checkedAt": "2026-10-01T09:49:20.701721+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://fumaca.pt/",
+          "status": 200,
+          "finalUrl": "https://fumaca.pt/",
+          "sha256": "6231393cad63c32642cac8451c9c7c8ecbf1276b35a0c379468434a4eabcb98e",
+          "title": "Home - Fumaça",
+          "configuredFeedLinked": true,
+          "relevantLinks": [
+            "https://omny.fm/shows/eapenasfumaca/playlists/podcast.rss",
+            "https://omny.fm/shows/eapenasfumaca"
+          ]
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://omny.fm/shows/eapenasfumaca/playlists/podcast.rss",
+          "status": 200,
+          "finalUrl": "https://www.omnycontent.com/d/playlist/35bdb4a8-b7f8-457b-a09c-a8bd009964db/4e3deeb0-0f9e-4822-8039-a8f20105e067/16a26c17-e6b1-4286-9a00-a8f20105e071/podcast.rss",
+          "sha256": "7b4a4603ad957df28b9d1796ce910915d6b1bc084b38735453ecedf6436644c9",
+          "title": "Fumaça",
+          "language": "pt-PT",
+          "channelLink": "http://www.fumaca.pt/",
+          "entries": 485,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-10-01T06:00:00+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 485
+        }
+      ]
+    },
+    {
+      "sourceId": "acik-yesil",
+      "checkedAt": "2026-10-01T09:49:20.752357+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://apacikradyo.com.tr/program/84090/kayit-arsivi",
+          "status": 200,
+          "finalUrl": "https://apacikradyo.com.tr/program/acik-yesil",
+          "sha256": "af84f506dc0887284fc23a47aa8595143cfaf41c35c1bea413521ce32040c4be",
+          "title": "Açık Yeşil | Apaçık Radyo",
+          "configuredFeedLinked": false,
+          "relevantLinks": []
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://apacikradyo.com.tr/i/rss/Acik_Yesil.xml",
+          "status": 403,
+          "finalUrl": "https://apacikradyo.com.tr/i/rss/Acik_Yesil.xml",
+          "sha256": "a047faf038fbb5aacd24f581eb7dad669a09542249d18bbf3dfacf178926aa2f",
+          "error": "HTTPError"
+        }
+      ]
+    },
+    {
+      "sourceId": "iklim-kusagi-konusuyor",
+      "checkedAt": "2026-10-01T09:49:20.940570+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://apacikradyo.com.tr/program/227368/kayit-arsivi",
+          "status": 200,
+          "finalUrl": "https://apacikradyo.com.tr/program/iklim-kusagi-konusuyor",
+          "sha256": "a0474bec8e8683b8bd425c10d6abc7fe384b965006b706a2d82feac1e89aa1ec",
+          "title": "İklim Kuşağı Konuşuyor | Apaçık Radyo",
+          "configuredFeedLinked": false,
+          "relevantLinks": []
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://apacikradyo.com.tr/i/rss/Iklim_Kusagi_Konusuyor.xml",
+          "status": 403,
+          "finalUrl": "https://apacikradyo.com.tr/i/rss/Iklim_Kusagi_Konusuyor.xml",
+          "sha256": "a60d55d89473bbc07055431603bc2d165bdc1704c405468e5e839a495b3dfa73",
+          "error": "HTTPError"
+        }
+      ]
+    },
+    {
+      "sourceId": "contrabanda-specials",
+      "checkedAt": "2026-10-01T09:49:21.749075+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://podcast.contrabanda.org/",
+          "status": 200,
+          "finalUrl": "https://podcast.contrabanda.org/",
+          "sha256": "19ec37212babcce031051d788cf8bc4f273ce81786343fbe2348918ba6a15681",
+          "title": "Podcasts | Emissions especials i falques de Contrabanda FM",
+          "configuredFeedLinked": false,
+          "relevantLinks": []
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://podcast.contrabanda.org/feed/podcast/",
+          "status": 200,
+          "finalUrl": "https://podcast.contrabanda.org/feed/podcast/",
+          "sha256": "4dd3d00e0a3f0480074ab15d0660756309e4ba8760aaee496dcb278edbbb90eb",
+          "title": "Podcasts",
+          "language": "es",
+          "channelLink": "https://podcast.contrabanda.org",
+          "entries": 95,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2024-11-21T16:34:36+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 95
+        }
+      ]
+    },
+    {
+      "sourceId": "infowar-greece",
+      "checkedAt": "2026-10-01T09:49:23.517095+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://info-war.gr/",
+          "status": 403,
+          "finalUrl": "https://info-war.gr/",
+          "sha256": "c8e2dbc8c4b44d676b2fc5dc9f93dc34a99392424e2bc19021d623fd36c3ec44",
+          "error": "HTTPError"
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://podcast.moviementa.com/@infowar/feed.xml",
+          "status": 200,
+          "finalUrl": "https://podcast.moviementa.com/@infowar/feed.xml",
+          "sha256": "05e6042809c7953ad95d2db955616a5aebd783d36f6edfc6c4d234d6568ccfbb",
+          "title": "INFOWAR",
+          "language": "el",
+          "channelLink": "https://podcast.moviementa.com/@infowar",
+          "entries": 627,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-09-20T10:10:40+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 627
+        }
+      ]
+    },
+    {
+      "sourceId": "epanastasi-greece",
+      "checkedAt": "2026-10-01T09:49:23.796983+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://marxismos.com/",
+          "error": "ReadTimeout"
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://anchor.fm/s/3ea3fce4/podcast/rss",
+          "status": 200,
+          "finalUrl": "https://anchor.fm/s/3ea3fce4/podcast/rss",
+          "sha256": "e8948fdc0ed3cc83b4c3b5c3f5d2f72ae385935cb87e2bbe6bfd855a37d0a651",
+          "title": "ΕΠΑΝΑΣΤΑΣΗ podcast",
+          "language": "el",
+          "channelLink": "https://www.marxismos.com",
+          "entries": 91,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-09-25T08:46:29+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 91
+        }
+      ]
+    },
+    {
+      "sourceId": "mudawanat-arabic",
+      "checkedAt": "2026-10-01T09:49:24.185008+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://omny.fm/shows/mudawanat-1",
+          "status": 200,
+          "finalUrl": "https://omny.fm/shows/mudawanat-1",
+          "sha256": "4a59c6793eb352b8fc2deba709f313396a331fe886f711785ddac05e9c842cd1",
+          "title": "Mudawanat | مدوَّنات clips - Omny.fm",
+          "configuredFeedLinked": true,
+          "relevantLinks": [
+            "https://www.omnycontent.com/d/playlist/b5080370-5eb2-47ee-8d75-adeb014a5e32/5c585145-6ac0-4c86-b9ec-adf000e82c38/96cdc3bd-1468-49b3-91b4-adf000e82c71/podcast.rss",
+            "https://omny.fm/",
+            "https://omny.fm/_next/static/chunks/23hr8qt7cbqk0.css",
+            "https://omny.fm/shows/mudawanat-1",
+            "https://omny.fm/shows/mudawanat-1/playlists/podcast.rss",
+            "https://omny.fm/shows/mudawanat-1/playlists",
+            "https://omny.fm/shows/mudawanat-1/519cebdf-1065-41dc-b082-b13a00c3a872",
+            "https://omny.fm/shows/mudawanat-1/33d00d3c-6a70-43a5-8d0e-b11e00e54915"
+          ]
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://omny.fm/shows/mudawanat-1/playlists/podcast.rss",
+          "status": 200,
+          "finalUrl": "https://www.omnycontent.com/d/playlist/b5080370-5eb2-47ee-8d75-adeb014a5e32/5c585145-6ac0-4c86-b9ec-adf000e82c38/96cdc3bd-1468-49b3-91b4-adf000e82c71/podcast.rss",
+          "sha256": "b83fa47e3a0b3129a7735cfc7a2a0fc6bda837eb35cbf32f9d0e1066113fa3ee",
+          "title": "Mudawanat | مدوَّنات",
+          "language": "ar",
+          "channelLink": "https://mawred.org/",
+          "entries": 58,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2024-03-21T12:06:36+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 58
+        }
+      ]
+    },
+    {
+      "sourceId": "jalsa-arabic",
+      "checkedAt": "2026-10-01T09:49:26.450935+00:00",
+      "rights": "unknown",
+      "observations": [
+        {
+          "kind": "homepage",
+          "requestedUrl": "https://www.arab-reform.net/podcast-serie/",
+          "status": 200,
+          "finalUrl": "https://www.arab-reform.net/podcast-serie/",
+          "sha256": "d789ede33fb8b1be8968b23d1d4eafc8b5906b30e1523bdcc0dec432f71cd6c5",
+          "title": "Podcast Series – Arab Reform Initiative",
+          "configuredFeedLinked": true,
+          "relevantLinks": [
+            "https://feeds.buzzsprout.com/1776729.rss"
+          ]
+        },
+        {
+          "kind": "feed",
+          "requestedUrl": "https://feeds.buzzsprout.com/1776729.rss",
+          "status": 200,
+          "finalUrl": "https://rss.buzzsprout.com/1776729.rss",
+          "sha256": "e3967f5290b71ab797e4cfd9d28ac176132e620ad5b01e048fd6d3739cc61482",
+          "title": "Jalsa | جلسة",
+          "language": "ar",
+          "channelLink": "https://jalsa-podcast.buzzsprout.com",
+          "entries": 55,
+          "parseWarning": false,
+          "duplicateGuids": 0,
+          "missingGuids": 0,
+          "latestPublished": "2026-08-19T14:00:00+00:00",
+          "futureDated": 0,
+          "httpsOriginalLinks": 0
+        }
+      ]
+    }
+  ]
+}

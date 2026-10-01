@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "scope": "16 app-only sources and common library metadata; local candidate",
+  "inputRefs": {
+    "app": "71c11c6bd4ff2d3cbc09dec41db54380f32dde58",
+    "data": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915"
+  },
+  "inputSha256": {
+    "app/podcast-sources.json": "f15d6746f30cdd59b88fe37face26a20580b3c8510c99d0a32a6f02c6e0f1743",
+    "data/podcast-sources.json": "2dae29bc97b88ca059ced3d58bec2644e183bac508c8b55e6e92e71a808723f5",
+    "app/podcasts.json": "c79782f5b423ff387028fb084752a9084c4e2adb6d6e67213f2543f4fdf47b7c",
+    "data/podcasts.json": "19fb98af850c9237d56a673f31f10581de61aa0f00c23b9111c7e7ccd8f225cf",
+    "app/podcast-content-policy.json": "8022023c1f6366c2965543b23bb5994fd862e69fd740d21061125831ee2c1bab",
+    "app/library-feed.json": "17a043eef63afff99ce453fabe784874e1518a41b0bccea6aad725c8eb58b1ac",
+    "data/library-feed.json": "b15ff7f9925b75e6c362d97dd3d052a5e3c608659a9bc05df365acf9a7d59969",
+    "data/library-sources.json": "ddb7698319f8c36f3d237db44dbb4bcf18a0526b08d2b4538e856d5db067f463",
+    "app/podcast-health.json": "ca7481cf066102572557f18046994bd8e55f1cfe9c409545c56de6e708bcd923",
+    "app/library-health.json": "93081adc097b07ececd17839cc482b8e29cb3a7b760b95450a05b609418521e3",
+    "data/podcast-health.json": "2736433bff9f14d61f99974b3401e73e325cfeb8ff179632a6a46369d936fb57",
+    "data/library-health.json": "449a36bb5163824ce20675b981349afa67f765b98a6ec2bf62d23982696fd71d"
+  },
+  "outputSha256": {
+    "app/podcast-sources.json": "22781da58b2fb53caa4ea0a93280c445f4c951fb70375d65b02be324986607cb",
+    "app/podcasts.json": "5d95c40342f76e16db84e2dd33f6360b2896e0b9b8a0e2eca67bf5814d452229",
+    "app/podcast-content-policy.json": "305299b57764724929502ed5641dcd90f5f364c0ba6ffa34e6c587b4fc4df120",
+    "app/library-sources.json": "2682f6f345702a127f7f87434a892ee4599ca5108a00a8af70a91af39da90a39",
+    "app/library-feed.json": "b533b6d8b56cf3bbaab11e8d3d318aee7c5bb8f0ff63bcffe301a368eb27a9e4",
+    "data/podcast-sources.json": "57044e6c7a367e16f146eebd876f2b295b2334ccf3faa94d3afc3c549ab995ce",
+    "data/podcasts.json": "d51ad5865e86549a0e05990996df492d191b420f6ef9c8b88f539e9a15bfac70",
+    "data/podcast-content-policy.json": "305299b57764724929502ed5641dcd90f5f364c0ba6ffa34e6c587b4fc4df120",
+    "data/library-sources.json": "2682f6f345702a127f7f87434a892ee4599ca5108a00a8af70a91af39da90a39",
+    "data/library-feed.json": "b533b6d8b56cf3bbaab11e8d3d318aee7c5bb8f0ff63bcffe301a368eb27a9e4",
+    "app/podcast-content-policy.js": "b990ae0e50ce9a0cf02e26b7c62047e75ed206395d2c31492f6ed15bd19c44d4",
+    "data/library_catalog.py": "66ab616579be6c7cb16da612d8544aa7d8a4aa503c6088b9e6462aaceeb5cea3",
+    "app/podcast-health.json": "c953e15eaf87bbea8089219cb3fe522b6ec65ee39b12f5ed76675c6cad147158",
+    "app/library-health.json": "69c280367900ef04be72731c976507125aa58876fae2c08d752a57f0b4eb6fcd",
+    "data/podcast-health.json": "76cc00453f91f5229aaa7a2cb534247eba76230228a6de4edf5b78f5d949a4d2",
+    "data/library-health.json": "a8a6fd18b084275bb20c025d327ab6e7e206e0c468b016bc7ce6731e4c52b739"
+  },
+  "registeredSources": 16,
+  "newPublishers": 0,
+  "importedExistingEpisodeMetadata": 444,
+  "heldSourceIds": [
+    "twelve-rules-for-what",
+    "l-orage",
+    "contrabanda-specials",
+    "infowar-greece"
+  ],
+  "libraryItems": 715,
+  "germanTitles": 53,
+  "preservedAppBookIds": 609,
+  "preservedDataBookIds": 266,
+  "identityAndLanguageHoldsAreNotAdmission": true,
+  "publication": "local-only",
+  "versionCode": null,
+  "hashKinds": {
+    "inputs": "Git blob bytes at immutable refs",
+    "outputs": "local worktree file bytes, before Git checkout newline conversion"
+  },
+  "runtimeSha256": {
+    "aggregate_podcasts.py": "e9ad8625ca3f363721d27cf767d9cdc6e5604984182d16f825f8c95e34c1e48b",
+    "aggregate_libraries.py": "10f7b91e48814b37260a5e8ba334006351a6c8818b87fffbc129976ac45980c9",
+    "library_catalog.py": "66ab616579be6c7cb16da612d8544aa7d8a4aa503c6088b9e6462aaceeb5cea3",
+    "podcast_content_policy.py": "6acf12a898d50eeb06069ed07dc09d2dc3b10f2b7adffa6ac1ea80c473988d04",
+    "podcast-content-policy.js": "b990ae0e50ce9a0cf02e26b7c62047e75ed206395d2c31492f6ed15bd19c44d4",
+    "news-app-2.js": "39bc8d97aa59735716134565ea286fe0d00d7c83e788e8389ada0f196b6346e7",
+    "news-app-2-specialty.js": "86a6d8e213925fb2bf1cb238483405271dff66ea069c9aaff417686583a9366b",
+    "index.html": "3a52f9158d13e7ac1bca15c28497903aa513553e8f32c40d3e4f2366327d7f70",
+    "classic.html": "8300ac67606d1d9518b4860809f01718a4f9cf1db49b2536a96a96076793805a",
+    "service-worker.js": "03a9e30ba21b804a0caa8df2878cb950aad158355a07d2705eaea19c8e0ccdeb",
+    "news-app-2-sw.js": "a63e08c961c2e0fcc20e25308c5cd5a0a28dc140ed9f39922bdd7ed127fd7cca"
+  },
+  "observationSha256": "6d97d8ed8570b8f3ed0583629f65d14907eeaff10b6c707e0e4d42b65efac34e"
+}

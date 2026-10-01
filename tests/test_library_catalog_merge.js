@@ -1,0 +1,14 @@
+'use strict';
+const assert = require('node:assert/strict');
+const specialty = require('../news-app-2-specialty.js');
+const sources = [{id:'books',status:'active'}, {id:'disabled',status:'disabled'}];
+const book = (id, fields = {}) => ({id, sourceId:'books', title:id, ...fields});
+const updated = book('shared', {updatedAt:'2026-01-01T00:00:00Z', authors:['Corrected']});
+const rows = specialty.mergeLibraryCatalogs([[book('archive'),updated], [book('shared',{updatedAt:'2025-01-01T00:00:00Z'}),book('de',{languages:['de']})]],sources);
+assert.deepEqual(new Set(rows.map(x=>x.id)),new Set(['archive','shared','de']));
+assert.deepEqual(rows.find(x=>x.id==='shared').authors,['Corrected']);
+const result = specialty.mergeLibraryCatalogs([[book('gone',{status:'withdrawn'})], [book('gone'),book('keep'),book('bad',{sourceId:'disabled'})]],sources);
+assert.deepEqual(result.map(x=>x.id),['gone','keep']);
+assert.equal(result[0].status,'withdrawn');
+assert.deepEqual(specialty.mergeLibraryCatalogs([result,[],[book('gone')]],sources),result);
+console.log('Library partial refresh, revisions, disabled sources and persistent takedowns passed.');

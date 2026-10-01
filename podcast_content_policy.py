@@ -29,6 +29,11 @@ def restricted_endpoint(item):
 def metadata_only(item, source=None, sources=()):
     if restricted_endpoint(item) or item.get("contentPolicy") == MODE:
         return True
+    identifier = str(item.get('rawId') or item.get('id') or '').removeprefix('original:')
+    if (item.get('sourceId') in RULES.get('metadataOnlySourceIds', [])
+            or identifier in RULES.get('metadataOnlyEpisodeIds', [])
+            or original_url(item.get('feedUrl')) in RULES.get('metadataOnlyFeedUrls', [])):
+        return True
     candidates = [source] if source else []
     feed_url = original_url(item.get("feedUrl"))
     candidates += [entry for entry in sources if (
@@ -57,3 +62,12 @@ def episode_key(item):
     if metadata_only(item):
         return "metadata:" + str(item.get("id") or original_url(item.get("episodeUrl"))) if item.get("id") or original_url(item.get("episodeUrl")) else ""
     return str(item.get("audioUrl") or "")
+
+
+def preserve_failed_sources(items, previous, health):
+    result = {episode_key(item): item for item in items if episode_key(item)}
+    for item in previous:
+        source = item.get('endpointId') or item.get('sourceId')
+        if not health.get(source, {}).get('ok') and episode_key(item):
+            result.setdefault(episode_key(item), item)
+    return sorted(result.values(), key=lambda x: x.get('published') or '', reverse=True)

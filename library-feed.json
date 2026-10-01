@@ -1,5 +1,1133 @@
 [
   {
+    "id": "anarchist-library-de-a4bc83e64b5170e8f642038a",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "8 Stunden am Tag zu viel…",
+    "authors": [
+      "Kaduuk"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/kaduuk-8-stunden-am-tag-zu-viel.epub"
+    },
+    "updatedAt": "2015-10-05T12:57:05+00:00"
+  },
+  {
+    "id": "anarchist-library-de-1955dda905d18e882d13b8f4",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "ABC des Anarchismus",
+    "authors": [
+      "Berkman, Alexander"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/alexander-berkman-abc-des-anarchismus.epub"
+    },
+    "updatedAt": "2015-03-09T09:58:49+00:00"
+  },
+  {
+    "id": "anarchist-library-de-d5446e5ce8d8fa35a1c4af51",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Aber du, bist du Antifaschist, ja oder nein?",
+    "authors": [
+      "Machete"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/machete-aber-du-bist-du-antifaschist-ja-oder-nein.epub"
+    },
+    "updatedAt": "2015-02-03T09:36:15+00:00"
+  },
+  {
+    "id": "anarchist-library-de-4c728a9603fa423edfc5d95d",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Abscheu und Empörung über den feigen und gemeinen",
+    "authors": [
+      "Norbert Knofo Kröcher"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/knofo-abscheu-und-empoerung.epub"
+    },
+    "updatedAt": "2024-04-03T13:44:36+00:00"
+  },
+  {
+    "id": "anarchist-library-de-91cd5e7b9a4a8e2b23ca7cbf",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "AD NAUSEAM",
+    "authors": [
+      "Soligruppe für Gefangene"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/anonym-ad-nauseam.epub"
+    },
+    "updatedAt": "2021-09-22T17:17:50+00:00"
+  },
+  {
+    "id": "anarchist-library-de-466b34a92e981c5772f1cd92",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Affinität",
+    "authors": [
+      "Bonanno, Alfredo M."
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/alfredo-m-bonanno-affinitat.epub"
+    },
+    "updatedAt": "2015-09-08T15:51:08+00:00"
+  },
+  {
+    "id": "anarchist-library-de-86163f8406340cf07269815f",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Alles gut, alles toll, alles wunderbar!",
+    "authors": [
+      "SHITSTORM"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/shitstorm-alles-gut-alles-toll-alles-wunderbar.epub"
+    },
+    "updatedAt": "2018-08-19T16:15:37+00:00"
+  },
+  {
+    "id": "anarchist-library-de-c9df69672ae97c87b3c4127e",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Am Anfang des Flusses",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/anonym-am-anfang-des-flusses.epub"
+    },
+    "updatedAt": "2018-11-10T15:06:26+00:00"
+  },
+  {
+    "id": "anarchist-library-de-0bd8153228a6bf27ed35c50d",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Amor Fati",
+    "authors": [
+      "Ludd, Apio",
+      "Landstreicher, Wolfi"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/apio-ludd-amor-fati.epub"
+    },
+    "updatedAt": "2016-06-17T18:16:21+00:00"
+  },
+  {
+    "id": "anarchist-library-de-21c734ec024ffabb3cd34fea",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "An die Tramps, Arbeitslosen, Enterbten und Elenden",
+    "authors": [
+      "Parsons, Lucie"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/lucy-parsons-an-die-tramps-arbeitslosen-enterbten-und-elenden.epub"
+    },
+    "updatedAt": "2026-03-29T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-4f3e3e7e530214572fb8fb7e",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarcha-Feminismus",
+    "authors": [
+      "Everchild, Nancy",
+      "Rideau, Margot",
+      "Adams, Beverly",
+      "Hastings, Mary"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/nancy-everchild-margot-rideau-beverly-adams-und-mary-hastings-anarcha-feminismus.epub"
+    },
+    "updatedAt": "2015-05-22T12:36:34+00:00"
+  },
+  {
+    "id": "anarchist-library-de-64153b82db94cd8258f618a8",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie",
+    "authors": [
+      "Malatesta, Errico"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/errico-malatesta-anarchie.epub"
+    },
+    "updatedAt": "2015-01-07T23:13:04+00:00"
+  },
+  {
+    "id": "anarchist-library-de-6bb588216beffa0170ec37d8",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie",
+    "authors": [
+      "Mühsam, Erich"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/max-nettlau-anarchie.epub"
+    },
+    "updatedAt": "2016-01-24T10:49:31+00:00"
+  },
+  {
+    "id": "anarchist-library-de-9c4be2dfa92dc560cb48bb95",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie",
+    "authors": [
+      "Reclus, Elisée"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/elisee-reclus-anarchie.epub"
+    },
+    "updatedAt": "2016-07-13T11:26:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-c130371fccc9284dabfbc29d",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie",
+    "authors": [
+      "Plievier, Theodor"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/theodor-plievier-anarchie.epub"
+    },
+    "updatedAt": "2024-09-10T01:20:52+00:00"
+  },
+  {
+    "id": "anarchist-library-de-f39e68e079ba2b59d9681167",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie",
+    "authors": [
+      "Most, Johann"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/johann-most-anarchie.epub"
+    },
+    "updatedAt": "2015-04-13T06:54:53+00:00"
+  },
+  {
+    "id": "anarchist-library-de-54e35673b9de98381c237171",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie in der Spiegelwelt?",
+    "authors": [
+      "Zündlappen"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/zundlappen-anarchie-in-der-spiegelwelt.epub"
+    },
+    "updatedAt": "2026-05-21T11:38:21+00:00"
+  },
+  {
+    "id": "anarchist-library-de-fc28abc7b596827412743972",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchie ist Ordnung",
+    "authors": [
+      "Bellegarrigue, Anselme"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/anselme-bellegarrigue-anarchie-ist-ordnung.epub"
+    },
+    "updatedAt": "2016-06-15T12:40:13+00:00"
+  },
+  {
+    "id": "anarchist-library-de-bf1eea58a4bed7796db2d0ec",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Berlin 13. August",
+    "authors": [
+      "Huppertz, Willy"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/willy-huppertz-berlin-13-august.epub"
+    },
+    "updatedAt": "2024-09-10T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-a693845b3fb2805c75910fa0",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Das ABC des revolutionären Anarchisten",
+    "authors": [
+      "Machno, Nestor"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/nestor-machno-das-abc-des-revolutionaren-anarchisten.epub"
+    },
+    "updatedAt": "2015-04-13T08:07:16+00:00"
+  },
+  {
+    "id": "anarchist-library-de-3abe6fff711fc1fdc8767ed1",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Der Anarchafeminismus und die Gemeinschaftsküche Kropotkins",
+    "authors": [
+      "Gransac-Sadori, Ariane"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/ariane-gransac-sadori-der-anarchafeminismus-und-die-gemeinschaftskuche-kropotkins.epub"
+    },
+    "updatedAt": "2019-02-14T13:05:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-0e0581fe928986458410b727",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Der Krieg als kollektives Verbrechen",
+    "authors": [
+      "Berneri, Camillo"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/camillo-berneri-der-krieg-als-kollektives-verbrechen.epub"
+    },
+    "updatedAt": "2025-03-24T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-2ed1c5e573ed3eff547e83c1",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Abschaffung des Krieges durch die Selbstbestimmung des Volkes",
+    "authors": [
+      "Landauer, Gustav"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/gustav-landauer-gustav-landauer-die-abschaffung-des-krieges-durch-die-selbstbestimmung-des-volk.epub"
+    },
+    "updatedAt": "2018-03-28T10:09:44+00:00"
+  },
+  {
+    "id": "anarchist-library-de-f43f61e8ff53e2ab82048f3b",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Aktion",
+    "authors": [
+      "Cafiero, Carlo"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/carlo-cafiero-die-aktion.epub"
+    },
+    "updatedAt": "2014-12-25T17:18:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-4e73880c7a05f0ac15ea0df6",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die allgemeine Lage",
+    "authors": [
+      "Kropotkin, Peter"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/peter-kropotkin-die-allgemeine-lage.epub"
+    },
+    "updatedAt": "2016-03-28T13:20:23+00:00"
+  },
+  {
+    "id": "anarchist-library-de-68342aa52b86195caa25560f",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Dinge bekommen leben – doch es ist ihnen egal!",
+    "authors": [
+      "Clabauter"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/clabauter-die-dinge-bekommen-leben-doch-es-ist-ihnen-egal.epub"
+    },
+    "updatedAt": "2026-03-26T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-b2d9b0283f509dcab1406852",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Freie Liebe",
+    "authors": [
+      "Vernet, Madeleine"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/madeleine-vernet-die-freie-liebe.epub"
+    },
+    "updatedAt": "2025-03-19T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-5924f7e50c45dad908669af7",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die große Familie",
+    "authors": [
+      "Reclus, Elisée"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/elysee-reclus-die-grosse-familie.epub"
+    },
+    "updatedAt": "2026-03-27T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-7738ff26c266bef4832be058",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Pariser Kommune",
+    "authors": [
+      "Kropotkin, Peter"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/peter-kropotkin-die-pariser-kommune.epub"
+    },
+    "updatedAt": "2024-11-05T16:22:44+00:00"
+  },
+  {
+    "id": "anarchist-library-de-eeeb23bbaec085aa067ca5fa",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Schlimme Botschaft",
+    "authors": [
+      "Einstein, Carl"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/carl-einstein-die-schlimme-botschaft.epub"
+    },
+    "updatedAt": "2024-09-12T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-5997ae3507f87bb9b5908a53",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die vollständige Ausbildung",
+    "authors": [
+      "Bakunin, Michail"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/bakunin-michail-die-vollstandige-ausbildung.epub"
+    },
+    "updatedAt": "2024-09-16T19:06:26+00:00"
+  },
+  {
+    "id": "anarchist-library-de-a00e2643152d534c0f4dee8f",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Diskussion und Abstimmung über das Erbrecht auf dem Basler Kongreß der Internationale (10. September 1869)",
+    "authors": [
+      "Michael Bakunin",
+      "Désiré Brismée",
+      "Félix Eugène Che- malé",
+      "César De Paepe",
+      "Johann Georg Eccarius",
+      "Wilhelm Liebknecht",
+      "André Murat",
+      "Albert Richard",
+      "Eugène Varlin"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/internationale-arbeiterassoziation-diskussion-und-abstimmung-uber-das-erbrecht.epub"
+    },
+    "updatedAt": "2024-09-18T12:40:17+00:00"
+  },
+  {
+    "id": "anarchist-library-de-2dcb057bb061b79f054df91c",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Dreizehn Notizen zum Klassenkampf zur Diskussion",
+    "authors": [
+      "Sasha K."
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/sasha-k-dreizehn-notizen-zum-klassenkampf-zur-diskussion.epub"
+    },
+    "updatedAt": "2026-05-21T12:16:56+00:00"
+  },
+  {
+    "id": "anarchist-library-de-e068cfd1bbbc0bbf1c83144b",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Ernste Gedanken über Zweck, Nutzen und Wert der Zuchthäuser",
+    "authors": [
+      "Koechlin, Felix"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/felix-koechlin-zuchthauser.epub"
+    },
+    "updatedAt": "2025-03-18T18:34:30+00:00"
+  },
+  {
+    "id": "anarchist-library-de-2e1b771d90cd8c1c328bad50",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Gegen die Übernahme der Produktion!",
+    "authors": [
+      "SwitchOFF!"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/switchoff-gegen-die-ubernahme-der-produktion.epub"
+    },
+    "updatedAt": "2025-04-02T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-1d200a12dea33dd3edf9d36e",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Klassenkampf, Kommodifizierung und die modernisierte Gesellschaft",
+    "authors": [
+      "Tucker, Kevin"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/kevin-tucker-klassenkampf-kommodifizierung-und-die-modernisierte-gesellschaft.epub"
+    },
+    "updatedAt": "2025-03-22T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-9a3379e9395d6f3fcb78971d",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Luigi Galleani (1861–1931)",
+    "authors": [
+      "Nettlau, Max"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/max-nettlau-luigi-galleani-1861-1931.epub"
+    },
+    "updatedAt": "2025-03-26T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-8af3a77ac55861ca18239f39",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Machnos Rede bei der Kundgebung in Issajewka, Juli 1921",
+    "authors": [
+      "Machno, Nestor"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/nestor-machno-machnos-rede-bei-der-kundgebung-in-issajewka-juli-1921.epub"
+    },
+    "updatedAt": "2024-11-02T23:19:26+00:00"
+  },
+  {
+    "id": "anarchist-library-de-28a2251c0b7066d125452860",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Manipulation der Sinne",
+    "authors": [
+      "Kanaille, anarchistische Zeitung, #3, #4, #5"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/kanaille-anarchistische-zeitung-3-4-5-manipulation-der-sinne.epub"
+    },
+    "updatedAt": "2024-09-14T17:35:03+00:00"
+  },
+  {
+    "id": "anarchist-library-de-6cc094e0e8b12c7d4739f216",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Nieder mit der Disziplin! Hoch die Rebellion!",
+    "authors": [
+      "Bröckling, Ulrich",
+      "Maupassant, Guy de",
+      "Roller, Arnold",
+      "Nacht, Siegfried",
+      "Naine, Charles",
+      "Herwegh, Georg",
+      "Kegel, Max"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/ulrich-brockling-siegfried-nacht-arnold-roller-nieder-mit-der-disziplin-hoch-die-rebellion.epub"
+    },
+    "updatedAt": "2025-04-03T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-b6c621c60a84c9d7580ef477",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Orwell und die Anarchisten",
+    "authors": [
+      "Walter, Nicolas"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/nicolas-walter-orwell-und-die-anarchisten.epub"
+    },
+    "updatedAt": "2025-03-20T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-33595f993ff09b6a984656d3",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Prinzipienerklärung",
+    "authors": [
+      "Mühsam, Erich"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/erich-muhsam-prinzipienerklarung.epub"
+    },
+    "updatedAt": "2024-09-18T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-a6f8034835ced5aea88e6b11",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Prosopographie als sozialwissenschaftlich-historische Forschungsmethode oder:",
+    "authors": [
+      "Feix, Tabea"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/tabea-feix-prosopographie-als-sozialwissenschaftlich-historische-forschungsmethode-oder.epub"
+    },
+    "updatedAt": "2025-03-25T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-49b427a6832efc5b36006728",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Reich und seine Feinde",
+    "authors": [
+      "Goodman, Paul"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/paul-goodman-reich-und-seine-feinde.epub"
+    },
+    "updatedAt": "2025-03-30T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-414a7910fdecf9bbc895fba7",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Thesen zum Untergang der Zivilisation",
+    "authors": [
+      "Tucker, Kevin"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/kevin-tucker-thesen-zum-untergang-der-zivilisation.epub"
+    },
+    "updatedAt": "2025-03-21T23:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-d9649a9d60d5d518b40e0257",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Totale Befreiung",
+    "authors": [
+      "Anonym"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/anonym-totale-befreiung.epub"
+    },
+    "updatedAt": "2025-02-12T09:41:30+00:00"
+  },
+  {
+    "id": "anarchist-library-de-ad142b083c94b12e11ad0537",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Verbrenne alle Bibeln",
+    "authors": [
+      "Apio Ludd"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/apio-ludd-verbrenne-alle-bibeln.epub"
+    },
+    "updatedAt": "2024-09-15T03:46:09+00:00"
+  },
+  {
+    "id": "anarchist-library-de-f38f1f632bc1426206e59aeb",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Was ist Anarchafeminismus?",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/anonym-was-ist-anarchafeminismus.epub"
+    },
+    "updatedAt": "2019-07-31T12:17:20+00:00"
+  },
+  {
+    "id": "anarchist-library-de-1680e238b153c0128ed741e3",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Wir leben in der Dystopie der Vergangenheit.",
+    "authors": [
+      "Kurzschluss"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/anonym-wir-leben-in-der-dystopie-der-vergangenheit.epub"
+    },
+    "updatedAt": "2024-10-10T08:56:05+00:00"
+  },
+  {
+    "id": "anarchist-library-de-5496d800b460478ac6b88935",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Zur Frauenfrage",
+    "authors": [
+      "Kanewi, Minna",
+      "Iwanek, Minna"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/minna-kanewi-zur-frauenfrage.epub"
+    },
+    "updatedAt": "2024-09-14T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-de-04bbb3ae52aa0f43b75dc49b",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Ägypten in Revolte",
+    "authors": [
+      "Aufruhr"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/aufruhr-agypten-in-revolte.epub"
+    },
+    "updatedAt": "2014-12-15T19:52:12+00:00"
+  },
+  {
+    "id": "anarchist-library-de-b53edb368258841e51f9fde8",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Ägypten: Wie das Meer",
+    "authors": [
+      "Hors Service"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/hors-service-agypten-wie-das-meer.epub"
+    },
+    "updatedAt": "2015-01-14T16:57:03+00:00"
+  },
+  {
+    "id": "anarchist-library-de-f4316456aa1f6adaeff74518",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Über den Moment hinaus",
+    "authors": [
+      "Bismuto"
+    ],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://de.anarchistlibraries.net/library/bismuto-uber-den-moment-hinaus-1.epub"
+    },
+    "updatedAt": "2026-05-21T11:30:45+00:00"
+  },
+  {
     "id": "anarchist-library-it-512871156ff74e983cf88e74",
     "sourceId": "anarchist-library-it",
     "sourceName": "Biblioteca Anarchica",
@@ -5208,6 +6336,27 @@
     "updatedAt": "2026-07-21T13:32:02+00:00"
   },
   {
+    "id": "anarchist-library-es-4c014a62cadcb908f9c48602",
+    "sourceId": "anarchist-library-es",
+    "sourceName": "Biblioteca Anarquista",
+    "title": "Las tareas sociales de los comités vecinales",
+    "authors": [
+      "Alexander Atabekian"
+    ],
+    "languages": [
+      "es"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://es.anarchistlibraries.net/library/alexander-atabekian-las-tareas-sociales-de-los-comites-vecinales.epub"
+    },
+    "updatedAt": "2026-09-11T17:01:15+00:00"
+  },
+  {
     "id": "anarchist-library-es-04218ca8fb12b6c0ae888946",
     "sourceId": "anarchist-library-es",
     "sourceName": "Biblioteca Anarquista",
@@ -5269,6 +6418,27 @@
       "epub": "https://es.anarchistlibraries.net/library/sebastien-faure-los-crimenes-de-dios.epub"
     },
     "updatedAt": "2026-04-16T12:06:28+00:00"
+  },
+  {
+    "id": "anarchist-library-es-ff72efe59251c4b68cd7db2c",
+    "sourceId": "anarchist-library-es",
+    "sourceName": "Biblioteca Anarquista",
+    "title": "Los Medios del Poder",
+    "authors": [
+      "Ferdinand Domela Nieuwenhuis"
+    ],
+    "languages": [
+      "es"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://es.anarchistlibraries.net/library/ferdinand-domela-nieuwenhuis-los-medios-del-poder.epub"
+    },
+    "updatedAt": "2026-08-06T07:03:19+00:00"
   },
   {
     "id": "anarchist-library-es-4f7d5e6b13f79edc653ea17d",
@@ -5607,6 +6777,28 @@
     "updatedAt": "2022-06-18T15:00:00+00:00"
   },
   {
+    "id": "anarchist-library-es-77a9118ccff956a57e34e573",
+    "sourceId": "anarchist-library-es",
+    "sourceName": "Biblioteca Anarquista",
+    "title": "Una Mirada Hacia El Futuro",
+    "authors": [
+      "Jacque Fresco",
+      "Kenneth S.Keyes Jr."
+    ],
+    "languages": [
+      "es"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://es.anarchistlibraries.net/library/una-mirada-hacia-el-futuro.epub"
+    },
+    "updatedAt": "2026-08-25T17:59:11+00:00"
+  },
+  {
     "id": "anarchist-library-es-af228cfa9b25266cf5a2002b",
     "sourceId": "anarchist-library-es",
     "sourceName": "Biblioteca Anarquista",
@@ -5647,6 +6839,27 @@
       "epub": "https://es.anarchistlibraries.net/library/nestor-majno-a-todos-los-judios-del-mundo.epub"
     },
     "updatedAt": "2013-05-02T20:06:42+00:00"
+  },
+  {
+    "id": "anarchist-library-es-86b2780a5e895dce97e920a9",
+    "sourceId": "anarchist-library-es",
+    "sourceName": "Biblioteca Anarquista",
+    "title": "¡No te conviertas en un asesino!",
+    "authors": [
+      "Alexander Berkman"
+    ],
+    "languages": [
+      "es"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://es.anarchistlibraries.net/library/alexander-berkman-no-te-conviertas-en-une-asesine.epub"
+    },
+    "updatedAt": "2026-09-19T14:50:01+00:00"
   },
   {
     "id": "anarchist-library-es-acf4724376a79eebadd5faf6",
@@ -7082,6 +8295,27 @@
     "updatedAt": "2022-12-07T18:36:07+00:00"
   },
   {
+    "id": "anarchist-library-fr-18e1fc1412e9ea47e6726b10",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Isidore Ducasse et le Comte de Lautréamont dans les Poésies",
+    "authors": [
+      "Raoul Vaneigem"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/raoul-vaneigem-isidore-ducasse-et-le-comte-de-lautreamont-dans-les-poesies.epub"
+    },
+    "updatedAt": "2026-09-05T22:00:00+00:00"
+  },
+  {
     "id": "anarchist-library-fr-51201bd2240e637c180422f9",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -7166,27 +8400,6 @@
     "updatedAt": "2016-04-30T17:22:37+00:00"
   },
   {
-    "id": "anarchist-library-fr-e467bbb9368f0bc179261a5e",
-    "sourceId": "anarchist-library-fr",
-    "sourceName": "Bibliothèque Anarchiste",
-    "title": "L'Anarchie",
-    "authors": [
-      "Élisée Reclus"
-    ],
-    "languages": [
-      "fr"
-    ],
-    "topics": [],
-    "formats": [
-      "epub"
-    ],
-    "readUrl": "",
-    "downloads": {
-      "epub": "https://fr.anarchistlibraries.net/library/elisee-reclus-l-anarchie.epub"
-    },
-    "updatedAt": "2016-04-18T06:38:42+00:00"
-  },
-  {
     "id": "anarchist-library-fr-91649c4b44ba87eb73a496cd",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -7206,6 +8419,27 @@
       "epub": "https://fr.anarchistlibraries.net/library/jean-grave-l-anarchie.epub"
     },
     "updatedAt": "2016-05-03T09:37:16+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-e467bbb9368f0bc179261a5e",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "L'Anarchie",
+    "authors": [
+      "Élisée Reclus"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/elisee-reclus-l-anarchie.epub"
+    },
+    "updatedAt": "2016-04-18T06:38:42+00:00"
   },
   {
     "id": "anarchist-library-fr-118d5c5b0cff34fbecf7ef91",
@@ -7463,6 +8697,27 @@
     "updatedAt": "2016-05-06T16:49:57+00:00"
   },
   {
+    "id": "anarchist-library-fr-5f2e57b483c042036bd935e7",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "L'importance de Stirner pour les communistes libertaires",
+    "authors": [
+      "Matty Thomas"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/matty-thomas-l-importance-de-stirner-pour-les-communistes-libertaires.epub"
+    },
+    "updatedAt": "2026-08-30T22:00:00+00:00"
+  },
+  {
     "id": "anarchist-library-fr-9016e8afb2da3447ef0831d2",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -7632,6 +8887,48 @@
     "updatedAt": "2026-06-28T15:05:05+00:00"
   },
   {
+    "id": "anarchist-library-fr-1042ad6c2a3c56e5e3a6f5ef",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "La reproduction de la vie quotidienne",
+    "authors": [
+      "Fredy Perlman"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/fredy-perlman-la-reproduction-de-la-vie-quotidienne.epub"
+    },
+    "updatedAt": "2026-09-05T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-6e54a5a403df1cbb2398e9e7",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "La réalisation et la suppression de la religion",
+    "authors": [
+      "Ken Knabb"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/ken-knabb-la-realisation-et-la-suppression-de-la-religion.epub"
+    },
+    "updatedAt": "2026-09-01T22:00:00+00:00"
+  },
+  {
     "id": "anarchist-library-fr-b3a1ab0ec533adf117fd4238",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -7651,6 +8948,48 @@
       "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-technologie-comme-domination.epub"
     },
     "updatedAt": "2026-07-23T15:02:42+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-dbc52937f9bef251aef7991d",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "La vie ou la mort",
+    "authors": [
+      "Voltairine de Cleyre"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/voltairine-de-cleyre-la-vie-ou-la-mort.epub"
+    },
+    "updatedAt": "2026-09-01T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-3f368b05d7f26f916a5a6c5f",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "La ville totalitaire",
+    "authors": [
+      "Miguel Amorós"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-la-ville-totalitaire.epub"
+    },
+    "updatedAt": "2026-08-11T16:02:20+00:00"
   },
   {
     "id": "anarchist-library-fr-ffc9336dca66e9bb4ff8cb41",
@@ -7947,6 +9286,27 @@
     "updatedAt": "2026-07-02T19:32:22+00:00"
   },
   {
+    "id": "anarchist-library-fr-e9997d1618da4a2a02fd06aa",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Lettres sur le syndicalisme",
+    "authors": [
+      "Bartolomeo Vanzetti"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/bartolomeo-vanzetti-lettres-sur-le-syndicalisme.epub"
+    },
+    "updatedAt": "2026-09-03T17:17:54+00:00"
+  },
+  {
     "id": "anarchist-library-fr-4483bde8f8872368d7ca6654",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -8226,6 +9586,27 @@
     "updatedAt": "2016-05-05T16:04:08+00:00"
   },
   {
+    "id": "anarchist-library-fr-6416feddb2fb290f2fda76e7",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "L’anarcho-syndicalisme face aux temps difficiles",
+    "authors": [
+      "Miguel Amorós"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-anarcho-syndicalisme-aux-temps-difficiles.epub"
+    },
+    "updatedAt": "2026-08-23T09:37:53+00:00"
+  },
+  {
     "id": "anarchist-library-fr-e33c0c9357760e4b1f4c721f",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -8266,6 +9647,48 @@
       "epub": "https://fr.anarchistlibraries.net/library/max-stirner-l-unique-et-sa-propriete-2.epub"
     },
     "updatedAt": "2026-07-18T01:56:24+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-d0cd7675e7f3ae9f296eab0a",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "L’État, son rôle historique",
+    "authors": [
+      "Piotr Kropotkine"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/pierre-kropotkine-l-etat-son-role-historique.epub"
+    },
+    "updatedAt": "2026-09-06T22:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-9742e57e2240a79453745473",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Ma vie valait-elle la peine d'être vécue ?",
+    "authors": [
+      "Emma Goldman"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/emma-goldman-ma-vie-valait-elle-la-peine-d-etre-vecue.epub"
+    },
+    "updatedAt": "2026-09-01T22:00:00+00:00"
   },
   {
     "id": "anarchist-library-fr-7c90e20626e2f7d525231e87",
@@ -8350,6 +9773,48 @@
       "epub": "https://fr.anarchistlibraries.net/library/nolympic-city.epub"
     },
     "updatedAt": "2024-04-08T13:35:22+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-0ad8b5541db7321ae2d6730a",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Nos buts et nos méthodes dans le scandale de Strasbourg",
+    "authors": [
+      "Internationale situationniste"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/internationale-situationniste-nos-buts-et-nos-methodes-dans-le-scandale-de-strasbourg.epub"
+    },
+    "updatedAt": "2026-08-24T08:27:38+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-c77276335850f2bfc8723141",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Notes sur le Manifeste contre le travail du groupe allemand Krisis",
+    "authors": [
+      "Miguel Amorós"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-notes-sur-le-manifeste-contre-le-travail.epub"
+    },
+    "updatedAt": "2026-08-09T15:27:00+00:00"
   },
   {
     "id": "anarchist-library-fr-8df76731a8a26ac6a6426bb9",
@@ -8500,6 +9965,27 @@
     "updatedAt": "2026-07-21T07:39:32+00:00"
   },
   {
+    "id": "anarchist-library-fr-c0711b6373d0972a3820a308",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Pour la Destruction de l'École",
+    "authors": [
+      "Jan D. Matthews"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/jan-d-matthews-pour-la-destruction-de-l-ecole.epub"
+    },
+    "updatedAt": "2026-09-01T22:28:14+00:00"
+  },
+  {
     "id": "anarchist-library-fr-ff6ca91e85cfe12928c6f294",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -8563,6 +10049,48 @@
     "updatedAt": "2026-07-13T12:52:36+00:00"
   },
   {
+    "id": "anarchist-library-fr-87cdaf1b260483d6ddb4e5bc",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Quand le capitalisme se prétend écologiste",
+    "authors": [
+      "Miguel Amorós"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-quand-le-capitalisme-se-pretend-ecologiste.epub"
+    },
+    "updatedAt": "2026-08-13T10:06:45+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-84404256b11e58a78171b5ac",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Quand le réel devient illusoire",
+    "authors": [
+      "Miguel Amorós"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-quand-le-reel-devient-illusoire.epub"
+    },
+    "updatedAt": "2026-08-09T15:19:14+00:00"
+  },
+  {
     "id": "anarchist-library-fr-41b9caa9e72c4dea97dabcb1",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -8603,6 +10131,27 @@
       "epub": "https://fr.anarchistlibraries.net/library/alfredo-cospito-quelle-internationale-entretien-avec-alfredo-cospito-depuis-la-prison-de-ferrar.epub"
     },
     "updatedAt": "2022-12-07T18:27:24+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-bce89dba40879a7fa60e7284",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Quelle voie vers le socialisme ?",
+    "authors": [
+      "R. A."
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/quelle-voie-vers-le-socialisme-dictature-du-proletariat.epub"
+    },
+    "updatedAt": "2026-08-21T13:24:07+00:00"
   },
   {
     "id": "anarchist-library-fr-433378c2168e3adffd34c1ff",
@@ -8815,6 +10364,27 @@
     "updatedAt": "2026-07-20T23:14:33.092000000+00:00"
   },
   {
+    "id": "anarchist-library-fr-38232bac2b00fd46889bae55",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Théisme, nationalisme, capitalisme… les religions vont bien",
+    "authors": [
+      "Patrick Mérin"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/patrick-merin-theisme-nationalisme-capitalisme-les-religions-vont-bien.epub"
+    },
+    "updatedAt": "2026-08-23T16:02:26+00:00"
+  },
+  {
     "id": "anarchist-library-fr-c63db77a6e41250b4d0f62dc",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -8960,6 +10530,27 @@
       "epub": "https://fr.anarchistlibraries.net/library/l-assemblee-des-femmes-de-la-federation-anarchiste-du-royaume-uni-une-analyse-anarchiste-de-la.epub"
     },
     "updatedAt": "2018-05-21T02:56:43+00:00"
+  },
+  {
+    "id": "anarchist-library-fr-221ac0cda6e7b73cad5f850b",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "Urbanisme et ordre",
+    "authors": [
+      "Miguel Amorós"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/miguel-amoros-urbanisme-et-ordre.epub"
+    },
+    "updatedAt": "2026-08-09T15:30:56+00:00"
   },
   {
     "id": "anarchist-library-fr-0afcc69df92001af6d202bee",
@@ -9295,6 +10886,27 @@
     "updatedAt": "2026-07-08T01:08:23+00:00"
   },
   {
+    "id": "anarchist-library-fr-d3da676b6667bafb1d480bd2",
+    "sourceId": "anarchist-library-fr",
+    "sourceName": "Bibliothèque Anarchiste",
+    "title": "À propos d’une grève et autres textes",
+    "authors": [
+      "Luigi Galleani"
+    ],
+    "languages": [
+      "fr"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://fr.anarchistlibraries.net/library/luigi-galleani-a-propos-d-une-greve-et-autres-textes.epub"
+    },
+    "updatedAt": "2026-09-02T22:00:00+00:00"
+  },
+  {
     "id": "anarchist-library-fr-1103ce3659336a6170444c6d",
     "sourceId": "anarchist-library-fr",
     "sourceName": "Bibliothèque Anarchiste",
@@ -9511,7 +11123,7 @@
     "sourceName": "The Anarchist Library",
     "title": "100,000 plus dead. Mission Accomplished?",
     "authors": [
-      "Iain McKay"
+      "Iain Mckay"
     ],
     "languages": [
       "en"
@@ -9655,6 +11267,27 @@
     "updatedAt": "2020-08-12T13:26:15+00:00"
   },
   {
+    "id": "anarchist-library-en-08ddd320dfce51e98feac687",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "14 years of Rojava Revolution",
+    "authors": [
+      "Internationalist Commune of Rojava"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/internationalist-commune-14-years-of-rojava-revolution.epub"
+    },
+    "updatedAt": "2026-08-26T06:31:07.922000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-42e4431be9f49ca57d63023e",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -9765,7 +11398,7 @@
     "sourceName": "The Anarchist Library",
     "title": "150 years of Libertarian",
     "authors": [
-      "Iain McKay"
+      "Iain Mckay"
     ],
     "languages": [
       "en"
@@ -10918,6 +12551,27 @@
     "updatedAt": "2026-07-12T00:09:49+00:00"
   },
   {
+    "id": "anarchist-library-en-7bd71a8be41972519070584b",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "A Short History of Anarchism in Brussels",
+    "authors": [
+      "E. DRAMA"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/e-drama-a-short-history-of-anarchism-in-brussels.epub"
+    },
+    "updatedAt": "2026-09-15T08:52:29.992000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-4446fb5ac28eef7ebadfeca9",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -10957,7 +12611,28 @@
     "downloads": {
       "epub": "https://theanarchistlibrary.org/library/punch-up-kick-down-distro-abolish-punishment.epub"
     },
-    "updatedAt": "2026-07-22T03:32:56+00:00"
+    "updatedAt": "2026-09-16T01:49:01+00:00"
+  },
+  {
+    "id": "anarchist-library-en-113990bf9fb5d3a0f07db22e",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Against Reactive Liberty",
+    "authors": [
+      "Ryan Calhoun"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/ryan-calhoun-against-reactive-liberty.epub"
+    },
+    "updatedAt": "2026-09-25T00:00:00+00:00"
   },
   {
     "id": "anarchist-library-en-9fb146b9cca3bc62de1fe8c2",
@@ -11086,6 +12761,27 @@
     "updatedAt": "2026-07-16T20:34:58+00:00"
   },
   {
+    "id": "anarchist-library-en-7bdabed55baaf88892525cd5",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Anarchy in the USSR",
+    "authors": [
+      "Philip Ruff"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/philip-ruff-anarchy-in-the-ussr.epub"
+    },
+    "updatedAt": "2026-09-17T02:20:04.606000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-bef10baac430988c569a911f",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -11105,6 +12801,48 @@
       "epub": "https://theanarchistlibrary.org/library/maurice-brinton-as-we-see-it.epub"
     },
     "updatedAt": "2026-07-17T08:31:04+00:00"
+  },
+  {
+    "id": "anarchist-library-en-a88c47796cd86b7da17394b0",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Beware of Open Source Absolutists",
+    "authors": [
+      "ziq"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/ziq-beware-of-open-source-absolutists.epub"
+    },
+    "updatedAt": "2026-09-29T02:10:30.967000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-d6fb4e4ffd1cadcaa79bbb5c",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Beyond Climate Optimism, Beyond Climate Pessimism",
+    "authors": [
+      "Margaret Killjoy"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/margaret-killjoy-beyond-climate-optimism-beyond-climate-pessimism.epub"
+    },
+    "updatedAt": "2026-09-25T08:16:57+00:00"
   },
   {
     "id": "anarchist-library-en-62b647c9ee0a06a02b739586",
@@ -11127,6 +12865,27 @@
       "epub": "https://theanarchistlibrary.org/library/jonathan-nitzan-and-shimshon-bichler-capital-as-power.epub"
     },
     "updatedAt": "2026-07-21T08:40:50.475000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-3f6d09642042964a4041c36c",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Ceuta, Morocco and the Weaponisation of the Working Class",
+    "authors": [
+      "Confederación Nacional del Trabajo"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/confederacion-nacional-del-trabajo-ceuta-morocco-and-the-weaponisation-of-the-working-class.epub"
+    },
+    "updatedAt": "2026-09-21T10:08:47+00:00"
   },
   {
     "id": "anarchist-library-en-382b0793ed8dc09bb061d1e5",
@@ -11319,6 +13078,27 @@
     "updatedAt": "2026-07-07T02:48:35.309000000+00:00"
   },
   {
+    "id": "anarchist-library-en-28a77230240e0e219e1961ea",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Feeling Revolution",
+    "authors": [
+      "Yasmeen Mekawy"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/yasmeen-mekawy-feeling-revolution-affect-and-the-afterlives-of-the-arab-uprisings.epub"
+    },
+    "updatedAt": "2026-09-15T06:33:36.758000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-26c1cbf3ab2783a80d3d0506",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -11467,6 +13247,28 @@
     "updatedAt": "2026-07-22T03:11:12+00:00"
   },
   {
+    "id": "anarchist-library-en-489eddfb541ae1db9a0f8604",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "How Should We Understand the Political Process in Sudan Today and the Experience of the Sudanese-Sudanese Dialogue?",
+    "authors": [
+      "Sudanese Anarchists Gathering",
+      "Fawaz Murtada"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/fawaz-murtada-from-sudanese-anarchists-gathering-how-should-we-understand-the-political-process.epub"
+    },
+    "updatedAt": "2026-09-24T05:36:33.317000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-8dd9614efbe5cd3f283086e9",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -11593,6 +13395,28 @@
       "epub": "https://theanarchistlibrary.org/library/interview-with-amora.epub"
     },
     "updatedAt": "2026-07-12T00:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-en-812cb87fa92506d259604d4e",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Interview with ‘Priama Diia’ union members",
+    "authors": [
+      "Priama Diia",
+      "Solidarity Collectives"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/solidarity-collectives-interview-with-priama-diia-union-members.epub"
+    },
+    "updatedAt": "2026-09-21T09:59:24+00:00"
   },
   {
     "id": "anarchist-library-en-f9700ce479e5e0380de8ec32",
@@ -11784,6 +13608,69 @@
     "updatedAt": "2026-07-14T12:46:44.032000000+00:00"
   },
   {
+    "id": "anarchist-library-en-570dcff5b553a9bda1e28411",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Mayhem",
+    "authors": [
+      "Anonymous"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/mayhem-1.epub"
+    },
+    "updatedAt": "2026-09-28T01:49:22.868000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-7304477e9ad6b5696bc2af31",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "My Century Plant",
+    "authors": [
+      "Lois Waisbrooker"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/lois-waisbrooker-my-century-plant.epub"
+    },
+    "updatedAt": "2026-09-28T01:52:26.746000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-6d64e4cc35e49dc9f65a7b4b",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "No Mini-Lenins; No Mini-Hitlers",
+    "authors": [
+      "László Molnárfi"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/laszlo-molnarfi-no-mini-lenins-no-mini-hitlers.epub"
+    },
+    "updatedAt": "2026-09-28T01:55:55.642000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-2145404d755f6e5e10fadabf",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -11803,6 +13690,27 @@
       "epub": "https://theanarchistlibrary.org/library/eric-king-no-way-home-an-anarchist-ex-prisoner-s-response-to-fire-ant-movement-defense.epub"
     },
     "updatedAt": "2026-07-13T08:06:15.405000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-d222f57b93c29cd3462f8e87",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "On Crutches and Cedar",
+    "authors": [
+      "Warlock Lumpen"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/warlock-lumpen-on-crutches-and-cedar.epub"
+    },
+    "updatedAt": "2026-09-27T17:56:45+00:00"
   },
   {
     "id": "anarchist-library-en-b1eada8e2af4c2b3c33317b4",
@@ -11845,6 +13753,27 @@
       "epub": "https://theanarchistlibrary.org/library/kingsley-widmer-on-refusing.epub"
     },
     "updatedAt": "2026-07-06T14:34:32.451000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-cbff2c00327b4dbc63f33bf0",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Open letter to all anarchists",
+    "authors": [
+      "Albert Henry Norrman"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/albert-henry-norrman-open-letter-to-all-anarchists.epub"
+    },
+    "updatedAt": "2026-09-30T01:58:32.683000000+00:00"
   },
   {
     "id": "anarchist-library-en-b72141f9035f9ccf61bfb7c9",
@@ -11932,6 +13861,48 @@
     "updatedAt": "2026-07-21T08:23:47.002000000+00:00"
   },
   {
+    "id": "anarchist-library-en-ba684b9a3b65a775db73549f",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Premature Anti-Communists?",
+    "authors": [
+      "Kenyon Zimmer"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/kenyon-zimmer-premature-anti-communists.epub"
+    },
+    "updatedAt": "2026-09-17T22:44:21.558000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-37684b0b30ab4c2041380439",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Private Property or Possession",
+    "authors": [
+      "Per Bylund"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/per-bylund-private-property-or-possession.epub"
+    },
+    "updatedAt": "2026-09-30T02:12:22.827000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-6faa1aa962ea93ace82e09c4",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -11972,6 +13943,27 @@
       "epub": "https://theanarchistlibrary.org/library/anarcho-proudhon-start-by-being-right.epub"
     },
     "updatedAt": "2026-07-29T02:30:33.296000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-44dfa022351a08efd2f023c1",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Really Though, Not All “Black” People Give a Fuck About “White” Dreads",
+    "authors": [
+      "Flower Bomb"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/flower-bomb-really-though-not-all-black-people-give-a-fuck-about-white-dreads.epub"
+    },
+    "updatedAt": "2026-09-28T01:55:15+00:00"
   },
   {
     "id": "anarchist-library-en-c43394557b6b0c3e60e87ef8",
@@ -12016,6 +14008,27 @@
     "updatedAt": "2026-07-29T02:11:01+00:00"
   },
   {
+    "id": "anarchist-library-en-c6af7b51678955cd982e967b",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Rethinking Lampedusa",
+    "authors": [
+      "Leonardo Caffo"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/rethinking-lampedusa.epub"
+    },
+    "updatedAt": "2026-09-23T06:11:32.134000000+00:00"
+  },
+  {
     "id": "anarchist-library-en-638baff085326ddb8881df0e",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -12035,6 +14048,27 @@
       "epub": "https://theanarchistlibrary.org/library/review-individualism-versus-egoism.epub"
     },
     "updatedAt": "2026-07-25T00:00:00+00:00"
+  },
+  {
+    "id": "anarchist-library-en-0b03ff018dc651a69b109071",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Riding the Waves of Repression",
+    "authors": [
+      "Lilia Folt"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/lilia-folt-riding-the-waves-of-repression.epub"
+    },
+    "updatedAt": "2026-09-18T01:32:23+00:00"
   },
   {
     "id": "anarchist-library-en-c5dfbf4031ba40a4da09236c",
@@ -12057,6 +14091,27 @@
       "epub": "https://theanarchistlibrary.org/library/john-zerzan-running-on-emptiness.epub"
     },
     "updatedAt": "2026-07-11T12:50:33.865000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-1581be6071d72aeffdacae43",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Samuel Konkin III (SEK3) on Rayo and Vonu",
+    "authors": [
+      "Shane Radliff"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/shane-radliff-samuel-konkin-iii-sek3-on-rayo-and-vonu.epub"
+    },
+    "updatedAt": "2026-09-23T06:13:39.627000000+00:00"
   },
   {
     "id": "anarchist-library-en-dde831637b9a4f861e02c3ad",
@@ -12099,6 +14154,27 @@
       "epub": "https://theanarchistlibrary.org/library/anonymous-signal-problems.epub"
     },
     "updatedAt": "2026-07-06T14:22:46.612000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-8a593e6356dbb3c11b0c4b3c",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Solidarity has to have teeth",
+    "authors": [
+      "Emon Azmi"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/emon-azmi-solidarity-has-to-have-teeth.epub"
+    },
+    "updatedAt": "2026-09-15T17:05:46+00:00"
   },
   {
     "id": "anarchist-library-en-3a788700ee78dc19cb91c639",
@@ -12483,6 +14559,28 @@
     "updatedAt": "2023-05-31T13:53:14+00:00"
   },
   {
+    "id": "anarchist-library-en-180453c973816bc2d9d7835d",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "The Assumptive Logic of Anarchism",
+    "authors": [
+      "Semiyah",
+      "charliebanga"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/charliebanga-semiyah-the-assumptive-logic-of-anarchism.epub"
+    },
+    "updatedAt": "2026-09-16T18:12:32+00:00"
+  },
+  {
     "id": "anarchist-library-en-edcee11fa1fa6d4060a414eb",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -12631,6 +14729,27 @@
     "updatedAt": "2026-07-20T00:00:00+00:00"
   },
   {
+    "id": "anarchist-library-en-7d64cfe2259ac0da503ea0a7",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "The Reformism Inherent to Statism",
+    "authors": [
+      "Emon Azmi"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/emon-azmi-the-statism-inherent-to-fascism.epub"
+    },
+    "updatedAt": "2026-09-15T17:12:44+00:00"
+  },
+  {
     "id": "anarchist-library-en-ee362c5738936bc1a25b0f45",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -12692,6 +14811,48 @@
       "epub": "https://theanarchistlibrary.org/library/castanea-dentata-there-can-be-no-peace.epub"
     },
     "updatedAt": "2026-07-18T17:20:28+00:00"
+  },
+  {
+    "id": "anarchist-library-en-d49f41ba511f80b3f37eba85",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Toward an Economy of Relationships (Anarchist Mutual Credit System)",
+    "authors": [
+      "Aeris"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/aeris-toward-an-economy-of-relationships-anarchist-mutual-credit-system.epub"
+    },
+    "updatedAt": "2026-09-21T07:22:11.982000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-17f4c5dca724f5f365abcdef",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Towards an Anarchist centred critical theory of OCD",
+    "authors": [
+      "OCD Rebellion"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/ocd-rebellion-towards-an-anarchist-centred-critical-theory-of-ocd.epub"
+    },
+    "updatedAt": "2026-09-17T07:24:10.988000000+00:00"
   },
   {
     "id": "anarchist-library-en-2e55541bfd2bd2f8cf1a71b1",
@@ -12803,6 +14964,48 @@
     "updatedAt": "2026-07-22T08:17:34.643000000+00:00"
   },
   {
+    "id": "anarchist-library-en-2ace16a397148c2e1c6cb46b",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "What it means to be libertarian",
+    "authors": [
+      "Iain Mckay"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/talk-what-it-means-to-be-libertarian-london-28-oct-2017.epub"
+    },
+    "updatedAt": "2026-09-17T02:29:02.024000000+00:00"
+  },
+  {
+    "id": "anarchist-library-en-de663832dd97b002ec34fd17",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "When Wars Converge",
+    "authors": [
+      "K. C. Sinclair"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/k-c-sinclair-when-wars-converge.epub"
+    },
+    "updatedAt": "2026-09-18T16:25:34+00:00"
+  },
+  {
     "id": "anarchist-library-en-3f0f43fc3118d6b64f701284",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -12825,6 +15028,27 @@
     "updatedAt": "2026-07-12T00:44:33+00:00"
   },
   {
+    "id": "anarchist-library-en-de86affda9491f649b7e293f",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Why I Am a Left Libertarian",
+    "authors": [
+      "Jeff Riggenbach"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/jeff-riggenbach-why-i-am-a-left-libertarian.epub"
+    },
+    "updatedAt": "2026-09-29T00:00:00+00:00"
+  },
+  {
     "id": "anarchist-library-en-fa7c360feab5f78750b84d7f",
     "sourceId": "anarchist-library-en",
     "sourceName": "The Anarchist Library",
@@ -12844,6 +15068,27 @@
       "epub": "https://theanarchistlibrary.org/library/benjamin-tucker-why-i-am-an-anarchist.epub"
     },
     "updatedAt": "2026-07-29T07:44:40+00:00"
+  },
+  {
+    "id": "anarchist-library-en-060d8e9568a5aed1934ac391",
+    "sourceId": "anarchist-library-en",
+    "sourceName": "The Anarchist Library",
+    "title": "Why Nihilism?",
+    "authors": [
+      "Flower Bomb"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [],
+    "formats": [
+      "epub"
+    ],
+    "readUrl": "",
+    "downloads": {
+      "epub": "https://theanarchistlibrary.org/library/flower-bomb-why-nihilism-a-response-to-john-zerzans-why-hope-critique-of-the-nihilist-tendency.epub"
+    },
+    "updatedAt": "2026-09-28T01:55:04+00:00"
   },
   {
     "id": "anarchist-library-en-6183e14ec4c3c9a855822d62",

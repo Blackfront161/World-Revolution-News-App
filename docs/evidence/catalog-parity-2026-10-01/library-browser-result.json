@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": [
+    "715 stable records merged despite partial remote snapshot; withdrawal hides one title; DE search, author, format, keyboard and four widths/nine UI languages passed.",
+    "All catalog requests failed on reload: last saved archive and persistent withdrawal remain."
+  ],
+  "errors": []
+}

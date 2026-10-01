@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-08-05T15:22:22.376307+00:00",
-  "itemCount": 609,
+  "itemCount": 715,
   "sources": {
     "anarchist-library-en": {
       "ok": true,
@@ -74,5 +74,20 @@
       "items": 0,
       "preservedItems": 0
     }
+  },
+  "catalogProjection": {
+    "status": "merged-existing-metadata-not-a-new-crawl",
+    "inputRefs": {
+      "app": "71c11c6bd4ff2d3cbc09dec41db54380f32dde58",
+      "data": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915"
+    },
+    "indexedItemsBySource": {
+      "anarchist-library-de": 53,
+      "anarchist-library-it": 123,
+      "anarchist-library-es": 156,
+      "anarchist-library-fr": 184,
+      "anarchist-library-en": 199
+    },
+    "downloadRights": "not-granted; original-host links only"
   }
 }

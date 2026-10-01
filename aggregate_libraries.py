@@ -11,6 +11,7 @@ from collections import deque
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+from library_catalog import merge_catalogs
 
 for stream in (sys.stdout, sys.stderr):
     try:
@@ -218,7 +219,7 @@ def main() -> int:
             output.extend(preserved)
             status["preservedItems"] = len(preserved)
         health[source["id"]] = status
-    output.sort(key=lambda item: (clean(item.get("sourceName")).casefold(), clean(item.get("title")).casefold()))
+    output = merge_catalogs([previous, output], sources)
     atomic_json(FEED_PATH, output)
     atomic_json(HEALTH_PATH, {
         "schemaVersion": 1,

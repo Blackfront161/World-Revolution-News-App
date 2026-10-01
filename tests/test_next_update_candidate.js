@@ -15,12 +15,12 @@ const data = JSON.parse(read('solidarity-network.json'));
 for (const source of [html, productionWorker, previewWorker]) {
   assert(source.includes('news-card-copy.js?release=1'));
   assert(source.includes('solidarity-network-21.js?release=6'));
-  assert(source.includes('news-app-2.js?release=55'));
+  assert(source.includes('news-app-2.js?release=56'));
   assert(source.includes('news-app-2.css?release=49'));
 }
-assert(productionWorker.includes("wrn-app-v2.1.2-r9"));
+assert(productionWorker.includes("wrn-app-v2.1.2-r10"));
 assert(productionWorker.includes("wrn-data-v2.1.2-r1"));
-assert(previewWorker.includes('`${CACHE_PREFIX}v97`'));
+assert(previewWorker.includes('`${CACHE_PREFIX}v98`'));
 
 assert(app.includes('const storedTranslation = translationFor(article);'));
 assert(app.includes("cardCopy.syncTeaserParagraph(card.querySelector('.news-card__open')"));
