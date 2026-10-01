@@ -1,0 +1,27 @@
+<en-US>
+New selectable Autonom design. Share radio stations and podcast episodes or copy their links. Expanded lexicon and improved offline reading and display. The red-and-black compass-star app icon is retained.
+</en-US>
+<de-DE>
+Neues wählbares Design Autonom. Radios und Podcastfolgen teilen oder Links kopieren. Erweitertes Lexikon und Verbesserungen beim Offline-Lesen und der Darstellung. Das rot-schwarze Windrosen-Appsymbol bleibt erhalten.
+</de-DE>
+<el-GR>
+Νέο επιλέξιμο θέμα Autonom. Κοινοποιήστε ραδιοφωνικούς σταθμούς και επεισόδια podcast ή αντιγράψτε τους συνδέσμους τους. Εμπλουτισμένο λεξικό και βελτιώσεις στην ανάγνωση εκτός σύνδεσης και στην εμφάνιση. Διατηρείται το κόκκινο και μαύρο εικονίδιο της εφαρμογής.
+</el-GR>
+<es-ES>
+Nuevo diseño Autonom seleccionable. Comparte emisoras de radio y episodios de podcast o copia sus enlaces. Léxico ampliado y mejoras en la lectura sin conexión y la presentación. Se mantiene el icono rojo y negro de la aplicación.
+</es-ES>
+<fr-FR>
+Nouveau thème Autonom au choix. Partagez des radios et des épisodes de podcast ou copiez leurs liens. Lexique enrichi et améliorations de la lecture hors ligne et de l’affichage. L’icône rouge et noire de l’application est conservée.
+</fr-FR>
+<it-IT>
+Nuovo tema Autonom selezionabile. Condividi stazioni radio ed episodi podcast o copia i loro link. Lessico ampliato e miglioramenti alla lettura offline e alla visualizzazione. L’icona rossa e nera dell’app rimane invariata.
+</it-IT>
+<pt-PT>
+Novo tema Autonom selecionável. Partilha rádios e episódios de podcast ou copia as suas ligações. Léxico alargado e melhorias na leitura offline e na apresentação. O ícone vermelho e preto da aplicação mantém-se.
+</pt-PT>
+<ru-RU>
+Новая тема Autonom на выбор. Делитесь радиостанциями и выпусками подкастов или копируйте ссылки. Расширен словарь, улучшены чтение без интернета и отображение. Красно-чёрный значок приложения сохранён.
+</ru-RU>
+<tr-TR>
+Yeni seçilebilir Autonom tasarımı. Radyo istasyonlarını ve podcast bölümlerini paylaşın veya bağlantılarını kopyalayın. Sözlük genişletildi; çevrimdışı okuma ve görünüm iyileştirildi. Uygulamanın kırmızı ve siyah simgesi korunuyor.
+</tr-TR>

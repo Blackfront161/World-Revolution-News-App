@@ -7,10 +7,12 @@
     "note": "2.1-Produktarbeit gehört nicht rückwirkend zum 2.0.8-Funktionsumfang."
   },
   "confirmedLiveDistribution": {
-    "version": "2.1.0",
-    "versionCode": 25,
-    "status": "vom Nutzer als aktueller signierter Live-/Verteilungsstand bestätigt; Play-Console-Trackstatus nicht unabhängig geprüft",
-    "note": "VersionCode 25 ist verbraucht und darf für keinen neuen Kandidaten wiederverwendet werden."
+    "version": "2.1.2",
+    "versionCode": 28,
+    "status": "Google Play Console: bei Google Play verfügbar, vollständiger Roll-out; unabhängig per sichtbarem Console-Status bestätigt",
+    "verifiedAt": "2026-10-01T03:15:39.832330+00:00",
+    "evidence": "docs/PLAY-UPLOAD-CODE32-2026-10-01.md",
+    "note": "Code32 ist eingereicht, aber noch nicht als live bestätigt."
   },
   "current": {
     "version": "2.1.2",
@@ -18,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 lokal signiert und unabhängig geprüft; Emulator PASS. Nutzer hat Lexikon freigegeben und den abgeschlossenen Gerätetest bestätigt. Play-Upload beauftragt, aktuell Kontozuordnung zum bestehenden WRN-Entwicklerkonto offen; noch kein Upload oder Rollout. Wiederkehrende Vollbild-Updateaufforderung nach Verfügbarkeit prüfen; keine absolute Nutzungssperre behauptet.",
+    "status": "Code32 aus 6821a02 signiert, geprüft und in Google Play Produktion hochgeladen. Produktionsrelease23 mit 100%-Roll-out in178 Ländern und Storehinweisen in9 Sprachen zur Prüfung gesendet; schnelle Vorabprüfungen/Google-Freigabe laufen. Updateaufforderung für alle Code28-Nutzer aktiviert, 0 bereits aufgeforderte Nutzer gemeldet; kein absoluter Updatezwang. Noch nicht als live bestätigt.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -64,10 +66,18 @@
       "evidence": "docs/PLAY-UPLOAD-CODE32-2026-10-01.md"
     },
     "playPublication": {
-      "status": "awaiting-developer-account-selection",
-      "uploadPerformed": false,
-      "rolloutPerformed": false,
-      "recoveryPrompt": "pending newer compatible published version and console access"
+      "status": "submitted-production-pending-google-checks",
+      "uploadPerformed": true,
+      "submissionConfirmed": true,
+      "rolloutRequestedPercent": 100,
+      "rolloutLiveVerified": false,
+      "releaseId": "23",
+      "track": "production",
+      "managedPublishing": false,
+      "report": "docs/evidence/audio-sharing-2026-10-01/code32-play-production-submission.json",
+      "releaseUrl": "https://play.google.com/console/u/1/developers/8812037282040696596/app/4974507251844219576/tracks/4697960679555676486/releases/23/details",
+      "recoveryPrompt": "activated for all Code28 users; recurring dismissible full-screen prompt; reported deliveries 0",
+      "testTracks": "unchanged; Code27 recovery unavailable"
     }
   },
   "projectBoundary": {
@@ -102,7 +112,7 @@
         "appCssRelease": 49,
         "audioToolsRelease": 2
       },
-      "distribution": "Im signierten 2.1.2/Code32-Kandidaten enthalten; Emulator PASS, Gerätetest vom Nutzer als abgeschlossen bestätigt. Play-Upload beauftragt, Kontozuordnung offen; noch nicht veröffentlicht.",
+      "distribution": "Im signierten 2.1.2/Code32 aus6821a02 in Produktion hochgeladen und für vollständigen Roll-out zur Google-Prüfung gesendet. Noch nicht live bestätigt. Updateaufforderung für bisherige Produktionsversion28 aktiviert.",
       "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
       "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
       "candidateSignatureReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json"
@@ -467,7 +477,7 @@
         "newDefinitions": 1,
         "repairedRelatedReferences": 5,
         "independentEditorialReview": "pending",
-        "publicationStatus": "included_in_signed_local_code32; Play upload requested, console account selection pending; no website publication of this batch",
+        "publicationStatus": "included_in_signed_code32_submitted_to_play_production_pending_google_approval; no website publication of this batch",
         "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat",
         "independentTechnicalReview": "accepted_scoped_local_draft",
         "reviewedCommit": "d58746d020325ae6357a8f8b4bf268de001c7ef7",
@@ -838,5 +848,11 @@
     "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "artifactSha256": "17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7",
     "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+  },
+  "previousUserConfirmedDistribution": {
+    "version": "2.1.0",
+    "versionCode": 25,
+    "status": "vom Nutzer als aktueller signierter Live-/Verteilungsstand bestätigt; Play-Console-Trackstatus nicht unabhängig geprüft",
+    "note": "VersionCode 25 ist verbraucht und darf für keinen neuen Kandidaten wiederverwendet werden."
   }
 }

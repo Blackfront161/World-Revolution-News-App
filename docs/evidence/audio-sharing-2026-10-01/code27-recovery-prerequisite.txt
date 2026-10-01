@@ -1,0 +1,229 @@
+- progressbar
+- generic: Google Play Console wird geladen
+- banner:
+  - link "Google Play Console-Logo":
+    - /url: /console/u/1/developers/8812037282040696596/app-list
+    - button "Google Play Console-Logo"
+  - button "Ungelesene Benachrichtigungen Im Benachrichtigungscenter öffnen":
+    - img: notifications_unread
+    - generic: Ungelesene Benachrichtigungen
+  - button "World Revolution News":
+    - generic: World Revolution News
+  - button "Entwicklerkonten wechseln":
+    - img "Entwicklerkonten wechseln"
+- navigation:
+  - link "Alle Apps":
+    - /url: /console/u/1/developers/8812037282040696596/app-list
+    - img: keyboard_backspace
+    - generic: Alle Apps
+  - list:
+    - listitem "Dashboard":
+      - button "Dashboard":
+        - img: dashboard
+        - generic: Dashboard
+    - listitem "Statistiken":
+      - button "Statistiken":
+        - img: bar_chart
+        - generic: Statistiken
+    - listitem "Veröffentlichungen – Übersicht":
+      - button "Veröffentlichungen – Übersicht":
+        - img: overview
+        - generic: Veröffentlichungen – Übersicht
+    - listitem "Mit Google Play geschützt":
+      - button "Mit Google Play geschützt":
+        - img: shield
+        - generic: Mit Google Play geschützt
+    - listitem "Testen und veröffentlichen":
+      - button "Testen und veröffentlichen":
+        - img: rocket_launch
+        - generic: Testen und veröffentlichen
+      - list:
+        - listitem "Neueste Releases und Bundles":
+          - button "Neueste Releases und Bundles":
+            - generic: Neueste Releases und Bundles
+        - listitem "Produktion":
+          - button "Produktion":
+            - generic: Produktion
+        - listitem "Test":
+          - button "Test":
+            - generic: Test
+            - img: expand_more
+        - listitem "Vorregistrierung":
+          - button "Vorregistrierung":
+            - generic: Vorregistrierung
+        - listitem "App-Integrität":
+          - button "App-Integrität":
+            - generic: App-Integrität
+        - listitem "Erweiterte Einstellungen":
+          - button "Erweiterte Einstellungen":
+            - generic: Erweiterte Einstellungen
+    - listitem "Überprüfen und optimieren":
+      - button "Überprüfen und optimieren":
+        - img: vital_signs
+        - generic: Überprüfen und optimieren
+    - listitem "Mehr Nutzer gewinnen":
+      - button "Mehr Nutzer gewinnen":
+        - img: finance_mode
+        - generic: Mehr Nutzer gewinnen
+    - listitem "Mit Google Play monetarisieren":
+      - button "Mit Google Play monetarisieren":
+        - img: sell
+        - generic: Mit Google Play monetarisieren
+- link "Zurück zu Alle App-Bundles":
+  - /url: /console/u/1/developers/8812037282040696596/app/4974507251844219576/bundle-explorer-selector
+  - img: keyboard_backspace
+  - generic: Alle App-Bundles
+- heading "27.aab (2.2.0)" [level=1]:
+  - strong: 27.aab
+  - text: (2.2.0)
+- button "Tools zur Wiederherstellung":
+  - generic: Tools zur Wiederherstellung
+  - img: arrow_drop_down
+- list:
+  - listitem: Aktiv
+  - listitem: Am Sonntag, 08:18 hochgeladen
+- button "Größe für Neuinstallationen"
+- generic: 9.39 MB
+- button "Geschätzte Dauer des Downloads"
+- generic: 5 Sek.
+- button "Größe für Updates"
+- generic: 7.87 MB
+- button "Installationsbasis"
+- generic: ≤ 100
+- tablist:
+  - tab "Details" [selected]:
+    - generic: Details
+  - tab "Downloads":
+    - generic: Downloads
+  - tab "Bereitstellung":
+    - generic: Bereitstellung
+  - tab "Vergleich":
+    - generic: Vergleich
+- heading "Details" [level=2]
+- generic: Releases
+- text: 2 Releases
+- button "Details anzeigen":
+  - generic: Details anzeigen
+  - img: expand_more
+- generic: Größe des Updates
+- text: 7.87 MB
+- button "Show detail":
+  - generic: Show detail
+  - img: expand_more
+- generic: Unterstützte Android-Geräte
+- generic: "19.185"
+- link "Zum Gerätekatalog":
+  - /url: /console/u/1/developers/8812037282040696596/app/4974507251844219576/devices
+- generic: Lokalisierungen
+- generic: 85 Lokalisierungen
+- button "Details anzeigen":
+  - generic: Details anzeigen
+  - img: expand_more
+- generic: Berechtigungen
+- generic: android.permission.INTERNET, com.world.revolution.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+- generic: Funktionen
+- generic: android.hardware.faketouch
+- generic: Bildschirm-Layouts
+- generic: small, normal, large, xlarge
+- generic: Native Plattformen
+- generic: Keine Einschränkungen
+- generic: API-Level
+- generic: 24+
+- generic: Ziel-SDK
+- generic: "36"
+- generic: OpenGL ES-Versionen
+- generic: 0.0 oder höher
+- generic: OpenGL-Texturen
+- generic: Keine Texturen erforderlich
+- generic: Arbeitsspeicher-Seitengröße
+- generic: Unterstützt 16 KB
+- generic: Es können weiterhin Fehler auftreten, wenn deine App Bibliotheken nutzt, die wir nicht erkennen können, oder dein Code voraussetzt, dass Geräte eine bestimmte Seitengröße verwenden.
+- link "Weitere Informationen zur Kompatibilität mit Seitengrößen von 16 KB, Wird in einem neuen Tab geöffnet":
+  - /url: https://developer.android.com/guide/practices/page-sizes#build
+  - text: Weitere Informationen
+- generic: DEX-Codeoptimierung
+- generic: Niedrig
+- img: error_outline
+- generic: Optimiere deine Werte, um die Arbeitsspeichernutzung und die Gesamtleistung für deine Nutzer zu verbessern.
+- link "Weitere Informationen zur DEX-Codeoptimierung, Wird in einem neuen Tab geöffnet":
+  - /url: https://developer.android.com/topic/performance/vitals/code-optimization
+  - text: Weitere Informationen
+- generic: Optimierung in Prozent
+- generic: "-"
+- generic: Verschleierung in Prozent
+- generic: 2%
+- img: error_outline
+- generic: Schwund in Prozent
+- generic: "-"
+- generic: R8-Konfiguration
+- generic: "-"
+- img: error_outline
+- generic: Führe ein Upgrade auf die AGP-Version 9.0 durch und verwende R8, um die beste Leistung zu erzielen
+- generic: Unkomprimierte DEX-Größe insgesamt
+- generic: 7.43 MB
+- link "Produktupdates":
+  - /url: https://play.google.com/console/about/whats-new/
+- link "Status-Dashboard":
+  - /url: https://status.play.google.com/
+- link "Hilfe":
+  - /url: /console/u/1/developers/8812037282040696596/help-and-support?app=4974507251844219576
+- generic: © 2026 Google
+- link "Datenschutz":
+  - /url: https://www.google.com/policies/privacy/
+- link "Vertriebsvereinbarung für Entwickler":
+  - /url: https://play.google.com/about/developer-distribution-agreement.html
+- link "Nutzungsbedingungen":
+  - /url: https://play.google.com/about/console/terms-of-service/
+- status
+- dialog "Nutzer zum Aktualisieren auffordern":
+  - heading "Nutzer zum Aktualisieren auffordern" [level=2]
+  - button "Schließen" [active]:
+    - img: close
+  - text: Nutzern, die diese Version installiert haben, werden mithilfe einer Vollbildmeldung darüber informiert, dass ein Update erforderlich ist. Sie können das Update installieren oder die Meldung schließen. Diese wird ihnen bei jedem Start der App wieder angezeigt.
+  - link "Weitere Informationen zu Aufforderungen für Updates, Wird in einem neuen Tab geöffnet":
+    - /url: https://support.google.com/googleplay/android-developer/answer/13812041?hl=de
+    - text: Weitere Informationen
+  - region:
+    - tablist:
+      - tab "Schritt 1 von 2, Version für Aktualisierung bestätigen" [selected]:
+        - generic: "1"
+        - generic: Version für Aktualisierung bestätigen
+      - tab "Schritt 2 von 2, Targeting-Kriterien auswählen" [disabled]:
+        - generic: "2"
+        - generic: Targeting-Kriterien auswählen
+    - tabpanel:
+      - heading "Nicht verfügbar" [level=3]
+      - grid "Nicht verfügbare Artefakte":
+        - row "Dateityp Version":
+          - columnheader "Dateityp"
+          - columnheader "Version"
+          - cell
+          - cell
+        - row "App bundle 27 (2.2.0) Geschlossener Test - Alpha Neue Version fehlt Track anzeigen":
+          - gridcell "App bundle":
+            - generic: App bundle
+          - gridcell "27 (2.2.0)":
+            - generic: 27 (2.2.0)
+          - gridcell "Geschlossener Test - Alpha Neue Version fehlt":
+            - img: do_not_disturb_on
+            - generic: Geschlossener Test - Alpha
+            - generic: Neue Version fehlt
+          - gridcell "Track anzeigen":
+            - button "Track anzeigen":
+              - img: arrow_right_alt
+        - row "App bundle 27 (2.2.0) Interner Test Neue Version fehlt Track anzeigen":
+          - gridcell "App bundle":
+            - generic: App bundle
+          - gridcell "27 (2.2.0)":
+            - generic: 27 (2.2.0)
+          - gridcell "Interner Test Neue Version fehlt":
+            - img: do_not_disturb_on
+            - generic: Interner Test
+            - generic: Neue Version fehlt
+          - gridcell "Track anzeigen":
+            - button "Track anzeigen":
+              - img: arrow_right_alt
+    - button "Weiter" [disabled]:
+      - generic: Weiter
+    - button "Abbrechen":
+      - generic: Abbrechen

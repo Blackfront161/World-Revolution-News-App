@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-01T03:15:39.832330+00:00",
+  "clientTimezone": "Asia/Singapore",
+  "status": "submitted-production-pending-google-checks",
+  "packageName": "com.world.revolution",
+  "versionName": "2.1.2",
+  "versionCode": 32,
+  "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+  "signedSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
+  "releaseName": "32 (2.1.2) – Autonom und Audio-Teilen",
+  "track": "production",
+  "releaseId": "23",
+  "developerId": "8812037282040696596",
+  "appId": "4974507251844219576",
+  "trackId": "4697960679555676486",
+  "uploadPerformed": true,
+  "submissionConfirmed": true,
+  "rolloutRequestedPercent": 100,
+  "countriesRegions": 178,
+  "releaseNoteLanguages": [
+    "en-US",
+    "de-DE",
+    "el-GR",
+    "es-ES",
+    "fr-FR",
+    "it-IT",
+    "pt-PT",
+    "ru-RU",
+    "tr-TR"
+  ],
+  "managedPublishing": false,
+  "prechecks": "running",
+  "googleApproval": "pending",
+  "code32LiveVerified": false,
+  "previousLiveVersion": {
+    "versionName": "2.1.2",
+    "versionCode": 28,
+    "observation": "Google Play available in releases overview"
+  },
+  "productionRecovery": {
+    "fromVersionCode": 28,
+    "status": "initiated-and-management-verified",
+    "targeting": "all users of this version",
+    "promptedUsersReported": 0,
+    "absoluteUsageBlock": false,
+    "latestCompatibleVersionMustBeAvailable": true
+  },
+  "existingRecoveryVersionsObserved": [
+    25,
+    26
+  ],
+  "testCode27Recovery": "not available; newer versions absent from internal and paused Alpha tracks; no test releases published",
+  "productionReleaseUrl": "https://play.google.com/console/u/1/developers/8812037282040696596/app/4974507251844219576/tracks/4697960679555676486/releases/23/details",
+  "publishingUrl": "https://play.google.com/console/u/1/developers/8812037282040696596/app/4974507251844219576/publishing",
+  "evidence": [
+    "code32-play-submitted-final.jpg",
+    "code32-play-submitted-final.txt",
+    "code32-play-release-notes.txt",
+    "code28-play-recovery.jpg",
+    "code28-play-recovery.txt",
+    "code27-recovery-prerequisite.txt"
+  ]
+}

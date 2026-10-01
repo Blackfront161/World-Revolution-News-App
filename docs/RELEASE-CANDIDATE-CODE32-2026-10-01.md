@@ -1,6 +1,6 @@
 # Release-Kandidat 2.1.2 / Code32
 
-Auf Nutzerauftrag vom 1. Oktober 2026 gebaut und im Folgeauftrag **lokal signiert und geprüft**. Die physische Geräteprüfung und Veröffentlichung stehen weiterhin aus. Die folgende Tabelle dokumentiert die unveränderte unsignierte Eingabe; die signierte Ausgabe ist am Ende dieses Berichts gebunden.
+Auf Nutzerauftrag vom 1. Oktober 2026 gebaut, **signiert, geprüft und in Google Play Produktion hochgeladen**. Lexikonfreigabe und Gerätetest wurden vom Nutzer bestätigt. Der vollständige Produktionsrollout ist zur Google-Prüfung eingereicht; Code32 ist noch nicht als live bestätigt. Die folgende Tabelle dokumentiert die unveränderte unsignierte Eingabe; die signierte Ausgabe ist weiter unten gebunden.
 
 | Bindung | Wert |
 | --- | --- |
@@ -60,4 +60,4 @@ Der Kontrolleur prüfte anschließend auch die fertige signierte AAB unabhängig
 
 ## Nachfolgende Nutzerfreigabe und Uploadauftrag
 
-Der Nutzer hat anschließend das Lexikon freigegeben, den abgeschlossenen Gerätetest bestätigt und den Play-Upload samt verbindlicher Aktualisierung angefordert. Die Gerätebestätigung ist nutzerberichtet; die historischen Prüfberichte bleiben unverändert. Die bisherigen offenen Nutzer-Gates gelten damit als erfüllt. Der Play-Zugang und die tatsächliche Einreichung werden separat im [Code32-Play-Auftrag](PLAY-UPLOAD-CODE32-2026-10-01.md) dokumentiert. Derzeit ist die Kontozuordnung offen; Upload und Rollout sind noch nicht erfolgt.
+Der Nutzer hat anschließend das Lexikon freigegeben, den abgeschlossenen Gerätetest bestätigt und den Play-Upload samt verbindlicher Aktualisierung angefordert. Die Gerätebestätigung ist nutzerberichtet; die historischen Prüfberichte bleiben unverändert. Die bisherigen offenen Nutzer-Gates gelten damit als erfüllt. Nach Nutzerauswahl des Entwicklerkontos wurde derselbe Kandidat in **Produktion** hochgeladen und der vollständige Roll-out zur Google-Prüfung gesendet. Version32, API24+/Ziel-SDK36, 178 Länder, 100%-Roll-out und neun Storehinweissprachen wurden in der Console bestätigt. Für alle Nutzer der bisherigen Produktionsversion28 wurde eine wiederkehrende Vollbild-Updateaufforderung aktiviert. Eine absolute Nutzungssperre und bereits erfolgte Zustellung werden nicht behauptet. Nachweise und aktuelle Plattformgrenzen: [Code32-Play-Auftrag](PLAY-UPLOAD-CODE32-2026-10-01.md).
