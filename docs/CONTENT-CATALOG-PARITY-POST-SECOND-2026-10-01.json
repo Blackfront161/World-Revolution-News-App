@@ -1,0 +1,1642 @@
+{
+  "schemaVersion": 1,
+  "status": "review_required_not_admission_not_merge_not_live_parity",
+  "bindings": {
+    "app": {
+      "commit": "50d1122b63d891bd8ceaf635d92cb1903f27ad42",
+      "inputKind": "worktree_snapshot_hashes_are_authoritative_commit_is_context",
+      "files": {
+        "podcast-sources.json": {
+          "bytes": 42394,
+          "sha256": "22781da58b2fb53caa4ea0a93280c445f4c951fb70375d65b02be324986607cb"
+        },
+        "podcasts.json": {
+          "bytes": 1579823,
+          "sha256": "5d95c40342f76e16db84e2dd33f6360b2896e0b9b8a0e2eca67bf5814d452229"
+        },
+        "podcast-health.json": {
+          "bytes": 18730,
+          "sha256": "c953e15eaf87bbea8089219cb3fe522b6ec65ee39b12f5ed76675c6cad147158"
+        },
+        "library-sources.json": {
+          "bytes": 4670,
+          "sha256": "2682f6f345702a127f7f87434a892ee4599ca5108a00a8af70a91af39da90a39"
+        },
+        "library-feed.json": {
+          "bytes": 392718,
+          "sha256": "b533b6d8b56cf3bbaab11e8d3d318aee7c5bb8f0ff63bcffe301a368eb27a9e4"
+        },
+        "library-health.json": {
+          "bytes": 2273,
+          "sha256": "69c280367900ef04be72731c976507125aa58876fae2c08d752a57f0b4eb6fcd"
+        }
+      }
+    },
+    "data": {
+      "commit": "03a10224450ac54e2dfdc7bc3d0381fb83ed96a3",
+      "inputKind": "worktree_snapshot_hashes_are_authoritative_commit_is_context",
+      "files": {
+        "podcast-sources.json": {
+          "bytes": 42124,
+          "sha256": "57044e6c7a367e16f146eebd876f2b295b2334ccf3faa94d3afc3c549ab995ce"
+        },
+        "podcasts.json": {
+          "bytes": 2375263,
+          "sha256": "d51ad5865e86549a0e05990996df492d191b420f6ef9c8b88f539e9a15bfac70"
+        },
+        "podcast-health.json": {
+          "bytes": 19546,
+          "sha256": "76cc00453f91f5229aaa7a2cb534247eba76230228a6de4edf5b78f5d949a4d2"
+        },
+        "library-sources.json": {
+          "bytes": 4670,
+          "sha256": "2682f6f345702a127f7f87434a892ee4599ca5108a00a8af70a91af39da90a39"
+        },
+        "library-feed.json": {
+          "bytes": 392718,
+          "sha256": "b533b6d8b56cf3bbaab11e8d3d318aee7c5bb8f0ff63bcffe301a368eb27a9e4"
+        },
+        "library-health.json": {
+          "bytes": 2164,
+          "sha256": "a8a6fd18b084275bb20c025d327ab6e7e206e0c468b016bc7ce6731e4c52b739"
+        }
+      }
+    }
+  },
+  "podcastSources": {
+    "appRows": 52,
+    "dataRows": 52,
+    "sharedUniqueIds": 52,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [
+      {
+        "id": "a-radio-wien",
+        "fields": [
+          "languages"
+        ]
+      },
+      {
+        "id": "aradio-berlin",
+        "fields": [
+          "languages"
+        ]
+      },
+      {
+        "id": "dissens",
+        "fields": [
+          "languages"
+        ]
+      },
+      {
+        "id": "leftover-talk",
+        "fields": [
+          "enabled"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "podcastEpisodes": {
+    "appRows": 908,
+    "dataRows": 1193,
+    "sharedUniqueIds": 756,
+    "idsOnlyInApp": [
+      "00f8d032681ad1de2b234056",
+      "02806f02c1a56f5710577ded",
+      "02b2ca32a67eb6489c0bb474",
+      "071b25de391c3ba4861fd7e3",
+      "0ac59894319262f99c6da05d",
+      "0b6c53d803d06ee2a381dc07",
+      "0cdeef218696fe72abd015f9",
+      "105b269c1165ab4a54c5a020",
+      "11ee93e5be47666cea32ee3e",
+      "121f8b6a6c85ef8813557dd7",
+      "12fd542e8dbadaeb27ea90cf",
+      "13a1e9f2cb4cecb57cc405f6",
+      "16cbd59cbbb7461e72dd1d26",
+      "186397f6d96c2d291e6ab505",
+      "18769796835aa08a45275347",
+      "18f639dd4e83766040d0597e",
+      "1c21a4b4bd22aafc9d5a5a83",
+      "1c70ca886151f8995694ce9f",
+      "2118b8b18d8f14cf4281342d",
+      "235e125bcc01b5b32e5112f4",
+      "2797b2c733cc00f19f7ca681",
+      "29688ea53c2d196587113345",
+      "29fc31aa7ded1eaeb2e21f48",
+      "2b2b4ae9829dde1898c44e16",
+      "2b32728ddb9661045a1c8e1c",
+      "2c55022d783e65b14bca3e63",
+      "2db5eb09f0dcf6760453bb3e",
+      "2db80c4e57a08704af7e17f2",
+      "2f2e224bedea978905a798b4",
+      "2fafa759113d17847cff8e59",
+      "300ff46ef055ef3ebf8535b8",
+      "30fa5d4dd9714d3624bed9f4",
+      "31b0596585ae02d0ac9d0734",
+      "34da9afe85b8157c04452176",
+      "359c4730a710e23eec2b3808",
+      "35ae67d13d7b4483de96f839",
+      "367f54bed9136a725f8c5532",
+      "374b7421c927d679bb0a7a43",
+      "3b2e4954b3663bf9239c4fcd",
+      "3d868897b62369e190f7abe4",
+      "403f707c534488b78510f1ee",
+      "40657e8882259578ab0b5129",
+      "409d4777c71370ab3ddf3681",
+      "40ed432e2a31130666481a22",
+      "417b9b81c67611f16b9aee0f",
+      "425275fcd6a0406559fd0ee7",
+      "4535e4f2913a1a68b63cd191",
+      "461cfdbef2161f041d1eebb2",
+      "49f4ad4f1dbc1f7d90dfab2e",
+      "4a1654de4e2c08bc7f3d21d7",
+      "4af64b644270f0527b28dc2f",
+      "4cc65a75333e1d1b62fd6068",
+      "4d7d9cb44df4eba601b5fc81",
+      "553a95ff5962ff9e94b05169",
+      "56a19767e6330dd7fbfc4e44",
+      "5882ee285fbfd43319c4a84d",
+      "5a67476ec5a20a7b93772295",
+      "5ae27094f618e991045253d8",
+      "5d37178d9d7227be152016e3",
+      "61da655f6c09102715dd8e78",
+      "620bd8fdbdd4e37af414dad2",
+      "67152d5f381168aac27e8782",
+      "675d829108754d6e72152629",
+      "685b48523234179f50bf4e86",
+      "69b36cbbdc0656f777c1343b",
+      "6c2154c9979de05b369ef99e",
+      "6da4ac55c5c6dccc6749af73",
+      "6eaaf8487f32fbfaf5b27a56",
+      "710758df5a5058aa0e6ceb89",
+      "76314768ed7163e4340f3528",
+      "7643b62f3944d68d7d1fb5a6",
+      "7ace8363dda50cf9e37b0e8f",
+      "7d52363b3170b03ab7aa8e99",
+      "803372b42dd95f907fa4f70e",
+      "8413e873af76c2b9c6ea3907",
+      "8855323cda17ddd468e23208",
+      "88773c76991c281450023c20",
+      "8b68d2f25c6a41ecbb656180",
+      "8bd82af10b2eb4497bb0eb5e",
+      "8e06d7165e23c15ba96bbb53",
+      "8e7268ba5d6b9bc121b6caa6",
+      "911a2ce64a4e5e4a0150a7fb",
+      "91bf67bb9605c04ccc17294a",
+      "91c50a543766f6910866fd93",
+      "93411ef1be3f9a4cbe3e5bee",
+      "94510fcf15cb10db6633b12f",
+      "9669962751f50b0165a84ee7",
+      "968295f33bd8206b1a2731fa",
+      "9ae0793ae05ef545b35676ac",
+      "9b73322a4564641bc6d7afcd",
+      "9bdb0a9223ce7a61c7455ba8",
+      "a1ab4a0ffc81351c2a1f3702",
+      "a665e83e645374e686c4ede8",
+      "a88b1f036b5fcbb931407f7a",
+      "a89b73ee9c915848108cb765",
+      "a8b8678d5a94b945d8a6f38b",
+      "a8d807a48ff312dcec69952b",
+      "aa9c4022c827e2e1a08f26aa",
+      "acc6894cf8629a3d1f85a49f",
+      "ad92b2442f3d875b13b83dec",
+      "ae7e54d371f97a974127a4d4",
+      "af56021eee8fa35ff6f72c54",
+      "af68fb7da8ec4388dfe632e3",
+      "b1d1772c0325fae9a2ea9749",
+      "b358d4762914593c1fd9bd53",
+      "b413f4c2ae4b0742d664e107",
+      "b4f823c5748bb11087e05b31",
+      "b597920d5c4ec783326e7f6b",
+      "b7ac6719f217b5a8b66f919e",
+      "b95f0be2b29498171bd449ce",
+      "bc688f9a740ffdf3e5b96288",
+      "bcacf85a86e87bd11be85f2d",
+      "beebf6de87db1e6416e81dbc",
+      "bf47f8f8303a4ebe21729e47",
+      "c2c91dc910af279d2b5e13fd",
+      "c2f2ae6fd238aedae197cac6",
+      "c8273365004930f3a2c2f60f",
+      "c8a8ff51a6f6d7ee602e161e",
+      "c95588c59f6d684befe666e9",
+      "ca0f4189fc28f152a526e788",
+      "ca2fd12b754327d83c04f833",
+      "ca7a1927e68ebd31579022c3",
+      "cd98102130697d1bc5bed403",
+      "ce65fca5d06edebc2292b509",
+      "d22acd86b612b7e97b828de1",
+      "d2f46b23ac1cf450b91a8e59",
+      "d3ac996a5fd8ccaf8c11420f",
+      "d481584d0a9cf26a04d75c9b",
+      "d4888732a4c8144856e08df1",
+      "d500de034b6ee8dcdbd004d9",
+      "d6273f1588bfc5e0f48080ae",
+      "d788f453f82a25f944fd9ec0",
+      "d7abf1c52361dc93942844ce",
+      "da812b843d846e774d1b4ab3",
+      "dfd2d000695802f004b7720b",
+      "e07912b688fdbe930e48629e",
+      "ea1beef5d5ae7fa3c7aeeb9a",
+      "eae9d53c3eb7a761f7c5cf2e",
+      "ec2b06373a080303d6e3d3ab",
+      "ed1c62a10b1f92430d9ecb58",
+      "f081a1f843ae89df45291a12",
+      "f59ec1182b976586c2d6a47f",
+      "f6984cafd60dbb33fcb20096",
+      "f6d9fe8121fdff569270bd6b",
+      "f76dbf35d8ba095dffcab5e6",
+      "f97fc84aee7c6f54ca314e84",
+      "facdd65e66b86ed32e65dd6d",
+      "fc3eb764105841b53aa84f31",
+      "fda3f3204d54ddebd542914d",
+      "fed2fccf53f5dfdffa0f24fc",
+      "ff9ed4befbdcce82209d030b",
+      "ffd3386861725b10bf693fea"
+    ],
+    "idsOnlyInData": [
+      "00079ccbba2cd072126dcb87",
+      "004eb3c0c8fccd6829084eaf",
+      "00570720cf366c46d6735d79",
+      "01d9a5ec51a1ef9d68a4a3c4",
+      "01f6f7708095504d6e909296",
+      "01fcfad24a7dc690564bed9c",
+      "02f6f03749f7d3682a460707",
+      "03030dad00754c9685a6e4d2",
+      "03f04d1d9168dfe5a0396325",
+      "045b1e4286c5ee6935bd5b07",
+      "05c3c8977d53a19411f30bb7",
+      "05db5ec808817923792bf3ee",
+      "060e7100f8389541d92b4d89",
+      "068f60cd360acfac6c644d57",
+      "06bd0085890e2f32fc4a44d6",
+      "078cd3c1dab77522c35f5d34",
+      "085a9dc65c8d2d01451024cb",
+      "09974ef32e37a8b10a085bb4",
+      "0a578f7f1b49b661e1826f10",
+      "0af05ed070f7a1fdfe57e51f",
+      "0b17a79217155353ce801410",
+      "0b8d4f62a58ce82f1f25e81d",
+      "0ba0d158b63bd741d82f2fb6",
+      "0c3aae44c301a9f3c8f9c21d",
+      "0c795d40fd9f51401e9115a2",
+      "0cf9ac900a281edc65bf57b6",
+      "0d90d631e8184ec009400074",
+      "0e23cb7776bc414244d06184",
+      "0ec1d837f9e2214231565dc5",
+      "1088d3d281c3cf05e4018af5",
+      "10bc8c1317919740354956f1",
+      "1180d8a934756900316e3cad",
+      "12927e4aa7e50eb18531b7d6",
+      "13c072c939aaab0ffdeb04a5",
+      "14b76595fed9d3fe2126641d",
+      "153ddb267ac1486b2288bda5",
+      "1544b7533719c8e566c5492f",
+      "15f312d0a7a90c4f856cb9d2",
+      "163ef23d8ad4b5b415796721",
+      "17050acfa506715a3b13901e",
+      "17ffd80639d3fb031cac8202",
+      "183879f91caa331eff10ef54",
+      "1905f9fd120bc07f153096e1",
+      "1ae75a80984ce6aa325f4744",
+      "1b380f271c7e669ce64357b8",
+      "1b5d35e3d022122f270119ce",
+      "1b7d6d017edb9a00910574ca",
+      "1c23983a1ce7a48d50cd0353",
+      "1c5b5853c067abbc2ae2194b",
+      "1ca5be2ba31ca01a87480972",
+      "22c5be9bde68144db947c5eb",
+      "22e5a645b247f27453059bd2",
+      "239a64340173be69526a229a",
+      "23cbf639ec12f748d047cf93",
+      "2448edc9d134637045857b77",
+      "246bde09585e8c45190a6e8e",
+      "246d16139985d7d8a94537d4",
+      "2573e1540576236fef680134",
+      "26ee86d01d1b5fc2bcf7764c",
+      "270fc5f8f2dc21b1ad087a65",
+      "27201903411e32c5e3a32eb0",
+      "27584df83bc03e138ffd50ad",
+      "27c3404ad2f88854448b6887",
+      "2995a88f2cd99265a73f53ca",
+      "2a5f9698703faa88a723657d",
+      "2a687e829d5286e2140a83c3",
+      "2abd4f11e6fb0694441bf27c",
+      "2afdc57e24a1b5b28a113f02",
+      "2b066dfe2c33e0395f75d58c",
+      "2b2409eeaca011664a64c76d",
+      "2b41470c1ff6e0688d1a63cc",
+      "2b4c21e9bee7c9ca9ca2879f",
+      "2c1793f96b75a72359fe1036",
+      "2c86fba0fd9b1637ea96eb1a",
+      "2d2f9305ded1359afbf0f5e0",
+      "2d4183f88bc9bf0a262d2a32",
+      "2d7a99df5191dd7ed6f09901",
+      "2dcebe66f189956012abe101",
+      "2de44f4b1fdf65fdaeddeed4",
+      "2de57546b70ca62dd0e96696",
+      "2df41c6c2a66c8cf0937b58e",
+      "2e7686695c6b4deee2c1a8c5",
+      "305e69d930f8c8f269eb7284",
+      "312e00d468731dc097c514d1",
+      "3141ec3550db51abf5957c56",
+      "32d20b9312c99029220994b8",
+      "32f0eff51ba85c7601c56565",
+      "3414c808470f5678cf4c8754",
+      "35332d7c90521f6921b8e3f5",
+      "359cac9c0f331185b00a65e4",
+      "3623230676bdbf1a7a15a8ed",
+      "3736669500e303c2cd652d5f",
+      "38621fbd726673c048bebcd6",
+      "38fb936f6845745f24cb1f08",
+      "3984d1d804c5ae78e8031160",
+      "398587662cb06b500bbe3ade",
+      "3a317752435fc1d024593474",
+      "3adb1e5a36b43ca81969c881",
+      "3afd2ed1040b9309e500ed96",
+      "3b397bd7bf26acc5f717a5cd",
+      "3b77881a6e269c11a1218ee2",
+      "3b77e1cb948bfd71ed2b45ca",
+      "3bd240394b3bc2541df28627",
+      "3be5d35363c025f535adfa1d",
+      "3cea736881314a1cb6e5c589",
+      "3d6c7d2561146618b1236c55",
+      "3e0e919d89d2392defffa012",
+      "3e1bb4d4e8f17bdc3c837def",
+      "3e49c0a89919ff5f0038f159",
+      "3e5b2faf1709a359daffb236",
+      "3e8d3af1a10e2d15098969af",
+      "3eeb963368392da7db0a20b4",
+      "3fcd0e0700c03b72053262b9",
+      "40951c172f1c3a78dbae20cf",
+      "42049a882788c7cdb0f3177e",
+      "424af4915ef4605c677b9465",
+      "432d0840ed7a0fa85d3e1d6e",
+      "445c77c7318ede8fa3f81e3e",
+      "4476396ccb2060d7aa579793",
+      "45cd3577c0e8190e118f6814",
+      "462275351f408b45cf7917c5",
+      "46341db09158ad0d09fe969a",
+      "47171020f988ef02bf98ee4f",
+      "47cd2a03a74f279e43c3556e",
+      "482b909396997c17b08e8d2e",
+      "49da984cad47c5ba0cf87623",
+      "4afdadce14a9cc679bc165bf",
+      "4b91a3e8cdd23854fb594f8c",
+      "4c95582badc47cd28aa361c2",
+      "4e4482d1d1f053311c7a8a16",
+      "4e8faa460baa77ef579ac742",
+      "4f049f6d9dd339c2d27d011d",
+      "4fcbfc7c55b05be1410d3986",
+      "501edd4ba0716f9b4d07c0da",
+      "504a2fde5695ac6315046cb6",
+      "5123afc9cf38a3fff36f9af8",
+      "523063e9b907d1395b9d3800",
+      "5297a63fdb0d02e79038a89e",
+      "53a62e063bea0d5f404ac75a",
+      "53a927afb8b900dc8698e686",
+      "5441cf7b1c3b38d0c2ede8ec",
+      "555e43ff61146a300e9d0f7a",
+      "556555f7c9d6e89e384631d4",
+      "5618f6c0ab420bd17335cf97",
+      "5653748add4f5b10708861c0",
+      "567cce1ae7e7c01738cd2b7a",
+      "5685023e4c837c499c3bb853",
+      "5715dd5b1866ed76cd712beb",
+      "57ea10ede526637c879e074f",
+      "5831579c4b05307579f6d667",
+      "584a0c74db4974cc7c51ac39",
+      "584cef78edb79ea0aad4dc20",
+      "589770aaecf9e4d4ce134a40",
+      "58eaa43886e99d76dab4f918",
+      "59a6dec5a2e37a63d77b9c6a",
+      "59b4524370ffbb558ec06194",
+      "5b30ac0fa30feaead45de42f",
+      "5b56f93d3ccb4e304d25975f",
+      "5b63d587cccc9ea368d642e3",
+      "5b94ab0218fc7db0c76d542b",
+      "5c0b376fe94039f3045cbd41",
+      "5c450f4379c6d858af74db26",
+      "5d3811cff81ae183021087ca",
+      "5d6427586af7b46070da5e93",
+      "5e7d06dafd50c250e07d8c19",
+      "5ed5d295b5d1aa91187ad22f",
+      "5f9d45f812f092820f2e646f",
+      "5fbbb458a6def1a366a96251",
+      "5fc4b26acc459f173c5204a6",
+      "604ec3c681084532e83eb382",
+      "612decc59206fe0aa8ad7847",
+      "61cdb0e6b52d3dd3c12ea44f",
+      "626074239b77b420e3dd1132",
+      "62e41e881fd56f7eade61fe2",
+      "635a06cbc2a844335e8bdcc8",
+      "63f1698b924fbc9386ab2399",
+      "63f9ada647366413fcf7d9d6",
+      "653032d0d8dbd4dcc954b6eb",
+      "653061a3ed42682e12be8bc8",
+      "655dd8e84843b356eddd596c",
+      "65991b188557b5a675800beb",
+      "65b06247a719ed397c905da6",
+      "65c459a878241fd5add0d82b",
+      "66f5a9a5d49a5317db627f20",
+      "672e0325494855429ba2d614",
+      "67ddb7de7a41669aa475fd22",
+      "68ec583b6992a41131462396",
+      "6b10af9bb7eacf8276bdeee3",
+      "6b31a8f8efffe132589ca683",
+      "6c4a875cd0e41373c26d5faf",
+      "6c9e6a7ac2dbe10d95116bc7",
+      "6cd80b11df66712240f7a717",
+      "6d5f375bb03ccfe95e0d100d",
+      "6e8dc5ccb2c5303a040058f3",
+      "6f0c25400b2c10c0a44881c1",
+      "6f9a2161e4edf68341c85b95",
+      "6fd784be5a47e8312486cae3",
+      "6fdca862b866872307eea0d1",
+      "702576ebdc59feff2482d8a9",
+      "703aed1be06aad432feb6eaf",
+      "704b0309a566c5a0cf8c25f2",
+      "72042277f3caa60a4fb37734",
+      "732737997370899688c1f8bc",
+      "73ebd2dfa0528cffc19cb40c",
+      "74fd1473746ef5833d664a6c",
+      "759e3bf34962f48e22688747",
+      "764187a4ecf8d9205844b7fe",
+      "76e44b0b82b6edfa51dbe377",
+      "77e836d93cc3cff006d06246",
+      "7879c7ac155fe3b7957ba600",
+      "796357dcb71899d97b9cf82f",
+      "7baae440fcdb7398f67aa76b",
+      "8095e426f2bc56ad52d4314d",
+      "822bdfc4d6632fbc1c4047e9",
+      "837cca8aef040d75c77b7497",
+      "83ad8cc6384aaccc05ccfc49",
+      "84016cb4c4fac1da97ada99f",
+      "8491db0ce4f897da14c1758f",
+      "856153004e7429f8cf28cac8",
+      "8706f5282d01f9278a3cee40",
+      "87175d5d422dba81699384d6",
+      "871ce62a4d62e0d698a8e06a",
+      "8762b307eaf006e4b0a893f1",
+      "87748930c421f5720c7e2849",
+      "89116c3ece8988991bf32cd5",
+      "8939cf74b6d095d341a0f3fe",
+      "89df4d2aa6ea8f477d49f8ff",
+      "8a8f99c188d0e33d01733fa9",
+      "8acaea618f3fbab168643e28",
+      "8ae8b844f1f006a0ba16b9aa",
+      "8b1cbd0f62eb08d5f5f3cc10",
+      "8b5dd9244abd2772b4e8f506",
+      "8c3d85ce973133d5c26ad41d",
+      "8d7ea06757e4a0bc1509175a",
+      "8df4e2b9fc1ead886fa36722",
+      "8dfc778a13c272a775617139",
+      "8e82fee8292c734bf5b00daa",
+      "8e931411cc2b66f0f8872091",
+      "8ee47466714c4f0de6ca9af4",
+      "8ff190384cc72fac9163b873",
+      "8ffed05a86a8be90713f3eb5",
+      "905ec3f2d66b74b628734dd0",
+      "90b59c267dfc40b218fb472e",
+      "9187397aa16e3204f816da45",
+      "91b2284d76e1e02defedbb30",
+      "91f3ea8460827dfb9243f4ca",
+      "9220fb44924a42bef6badda7",
+      "93139900c046c930815a7785",
+      "93a9aaeac7efc2ac4c21cb99",
+      "9403d64fcd5af49f93c4b8ab",
+      "940a228a2ee5f57683d2b44b",
+      "94cb8663a15735970d832a25",
+      "960d618684a681e9a0871fd8",
+      "97dcc884f4528509416696a3",
+      "97fd4a888ecee00941bbaba1",
+      "98ede672a26ee209b28a7eb8",
+      "99127ae81de836a61f92cdf3",
+      "994225a429248ea0f32d99e7",
+      "9a86036cc106277edc0d5ebd",
+      "9b58765d8f8a91a55eb2eeaf",
+      "9b8d3b2cc62eb47281490916",
+      "9bf2c6930b1a2ddd7dff0c9e",
+      "9c558d68c8b27456b3e7befe",
+      "9c55d6107f4355c986758738",
+      "9c7e085e1433f48e5ea3b5f5",
+      "9e76e39ff0a80cbced2f6470",
+      "a006164a8ed48f4e99677bea",
+      "a14a29c57d36f5c0fc4d34ed",
+      "a1ab74b1302f0a15fe89ca69",
+      "a259026494a737b9e406f00d",
+      "a38f72de0416449561ef0ec7",
+      "a3e5aa2359905774c8bae69d",
+      "a3fc24b0b22d8aa1cb8ba2ef",
+      "a402cea82df2f578e488823e",
+      "a46dde099098ec349692a589",
+      "a5dae304614dbb8ef19cc2c6",
+      "a6141935947c5f49e783920f",
+      "a67842363faca2d1fdc193a2",
+      "a701385aba674f61bc14b58f",
+      "a862c3a01ccff32f0bf67b1d",
+      "ab86a16e76dbbbe9ff89a163",
+      "add5b3d39a901fcb8961dca6",
+      "adf1d45642333ef6175cbf09",
+      "ae09ff39dbb6cc90444d4f72",
+      "af50de29217bf7aa1711fe93",
+      "afa29b2b8e5a8ada5d858b20",
+      "b038c0a77937230de58c07fc",
+      "b09813825a7c38d9f1c93599",
+      "b0ff8e38bb5b8c63763b881e",
+      "b1512c00988a2d893533dc1e",
+      "b180b75f803619dc5733afff",
+      "b18975ba17cd48640b782607",
+      "b2b957e72f3eb7c0aebc9889",
+      "b3296dd566abcb8b3bce372a",
+      "b345f528730ec15f858ff15f",
+      "b3debe45b41d1beec94e2865",
+      "b54433ec6c29e0f396e59109",
+      "b57bb5b23a854f83437bfac2",
+      "b611ad5551c4dab45593dce4",
+      "b63ed3ba04a8c71dc28a9e67",
+      "b668259e3e290473d169ed6b",
+      "b6993231f1a5e0a06275ebe5",
+      "b7fcd5b3f1fd7a45e77d0780",
+      "b831517ffd6d4336d9c2abcf",
+      "b91cc0e672810b4b743d6983",
+      "b9b958f99054ef8e42603c67",
+      "ba4a003140ff20f1b4e41147",
+      "baa8a560ae401ed723996359",
+      "bb812e3611a6c0daf91c9598",
+      "bb96843a484fda19766f1538",
+      "bbb3bda5ec5a6bcac65806ed",
+      "bc3459b9fbd756f1aaf2e4f9",
+      "bc4d65f229c96e7ee2e6bcf6",
+      "bda0d0e537fd66111bb0b752",
+      "be6b4f9b50c26da1dad2bb1b",
+      "bedc5e0aa6ec56ef77e4f2b6",
+      "bef4f3d48d3c530bf562025f",
+      "bf0d9ffcf5568d0020c69cd1",
+      "bf9d6d3a26ca0a7cc69c4553",
+      "bfc8607966556aaafb079c49",
+      "c021c323de1024fc9888654e",
+      "c11f91776dfb4049d0e9535b",
+      "c1ec97ee6d31efeb4634b7a3",
+      "c27ebf5a75fb636c63e318ea",
+      "c2db58a7b53089672b1fdd69",
+      "c2f23081ef8103c9fc848cc6",
+      "c362259c38666bf580ea7b57",
+      "c36250a8c2946ce93f497141",
+      "c3b725af71ef19014a45c16e",
+      "c407aa95873c80c0fb4b0f4c",
+      "c4888336a4a24f4f0bea62ed",
+      "c49623b0137474726052a452",
+      "c56939933a0044fe22bdd8b8",
+      "c5804a21a302c32264a22963",
+      "c696a25778ae04c3911c60aa",
+      "c7e5792413a91c235be748ea",
+      "c8a17e1b034b55566cbc77fd",
+      "c8aacb1418d31455426b473d",
+      "c8ca9b927aa6be6b4085e0f7",
+      "c9511465d2d44474a6006193",
+      "cac9442a499aa9070ea7e503",
+      "cc7c438eb9a15c910c06cd5e",
+      "cc96b929600e2b03a740ab81",
+      "cd174971bf7b2c050e8b25f6",
+      "cda72e17644355f8e35c0b8c",
+      "ce4e3d45f0933a5fc8984a9b",
+      "ce8755b3c07ef5f310a604a2",
+      "cf13cc088d1788bd2c36a0c2",
+      "cf5a728406014fc128de3230",
+      "cf75cc36db35bcb21432a2c0",
+      "d067482ab5c232bfd5918e3e",
+      "d12e8fb662d6b1b0af72d3ba",
+      "d2c916a645c4c987f3f93fd1",
+      "d335bdd060e15f9ee30cc72d",
+      "d37c9dd0f2d2d15457d7832e",
+      "d4586bee0cb47731c7b2f208",
+      "d52eb019b629280acf2f9f19",
+      "d5ae250616eaa70072a0c957",
+      "d640df8d5bf50f1f328ad629",
+      "d7065689900570b978a1459e",
+      "d7af5e06a21edbcb2ec8ef9f",
+      "d83582d5d433e27db13dfbc5",
+      "d91ffbb5a47f09616a18c148",
+      "d93bdf09e2256fd49774972c",
+      "d9666e0b276b62d8b0a4229c",
+      "db1a1bcdf36f0be1136b17fb",
+      "dc1e09ae69f6dd420c18ff44",
+      "dc2b95f2685c62ab063a0de0",
+      "dd37f8aa512a495c04569fbb",
+      "de25ec56eec8d6890aa204dc",
+      "de8f8d8e3c272c285dd9ddb1",
+      "df271b72dd9f221c59ad9652",
+      "df7ae5f0d38dabd135e58617",
+      "dffd56dfbd6db854aff9e7dc",
+      "e04f4fd12ca6f37919dd55ea",
+      "e07dd4090bb1c5ee5ca53258",
+      "e16d1056d028f971c30f0674",
+      "e1f03db243859ddd6b25faba",
+      "e3fa29ceef6109d7d4ced253",
+      "e4093c778bc1e2c0b302a5de",
+      "e4ba1c1e802cf91a64b98bc6",
+      "e50d2e018204db1e276f2fbb",
+      "e55af85cf92e1f73e89be77d",
+      "e5779a50abcc72c1bbd01cfd",
+      "e60ce0caa5cf21ef1a09dcc2",
+      "e6e36a5461435fab72c9f699",
+      "e71abe0721bb89d80712ff62",
+      "e794ad67d76c9b4768d1070e",
+      "e7e9d71164942bfbfcef7753",
+      "e888bfdc808ae72eab25ae22",
+      "e89a49a174777d8e1d6dbc6e",
+      "e8bb640eb7903263a39efbaf",
+      "e9b29136ea0e011a2f4ddc53",
+      "e9c3be6fc46cd9f98e3ec477",
+      "ea114414861112b86d707024",
+      "ea59934c05a78320d73c891b",
+      "ea9091144e0ecebc6af3e599",
+      "ebdfe478056ddf004941e27a",
+      "ec86293d954bdbfaeaefd858",
+      "ed313b50e666f46c1d03b16b",
+      "ee07b632989342fd80207f1d",
+      "ee7a1a5d821cc0cb3f68a785",
+      "eeb5c7c61a3562e6ed472296",
+      "f1a752c640df17aad803e1e5",
+      "f1a85901e83eba40f3c04fa2",
+      "f1f2754b36aebe465ae98a81",
+      "f2a75bb3b3b2fb1217b1908e",
+      "f2af2fbc09ab1765e8517c7d",
+      "f2e97d1cedd9c157559ed8e7",
+      "f3da6b2a416c7428157d7fc9",
+      "f405475145c3cb3d82286635",
+      "f40624dbf0a44e885ea97270",
+      "f579f0ea87e43a4afe48d291",
+      "f6dbf9ce2c8710953bc8b0f5",
+      "f716c75c8993658631597dee",
+      "f74d8fcec4dd130c0b93d327",
+      "f76e69342eda2ce622e0c620",
+      "f818fd54e5e8b4cb2ad6c925",
+      "f83835701e64e12329915684",
+      "f8abb6543c2f59a16502cb7c",
+      "f9151ae81f0758ba701b4a4c",
+      "f9e89bb4f026149cc75f8f63",
+      "f9ed8fd49cb89d3db1a2873f",
+      "fa016aca5301646a60a91fbb",
+      "fa82c822eff5c13cb3a07e27",
+      "fb29150f653b08bac831dd71",
+      "fc3833099383237d9b1913b8",
+      "fcab035c3924b885aeeec520",
+      "fcca01cdac467eaf5087de42",
+      "fd36f70b96b1f623135e790b",
+      "fd979c4a87978cfd7564e2d8",
+      "fdb8f0617379b14ecbe78e03",
+      "fe0a6aff363a1755b5fb217c",
+      "fe1a5d26e59dec5eb34424b4",
+      "fe1de69bb36f345f3290bb99",
+      "ff0145fd807a41cc1df23f76",
+      "ff5d5061ae93300233bd877b"
+    ],
+    "sharedIdFieldChanges": [
+      {
+        "id": "045b7b0e651390a75651ca4a",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "0b8ba0d74c08ae2911d6f3f7",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "32c31c73091163ff9abc4e87",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "353c3fe1afa90bc631c11ab0",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "3b81ee67adc7725475704cdb",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "3f7be1258f7c96ea1ebfa2ce",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "45d074093a82cbcea2aacc46",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "499c99f3d0da981ca49b29c6",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "673a7d08e343d8fe84991679",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6c8dbc75038e4ed3e8b8126b",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6d03faa2e5e033fa2efd366d",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6d9af0ff24ebf959501b3fec",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "7c73633afa2f217ba9336b4f",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "87194b19c4e6cf09d2204628",
+        "fields": [
+          "episodeUrl",
+          "published"
+        ]
+      },
+      {
+        "id": "8b22e2cb009f9e863a0fb334",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "90e0f5e59b5dcddd80d9672a",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "9a48dce5272037ba856c5949",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "9fb7e4f8d1d6b28a685be834",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "a252638bd7eaced6779a019b",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "b00b23cc6993206f2a6785b6",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b4551355733affb99f9bc552",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b5c6989de4abdd6899e458ce",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b8399d8fd6deae5811268a37",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "ccbbf3f5f4596ff9d7f3ca38",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "cdc6d829426fa7af46ccf907",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "df1b1186782c2774d0cd3beb",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "e9e40c4ffbb347c811ef1162",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "ea34e302372de1d1c256df49",
+        "fields": [
+          "episodeUrl"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "podcastFindings": {
+    "app": {
+      "sourcesWithoutId": [],
+      "episodesWithoutResolvableSource": [],
+      "episodesFromExplicitlyDisabledSource": [
+        {
+          "episodeId": "480e5036d413966333651a31",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f3e1e6d746d96424e61c55df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "746703ca6df9df74311326ef",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06cbc9f12ae5e543511d7cd5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bacd278345cac4c595a5fea8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "af54b9c284ea7c10011ba6df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "095c48e0669879057e89eeb5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "719eeacb2de223fe7e6454ee",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c2856b150dc5e6bade935792",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "83a6d26dd467171388939174",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1c1552fcc832c3ea332d6881",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "23949da7031e04c33b66c365",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8f66b2de892c86f8b4b3184c",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "101c4cf058a16b5effa74af1",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "ed74a555ad194e7fb7d37940",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bda498ac547e3a976af333eb",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1abee1f5cd2b4c6a759c675d",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6d38b6f11b0159717394a840",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f725868747f981281c13f9f8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b4aa7f7af9494ce1fcc74f6b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e840b24d812f0952251c031b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "49cbfbf1111d292c735edfd2",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "cd62104f395370dd5fbb7fcf",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9d49f3bf4e6a186910ba95e5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a892fd5a564b25b4fb64e661",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "7d4029f4db23162378b17a12",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f0d3243439a8b78e8d0d1ead",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06c265a0fa9f63548cd6f120",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4ce94ed963430edad2e50407",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "586ab2afef56b2cb6b3b1bf7",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "668f6a3ade457110cbaeaa11",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6880d1bb1963c73491990477",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "653ef582b2acdbedcb5f279e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "898dcf42a464098b4a49548e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "fcf4244714784849176f731f",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        }
+      ]
+    },
+    "data": {
+      "sourcesWithoutId": [],
+      "episodesWithoutResolvableSource": [],
+      "episodesFromExplicitlyDisabledSource": [
+        {
+          "episodeId": "480e5036d413966333651a31",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f3e1e6d746d96424e61c55df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "746703ca6df9df74311326ef",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06cbc9f12ae5e543511d7cd5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bacd278345cac4c595a5fea8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "af54b9c284ea7c10011ba6df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "095c48e0669879057e89eeb5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "719eeacb2de223fe7e6454ee",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c2856b150dc5e6bade935792",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "83a6d26dd467171388939174",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1c1552fcc832c3ea332d6881",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "23949da7031e04c33b66c365",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8f66b2de892c86f8b4b3184c",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "101c4cf058a16b5effa74af1",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "ed74a555ad194e7fb7d37940",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bda498ac547e3a976af333eb",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1abee1f5cd2b4c6a759c675d",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6d38b6f11b0159717394a840",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f725868747f981281c13f9f8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b4aa7f7af9494ce1fcc74f6b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e840b24d812f0952251c031b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "49cbfbf1111d292c735edfd2",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "cd62104f395370dd5fbb7fcf",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9d49f3bf4e6a186910ba95e5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a892fd5a564b25b4fb64e661",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "7d4029f4db23162378b17a12",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f0d3243439a8b78e8d0d1ead",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06c265a0fa9f63548cd6f120",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4ce94ed963430edad2e50407",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "586ab2afef56b2cb6b3b1bf7",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "668f6a3ade457110cbaeaa11",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6880d1bb1963c73491990477",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "653ef582b2acdbedcb5f279e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "898dcf42a464098b4a49548e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "fcf4244714784849176f731f",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        }
+      ]
+    }
+  },
+  "dataEpisodesBlockedByExplicitAppPolicy": [
+    {
+      "episodeId": "22c5be9bde68144db947c5eb",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "856153004e7429f8cf28cac8",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c11f91776dfb4049d0e9535b",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "4fcbfc7c55b05be1410d3986",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "bc4d65f229c96e7ee2e6bcf6",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "40951c172f1c3a78dbae20cf",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8a8f99c188d0e33d01733fa9",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "445c77c7318ede8fa3f81e3e",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b1512c00988a2d893533dc1e",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ff5d5061ae93300233bd877b",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "14b76595fed9d3fe2126641d",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b54433ec6c29e0f396e59109",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "5b94ab0218fc7db0c76d542b",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "3afd2ed1040b9309e500ed96",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b611ad5551c4dab45593dce4",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "2995a88f2cd99265a73f53ca",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "3bd240394b3bc2541df28627",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "078cd3c1dab77522c35f5d34",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "653032d0d8dbd4dcc954b6eb",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b0ff8e38bb5b8c63763b881e",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8b1cbd0f62eb08d5f5f3cc10",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "994225a429248ea0f32d99e7",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "5e7d06dafd50c250e07d8c19",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "871ce62a4d62e0d698a8e06a",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f579f0ea87e43a4afe48d291",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f2e97d1cedd9c157559ed8e7",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "796357dcb71899d97b9cf82f",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "76e44b0b82b6edfa51dbe377",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e50d2e018204db1e276f2fbb",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c8ca9b927aa6be6b4085e0f7",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "93a9aaeac7efc2ac4c21cb99",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "63f9ada647366413fcf7d9d6",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ee07b632989342fd80207f1d",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "27c3404ad2f88854448b6887",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "fe1de69bb36f345f3290bb99",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "480e5036d413966333651a31",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f3e1e6d746d96424e61c55df",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "746703ca6df9df74311326ef",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "06cbc9f12ae5e543511d7cd5",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "bacd278345cac4c595a5fea8",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "af54b9c284ea7c10011ba6df",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "095c48e0669879057e89eeb5",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "719eeacb2de223fe7e6454ee",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c2856b150dc5e6bade935792",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "83a6d26dd467171388939174",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "1c1552fcc832c3ea332d6881",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "23949da7031e04c33b66c365",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8f66b2de892c86f8b4b3184c",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "101c4cf058a16b5effa74af1",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ed74a555ad194e7fb7d37940",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "bda498ac547e3a976af333eb",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "1abee1f5cd2b4c6a759c675d",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "6d38b6f11b0159717394a840",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f725868747f981281c13f9f8",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b4aa7f7af9494ce1fcc74f6b",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e840b24d812f0952251c031b",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "49cbfbf1111d292c735edfd2",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "cd62104f395370dd5fbb7fcf",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "9d49f3bf4e6a186910ba95e5",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "a892fd5a564b25b4fb64e661",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "7d4029f4db23162378b17a12",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f0d3243439a8b78e8d0d1ead",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "06c265a0fa9f63548cd6f120",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "4ce94ed963430edad2e50407",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "586ab2afef56b2cb6b3b1bf7",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "668f6a3ade457110cbaeaa11",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "6880d1bb1963c73491990477",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "653ef582b2acdbedcb5f279e",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "898dcf42a464098b4a49548e",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "fcf4244714784849176f731f",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    }
+  ],
+  "librarySources": {
+    "appRows": 9,
+    "dataRows": 9,
+    "sharedUniqueIds": 9,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "libraryTitles": {
+    "appRows": 715,
+    "dataRows": 715,
+    "sharedUniqueIds": 715,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "possibleAliasesByExactOriginalLink": []
+  },
+  "mergeRules": [
+    "Preserve stable episode/book IDs and saved state; do not infer admission from presence.",
+    "Review incoming-only and archive-only records separately against revocations and retention rights.",
+    "Same source origin or original link proposes a review; it does not prove issuer identity or rights.",
+    "Respect explicit disabled-language/source policy before any active projection.",
+    "Do not publish bodies, audio, artwork or descriptions based on a generic license label."
+  ],
+  "observedAtUTC": "2026-10-01T10:11:52.453317+00:00",
+  "toolSha256": "ee47eb3899830277834e64beaa3bcab473cfa7f722d24076f69e2f5af15e59a9"
+}

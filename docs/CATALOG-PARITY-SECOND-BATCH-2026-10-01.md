@@ -44,6 +44,8 @@ Die zwei Autorenschreibweisen wurden anhand der Originalkatalogseiten für [100,
 - Neue lokale Cachegeneration App r10 / Preview v98; keine Änderung des Android-Versioncodes. Diese Generation ist nicht im bereits signierten Code32 enthalten.
 - Unabhängige Prüfung dieses neuen Batches: angefordert; vorherige RDL-Abnahme gilt nicht als Abnahme dieser Änderungen.
 
+Der Kontrolleur fand im ursprünglichen Kandidaten `50d1122b` / `03a10224` einen Rechteblocker: Die historische Mudawanat-Lizenz wurde im alten Classic-Dialog trotz unbestätigter Rechte sichtbar. Die Korrektur ersetzt Lizenzfelder der 16 Quellen und ihrer Folgen ausdrücklich durch „Rights unverified; original source only“ und propagiert `rightsStatus: unverified`. Die Runtime überschreibt auch alte Cacheangaben und reine historische IDs. Die Browserprüfung umfasst jetzt eine tatsächlich sichtbare Mudawanat-Karte aus einem alten CC-Payload; die CC-Angabe und fremde Medien dürfen dort nicht erscheinen. Das ursprüngliche Zwischenurteil war RED, eine erneute Abnahme dieser Korrektur steht aus.
+
 ## Noch offen
 
 Vollständige gemeinsame Podcastprojektion einschließlich bewusster Ausschlüsse (u. a. Leftover Talk und zurückgestellter Sprachen), Übernahme des gemeinsamen Katalogs durch den Website-Verantwortlichen und fachredaktionelle Klärung der vier Holds. Danach die 19 weiteren Lexikonbearbeitungen und drei belegten Lernpfade mit jeweils zehn Originaltexten. Die sechs neuen Podcastkandidaten und die Erweiterung dreier separat zugänglicher Archive auf bis zu 100 Folgen bleiben eigene Aufnahme-/Umsetzungsaufgaben.

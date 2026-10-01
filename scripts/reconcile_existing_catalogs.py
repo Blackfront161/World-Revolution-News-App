@@ -69,6 +69,7 @@ def main():
         if source['id'] not in new_ids: continue
         source = dict(source)
         source.update(contentPolicy=MODE, pageAudioFallback=False, rightsStatus='unverified', verificationNote=REASONS[source['id']])
+        source['license'] = 'Rights unverified; original source only'
         source['catalogReview'] = {'disposition':'metadata-only-last-known-selection', 'checkedAt':probes[source['id']]['checkedAt'],
             'episodeIntake':'hold' if source['id'] in {'twelve-rules-for-what','contrabanda-specials','l-orage','infowar-greece'} else 'metadata-only',
             'rights':{'audio':'unknown','artwork':'unknown','transcript':'unknown','offlineAudio':'unknown'},
@@ -94,6 +95,7 @@ def main():
         if item.get('sourceId') not in new_ids: return item
         output = {k:v for k,v in item.items() if k in rules['metadataFields']}
         output.update(contentPolicy=MODE, episodeUrl=item.get('episodeUrl',''),feedUrl=item.get('feedUrl',''),description='',audioUrl='',artwork='')
+        output.update(license='Rights unverified; original source only',rightsStatus='unverified')
         if item['sourceId']=='contrabanda-specials':
             output.update(language='und',languageVerified=False,languageReviewRequired=True,languageConfidence=0,languageSource='mixed-channel-requires-review',configuredLanguages=['es','ca'])
         return output
@@ -132,12 +134,17 @@ def main():
             'indexedItemsBySource':dict(Counter(b['sourceId'] for b in books)),'downloadRights':'not-granted; original-host links only'}
         outputs[root/'library-health.json']=encode(health)
     # Guard catalog files against unrelated changes; implementation files are handled separately.
+    prior_path = ROOT/'docs/evidence/catalog-parity-2026-10-01/bindings.json'
+    prior = json.loads(prior_path.read_text(encoding='utf-8')) if prior_path.exists() else {}
+    if prior.get('inputRefs') != {'app':APP_REF,'data':DATA_REF}: prior = {}
     for path,payload in outputs.items():
         if path.name.endswith('.json'):
             ref=APP_REF if path.parent==ROOT else DATA_REF
             old=git_bytes(path.parent,ref,path.name)
             current = json.loads(path.read_bytes())
-            if current not in [json.loads(old),json.loads(payload)]: raise ValueError(f'Refusing to overwrite modified catalog: {path}')
+            bound_key=f'{"app" if path.parent==ROOT else "data"}/{path.name}'
+            previously_bound=hashlib.sha256(path.read_bytes()).hexdigest()==prior.get('outputSha256',{}).get(bound_key)
+            if current not in [json.loads(old),json.loads(payload)] and not previously_bound: raise ValueError(f'Refusing to overwrite modified catalog: {path}')
     manifest={'schemaVersion':1,'scope':'16 app-only sources and common library metadata; local candidate',
         'inputRefs':{'app':APP_REF,'data':DATA_REF},'inputSha256':inputs,
         'outputSha256':{f'{"app" if p.parent==ROOT else "data"}/{p.name}':hashlib.sha256(v).hexdigest() for p,v in outputs.items()},

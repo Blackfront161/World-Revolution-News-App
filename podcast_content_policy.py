@@ -26,13 +26,15 @@ def restricted_endpoint(item):
             or original_url(item.get("feedUrl")) in RULES["feedUrls"])
 
 
-def metadata_only(item, source=None, sources=()):
-    if restricted_endpoint(item) or item.get("contentPolicy") == MODE:
-        return True
+def source_restriction(item):
     identifier = str(item.get('rawId') or item.get('id') or '').removeprefix('original:')
-    if (item.get('sourceId') in RULES.get('metadataOnlySourceIds', [])
+    return (item.get('sourceId') in RULES.get('metadataOnlySourceIds', [])
             or identifier in RULES.get('metadataOnlyEpisodeIds', [])
-            or original_url(item.get('feedUrl')) in RULES.get('metadataOnlyFeedUrls', [])):
+            or original_url(item.get('feedUrl')) in RULES.get('metadataOnlyFeedUrls', []))
+
+
+def metadata_only(item, source=None, sources=()):
+    if restricted_endpoint(item) or item.get("contentPolicy") == MODE or source_restriction(item):
         return True
     candidates = [source] if source else []
     feed_url = original_url(item.get("feedUrl"))
@@ -52,6 +54,8 @@ def project_episode(item, source=None, sources=()):
         item.get("articleUrl"), item.get("link")] if (url := original_url(value))), "")
     result["feedUrl"] = original_url(item.get("feedUrl"))
     result.update(description="", audioUrl="", artwork="")
+    if source_restriction(item):
+        result.update(license='Rights unverified; original source only', rightsStatus='unverified')
     if restricted_endpoint(item):
         result["sourceId"] = RULES["canonicalSourceId"]
         result["endpointId"] = RULES["endpointId"]

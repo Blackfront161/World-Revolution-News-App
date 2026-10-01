@@ -630,12 +630,14 @@
     return ids.has(String(item?.rawId || item?.id || '').replace(/^original:/, ''))
       || item?.endpointId === rules.endpointId || rules.feedUrls.includes(originalUrl(item?.feedUrl));
   }
+  function sourceRestriction(item) {
+    return (rules.metadataOnlySourceIds || []).includes(item.sourceId)
+      || (rules.metadataOnlyEpisodeIds || []).includes(String(item.rawId || item.id || '').replace(/^original:/, ''))
+      || (rules.metadataOnlyFeedUrls || []).includes(originalUrl(item.feedUrl));
+  }
   function isMetadataOnly(item, sources = []) {
     if (!item) return false;
-    if (restrictedEndpoint(item) || item.contentPolicy === MODE) return true;
-    if ((rules.metadataOnlySourceIds || []).includes(item.sourceId)
-      || (rules.metadataOnlyEpisodeIds || []).includes(String(item.rawId || item.id || '').replace(/^original:/, ''))
-      || (rules.metadataOnlyFeedUrls || []).includes(originalUrl(item.feedUrl))) return true;
+    if (restrictedEndpoint(item) || item.contentPolicy === MODE || sourceRestriction(item)) return true;
     return Array.isArray(sources) && sources.some(source => source.contentPolicy === MODE && (
       (source.id && source.id === item.sourceId)
       || [source.feedUrl, ...(source.feedUrls || [])].filter(Boolean).map(originalUrl).filter(Boolean).includes(originalUrl(item.feedUrl))));
@@ -649,6 +651,7 @@
     result.originalUrl = result.episodeUrl;
     result.feedUrl = originalUrl(item.feedUrl);
     result.description = ''; result.audioUrl = ''; result.artwork = '';
+    if (sourceRestriction(item)) { result.license = 'Rights unverified; original source only'; result.rightsStatus = 'unverified'; }
     if (restrictedEndpoint(item)) { result.sourceId = rules.canonicalSourceId; result.endpointId = rules.endpointId; }
     return result;
   }

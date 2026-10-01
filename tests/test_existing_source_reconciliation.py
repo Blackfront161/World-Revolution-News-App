@@ -30,15 +30,17 @@ def test_stable_ids_unaffected_archives_and_languages_are_preserved():
             if e['sourceId'] in ids:
                 assert not e['audioUrl'] and not e['artwork'] and not e['description']
                 assert e['contentPolicy']=='metadata_and_links_only'
+                assert e['rightsStatus']=='unverified' and e['license']=='Rights unverified; original source only'
                 assert e['episodeUrl'].startswith('https://')
                 if e['sourceId']=='contrabanda-specials':assert e['language']=='und' and e['languageReviewRequired']
 
 
 def test_non_rdl_stale_ids_do_not_get_reassigned_to_rdl():
     rules=read(ROOT,'podcast-content-policy.json')
-    row=project_episode({'id':'original:'+rules['metadataOnlyEpisodeIds'][0],'sourceId':'fumaca','audioUrl':'https://example.org/audio.mp3','summary':'foreign','episodeUrl':'https://example.org/episode'})
+    row=project_episode({'id':'original:'+rules['metadataOnlyEpisodeIds'][0],'sourceId':'fumaca','license':'CC BY-NC-ND 3.0','audioUrl':'https://example.org/audio.mp3','summary':'foreign','episodeUrl':'https://example.org/episode'})
     assert row['sourceId']=='fumaca' and not row['audioUrl'] and 'summary' not in row
     assert 'endpointId' not in row
+    assert row['rightsStatus']=='unverified' and 'CC' not in row['license']
 
 
 def test_intake_holds_do_not_contact_network():

@@ -9,6 +9,11 @@ const root = path.resolve('.');
 const output = path.join(root, '.tmp/podcast-policy-browser');
 fs.mkdirSync(output, { recursive:true });
 const rules = JSON.parse(fs.readFileSync(path.join(root,'podcast-content-policy.json'),'utf8'));
+const mudawanat = {
+  ...JSON.parse(fs.readFileSync(path.join(root,'podcasts.json'),'utf8')).find(item=>item.sourceId==='mudawanat-arabic'),
+  license:'CC BY-NC-ND 3.0', rightsStatus:undefined, description:'FOREIGN HISTORICAL DESCRIPTION',
+  audioUrl:'https://example.org/mudawanat.mp3', artwork:'https://example.org/mudawanat.jpg'
+};
 const episode = {
   id:rules.restrictedEpisodeIds[0], title:'Solidarische Politik gegen Faschismus', sourceName:'Radio Dreyeckland',
   sourceId:'', sourceKind:'free-radio', language:'de', region:'Europe', published:new Date().toISOString(),
@@ -48,7 +53,7 @@ try {
     if (url.pathname.endsWith('/podcast-sources.json')) return json([
       {id:rules.canonicalSourceId,name:'Radio Dreyeckland',language:'de'},
       {id:rules.endpointId,canonicalSourceId:rules.canonicalSourceId,name:'RDL podcast endpoint',feedUrl:rules.feedUrls[0],contentPolicy:'metadata_and_links_only'}]);
-    if (url.pathname.endsWith('/podcasts.json')) return json([episode,ordinary]);
+    if (url.pathname.endsWith('/podcasts.json')) return json([episode,ordinary,mudawanat]);
     if (url.pathname.endsWith('/news.json') || url.pathname.endsWith('/events.json') || url.pathname.endsWith('/radio-stations.json') || url.pathname.endsWith('/generated-podcasts.json')) return json([]);
     if (url.origin!==origin) return json({});
     return route.continue();
@@ -82,6 +87,14 @@ try {
   });
   const legacy=page.locator('.original-podcast-card').filter({hasText:episode.title});
   await legacy.waitFor({state:'visible'});
+  const historicalLicenseCard=page.locator('.original-podcast-card').filter({hasText:mudawanat.title});
+  await historicalLicenseCard.waitFor({state:'visible'});
+  const historicalText=await historicalLicenseCard.innerText();
+  assert(!historicalText.includes('CC BY-NC-ND'));
+  assert(historicalText.includes('Rights unverified; original source only'));
+  assert(!historicalText.includes('FOREIGN HISTORICAL'));
+  assert.equal(await historicalLicenseCard.locator('img,.btn-media-play').count(),0);
+  result.checks.push('Visible legacy Mudawanat card: stale CC license replaced with unverified rights notice; no copied description, artwork or playback.');
   assert.equal(await legacy.locator('img,.btn-media-play').count(),0);
   assert(!(await legacy.innerText()).includes('FOREIGN'));
   assert((await legacy.innerText()).includes('Diese Folge auf der Originalseite anhören.'));
