@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "mode": "offline-local-batch",
+  "sourceAdmission": false,
+  "rightsAcceptance": false,
+  "androidBuild": false,
+  "storePublication": false,
+  "snapshots": {
+    "app": {
+      "inputCommit": "9505c468d75ef2afd6f9b7bb437314701e0b42ab",
+      "files": {
+        "podcast-sources.json": {
+          "inputSha256": "0856d8f10e130505402a048e704715461b7fa75ee13e7693ecf644890d60afce",
+          "outputSha256": "f7c742adff25d4eced08bcd3830f4e96607ea6d213ae59fae2dd9442c9a5fdef"
+        },
+        "podcasts.json": {
+          "inputSha256": "c09cdce82dfc3bd2b455851bb32be0a954c1b9b8976a861259d93a600f1019c7",
+          "outputSha256": "2b3402f24612b50f2ebb39c15938d6fbd36986804edd40318fc6ae2214534c73"
+        }
+      },
+      "episodeRows": 908,
+      "sourceRows": 52,
+      "changedEpisodeIds": [
+        "1c21a4b4bd22aafc9d5a5a83",
+        "fda3f3204d54ddebd542914d",
+        "2c55022d783e65b14bca3e63",
+        "d6273f1588bfc5e0f48080ae",
+        "2db5eb09f0dcf6760453bb3e",
+        "30fa5d4dd9714d3624bed9f4",
+        "9669962751f50b0165a84ee7",
+        "18f639dd4e83766040d0597e",
+        "5ae27094f618e991045253d8",
+        "367f54bed9136a725f8c5532",
+        "9ae0793ae05ef545b35676ac",
+        "121f8b6a6c85ef8813557dd7",
+        "ae7e54d371f97a974127a4d4",
+        "af68fb7da8ec4388dfe632e3",
+        "bcacf85a86e87bd11be85f2d",
+        "ea1beef5d5ae7fa3c7aeeb9a",
+        "3d868897b62369e190f7abe4",
+        "4a1654de4e2c08bc7f3d21d7",
+        "1c70ca886151f8995694ce9f",
+        "4d7d9cb44df4eba601b5fc81",
+        "b413f4c2ae4b0742d664e107",
+        "968295f33bd8206b1a2731fa",
+        "4535e4f2913a1a68b63cd191",
+        "aa9c4022c827e2e1a08f26aa",
+        "b358d4762914593c1fd9bd53",
+        "61da655f6c09102715dd8e78",
+        "ca7a1927e68ebd31579022c3",
+        "0b6c53d803d06ee2a381dc07",
+        "acc6894cf8629a3d1f85a49f",
+        "374b7421c927d679bb0a7a43",
+        "a8b8678d5a94b945d8a6f38b",
+        "91bf67bb9605c04ccc17294a",
+        "675d829108754d6e72152629"
+      ],
+      "stableIdOrderPreserved": true,
+      "unaffectedRowsPreserved": true
+    },
+    "data": {
+      "inputCommit": "17b3604979a27411666048c082345b704261af93",
+      "files": {
+        "podcast-sources.json": {
+          "inputSha256": "98c3ade0a233f49ec51dae1ff75308159e8baf640f6f1de3c677defa3ae37543",
+          "outputSha256": "f4b81e15f2921eab439aa13a2171bc8f98ffdca71301726837b5dd90d342f2ce"
+        },
+        "podcasts.json": {
+          "inputSha256": "73fbb53415ad012815613404b91e3e7834431fdf78bdaa23fc726a81dce8e50b",
+          "outputSha256": "c903b2d929761da414b2e0227621603b76ffb231240a99b4862465e17e66d8ad"
+        }
+      },
+      "episodeRows": 749,
+      "sourceRows": 36,
+      "changedEpisodeIds": [
+        "5618f6c0ab420bd17335cf97",
+        "65c459a878241fd5add0d82b",
+        "bedc5e0aa6ec56ef77e4f2b6",
+        "4afdadce14a9cc679bc165bf",
+        "6fd784be5a47e8312486cae3",
+        "fcca01cdac467eaf5087de42",
+        "8dfc778a13c272a775617139",
+        "2b066dfe2c33e0395f75d58c",
+        "b9b958f99054ef8e42603c67",
+        "5685023e4c837c499c3bb853",
+        "3e1bb4d4e8f17bdc3c837def",
+        "5c450f4379c6d858af74db26",
+        "3e5b2faf1709a359daffb236",
+        "26ee86d01d1b5fc2bcf7764c",
+        "6c4a875cd0e41373c26d5faf",
+        "0b8d4f62a58ce82f1f25e81d",
+        "fc3833099383237d9b1913b8",
+        "d067482ab5c232bfd5918e3e",
+        "3414c808470f5678cf4c8754",
+        "584a0c74db4974cc7c51ac39",
+        "0b17a79217155353ce801410",
+        "e9c3be6fc46cd9f98e3ec477",
+        "5b56f93d3ccb4e304d25975f",
+        "38621fbd726673c048bebcd6",
+        "068f60cd360acfac6c644d57",
+        "8491db0ce4f897da14c1758f",
+        "af50de29217bf7aa1711fe93",
+        "9b58765d8f8a91a55eb2eeaf"
+      ],
+      "stableIdOrderPreserved": true,
+      "unaffectedRowsPreserved": true
+    }
+  },
+  "runtimeFiles": {
+    "podcast-content-policy.js": "f7aa97460e86a79cb8cfec23f06cdb4ffe3f0ad1adc17fbe8d020ca9a6f984bc",
+    "podcast-content-policy.json": "6c78ebc55d11d6857fcfb75c6bb9fc077851256b3bec0366dc5cf01b6313be9f",
+    "podcast_content_policy.py": "a8b79dc8d29b868d78ae96516b05ddb549ac8e98ce2237b559e002935f547b24",
+    "aggregate_podcasts.py": "510911d5479d4ac1a927daf09596b012ccf04613bf11695635f663b207b5a71e",
+    "audio-tab-183.js": "40cfa38678072dbbc8cdf9761963e6aa763a8a17f8be6fafedaf1d144bf02b32",
+    "audio-tools.js": "e1ff7bf4404f3f71e42c14a00ec0ed62790a07fa59ae8dfd25724101c4c44631",
+    "media-player.js": "934165067eabd85cc6d2b1b397dc63017fdc98fe15ea4801be4d44d222c0f9b7",
+    "news-app-2-media.js": "f823df846c2138639c6df03da3792756c4f8fe8f0fb881c8522806be36f50ef2",
+    "news-app-2.js": "2275f5877604dd8c57b120fde114916f55eb29379995d5f1c2f00f997b1d1695",
+    "service-worker.js": "2595550a25823fba5da4915b9b128bd0df587898419756d9b7f8a5014728dc86",
+    "news-app-2-sw.js": "510ec05c95fe05b05a3b110ca7f22c1718465ff29758f1aece24eb45a140164d",
+    "tests/browser_podcast_content_policy.mjs": "d4140ec62a45c98be3bb258a36b0bafba052a97174b5897db9642b3cf1a8950a",
+    "tests/test_podcast_content_policy.js": "4793e2e1b1c620c4ccee40e38c492461cd960510a6156a5e060b5467b953e920",
+    "tests/test_podcast_content_policy.py": "e9957cfac0b019f148d66f876f42c04f4562aeb580b668dc35ac1c9f1b8ef2f4",
+    "tests/validate_app.py": "684c1337042af1ef73960419aa2e5a1c02b638a77b8ebcee66c654c8fb0975d3",
+    "release_audit_183.py": "57b7ea0f84816bae12d50a4a78c00be6f3cd3dc7a1205f790e3bc36033a0a972"
+  },
+  "dataRuntimeFiles": {
+    "aggregate_podcasts.py": "3f610520fec59ed1943fa85d79fbf67763f1167662b53091f53eacc10b66b4f9",
+    "podcast_content_policy.py": "a8b79dc8d29b868d78ae96516b05ddb549ac8e98ce2237b559e002935f547b24",
+    "podcast-content-policy.json": "6c78ebc55d11d6857fcfb75c6bb9fc077851256b3bec0366dc5cf01b6313be9f",
+    "tests/test_podcast_content_policy.py": "a979220a6120763db36310d99be73fd297d794c1ac32705a580cf11c40ddca49"
+  },
+  "boundAtUTC": "2026-10-01T08:27:56.718636+00:00"
+}

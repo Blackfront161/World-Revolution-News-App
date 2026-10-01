@@ -381,6 +381,7 @@ function setupMediaSessionHandlers() {
 }
 
 async function playGlobalMedia(config) {
+    if (!window.WRNPodcastContentPolicy || window.WRNPodcastContentPolicy.isMetadataOnly(config)) return false;
     const audio = getGlobalMediaPlayer();
     if (!audio) return;
     const candidates = uniquePlayableCandidates(config.candidates || config.url || []);

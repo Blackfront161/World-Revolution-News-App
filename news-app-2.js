@@ -6276,7 +6276,9 @@
               ${generated ? `<span>${escapeHtml(podcast.mode === 'full' ? t('fullPodcast') : t('shortPodcast'))}${podcast.voiceLabel ? ` · ${escapeHtml(podcast.voiceLabel)}` : ''}</span>` : ''}
             </div>
             <h3>${escapeHtml(podcast.title)}</h3>
-            <p>${escapeHtml(mediaDescription(podcast.description))}</p>
+            <p>${escapeHtml(window.WRNPodcastContentPolicy?.isMetadataOnly(podcast)
+              ? window.WRNPodcastContentPolicy.originalOnlyText(state.language)
+              : mediaDescription(podcast.description))}</p>
             ${podcast.audioUrl && (!generated || state.podcastService === 'available') ? `<div class="media-play-host" data-audio-control
               data-audio-card-mode="podcast"
               data-audio-id="${escapeHtml(podcast.id)}"

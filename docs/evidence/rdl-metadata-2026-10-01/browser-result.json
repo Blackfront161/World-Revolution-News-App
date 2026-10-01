@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "Current Autonom view: original-link notice, share destination, no copied text/image/playback; unrelated playable card and favorites preserved.",
+    "Classic view retains the metadata-only episode with its stable raw ID and original link."
+  ],
+  "remoteMediaRequests": [],
+  "pageErrors": []
+}

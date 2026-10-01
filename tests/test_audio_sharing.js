@@ -24,6 +24,7 @@ function setup({ language = 'de', navigator = {}, capacitor, legacyCopy = false 
   };
   const window = { addEventListener() {}, Capacitor: capacitor };
   const context = { window, document, navigator, URL, console };
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'podcast-content-policy.js'), 'utf8'), context);
   vm.runInNewContext(fs.readFileSync(path.join(root, 'audio-tools.js'), 'utf8'), context);
   const api = window.WRNAudioTools;
   const host = document.createElement('div');

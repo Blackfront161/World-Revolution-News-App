@@ -123,6 +123,13 @@
   }
 
   function normalizePodcast(item) {
+    const policy = typeof window !== 'undefined' ? window.WRNPodcastContentPolicy
+      : typeof require === 'function' ? require('./podcast-content-policy.js') : null;
+    item = policy ? policy.projectEpisode(item) : {
+      id:item?.id, title:item?.title, sourceName:item?.sourceName, sourceId:item?.sourceId,
+      sourceKind:item?.sourceKind, language:item?.language, published:item?.published,
+      contentPolicy:'metadata_and_links_only'
+    };
     const published = text(item?.published || item?.createdAt);
     const source = text(item?.sourceName || item?.source || 'Unknown source');
     const rawKind = text(item?.sourceKind).toLocaleLowerCase();
@@ -137,6 +144,9 @@
       description: text(item?.description),
       source,
       sourceId: text(item?.sourceId || item?.sourceSlug || source).toLocaleLowerCase(),
+      endpointId: text(item?.endpointId),
+      contentPolicy: text(item?.contentPolicy),
+      feedUrl: safeUrl(item?.feedUrl),
       sourceKind,
       sourcePriority: Number(item?.sourcePriority || 0),
       published,

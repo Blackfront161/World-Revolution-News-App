@@ -39,6 +39,7 @@
 
     function cleanConfig(config) {
         if (!config || !config.id) return null;
+        if (!window.WRNPodcastContentPolicy || window.WRNPodcastContentPolicy.isMetadataOnly(config)) return null;
         const candidates = Array.isArray(config.candidates) ? config.candidates : [config.url || config.candidates];
         const playable = candidates.map(value => String(value || '')).filter(Boolean).slice(0, 8);
         if (!playable.length) return null;
@@ -47,6 +48,10 @@
             kind: String(config.kind || 'original'),
             title: String(config.title || 'Audio').slice(0, 500),
             artist: String(config.artist || '').slice(0, 300),
+            sourceId: String(config.sourceId || ''),
+            endpointId: String(config.endpointId || ''),
+            feedUrl: String(config.feedUrl || ''),
+            contentPolicy: String(config.contentPolicy || ''),
             candidates: playable,
             artwork: String(config.artwork || '').slice(0, 1500),
             statusId: String(config.statusId || ''),
@@ -78,6 +83,8 @@
 
     function getShareData(item) {
         if (!item) return null;
+        if (!window.WRNPodcastContentPolicy) return null;
+        item = window.WRNPodcastContentPolicy?.projectEpisode(item) || item;
         const audio = item.audioUrl || item.streamUrl || item.candidates?.[0];
         const choices = item.kind === 'radio'
             ? [item.website || item.originalUrl, audio]
@@ -175,9 +182,11 @@
     }
 
     function readQueue() {
+        if (!window.WRNPodcastContentPolicy) return [];
         try {
             const parsed = JSON.parse(localStorage.getItem(QUEUE_KEY) || '[]');
-            return Array.isArray(parsed) ? parsed.filter(item => item && item.id && Array.isArray(item.candidates)) : [];
+            return Array.isArray(parsed) ? parsed.filter(item => item && item.id && Array.isArray(item.candidates)
+                && !window.WRNPodcastContentPolicy?.isMetadataOnly(item)) : [];
         } catch { return []; }
     }
 

@@ -15,7 +15,7 @@ checker = (ROOT / "check_news_sources.py").read_text(encoding="utf-8")
 roadmap = json.loads((ROOT / "ROADMAP.json").read_text(encoding="utf-8"))
 
 assert "? '2.1.2'" in release_config
-assert "wrn-app-v2.1.2-r8" in worker
+assert "wrn-app-v2.1.2-r9" in worker
 assert "action-radar.js" in legacy_config and "action-radar.js" in worker
 assert "editorial-review-ui.js" in legacy_config and "editorial-review-ui.js" in worker
 assert "source-health-freshness.js" in legacy_config and "source-health-freshness.js" in worker
@@ -48,7 +48,9 @@ assert '"workflowIntervalHours": 4' in checker
 assert '"expiredResultsAreNotPresentedAsCurrent": True' in checker
 
 assert roadmap["current"]["version"] == "2.1.2"
-assert roadmap["current"]["status"].startswith("Lokaler Produktionskandidat")
+assert roadmap["current"]["versionCode"] == 32
+assert roadmap["current"]["releaseReady"] is False
+assert "Code32" in roadmap["current"]["status"] and "Google" in roadmap["current"]["status"]
 assert "serverseitige Standortverfolgung" in roadmap["excluded"]
 
 loader_block = legacy_config[legacy_config.index("const loadCore"):legacy_config.index("openLandingTab();", legacy_config.index("const loadCore"))]

@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r8';
+const APP_CACHE = 'wrn-app-v2.1.2-r9';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -30,7 +30,8 @@ const APP_SHELL = [
   './news-app-2-core.js?release=5',
   './news-app-2-specialty.js?release=3',
   './wrn-product-21.js?release=1',
-  './news-app-2-media.js?release=2',
+  './podcast-content-policy.js?release=1',
+  './news-app-2-media.js?release=3',
   './news-app-2-release.js?release=3',
   './article-summary-core.js?release=1',
   './shared-translation-client.js?release=4',
@@ -38,8 +39,8 @@ const APP_SHELL = [
   './lexicon-tab.js?release=6',
   './prisoner-solidarity.js?release=4',
   './zine-designer.js?release=3',
-  './media-player.js?release=4',
-  './audio-tools.js?release=2',
+  './media-player.js?release=5',
+  './audio-tools.js?release=3',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
   './source-profiles.js?release=4',
@@ -47,7 +48,7 @@ const APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=54',
+  './news-app-2.js?release=55',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -183,7 +184,8 @@ const CORE_APP_SHELL = [
   './news-app-2-core.js?release=5',
   './news-app-2-specialty.js?release=3',
   './wrn-product-21.js?release=1',
-  './news-app-2-media.js?release=2',
+  './podcast-content-policy.js?release=1',
+  './news-app-2-media.js?release=3',
   './news-app-2-release.js?release=3',
   './article-summary-core.js?release=1',
   './shared-translation-client.js?release=4',
@@ -191,8 +193,8 @@ const CORE_APP_SHELL = [
   './lexicon-tab.js?release=6',
   './prisoner-solidarity.js?release=4',
   './zine-designer.js?release=3',
-  './media-player.js?release=4',
-  './audio-tools.js?release=2',
+  './media-player.js?release=5',
+  './audio-tools.js?release=3',
   './source-passport-21.js?release=1',
   './solidarity-network-21.js?release=6',
   './source-profiles.js?release=4',
@@ -200,7 +202,7 @@ const CORE_APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=54'
+  './news-app-2.js?release=55'
 ];
 const APP_INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${APP_CACHE}`, self.location.href)

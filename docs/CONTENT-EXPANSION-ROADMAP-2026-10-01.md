@@ -1,6 +1,6 @@
 # Ergänzung der aktuellen Roadmap: gemeinsamer Inhalt und Wissen
 
-Auftrag vom 1. Oktober 2026: Website-Inhalte und App-Quellen angleichen, Lexikon/Wissensbibliothek ausbauen und mehr Podcastquellen bzw. größere Archive erschließen. Diese Ergänzung ist in [ROADMAP.json](../ROADMAP.json) unter vier eigenen Arbeitspaketen erfasst. Inventar und Recherche sind erfolgt; Produktausbau, Datenabgleich und Veröffentlichung bleiben als offene Arbeit benannt.
+Auftrag vom 1. Oktober 2026: Website-Inhalte und App-Quellen angleichen, Lexikon/Wissensbibliothek ausbauen und mehr Podcastquellen bzw. größere Archive erschließen. Diese Ergänzung ist in [ROADMAP.json](../ROADMAP.json) unter vier eigenen Arbeitspaketen erfasst. Der [erste RDL-Katalogbatch](RDL-METADATA-IDENTITY-BATCH-2026-10-01.md) ist lokal umgesetzt und getestet. Vollständiger Datenabgleich und Veröffentlichung bleiben offen.
 
 ## 1. Website-Abweichung schließen
 
@@ -72,9 +72,9 @@ Der Website-Veröffentlichungsauftrag wurde ausdrücklich erteilt und ist inzwis
 
 Im App-Arbeitsstand ist die [erste Lexikonrunde](LEXICON-FIRST-CONTENT-BATCH-2026-10-01.md) umgesetzt: ein belegter DE/EN-Begriff zu Faschismus und drei korrigierte Beziehungen zum vorhandenen Begriff Antifaschismus. Der ausgeführte öffentliche Katalog enthält nun 155 eindeutige Begriffe und 13 Referenzen; alle fünf zuvor verwaisten Beziehungen sind aufgelöst. Das entspricht einem von 20 geplanten Begriffsbeiträgen. Weitere 19 Beiträge, drei Lernpfade mit 30 Zuordnungen, Bibliothekssynchronisierung und die spätere Produktabnahme bleiben offen. Dieser lokale Entwurf ist weder Website-Inhalt noch Bestandteil des bestehenden Code31-AAB; die unabhängige Inhaltsprüfung steht aus.
 
-Die [Radio-Dreyeckland-ID-Zuordnung](RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.md) ist als gehashter Vorschlag für 33 App- und 28 Datenzeilen vorbereitet. Sie ist nicht angewendet. Vor der Zuordnung muss die restriktive Metadaten-/Originallinkregel auch in Podcastpipeline und Player wirksam sein.
+Die [Radio-Dreyeckland-ID-Zuordnung](RDL-METADATA-IDENTITY-BATCH-2026-10-01.md) ist jetzt lokal für 33 App- und 28 Datenzeilen angewendet. Die vorherige Vorschlagsdatei bleibt als historischer Eingang unverändert. Die Metadaten-/Originallinkregel ist in beiden Podcastpipelines und beiden App-Ansichten, Player, Teilen und Warteschlange wirksam und getestet. Vorhandene Episoden-IDs bleiben erhalten; Audio-/Bildrechte wurden nicht freigegeben. Unabhängige Prüfung des neuen Produktbatches und Veröffentlichung stehen aus.
 
-Der Kontrolleur hat diese lokalen Entwurfs-/Nachweisstände und die Publikationsstatusbindung inzwischen [gezielt unabhängig akzeptiert](CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md). Die Annahme ist auf die jeweilige Nichtaufnahme bzw. technische Entwurfsprüfung begrenzt. Fachredaktion des neuen Begriffs, RDL-Anwendung und Podcastaufnahme bleiben offen.
+Der Kontrolleur hat die damaligen lokalen Entwurfs-/Nachweisstände und die Publikationsstatusbindung [gezielt unabhängig akzeptiert](CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md). Diese historische Annahme ist auf die jeweilige Nichtaufnahme bzw. technische Entwurfsprüfung begrenzt und bestätigt nicht automatisch den neuen RDL-Produktbatch. Fachredaktion weiterer Begriffe, unabhängige RDL-Runtimeprüfung und neue Podcastaufnahme bleiben offen.
 
 Vier offizielle RSS-Endpunkte wurden direkt über HTTPS technisch beobachtet: [Feedbericht](PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md). Zusammen enthalten die gelesenen Antworten 1.673 Zeilen; darunter ein zukünftiges Datum, 73 ausschließlich über HTTP referenzierte Audiodateien und ein doppelter Episodenlink. Diese Zeilen sind keine aufgenommenen Folgen. Die drei 3CR-Feeds zeigen grundsätzlich genügend Archivzeilen für eine spätere Erweiterung; Rebel Steps enthält 35 Zeilen und wird als Archiv behandelt. Rechte, erreichbare Einzelmedien, Aufnahme und unabhängige Prüfung bleiben offen.
 

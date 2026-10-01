@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "offline_audit_tool_implemented_merge_and_projection_pending",
+      "status": "rdl_identity_metadata_batch_implemented_local_full_parity_pending",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -472,7 +472,7 @@
           "reviewedCommit": "a1eea9c9cf4cf5adbad61c71781170c9d847e67d",
           "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
         },
-        "status": "Prüfwerkzeug umgesetzt; keine Zusammenführung, Aufnahme oder Aktivierung"
+        "status": "Prüfwerkzeug und erster RDL-Identitäts-/Metadatenbatch umgesetzt; vollständige Zusammenführung offen"
       },
       "baseline": {
         "appCommit": "a84d979423267187898afdc6ca960600189727bf",
@@ -488,7 +488,6 @@
       },
       "scope": [
         "die 16 bislang nur im App-Katalog vorhandenen Podcastquellen im kanonischen Datenrepository einzeln prüfen und freigeben",
-        "den zusätzlichen Radio-Dreyeckland-Eintrag ohne ID und Episoden ohne sourceId auf die vorhandene Identität zurückführen; stabile Episoden-IDs und gespeicherte Zustände erhalten",
         "Bibliotheksbestände per Werk-/Quellen-ID zusammenführen: 53 deutsche Titel im neueren Datenstand, ältere Titel im App-Paket; Löschung, Widerruf und neue Ausgabe unterscheiden",
         "bewusst zurückgestellte Sprachen nicht durch einen Datensync aktivieren; Sprach- und Rechteentscheidungen ausdrücklich erhalten",
         "reproduzierbare gemeinsame Projektionen mit Eingabehash, Zeit, Neuaufnahmen, Ausschlüssen und Last-known-good-Stand für App und Website liefern"
@@ -499,7 +498,27 @@
         "kein Datensync löscht unbetroffene gültige Archive oder setzt gespeicherte Einträge und Nutzereinstellungen zurück",
         "Datei-/Netzwerkfehler erhalten den letzten gültigen Stand mit ehrlicher Aktualitätsanzeige"
       ],
-      "evidence": "docs/CONTENT-EXPANSION-INVENTORY-2026-10-01.json"
+      "evidence": "docs/CONTENT-EXPANSION-INVENTORY-2026-10-01.json",
+      "firstImplementationBatch": {
+        "id": "RDL-METADATA-IDENTITY",
+        "status": "implemented_local_independent_review_pending",
+        "evidence": "docs/RDL-METADATA-IDENTITY-BATCH-2026-10-01.md",
+        "bindings": "docs/evidence/rdl-metadata-2026-10-01/bindings.json",
+        "appRowsCorrected": 33,
+        "dataRowsCorrected": 28,
+        "stableEpisodeIdsPreserved": true,
+        "endpointId": "radio-dreyeckland-podcasts-all",
+        "canonicalSourceId": "radio-dreyeckland",
+        "contentPolicy": "metadata_and_links_only",
+        "newPublishersAdmitted": 0,
+        "rightsAcceptance": false,
+        "currentAndClassicBrowser": "passed_isolated_fixture",
+        "contractMatrix": "50 JS; 136 Python; 4 subtests; 4 standalone scripts passed; 3 skipped",
+        "androidBuild": false,
+        "newVersionCode": null,
+        "publication": "local_only_not_in_code32",
+        "next": "16 zusätzliche Podcastquellen einzeln prüfen und gemeinsame Bibliotheksprojektion vorbereiten; Sprache, Quellenstatus und Rechtebeschränkungen erhalten"
+      }
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",

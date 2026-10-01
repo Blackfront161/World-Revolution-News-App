@@ -1,5 +1,7 @@
 # News App 2 – ehrliche Arbeits- und Release-Checkliste
 
+Aktueller Stand vom 1. Oktober 2026: Code28 ist in Google Play Console als verfügbar bestätigt; Code32 aus `6821a02` ist für Produktion eingereicht und wird von Google geprüft. Die neue [RDL-Katalogkorrektur](docs/RDL-METADATA-IDENTITY-BATCH-2026-10-01.md) ist eine lokale Folgearbeit ohne neuen Android-Build oder VersionCode. Die folgenden Code26-Bindungen dokumentieren den historischen Kandidaten und gelten nicht als aktueller Store-Status.
+
 Stand: 20. August 2026
 Branch: `codex/release-2.1.1-code26`
 
@@ -15,7 +17,7 @@ Branch: `codex/release-2.1.1-code26`
 - Android-VersionCode 25 ist verbraucht. Für `2.1.1` ist ausschließlich Code 26
   zulässig; alte Code-25-Signierhelfer und Nachweise bleiben historische,
   unveränderliche Bindungen und dürfen nicht für diesen Kandidaten verwendet werden.
-- Der Nutzer hat `2.1.0`/Code 25 als aktuellen signierten Live-/Verteilungsstand
+- Historischer Ausgangspunkt: Der Nutzer hat `2.1.0`/Code 25 als aktuellen signierten Live-/Verteilungsstand
   bestätigt. Der Play-Console-Trackstatus wurde unter den aktuellen Bedingungen
   nicht unabhängig geprüft und wird deshalb nicht als zusätzlicher Nachweis behauptet.
 - Vorhandene Überschriften, Zähler, Links, CSS-Klassen oder Schaltflächen gelten

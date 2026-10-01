@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CLASSIC_ENTRY = ROOT / "classic.html"
 PUBLISHED_BASELINE_VERSION = "2.0.8"
 CANDIDATE_VERSION = "2.1.2"
-CANDIDATE_APP_CACHE = "wrn-app-v2.1.2-r8"
+CANDIDATE_APP_CACHE = "wrn-app-v2.1.2-r9"
 CANDIDATE_DATA_CACHE = "wrn-data-v2.1.2-r1"
-CANDIDATE_PREVIEW_CACHE = "v96"
+CANDIDATE_PREVIEW_CACHE = "v97"
 ERRORS: list[str] = []
 WARNINGS: list[str] = []
 
@@ -57,6 +57,7 @@ def check_required_files() -> None:
         "source-profiles.js",
         "translation-tools.js",
         "accessibility.js",
+        "podcast-content-policy.js",
         "media-player.js",
         "audio-tools.js",
         "stories-core.js",

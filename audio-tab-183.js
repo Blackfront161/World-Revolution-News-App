@@ -188,7 +188,7 @@
       if (source?.id) byId.set(key(source.id), source);
       if (source?.name) byName.set(key(source.name), source);
     });
-    return { byId, byName };
+    return { byId, byName, sources };
   }
 
   function matchSource(item, maps) {
@@ -229,9 +229,11 @@
 
   function normalizePodcast(item, kind, maps) {
     if (!item || typeof item !== 'object') return null;
+    if (!window.WRNPodcastContentPolicy) return null;
+    item = window.WRNPodcastContentPolicy?.projectEpisode(item, maps.sources) || item;
     const source = matchSource(item, maps);
     const candidates = candidateUrls(item);
-    if (!candidates.length) return null;
+    if (!candidates.length && !(window.WRNPodcastContentPolicy?.isMetadataOnly(item) && item.episodeUrl)) return null;
     const sourceName = clean(item.sourceName || item.source || item.publisher || source?.name || 'World Revolution News');
     const country = clean(item.country || item.originCountry || source?.country).toUpperCase();
     const region = canonicalRegion(item.region || item.continent || item.kontinent || item.originRegion || source?.region, country);
@@ -245,6 +247,8 @@
       description: clean(item.description || item.summary || item.content || item.text),
       sourceName,
       sourceId: clean(item.sourceId || source?.id),
+      endpointId: clean(item.endpointId),
+      contentPolicy: clean(item.contentPolicy),
       language: clean(item.language || item.lang || source?.language || 'und').toLowerCase(),
       country,
       region,
@@ -412,7 +416,7 @@
 
   function configuredSourceCounts() {
     const counts = Object.fromEntries(REGIONS.map(region => [region, 0]));
-    state.sources.forEach(source => {
+    state.sources.filter(source => source.entityType !== 'feed-endpoint').forEach(source => {
       const region = canonicalRegion(source.region, source.country);
       counts[region] = (counts[region] || 0) + 1;
       counts.global += 1;
@@ -464,7 +468,7 @@
 
   function appendMedia(card, item) {
     const statusId = `media-status-${clean(item.id).replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 120)}`;
-    const config = { id:item.id, kind:item.kind, title:item.title, artist:item.sourceName, candidates:item.candidates, artwork:item.artwork, statusId, showPause:item.kind !== 'radio', showProgress:item.kind !== 'radio' };
+    const config = { id:item.id, kind:item.kind, title:item.title, artist:item.sourceName, candidates:item.candidates, artwork:item.artwork, sourceId:item.sourceId, endpointId:item.endpointId, feedUrl:item.feedUrl, contentPolicy:item.contentPolicy, statusId, showPause:item.kind !== 'radio', showProgress:item.kind !== 'radio' };
     if (typeof appendSimpleMediaControls === 'function') appendSimpleMediaControls(card, config);
     else card.append(makeButton(`▶ ${item.title}`, 'btn-media-play', () => window.WRNMediaPlayer?.play?.(config)));
     window.WRNAudioTools?.appendCardActions?.(card, config, { queue:item.kind !== 'radio' });
@@ -488,7 +492,8 @@
     else {
       const unavailable = document.createElement('p');
       unavailable.className = 'wrn-audio-warning-183';
-      unavailable.textContent = t.streamUnavailable;
+      unavailable.textContent = window.WRNPodcastContentPolicy?.isMetadataOnly(item)
+        ? window.WRNPodcastContentPolicy.originalOnlyText(languageCode()) : t.streamUnavailable;
       card.append(unavailable);
     }
     const links = document.createElement('div'); links.className = 'wrn-audio-links-183';

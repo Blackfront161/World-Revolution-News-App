@@ -20,7 +20,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 REPORT_PATH = ROOT / "release-readiness-183.json"
 EXPECTED_VERSION = "2.1.2"
-EXPECTED_APP_CACHE = "wrn-app-v2.1.2-r7"
+EXPECTED_APP_CACHE = "wrn-app-v2.1.2-r9"
 EXPECTED_DATA_CACHE = "wrn-data-v2.1.2-r1"
 
 REQUIRED_FILES = (
@@ -38,6 +38,7 @@ REQUIRED_FILES = (
     "lexicon-tab.js",
     "lexicon-tab.css",
     "audio-tab-183.js",
+    "podcast-content-policy.js",
     "audio-tab-183.css",
     "interface-block3.js",
     "interface-block3.css",

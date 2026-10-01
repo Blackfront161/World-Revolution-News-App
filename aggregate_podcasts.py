@@ -17,6 +17,8 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
+from podcast_content_policy import metadata_only, project_episode, episode_key, original_url
+
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -230,7 +232,8 @@ def deduplicate_episodes(items: list[dict]) -> list[dict]:
 
     by_audio: dict[str, dict] = {}
     for item in [*by_id.values(), *without_id]:
-        audio_url = str(item.get("audioUrl") or "").strip()
+        item = project_episode(item)
+        audio_url = episode_key(item)
         if not audio_url:
             continue
         existing = by_audio.get(audio_url)
@@ -405,11 +408,14 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
                 audio = audio_from_entry(entry)
                 episode_url = safe_url(entry.get("link") or entry.get("id") or "", feed_url)
 
-                if not audio and source.get("pageAudioFallback") and episode_url:
+                restricted = metadata_only({"feedUrl": feed_url}, source)
+                if restricted and not original_url(episode_url):
+                    continue
+                if not restricted and not audio and source.get("pageAudioFallback") and episode_url:
                     audio = find_audio_on_page(episode_url)
                     time.sleep(0.12)
 
-                if not audio:
+                if not audio and not (restricted and episode_url):
                     continue
 
                 title = clean_text(entry.get("title")) or source.get("name", "Podcast")
@@ -454,11 +460,12 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
                     configured_languages
                     and language not in configured_languages
                 )
-                guid_seed = str(entry.get("id") or entry.get("guid") or audio)
-                result.append({
-                    "id": hashlib.sha256(f"{source.get('id')}|{guid_seed}".encode()).hexdigest()[:24],
+                guid_seed = str(entry.get("id") or entry.get("guid") or audio or episode_url)
+                result.append(project_episode({
+                    "id": hashlib.sha256(f"{source.get('episodeIdNamespace', source.get('id'))}|{guid_seed}".encode()).hexdigest()[:24],
                     "type": "original-podcast",
-                    "sourceId": source.get("id", ""),
+                    "sourceId": source.get("canonicalSourceId") or source.get("id", ""),
+                    "endpointId": source.get("id", ""),
                     "sourceName": source.get("name", ""),
                     "sourceKind": source.get("sourceKind", "independent-podcast"),
                     "sourcePriority": int(source.get("priority", 50)),
@@ -483,7 +490,7 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
                     "topics": source.get("topics", []),
                     "categories": source.get("categories", []),
                     "license": source.get("license", "Originalquelle"),
-                })
+                }, source))
 
                 if len(result) >= MAX_PER_SOURCE:
                     break
@@ -539,6 +546,7 @@ def partitioned_catalog(items: list[dict]) -> list[dict]:
 
 def main() -> int:
     sources = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
+    catalog_sources = sources
     catalog_source_ids = {
         source.get("id")
         for source in sources
@@ -552,7 +560,7 @@ def main() -> int:
     if requested_ids:
         sources = [
             source for source in sources
-            if source.get("id") in requested_ids
+            if source.get("id") in requested_ids or source.get("canonicalSourceId") in requested_ids
         ]
         missing = requested_ids - {
             source.get("id") for source in sources
@@ -648,10 +656,10 @@ def main() -> int:
             loaded = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
             if isinstance(loaded, list):
                 previous_items = [
-                    item for item in loaded
+                    project_episode(item, sources=catalog_sources) for item in loaded
                     if (
                         isinstance(item, dict)
-                        and item.get("audioUrl")
+                        and episode_key(project_episode(item, sources=catalog_sources))
                         and podcast_language_allowed(item.get("language"))
                     )
                 ]
@@ -661,23 +669,28 @@ def main() -> int:
     if requested_ids and previous_items:
         retained = [
             item for item in previous_items
-            if item.get("sourceId") not in requested_ids
+            if (item.get("sourceId") not in requested_ids and item.get("endpointId") not in requested_ids)
+            or not health.get(item.get("endpointId") or item.get("sourceId"), {}).get("ok")
         ]
         targeted = {
-            item.get("audioUrl"): item
+            episode_key(item): item
             for item in items
-            if item.get("audioUrl")
+            if episode_key(item)
         }
         for item in retained:
-            targeted.setdefault(item.get("audioUrl"), item)
+            targeted.setdefault(episode_key(item), item)
         items = sorted(
             targeted.values(),
             key=lambda item: item.get("published") or "",
             reverse=True,
         )
 
+    fallback_only = not items and bool(previous_items)
+    if fallback_only:
+        items = previous_items
+
     if items:
-        output_items = partitioned_catalog(items)
+        output_items = items if requested_ids or fallback_only else partitioned_catalog(items)
         OUTPUT_FILE.write_text(
             json.dumps(output_items, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8"

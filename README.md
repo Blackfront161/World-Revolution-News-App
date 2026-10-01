@@ -10,25 +10,26 @@ libertäre Perspektiven.
 | Kanal | Version | Status |
 |---|---:|---|
 | Historische verifizierte Store-Baseline | 2.0.8 | früherer veröffentlichter mobiler Ausgangsstand |
-| Aktuelle Live-/Verteilungs-AAB | 2.1.0, Code 25 | vom Nutzer als aktueller signierter Stand bestätigt; Play-Trackstatus nicht unabhängig geprüft |
+| Aktuelle Live-/Verteilungs-AAB | 2.1.2, Code 28 | am 1. Oktober 2026 in Google Play Console als verfügbar bestätigt |
 | GitHub-Pages-PWA | 2.0.0 laut öffentlicher Konfiguration | veralteter Legacy-Stand, nicht der 2.0.8-Nachweis |
 | Dieses Arbeitsverzeichnis | 2.1.2 | lokale Weiterentwicklung mit wählbarem Autonom-Design; nicht veröffentlicht |
-| Android / Google Play | 2.1.2, Code 29 | historische Wrapper-/Upgrade-Baseline8e95685; kein neuer Store-Nachweis |
-| Aktueller Android-Kandidat | 2.1.2, Code 31 | unsigniert aus8d2ef23 gebaut; isoliertes Emulator-Upgrade/Offline/Systembewegung bestanden; Signierung und Veröffentlichung offen |
-| Vorheriger signierter Kandidat | 2.1.2, Code 28 | Signaturbericht vorhanden; Play-Annahme und Trackstatus nicht belegt |
+| Android / Google Play | 2.1.2, Code 32 | signiert aus6821a02 und für Produktion eingereicht; Google-Prüfung läuft, nicht als live bestätigt |
+| Historische Wrapper-/Upgrade-Baseline | 2.1.2, Code 29 | 8e95685; keine neue Store-Einreichung dieses Wrappers |
+| Vorheriger unsignierter Kandidat | 2.1.2, Code 31 | aus8d2ef23 gebaut; durch Code32 abgelöst |
+| Nächster Entwicklungsstand | 2.1.2, noch ohne neuen VersionCode | RDL-Katalogkorrektur lokal umgesetzt; nicht im bestehenden Code32-AAB enthalten |
 
 Der derzeitige GitHub-Pages-Legacy-Stand ist unter
 [blackfront161.github.io/Revolution-News-Data](https://blackfront161.github.io/Revolution-News-Data/)
 erreichbar. Er ist weder mit der historischen verifizierten Store-Baseline
-2.0.8 noch mit der vom Nutzer bestätigten Live-/Verteilungs-AAB 2.1.0/Code 25
+2.0.8 noch mit der in Google Play Console bestätigten Live-AAB 2.1.2/Code 28
 gleichzusetzen. Ein Entwicklungsstand darf nicht allein aufgrund seiner
 Versionskennung als veröffentlicht, signiert oder produktiv bezeichnet werden.
 Android-VersionCode 25 ist bereits vergeben und darf nicht erneut verwendet
 werden. Der bekannte lokale Signaturnachweis ist an das erwartete Zertifikat
 `7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8`
-gebunden. Der Play-Console-Trackstatus konnte unter den aktuellen Bedingungen
-nicht unabhängig geprüft werden. Die frühere Code26-Übergabe ist historisch;
-der korrigierte lokale Kandidat wurde mit Code31 aus `8d2ef23` erstellt. Code30 ist ein
+gebunden. Die [aktuelle Console-Einreichung](docs/PLAY-UPLOAD-CODE32-2026-10-01.md)
+trennt Code28 (verfügbar) von Code32 (Google-Prüfung). Die frühere Code26-Übergabe ist historisch;
+Code31 aus `8d2ef23` wurde durch Code32 aus `6821a02` abgelöst. Code30 ist ein
 unabhängig geprüfter unsignierter Zwischenstand vor der Classic-Fokuskorrektur.
 Der vorhandene Code29-Build
 bleibt die Vorversion für die Upgrade-Prüfung.

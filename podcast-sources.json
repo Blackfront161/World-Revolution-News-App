@@ -692,7 +692,14 @@
       "ar",
       "und"
     ],
-    "contentPolicy": "metadata_and_links_only"
+    "contentPolicy": "metadata_and_links_only",
+    "id": "radio-dreyeckland-podcasts-all",
+    "canonicalSourceId": "radio-dreyeckland",
+    "entityType": "feed-endpoint",
+    "episodeIdNamespace": "None",
+    "feedUrls": [
+      "https://rdl.de/podcasts/all"
+    ]
   },
   {
       "id":  "radio-ambulante",
