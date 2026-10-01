@@ -1,0 +1,64 @@
+{
+  "schema": "wrn.website-star-icon-correction.v1",
+  "status": "published_independent_live_pass",
+  "scope": "website_favicon_and_bound_offline_shell_only",
+  "cause": "website_header_wordmark_was_incorrectly_reused_as_app_tab_icon",
+  "url": "https://solinaridao.com/",
+  "sourceCommit": "f202ec5d702e875127c01292b26b6e0b9edfe38e",
+  "previousWebsiteSourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+  "originalAppAsset": "android-wrapper/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+  "originalAssetSha256": "78b3dbd6c6de3876c6a15012dd0ea683136ace682382f50036d68d2250d2314f",
+  "readyPath": "work/website-projection-star-favicon-release-v2/READY.json",
+  "readySha256": "6822fef02e1c84c4336938c404e4867a21a97d88ebe1a74c78a90f94715a1493",
+  "shellId": "91367d2e6f35cf42d45f0a7d4e84adcca00b74a225e71b64bbba786293f64506",
+  "websiteManifestSha256": "e64d91953716dbd2150c0ed7d7df3dd0d6069445b5a0c188d17bb8a2f965d359",
+  "hostingManifestSha256": "002fc01ee8507457b8a96ba4ec9709bc68b051128d57db145a50d03d5858c4dc",
+  "independentControllerReview": {
+    "status": "PASS",
+    "focusedTestsPassed": 48,
+    "livePublicFilesVerified": 44,
+    "scope": "manifest_closure_original_asset_protocol_live_bytes_headers_pointers_revocations"
+  },
+  "writerLiveReceiptPath": "work/website-projection-live-20261001/live-full-1790812880431/receipt.json",
+  "writerLiveReceiptSha256": "933e912b2e715d23c824f1e0bb14ff0167d32276926d65b2a2a8368827c1dbe2",
+  "independentChiefBrowserResultSha256": "52888093a1dc5c3e167bb0b3bdd9fab0a1085e11e9aa0cfcff1beb2edd94ec54",
+  "independentChiefBrowserResult": {
+    "origin": "https://solinaridao.com",
+    "sourceCommit": "f202ec5d702e875127c01292b26b6e0b9edfe38e",
+    "observedAtUTC": "2026-10-01T00:02:43.079Z",
+    "status": "PASS",
+    "profile": "C:\\Users\\patri\\AppData\\Local\\Temp\\wrn-chief-star-HZKoDt",
+    "checks": [
+      "six live article IDs, 480/500, exact original icon, separate unchanged header, no mobile overflow",
+      "explicit save action, active worker, Chrome process fully closed",
+      "same profile restarted without network; exact star, active controller and identical article order"
+    ],
+    "offline": {
+      "href": "/assets/wrn-app-icon-CwyuVArd.png",
+      "width": 72,
+      "height": 72,
+      "bytes": 8845,
+      "mime": "image/png",
+      "controlled": true,
+      "sha256": "78b3dbd6c6de3876c6a15012dd0ea683136ace682382f50036d68d2250d2314f"
+    },
+    "articleIds": [
+      "news-8ababeeeb75fc37dc0d57b88412c3032453e0dea49476cba45cafe4c117f1ad1",
+      "news-42c16a577ae4f5d8feda3f1331221ed9e3fdb7df8c4d4c14cbd0626752dd74c6",
+      "news-8ca1b562638d82e207044e9aee80c7dfe6f4a20c33d3d0d47321d0fedca3a997",
+      "news-1e632c403fa3929019ce963a29f129f3f63b9fbdbb3ef289318c538aa6d16d52",
+      "news-3e4f102d7da6f55b804b6262823f443e2cc1483cdbe4fd3b602975d0f85b6efa",
+      "news-bfe2c200371161d1ba5a7a886e1d8de139536716d601d793ef72d7f8e2449bdf"
+    ],
+    "pageErrors": [],
+    "profileRemoved": true
+  },
+  "headerImageUnchanged": {
+    "bytes": 1123871,
+    "sha256": "9dca207bc008384ef45cf435a134bf170037ae0149d27c43c732b754912b61b9"
+  },
+  "contentProjectionUnchanged": true,
+  "installedAndroidAppChanged": false,
+  "appPwaManifestChanged": false,
+  "appPwaManifestObservation": "existing manifest.json still references historical simplified icon.svg; this website correction does not update installed apps"
+}

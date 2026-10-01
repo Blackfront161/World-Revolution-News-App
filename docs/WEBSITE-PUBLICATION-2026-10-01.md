@@ -2,6 +2,8 @@
 
 Die ausdrücklich autorisierte Veröffentlichung auf [solinaridao.com](https://solinaridao.com/) ist abgeschlossen und vom **WRN Kontrolleur** unabhängig live abgenommen. Veröffentlicht wurde exakt Website-Commit `5df01f13937b4c7957aeb097b7116587b86eb144` aus `work/website-projection-favicon-compression-release-v2/READY.json`. Der alleinige Website-Schreiber führte die Hostinger-Aktivierung aus. Der [gebundene Nachweis](WEBSITE-PUBLICATION-2026-10-01.json) enthält Paketbindung, unabhängige Browserbelege und Prüfsummen aller 43 öffentlich abrufbaren Dateien.
 
+Nachtrag: Die damals technisch geprüfte Favicondatei war fälschlich das Seitenkopflogo. Nach der Nutzerrückmeldung wurde die [originale rot-schwarze Windrose separat wiederhergestellt und live geprüft](WEBSITE-STAR-ICON-CORRECTION-2026-10-01.md). Dieser Bericht beschreibt weiterhin den vorausgegangenen Inhaltsrelease; der neue Iconstand ist im Nachtrag exakt gebunden.
+
 ## Inhalt und Grenzen
 
 - 480 von 500 Eingangszeilen sind als Nachrichtenmetadaten und sichere Originallinks sichtbar; 20 begründete Ausschlüsse bleiben erhalten.

@@ -259,7 +259,7 @@
         "productionRevision": "wrn-production-news-2026-09-26-v8",
         "sourcePassRevision": "wrn-source-pass-2026-09-25-v2",
         "status": "news_and_directory_projection_independently_live_verified",
-        "websiteSourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+        "websiteSourceCommit": "f202ec5d702e875127c01292b26b6e0b9edfe38e",
         "directorySequence": 202609301530,
         "directorySha256": "72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff"
       },
@@ -300,7 +300,18 @@
         "remaining": "Lexikon, Bibliothek und Podcasts als weitere Inhaltsklassen; keine neuen Volltexte oder Medien aufgenommen",
         "metadataReview": "accepted_exact_evidence_bindings",
         "reviewedMetadataCommit": "df82b67f566e52392b9654c8360581ccbe74dc11",
-        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md",
+        "iconCorrection": {
+          "status": "published_independent_live_pass",
+          "sourceCommit": "f202ec5d702e875127c01292b26b6e0b9edfe38e",
+          "shellId": "91367d2e6f35cf42d45f0a7d4e84adcca00b74a225e71b64bbba786293f64506",
+          "evidence": "docs/WEBSITE-STAR-ICON-CORRECTION-2026-10-01.json",
+          "report": "docs/WEBSITE-STAR-ICON-CORRECTION-2026-10-01.md",
+          "livePublicFilesVerified": 44,
+          "iconSha256": "78b3dbd6c6de3876c6a15012dd0ea683136ace682382f50036d68d2250d2314f",
+          "scope": "website_favicon_and_bound_offline_shell_only",
+          "androidOrPwaAppPublication": false
+        }
       }
     },
     {
