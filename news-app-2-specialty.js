@@ -288,7 +288,25 @@
     return [...items.values()];
   }
 
+  function learningPathsForCatalog(document, books, terms) {
+    if (document?.schema !== 'wrn.learning-paths.v1' || document.rights !== 'metadata-and-original-links-only' || !Array.isArray(document.paths)) return [];
+    const byBook = new Map((books || []).map(book => [book.id, book]));
+    const termIds = new Set((terms || []).map(term => term.id));
+    return document.paths.filter(path => path?.id && path.title?.de && path.title?.en && Array.isArray(path.entries)).map(path => ({
+      ...path,
+      entries: path.entries.filter(entry => {
+        const book = byBook.get(entry.bookId);
+        return book && !['withdrawn', 'revoked', 'deleted'].includes(book.status) && book.deleted !== true
+          && Array.isArray(entry.termIds) && entry.termIds.every(id => termIds.has(id))
+          && entry.note?.de && entry.note?.en
+          && /^https:\/\//.test(entry.originalUrl || '')
+          && [book.readUrl, ...Object.values(book.downloads || {})].includes(entry.originalUrl);
+      })
+    })).filter(path => path.entries.length);
+  }
+
   return Object.freeze({
+    learningPathsForCatalog,
     mergeLibraryCatalogs,
     text,
     token,

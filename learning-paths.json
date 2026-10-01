@@ -1,0 +1,423 @@
+{
+  "schema": "wrn.learning-paths.v1",
+  "revision": "2026-10-01",
+  "editorialStatus": "draft",
+  "availableLanguages": [
+    "de",
+    "en"
+  ],
+  "rights": "metadata-and-original-links-only",
+  "paths": [
+    {
+      "id": "foundations-self-organisation",
+      "title": {
+        "de": "Grundlagen und Selbstorganisation",
+        "en": "Foundations and self-organisation"
+      },
+      "entries": [
+        {
+          "bookId": "anarchist-library-de-1955dda905d18e882d13b8f4",
+          "termIds": [
+            "anarchism"
+          ],
+          "originalUrl": "https://de.anarchistlibraries.net/library/alexander-berkman-abc-des-anarchismus.epub",
+          "note": {
+            "de": "Einstieg: zentrale Begriffe und gesellschaftliche Fragen.",
+            "en": "Introduction: core concepts and social questions."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-de-64153b82db94cd8258f618a8",
+          "termIds": [
+            "anarchism",
+            "state"
+          ],
+          "originalUrl": "https://de.anarchistlibraries.net/library/errico-malatesta-anarchie.epub",
+          "note": {
+            "de": "Malatestas historischer Entwurf; mit heutigen Begriffen vergleichen.",
+            "en": "Malatesta’s historical proposal; compare it with present concepts."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-de-9c4be2dfa92dc560cb48bb95",
+          "termIds": [
+            "anarchism",
+            "federation"
+          ],
+          "originalUrl": "https://de.anarchistlibraries.net/library/elisee-reclus-anarchie.epub",
+          "note": {
+            "de": "Reclus als weitere historische Stimme lesen.",
+            "en": "Read Reclus as another historical voice."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-de-fc28abc7b596827412743972",
+          "termIds": [
+            "anarchism",
+            "self-organisation"
+          ],
+          "originalUrl": "https://de.anarchistlibraries.net/library/anselme-bellegarrigue-anarchie-ist-ordnung.epub",
+          "note": {
+            "de": "Das Verhältnis von Freiheit und gesellschaftlicher Ordnung diskutieren.",
+            "en": "Discuss the relationship between freedom and social order."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-de-4f3e3e7e530214572fb8fb7e",
+          "termIds": [
+            "anarcha-feminism",
+            "patriarchy"
+          ],
+          "originalUrl": "https://de.anarchistlibraries.net/library/nancy-everchild-margot-rideau-beverly-adams-und-mary-hastings-anarcha-feminismus.epub",
+          "note": {
+            "de": "Geschlechtliche Macht in Organisierung untersuchen.",
+            "en": "Examine gendered power in organising."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-de-f38f1f632bc1426206e59aeb",
+          "termIds": [
+            "anarcha-feminism",
+            "self-organisation"
+          ],
+          "originalUrl": "https://de.anarchistlibraries.net/library/anonym-was-ist-anarchafeminismus.epub",
+          "note": {
+            "de": "Eine weitere Einführung zum Vergleich der Perspektiven.",
+            "en": "Another introduction for comparing perspectives."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-1900d79281477938ad622d5d",
+          "termIds": [
+            "prefiguration",
+            "direct-action"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/david-s-d-amato-15-ways-to-practice-anarchism.epub",
+          "note": {
+            "de": "Eine Auswahl alltäglicher Praxisideen kritisch einordnen.",
+            "en": "Critically consider a selection of everyday practices."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-151b744de9e9f8de698c5795",
+          "termIds": [
+            "mutual-aid"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/a-new-world-in-our-hearts-what-is-mutual-aid.epub",
+          "note": {
+            "de": "Occupy Sandy als konkretes historisches Beispiel.",
+            "en": "Occupy Sandy as a concrete historical example."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-af3b3bfe12f456b61f156783",
+          "termIds": [
+            "self-organisation",
+            "informal-hierarchy"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/kevin-a-carson-organization-theory.epub",
+          "note": {
+            "de": "Vertiefung: Organisation, Größenordnung und Macht.",
+            "en": "Further study: organisation, scale and power."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-f750a8f6f3014a0cd9b2ab8b",
+          "termIds": [
+            "anarchism",
+            "internationalism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/lucien-van-der-walt-2010-anarchist-survey.epub",
+          "note": {
+            "de": "Eine historische Befragung ist eine Momentaufnahme, kein Bild aller Anarchist*innen.",
+            "en": "A historical survey is a snapshot, not a portrait of all anarchists."
+          },
+          "relationType": "editorial-reading-context"
+        }
+      ]
+    },
+    {
+      "id": "work-housing",
+      "title": {
+        "de": "Arbeit und Wohnen",
+        "en": "Work and housing"
+      },
+      "entries": [
+        {
+          "bookId": "anarchist-library-en-38941bec025bcf4557789837",
+          "termIds": [
+            "anarcho-syndicalism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/cnt-100-years-of-anarcho-syndicalism-in-spain.epub",
+          "note": {
+            "de": "Selbstdarstellung der CNT zur eigenen Geschichte.",
+            "en": "The CNT’s account of its own history."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-11ff62101d226faf5f67f35c",
+          "termIds": [
+            "tenant-union"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/tracy-jeanne-rosenthal-101-notes-on-the-la-tenants-union.epub",
+          "note": {
+            "de": "Mieterschaft, Sprache und gemeinsame Macht in Los Angeles.",
+            "en": "Tenancy, language and collective power in Los Angeles."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-5b8e194a58d6ce8fa647b54f",
+          "termIds": [
+            "self-organisation",
+            "solidarity-unionism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/1199-advice-to-rookie-organizers.epub",
+          "note": {
+            "de": "Erfahrungen aus gewerkschaftlicher Organisierung diskutieren.",
+            "en": "Discuss experiences from union organising."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-fb327152c65b70752b0f1fed",
+          "termIds": [
+            "strike",
+            "internationalism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/anarchist-federation-1922-the-hong-kong-strike.epub",
+          "note": {
+            "de": "Historisches Beispiel aus Hongkong, 1922.",
+            "en": "Historical example from Hong Kong in 1922."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-251e9daf40a0309b233759e0",
+          "termIds": [
+            "rent-strike"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/tom-wetzel-1931-barcelona-mass-rent-strike.epub",
+          "note": {
+            "de": "Erster Bericht über den Mietstreik von Barcelona 1931.",
+            "en": "First account of the 1931 Barcelona rent strike."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-7acb5b4e7d47bcc963e9089e",
+          "termIds": [
+            "rent-strike",
+            "source-criticism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/dermot-sreenan-the-1931-barcelona-rent-strike.epub",
+          "note": {
+            "de": "Zweiter Bericht zum Vergleich von Darstellung und Schwerpunkt.",
+            "en": "Second account for comparing narrative and emphasis."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-0ccda4ce16da2f3e09b38958",
+          "termIds": [
+            "strike",
+            "class-struggle"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/ian-bekker-and-lucien-van-der-walt-the-2010-mass-strike-in-the-state-sector-south-africa.epub",
+          "note": {
+            "de": "Arbeitskampf im öffentlichen Sektor Südafrikas, 2010.",
+            "en": "Struggle in South Africa’s public sector in 2010."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-6183e14ec4c3c9a855822d62",
+          "termIds": [
+            "anarcha-feminism",
+            "solidarity-unionism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/dan-gallin-and-pat-horn-women-s-unions-in-bolivia.epub",
+          "note": {
+            "de": "Frauen und Gewerkschaften in Bolivien.",
+            "en": "Women and unions in Bolivia."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-812cb87fa92506d259604d4e",
+          "termIds": [
+            "rank-and-file",
+            "internationalism"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/solidarity-collectives-interview-with-priama-diia-union-members.epub",
+          "note": {
+            "de": "Interviewperspektive aus der ukrainischen Gewerkschaftsarbeit.",
+            "en": "An interview perspective on union work in Ukraine."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-23d84c4377c0ec75e9b1dd92",
+          "termIds": [
+            "workers-control",
+            "solidarity-economy"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/logan-marie-glitterbomb-funding-worker-cooperatives.epub",
+          "note": {
+            "de": "Finanzierung selbstverwalteter Arbeit als umstrittene Strategie.",
+            "en": "Financing self-managed work as a contested strategy."
+          },
+          "relationType": "editorial-reading-context"
+        }
+      ]
+    },
+    {
+      "id": "ecology-commons",
+      "title": {
+        "de": "Ökologie und Gemeingüter",
+        "en": "Ecology and commons"
+      },
+      "entries": [
+        {
+          "bookId": "anarchist-library-en-d06e1f4eada395cd1126b549",
+          "termIds": [
+            "degrowth",
+            "just-transition"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/alexis-passadakis-and-matthias-schmelzer-12-lines-of-flight-for-just-degrowth.epub",
+          "note": {
+            "de": "Verteilung und ökologische Grenzen zusammendenken.",
+            "en": "Connect distribution with ecological limits."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-d6fb4e4ffd1cadcaa79bbb5c",
+          "termIds": [
+            "climate-justice"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/margaret-killjoy-beyond-climate-optimism-beyond-climate-pessimism.epub",
+          "note": {
+            "de": "Zwischen Resignation und Gewissheit über die Zukunft diskutieren.",
+            "en": "Discuss positions between resignation and certainty about the future."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-382b0793ed8dc09bb061d1e5",
+          "termIds": [
+            "commoning",
+            "commons"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/kevin-carson-communal-property-a-libertarian-analysis.epub",
+          "note": {
+            "de": "Gemeinschaftliches Eigentum und seine Bedingungen untersuchen.",
+            "en": "Examine communal property and its conditions."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-d4c8ee09bfe8dd047484d029",
+          "termIds": [
+            "eco-anarchism",
+            "social-ecology"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/william-gillis-15-post-primitivist-theses.epub",
+          "note": {
+            "de": "Eine technologieorientierte Kritik am Primitivismus; mit Gegenpositionen vergleichen.",
+            "en": "A technology-oriented critique of primitivism; compare with opposing views."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-0100810c338037b2310fdbbd",
+          "termIds": [
+            "eco-anarchism",
+            "disability-justice"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/ziq-why-red-anarchists-project-ableism-onto-greens.epub",
+          "note": {
+            "de": "Kontroverse Position zur Debatte über grüne Politik und Ableismus.",
+            "en": "A contested contribution on green politics and ableism."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-es-4c0fd59b87afd2e4d920d293",
+          "termIds": [
+            "commons",
+            "land-back"
+          ],
+          "originalUrl": "https://es.anarchistlibraries.net/library/elisee-reclus-a-mi-hermano-el-campesino.epub",
+          "note": {
+            "de": "Historischer Text über Land und bäuerliche Lebensverhältnisse; kein heutiger Land-Back-Text.",
+            "en": "Historical text on land and peasant life; not a contemporary Land Back text."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-fr-87cdaf1b260483d6ddb4e5bc",
+          "termIds": [
+            "anti-capitalism",
+            "climate-justice"
+          ],
+          "originalUrl": "https://fr.anarchistlibraries.net/library/miguel-amoros-quand-le-capitalisme-se-pretend-ecologiste.epub",
+          "note": {
+            "de": "Kritik an kapitalistischer Vereinnahmung ökologischer Sprache.",
+            "en": "Critique of capitalist appropriation of ecological language."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-d49f41ba511f80b3f37eba85",
+          "termIds": [
+            "mutualism",
+            "commoning"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/aeris-toward-an-economy-of-relationships-anarchist-mutual-credit-system.epub",
+          "note": {
+            "de": "Gemeinschaftliche Kreditbeziehungen als ein umstrittener Commons-Ansatz.",
+            "en": "Mutual credit relationships as one contested approach to commons."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-8489b11f3539e5f0faebd759",
+          "termIds": [
+            "commons",
+            "social-revolution"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/luis-olvera-maldonado-the-social-revolution-in-northern-mexico-and-the-anarchist-communes-of-th.epub",
+          "note": {
+            "de": "Historischer Auszug zu Kommunen in Nordmexiko; Kontext statt allgemeinem Bauplan.",
+            "en": "Historical excerpt on communes in northern Mexico; context rather than a general blueprint."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-it-dbbdc0c83b3d274df3002621",
+          "termIds": [
+            "commons",
+            "degrowth"
+          ],
+          "originalUrl": "https://bibliotecaanarchica.org/library/abbondanza-e-miseria-nelle-societa-primitive.epub",
+          "note": {
+            "de": "Historische Ökonomien und Vorstellungen von Überfluss kritisch vergleichen.",
+            "en": "Critically compare historical economies and ideas of abundance."
+          },
+          "relationType": "editorial-reading-context"
+        }
+      ]
+    }
+  ]
+}

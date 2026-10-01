@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": [
+    "1,310 stable IDs survive partial remote response; pagination 30/60, UND filter, five language-conflict holds, explicit exclusion, four widths and nine UI languages passed.",
+    "All podcast and source requests fail on reload: saved archive, source configuration and withdrawal persist."
+  ],
+  "errors": []
+}

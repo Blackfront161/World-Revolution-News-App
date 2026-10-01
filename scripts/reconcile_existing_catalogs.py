@@ -146,7 +146,7 @@ def main():
             current = json.loads(path.read_bytes())
             bound_key=f'{"app" if path.parent==ROOT else "data"}/{path.name}'
             previously_bound=hashlib.sha256(path.read_bytes()).hexdigest()==prior.get('outputSha256',{}).get(bound_key)
-            if current not in [json.loads(old),json.loads(payload)] and not previously_bound: raise ValueError(f'Refusing to overwrite modified catalog: {path}')
+            if args.write and current not in [json.loads(old),json.loads(payload)] and not previously_bound: raise ValueError(f'Refusing to overwrite modified catalog: {path}')
     manifest={'schemaVersion':1,'scope':'16 app-only sources and common library metadata; local candidate',
         'inputRefs':{'app':APP_REF,'data':DATA_REF},'inputSha256':inputs,
         'outputSha256':{f'{"app" if p.parent==ROOT else "data"}/{p.name}':hashlib.sha256(v).hexdigest() for p,v in outputs.items()},

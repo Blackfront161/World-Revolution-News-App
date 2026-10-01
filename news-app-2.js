@@ -1999,6 +1999,7 @@
     lexiconSnapshot: { terms: [], sources: [] },
     librarySources: [],
     libraryItems: [],
+    learningPaths: [],
     library: { query: '', languages: [], source: 'all', format: 'all', limit: 30 },
     developmentWatch: readJson(STORY_WATCH_KEY, []),
     developmentReviews: readJson(DEVELOPMENT_REVIEW_KEY, []),
@@ -2025,7 +2026,7 @@
     },
     media: {
       section: 'video', videoMode: 'current', query: '', region: 'all',
-      category: 'all', favoritesOnly: false, languages: [], source: 'all', zinePanel: 'content', stencilId: 'red-shepherd-solidarity'
+      category: 'all', favoritesOnly: false, languages: [], source: 'all', archive: false, archiveShown: 30, zinePanel: 'content', stencilId: 'red-shepherd-solidarity'
     },
     savedMode: 'bookmarks',
     savedArticles: [],
@@ -5037,6 +5038,20 @@
     }).join('');
   }
 
+  function learningPathsMarkup() {
+    if (!state.learningPaths.length) return '';
+    const language = state.language === 'de' ? 'de' : 'en';
+    const byBook = new Map(state.libraryItems.map(book => [book.id, book]));
+    const byTerm = new Map(state.lexiconSnapshot.terms.map(term => [term.id, term]));
+    return `<section class="learning-paths" aria-label="${language === 'de' ? 'Lernpfade' : 'Learning paths'}"><h2>${language === 'de' ? 'Lernpfade' : 'Learning paths'}</h2>
+      <p>${language === 'de' ? 'Redaktionelle Lesepfade · Entwurf. Bücher öffnen bei der Originalquelle.' : 'Editorial reading paths · draft. Books open at their original source.'}</p>
+      ${!['de','en'].includes(state.language) ? `<p>${escapeHtml(t('fallbackLanguage'))}</p>` : ''}
+      ${state.learningPaths.map(path => `<details class="lexicon-card"><summary><strong lang="${language}">${escapeHtml(path.title[language])}</strong> · ${path.entries.length}</summary><ol>${path.entries.filter(entry => byBook.has(entry.bookId)).map(entry => {
+        const book = byBook.get(entry.bookId);
+        return `<li data-learning-book="${escapeHtml(entry.bookId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" lang="${escapeHtml(book.languages?.[0] || 'und')}">${escapeHtml(book.title)}</a> · ${escapeHtml((book.languages || []).join(', '))}<p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`;
+      }).join('')}</ol></details>`).join('')}</section>`;
+  }
+
   function renderLibrary() {
     const allResults = libraryResults();
     const results = allResults.slice(0, state.library.limit);
@@ -5050,6 +5065,7 @@
     ])].filter(Boolean).sort();
     viewRoot.innerHTML = `
       ${headingMarkup(t('library'), t('library'), t('libraryText'), specialtyBack())}
+      ${learningPathsMarkup()}
       <section class="library-source-section">
         <div class="section-heading"><h2>${escapeHtml(t('librarySources'))}</h2><small>${state.librarySources.length}</small></div>
         <div class="library-source-grid">${state.librarySources.map(source => {
@@ -6210,8 +6226,16 @@
     return firstSentence || core.excerpt(clean, 220);
   }
 
+  function podcastArchiveCopy() {
+    return ({de:['Aktuelle Auswahl','Archiv','Weitere Folgen','Sprache ungeklärt'], en:['Current selection','Archive','More episodes','Language unverified'],
+      fr:['Sélection actuelle','Archives','Plus d’épisodes','Langue non vérifiée'], es:['Selección actual','Archivo','Más episodios','Idioma sin verificar'],
+      it:['Selezione attuale','Archivio','Altri episodi','Lingua non verificata'], pt:['Seleção atual','Arquivo','Mais episódios','Idioma não verificado'],
+      el:['Τρέχουσα επιλογή','Αρχείο','Περισσότερα επεισόδια','Μη επαληθευμένη γλώσσα'], tr:['Güncel seçki','Arşiv','Daha fazla bölüm','Dil doğrulanmadı'],
+      ru:['Текущая подборка','Архив','Ещё выпуски','Язык не проверен']})[state.language] || ['Current selection','Archive','More episodes','Language unverified'];
+  }
+
   function podcastLibraryControls(source, kind) {
-    const curatedLanguages = new Set(['ar', 'de', 'el', 'en', 'es', 'fr', 'it', 'pt', 'tr']);
+    const curatedLanguages = new Set(['ar', 'de', 'el', 'en', 'es', 'fr', 'it', 'pt', 'tr', ...(state.media.archive ? ['und'] : [])]);
     const kindItems = (source || []).filter(item => curatedLanguages.has(core.text(item.language).toLocaleLowerCase()) && (kind === 'free-radio'
       ? ['free-radio', 'aggregator'].includes(item.sourceKind)
       : !['free-radio', 'aggregator'].includes(item.sourceKind)));
@@ -6224,10 +6248,11 @@
     const sources = [...new Map(languageFiltered.map(item => [item.sourceId || item.source, item.source])).entries()]
       .sort((a, b) => a[1].localeCompare(b[1], state.language));
     return `<section class="podcast-library-controls" aria-label="${escapeHtml(t('podcastLanguages'))}">
-      <div class="podcast-library-summary"><strong>${escapeHtml(kind === 'free-radio' ? t('radioShows') : t('podcastSeries'))}</strong><span>${escapeHtml(kind === 'free-radio' ? t('radioQuota') : t('independentQuota'))}</span></div>
+      <div class="podcast-library-summary"><strong>${escapeHtml(kind === 'free-radio' ? t('radioShows') : t('podcastSeries'))}</strong>${state.media.archive ? '' : `<span>${escapeHtml(kind === 'free-radio' ? t('radioQuota') : t('independentQuota'))}</span>`}</div>
+      <div class="podcast-language-filter"><button type="button" class="filter-chip${state.media.archive ? '' : ' active'}" data-action="media-archive" data-value="current" aria-pressed="${!state.media.archive}">${escapeHtml(podcastArchiveCopy()[0])}</button><button type="button" class="filter-chip${state.media.archive ? ' active' : ''}" data-action="media-archive" data-value="archive" aria-pressed="${state.media.archive}">${escapeHtml(podcastArchiveCopy()[1])}</button></div>
       <div class="podcast-language-filter" role="group" aria-label="${escapeHtml(t('podcastLanguages'))}">
         <button type="button" class="filter-chip${selectedLanguages.size ? '' : ' active'}" data-action="media-language-all" aria-pressed="${!selectedLanguages.size}">${escapeHtml(t('allLanguages'))}</button>
-        ${languages.map(language => `<button type="button" class="filter-chip${selectedLanguages.has(language) ? ' active' : ''}" data-action="media-language" data-value="${escapeHtml(language)}" aria-pressed="${selectedLanguages.has(language)}">${escapeHtml(languageLabel(language))}</button>`).join('')}
+        ${languages.map(language => `<button type="button" class="filter-chip${selectedLanguages.has(language) ? ' active' : ''}" data-action="media-language" data-value="${escapeHtml(language)}" aria-pressed="${selectedLanguages.has(language)}">${escapeHtml(language === 'und' ? podcastArchiveCopy()[3] : languageLabel(language))}</button>`).join('')}
       </div>
       <label class="podcast-source-filter"><span>${escapeHtml(t('podcastSource'))}</span><select id="next-media-source">
         <option value="all">${escapeHtml(t('allPodcastSources'))}</option>
@@ -6240,11 +6265,12 @@
     const filterState = generated
       ? { ...state.media, languages: [], source: 'all' }
       : state.media;
-    const curatedLanguages = new Set(['ar', 'de', 'el', 'en', 'es', 'fr', 'it', 'pt', 'tr']);
+    const curatedLanguages = new Set(['ar', 'de', 'el', 'en', 'es', 'fr', 'it', 'pt', 'tr', ...(state.media.archive ? ['und'] : [])]);
     let filtered = media.filterItems(
       (source || []).filter(item => generated || (
         curatedLanguages.has(core.text(item.language).toLocaleLowerCase())
-        && media.isRelevantPodcast(item)
+        && (state.media.archive || media.isRelevantPodcast(item))
+        && (kind === 'free-radio' ? ['free-radio', 'aggregator'].includes(item.sourceKind) : !['free-radio', 'aggregator'].includes(item.sourceKind))
       )),
       filterState
     );
@@ -6252,8 +6278,10 @@
       filtered = filtered.filter(item => window.WRNAudioTools?.isFavorite?.(item.id));
     }
     filtered = window.WRNAudioTools?.favoriteFirst?.(filtered) || filtered;
+    const archiveTotal = filtered.length;
     filtered = generated
       ? filtered.slice(0, 60)
+      : state.media.archive ? filtered.slice(0, state.media.archiveShown)
       : media.podcastQuota(filtered, {
           kind,
           languages: state.media.languages,
@@ -6265,7 +6293,7 @@
       ${generated ? '' : podcastLibraryControls(source, kind)}
       ${generated ? `<div class="notice-card"><strong>30 Tage</strong><p>${escapeHtml(t('generatedNotice'))}</p></div>
         ${state.podcastService === 'available' ? '' : `<div class="notice-card${state.podcastService === 'unavailable' ? ' release-danger' : ''}" role="status"><strong>${escapeHtml(t(state.podcastService === 'unavailable' ? 'cloudVoiceUnavailable' : 'checking'))}</strong><p>${escapeHtml(t(state.podcastService === 'unavailable' ? 'generatedUnavailable' : 'generatedChecking'))}</p>${state.podcastService === 'unavailable' ? `<button type="button" class="secondary-button" data-action="podcast-service-retry">${escapeHtml(t('retry'))}</button>` : ''}</div>`}` : ''}
-      <div class="section-heading"><h2>${escapeHtml(generated ? t('generated') : kind === 'free-radio' ? t('radioShows') : t('podcastSeries'))}</h2><small>${filtered.length} ${escapeHtml(t('episodes'))}</small></div>
+      <div class="section-heading"><h2>${escapeHtml(generated ? t('generated') : kind === 'free-radio' ? t('radioShows') : t('podcastSeries'))}</h2><small>${filtered.length}${!generated && state.media.archive ? ` / ${archiveTotal}` : ''} ${escapeHtml(t('episodes'))}</small></div>
       ${filtered.length ? `<div class="media-results">${filtered.map(podcast => `
         <article class="media-result-card podcast-card">
           ${podcast.artwork ? `<img src="${escapeHtml(podcast.artwork)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<div class="media-result-card__icon" aria-hidden="true">◉</div>`}
@@ -6292,6 +6320,7 @@
             </div>
           </div>
         </article>`).join('')}</div>` : mediaEmpty(generated ? t('noGenerated') : t('noMedia'))}
+      ${!generated && state.media.archive && filtered.length < archiveTotal ? `<button type="button" class="secondary-button" data-action="media-archive-more">${escapeHtml(podcastArchiveCopy()[2])}</button>` : ''}
     `;
   }
 
@@ -8405,6 +8434,15 @@
         state.podcastService = 'checking';
         renderMedia();
       }
+      if (action === 'media-archive') {
+        state.media.archive = target.dataset.value === 'archive';
+        state.media.archiveShown = 30;
+        renderMedia();
+      }
+      if (action === 'media-archive-more') {
+        state.media.archiveShown += 30;
+        renderMedia();
+      }
       if (action === 'media-language-all') {
         state.media.languages = [];
         state.media.source = 'all';
@@ -9033,11 +9071,11 @@
       : { resources: [], editorialInputChecklist: [] };
     const dataUrls = window.WRN_CONFIG?.dataUrls || {};
     const dataMirrors = window.WRN_CONFIG?.dataMirrors || {};
-    const [eventsResult, prisonersResult, solidarityActionsResult, podcastsResult, generatedResult, radioResult, radioHealthResult, sourceCatalogResult, librarySourcesResult, libraryFeedResult, editorialDecisionsResult, videoFeedResult, videoHealthResult] = await Promise.allSettled([
+    const [eventsResult, prisonersResult, solidarityActionsResult, podcastsResult, generatedResult, radioResult, radioHealthResult, sourceCatalogResult, librarySourcesResult, libraryFeedResult, editorialDecisionsResult, videoFeedResult, videoHealthResult, podcastSourcesResult, learningPathsResult] = await Promise.allSettled([
       fetchFirstJson([dataMirrors.events, dataUrls.events, 'events-feed.json']),
       fetchJson('prisoner-solidarity.json'),
       fetchJson('verified-solidarity-actions.json'),
-      fetchMergedJsonArrays(['podcasts.json', dataUrls.podcasts, dataMirrors.podcasts]),
+      Promise.allSettled([...new Set([dataUrls.podcasts, dataMirrors.podcasts, 'podcasts.json'].filter(Boolean))].map(url => fetchJson(url))),
       loadGeneratedPodcasts([
         dataMirrors.generatedPodcasts,
         dataUrls.generatedPodcasts,
@@ -9050,7 +9088,9 @@
       Promise.allSettled([...new Set(['library-feed.json', dataUrls.libraryFeed, dataMirrors.libraryFeed].filter(Boolean))].map(url => fetchJson(url))),
       fetchFirstJson([dataMirrors.editorialDecisions, dataUrls.editorialDecisions, 'editorial-decisions.json']),
       fetchFirstJson([dataMirrors.videoFeed, dataUrls.videoFeed, 'video-feed.json']),
-      fetchFirstJson([dataMirrors.videoHealth, dataUrls.videoHealth, 'video-health.json'])
+      fetchFirstJson([dataMirrors.videoHealth, dataUrls.videoHealth, 'video-health.json']),
+      fetchJson('podcast-sources.json'),
+      fetchJson('learning-paths.json')
     ]);
     if (eventsResult.status === 'fulfilled') {
       state.events = specialty.collapseRecurringEvents(eventsResult.value);
@@ -9074,9 +9114,15 @@
     if (solidarityActionsResult.status !== 'fulfilled') {
       console.warn('Structured solidarity actions unavailable; no action is presented as verified', solidarityActionsResult.reason);
     }
-    state.podcasts = podcastsResult.status === 'fulfilled' && Array.isArray(podcastsResult.value)
-      ? podcastsResult.value.map(media.normalizePodcast).sort((a, b) => b.timestamp - a.timestamp)
-      : [];
+    const podcastSources = podcastSourcesResult.status === 'fulfilled' && Array.isArray(podcastSourcesResult.value)
+      ? podcastSourcesResult.value : await window.WRNStorage?.getDataset?.('news-app-2-podcast-sources') || [];
+    if (podcastSourcesResult.status === 'fulfilled') await window.WRNStorage?.putDataset?.('news-app-2-podcast-sources', podcastSources);
+    const cachedPodcasts = await window.WRNStorage?.getDataset?.('news-app-2-podcast-archive');
+    const podcastSnapshots = podcastsResult.status === 'fulfilled'
+      ? podcastsResult.value.filter(result => result.status === 'fulfilled' && Array.isArray(result.value)).map(result => result.value) : [];
+    const podcastArchive = media.mergePodcastCatalogs([Array.isArray(cachedPodcasts) ? cachedPodcasts : [], ...podcastSnapshots], podcastSources);
+    state.podcasts = media.visiblePodcastCatalog(podcastArchive, podcastSources).map(media.normalizePodcast).sort((a, b) => b.timestamp - a.timestamp);
+    if (podcastSnapshots.length) await window.WRNStorage?.putDataset?.('news-app-2-podcast-archive', podcastArchive);
     state.generatedPodcasts = generatedResult.status === 'fulfilled' && Array.isArray(generatedResult.value)
       ? generatedResult.value.map(media.normalizePodcast).sort((a, b) => b.timestamp - a.timestamp)
       : [];
@@ -9122,6 +9168,10 @@
       [Array.isArray(cachedLibrary) ? cachedLibrary : [], ...librarySnapshots], state.librarySources
     );
     state.libraryItems = libraryCatalog.filter(item => item?.title && !['withdrawn', 'revoked', 'deleted'].includes(item.status) && item.deleted !== true);
+    const learningPathsDocument = learningPathsResult.status === 'fulfilled' ? learningPathsResult.value
+      : await window.WRNStorage?.getDataset?.('news-app-2-learning-paths');
+    state.learningPaths = specialty.learningPathsForCatalog(learningPathsDocument, state.libraryItems, state.lexiconSnapshot.terms);
+    if (learningPathsResult.status === 'fulfilled' && state.learningPaths.length) await window.WRNStorage?.putDataset?.('news-app-2-learning-paths', learningPathsDocument);
     if (librarySnapshots.length) void window.WRNStorage?.putDataset?.('news-app-2-library-feed', libraryCatalog);
     else console.warn('Library catalogue unavailable; using last saved catalog');
     if (editorialDecisionsResult.status === 'fulfilled') {

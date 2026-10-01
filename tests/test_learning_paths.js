@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('node:assert/strict'), fs=require('fs'), vm=require('vm');
+const specialty=require('../news-app-2-specialty.js');
+const context={window:{}};vm.runInNewContext(fs.readFileSync('lexicon-tab.js','utf8'),context);
+const snap=context.window.WRNLexicon184.snapshot(), books=JSON.parse(fs.readFileSync('library-feed.json')), paths=JSON.parse(fs.readFileSync('learning-paths.json'));
+const linked=specialty.learningPathsForCatalog(paths,books,snap.terms);
+assert.equal(linked.length,3); assert.equal(linked.reduce((n,p)=>n+p.entries.length,0),30);
+const withdrawn=books.map(b=>b.id===paths.paths[0].entries[0].bookId?{...b,status:'withdrawn'}:b);
+assert.equal(specialty.learningPathsForCatalog(paths,withdrawn,snap.terms).flatMap(p=>p.entries).length,29);
+const bad=structuredClone(paths); bad.paths[0].entries[0].originalUrl='https://other.example/book';bad.paths[0].entries[1].termIds=['unknown'];
+assert.equal(specialty.learningPathsForCatalog(bad,books,snap.terms).flatMap(p=>p.entries).length,28);
+assert.equal(snap.terms.filter(t=>t.revision?.version==='knowledge-expansion-2').length,19);
+console.log('3 learning paths, 30 bound relationships, revocations and invalid bindings passed; 19 DE/EN revisions.');

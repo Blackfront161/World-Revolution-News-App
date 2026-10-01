@@ -1,0 +1,239 @@
+{
+  "schema": "wrn.knowledge-revisions.v1",
+  "date": "2026-10-01",
+  "revisedIds": [
+    "mutual-aid",
+    "direct-action",
+    "consensus",
+    "federation",
+    "delegation-mandate",
+    "self-organisation",
+    "prefiguration",
+    "anarcho-syndicalism",
+    "general-strike",
+    "tenant-union",
+    "commoning",
+    "social-ecology",
+    "ecofeminism",
+    "degrowth",
+    "just-transition",
+    "extractivism",
+    "transformative-justice",
+    "community-accountability",
+    "disability-justice"
+  ],
+  "newTerms": 0,
+  "references": [
+    {
+      "id": "knowledge-mutual-aid",
+      "name": "Occupy Sandy · What is Mutual Aid?",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://theanarchistlibrary.org/library/a-new-world-in-our-hearts-what-is-mutual-aid",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-direct-action",
+      "name": "David Graeber · Direct Action",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://theanarchistlibrary.org/library/david-graeber-direct-action",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-consensus",
+      "name": "Seeds for Change · Consensus Decision Making",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.seedsforchange.org.uk/consensus",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-federation",
+      "name": "An Anarchist FAQ · I.5 · Confederations",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.anarchistfaq.org/afaq/sectionI.html#seci5",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-delegation-mandate",
+      "name": "Seeds for Change · A Consensus Handbook · Spokescouncils",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.seedsforchange.org.uk/downloads/handbookweb.pdf",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-self-organisation",
+      "name": "An Anarchist FAQ · J.2 · Collective action",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.anarchistfaq.org/afaq/sectionJ.html#secj2",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-prefiguration",
+      "name": "David Graeber · Revolution in Reverse",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://theanarchistlibrary.org/library/david-graeber-revolution-in-reverse",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-anarcho-syndicalism",
+      "name": "IWW · Preamble · Vergleich zur revolutionären Gewerkschaftsbewegung",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.iww.org/preamble/",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-general-strike",
+      "name": "Madison IWW · General Strike Pamphlet (2011)",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://archive.iww.org/content/general-strike-pamphlet/",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-tenant-union",
+      "name": "Tracy Jeanne Rosenthal · 101 Notes on the LA Tenants Union",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://theanarchistlibrary.org/library/tracy-jeanne-rosenthal-101-notes-on-the-la-tenants-union",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-commoning",
+      "name": "Kevin Carson · Communal Property: A Libertarian Analysis",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://theanarchistlibrary.org/library/kevin-carson-communal-property-a-libertarian-analysis",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-social-ecology",
+      "name": "Institute for Social Ecology · What is Social Ecology?",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://social-ecology.org/wp/about/what-is-social-ecology/",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-ecofeminism",
+      "name": "An Anarchist FAQ · Section E · Ecology and hierarchy",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.anarchistfaq.org/afaq/sectionE.html",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-degrowth",
+      "name": "Passadakis / Schmelzer · 12 lines of flight for just degrowth",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://theanarchistlibrary.org/library/alexis-passadakis-and-matthias-schmelzer-12-lines-of-flight-for-just-degrowth",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-just-transition",
+      "name": "Climate Justice Alliance · Just Transition",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://climatejusticealliance.org/just-transition/",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-extractivism",
+      "name": "TNI / GGJ · From Crisis to Transformation (2022)",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://www.tni.org/files/2022-10/JT_Primer_Web.pdf",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-transformative-justice",
+      "name": "Mia Mingus · Transformative Justice: A Brief Description",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://transformharm.org/tj_resource/transformative-justice-a-brief-description/",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-community-accountability",
+      "name": "INCITE! · Community Accountability",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://incite-national.org/community-accountability/",
+      "downloads": []
+    },
+    {
+      "id": "knowledge-disability-justice",
+      "name": "Sins Invalid · 10 Principles of Disability Justice",
+      "language": "English",
+      "description": {
+        "de": "Primärtext oder Selbstdarstellung zur Einordnung dieses Begriffs; keine allgemeine Rechtefreigabe.",
+        "en": "Primary text or self-description for this entry; no general reuse grant."
+      },
+      "url": "https://sinsinvalid.org/10-principles/",
+      "downloads": []
+    }
+  ],
+  "editorialStatus": "draft-awaiting-independent-review",
+  "publicationPerformed": false
+}

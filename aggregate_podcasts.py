@@ -17,7 +17,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
-from podcast_content_policy import metadata_only, project_episode, episode_key, original_url, preserve_failed_sources
+from podcast_content_policy import metadata_only, project_episode, episode_key, original_url, preserve_failed_sources, merge_archive_catalogs
 
 import feedparser
 import requests
@@ -655,10 +655,17 @@ def main() -> int:
     items.sort(key=lambda x: x.get("published") or "", reverse=True)
 
     previous_items = []
+    previous_archive = []
+    archive_file = OUTPUT_FILE.with_name('podcast-archive.json')
+    if archive_file.exists():
+        previous_archive = json.loads(archive_file.read_text(encoding='utf-8'))
+        if not isinstance(previous_archive, list):
+            raise ValueError('Invalid saved podcast archive; refusing replacement')
     if OUTPUT_FILE.exists():
         try:
             loaded = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
             if isinstance(loaded, list):
+                previous_archive = merge_archive_catalogs([previous_archive, loaded], catalog_sources)
                 previous_items = [
                     project_episode(item, sources=catalog_sources) for item in loaded
                     if (
@@ -696,6 +703,10 @@ def main() -> int:
     if items:
         output_items = items if requested_ids or fallback_only else partitioned_catalog(items)
         output_items = preserve_failed_sources(output_items, previous_items, health)
+        archive_items = merge_archive_catalogs([previous_archive, output_items], catalog_sources)
+        archive_file.write_text(json.dumps(archive_items, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        output_items = [row for row in archive_items if row.get('sourceId') != 'leftover-talk'
+                        and row.get('status') not in ('withdrawn','revoked','deleted') and row.get('deleted') is not True]
         OUTPUT_FILE.write_text(
             json.dumps(output_items, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8"

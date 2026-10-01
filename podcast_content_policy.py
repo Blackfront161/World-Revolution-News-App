@@ -46,6 +46,10 @@ def metadata_only(item, source=None, sources=()):
 
 
 def project_episode(item, source=None, sources=()):
+    identifier = str(item.get('rawId') or item.get('id') or '').removeprefix('original:')
+    if identifier in RULES.get('languageConflictEpisodeIds', []):
+        item = dict(item, language='und', languageVerified=False, languageReviewRequired=True,
+                    languageConfidence=0, languageSource='catalog-conflict-requires-review', configuredLanguages=['de','en'])
     if not metadata_only(item, source, sources):
         return dict(item)
     result = {key: value for key, value in item.items() if key in RULES["metadataFields"]}
@@ -79,3 +83,21 @@ def preserve_failed_sources(items, previous, health):
         if not health.get(source, {}).get('ok') and episode_key(item):
             result.setdefault(episode_key(item), item)
     return sorted(result.values(), key=lambda x: x.get('published') or '', reverse=True)
+
+
+def merge_archive_catalogs(catalogs, sources):
+    """A partial/current feed is not deletion authority over the stored archive."""
+    by_source = {source['id']: source for source in sources}
+    records, withdrawn = {}, set()
+    for rows in catalogs:
+        for row in rows:
+            if not isinstance(row, dict) or not row.get('id'):
+                continue
+            item = project_episode(row, by_source.get(row.get('sourceId')), sources)
+            if row.get('status') in ('withdrawn','revoked','deleted') or row.get('deleted') is True:
+                withdrawn.add(row['id'])
+                item.update(status=row.get('status'), deleted=row.get('deleted'))
+                records[row['id']] = item
+            elif row['id'] not in withdrawn:
+                records[row['id']] = item
+    return sorted(records.values(), key=lambda row: (row.get('published') or '', row['id']), reverse=True)

@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "second_local_batch_accepted_full_parity_pending",
+      "status": "common_archive_and_website_candidate_pending_independent_review",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -562,13 +562,28 @@
           "evidence": "docs/evidence/catalog-parity-2026-10-01/controller-review.json",
           "scope": "local_catalog_batch_only"
         }
+      },
+      "thirdImplementationBatch": {
+        "status": "implemented_local_pending_review",
+        "archiveRows": 1345,
+        "activePodcastRows": 1310,
+        "excludedChineseRows": 35,
+        "languageConflictRowsMarkedUnd": 5,
+        "libraryItems": 715,
+        "germanTitles": 53,
+        "sources": 52,
+        "learningPaths": 3,
+        "learningPathBookRelations": 30,
+        "newVersionCode": null,
+        "publication": "local_only_not_in_code32",
+        "report": "docs/CATALOG-KNOWLEDGE-EXPANSION-2026-10-01.md"
       }
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
-      "status": "first_local_batch_technical_review_accepted_user_editorial_approved",
+      "status": "19_further_revisions_and_3_learning_paths_implemented_draft_pending_review",
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
@@ -613,7 +628,23 @@
         "erste 20 Begriffsänderungen und 30 Lernpfadzuordnungen werden inhaltlich geprüft, nicht allein als Test-PASS gezählt",
         "Suche, Filter, Tastatur, 320/390/768/1440 Pixel und neun UI-Sprachen geprüft; Offlineansicht zeigt Datum und Rechteumfang"
       ],
-      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md"
+      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md",
+      "secondLocalBatch": {
+        "substantiveRevisions": 19,
+        "termCount": 155,
+        "referenceCount": 32,
+        "definitionLanguages": [
+          "de",
+          "en"
+        ],
+        "learningPaths": 3,
+        "bookRelations": 30,
+        "libraryItems": 715,
+        "germanTitles": 53,
+        "editorialStatus": "draft_pending_independent_review",
+        "publication": "local_only_not_in_code32",
+        "remaining": "Inhaltliche Abnahme; danach weitere Sprachredaktion, Podcast-Dossier-Verknüpfungen und geprüfte zusätzliche Bibliotheksadapter."
+      }
     },
     {
       "id": "PODCAST-CATALOG-EXPANSION",
@@ -668,6 +699,14 @@
         "newPublishersAdmitted": 0,
         "freshIntakeHolds": 4,
         "evidence": "docs/CATALOG-PARITY-SECOND-BATCH-2026-10-01.md"
+      },
+      "archiveProgress": {
+        "status": "existing_archive_implemented_no_new_admissions",
+        "activeRows": 1310,
+        "preservedRows": 1345,
+        "pagination": 30,
+        "freshIntake": false,
+        "remaining": "Sechs neue Kandidaten und vier Intake-Holds einzeln prüfen; keine Aufnahme aus bloßer RSS-Erreichbarkeit."
       }
     },
     {
@@ -964,5 +1003,21 @@
     "versionCode": 25,
     "status": "vom Nutzer als aktueller signierter Live-/Verteilungsstand bestätigt; Play-Console-Trackstatus nicht unabhängig geprüft",
     "note": "VersionCode 25 ist verbraucht und darf für keinen neuen Kandidaten wiederverwendet werden."
+  },
+  "playReviewDiagnosis20261001": {
+    "submission": 43,
+    "submittedAtUTC": "2026-10-01T06:25:00Z",
+    "submittedAtSingapore": "2026-10-01T14:25:00+08:00",
+    "status": "under_review",
+    "earlierCancelledSubmissions": [
+      41,
+      42
+    ],
+    "policyStatus": "no_policy_issues_reported",
+    "managedPublishing": false,
+    "changes": 14,
+    "action": "Do not cancel or resubmit the current review",
+    "evidence": "docs/PLAY-REVIEW-DIAGNOSIS-2026-10-01.md",
+    "internalQueueReason": "not exposed by Play Console"
   }
 }

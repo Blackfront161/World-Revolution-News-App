@@ -36,9 +36,9 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     redirect = (ROOT / "next.html").read_text(encoding="utf-8")
     service_worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
     assert "language-origin.js?release=1" in index
-    assert "news-app-2.js?release=56" in index
-    assert "news-app-2.css?release=49" in index
-    assert "news-app-2-specialty.js?release=4" in index
+    assert "news-app-2.js?release=57" in index
+    assert "news-app-2.css?release=50" in index
+    assert "news-app-2-specialty.js?release=5" in index
     assert "stories-core.js?release=3" in index
     assert "app.js" in classic
     assert "classic.html" in index
@@ -46,8 +46,8 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     assert "preview=8" in redirect
     assert "target.searchParams.has('preview')" in redirect
     assert "language-origin.js?release=1" in service_worker
-    assert "news-app-2.js?release=56" in service_worker
-    assert "news-app-2-specialty.js?release=4" in service_worker
+    assert "news-app-2.js?release=57" in service_worker
+    assert "news-app-2-specialty.js?release=5" in service_worker
     assert "stories-core.js?release=3" in service_worker
     assert "classic.html" in service_worker
 
@@ -88,7 +88,8 @@ def test_release_uses_live_feeds_with_packaged_offline_fallback():
     assert "wrnDataUrl('news-feed.json')" in config
     assert "wrnDataUrl('events-feed.json')" in config
     assert "fetchFirstJson([dataMirrors.events, dataUrls.events, 'events-feed.json'])" in script
-    assert "fetchMergedJsonArrays(['podcasts.json', dataUrls.podcasts, dataMirrors.podcasts])" in script
+    assert "[dataUrls.podcasts, dataMirrors.podcasts, 'podcasts.json']" in script
+    assert "media.mergePodcastCatalogs" in script and "news-app-2-podcast-archive" in script
     assert "url: 'news-feed.json'" in script
     assert "url: 'news.json'" in script
 
@@ -100,7 +101,7 @@ def test_preview_and_production_offline_caches_are_distinct():
     assert "./next.html" in preview_worker
     assert "./index.html?preview=8" in preview_worker
     assert "navigationFirst(request)" in preview_worker
-    assert "wrn-app-v2.1.2-r10" in live_worker
+    assert "wrn-app-v2.1.2-r11" in live_worker
 
 
 def test_specialty_views_are_native_preview_routes():
@@ -535,7 +536,7 @@ def test_release_checklist_is_readable_and_available():
     assert 'href="news-app-2-release-checklist.html"' not in html
     assert "news-app-2-release-checklist.html" in worker
     assert "news-app-2-release-checklist.css" in worker
-    assert "`${CACHE_PREFIX}v98`" in worker
+    assert "`${CACHE_PREFIX}v99`" in worker
     assert "if (request.mode === 'navigate')" in worker
     assert 'class="release-checklist-page"' in checklist
     assert "Bestanden" in checklist

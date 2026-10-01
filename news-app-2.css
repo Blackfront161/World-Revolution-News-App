@@ -5858,3 +5858,6 @@ button.feature-card {
     :root[data-theme="autonom"] .autonom-topics .is-active { box-shadow: none; }
   }
 }
+.learning-paths { overflow-wrap: anywhere; margin-block: 1.5rem; }
+.learning-paths li { margin-block: 1rem; }
+.learning-paths summary { cursor: pointer; }

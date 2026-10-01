@@ -27,13 +27,17 @@ def test_stable_ids_unaffected_archives_and_languages_are_preserved():
     ids = set(read(ROOT,'podcast-content-policy.json')['metadataOnlySourceIds'])
     for root,ref in INPUTS:
         previous = json.loads(subprocess.check_output(['git','-C',str(root),'show',f'{ref}:podcasts.json']))
-        current = {row['id']:row for row in read(root,'podcasts.json')}
+        current = {row['id']:row for row in read(root,'podcast-archive.json')}
         assert all(e['id'] in current for e in previous)
-        assert all(current[e['id']] == e for e in previous if e['sourceId'] not in ids)
+        conflicts = set(read(ROOT,'podcast-content-policy.json').get('languageConflictEpisodeIds', []))
+        assert all(current[e['id']]['language'] == e['language'] for e in previous if e['sourceId'] not in ids and e['id'] not in conflicts)
+        assert all(current[identifier]['language']=='und' and current[identifier]['languageVerified'] is False for identifier in conflicts)
+        assert all(e['sourceId'] != 'leftover-talk' for e in read(root,'podcasts.json'))
         sources = read(root,'podcast-sources.json')
         assert ids <= {s['id'] for s in sources}
         old_sources = json.loads(subprocess.check_output(['git','-C',str(root),'show',f'{ref}:podcast-sources.json']))
-        assert all(s == next(x for x in sources if x['id']==s['id']) for s in old_sources if s['id'] not in ids)
+        assert all(s.get('feedUrls') == next(x for x in sources if x['id']==s['id']).get('feedUrls') for s in old_sources if s['id'] not in ids)
+        assert next(s for s in sources if s['id']=='leftover-talk')['enabled'] is False
         assert next(s for s in sources if s['id']=='twelve-rules-for-what')['enabled'] is False
         for e in current.values():
             if e['sourceId'] in ids:

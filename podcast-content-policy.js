@@ -653,6 +653,13 @@
     "f3e1e6d746d96424e61c55df",
     "f725868747f981281c13f9f8",
     "fcf4244714784849176f731f"
+  ],
+  "languageConflictEpisodeIds": [
+    "045b7b0e651390a75651ca4a",
+    "6d9af0ff24ebf959501b3fec",
+    "a252638bd7eaced6779a019b",
+    "b8399d8fd6deae5811268a37",
+    "ccbbf3f5f4596ff9d7f3ca38"
   ]
 } /* POLICY_RULES_END */;
   const MODE = 'metadata_and_links_only';
@@ -683,6 +690,10 @@
       || [source.feedUrl, ...(source.feedUrls || [])].filter(Boolean).map(originalUrl).filter(Boolean).includes(originalUrl(item.feedUrl))));
   }
   function projectEpisode(item, sources = []) {
+    if ((rules.languageConflictEpisodeIds || []).includes(String(item.rawId || item.id || '').replace(/^original:/, ''))) {
+      item = { ...item, language:'und', languageVerified:false, languageReviewRequired:true,
+        languageConfidence:0, languageSource:'catalog-conflict-requires-review', configuredLanguages:['de','en'] };
+    }
     if (!isMetadataOnly(item, sources)) return { ...item };
     const result = {};
     for (const key of rules.metadataFields) if (Object.hasOwn(item, key)) result[key] = item[key];

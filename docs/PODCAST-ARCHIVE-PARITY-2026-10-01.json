@@ -1,0 +1,40 @@
+{
+  "schema": "wrn.podcast-archive-reconciliation.v1",
+  "inputs": {
+    "app": {
+      "commit": "25b521fac2a4b06e051614d166f8caadf8dd9c40",
+      "files": {
+        "podcasts.json": "3694ab268f8cac24288a319f7a99050547c8f8548e9f73174291a208897e829b",
+        "podcast-sources.json": "168890b6a00780bc0237656473f5c8548881a511c398366fbc768ae00e6df7e7"
+      }
+    },
+    "data": {
+      "commit": "e62f56280b737ce6559b830d4a4bba7c349d506f",
+      "files": {
+        "podcasts.json": "30564aec45b675c5772a6c95d158b94f60f653fddaa905a00a62b22eff44b5ad",
+        "podcast-sources.json": "e1f5bd1c0da2220f792f0b7b76f2e47f4d21f293de2950bf91db03d8b66dd6d5"
+      }
+    }
+  },
+  "archiveRows": 1345,
+  "activeRows": 1310,
+  "excludedSourceIds": [
+    "leftover-talk"
+  ],
+  "excludedRows": 35,
+  "freshIntake": false,
+  "publicationPerformed": false,
+  "outputSha256": {
+    "podcasts.json": "139a3c11778de6fe95a820a7bd85b840ccd75154442bb231a226f98a6ec731ef",
+    "podcast-archive.json": "6aec0e67aab43625df72619ced68f49d46a33758d329b6912e3f38a12fc1d23c",
+    "podcast-sources.json": "e2771845470e8e027d759b41868a1f2a1cc7f8c0062b999b27c82a4aedf840a9"
+  },
+  "policySha256": "d284dff28933b7d39f2316831c3e1a55abb2e4137bef8df38f7c511316b61e4c",
+  "languageConflictEpisodeIds": [
+    "045b7b0e651390a75651ca4a",
+    "6d9af0ff24ebf959501b3fec",
+    "a252638bd7eaced6779a019b",
+    "b8399d8fd6deae5811268a37",
+    "ccbbf3f5f4596ff9d7f3ca38"
+  ]
+}

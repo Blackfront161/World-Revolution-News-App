@@ -37,7 +37,7 @@ def test_catalog_identity_and_policy_are_preserved():
         assert endpoint['episodeIdNamespace'] == 'None' and endpoint['contentPolicy'] == MODE
         rows = json.loads((root/'podcasts.json').read_text(encoding='utf-8'))
         restricted = [item for item in rows if item['id'] in RULES['restrictedEpisodeIds']]
-        assert len(restricted) == (33 if root == ROOT else 28)
+        assert {item['id'] for item in restricted} == set(RULES['restrictedEpisodeIds'])
         assert all(item['sourceId'] == RULES['canonicalSourceId'] and item['contentPolicy'] == MODE for item in restricted)
         assert all(not item['audioUrl'] and not item['description'] and not item['artwork'] for item in restricted)
         assert (root/'podcast-content-policy.json').read_bytes() == (ROOT/'podcast-content-policy.json').read_bytes()

@@ -55,6 +55,7 @@ try {
     const json=data=>route.fulfill({contentType:'application/json',body:JSON.stringify(data)});
     if (url.hostname==='rdl.de' && /\.(mp3|jpg)(\?|$)/.test(url.href)) result.remoteMediaRequests.push(url.href);
     if (url.pathname.endsWith('/podcast-sources.json')) return json([
+      {id:'radio-corax',name:'Radio CORAX'}, {id:'mudawanat-arabic',name:'Mudawanat'}, {id:'contrabanda-specials',name:'Contrabanda'},
       {id:rules.canonicalSourceId,name:'Radio Dreyeckland',language:'de'},
       {id:rules.endpointId,canonicalSourceId:rules.canonicalSourceId,name:'RDL podcast endpoint',feedUrl:rules.feedUrls[0],contentPolicy:'metadata_and_links_only'}]);
     if (url.pathname.endsWith('/podcasts.json')) return json([episode,ordinary,mudawanat,contrabanda]);

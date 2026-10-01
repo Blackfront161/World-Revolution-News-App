@@ -200,6 +200,37 @@
       || normalized.sourcePriority >= 70;
   }
 
+  function mergePodcastCatalogs(catalogs, sources) {
+    const bySource = new Map((sources || []).filter(source => source?.id).map(source => [source.id, source]));
+    const policy = typeof window !== 'undefined' ? window.WRNPodcastContentPolicy
+      : typeof require === 'function' ? require('./podcast-content-policy.js') : null;
+    const records = new Map();
+    const withdrawn = new Set();
+    for (const rows of catalogs) {
+      if (!Array.isArray(rows)) continue;
+      for (const row of rows) {
+        if (!row?.id) continue;
+        const projected = policy ? policy.projectEpisode(row, sources) : row;
+        const source = bySource.get(projected.sourceId);
+        if (!source) continue;
+        const item = policy ? policy.projectEpisode(source.contentPolicy === 'metadata_and_links_only'
+          ? { ...projected, contentPolicy: source.contentPolicy } : projected, sources) : { id: row.id, sourceId: row.sourceId, title: row.title, contentPolicy: 'metadata_and_links_only' };
+        if (['withdrawn', 'revoked', 'deleted'].includes(row.status) || row.deleted === true) {
+          withdrawn.add(row.id);
+          records.set(row.id, { ...item, status: row.status, deleted: row.deleted });
+        } else if (!withdrawn.has(row.id)) records.set(row.id, item);
+      }
+    }
+    return [...records.values()];
+  }
+
+  function visiblePodcastCatalog(catalog, sources) {
+    const bySource = new Map((sources || []).map(source => [source.id, source]));
+    return (catalog || []).filter(item => bySource.has(item.sourceId)
+      && item.sourceId !== 'leftover-talk'
+      && !['withdrawn', 'revoked', 'deleted'].includes(item.status) && item.deleted !== true);
+  }
+
   function filterItems(items, filters = {}) {
     const query = text(filters.query).toLocaleLowerCase();
     const languages = new Set(
@@ -280,6 +311,8 @@
   }
 
   return {
+    mergePodcastCatalogs,
+    visiblePodcastCatalog,
     INFORMATION_VIDEOS,
     canonicalRegion,
     balancedBySource,

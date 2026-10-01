@@ -47,6 +47,15 @@ try{
   await page.waitForFunction(async()=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===715;});
   await page.waitForFunction(()=>document.querySelector('.library-index-section .section-heading')?.innerText.includes('714'));
   assert((await page.locator('.library-index-section .section-heading').innerText()).includes('714'));
+  const paths=JSON.parse(fs.readFileSync(path.join(root,'learning-paths.json'),'utf8'));
+  const expectedRelations=paths.paths.flatMap(p=>p.entries).filter(e=>e.bookId!==removed.id).length;
+  assert.equal(await page.locator('.learning-paths details').count(),3);
+  assert.equal(await page.locator('[data-learning-book]').count(),expectedRelations);
+  await page.locator('.learning-paths summary').first().click();
+  await page.locator('.learning-paths [data-action="article-lexicon-open"]').first().click();
+  await page.locator('#next-lexicon-query').waitFor();
+  assert((await page.locator('#next-lexicon-query').inputValue()).length>0);
+  await openLibrary();
   await page.locator('[data-action="library-language"][data-value="de"]').click();
   assert((await page.locator('.library-index-section .section-heading').innerText()).includes('52'));
   await page.locator('#next-library-query').fill('ABC des Anarchismus');
@@ -69,6 +78,7 @@ try{
     assert.equal(await page.locator('.library-item-card').count(),1);
   }
   result.checks.push('715 stable records merged despite partial remote snapshot; withdrawal hides one title; DE search, author, format, keyboard and four widths/nine UI languages passed.');
+  result.checks.push('Three learning paths resolve their current book records and open the associated glossary term.');
   failed=true;
   await page.reload();await openLibrary();
   await page.waitForFunction(async()=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===715;});
