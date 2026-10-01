@@ -155,6 +155,11 @@ def main():
         'libraryItems':len(books),'germanTitles':sum('de' in b['languages'] for b in books),
         'preservedAppBookIds':len(app_books),'preservedDataBookIds':len(data_books),
         'identityAndLanguageHoldsAreNotAdmission':True,'publication':'local-only','versionCode':None}
+    manifest['hashKinds']={'inputs':'Git blob bytes at immutable refs','outputs':'local worktree bytes before Git checkout newline conversion'}
+    runtime_names=['aggregate_podcasts.py','aggregate_libraries.py','library_catalog.py','podcast_content_policy.py',
+        'podcast-content-policy.js','news-app-2.js','news-app-2-specialty.js','index.html','classic.html','service-worker.js','news-app-2-sw.js']
+    manifest['runtimeSha256']={name:hashlib.sha256(outputs.get(ROOT/name,(ROOT/name).read_bytes())).hexdigest() for name in runtime_names}
+    manifest['observationSha256']=hashlib.sha256((ROOT/'docs/evidence/catalog-parity-2026-10-01/source-observations.json').read_bytes()).hexdigest()
     if args.write:
         for path,payload in outputs.items():path.write_bytes(payload)
         (ROOT/'docs/evidence/catalog-parity-2026-10-01/bindings.json').write_bytes(encode(manifest))

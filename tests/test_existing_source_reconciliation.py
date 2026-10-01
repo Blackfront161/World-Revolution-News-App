@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 import subprocess
+import hashlib
+import sys
 from unittest.mock import patch
 
 import aggregate_podcasts as collector
@@ -74,3 +76,11 @@ def test_common_library_contains_all_input_ids_and_german_books():
         previous=json.loads(subprocess.check_output(['git','-C',str(root),'show',f'{ref}:library-feed.json']))
         assert {b['id'] for b in previous} <= ids
     assert {b['sourceId'] for b in app} <= {s['id'] for s in read(ROOT,'library-sources.json')}
+
+
+def test_dry_reproduction_does_not_change_bound_product_or_evidence_bytes():
+    files=[r/name for r,_ in INPUTS for name in ['podcast-sources.json','podcasts.json','podcast-content-policy.json','library-feed.json','library-sources.json','podcast_content_policy.py']]
+    files += [ROOT/'podcast-content-policy.js',ROOT/'docs/evidence/catalog-parity-2026-10-01/bindings.json']
+    before={p:hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
+    subprocess.run([sys.executable,'-B',str(ROOT/'scripts/reconcile_existing_catalogs.py')],cwd=ROOT,check=True,capture_output=True)
+    assert before=={p:hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
