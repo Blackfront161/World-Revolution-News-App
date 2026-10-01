@@ -1,0 +1,9 @@
+test_collector_keeps_original_guid_namespace_without_audio (test_podcast_content_policy.PodcastContentPolicyTests.test_collector_keeps_original_guid_namespace_without_audio) ... ok
+test_existing_catalog_ids_and_restriction (test_podcast_content_policy.PodcastContentPolicyTests.test_existing_catalog_ids_and_restriction) ... ok
+test_metadata_rows_have_distinct_dedup_keys (test_podcast_content_policy.PodcastContentPolicyTests.test_metadata_rows_have_distinct_dedup_keys) ... ok
+test_projection_removes_all_media_aliases (test_podcast_content_policy.PodcastContentPolicyTests.test_projection_removes_all_media_aliases) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK

@@ -130,5 +130,10 @@
     "podcast-content-policy.json": "6c78ebc55d11d6857fcfb75c6bb9fc077851256b3bec0366dc5cf01b6313be9f",
     "tests/test_podcast_content_policy.py": "a979220a6120763db36310d99be73fd297d794c1ac32705a580cf11c40ddca49"
   },
-  "boundAtUTC": "2026-10-01T08:27:56.718636+00:00"
+  "boundAtUTC": "2026-10-01T08:27:56.718636+00:00",
+  "byteBasis": "input Git blobs; output local working-tree bytes",
+  "implementationCommits": {
+    "app": "636359bca295c3388e110419078fc7e9257e2b5d",
+    "data": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915"
+  }
 }
