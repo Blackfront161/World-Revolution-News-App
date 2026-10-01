@@ -18,7 +18,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 aus 6821a02 zweimal byteidentisch gebaut und lokal mit vorhandenem Upload-Zertifikat signiert; Zertifikat, JAR-Signatur und unveränderte Payload erneut geprüft. Isolierter API36-Emulator: Upgrade, nativer Teilen-Dialog, Kopieren, Abbruch und Offline-Volltext nach Prozessneustart PASS. Physische Geräteprüfung, redaktionelle Lexikon-Freigabe und Veröffentlichung bleiben offen.",
+    "status": "Code32 lokal signiert und unabhängig geprüft; Emulator PASS. Nutzer hat Lexikon freigegeben und den abgeschlossenen Gerätetest bestätigt. Play-Upload beauftragt, aktuell Kontozuordnung zum bestehenden WRN-Entwicklerkonto offen; noch kein Upload oder Rollout. Wiederkehrende Vollbild-Updateaufforderung nach Verfügbarkeit prüfen; keine absolute Nutzungssperre behauptet.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -38,7 +38,7 @@
     "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
     "androidVerification": {
       "status": "PASS-emulator",
-      "physicalDevice": "pending",
+      "physicalDevice": "user-reported-completed",
       "report": "docs/evidence/audio-sharing-2026-10-01/code32-android-emulator.json"
     },
     "signing": {
@@ -53,7 +53,22 @@
       "artifactReview": "docs/evidence/audio-sharing-2026-10-01/code32-signed-controller-acceptance.json"
     },
     "unsignedArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
-    "unsignedArtifactSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85"
+    "unsignedArtifactSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+    "userReleaseApproval": {
+      "approvedAt": "2026-10-01",
+      "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+      "lexicon": "explicitly approved by user",
+      "physicalTest": "user reports completed; no independent device report supplied",
+      "playUpload": "explicitly requested by user",
+      "mandatoryUpdate": "requested; recurring Play recovery prompt possible, absolute block not guaranteed",
+      "evidence": "docs/PLAY-UPLOAD-CODE32-2026-10-01.md"
+    },
+    "playPublication": {
+      "status": "awaiting-developer-account-selection",
+      "uploadPerformed": false,
+      "rolloutPerformed": false,
+      "recoveryPrompt": "pending newer compatible published version and console access"
+    }
   },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
@@ -87,7 +102,7 @@
         "appCssRelease": 49,
         "audioToolsRelease": 2
       },
-      "distribution": "Im lokalen signierten 2.1.2/Code32-Kandidaten aus 6821a02 enthalten; Upload-Zertifikat und unveränderte Payload geprüft. Emulator PASS, physische Geräteprüfung offen. Keine Veröffentlichung.",
+      "distribution": "Im signierten 2.1.2/Code32-Kandidaten enthalten; Emulator PASS, Gerätetest vom Nutzer als abgeschlossen bestätigt. Play-Upload beauftragt, Kontozuordnung offen; noch nicht veröffentlicht.",
       "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
       "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
       "candidateSignatureReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json"
@@ -441,7 +456,7 @@
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
-      "status": "local_first_definition_and_relationship_fix_technical_review_accepted_editorial_pending",
+      "status": "first_local_batch_technical_review_accepted_user_editorial_approved",
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
@@ -452,11 +467,12 @@
         "newDefinitions": 1,
         "repairedRelatedReferences": 5,
         "independentEditorialReview": "pending",
-        "publicationStatus": "local_only_not_in_accepted_code31_or_website",
+        "publicationStatus": "included_in_signed_local_code32; Play upload requested, console account selection pending; no website publication of this batch",
         "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat",
         "independentTechnicalReview": "accepted_scoped_local_draft",
         "reviewedCommit": "d58746d020325ae6357a8f8b4bf268de001c7ef7",
-        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md",
+        "userEditorialApproval": "approved 2026-10-01 for Code32"
       },
       "baseline": {
         "lexiconTerms": 154,

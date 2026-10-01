@@ -57,3 +57,7 @@ Der neue GUI-Signer `scripts/sign-google-play-aab-2.1.2-code32-6821a02-gui.ps1` 
 Physische Geräteprüfung, redaktionelle Lexikon-Freigabe und gesonderte Veröffentlichung bleiben offen. `releaseReady` bleibt `false`. Die Emulatorprüfung ist keine Abnahme einer physischen Produktionsinstallation; es wurde nichts hochgeladen.
 
 Der Kontrolleur prüfte anschließend auch die fertige signierte AAB unabhängig mit **PASS als lokal signierter Kandidat**: echter JAR-/Zertifikatcheck und vollständiger Vergleich aller 796 Payload-Einträge sowie 350 Quell-Webassets ohne Differenzen. Der Signaturbericht und sämtliche Hash-/Versionsbindungen stimmen überein. Nachweis: `code32-signed-controller-acceptance.json`. Diese Abnahme erteilt keine Play-Freigabe.
+
+## Nachfolgende Nutzerfreigabe und Uploadauftrag
+
+Der Nutzer hat anschließend das Lexikon freigegeben, den abgeschlossenen Gerätetest bestätigt und den Play-Upload samt verbindlicher Aktualisierung angefordert. Die Gerätebestätigung ist nutzerberichtet; die historischen Prüfberichte bleiben unverändert. Die bisherigen offenen Nutzer-Gates gelten damit als erfüllt. Der Play-Zugang und die tatsächliche Einreichung werden separat im [Code32-Play-Auftrag](PLAY-UPLOAD-CODE32-2026-10-01.md) dokumentiert. Derzeit ist die Kontozuordnung offen; Upload und Rollout sind noch nicht erfolgt.
