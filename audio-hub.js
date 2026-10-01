@@ -439,7 +439,10 @@ async function loadOriginalPodcasts(force = false) {
         const response = await fetch(`${GITHUB_PODCASTS_URL}?v=${force ? Date.now() : '1'}`, { cache: force ? 'no-store' : 'default' });
         const data = await response.json();
         if (!response.ok || !Array.isArray(data)) throw new Error(`HTTP ${response.status}`);
-        originalPodcastData = data.filter(item => getSafeHttpUrl(item.audioUrl));
+        const policy = window.WRNPodcastContentPolicy;
+        if (!policy) { originalPodcastData=[]; container.textContent=t.originalEmpty; return; }
+        originalPodcastData = data.map(item => policy.projectEpisode(item)).filter(item =>
+            getSafeHttpUrl(item.audioUrl) || (policy.isMetadataOnly(item) && getSafeHttpUrl(item.episodeUrl)));
         window.WRNStatusCenter?.noteDataset('podcasts', {
             data: originalPodcastData,
             source: 'network',
@@ -483,7 +486,8 @@ function renderOriginalPodcastLibrary() {
     const language=document.getElementById('original-podcast-language-filter')?.value || '';
     const search=(document.getElementById('original-podcast-search')?.value || '').trim().toLowerCase();
     const favoritesOnly=Boolean(document.getElementById('original-podcast-favorites-only')?.checked);
-    const items=originalPodcastData
+    const policy=window.WRNPodcastContentPolicy;
+    const items=(policy ? originalPodcastData.map(item => policy.projectEpisode(item)) : [])
         .filter(item => !source || item.sourceName === source)
         .filter(item => !language || item.language === language)
         .filter(item => !search || `${item.title || ''} ${item.description || ''} ${item.sourceName || ''}`.toLowerCase().includes(search))
@@ -504,15 +508,21 @@ function renderOriginalPodcastLibrary() {
         const id=`original:${item.id || item.audioUrl}`;
         const mediaConfig = {
             id, kind:'original', title:item.title || 'Podcast', artist:item.sourceName || 'Original-Podcast',
+            sourceId:item.sourceId, endpointId:item.endpointId, feedUrl:item.feedUrl, contentPolicy:item.contentPolicy,
             candidates:[item.audioUrl], artwork:item.artwork || '', statusId:`media-status-${safeDomId(id)}`,
             showPause:true, showProgress:true
         };
-        appendSimpleMediaControls(card, mediaConfig);
-        window.WRNAudioTools?.appendCardActions?.(card, mediaConfig, { queue:true });
+        if (!policy.isMetadataOnly(item) && item.audioUrl) {
+            appendSimpleMediaControls(card, mediaConfig);
+            window.WRNAudioTools?.appendCardActions?.(card, mediaConfig, { queue:true });
+        } else {
+            const note=document.createElement('p'); note.textContent=policy.originalOnlyText(currentLang); card.append(note);
+        }
         const links=document.createElement('div'); links.className='original-podcast-links';
         if (getSafeHttpUrl(item.episodeUrl)) links.append(makeMediaLink(item.episodeUrl,t.listenOriginal));
         if (getSafeHttpUrl(item.feedUrl)) links.append(makeMediaLink(item.feedUrl,t.feedLink));
         if (item.license) { const license=document.createElement('span'); license.textContent=item.license; license.className='original-podcast-meta'; links.append(license); }
+        window.WRNAudioTools?.appendShareActions?.(links, { ...item, kind:'original' });
         card.append(links); container.append(card);
     });
     renderContinueListening();

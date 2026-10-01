@@ -75,6 +75,30 @@ try {
   await page.screenshot({path:path.join(output,'current-autonom.png'),fullPage:true});
   result.checks.push('Current Autonom view: original-link notice, share destination, no copied text/image/playback; unrelated playable card and favorites preserved.');
   await page.goto(`${origin}/classic.html`);
+  await page.evaluate(async()=>{
+    window.currentLang='de';
+    window.showPodcastModal('podcast-library-modal');
+    await window.loadOriginalPodcasts(true);
+  });
+  const legacy=page.locator('.original-podcast-card').filter({hasText:episode.title});
+  await legacy.waitFor({state:'visible'});
+  assert.equal(await legacy.locator('img,.btn-media-play').count(),0);
+  assert(!(await legacy.innerText()).includes('FOREIGN'));
+  assert((await legacy.innerText()).includes('Diese Folge auf der Originalseite anhören.'));
+  assert.equal(await legacy.locator('a').first().getAttribute('href'),episode.episodeUrl);
+  const sharesBefore=await page.evaluate(()=>window.__shares.length);
+  await legacy.getByRole('button',{name:`Teilen: ${episode.title}`,exact:true}).click();
+  await page.waitForFunction(count=>window.__shares.length>count,sharesBefore);
+  assert.equal(await page.evaluate(()=>window.__shares.at(-1).url),episode.episodeUrl);
+  await page.screenshot({path:path.join(output,'classic-legacy.png'),fullPage:true});
+  result.checks.push('Legacy Classic renderer: original-link episode retained, no foreign description/play controls, sharing uses original page.');
+  await page.evaluate(async()=>{
+    delete window.WRNPodcastContentPolicy;
+    await window.loadOriginalPodcasts(true);
+  });
+  assert.equal(await page.locator('.original-podcast-card').count(),0);
+  result.checks.push('Legacy renderer without policy module exposes no podcast media or copied description.');
+  await page.goto(`${origin}/classic.html`);
   await page.waitForFunction(()=>Boolean(window.WRNAudioTab183?.open));
   await page.evaluate(()=>window.WRNAudioTab183.open('original'));
   const classic=page.locator('.wrn-audio-card-183').filter({hasText:episode.title});
