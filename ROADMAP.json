@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "common_archive_and_website_candidate_pending_independent_review",
+      "status": "common_archive_accepted_local_website_candidate_pending_independent_review",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -564,7 +564,7 @@
         }
       },
       "thirdImplementationBatch": {
-        "status": "implemented_local_pending_review",
+        "status": "accepted_local_draft",
         "archiveRows": 1345,
         "activePodcastRows": 1310,
         "excludedChineseRows": 35,
@@ -576,14 +576,37 @@
         "learningPathBookRelations": 30,
         "newVersionCode": null,
         "publication": "local_only_not_in_code32",
-        "report": "docs/CATALOG-KNOWLEDGE-EXPANSION-2026-10-01.md"
+        "report": "docs/CATALOG-KNOWLEDGE-EXPANSION-2026-10-01.md",
+        "independentReview": {
+          "status": "GREEN_LOCAL_DRAFT",
+          "appProductCommit": "6428cfef51e50818eba79950970ccef2a30ae170",
+          "dataProductCommit": "4153d5f2baccbc0d7ccc16a546d08e7808dff753",
+          "originalReviewedCommit": "58e0bc3dc26a7d38f7a38faec1d1e278483cd655",
+          "faqCorrectionCommit": "439dd6047ca5a20ffa7287beb2754d028c385a0e",
+          "evidence": "docs/evidence/catalog-knowledge-2026-10-01/controller-review.md",
+          "limitedFollowUp": "FAQ classification and glossary asset-key correction accepted independently",
+          "publicationPerformed": false
+        },
+        "website": {
+          "productCommit": "83abb0f3cc3ac385b5df3409edc623cf592e733a",
+          "uniquePodcastOriginalLinks": 1256,
+          "duplicateEpisodeOriginalLinks": 54,
+          "libraryItems": 715,
+          "lexiconTerms": 155,
+          "referenceSources": 32,
+          "learningPaths": 3,
+          "bookRelations": 30,
+          "candidateStatus": "LOCAL-PASS_PENDING_INDEPENDENT_REVIEW",
+          "preview": "http://127.0.0.1:43231/?lang=de#knowledge",
+          "publicationPerformed": false
+        }
       }
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
-      "status": "19_further_revisions_and_3_learning_paths_implemented_draft_pending_review",
+      "status": "19_further_revisions_and_3_learning_paths_accepted_local_draft",
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
@@ -641,9 +664,19 @@
         "bookRelations": 30,
         "libraryItems": 715,
         "germanTitles": 53,
-        "editorialStatus": "draft_pending_independent_review",
+        "editorialStatus": "independent_reviewed_local_draft",
         "publication": "local_only_not_in_code32",
-        "remaining": "Inhaltliche Abnahme; danach weitere Sprachredaktion, Podcast-Dossier-Verknüpfungen und geprüfte zusätzliche Bibliotheksadapter."
+        "remaining": "Weitere Sprachredaktion und Podcast-Dossier-Verknüpfungen; zusätzliche Bibliotheksadapter prüfen. Ältere Bibliotheksmetadaten auf Autor/Titel/Originallink-Konsistenz prüfen. App-/Website-Veröffentlichung an separate Release-Prüfung binden.",
+        "independentReview": {
+          "status": "GREEN_LOCAL_DRAFT",
+          "appProductCommit": "6428cfef51e50818eba79950970ccef2a30ae170",
+          "dataProductCommit": "4153d5f2baccbc0d7ccc16a546d08e7808dff753",
+          "originalReviewedCommit": "58e0bc3dc26a7d38f7a38faec1d1e278483cd655",
+          "faqCorrectionCommit": "439dd6047ca5a20ffa7287beb2754d028c385a0e",
+          "evidence": "docs/evidence/catalog-knowledge-2026-10-01/controller-review.md",
+          "limitedFollowUp": "FAQ classification and glossary asset-key correction accepted independently",
+          "publicationPerformed": false
+        }
       }
     },
     {
