@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Audio sharing only",
+  "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
+  "baseCommit": "f3b97a9",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewedAt": "2026-10-01",
+  "blockingFindings": [],
+  "checks": {
+    "javascriptContracts": 8,
+    "directPythonCalls": 37,
+    "validator": "PASS",
+    "browserEvidence": "reviewed; native bridge mocked",
+    "nativePluginRegistration": "SharePlugin present",
+    "cacheAndAssetPins": "consistent",
+    "code31ArtifactSha256": "17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7",
+    "code31ArtifactBytes": 43159726
+  },
+  "limits": [
+    "No physical Android share-dialog test",
+    "No new Android build, signing or publication",
+    "Website unchanged"
+  ]
+}

@@ -36,7 +36,7 @@
       "id": "AUDIO-SHARING-20261001",
       "priority": 1,
       "name": "Radios und Podcasts teilen",
-      "status": "implemented-local",
+      "status": "accepted-local",
       "scope": "Aktuelle App und Classic-Audio-Hub: Teilen-Dialog, Link kopieren und manueller Kopierweg in neun Sprachen.",
       "links": {
         "radio": "Senderseite; Stream nur als Fallback",
@@ -47,7 +47,7 @@
         "behavior": "8 gezielte JS-Verträge bestanden; 10 Python-Module mit 37 direkt aufgerufenen Funktionen (kein pytest-Lauf); App-Validator bestanden.",
         "browser": "Isolierter Chrome mit Fixtures: echte App/Classic-Karten, native Bridge gemockt, Web Share/Abbruch/Kopieren/manueller Fallback, vier Breiten, Sprachwechsel bestanden.",
         "report": "docs/evidence/audio-sharing-2026-10-01/browser-result.json",
-        "review": "Unabhängige Kontrolle wird auf den endgültigen Commit begrenzt."
+        "review": "Unabhängige Read-only-Abnahme durch WRN Kontrolleur am 2026-10-01: PASS; keine P1/P2-Codebefunde. Native Geräteprüfung und neuer Android-Build bleiben offen."
       },
       "runtime": {
         "productionCache": "wrn-app-v2.1.2-r8",
@@ -56,7 +56,8 @@
         "appCssRelease": 49,
         "audioToolsRelease": 2
       },
-      "distribution": "Lokaler Folge-Draft; nicht im unveränderten Code31-AAB enthalten und noch nicht veröffentlicht. Android-Systemdialog auf physischem Gerät noch nicht geprüft."
+      "distribution": "Lokaler Folge-Draft; nicht im unveränderten Code31-AAB enthalten und noch nicht veröffentlicht. Android-Systemdialog auf physischem Gerät noch nicht geprüft.",
+      "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a"
     },
     {
       "id": "CONTROL-CORRECTIONS-20260930",

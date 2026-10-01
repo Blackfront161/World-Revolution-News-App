@@ -21,3 +21,7 @@ Der Browser-Test lässt sich mit `WRN_PLAYWRIGHT_MODULE` als absolutem Pfad zur 
 Dies ist ein lokaler Folge-Draft: App-Cache **r8**, Preview **v96**, App-JS **54**, CSS **49**, Audio-Tools **2**. Der App-Check und die gegenwärtigen Cache-/Asset-Verträge wurden entsprechend erhöht.
 
 Das bereits akzeptierte Code31-AAB bleibt an Runtime `8d2ef2346a7ce85e1a07904aef90f21b65657408` gebunden und unverändert (SHA-256 `17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7`). Die neue Funktion ist darin nicht enthalten. Ein neuer Android-Build, Prüfung auf einem physischen Gerät, Signierung und Veröffentlichung sind noch offen. Die bestehende Website-Veröffentlichung wurde durch diese Änderung nicht ersetzt.
+
+## Unabhängige Abnahme
+
+WRN Kontrolleur hat Commit `fe2c527f08d4284f4d97b828a74dc9451a25374a` am 2026-10-01 begrenzt auf Audio-Sharing akzeptiert: **PASS**, keine blockierenden P1/P2-Codebefunde. Die acht JS-Verträge, 37 direkten Python-Aufrufe, Validator, Cache-/Asset-Bindungen und Android-SharePlugin-Registrierung wurden unabhängig geprüft; Browserbericht und Screenshot wurden geprüft. Das Code31-AAB wurde erneut als unverändert bestätigt. Der native Systemdialog auf einem physischen Android-Gerät und ein neuer veröffentlichter Build bleiben offen. Nachweis: `docs/evidence/audio-sharing-2026-10-01/controller-acceptance.json`.
