@@ -519,7 +519,16 @@
         "publication": "local_only_not_in_code32",
         "next": "16 zusätzliche Podcastquellen einzeln prüfen und gemeinsame Bibliotheksprojektion vorbereiten; Sprache, Quellenstatus und Rechtebeschränkungen erhalten",
         "appImplementationCommit": "636359bca295c3388e110419078fc7e9257e2b5d",
-        "dataImplementationCommit": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915"
+        "dataImplementationCommit": "dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915",
+        "postBatchAudit": "docs/CONTENT-CATALOG-PARITY-POST-RDL-2026-10-01.json",
+        "unresolvedEpisodeSourceIds": {
+          "app": 0,
+          "data": 0
+        },
+        "missingOrDuplicateSourceIds": {
+          "app": 0,
+          "data": 0
+        }
       }
     },
     {

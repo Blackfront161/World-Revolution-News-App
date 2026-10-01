@@ -10,6 +10,8 @@ Die vorhandene Herausgeber-ID `radio-dreyeckland` bleibt erhalten. Die bisher ID
 
 33 bestehende App-Zeilen und 28 Datenzeilen erhalten die kanonische `sourceId`, Endpoint-ID und explizite Inhaltsbeschränkung. Alle bisherigen Episoden-IDs, Reihenfolge, Sprach- und Datumsfelder bleiben erhalten. Das sind 61 Datensätze über zwei lokale Snapshots. Kein zusätzliches Podcastangebot wurde aufgenommen. Die 16 weiteren App-Quellen, Bibliotheksabgleich und vollständige Website-Projektionen bleiben offen.
 
+Der [erneute Bestandsabgleich](CONTENT-CATALOG-PARITY-POST-RDL-2026-10-01.json) findet in beiden Snapshots keine fehlenden/doppelten Quellen-IDs und keine Episoden mit nicht auflösbarer Quelle mehr. Die 52 App-/36 Datenkatalogzeilen bleiben erhalten; die zusätzliche gemeinsame ID bezeichnet den Endpoint, keinen neuen Herausgeber. Die 35 durch die App ausdrücklich ausgeschlossenen Leftover-Talk-Zeilen des Datenarchivs bleiben als gesperrte Abgleichkandidaten ausgewiesen. Vollständige Parität ist weiterhin offen.
+
 Künftige RSS-Episoden aus diesem Endpoint verwenden die bisherige Hash-Namensbasis `None` über `episodeIdNamespace`, obwohl der Endpoint nun eine eigene ID besitzt. Die korrigierte Herausgeber-ID erzeugt keine neuen IDs für vorhandene GUIDs.
 
 ## Wirksame Beschränkung
