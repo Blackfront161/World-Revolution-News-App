@@ -103,10 +103,10 @@ WRN planned 2.1 product contracts A/C/E: OK
 [js-contract] tests/test_zine_stencils.js
 Zine spray stencils: OK
 [js-contract] 51 tests passed
-.s..s......s........................................................ [ 46%]
-........................................................................ [ 95%]
-.......                                                                  [100%]
-144 passed, 3 skipped, 4 subtests passed in 24.81s
+.s..s......s........................................................ [ 45%]
+........................................................................ [ 94%]
+........                                                                 [100%]
+145 passed, 3 skipped, 4 subtests passed in 25.12s
 [pytest-contract] 40 modules managed by pytest
 [python-main-contract] tests/test_block3_assets.py
 Block 3 assets: OK
