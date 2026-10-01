@@ -45,3 +45,14 @@ Das sind lokale Funktionsbelege, keine native Geräte- oder Live-Abnahme.
 Der unabhängige inhaltliche Review benannte drei An-Anarchist-FAQ-Nachweise
 als Kontext-/Sekundärtexte. Ihre Beschreibungen wurden entsprechend korrigiert;
 eine Primärquellenklassifikation wird für diese drei Nachweise nicht behauptet.
+
+Abgeschlossen: App-Produkt `6428cfef51e50818eba79950970ccef2a30ae170`,
+Data `4153d5f2baccbc0d7ccc16a546d08e7808dff753`, Website-Produkt
+`83abb0f3cc3ac385b5df3409edc623cf592e733a` sind unabhängig lokal GREEN.
+Die Website zeigt 715 Bücher, 155 Begriffe/32 Referenzen und dieselben drei
+Lernpfade. 1.310 Podcast-IDs werden als 1.256 eindeutige Originalseiten
+projiziert (54 URL-Dubletten). Historische Websitebytes bleiben unverändert.
+Website 231 Vitest/84 Node, fokussiert 24/12 erneut und unabhängig bestanden;
+Typprüfung/Lint, vier Browserfälle und Offline-Shell 7.025.513 Bytes bestanden.
+Ein lokal geprüftes Website-/Hostingpaket ist aus `83abb0f` vorbereitet.
+Die aktuelle Erweiterung wurde nicht live veröffentlicht oder in Play hochgeladen.

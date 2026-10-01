@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "common_archive_accepted_local_website_candidate_pending_independent_review",
+      "status": "common_archive_and_website_candidate_accepted_local_not_published",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -596,11 +596,26 @@
           "referenceSources": 32,
           "learningPaths": 3,
           "bookRelations": 30,
-          "candidateStatus": "LOCAL-PASS_PENDING_INDEPENDENT_REVIEW",
+          "candidateStatus": "LOCAL-PASS_INDEPENDENT_REVIEW_GREEN",
           "preview": "http://127.0.0.1:43231/?lang=de#knowledge",
-          "publicationPerformed": false
+          "publicationPerformed": false,
+          "independentReview": {
+            "status": "GREEN_LOCAL_ONLY",
+            "productCommit": "83abb0f3cc3ac385b5df3409edc623cf592e733a",
+            "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-CATALOG-KNOWLEDGE-2026-10-01/controller-review.md",
+            "reportSha256": "cb1673f7724d4935de160e6bd862a5a3eb4dbb6521d634ab7fcbd1368b0cdbca"
+          },
+          "preparedPackage": {
+            "sourceCommit": "83abb0f3cc3ac385b5df3409edc623cf592e733a",
+            "status": "LOCAL-PASS",
+            "websiteFiles": 45,
+            "hostingFiles": 48,
+            "receiptSha256": "c02ced3a08e18956eade87b7ef8aa5db371bf3df9def80174022ebb12d226905",
+            "publicationPerformed": false
+          }
         }
-      }
+      },
+      "next": "Bestehende Code32-Play-Prüfung weiterlaufen lassen. Neue Inhalte als separate Release-Artefakte behandeln; native App-/Upgradeprüfung und Website-Live-/Rollback-Nachweise vor neuer Veröffentlichung. Danach sechs Podcastkandidaten und vier Intake-Holds fachlich prüfen."
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
