@@ -41,3 +41,7 @@ Bibliothek/Lernpfade, Archiv mit Teil-/Fehlerantworten und persistenten
 Widerrufen, sowie aktuelle/Classic-/Legacy-Rechte- und Sprachsperren.
 Archiv und Bibliothek wurden bei 320/390/768/1440 und neun UI-Sprachen geprüft.
 Das sind lokale Funktionsbelege, keine native Geräte- oder Live-Abnahme.
+
+Der unabhängige inhaltliche Review benannte drei An-Anarchist-FAQ-Nachweise
+als Kontext-/Sekundärtexte. Ihre Beschreibungen wurden entsprechend korrigiert;
+eine Primärquellenklassifikation wird für diese drei Nachweise nicht behauptet.
