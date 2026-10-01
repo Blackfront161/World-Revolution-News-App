@@ -81,12 +81,32 @@
       "recoveryVerificationReport": "docs/evidence/audio-sharing-2026-10-01/play-update-prompt-recheck.json"
     }
   },
+  "storeListingMedia": {
+    "observedAt": "2026-10-01",
+    "status": "images-in-google-review-videos-awaiting-user-approval",
+    "sourceThread": "01a0d7ff-5930-7582-9998-845a92c2cb26",
+    "phoneScreenshots": "Alle neun Console-Sprachen enthalten je sechs neue Smartphone-Screenshots; deutsche öffentliche Store-Seite zeigt die neuen Bilder.",
+    "legacyDeviceAssets": "20 alte Juni-Bilder aus dem englischen Standardentwurf entfernt: 7 Tablet7,4 Tablet10,4 Desktop,5 XR. Abschließende Console-Ansicht zeigt die vier Änderungen gemeinsam mit Code32 als in Google-Prüfung; nicht live bestätigt.",
+    "videoSource": "D:/Sauberes Wo Rev Ne/marketing/google-play-video-2026-09-27",
+    "videos": "Neun bereinigte Sprachvideos, je24 Sekunden; SHA256 stimmt für alle Dateien mit dem bestehenden Manifest überein. Noch nicht hochgeladen oder mit Play verknüpft.",
+    "youtubeChannelPrepared": "Blackfront (83 Abonnenten), UCt_2IqEjrQODDenKZC4wdOw; gesonderte Zustimmung zum Upload/YouTube-Regelwerk steht aus.",
+    "reviewRestart": "Auto-Review lehnte den angeklickten Neustart wegen fehlender ausdrücklicher Freigabe der Verzögerung ab; kein erneuter Versuch. Spätere Console-Ansicht zeigt die Bildänderungen trotzdem im Prüfungsbereich. Kein eigener erfolgreicher Neustart behauptet. Für eine zusätzliche Video-Einreichung mit erneuter Verzögerung ist User-Freigabe angefragt.",
+    "evidence": "docs/PLAY-STORE-MEDIA-2026-10-01.md"
+  },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
     "sourceDirectory": "wrn-github-app-current",
     "note": "World-Revolution-News-Next und die separate Website sind eigene Projekte. Deren Funktionen zählen hier erst nach ausdrücklich beauftragter, geprüfter Portierung als umgesetzt."
   },
   "nextWork": [
+    {
+      "id": "PLAY-STORE-MEDIA-20261001",
+      "priority": 1,
+      "name": "Play-Store-Galerie bereinigen und vorhandene Sprachvideos einbinden",
+      "status": "images-in-google-review-videos-awaiting-user-approval",
+      "remaining": "Explizite Freigaben für YouTube-Upload samt Nutzungsbedingungen und gegebenenfalls verzögernden Google-Review-Neustart abwarten. Danach neun nicht gelistete Videos hochladen, jede Sprach-URL speichern und Videoänderungen einreichen; öffentliche Darstellung nach Google-Freigabe kontrollieren.",
+      "report": "docs/PLAY-STORE-MEDIA-2026-10-01.md"
+    },
     {
       "id": "AUDIO-SHARING-20261001",
       "priority": 1,

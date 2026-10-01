@@ -1,0 +1,396 @@
+{
+  "observedAt": "2026-10-01T03:47:20.754Z",
+  "locales": [
+    {
+      "code": "en-US",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/UYhtFyuDbIIWKbtH5tc54uBwClqMnb_oajeR_HMjv0DefzqUgnWKSODvuicz7pW1e6OSQD_ILzwgEZPb94vrVj0"
+        },
+        {
+          "name": "01-news.png",
+          "src": "https://lh3.googleusercontent.com/mwM06LClvPI-fn4oFmDkPMKpuFWi1gkdqIBSBcHPDeo5oU1LVwrMvZugejiM_0rCFvPgbHQGBrk44WzeYjO8FQ"
+        },
+        {
+          "name": "02-reader.png",
+          "src": "https://lh3.googleusercontent.com/rt1gZyiwkO8kLeUONsPLeSEbjRsMqc5-FGOaCx7Xv19QMZpVaxroBrHaVprXZm2fX-IUPksYWloMSjU9iCNt"
+        },
+        {
+          "name": "03-discover.png",
+          "src": "https://lh3.googleusercontent.com/iK4htKiD9hT8XAAQW8XIClUDlYavnOKfHiyNtCs3Yl02uyC1rqoySLRgfWsy0XMvVFFhNnSPkEqiAHu8ErEPpGE"
+        },
+        {
+          "name": "06-sport.png",
+          "src": "https://lh3.googleusercontent.com/eWh6wqw3oUzAFMHHTrgiXBOLhChnlSedJB-vxi0_yvLDCtTS8PX1Ki-9Hel9CJ_7XKi6j3Zzed5p6wXE2F_zeQ"
+        },
+        {
+          "name": "04-saved.png",
+          "src": "https://lh3.googleusercontent.com/FqjiTZtso_Rq93Eu2JbSdfqngzKi1qr4JH7MMTI3mqdkXwmwgM5YOqTHE6JlLhBEQOzw1y2uvfafEfKdjzMCNg"
+        },
+        {
+          "name": "05-sources.png",
+          "src": "https://lh3.googleusercontent.com/5rAjPjuie-PMfIYzA2lEnovd9RmoOn_fkgbk0v6i6Ba7PIgcyXns1DWhFPHOPAy8QQUGR10kBvhkAnF-qpwaVg"
+        }
+      ],
+      "video": null,
+      "phoneCount": 6,
+      "oldImageCount": 0
+    },
+    {
+      "code": "de-DE",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "de-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/r7yLT5zXqznfWJ6-uh1HehEyLCng-uCCWAv5jadORrPAjM4K0wGzdoe03lpevWtCpSsrB677JVJWYD6vI_wmq74"
+        },
+        {
+          "name": "de-01-news.png",
+          "src": "https://lh3.googleusercontent.com/4XBgmbsePG7fN_mNsJuHOY7TYO7q5p3jZH5D5AhoLQ1gvy5PenJaCH6Of7IXMDsq4NY9GoJY8Gi0_uK4lqup"
+        },
+        {
+          "name": "de-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/IVo1NUCDefLjk5DDMrNi1FWJwr4siey0teRT6XSVawTVqcES7l_tx7rvO_kExXr5C7mKLEQcu12MyN1jtkjA"
+        },
+        {
+          "name": "de-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/os1Jyp-5mpD7Dwg07wB-xkb-eHNEqJMu6jNygoqGZ_wmREYZZLZIWbu4M691wWh1OGFti13oJNIiJC5f6WL3"
+        },
+        {
+          "name": "de-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/ishkv7R0yg0mq3EqY6ary94tU_oLbuiohEabKuR0S-Gx5zTua7fhMOggciMAc6s3xhmrWwXewt-Ptsyd_L2YQg"
+        },
+        {
+          "name": "de-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/iYDNRX9pMRz4ejITBS2VvxGt9pBqBwExNfn-uZunaBJeWj26cNJyAwrmhGznrIQ9meKxaFW03xqcbpCm2Gtemqw"
+        },
+        {
+          "name": "de-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/6Rhj5P4HXUA7lvP-UGj_0Ik95dOJELg-nPX5ta1pElWLzOaSGf7MUpXcyEURSayBayxwz7o6RlmiJmSVrTJdoMk"
+        }
+      ],
+      "video": null,
+      "phoneCount": 6,
+      "oldImageCount": 0
+    },
+    {
+      "code": "fr-FR",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "fr-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/MIDOEriNc2O9YP-Zs8Xn6rWTh8Ew6JRDSNwIc3c_ku2gsewEoY4FbQvkf-BU1NBTg4Jx-S_XXwymgvaOB6Okjo4"
+        },
+        {
+          "name": "fr-01-news.png",
+          "src": "https://lh3.googleusercontent.com/tk3WvgUfV4CTriJwCDl_EhIFhcaGKTu3Umr4IUXUCIKEN_yUildhYCf_8APZiFsitA4cIDeMeQqQfUQt0CzSFg"
+        },
+        {
+          "name": "fr-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/z6m6XkFzt-5awoJjZ-W9RQeDolOUYnIvuNWYx1DXdFTV2Qrj1Tm_KuACPFI01B-4sd-AM9Dd6Zh1b042k3-KKQ"
+        },
+        {
+          "name": "fr-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/vwbza4yNY4XBKXBPSt_ILL7UPOAVxSJHJ6CV6MccURIhcjR158YThZZs8q2eicZLENnWB9R8mJ2Pj7isgQ3wNm8"
+        },
+        {
+          "name": "fr-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/r3e8_gydhCDKGxUeFr7uVaOLTm5K5u01rOZ0AIbRfUxz4uMX1u5Z4srmETO1e4djk8vOV5gI-nAWcLnuB_HsSA"
+        },
+        {
+          "name": "fr-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/o6E3-b747SlxPgA-APYEjkfBE-fHdpmejXWXVCWADCMsA0rJci5SMmTmmMdPOV93LObREjhoK9WLlgW3ANGf"
+        },
+        {
+          "name": "fr-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/_pFfn2lyGymreGyKUo7WI5Hd9rbmUXDYBvINdlivL65wweU9Pz9ZJgMbWoL85uHmy_wT6Di_u2jo2Z4-mAqSn14"
+        }
+      ],
+      "video": null,
+      "phoneCount": 6,
+      "oldImageCount": 0
+    },
+    {
+      "code": "el-GR",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "el-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/hVWKAY_4BsXuBnQ4eBbUdTbujhk6ryL0lbhuA7xua5bccQvYkbbZOQfHG4hQdfkJaf0lIsRy8Yf2SizkgfMG_w"
+        },
+        {
+          "name": "el-01-news.png",
+          "src": "https://lh3.googleusercontent.com/UNynczYssOILIRaU-eS-CvdrRplOXfivgrzgQLz79htObChXfreZDJgs1EW2snetgrl_FCK-dPwDhfEiPrQ-9e8"
+        },
+        {
+          "name": "el-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/3-iCq73Z6tA0AgaEz6UODd0EpJuNDyNO0d0EkVWWRhG4ZS3YZDVUBUz7v2Wa8lqxKdwLaBqS3S_vxbEeDRSvAQ"
+        },
+        {
+          "name": "el-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/O6h2t70IBaQ3tBuuTRwNlVqH81dJAzDu3VNES5oXxl5DB6rihV5CSfqn8VkW8DNsvlfnuaazcq80r7Lk6Vu8x5s"
+        },
+        {
+          "name": "el-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/3XEm56fD7xCyzo0HZq--5xgJr6yyOwRVIv8iNNgzsgKgc9oZSbliPUL5dChl3CjoIV4pGJDvhE_TMjHJ81PphQ"
+        },
+        {
+          "name": "el-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/U23B3kNe4yoydm3QTUlf3McSadMFxKajcuYCOZBKJh8b09av_698kAfXMJ2WCElvy8qN7wYDow2mMjWc2wSo"
+        },
+        {
+          "name": "el-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/iBWRKOeI72euIRg2DgxUygQvLRYVf46pryaAvtpVN_k_ok9s2f81apNnB8xGtdR2Lb3b6V3wLI_3Pvt5nl7z"
+        }
+      ],
+      "video": null,
+      "phoneCount": 6,
+      "oldImageCount": 0
+    },
+    {
+      "code": "it-IT",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "it-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/kXxnBwKhyBGbx14EmT-p763P8PMQpzZBojn7i9gkdMZtugCGlUPqYaGES2-6WwxXL7gn4cp0kzHjNrSQZhlAXA"
+        },
+        {
+          "name": "it-01-news.png",
+          "src": "https://lh3.googleusercontent.com/uYo_ATT1ALfl8PMaNlaX9U-GIBRe0DlY3rp3S1UBLLD3AYAtK58fAjHIEACbwBhtYu4AqCiECc4lFMOuzfb8"
+        },
+        {
+          "name": "it-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/uUsJ1eAwSw7XN1CUAH0ChqNmkCS_cbpX_2MRYRNWcj6eTMyJBhlT-tykfsk47L_34SA-aL_UByT8n4JNLJCQBps"
+        },
+        {
+          "name": "it-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/AZIM7LXFlc37C5JD9j7S0TlVV5Nq3_sAaS04uZZLaV8w1bfdash5qkqOWJIcNcjUG3dVH5jQ1Fl2yFECPdJCW_U"
+        },
+        {
+          "name": "it-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/wjDWylAQD1sAjyVk1XIsl9CVJjrVXHUr5xq90-R8D3kuwAEIC1ss84LBzDbler1IdCUPQWYHi2O9ki7BWzQK"
+        },
+        {
+          "name": "it-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/LJ81S6twB4-nAZDOYxudXTcVKPnyT8SJxs4GLYoZ-8OSQPLN6MxQjOnbooxotj0H5VjUpmeyDPeuFAeXIAan"
+        },
+        {
+          "name": "it-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/IcKudQ14P3Q4JuJiY3d6bE19b4_lKRkEXieWpNWlO2o46HUsyXKZOzT8NYHUeTiw-TNtYJJ2nmVjKRPoo-hZVTM"
+        }
+      ],
+      "phoneCount": 6,
+      "otherDevicesExpanded": false
+    },
+    {
+      "code": "pt-PT",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "pt-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/izCNJUAyXsuBLyUeKcarB2dNsRAXaQePDvcs8mZEvwdhMxvZi4exw_OciRC7IkLZw5JUDQo7NbhknWmJbuBnxLU"
+        },
+        {
+          "name": "pt-01-news.png",
+          "src": "https://lh3.googleusercontent.com/eQgi6fNCJhVeGX9jmaEiyDVFeY1cjdIpcilRqTPHEREFvRPFpmCmvw0xR2DxqbLI_Efw7keSosL6x6Oh2bAqMg"
+        },
+        {
+          "name": "pt-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/5kdx1ple24X9Y0Ucsa8ObMhM1f4BmDNg3AV-2K8yxY7C-w2Z7MT3NgI0FcbjNeFTyuMELNzbmtyNZjWFsXfuOA"
+        },
+        {
+          "name": "pt-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/NFf0b8xpBHBlqaZL1dAXaLDkMWHA-woiqew-vTMB45ccsulnS9ysQc0rAsL7DcUO2YNMHYDNYiIiFSlmNPxr"
+        },
+        {
+          "name": "pt-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/_GkK4WZE6Q4BR3Mg4vC7ujVYSpHfi_7t33HeA1qOLIWEWcnSBNBxKsZ7yljw4uQFiQ-bjnqHfrx8C0eUJ5TE"
+        },
+        {
+          "name": "pt-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/mX8YJm2gC5QqJE7uKC6wz93Qk02YmEF-kL0aFXapi5kZeP43TFFXreasiubmdXwVItc21MHJL7NTErRvHP_ELUM"
+        },
+        {
+          "name": "pt-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/am_Q9UMpalhcEKn6NAI_Jlh3fmOT_DdFNMwzs1zsUD_9FzJl-3Y5bXhmOzJgVk2zI35IxtEbty2Ii4SdaEiE"
+        }
+      ],
+      "phoneCount": 6,
+      "otherDevicesExpanded": false
+    },
+    {
+      "code": "ru-RU",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "ru-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/7-dwLAMZfsE6lg5zF_BHp3stq7QxYe7pCFLEAtGswN4AgkZUfQzbEi02nNBrfSsfgqB8JTJGltDWmgepCdtXVwE"
+        },
+        {
+          "name": "ru-01-news.png",
+          "src": "https://lh3.googleusercontent.com/_xVdY_Na778XX0MAvwlhyP5X4zvlcWx8pvjGk4N9uHFV-tg8oxKaDENER32vKj87bZiDOdLFvdNwAk626u1s6w"
+        },
+        {
+          "name": "ru-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/eL2ycKZTmV-8BxgAPPaMf9pxu5W5e5Gs9h0f6ylNU6FknZP1YylgKzfsSEdkRC2LlYtOOZl_fzobqf1F4yxw"
+        },
+        {
+          "name": "ru-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/yDqVZKBUHzdHSzRJLyUaRvYJZ05WZhou3lkszqbps9meMqao9V25K6PkQpNH3QvjFgGsVMvMpvwhPIG7B_z6UQ"
+        },
+        {
+          "name": "ru-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/oOeaFeTswvQIIX78CW_bIuxM_0Vl3UHWduJu-WcP9mi0ZC-3JAwQHHlbK1IDC9zuPcvJoHvYzqqKwNpZkn77"
+        },
+        {
+          "name": "ru-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/vK4_vmDeQDI3w53L13jU1rgfrxHySX7z7Et0-zQ3O0EASMibr5xdKaEm5i_S5qlTszgeUEjSaaWik8ScdT4y"
+        },
+        {
+          "name": "ru-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/DDL_W1CISL7yaOS4bt1VgdGILjto5mPOjigf8UY_nodmLMlrJSo6FG93bGMuyesu1iWNGdxRecxRh4iVgpi0xGo"
+        }
+      ],
+      "phoneCount": 6,
+      "otherDevicesExpanded": false
+    },
+    {
+      "code": "es-ES",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "es-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/b5y7C7fPNUtuJJCjQ6dZnmwweF76bIHzgVawmz-c53mzxC1P21yPCLiRyCcdBwGHz6IBeSdwLS-0sYdWSGDIoQ"
+        },
+        {
+          "name": "es-01-news.png",
+          "src": "https://lh3.googleusercontent.com/l2LfHsXTrtQwv0bgMoexwkzRaY1QgbqKGZSwau_gMU_p1f89hpBJPAXV2BGPjTO1cERoPawyijl5dQAC-n4f4Q"
+        },
+        {
+          "name": "es-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/aJDhqr9bIWj1eEL9chzp51HGrcVuQVEw5F8TbRl2x7OrpYGZtLLbHVErEbMJhkcQswmeXPz0kNtx5u5CgPmyCCo"
+        },
+        {
+          "name": "es-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/m3HA1Gb8386ZNsv3JIpNSqJn3uEGSvlMhvptrLj2q_lvkUFza3Lhst7yVsqKNBpiOUFaonoOzlzvDZYHDWO7wg"
+        },
+        {
+          "name": "es-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/z_nGeSESbVZ7uQjqjKhMl_BCOVMorP7DX5q3_nEo8MSXVEMISnFaZQqWw8q4aSpF8CxRDEKZViZ1MLSOgpV8Qg"
+        },
+        {
+          "name": "es-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/x9CFGExgIogsgmdultY1I3ERHbhx8dGVFOuY1p3BtHmGEpQ9KSMSKVOt1oYMvFdBGoETHX8VgWVxM7Apgyax8w"
+        },
+        {
+          "name": "es-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/2LG0RxZmUfzPxUzpRCbPSjAOJzUvu7QulsVMbTMP1EJcVQAX1Etc_Xe0_X_5caNxfVrFcKKVo5WLiBDYsxeJ"
+        }
+      ],
+      "phoneCount": 6,
+      "otherDevicesExpanded": false
+    },
+    {
+      "code": "tr-TR",
+      "images": [
+        {
+          "name": "Google Play Console-Logo",
+          "src": "https://www.gstatic.com/acx/play/console//brt/play_console_ui_20260929_2240_RC00/main/play.console.ui.common.images/logos/navigation_menu.svg"
+        },
+        {
+          "name": "Cropped - icon.png",
+          "src": "https://lh3.googleusercontent.com/nylj07zGlAmwGhbhm_eMrRCnW5NsV0CiAXRPw4MV01hTLQyzvEsJp4J8XnyOoMOgIdYMqTZtByFasUvSLd_scTM"
+        },
+        {
+          "name": "tr-feature-graphic.png",
+          "src": "https://lh3.googleusercontent.com/RKjEGQMjAXaGTVQoB2KPN88uLyLqEYhciql0SBCTIhjGGJYEX2y_fTFL49lQSANqEehGF7suN_R7W2hjTYpbSQ"
+        },
+        {
+          "name": "tr-01-news.png",
+          "src": "https://lh3.googleusercontent.com/MMHfyrtK6QWfFTQeh2w5Xc81EBrKINzBkOcZyzjw-ivWltBm_maxDAQBt56yju6u8_hQZ7eh-VGwlum7OHr9Jg"
+        },
+        {
+          "name": "tr-02-reader.png",
+          "src": "https://lh3.googleusercontent.com/zQNmaM9e_cHRlJKUm0fAEjNOCDJb02AOZiLdVJaX4xc80ZyzlHNbT9vf74yNPpzeKFXFAzmSBwDSNPTS6XPFVJg"
+        },
+        {
+          "name": "tr-03-discover.png",
+          "src": "https://lh3.googleusercontent.com/QNMuW8MJ6KCVghWDH6N2eavDxCrEljzySSTSnz1NyiwyPKPJ4InXwogL4NmniQAeh_RilpZimiAGuZm4F4FJKUg"
+        },
+        {
+          "name": "tr-04-saved.png",
+          "src": "https://lh3.googleusercontent.com/jUTu0XQTQYVqvFRTjZg5BVsGGe0mvMc1Y36hvT4stlGLipL5NU-duXRZTU5j5wO3g9JzH-djCifiwmxNX3brGbA"
+        },
+        {
+          "name": "tr-05-sources.png",
+          "src": "https://lh3.googleusercontent.com/_DIHdYAR2V1VI5hhf1wC4dTitchpyE4Bb2gxWYiePTBQs2BlZ0pEk3ZB_S12wY8AuHPOD9qj44m4ItOfry3WoOs"
+        },
+        {
+          "name": "tr-06-sport.png",
+          "src": "https://lh3.googleusercontent.com/acD-W2eGb-DFjPMycAkTPKZnESynmIwD6ShTLE44c73wt_9lN70iqRwGNfteHNugxwwdkFJW1JXUYS4cR3Hiou0"
+        }
+      ],
+      "phoneCount": 6,
+      "otherDevicesExpanded": false
+    }
+  ]
+}

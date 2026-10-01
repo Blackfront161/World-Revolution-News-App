@@ -1,0 +1,149 @@
+- progressbar
+- generic: Google Play Console wird geladen
+- banner:
+  - link "Google Play Console-Logo":
+    - /url: /console/u/1/developers/8812037282040696596/app-list
+    - button "Google Play Console-Logo"
+  - button "Ungelesene Benachrichtigungen Im Benachrichtigungscenter öffnen":
+    - img: notifications_unread
+    - generic: Ungelesene Benachrichtigungen
+  - button "World Revolution News":
+    - generic: World Revolution News
+  - button "Entwicklerkonten wechseln":
+    - img "Entwicklerkonten wechseln"
+- navigation:
+  - link "Alle Apps":
+    - /url: /console/u/1/developers/8812037282040696596/app-list
+    - img: keyboard_backspace
+    - generic: Alle Apps
+  - list:
+    - listitem "Dashboard":
+      - button "Dashboard":
+        - img: dashboard
+        - generic: Dashboard
+    - listitem "Statistiken":
+      - button "Statistiken":
+        - img: bar_chart
+        - generic: Statistiken
+    - listitem "Veröffentlichungen – Übersicht":
+      - button "Veröffentlichungen – Übersicht" [active]:
+        - img: overview
+        - generic: Veröffentlichungen – Übersicht
+    - listitem "Mit Google Play geschützt":
+      - button "Mit Google Play geschützt":
+        - img: shield
+        - generic: Mit Google Play geschützt
+    - listitem "Testen und veröffentlichen":
+      - button "Testen und veröffentlichen":
+        - img: rocket_launch
+        - generic: Testen und veröffentlichen
+    - listitem "Überprüfen und optimieren":
+      - button "Überprüfen und optimieren":
+        - img: vital_signs
+        - generic: Überprüfen und optimieren
+    - listitem "Mehr Nutzer gewinnen":
+      - button "Mehr Nutzer gewinnen":
+        - img: finance_mode
+        - generic: Mehr Nutzer gewinnen
+    - listitem "Mit Google Play monetarisieren":
+      - button "Mit Google Play monetarisieren":
+        - img: sell
+        - generic: Mit Google Play monetarisieren
+- heading "Veröffentlichungen – Übersicht" [level=1]
+- text: Hier siehst du die an deiner App vorgenommenen Änderungen und kannst festlegen, wann Änderungen zur Überprüfung gesendet oder veröffentlicht werden.
+- button "Weitere Details zu Veröffentlichungen – Übersicht anzeigen": Mehr anzeigen
+- button "Verwaltete Veröffentlichung aus":
+  - img: sync_disabled
+  - generic: Verwaltete Veröffentlichung aus
+  - img: arrow_drop_down
+- img: history
+- generic: Zuletzt veröffentlicht am 27. September 2026
+- link "Aktivität bei der Einreichung":
+  - /url: /console/u/1/developers/8812037282040696596/app/4974507251844219576/publishing/submission-activity
+  - generic: Aktivität bei der Einreichung
+  - img: arrow_right_alt
+- heading "Änderungen, die überprüft werden" [level=2]
+- button "Weitere Informationen zu „Änderungen, die überprüft werden“":
+  - img: help
+- button "Änderungen entfernen": Änderungen entfernen
+- 'button "Inhalte ausblenden: Änderungen, die überprüft werden" [expanded]':
+  - generic: Ausblenden
+  - img: expand_less
+- img: inventory
+- generic: Deine Änderungen werden jetzt überprüft. Bei der Überprüfung deiner App kann es vorkommen, dass wir auf Probleme stoßen, die bisher nicht entdeckt wurden.
+- link "In der Hilfe findest du weitere Informationen zu den automatischen Prüfungen, die wir durchführen, um Probleme zu erkennen, bevor du deine Änderungen zur Überprüfung einreichst.":
+  - /url: https://support.google.com/googleplay/android-developer/answer/14807773
+  - generic: Weitere Informationen
+- grid "Änderungen":
+  - row "Geändert Beschreibung":
+    - columnheader "Geändert"
+    - columnheader "Beschreibung"
+    - cell
+  - row "Produktion":
+    - img: rocket_launch
+    - gridcell "Produktion"
+  - row "32 (2.1.2) – Autonom und Audio-Teilen Vollständigen Roll-out starten":
+    - gridcell "32 (2.1.2) – Autonom und Audio-Teilen":
+      - generic: 32 (2.1.2) – Autonom und Audio-Teilen
+    - gridcell "Vollständigen Roll-out starten":
+      - generic: Vollständigen Roll-out starten
+    - gridcell:
+      - listbox "Weitere Aktionen":
+        - button "Weitere Aktionen":
+          - img: more_vert
+  - row "Store-Einträge":
+    - img: play_prism
+    - gridcell "Store-Einträge"
+  - row "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag Screenshots für 7\"-Tablet ändern":
+    - gridcell "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag":
+      - generic: Englisch (Vereinigte Staaten) – en-US
+      - generic: Standardmäßiger Store-Eintrag
+    - gridcell "Screenshots für 7\"-Tablet ändern":
+      - generic: Screenshots für 7"-Tablet ändern
+    - gridcell:
+      - listbox "Weitere Aktionen":
+        - button "Weitere Aktionen":
+          - img: more_vert
+  - row "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag Screenshots für 10\"-Tablet ändern":
+    - gridcell "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag":
+      - generic: Englisch (Vereinigte Staaten) – en-US
+      - generic: Standardmäßiger Store-Eintrag
+    - gridcell "Screenshots für 10\"-Tablet ändern":
+      - generic: Screenshots für 10"-Tablet ändern
+    - gridcell:
+      - listbox "Weitere Aktionen":
+        - button "Weitere Aktionen":
+          - img: more_vert
+  - row "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag Desktop-Screenshots ändern":
+    - gridcell "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag":
+      - generic: Englisch (Vereinigte Staaten) – en-US
+      - generic: Standardmäßiger Store-Eintrag
+    - gridcell "Desktop-Screenshots ändern":
+      - generic: Desktop-Screenshots ändern
+    - gridcell:
+      - listbox "Weitere Aktionen":
+        - button "Weitere Aktionen":
+          - img: more_vert
+  - row "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag Screenshots für Android XR ändern":
+    - gridcell "Englisch (Vereinigte Staaten) – en-US Standardmäßiger Store-Eintrag":
+      - generic: Englisch (Vereinigte Staaten) – en-US
+      - generic: Standardmäßiger Store-Eintrag
+    - gridcell "Screenshots für Android XR ändern":
+      - generic: Screenshots für Android XR ändern
+    - gridcell:
+      - listbox "Weitere Aktionen":
+        - button "Weitere Aktionen":
+          - img: more_vert
+- link "Produktupdates":
+  - /url: https://play.google.com/console/about/whats-new/
+- link "Status-Dashboard":
+  - /url: https://status.play.google.com/
+- link "Hilfe":
+  - /url: /console/u/1/developers/8812037282040696596/help-and-support?app=4974507251844219576
+- generic: © 2026 Google
+- link "Datenschutz":
+  - /url: https://www.google.com/policies/privacy/
+- link "Vertriebsvereinbarung für Entwickler":
+  - /url: https://play.google.com/about/developer-distribution-agreement.html
+- link "Nutzungsbedingungen":
+  - /url: https://play.google.com/about/console/terms-of-service/
