@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Locally signed candidate; not Play approval",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewedAt": "2026-10-01",
+  "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+  "versionName": "2.1.2",
+  "versionCode": 32,
+  "signedBytes": 43275817,
+  "signedSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
+  "signatureReportSha256": "A18913C9EFA7D05CDE12D2B118794E3DC66898289DCF4F6FD867FA7D01B5D786",
+  "actualCertificateSha256": "7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8",
+  "jarsignerExitCode": 0,
+  "jarsignerVerified": true,
+  "jarsignerReportedUnsigned": false,
+  "keytoolExitCode": 0,
+  "payloadEntriesCompared": 796,
+  "payloadDifferences": [],
+  "sourceWebAssetsCompared": 350,
+  "webAssetDifferences": [],
+  "reportBindings": "source/version/input/peer/output/report hashes, alias, certificate, signer/helper all consistent",
+  "readOnly": true,
+  "uploadPerformed": false,
+  "releaseReady": false,
+  "remainingGates": [
+    "Physical device verification",
+    "Editorial approval of local lexicon draft",
+    "Separate publication"
+  ]
+}

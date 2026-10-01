@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-01T02:34:06.1011543Z",
+  "signedSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
+  "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+  "certificateMatches": true,
+  "jarsignerVerified": true,
+  "actualCertificateSha256": "7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8",
+  "payloadDifferences": [],
+  "assetDifferences": [],
+  "uploadPerformed": false,
+  "releaseReady": false
+}

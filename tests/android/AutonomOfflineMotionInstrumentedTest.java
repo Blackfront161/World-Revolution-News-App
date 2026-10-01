@@ -79,4 +79,22 @@ public class AutonomOfflineMotionInstrumentedTest {
             assertEquals("true", js(scenario, "parseFloat(getComputedStyle(document.querySelector('.autonom-topics .is-active')).transitionDuration) <= 0.00001"));
         }
     }
+    /** Run separately after adb force-stop of the private QA package; never reseeds. */
+    @Test public void verifyOfflineAfterProcessRestart() throws Exception {
+        assertEquals("true", InstrumentationRegistry.getArguments().getString("wrnIsolatedUpgradeTest"));
+        android.content.Context context=InstrumentationRegistry.getInstrumentation().getTargetContext();
+        assertEquals("com.world.revolution.autonomtest", context.getPackageName());
+        assertEquals(32L,context.getPackageManager().getPackageInfo(context.getPackageName(),0).getLongVersionCode());
+        assertEquals(PackageManager.PERMISSION_DENIED, context.checkSelfPermission(Manifest.permission.INTERNET));
+        try (ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+            ready(scenario);
+            assertEquals("true", js(scenario,"document.documentElement.dataset.theme === 'autonom'"));
+            assertEquals("true", js(scenario,"(() => {const rows=JSON.parse(localStorage.getItem('wrn_bookmarks') || '[]');return rows.some(row => row.quelleName === 'LabourNet DE' && row.content?.length > 2000);})()"));
+            js(scenario,"document.querySelector('[data-view-target=\"saved\"]').click()");
+            waitTrue(scenario,"Boolean(document.querySelector('#next-view article [data-action=\"open\"]'))");
+            js(scenario,"document.querySelector('#next-view article [data-action=\"open\"]').click()");
+            waitTrue(scenario,"Boolean(document.querySelector('#next-article-dialog[open] .article-body') && document.querySelector('#next-article-dialog .article-body').innerText.length > 2000)");
+            System.out.println("WRN_OFFLINE_PROCESS_RESTART=PASS");
+        }
+    }
 }

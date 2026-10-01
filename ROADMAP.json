@@ -18,10 +18,10 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Lokaler Produktionskandidat: Code32 commitgenau aus6821a02 unsigniert gebaut; Audio-Sharing-Teil fe2c527 unabhängig akzeptiert. Gradle lintRelease/testReleaseUnitTest/bundleRelease und350 eingebettete Webassets ohne Abweichung geprüft. Native Windrose pixelgleich zum Original und bytegleich zuCode31. Physische Android-Prüfung, redaktionelle Freigabe des lokalen Lexikon-Drafts, Signierung und Veröffentlichung bleiben offen.",
-    "artifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
-    "artifactSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
-    "artifactMode": "unsigned-candidate",
+    "status": "Code32 aus 6821a02 zweimal byteidentisch gebaut und lokal mit vorhandenem Upload-Zertifikat signiert; Zertifikat, JAR-Signatur und unveränderte Payload erneut geprüft. Isolierter API36-Emulator: Upgrade, nativer Teilen-Dialog, Kopieren, Abbruch und Offline-Volltext nach Prozessneustart PASS. Physische Geräteprüfung, redaktionelle Lexikon-Freigabe und Veröffentlichung bleiben offen.",
+    "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
+    "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
+    "artifactMode": "signed-local-candidate",
     "releaseReady": false,
     "runtimeReview": {
       "scope": "Audio-Sharing",
@@ -35,7 +35,25 @@
       "reviewedAt": "2026-10-01",
       "report": "docs/evidence/audio-sharing-2026-10-01/code32-controller-acceptance.json"
     },
-    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus"
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
+    "androidVerification": {
+      "status": "PASS-emulator",
+      "physicalDevice": "pending",
+      "report": "docs/evidence/audio-sharing-2026-10-01/code32-android-emulator.json"
+    },
+    "signing": {
+      "status": "signed-verified-root-and-controller",
+      "signer": "scripts/sign-google-play-aab-2.1.2-code32-6821a02-gui.ps1",
+      "review": "docs/evidence/audio-sharing-2026-10-01/code32-signer-controller-acceptance.json",
+      "preflight": "docs/evidence/audio-sharing-2026-10-01/code32-signer-preflight.json",
+      "signatureReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
+      "verificationReport": "docs/evidence/audio-sharing-2026-10-01/code32-signed-root-verification.json",
+      "signedArtifact": "outputs/audio-sharing-code32/WorldRevolutionNews-2.1.2-code32-6821a02-signed.aab",
+      "certificateSha256": "7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8",
+      "artifactReview": "docs/evidence/audio-sharing-2026-10-01/code32-signed-controller-acceptance.json"
+    },
+    "unsignedArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
+    "unsignedArtifactSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85"
   },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
@@ -58,7 +76,9 @@
         "behavior": "8 gezielte JS-Verträge bestanden; 10 Python-Module mit 37 direkt aufgerufenen Funktionen (kein pytest-Lauf); App-Validator bestanden.",
         "browser": "Isolierter Chrome mit Fixtures: echte App/Classic-Karten, native Bridge gemockt, Web Share/Abbruch/Kopieren/manueller Fallback, vier Breiten, Sprachwechsel bestanden.",
         "report": "docs/evidence/audio-sharing-2026-10-01/browser-result.json",
-        "review": "Unabhängige Read-only-Abnahme durch WRN Kontrolleur am 2026-10-01: PASS; keine P1/P2-Codebefunde. Native Geräteprüfung und neuer Android-Build bleiben offen."
+        "review": "Unabhängige Audio-Sharing-Abnahme PASS; Code32 gebaut und im isolierten Android-Emulator geprüft. Physische Geräteprüfung bleibt offen.",
+        "android": "API36-Emulator: echter Systemdialog mit privatem Ziel, drei Linktypen, exakter Kopierlink und Abbruch ohne Clipboardänderung PASS.",
+        "androidReport": "docs/evidence/audio-sharing-2026-10-01/code32-android-emulator.json"
       },
       "runtime": {
         "productionCache": "wrn-app-v2.1.2-r8",
@@ -67,9 +87,10 @@
         "appCssRelease": 49,
         "audioToolsRelease": 2
       },
-      "distribution": "Im lokalen unsignierten2.1.2/Code32-Kandidaten aus6821a02 enthalten; keine Signierung oder Veröffentlichung. Physischer Android-Systemdialog noch nicht geprüft.",
+      "distribution": "Im lokalen signierten 2.1.2/Code32-Kandidaten aus 6821a02 enthalten; Upload-Zertifikat und unveränderte Payload geprüft. Emulator PASS, physische Geräteprüfung offen. Keine Veröffentlichung.",
       "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
-      "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json"
+      "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
+      "candidateSignatureReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json"
     },
     {
       "id": "CONTROL-CORRECTIONS-20260930",

@@ -1,0 +1,66 @@
+{
+  "status": "PASS-emulator",
+  "reviewedAt": "2026-10-01",
+  "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+  "versionCode": 32,
+  "versionName": "2.1.2",
+  "aabSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+  "peerAabSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+  "qaApkSha256": "8D224605E9D2918C948715782935DF60CFFE4B06E6D5E5EE1A0FAB2894076B0C",
+  "testApkSha256": "030A403EE671FBA868A49333851DD3AFD1EB7D6891D27197E810311A4B32DD8B",
+  "webAssetEntriesCompared": 352,
+  "webAssetDifferences": [],
+  "productionHasQAReceiver": false,
+  "tests": [
+    {
+      "log": "code32-upgrade-seed.log",
+      "count": 1,
+      "purpose": "Known Code31 isolated package: seed settings/bookmarks",
+      "status": "PASS"
+    },
+    {
+      "log": "code32-upgrade-verify.log",
+      "count": 1,
+      "purpose": "Upgrade to Code32: settings/bookmarks/Autonom retained",
+      "status": "PASS"
+    },
+    {
+      "log": "code32-native-sharing-touch.log",
+      "count": 3,
+      "purpose": "Actual Android chooser: radio/original/generated; real touch copy; cancel leaves clipboard unchanged",
+      "status": "PASS"
+    },
+    {
+      "log": "code32-offline-reader.log",
+      "count": 1,
+      "purpose": "Saved packaged complete article opens offline after activity restart",
+      "status": "PASS"
+    },
+    {
+      "log": "code32-offline-process-restart.log",
+      "count": 1,
+      "purpose": "Force-stopped private package: persisted Autonom and saved full text reopen offline without reseeding",
+      "status": "PASS"
+    }
+  ],
+  "isolation": {
+    "serial": "emulator-5580",
+    "applicationId": "com.world.revolution.autonomtest",
+    "api": 36,
+    "internetPermission": "removed",
+    "shareTarget": "private QA receiver only",
+    "normalAvdData": "not modified"
+  },
+  "limits": [
+    "Emulator/debug QA variant, not a physical production installation",
+    "Byte-identical Web assets; QA-only applicationId, debug signing, no Internet permission and private share receiver",
+    "Synthetic items exercise the actual production sharing helper and Capacitor bridge",
+    "No live translation-service or radio streaming network test",
+    "Reproduction uses existing Gradle caches, not a clean-cache build"
+  ],
+  "physicalDevice": "pending",
+  "signing": "signed; signature/certificate/payload verified separately",
+  "uploadPerformed": false,
+  "releaseReady": false,
+  "signatureReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json"
+}

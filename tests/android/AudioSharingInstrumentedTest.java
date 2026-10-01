@@ -6,11 +6,14 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.os.SystemClock;
 import android.view.accessibility.AccessibilityNodeInfo;
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import org.json.JSONObject;
+import org.json.JSONArray;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import java.util.concurrent.CountDownLatch;
@@ -48,7 +51,8 @@ public class AudioSharingInstrumentedTest {
     private void mount(ActivityScenario<MainActivity> scenario, String item) throws Exception {
         js(scenario,"(() => {window.currentLang='de';document.querySelector('#qa-share')?.remove();"
             + "const host=document.createElement('div');host.id='qa-share';host.className='media-links';"
-            + "document.querySelector('#next-view').prepend(host);window.WRNAudioTools.appendShareActions(host,"+item+");return true;})()");
+            + "host.style.cssText='position:fixed;top:140px;left:12px;right:12px;z-index:99999;padding:12px;background:var(--surface)';"
+            + "document.body.append(host);window.WRNAudioTools.appendShareActions(host,"+item+");return true;})()");
         waitTrue(scenario,"document.querySelectorAll('#qa-share button').length===2");
     }
     private boolean chooserVisible() {
@@ -66,6 +70,24 @@ public class AudioSharingInstrumentedTest {
     private void waitChooser() throws Exception {
         for(int i=0;i<80;i++){if(chooserVisible())return;Thread.sleep(250);}
         fail("Actual Android chooser did not appear");
+    }
+    private void tapCopy(ActivityScenario<MainActivity> scenario) throws Exception {
+        JSONArray bounds=new JSONArray(js(scenario,"(() => {const b=document.querySelectorAll('#qa-share button')[1];const r=b.getBoundingClientRect();return [r.left+r.width/2,r.top+r.height/2,innerWidth];})()"));
+        AtomicReference<float[]> target=new AtomicReference<>();
+        scenario.onActivity(a -> {
+            android.webkit.WebView web=a.getBridge().getWebView();int[] origin=new int[2];web.getLocationOnScreen(origin);
+            try {
+                float scale=web.getWidth()/(float)bounds.getDouble(2);
+                target.set(new float[]{origin[0]+(float)bounds.getDouble(0)*scale,origin[1]+(float)bounds.getDouble(1)*scale});
+            } catch(Exception e){throw new RuntimeException(e);}
+        });
+        float[] point=target.get();long time=SystemClock.uptimeMillis();
+        MotionEvent down=MotionEvent.obtain(time,time,MotionEvent.ACTION_DOWN,point[0],point[1],0);
+        MotionEvent up=MotionEvent.obtain(time,time+60,MotionEvent.ACTION_UP,point[0],point[1],0);
+        try {
+            InstrumentationRegistry.getInstrumentation().sendPointerSync(down);
+            InstrumentationRegistry.getInstrumentation().sendPointerSync(up);
+        } finally {down.recycle();up.recycle();}
     }
     private void choosePrivateReceiver() throws Exception {
         for(int i=0;i<80;i++){
@@ -128,7 +150,7 @@ public class AudioSharingInstrumentedTest {
         try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)){
             ready(scenario);
             mount(scenario,"{kind:'generated',title:'WRN Copy Test',audioUrl:"+JSONObject.quote(url)+"}");
-            js(scenario,"document.querySelectorAll('#qa-share button')[1].click()");
+            tapCopy(scenario);
             waitTrue(scenario,"document.querySelector('#qa-share .audio-share-status').textContent==='Link kopiert.'");
             scenario.onActivity(a -> {
                 ClipboardManager c=(ClipboardManager)a.getSystemService(Context.CLIPBOARD_SERVICE);

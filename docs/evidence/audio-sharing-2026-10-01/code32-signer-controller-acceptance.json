@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewedAt": "2026-10-01",
+  "reviewedCommit": "83db91794d0e2f167eca3037fb7d725b31f52ab7",
+  "signerScriptSha256": "64D7A8CB53EAE54436742C491FD9F74421020CBB7D44341BF4AB006BE564C9AC",
+  "helperScriptSha256": "C8AA22BDADD02022975D9B9A21BB806D60BD936A0C896054E488400F2E76AEFB",
+  "scope": [
+    "Read-only comparison to historical Code26 signer",
+    "PreflightOnly passed; artifact/report/source/certificate pins",
+    "Masked local password lifecycle and environment cleanup",
+    "Signature/certificate/payload checks and atomic output"
+  ],
+  "signedOutputCreatedByController": false,
+  "uploadPerformed": false
+}

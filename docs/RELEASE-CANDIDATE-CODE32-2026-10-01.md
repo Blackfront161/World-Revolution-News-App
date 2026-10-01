@@ -1,6 +1,6 @@
 # Release-Kandidat 2.1.2 / Code32
 
-Auf Nutzerauftrag vom 1. Oktober 2026 als neuer **unsignierter Android-AAB-Kandidat** gebaut. Die Signierung und Veröffentlichung sind nicht erfolgt.
+Auf Nutzerauftrag vom 1. Oktober 2026 gebaut und im Folgeauftrag **lokal signiert und geprüft**. Die physische Geräteprüfung und Veröffentlichung stehen weiterhin aus. Die folgende Tabelle dokumentiert die unveränderte unsignierte Eingabe; die signierte Ausgabe ist am Ende dieses Berichts gebunden.
 
 | Bindung | Wert |
 | --- | --- |
@@ -34,3 +34,26 @@ Code31 bleibt historisch unverändert an `8d2ef2346a7ce85e1a07904aef90f21b656574
 ## Unabhängige Artefaktabnahme
 
 WRN Kontrolleur hat Code32 am 1. Oktober 2026 im begrenzten Artefaktumfang akzeptiert: **PASS als unsignierter Kandidat**, weiterhin nicht veröffentlichungsfertig. Hash, Größe, alle 796 ZIP-Einträge, fehlende Signaturen, Quell-/Berichtsbindung, zentrale eingebettete Runtime-Dateien und Pins, SharePlugin sowie Original-Windrosenpixel wurden unabhängig geprüft. Beide Übersetzungstests wurden unabhängig erneut bestanden. Bericht: `code32-controller-acceptance.json` im Nachweisordner. Der Kontrolleur behauptet keinen unabhängigen Protobuf-Manifestdump. Root hat zusätzlich die Paket-/Versionsattribute direkt aus dem AAB-Protobuf gelesen: `com.world.revolution`, `2.1.2`, `32`; dieser gesonderte Check steht in `code32-artifact-check.json`.
+
+## Android-Prüfung und Signiervorbereitung
+
+Auf den Folgeauftrag „ok mache das“ wurde derselbe Quellcommit erneut gebaut. Die zweite AAB in `outputs/audio-sharing-code32-repro/` ist byteidentisch: SHA-256 `2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85`. Der Build nutzt vorhandene Gradle-Caches; dies ist kein Nachweis eines Builds mit leerem Cache.
+
+Ein eigener API36-Emulator prüfte eine separate Debug-App `com.world.revolution.autonomtest`. INTERNET wurde aus deren Manifest entfernt. Alle 352 Webasset-Einträge einschließlich der zwei Capacitor-Dateien stimmen bytegenau mit der Produktions-AAB überein. Der private Teilen-Empfänger existiert ausschließlich in der QA-APK; die Produktions-AAB enthält ihn nicht.
+
+Sieben Instrumentation-Tests bestanden: Code31 vorbereiten, Upgrade auf Code32 mit erhaltenen Favoriten/Einstellungen, echter Android-Teilen-Dialog für Senderseite/Originalepisode/erzeugtes Audio, Kopieren per echtem Touch mit unverändertem Linkschlüssel, Abbruch ohne Clipboardänderung, gespeicherter Volltext offline nach Activity-Neustart und derselbe Volltext nach `force-stop` ohne erneute Dateneinspeisung. Die Teilen-Tests verwenden synthetische Einträge mit dem Produktionshelper und der echten Capacitor-Bridge; das Ziel ist ausschließlich der private QA-Empfänger. Ein initiales Fixture wurde von einer Startseitenaktualisierung entfernt; außerdem benötigt Clipboard-Zugriff echte Nutzeraktivierung. Beide Testaufbaufehler wurden in den QA-Tests korrigiert, ohne die Kandidaten-Runtime zu ändern. Nachweise: `code32-android-emulator.json` und fünf zugehörige Testlogs im Nachweisordner.
+
+Der neue GUI-Signer `scripts/sign-google-play-aab-2.1.2-code32-6821a02-gui.ps1` bindet beide AABs, deren Berichte, Quellcommit, Version, 350 Quell-Webassets, 796 Payload-Einträge und das vorhandene Upload-Zertifikat. Der Kontrolleur hat Skript und schreibfreien `-PreflightOnly` unabhängig mit PASS akzeptiert (`code32-signer-controller-acceptance.json`, `code32-signer-preflight.json`). Nach lokaler Passworteingabe wurden AAB/Bericht atomar erzeugt. Root prüfte die fertige Datei anschließend erneut ohne Keystore-Zugriff: JAR-Signatur gültig, erwartetes Zertifikat und sämtliche Payload-/Webasset-Bytes unverändert.
+
+| Signierte Ausgabe | Wert |
+| --- | --- |
+| Datei | `outputs/audio-sharing-code32/WorldRevolutionNews-2.1.2-code32-6821a02-signed.aab` |
+| Größe | 43.275.817 Bytes |
+| SHA-256 | `66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A` |
+| Zertifikat SHA-256 | `7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8` |
+| Signaturbericht | `code32-signature-report.json` im Nachweisordner |
+| Erneute Root-Prüfung | `code32-signed-root-verification.json` im Nachweisordner |
+
+Physische Geräteprüfung, redaktionelle Lexikon-Freigabe und gesonderte Veröffentlichung bleiben offen. `releaseReady` bleibt `false`. Die Emulatorprüfung ist keine Abnahme einer physischen Produktionsinstallation; es wurde nichts hochgeladen.
+
+Der Kontrolleur prüfte anschließend auch die fertige signierte AAB unabhängig mit **PASS als lokal signierter Kandidat**: echter JAR-/Zertifikatcheck und vollständiger Vergleich aller 796 Payload-Einträge sowie 350 Quell-Webassets ohne Differenzen. Der Signaturbericht und sämtliche Hash-/Versionsbindungen stimmen überein. Nachweis: `code32-signed-controller-acceptance.json`. Diese Abnahme erteilt keine Play-Freigabe.
