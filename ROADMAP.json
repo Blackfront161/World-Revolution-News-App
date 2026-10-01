@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 aus6821a02 signiert, geprüft und in Google Play Produktion für100%-Roll-out eingereicht. Vorabprüfungen abgeschlossen, Google prüft die Änderungen. Wiederkehrende Vollbild-Updateaufforderungen für alle Nutzer der Produktionsversionen25,26,28 sind aktiv und erneut geprüft. Keine absolute Nutzungssperre; Code32 noch nicht als live bestätigt.",
+    "status": "Code32 aus6821a02 signiert, geprüft und in Google Play Produktion für100%-Roll-out eingereicht. Am1.Oktober wurde die Prüfung nach ausdrücklicher Nutzerfreigabe mit neun Store-Videos und der Gerätebildbereinigung neu gestartet; automatische Vorabprüfungen sind abgeschlossen, Google prüft das Paket. Wiederkehrende Vollbild-Updateaufforderungen für alle Nutzer der Produktionsversionen25,26,28 sind aktiv und erneut geprüft. Keine absolute Nutzungssperre; Code32 noch nicht als live bestätigt.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -78,19 +78,37 @@
       "releaseUrl": "https://play.google.com/console/u/1/developers/8812037282040696596/app/4974507251844219576/tracks/4697960679555676486/releases/23/details",
       "recoveryPrompt": "Active for all users of production versions25,26,28; recurring dismissible fullscreen prompt at cold start. Console reported25=12,26=14,28=0 prompted users.",
       "testTracks": "unchanged; Code27 recovery unavailable",
-      "recoveryVerificationReport": "docs/evidence/audio-sharing-2026-10-01/play-update-prompt-recheck.json"
+      "recoveryVerificationReport": "docs/evidence/audio-sharing-2026-10-01/play-update-prompt-recheck.json",
+      "reviewRestartForStoreMedia": {
+        "approvedByUser": true,
+        "performedAt": "2026-10-01",
+        "status": "google-review-in-progress",
+        "report": "docs/evidence/store-media-2026-10-01/store-media-submission.json"
+      }
     }
   },
   "storeListingMedia": {
     "observedAt": "2026-10-01",
-    "status": "images-in-google-review-videos-awaiting-user-approval",
+    "status": "google-review-in-progress",
     "sourceThread": "01a0d7ff-5930-7582-9998-845a92c2cb26",
     "phoneScreenshots": "Alle neun Console-Sprachen enthalten je sechs neue Smartphone-Screenshots; deutsche öffentliche Store-Seite zeigt die neuen Bilder.",
     "legacyDeviceAssets": "20 alte Juni-Bilder aus dem englischen Standardentwurf entfernt: 7 Tablet7,4 Tablet10,4 Desktop,5 XR. Abschließende Console-Ansicht zeigt die vier Änderungen gemeinsam mit Code32 als in Google-Prüfung; nicht live bestätigt.",
     "videoSource": "D:/Sauberes Wo Rev Ne/marketing/google-play-video-2026-09-27",
-    "videos": "Neun bereinigte Sprachvideos, je24 Sekunden; SHA256 stimmt für alle Dateien mit dem bestehenden Manifest überein. Noch nicht hochgeladen oder mit Play verknüpft.",
-    "youtubeChannelPrepared": "Blackfront (83 Abonnenten), UCt_2IqEjrQODDenKZC4wdOw; gesonderte Zustimmung zum Upload/YouTube-Regelwerk steht aus.",
-    "reviewRestart": "Auto-Review lehnte den angeklickten Neustart wegen fehlender ausdrücklicher Freigabe der Verzögerung ab; kein erneuter Versuch. Spätere Console-Ansicht zeigt die Bildänderungen trotzdem im Prüfungsbereich. Kein eigener erfolgreicher Neustart behauptet. Für eine zusätzliche Video-Einreichung mit erneuter Verzögerung ist User-Freigabe angefragt.",
+    "videos": "Neun bestehende Sprachvideos, je24 Sekunden, als nicht gelistet hochgeladen. Alle YouTube-Prüfungen ohne Probleme; Einbetten erlaubt, keine Altersbeschränkung. Jede Sprach-URL in Play gespeichert und als Videoänderung im Prüfungsbereich bestätigt. Keine Live-Sichtbarkeit belegt.",
+    "youtubeChannelPrepared": "Blackfront (83 Abonnenten), UCt_2IqEjrQODDenKZC4wdOw; Upload einschließlich YouTube-Bedingungen vom Nutzer bestätigt und durchgeführt.",
+    "reviewRestart": "Nach neuer ausdrücklicher Nutzerfreigabe am1.Oktober durchgeführt. Neun Videoänderungen, vier Bildänderungen und Code32 gemeinsam im Prüfungsbereich; automatische Vorabprüfungen abgeschlossen, Google prüft das Paket. Bestätigt am1.Oktober um06:30:54UTC.",
+    "videoUrls": {
+      "de-DE": "https://www.youtube.com/watch?v=JeTP62KaBhQ",
+      "en-US": "https://www.youtube.com/watch?v=obl0QVa6dqc",
+      "es-ES": "https://www.youtube.com/watch?v=W4FgW6r1zwQ",
+      "fr-FR": "https://www.youtube.com/watch?v=8Myzku7ChVE",
+      "it-IT": "https://www.youtube.com/watch?v=A_EH5r_Ms2E",
+      "pt-PT": "https://www.youtube.com/watch?v=qIwX5T0yHSk",
+      "ru-RU": "https://www.youtube.com/watch?v=UEXVeSYD1qM",
+      "el-GR": "https://www.youtube.com/watch?v=GYQ0zK6Agn8",
+      "tr-TR": "https://www.youtube.com/watch?v=sWEI4uCLDrQ"
+    },
+    "submissionReport": "docs/evidence/store-media-2026-10-01/store-media-submission.json",
     "evidence": "docs/PLAY-STORE-MEDIA-2026-10-01.md"
   },
   "projectBoundary": {
@@ -103,8 +121,8 @@
       "id": "PLAY-STORE-MEDIA-20261001",
       "priority": 1,
       "name": "Play-Store-Galerie bereinigen und vorhandene Sprachvideos einbinden",
-      "status": "images-in-google-review-videos-awaiting-user-approval",
-      "remaining": "Explizite Freigaben für YouTube-Upload samt Nutzungsbedingungen und gegebenenfalls verzögernden Google-Review-Neustart abwarten. Danach neun nicht gelistete Videos hochladen, jede Sprach-URL speichern und Videoänderungen einreichen; öffentliche Darstellung nach Google-Freigabe kontrollieren.",
+      "status": "google-review-in-progress",
+      "remaining": "Google-Freigabe abwarten. Neun Sprachvideos sind hochgeladen, gespeichert und nach freigegebenem Neustart in Google-Prüfung; Vorabprüfungen abgeschlossen. Öffentliche Galerie und Videoanzeige nach Freigabe kontrollieren.",
       "report": "docs/PLAY-STORE-MEDIA-2026-10-01.md"
     },
     {

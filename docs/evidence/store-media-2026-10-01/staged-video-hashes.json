@@ -1,0 +1,56 @@
+[
+  {
+    "File": "wrn-play-preview-de.mp4",
+    "SHA256": "bee17f7565e1faa6893b1d91c228d9b1214bb805de1c41d210a1ca936849ab38",
+    "Matches": true,
+    "Bytes": 3883937
+  },
+  {
+    "File": "wrn-play-preview-el.mp4",
+    "SHA256": "7b966e4907a5ab13cef84c2cdf7b80973b4b10581f1411d7aec8c45c349d58e6",
+    "Matches": true,
+    "Bytes": 3910201
+  },
+  {
+    "File": "wrn-play-preview-en.mp4",
+    "SHA256": "2b0215516f6294f4969931a75b1fd14449d5248b1764a1d920c49c4e2a83c77a",
+    "Matches": true,
+    "Bytes": 3762807
+  },
+  {
+    "File": "wrn-play-preview-es.mp4",
+    "SHA256": "09faa1278674e3dd30af284bc916f6d14cef01401dbb489217f4ef506101cee7",
+    "Matches": true,
+    "Bytes": 3873141
+  },
+  {
+    "File": "wrn-play-preview-fr.mp4",
+    "SHA256": "187dc8dd1fa93a3ec2f690ab82afe363fea50092b458d47210992fe6b426861b",
+    "Matches": true,
+    "Bytes": 3889660
+  },
+  {
+    "File": "wrn-play-preview-it.mp4",
+    "SHA256": "fb6cfcd3331d328d2e15b5b0de72e54d0a02198caa0b23c07e53547ec487beee",
+    "Matches": true,
+    "Bytes": 3785438
+  },
+  {
+    "File": "wrn-play-preview-pt.mp4",
+    "SHA256": "8348a18bbd04a5ae5e5e6717a31c8b7e1fb719dfef4c2b0d57ad1ad19063567a",
+    "Matches": true,
+    "Bytes": 3795849
+  },
+  {
+    "File": "wrn-play-preview-ru.mp4",
+    "SHA256": "0b87a17d0fdea0ec29408e2994279b3f6bb185ace4a7b07ceba39bb9c9c55ff3",
+    "Matches": true,
+    "Bytes": 3785922
+  },
+  {
+    "File": "wrn-play-preview-tr.mp4",
+    "SHA256": "655b0e25d1a9f5a9c293a0ab5333ae4b7debe265caba0836734b506b06d65eda",
+    "Matches": true,
+    "Bytes": 3754205
+  }
+]

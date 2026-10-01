@@ -1,0 +1,106 @@
+{
+  "channel": "UCt_2IqEjrQODDenKZC4wdOw",
+  "rows": [
+    {
+      "title": "World Revolution News – Uygulama ön izlemesi (Türkçe)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – Προεπισκόπηση εφαρμογής (Ελληνικά)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – Обзор приложения (Русский)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – Pré-visualização da aplicação (Português)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – Anteprima dell’app (Italiano)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – Aperçu de l’application (Français)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – Vista previa de la app (Español)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – App preview (English)",
+      "unlisted": true
+    },
+    {
+      "title": "World Revolution News – App-Vorschau (Deutsch)",
+      "unlisted": true
+    }
+  ],
+  "publications": [
+    {
+      "locale": "de",
+      "title": "World Revolution News – App-Vorschau (Deutsch)",
+      "url": "https://youtu.be/JeTP62KaBhQ",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "en",
+      "title": "World Revolution News – App preview (English)",
+      "url": "https://youtu.be/obl0QVa6dqc",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "es",
+      "title": "World Revolution News – Vista previa de la app (Español)",
+      "url": "https://youtu.be/W4FgW6r1zwQ",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "fr",
+      "title": "World Revolution News – Aperçu de l’application (Français)",
+      "url": "https://youtu.be/8Myzku7ChVE",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "it",
+      "title": "World Revolution News – Anteprima dell’app (Italiano)",
+      "url": "https://youtu.be/A_EH5r_Ms2E",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "pt",
+      "title": "World Revolution News – Pré-visualização da aplicação (Português)",
+      "url": "https://youtu.be/qIwX5T0yHSk",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "ru",
+      "title": "World Revolution News – Обзор приложения (Русский)",
+      "url": "https://youtu.be/UEXVeSYD1qM",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "el",
+      "title": "World Revolution News – Προεπισκόπηση εφαρμογής (Ελληνικά)",
+      "url": "https://youtu.be/GYQ0zK6Agn8",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    },
+    {
+      "locale": "tr",
+      "title": "World Revolution News – Uygulama ön izlemesi (Türkçe)",
+      "url": "https://youtu.be/sWEI4uCLDrQ",
+      "visibility": "unlisted",
+      "checks": "no issues"
+    }
+  ]
+}
