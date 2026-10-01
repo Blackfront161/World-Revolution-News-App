@@ -56,6 +56,10 @@ def project_episode(item, source=None, sources=()):
     result.update(description="", audioUrl="", artwork="")
     if source_restriction(item):
         result.update(license='Rights unverified; original source only', rightsStatus='unverified')
+    identifier = str(item.get('rawId') or item.get('id') or '').removeprefix('original:')
+    if item.get('sourceId') in RULES.get('unverifiedLanguageSourceIds', []) or identifier in RULES.get('unverifiedLanguageEpisodeIds', []):
+        result.update(language='und', languageVerified=False, languageReviewRequired=True,
+                      languageConfidence=0, languageSource='mixed-channel-requires-review', configuredLanguages=['es','ca'])
     if restricted_endpoint(item):
         result["sourceId"] = RULES["canonicalSourceId"]
         result["endpointId"] = RULES["endpointId"]

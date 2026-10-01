@@ -105,8 +105,8 @@ Zine spray stencils: OK
 [js-contract] 51 tests passed
 .s..s......s........................................................ [ 46%]
 ........................................................................ [ 95%]
-......                                                                   [100%]
-143 passed, 3 skipped, 4 subtests passed in 24.56s
+.......                                                                  [100%]
+144 passed, 3 skipped, 4 subtests passed in 24.81s
 [pytest-contract] 40 modules managed by pytest
 [python-main-contract] tests/test_block3_assets.py
 Block 3 assets: OK

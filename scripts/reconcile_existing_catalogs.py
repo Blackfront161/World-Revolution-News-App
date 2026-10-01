@@ -91,6 +91,8 @@ def main():
     rules['metadataOnlySourceIds'] = sorted(new_ids)
     rules['metadataOnlyFeedUrls'] = sorted({url for s in reviewed.values() for url in s['feedUrls']})
     rules['metadataOnlyEpisodeIds'] = sorted({e['id'] for e in app_eps if e.get('sourceId') in new_ids})
+    rules['unverifiedLanguageSourceIds'] = ['contrabanda-specials']
+    rules['unverifiedLanguageEpisodeIds'] = sorted(e['id'] for e in app_eps if e.get('sourceId')=='contrabanda-specials')
     def project(item):
         if item.get('sourceId') not in new_ids: return item
         output = {k:v for k,v in item.items() if k in rules['metadataFields']}

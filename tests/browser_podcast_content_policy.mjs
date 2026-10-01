@@ -14,6 +14,10 @@ const mudawanat = {
   license:'CC BY-NC-ND 3.0', rightsStatus:undefined, description:'FOREIGN HISTORICAL DESCRIPTION',
   audioUrl:'https://example.org/mudawanat.mp3', artwork:'https://example.org/mudawanat.jpg'
 };
+const contrabanda = {
+  ...JSON.parse(fs.readFileSync(path.join(root,'podcasts.json'),'utf8')).find(item=>item.sourceId==='contrabanda-specials'),
+  language:'es', languageVerified:true, audioUrl:'https://example.org/contrabanda.mp3'
+};
 const episode = {
   id:rules.restrictedEpisodeIds[0], title:'Solidarische Politik gegen Faschismus', sourceName:'Radio Dreyeckland',
   sourceId:'', sourceKind:'free-radio', language:'de', region:'Europe', published:new Date().toISOString(),
@@ -53,7 +57,7 @@ try {
     if (url.pathname.endsWith('/podcast-sources.json')) return json([
       {id:rules.canonicalSourceId,name:'Radio Dreyeckland',language:'de'},
       {id:rules.endpointId,canonicalSourceId:rules.canonicalSourceId,name:'RDL podcast endpoint',feedUrl:rules.feedUrls[0],contentPolicy:'metadata_and_links_only'}]);
-    if (url.pathname.endsWith('/podcasts.json')) return json([episode,ordinary,mudawanat]);
+    if (url.pathname.endsWith('/podcasts.json')) return json([episode,ordinary,mudawanat,contrabanda]);
     if (url.pathname.endsWith('/news.json') || url.pathname.endsWith('/events.json') || url.pathname.endsWith('/radio-stations.json') || url.pathname.endsWith('/generated-podcasts.json')) return json([]);
     if (url.origin!==origin) return json({});
     return route.continue();
@@ -95,6 +99,11 @@ try {
   assert(!historicalText.includes('FOREIGN HISTORICAL'));
   assert.equal(await historicalLicenseCard.locator('img,.btn-media-play').count(),0);
   result.checks.push('Visible legacy Mudawanat card: stale CC license replaced with unverified rights notice; no copied description, artwork or playback.');
+  const mixedChannelCard=page.locator('.original-podcast-card').filter({hasText:contrabanda.title});
+  await mixedChannelCard.waitFor({state:'visible'});
+  assert((await mixedChannelCard.locator('.original-podcast-meta').first().innerText()).includes('UND'));
+  assert.equal(await mixedChannelCard.locator('img,.btn-media-play').count(),0);
+  result.checks.push('Visible legacy Contrabanda card: stale ES channel label becomes UND while per-episode language review is held.');
   assert.equal(await legacy.locator('img,.btn-media-play').count(),0);
   assert(!(await legacy.innerText()).includes('FOREIGN'));
   assert((await legacy.innerText()).includes('Diese Folge auf der Originalseite anhören.'));

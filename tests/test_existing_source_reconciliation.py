@@ -58,6 +58,13 @@ def test_failed_sources_survive_successful_refresh_and_narrow_archive_budget():
     assert next(e for e in result if e['id']=='retained')==held
 
 
+def test_stale_mixed_channel_language_cannot_override_review_hold():
+    rules=read(ROOT,'podcast-content-policy.json')
+    for item in [{'sourceId':'contrabanda-specials'}, {'id':'original:'+rules['unverifiedLanguageEpisodeIds'][0]}]:
+        result=project_episode({**item,'language':'es','languageVerified':True})
+        assert result['language']=='und' and result['languageVerified'] is False and result['languageReviewRequired']
+
+
 def test_common_library_contains_all_input_ids_and_german_books():
     app=read(ROOT,'library-feed.json');data=read(DATA,'library-feed.json')
     assert app==data and len(app)==715

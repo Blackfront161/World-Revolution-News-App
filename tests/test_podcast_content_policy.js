@@ -46,6 +46,10 @@ for (const sourceId of policy.rules.metadataOnlySourceIds || []) {
 for (const id of policy.rules.metadataOnlyEpisodeIds || []) {
   assert(policy.isMetadataOnly({id:`original:${id}`,candidates:['https://example.org/foreign.mp3']}));
 }
+for (const item of [{sourceId:'contrabanda-specials'},{id:`original:${policy.rules.unverifiedLanguageEpisodeIds[0]}`}]) {
+  const projected=policy.projectEpisode({...item,language:'es',languageVerified:true});
+  assert.equal(projected.language,'und');assert.equal(projected.languageVerified,false);assert.equal(projected.languageReviewRequired,true);
+}
 assert.equal(media.normalizePodcast(ordinary).audioUrl, ordinary.audioUrl);
 
 const stored = new Map([

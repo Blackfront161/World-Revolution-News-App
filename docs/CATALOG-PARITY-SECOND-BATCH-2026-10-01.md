@@ -38,13 +38,15 @@ Die zwei Autorenschreibweisen wurden anhand der Originalkatalogseiten für [100,
 
 `scripts/reconcile_existing_catalogs.py` liest die unveränderlichen Gitstände App `71c11c6bd4ff2d3cbc09dec41db54380f32dde58` und Daten `dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915`. Ohne `--write` erfolgt keine Produktänderung. Mit `--write` werden zwischenzeitlich geänderte Kataloge abgewiesen. Ein-/Ausgabehashes und Zählungen: [bindings.json](evidence/catalog-parity-2026-10-01/bindings.json).
 
-- Gesamte Vertragsmatrix: 51 JS-Verträge; 143 Python-Tests und vier Subtests bestanden, drei übersprungen; vier eigenständige Python-Skripte bestanden.
+- Gesamte Vertragsmatrix: 51 JS-Verträge; 144 Python-Tests und vier Subtests bestanden, drei übersprungen; vier eigenständige Python-Skripte bestanden.
 - Isolierte Browserprüfung: aktuelles Autonom-Design, Classic und alter Classic-Podcastdialog einschließlich fehlendem Politikmodul bestanden; keine Remote-Medienanfrage.
 - Isolierte Bibliotheksprüfung: echter 715-Titel-Katalog plus begrenzter Spiegel und Rücknahme; deutsche Suche/Autor/Format, Tastatur, 320/390/768/1440 Pixel, neun UI-Sprachen sowie vollständiger Katalog-Netzwerkausfall mit gespeichertem Rücknahmeeintrag bestanden.
 - Neue lokale Cachegeneration App r10 / Preview v98; keine Änderung des Android-Versioncodes. Diese Generation ist nicht im bereits signierten Code32 enthalten.
 - Unabhängige Prüfung dieses neuen Batches: angefordert; vorherige RDL-Abnahme gilt nicht als Abnahme dieser Änderungen.
 
 Der Kontrolleur fand im ursprünglichen Kandidaten `50d1122b` / `03a10224` einen Rechteblocker: Die historische Mudawanat-Lizenz wurde im alten Classic-Dialog trotz unbestätigter Rechte sichtbar. Die Korrektur ersetzt Lizenzfelder der 16 Quellen und ihrer Folgen ausdrücklich durch „Rights unverified; original source only“ und propagiert `rightsStatus: unverified`. Die Runtime überschreibt auch alte Cacheangaben und reine historische IDs. Die Browserprüfung umfasst jetzt eine tatsächlich sichtbare Mudawanat-Karte aus einem alten CC-Payload; die CC-Angabe und fremde Medien dürfen dort nicht erscheinen. Das ursprüngliche Zwischenurteil war RED, eine erneute Abnahme dieser Korrektur steht aus.
+
+Die Sprachsperre von Contrabanda gilt zusätzlich für alte Feed-/Cache-Payloads: Quellen-ID oder eine der 35 historischen Folgen-IDs erzwingen `und` und offenen Reviewstatus. Eine alte sichtbare Classic-Karte mit behauptetem Spanisch wird in der Browserprüfung als UND dargestellt. Der frische Intake bleibt gesperrt.
 
 ## Noch offen
 
