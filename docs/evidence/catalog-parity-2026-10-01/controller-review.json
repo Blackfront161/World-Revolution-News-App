@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "GREEN",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewerTitle": "WRN Kontrolleur",
+  "scope": "second local catalog batch only",
+  "reviewedAppCommit": "9dffc74c4f8614a422b6e3016bd715adea857c6e",
+  "appImplementationCommit": "6cd25662c46c5b84c556c011a6a397cf0f7993e6",
+  "reviewedDataCommit": "e62f56280b737ce6559b830d4a4bba7c349d506f",
+  "checks": {
+    "sourceRowsRegistered": 16,
+    "episodeMetadataPreserved": 444,
+    "libraryTitles": 715,
+    "germanTitles": 53,
+    "contrabandaHistoricalIdsHeld": 35,
+    "javascriptContracts": 51,
+    "pythonPassed": 145,
+    "pythonSkipped": 3,
+    "pythonSubtests": 4,
+    "pythonMainScripts": 4,
+    "podcastBrowserChecks": 6,
+    "sha256Mismatches": 0,
+    "dryReproduction": "byte-neutral",
+    "worktreesAndIndex": "clean"
+  },
+  "closedFindings": [
+    "Unverified historical CC license displayed in legacy Classic card",
+    "Stale Contrabanda ES verification could override UND review hold",
+    "Final matrix evidence count drift"
+  ],
+  "notGranted": [
+    "rights",
+    "source identity hold resolution",
+    "new publisher admission",
+    "Android build",
+    "signing",
+    "upload",
+    "Store release",
+    "website activation",
+    "live publication"
+  ]
+}

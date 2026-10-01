@@ -442,7 +442,7 @@
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "second_local_batch_implemented_review_pending_full_parity_pending",
+      "status": "second_local_batch_accepted_full_parity_pending",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -538,7 +538,7 @@
       },
       "secondImplementationBatch": {
         "id": "EXISTING-PODCASTS-LIBRARY",
-        "status": "implemented_local_independent_review_pending",
+        "status": "accepted_local_not_published",
         "registeredExistingSources": 16,
         "importedExistingEpisodeMetadata": 444,
         "libraryItems": 715,
@@ -553,7 +553,15 @@
         "bindings": "docs/evidence/catalog-parity-2026-10-01/bindings.json",
         "publication": "local_only_not_in_code32",
         "versionCode": null,
-        "next": "Unabhängige Abnahme; vollständige gemeinsame Podcastprojektion und Website-Anbindung, danach 19 Lexikonbearbeitungen und drei belegte Lernpfade."
+        "next": "Vollständige gemeinsame Podcastprojektion und Website-Anbindung, danach 19 Lexikonbearbeitungen und drei belegte Lernpfade.",
+        "appImplementationCommit": "6cd25662c46c5b84c556c011a6a397cf0f7993e6",
+        "dataImplementationCommit": "e62f56280b737ce6559b830d4a4bba7c349d506f",
+        "independentReview": {
+          "status": "GREEN",
+          "reviewedAppCommit": "9dffc74c4f8614a422b6e3016bd715adea857c6e",
+          "evidence": "docs/evidence/catalog-parity-2026-10-01/controller-review.json",
+          "scope": "local_catalog_batch_only"
+        }
       }
     },
     {
@@ -577,7 +585,7 @@
         "reviewedCommit": "d58746d020325ae6357a8f8b4bf268de001c7ef7",
         "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md",
         "userEditorialApproval": "approved 2026-10-01 for Code32",
-        "librarySync": "715 gemeinsame Werk-IDs, darunter 53 DE; lokale Runtime/Browserprüfung bestanden, unabhängige Prüfung und Websiteübernahme offen"
+        "librarySync": "715 gemeinsame Werk-IDs, darunter 53 DE; lokale Runtime/Browserprüfung und unabhängige Abnahme bestanden; Websiteübernahme und Veröffentlichung offen"
       },
       "baseline": {
         "lexiconTerms": 154,
