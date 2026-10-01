@@ -3,6 +3,7 @@ from pathlib import Path
 import subprocess
 import hashlib
 import sys
+import pytest
 from unittest.mock import patch
 
 import aggregate_podcasts as collector
@@ -11,11 +12,17 @@ from podcast_content_policy import project_episode, preserve_failed_sources
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT.parent/'wrn-data-autonom-current'
 INPUTS = [(ROOT,'71c11c6bd4ff2d3cbc09dec41db54380f32dde58'),(DATA,'dcb0e7f7e97b9a437019ad4a17c9a3bc9a8c3915')]
+LOCAL_INPUTS_AVAILABLE = all(root.exists() and subprocess.run(
+    ['git','-C',str(root),'cat-file','-e',ref+':podcasts.json'],capture_output=True
+).returncode==0 for root,ref in INPUTS)
+local_snapshot = pytest.mark.skipif(not LOCAL_INPUTS_AVAILABLE,
+    reason='Local immutable app/data input checkouts are unavailable; fixture policy/merge contracts still run')
 
 
 def read(root, name): return json.loads((root/name).read_text(encoding='utf-8'))
 
 
+@local_snapshot
 def test_stable_ids_unaffected_archives_and_languages_are_preserved():
     ids = set(read(ROOT,'podcast-content-policy.json')['metadataOnlySourceIds'])
     for root,ref in INPUTS:
@@ -67,6 +74,7 @@ def test_stale_mixed_channel_language_cannot_override_review_hold():
         assert result['language']=='und' and result['languageVerified'] is False and result['languageReviewRequired']
 
 
+@local_snapshot
 def test_common_library_contains_all_input_ids_and_german_books():
     app=read(ROOT,'library-feed.json');data=read(DATA,'library-feed.json')
     assert app==data and len(app)==715
@@ -78,6 +86,7 @@ def test_common_library_contains_all_input_ids_and_german_books():
     assert {b['sourceId'] for b in app} <= {s['id'] for s in read(ROOT,'library-sources.json')}
 
 
+@local_snapshot
 def test_dry_reproduction_does_not_change_bound_product_or_evidence_bytes():
     files=[r/name for r,_ in INPUTS for name in ['podcast-sources.json','podcasts.json','podcast-content-policy.json','library-feed.json','library-sources.json','podcast_content_policy.py']]
     files += [ROOT/'podcast-content-policy.js',ROOT/'docs/evidence/catalog-parity-2026-10-01/bindings.json']
