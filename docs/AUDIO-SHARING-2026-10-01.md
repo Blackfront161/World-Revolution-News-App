@@ -20,7 +20,7 @@ Der Browser-Test lässt sich mit `WRN_PLAYWRIGHT_MODULE` als absolutem Pfad zur 
 
 Dies ist ein lokaler Folge-Draft: App-Cache **r8**, Preview **v96**, App-JS **54**, CSS **49**, Audio-Tools **2**. Der App-Check und die gegenwärtigen Cache-/Asset-Verträge wurden entsprechend erhöht.
 
-Das bereits akzeptierte Code31-AAB bleibt an Runtime `8d2ef2346a7ce85e1a07904aef90f21b65657408` gebunden und unverändert (SHA-256 `17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7`). Die neue Funktion ist darin nicht enthalten. Ein neuer Android-Build, Prüfung auf einem physischen Gerät, Signierung und Veröffentlichung sind noch offen. Die bestehende Website-Veröffentlichung wurde durch diese Änderung nicht ersetzt.
+Das bereits akzeptierte Code31-AAB bleibt an Runtime `8d2ef2346a7ce85e1a07904aef90f21b65657408` gebunden und unverändert (SHA-256 `17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7`). Die neue Funktion ist darin nicht enthalten. Nach der Runtime-Abnahme wurde auf ausdrücklichen Nutzerauftrag **Code32** aus `6821a0245b581b0268e5f7fcbb9b2688c7b5a12f` gebaut; dieser neue unsignierte Kandidat enthält Audio-Sharing. Bericht: `RELEASE-CANDIDATE-CODE32-2026-10-01.md`. Prüfung auf einem physischen Gerät, Signierung und Veröffentlichung bleiben offen. Die bestehende Website-Veröffentlichung wurde durch diese Änderung nicht ersetzt.
 
 ## Unabhängige Abnahme
 

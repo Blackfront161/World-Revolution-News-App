@@ -15,16 +15,27 @@
   "current": {
     "version": "2.1.2",
     "branch": "codex/code26-home-correction-20260927",
-    "versionCode": 31,
-    "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
-    "reviewedCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
-    "status": "Lokaler Produktionskandidat: Autonom, drei lokale Quellenaufnahmen und Classic-Korrekturen umgesetzt; Runtime8d2ef23 und Nachweiscommitd55e471 unabhängig akzeptiert. Code31 unsigniert und commitgenau gebaut; Browser mit vier echten Zielbreiten sowie isoliertes Android-Upgrade/Offline/Prozessneustart/Systembewegung bestanden. Produktionssignatur, physisches Gerät, vollständiger Produktionsbrowser-Netzausfall und Veröffentlichung bleiben offen.",
-    "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
-    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
-    "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
-    "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
-    "artifactSha256": "17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7",
-    "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+    "versionCode": 32,
+    "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+    "status": "Lokaler Produktionskandidat: Code32 commitgenau aus6821a02 unsigniert gebaut; Audio-Sharing-Teil fe2c527 unabhängig akzeptiert. Gradle lintRelease/testReleaseUnitTest/bundleRelease und350 eingebettete Webassets ohne Abweichung geprüft. Native Windrose pixelgleich zum Original und bytegleich zuCode31. Physische Android-Prüfung, redaktionelle Freigabe des lokalen Lexikon-Drafts, Signierung und Veröffentlichung bleiben offen.",
+    "artifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
+    "artifactSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+    "artifactMode": "unsigned-candidate",
+    "releaseReady": false,
+    "runtimeReview": {
+      "scope": "Audio-Sharing",
+      "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
+      "result": "PASS"
+    },
+    "artifactReview": {
+      "status": "accepted",
+      "scope": "Code32 hash/source/assets/plugin/icon/unsigned only",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+      "reviewedAt": "2026-10-01",
+      "report": "docs/evidence/audio-sharing-2026-10-01/code32-controller-acceptance.json"
+    },
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus"
   },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
@@ -56,8 +67,9 @@
         "appCssRelease": 49,
         "audioToolsRelease": 2
       },
-      "distribution": "Lokaler Folge-Draft; nicht im unveränderten Code31-AAB enthalten und noch nicht veröffentlicht. Android-Systemdialog auf physischem Gerät noch nicht geprüft.",
-      "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a"
+      "distribution": "Im lokalen unsignierten2.1.2/Code32-Kandidaten aus6821a02 enthalten; keine Signierung oder Veröffentlichung. Physischer Android-Systemdialog noch nicht geprüft.",
+      "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
+      "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json"
     },
     {
       "id": "CONTROL-CORRECTIONS-20260930",
@@ -775,5 +787,19 @@
     "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
     "Autorisierte Signierung und Store-Freigabe an den neuen commitgenauen Code31-Kandidaten binden; Code29-Baseline enthält Autonom nicht.",
     "Android-Signierung und Store-Upload bleiben nicht autorisiert; separat autorisierte Website-Nachrichten-/Directoryveröffentlichung am 01.10.2026 abgeschlossen."
-  ]
+  ],
+  "previousUnsignedCandidate": {
+    "version": "2.1.2",
+    "branch": "codex/code26-home-correction-20260927",
+    "versionCode": 31,
+    "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
+    "reviewedCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "status": "Lokaler Produktionskandidat: Autonom, drei lokale Quellenaufnahmen und Classic-Korrekturen umgesetzt; Runtime8d2ef23 und Nachweiscommitd55e471 unabhängig akzeptiert. Code31 unsigniert und commitgenau gebaut; Browser mit vier echten Zielbreiten sowie isoliertes Android-Upgrade/Offline/Prozessneustart/Systembewegung bestanden. Produktionssignatur, physisches Gerät, vollständiger Produktionsbrowser-Netzausfall und Veröffentlichung bleiben offen.",
+    "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
+    "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "artifactSha256": "17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7",
+    "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+  }
 }
