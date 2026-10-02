@@ -1655,12 +1655,12 @@
     {"id": "disability-justice", "category": "struggles", "sources": ["knowledge-disability-justice"], "title": {"de": "Disability Justice", "en": "Disability justice"}, "aliases": {}, "summary": {"de": "Disability Justice verbindet Behindertenbefreiung mit Kritik an Rassismus, Kapitalismus und weiteren Herrschaftsverhältnissen. Führung durch besonders Betroffene und kollektiver Zugang stehen im Mittelpunkt der von Sins Invalid formulierten Prinzipien.", "en": "Disability justice connects disabled liberation with challenges to racism, capitalism and other systems of domination. Leadership by those most affected and collective access are central to Sins Invalid’s principles."}, "practice": {"de": "Zugänglichkeit betrifft Sprache, Räume, Zeit, Pflege und Beteiligung. Gegenseitige Abhängigkeit wird als gesellschaftliche Realität ernst genommen; Bewegungen gestalten Arbeit so, dass unterschiedliche Körper und Bedürfnisse mitbestimmen können.", "en": "Access concerns language, spaces, time, care and participation. Interdependence is recognised as a social reality; movements organise so different bodies and needs can shape decisions."}, "debate": {"de": "Eine einzelne technische Anpassung erfüllt diesen Anspruch nicht vollständig. Debatten betreffen Ressourcen und Prioritäten, ohne Selbstbestimmung gegen notwendige Unterstützung auszuspielen.", "en": "A single technical adjustment cannot fully meet these aims. Debates concern resources and priorities without opposing autonomy to necessary support."}, "related": ["ableism", "collective-care", "intersectionality"], "revision": {"version": "knowledge-expansion-2", "date": "2026-10-01", "note": "Original WRN revision with a specific primary reference; independent editorial review pending."}}
   );
 
-  // Original DE/EN editorial drafts; references are links, not content-reuse grants.
+  // Original DE/EN explanations; references are links, not content-reuse grants.
   SOURCES.push(...[
-    ['knowledge-agroecology', 'FAO · The ten elements of agroecology', 'https://www.fao.org/agroecology/overview/the-10-elements-of-agroecology/the-10-elements-of-agroecology/'],
+    ['knowledge-agroecology', 'FAO · The ten elements of agroecology', 'https://www.fao.org/agroecology/overview/the-10-elements-of-agroecology/en'],
     ['knowledge-seed-sovereignty', 'La Via Campesina · Our Seeds, Our Future (2013)', 'https://www.ipcinfo.org/fileadmin/user_upload/aahm/docs/viacampesinaEN-notebook6.pdf'],
     ['knowledge-energy-democracy', 'Energy Democracy · Principles', 'https://energy-democracy.net/principals/index.html'],
-    ['knowledge-climate-reparations', 'Climate Justice Alliance · About', 'https://climatejusticealliance.org/about/'],
+    ['knowledge-climate-reparations', 'Climate Justice Alliance · Just Transition', 'https://climatejusticealliance.org/just-transition/'],
     ['knowledge-environmental-racism', 'Bullard Center · Land use and planning', 'https://www.bullardcenter.org/policy-areas/land-use-urban-and-regional-planning'],
     ['knowledge-community-supported-agriculture', 'URGENCI · European CSA Declaration', 'https://urgenci.net/our-european-declaration/'],
     ['knowledge-digital-commons', 'Creative Commons · Who we are', 'https://creativecommons.org/who-we-are/'],
@@ -1672,8 +1672,8 @@
   ].map(([id, name, url]) => ({
     id, name, language: 'English', url, downloads: [],
     description: {
-      de: 'Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.',
-      en: 'Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant.'
+      de: 'Primärquelle: eigener Ansatz der genannten Organisation. Referenz für die WRN-Erklärung; keine allgemeine Rechtefreigabe.',
+      en: 'Primary source: the named organisation’s own approach. Reference for the WRN explanation; no general reuse grant.'
     }
   })));
   TERMS.push(...[
@@ -1710,7 +1710,7 @@
       'Scope, responsibility and procedures are contested. This political demand should not be equated with an automatic individual entitlement to compensation.',
       ['climate-justice', 'anti-colonialism', 'just-transition']),
     extraTerm('environmental-racism', 'ecology', ['knowledge-environmental-racism'], 'Umweltrassismus', 'Environmental racism',
-      'Umweltrassismus beschreibt rassistisch strukturierte Ungleichheit bei Umweltbelastungen, Schutz und Mitsprache. Der Bullard Center untersucht dafür unter anderem segregiertes Wohnen und diskriminierende Flächennutzung.',
+      'Umweltrassismus beschreibt rassistisch strukturierte Ungleichheit bei Umweltbelastungen, Schutz und Mitsprache. Das Bullard Center untersucht dafür unter anderem segregiertes Wohnen und diskriminierende Flächennutzung.',
       'Environmental racism describes racially structured inequality in environmental burdens, protection and participation. The Bullard Center examines segregated housing and discriminatory land use among its causes.',
       'Eine Untersuchung verbindet Belastungsdaten mit Planungsgeschichte und Erfahrungen betroffener Bewohnerinnen und Bewohner, statt allein räumliche Nähe zu betrachten.',
       'An investigation connects exposure data with planning history and residents’ experiences rather than considering proximity alone.',
@@ -1722,8 +1722,8 @@
       'Community-supported agriculture connects producers and a community of consumers through longer-term agreements. Harvests, responsibilities and farming risks are shared.',
       'Eine Gruppe bespricht Finanzierung, Ernteverteilung und Beteiligung vor Beginn der Saison. Die URGENCI-Erklärung beschreibt diesen partnerschaftlichen Ansatz.',
       'A group discusses funding, harvest distribution and participation before the season. URGENCI’s declaration describes this partnership approach.',
-      'Vorauszahlungen und unbezahlte Mitarbeit können Menschen ausschließen. Solidarität verlangt auch faire Arbeit und einen zugänglichen Zugang zu Lebensmitteln.',
-      'Advance payments and unpaid participation can exclude people. Solidarity also requires fair work and accessible food provision.',
+      'Vorauszahlungen und unbezahlte Mitarbeit können Menschen ausschließen. Solidarität verlangt auch faire Arbeit und einen bezahlbaren, barrierearmen Zugang zu Lebensmitteln.',
+      'Advance payments and unpaid participation can exclude people. Solidarity also requires fair work and affordable, accessible food provision.',
       ['food-sovereignty', 'agroecology', 'solidarity-economy']),
     extraTerm('digital-commons', 'organisation', ['knowledge-digital-commons'], 'Digitale Gemeingüter', 'Digital commons',
       'Digitale Gemeingüter sind gemeinsam nutzbare Wissens-, Kultur- oder Softwarebestände mit Regeln für Weiterverwendung und Pflege. Creative Commons entwickelt Werkzeuge für solches Teilen.',
@@ -1774,8 +1774,8 @@
       'Needs can conflict. Limits and resources should be discussed together without shifting all responsibility onto affected individuals.',
       ['disability-justice', 'accessibility', 'collective-care'])
   ].map(term => ({ ...term, revision: {
-    version: 'knowledge-expansion-3', date: '2026-10-02',
-    note: 'Original WRN DE/EN draft with a specific primary reference; independent editorial review pending.'
+    version: 'knowledge-expansion-3', date: '2026-10-02', status: 'reviewed', reviewedAt: '2026-10-02',
+    note: 'Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN.'
   } })));
 
   // Keep the public glossary stable when an editorial expansion replaces an older draft entry.

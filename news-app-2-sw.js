@@ -1,7 +1,7 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v106`;
+const CACHE_NAME = `${CACHE_PREFIX}v107`;
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
@@ -35,7 +35,7 @@ const SHELL = [
   './article-summary-core.js?preview=1',
   './shared-translation-client.js?release=5',
   './stories-core.js?release=3',
-  './lexicon-tab.js?release=9',
+  './lexicon-tab.js?release=10',
   './prisoner-solidarity.js?release=4',
   './zine-designer.js?release=3',
   './media-player.js?release=5',
@@ -47,7 +47,7 @@ const SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=64',
+  './news-app-2.js?release=65',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -80,7 +80,7 @@ const CORE_SHELL = [
   './article-summary-core.js?preview=1',
   './shared-translation-client.js?release=5',
   './stories-core.js?release=3',
-  './lexicon-tab.js?release=9',
+  './lexicon-tab.js?release=10',
   './prisoner-solidarity.js?release=4',
   './zine-designer.js?release=3',
   './media-player.js?release=5',
@@ -92,7 +92,7 @@ const CORE_SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=64'
+  './news-app-2.js?release=65'
 ];
 const INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${CACHE_NAME}`, self.location.href)

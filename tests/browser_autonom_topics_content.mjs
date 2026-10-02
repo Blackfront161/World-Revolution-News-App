@@ -99,14 +99,17 @@ try {
       const card=p.locator('.lexicon-card').filter({has:p.locator('summary strong',{hasText:term.title[language]})}).first();
       await expect(card).toBeVisible();await card.locator('summary').click();
       await expect(card.locator('.source-actions a')).toHaveCount(1);
-      await expect(card).toContainText(language==='de'?'Prüfung ausstehend':'review pending');
+      await expect(card).toContainText(language==='de'?'Redaktionell geprüft':'Editorially reviewed');
+      await expect(card).toContainText('2026-10-02');
+      await expect(card).not.toContainText(language==='de'?'Prüfung ausstehend':'review pending');
+      await expect(card.locator('.source-actions a')).toHaveAttribute('href',context.window.WRNLexicon184.snapshot().sources.find(s=>s.id===term.sources[0]).url);
       await expect(card).toContainText(term.debate[language]);
     }
   }
   await p.locator('#next-language').selectOption('de');
   await p.locator('#next-lexicon-query').fill('Agrarökologie');await p.locator('.lexicon-card summary').click();
   await p.screenshot({path:path.join(out,'agroecology-390.png')});
-  result.checks.push('Four learning paths with 33 bound entries; all 12 new terms visible in DE/EN with debate, primary link and draft status.');
+  result.checks.push('Four learning paths with 33 bound entries; all 12 new terms visible in DE/EN with debate, exact primary link and dated independent editorial review.');
   assert.deepEqual(result.errors,[]);result.status='PASS';
 } catch(e) {result.status='FAIL';result.error=String(e.stack||e);process.exitCode=1;}
 finally {if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));fs.writeFileSync(path.join(out,'result.json'),JSON.stringify(result,null,2)+'\n');}

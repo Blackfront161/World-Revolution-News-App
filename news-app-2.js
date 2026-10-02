@@ -5620,6 +5620,14 @@
       tr: 'Editoryal taslak · inceleme bekliyor' })[state.language] || 'Editorial draft · review pending';
   }
 
+  function glossaryReviewedLabel() {
+    return ({ de: 'Redaktionell geprüft', en: 'Editorially reviewed',
+      es: 'Revisado editorialmente', fr: 'Vérifié par la rédaction',
+      it: 'Verificato dalla redazione', pt: 'Revisado editorialmente',
+      ru: 'Проверено редакцией', el: 'Ελέγχθηκε συντακτικά',
+      tr: 'Editoryal olarak incelendi' })[state.language] || 'Editorially reviewed';
+  }
+
   function renderLexicon() {
     state.cardArticles = [];
     const sections = ['all', 'basics', 'organisation', 'justice', 'power', 'tactics', 'ecology', 'struggles', 'sources'];
@@ -5640,6 +5648,7 @@
               ${(term.related || []).length ? `<h4>${escapeHtml(t('related'))}</h4><div class="meta-line">${term.related.map(value => `<span class="tag">${escapeHtml(value)}</span>`).join('')}</div>` : ''}
               ${(term.sources || []).length ? `<h4>${escapeHtml(t('glossarySources'))}</h4><div class="source-actions">${glossaryTermSourcesMarkup(term)}</div>` : ''}
               ${term.revision?.note?.includes('review pending') ? `<small>${escapeHtml(glossaryDraftLabel())}</small>` : ''}
+              ${term.revision?.status === 'reviewed' ? `<small>${escapeHtml(glossaryReviewedLabel())} · ${escapeHtml(term.revision.reviewedAt || term.revision.date)}</small>` : ''}
               ${!term.summary?.[state.language] ? `<small>${escapeHtml(t('fallbackLanguage'))}</small>` : ''}
               ${term.translationRevision && ['fr', 'es'].includes(state.language) ? `<small lang="en">WRN editorial translation · ${escapeHtml(term.translationStatus)} · ${escapeHtml(term.translationRevision)}</small>` : ''}
             </div>
