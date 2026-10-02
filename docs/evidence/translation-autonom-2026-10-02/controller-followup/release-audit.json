@@ -3,7 +3,7 @@
   "app": "World Revolution News",
   "version": "2.1.2",
   "build": "2026.09.27-wrn-2.1.2-release",
-  "generatedAt": "2026-10-02T08:56:55.627597+00:00",
+  "generatedAt": "2026-10-02T09:01:24.745178+00:00",
   "readOnlyAudit": true,
   "summary": {
     "pass": 161,
@@ -905,7 +905,7 @@
       "id": "app-check-app-cache-sync",
       "category": "release-page",
       "status": "pass",
-      "message": "App check and service worker agree on the app cache: wrn-app-v2.1.2-r15",
+      "message": "App check and service worker agree on the app cache: wrn-app-v2.1.2-r16",
       "detail": ""
     },
     {

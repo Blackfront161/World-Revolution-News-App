@@ -1212,7 +1212,7 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "controller-followup-fixed-pending-new-build-review",
+    "status": "controller-followup-local-pass-pending-new-build-and-independent-review",
     "sourceCommit": null,
     "signatureVerified": false,
     "uploadPerformed": false,
@@ -1274,15 +1274,15 @@
     }
   ],
   "translationSharingAutonom20261002": {
-    "status": "controller-followup-regression-tests-running",
+    "status": "controller-followup-fixed-local-contract-browser-audit-pass",
     "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
     "runtime": {
-      "js": 61,
+      "js": 62,
       "css": 51,
       "sharedTranslationClient": 5,
       "audioTools": 4,
-      "productionCache": "2.1.2-r15",
-      "previewCache": "v103"
+      "productionCache": "2.1.2-r16",
+      "previewCache": "v104"
     },
     "previewUrl": "http://127.0.0.1:8765/index.html?preview=8",
     "liveTranslationModelObserved": "gemini-3.1-flash-lite",
@@ -1306,7 +1306,7 @@
     "sourceCommit": null,
     "controllerFollowup": {
       "manualLeadButton": "preserved-by-updating-button-label",
-      "transientLeadRetry": "one-bounded-retry-after-30-seconds-if-same-lead-language-and-fingerprint",
+      "transientLeadRetry": "one-direct-bounded-retry-after-30-seconds-independent-of-batch-failure-cutoff",
       "terminalErrors": "No-auto-retry-for-origin-auth-quota-and-provider-exhaustion"
     }
   }

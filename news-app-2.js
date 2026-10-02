@@ -4324,9 +4324,13 @@
         || Array.isArray(failureResult?.data?.details);
       const retryLead = !terminal && leadIsCurrent() && !briefingLeadRetries.has(requestKey);
       if (retryLead) briefingLeadRetries.add(requestKey);
-      window.setTimeout(() => {
+      window.setTimeout(async () => {
         briefingTranslationsAttempted.delete(requestKey);
-        if (retryLead && leadIsCurrent()) void ensureHomeTranslations([article]);
+        if (retryLead && leadIsCurrent()) {
+          // The batch may stop after other failures; the single lead retry must not be discarded with its queue.
+          const translated = await requestBriefingTranslation(article, targetLanguage);
+          if (translated && leadIsCurrent()) renderHome();
+        }
       }, retryLead ? 30000 : 5 * 60 * 1000);
       return null;
     } finally {

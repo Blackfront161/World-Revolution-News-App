@@ -56,21 +56,20 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
 
   // One transient failure of the currently visible lead gets a bounded automatic retry.
   for (const status of [0,403,429]) {
-    const timers=[]; let retries=0;
+    const timers=[]; let calls=0;
     const retryContext={state:{view:'home',language:'de',cardArticles:[article]},core,cardCopy:{completeFirstSentence:x=>x},
       briefingTranslationsInFlight:new Set(),briefingTranslationsAttempted:new Set(),briefingLeadRetries:new Set(),
       briefingTranslationWarningShown:false,translationForLanguage:()=>null,newsCardTeaser:a=>a.content,storeTranslation(){},
       console:{warn(){}},document:{querySelector:()=>({dataset:{index:'0'}})},
-      ensureHomeTranslations:()=>{retries++;},window:{setTimeout:(fn,delay)=>timers.push({fn,delay}),
-        WRNSharedTranslations:{request:async()=>({error:true,status})}}};
+      renderHome(){},window:{setTimeout:(fn,delay)=>timers.push({fn,delay}),
+        WRNSharedTranslations:{request:async()=>{calls++;return {error:true,status};}}}};
     const request=vm.runInNewContext(`(()=>{${extract('function articleNeedsTeaserTranslation(', 'async function ensureBriefingTranslations(')};return requestBriefingTranslation;})()`,retryContext);
     await request(article,'de');
     assert.equal(timers[0].delay,status===0?30000:300000);
-    timers[0].fn(); assert.equal(retries,status===0?1:0);
+    await timers[0].fn(); assert.equal(calls,status===0?2:1);
     if(status===0) {
-      await request(article,'de');
       assert.equal(timers[1].delay,300000,'a second failure cannot start a retry loop');
-      timers[1].fn();assert.equal(retries,1);
+      await timers[1].fn();assert.equal(calls,2);
     }
   }
 
