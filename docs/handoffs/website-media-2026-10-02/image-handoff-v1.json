@@ -1,0 +1,30 @@
+{
+  "schema": "wrn.website-image-handoff.v1",
+  "appBaseCommit": "3627c954128ab2a39a86ea46d15c28f81303929e",
+  "directoryCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+  "image": {
+    "articleId": "news-d66b8d407e0eb4adcb2e5d17d2e9bdb1b85660b8c28b758d128f6ed58356f685",
+    "originalUrl": "https://www.anred.org/se-vuelven-a-encender-las-calles-tras-el-fallo-de-la-corte-que-reactivo-la-extranjerizacion-de-la-tierra/",
+    "originalTitle": "«Se vuelven a encender las calles» tras el fallo de la Corte que reactivó la extranjerización de la tierra",
+    "assetPath": "C:\\Users\\patri\\Documents\\World Rev Ne\\wrn-github-app-current\\docs\\handoffs\\website-media-2026-10-02\\assets\\wrn-land-rights-illustration-v1.png",
+    "assetRelativePath": "docs/handoffs/website-media-2026-10-02/assets/wrn-land-rights-illustration-v1.png",
+    "sha256": "31d2014683d1fd4be9b731279efcfba3383f2c6209cd352bdaf54fe5f73c00b4",
+    "bytes": 3305914,
+    "creator": "World Revolution News / OpenAI image generation",
+    "originalImageUrl": null,
+    "assetType": "wrn-original-generated-illustration",
+    "rightsBasis": "Original asset generated for this WRN project at the user’s request; authorized for WRN app and website integration. Not a publisher photo and not an assertion of exclusive copyright.",
+    "credit": "WRN · KI-generierte Illustration",
+    "captionDe": "WRN-Illustration zum Thema Landrechte. Kein Foto der berichteten Proteste.",
+    "captionEn": "WRN illustration about land rights. Not a photograph of the reported protests.",
+    "altDe": "Illustration: Menschen kommen auf landwirtschaftlich genutztem Land zusammen.",
+    "altEn": "Illustration of people meeting on cultivated land.",
+    "createdAt": "2026-10-02",
+    "generationEvidence": {
+      "tool": "image_gen.imagegen",
+      "sourceFile": "C:\\Users\\patri\\.codex\\generated_images\\01a0f1cf-c71d-70d3-b3db-6342752e52b2\\exec-64065b5a-7bc9-4145-8b1d-2137fe902bd6.png",
+      "purpose": "Original editorial illustration for ANRed land rights reading note, no documentary event representation"
+    },
+    "noForeignSourceImageCopied": true
+  }
+}
