@@ -669,5 +669,12 @@
     "3cr-green-left-radio",
     "rebel-steps",
     "twelve-rules-for-what"
+  ],
+  "declaredChannelOnlyFeedUrls": [
+    "https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e",
+    "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss",
+    "https://www.3cr.org.au/anarchistworld/itunes",
+    "https://www.3cr.org.au/greenleftweeklyradio/itunes",
+    "https://www.3cr.org.au/sticktogether/itunes"
   ]
 }

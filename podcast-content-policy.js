@@ -676,6 +676,13 @@
     "3cr-green-left-radio",
     "rebel-steps",
     "twelve-rules-for-what"
+  ],
+  "declaredChannelOnlyFeedUrls": [
+    "https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e",
+    "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss",
+    "https://www.3cr.org.au/anarchistworld/itunes",
+    "https://www.3cr.org.au/greenleftweeklyradio/itunes",
+    "https://www.3cr.org.au/sticktogether/itunes"
   ]
 } /* POLICY_RULES_END */;
   const MODE = 'metadata_and_links_only';
@@ -724,7 +731,7 @@
       Object.assign(result, {language:'und',languageVerified:false,languageReviewRequired:true,languageConfidence:0,
         languageSource:'mixed-channel-requires-review',configuredLanguages:['es','ca']});
     }
-    if ((rules.declaredChannelOnlySourceIds || []).includes(item.sourceId)) {
+    if ((rules.declaredChannelOnlySourceIds || []).includes(item.sourceId) || (rules.declaredChannelOnlyFeedUrls || []).includes(item.feedUrl)) {
       Object.assign(result, {language:'und',languageVerified:false,languageReviewRequired:true,languageConfidence:0,
         languageSource:'declared-channel-unverified-episode'});
     }

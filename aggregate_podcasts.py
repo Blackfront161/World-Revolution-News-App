@@ -384,7 +384,8 @@ def source_feed_candidates(source: dict) -> list[str]:
     if canonical:
         candidates.append(canonical)
     candidates.extend(source.get("feedUrls") or [])
-    candidates.extend(discover_feeds(source.get("homepage", "")))
+    if source.get('languagePolicy') != 'declared-channel-only':
+        candidates.extend(discover_feeds(source.get("homepage", "")))
     return list(dict.fromkeys(candidate for candidate in candidates if candidate))
 
 
@@ -393,8 +394,6 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
         return [], '', ['Source admission remains on hold']
     # A reviewed archive may extend its bounded intake; the default stays 35.
     source_limit = max(1, min(100, int(source.get('maxEpisodes', MAX_PER_SOURCE))))
-    if source.get('catalogReview', {}).get('episodeIntake') == 'hold':
-        return [], '', ['Intake on hold for identity, endpoint or episode-language review']
     candidates = source_feed_candidates(source)
     errors: list[str] = []
 
