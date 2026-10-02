@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-02",
   "releasedBaseline": {
     "version": "2.0.8",
     "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
@@ -8,11 +8,11 @@
   },
   "confirmedLiveDistribution": {
     "version": "2.1.2",
-    "versionCode": 28,
-    "status": "Google Play Console: bei Google Play verfügbar, vollständiger Roll-out; unabhängig per sichtbarem Console-Status bestätigt",
-    "verifiedAt": "2026-10-01T03:15:39.832330+00:00",
-    "evidence": "docs/PLAY-UPLOAD-CODE32-2026-10-01.md",
-    "note": "Code32 ist eingereicht, aber noch nicht als live bestätigt."
+    "versionCode": 32,
+    "status": "Google Play verfuegbar; vollstaendiger Rollout100% in178 Laendern am2.Oktober sichtbar verifiziert",
+    "verifiedAt": "2026-10-02",
+    "evidence": "docs/ROADMAP-PACKAGE-2026-10-02.md",
+    "note": "Code32 ist live. Neue Roadmap-Inhalte werden separat inCode33 gebaut."
   },
   "current": {
     "version": "2.1.2",
@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 aus6821a02 signiert, geprüft und in Google Play Produktion für100%-Roll-out eingereicht. Am1.Oktober wurde die Prüfung nach ausdrücklicher Nutzerfreigabe mit neun Store-Videos und der Gerätebildbereinigung neu gestartet; automatische Vorabprüfungen sind abgeschlossen, Google prüft das Paket. Wiederkehrende Vollbild-Updateaufforderungen für alle Nutzer der Produktionsversionen25,26,28 sind aktiv und erneut geprüft. Keine absolute Nutzungssperre; Code32 noch nicht als live bestätigt.",
+    "status": "Code32 /2.1.2 ist live bei Google Play,100%Rollout178Laender. Keine laufende Google-Pruefung am2.Oktober sichtbar. NeueKatalog-/Wissensinhalte gehoeren zum getrennten Code33-Kandidaten.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -66,11 +66,11 @@
       "evidence": "docs/PLAY-UPLOAD-CODE32-2026-10-01.md"
     },
     "playPublication": {
-      "status": "google-review-in-progress",
+      "status": "published-full-rollout",
       "uploadPerformed": true,
       "submissionConfirmed": true,
       "rolloutRequestedPercent": 100,
-      "rolloutLiveVerified": false,
+      "rolloutLiveVerified": true,
       "releaseId": "23",
       "track": "production",
       "managedPublishing": false,
@@ -84,12 +84,13 @@
         "performedAt": "2026-10-01",
         "status": "google-review-in-progress",
         "report": "docs/evidence/store-media-2026-10-01/store-media-submission.json"
-      }
+      },
+      "liveVerifiedAt": "2026-10-02"
     }
   },
   "storeListingMedia": {
     "observedAt": "2026-10-01",
-    "status": "google-review-in-progress",
+    "status": "published-public-german-verified",
     "sourceThread": "01a0d7ff-5930-7582-9998-845a92c2cb26",
     "phoneScreenshots": "Alle neun Console-Sprachen enthalten je sechs neue Smartphone-Screenshots; deutsche öffentliche Store-Seite zeigt die neuen Bilder.",
     "legacyDeviceAssets": "20 alte Juni-Bilder aus dem englischen Standardentwurf entfernt: 7 Tablet7,4 Tablet10,4 Desktop,5 XR. Abschließende Console-Ansicht zeigt die vier Änderungen gemeinsam mit Code32 als in Google-Prüfung; nicht live bestätigt.",
@@ -109,7 +110,14 @@
       "tr-TR": "https://www.youtube.com/watch?v=sWEI4uCLDrQ"
     },
     "submissionReport": "docs/evidence/store-media-2026-10-01/store-media-submission.json",
-    "evidence": "docs/PLAY-STORE-MEDIA-2026-10-01.md"
+    "evidence": "docs/PLAY-STORE-MEDIA-2026-10-01.md",
+    "publicVerification20261002": {
+      "url": "https://play.google.com/store/apps/details?id=com.world.revolution&hl=de",
+      "screenshotButtons": 6,
+      "trailerVisible": true,
+      "embeddedVideo": "https://www.youtube.com/watch?v=JeTP62KaBhQ",
+      "otherPublicLocalesRechecked": false
+    }
   },
   "projectBoundary": {
     "repository": "World-Revolution-News-App",
@@ -121,15 +129,15 @@
       "id": "PLAY-STORE-MEDIA-20261001",
       "priority": 1,
       "name": "Play-Store-Galerie bereinigen und vorhandene Sprachvideos einbinden",
-      "status": "google-review-in-progress",
-      "remaining": "Google-Freigabe abwarten. Neun Sprachvideos sind hochgeladen, gespeichert und nach freigegebenem Neustart in Google-Prüfung; Vorabprüfungen abgeschlossen. Öffentliche Galerie und Videoanzeige nach Freigabe kontrollieren.",
+      "status": "published-public-german-verified",
+      "remaining": "DeutscheGalerie6Screenshots undTrailerverifiziert; andereoeffentlicheSprachseitennochungeprueft.",
       "report": "docs/PLAY-STORE-MEDIA-2026-10-01.md"
     },
     {
       "id": "AUDIO-SHARING-20261001",
       "priority": 1,
       "name": "Radios und Podcasts teilen",
-      "status": "accepted-local",
+      "status": "published-code32",
       "scope": "Aktuelle App und Classic-Audio-Hub: Teilen-Dialog, Link kopieren und manueller Kopierweg in neun Sprachen.",
       "links": {
         "radio": "Senderseite; Stream nur als Fallback",
@@ -151,7 +159,7 @@
         "appCssRelease": 49,
         "audioToolsRelease": 2
       },
-      "distribution": "Im signierten 2.1.2/Code32 aus6821a02 in Produktion hochgeladen und für vollständigen Roll-out zur Google-Prüfung gesendet. Noch nicht live bestätigt. Updateaufforderung für bisherige Produktionsversion28 aktiviert.",
+      "distribution": "Code32vollstaendiglive; neueCode33nativeRegressionPASS.",
       "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
       "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
       "candidateSignatureReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json"
@@ -311,7 +319,7 @@
       "id": "SOURCES-AUTONOM",
       "priority": 2,
       "name": "Autonome und antifaschistische Quellen erweitern",
-      "status": "implemented_local_pending_data_publication",
+      "status": "published-data",
       "scope": [
         "regionale autonome Antifa und unabhängige Bewegungsmedien",
         "kanonische Identitäten gegen bestehendes Register abgleichen",
@@ -368,13 +376,23 @@
         "commit": "17b3604979a27411666048c082345b704261af93"
       },
       "dataCommit": "17b3604979a27411666048c082345b704261af93",
-      "reviewStatus": "accepted_scoped_20261001"
+      "reviewStatus": "accepted_scoped_20261001",
+      "latestImplementation": {
+        "commit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+        "newsSourceEndpoints": 433,
+        "autonomousAdditions": [
+          "Autonome Antifa Freiburg: directory-only",
+          "Antifa Frankfurt: directory-only",
+          "Untergrund-Blaettle: metadata-only"
+        ],
+        "websiteProjection": "7533fe1 includes both explicit directory-only modes; hosting publication pending"
+      }
     },
     {
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "news_directory_projection_published_independent_live_pass_full_content_parity_pending",
+      "status": "data-published-website-independent-local-pass-hostinger-login-required",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -436,13 +454,34 @@
           "scope": "website_favicon_and_bound_offline_shell_only",
           "androidOrPwaAppPublication": false
         }
-      }
+      },
+      "latestImplementation": {
+        "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
+        "appReleaseCommit": null,
+        "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+        "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
+        "books": 728,
+        "lexiconTerms": 155,
+        "lexiconReferences": 32,
+        "activePodcastRows": 1778,
+        "archiveRows": 1814,
+        "uniqueWebsiteEpisodePages": 1722,
+        "podcastSources": 56,
+        "learningPaths": 3,
+        "bookRelationships": 30,
+        "podcastRelationships": 7,
+        "translatedDraftTermsFR_ES": 4,
+        "newAudioDirectories": 2,
+        "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
+        "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
+      },
+      "remaining": "Website48FileCandidateund5UploadZIPsgeprueft. Hostingeranmelden; vollstaendigenLiveRoot/2PointerBackupverifizieren; geordnethochladen; oeffentlicheHash-/CSP-/Rollback-/Offlinetests."
     },
     {
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "common_archive_and_website_candidate_accepted_local_not_published",
+      "status": "data-published-website-independent-local-pass-hostinger-login-required",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -615,13 +654,34 @@
           }
         }
       },
-      "next": "Bestehende Code32-Play-Prüfung weiterlaufen lassen. Neue Inhalte als separate Release-Artefakte behandeln; native App-/Upgradeprüfung und Website-Live-/Rollback-Nachweise vor neuer Veröffentlichung. Danach sechs Podcastkandidaten und vier Intake-Holds fachlich prüfen."
+      "next": "Bestehende Code32-Play-Prüfung weiterlaufen lassen. Neue Inhalte als separate Release-Artefakte behandeln; native App-/Upgradeprüfung und Website-Live-/Rollback-Nachweise vor neuer Veröffentlichung. Danach sechs Podcastkandidaten und vier Intake-Holds fachlich prüfen.",
+      "latestImplementation": {
+        "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
+        "appReleaseCommit": null,
+        "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+        "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
+        "books": 728,
+        "lexiconTerms": 155,
+        "lexiconReferences": 32,
+        "activePodcastRows": 1778,
+        "archiveRows": 1814,
+        "uniqueWebsiteEpisodePages": 1722,
+        "podcastSources": 56,
+        "learningPaths": 3,
+        "bookRelationships": 30,
+        "podcastRelationships": 7,
+        "translatedDraftTermsFR_ES": 4,
+        "newAudioDirectories": 2,
+        "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
+        "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
+      },
+      "remaining": "Website48FileCandidateund5UploadZIPsgeprueft. Hostingeranmelden; vollstaendigenLiveRoot/2PointerBackupverifizieren; geordnethochladen; oeffentlicheHash-/CSP-/Rollback-/Offlinetests."
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
       "priority": 2,
       "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
-      "status": "19_further_revisions_and_3_learning_paths_accepted_local_draft",
+      "status": "expanded-data-published-code33-and-website-candidates-reviewed",
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
@@ -692,13 +752,34 @@
           "limitedFollowUp": "FAQ classification and glossary asset-key correction accepted independently",
           "publicationPerformed": false
         }
-      }
+      },
+      "latestImplementation": {
+        "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
+        "appReleaseCommit": null,
+        "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+        "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
+        "books": 728,
+        "lexiconTerms": 155,
+        "lexiconReferences": 32,
+        "activePodcastRows": 1778,
+        "archiveRows": 1814,
+        "uniqueWebsiteEpisodePages": 1722,
+        "podcastSources": 56,
+        "learningPaths": 3,
+        "bookRelationships": 30,
+        "podcastRelationships": 7,
+        "translatedDraftTermsFR_ES": 4,
+        "newAudioDirectories": 2,
+        "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
+        "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
+      },
+      "remaining": "151weitereBegriffeuebersetzen/Editorialreview; kuratierteDossierverknuepfungen;10weitereDEBibliothekskandidatenpruefen;4automatischeBibliotheksadapternochzuimplementieren; freigegebeneOffline-Lernpakete."
     },
     {
       "id": "PODCAST-CATALOG-EXPANSION",
       "priority": 2,
       "name": "Podcastquellen und nutzbaren Archivumfang erweitern",
-      "status": "six_candidates_researched_four_rss_metadata_probes_completed_admission_pending",
+      "status": "four-new-programs-and-433-reviewed-metadata-rows-published",
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
@@ -755,7 +836,51 @@
         "pagination": 30,
         "freshIntake": false,
         "remaining": "Sechs neue Kandidaten und vier Intake-Holds einzeln prüfen; keine Aufnahme aus bloßer RSS-Erreichbarkeit."
-      }
+      },
+      "latestImplementation": {
+        "newPrograms": 4,
+        "reviewedMetadataRows": 433,
+        "expandedLimitPerReviewedSource": 100,
+        "newProgramsNames": [
+          "Anarchist World This Week",
+          "Stick Together",
+          "Green Left Radio (archive)",
+          "Rebel Steps (archive)"
+        ],
+        "resolvedHold": "12 Rules For WHAT -> Red Flare, stable sourceID and documented officialfeed",
+        "remainingIntakeHolds": [
+          "L Orage",
+          "Contrabanda Specials",
+          "Infowar Greece"
+        ],
+        "directoryOnly": [
+          "Radio LoRa Zurich",
+          "Radio Kurruf"
+        ],
+        "episodeLanguage": "und; languageVerified false; channel declared language separate",
+        "archiveRetention": "All previous app and data IDs retained; latest remote archive merged",
+        "counts": {
+          "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
+          "appReleaseCommit": null,
+          "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+          "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
+          "books": 728,
+          "lexiconTerms": 155,
+          "lexiconReferences": 32,
+          "activePodcastRows": 1778,
+          "archiveRows": 1814,
+          "uniqueWebsiteEpisodePages": 1722,
+          "podcastSources": 56,
+          "learningPaths": 3,
+          "bookRelationships": 30,
+          "podcastRelationships": 7,
+          "translatedDraftTermsFR_ES": 4,
+          "newAudioDirectories": 2,
+          "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
+          "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
+        }
+      },
+      "remaining": "3Intakeholds und2Verzeichnis-RSS-Pfadeweiterpruefen; individuelleSprachverifikation/Serienfortsetzen/Dossiercurationoffen."
     },
     {
       "id": "EDITORIAL-DATA",
@@ -1067,5 +1192,55 @@
     "action": "Do not cancel or resubmit the current review",
     "evidence": "docs/PLAY-REVIEW-DIAGNOSIS-2026-10-01.md",
     "internalQueueReason": "not exposed by Play Console"
-  }
+  },
+  "nextCandidate": {
+    "version": "2.1.2",
+    "versionCode": 33,
+    "status": "building-corrected-unsigned-candidate",
+    "sourceCommit": null,
+    "signatureVerified": false,
+    "uploadPerformed": false,
+    "releaseReady": false,
+    "report": "docs/ROADMAP-PACKAGE-2026-10-02.md",
+    "note": "Exact artifact/source binding is recorded after this freeze; priorCode33 files are superseded. PhysicalCode33 test and signing pending."
+  },
+  "roadmapPackage20261002": {
+    "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
+    "appReleaseCommit": null,
+    "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+    "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
+    "books": 728,
+    "lexiconTerms": 155,
+    "lexiconReferences": 32,
+    "activePodcastRows": 1778,
+    "archiveRows": 1814,
+    "uniqueWebsiteEpisodePages": 1722,
+    "podcastSources": 56,
+    "learningPaths": 3,
+    "bookRelationships": 30,
+    "podcastRelationships": 7,
+    "translatedDraftTermsFR_ES": 4,
+    "newAudioDirectories": 2,
+    "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
+    "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
+  },
+  "playReviewDiagnosis20261002": {
+    "status": "resolved-release-live",
+    "versionCode": 32,
+    "rolloutPercent": 100,
+    "countries": 178,
+    "pendingPublishingChanges": false,
+    "publicGermanTrailerAnd6Screenshots": true
+  },
+  "supersededCode33Candidates": [
+    {
+      "sourceCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
+      "status": "superseded-preview-cache-bindings"
+    },
+    {
+      "sourceCommit": "5d5b62315e4db1f8c847d99b94b933582a6f0e7b",
+      "sha256": "26A205B57374BC7296CB52E87070234DF11357420A4E5858C3446A94AA00BAA1",
+      "status": "superseded-media-entry-reference-error-do-not-sign"
+    }
+  ]
 }
