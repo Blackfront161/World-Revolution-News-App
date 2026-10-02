@@ -1212,7 +1212,7 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "new-source-freeze-awaiting-independent-review-and-new-unsigned-build",
+    "status": "translation-review-pass-content-review-and-new-build-pending",
     "sourceCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
     "signatureVerified": false,
     "uploadPerformed": false,
@@ -1221,7 +1221,12 @@
     "report": "docs/HOME-TRANSLATION-REPAIR-2026-10-02.md",
     "physicalCode33Test": "pending",
     "signing": "not-performed-new-artifact-required",
-    "note": "Local source includes Autonom/content expansion and the startup translation repair. No matching new AAB built. Previous ce2b556 artifact remains superseded."
+    "note": "Local source includes Autonom/content expansion and the startup translation repair. No matching new AAB built. Previous ce2b556 artifact remains superseded.",
+    "translationRuntimeReview": {
+      "status": "PASS",
+      "reviewedCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
+      "report": "docs/evidence/home-translation-repair-2026-10-02/controller-review.json"
+    }
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
@@ -1465,7 +1470,7 @@
     "independentLiveReport": "docs/evidence/translation-cache-2026-10-02/controller-live-review.json"
   },
   "homeTranslationRepair20261002": {
-    "status": "implemented-local-preview-root-qa-pass-independent-review-pending",
+    "status": "implemented-local-preview-root-and-independent-review-pass",
     "sourceCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
     "report": "docs/HOME-TRANSLATION-REPAIR-2026-10-02.md",
     "before": {
@@ -1482,7 +1487,8 @@
         "200": 12
       },
       "lead": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg",
-      "errors": []
+      "errors": [],
+      "cacheHits": 12
     },
     "automaticHomeBudgetPerMinute": 12,
     "serverMinutePauseSeconds": 65,
@@ -1505,6 +1511,11 @@
     "workerDeploymentPerformed": false,
     "appPublicationPerformed": false,
     "androidArtifactBuilt": false,
-    "nextStep": "Independent review of this freeze; then bind a new Android artifact to the final reviewed source"
+    "nextStep": "Complete separate content review and bind a new Android artifact to the final reviewed source",
+    "independentReview": {
+      "status": "PASS",
+      "reviewedCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
+      "report": "docs/evidence/home-translation-repair-2026-10-02/controller-review.json"
+    }
   }
 }
