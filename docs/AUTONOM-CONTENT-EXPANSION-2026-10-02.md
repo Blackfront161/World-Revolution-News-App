@@ -31,7 +31,7 @@ Es wurden keine neuen Nachrichten-/Podcast-Feeds aufgenommen und keine fremden V
 - Übersetzungs-/Teilen-Regressionsbrowser bestanden, einschließlich unabhängig übersetzter Schlagzeile, manueller Übersetzung, übersetzter Teilen-Überschrift und Buttons auf kleinen Breiten. Die Browserprüfung verwendet isolierte Antworten, keine neuen externen KI-/Share-Aufrufe.
 - Zwei veraltete Testannahmen wurden korrigiert: der VM-Test lädt jetzt das vollständige Themenverzeichnis und seinen Helfer; die historische Mindestabdeckung begrenzt das wachsende Lexikon nicht mehr auf 170 Definitionen. Eindeutige IDs und gültige Beziehungen werden weiterhin anhand des tatsächlich exportierten Lexikons geprüft.
 
-Belege: [Browser](evidence/autonom-content-2026-10-02/browser-topics-content.json), [Bibliothek](evidence/autonom-content-2026-10-02/browser-library.json), [Teilen/Übersetzung](evidence/autonom-content-2026-10-02/browser-translation-sharing.json), [Vertragsmatrix](evidence/autonom-content-2026-10-02/contract-matrix.log), [Audit](evidence/autonom-content-2026-10-02/release-audit.json).
+Belege: [Browser](evidence/autonom-content-2026-10-02/browser-topics-content.json), [Bibliothek](evidence/autonom-content-2026-10-02/browser-library.json), [Teilen/Übersetzung](evidence/autonom-content-2026-10-02/browser-translation-sharing.json), [Vertragsmatrix](evidence/autonom-content-2026-10-02/contract-matrix.txt), [Audit](evidence/autonom-content-2026-10-02/release-audit.json).
 
 ## Vorschau und Distribution
 

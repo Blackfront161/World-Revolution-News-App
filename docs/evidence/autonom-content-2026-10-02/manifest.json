@@ -22,10 +22,6 @@
       "sha256": "9e1944ee6cb7ad4717569d31606804edf6b1ef305fc09bcccb4694440d9c3e13",
       "bytes": 12092
     },
-    "contract-matrix.log": {
-      "sha256": "5a1b3bef6db8aba1d194f6ef72fa4b13611f9caba1eb0ca9349b35440c5a0131",
-      "bytes": 6566
-    },
     "release-audit.json": {
       "sha256": "3f6a221fbf5b45a4f17c42ebacf3ad5b74d6d7ab42bfa8b62fd365df1a5cfc00",
       "bytes": 33093
@@ -33,6 +29,10 @@
     "source-hashes.json": {
       "sha256": "76090eab401a3448ee3cca411cf6d4bf422bde0d1a9fa52438a1753f742f8bed",
       "bytes": 1929
+    },
+    "contract-matrix.txt": {
+      "sha256": "5a1b3bef6db8aba1d194f6ef72fa4b13611f9caba1eb0ca9349b35440c5a0131",
+      "bytes": 6566
     }
   }
 }
