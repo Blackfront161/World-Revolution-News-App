@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 / 2.1.2 is live. The new Autonom/content source freeze is local preview only; no matching AAB built or uploaded.",
+    "status": "Code32 / 2.1.2 is live on Google Play. The new Autonom/content and translation repair source is local preview only; no matching AAB built or uploaded.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",

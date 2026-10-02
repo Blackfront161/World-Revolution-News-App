@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CLASSIC_ENTRY = ROOT / "classic.html"
 PUBLISHED_BASELINE_VERSION = "2.0.8"
 CANDIDATE_VERSION = "2.1.2"
-CANDIDATE_APP_CACHE = "wrn-app-v2.1.2-r17"
+CANDIDATE_APP_CACHE = "wrn-app-v2.1.2-r18"
 CANDIDATE_DATA_CACHE = "wrn-data-v2.1.2-r1"
-CANDIDATE_PREVIEW_CACHE = "v105"
+CANDIDATE_PREVIEW_CACHE = "v106"
 ERRORS: list[str] = []
 WARNINGS: list[str] = []
 

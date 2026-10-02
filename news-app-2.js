@@ -2092,6 +2092,10 @@
   let homeTranslationRun = null;
   let homeTranslationQueue = [];
   let homeTranslationLanguage = '';
+  let homeTranslationWindowStartedAt = 0;
+  let homeTranslationRequests = 0;
+  let homeTranslationPausedUntil = 0;
+  let homeTranslationWakeTimer = null;
   let articleTranslationGeneration = 0;
   let dataRefreshInFlight = false;
   let lastSuccessfulDataLoad = 0;
@@ -4289,6 +4293,7 @@
 
   function articleNeedsTeaserTranslation(article, targetLanguage) {
     if (!article || translationForLanguage(article, targetLanguage)) return false;
+    if (!String(newsCardTeaser(article, null, targetLanguage) || '').trim()) return false;
     const requestKey = `${targetLanguage}::${article.id}::${core.articleTranslationFingerprint(article)}`;
     if (briefingTranslationsAttempted.has(requestKey)) return false;
     const sourceLanguage = String(
@@ -4341,6 +4346,13 @@
         || failureResult?.data?.reason || failureResult?.data?.code === 'QUOTA_GUARD_UNAVAILABLE'
         || Array.isArray(failureResult?.data?.details);
       const retryLead = !terminal && leadIsCurrent() && !briefingLeadRetries.has(requestKey);
+      const minuteLimited = Number(failureResult?.status) === 429
+        && !failureResult?.data?.reason
+        && !String(failureResult?.data?.code || '').includes('QUOTA');
+      if (minuteLimited) {
+        homeTranslationPausedUntil = Math.max(homeTranslationPausedUntil, Date.now() + 65000);
+        scheduleHomeTranslationWake(65000);
+      }
       if (retryLead) briefingLeadRetries.add(requestKey);
       window.setTimeout(async () => {
         briefingTranslationsAttempted.delete(requestKey);
@@ -4349,7 +4361,7 @@
           const translated = await requestBriefingTranslation(article, targetLanguage);
           if (translated && leadIsCurrent()) renderHome();
         }
-      }, retryLead ? 30000 : 5 * 60 * 1000);
+      }, minuteLimited ? 61000 : retryLead ? 30000 : 5 * 60 * 1000);
       return null;
     } finally {
       briefingTranslationsInFlight.delete(requestKey);
@@ -4387,8 +4399,31 @@
     }));
   }
 
+  function scheduleHomeTranslationWake(delay) {
+    if (homeTranslationWakeTimer !== null) return;
+    homeTranslationWakeTimer = window.setTimeout(() => {
+      homeTranslationWakeTimer = null;
+      if (state.view === 'home' && !dataRefreshInFlight) renderHome();
+    }, Math.max(1000, delay));
+  }
+
   function ensureHomeTranslations(items) {
-    if (!Array.isArray(items) || state.view !== 'home') return Promise.resolve();
+    // Show offline news immediately, but wait for the initial live attempt before
+    // spending translation quota on a snapshot that is about to be replaced.
+    if (!Array.isArray(items) || state.view !== 'home' || dataRefreshInFlight) return Promise.resolve();
+    const now = Date.now();
+    if (now < homeTranslationPausedUntil) {
+      scheduleHomeTranslationWake(homeTranslationPausedUntil - now);
+      return Promise.resolve();
+    }
+    if (!homeTranslationWindowStartedAt || now - homeTranslationWindowStartedAt >= 60000) {
+      homeTranslationWindowStartedAt = now;
+      homeTranslationRequests = 0;
+    }
+    if (homeTranslationRequests >= 12) {
+      scheduleHomeTranslationWake(homeTranslationWindowStartedAt + 61000 - now);
+      return Promise.resolve();
+    }
     const language = state.language;
     const queue = [...new Map(items.filter(item => item?.id).map(item => [item.id, item])).values()]
       .filter(item => articleNeedsTeaserTranslation(item, language));
@@ -4412,9 +4447,14 @@
       }
       if (!window.WRNSharedTranslations?.request) return;
       await Promise.all(Array.from({ length: Math.min(3, homeTranslationQueue.length) }, async () => {
-        while (homeTranslationQueue.length && failures < 3 && state.view === 'home' && state.language === language) {
+        while (homeTranslationQueue.length && failures < 3 && state.view === 'home' && state.language === language && !dataRefreshInFlight) {
+          if (Date.now() < homeTranslationPausedUntil || homeTranslationRequests >= 12) {
+            scheduleHomeTranslationWake(Math.max(homeTranslationPausedUntil, homeTranslationWindowStartedAt + 61000) - Date.now());
+            break;
+          }
           const article = homeTranslationQueue.shift();
           if (!articleNeedsTeaserTranslation(article, language)) continue;
+          homeTranslationRequests += 1;
           if (await requestBriefingTranslation(article, language)) {
             changed = true;
             // Show the lead as soon as it is ready, without waiting for slower stories.
@@ -9553,6 +9593,7 @@
       return false;
     } finally {
       dataRefreshInFlight = false;
+      if (state.view === 'home' && state.articles.length) renderHome();
     }
   }
 

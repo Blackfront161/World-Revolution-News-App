@@ -55,17 +55,19 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   assert.equal(headlineButton.textContent,'Deutscher Titel');
 
   // One transient failure of the currently visible lead gets a bounded automatic retry.
-  for (const status of [0,403,429]) {
+  for (const [status,data] of [[0,undefined],[403,undefined],[429,undefined],[429,{reason:'daily-quota',code:'QUOTA_EXCEEDED'}]]) {
     const timers=[]; let calls=0;
     const retryContext={state:{view:'home',language:'de',cardArticles:[article]},core,cardCopy:{completeFirstSentence:x=>x},
       briefingTranslationsInFlight:new Set(),briefingTranslationsAttempted:new Set(),briefingLeadRetries:new Set(),
+      homeTranslationPausedUntil:0, scheduleHomeTranslationWake(){}, Date,
       briefingTranslationWarningShown:false,translationForLanguage:()=>null,newsCardTeaser:a=>a.content,storeTranslation(){},
       console:{warn(){}},document:{querySelector:()=>({dataset:{index:'0'}})},
       renderHome(){},window:{setTimeout:(fn,delay)=>timers.push({fn,delay}),
-        WRNSharedTranslations:{request:async()=>{calls++;return {error:true,status};}}}};
+        WRNSharedTranslations:{request:async()=>{calls++;return {error:true,status,data};}}}};
     const request=vm.runInNewContext(`(()=>{${extract('function articleNeedsTeaserTranslation(', 'async function ensureBriefingTranslations(')};return requestBriefingTranslation;})()`,retryContext);
     await request(article,'de');
-    assert.equal(timers[0].delay,status===0?30000:300000);
+    assert.equal(timers[0].delay,status===429&&!data?61000:status===0?30000:300000);
+    if(data) assert.equal(retryContext.homeTranslationPausedUntil,0,'daily quota must not be treated as a minute limit');
     await timers[0].fn(); assert.equal(calls,status===0?2:1);
     if(status===0) {
       assert.equal(timers[1].delay,300000,'a second failure cannot start a retry loop');
@@ -77,6 +79,8 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   let finishLead, finishSlow, rendered = 0;
   const homeState = { view: 'home', language: 'de' };
   const context = { state: homeState, homeTranslationRun: null, homeTranslationLanguage: '', homeTranslationQueue: [],
+    dataRefreshInFlight:false, homeTranslationWindowStartedAt:0,homeTranslationRequests:0,homeTranslationPausedUntil:0,
+    scheduleHomeTranslationWake(){}, Date,
     window: { WRNSharedTranslations: { request() {} } }, articleNeedsTeaserTranslation: () => true,
     requestBriefingTranslation: a => new Promise(r => { if(a.id === 'lead') finishLead = r; else finishSlow = r; }),
     renderHome: () => { rendered++; }, Map, Set, Promise };
