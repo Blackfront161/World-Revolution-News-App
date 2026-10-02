@@ -1,0 +1,31 @@
+{
+  "sourceCommit": "96e0aeafbaedb45c7f3c0fecf75bd55ce8d1dad2",
+  "files": [
+    {
+      "path": "prisoner-solidarity.json",
+      "bytes": 102243,
+      "sha256": "9c014e2c9a835e7e71672075682c39ae6eb63e4dbafd47b39d53c443327fb710"
+    },
+    {
+      "path": "docs/evidence/prisoner-roadmap-2026-10-03/profile-review.json",
+      "bytes": 12736,
+      "sha256": "eed073b9d2772f442b5f46d38cb6b7d76de5fe8c5d8cacbc2259dd9bf7e7ad5e"
+    },
+    {
+      "path": "docs/evidence/prisoner-roadmap-2026-10-03/source-observations.json",
+      "bytes": 5354,
+      "sha256": "2dab748333c7ff76fcb2f232e8deeafaea531178723239dc591e82ab84ce0469"
+    },
+    {
+      "path": "docs/evidence/prisoner-roadmap-2026-10-03/browser-result.json",
+      "bytes": 483,
+      "sha256": "04752717d018d191d50134b60cc8e3796419e15e7abe6cf3b9438ae15cca5c07"
+    },
+    {
+      "path": "docs/evidence/prisoner-roadmap-2026-10-03/app-audit.json",
+      "bytes": 33093,
+      "sha256": "103efb9521a6256fadd8a2c804aa212148516b1218d62f8131f39d29f0f02b06"
+    }
+  ],
+  "scope": "Source-only prisoner/support candidate; no Android release or new cache generation"
+}
