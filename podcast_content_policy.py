@@ -64,7 +64,7 @@ def project_episode(item, source=None, sources=()):
     if item.get('sourceId') in RULES.get('unverifiedLanguageSourceIds', []) or identifier in RULES.get('unverifiedLanguageEpisodeIds', []):
         result.update(language='und', languageVerified=False, languageReviewRequired=True,
                       languageConfidence=0, languageSource='mixed-channel-requires-review', configuredLanguages=['es','ca'])
-    if item.get('sourceId') in RULES.get('declaredChannelOnlySourceIds', []) or item.get('feedUrl') in RULES.get('declaredChannelOnlyFeedUrls', []):
+    if item.get('sourceId') in RULES.get('declaredChannelOnlySourceIds', []) or original_url(item.get('feedUrl')) in RULES.get('declaredChannelOnlyFeedUrls', []):
         result.update(language='und', languageVerified=False, languageReviewRequired=True,
                       languageConfidence=0, languageSource='declared-channel-unverified-episode')
     if restricted_endpoint(item):
@@ -104,3 +104,4 @@ def merge_archive_catalogs(catalogs, sources):
             elif row['id'] not in withdrawn:
                 records[row['id']] = item
     return sorted(records.values(), key=lambda row: (row.get('published') or '', row['id']), reverse=True)
+

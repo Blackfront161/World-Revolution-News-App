@@ -731,7 +731,7 @@
       Object.assign(result, {language:'und',languageVerified:false,languageReviewRequired:true,languageConfidence:0,
         languageSource:'mixed-channel-requires-review',configuredLanguages:['es','ca']});
     }
-    if ((rules.declaredChannelOnlySourceIds || []).includes(item.sourceId) || (rules.declaredChannelOnlyFeedUrls || []).includes(item.feedUrl)) {
+    if ((rules.declaredChannelOnlySourceIds || []).includes(item.sourceId) || (rules.declaredChannelOnlyFeedUrls || []).includes(originalUrl(item.feedUrl))) {
       Object.assign(result, {language:'und',languageVerified:false,languageReviewRequired:true,languageConfidence:0,
         languageSource:'declared-channel-unverified-episode'});
     }
@@ -750,3 +750,4 @@
   }
   return { rules, isMetadataOnly, projectEpisode, originalUrl, originalOnlyText };
 });
+
