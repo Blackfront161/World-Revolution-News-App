@@ -205,3 +205,47 @@ def test_real_aab_signature_gate_read_only() -> None:
     assert data["signed"]["ActualCertificateSha256"] == expected
     assert data["wrong"]["Valid"] is False
     assert data["wrong"]["CertificateMatches"] is False
+
+
+@pytest.mark.parametrize("build_error", [False, True])
+@pytest.mark.parametrize("junction", [False, True])
+def test_build_finally_cleanup_rejects_nested_junction(tmp_path: Path, build_error: bool, junction: bool) -> None:
+    if os.name != "nt":
+        pytest.skip("Build cleanup probe requires Windows junction semantics")
+    script = (ROOT / "scripts" / "build-android-release.ps1").read_text(encoding="utf-8")
+    cleanup = script[script.rindex("} finally {") + len("} finally {"):script.index('\nWrite-Host ""', script.rindex("} finally {"))].rstrip()
+    assert cleanup.endswith("}")
+    cleanup = cleanup[:-1]
+    assert "Remove-WrnDirectoryTreeWithoutReparsePoints -Directory $temporaryRoot" in cleanup
+    assert cleanup.index("Get-WrnDirectoryTreeWithoutReparsePoints") < cleanup.index("git worktree remove")
+    build_root = tmp_path / "guid-build"
+    nested = build_root / "nested"
+    external = tmp_path / "external"
+    nested.mkdir(parents=True)
+    external.mkdir()
+    sentinel = external / "sentinel.txt"
+    sentinel.write_text("keep outside build", encoding="utf-8")
+    link = nested / "unexpected-link"
+    command = (
+        "$ErrorActionPreference = 'Stop'; "
+        f". '{ps_quote(HELPERS)}'; "
+        f"$temporaryRoot = '{ps_quote(build_root)}'; $sourceRoot = Join-Path $temporaryRoot 'source'; "
+        "$UseWorkingTree = $true; "
+        + (f"New-Item -ItemType Junction -Path '{ps_quote(link)}' -Target '{ps_quote(external)}' | Out-Null; " if junction else "")
+        + "$failure = ''; try { try { "
+        + ("throw 'injected build failure'" if build_error else "'build succeeded' | Out-Null")
+        + " } finally { " + cleanup + " } } catch { $failure = $_.Exception.Message }; "
+        + "[pscustomobject]@{ failure=$failure; buildRemains=(Test-Path -LiteralPath $temporaryRoot) } | ConvertTo-Json -Compress; "
+        + (f"[System.IO.Directory]::Delete('{ps_quote(link)}', $false); " if junction else "")
+    )
+    completed = run_powershell(command)
+    assert completed.returncode == 0, completed.stdout + completed.stderr
+    result = json.loads(completed.stdout)
+    assert sentinel.read_text(encoding="utf-8") == "keep outside build"
+    assert sorted(p.name for p in external.iterdir()) == ["sentinel.txt"]
+    if junction:
+        assert "Reparse Point" in result["failure"]
+        assert result["buildRemains"] is True
+    else:
+        assert result["buildRemains"] is False
+        assert result["failure"] == ("injected build failure" if build_error else "")

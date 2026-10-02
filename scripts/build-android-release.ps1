@@ -400,13 +400,14 @@ try {
 } finally {
     if (Test-Path -LiteralPath $temporaryRoot) {
         Assert-WrnPathHasNoReparsePoints -Directory $temporaryRoot -AllowedParent ([System.IO.Path]::GetTempPath()) | Out-Null
+        Get-WrnDirectoryTreeWithoutReparsePoints -Directory $temporaryRoot | Out-Null
     }
     if (-not $UseWorkingTree -and (Test-Path -LiteralPath $sourceRoot)) {
         Assert-WrnPathHasNoReparsePoints -Directory $sourceRoot -AllowedParent $temporaryRoot | Out-Null
         git worktree remove --force $sourceRoot 2>$null
     }
     if (Test-Path -LiteralPath $temporaryRoot) {
-        Remove-Item -LiteralPath $temporaryRoot -Recurse -Force
+        Remove-WrnDirectoryTreeWithoutReparsePoints -Directory $temporaryRoot
     }
 }
 
