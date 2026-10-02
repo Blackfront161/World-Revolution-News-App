@@ -22,8 +22,7 @@ Der App-Offline-Quellenbestand ist ebenfalls ergänzt; unbekannte Herkunft bleib
 Im Autonom-Design stehen Menü, App-Titel, rot-schwarzer WEB-Link, Sprache und Suche
 in einer gemeinsamen Kopfzeile. Titel darf bei schmaler Ansicht und großer Schrift
 umbrechen. Alle Bedienelemente behalten mindestens 44px Touch-Fläche.
-CSS 53, Produktionscache r20 und Vorschaucache v108 sind gemeinsam gebunden;
-JavaScript bleibt 65. Die aktuelle Vorschau bestätigt CSS53 und Grid-Zeile1.
+CSS 53, JavaScript 66, Core 6, Produktionscache r21 und Vorschaucache v109 sind gemeinsam gebunden. Die aktuelle Vorschau bestätigt CSS53 und Grid-Zeile1.
 
 Prüfung: 162 Python-Tests (kompletter Lauf vor dem zusätzlichen Kategorien-Regressionsfall), 57 JavaScript-Testdateien, acht Worker-Cachetests,
 neun Daten-Aufnahme-/Alias-/Kategorientests, App-Validator und 161 Release-Auditprüfungen bestanden.
@@ -74,4 +73,38 @@ Medien. Fremde/nicht-HTTPS Links unter diesem Publisher werden ausgeschlossen,
 andere Publisher bleiben unverändert. Vierzehn historische Metadatensätze im
 App-news.json wurden ebenfalls begrenzt; Original-Link und vorhandene ID bleiben.
 Der komplette App-Testlauf danach: 164 PASS, drei historische SKIPs, vier Subtests.
-Der Daten-Regressionslauf: zehn PASS. Weitere Veröffentlichung per Folge-PR42.
+Der Daten-Regressionslauf: zehn PASS. [PR42](https://github.com/Blackfront161/Revolution-News-Data/pull/42) ist zusammengeführt; alle sechs bereinigten Mapuexpress-Archivbeiträge wurden im veröffentlichten Datenbestand bestätigt. Der Kontrolleur hat den Altbeitrags-Blocker am App-Commit635b742 geschlossen.
+
+
+## Sichtbare Original-Links und reine Überschriften
+
+Der echte Browsertest deckte einen weiteren Anzeigefehler auf: Die App filterte
+metadata-only-Datensätze als unvollständige Artikel aus. Beide Aufnahmewege
+(Startfeed und gezieltes Quellenarchiv) lassen jetzt explizit geprüfte
+Originalverweise mit Überschrift, Rechtehinweis und HTTPS-Link auf demselben
+Host wie die Quellenhomepage zu. Unvollständige fremde Auszüge ohne
+nachladbaren Volltext bleiben ausgeschlossen. Originalverweise werden weiterhin
+nicht als Volltexte oder Hauptschlagzeile ausgegeben.
+
+Die Normalisierung entfernt bei metadata-only auch veraltete Fremdtexte,
+Kurztexte, strukturierte Textblöcke, Bilder, Videos und Detail-Verweise.
+Die Leseransicht zeigt einen eigenen Hinweis in allen neun UI-Sprachen und
+den Original-Link. Kein Volltext wird nachgeladen; Zusammenfassung und
+Artikel-Podcast sind für diese Verweise deaktiviert. Original-Link und
+Überschriftenübersetzung bleiben verfügbar.
+
+Die API verlangt ein gefülltes Textfeld. Reine Überschriften werden deshalb
+als Text im unterstützten Modus continuation gesendet; title_and_text bleibt
+für vollständige Titel/Kurztext-Paare. Automatische Startseiten-, Karten-
+und Leserübersetzung verwenden dieselbe Request-Funktion. Es wird kein
+künstlicher Artikeltext hinzugefügt. Die erfolgreiche deutsche ACIN-
+Überschrift wurde in der echten Leseransicht geprüft; ein zweiter Client
+auf einem anderen freigegebenen Ursprung erhielt dieselbe Antwort mit
+HIT und storage=kv (acin-shared-headline.json).
+
+Echte Vorschau: ACIN2/2 und Debates Indígenas6/6 sichtbar; korrekter
+ACIN-Original-Link und deutsche Überschrift; Core6/JS66 und Header-Zeile1.
+Abschlusstests:164 Python-PASS,3 historische SKIPs,4 Subtests;
+57 JavaScript-Testdateien;8 gemeinsame Cachetests;161 Release-Auditchecks;
+App-Validator und Autonom-Browserprüfung bestanden. Die neuen Runtime-Dateien
+sind lokal in der Vorschau; der vorhandene Android-Kandidat enthält sie nicht.

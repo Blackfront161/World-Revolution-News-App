@@ -233,6 +233,7 @@
 
   const ARTICLE_COPY = {
     de: {
+      sourceReference:"Beitrag auf der Originalseite", sourceReferenceText:"Hier findest du die Überschrift und den Original-Link. Lies den vollständigen Beitrag direkt bei der Quelle.",
       loadingFullArticle:'Vollständiger Artikel wird geladen …',
       fullArticleUnavailable:'Vollständiger Artikel derzeit nicht verfügbar',
       fullArticleUnavailableText:'Die App zeigt keinen unvollständigen Text als vollständigen Artikel. Öffne das Original oder versuche es erneut.',
@@ -248,6 +249,7 @@
       changeComplete:'Vollständiger Text nachgeladen', correctionLabel:'Korrekturhinweis'
     },
     en: {
+      sourceReference:"Article on the original site", sourceReferenceText:"This entry provides the headline and original link. Read the complete article directly at the source.",
       loadingFullArticle:'Loading the complete article …',
       fullArticleUnavailable:'Complete article currently unavailable',
       fullArticleUnavailableText:'The app does not present an incomplete text as a complete article. Open the original or try again.',
@@ -263,6 +265,7 @@
       changeComplete:'Complete text retrieved', correctionLabel:'Correction note'
     },
     es: {
+      sourceReference:"Artículo en el sitio original", sourceReferenceText:"Aquí están el titular y el enlace original. Lee el artículo completo directamente en la fuente.",
       loadingFullArticle:'Cargando el artículo completo …',
       fullArticleUnavailable:'El artículo completo no está disponible actualmente',
       fullArticleUnavailableText:'La aplicación no presenta un texto incompleto como artículo completo. Abre el original o inténtalo de nuevo.',
@@ -275,6 +278,7 @@
       articleHistory:'Historial de cambios', publishedLabel:'Publicado', updatedLabel:'Actualizado', changeContent:'Texto ampliado', changeImages:'Imágenes añadidas', changeTitle:'Título actualizado', changeComplete:'Texto completo recuperado', correctionLabel:'Nota de corrección'
     },
     fr: {
+      sourceReference:"Article sur le site original", sourceReferenceText:"Cette entrée présente le titre et le lien original. Lisez le texte complet directement à la source.",
       loadingFullArticle:'Chargement de l’article complet …',
       fullArticleUnavailable:'L’article complet est actuellement indisponible',
       fullArticleUnavailableText:'L’application ne présente pas un texte incomplet comme un article complet. Ouvrez l’original ou réessayez.',
@@ -287,6 +291,7 @@
       articleHistory:'Historique des modifications', publishedLabel:'Publié', updatedLabel:'Actualisé', changeContent:'Texte enrichi', changeImages:'Images ajoutées', changeTitle:'Titre actualisé', changeComplete:'Texte complet récupéré', correctionLabel:'Note de correction'
     },
     it: {
+      sourceReference:"Articolo sul sito originale", sourceReferenceText:"Qui trovi il titolo e il collegamento originale. Leggi il testo completo direttamente alla fonte.",
       loadingFullArticle:'Caricamento dell’articolo completo …',
       fullArticleUnavailable:'L’articolo completo non è attualmente disponibile',
       fullArticleUnavailableText:'L’app non presenta un testo incompleto come articolo completo. Apri l’originale o riprova.',
@@ -299,6 +304,7 @@
       articleHistory:'Cronologia modifiche', publishedLabel:'Pubblicato', updatedLabel:'Aggiornato', changeContent:'Testo ampliato', changeImages:'Immagini aggiunte', changeTitle:'Titolo aggiornato', changeComplete:'Testo completo recuperato', correctionLabel:'Nota di correzione'
     },
     pt: {
+      sourceReference:"Artigo no site original", sourceReferenceText:"Aqui estão o título e a ligação original. Lê o artigo completo diretamente na fonte.",
       loadingFullArticle:'A carregar o artigo completo …',
       fullArticleUnavailable:'O artigo completo não está disponível neste momento',
       fullArticleUnavailableText:'A aplicação não apresenta um texto incompleto como artigo completo. Abre o original ou tenta novamente.',
@@ -311,6 +317,7 @@
       articleHistory:'Histórico de alterações', publishedLabel:'Publicado', updatedLabel:'Atualizado', changeContent:'Texto ampliado', changeImages:'Imagens adicionadas', changeTitle:'Título atualizado', changeComplete:'Texto completo recuperado', correctionLabel:'Nota de correção'
     },
     ru: {
+      sourceReference:"Статья на сайте источника", sourceReferenceText:"Здесь представлены заголовок и ссылка. Полный текст читайте на сайте источника.",
       loadingFullArticle:'Загружается полный текст статьи …',
       fullArticleUnavailable:'Полный текст статьи сейчас недоступен',
       fullArticleUnavailableText:'Приложение не выдаёт неполный текст за полную статью. Откройте оригинал или повторите попытку.',
@@ -323,6 +330,7 @@
       articleHistory:'История изменений', publishedLabel:'Опубликовано', updatedLabel:'Обновлено', changeContent:'Текст дополнен', changeImages:'Изображения добавлены', changeTitle:'Заголовок обновлён', changeComplete:'Полный текст загружен', correctionLabel:'Примечание об исправлении'
     },
     el: {
+      sourceReference:"Άρθρο στην αρχική ιστοσελίδα", sourceReferenceText:"Εδώ θα βρείτε τον τίτλο και τον αρχικό σύνδεσμο. Διαβάστε το πλήρες άρθρο στην πηγή.",
       loadingFullArticle:'Φόρτωση πλήρους άρθρου …',
       fullArticleUnavailable:'Το πλήρες άρθρο δεν είναι διαθέσιμο αυτή τη στιγμή',
       fullArticleUnavailableText:'Η εφαρμογή δεν παρουσιάζει ένα ελλιπές κείμενο ως πλήρες άρθρο. Ανοίξτε το πρωτότυπο ή δοκιμάστε ξανά.',
@@ -335,6 +343,7 @@
       articleHistory:'Ιστορικό αλλαγών', publishedLabel:'Δημοσιεύτηκε', updatedLabel:'Ενημερώθηκε', changeContent:'Το κείμενο εμπλουτίστηκε', changeImages:'Προστέθηκαν εικόνες', changeTitle:'Ο τίτλος ενημερώθηκε', changeComplete:'Ανακτήθηκε πλήρες κείμενο', correctionLabel:'Σημείωση διόρθωσης'
     },
     tr: {
+      sourceReference:"Kaynak sitesindeki makale", sourceReferenceText:"Burada başlık ve özgün bağlantı yer alır. Makalenin tamamını doğrudan kaynaktan okuyun.",
       loadingFullArticle:'Makalenin tamamı yükleniyor …',
       fullArticleUnavailable:'Makalenin tamamı şu anda kullanılamıyor',
       fullArticleUnavailableText:'Uygulama eksik bir metni tam makale olarak göstermez. Özgün metni açın veya yeniden deneyin.',
@@ -4293,7 +4302,7 @@
 
   function articleNeedsTeaserTranslation(article, targetLanguage) {
     if (!article || translationForLanguage(article, targetLanguage)) return false;
-    if (!String(newsCardTeaser(article, null, targetLanguage) || '').trim()) return false;
+    if (!core.isMetadataLink(article) && !String(newsCardTeaser(article, null, targetLanguage) || '').trim()) return false;
     const requestKey = `${targetLanguage}::${article.id}::${core.articleTranslationFingerprint(article)}`;
     if (briefingTranslationsAttempted.has(requestKey)) return false;
     const sourceLanguage = String(
@@ -4313,12 +4322,9 @@
     briefingTranslationsAttempted.add(requestKey);
     let failureResult;
     try {
-      const result = await window.WRNSharedTranslations.request({
-        title: article.title,
-        text: newsCardTeaser(article, null, targetLanguage),
-        targetLanguage,
-        mode: 'title_and_text'
-      });
+      const result = await window.WRNSharedTranslations.request(core.articleTranslationRequest(
+        article, targetLanguage, newsCardTeaser(article, null, targetLanguage)
+      ));
       if (result?.error || !result?.text) {
         failureResult = result;
         throw new Error(result?.message || 'Translation failed');
@@ -4327,7 +4333,7 @@
       const parsed = core.splitTranslatedTeaser(result.text);
       const translated = {
         title: parsed.title || article.title,
-        intro: cardCopy.completeFirstSentence(parsed.intro, targetLanguage)
+        intro: core.isMetadataLink(article) ? '' : cardCopy.completeFirstSentence(parsed.intro, targetLanguage)
       };
       storeTranslation(article, translated, targetLanguage);
       return translated;
@@ -4708,7 +4714,7 @@
       }
       if (generation !== state.sourceArchive.generation) return;
       const merged = core.normalizeArticles([...state.articles, ...payload])
-        .filter(core.hasCompleteArticle);
+        .filter(core.hasVisibleArticle);
       state.articles = core.applyEditorialDecisions(merged, state.editorialDecisions);
       state.facets = core.collectFacets(state.articles);
       state.sourceArchive.loadedSources.add(sourceName);
@@ -6740,18 +6746,15 @@
     if (label) label.textContent = t('translating');
 
     try {
-      const result = await window.WRNSharedTranslations.request({
-        title: article.title,
-        text: newsCardTeaser(article, null, targetLanguage),
-        targetLanguage,
-        mode: 'title_and_text'
-      });
+      const result = await window.WRNSharedTranslations.request(core.articleTranslationRequest(
+        article, targetLanguage, newsCardTeaser(article, null, targetLanguage)
+      ));
       if (result?.error || !result?.text) throw new Error(result?.message || 'Translation failed');
       if (sourceFingerprint !== core.articleTranslationFingerprint(article)) return;
       const parsed = core.splitTranslatedTeaser(result.text);
       storeTranslation(article, {
         title: parsed.title || article.title,
-        intro: parsed.intro
+        intro: core.isMetadataLink(article) ? '' : parsed.intro
       }, targetLanguage);
       if (state.language !== targetLanguage || !button.isConnected) return;
       const storedTranslation = translationFor(article);
@@ -6874,6 +6877,7 @@
   async function hydrateArticleDetail(article) {
     if (
       !article
+      || article.importMode === 'metadata-only'
       || article.detailHydrated
       || article.detailLoading
       || article.detailFailed
@@ -6938,7 +6942,12 @@
     translateButton.disabled = false;
     translateButton.removeAttribute('aria-busy');
     translateButton.querySelector('span:last-child').textContent = t('translate');
-    const allowPartial = options.allowPartial === true;
+    const isSourceReference = core.isMetadataLink(article);
+    for (const id of ['next-dialog-summary', 'next-dialog-podcast']) {
+      const action = document.getElementById(id);
+      if (action) action.disabled = isSourceReference;
+    }
+    const allowPartial = options.allowPartial === true || isSourceReference;
     const contentMode = core.articleContentMode(article, article.content);
     article.contentMode = contentMode;
     const requiresCompleteArticle = (
@@ -6966,12 +6975,12 @@
     const articleBodyText = translation?.fullContent ? translation.content : (article.content || article.intro);
     const articleBody = structuredArticleMarkup(article, Boolean(translation?.fullContent), articleBodyText);
     const continuationMarkup = isMetadataOnly
-      ? `<aside class="article-continuation article-metadata-only" role="note" aria-label="${escapeHtml(t('fullArticleUnavailable'))}">
-          <strong>${escapeHtml(t('fullArticleUnavailable'))}</strong>
-          <p>${escapeHtml(t('fullArticleUnavailableText'))}</p>
+      ? `<aside class="article-continuation article-metadata-only" role="note" aria-label="${escapeHtml(t(isSourceReference ? 'sourceReference' : 'fullArticleUnavailable'))}">
+          <strong>${escapeHtml(t(isSourceReference ? 'sourceReference' : 'fullArticleUnavailable'))}</strong>
+          <p>${escapeHtml(t(isSourceReference ? 'sourceReferenceText' : 'fullArticleUnavailableText'))}</p>
           <div>
             ${article.link ? `<a class="primary-button" href="${escapeHtml(article.link)}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(t('continueOriginal'))}</a>` : ''}
-            <button type="button" class="secondary-button" data-action="article-detail-retry">${escapeHtml(t('retryFullArticle'))}</button>
+            ${isSourceReference ? '' : `<button type="button" class="secondary-button" data-action="article-detail-retry">${escapeHtml(t('retryFullArticle'))}</button>`}
           </div>
         </aside>`
       : isPartial
@@ -7603,6 +7612,15 @@
     button.setAttribute('aria-busy', 'true');
 
     try {
+      if (core.isMetadataLink(article)) {
+        const result = await window.WRNSharedTranslations.request(core.articleTranslationRequest(article, targetLanguage));
+        if (!stillCurrent()) return;
+        if (result?.error || !result?.text) throw new Error(result?.message || 'Translation failed');
+        storeTranslation(article, { title: core.splitTranslatedTeaser(result.text).title || article.title, intro: '' }, targetLanguage);
+        openArticle(article);
+        showToast(t('translatedTitle'));
+        return;
+      }
       const chunks = release.splitTranslationChunks(article.content || article.intro, 5200);
       if (!chunks.length) throw new Error('No article text');
       let translatedTitle = article.title;
@@ -9378,8 +9396,8 @@
     articles.forEach(article => {
       if (article.detailPath) article.detailUrl = new URL(article.detailPath, feedBaseUrl).href;
     });
-    const completeArticles = articles.filter(core.hasCompleteArticle);
-    if (!completeArticles.length) throw new Error(`No complete articles in ${candidate.url}`);
+    const completeArticles = articles.filter(core.hasVisibleArticle);
+    if (!completeArticles.length) throw new Error(`No visible articles in ${candidate.url}`);
     return completeArticles;
   }
 

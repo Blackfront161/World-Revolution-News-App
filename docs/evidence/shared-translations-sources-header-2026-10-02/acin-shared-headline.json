@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "cache": "HIT",
+  "storage": "kv",
+  "mode": "continuation",
+  "publicHeadline": "Munchique culminó el diplomado sobre el Derecho Humano a la Alimentación Adecuada, realizado junto al ICBF y la Universidad Tecnológica de Pereira",
+  "translation": "Munchique hat den Weiterbildungskurs zum Menschenrecht auf angemessene Ernährung abgeschlossen, der gemeinsam mit dem ICBF und der Technologischen Universität von Pereira durchgeführt wurde.",
+  "provider": "gemini"
+}

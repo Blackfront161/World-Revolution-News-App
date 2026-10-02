@@ -1231,7 +1231,7 @@
     "artifactSha256": "8DF3D03E02EC1AC355332AA776D5C005CAB331349C8C75E6F12528F6BAF1F15E",
     "artifactPath": "outputs/knowledge-translation-code33-20261002/build1/WorldRevolutionNews-2.1.2-code33-34e22d9-unsigned.aab",
     "runtime": {
-      "js": 65,
+      "js": 66,
       "css": 52,
       "lexicon": 10,
       "productionCache": "2.1.2-r19",
@@ -1260,11 +1260,12 @@
     },
     "artifactContainsLatestChanges": false,
     "pendingRuntime": {
-      "js": 65,
+      "js": 66,
       "css": 53,
       "lexicon": 10,
-      "productionCache": "2.1.2-r20",
-      "previewCache": "v108"
+      "productionCache": "2.1.2-r21",
+      "previewCache": "v109",
+      "core": 6
     }
   },
   "roadmapPackage20261002": {
@@ -1589,7 +1590,8 @@
       "retentionDays": 7,
       "liveTwoClientTest": "PASS",
       "crossIpTest": "PASS",
-      "workerChanged": false
+      "workerChanged": false,
+      "headlineOnlyLiveSecondClient": "PASS-HIT-kv"
     },
     "sources": {
       "new": [
@@ -1606,7 +1608,16 @@
       "verifiedPublishedArticles": 8,
       "archiveCorrectionPullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/41",
       "archiveSources": 124,
-      "archiveItems": 3097
+      "archiveItems": 3097,
+      "retainedArchiveCorrectionPullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/42",
+      "originalLinkReader": "implemented",
+      "fullTextHydration": "disabled-for-metadata-only",
+      "retainedArchiveCorrectionPublished": true,
+      "controllerRetainedArchiveReview": "PASS-635b742",
+      "visibleRecords": {
+        "ACIN": 2,
+        "Debates Indigenas": 6
+      }
     },
     "autonomHeader": {
       "status": "preview-verified",
@@ -1618,8 +1629,10 @@
         "search"
       ],
       "css": 53,
-      "productionCache": "2.1.2-r20",
-      "previewCache": "v108"
+      "productionCache": "2.1.2-r21",
+      "previewCache": "v109",
+      "js": 66,
+      "core": 6
     },
     "next": "Neuen Android-Kandidaten mit Kopfzeile und Offline-Quellen bauen; bisheriges Code33-Artefakt ist historisch."
   }

@@ -26,7 +26,8 @@ vm.createContext(ctx);vm.runInContext(`${section};this.run=ensureHomeTranslation
  now+=66000;timers.shift().fn();await ctx.run(articles);assert.equal(calls.length,25);
  assert.equal(new Set(calls).size,25);assert(renders>0);
  const needs=app.slice(app.indexOf('function articleNeedsTeaserTranslation('),app.indexOf('async function requestBriefingTranslation('));
- const check=vm.runInNewContext(`(${needs.trim()})`,{translationForLanguage:()=>null,newsCardTeaser:()=>'',briefingTranslationsAttempted:new Set(),core:{articleTranslationFingerprint:()=>''}});
+ const check=vm.runInNewContext(`(${needs.trim()})`,{translationForLanguage:()=>null,newsCardTeaser:()=>'',briefingTranslationsAttempted:new Set(),core:require('../news-app-2-core.js')});
  assert.equal(check({id:'empty',language:'en'},'de'),false,'empty teasers must not make invalid API calls');
+ assert.equal(check({id:'link',title:'Community report',language:'es',importMode:'metadata-only',rightsReview:'metadata only',sourceHomepage:'https://source.example/',link:'https://source.example/report'},'de'),true,'reviewed original-link headlines remain eligible for automatic translation');
  console.log('Home translation: no startup snapshot requests,12/min across rerenders,lead priority,minute pause/resume,no empty requests PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});

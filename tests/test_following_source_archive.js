@@ -4,7 +4,7 @@ const vm = require('node:vm');
 
 const source = fs.readFileSync(require('node:path').join(__dirname, '..', 'news-app-2.js'), 'utf8');
 function extract(name) {
-  const start = source.indexOf(`  async function ${name}(`);
+  const start = Math.max(source.indexOf(`  async function ${name}(`), source.indexOf(`  function ${name}(`));
   assert(start >= 0, `${name} exists`);
   let depth = 0;
   for (let index = source.indexOf('{', start); index < source.length; index += 1) {
@@ -50,6 +50,34 @@ async function main() {
   assert.equal(state.sourceArchive.loadedSources.has('Followed Source'), true);
   assert.equal(context.rendered, 1, 'the personal feed refreshes after its archive arrives');
   assert.equal(state.sourceArchive.failedSources.size, 0);
+  const core = require('../news-app-2-core.js');
+  const entries = JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'..','news-archive-manifest.json'),'utf8')).sources;
+  const entry = entries.find(item => item.name.startsWith('ACIN'));
+  assert(entry, 'published ACIN archive is present');
+  const payload = JSON.parse(fs.readFileSync(require('node:path').join(__dirname,'..',entry.path),'utf8'));
+  let detailFetches = 0;
+  state.articles = [];
+  state.editorialDecisions = [];
+  state.sourceArchive.loadedSources.clear();
+  context.core = core;
+  context.fetchFirstJson = async () => payload;
+  context.ensureSourceArchiveManifest = async () => ({sources:[entry]});
+  context.loadArticleArchive = async () => {detailFetches += 1; throw new Error('Forbidden metadata hydration');};
+  context.fetchJson = async () => {detailFetches += 1; throw new Error('Forbidden detail fetch');};
+  vm.runInContext(extract('loadSourceArchive'),context);
+  vm.runInContext(extract('hydrateArticleDetail'),context);
+  await vm.runInContext(`loadSourceArchive(${JSON.stringify(entry.name)})`,context);
+  assert.equal(state.articles.length,2,'both ACIN original-link records remain visible');
+  assert(state.articles.every(core.isMetadataLink));
+  context.URL = URL;
+  context.window.location = {href:'http://localhost/index.html'};
+  context.initialPayload = payload;
+  vm.runInContext(extract('normalizedNewsPayload'),context);
+  assert.equal(vm.runInContext("normalizedNewsPayload({url:'news-feed.json'},initialPayload).length",context),2,
+    'the initial feed also retains reviewed original-link records');
+  context.metadataArticle = {...state.articles[0],detailUrl:'https://source.example/old.json'};
+  assert.equal(await vm.runInContext('hydrateArticleDetail(metadataArticle)',context),false);
+  assert.equal(detailFetches,0,'metadata-only readers never fetch a full text or a stale detail chunk');
   console.log('Followed source archive loading: OK');
 }
 

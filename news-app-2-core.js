@@ -167,7 +167,29 @@
     }).filter(Boolean);
   }
 
+  function isMetadataLink(article) {
+    if (article?.importMode !== 'metadata-only' || !text(article?.title) || !text(article?.rightsReview)) return false;
+    try {
+      const link = new URL(article.link);
+      const homepage = new URL(article.sourceHomepage);
+      return link.protocol === 'https:' && homepage.protocol === 'https:'
+        && !link.username && !link.password && !homepage.username && !homepage.password
+        && link.hostname === homepage.hostname;
+    } catch (_) { return false; }
+  }
+
+  function hasVisibleArticle(article) {
+    return article?.importMode === 'metadata-only' ? isMetadataLink(article) : hasCompleteArticle(article);
+  }
+
+  function articleTranslationRequest(article, targetLanguage, teaserText = '') {
+    return isMetadataLink(article)
+      ? { title: '', text: article.title, targetLanguage, mode: 'continuation' }
+      : { title: article.title, text: teaserText, targetLanguage, mode: 'title_and_text' };
+  }
+
   function articleContentMode(article, normalizedContent = '') {
+    if (article?.importMode === 'metadata-only') return 'metadata';
     const content = text(
       normalizedContent
       || article?.content
@@ -255,17 +277,18 @@
       || categories.find(item => normalizeRegion(item) !== primaryRegion)
       || ''
     );
-    const content = stripHtmlPreserveBreaks(
+    const metadataOnly = article?.importMode === 'metadata-only';
+    const content = metadataOnly ? '' : stripHtmlPreserveBreaks(
       article?.content || article?.description || article?.summary || ''
     );
-    const contentBlocks = normalizeContentBlocks(article?.contentBlocks);
+    const contentBlocks = metadataOnly ? [] : normalizeContentBlocks(article?.contentBlocks);
     const contentMode = articleContentMode(article, content);
 
     return {
       ...article,
       id: articleId(article),
       type: text(article?.type || 'article'),
-      title: text(article?.title || 'Untitled'),
+      title: text(article?.title || (metadataOnly ? '' : 'Untitled')),
       intro: excerpt(content, 230),
       content,
       contentMode,
@@ -273,8 +296,10 @@
       source: text(article?.quelleName || article?.source || 'Unknown source'),
       author: text(article?.author),
       link: safeHttpUrl(article?.link),
-      videoUrl: videoUrl(article),
-      image: safeImageUrl(article?.image || article?.imageUrl),
+      videoUrl: metadataOnly ? '' : videoUrl(article),
+      image: metadataOnly ? '' : safeImageUrl(article?.image || article?.imageUrl),
+      ...(metadataOnly ? { description: '', summary: '', images: [], contentComplete: false,
+        detailUrl: '', detailPath: '', webFeedTruncated: false } : {}),
       primaryRegion,
       primaryTopic,
       secondaryTopics: Array.isArray(article?.secondaryTopics)
@@ -759,7 +784,10 @@
     articleContentParagraphs,
     articleContentMode,
     articleTranslationFingerprint,
+    articleTranslationRequest,
     hasCompleteArticle,
+    hasVisibleArticle,
+    isMetadataLink,
     articleImageUrls,
     articleId,
     balanceEditorially,

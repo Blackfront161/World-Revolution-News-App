@@ -62,6 +62,35 @@ assert.strictEqual(
   'a deliberately shortened web-feed item may remain when its full article can be hydrated'
 );
 
+const reference = {title:'Community report', quelleName:'Reviewed source', importMode:'metadata-only',
+  rightsReview:'Metadata only until rights are reviewed', sourceHomepage:'https://source.example/',
+  link:'https://source.example/report', content:'Foreign body must never render.', contentComplete:true,
+  contentMode:'full', description:'Foreign summary', images:['https://source.example/image.jpg'],
+  image:'https://source.example/image.jpg', contentBlocks:[{type:'paragraph',text:'Foreign body'}],
+  videoUrl:'https://kolektiva.media/w/abc', detailPath:'old-detail.json'};
+const normalizedReference = core.normalizeArticle(reference);
+assert.strictEqual(core.hasVisibleArticle(normalizedReference), true);
+assert.strictEqual(core.hasCompleteArticle(normalizedReference), false);
+assert.strictEqual(core.isLeadEligible(normalizedReference), false);
+assert.strictEqual(normalizedReference.contentMode, 'metadata');
+assert.deepStrictEqual(core.articleTranslationRequest(normalizedReference,'de'),
+  {title:'',text:reference.title,targetLanguage:'de',mode:'continuation'});
+assert.deepStrictEqual(core.articleTranslationRequest({title:'Full article'},'de','Original text'),
+  {title:'Full article',text:'Original text',targetLanguage:'de',mode:'title_and_text'});
+assert.strictEqual(normalizedReference.content, '');
+assert.strictEqual(normalizedReference.description, '');
+assert.strictEqual(normalizedReference.image, '');
+assert.strictEqual(normalizedReference.videoUrl, '');
+assert.strictEqual(normalizedReference.detailPath, '');
+assert.deepStrictEqual(normalizedReference.images, []);
+assert.deepStrictEqual(normalizedReference.contentBlocks, []);
+for (const patch of [{link:'https://other.example/report'}, {link:'http://source.example/report'},
+  {link:'https://user:pass@source.example/report'}, {sourceHomepage:''}, {rightsReview:''}, {title:''}]) {
+  assert.strictEqual(core.hasVisibleArticle(core.normalizeArticle({...reference,...patch})), false,
+    'invalid metadata links cannot bypass the complete-article admission rule');
+}
+assert.strictEqual(core.hasVisibleArticle({content:'Unrecoverable source excerpt',contentComplete:false}),false);
+
 const articles = core.normalizeArticles([
   {
     title: 'Newest A',

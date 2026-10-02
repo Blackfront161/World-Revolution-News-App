@@ -19,5 +19,20 @@
   "archiveSources": 124,
   "archiveItems": 3097,
   "retainedArchivePolicyRegression": "PASS",
-  "mapuexpressRestrictedArchiveRows": 6
+  "mapuexpressRestrictedArchiveRows": 6,
+  "retainedArchiveCorrectionPullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/42",
+  "retainedArchivePublishedRestrictedRows": 6,
+  "retainedArchiveController": "PASS-635b742",
+  "originalLinkReader": "PASS",
+  "acinVisibleRecords": 2,
+  "debatesVisibleRecords": 6,
+  "metadataFullTextHydration": "disabled-and-tested",
+  "headlineSharedCache": "HIT-kv",
+  "runtime": {
+    "js": 66,
+    "core": 6,
+    "css": 53,
+    "productionCache": "2.1.2-r21",
+    "previewCache": "v109"
+  }
 }
