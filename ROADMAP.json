@@ -1301,7 +1301,7 @@
     "previewUrl": "http://127.0.0.1:8765/index.html?preview=8",
     "liveTranslationModelObserved": "gemini-3.5-flash-lite",
     "preferredModelPrepared": "gemini-3.5-flash-lite",
-    "cloudflareDeployment": "published-live-functional-pass-security-followup-pending",
+    "cloudflareDeployment": "published-independent-code-review-and-live-smoke-pass",
     "appDistribution": "not-signed-not-uploaded-not-live",
     "checks": {
       "javascriptModules": 56,
@@ -1313,8 +1313,8 @@
       "releaseAudit": "161/161"
     },
     "nextSteps": [
-      "Independent review and publication of separate Cloudflare security correction",
-      "Local protected signing, signed artifact review, physical Code33 device test and bound Play upload"
+      "Local protected signing of the exact ce2b556 Code33 candidate",
+      "Signed artifact review, physical Code33 device test and bound Play upload"
     ],
     "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
     "controllerFollowup": {
@@ -1322,7 +1322,7 @@
       "transientLeadRetry": "one-direct-bounded-retry-after-30-seconds-independent-of-batch-failure-cutoff",
       "terminalErrors": "No-auto-retry-for-origin-auth-quota-and-provider-exhaustion"
     },
-    "cloudflareVersion": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c"
+    "cloudflareVersion": "b4344450-d9f3-4e2e-9889-1c961c725508"
   },
   "websiteCurrentRelease20261002": {
     "sourceCommit": "4dfbf47ff8af9809ab537004f8ae5181144dec3e",
@@ -1340,18 +1340,20 @@
     "headChiefWebsiteWrites": false
   },
   "cloudflareModelMigration20261002": {
-    "status": "live-functional-pass",
+    "status": "live-functional-pass-security-correction-independently-reviewed-and-published",
     "model": "gemini-3.5-flash-lite",
-    "version": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c",
+    "version": "b4344450-d9f3-4e2e-9889-1c961c725508",
     "publishedAtUTC": "2026-10-02T09:48:06Z",
-    "previousVersion": "039864f6-f4dc-41be-a820-16dda00607ae",
+    "previousVersion": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c",
     "secretsAndExistingVars": "preserved; no secret values read",
     "translationDailyLimit": 950,
     "translationMinuteLimit": 20,
     "sharedCacheWorker": "unchanged; existing entries preserved",
-    "liveChecks": "direct DE and cache FR HTTP200, both report gemini-3.5-flash-lite; health and CORS pass",
-    "evidence": "docs/evidence/cloudflare-model-2026-10-02/live-verification.json",
-    "securityFollowup": "three independently reported findings; separate fix under review, not yet published"
+    "liveChecks": "Natural DE/FR headline and text HTTP200 with gemini-3.5-flash-lite; cache MISS then HIT with identical text; health and CORS pass; oversized stream without Content-Length413; push-config200 enabledfalse, no broadcast",
+    "evidence": "docs/evidence/cloudflare-model-2026-10-02/final-live-verification.json",
+    "securityFollowup": "three original findings independently fixed and exact reviewed code 3a429a8 published",
+    "initialModelMigrationVersion": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c",
+    "originalRollbackVersion": "039864f6-f4dc-41be-a820-16dda00607ae"
   },
   "code33ProtectedSigning20261002": {
     "status": "independent-preflight-pass-not-signed-not-uploaded",
@@ -1362,7 +1364,7 @@
     "evidence": "docs/evidence/cloudflare-model-2026-10-02/code33-ce2b556-preflight.json"
   },
   "cloudflareSecurityFollowup20261002": {
-    "status": "implemented-tests-pass-awaiting-independent-review-not-published",
+    "status": "independent-exact-code-review-pass-published-live-smoke-pass",
     "report": "docs/CLOUDFLARE-SECURITY-FOLLOWUP-2026-10-02.md",
     "cloudflareTestsPassed": 19,
     "dryRun": "pass",
@@ -1373,6 +1375,9 @@
     ],
     "appPackageChanged": false,
     "realPushSent": false,
-    "nextStep": "Independent exact-commit review before publication"
+    "nextStep": "Retain deployment evidence; App signing and device acceptance are separate",
+    "sourceCommit": "3a429a8d3b732793118859afeb8bd62a5f089f65",
+    "workerVersion": "b4344450-d9f3-4e2e-9889-1c961c725508",
+    "localDurableObjectProbe": "50 of60 concurrent subscriptions admitted,10 capacity rejections; local fixture2026-07-29, production2026-08-05 unchanged"
   }
 }

@@ -26,7 +26,7 @@ Google nennt für neue Projekte 3.5 Flash-Lite oder 3.8 Flash. Für 3.1 Flash-Li
 
 Quellen: [Google Modell-Lebenszyklus](https://ai.google.dev/gemini-api/docs/deprecations), [3.5 Flash-Lite](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite).
 
-Worker-Syntax, elf Worker-Tests und Wrangler-Dry-run bestehen. Die Cloudflare-Anmeldung ist abgelaufen und konnte nicht automatisch erneuert werden. **Keine Worker-Veröffentlichung erfolgte; live bleibt das getestete bestehende Modell.** Neue Modellqualität und Kontofreigabe müssen nach erfolgreicher Anmeldung geprüft werden. Die App-Korrekturen benötigen diesen Modellwechsel nicht.
+Historischer Stand vor der erneuten Anmeldung: Worker-Syntax, elf Worker-Tests und Wrangler-Dry-run bestanden. Die Cloudflare-Anmeldung war abgelaufen; zu diesem Zeitpunkt erfolgte keine Worker-Veröffentlichung. Die inzwischen erfolgreiche Veröffentlichung und Live-Prüfung sind im Nachtrag unten dokumentiert. Die App-Korrekturen benötigen diesen Modellwechsel nicht.
 
 ## Prüfung und Release
 
@@ -65,3 +65,7 @@ Direkte deutsche und gemeinsame französische Testanfrage lieferten HTTP200 und 
 Der Kontrolleur meldete anschließend drei separate Sicherheitsbefunde im bisherigen Worker: unbegrenzte Push-Registrierung mit Auswahl nur der neuesten 2500, beliebige HTTPS-Pushziele und Größenprüfung nur am Content-Length. Die Modellmigration ist funktional erfolgreich, aber nicht als sicherheitsbereinigt abgenommen. Eine separate Korrektur mit Verhaltens- und Angriffstests wird vor erneuter Veröffentlichung unabhängig geprüft.
 
 Der neue ausschließlich an `ce2b556` gebundene Code33-Signierer hat die unabhängige Read-only-Abnahme und den echten Preflight bestanden. Noch keine Signierung, kein physischer Code33-Test und kein Play-Upload. Das App-Paket und sein Produktfreeze bleiben unverändert.
+
+## Endstatus Cloudflare
+
+Die drei zusätzlichen Worker-Befunde sind im separaten Commit `3a429a8` unabhängig als behoben abgenommen und veröffentlicht. Aktive Version `b4344450-d9f3-4e2e-9889-1c961c725508`. Live übersetzte natürliche deutsche/französische Überschriften samt Text mit Gemini3.5Flash-Lite, anschließender Cache-HIT mit identischem Text, Herkunftsschutz und tatsächlicher40001Byte-Stream ohne Content-Length mit413 bestehen. Push-config ist erreichbar, Push aktuell deaktiviert; keine Nachricht versendet. App-Code33 bleibt unsigniert und nicht hochgeladen; dessen Produktfreeze ist unverändert.

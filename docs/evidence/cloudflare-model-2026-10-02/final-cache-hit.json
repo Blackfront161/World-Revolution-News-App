@@ -1,0 +1,9 @@
+{
+  "observedAtUTC": "2026-10-02T10:13:46.419Z",
+  "status": 200,
+  "cache": "HIT",
+  "model": "gemini-3.5-flash-lite",
+  "provider": "gemini",
+  "sameTranslation": true,
+  "result": "PASS"
+}

@@ -1,0 +1,86 @@
+{
+  "observedAtUTC": "2026-10-02T10:12:49.807Z",
+  "workerVersion": "b4344450-d9f3-4e2e-9889-1c961c725508",
+  "health": [
+    {
+      "endpoint": "https://revolution-proxy.paghklo.workers.dev",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "service": "World Revolution News service",
+        "api": "v2"
+      }
+    },
+    {
+      "endpoint": "https://wrn-translation-cache.paghklo.workers.dev",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "service": "wrn-shared-translation-cache",
+        "version": "1.7.7",
+        "storage": "kv",
+        "upstreamConfigured": true,
+        "ttlSeconds": 604800
+      }
+    }
+  ],
+  "cors": [
+    {
+      "origin": "https://solinaridao.com",
+      "status": 204,
+      "allowOrigin": "https://solinaridao.com"
+    },
+    {
+      "origin": "capacitor://localhost",
+      "status": 204,
+      "allowOrigin": "capacitor://localhost"
+    },
+    {
+      "origin": "http://127.0.0.1:8765",
+      "status": 204,
+      "allowOrigin": "http://127.0.0.1:8765"
+    },
+    {
+      "origin": "https://example.invalid",
+      "status": 403,
+      "allowOrigin": null
+    }
+  ],
+  "translations": [
+    {
+      "name": "direct-de",
+      "language": "de",
+      "status": 200,
+      "elapsedMs": 1914,
+      "model": "gemini-3.5-flash-lite",
+      "provider": "gemini",
+      "text": "Die Nachbarschaftsbibliothek öffnet ihre Türen\n---\nEhrenamtliche eröffneten am Freitag eine Gemeinschaftsbibliothek. Anwohner*innen können Bücher ausleihen und an öffentlichen Diskussionen teilnehmen. Verification reference: 2026-10-02T10:12:52.224Z",
+      "sharedCache": null
+    },
+    {
+      "name": "shared-fr",
+      "language": "fr",
+      "status": 200,
+      "elapsedMs": 3303,
+      "model": "gemini-3.5-flash-lite",
+      "provider": "gemini",
+      "text": "La bibliothèque de quartier ouvre ses portes\n---\nDes bénévoles ont ouvert une bibliothèque de quartier vendredi. Les résidents peuvent emprunter des livres et assister à des discussions publiques. Référence de vérification : 2026-10-02T10:12:52.225Z",
+      "sharedCache": "MISS"
+    }
+  ],
+  "bodyLimit": {
+    "bytes": 40001,
+    "contentLengthOmitted": true,
+    "status": 413,
+    "body": {
+      "error": true,
+      "message": "Die Anfrage ist zu groß."
+    }
+  },
+  "pushConfig": {
+    "status": 200,
+    "ok": true,
+    "enabled": false
+  },
+  "status": "PASS"
+}

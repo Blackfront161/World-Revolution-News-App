@@ -15,3 +15,9 @@ Tests use the actual PushGateway and public fetch handler, real in-memory SQLite
 Limits: an IP key groups users behind a shared network; 50 subscriptions per IP is deliberately above typical household use. Different real IPs can still exhaust global admission; bounded storage and refusal to displace existing recipients contain this, not prove identity. No real push broadcast or VAPID secret was used for tests.
 
 Provider/edge references: [Google FCM network configuration](https://firebase.google.com/docs/cloud-messaging/network-configuration), [Mozilla HTTP API](https://mozilla-services.github.io/autopush-rs/http.html), [Apple web push](https://developer.apple.com/documentation/usernotifications/sending-web-push-notifications-in-web-apps-and-browsers), [Microsoft WNS](https://learn.microsoft.com/en-us/windows/apps/develop/notifications/push-notifications/quickstart-send-push-notification), [Cloudflare edge headers](https://developers.cloudflare.com/fundamentals/reference/http-headers/).
+
+## Publication and live acceptance
+
+The controller independently accepted exact code commit `3a429a8d3b732793118859afeb8bd62a5f089f65`, all three findings FIXED. It was then published with preserved vars/secrets as Worker version `b4344450-d9f3-4e2e-9889-1c961c725508`. Root live smoke passes: health, allowed/foreign CORS, actual40001byte stream without Content-Length413, natural German/French translated headlines and body with Gemini3.5Flash-Lite, shared cache MISS then HIT returning identical text. Push-config200/disabled; no broadcast. Previous versions retained. Detailed evidence and review: `evidence/cloudflare-model-2026-10-02/`.
+
+Additional local actual SQLite Durable Object/RPC probe admitted exactly50 of60 concurrent registrations and rejected10 for capacity. The installed local workerd supports only2026-07-29; that date applies exclusively to the isolated fixture. Production2026-08-05 is unchanged.

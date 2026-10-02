@@ -1,0 +1,15 @@
+{
+  "observedAtUTC": "2026-10-02T10:10:35.901Z",
+  "sourceCommit": "3a429a8d3b732793118859afeb8bd62a5f089f65",
+  "fixtureCompatibilityDate": "2026-07-29",
+  "productionCompatibilityDateUnchanged": "2026-08-05",
+  "accepted": 50,
+  "capacityRejected": 10,
+  "status": {
+    "ok": true,
+    "subscriptions": 50
+  },
+  "elapsedMs": 328,
+  "realPushSent": false,
+  "result": "PASS"
+}
