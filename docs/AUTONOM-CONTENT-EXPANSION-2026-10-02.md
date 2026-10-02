@@ -40,3 +40,7 @@ Aktuelle Vorschau: `http://127.0.0.1:8765/index.html?preview=8`, im Browser geö
 Google Play bleibt beim verifizierten Code32. Das bisherige unsignierte Code33-Paket mit Quelle `ce2b556` und SHA-256 `3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD` ist für diesen Auftrag überholt: Es enthält diese Inhalte und Reiter nicht. Dateien bleiben als historische Belege erhalten; dessen Signierer darf nicht als nächster Release-Schritt gestartet werden. Kein neuer Android-Build, keine Signierung und kein Upload erfolgten in diesem Arbeitsgang.
 
 Nächste Roadmap-Schritte: redaktionelle Prüfung der zwölf Entwürfe und drei Leseverknüpfungen; danach einen neuen Android-Kandidaten aus dem endgültigen geprüften Stand bauen und auf Gerät prüfen. Weitere Übersetzungen sowie zusätzliche Bibliotheks-/Podcast-Aufnahmen bleiben separat mit konkreten Quellenbelegen vorgemerkt.
+
+## Spätere Finalisierung desselben Tages
+
+Der oben dokumentierte Entwurfsstand bleibt historisch erhalten. Die zwölf neuen Begriffe und drei Leseverknüpfungen sind inzwischen geprüft und finalisiert; zwei identische unsignierte Android-Kandidaten aus `34e22d9` enthalten diese Inhalte und die Startübersetzungsreparatur. Aktueller Stand und nächste Schritte: [Code-33-Bericht](KNOWLEDGE-TRANSLATION-CODE33-2026-10-02.md). Der konkrete neue Kandidat ist noch nicht signiert, auf einem Gerät abgenommen oder hochgeladen.

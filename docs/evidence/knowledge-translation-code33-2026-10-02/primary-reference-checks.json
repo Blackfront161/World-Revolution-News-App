@@ -1,0 +1,87 @@
+{
+  "status": "GREEN",
+  "checkedAt": "2026-10-02",
+  "auditor": "root",
+  "targetCommit": "34e22d99834c66d67114e1b796e181e87d021c5f",
+  "scope": "12 primary references for 12 WRN-original DE/EN glossary terms; three existing catalog relationships reviewed separately by controller",
+  "method": "Primary pages read through web tools; bounded direct Node HTTP GET for Energy Democracy and URGENCI after web-tool timeouts. No full texts or media imported into product.",
+  "checks": [
+    {
+      "id": "knowledge-agroecology",
+      "url": "https://www.fao.org/agroecology/overview/the-10-elements-of-agroecology/en",
+      "finding": "FAO links ecological elements with knowledge, social values, governance and solidarity economy; the canonical ten-elements overview is used.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-seed-sovereignty",
+      "url": "https://www.ipcinfo.org/fileadmin/user_upload/aahm/docs/viacampesinaEN-notebook6.pdf",
+      "finding": "La Via Campesina’s June 2013 Our Seeds Our Future booklet connects seeds, food sovereignty and community seed conservation/exchange.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-energy-democracy",
+      "url": "https://energy-democracy.net/principals/index.html",
+      "finding": "The initiative’s own principles address democratic user/worker control, social ownership and affordable access.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-climate-reparations",
+      "url": "https://climatejusticealliance.org/just-transition/",
+      "finding": "CJA Just Transition explicitly discusses redressing past harms and reparations; this better supports the term than its general About page.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-environmental-racism",
+      "url": "https://www.bullardcenter.org/policy-areas/land-use-urban-and-regional-planning",
+      "finding": "The Bullard Center describes discriminatory land use, housing segregation and unequal environmental burdens.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-community-supported-agriculture",
+      "url": "https://urgenci.net/our-european-declaration/",
+      "finding": "URGENCI’s own European declaration defines producer/consumer partnership and shared risks, responsibilities and rewards.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-digital-commons",
+      "url": "https://creativecommons.org/who-we-are/",
+      "finding": "Creative Commons describes sharing culture and knowledge using its tools; this does not license every linked work.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-federated-networks",
+      "url": "https://www.w3.org/TR/activitypub/",
+      "finding": "W3C ActivityPub specifies client/server and federated server exchange; the WRN debate does not equate federation with democracy.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-interoperability",
+      "url": "https://www.w3.org/standards/",
+      "finding": "W3C explains standards in relation to interoperable, accessible and internationalized web use.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-open-standards",
+      "url": "https://fsfe.org/freesoftware/standards/def.en.html",
+      "finding": "FSFE’s stated definition includes public availability, lack of single-vendor control and multiple implementations.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-free-knowledge",
+      "url": "https://wikimediafoundation.org/who-we-are/mission/",
+      "finding": "Wikimedia’s mission addresses freely licensed/public-domain educational material and its distribution.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    },
+    {
+      "id": "knowledge-collective-access",
+      "url": "https://sinsinvalid.org/10-principles/",
+      "finding": "Sins Invalid’s disability justice principles address collective access, interdependence and self-determination.",
+      "scope": "reference support for WRN-original explanation; not a source admission or reuse license"
+    }
+  ],
+  "rights": "Reference URLs only; downloads remain empty. No general reuse rights inferred.",
+  "limits": [
+    "Does not admit new news or podcast sources",
+    "GREEN is content-audit scope only, not release/publication approval"
+  ]
+}

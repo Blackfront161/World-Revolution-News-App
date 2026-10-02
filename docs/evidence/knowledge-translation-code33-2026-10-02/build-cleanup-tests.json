@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "sourceCommit": "34e22d99834c66d67114e1b796e181e87d021c5f",
+  "executedBy": "root",
+  "tests": [
+    "tests/test_aab_release_guards.py",
+    "tests/test_android_release_assets.py"
+  ],
+  "passed": 12,
+  "skipped": 1,
+  "historicalSkip": "Read-only old signature fixtures/tool paths unavailable",
+  "newWindowsCases": "success/error x normal/nested junction; executes actual finally; external sentinel unchanged",
+  "completedBeforeBuilds": true
+}

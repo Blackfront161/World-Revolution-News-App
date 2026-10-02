@@ -1,0 +1,573 @@
+{
+  "sourceCommit": "34e22d99834c66d67114e1b796e181e87d021c5f",
+  "terms": 167,
+  "references": 44,
+  "newTerms": [
+    {
+      "id": "agroecology",
+      "category": "ecology",
+      "sources": [
+        "knowledge-agroecology"
+      ],
+      "title": {
+        "de": "AgrarÃ¶kologie",
+        "en": "Agroecology"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "AgrarÃ¶kologie verbindet Ã¶kologische ZusammenhÃ¤nge mit sozialen Fragen der Landwirtschaft. Vielfalt, Boden, Wissen und die Mitbestimmung der Menschen, die Lebensmittel erzeugen, gehÃ¶ren zusammen.",
+        "en": "Agroecology connects ecological relationships with the social organisation of farming. Diversity, soil, knowledge and the participation of people producing food are considered together."
+      },
+      "practice": {
+        "de": "Ein Lernbeispiel ist die gemeinsame Auswertung verschiedener Anbauformen durch bÃ¤uerliche Betriebe. Die FAO beschreibt Ã¶kologische und soziale Elemente dieses Ansatzes.",
+        "en": "One learning example is farmers jointly evaluating different cultivation systems. FAO describes both ecological and social elements of this approach."
+      },
+      "debate": {
+        "de": "Eine einzelne Anbautechnik macht noch kein gerechtes ErnÃ¤hrungssystem. Landzugang, Arbeitsbedingungen und Entscheidungsmacht bleiben eigene Fragen.",
+        "en": "A single farming technique does not establish a just food system. Land access, working conditions and decision-making power remain distinct questions."
+      },
+      "related": [
+        "food-sovereignty",
+        "commons",
+        "social-ecology"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "seed-sovereignty",
+      "category": "ecology",
+      "sources": [
+        "knowledge-seed-sovereignty"
+      ],
+      "title": {
+        "de": "SaatgutsouverÃ¤nitÃ¤t",
+        "en": "Seed sovereignty"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "SaatgutsouverÃ¤nitÃ¤t bezeichnet die Forderung, dass bÃ¤uerliche Gemeinschaften Ã¼ber Erhaltung, Weiterentwicklung und Austausch ihres Saatguts selbst bestimmen kÃ¶nnen.",
+        "en": "Seed sovereignty is the demand that farming communities control the preservation, development and exchange of their seeds."
+      },
+      "practice": {
+        "de": "La Via Campesina verbindet gemeinschaftliches Saatgutwissen mit ErnÃ¤hrungssouverÃ¤nitÃ¤t. Eine Diskussion kann nach ZustÃ¤ndigkeiten und der Anerkennung dieses Wissens fragen.",
+        "en": "La Via Campesina links collective seed knowledge to food sovereignty. Discussion can examine responsibilities and recognition of that knowledge."
+      },
+      "debate": {
+        "de": "Regeln zu Saatgut unterscheiden sich nach Ort und Sorte. Die politische Forderung ist keine pauschale Aussage Ã¼ber bestehende Nutzungsrechte.",
+        "en": "Seed rules differ by place and variety. The political demand is not a blanket statement about existing rights to use seeds."
+      },
+      "related": [
+        "food-sovereignty",
+        "agroecology",
+        "commoning"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "energy-democracy",
+      "category": "ecology",
+      "sources": [
+        "knowledge-energy-democracy"
+      ],
+      "title": {
+        "de": "Energiedemokratie",
+        "en": "Energy democracy"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Energiedemokratie fordert, dass BeschÃ¤ftigte und versorgte Gemeinschaften Entscheidungen Ã¼ber Energie mitgestalten. Bezahlbarer Zugang, Ã¶kologische Grenzen und demokratische Kontrolle werden zusammen betrachtet.",
+        "en": "Energy democracy calls for workers and communities using energy to shape decisions about it. Affordable access, ecological limits and democratic control are considered together."
+      },
+      "practice": {
+        "de": "Genossenschaftliche oder kommunale Versorgung kann danach beurteilt werden, wer Ã¼ber Preise, Investitionen und Arbeitsbedingungen entscheidet.",
+        "en": "Cooperative or municipal provision can be assessed by who decides prices, investment and working conditions."
+      },
+      "debate": {
+        "de": "Die Eigentumsform allein garantiert keine Beteiligung. Auch erneuerbare Infrastruktur kann Kosten und Eingriffe ungleich verteilen.",
+        "en": "Ownership alone does not guarantee participation. Renewable infrastructure can also distribute costs and disruption unequally."
+      },
+      "related": [
+        "just-transition",
+        "self-organisation",
+        "commons"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "climate-reparations",
+      "category": "ecology",
+      "sources": [
+        "knowledge-climate-reparations"
+      ],
+      "title": {
+        "de": "Klimareparationen",
+        "en": "Climate reparations"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Klimareparationen sind Forderungen nach Wiedergutmachung, die KlimaschÃ¤den mit historischer Ausbeutung und ungleicher Verantwortung verbinden. Climate Justice Alliance betont die Reparatur vergangener SchÃ¤den.",
+        "en": "Climate reparations are demands for repair connecting climate harm with historical extraction and unequal responsibility. Climate Justice Alliance stresses redressing past harms."
+      },
+      "practice": {
+        "de": "Zur Diskussion stehen Ressourcen, Land und die Entscheidungsmacht betroffener Gemeinschaften. UnterstÃ¼tzung wird daran gemessen, ob sie AbhÃ¤ngigkeiten verringert.",
+        "en": "Discussion concerns resources, land and affected communitiesâ€™ decision-making power. Support can be assessed by whether it reduces dependency."
+      },
+      "debate": {
+        "de": "Ãœber Umfang, Verantwortliche und Verfahren besteht Streit. Diese politische Forderung ist nicht mit einem automatisch bestehenden individuellen EntschÃ¤digungsanspruch gleichzusetzen.",
+        "en": "Scope, responsibility and procedures are contested. This political demand should not be equated with an automatic individual entitlement to compensation."
+      },
+      "related": [
+        "climate-justice",
+        "anti-colonialism",
+        "just-transition"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "environmental-racism",
+      "category": "ecology",
+      "sources": [
+        "knowledge-environmental-racism"
+      ],
+      "title": {
+        "de": "Umweltrassismus",
+        "en": "Environmental racism"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Umweltrassismus beschreibt rassistisch strukturierte Ungleichheit bei Umweltbelastungen, Schutz und Mitsprache. Das Bullard Center untersucht dafÃ¼r unter anderem segregiertes Wohnen und diskriminierende FlÃ¤chennutzung.",
+        "en": "Environmental racism describes racially structured inequality in environmental burdens, protection and participation. The Bullard Center examines segregated housing and discriminatory land use among its causes."
+      },
+      "practice": {
+        "de": "Eine Untersuchung verbindet Belastungsdaten mit Planungsgeschichte und Erfahrungen betroffener Bewohnerinnen und Bewohner, statt allein rÃ¤umliche NÃ¤he zu betrachten.",
+        "en": "An investigation connects exposure data with planning history and residentsâ€™ experiences rather than considering proximity alone."
+      },
+      "debate": {
+        "de": "FÃ¼r konkrete VorwÃ¼rfe sind Ã¶rtliche Belege nÃ¶tig. Einkommen, rassistische Strukturen und Gesundheit wirken zusammen, dÃ¼rfen aber nicht einfach gleichgesetzt werden.",
+        "en": "Specific allegations require local evidence. Income, racial structures and health interact but should not simply be equated."
+      },
+      "related": [
+        "anti-racism",
+        "climate-justice",
+        "intersectionality"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "community-supported-agriculture",
+      "category": "ecology",
+      "sources": [
+        "knowledge-community-supported-agriculture"
+      ],
+      "title": {
+        "de": "Solidarische Landwirtschaft",
+        "en": "Community-supported agriculture"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Solidarische Landwirtschaft verbindet Erzeugende und eine Verbrauchsgemeinschaft Ã¼ber lÃ¤ngerfristige Vereinbarungen. Ernte, Verantwortung und landwirtschaftliche Risiken werden gemeinsam getragen.",
+        "en": "Community-supported agriculture connects producers and a community of consumers through longer-term agreements. Harvests, responsibilities and farming risks are shared."
+      },
+      "practice": {
+        "de": "Eine Gruppe bespricht Finanzierung, Ernteverteilung und Beteiligung vor Beginn der Saison. Die URGENCI-ErklÃ¤rung beschreibt diesen partnerschaftlichen Ansatz.",
+        "en": "A group discusses funding, harvest distribution and participation before the season. URGENCIâ€™s declaration describes this partnership approach."
+      },
+      "debate": {
+        "de": "Vorauszahlungen und unbezahlte Mitarbeit kÃ¶nnen Menschen ausschlieÃŸen. SolidaritÃ¤t verlangt auch faire Arbeit und einen bezahlbaren, barrierearmen Zugang zu Lebensmitteln.",
+        "en": "Advance payments and unpaid participation can exclude people. Solidarity also requires fair work and affordable, accessible food provision."
+      },
+      "related": [
+        "food-sovereignty",
+        "agroecology",
+        "solidarity-economy"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "digital-commons",
+      "category": "organisation",
+      "sources": [
+        "knowledge-digital-commons"
+      ],
+      "title": {
+        "de": "Digitale GemeingÃ¼ter",
+        "en": "Digital commons"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Digitale GemeingÃ¼ter sind gemeinsam nutzbare Wissens-, Kultur- oder SoftwarebestÃ¤nde mit Regeln fÃ¼r Weiterverwendung und Pflege. Creative Commons entwickelt Werkzeuge fÃ¼r solches Teilen.",
+        "en": "Digital commons are shared knowledge, culture or software resources with arrangements for reuse and stewardship. Creative Commons develops tools supporting such sharing."
+      },
+      "practice": {
+        "de": "Ein gemeinsames Archiv dokumentiert Herkunft, Nutzungsbedingungen und Korrekturen. Auch die Arbeit an seiner Pflege braucht Ressourcen und Mitbestimmung.",
+        "en": "A shared archive records provenance, reuse conditions and corrections. Its maintenance also needs resources and participation."
+      },
+      "debate": {
+        "de": "Kostenloser Zugriff bedeutet nicht automatisch freie Weiterverwendung. PersÃ¶nliche Daten und sensible Zeugnisse brauchen zusÃ¤tzliche Einwilligung und Schutz.",
+        "en": "Free access does not automatically permit reuse. Personal data and sensitive testimony need additional consent and protection."
+      },
+      "related": [
+        "commons",
+        "free-software",
+        "free-knowledge"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "federated-networks",
+      "category": "organisation",
+      "sources": [
+        "knowledge-federated-networks"
+      ],
+      "title": {
+        "de": "FÃ¶derierte Netzwerke",
+        "en": "Federated networks"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "In fÃ¶derierten Netzwerken tauschen eigenstÃ¤ndig betriebene Dienste Informationen Ã¼ber gemeinsame Protokolle aus. ActivityPub beschreibt dafÃ¼r einen Austausch zwischen Servern sozialer Netzwerke.",
+        "en": "In federated networks, independently operated services exchange information through shared protocols. ActivityPub specifies such exchange between social-network servers."
+      },
+      "practice": {
+        "de": "Beim Vergleich von Diensten sind Moderation, ZustÃ¤ndigkeiten und die Zusammenarbeit zwischen Instanzen ebenso wichtig wie technische Erreichbarkeit.",
+        "en": "Comparing services involves moderation, responsibilities and cooperation between instances as well as technical connectivity."
+      },
+      "debate": {
+        "de": "Verteilte Server garantieren weder demokratische Leitung noch Datenschutz. Inhalte kÃ¶nnen auf fremden Servern gespeichert werden; gemeinsame Verantwortung muss ausgehandelt werden.",
+        "en": "Distributed servers guarantee neither democratic governance nor privacy. Content can be stored on other servers; shared responsibility requires negotiation."
+      },
+      "related": [
+        "digital-autonomy",
+        "interoperability",
+        "federation"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "interoperability",
+      "category": "organisation",
+      "sources": [
+        "knowledge-interoperability"
+      ],
+      "title": {
+        "de": "InteroperabilitÃ¤t",
+        "en": "Interoperability"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "InteroperabilitÃ¤t bedeutet, dass unterschiedliche Systeme Daten sinnvoll austauschen und verwenden kÃ¶nnen. Gemeinsame, getestete Standards helfen, AbhÃ¤ngigkeit von einzelnen Anbietern zu verringern.",
+        "en": "Interoperability means different systems can exchange and meaningfully use data. Shared, tested standards can reduce dependence on individual providers."
+      },
+      "practice": {
+        "de": "Ein Beispiel ist der Ã¼berprÃ¼fbare Export und Import eines Archivs zwischen verschiedenen Programmen. Format, Bedeutung und ZugÃ¤nglichkeit mÃ¼ssen erhalten bleiben.",
+        "en": "One example is a verifiable archive export and import between different applications. Format, meaning and accessibility need to be preserved."
+      },
+      "debate": {
+        "de": "Technischer Austausch ist kein Recht auf beliebige Weitergabe. Einwilligung, Sicherheit und verschiedene SchutzbedÃ¼rfnisse bleiben Teil der Gestaltung.",
+        "en": "Technical exchange does not confer permission to share everything. Consent, security and differing protection needs remain design concerns."
+      },
+      "related": [
+        "open-standards",
+        "digital-autonomy",
+        "accessibility"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "open-standards",
+      "category": "organisation",
+      "sources": [
+        "knowledge-open-standards"
+      ],
+      "title": {
+        "de": "Offene Standards",
+        "en": "Open standards"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Offene Standards beschreiben Formate oder Protokolle, deren Nutzung und Weiterentwicklung nicht von einem einzelnen Anbieter kontrolliert werden. Die FSFE betont Ã¶ffentliche PrÃ¼fbarkeit und unabhÃ¤ngige Implementierungen.",
+        "en": "Open standards describe formats or protocols whose use and development are not controlled by one provider. FSFE emphasises public scrutiny and independent implementations."
+      },
+      "practice": {
+        "de": "Bei der Wahl eines Archivformats lÃ¤sst sich prÃ¼fen, ob mehrere Programme es vollstÃ¤ndig lesen und schreiben kÃ¶nnen und die Spezifikation zugÃ¤nglich ist.",
+        "en": "Choosing an archive format includes checking whether multiple applications can read and write it fully and whether its specification is accessible."
+      },
+      "debate": {
+        "de": "Definitionen von Offenheit unterscheiden sich. Ein verÃ¶ffentlichter Text allein genÃ¼gt nicht, wenn AbhÃ¤ngigkeiten oder NutzungshÃ¼rden bestehen bleiben.",
+        "en": "Definitions of openness differ. Publishing a specification alone is insufficient if dependencies or barriers to use remain."
+      },
+      "related": [
+        "interoperability",
+        "free-software",
+        "digital-commons"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "free-knowledge",
+      "category": "organisation",
+      "sources": [
+        "knowledge-free-knowledge"
+      ],
+      "title": {
+        "de": "Freies Wissen",
+        "en": "Free knowledge"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Freies Wissen kann unter passenden freien Bedingungen genutzt, bearbeitet und weitergegeben werden. Die Wikimedia-Mission verbindet frei lizenzierte oder gemeinfreie Bildungsinhalte mit weltweitem Zugang.",
+        "en": "Free knowledge can be used, adapted and shared under suitable free terms. Wikimediaâ€™s mission connects freely licensed or public-domain educational content with worldwide access."
+      },
+      "practice": {
+        "de": "Gemeinsame Wissensarbeit verbindet Quellenangaben, KorrekturmÃ¶glichkeiten und verstÃ¤ndliche Sprache. Nutzungsbedingungen werden fÃ¼r jeden Beitrag nachvollziehbar dokumentiert.",
+        "en": "Collaborative knowledge work combines references, correction mechanisms and understandable language. Reuse conditions are recorded transparently for each contribution."
+      },
+      "debate": {
+        "de": "Eine offene Lizenz bestÃ¤tigt nicht die Wahrheit eines Inhalts. Sprachbarrieren, ungleiche Beteiligung und fehlende Quellen kÃ¶nnen weiter bestehen.",
+        "en": "An open licence does not establish a claimâ€™s truth. Language barriers, unequal participation and missing sources can persist."
+      },
+      "related": [
+        "source-criticism",
+        "digital-commons",
+        "movement-archive"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    },
+    {
+      "id": "collective-access",
+      "category": "justice",
+      "sources": [
+        "knowledge-collective-access"
+      ],
+      "title": {
+        "de": "Kollektive ZugÃ¤nglichkeit",
+        "en": "Collective access"
+      },
+      "aliases": {},
+      "summary": {
+        "de": "Kollektive ZugÃ¤nglichkeit versteht Zugang als gemeinsame Verantwortung. In den Disability-Justice-Prinzipien von Sins Invalid werden unterschiedliche BedÃ¼rfnisse mit Selbstbestimmung und gemeinschaftlicher UnterstÃ¼tzung verbunden.",
+        "en": "Collective access treats access as shared responsibility. Sins Invalidâ€™s disability-justice principles connect differing needs with autonomy and community support."
+      },
+      "practice": {
+        "de": "Ein Treffen kann verschiedene Beteiligungswege, Pausen und vertrauliche Absprachen anbieten. BedÃ¼rfnisse mÃ¼ssen nicht vor der ganzen Gruppe offengelegt werden.",
+        "en": "A meeting can offer different participation methods, breaks and private arrangements. Needs need not be disclosed to the whole group."
+      },
+      "debate": {
+        "de": "BedÃ¼rfnisse kÃ¶nnen miteinander in Spannung stehen. Grenzen und Ressourcen sollen gemeinsam besprochen werden, ohne Verantwortung vollstÃ¤ndig auf einzelne Betroffene abzuwÃ¤lzen.",
+        "en": "Needs can conflict. Limits and resources should be discussed together without shifting all responsibility onto affected individuals."
+      },
+      "related": [
+        "disability-justice",
+        "accessibility",
+        "collective-care"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "status": "reviewed",
+        "reviewedAt": "2026-10-02",
+        "note": "Original WRN DE/EN explanation; independent editorial review passed on 2026-10-02; primary references checked by WRN."
+      }
+    }
+  ],
+  "newReferences": [
+    {
+      "id": "knowledge-agroecology",
+      "name": "FAO Â· The ten elements of agroecology",
+      "language": "English",
+      "url": "https://www.fao.org/agroecology/overview/the-10-elements-of-agroecology/en",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-seed-sovereignty",
+      "name": "La Via Campesina Â· Our Seeds, Our Future (2013)",
+      "language": "English",
+      "url": "https://www.ipcinfo.org/fileadmin/user_upload/aahm/docs/viacampesinaEN-notebook6.pdf",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-energy-democracy",
+      "name": "Energy Democracy Â· Principles",
+      "language": "English",
+      "url": "https://energy-democracy.net/principals/index.html",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-climate-reparations",
+      "name": "Climate Justice Alliance Â· Just Transition",
+      "language": "English",
+      "url": "https://climatejusticealliance.org/just-transition/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-environmental-racism",
+      "name": "Bullard Center Â· Land use and planning",
+      "language": "English",
+      "url": "https://www.bullardcenter.org/policy-areas/land-use-urban-and-regional-planning",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-community-supported-agriculture",
+      "name": "URGENCI Â· European CSA Declaration",
+      "language": "English",
+      "url": "https://urgenci.net/our-european-declaration/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-digital-commons",
+      "name": "Creative Commons Â· Who we are",
+      "language": "English",
+      "url": "https://creativecommons.org/who-we-are/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-federated-networks",
+      "name": "W3C Â· ActivityPub",
+      "language": "English",
+      "url": "https://www.w3.org/TR/activitypub/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-interoperability",
+      "name": "W3C Â· Web standards",
+      "language": "English",
+      "url": "https://www.w3.org/standards/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-open-standards",
+      "name": "FSFE Â· Open standards definition",
+      "language": "English",
+      "url": "https://fsfe.org/freesoftware/standards/def.en.html",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-free-knowledge",
+      "name": "Wikimedia Foundation Â· Mission",
+      "language": "English",
+      "url": "https://wikimediafoundation.org/who-we-are/mission/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-collective-access",
+      "name": "Sins Invalid Â· Ten principles of disability justice",
+      "language": "English",
+      "url": "https://sinsinvalid.org/10-principles/",
+      "downloads": [],
+      "description": {
+        "de": "PrimÃ¤rquelle: eigener Ansatz der genannten Organisation. Referenz fÃ¼r die WRN-ErklÃ¤rung; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisationâ€™s own approach. Reference for the WRN explanation; no general reuse grant."
+      }
+    }
+  ]
+}

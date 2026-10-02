@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "sourceCommit": "34e22d99834c66d67114e1b796e181e87d021c5f",
+  "aabSha256": "8DF3D03E02EC1AC355332AA776D5C005CAB331349C8C75E6F12528F6BAF1F15E",
+  "aabBytes": 44349593,
+  "zipEntries": 802,
+  "signatureEntries": [],
+  "webFiles": 356,
+  "buildsIdentical": true,
+  "independentProjectCopies": 2,
+  "sharedLocalDependencyAndGradleCaches": true,
+  "plugins": [
+    {
+      "pkg": "@capacitor/local-notifications",
+      "classpath": "com.capacitorjs.plugins.localnotifications.LocalNotificationsPlugin"
+    },
+    {
+      "pkg": "@capacitor/share",
+      "classpath": "com.capacitorjs.plugins.share.SharePlugin"
+    }
+  ],
+  "launcherSourcePngs": [
+    {
+      "entry": "base/res/mipmap-hdpi-v4/ic_launcher.png",
+      "sha256": "90775E9DBD7D89FE520C66041D13B101B8D0DA2221A5AFB47D8656056C6F9A9C",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-hdpi-v4/ic_launcher_background.png",
+      "sha256": "320459A5C78FD6C238B4A4BEC4E4A2E01F6875934CAEC12732C2E09F49EA1D41",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-hdpi-v4/ic_launcher_foreground.png",
+      "sha256": "F7F74196006D40CD5F5255908A0B206DCC0C3FAE2918FA21BAF0A2B3D12177D8",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-hdpi-v4/ic_launcher_round.png",
+      "sha256": "4B842DBBFC7D48002EDC269B870F9D741F63FC1768C7DF97B8D4C3F10E439F49",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-ldpi-v4/ic_launcher.png",
+      "sha256": "CE508F958CE48C594FD360970F18229F561F3CFDE8A85BFC48EA8D2DACD80BB3",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-ldpi-v4/ic_launcher_background.png",
+      "sha256": "D3854BD32A041BA31344F7BFA69383DC1F3F83BD8CB2C2C9F9BB801E7267605B",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-ldpi-v4/ic_launcher_foreground.png",
+      "sha256": "9D8CD43FAC785180937483B7A2D574A86C005F4F1BA9C0B6972B369604C2A987",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-ldpi-v4/ic_launcher_round.png",
+      "sha256": "EC5133CBF212E1455D6295E4C5AFF62367BC4591B017F11C1E438126AFC918ED",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-mdpi-v4/ic_launcher.png",
+      "sha256": "D7C55AFB02D35D5A2FE60FCD7993E141B4E271411216D087B6AF562EA12BFB51",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-mdpi-v4/ic_launcher_background.png",
+      "sha256": "9791587628758658C7D8153F22A53E4C8B5530DA2FF4DDD6B2666EF17A2158BA",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-mdpi-v4/ic_launcher_foreground.png",
+      "sha256": "F05DBA8835C95E7C4ACD2BA6CAA27BC8DBAF6BED1D1D2687D9C8C861ECA47331",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-mdpi-v4/ic_launcher_round.png",
+      "sha256": "5871DB33393DE65334A7ED21E3F9C5170B3BF9B5392A95DDF987D6632BF9757D",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xhdpi-v4/ic_launcher.png",
+      "sha256": "29E572B63379C33103C0DB5A904CE580F3CBD4AE1FDBDA18F4C070736CF380F6",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xhdpi-v4/ic_launcher_background.png",
+      "sha256": "CD848D236D494288380C657DA16FCC60E818FFAC27C7A72C140E5255E95CFD7C",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xhdpi-v4/ic_launcher_foreground.png",
+      "sha256": "ECC188DB28C9A83C3E739FE2C56FFC3F3C1233833548CE07070A489CC2B0845D",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xhdpi-v4/ic_launcher_round.png",
+      "sha256": "A66D6020ABB4048596553A95FE682A0B31EFCF27E18D3CA92A4ABFC06E404A2B",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxhdpi-v4/ic_launcher.png",
+      "sha256": "63536924BF327C6C3325F296C59E37C3C729E571618A029CD271E57FC2C57A0A",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxhdpi-v4/ic_launcher_background.png",
+      "sha256": "D0EFF98BEFCADD52F26002643BCB0A5858396547C7341E991E71E29154A551CF",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxhdpi-v4/ic_launcher_foreground.png",
+      "sha256": "265DE60A59C09219BF547D4D1D790F3478606714CEBEF04B280E450F60C72FA8",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxhdpi-v4/ic_launcher_round.png",
+      "sha256": "4D8209691BF0C5BA0487EFCB9A347E9C24BDD8406B7681481B560E2AE2D32885",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxxhdpi-v4/ic_launcher.png",
+      "sha256": "89A3448E3134872C8DB7AC30B09F75FC993E2B82C6A68CBDC8F7373CF409CB58",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxxhdpi-v4/ic_launcher_background.png",
+      "sha256": "47E0D419F2595C2014E72163C92DEC78A8234F5A0F6704D874385C31DDA4CD61",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png",
+      "sha256": "40AF665A12BF06EFD7C62B0322BE79A4E97DD9411DBE78A33652215771191A78",
+      "pixelsMatchSource": true
+    },
+    {
+      "entry": "base/res/mipmap-xxxhdpi-v4/ic_launcher_round.png",
+      "sha256": "557B89EBFD4DA9F51F5466020AFC4545F083EA37D104FD3B5CF7ACA67157B09D",
+      "pixelsMatchSource": true
+    }
+  ],
+  "mergedManifest": {
+    "package": "com.world.revolution",
+    "versionCode": 33,
+    "versionName": "2.1.2",
+    "minSdk": 24,
+    "targetSdk": 36
+  },
+  "nativeUnitTests": {
+    "tests": "5",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "lint": {
+    "Error": 0,
+    "Fatal": 0,
+    "Warning": 13
+  },
+  "limits": [
+    "Unsigned candidate; signing and physical device Code33 test pending",
+    "Manifest fields read from matching merged manifest, not independently decoded protobuf here"
+  ]
+}

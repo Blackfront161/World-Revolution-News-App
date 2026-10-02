@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "requests": [
+    "Current headline",
+    "Current second headline"
+  ],
+  "checks": [
+    "offline headline shown immediately",
+    "zero snapshot translation requests during live load",
+    "current lead translated after live data selection"
+  ]
+}
