@@ -1,0 +1,25 @@
+{
+  "status": "GREEN-product-and-package;documentation-blocker-corrected",
+  "productCommit": "ef5ac42ae623101874f3001c560ba4cb44c8d932",
+  "reviewedEvidenceCommit": "ee674df",
+  "correctedEvidenceCommit": "44e992e",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewerTurnId": "01a0fea9-8065-79f1-b610-ad3942de14d6",
+  "reviewerResult": "BLOCKER für die formale Releasefreigabe – ausschließlich wegen eines gebundenen Dokumentationsfehlers. Produkt und Pakete selbst sind PASS. Konkreter Befund: In REPORT.md stehen 7.780.938 Bytes. Der eingefrorene Service Worker enthält tatsächlich 7.782.078 Bytes. Der fehlerhafte Bericht ist wiederum im hash-manifest.json fest gebunden. Erforderlich ist nur ein neuer Evidenzcommit: Zahl korrigieren und Berichtshash aktualisieren. Produktcommit und Pakete müssen nicht neu gebaut werden. Ansonsten vollständig grün: Produkt-Freeze: ef5ac42ae623101874f3001c560ba4cb44c8d932 21 eindeutige WRN-Notizen, vollständig für neun UI-Sprachen gebunden Illustration exakt artikelgebunden; 455.444 Bytes, SHA-256 e33d13ae13efbf10463e6bb1e660f02305b323ae83ef2e4aa22c58f579b111ab Websitepaket: 46/46 Dateien, Manifest-SHA ade9a27c2d0072b0111e81e501c35f0928b6b08966409665bb616b8682042643 Hostingpaket: 49/49 Dateien, Manifest-SHA ac83ede977c13d0095b4808410257dadebc9e5ade54abda1faa7028016ed2773 Fünf Uploadarchive: Hash, Inhalt, Dateizahl, keine Duplikate oder unsicheren Pfade Rollbackarchiv: 48/48 Dateien, SHA 21e0ba23cf8d2bf4e80d75ec03f98fd67424a4131bc336d0601004243512c71b Tests: 6/6 Home-Editorial und 50/50 Offline-/Paket-/Protokolltests; TypeScript PASS Aktueller öffentlicher Widerruf weiterhin unverändert: 161 Byte, keine widerrufenen Endpoint-IDs Live-Seite zeigt die neue Illustration noch nicht: kein unbeabsichtigtes Deployment Weiterhin ausdrücklich offen: Kein vollständiger App-Paritäts-PASS; Handoff 75016f6… ist nicht enthalten. Explizite Deploymentfreigabe sowie abschließender Live-Apache/CSP/Cache-/Rollback-Smoke-Test bleiben erforderlich. Ich habe keine WIP-Dateien verändert und nichts deployed.",
+  "documentationCorrection": {
+    "verifiedBy": "Head Chief",
+    "changedFiles": [
+      "REPORT.md",
+      "hash-manifest.json"
+    ],
+    "gitBoundEvidenceFilesChecked": 13,
+    "hashErrors": 0,
+    "totalBytes": 7782078,
+    "manifestEntriesSum": 7782078,
+    "websiteManifestSha256": "ade9a27c2d0072b0111e81e501c35f0928b6b08966409665bb616b8682042643",
+    "hostingManifestSha256": "ac83ede977c13d0095b4808410257dadebc9e5ade54abda1faa7028016ed2773",
+    "hostingShellId": "69cf0380ab53c67e13ce1620075cd9f3cd91632eb5c3d756fd246aeb8552ce7d"
+  },
+  "releaseStatus": "Website writer instructed to continue previously human-authorized publication; fresh live readback pending",
+  "nextContentScope": "Separate 75016f6 handoff not included in this release; no full App parity claim"
+}

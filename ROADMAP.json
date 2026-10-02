@@ -1727,7 +1727,7 @@
       "publication": "merged-green-gates",
       "publishedDataCommit": "e1f59d9171ad0f75f57b57123410a768582cda2c"
     },
-    "appRuntime": "74e92546 local tested source freeze; no new Android artifact",
+    "appRuntime": "74e92546 independently reviewed source freeze, pushed; no new Android artifact",
     "contentExpansion": "concrete-nextWork-items-planned; existing728books/167terms preserved",
     "website": {
       "handoff": "docs/handoffs/website-content-2026-10-03/manifest.json",
@@ -1737,7 +1737,28 @@
       "libraryItems": 728,
       "lexiconTerms": 167,
       "imageHandoff": "b777198",
-      "status": "source-bound-handoff-delivered; website integration owned by writer"
+      "status": "source-bound-handoff-verified; actual differences assigned to website writer",
+      "preparedRelease": {
+        "productCommit": "ef5ac42ae623101874f3001c560ba4cb44c8d932",
+        "correctedEvidenceCommit": "44e992e",
+        "independentReview": "product-and-package-PASS; only-documentation-blocker-corrected-and-hash-verified",
+        "publication": "website-writer-continuing; fresh-live-readback-pending",
+        "evidence": "docs/evidence/radio-roadmap-2026-10-03/website-controller-review.json",
+        "includesCurrentContentHandoff": false
+      },
+      "verifiedDifferences": {
+        "reviewedBy": "WRN Website – Inhaltsparität",
+        "reviewerThreadId": "01a0f307-a269-7461-afd0-3daf4309da0f",
+        "newRadio": "3CR",
+        "missingLexiconTerms": 12,
+        "missingLearningPaths": 1,
+        "newHomeRoleEntriesRequireAdmission": 20,
+        "booksAlreadyMatch": 728,
+        "uniquePodcastEpisodesAlreadyMatch": 1722,
+        "appPodcastRows": 1778,
+        "newPodcastEpisodesFromRowDifference": 0,
+        "implementationStatus": "in-progress-not-published"
+      }
     }
   }
 }
