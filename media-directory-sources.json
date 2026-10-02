@@ -1,0 +1,23 @@
+{
+  "schema": "wrn.media-directories.v1",
+  "revision": "2026-10-02",
+  "rights": "metadata-and-original-links-only",
+  "sources": [
+    {
+      "id": "radio-lora-zurich",
+      "name": "Radio LoRa Zürich · Audiothek",
+      "url": "https://www.lora.ch/radio/audiothek",
+      "country": "CH",
+      "language": "und",
+      "feedConfirmed": false
+    },
+    {
+      "id": "radio-kurruf-podcasts",
+      "name": "Radio Kurruf · Podcasts",
+      "url": "https://radiokurruf.org/tag/podcast/",
+      "country": "CL",
+      "language": "und",
+      "feedConfirmed": false
+    }
+  ]
+}

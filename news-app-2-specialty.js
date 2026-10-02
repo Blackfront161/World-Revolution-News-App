@@ -288,10 +288,45 @@
     return [...items.values()];
   }
 
+  function mediaDirectories(document) {
+    if (document?.schema !== 'wrn.media-directories.v1' || document.rights !== 'metadata-and-original-links-only' || !Array.isArray(document.sources)) return [];
+    return document.sources.filter(source => source?.id && !['withdrawn', 'revoked', 'deleted'].includes(source.status) && source.deleted !== true && typeof source.name === 'string' && safeUrl(source.url) === source.url && source.url.startsWith('https://') && !new URL(source.url).username && !new URL(source.url).password && source.feedConfirmed === false);
+  }
+
+  function localizedGlossarySnapshot(snapshot, document) {
+    if (document?.schema !== 'wrn.lexicon-locales.v1' || document.rights !== 'WRN-original-editorial-text' || !document.terms || Array.isArray(document.terms)) return snapshot;
+    const fields = ['title', 'summary', 'practice', 'debate'];
+    const plain = value => typeof value === 'string' && value.trim() && value.length <= 5000 && !/[<>\u0000-\u001f]/.test(value);
+    return { ...snapshot, terms: (snapshot.terms || []).map(term => {
+      const result = { ...term };
+      for (const language of ['fr', 'es']) {
+        const translation = document.terms[term.id]?.[language];
+        if (!translation || !fields.every(field => plain(translation[field]))) continue;
+        for (const field of fields) result[field] = { ...result[field], [language]: translation[field] };
+        result.translationRevision = document.revision;
+        result.translationStatus = document.editorialStatus;
+      }
+      return result;
+    }) };
+  }
+
+  function knowledgePodcastsForCatalog(document, podcasts, terms) {
+    if (document?.schema !== 'wrn.learning-paths.v1' || document.rights !== 'metadata-and-original-links-only' || !Array.isArray(document.paths)) return [];
+    const byEpisode = new Map((podcasts || []).map(item => [String(item.rawId || item.id || '').replace(/^original:/, ''), item]));
+    const termIds = new Set((terms || []).filter(term => !['withdrawn', 'revoked', 'deleted'].includes(term.status) && term.deleted !== true).map(term => term.id));
+    return document.paths.map(path => ({ ...path, podcastEntries: (path.podcastEntries || []).filter(entry => {
+      const episode = byEpisode.get(entry.episodeId);
+      return episode && !['withdrawn', 'revoked', 'deleted'].includes(episode.status) && episode.deleted !== true
+        && Array.isArray(entry.termIds) && entry.termIds.length && entry.termIds.every(id => termIds.has(id))
+        && entry.note?.de && entry.note?.en && safeUrl(entry.originalUrl) === entry.originalUrl && /^https:\/\//.test(entry.originalUrl || '') && !new URL(entry.originalUrl).username && !new URL(entry.originalUrl).password
+        && [episode.episodeUrl, episode.originalUrl].includes(entry.originalUrl);
+    }).map(entry => ({ ...entry, episode: byEpisode.get(entry.episodeId) })) })).filter(path => path.podcastEntries.length);
+  }
+
   function learningPathsForCatalog(document, books, terms) {
     if (document?.schema !== 'wrn.learning-paths.v1' || document.rights !== 'metadata-and-original-links-only' || !Array.isArray(document.paths)) return [];
     const byBook = new Map((books || []).map(book => [book.id, book]));
-    const termIds = new Set((terms || []).map(term => term.id));
+    const termIds = new Set((terms || []).filter(term => !['withdrawn', 'revoked', 'deleted'].includes(term.status) && term.deleted !== true).map(term => term.id));
     return document.paths.filter(path => path?.id && path.title?.de && path.title?.en && Array.isArray(path.entries)).map(path => ({
       ...path,
       entries: path.entries.filter(entry => {
@@ -306,6 +341,9 @@
   }
 
   return Object.freeze({
+    mediaDirectories,
+    localizedGlossarySnapshot,
+    knowledgePodcastsForCatalog,
     learningPathsForCatalog,
     mergeLibraryCatalogs,
     text,

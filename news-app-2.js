@@ -2000,6 +2000,8 @@
     librarySources: [],
     libraryItems: [],
     learningPaths: [],
+    knowledgePodcasts: [],
+    mediaDirectories: [],
     library: { query: '', languages: [], source: 'all', format: 'all', limit: 30 },
     developmentWatch: readJson(STORY_WATCH_KEY, []),
     developmentReviews: readJson(DEVELOPMENT_REVIEW_KEY, []),
@@ -5049,7 +5051,7 @@
       ${state.learningPaths.map(path => `<details class="lexicon-card"><summary><strong lang="${language}">${escapeHtml(path.title[language])}</strong> · ${path.entries.length}</summary><ol>${path.entries.filter(entry => byBook.has(entry.bookId)).map(entry => {
         const book = byBook.get(entry.bookId);
         return `<li data-learning-book="${escapeHtml(entry.bookId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" lang="${escapeHtml(book.languages?.[0] || 'und')}">${escapeHtml(book.title)}</a> · ${escapeHtml((book.languages || []).join(', '))}<p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`;
-      }).join('')}</ol></details>`).join('')}</section>`;
+      }).join('')}</ol>${(state.knowledgePodcasts.find(item => item.id === path.id)?.podcastEntries || []).length ? `<h3>Podcasts</h3><ol>${state.knowledgePodcasts.find(item => item.id === path.id).podcastEntries.map(entry => `<li data-learning-podcast="${escapeHtml(entry.episodeId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(entry.episode.title)}</a><p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`).join('')}</ol>` : ''}</details>`).join('')}</section>`;
   }
 
   function renderLibrary() {
@@ -5521,7 +5523,8 @@
               ${term.displayPractice ? `<h4>${escapeHtml(t('practice'))}</h4><p>${escapeHtml(term.displayPractice)}</p>` : ''}
               ${term.displayDebate ? `<h4>${escapeHtml(t('debate'))}</h4><p>${escapeHtml(term.displayDebate)}</p>` : ''}
               ${(term.related || []).length ? `<h4>${escapeHtml(t('related'))}</h4><div class="meta-line">${term.related.map(value => `<span class="tag">${escapeHtml(value)}</span>`).join('')}</div>` : ''}
-              ${!['de', 'en'].includes(state.language) ? `<small>${escapeHtml(t('fallbackLanguage'))}</small>` : ''}
+              ${!term.summary?.[state.language] ? `<small>${escapeHtml(t('fallbackLanguage'))}</small>` : ''}
+              ${term.translationRevision && ['fr', 'es'].includes(state.language) ? `<small lang="en">WRN editorial translation · ${escapeHtml(term.translationStatus)} · ${escapeHtml(term.translationRevision)}</small>` : ''}
             </div>
           </details>`).join('')}</div>`}
     `;
@@ -6166,6 +6169,7 @@
       <div class="video-section-tabs" role="tablist" aria-label="${escapeHtml(t('video'))}">
         ${Object.entries(VIDEO_SECTION_KEYS).map(([value, key]) => `<button type="button" role="tab" aria-selected="${state.videoFilters.section === value}" class="${state.videoFilters.section === value ? 'active' : ''}" data-action="video-section" data-value="${value}">${escapeHtml(t(key))}${value === 'saved' && savedCount ? ` <span>${savedCount}</span>` : ''}</button>`).join('')}
       </div>
+      ${['podcasts', 'radio-podcasts'].includes(section) && state.mediaDirectories.length ? `<section class="library-source-section"><h2>${state.language === 'de' ? 'Weitere Audio-Verzeichnisse' : 'More audio directories'}</h2><p lang="${state.language === 'de' ? 'de' : 'en'}">${state.language === 'de' ? 'Bei der Originalquelle öffnen. Ein automatischer Podcastfeed ist noch nicht bestätigt.' : 'Open at the original source. An automatic podcast feed has not yet been confirmed.'}</p>${state.mediaDirectories.map(source => `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(source.name)}</a> · ${escapeHtml(source.country)}</p>`).join('')}</section>` : ''}
       ${state.videoHistory.length ? `<div class="video-local-note"><button type="button" data-action="video-history-clear">${escapeHtml(t('videoHistoryClear'))}</button></div>` : ''}
       <details class="video-filter-panel"${nonDefaultFilter ? ' open' : ''}>
         <summary>${escapeHtml(t('filterVideos'))}<span>${items.length}</span></summary>
@@ -9071,7 +9075,7 @@
       : { resources: [], editorialInputChecklist: [] };
     const dataUrls = window.WRN_CONFIG?.dataUrls || {};
     const dataMirrors = window.WRN_CONFIG?.dataMirrors || {};
-    const [eventsResult, prisonersResult, solidarityActionsResult, podcastsResult, generatedResult, radioResult, radioHealthResult, sourceCatalogResult, librarySourcesResult, libraryFeedResult, editorialDecisionsResult, videoFeedResult, videoHealthResult, podcastSourcesResult, learningPathsResult] = await Promise.allSettled([
+    const [eventsResult, prisonersResult, solidarityActionsResult, podcastsResult, generatedResult, radioResult, radioHealthResult, sourceCatalogResult, librarySourcesResult, libraryFeedResult, editorialDecisionsResult, videoFeedResult, videoHealthResult, podcastSourcesResult, learningPathsResult, lexiconLocalesResult, directoriesResult] = await Promise.allSettled([
       fetchFirstJson([dataMirrors.events, dataUrls.events, 'events-feed.json']),
       fetchJson('prisoner-solidarity.json'),
       fetchJson('verified-solidarity-actions.json'),
@@ -9090,7 +9094,9 @@
       fetchFirstJson([dataMirrors.videoFeed, dataUrls.videoFeed, 'video-feed.json']),
       fetchFirstJson([dataMirrors.videoHealth, dataUrls.videoHealth, 'video-health.json']),
       fetchJson('podcast-sources.json'),
-      fetchJson('learning-paths.json')
+      fetchJson('learning-paths.json'),
+      fetchJson('lexicon-locales.json'),
+      fetchJson('media-directory-sources.json')
     ]);
     if (eventsResult.status === 'fulfilled') {
       state.events = specialty.collapseRecurringEvents(eventsResult.value);
@@ -9170,7 +9176,15 @@
     state.libraryItems = libraryCatalog.filter(item => item?.title && !['withdrawn', 'revoked', 'deleted'].includes(item.status) && item.deleted !== true);
     const learningPathsDocument = learningPathsResult.status === 'fulfilled' ? learningPathsResult.value
       : await window.WRNStorage?.getDataset?.('news-app-2-learning-paths');
+    const localeDocument = lexiconLocalesResult.status === 'fulfilled' ? lexiconLocalesResult.value
+      : await window.WRNStorage?.getDataset?.('news-app-2-lexicon-locales');
+    state.lexiconSnapshot = specialty.localizedGlossarySnapshot(state.lexiconSnapshot, localeDocument);
+    if (lexiconLocalesResult.status === 'fulfilled' && localeDocument?.schema === 'wrn.lexicon-locales.v1') await window.WRNStorage?.putDataset?.('news-app-2-lexicon-locales', localeDocument);
     state.learningPaths = specialty.learningPathsForCatalog(learningPathsDocument, state.libraryItems, state.lexiconSnapshot.terms);
+    state.knowledgePodcasts = specialty.knowledgePodcastsForCatalog(learningPathsDocument, state.podcasts, state.lexiconSnapshot.terms);
+    const directoryDocument = directoriesResult.status === 'fulfilled' ? directoriesResult.value : await window.WRNStorage?.getDataset?.('news-app-2-media-directories');
+    state.mediaDirectories = specialty.mediaDirectories(directoryDocument);
+    if (directoriesResult.status === 'fulfilled' && directoryDocument?.schema === 'wrn.media-directories.v1' && directoryDocument.rights === 'metadata-and-original-links-only' && Array.isArray(directoryDocument.sources)) await window.WRNStorage?.putDataset?.('news-app-2-media-directories', directoryDocument);
     if (learningPathsResult.status === 'fulfilled' && state.learningPaths.length) await window.WRNStorage?.putDataset?.('news-app-2-learning-paths', learningPathsDocument);
     if (librarySnapshots.length) void window.WRNStorage?.putDataset?.('news-app-2-library-feed', libraryCatalog);
     else console.warn('Library catalogue unavailable; using last saved catalog');

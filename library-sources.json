@@ -123,7 +123,9 @@
       "class-struggle"
     ],
     "status": "active",
-    "verifiedAt": "2026-08-04"
+    "verifiedAt": "2026-08-04",
+    "metadataFeedUrls": [],
+    "metadataAdapterStatus": "html-index-review-required"
   },
   {
     "id": "kate-sharpley-library",
@@ -143,7 +145,11 @@
       "history"
     ],
     "status": "active",
-    "verifiedAt": "2026-08-04"
+    "verifiedAt": "2026-08-04",
+    "metadataFeedUrls": [
+      "https://www.katesharpleylibrary.net/feeds/recent-documents"
+    ],
+    "metadataAdapterStatus": "original-canonical-review-required"
   },
   {
     "id": "zabalaza-books",
@@ -163,26 +169,37 @@
       "libertarian-communist"
     ],
     "status": "active",
-    "verifiedAt": "2026-08-04"
+    "verifiedAt": "2026-08-04",
+    "metadataFeedUrls": [
+      "https://zabalazabooks.net/feed/"
+    ],
+    "metadataAdapterStatus": "book-author-review-required"
   },
   {
     "id": "anarchist-archive",
     "name": "Anarchist Archive",
     "languages": [
-      "en"
+      "en",
+      "de"
     ],
     "homepage": "https://anarchist-archive.org/",
-    "catalogUrl": "https://anarchist-archive.org/",
+    "catalogUrl": "https://anarchist-archive.org/feed/",
     "formats": [
       "html",
       "pdf"
     ],
-    "description": "Digitales Archiv anarchistischer Publikationen und Materialien.",
+    "description": "Mehrsprachiges anarchistisches Archiv. Neue Titel werden vor Aufnahme einzeln geprüft.",
     "politicalScope": [
       "anarchist",
       "history"
     ],
     "status": "active",
-    "verifiedAt": "2026-08-04"
+    "verifiedAt": "2026-10-02",
+    "metadataFeedUrls": [
+      "https://anarchist-archive.org/feed/rss.en.xml",
+      "https://anarchist-archive.org/feed/rss.de.xml"
+    ],
+    "contentPolicy": "metadata_and_links_only",
+    "metadataReviewRequired": true
   }
 ]

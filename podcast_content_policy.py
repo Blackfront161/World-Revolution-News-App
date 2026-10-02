@@ -64,6 +64,9 @@ def project_episode(item, source=None, sources=()):
     if item.get('sourceId') in RULES.get('unverifiedLanguageSourceIds', []) or identifier in RULES.get('unverifiedLanguageEpisodeIds', []):
         result.update(language='und', languageVerified=False, languageReviewRequired=True,
                       languageConfidence=0, languageSource='mixed-channel-requires-review', configuredLanguages=['es','ca'])
+    if item.get('sourceId') in RULES.get('declaredChannelOnlySourceIds', []):
+        result.update(language='und', languageVerified=False, languageReviewRequired=True,
+                      languageConfidence=0, languageSource='declared-channel-unverified-episode')
     if restricted_endpoint(item):
         result["sourceId"] = RULES["canonicalSourceId"]
         result["endpointId"] = RULES["endpointId"]

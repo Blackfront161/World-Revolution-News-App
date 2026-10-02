@@ -1,6 +1,6 @@
 {
   "schema": "wrn.learning-paths.v1",
-  "revision": "2026-10-01",
+  "revision": "2026-10-02",
   "editorialStatus": "draft",
   "availableLanguages": [
     "de",
@@ -143,6 +143,34 @@
           },
           "relationType": "editorial-reading-context"
         }
+      ],
+      "podcastEntries": [
+        {
+          "episodeId": "5441cf7b1c3b38d0c2ede8ec",
+          "termIds": [
+            "mutual-aid",
+            "community-accountability"
+          ],
+          "originalUrl": "https://www.shareable.net/podcasts/navigating-conflict-when-building-power-with-dean-spade/",
+          "note": {
+            "de": "Gegenseitige Hilfe und der Umgang mit Konflikten; Perspektive von Dean Spade.",
+            "en": "Mutual aid and navigating conflict; Dean Spade’s perspective."
+          },
+          "relationType": "editorial-listening-context"
+        },
+        {
+          "episodeId": "9e76e39ff0a80cbced2f6470",
+          "termIds": [
+            "mutual-aid",
+            "commons"
+          ],
+          "originalUrl": "https://crimethinc.com/podcasts/the-ex-worker/episodes/113",
+          "note": {
+            "de": "Die Unterscheidung zwischen gegenseitiger Hilfe und Wohltätigkeit diskutieren.",
+            "en": "Discuss the distinction between mutual aid and charity."
+          },
+          "relationType": "editorial-listening-context"
+        }
       ]
     },
     {
@@ -278,6 +306,46 @@
             "en": "Financing self-managed work as a contested strategy."
           },
           "relationType": "editorial-reading-context"
+        }
+      ],
+      "podcastEntries": [
+        {
+          "episodeId": "409d4777c71370ab3ddf3681",
+          "termIds": [
+            "solidarity-unionism",
+            "strike"
+          ],
+          "originalUrl": "https://workingclasshistory.com/podcast/e121-123-iww-starbucks-workers-union/",
+          "note": {
+            "de": "Historische Interviews zur IWW-Organisierung bei Starbucks; Originalseite mit allen drei Teilen.",
+            "en": "Historical interviews about IWW organising at Starbucks; original page with all three parts."
+          },
+          "relationType": "editorial-listening-context"
+        },
+        {
+          "episodeId": "00f8d032681ad1de2b234056",
+          "termIds": [
+            "general-strike",
+            "strike"
+          ],
+          "originalUrl": "https://workingclasshistory.com/podcast/e119-121-1926-general-strike/",
+          "note": {
+            "de": "Den britischen Generalstreik von 1926 anhand eines historischen Podcasts einordnen.",
+            "en": "Consider Britain’s 1926 general strike through a history podcast."
+          },
+          "relationType": "editorial-listening-context"
+        },
+        {
+          "episodeId": "ab86a16e76dbbbe9ff89a163",
+          "termIds": [
+            "tenant-union"
+          ],
+          "originalUrl": "https://redmenace.libsyn.com/tenant-unions-under-attack-by-landlord-lobby",
+          "note": {
+            "de": "Interview zur Mieterorganisierung in Omaha; die Darstellung der Beteiligten kritisch einordnen.",
+            "en": "Interview about tenant organising in Omaha; critically consider the participants’ account."
+          },
+          "relationType": "editorial-listening-context"
         }
       ]
     },
@@ -416,6 +484,34 @@
             "en": "Critically compare historical economies and ideas of abundance."
           },
           "relationType": "editorial-reading-context"
+        }
+      ],
+      "podcastEntries": [
+        {
+          "episodeId": "84016cb4c4fac1da97ada99f",
+          "termIds": [
+            "commoning",
+            "mutual-aid"
+          ],
+          "originalUrl": "https://www.shareable.net/response/tool-libraries-mutual-aid-and-community-led-disaster-response/",
+          "note": {
+            "de": "Werkzeugbibliotheken und gemeinschaftliche Katastrophenhilfe als Fallbeispiele.",
+            "en": "Tool libraries and community-led disaster response as case studies."
+          },
+          "relationType": "editorial-listening-context"
+        },
+        {
+          "episodeId": "9e76e39ff0a80cbced2f6470",
+          "termIds": [
+            "commons",
+            "mutual-aid"
+          ],
+          "originalUrl": "https://crimethinc.com/podcasts/the-ex-worker/episodes/113",
+          "note": {
+            "de": "Gemeingüter und gegenseitige Hilfe aus einer anarchistischen Perspektive diskutieren.",
+            "en": "Discuss commons and mutual aid from an anarchist perspective."
+          },
+          "relationType": "editorial-listening-context"
         }
       ]
     }

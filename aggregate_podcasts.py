@@ -390,15 +390,36 @@ def source_feed_candidates(source: dict) -> list[str]:
 
 def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
     if source.get('catalogReview', {}).get('episodeIntake') == 'hold':
+        return [], '', ['Source admission remains on hold']
+    # A reviewed archive may extend its bounded intake; the default stays 35.
+    source_limit = max(1, min(100, int(source.get('maxEpisodes', MAX_PER_SOURCE))))
+    if source.get('catalogReview', {}).get('episodeIntake') == 'hold':
         return [], '', ['Intake on hold for identity, endpoint or episode-language review']
     candidates = source_feed_candidates(source)
     errors: list[str] = []
 
     for feed_url in candidates:
         try:
-            response = session.get(feed_url, timeout=32)
-            response.raise_for_status()
-            parsed = feedparser.parse(response.content)
+            if source.get('languagePolicy') == 'declared-channel-only':
+                response = session.get(feed_url, timeout=32, stream=True)
+                try:
+                    response.raise_for_status()
+                    if urlparse(response.url).scheme != 'https':
+                        raise ValueError('Reviewed source redirected outside HTTPS')
+                    chunks, size = [], 0
+                    for chunk in response.iter_content(65536):
+                        size += len(chunk)
+                        if size > 4 * 1024 * 1024:
+                            raise ValueError('Reviewed feed exceeds metadata byte limit')
+                        chunks.append(chunk)
+                    feed_bytes = b''.join(chunks)
+                finally:
+                    response.close()
+            else:
+                response = session.get(feed_url, timeout=32)
+                response.raise_for_status()
+                feed_bytes = response.content
+            parsed = feedparser.parse(feed_bytes)
 
             if not parsed.entries:
                 errors.append(f"{feed_url}: keine Einträge")
@@ -406,7 +427,7 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
 
             feed_language = episode_feed_language(source, parsed.feed)
             result = []
-            for entry in parsed.entries[:MAX_PER_SOURCE * 3]:
+            for entry in parsed.entries[:source_limit * 3]:
                 audio = audio_from_entry(entry)
                 episode_url = safe_url(entry.get("link") or entry.get("id") or "", feed_url)
 
@@ -464,6 +485,10 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
                     configured_languages
                     and language not in configured_languages
                 )
+                declared_channel_language = feed_language
+                if source.get('languagePolicy') == 'declared-channel-only':
+                    language, language_source, language_confidence = 'und', 'declared-channel-unverified-episode', 0
+                    language_mismatch = False
                 guid_seed = str(entry.get("id") or entry.get("guid") or audio or episode_url)
                 result.append(project_episode({
                     "id": hashlib.sha256(f"{source.get('episodeIdNamespace', source.get('id'))}|{guid_seed}".encode()).hexdigest()[:24],
@@ -478,6 +503,7 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
                     "published": published,
                     "duration": duration,
                     "language": language,
+                    "declaredChannelLanguage": declared_channel_language,
                     "languageSource": language_source,
                     "languageConfidence": language_confidence,
                     "languageVerified": language_confidence >= 0.8,
@@ -496,7 +522,7 @@ def source_entries(source: dict) -> tuple[list[dict], str, list[str]]:
                     "license": source.get("license", "Originalquelle"),
                 }, source))
 
-                if len(result) >= MAX_PER_SOURCE:
+                if len(result) >= source_limit:
                     break
 
             if result:
@@ -592,7 +618,7 @@ def main() -> int:
 
     for source in sources:
         source_id = source.get("id", source.get("name", "unknown"))
-        if source.get("enabled", True) is False:
+        if source.get("enabled", True) is False or source.get('catalogReview', {}).get('episodeIntake') == 'hold':
             health[source_id] = {
                 "name": source.get("name"),
                 "status": "disabled",

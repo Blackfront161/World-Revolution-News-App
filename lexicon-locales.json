@@ -1,0 +1,64 @@
+{
+  "schema": "wrn.lexicon-locales.v1",
+  "revision": "2026-10-02",
+  "editorialStatus": "draft",
+  "rights": "WRN-original-editorial-text",
+  "terms": {
+    "mutual-aid": {
+      "fr": {
+        "title": "Entraide",
+        "summary": "L’entraide organise le soutien comme une action commune de personnes aux besoins différents. Les personnes concernées doivent pouvoir décider de l’usage des ressources, au lieu d’être durablement séparées entre donateurs et bénéficiaires.",
+        "practice": "Dans une distribution solidaire de nourriture, l’accès, les décisions communes et la répartition du travail non rémunéré font partie de l’organisation. Occupy Sandy est un exemple historique, pas un modèle universel.",
+        "debate": "L’aide d’urgence et l’organisation à long terme répondent à des besoins différents. Le nom d’un projet ne suffit pas à prouver sa solidarité ; des dépendances peuvent aussi s’y développer."
+      },
+      "es": {
+        "title": "Apoyo mutuo",
+        "summary": "El apoyo mutuo organiza la ayuda como una acción compartida entre personas con necesidades distintas. Quienes participan deben poder decidir cómo se usan los recursos, en lugar de quedar divididos de forma permanente entre donantes y receptores.",
+        "practice": "En una distribución solidaria de alimentos, el acceso, las decisiones compartidas y el reparto del trabajo no remunerado forman parte de la organización. Occupy Sandy es un ejemplo histórico, no un modelo universal.",
+        "debate": "La ayuda de emergencia y la organización a largo plazo cumplen funciones distintas. El nombre de un proyecto no demuestra por sí solo su solidaridad; también pueden surgir dependencias dentro de él."
+      }
+    },
+    "direct-action": {
+      "fr": {
+        "title": "Action directe",
+        "summary": "L’action directe signifie que les personnes concernées interviennent elles-mêmes dans un rapport social, au lieu d’en déléguer entièrement la transformation à des représentants. Elle n’est ni nécessairement violente ni limitée aux manifestations.",
+        "practice": "Une organisation autonome de l’approvisionnement crée directement quelque chose ; un arrêt collectif du travail exerce directement une pression. Les objectifs, la participation et les effets doivent être examinés pour chaque action.",
+        "debate": "Les courants divergent sur les tactiques et sur leurs rapports à la négociation. Une action spectaculaire ne crée pas à elle seule une organisation démocratique durable."
+      },
+      "es": {
+        "title": "Acción directa",
+        "summary": "La acción directa significa que las personas afectadas intervienen por sí mismas en una relación social, en vez de delegar por completo su transformación en representantes. No es necesariamente violenta ni se limita a las protestas.",
+        "practice": "El abastecimiento autoorganizado crea algo de forma directa; una interrupción colectiva del trabajo ejerce presión directamente. Los objetivos, la participación y los efectos deben examinarse en cada acción.",
+        "debate": "Las corrientes difieren sobre las tácticas y su relación con la negociación. Una acción espectacular no crea por sí sola una organización democrática duradera."
+      }
+    },
+    "consensus": {
+      "fr": {
+        "title": "Consensus",
+        "summary": "Le consensus cherche une décision que toutes les personnes participantes peuvent soutenir ou accepter. L’accord, les réserves, le retrait sans opposition et le blocage motivé sont des positions distinctes ; le silence ne doit pas être pris pour un consentement.",
+        "practice": "Le groupe convient à l’avance des conditions du blocage, de la facilitation et de la procédure en cas de manque de temps. L’interprétation et l’accessibilité influencent les possibilités de se faire entendre.",
+        "debate": "Le consensus ne protège pas automatiquement du pouvoir informel. Certains groupes le combinent avec des décisions déléguées ou des majorités qualifiées ; ce choix doit être explicite."
+      },
+      "es": {
+        "title": "Consenso",
+        "summary": "El consenso busca una decisión que todas las personas participantes puedan apoyar o aceptar. El acuerdo, las reservas, el apartarse sin oponerse y el bloqueo justificado son posiciones distintas; el silencio no debe considerarse consentimiento.",
+        "practice": "El grupo acuerda de antemano cuándo procede un bloqueo, cómo facilitar la reunión y qué hacer ante la falta de tiempo. La interpretación y la accesibilidad influyen en quién puede hacerse escuchar.",
+        "debate": "El consenso no protege automáticamente del poder informal. Algunos grupos lo combinan con decisiones delegadas o mayorías cualificadas; esa elección debe ser explícita."
+      }
+    },
+    "self-organisation": {
+      "fr": {
+        "title": "Auto-organisation",
+        "summary": "L’auto-organisation signifie que les personnes participantes définissent ensemble leurs objectifs, leurs règles et leurs tâches. Elle ne signifie pas que chacun doit tout faire seul ni que des responsabilités claires seraient inutiles.",
+        "practice": "Un groupe de quartier décide lui-même de ses réunions, de ses ressources et de ses procédures de résolution des conflits. Les connaissances sont partagées, les tâches attribuées de façon transparente et les nouvelles personnes ont accès aux décisions.",
+        "debate": "L’absence de direction officielle ne supprime pas les hiérarchies informelles. Les ressources, le temps et la reconnaissance doivent aussi être pris en compte ; sinon, le contrôle collectif reste une simple aspiration."
+      },
+      "es": {
+        "title": "Autoorganización",
+        "summary": "La autoorganización significa que las personas participantes definen juntas sus objetivos, reglas y tareas. No significa que cada persona deba hacerlo todo sola ni que las responsabilidades claras sean innecesarias.",
+        "practice": "Un grupo vecinal decide sus propias reuniones, recursos y procedimientos para resolver conflictos. Se comparten los conocimientos, las tareas se asignan con transparencia y las personas nuevas tienen acceso a las decisiones.",
+        "debate": "La ausencia de una dirección formal no elimina las jerarquías informales. También deben considerarse los recursos, el tiempo y el reconocimiento; de lo contrario, el control colectivo sigue siendo solo una aspiración."
+      }
+    }
+  }
+}

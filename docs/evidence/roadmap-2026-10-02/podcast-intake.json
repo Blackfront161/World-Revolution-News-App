@@ -1,0 +1,55 @@
+{
+  "schema": "wrn.reviewed-podcast-metadata-intake.v1",
+  "checkedAt": "2026-10-02T05:39:15.810644+00:00",
+  "observations": [
+    {
+      "sourceId": "twelve-rules-for-what",
+      "items": 100,
+      "feed": "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss",
+      "errors": [],
+      "checkedAt": "2026-10-02T05:39:04.376544+00:00",
+      "metadataOnly": true
+    },
+    {
+      "sourceId": "3cr-anarchist-world",
+      "items": 100,
+      "feed": "https://www.3cr.org.au/anarchistworld/itunes",
+      "errors": [],
+      "checkedAt": "2026-10-02T05:39:07.528160+00:00",
+      "metadataOnly": true
+    },
+    {
+      "sourceId": "3cr-stick-together",
+      "items": 100,
+      "feed": "https://www.3cr.org.au/sticktogether/itunes",
+      "errors": [],
+      "checkedAt": "2026-10-02T05:39:10.499463+00:00",
+      "metadataOnly": true
+    },
+    {
+      "sourceId": "3cr-green-left-radio",
+      "items": 100,
+      "feed": "https://www.3cr.org.au/greenleftweeklyradio/itunes",
+      "errors": [],
+      "checkedAt": "2026-10-02T05:39:14.414956+00:00",
+      "metadataOnly": true
+    },
+    {
+      "sourceId": "rebel-steps",
+      "items": 33,
+      "feed": "https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e",
+      "errors": [],
+      "checkedAt": "2026-10-02T05:39:15.338623+00:00",
+      "metadataOnly": true
+    }
+  ],
+  "archiveBefore": 1345,
+  "activeBefore": 1310,
+  "archiveAfter": 1778,
+  "activeAfter": 1743,
+  "newIds": 433,
+  "rights": "metadata-and-original-links-only",
+  "episodeLanguagesVerified": false,
+  "mediaFetched": false,
+  "publicationPerformed": false
+}

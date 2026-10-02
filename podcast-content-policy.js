@@ -130,9 +130,13 @@
     "category",
     "license",
     "endpointId",
-    "contentPolicy"
+    "contentPolicy",
+    "declaredChannelLanguage"
   ],
   "metadataOnlySourceIds": [
+    "3cr-anarchist-world",
+    "3cr-green-left-radio",
+    "3cr-stick-together",
     "acik-yesil",
     "carapatage",
     "chroniques-rebelles",
@@ -148,12 +152,14 @@
     "mudawanat-arabic",
     "out-of-the-pan",
     "queering-the-air",
+    "rebel-steps",
     "twelve-rules-for-what"
   ],
   "metadataOnlyFeedUrls": [
     "https://anchor.fm/s/3ea3fce4/podcast/rss",
     "https://apacikradyo.com.tr/i/rss/Acik_Yesil.xml",
     "https://apacikradyo.com.tr/i/rss/Iklim_Kusagi_Konusuyor.xml",
+    "https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e",
     "https://feeds.buzzsprout.com/1776729.rss",
     "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss",
     "https://histoires-d-a.lepodcast.fr/rss",
@@ -163,8 +169,11 @@
     "https://podcast.contrabanda.org/feed/podcast/",
     "https://podcast.moviementa.com/@infowar/feed.xml",
     "https://rss.buzzsprout.com/2307088.rss",
+    "https://www.3cr.org.au/anarchistworld/itunes",
+    "https://www.3cr.org.au/greenleftweeklyradio/itunes",
     "https://www.3cr.org.au/outofthepan/itunes",
     "https://www.3cr.org.au/queeringtheair/itunes",
+    "https://www.3cr.org.au/sticktogether/itunes",
     "https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss",
     "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss"
   ],
@@ -660,6 +669,13 @@
     "a252638bd7eaced6779a019b",
     "b8399d8fd6deae5811268a37",
     "ccbbf3f5f4596ff9d7f3ca38"
+  ],
+  "declaredChannelOnlySourceIds": [
+    "3cr-anarchist-world",
+    "3cr-stick-together",
+    "3cr-green-left-radio",
+    "rebel-steps",
+    "twelve-rules-for-what"
   ]
 } /* POLICY_RULES_END */;
   const MODE = 'metadata_and_links_only';
@@ -707,6 +723,10 @@
       || (rules.unverifiedLanguageEpisodeIds || []).includes(String(item.rawId || item.id || '').replace(/^original:/, ''))) {
       Object.assign(result, {language:'und',languageVerified:false,languageReviewRequired:true,languageConfidence:0,
         languageSource:'mixed-channel-requires-review',configuredLanguages:['es','ca']});
+    }
+    if ((rules.declaredChannelOnlySourceIds || []).includes(item.sourceId)) {
+      Object.assign(result, {language:'und',languageVerified:false,languageReviewRequired:true,languageConfidence:0,
+        languageSource:'declared-channel-unverified-episode'});
     }
     if (restrictedEndpoint(item)) { result.sourceId = rules.canonicalSourceId; result.endpointId = rules.endpointId; }
     return result;

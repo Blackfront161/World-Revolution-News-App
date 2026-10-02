@@ -1,0 +1,186 @@
+[
+  {
+    "sourceId": "anarchist-archive-all-rss",
+    "requestedUrl": "https://anarchist-archive.org/feed/rss.xml",
+    "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+    "mediaFetched": false,
+    "rawContentPersisted": false,
+    "status": 200,
+    "finalUrl": "https://anarchist-archive.org/feed/rss.xml",
+    "contentType": "application/rss+xml",
+    "bytes": 7945,
+    "sha256": "69fc643f16ba35ede223669576180fa4d5176ba80359a668fda8f856be0f2599",
+    "title": "Anarchist Archive",
+    "declaredChannelLanguage": null,
+    "channelLink": "https://anarchist-archive.org/",
+    "itemRows": 50,
+    "futureDatedRows": 0,
+    "httpsEnclosureRows": 0,
+    "insecureOnlyEnclosureRows": 0,
+    "missingOriginalLinks": 50,
+    "missingGuids": 0,
+    "duplicateGuidRows": 0,
+    "duplicateOriginalLinkRows": 0,
+    "httpsOriginalLinks": 0,
+    "latestNonfutureDate": null,
+    "samples": [
+      {
+        "title": "Über einige alte, aber aktuelle Fragen unter Anarchisten, und nicht nur… ",
+        "guid": "https://anarchist-archive.org/library/de/an-die-waisen-des-existierenden-%C3%BCber-einige-alte-aber-aktuelle-fragen-unter-anarchisten-und-nicht-nur",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      },
+      {
+        "title": "Dood het Koppel in je hoofd ",
+        "guid": "https://anarchist-archive.org/library/nl/ungrateful-hyenas-editions-dood-het-koppel-in-je-hoofd",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      },
+      {
+        "title": "Sus armas no te protegerán, pero pueden hacer que te maten ",
+        "guid": "https://anarchist-archive.org/library/es/crimethinc-sus-armas-no-te-protegeran-pero-pueden-hacer-que-te-maten",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      }
+    ],
+    "paginationChecked": false,
+    "enclosureReachabilityChecked": false
+  },
+  {
+    "sourceId": "anarchist-archive-en-rss",
+    "requestedUrl": "https://anarchist-archive.org/feed/rss.en.xml",
+    "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+    "mediaFetched": false,
+    "rawContentPersisted": false,
+    "status": 200,
+    "finalUrl": "https://anarchist-archive.org/feed/rss.en.xml",
+    "contentType": "application/rss+xml",
+    "bytes": 8879,
+    "sha256": "f7032a279d653fdb7848fccee306dd8997f4a898ccdafa7b48fcf0b7f3e0846c",
+    "title": "Anarchist Archive",
+    "declaredChannelLanguage": null,
+    "channelLink": "https://anarchist-archive.org/",
+    "itemRows": 50,
+    "futureDatedRows": 0,
+    "httpsEnclosureRows": 0,
+    "insecureOnlyEnclosureRows": 0,
+    "missingOriginalLinks": 50,
+    "missingGuids": 0,
+    "duplicateGuidRows": 0,
+    "duplicateOriginalLinkRows": 0,
+    "httpsOriginalLinks": 0,
+    "latestNonfutureDate": null,
+    "samples": [
+      {
+        "title": "Betrayal ",
+        "guid": "https://anarchist-archive.org/library/en/words-to-fire-press-betrayal",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      },
+      {
+        "title": "From Politics to Life ",
+        "guid": "https://anarchist-archive.org/library/en/wolfi-landstreicher-from-politics-to-life",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      },
+      {
+        "title": "One Giant Red Flag, Folded Into A Book ",
+        "guid": "https://anarchist-archive.org/library/en/william-gillis-one-giant-red-flag-folded-into-a-book",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      }
+    ],
+    "paginationChecked": false,
+    "enclosureReachabilityChecked": false
+  },
+  {
+    "sourceId": "anarchist-archive-de-rss",
+    "requestedUrl": "https://anarchist-archive.org/feed/rss.de.xml",
+    "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+    "mediaFetched": false,
+    "rawContentPersisted": false,
+    "status": 200,
+    "finalUrl": "https://anarchist-archive.org/feed/rss.de.xml",
+    "contentType": "application/rss+xml",
+    "bytes": 4150,
+    "sha256": "da4258c54937da6a555ac852fe6cd1c6245bf218d7a18743d0ff7101b9df2567",
+    "title": "Anarchist Archive",
+    "declaredChannelLanguage": null,
+    "channelLink": "https://anarchist-archive.org/",
+    "itemRows": 23,
+    "futureDatedRows": 0,
+    "httpsEnclosureRows": 0,
+    "insecureOnlyEnclosureRows": 0,
+    "missingOriginalLinks": 23,
+    "missingGuids": 0,
+    "duplicateGuidRows": 0,
+    "duplicateOriginalLinkRows": 0,
+    "httpsOriginalLinks": 0,
+    "latestNonfutureDate": null,
+    "samples": [
+      {
+        "title": "Über einige alte, aber aktuelle Fragen unter Anarchisten, und nicht nur… ",
+        "guid": "https://anarchist-archive.org/library/de/an-die-waisen-des-existierenden-%C3%BCber-einige-alte-aber-aktuelle-fragen-unter-anarchisten-und-nicht-nur",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      },
+      {
+        "title": "Der Verrat ",
+        "guid": "https://anarchist-archive.org/library/de/words-to-fire-press-der-verrat",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      },
+      {
+        "title": "Anarchy2023 — Das “Internationale Antiautoritäre Treffen” plant den Superspreader ",
+        "guid": "https://anarchist-archive.org/library/de/pieceoplastic-anarchy2023-das-internationale-antiautoritare-treffen-plant-den-superspreader",
+        "originalUrl": "",
+        "published": "",
+        "language": null,
+        "descriptionTransitionMention": false
+      }
+    ],
+    "paginationChecked": false,
+    "enclosureReachabilityChecked": false
+  },
+  {
+    "sourceId": "kate-unapi",
+    "requestedUrl": "https://www.katesharpleylibrary.net/unapi",
+    "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+    "mediaFetched": false,
+    "rawContentPersisted": false,
+    "error": "HTTPError",
+    "status": 300
+  },
+  {
+    "sourceId": "kate-current-copyright",
+    "requestedUrl": "https://www.katesharpleylibrary.net/doc/copyright",
+    "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+    "mediaFetched": false,
+    "rawContentPersisted": false,
+    "status": 200,
+    "finalUrl": "https://www.katesharpleylibrary.net/doc/copyright",
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 3304,
+    "sha256": "1bf2a0c7e598c30df8e75467b37ca6cd5d9d82dea78fee67b7a25b9dbd78250d",
+    "title": "Kate Sharpley Library",
+    "relevantLinks": [
+      "https://www.katesharpleylibrary.net/feeds/news"
+    ]
+  }
+]

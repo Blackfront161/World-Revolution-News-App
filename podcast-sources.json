@@ -1056,8 +1056,8 @@
   },
   {
     "id": "twelve-rules-for-what",
-    "name": "12 Rules For WHAT",
-    "homepage": "https://soundcloud.com/12rulesforwhat",
+    "name": "Red Flare Podcast / 12 Rules For WHAT",
+    "homepage": "https://redflare.info/podcast/",
     "feedUrls": [
       "https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss"
     ],
@@ -1078,23 +1078,33 @@
       "Theory & Strategy"
     ],
     "pageAudioFallback": false,
-    "maxAgeDays": 3650,
-    "verificationNote": "Needs identity review: homepage 404; configured feed now titled Red Flare Podcast. No successor asserted.",
+    "maxAgeDays": 20000,
+    "verificationNote": "Documented public-feed transition: final 12 Rules episode / first Red Flare episode. Historical stable IDs retained. No premium or media access authorized.",
     "contentPolicy": "metadata_and_links_only",
     "rightsStatus": "unverified",
     "catalogReview": {
-      "disposition": "needs-identity-review",
-      "checkedAt": "2026-10-01T09:49:16.603732+00:00",
-      "episodeIntake": "hold",
+      "disposition": "metadata-only-documented-transition",
+      "checkedAt": "2026-10-02T05:37:50.341005+00:00",
+      "episodeIntake": "metadata-only",
       "rights": {
         "audio": "unknown",
         "artwork": "unknown",
         "transcript": "unknown",
         "offlineAudio": "unknown"
       },
-      "evidence": "docs/evidence/catalog-parity-2026-10-01/source-observations.json"
+      "evidence": "docs/evidence/roadmap-2026-10-02/sources/REPORT.md",
+      "identityEvidence": [
+        "https://redflare.info/articles/monthly-briefing-restore-and-reform-war-show-deep-fissures-unresolved-on-the-right/",
+        "https://channelzeronetwork.com/109-if-we-tolerate-this-w-daniel-trilling/"
+      ]
     },
-    "enabled": false
+    "enabled": true,
+    "aliases": [
+      "12 Rules For WHAT",
+      "Red Flare Podcast"
+    ],
+    "maxEpisodes": 100,
+    "languagePolicy": "declared-channel-only"
   },
   {
     "id": "histoires-d-a",
@@ -1176,7 +1186,8 @@
         "offlineAudio": "unknown"
       },
       "evidence": "docs/evidence/catalog-parity-2026-10-01/source-observations.json"
-    }
+    },
+    "enabled": false
   },
   {
     "id": "carapatage",
@@ -1462,7 +1473,8 @@
         "offlineAudio": "unknown"
       },
       "evidence": "docs/evidence/catalog-parity-2026-10-01/source-observations.json"
-    }
+    },
+    "enabled": false
   },
   {
     "id": "epanastasi-greece",
@@ -1586,6 +1598,170 @@
         "offlineAudio": "unknown"
       },
       "evidence": "docs/evidence/catalog-parity-2026-10-01/source-observations.json"
+    }
+  },
+  {
+    "id": "3cr-anarchist-world",
+    "name": "Anarchist World This Week (3CR)",
+    "homepage": "https://www.3cr.org.au/anarchistworld",
+    "feedUrls": [
+      "https://www.3cr.org.au/anarchistworld/itunes"
+    ],
+    "language": "en",
+    "country": "AU",
+    "region": "Oceania",
+    "license": "Rights unverified; original source only",
+    "sourceKind": "free-radio",
+    "priority": 80,
+    "topics": [
+      "Anarchism",
+      "Current Affairs"
+    ],
+    "categories": [
+      "Anarchism",
+      "Current Affairs"
+    ],
+    "pageAudioFallback": false,
+    "maxEpisodes": 100,
+    "maxAgeDays": 20000,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "languagePolicy": "declared-channel-only",
+    "archiveStatus": "catalogue",
+    "catalogReview": {
+      "disposition": "metadata-only",
+      "episodeIntake": "metadata-only",
+      "checkedAt": "2026-10-02T05:37:50.341005+00:00",
+      "evidence": "docs/evidence/roadmap-2026-10-02/sources/REPORT.md",
+      "rights": {
+        "audio": "unknown",
+        "artwork": "unknown",
+        "transcript": "unknown",
+        "offlineAudio": "unknown"
+      }
+    }
+  },
+  {
+    "id": "3cr-stick-together",
+    "name": "Stick Together (3CR)",
+    "homepage": "https://www.3cr.org.au/sticktogether",
+    "feedUrls": [
+      "https://www.3cr.org.au/sticktogether/itunes"
+    ],
+    "language": "en",
+    "country": "AU",
+    "region": "Oceania",
+    "license": "Rights unverified; original source only",
+    "sourceKind": "free-radio",
+    "priority": 80,
+    "topics": [
+      "Labour",
+      "Unions"
+    ],
+    "categories": [
+      "Labour",
+      "Unions"
+    ],
+    "pageAudioFallback": false,
+    "maxEpisodes": 100,
+    "maxAgeDays": 20000,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "languagePolicy": "declared-channel-only",
+    "archiveStatus": "catalogue",
+    "catalogReview": {
+      "disposition": "metadata-only",
+      "episodeIntake": "metadata-only",
+      "checkedAt": "2026-10-02T05:37:50.341005+00:00",
+      "evidence": "docs/evidence/roadmap-2026-10-02/sources/REPORT.md",
+      "rights": {
+        "audio": "unknown",
+        "artwork": "unknown",
+        "transcript": "unknown",
+        "offlineAudio": "unknown"
+      }
+    }
+  },
+  {
+    "id": "3cr-green-left-radio",
+    "name": "Green Left Radio (3CR) – Archive",
+    "homepage": "https://www.3cr.org.au/greenleftradio",
+    "feedUrls": [
+      "https://www.3cr.org.au/greenleftweeklyradio/itunes"
+    ],
+    "language": "en",
+    "country": "AU",
+    "region": "Oceania",
+    "license": "Rights unverified; original source only",
+    "sourceKind": "free-radio",
+    "priority": 80,
+    "topics": [
+      "Social Movements",
+      "Politics"
+    ],
+    "categories": [
+      "Social Movements",
+      "Politics"
+    ],
+    "pageAudioFallback": false,
+    "maxEpisodes": 100,
+    "maxAgeDays": 20000,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "languagePolicy": "declared-channel-only",
+    "archiveStatus": "historical-feed-archive",
+    "catalogReview": {
+      "disposition": "metadata-only",
+      "episodeIntake": "metadata-only",
+      "checkedAt": "2026-10-02T05:37:50.341005+00:00",
+      "evidence": "docs/evidence/roadmap-2026-10-02/sources/REPORT.md",
+      "rights": {
+        "audio": "unknown",
+        "artwork": "unknown",
+        "transcript": "unknown",
+        "offlineAudio": "unknown"
+      }
+    }
+  },
+  {
+    "id": "rebel-steps",
+    "name": "Rebel Steps – Archive",
+    "homepage": "https://rebelsteps.com/",
+    "feedUrls": [
+      "https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e"
+    ],
+    "language": "en",
+    "country": "US",
+    "region": "North America",
+    "license": "Rights unverified; original source only",
+    "sourceKind": "independent-podcast",
+    "priority": 80,
+    "topics": [
+      "Self-organisation",
+      "Mutual Aid"
+    ],
+    "categories": [
+      "Self-organisation",
+      "Mutual Aid"
+    ],
+    "pageAudioFallback": false,
+    "maxEpisodes": 35,
+    "maxAgeDays": 20000,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "languagePolicy": "declared-channel-only",
+    "archiveStatus": "historical-feed-archive",
+    "catalogReview": {
+      "disposition": "metadata-only",
+      "episodeIntake": "metadata-only",
+      "checkedAt": "2026-10-02T05:37:50.341005+00:00",
+      "evidence": "docs/evidence/roadmap-2026-10-02/sources/REPORT.md",
+      "rights": {
+        "audio": "unknown",
+        "artwork": "unknown",
+        "transcript": "unknown",
+        "offlineAudio": "unknown"
+      }
     }
   }
 ]

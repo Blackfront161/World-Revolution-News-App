@@ -1,0 +1,223 @@
+{
+  "scope": "official metadata paths only; no PDFs/books/articles/media persisted",
+  "results": [
+    {
+      "sourceId": "l-orage-podcast-page",
+      "requestedUrl": "https://ora-rao.org/podcasts/lorage/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://ora-rao.org/podcasts/lorage/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 40599,
+      "sha256": "77e2826a4d50503b984413a521ccfc56d1efae27a4f4aa4e04fdbea456a9b2f6",
+      "title": "L'Orage | ORA - Organisation Révolutionnaire Anarchiste",
+      "relevantLinks": [
+        "https://ora-rao.org/feed/",
+        "https://ora-rao.org/comments/feed/",
+        "https://ora-rao.org/podcasts/lorage/feed/",
+        "https://ora-rao.org/feed/podcast",
+        "https://ora-rao.org/feed/podcast/lorage",
+        "https://ora-rao.org/orage",
+        "https://ora-rao.org/orage/"
+      ]
+    },
+    {
+      "sourceId": "radio-lora-lamm-series",
+      "requestedUrl": "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 144606,
+      "sha256": "d1f5bbd10f654b353003c068df2bed9460a589cf803c8b0dec34be28f601288e",
+      "title": "LoRa liest das Lamm - Radio LoRa",
+      "relevantLinks": [
+        "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm",
+        "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm#main-content",
+        "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm#main-nav",
+        "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm#player-header",
+        "https://www.lora.ch/radio/sendungen/lora-liest-das-lamm#player-meta__track-info",
+        "https://www.lora.ch/radio/sendungen",
+        "https://www.lora.ch/radio/audiothek",
+        "https://www.lora.ch/mitmachen/sendung-machen",
+        "https://www.lora.ch/radio/feedback?show=LoRa%2520liest%2520das%2520Lamm",
+        "https://www.lora.ch/radio/ausgaben/lora-liest-das-lamm-10-2026-10-01",
+        "https://www.lora.ch/radio/ausgaben/lora-liest-das-lamm-9-usa-setzen-linkes-internetkollektiv-auf-terrorliste-2026-09-17",
+        "https://www.lora.ch/radio/ausgaben/lora-liest-das-lamm-8-2026-09-03",
+        "https://www.lora.ch/radio/ausgaben/lora-liest-das-lamm-7-2026-08-20",
+        "https://www.lora.ch/radio/ausgaben/lora-liest-das-lamm-6-2026-07-09",
+        "https://www.lora.ch/radio/ausgaben/5-lora-liest-das-lamm-2026-06-25",
+        "https://www.lora.ch/radio/ausgaben/lora-liest-das-lamm-4-2026-06-11",
+        "https://www.lora.ch/radio/ausgaben/unrechtmaessig-verschuldet-weder-ausreisen-noch-bleiben-ist-erlaubt-2026-05-28",
+        "https://www.lora.ch/radio/ausgaben/wenn-die-polizei-die-unterkunft-kommt-wie-der-bund-dein-digitales-leben-seziert-2026",
+        "https://www.lora.ch/radio/ausgaben/1-was-uns-die-lettenraeumung-vor-30-jahren-lehrt-die-koloniale-neutralitaet-der",
+        "https://www.digris.ch/verbreitung/programme/64b5715d-b44f-47f1-a678-c834996e86e2/"
+      ]
+    },
+    {
+      "sourceId": "libcom-library",
+      "requestedUrl": "https://libcom.org/book",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://libcom.org/book",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 127843,
+      "sha256": "62162ae9855303b56d4641f89b79a601c840ae0449d1524870430a588d01577d",
+      "title": "Books | libcom.org",
+      "relevantLinks": [
+        "https://libcom.org/library/communist-party-provisional-programme-pankhurst",
+        "https://libcom.org/article/12-rules-what-podcast"
+      ]
+    },
+    {
+      "sourceId": "libcom-home",
+      "requestedUrl": "https://libcom.org/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://libcom.org/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 53892,
+      "sha256": "b9f42c766a995cbcad6003f43f9c75403caae2a81d9464614eb03fcb62ef2401",
+      "title": "Home page | libcom.org",
+      "relevantLinks": []
+    },
+    {
+      "sourceId": "libcom-known-library-feed",
+      "requestedUrl": "https://libcom.org/library/feed",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "error": "HTTPError",
+      "status": 404
+    },
+    {
+      "sourceId": "kate-sharpley-library",
+      "requestedUrl": "https://www.katesharpleylibrary.net/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://www.katesharpleylibrary.net/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 15883,
+      "sha256": "7ac77a88132d456c0e872721f96171c043e6163131642c9ccf6f75c27a26f91c",
+      "title": "Kate Sharpley Library",
+      "relevantLinks": [
+        "https://www.katesharpleylibrary.net/feeds/recent-documents",
+        "https://www.katesharpleylibrary.net/feeds/news"
+      ]
+    },
+    {
+      "sourceId": "zabalaza-books",
+      "requestedUrl": "https://zabalazabooks.net/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://zabalazabooks.net/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 181456,
+      "sha256": "03fb69e2f22d29b68c7ad38471f1c37d041fafed35a87bdd672694294bbe7746",
+      "title": "",
+      "relevantLinks": [
+        "https://zabalazabooks.net/feed/",
+        "https://zabalazabooks.net/comments/feed/",
+        "https://zabalaza.net/feed/",
+        "https://www.anarkismo.net/newsfeed.php?language=en",
+        "https://www.ainfos.ca/syndication/ainfos_rss_all_iso.php?lg=en",
+        "https://wordpress.com/reader/feeds/881663"
+      ]
+    },
+    {
+      "sourceId": "zabalaza-books-known-feed",
+      "requestedUrl": "https://zabalazabooks.net/feed/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://zabalazabooks.net/feed/",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 325194,
+      "sha256": "2036134fdc10461a5cb170adb2c5583c00a69cbeca53fb88f48b6b2115f4e7e9",
+      "title": "",
+      "declaredChannelLanguage": "en",
+      "channelLink": "https://zabalazabooks.net",
+      "itemRows": 10,
+      "futureDatedRows": 0,
+      "httpsEnclosureRows": 0,
+      "insecureOnlyEnclosureRows": 0,
+      "missingOriginalLinks": 0,
+      "missingGuids": 0,
+      "duplicateGuidRows": 0,
+      "duplicateOriginalLinkRows": 0,
+      "httpsOriginalLinks": 10,
+      "latestNonfutureDate": "2026-05-18T20:58:42+00:00",
+      "samples": [
+        {
+          "title": "Why Racism? Why Anti-Racism?",
+          "guid": "http://zabalazabooks.net/?p=10985",
+          "originalUrl": "https://zabalazabooks.net/2026/05/18/why-racism-why-anti-racism/",
+          "published": "Mon, 18 May 2026 20:58:42 +0000",
+          "language": null,
+          "descriptionTransitionMention": false
+        },
+        {
+          "title": "How to Organise Your Building",
+          "guid": "http://zabalazabooks.net/?p=10415",
+          "originalUrl": "https://zabalazabooks.net/2025/08/03/how-to-organise-your-building/",
+          "published": "Sun, 03 Aug 2025 21:04:24 +0000",
+          "language": null,
+          "descriptionTransitionMention": false
+        },
+        {
+          "title": "How to Organise a Neighbourhood Popular Assembly",
+          "guid": "http://zabalazabooks.net/?p=10228",
+          "originalUrl": "https://zabalazabooks.net/2025/07/08/how-to-organise-a-neighbourhood-popular-assembly/",
+          "published": "Tue, 08 Jul 2025 18:30:08 +0000",
+          "language": null,
+          "descriptionTransitionMention": false
+        }
+      ],
+      "paginationChecked": false,
+      "enclosureReachabilityChecked": false
+    },
+    {
+      "sourceId": "anarchist-archive",
+      "requestedUrl": "https://anarchist-archive.org/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "status": 200,
+      "finalUrl": "https://anarchist-archive.org/",
+      "contentType": "text/html",
+      "bytes": 22056,
+      "sha256": "c13c9bf24c6e9bcb24178b948842c685fd5edd4eefffabc60bc11e08a4ef96b4",
+      "title": "Anarchist Archive",
+      "relevantLinks": []
+    },
+    {
+      "sourceId": "vienna-radikale-linke",
+      "requestedUrl": "https://radikale-linke.at/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "error": "URLError"
+    },
+    {
+      "sourceId": "enough14d",
+      "requestedUrl": "https://enough-is-enough14.org/",
+      "checkedAtUTC": "2026-10-02T05:21:58+00:00",
+      "mediaFetched": false,
+      "rawContentPersisted": false,
+      "error": "TimeoutError"
+    }
+  ]
+}

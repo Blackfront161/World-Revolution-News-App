@@ -15154,5 +15154,291 @@
       "epub": "https://theanarchistlibrary.org/library/return-fire-no-path-a-web-of-relations-tensions.epub"
     },
     "updatedAt": "2026-07-20T17:24:37+00:00"
+  },
+  {
+    "id": "anarchist-archive-ec66c1cd5fd48c3c35b6674f",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Gegen die Logik der Guillotine",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/crimethinc-gegen-die-logik-der-guillotine",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-fabdc6c3029b5bc0fbf0b49d",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Das Subalterne ist verdammt noch mal am sprechen!",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/immer-autonom-das-subalterne-ist-verdammt-noch-mal-am-sprechen",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-0b202635828e432144e951ad",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Archipel",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/edition-irreversibel-archipel",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-55ca716ecdd893e83119b6bd",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Nazis of Color",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/spencer-sunshine-nazis-of-color",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-c3913efdcff616539581ff80",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Ein nicht-binäres Zine",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/vorbilder-gesucht-ein-nicht-binares-zine",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-adc7b0805b0730c171232344",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Nähe gesucht",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/vorbilder-gesucht-nahe-gesucht",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-af3a77719094d0c30d65fe81",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Stop FLINTA Bullshit, Destroy All Binaries!",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/vorbilder-gesucht-stop-flinta-bullshit-destroy-all-binaries",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-ca4380bcf18d4f143778c27b",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "ACSD 2022",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/various-acsd-2022",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-bf724cffa41784f9b8a34164",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Über das Phänomen unsinniger Jobs",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/david-graeber-%C3%BCber-das-ph%C3%A4nomen-unsinniger-jobs",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-877d59e96298b56da4b3fec7",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Seht es ein!",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/nadia-c-seht-es-ein-eure-politik-ist-scheisse-langweilig",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-b95d5307ec173d05c6a7c516",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Was, Sexismus ir Szenä?!",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/lieberglitzer-sexismus-ir-szen%C3%A4",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-a4e44b8e822036b98e0ad713",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Kill the Couple in Your Head",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/ungrateful-hyenas-editions-kill-the-couple-in-your-head",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
+  },
+  {
+    "id": "anarchist-archive-e61ad3400463845c873dfe06",
+    "sourceId": "anarchist-archive",
+    "sourceName": "Anarchist Archive",
+    "title": "Geschichte der Auswirkungen von Postones Thesen in der radikalen Linken und These für neue Taktik gegen den Rechtsruck",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://anarchist-archive.org/library/de/knews-geschichte-der-auswirkungen-von-postones-thesen-in-der-radikalen-linken-und-these-fur-neue-taktik-gegen-den-rechtsruck",
+    "downloads": {},
+    "languageSource": "official-language-specific-catalogue-and-path",
+    "languageVerified": false,
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "updatedAt": "2026-10-02T00:00:00Z",
+    "updatedAtMeaning": "WRN catalogue refresh; publisher publication date unknown"
   }
 ]
