@@ -1,0 +1,153 @@
+{
+  "checkedAt": "2026-10-02T14:00:01.266Z",
+  "sources": [
+    {
+      "name": "ACIN – Tejido de Comunicación",
+      "url": "https://tejidocomunicacion.nasaacin.org/feed/",
+      "canonicalUrl": "https://tejidocomunicacion.nasaacin.org/feed",
+      "homepage": "https://tejidocomunicacion.nasaacin.org/",
+      "languages": [
+        "es"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles",
+        "sources"
+      ],
+      "mediaType": "news",
+      "status": "approved",
+      "active": true,
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "operator": "Tejido de Comunicación und Radio Pa Yumat der ACIN (Selbstauskunft)",
+      "sourceType": "Indigene Gemeinschaftskommunikation",
+      "reviewEvidence": [
+        "https://tejidocomunicacion.nasaacin.org/quienes-somos/"
+      ],
+      "originRegion": "Latin America",
+      "originCountry": "Colombia",
+      "originCountryCode": "CO",
+      "origins": [
+        "aggregate.py",
+        "multilingual-source-registry.json"
+      ]
+    },
+    {
+      "name": "Debates Indígenas",
+      "url": "https://debatesindigenas.org/feed/",
+      "canonicalUrl": "https://debatesindigenas.org/feed",
+      "homepage": "https://debatesindigenas.org/",
+      "languages": [
+        "es"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles",
+        "sources"
+      ],
+      "mediaType": "news",
+      "status": "approved",
+      "active": true,
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "operator": "Redaktion Debates Indígenas / IWGIA (Selbstauskunft)",
+      "sourceType": "Magazin zu indigenen Rechten",
+      "reviewEvidence": [
+        "https://debatesindigenas.org/quienes-somos/"
+      ],
+      "originRegion": "",
+      "originCountry": "",
+      "originCountryCode": "",
+      "origins": [
+        "aggregate.py",
+        "multilingual-source-registry.json"
+      ]
+    }
+  ],
+  "totalNews": 2000,
+  "articles": [
+    {
+      "source": "Debates Indígenas",
+      "link": "https://debatesindigenas.org/2026/10/01/la-autonomia-indigena-en-el-sistema-interamericano-a-cinco-anos-del-informe-de-la-cidh-sobre-libre-determinacion/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "Debates Indígenas",
+      "link": "https://debatesindigenas.org/2026/10/01/quien-constituye-a-quien-aprendizajes-del-pueblo-naga-sobre-las-autonomias-en-latinoamerica/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "Debates Indígenas",
+      "link": "https://debatesindigenas.org/2026/10/01/mexico-autonomias-bajo-asedio-en-contextos-de-violencia-extrema/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "Debates Indígenas",
+      "link": "https://debatesindigenas.org/2026/10/01/la-autonomia-marina-y-terrestre-del-pueblo-gunadule-en-panama/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "Debates Indígenas",
+      "link": "https://debatesindigenas.org/2026/10/01/ricardo-camilo-nino-izquierdo-no-es-posible-hablar-de-autonomia-sin-territorio/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "Debates Indígenas",
+      "link": "https://debatesindigenas.org/2026/10/01/de-la-reivindicacion-territorial-al-autogobierno-indigena-avances-tensiones-y-perspectivas-en-bolivia/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "ACIN – Tejido de Comunicación",
+      "link": "https://tejidocomunicacion.nasaacin.org/munchique-culmino-el-diplomado-sobre-el-derecho-humano-a-la-alimentacion-adecuada-realizado-junto-al-icbf-y-la-universidad-tecnologica-de-pereira/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    },
+    {
+      "source": "ACIN – Tejido de Comunicación",
+      "link": "https://tejidocomunicacion.nasaacin.org/feria-agroambiental-en-jambalo-mas-de-cien-iniciativas-economicas-que-buscan-producir-y-cuidar-el-territorio-al-tiempo/",
+      "language": "es",
+      "importMode": "metadata-only",
+      "contentComplete": false,
+      "content": "Überschrift und Originalverweis. Den Beitrag auf der Originalseite lesen.",
+      "image": "",
+      "images": []
+    }
+  ],
+  "status": "PASS"
+}

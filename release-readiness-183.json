@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "app": "World Revolution News",
-  "version": "2.1.0",
-  "build": "2026.08.12-wrn-2.1.0-release",
-  "generatedAt": "2026-08-16T13:16:54.003203+00:00",
+  "version": "2.1.2",
+  "build": "2026.09.27-wrn-2.1.2-release",
+  "generatedAt": "2026-10-02T13:54:04.432459+00:00",
   "readOnlyAudit": false,
   "summary": {
-    "pass": 163,
+    "pass": 161,
     "warning": 0,
     "fail": 0,
-    "total": 163
+    "total": 161
   },
   "checks": [
     {
@@ -17,13 +17,6 @@
       "category": "files",
       "status": "pass",
       "message": "Required file exists: .github/workflows/quality-gate.yml",
-      "detail": ""
-    },
-    {
-      "id": "file:.github/workflows/update.yml",
-      "category": "files",
-      "status": "pass",
-      "message": "Required file exists: .github/workflows/update.yml",
       "detail": ""
     },
     {
@@ -115,6 +108,13 @@
       "category": "files",
       "status": "pass",
       "message": "Required file exists: audio-tab-183.js",
+      "detail": ""
+    },
+    {
+      "id": "file:podcast-content-policy.js",
+      "category": "files",
+      "status": "pass",
+      "message": "Required file exists: podcast-content-policy.js",
       "detail": ""
     },
     {
@@ -366,15 +366,15 @@
       "id": "config-version",
       "category": "release",
       "status": "pass",
-      "message": "news-app-2-config.js declares production version 2.1.0",
+      "message": "news-app-2-config.js declares production version 2.1.2",
       "detail": ""
     },
     {
       "id": "config-build",
       "category": "release",
       "status": "pass",
-      "message": "Build is marked as the 2.1.0 production candidate",
-      "detail": "2026.08.12-wrn-2.1.0-release"
+      "message": "Build is marked as the 2.1.2 production candidate",
+      "detail": "2026.09.27-wrn-2.1.2-release"
     },
     {
       "id": "config-recovery-stage",
@@ -702,7 +702,7 @@
       "id": "selftest-version",
       "category": "selftest",
       "status": "pass",
-      "message": "Runtime self-test expects 2.1.0",
+      "message": "Runtime self-test expects 2.1.2",
       "detail": ""
     },
     {
@@ -905,21 +905,21 @@
       "id": "app-check-app-cache-sync",
       "category": "release-page",
       "status": "pass",
-      "message": "App check and service worker agree on the app cache: wrn-app-v2.1.0-r4",
+      "message": "App check and service worker agree on the app cache: wrn-app-v2.1.2-r20",
       "detail": ""
     },
     {
       "id": "app-check-data-cache-sync",
       "category": "release-page",
       "status": "pass",
-      "message": "App check and service worker agree on the data cache: wrn-data-v2.1.0-r2",
+      "message": "App check and service worker agree on the data cache: wrn-data-v2.1.2-r1",
       "detail": ""
     },
     {
       "id": "diagnostics-version",
       "category": "diagnostics",
       "status": "pass",
-      "message": "App diagnostics expects 2.1.0",
+      "message": "App diagnostics expects 2.1.2",
       "detail": ""
     },
     {
@@ -1109,20 +1109,6 @@
       "category": "quality-gate",
       "status": "pass",
       "message": "Quality gate includes release-readiness-183.json",
-      "detail": ""
-    },
-    {
-      "id": "update-preserves:source-health-history.json",
-      "category": "update-workflow",
-      "status": "pass",
-      "message": "Update workflow preserves source-health-history.json",
-      "detail": ""
-    },
-    {
-      "id": "update-preserves:source-recovery-report.json",
-      "category": "update-workflow",
-      "status": "pass",
-      "message": "Update workflow preserves source-recovery-report.json",
       "detail": ""
     },
     {

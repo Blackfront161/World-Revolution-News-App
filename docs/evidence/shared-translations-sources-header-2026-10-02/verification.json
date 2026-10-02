@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "pythonTestsPassed": 155,
+  "pythonTestsSkipped": 3,
+  "pythonSubtestsPassed": 4,
+  "javascriptTestFilesPassed": 57,
+  "translationCacheTestsPassed": 8,
+  "dataPolicyTestsPassed": 6,
+  "appValidator": "PASS",
+  "releaseAuditChecksPassed": 161,
+  "dataPullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/40",
+  "dataMergeCommit": "32fa88c398e4f7d8df5bf4ae1e4feea1ecf481de",
+  "dataRefreshRun": 37016044973,
+  "dataRefreshStatus": "success",
+  "publicArticleRecords": 8,
+  "androidReleasePublished": false
+}

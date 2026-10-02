@@ -80,3 +80,24 @@ test('health is public; invalid origins fail before limiter/cache/provider calls
   const bad=await worker.fetch(request(JSON.stringify(payload('first')),{'Origin':'https://untrusted.example'}),e.env,e.ctx);
   assert.equal(bad.status,403);assert.equal(e.keys.length,0);assert.equal(e.calls.length,0);
 });
+
+
+test('public article translations are reused across users, IPs and allowed origins',async()=>{
+  const e=environment();
+  for(const mode of ['title_and_text','continuation']) {
+    const input={...payload('Public article paragraph'),mode,title:mode==='continuation'?'':'Public headline'};
+    const first=await worker.fetch(request(JSON.stringify(input),{'X-Client-Id':'reader-a'}),e.env,e.ctx);
+    const firstBody=await first.json();
+    const second=await worker.fetch(request(JSON.stringify(input),{'X-Client-Id':'reader-b','CF-Connecting-IP':'198.51.100.2','Origin':'https://blackfront161.github.io'}),e.env,e.ctx);
+    assert.equal(first.headers.get('X-WRN-Shared-Cache'),'MISS');
+    assert.equal(second.headers.get('X-WRN-Shared-Cache'),'HIT');
+    assert.deepEqual(await second.json(),firstBody);
+  }
+  assert.equal(e.calls.length,2,'one provider request per distinct article mode, not per reader');
+  assert.equal(e.rows.size,2);
+  for(const input of [{...payload('Public article paragraph'),targetLanguage:'es'},payload('Changed article paragraph')]) {
+    const res=await worker.fetch(request(JSON.stringify(input)),e.env,e.ctx);
+    assert.equal(res.headers.get('X-WRN-Shared-Cache'),'MISS');
+  }
+  assert.equal(e.calls.length,4,'different languages and source text must retain separate results');
+});

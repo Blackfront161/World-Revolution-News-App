@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
   "version": "2.1.0",
-  "generatedAt": "2026-09-30T15:29:25.174605+00:00",
-  "sourceCount": 518,
-  "activeSourceCount": 516,
+  "generatedAt": "2026-10-02T13:50:46.660353+00:00",
+  "sourceCount": 520,
+  "activeSourceCount": 518,
   "knownLanguages": [
     "ar",
     "ca",
@@ -25,12 +25,12 @@
     "zh"
   ],
   "metadataCompleteness": {
-    "knownGeography": 380,
-    "explicitGeography": 191,
+    "knownGeography": 383,
+    "explicitGeography": 193,
     "inferredGeography": 189,
-    "unknownGeography": 138,
-    "knownLanguage": 226,
-    "unknownLanguage": 292
+    "unknownGeography": 137,
+    "knownLanguage": 229,
+    "unknownLanguage": 291
   },
   "metadataPolicy": {
     "explicit": "Declared by a source record.",
@@ -679,6 +679,38 @@
       "origins": [
         "source-catalog.json"
       ]
+    },
+    {
+      "name": "ACIN – Tejido de Comunicación",
+      "url": "https://tejidocomunicacion.nasaacin.org/feed/",
+      "canonicalUrl": "https://tejidocomunicacion.nasaacin.org/feed",
+      "homepage": "https://tejidocomunicacion.nasaacin.org/",
+      "languages": [
+        "es"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles"
+      ],
+      "mediaType": "news",
+      "status": "approved",
+      "active": true,
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "operator": "Tejido de Comunicación und Radio Pa Yumat der ACIN (Selbstauskunft)",
+      "sourceType": "Indigene Gemeinschaftskommunikation",
+      "reviewEvidence": [
+        "https://tejidocomunicacion.nasaacin.org/quienes-somos/"
+      ],
+      "originRegion": "Latin America",
+      "originCountry": "Colombia",
+      "originCountryCode": "CO",
+      "origins": [
+        "aggregate.py",
+        "multilingual-source-registry.json"
+      ],
+      "geographySource": "explicit"
     },
     {
       "name": "Act for Freedom Now!",
@@ -4474,6 +4506,38 @@
       "origins": [
         "aggregate.py"
       ]
+    },
+    {
+      "name": "Debates Indígenas",
+      "url": "https://debatesindigenas.org/feed/",
+      "canonicalUrl": "https://debatesindigenas.org/feed",
+      "homepage": "https://debatesindigenas.org/",
+      "languages": [
+        "es"
+      ],
+      "languageSource": "explicit",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles"
+      ],
+      "mediaType": "news",
+      "status": "approved",
+      "active": true,
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "operator": "Redaktion Debates Indígenas / IWGIA (Selbstauskunft)",
+      "sourceType": "Magazin zu indigenen Rechten",
+      "reviewEvidence": [
+        "https://debatesindigenas.org/quienes-somos/"
+      ],
+      "originRegion": "",
+      "originCountry": "",
+      "originCountryCode": "",
+      "origins": [
+        "aggregate.py",
+        "multilingual-source-registry.json"
+      ],
+      "geographySource": "unknown"
     },
     {
       "name": "Defend Council Housing (UK)",
@@ -8299,23 +8363,32 @@
       "name": "Mapuexpress (Mapuche)",
       "url": "https://www.mapuexpress.org/feed/",
       "canonicalUrl": "https://mapuexpress.org/feed",
-      "homepage": "",
+      "homepage": "https://www.mapuexpress.org/",
       "languages": [
-        "und"
+        "es"
       ],
-      "languageSource": "unknown",
+      "languageSource": "explicit",
       "categories": [
+        "Latin America",
         "Indigenous Struggles"
       ],
       "mediaType": "news",
-      "status": "active",
+      "status": "approved",
       "active": true,
-      "originRegion": "",
+      "originRegion": "Latin America",
       "originCountry": "",
       "originCountryCode": "",
-      "geographySource": "unknown",
+      "geographySource": "explicit",
       "origins": [
-        "aggregate.py"
+        "aggregate.py",
+        "multilingual-source-registry.json"
+      ],
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "operator": "Unabhängiges Mapuche-Kommunikationskollektiv (Selbstauskunft)",
+      "sourceType": "Indigene Gemeinschaftskommunikation",
+      "reviewEvidence": [
+        "https://www.mapuexpress.org/inchin/"
       ]
     },
     {
@@ -8330,14 +8403,13 @@
       "categories": [
         "Global",
         "Indigenous Struggles",
-        "Queer-Feminism",
-        "Anti-Rep & Prisons",
+        "Anticolonialism",
         "sources"
       ],
       "mediaType": "news",
       "status": "active",
       "active": true,
-      "originRegion": "",
+      "originRegion": "Latin America",
       "originCountry": "",
       "originCountryCode": "",
       "geographySource": "unknown",

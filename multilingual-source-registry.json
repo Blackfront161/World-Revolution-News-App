@@ -277,6 +277,87 @@
         "https://www.xn--untergrund-blttle-2qb.ch/impressum/",
         "https://www.xn--untergrund-blttle-2qb.ch/rss/"
       ]
+    },
+    {
+      "name": "ACIN – Tejido de Comunicación",
+      "homepage": "https://tejidocomunicacion.nasaacin.org/",
+      "feedUrl": "https://tejidocomunicacion.nasaacin.org/feed/",
+      "originCountry": "Colombia",
+      "originCountryCode": "CO",
+      "originRegion": "Latin America",
+      "operator": "Tejido de Comunicación und Radio Pa Yumat der ACIN (Selbstauskunft)",
+      "sourceType": "Indigene Gemeinschaftskommunikation",
+      "reviewEvidence": [
+        "https://tejidocomunicacion.nasaacin.org/quienes-somos/"
+      ],
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "es"
+      ],
+      "status": "approved",
+      "action": "add",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles"
+      ],
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "reviewedAt": "2026-10-02"
+    },
+    {
+      "name": "Debates Indígenas",
+      "homepage": "https://debatesindigenas.org/",
+      "feedUrl": "https://debatesindigenas.org/feed/",
+      "originCountry": "",
+      "originCountryCode": "",
+      "originRegion": "",
+      "operator": "Redaktion Debates Indígenas / IWGIA (Selbstauskunft)",
+      "sourceType": "Magazin zu indigenen Rechten",
+      "reviewEvidence": [
+        "https://debatesindigenas.org/quienes-somos/"
+      ],
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "es"
+      ],
+      "status": "approved",
+      "action": "add",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles"
+      ],
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "reviewedAt": "2026-10-02"
+    },
+    {
+      "name": "Mapuexpress (Mapuche)",
+      "homepage": "https://www.mapuexpress.org/",
+      "feedUrl": "https://www.mapuexpress.org/feed/",
+      "originCountry": "",
+      "originCountryCode": "",
+      "originRegion": "Latin America",
+      "operator": "Unabhängiges Mapuche-Kommunikationskollektiv (Selbstauskunft)",
+      "sourceType": "Indigene Gemeinschaftskommunikation",
+      "reviewEvidence": [
+        "https://www.mapuexpress.org/inchin/"
+      ],
+      "kind": "news",
+      "adapter": "rss",
+      "languages": [
+        "es"
+      ],
+      "status": "approved",
+      "action": "enrich_only",
+      "categories": [
+        "Latin America",
+        "Indigenous Struggles"
+      ],
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "reviewedAt": "2026-10-02"
     }
   ]
 }

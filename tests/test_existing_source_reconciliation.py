@@ -84,7 +84,10 @@ def test_stale_mixed_channel_language_cannot_override_review_hold():
 
 @local_snapshot
 def test_common_library_contains_all_input_ids_and_german_books():
-    app=read(ROOT,'library-feed.json');data=read(DATA,'library-feed.json')
+    app=read(ROOT,'library-feed.json')
+    # The accepted shared snapshot must not drift when the data worktree updates.
+    data=json.loads(subprocess.check_output(['git','-C',str(DATA),'show',
+        'd7da528c9a996a2ec13bf3912c45e18e7d58bdfa:library-feed.json']))
     assert app==data and len(app)==728
     assert sum('de' in b['languages'] for b in app)==66
     ids={b['id'] for b in app}

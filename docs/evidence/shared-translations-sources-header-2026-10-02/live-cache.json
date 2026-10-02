@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-02T13:51:50.002Z",
+  "sourceUrl": "https://agenciatierraviva.com.ar/ley-de-tierras-pretenden-despojar-a-las-comunidades-indigenas-de-sus-territorios/",
+  "request": {
+    "action": "translate",
+    "targetLanguage": "de",
+    "mode": "title_and_text",
+    "title": "Ley de tierras: \"Pretenden despojar a las comunidades indígenas de sus territorios\"",
+    "text": "Ley de tierras: \"Pretenden despojar a las comunidades indígenas de sus territorios\""
+  },
+  "requests": [
+    {
+      "id": "wrn-public-reader-a",
+      "origin": "https://solinaridao.com",
+      "status": 200,
+      "cache": "MISS",
+      "storage": null,
+      "response": {
+        "ok": true,
+        "text": "Bodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“\n---\nBodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "protocol": "structured-v2",
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "Bodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“\n---\nBodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrn-public-reader-b",
+      "origin": "https://blackfront161.github.io",
+      "status": 200,
+      "cache": "HIT",
+      "storage": null,
+      "response": {
+        "ok": true,
+        "text": "Bodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“\n---\nBodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "protocol": "structured-v2",
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "Bodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“\n---\nBodengesetz: „Sie beabsichtigen, die indigenen Gemeinschaften ihrer Territorien zu berauben“"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "status": "PASS",
+  "storageConfirmation": {
+    "status": 200,
+    "cache": "HIT",
+    "storage": "kv"
+  }
+}

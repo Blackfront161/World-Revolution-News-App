@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 / 2.1.2 is live on Google Play. New reviewed Autonom/content and translation repair are locally built as unsigned Code33; no signing or upload.",
+    "status": "Code32 / 2.1.2 is live. Shared translations verified; two indigenous feeds published. New Autonom header and offline registry locally verified; fresh Android build pending.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -1212,7 +1212,7 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "content-translation-and-unsigned-artifact-independent-review-pass",
+    "status": "rebuild-required-after-new-header-and-sources",
     "sourceCommit": "34e22d99834c66d67114e1b796e181e87d021c5f",
     "signatureVerified": false,
     "uploadPerformed": false,
@@ -1221,7 +1221,7 @@
     "report": "docs/KNOWLEDGE-TRANSLATION-CODE33-2026-10-02.md",
     "physicalCode33Test": "pending",
     "signing": "prepared-read-only-preflight-pass-not-signed",
-    "note": "Two identical unsigned builds independently accepted; original Code32 windrose pixels retained. Signing, physical Code33 acceptance and Play upload pending. Historical ce2b556/fb937dd candidates superseded.",
+    "note": "Historical unsigned candidate from34e22d9 retains its verified hashes but is superseded by the header/source changes of2October. Rebuild required before signing this new scope.",
     "translationRuntimeReview": {
       "status": "PASS",
       "reviewedCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
@@ -1257,6 +1257,14 @@
       "reviewedSource": "34e22d99834c66d67114e1b796e181e87d021c5f",
       "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
       "report": "docs/evidence/knowledge-translation-code33-2026-10-02/controller-artifact-acceptance.json"
+    },
+    "artifactContainsLatestChanges": false,
+    "pendingRuntime": {
+      "js": 65,
+      "css": 53,
+      "lexicon": 10,
+      "productionCache": "2.1.2-r20",
+      "previewCache": "v108"
     }
   },
   "roadmapPackage20261002": {
@@ -1572,5 +1580,44 @@
     "runtimeChanged": false,
     "deploymentPerformed": false,
     "releaseBlocker": false
+  },
+  "sharedTranslationsAndIndigenousSources20261002": {
+    "status": "implemented-and-verified",
+    "report": "docs/SHARED-TRANSLATIONS-SOURCES-HEADER-2026-10-02.md",
+    "sharedTranslations": {
+      "storage": "global-kv",
+      "retentionDays": 7,
+      "liveTwoClientTest": "PASS",
+      "crossIpTest": "PASS",
+      "workerChanged": false
+    },
+    "sources": {
+      "new": [
+        "ACIN - Tejido de Comunicación",
+        "Debates Indígenas"
+      ],
+      "enriched": [
+        "Mapuexpress (Mapuche)"
+      ],
+      "importMode": "metadata-only",
+      "published": true,
+      "pullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/40",
+      "mergeCommit": "32fa88c398e4f7d8df5bf4ae1e4feea1ecf481de",
+      "verifiedPublishedArticles": 8
+    },
+    "autonomHeader": {
+      "status": "preview-verified",
+      "sameRow": [
+        "menu",
+        "title",
+        "website",
+        "language",
+        "search"
+      ],
+      "css": 53,
+      "productionCache": "2.1.2-r20",
+      "previewCache": "v108"
+    },
+    "next": "Neuen Android-Kandidaten mit Kopfzeile und Offline-Quellen bauen; bisheriges Code33-Artefakt ist historisch."
   }
 }

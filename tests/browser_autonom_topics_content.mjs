@@ -45,11 +45,23 @@ try {
   const nav=p.locator('.autonom-topics'), buttons=nav.locator('button');
   await expect(buttons).toHaveCount(22);
   assert.deepEqual(await buttons.evaluateAll(es=>es.map(e=>e.dataset.topic)),['',...topics]);
+
+  const checkHeader=async label=>{
+    const layout=await p.evaluate(()=>{
+      const es=['#next-menu-toggle','#next-brand-link','#next-website-link','.language-control','#next-search-toggle'].map(sel=>document.querySelector(sel));
+      return es.map(e=>{const r=e.getBoundingClientRect();return {row:getComputedStyle(e).gridRowStart,x:r.x,right:r.right,width:r.width,height:r.height,scrollWidth:e.scrollWidth,clientWidth:e.clientWidth};});
+    });
+    assert(layout.every(e=>e.row==='1'),`${label}: all header controls must share the title row`);
+    for(let i=1;i<layout.length;i++)assert(layout[i-1].right<=layout[i].x+1,`${label}: overlapping header controls`);
+    assert(layout.filter((_,i)=>i!==1).every(e=>e.width>=44&&e.height>=44),`${label}: header touch target below44px ${JSON.stringify(layout)}`);
+    assert(layout.every(e=>e.scrollWidth<=e.clientWidth+1),`${label}: header content clipped ${JSON.stringify(layout)}`);
+  };
   for(const language of ['de','en','es','fr','it','pt','ru','el','tr']) {
     await p.locator('#next-language').selectOption(language);
     for(const width of [320,390,768,1440]) {
       await p.setViewportSize({width,height:844});
       assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${language}/${width} page overflow`);
+      await checkHeader(`${language}/${width}`);
       const bad=await buttons.evaluateAll(es=>es.filter(e=>e.getBoundingClientRect().width<44||e.getBoundingClientRect().height<44||e.scrollWidth>e.clientWidth+1||e.scrollHeight>e.clientHeight+1).map(e=>({text:e.textContent,width:e.clientWidth,scrollWidth:e.scrollWidth,height:e.clientHeight,scrollHeight:e.scrollHeight})));
       assert.deepEqual(bad,[],`${language}/${width} topic clipped or too small`);
     }
@@ -59,6 +71,7 @@ try {
   for(const width of [320,390,768,1440]) {
     await p.setViewportSize({width,height:844});
     assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`200%/${width} page overflow`);
+    await checkHeader(`200%/${width}`);
     assert(await buttons.evaluateAll(es=>es.every(e=>e.scrollWidth<=e.clientWidth+1&&e.scrollHeight<=e.clientHeight+1)),`200%/${width} topic clipped`);
   }
   await p.locator('#next-menu-toggle').click();await p.locator('#next-menu-font-size').selectOption('normal');await p.locator('[data-menu-close]').click();
