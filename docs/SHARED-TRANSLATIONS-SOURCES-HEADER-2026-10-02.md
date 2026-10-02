@@ -86,7 +86,7 @@ Host wie die Quellenhomepage zu. Unvollständige fremde Auszüge ohne
 nachladbaren Volltext bleiben ausgeschlossen. Originalverweise werden weiterhin
 nicht als Volltexte oder Hauptschlagzeile ausgegeben.
 
-Die Normalisierung entfernt bei metadata-only auch veraltete Fremdtexte,
+Die Normalisierung übernimmt bei metadata-only ausschließlich definierte Metadatenfelder. Damit entfernt sie auch veraltete Fremdtexte,
 Kurztexte, strukturierte Textblöcke, Bilder, Videos und Detail-Verweise.
 Die Leseransicht zeigt einen eigenen Hinweis in allen neun UI-Sprachen und
 den Original-Link. Kein Volltext wird nachgeladen; Zusammenfassung und
@@ -108,3 +108,5 @@ Abschlusstests:164 Python-PASS,3 historische SKIPs,4 Subtests;
 57 JavaScript-Testdateien;8 gemeinsame Cachetests;161 Release-Auditchecks;
 App-Validator und Autonom-Browserprüfung bestanden. Die neuen Runtime-Dateien
 sind lokal in der Vorschau; der vorhandene Android-Kandidat enthält sie nicht.
+
+Auch Alt-Aliase imageUrl/mediaUrl/enclosure/body werden nicht weitergegeben. Video-Erkennung bleibt für Originalverweise gesperrt; Zine/Medien können keine solchen Altfelder wieder einblenden. Regressionstests bestätigen diese Begrenzung.

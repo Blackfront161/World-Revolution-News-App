@@ -283,9 +283,16 @@
     );
     const contentBlocks = metadataOnly ? [] : normalizeContentBlocks(article?.contentBlocks);
     const contentMode = articleContentMode(article, content);
+    const admitted = metadataOnly ? Object.fromEntries([
+      'id', 'title', 'type', 'quelleName', 'source', 'author', 'link', 'pubDate', 'date', 'updatedAt',
+      'language', 'languages', 'lang', 'sprache', 'sourceHomepage', 'sourceType', 'sourceTags',
+      'importMode', 'rightsReview', 'kontinent', 'primaryRegion', 'primaryTopic', 'secondaryTopics',
+      'categories', 'classificationConfidence', 'classificationMethod', 'editorialReview',
+      'editorialReviewReasons', 'originCountry', 'originCountryCode', 'originRegion'
+    ].filter(key => Object.hasOwn(article, key)).map(key => [key, article[key]])) : article;
 
     return {
-      ...article,
+      ...admitted,
       id: articleId(article),
       type: text(article?.type || 'article'),
       title: text(article?.title || (metadataOnly ? '' : 'Untitled')),
@@ -682,6 +689,7 @@
   }
 
   function videoUrl(article) {
+    if (article?.importMode === 'metadata-only') return '';
     const enclosure = typeof article?.enclosure === 'object' ? article.enclosure?.url : article?.enclosure;
     const direct = [article?.videoUrl, article?.mediaUrl, enclosure, article?.link];
     for (const value of direct) {

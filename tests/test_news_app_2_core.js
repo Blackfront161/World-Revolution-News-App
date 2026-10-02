@@ -67,7 +67,9 @@ const reference = {title:'Community report', quelleName:'Reviewed source', impor
   link:'https://source.example/report', content:'Foreign body must never render.', contentComplete:true,
   contentMode:'full', description:'Foreign summary', images:['https://source.example/image.jpg'],
   image:'https://source.example/image.jpg', contentBlocks:[{type:'paragraph',text:'Foreign body'}],
-  videoUrl:'https://kolektiva.media/w/abc', detailPath:'old-detail.json'};
+  videoUrl:'https://kolektiva.media/w/abc', imageUrl:'https://source.example/legacy.jpg',
+  mediaUrl:'https://kolektiva.media/w/legacy', enclosure:{url:'https://source.example/legacy.mp3'},
+  body:'Legacy foreign body', detailPath:'old-detail.json'};
 const normalizedReference = core.normalizeArticle(reference);
 assert.strictEqual(core.hasVisibleArticle(normalizedReference), true);
 assert.strictEqual(core.hasCompleteArticle(normalizedReference), false);
@@ -81,6 +83,12 @@ assert.strictEqual(normalizedReference.content, '');
 assert.strictEqual(normalizedReference.description, '');
 assert.strictEqual(normalizedReference.image, '');
 assert.strictEqual(normalizedReference.videoUrl, '');
+assert.strictEqual(normalizedReference.imageUrl, undefined);
+assert.strictEqual(normalizedReference.mediaUrl, undefined);
+assert.strictEqual(normalizedReference.enclosure, undefined);
+assert.strictEqual(normalizedReference.body, undefined);
+assert.strictEqual(core.hasVideo(normalizedReference), false);
+assert.strictEqual(core.hasVideo({...normalizedReference,link:'https://kolektiva.media/w/abc'}),false);
 assert.strictEqual(normalizedReference.detailPath, '');
 assert.deepStrictEqual(normalizedReference.images, []);
 assert.deepStrictEqual(normalizedReference.contentBlocks, []);
