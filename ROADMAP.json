@@ -1378,6 +1378,8 @@
     "nextStep": "Retain deployment evidence; App signing and device acceptance are separate",
     "sourceCommit": "3a429a8d3b732793118859afeb8bd62a5f089f65",
     "workerVersion": "b4344450-d9f3-4e2e-9889-1c961c725508",
-    "localDurableObjectProbe": "50 of60 concurrent subscriptions admitted,10 capacity rejections; local fixture2026-07-29, production2026-08-05 unchanged"
+    "localDurableObjectProbe": "50 of60 concurrent subscriptions admitted,10 capacity rejections; local fixture2026-07-29, production2026-08-05 unchanged",
+    "independentLiveReview": "PASS: public health, CORS, oversized stream413 and push-config independently reproduced",
+    "independentLiveReport": "docs/evidence/cloudflare-model-2026-10-02/controller-live-review.md"
   }
 }
