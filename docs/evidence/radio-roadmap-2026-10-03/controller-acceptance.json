@@ -1,0 +1,34 @@
+{
+  "status": "GREEN-reviewed-scope",
+  "reviewer": "WRN Kontrolleur",
+  "threadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "canonicalAppPath": "C:/Users/patri/Documents/World Rev Ne/wrn-github-app-current",
+  "runtimeCommit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+  "imageCommit": "b7771981bce7e3f27f6772393783c126f8a03361",
+  "reportedAt": "2026-10-03 Asia/Singapore",
+  "independentRuntimeValidation": {
+    "javascriptContracts": 57,
+    "pythonTestsPassed": 161,
+    "pythonSubtestsPassed": 4,
+    "documentedSkips": 6,
+    "mainOnlyScriptsPassed": 4,
+    "validator": "PASS",
+    "releaseAudit": {"passed": 161, "warnings": 0, "failures": 0}
+  },
+  "primaryAgentValidation": "app-validation.json records the primary run:164 passed/3 historical skips; environments have different optional-test availability.",
+  "codeScope": [
+    "Autonom four-column header and hidden search,44px targets",
+    "Preserved safe deduplicated radio fallback candidates",
+    "App reference in Share, Copy and manual copy; directory-only wording",
+    "JS67/CSS54/Core6/Media5/AudioTools5/r22/v110 bindings",
+    "Historical Cloudflare report corrected without deployment"
+  ],
+  "imageScope": "Exact PNG/WebP hashes and dimensions, same motif, honest illustration label and exact article/directory binding; Website integration ef5ac42 fail-closed and focused6tests PASS.",
+  "limitations": [
+    "Controller could not replay the browser tests without Playwright in its environment; primary browser runs are separately PASS.",
+    "No new Android build, signing or Play upload.",
+    "No all-station sustained-device playback claim.",
+    "Image handoff GREEN does not replace Website whole-package/live review."
+  ],
+  "controllerChangedProductFiles": false
+}
