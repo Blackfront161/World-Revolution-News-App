@@ -121,8 +121,11 @@ const AZURE_VOICES = {
 };
 
 const DEFAULT_GEMINI_MODELS = [
-  'gemini-3.5-flash',
+  // Stable lightweight models first: headline requests should not exhaust the
+  // provider phase on a slower general-purpose model before the fast fallback.
+  'gemini-3.5-flash-lite',
   'gemini-3.1-flash-lite',
+  'gemini-3.5-flash',
   'gemini-2.5-flash-lite',
   'gemini-2.5-flash'
 ];

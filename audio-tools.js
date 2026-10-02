@@ -81,7 +81,19 @@
         } catch { return ''; }
     }
 
-    function getShareData(item) {
+    const appListeningTexts = {
+        de: 'Anhören mit der World Revolution News App:',
+        en: 'Listen with the World Revolution News App:',
+        es: 'Escúchalo con la aplicación World Revolution News:',
+        fr: 'Écoutez avec l’application World Revolution News :',
+        it: 'Ascolta con l’app World Revolution News:',
+        pt: 'Ouve com a aplicação World Revolution News:',
+        ru: 'Слушайте в приложении World Revolution News:',
+        el: 'Ακούστε με την εφαρμογή World Revolution News:',
+        tr: 'World Revolution News uygulamasıyla dinleyin:'
+    };
+
+    function getShareData(item, language = document.documentElement?.lang) {
         if (!item) return null;
         if (!window.WRNPodcastContentPolicy) return null;
         item = window.WRNPodcastContentPolicy?.projectEpisode(item) || item;
@@ -95,7 +107,13 @@
         if (!url) return null;
         const title = String(item.title || item.name || 'Audio').trim().slice(0, 500);
         const source = String(item.source || item.sourceName || item.artist || '').trim().slice(0, 300);
-        return { title, text: source && source !== title ? `${title} · ${source}` : title, url };
+        const heading = source && source !== title ? `${title} · ${source}` : title;
+        const locale = String(language || 'en').toLowerCase().slice(0, 2);
+        // Metadata-only sources remain original links, never an invented in-app player.
+        const listening = item.kind === 'radio' || !window.WRNPodcastContentPolicy.isMetadataOnly(item);
+        const note = listening ? (appListeningTexts[locale] || appListeningTexts.en)
+            : (locale === 'de' ? 'Originalfolge über die World Revolution News App entdecken:' : 'Discover the original episode with the World Revolution News App:');
+        return { title, text: `${heading}\n\n${note}\nhttps://play.google.com/store/apps/details?id=com.world.revolution`, url };
     }
 
     function shareWasCancelled(error) {
@@ -128,9 +146,9 @@
         status.className = 'audio-share-status';
         status.setAttribute('role', 'status');
         status.setAttribute('aria-live', 'polite');
-        const field = document.createElement('input');
+        const field = document.createElement('textarea');
         field.className = 'audio-share-link';
-        field.type = 'text';
+        field.rows = 3;
         field.readOnly = true;
         field.value = data.url;
         field.hidden = true;
@@ -167,7 +185,9 @@
                         if (shareWasCancelled(error)) return;
                     }
                 }
-                const copied = await copyAudioLink(data.url, field);
+                const copyText = copyOnly ? data.url : `${data.text}\n\n${data.url}`;
+                field.value = copyText;
+                const copied = await copyAudioLink(copyText, field);
                 field.hidden = copied;
                 if (copied && document.activeElement === field) copy.focus();
                 status.textContent = copied ? labels[2] : labels[4];

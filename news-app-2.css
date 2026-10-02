@@ -1417,7 +1417,7 @@ img {
 .card-actions .small-action {
   display: inline-flex;
   min-width: 0;
-  flex: 1 1 0;
+  flex: 1 1 110px;
   align-items: center;
   justify-content: center;
   gap: 6px;
@@ -1426,6 +1426,32 @@ img {
 .translate-card[aria-busy="true"] .red-black-star {
   animation: rotate-star .9s linear infinite;
 }
+
+.card-actions :is(.translate-card, .small-action),
+.dialog-actions button { max-width: 100%; min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+.dialog-actions button > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.translate-card > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.red-black-star { flex-shrink: 0; }
+.home-headline-open {
+  display: block; width: 100%; min-height: 44px; padding: 0; border: 0;
+  background: transparent; color: inherit; font: inherit; text-align: inherit;
+  cursor: pointer; overflow-wrap: anywhere;
+}
+
+/* Autonom home: one substantial image beside a headline; detail lives in the reader. */
+:root[data-theme="autonom"] #next-view[data-view="home"] :is(.home-story, .news-card):has(img) {
+  grid-template-columns: minmax(0, 40%) minmax(0, 1fr); min-height: 150px;
+}
+:root[data-theme="autonom"] #next-view[data-view="home"] :is(.home-story__image, .news-card__image) { grid-area: 1 / 1; min-height: 150px; padding: 0; }
+:root[data-theme="autonom"] #next-view[data-view="home"] :is(.home-story__image, .news-card__image) img { width: 100%; height: 100%; min-height: 150px; max-height: none; object-fit: cover; }
+:root[data-theme="autonom"] #next-view[data-view="home"] .news-card:has(img) .news-card__body { grid-area: 1 / 2; }
+:root[data-theme="autonom"] #next-view[data-view="home"] :is(.home-story__body > small, .home-story__body > span, .home-story__body button > span, .autonom-story-actions, .news-card__body > :not(.news-card__open), .news-card__open > p) { display: none; }
+:root[data-theme="autonom"] #next-view[data-view="home"] .news-card__body { display: flex; align-items: center; padding: 14px; }
+:root[data-theme="autonom"] #next-view[data-view="home"] .home-hero:has(img) { grid-template-columns: minmax(0, 45%) minmax(0, 1fr); }
+:root[data-theme="autonom"] #next-view[data-view="home"] .home-hero__image img { height: 100%; min-height: 190px; max-height: none; object-fit: cover; }
+:root[data-theme="autonom"] #next-view[data-view="home"] .home-hero__content { margin: 0; padding: 16px; display: flex; align-items: center; background: var(--surface); }
+:root[data-theme="autonom"] #next-view[data-view="home"] .home-hero__content > :not(h1) { display: none; }
+:root[data-theme="autonom"] #next-view[data-view="home"] .home-hero h1 { font-size: clamp(1.15rem, 3vw, 2rem); margin: 0; }
 
 .save-card {
   min-width: 38px;
@@ -4353,7 +4379,8 @@ dialog::backdrop {
 
 .dialog-actions button {
   display: inline-flex;
-  min-width: max-content;
+  min-width: 0;
+  max-width: 100%;
   min-height: 40px;
   padding: 7px 10px;
   border: 1px solid var(--border);

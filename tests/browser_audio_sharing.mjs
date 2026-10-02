@@ -94,6 +94,7 @@ try {
   const radioCard = page.locator('.radio-card').filter({ hasText: station.name });
   await radioCard.getByRole('button', { name: `Teilen: ${station.name}`, exact: true }).click();
   await expect.poll(() => page.evaluate(() => window.__audioShares.length)).toBe(2);
+  assert((await page.evaluate(() => window.__audioShares[1])).text.includes('Anhören mit der World Revolution News App:'));
   assert.equal((await page.evaluate(() => window.__audioShares[1])).url, station.website);
   result.checks.push('A radio without a direct stream still opens the Capacitor share bridge with its station website.');
   await page.locator('[data-action="media-section"][data-value="generated"]').click();

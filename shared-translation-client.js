@@ -36,7 +36,12 @@
   }
 
   async function fallbackToOriginal(args, failure) {
-    const canFallback = typeof originalRequest === 'function';
+    // Rate/quota/origin failures are terminal; retrying must not bypass their guards.
+    if ([400, 401, 403, 429].includes(Number(failure?.status))
+      || failure?.data?.reason || failure?.data?.code === 'QUOTA_GUARD_UNAVAILABLE'
+      || Array.isArray(failure?.data?.details)) return failure;
+    const proxy = String(window.WRN_CONFIG?.proxyUrl || '').trim();
+    const canFallback = typeof originalRequest === 'function' || Boolean(proxy);
     dispatchState({
       type: 'translation',
       ok: false,
@@ -48,7 +53,8 @@
     if (!canFallback) return failure;
 
     try {
-      const result = await originalRequest(args);
+      const result = typeof originalRequest === 'function'
+        ? await originalRequest(args) : await directRequest(proxy, args);
       if (result && typeof result === 'object') {
         return { ...result, sharedFallback: true };
       }
@@ -61,7 +67,34 @@
     }
   }
 
-  async function request(args = {}) {
+  async function directRequest(endpoint, args) {
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => controller.abort(), 65000);
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Client-Id': 'wrn-web' },
+        body: JSON.stringify({ action: 'translate', targetLanguage: args.targetLanguage,
+          mode: args.mode || 'title_and_text', title: String(args.title || '').slice(0, 500), text: String(args.text || '').slice(0, 6000) }),
+        signal: controller.signal
+      });
+      const data = await response.json();
+      const text = extractText(data);
+      return response.ok && text ? { error: false, text, status: response.status, provider: data.provider || '' }
+        : { error: true, status: response.status, message: data.message || 'Translation unavailable.', data };
+    } finally { window.clearTimeout(timer); }
+  }
+
+  const inFlight = new Map();
+  function request(args = {}) {
+    const normalized = { ...args, targetLanguage: normalizedTargetLanguage(args.targetLanguage || targetLanguage()) };
+    const key = JSON.stringify([normalized.targetLanguage, normalized.mode || 'title_and_text', String(normalized.title || '').slice(0, 500), String(normalized.text || '').slice(0, 6000)]);
+    if (inFlight.has(key)) return inFlight.get(key);
+    const pending = performRequest(normalized).finally(() => inFlight.delete(key));
+    inFlight.set(key, pending);
+    return pending;
+  }
+
+  async function performRequest(args = {}) {
     const endpoint = String(window.WRN_CONFIG?.sharedTranslationUrl || '').trim();
     if (!endpoint) {
       return typeof originalRequest === 'function'
@@ -74,7 +107,8 @@
     const mode = String(args.mode || 'title_and_text');
     const language = normalizedTargetLanguage(args.targetLanguage || targetLanguage());
     const controller = new AbortController();
-    const timer = window.setTimeout(() => controller.abort(), 45000);
+    // The bounded provider phases take up to 26+15+9 seconds, plus cache I/O.
+    const timer = window.setTimeout(() => controller.abort(), 65000);
 
     try {
       const response = await fetch(endpoint, {

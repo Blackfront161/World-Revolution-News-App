@@ -79,7 +79,7 @@ assert(script.includes('await navigator.share(shareData)'), 'The browser share f
 assert(script.includes("await navigator.clipboard.writeText(localizedShareText)"), 'The localized copy fallback is missing');
 assert(script.includes("`${t('shareAppText')}\\n${PLAY_STORE_URL}`"), 'The recommendation text and Play Store link are not shared together');
 assert(script.includes('const ARTICLE_SHARE_ATTRIBUTION = Object.freeze({'), 'Article shares have no localized WRN attribution');
-assert(script.includes('const shareText = `${article.title}\\n${article.link}\\n\\n${attribution}\\n${PLAY_STORE_URL}`;'), 'Article shares do not include the original article and WRN app link');
+assert(script.includes('const shareText = `${title}\\n${attribution}\\n${article.link}\\n\\n${PLAY_STORE_URL}`;'), 'Article shares must use the selected title, attribution, original article and WRN app link');
 assert(script.includes("await nativeShare.share({ ...shareData, dialogTitle: t('share') })"), 'Article sharing does not use the native Android share dialog');
 assert(script.includes('await navigator.clipboard.writeText(shareText)'), 'Article sharing has no complete clipboard fallback');
 for (const language of ['de', 'en', 'es', 'fr', 'it', 'pt', 'ru', 'el', 'tr']) {

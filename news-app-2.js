@@ -54,6 +54,17 @@
     el: 'Βρέθηκε μέσω του World Revolution News:',
     tr: 'World Revolution News ile bulundu:'
   });
+  const TRANSLATED_SHARE_ATTRIBUTION = Object.freeze({
+    de: 'Übersetzt mit World Revolution News App.',
+    en: 'Translated with World Revolution News App.',
+    es: 'Traducido con World Revolution News App.',
+    fr: 'Traduit avec World Revolution News App.',
+    it: 'Tradotto con World Revolution News App.',
+    pt: 'Traduzido com World Revolution News App.',
+    ru: 'Переведено с помощью World Revolution News App.',
+    el: 'Μεταφράστηκε με το World Revolution News App.',
+    tr: 'World Revolution News App ile çevrildi.'
+  });
   const AZURE_PODCAST_VOICES = Object.freeze({
     en: [['en-US-AriaNeural', 'Aria · Azure (female)'], ['en-US-GuyNeural', 'Guy · Azure (male)']],
     de: [['de-DE-KatjaNeural', 'Katja · Azure (weiblich)'], ['de-DE-ConradNeural', 'Conrad · Azure (männlich)']],
@@ -4134,6 +4145,7 @@
   }
 
   function renderHome() {
+    viewRoot.dataset.view = 'home';
     state.cardArticles = [];
     const quickArticles = state.articles.filter(article => state.quickArticleIds.has(article.id));
     const balanced = core.balanceEditorially(quickArticles, HOME_COUNT + 12, {
@@ -4203,7 +4215,7 @@
         ${heroImage}
         <div class="home-hero__content">
           <span class="eyebrow">${escapeHtml(hero.source)} · ${escapeHtml(dateLabel(hero))}</span>
-          <h1>${escapeHtml(heroTitle)}</h1>
+          <h1><button class="home-headline-open" type="button" data-action="open" data-index="${heroIndex}">${escapeHtml(heroTitle)}</button></h1>
           <p>${escapeHtml(heroIntro)}</p>
           <div class="meta-line article-classification">
             <span class="tag">${escapeHtml(classificationLabel(hero.primaryRegion))}</span>
@@ -4251,6 +4263,7 @@
       ...topStories,
       ...sportStories,
       ...briefingItems,
+      ...homeGroups.remaining,
       ...homeServices.developments.map(story => story.items?.at(-1)).filter(Boolean)
     ]);
   }
@@ -4361,8 +4374,11 @@
         while (homeTranslationQueue.length && failures < 3 && state.view === 'home' && state.language === language) {
           const article = homeTranslationQueue.shift();
           if (!articleNeedsTeaserTranslation(article, language)) continue;
-          if (await requestBriefingTranslation(article, language)) changed = true;
-          else failures += 1;
+          if (await requestBriefingTranslation(article, language)) {
+            changed = true;
+            // Show the lead as soon as it is ready, without waiting for slower stories.
+            if (state.view === 'home' && state.language === language) renderHome();
+          } else failures += 1;
         }
       }));
     })().finally(() => {
@@ -6569,6 +6585,7 @@
   }
 
   function render() {
+    viewRoot.dataset.view = state.view;
     loading.hidden = true;
     const discoverViews = new Set(['discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments']);
     document.querySelectorAll('[data-view-target]').forEach(button => {
@@ -6605,6 +6622,8 @@
       showToast(t('translationFailed'));
       return;
     }
+    const targetLanguage = state.language;
+    const sourceFingerprint = core.articleTranslationFingerprint(article);
     button.disabled = true;
     button.setAttribute('aria-busy', 'true');
     const label = button.querySelector('span:last-child');
@@ -6613,15 +6632,18 @@
     try {
       const result = await window.WRNSharedTranslations.request({
         title: article.title,
-        text: newsCardTeaser(article),
+        text: newsCardTeaser(article, null, targetLanguage),
+        targetLanguage,
         mode: 'title_and_text'
       });
       if (result?.error || !result?.text) throw new Error(result?.message || 'Translation failed');
+      if (sourceFingerprint !== core.articleTranslationFingerprint(article)) return;
       const parsed = core.splitTranslatedTeaser(result.text);
       storeTranslation(article, {
         title: parsed.title || article.title,
         intro: parsed.intro
-      });
+      }, targetLanguage);
+      if (state.language !== targetLanguage || !button.isConnected) return;
       const storedTranslation = translationFor(article);
       const translatedIntro = newsCardTeaser(article, storedTranslation);
       if (card) {
@@ -7370,9 +7392,13 @@
   async function shareOpenArticle() {
     const article = state.activeArticle;
     if (!article?.link) return showToast(t('shareFailed'));
-    const attribution = ARTICLE_SHARE_ATTRIBUTION[state.language] || ARTICLE_SHARE_ATTRIBUTION.en;
-    const shareText = `${article.title}\n${article.link}\n\n${attribution}\n${PLAY_STORE_URL}`;
-    const shareData = { title: article.title, text: shareText };
+    const translation = translationFor(article);
+    const title = translation?.title || article.title;
+    const attribution = translation
+      ? (TRANSLATED_SHARE_ATTRIBUTION[state.language] || TRANSLATED_SHARE_ATTRIBUTION.en)
+      : (ARTICLE_SHARE_ATTRIBUTION[state.language] || ARTICLE_SHARE_ATTRIBUTION.en);
+    const shareText = `${title}\n${attribution}\n${article.link}\n\n${PLAY_STORE_URL}`;
+    const shareData = { title, text: shareText };
     try {
       const nativeShare = window.Capacitor?.Plugins?.Share;
       if (typeof nativeShare?.share === 'function') {

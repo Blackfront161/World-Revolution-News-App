@@ -1212,18 +1212,15 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "independently-accepted-unsigned-candidate",
-    "sourceCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
+    "status": "translation-sharing-autonom-fix-local-pass-pending-new-build-review",
+    "sourceCommit": null,
     "signatureVerified": false,
     "uploadPerformed": false,
     "releaseReady": false,
-    "report": "docs/ROADMAP-PACKAGE-2026-10-02.md",
-    "note": "Two reproducible unsigned builds independently accepted. Frozen AAB contains ROADMAP at fb937dd; this operational status is a later documentation update and does not alter the artifact.",
-    "artifactSha256": "A55A3E13AFF32A07D1692B1F6937E1E4F59C4846D990AE191A24F66E53EC385E",
-    "artifactBytes": 44335811,
-    "signing": "pending-explicit-user-approval-and-masked-keystore-entry",
+    "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
+    "signing": "not-performed-new-artifact-required",
     "physicalCode33Test": "pending",
-    "independentReview": "docs/evidence/roadmap-2026-10-02/controller-final-review.md"
+    "note": "New product freeze and unsigned build will be bound in a later documentation commit."
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
@@ -1263,6 +1260,43 @@
       "sourceCommit": "5d5b62315e4db1f8c847d99b94b933582a6f0e7b",
       "sha256": "26A205B57374BC7296CB52E87070234DF11357420A4E5858C3446A94AA00BAA1",
       "status": "superseded-media-entry-reference-error-do-not-sign"
+    },
+    {
+      "sourceCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
+      "sha256": "A55A3E13AFF32A07D1692B1F6937E1E4F59C4846D990AE191A24F66E53EC385E",
+      "status": "superseded-by-translation-sharing-autonom-followup-do-not-sign",
+      "note": "Old frozen artifact and signer remain historical; current fixes require a new source freeze."
     }
-  ]
+  ],
+  "translationSharingAutonom20261002": {
+    "status": "local-browser-and-contract-pass",
+    "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
+    "runtime": {
+      "js": 60,
+      "css": 51,
+      "sharedTranslationClient": 5,
+      "audioTools": 4,
+      "productionCache": "2.1.2-r14",
+      "previewCache": "v102"
+    },
+    "previewUrl": "http://127.0.0.1:8765/index.html?preview=8",
+    "liveTranslationModelObserved": "gemini-3.1-flash-lite",
+    "preferredModelPrepared": "gemini-3.5-flash-lite",
+    "cloudflareDeployment": "not-performed-authentication-expired",
+    "appDistribution": "not-signed-not-uploaded-not-live",
+    "checks": {
+      "javascriptModules": 56,
+      "pythonPassed": 151,
+      "historicalSkips": 3,
+      "subtests": 4,
+      "mainOnly": 4,
+      "workerTests": 11,
+      "releaseAudit": "161/161"
+    },
+    "nextSteps": [
+      "Independent review of new source freeze and unsigned candidate",
+      "Authenticated Cloudflare model smoke test and migration",
+      "Signed artifact review, physical device test and bound Play upload"
+    ]
+  }
 }
