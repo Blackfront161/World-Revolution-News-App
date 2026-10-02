@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check revolution-proxy/src/index.js && node --check revolution-proxy/src/operations.js && node --check revolution-proxy/src/push-gateway.js && node --check wrn-translation-cache/src/index.js && node --test tests/*.test.mjs",
+    "check": "node --check revolution-proxy/src/index.js && node --check revolution-proxy/src/operations.js && node --check revolution-proxy/src/push-gateway.js && node --check revolution-proxy/src/request-body.js && node --check wrn-translation-cache/src/index.js && node --test tests/*.test.mjs",
     "deploy:proxy": "wrangler deploy --config revolution-proxy/wrangler.jsonc --keep-vars",
     "deploy:cache": "wrangler deploy --config wrn-translation-cache/wrangler.jsonc --keep-vars"
   },

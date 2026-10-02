@@ -1,0 +1,23 @@
+
+ ⛅️ wrangler 4.114.0 (update available 4.146.0)
+───────────────────────────────────────────────
+Total Upload: 353.46 KiB / gzip: 71.39 KiB
+Your Worker has access to the following bindings:
+Binding                                                                              Resource                  
+env.QUOTA_COORDINATOR (QuotaCoordinator)                                             Durable Object            
+env.PUSH_GATEWAY (PushGateway)                                                       Durable Object            
+env.PODCAST_BUCKET (worldrevnews-podcasts)                                           R2 Bucket                 
+env.TRANSLATION_RATE_LIMITER (20 requests/60s)                                       Rate Limit                
+env.PODCAST_RATE_LIMITER (2 requests/60s)                                            Rate Limit                
+env.FEEDBACK_RATE_LIMITER (3 requests/60s)                                           Rate Limit                
+env.PUSH_RATE_LIMITER (6 requests/60s)                                               Rate Limit                
+env.ALLOWED_ORIGINS ("https://blackfront161.github.io,https...")                     Environment Variable      
+env.WRN_TRANSLATION_ENABLED ("true")                                                 Environment Variable      
+env.WRN_PODCAST_GENERATION_ENABLED ("true")                                          Environment Variable      
+env.TRANSLATION_DAILY_LIMIT ("950")                                                  Environment Variable      
+env.FEEDBACK_DAILY_LIMIT ("250")                                                     Environment Variable      
+env.AZURE_MONTHLY_CHAR_LIMIT ("475000")                                              Environment Variable      
+env.PODCAST_STORAGE_LIMIT_BYTES ("9663676416")                                       Environment Variable      
+env.FEEDBACK_TO_ADDRESS ("worldrevnews@brief.li")                                    Environment Variable      
+
+--dry-run: exiting now.

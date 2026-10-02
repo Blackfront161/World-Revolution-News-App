@@ -1360,5 +1360,19 @@
     "scriptSha256": "2C0E5382DED5793C950EFA3E8175613772B5994CDCECFBAC3B15BFC0C7F8C4B6",
     "unsignedSha256": "3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD",
     "evidence": "docs/evidence/cloudflare-model-2026-10-02/code33-ce2b556-preflight.json"
+  },
+  "cloudflareSecurityFollowup20261002": {
+    "status": "implemented-tests-pass-awaiting-independent-review-not-published",
+    "report": "docs/CLOUDFLARE-SECURITY-FOLLOWUP-2026-10-02.md",
+    "cloudflareTestsPassed": 19,
+    "dryRun": "pass",
+    "fixes": [
+      "received-body-byte-limit-before-JSON",
+      "provider-only-push-endpoints-revalidated-at-send",
+      "atomic-global-and-edge-client-storage-limits-inactivity-pruning-and-complete-keyset-broadcast"
+    ],
+    "appPackageChanged": false,
+    "realPushSent": false,
+    "nextStep": "Independent exact-commit review before publication"
   }
 }

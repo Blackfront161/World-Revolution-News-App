@@ -1,0 +1,31 @@
+✔ quota thresholds are reported at 80, 90 and 100 percent (0.6129ms)
+✔ a threshold is notified once per quota window (0.8646ms)
+✔ public operations status contains counters but no request content (0.2261ms)
+✔ provider hosts accepted; private addresses and URL authority tricks rejected (0.8599ms)
+✔ concurrent registrations atomically cap a client; refreshing cannot move ownership (18.084ms)
+✔ global capacity rejects overflow without replacing an existing recipient; TTL cleanup frees space (151.2645ms)
+✔ over 2500 unrelated newer rows cannot starve an older matching subscriber; legacy unsafe targets never sent (190.7876ms)
+✔ existing pre-migration subscriptions preserved while client column is added (0.557ms)
+✔ public handler ignores spoofed body/custom/forwarded client IDs and fails closed without edge identity (25.6038ms)
+✔ handler rejects actual oversized bytes with missing, false and chunked length before JSON parsing (1.8472ms)
+✔ valid JSON exactly at the byte boundary remains accepted (0.384ms)
+Quota reservation failed closed {
+  metric: 'translation_upstream',
+  message: 'QUOTA_COORDINATOR binding is missing'
+}
+✔ daily quota blocks at the configured ceiling and reactivates next UTC day (1.6374ms)
+✔ monthly Azure quota reactivates without a manual switch (0.7219ms)
+✔ feedback has an independent daily ceiling (0.1672ms)
+✔ failed work can release its reservation (0.3009ms)
+✔ missing coordinator fails closed (0.6095ms)
+✔ manual switches default to enabled and accept explicit off values (0.1116ms)
+✔ defaults retain a small reserve below the free quota (0.1355ms)
+✔ a supplied cache key cannot select a translation for different text (6.3439ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 476.2865

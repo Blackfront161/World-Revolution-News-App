@@ -10,6 +10,8 @@ import {
   quotaAlertPlan
 } from './operations.js';
 import { PushGateway } from './push-gateway.js';
+import { isIP } from 'node:net';
+import { BodyTooLargeError, readBoundedJson } from './request-body.js';
 
 export { PushGateway, QuotaCoordinator };
 
@@ -53,7 +55,6 @@ const LANGUAGE_NAMES = {
 const MAX_TITLE_LENGTH = 500;
 const MAX_TEXT_LENGTH = 6000;
 const MAX_LEGACY_PROMPT_LENGTH = 12000;
-const MAX_BODY_BYTES = 40000;
 const GEMINI_PHASE_MS = 26000;
 const HF_PHASE_MS = 15000;
 const GEMINI_RESERVE_PHASE_MS = 9000;
@@ -219,15 +220,13 @@ export default {
       return jsonResponse({ error: true, message: 'Content-Type muss application/json sein.' }, 415, origin);
     }
 
-    const declaredLength = Number(request.headers.get('Content-Length') || 0);
-    if (declaredLength > MAX_BODY_BYTES) {
-      return jsonResponse({ error: true, message: 'Die Anfrage ist zu groß.' }, 413, origin);
-    }
-
     let body;
     try {
-      body = await request.json();
-    } catch {
+      body = await readBoundedJson(request);
+    } catch (error) {
+      if (error instanceof BodyTooLargeError) {
+        return jsonResponse({ error: true, message: 'Die Anfrage ist zu groß.' }, 413, origin);
+      }
       return jsonResponse({ error: true, message: 'Die Anfrage enthält kein gültiges JSON.' }, 400, origin);
     }
 
@@ -237,7 +236,7 @@ export default {
       if (!(await allowPushRequest(env, request))) {
         return jsonResponse({ error: true, message: 'Zu viele Push-Anfragen. Bitte später erneut versuchen.' }, 429, origin);
       }
-      return handlePushSubscribe(env, body, origin);
+      return handlePushSubscribe(env, body, origin, request);
     }
 
     if (requestedAction === 'push.unsubscribe') {
@@ -615,12 +614,22 @@ function pushGateway(env) {
   return env.PUSH_GATEWAY.get(env.PUSH_GATEWAY.idFromName('wrn-global'));
 }
 
-async function handlePushSubscribe(env, body, origin) {
+async function handlePushSubscribe(env, body, origin, request) {
   if (!pushConfigured(env)) {
     return jsonResponse({ error: true, code: 'PUSH_NOT_CONFIGURED', message: 'News-Push ist noch nicht eingerichtet.' }, 503, origin);
   }
   const gateway = pushGateway(env);
+  // CF-Connecting-IP is supplied by Cloudflare's edge. Never trust a body
+  // clientId, X-Forwarded-For or arbitrary custom headers for storage limits.
+  const edgeIp = request.headers.get('CF-Connecting-IP') || '';
+  if (!request.cf || !isIP(edgeIp)) {
+    return jsonResponse({ error: true, code: 'PUSH_CLIENT_UNAVAILABLE', message: 'Die Push-Anmeldung ist vorübergehend nicht verfügbar.' }, 503, origin);
+  }
+  const canonicalIp = isIP(edgeIp) === 6 ? new URL(`https://[${edgeIp}]/`).hostname : edgeIp;
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`push-storage:${canonicalIp}`));
+  const clientKey = [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
   const result = await gateway.subscribe({
+    clientKey,
     subscription: body?.subscription,
     preferences: {
       ...body?.preferences,
@@ -631,7 +640,10 @@ async function handlePushSubscribe(env, body, origin) {
     timeZone: normalizePlainText(body?.timeZone, 80),
     appVersion: normalizePlainText(body?.appVersion, 30)
   });
-  if (!result?.ok) return jsonResponse({ error: true, message: 'Die Push-Anmeldung ist ungültig.' }, 400, origin);
+  if (!result?.ok) {
+    const capacity = result?.reason === 'subscription_capacity';
+    return jsonResponse({ error: true, code: capacity ? 'PUSH_CAPACITY_REACHED' : 'INVALID_PUSH_SUBSCRIPTION', message: capacity ? 'Zu viele Push-Anmeldungen. Bitte später erneut versuchen.' : 'Die Push-Anmeldung ist ungültig.' }, capacity ? 429 : 400, origin);
+  }
   return jsonResponse({ ok: true }, 200, origin);
 }
 
