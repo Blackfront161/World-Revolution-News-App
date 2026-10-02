@@ -763,6 +763,32 @@ def propagate_geography_by_name(
                 record[field] = value
 
 
+def propagate_reviewed_metadata_by_publisher(records):
+    """Keep reviewed publisher metadata consistent across feed/homepage aliases."""
+    def identity(row):
+        host = urlsplit(str(row.get("canonicalUrl") or row.get("url") or "")).hostname or ""
+        return (str(row.get("name") or "").casefold(), host.removeprefix("www."))
+
+    fields = ("languages", "languageSource", "importMode", "rightsReview", "operator",
+              "sourceType", "reviewEvidence", "originRegion", "originCountry",
+              "originCountryCode", "geographySource")
+    reviewed = {}
+    for row in records:
+        if (row.get("importMode") == "metadata-only" and row.get("reviewEvidence")
+                and any(lang != "und" for lang in row.get("languages", []))):
+            reviewed[identity(row)] = row
+    for row in records:
+        source = reviewed.get(identity(row))
+        if not source:
+            continue
+        for field in fields:
+            if field in source:
+                value = source[field]
+                row[field] = list(value) if isinstance(value, list) else value
+        row["languages"] = [lang for lang in row["languages"] if lang != "und"]
+        row["languageSource"] = "explicit"
+
+
 def build_registry() -> dict[str, Any]:
     rows = extract_aggregate_rows()
 
@@ -806,6 +832,7 @@ def build_registry() -> dict[str, Any]:
             merge_record(merged[key], record)
 
     records = list(merged.values())
+    propagate_reviewed_metadata_by_publisher(records)
     propagate_geography_by_name(records)
     records = sorted(
         records,

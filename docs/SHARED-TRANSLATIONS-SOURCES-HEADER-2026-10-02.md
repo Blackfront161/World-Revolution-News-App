@@ -25,8 +25,8 @@ umbrechen. Alle Bedienelemente behalten mindestens 44px Touch-Fläche.
 CSS 53, Produktionscache r20 und Vorschaucache v108 sind gemeinsam gebunden;
 JavaScript bleibt 65. Die aktuelle Vorschau bestätigt CSS53 und Grid-Zeile1.
 
-Prüfung: 155 Python-Tests, 57 JavaScript-Testdateien, acht Worker-Cachetests,
-sechs Daten-Aufnahmetests, App-Validator und 161 Release-Auditprüfungen bestanden.
+Prüfung: 162 Python-Tests (kompletter Lauf vor dem zusätzlichen Kategorien-Regressionsfall), 57 JavaScript-Testdateien, acht Worker-Cachetests,
+neun Daten-Aufnahme-/Alias-/Kategorientests, App-Validator und 161 Release-Auditprüfungen bestanden.
 Header: neun Sprachen und vier Breiten; zusätzlich vier Breiten bei 200% Textgröße.
 Der historische Bibliotheksabgleich verwendet seinen unveränderlichen angenommenen
 Datenstand d7da528 statt späterer geplanter Aktualisierungen im Daten-Arbeitsbaum.
@@ -35,3 +35,29 @@ Google Play bleibt auf Code32. Der bisherige unsignierte Code33 aus 34e22d9 enth
 diese neue Kopfzeile und die neue Offline-Quellenliste noch nicht. Er ist als aktueller
 Kandidat abgelöst; erneuter Build, Signierung und Gerätetest bleiben offen.
 Seine historischen Hash-Nachweise werden erhalten und nicht nachträglich umgebunden.
+
+## Abschluss des Quellenarchivs
+
+Der sichtbare Quellenwähler zeigte eine weitere Integrationslücke: Die beiden
+Nachrichtenabläufe erzeugten das gezielt geladene Quellenarchiv nicht erneut.
+[PR41](https://github.com/Blackfront161/Revolution-News-Data/pull/41) ergänzt den
+vorhandenen Archiv-Generator und seine Dateien im regulären Commit-Schritt.
+Das geprüfte Archiv enthält 124 Quellen und 3097 Meldungen, darunter beide neuen
+Quellen. Importmodus und Rechtehinweis bleiben im Archiv erhalten. Der Offline-
+Archivbestand der App wurde auf denselben Stand gebracht; alte unreferenzierte
+Dateien wurden nicht gelöscht.
+
+Der Kontrolleur fand einen Mapuexpress-Homepage-Alias mit veralteter Sprache/Policy.
+Die Registry-Erzeugung überträgt geprüfte Angaben nun auf gleichnamige Aliase
+desselben Hosts. Feed- und Homepage-Adressen bleiben erhalten. Andere Hosts oder
+Namen erhalten diese Angaben nicht. Ein Test mit vertauschter Reihenfolge prüft
+die echte App-Filterlaufzeit auf Spanisch, Metadatenbegrenzung und geprüfte Herkunft.
+
+Die Gates fanden zudem vier schon zuvor eingespielte UB-Metadatenmeldungen mit
+nichtkanonischem Europa und fehlenden Klassifikationsfeldern. Der bestehende
+Classifier erhält für Metadatenmeldungen ausschließlich Überschrift und
+Quellenkategorien, keinen fremden Text. Die neunzehn bestehenden Metadatensätze
+wurden entsprechend korrigiert. Generische unklare Themen bleiben prüfbar.
+Die Aufnahmebegrenzung wurde auch in den archivierten App-Generatorskripten
+übernommen, sodass ein späterer Lauf dort keine Volltexte dieser Quellen kopiert.
+Beide GitHub-Gates bestanden am korrigierten PR-Stand d792478.

@@ -42,3 +42,17 @@ assert.deepStrictEqual(Array.from(filters.articleLanguages(kurdish)), ['ku']);
 assert(Array.from(filters.articleOrigins(kurdish)).includes('Iraq'));
 
 console.log('WRN source filters: OK');
+
+const actual=JSON.parse(fs.readFileSync('sources-registry.json','utf8')).sources.filter(s=>s.name==='Mapuexpress (Mapuche)');
+assert.equal(actual.length,2,'feed and homepage identities remain intact');
+for(const rows of [actual,[...actual].reverse()]) {
+  filters.setRegistry({sources:rows});
+  const article={quelleName:'Mapuexpress (Mapuche)',link:'https://www.mapuexpress.org/public-story'};
+  assert.deepStrictEqual(Array.from(filters.articleLanguages(article)),['es']);
+  assert(Array.from(filters.articleOrigins(article)).includes('Latin America'));
+  for(const row of rows) {
+    assert.equal(row.importMode,'metadata-only');
+    assert.equal(row.geographySource,'explicit');
+    assert(row.reviewEvidence.includes('https://www.mapuexpress.org/inchin/'));
+  }
+}

@@ -26,11 +26,11 @@
   ],
   "metadataCompleteness": {
     "knownGeography": 383,
-    "explicitGeography": 193,
+    "explicitGeography": 194,
     "inferredGeography": 189,
     "unknownGeography": 137,
-    "knownLanguage": 229,
-    "unknownLanguage": 291
+    "knownLanguage": 230,
+    "unknownLanguage": 290
   },
   "metadataPolicy": {
     "explicit": "Declared by a source record.",
@@ -8397,7 +8397,7 @@
       "canonicalUrl": "https://mapuexpress.org/",
       "homepage": "https://www.mapuexpress.org/",
       "languages": [
-        "und"
+        "es"
       ],
       "languageSource": "explicit",
       "categories": [
@@ -8412,9 +8412,16 @@
       "originRegion": "Latin America",
       "originCountry": "",
       "originCountryCode": "",
-      "geographySource": "unknown",
+      "geographySource": "explicit",
       "origins": [
         "source-catalog.json"
+      ],
+      "importMode": "metadata-only",
+      "rightsReview": "Keine Volltext- oder Medienfreigabe belegt. Nur Überschrift, Datum, Autor und Originalverweis; WRN-eigener Hinweis statt übernommener Zusammenfassung.",
+      "operator": "Unabhängiges Mapuche-Kommunikationskollektiv (Selbstauskunft)",
+      "sourceType": "Indigene Gemeinschaftskommunikation",
+      "reviewEvidence": [
+        "https://www.mapuexpress.org/inchin/"
       ]
     },
     {
