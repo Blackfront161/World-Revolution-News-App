@@ -66,6 +66,14 @@ try {
  await p.locator('[data-menu-close]').click();
  await p.locator('#next-language').selectOption('de');await p.setViewportSize({width:390,height:844});
  await p.screenshot({path:out+'/autonom-headlines-390.png'});
+ await p.locator('#next-menu-toggle').click();
+ await p.locator('#next-menu-theme').selectOption('dark');
+ await p.locator('[data-menu-close]').click();
+ const manualLeadButton=p.locator('.home-hero [data-action="translate"]');
+ await manualLeadButton.click();
+ await expect(manualLeadButton).toBeEnabled();
+ await expect(p.locator('.home-headline-open')).toHaveCount(1);
+ result.checks.push('Manual lead translation preserves the clickable headline button.');
  await p.locator('.home-headline-open').click();
  await expect(p.locator('#next-article-dialog')).toBeVisible();
  await p.locator('[data-action="article-share"]').click();

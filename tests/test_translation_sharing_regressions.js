@@ -38,6 +38,42 @@ const tick = () => new Promise(resolve => setImmediate(resolve));
   resolve({ text: 'Deutscher Titel---Deutscher Inhalt.' }); await pending;
   assert.equal(requested.targetLanguage, 'de'); assert.equal(stored.lang, 'de');
 
+  // Manual translation must update the label without removing the headline button.
+  const headlineButton = { textContent: 'Original' };
+  const heading = {};
+  Object.defineProperty(heading, 'textContent', { set() { throw Error('Destroyed clickable headline'); } });
+  const hero = { querySelector: selector => selector === '.home-headline-open' ? headlineButton
+    : selector === 'h1' ? heading : selector === '.translation-note' ? {} : null };
+  const manualLead = vm.runInNewContext(`(${extract('async function translateTeaser(', 'function mergeHydratedArticle(')})`, {
+    state: { language:'de' }, core, t: key => key, console,
+    window: { WRNSharedTranslations: { request: async () => ({text:'Deutscher Titel---Text.'}) } },
+    document: { querySelector: () => hero }, cardCopy: { syncTeaserParagraph() {} },
+    newsCardTeaser: a => a.content, storeTranslation() {}, translationFor: () => ({title:'Deutscher Titel'}),
+    translationNoteLabel: () => 'Translated', showToast() {}
+  });
+  await manualLead(article,button,null);
+  assert.equal(headlineButton.textContent,'Deutscher Titel');
+
+  // One transient failure of the currently visible lead gets a bounded automatic retry.
+  for (const status of [0,403,429]) {
+    const timers=[]; let retries=0;
+    const retryContext={state:{view:'home',language:'de',cardArticles:[article]},core,cardCopy:{completeFirstSentence:x=>x},
+      briefingTranslationsInFlight:new Set(),briefingTranslationsAttempted:new Set(),briefingLeadRetries:new Set(),
+      briefingTranslationWarningShown:false,translationForLanguage:()=>null,newsCardTeaser:a=>a.content,storeTranslation(){},
+      console:{warn(){}},document:{querySelector:()=>({dataset:{index:'0'}})},
+      ensureHomeTranslations:()=>{retries++;},window:{setTimeout:(fn,delay)=>timers.push({fn,delay}),
+        WRNSharedTranslations:{request:async()=>({error:true,status})}}};
+    const request=vm.runInNewContext(`(()=>{${extract('function articleNeedsTeaserTranslation(', 'async function ensureBriefingTranslations(')};return requestBriefingTranslation;})()`,retryContext);
+    await request(article,'de');
+    assert.equal(timers[0].delay,status===0?30000:300000);
+    timers[0].fn(); assert.equal(retries,status===0?1:0);
+    if(status===0) {
+      await request(article,'de');
+      assert.equal(timers[1].delay,300000,'a second failure cannot start a retry loop');
+      timers[1].fn();assert.equal(retries,1);
+    }
+  }
+
   // The lead becomes visible while another translation remains unresolved.
   let finishLead, finishSlow, rendered = 0;
   const homeState = { view: 'home', language: 'de' };

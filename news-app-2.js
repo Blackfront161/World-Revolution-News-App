@@ -2087,6 +2087,7 @@
   const densitySelect = document.getElementById('next-menu-density');
   const briefingTranslationsInFlight = new Set();
   const briefingTranslationsAttempted = new Set();
+  const briefingLeadRetries = new Set();
   let briefingTranslationWarningShown = false;
   let homeTranslationRun = null;
   let homeTranslationQueue = [];
@@ -4287,6 +4288,7 @@
     if (briefingTranslationsInFlight.has(requestKey) || briefingTranslationsAttempted.has(requestKey)) return null;
     briefingTranslationsInFlight.add(requestKey);
     briefingTranslationsAttempted.add(requestKey);
+    let failureResult;
     try {
       const result = await window.WRNSharedTranslations.request({
         title: article.title,
@@ -4294,7 +4296,10 @@
         targetLanguage,
         mode: 'title_and_text'
       });
-      if (result?.error || !result?.text) throw new Error(result?.message || 'Translation failed');
+      if (result?.error || !result?.text) {
+        failureResult = result;
+        throw new Error(result?.message || 'Translation failed');
+      }
       if (sourceFingerprint !== core.articleTranslationFingerprint(article)) return null;
       const parsed = core.splitTranslatedTeaser(result.text);
       const translated = {
@@ -4308,7 +4313,21 @@
         console.warn('Automatic briefing translation is currently unavailable', error);
         briefingTranslationWarningShown = true;
       }
-      window.setTimeout(() => briefingTranslationsAttempted.delete(requestKey), 5 * 60 * 1000);
+      const leadIsCurrent = () => {
+        const index = document.querySelector('.home-headline-open')?.dataset.index;
+        return index !== undefined && state.view === 'home' && state.language === targetLanguage
+          && state.cardArticles[Number(index)]?.id === article.id
+          && sourceFingerprint === core.articleTranslationFingerprint(article);
+      };
+      const terminal = [400, 401, 403, 429].includes(Number(failureResult?.status))
+        || failureResult?.data?.reason || failureResult?.data?.code === 'QUOTA_GUARD_UNAVAILABLE'
+        || Array.isArray(failureResult?.data?.details);
+      const retryLead = !terminal && leadIsCurrent() && !briefingLeadRetries.has(requestKey);
+      if (retryLead) briefingLeadRetries.add(requestKey);
+      window.setTimeout(() => {
+        briefingTranslationsAttempted.delete(requestKey);
+        if (retryLead && leadIsCurrent()) void ensureHomeTranslations([article]);
+      }, retryLead ? 30000 : 5 * 60 * 1000);
       return null;
     } finally {
       briefingTranslationsInFlight.delete(requestKey);
@@ -6659,7 +6678,7 @@
         note.textContent = translationNoteLabel(article, storedTranslation);
       } else {
         const hero = document.querySelector('.home-hero');
-        const title = hero?.querySelector('h1');
+        const title = hero?.querySelector('.home-headline-open');
         if (title) title.textContent = storedTranslation?.title || article.title;
         cardCopy.syncTeaserParagraph(hero?.querySelector('.home-hero__content'), ':scope > p', '.card-actions', translatedIntro);
         if (hero) {

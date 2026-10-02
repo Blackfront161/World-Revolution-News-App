@@ -34,7 +34,13 @@ Worker-Syntax, elf Worker-Tests und Wrangler-Dry-run bestehen. Die Cloudflare-An
 
 Die echte Browseraufnahme unter `evidence/translation-autonom-2026-10-02/autonom-live-390.jpg` verwendet reale aktuelle Inhalte, keine Testdaten. Temporäre Browserbreite wurde anschließend zurückgesetzt.
 
-Produktgeneration: JS60, CSS51, Shared-Translation-Client5, Audio-Tools4, Produktionscache `2.1.2-r14`, Vorschaucache `v102`.
+Aktuelle Produktgeneration nach Kontrolleur-Korrektur: JS61, CSS51, Shared-Translation-Client5, Audio-Tools4, Produktionscache `2.1.2-r15`, Vorschaucache `v103`.
+
+Der Kontrolleur fand im Freeze `465442ab` eine UI-Regression: Die manuelle Aufmacherübersetzung setzte `h1.textContent` und entfernte dabei den eingebetteten Öffnen-Button. Der Folgefix setzt ausschließlich die Beschriftung des Buttons. Ausführbare VM- und echte Browser-Regression prüfen, dass der Titel danach weiterhin den Artikel öffnet.
+
+Bei einem vorübergehenden Fehler erhält der aktuell sichtbare Aufmacher einmal pro Quellfingerabdruck und Sprache nach 30 Sekunden einen automatischen Wiederholungsversuch. Vor diesem Versuch werden Ansicht, Sprache, Artikel und Fingerabdruck erneut geprüft. Weitere Fehler bleiben im fünfminütigen Cooldown; Origin-, Auth-, Quoten- und ausgeschöpfte Providerfehler erhalten keinen automatischen Wiederholungsversuch. Ausführbare Tests prüfen den einzelnen Netzfehler-Retry, den Stopp nach erneutem Fehler und 403/429 ohne Auto-Retry.
+
+**Die folgenden Artefakte sind historisch und überholt: nicht signieren.** Ein neuer Freeze und neue Builds werden nach dieser Korrektur separat gebunden.
 
 Neuer Produkt-Freeze: `465442ab6526afafdd2030d09b59f4982f934de4`. Zwei bytegleiche unsignierte AABs für 2.1.2 / Code33 bestehen: je 44.338.550 Byte, 356 gebundene Quellassets, 802 Payload-Dateien, keine Signaturdateien. SHA-256 `508C1DA603CB79335774137DBC2A18ACB1ED548AE88B82369EBD95E58580C41D`. Pfade: `outputs/translation-autonom-code33/build1/WorldRevolutionNews-2.1.2-code33-465442a-unsigned.aab` und entsprechendes `build2`. Beide Buildberichte bestätigen sauberen detached Quellstand und null Kopier-/Paketunterschiede; die zusätzliche Root-Prüfung bestätigt Bytegleichheit, fehlende Signatur und eingebettete Generations-/Verhaltenstokens.
 

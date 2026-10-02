@@ -36,7 +36,7 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     redirect = (ROOT / "next.html").read_text(encoding="utf-8")
     service_worker = (ROOT / "service-worker.js").read_text(encoding="utf-8")
     assert "language-origin.js?release=1" in index
-    assert "news-app-2.js?release=60" in index
+    assert "news-app-2.js?release=61" in index
     assert "news-app-2.css?release=51" in index
     assert "news-app-2-specialty.js?release=6" in index
     assert "stories-core.js?release=3" in index
@@ -46,7 +46,7 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     assert "preview=8" in redirect
     assert "target.searchParams.has('preview')" in redirect
     assert "language-origin.js?release=1" in service_worker
-    assert "news-app-2.js?release=60" in service_worker
+    assert "news-app-2.js?release=61" in service_worker
     assert "news-app-2-specialty.js?release=6" in service_worker
     assert "stories-core.js?release=3" in service_worker
     assert "classic.html" in service_worker
@@ -101,7 +101,7 @@ def test_preview_and_production_offline_caches_are_distinct():
     assert "./next.html" in preview_worker
     assert "./index.html?preview=8" in preview_worker
     assert "navigationFirst(request)" in preview_worker
-    assert "wrn-app-v2.1.2-r14" in live_worker
+    assert "wrn-app-v2.1.2-r15" in live_worker
 
 
 def test_specialty_views_are_native_preview_routes():
@@ -208,7 +208,7 @@ def test_menu_briefing_and_responsive_images_are_present():
     assert "Promise.allSettled(items.slice(0, 5)" in script
     assert "data-briefing-id" in script
     assert "targetLanguage," in script
-    assert "hero?.querySelector('h1')" in script
+    assert "hero?.querySelector('.home-headline-open')" in script
     assert "hero.querySelector('.card-actions')?.before(note)" in script
     assert "<h2>${escapeHtml(t('latest'))}</h2>" in script
     assert "UI_SETTINGS_KEY" in script
@@ -536,7 +536,7 @@ def test_release_checklist_is_readable_and_available():
     assert 'href="news-app-2-release-checklist.html"' not in html
     assert "news-app-2-release-checklist.html" in worker
     assert "news-app-2-release-checklist.css" in worker
-    assert "`${CACHE_PREFIX}v102`" in worker
+    assert "`${CACHE_PREFIX}v103`" in worker
     assert "if (request.mode === 'navigate')" in worker
     assert 'class="release-checklist-page"' in checklist
     assert "Bestanden" in checklist
