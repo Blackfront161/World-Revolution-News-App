@@ -15,7 +15,7 @@ DATASET = "./verified-solidarity-actions.json"
 
 
 def test_preview_worker_precaches_product_21_and_bumps_cache():
-    assert "`${CACHE_PREFIX}v100`" in PREVIEW
+    assert "`${CACHE_PREFIX}v101`" in PREVIEW
     assert "`${CACHE_PREFIX}v87`" not in PREVIEW
     for asset in SCRIPTS:
         assert f"'{asset}'" in PREVIEW
@@ -38,9 +38,9 @@ def test_workers_keep_distinct_cache_names():
     preview_cache = re.search(r"CACHE_NAME = `\$\{CACHE_PREFIX\}(v\d+)`", PREVIEW)
     production_app = re.search(r"APP_CACHE = '([^']+)'", PRODUCTION)
     production_data = re.search(r"DATA_CACHE = '([^']+)'", PRODUCTION)
-    assert preview_cache and preview_cache.group(1) == "v100"
+    assert preview_cache and preview_cache.group(1) == "v101"
     assert production_app and production_data
-    assert production_app.group(1) == "wrn-app-v2.1.2-r12"
+    assert production_app.group(1) == "wrn-app-v2.1.2-r13"
     assert production_data.group(1) == "wrn-data-v2.1.2-r1"
     assert "wrn-app-v2.1.2-dev.1-r1" not in PRODUCTION
     assert "wrn-data-v2.1.2-dev.1-r1" not in PRODUCTION
@@ -74,8 +74,8 @@ def test_solidarity_network_assets_are_offline_in_both_workers():
 
 
 def test_worker_updates_replace_old_cache_versions_and_core_revisions():
-    assert "news-app-2.js?release=58" in PREVIEW
-    assert "news-app-2.js?release=58" in PRODUCTION
+    assert "news-app-2.js?release=59" in PREVIEW
+    assert "news-app-2.js?release=59" in PRODUCTION
     assert "news-app-2.js?release=42" not in PREVIEW
     assert "news-app-2.js?release=42" not in PRODUCTION
     assert ".filter(name => name.startsWith(CACHE_PREFIX) && name !== CACHE_NAME)" in PREVIEW

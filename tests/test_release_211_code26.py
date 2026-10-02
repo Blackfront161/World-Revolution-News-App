@@ -57,8 +57,8 @@ def test_current_release_metadata_is_consistent() -> None:
     for version in ("2.1.2", "2.1.2-dev.1-test", "2.1.2-dev.1-preview"):
         assert version in config
     assert "2026.09.27-wrn-2.1.2-release" in config
-    assert "wrn-app-v2.1.2-r12" in worker and "wrn-data-v2.1.2-r1" in worker
-    assert "`${CACHE_PREFIX}v100`" in preview_worker
+    assert "wrn-app-v2.1.2-r13" in worker and "wrn-data-v2.1.2-r1" in worker
+    assert "`${CACHE_PREFIX}v101`" in preview_worker
     for release_contract in (app_check, diagnostics, selftest):
         assert "2.1.2" in release_contract
 
@@ -72,7 +72,7 @@ def test_current_release_metadata_is_consistent() -> None:
     assert "Android / Google Play | 2.1.2, Code 32" in readme
     assert "2.1.0`/Code 25 als aktuellen signierten Live-/Verteilungsstand" in checklist
     assert roadmap["confirmedLiveDistribution"]["version"] == "2.1.2"
-    assert roadmap["confirmedLiveDistribution"]["versionCode"] == 28
+    assert roadmap["confirmedLiveDistribution"]["versionCode"] == 32
     assert roadmap["current"]["version"] == "2.1.2"
 
 

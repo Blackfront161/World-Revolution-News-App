@@ -63,6 +63,7 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(`${origin}/index.html?preview=8&data=snapshot`);
+  await page.locator('#next-view article').first().waitFor();
   await page.locator('#next-language').selectOption('de');
   await page.locator('[data-view-target="media"]').click();
   await page.locator('[data-action="media-section"][data-value="radio-podcasts"]').click();

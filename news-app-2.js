@@ -6007,6 +6007,7 @@
         ${mediaTab('radio-podcasts', '⌁', t('radioShows'))}
         ${mediaTab('zine', '📄', t('zine'))}
       </div>
+      ${['podcasts', 'radio-podcasts'].includes(section) && state.mediaDirectories.length ? `<section class="library-source-section"><h2>${state.language === 'de' ? 'Weitere Audio-Verzeichnisse' : 'More audio directories'}</h2><p lang="${state.language === 'de' ? 'de' : 'en'}">${state.language === 'de' ? 'Bei der Originalquelle öffnen. Ein automatischer Podcastfeed ist noch nicht bestätigt.' : 'Open at the original source. An automatic podcast feed has not yet been confirmed.'}</p>${state.mediaDirectories.map(source => `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(source.name)}</a> · ${escapeHtml(source.country)}</p>`).join('')}</section>` : ''}
       ${['podcasts', 'radio-podcasts', 'generated', 'radio'].includes(section) ? `
         <label class="audio-favorites-filter">
           <input id="next-media-favorites-only" type="checkbox"${state.media.favoritesOnly ? ' checked' : ''}>
@@ -6169,7 +6170,6 @@
       <div class="video-section-tabs" role="tablist" aria-label="${escapeHtml(t('video'))}">
         ${Object.entries(VIDEO_SECTION_KEYS).map(([value, key]) => `<button type="button" role="tab" aria-selected="${state.videoFilters.section === value}" class="${state.videoFilters.section === value ? 'active' : ''}" data-action="video-section" data-value="${value}">${escapeHtml(t(key))}${value === 'saved' && savedCount ? ` <span>${savedCount}</span>` : ''}</button>`).join('')}
       </div>
-      ${['podcasts', 'radio-podcasts'].includes(section) && state.mediaDirectories.length ? `<section class="library-source-section"><h2>${state.language === 'de' ? 'Weitere Audio-Verzeichnisse' : 'More audio directories'}</h2><p lang="${state.language === 'de' ? 'de' : 'en'}">${state.language === 'de' ? 'Bei der Originalquelle öffnen. Ein automatischer Podcastfeed ist noch nicht bestätigt.' : 'Open at the original source. An automatic podcast feed has not yet been confirmed.'}</p>${state.mediaDirectories.map(source => `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(source.name)}</a> · ${escapeHtml(source.country)}</p>`).join('')}</section>` : ''}
       ${state.videoHistory.length ? `<div class="video-local-note"><button type="button" data-action="video-history-clear">${escapeHtml(t('videoHistoryClear'))}</button></div>` : ''}
       <details class="video-filter-panel"${nonDefaultFilter ? ' open' : ''}>
         <summary>${escapeHtml(t('filterVideos'))}<span>${items.length}</span></summary>
