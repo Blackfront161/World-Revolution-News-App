@@ -1213,15 +1213,15 @@
     "version": "2.1.2",
     "versionCode": 33,
     "status": "new-source-freeze-awaiting-independent-review-and-new-unsigned-build",
-    "sourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69",
+    "sourceCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
     "signatureVerified": false,
     "uploadPerformed": false,
     "releaseReady": false,
     "artifactMode": "not-built",
-    "report": "docs/AUTONOM-CONTENT-EXPANSION-2026-10-02.md",
+    "report": "docs/HOME-TRANSLATION-REPAIR-2026-10-02.md",
     "physicalCode33Test": "pending",
     "signing": "not-performed-new-artifact-required",
-    "note": "New content and complete topic tabs are in local preview. Previous ce2b556 unsigned AAB does not contain them and must not be signed for this release."
+    "note": "Local source includes Autonom/content expansion and the startup translation repair. No matching new AAB built. Previous ce2b556 artifact remains superseded."
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
@@ -1463,5 +1463,48 @@
       "Push/Admin activation requires its own operational configuration"
     ],
     "independentLiveReport": "docs/evidence/translation-cache-2026-10-02/controller-live-review.json"
+  },
+  "homeTranslationRepair20261002": {
+    "status": "implemented-local-preview-root-qa-pass-independent-review-pending",
+    "sourceCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
+    "report": "docs/HOME-TRANSLATION-REPAIR-2026-10-02.md",
+    "before": {
+      "requests": 37,
+      "statuses": {
+        "200": 29,
+        "400": 2,
+        "429": 6
+      }
+    },
+    "after": {
+      "requests": 12,
+      "statuses": {
+        "200": 12
+      },
+      "lead": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg",
+      "errors": []
+    },
+    "automaticHomeBudgetPerMinute": 12,
+    "serverMinutePauseSeconds": 65,
+    "runtime": {
+      "js": 64,
+      "css": 52,
+      "lexicon": 9,
+      "productionCache": "2.1.2-r18",
+      "previewCache": "v106"
+    },
+    "checks": {
+      "javascriptModules": 57,
+      "pythonPassed": 151,
+      "subtests": 4,
+      "historicalSkips": 3,
+      "mainOnly": 4,
+      "releaseAudit": "161/161",
+      "browserSuites": 2
+    },
+    "workerDeploymentPerformed": false,
+    "appPublicationPerformed": false,
+    "androidArtifactBuilt": false,
+    "nextStep": "Independent review of this freeze; then bind a new Android artifact to the final reviewed source"
   }
 }

@@ -1,0 +1,458 @@
+{
+  "checkedAt": "2026-10-02T12:16:31.209Z",
+  "initial": "¡Santa sábana, Batman!",
+  "final": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg",
+  "requests": [
+    {
+      "title": "¡Santa sábana, Batman!",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 80
+    },
+    {
+      "title": "Antikriegstag 2026: „Friedensfähig statt kriegstüchtig! Gemeinsam für Völkerverständigung, soziale Gerechtigkeit und eine Welt ohne Krieg“ (DGB)",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 104
+    },
+    {
+      "title": "Ley de tierras: \"Pretenden despojar a las comunidades indígenas de sus territorios\"",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 294
+    },
+    {
+      "title": "When Treatment Fails: Why I Relate to Lindsay Clancy",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 162
+    },
+    {
+      "title": "Candidato à Presidência, Caiado transformou Goiás em laboratório de leis para Big Techs",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 195
+    },
+    {
+      "title": "Zuckerberg’s $300m Yacht Reportedly Ignored Call for Help From Stranded Boat",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 130
+    },
+    {
+      "title": "Who Speaks for Argentina? Football, Palestine, and the Politics of Representation",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 69
+    },
+    {
+      "title": "ทุกคนพากันประหลาดใจที่พวกอนาธิปไตยเป็นอนาธิปไตย",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 16
+    },
+    {
+      "title": "Verleihung der BigBrotherAwards 2026 am 25. September in Bielefeld und online",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 101
+    },
+    {
+      "title": "Nächstes Treffen der ver.di-Linke NRW am Sonntag, den 16. August 2026 per Videokonferenz",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 183
+    },
+    {
+      "title": "Microbolsas Big Techs",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 186
+    },
+    {
+      "title": "KI und Rechenzentren: Bundesregierung weiß nicht, wieviel Wasser ihre Ausbaupläne schlucken werden",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 53
+    },
+    {
+      "title": "Millions in prisoner funds missing at women’s correctional",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 81
+    },
+    {
+      "title": "Insureksi atau Revolusi?",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 12
+    },
+    {
+      "title": "Paco Ponzán: anarcosindicalismo, revolución y resistencia",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 317
+    },
+    {
+      "title": "Dead season in Isabela",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 150
+    },
+    {
+      "title": "「寫作是最後一道防線」：巴勒斯坦詩人亞赫亞·哈馬納專訪",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 42
+    },
+    {
+      "title": "A Vietnam in the Field of Culture: The Cultural Congress of Havana, 1968",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 0
+    },
+    {
+      "title": "Why Cairo didn’t turn up for the Quad defense pact party",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 170
+    },
+    {
+      "title": "#KeepItOn @10: celebrating a decade of fighting internet shutdowns",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 66
+    },
+    {
+      "title": "Μιά πανελλαδική φωνή για λευτεριά στην Παλαιστίνη!",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 271
+    },
+    {
+      "title": "Data Center a Modena: dati in pasto alla guerra",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 37
+    },
+    {
+      "title": "Se não pelas mulheres, por quem? O que defendem deputados que se opõem ao PL da Misoginia",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 74
+    },
+    {
+      "title": "Sciences Po Lyon En Lutte - Vendredi 2 octobre mobilisons-nous",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 178
+    },
+    {
+      "title": "The Grid Inside the Grid",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 153
+    },
+    {
+      "title": "Δράσεις και εκδηλώσεις για την προστασία του περιβάλλοντος και των δημόσιων χώρων από 2/10 έως 10/10",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 186
+    },
+    {
+      "title": "Labnotes | Ang kontradiksyon ng renewable energy transition sa Pilipinas",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 222
+    },
+    {
+      "title": "Yılmaz: Visually impaired people face barriers to sport",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 181
+    },
+    {
+      "title": "La banalizzazione della montagna",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 176
+    },
+    {
+      "title": "Blocchi nei licei in Francia: la protesta continua e si espande",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 247
+    },
+    {
+      "title": "Algot Rosberg - Röda flammor",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 134
+    },
+    {
+      "title": "L'antifascisme n'est pas vaincu, il est une lutte constante",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 38
+    },
+    {
+      "title": "Axel Holmström - Skräckväldet på Långholmen",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 268
+    },
+    {
+      "title": "Эррико Малатеста - Наука и Анархия",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 0
+    },
+    {
+      "title": "Beyond Translation: Reimagining Feminist Funding for Portuguese-Speaking Africa",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 80
+    },
+    {
+      "title": "Informe de la situación del sector del metal en Navarra",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 218
+    },
+    {
+      "title": "Louise Michel - Sobre las mujeres",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 170
+    }
+  ],
+  "results": [
+    {
+      "title": "¡Santa sábana, Batman!",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "¡Santa sábana, Batman!\n"
+    },
+    {
+      "title": "Ley de tierras: \"Pretenden despojar a las comunidades indígenas de sus territorios\"",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Ley de tierras: \"Pretenden despojar a las comunidades indígenas de sus territorios\"\n"
+    },
+    {
+      "title": "Antikriegstag 2026: „Friedensfähig statt kriegstüchtig! Gemeinsam für Völkerverständigung, soziale Gerechtigkeit und eine Welt ohne Krieg“ (DGB)",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Antikriegstag 2026: „Friedensfähig statt kriegstüchtig! Gemeinsam für Völkerverständigung, soziale Gerechtigkeit und ein"
+    },
+    {
+      "title": "Candidato à Presidência, Caiado transformou Goiás em laboratório de leis para Big Techs",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Präsidentschaftskandidat Caiado verwandelte Goiás in ein Laboratorium für Gesetze für Big Techs\n"
+    },
+    {
+      "title": "When Treatment Fails: Why I Relate to Lindsay Clancy",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Wenn die Behandlung versagt: Warum ich mich mit Lindsay Clancy verbunden fühle"
+    },
+    {
+      "title": "Zuckerberg’s $300m Yacht Reportedly Ignored Call for Help From Stranded Boat",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Zuckerbergs 300-Millionen-Dollar-Yacht soll Hilferuf eines gestrandeten Bootes ignoriert haben\n"
+    },
+    {
+      "title": "ทุกคนพากันประหลาดใจที่พวกอนาธิปไตยเป็นอนาธิปไตย",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Alle wundern sich darüber, dass Anarchist*innen Anarchist*innen sind."
+    },
+    {
+      "title": "Who Speaks for Argentina? Football, Palestine, and the Politics of Representation",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Wer spricht für Argentinien? Fußball, Palästina und die Politik der Repräsentation\n"
+    },
+    {
+      "title": "Verleihung der BigBrotherAwards 2026 am 25. September in Bielefeld und online",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Verleihung der BigBrotherAwards 2026 am 25. September in Bielefeld und online\n"
+    },
+    {
+      "title": "Nächstes Treffen der ver.di-Linke NRW am Sonntag, den 16. August 2026 per Videokonferenz",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Nächstes Treffen der ver.di-Linke NRW am Sonntag, den 16. August 2026 per Videokonferenz\n"
+    },
+    {
+      "title": "Microbolsas Big Techs",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Mikro-Stipendien für Big Techs\n"
+    },
+    {
+      "title": "Insureksi atau Revolusi?",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Insurektion oder Revolution?"
+    },
+    {
+      "title": "KI und Rechenzentren: Bundesregierung weiß nicht, wieviel Wasser ihre Ausbaupläne schlucken werden",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "KI und Rechenzentren: Bundesregierung weiß nicht, wieviel Wasser ihre Ausbaupläne schlucken werden\n"
+    },
+    {
+      "title": "Millions in prisoner funds missing at women’s correctional",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Millionen an Gefangenengeldern in Frauenstrafanstalt verschwunden\n"
+    },
+    {
+      "title": "Paco Ponzán: anarcosindicalismo, revolución y resistencia",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Paco Ponzán: Anarchosyndikalismus, Revolution und Widerstand\n"
+    },
+    {
+      "title": "A Vietnam in the Field of Culture: The Cultural Congress of Havana, 1968",
+      "status": 400,
+      "translatedTitle": ""
+    },
+    {
+      "title": "Dead season in Isabela",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Tote Saison in Isabela\n"
+    },
+    {
+      "title": "「寫作是最後一道防線」：巴勒斯坦詩人亞赫亞·哈馬納專訪",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "„Schreiben ist die letzte Verteidigungslinie“: Ein Interview mit dem palästinensischen Dichter Yahya Al Hamarna\n"
+    },
+    {
+      "title": "Why Cairo didn’t turn up for the Quad defense pact party",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Warum Kairo nicht auf der Party zum Quad-Verteidigungspakt erschien\n"
+    },
+    {
+      "title": "#KeepItOn @10: celebrating a decade of fighting internet shutdowns",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "#KeepItOn @10: Ein Jahrzehnt Kampf gegen Internetsperren\n\n"
+    },
+    {
+      "title": "Data Center a Modena: dati in pasto alla guerra",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg\n"
+    },
+    {
+      "title": "Se não pelas mulheres, por quem? O que defendem deputados que se opõem ao PL da Misoginia",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Wenn nicht für die Frauen, für wen? Wofür Abgeordnete stehen, die sich gegen das Misogynie-Gesetz stellen\n"
+    },
+    {
+      "title": "Sciences Po Lyon En Lutte - Vendredi 2 octobre mobilisons-nous",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Sciences Po Lyon En Lutte - Vendredi 2 octobre mobilisons-nous\n"
+    },
+    {
+      "title": "Μιά πανελλαδική φωνή για λευτεριά στην Παλαιστίνη!",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Eine landesweite Stimme für die Freiheit in Palästina!\n"
+    },
+    {
+      "title": "Δράσεις και εκδηλώσεις για την προστασία του περιβάλλοντος και των δημόσιων χώρων από 2/10 έως 10/10",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Aktionen und Veranstaltungen zum Schutz der Umwelt und öffentlicher Räume vom 2.10. bis 10.10.\n"
+    },
+    {
+      "title": "The Grid Inside the Grid",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Das Netz im Netz\n"
+    },
+    {
+      "title": "Labnotes | Ang kontradiksyon ng renewable energy transition sa Pilipinas",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Labnotes | Ang kontradiksyon ng renewable energy transition sa Pilipinas\n"
+    },
+    {
+      "title": "Yılmaz: Visually impaired people face barriers to sport",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Yılmaz: Sehbehinderte Menschen begegnen Barrieren beim Sport\n"
+    },
+    {
+      "title": "Algot Rosberg - Röda flammor",
+      "status": 429,
+      "cache": "MISS",
+      "message": "Zu viele Übersetzungsanfragen. Bitte warte eine Minute.",
+      "translatedTitle": ""
+    },
+    {
+      "title": "L'antifascisme n'est pas vaincu, il est une lutte constante",
+      "status": 429,
+      "cache": "MISS",
+      "message": "Zu viele Übersetzungsanfragen. Bitte warte eine Minute.",
+      "translatedTitle": ""
+    },
+    {
+      "title": "Blocchi nei licei in Francia: la protesta continua e si espande",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Blockaden an Gymnasien in Frankreich: Der Protest hält an und weitet sich aus\n"
+    },
+    {
+      "title": "La banalizzazione della montagna",
+      "status": 200,
+      "cache": "MISS",
+      "translatedTitle": "Die Banalisierung der Berge\n"
+    },
+    {
+      "title": "Beyond Translation: Reimagining Feminist Funding for Portuguese-Speaking Africa",
+      "status": 429,
+      "cache": "MISS",
+      "message": "Zu viele Übersetzungsanfragen. Bitte warte eine Minute.",
+      "translatedTitle": ""
+    },
+    {
+      "title": "Эррико Малатеста - Наука и Анархия",
+      "status": 400,
+      "translatedTitle": ""
+    },
+    {
+      "title": "Informe de la situación del sector del metal en Navarra",
+      "status": 429,
+      "cache": "MISS",
+      "message": "Zu viele Übersetzungsanfragen. Bitte warte eine Minute.",
+      "translatedTitle": ""
+    },
+    {
+      "title": "Louise Michel - Sobre las mujeres",
+      "status": 429,
+      "cache": "MISS",
+      "message": "Zu viele Übersetzungsanfragen. Bitte warte eine Minute.",
+      "translatedTitle": ""
+    },
+    {
+      "title": "Axel Holmström - Skräckväldet på Långholmen",
+      "status": 429,
+      "cache": "MISS",
+      "message": "Zu viele Übersetzungsanfragen. Bitte warte eine Minute.",
+      "translatedTitle": ""
+    }
+  ],
+  "errors": []
+}

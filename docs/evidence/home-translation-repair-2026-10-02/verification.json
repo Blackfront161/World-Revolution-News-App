@@ -1,0 +1,27 @@
+{
+  "sourceCommit": "63b7a38bc077c8cb21409fbd5dafee771dce7063",
+  "before": {
+    "requests": 37,
+    "statuses": {
+      "200": 29,
+      "400": 2,
+      "429": 6
+    }
+  },
+  "after": {
+    "requests": 12,
+    "statuses": {
+      "200": 12
+    },
+    "lead": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg",
+    "errors": []
+  },
+  "userPreview": {
+    "url": "http://127.0.0.1:8765/index.html?preview=8",
+    "script": "news-app-2.js?release=64",
+    "headline": "Rechenzentrum in Modena: Daten zum Frass fuer den Krieg"
+  },
+  "independentReview": "pending",
+  "appPublicationPerformed": false,
+  "androidArtifactBuilt": false
+}

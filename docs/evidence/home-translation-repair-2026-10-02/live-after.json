@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-10-02T12:30:07.874Z",
+  "initial": "¡Santa sábana, Batman!",
+  "final": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg",
+  "requests": [
+    {
+      "title": "Data Center a Modena: dati in pasto alla guerra",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 37
+    },
+    {
+      "title": "Se não pelas mulheres, por quem? O que defendem deputados que se opõem ao PL da Misoginia",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 74
+    },
+    {
+      "title": "Sciences Po Lyon En Lutte - Vendredi 2 octobre mobilisons-nous",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 178
+    },
+    {
+      "title": "The Grid Inside the Grid",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 153
+    },
+    {
+      "title": "Δράσεις και εκδηλώσεις για την προστασία του περιβάλλοντος και των δημόσιων χώρων από 2/10 έως 10/10",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 186
+    },
+    {
+      "title": "Labnotes | Ang kontradiksyon ng renewable energy transition sa Pilipinas",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 222
+    },
+    {
+      "title": "Yılmaz: Visually impaired people face barriers to sport",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 181
+    },
+    {
+      "title": "La banalizzazione della montagna",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 176
+    },
+    {
+      "title": "Blocchi nei licei in Francia: la protesta continua e si espande",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 247
+    },
+    {
+      "title": "Algot Rosberg - Röda flammor",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 134
+    },
+    {
+      "title": "L'antifascisme n'est pas vaincu, il est une lutte constante",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 38
+    },
+    {
+      "title": "Axel Holmström - Skräckväldet på Långholmen",
+      "mode": "title_and_text",
+      "language": "de",
+      "textLength": 268
+    }
+  ],
+  "results": [
+    {
+      "title": "Data Center a Modena: dati in pasto alla guerra",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Rechenzentrum in Modena: Daten zum Fraß für den Krieg\n"
+    },
+    {
+      "title": "Sciences Po Lyon En Lutte - Vendredi 2 octobre mobilisons-nous",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Sciences Po Lyon En Lutte - Vendredi 2 octobre mobilisons-nous\n"
+    },
+    {
+      "title": "Se não pelas mulheres, por quem? O que defendem deputados que se opõem ao PL da Misoginia",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Wenn nicht für die Frauen, für wen? Wofür Abgeordnete stehen, die sich gegen das Misogynie-Gesetz stellen\n"
+    },
+    {
+      "title": "The Grid Inside the Grid",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Das Netz im Netz\n"
+    },
+    {
+      "title": "Yılmaz: Visually impaired people face barriers to sport",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Yılmaz: Sehbehinderte Menschen begegnen Barrieren beim Sport\n"
+    },
+    {
+      "title": "Labnotes | Ang kontradiksyon ng renewable energy transition sa Pilipinas",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Labnotes | Ang kontradiksyon ng renewable energy transition sa Pilipinas\n"
+    },
+    {
+      "title": "Δράσεις και εκδηλώσεις για την προστασία του περιβάλλοντος και των δημόσιων χώρων από 2/10 έως 10/10",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Aktionen und Veranstaltungen zum Schutz der Umwelt und öffentlicher Räume vom 2.10. bis 10.10.\n"
+    },
+    {
+      "title": "La banalizzazione della montagna",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Die Banalisierung der Berge\n"
+    },
+    {
+      "title": "Blocchi nei licei in Francia: la protesta continua e si espande",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Blockaden an Gymnasien in Frankreich: Der Protest hält an und weitet sich aus\n"
+    },
+    {
+      "title": "L'antifascisme n'est pas vaincu, il est une lutte constante",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Antifaschismus ist nicht besiegt, er ist ein ständiger Kampf\n"
+    },
+    {
+      "title": "Algot Rosberg - Röda flammor",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Algot Rosberg – Röda flammor\n"
+    },
+    {
+      "title": "Axel Holmström - Skräckväldet på Långholmen",
+      "status": 200,
+      "cache": "HIT",
+      "translatedTitle": "Axel Holmström – Die Schreckensherrschaft auf Långholmen\n"
+    }
+  ],
+  "errors": []
+}
