@@ -1,0 +1,92 @@
+
+ ⛅️ wrangler 4.114.0 (update available 4.146.0)
+───────────────────────────────────────────────
+Created:     2026-07-27T17:31:03.243Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     WRN cost guard v1: preview URLs disabled
+Version(s):  (100%) b93b551d-1993-4fc8-9958-61f7971d5bd3
+                 Created:  2026-07-27T17:31:00.781Z
+                     Tag:  wrn-cost-guard-v1
+                 Message:  WRN cost guard v1: preview URLs disabled
+
+Created:     2026-08-04T17:38:09.126Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) d61f0832-74c2-41fb-88ff-7fd6ed71bc14
+                 Created:  2026-08-04T17:38:06.744Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-05T08:41:00.646Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     Bereitgestellte Version b8fa5c91
+Version(s):  (100%) b8fa5c91-13e3-4fc6-ba42-e0339d3d32cf
+                 Created:  2026-08-05T08:40:59.337Z
+                     Tag:  -
+                 Message:  Secret hinzufügen: GEMINI_KEY_5
+
+Created:     2026-08-05T08:54:16.719Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     Bereitgestellte Version 2a012ce3
+Version(s):  (100%) 2a012ce3-929e-43a3-8cca-768824266c64
+                 Created:  2026-08-05T08:54:15.509Z
+                     Tag:  -
+                 Message:  Aktualisiertes Secret: GEMINI_KEY_5
+
+Created:     2026-08-05T10:03:01.019Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 0b56b695-56e3-42aa-be9f-9f06248e49fa
+                 Created:  2026-08-05T10:02:58.451Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-05T10:06:28.633Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     WRN 2.0.4 feedback inbox and Gemini 5 reserve activation
+Version(s):  (100%) 4ad0e9b6-4fae-4009-a7b3-260b1ece2758
+                 Created:  2026-08-05T10:06:26.167Z
+                     Tag:  -
+                 Message:  WRN 2.0.4 feedback inbox and Gemini 5 reserve activation
+
+Created:     2026-08-05T10:08:06.540Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     WRN 2.0.4 verified direct bundle deployment
+Version(s):  (100%) 241151ec-f964-4982-a60d-4a8c63b35b3d
+                 Created:  2026-08-05T10:08:03.745Z
+                     Tag:  -
+                 Message:  WRN 2.0.4 verified direct bundle deployment
+
+Created:     2026-08-05T16:12:11.743Z
+Author:      paghklo@gmail.com
+Source:      Upload
+Message:     Automatic deployment on upload.
+Version(s):  (100%) 8a7edf89-48a6-40d6-8927-8b4616615607
+                 Created:  2026-08-05T16:12:11.743Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-05T17:14:17.541Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 3a9d3414-d8b9-4277-ae27-ec29576fcb35
+                 Created:  2026-08-05T17:14:15.043Z
+                     Tag:  -
+                 Message:  -
+
+Created:     2026-08-09T13:04:01.247Z
+Author:      paghklo@gmail.com
+Source:      Unknown (deployment)
+Message:     -
+Version(s):  (100%) 039864f6-f4dc-41be-a820-16dda00607ae
+                 Created:  2026-08-09T13:03:59.458Z
+                     Tag:  -
+                 Message:  -

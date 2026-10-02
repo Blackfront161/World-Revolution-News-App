@@ -55,3 +55,13 @@ Freeze `ce2b5565e539cbd1373fef5684cf1997fab5b6e2` ist unabhängig vom Kontrolleu
 Aktuelle Belege: `evidence/translation-autonom-2026-10-02/controller-followup/`. Die Aufnahme `autonom-live-js62-390.jpg` zeigt die echte endgültige Vorschau. Die AABs wurden zur separaten unabhängigen Paketabnahme übergeben. Keine Signierung, kein Play-Upload und kein Cloudflare-Deployment. ROADMAP-/Artefaktstatus ist nachgepflegte Dokumentation; die AABs bleiben unverändert an `ce2b556` gebunden.
 
 Die separate unabhängige AAB-Abnahme ist anschließend **PASS**: vollständige ZIP-Lesbarkeit, keine doppelten Pfade, jarsigner bestätigt unsigniert, Quell-/Generationsbindung und beide identischen Kandidaten geprüft. Details und Grenzen stehen in `controller-artifact-review.md`. Die Website wurde vom alleinigen Website-Writer im Freeze `4dfbf47` mit Erststart-Retry veröffentlicht und ebenfalls unabhängig live abgenommen; `controller-website-live-review.md` bindet diese Rückmeldung. Signierung, physischer Code33-Test, Play-Upload und die getrennte Cloudflare-Modellmigration bleiben offen.
+
+## Nachtrag: Cloudflare live am 2. Oktober
+
+Nach offizieller erneuerter OAuth-Anmeldung ist Gemini 3.5 Flash-Lite seit 09:48:06 UTC live. Worker-Version `8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c`, vorherige Version und Rollbackpunkt `039864f6-f4dc-41be-a820-16dda00607ae`. Veröffentlichung mit `--keep-vars` und explizitem `GEMINI_MODEL`; bestehende Secrets, Quoten (950/Tag, 20/Minute), Bindings und Herkunftsliste bleiben erhalten. Der gemeinsame Cache-Worker wurde nicht neu veröffentlicht oder geleert.
+
+Direkte deutsche und gemeinsame französische Testanfrage lieferten HTTP200 und das Modell `gemini-3.5-flash-lite` (1.742 bzw. 3.309 Sekunden). Das belegt Verfügbarkeit bei diesen Anfragen; der technische Marker im deutschen Testtitel ist kein Beleg für allgemeine Überschriftqualität. Health und CORS für App/Website/Vorschau bestehen; fremde Herkunft bleibt gesperrt. Versionierte Belege: `evidence/cloudflare-model-2026-10-02/`.
+
+Der Kontrolleur meldete anschließend drei separate Sicherheitsbefunde im bisherigen Worker: unbegrenzte Push-Registrierung mit Auswahl nur der neuesten 2500, beliebige HTTPS-Pushziele und Größenprüfung nur am Content-Length. Die Modellmigration ist funktional erfolgreich, aber nicht als sicherheitsbereinigt abgenommen. Eine separate Korrektur mit Verhaltens- und Angriffstests wird vor erneuter Veröffentlichung unabhängig geprüft.
+
+Der neue ausschließlich an `ce2b556` gebundene Code33-Signierer hat die unabhängige Read-only-Abnahme und den echten Preflight bestanden. Noch keine Signierung, kein physischer Code33-Test und kein Play-Upload. Das App-Paket und sein Produktfreeze bleiben unverändert.

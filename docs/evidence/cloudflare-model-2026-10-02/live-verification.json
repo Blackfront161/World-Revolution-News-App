@@ -1,0 +1,72 @@
+{
+  "observedAtUTC": "2026-10-02T09:49:57.481Z",
+  "workerVersion": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c",
+  "health": [
+    {
+      "endpoint": "https://revolution-proxy.paghklo.workers.dev",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "service": "World Revolution News service",
+        "api": "v2"
+      }
+    },
+    {
+      "endpoint": "https://wrn-translation-cache.paghklo.workers.dev",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "service": "wrn-shared-translation-cache",
+        "version": "1.7.7",
+        "storage": "kv",
+        "upstreamConfigured": true,
+        "ttlSeconds": 604800
+      }
+    }
+  ],
+  "cors": [
+    {
+      "origin": "https://solinaridao.com",
+      "status": 204,
+      "allowOrigin": "https://solinaridao.com"
+    },
+    {
+      "origin": "capacitor://localhost",
+      "status": 204,
+      "allowOrigin": "capacitor://localhost"
+    },
+    {
+      "origin": "http://127.0.0.1:8765",
+      "status": 204,
+      "allowOrigin": "http://127.0.0.1:8765"
+    },
+    {
+      "origin": "https://example.invalid",
+      "status": 403,
+      "allowOrigin": null
+    }
+  ],
+  "translations": [
+    {
+      "name": "direct-de",
+      "language": "de",
+      "status": 200,
+      "elapsedMs": 1742,
+      "model": "gemini-3.5-flash-lite",
+      "provider": "gemini",
+      "text": "Community library verification 2026-10-02T09:49:59.357Z---Freiwillige*n eröffneten am Freitag eine Nachbarschaftsbibliothek. Anwohner*innen können Bücher ausleihen und an öffentlichen Diskussionen teilnehmen.",
+      "sharedCache": null
+    },
+    {
+      "name": "shared-fr",
+      "language": "fr",
+      "status": 200,
+      "elapsedMs": 3309,
+      "model": "gemini-3.5-flash-lite",
+      "provider": "gemini",
+      "text": "Vérification de la bibliothèque communautaire 2026-10-02T09:49:59.359Z\n---\nDes bénévoles ont ouvert une bibliothèque communautaire vendredi. Les résidents peuvent emprunter des livres et assister à des discussions publiques.",
+      "sharedCache": "MISS"
+    }
+  ],
+  "status": "PASS"
+}

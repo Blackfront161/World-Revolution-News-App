@@ -1299,9 +1299,9 @@
       "previewCache": "v104"
     },
     "previewUrl": "http://127.0.0.1:8765/index.html?preview=8",
-    "liveTranslationModelObserved": "gemini-3.1-flash-lite",
+    "liveTranslationModelObserved": "gemini-3.5-flash-lite",
     "preferredModelPrepared": "gemini-3.5-flash-lite",
-    "cloudflareDeployment": "not-performed-authentication-expired",
+    "cloudflareDeployment": "published-live-functional-pass-security-followup-pending",
     "appDistribution": "not-signed-not-uploaded-not-live",
     "checks": {
       "javascriptModules": 56,
@@ -1313,16 +1313,16 @@
       "releaseAudit": "161/161"
     },
     "nextSteps": [
-      "Independent review of new source freeze and unsigned candidate",
-      "Authenticated Cloudflare model smoke test and migration",
-      "Signed artifact review, physical device test and bound Play upload"
+      "Independent review and publication of separate Cloudflare security correction",
+      "Local protected signing, signed artifact review, physical Code33 device test and bound Play upload"
     ],
     "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
     "controllerFollowup": {
       "manualLeadButton": "preserved-by-updating-button-label",
       "transientLeadRetry": "one-direct-bounded-retry-after-30-seconds-independent-of-batch-failure-cutoff",
       "terminalErrors": "No-auto-retry-for-origin-auth-quota-and-provider-exhaustion"
-    }
+    },
+    "cloudflareVersion": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c"
   },
   "websiteCurrentRelease20261002": {
     "sourceCommit": "4dfbf47ff8af9809ab537004f8ae5181144dec3e",
@@ -1338,5 +1338,27 @@
     "report": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-website-live-review.md",
     "writer": "WRN Website - Inhaltsparitaet",
     "headChiefWebsiteWrites": false
+  },
+  "cloudflareModelMigration20261002": {
+    "status": "live-functional-pass",
+    "model": "gemini-3.5-flash-lite",
+    "version": "8d2377a5-ea4b-41cf-ae26-4a8d59e18d5c",
+    "publishedAtUTC": "2026-10-02T09:48:06Z",
+    "previousVersion": "039864f6-f4dc-41be-a820-16dda00607ae",
+    "secretsAndExistingVars": "preserved; no secret values read",
+    "translationDailyLimit": 950,
+    "translationMinuteLimit": 20,
+    "sharedCacheWorker": "unchanged; existing entries preserved",
+    "liveChecks": "direct DE and cache FR HTTP200, both report gemini-3.5-flash-lite; health and CORS pass",
+    "evidence": "docs/evidence/cloudflare-model-2026-10-02/live-verification.json",
+    "securityFollowup": "three independently reported findings; separate fix under review, not yet published"
+  },
+  "code33ProtectedSigning20261002": {
+    "status": "independent-preflight-pass-not-signed-not-uploaded",
+    "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
+    "script": "scripts/sign-google-play-aab-2.1.2-code33-ce2b556-gui.ps1",
+    "scriptSha256": "2C0E5382DED5793C950EFA3E8175613772B5994CDCECFBAC3B15BFC0C7F8C4B6",
+    "unsignedSha256": "3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD",
+    "evidence": "docs/evidence/cloudflare-model-2026-10-02/code33-ce2b556-preflight.json"
   }
 }
