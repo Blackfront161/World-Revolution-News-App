@@ -26,5 +26,11 @@
       "purpose": "Original editorial illustration for ANRed land rights reading note, no documentary event representation"
     },
     "noForeignSourceImageCopied": true
+  },
+  "webOptimizedAsset": {
+    "localAssetPath": "C:\\Users\\patri\\Documents\\World Rev Ne\\wrn-github-app-current\\docs\\handoffs\\website-media-2026-10-02\\assets\\wrn-land-rights-illustration-v1.webp",
+    "sha256": "e33d13ae13efbf10463e6bb1e660f02305b323ae83ef2e4aa22c58f579b111ab",
+    "bytes": 455444,
+    "derivation": "Encoding-only WebP derivative at original dimensions, quality85. Original PNG preserved. Same illustration, no crop or compositing."
   }
 }
