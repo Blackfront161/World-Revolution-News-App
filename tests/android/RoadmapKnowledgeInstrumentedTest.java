@@ -50,6 +50,10 @@ public class RoadmapKnowledgeInstrumentedTest {
       waitTrue(scenario,"document.querySelectorAll('[data-learning-podcast]').length === 7");
       assertEquals("true",js(scenario,"document.querySelectorAll('[data-learning-book]').length === 30"));
       assertEquals("true",js(scenario,"document.documentElement.dataset.theme === 'autonom'"));
+      js(scenario,"document.querySelector('[data-view-target=\"media\"]').click()");
+      waitTrue(scenario,"Boolean(document.querySelector('.media-section-tabs'))");
+      js(scenario,"document.querySelector('[data-action=\"media-section\"][data-value=\"podcasts\"]').click()");
+      waitTrue(scenario,"Boolean(document.querySelector('a[href=\"https://www.lora.ch/radio/audiothek\"]') && document.querySelector('a[href=\"https://radiokurruf.org/tag/podcast/\"]'))");
       js(scenario,"document.querySelector('#next-language').value='fr'; document.querySelector('#next-language').dispatchEvent(new Event('change',{bubbles:true}))");
     }
     try(ActivityScenario<MainActivity> restarted=ActivityScenario.launch(MainActivity.class)){

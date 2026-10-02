@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "languages": 9,
+  "podcastLinks": 7,
+  "bookLinks": 30,
+  "pageErrors": [],
+  "hashes": {
+    "app-listening-path-autonom-390.png": {
+      "bytes": 49746,
+      "sha256": "0ab39a4fcc7e3f29379aaeb78622ba047cebf7d94c4b224e874b4df04832a0d6"
+    },
+    "app-lexicon-fr-autonom-390.png": {
+      "bytes": 45881,
+      "sha256": "965c56a97f36997e6d567e68ee3f560602d0f2574dc3df45c955c83ee98ce108"
+    }
+  }
+}

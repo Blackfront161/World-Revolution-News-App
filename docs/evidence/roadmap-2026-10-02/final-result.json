@@ -1,0 +1,41 @@
+{
+  "schema": "wrn.roadmap-release-evidence.v1",
+  "sourceCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
+  "versionCode": 33,
+  "versionName": "2.1.2",
+  "status": "INDEPENDENT-PASS-UNSIGNED",
+  "artifactSha256": "A55A3E13AFF32A07D1692B1F6937E1E4F59C4846D990AE191A24F66E53EC385E",
+  "artifactBytes": 44335811,
+  "sourceAssets": 356,
+  "payloadFiles": 802,
+  "reproducibleBuilds": 2,
+  "signed": false,
+  "uploaded": false,
+  "physicalCode33Test": false,
+  "signingApproval": "pending; automated approval rejected opening GUI, user question presented",
+  "qaPackage": "com.world.revolution.autonomtest",
+  "qaInternetPermission": false,
+  "nativeTests": {
+    "code32Seed": 1,
+    "code32To33Upgrade": 1,
+    "processRestartKnowledgeAndSharing": 4,
+    "status": "PASS",
+    "actualMediaEntryAndBothDirectories": true
+  },
+  "qaSourceChangeAfterFreeze": "tests/android/RoadmapKnowledgeInstrumentedTest.java adds actual media entry assertions only; production AAB unchanged",
+  "productFix": "Directory block moved from renderVideoSection to renderMedia, where section exists. Old5d5 artifact superseded.",
+  "verification": {
+    "jsModules": 54,
+    "pythonTests": 151,
+    "historicalSkips": 3,
+    "subtests": 4,
+    "pythonMainOnly": 4,
+    "audit": "161/161",
+    "knowledgeBrowser": "9 languages x4 widths PASS",
+    "audioBrowser": "actual media entry and native/browser/copy/manual/cancel scenarios PASS"
+  },
+  "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+  "googlePlayVerified": "Code32 live100%178countries; German6screenshots+trailer visible; no pending review",
+  "website": "7533fe1 content base independently accepted; newer20min-layout task owns all writes/Hostinger publication; HeadChief did not transfer files",
+  "documentaryCommitAfterFreeze": true
+}

@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 /2.1.2 ist live bei Google Play,100%Rollout178Laender. Keine laufende Google-Pruefung am2.Oktober sichtbar. NeueKatalog-/Wissensinhalte gehoeren zum getrennten Code33-Kandidaten.",
+    "status": "Code32 / 2.1.2 is live: Google Play100% rollout in178 countries, verified2026-10-02. Roadmap contents belong to the separate unsigned Code33 candidate.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -82,7 +82,7 @@
       "reviewRestartForStoreMedia": {
         "approvedByUser": true,
         "performedAt": "2026-10-01",
-        "status": "google-review-in-progress",
+        "status": "published-public-german-gallery-and-trailer-verified-20261002",
         "report": "docs/evidence/store-media-2026-10-01/store-media-submission.json"
       },
       "liveVerifiedAt": "2026-10-02"
@@ -475,7 +475,8 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Website48FileCandidateund5UploadZIPsgeprueft. Hostingeranmelden; vollstaendigenLiveRoot/2PointerBackupverifizieren; geordnethochladen; oeffentlicheHash-/CSP-/Rollback-/Offlinetests."
+      "remaining": "Website48FileCandidateund5UploadZIPsgeprueft. Hostingeranmelden; vollstaendigenLiveRoot/2PointerBackupverifizieren; geordnethochladen; oeffentlicheHash-/CSP-/Rollback-/Offlinetests.",
+      "publicationCoordination": "WRN Website - Inhaltsparitaet owns the newer PO20min layout; historical7533fe1 content review remains valid only for unchanged paths."
     },
     {
       "id": "CONTENT-CATALOG-PARITY",
@@ -861,7 +862,7 @@
         "archiveRetention": "All previous app and data IDs retained; latest remote archive merged",
         "counts": {
           "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
-          "appReleaseCommit": null,
+          "appReleaseCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
           "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
           "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
           "books": 728,
@@ -1144,6 +1145,21 @@
       "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
       "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
       "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+    },
+    "roadmapPackage20261002": {
+      "sourceCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
+      "javascriptModules": 54,
+      "pythonTests": 151,
+      "pythonHistoricalSkips": 3,
+      "pythonSubtests": 4,
+      "mainOnlyScripts": 4,
+      "releaseAudit": "161/161 PASS",
+      "browserKnowledge": "9 languages x 4 widths PASS",
+      "browserAudio": "actual media entry, share/copy/cancel/manual fallback PASS",
+      "android": "isolated no-INTERNET package, actual32->33 upgrade1+1 and process-restarted knowledge/share4 PASS",
+      "reproducibleBuilds": 2,
+      "independentReview": "PASS unsigned artifact/source/signer only",
+      "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
     }
   },
   "excluded": [
@@ -1153,9 +1169,9 @@
     "serverseitige Standortverfolgung"
   ],
   "releaseGates": [
-    "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
-    "Autorisierte Signierung und Store-Freigabe an den neuen commitgenauen Code31-Kandidaten binden; Code29-Baseline enthält Autonom nicht.",
-    "Android-Signierung und Store-Upload bleiben nicht autorisiert; separat autorisierte Website-Nachrichten-/Directoryveröffentlichung am 01.10.2026 abgeschlossen."
+    "Code33 local signing requires explicit user approval and masked keystore entry; automatic review rejected opening signer on2026-10-02.",
+    "Independent verification of signed Code33 and physical Code33 test remain pending; upload authorization must bind the final signed artifact.",
+    "Website newer PO20min-layout publication belongs to WRN Website - Inhaltsparitaet; preserve full backup, old pointers and rights/revocation/SW gates."
   ],
   "previousUnsignedCandidate": {
     "version": "2.1.2",
@@ -1196,17 +1212,22 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "building-corrected-unsigned-candidate",
-    "sourceCommit": null,
+    "status": "independently-accepted-unsigned-candidate",
+    "sourceCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
     "signatureVerified": false,
     "uploadPerformed": false,
     "releaseReady": false,
     "report": "docs/ROADMAP-PACKAGE-2026-10-02.md",
-    "note": "Exact artifact/source binding is recorded after this freeze; priorCode33 files are superseded. PhysicalCode33 test and signing pending."
+    "note": "Two reproducible unsigned builds independently accepted. Frozen AAB contains ROADMAP at fb937dd; this operational status is a later documentation update and does not alter the artifact.",
+    "artifactSha256": "A55A3E13AFF32A07D1692B1F6937E1E4F59C4846D990AE191A24F66E53EC385E",
+    "artifactBytes": 44335811,
+    "signing": "pending-explicit-user-approval-and-masked-keystore-entry",
+    "physicalCode33Test": "pending",
+    "independentReview": "docs/evidence/roadmap-2026-10-02/controller-final-review.md"
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
-    "appReleaseCommit": null,
+    "appReleaseCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
     "publishedDataCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
     "websiteCommit": "7533fe1d487ccf702428485d7d104035271ec9e4",
     "books": 728,
@@ -1222,7 +1243,8 @@
     "translatedDraftTermsFR_ES": 4,
     "newAudioDirectories": 2,
     "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
-    "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
+    "report": "docs/ROADMAP-PACKAGE-2026-10-02.md",
+    "websiteStatus": "Content base 7533fe1 accepted locally; newer direct PO20min-layout task owns website and Hostinger publication. No parallel HeadChief deployment."
   },
   "playReviewDiagnosis20261002": {
     "status": "resolved-release-live",

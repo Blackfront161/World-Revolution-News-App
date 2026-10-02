@@ -1,0 +1,8 @@
+
+com.world.revolution.AutonomUpgradeInstrumentedTest:.
+
+Time: 4.677
+
+OK (1 test)
+
+

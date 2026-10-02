@@ -1,0 +1,69 @@
+{
+  "sourceCommit": "fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf",
+  "files": {
+    "app-lexicon-fr-autonom-390.png": {
+      "bytes": 45881,
+      "sha256": "965c56a97f36997e6d567e68ee3f560602d0f2574dc3df45c955c83ee98ce108"
+    },
+    "app-listening-path-autonom-390.png": {
+      "bytes": 49746,
+      "sha256": "0ab39a4fcc7e3f29379aaeb78622ba047cebf7d94c4b224e874b4df04832a0d6"
+    },
+    "browser-result.json": {
+      "bytes": 482,
+      "sha256": "d40b4e4d22cbe8afa7721585207f7e4c505c7b318f4bb053d05cd1b5f8da4d10"
+    },
+    "code33-signer-preflight.json": {
+      "bytes": 1766,
+      "sha256": "6d79e952a7d61d3ebc6679bd336fdeb01b021f9b2d77f9bb04f365a787808e6d"
+    },
+    "directory-mode-review.md": {
+      "bytes": 1941,
+      "sha256": "6d6cbd2424cf805819273909e6a5c5f29c340330f7932eca62fc58eeed2ca569"
+    },
+    "release-audit.json": {
+      "bytes": 33093,
+      "sha256": "a42f6d275ae4caffe07f27269457dfd0d95eeb73c040919a215253efc9ffd570"
+    },
+    "release-report-code33-build1.json": {
+      "bytes": 1408,
+      "sha256": "05e83b376c5c1ecbf26687f3d9311f1d0ce83018f106e6c5265569e1666a1f06"
+    },
+    "release-report-code33-build2.json": {
+      "bytes": 1408,
+      "sha256": "b99a493b1841b79b2b5edd0799ffe0395eecefdf83250975f4b3ecaa02c970ce"
+    },
+    "source-final-review.md": {
+      "bytes": 7700,
+      "sha256": "313db082961b6f5978e2e789f84d62e87de02852efc39b90e71a65d4f1aeacfd"
+    },
+    "controller-final-review.md": {
+      "bytes": 9509,
+      "sha256": "89a5bca89e3fb64a05d09fdaca6557e8c352cd729a13d7e08202071f4b8e9918"
+    },
+    "audio-sharing-browser-result.json": {
+      "bytes": 725,
+      "sha256": "f5de297167c1334f17251d700b1f86cd827f8c344d5f7edd75fbccad09bb05b9"
+    },
+    "code32-to33-seed.txt": {
+      "bytes": 91,
+      "sha256": "23c8febde3d6f453785edc69b394b3dc41c9703877effba1fcdf4cb25d0ed4aa"
+    },
+    "code32-to33-upgrade.txt": {
+      "bytes": 91,
+      "sha256": "865f39645b4572361558c7c7e76cf83a93cfd17a54a25edd6873a0fc3092d9a4"
+    },
+    "code33-offline-sharing.txt": {
+      "bytes": 150,
+      "sha256": "e4470729a407bd7eff6a53dbcf7939fe703da44dc87948a9e647defd9a2d065d"
+    },
+    "full-contract-matrix.txt": {
+      "bytes": 6227,
+      "sha256": "e353214d340547890f5164034561bda1d1bf52b6baabab24b1427052ec432f01"
+    },
+    "final-result.json": {
+      "bytes": 1840,
+      "sha256": "a780aaa304506b53e5360f4ce23d8f0d8c09a10665aeb39675465614cb7d8866"
+    }
+  }
+}
