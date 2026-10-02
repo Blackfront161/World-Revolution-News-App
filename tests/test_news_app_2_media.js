@@ -52,6 +52,13 @@ const radio = media.normalizeRadio({
 });
 assert.strictEqual(radio.streamUrl, 'https://example.org/live.mp3');
 assert.strictEqual(radio.streams.length, 1);
+const checkedRadio = media.normalizeRadio({streamCandidates: ['https://example.org/backup.mp3', 'https://example.org/live.mp3']}, {ok: true, workingStream: 'https://example.org/live.mp3', checkedAt: '2026-10-02'});
+assert.deepStrictEqual(checkedRadio.streams, ['https://example.org/live.mp3', 'https://example.org/backup.mp3']);
+assert.strictEqual(checkedRadio.lastChecked, '2026-10-02');
+const limitedRadio = media.normalizeRadio({streamCandidates: ['https://example.org/backup.mp3']}, {ok: false, status: 'warning', workingStream: 'https://example.org/stale.mp3'});
+assert.deepStrictEqual(limitedRadio.streams, ['https://example.org/backup.mp3']);
+assert.strictEqual(limitedRadio.healthStatus, 'warning');
+assert.deepStrictEqual(media.normalizeRadio({streamCandidates: 'invalid'}).streams, []);
 
 const filtered = media.filterItems([political], {
   query: 'abolition',

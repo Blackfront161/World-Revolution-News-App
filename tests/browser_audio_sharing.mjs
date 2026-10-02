@@ -10,6 +10,7 @@ if (!runtime) throw Error('Set WRN_PLAYWRIGHT_MODULE to the installed @playwrigh
 const { chromium, expect } = await import(pathToFileURL(runtime).href);
 const root = path.resolve('.');
 const output = path.resolve('.tmp/audio-sharing');
+const appUrl = 'https://play.google.com/store/apps/details?id=com.world.revolution';
 fs.mkdirSync(output, { recursive: true });
 const original = {
   id: 'share-original', title: 'Antifaschismus und soziale Kämpfe', sourceName: 'Radio CORAX',
@@ -73,8 +74,9 @@ try {
   assert.equal((await page.evaluate(() => window.__audioShares[0])).url, original.episodeUrl);
   await originalCard.getByRole('button', { name: `Link kopieren: ${original.title}`, exact: true }).click();
   await expect(originalCard.locator('[role="status"]').filter({ hasText: 'Link kopiert.' })).toBeVisible();
-  assert.equal(await page.evaluate(() => window.__audioCopies[0]), original.episodeUrl);
-  result.checks.push('Actual original podcast card shares the exact episode and copies its URL.');
+  const copiedEpisode = await page.evaluate(() => window.__audioCopies[0]);
+  assert(copiedEpisode.endsWith(original.episodeUrl) && copiedEpisode.includes(appUrl));
+  result.checks.push('Actual original podcast card copies its episode URL together with the App reference.');
   await page.evaluate(() => Object.defineProperty(navigator, 'share', { configurable: true, value: async () => { throw new DOMException('Canceled', 'AbortError'); } }));
   await originalCard.getByRole('button', { name: `Teilen: ${original.title}`, exact: true }).click();
   await expect(originalCard.getByRole('button', { name: `Teilen: ${original.title}`, exact: true })).toBeEnabled();
@@ -87,15 +89,20 @@ try {
   await originalCard.getByRole('button', { name: `Link kopieren: ${original.title}`, exact: true }).click();
   await expect(originalCard.locator('.audio-share-link')).toBeVisible();
   await expect(originalCard.locator('.audio-share-link')).toBeFocused();
-  await expect(originalCard.locator('.audio-share-link')).toHaveValue(original.episodeUrl);
+  assert((await originalCard.locator('.audio-share-link').inputValue()).endsWith(original.episodeUrl));
+  assert((await originalCard.locator('.audio-share-link').inputValue()).includes(appUrl));
   result.checks.push('Denied clipboard reveals the selected, labeled manual copy field.');
   await page.locator('[data-action="media-section"][data-value="radio"]').click();
   await page.evaluate(() => { window.Capacitor = { isNativePlatform: () => true, Plugins: { Share: { share: async data => window.__audioShares.push(data) } } }; });
   const radioCard = page.locator('.radio-card').filter({ hasText: station.name });
   await radioCard.getByRole('button', { name: `Teilen: ${station.name}`, exact: true }).click();
   await expect.poll(() => page.evaluate(() => window.__audioShares.length)).toBe(2);
-  assert((await page.evaluate(() => window.__audioShares[1])).text.includes('Anhören mit der World Revolution News App:'));
+  assert((await page.evaluate(() => window.__audioShares[1])).text.includes('Originalangebot über die World Revolution News App entdecken:'));
+  assert((await page.evaluate(() => window.__audioShares[1])).text.includes(appUrl));
   assert.equal((await page.evaluate(() => window.__audioShares[1])).url, station.website);
+  await radioCard.getByRole('button', {name:`Link kopieren: ${station.name}`,exact:true}).click();
+  const copiedRadio = await radioCard.locator('.audio-share-link').inputValue();
+  assert(copiedRadio.includes(appUrl) && copiedRadio.endsWith(station.website));
   result.checks.push('A radio without a direct stream still opens the Capacitor share bridge with its station website.');
   await page.locator('[data-action="media-section"][data-value="generated"]').click();
   const generatedCard = page.locator('.podcast-card').filter({ hasText: generated.title });
@@ -132,8 +139,9 @@ try {
   const classicEpisode = classic.locator('.wrn-audio-card-183').filter({ hasText: original.title });
   await classicEpisode.getByRole('button', { name: `Link kopieren: ${original.title}`, exact: true }).click();
   await expect.poll(() => classic.evaluate(() => window.__audioCopies.length)).toBe(1);
-  assert.equal(await classic.evaluate(() => window.__audioCopies[0]), original.episodeUrl);
-  result.checks.push('Actual Classic Audio-Hub shares homepage-only radio and copies the original episode URL.');
+  const classicCopy = await classic.evaluate(() => window.__audioCopies[0]);
+  assert(classicCopy.endsWith(original.episodeUrl) && classicCopy.includes(appUrl));
+  result.checks.push('Actual Classic Audio-Hub shares directory-only radio and copies episode plus App reference.');
   result.status = 'PASS';
 } finally {
   if (browser) await browser.close();

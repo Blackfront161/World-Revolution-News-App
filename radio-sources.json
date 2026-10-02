@@ -632,5 +632,36 @@
       "WORT"
     ],
     "streamCandidates": []
+  },
+  {
+    "id": "3cr",
+    "name": "3CR Community Radio",
+    "city": "Melbourne",
+    "country": "AU",
+    "region": "Oceania",
+    "languages": [
+      "en",
+      "multi"
+    ],
+    "topics": [
+      "Freie Radios",
+      "Arbeit",
+      "Antifaschismus",
+      "Indigene Perspektiven"
+    ],
+    "description": "Community radio aus Melbourne; Originalprogramm und Liveangebot des Senders.",
+    "website": "https://www.3cr.org.au/",
+    "streamCandidates": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/3CR.mp3"
+    ],
+    "healthStatus": "unknown",
+    "lastChecked": "",
+    "streamEvidenceUrl": "https://www.3cr.org.au/streaming",
+    "rightsReview": {
+      "status": "original-live-stream-link-only",
+      "reviewedAt": "2026-10-02",
+      "redistribution": "not-granted",
+      "offlineAudio": "not-granted"
+    }
   }
 ]

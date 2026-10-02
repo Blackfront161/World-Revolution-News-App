@@ -1,5 +1,7 @@
 # Cloudflare-Schutzprüfung vom 27. Juli 2026
 
+> Historischer Bericht. Die nachstehenden Versions- und Rollback-IDs gelten für den 27. Juli, nicht für die heutige Produktion. Der Kontrolleur meldete am 2. Oktober als aktive Versionen: `revolution-proxy` Version42 / `b4344450-d9f3-4e2e-9889-1c961c725508` (Commit `3a429a8`) und `wrn-translation-cache` Version11 / `13f8710b-7eb3-4a6a-a7fb-85b3769bd730` (Commit `0e525637`), jeweils100%. Diese Meldung ersetzt keine erneute Live-Abfrage. Die historischen Vorgängerversionen unten sind keine bestätigte aktuelle Rollback-Kette.
+
 ## Ergebnis
 
 Beide produktiven Worker wurden mit einem mehrstufigen Kostenschutz
@@ -7,7 +9,7 @@ veröffentlicht. Das Cloudflare-Konto verwendet den Workers-Free-Tarif. Dessen
 Plattformgrenzen laufen fail-closed; bei Erreichen der kostenlosen Grenzen
 entstehen dadurch keine automatischen Workers-Request-Überkosten.
 
-## Aktive Versionen und Rollback
+## Historische Versionen und damaliger Rollback
 
 | Worker | Aktive Version | Vorherige Rollback-Version |
 | --- | --- | --- |

@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-10-03 Asia/Singapore",
+  "scope": "IAB local isolated page using actual media-player.js release5 and official ORANGE stream",
+  "url": "https://securestream.o94.at/live.mp3",
+  "observations": [
+    "loadeddata readyState3 error0",
+    "playing readyState3 pausedfalse error0",
+    "later wrnmediastopped reasonmanual; not a sustained playback test"
+  ],
+  "limits": "Does not establish all station playback on Android or continuous availability."
+}

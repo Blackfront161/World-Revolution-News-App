@@ -48,10 +48,12 @@ try {
 
   const checkHeader=async label=>{
     const layout=await p.evaluate(()=>{
-      const es=['#next-menu-toggle','#next-brand-link','#next-website-link','.language-control','#next-search-toggle'].map(sel=>document.querySelector(sel));
-      return es.map(e=>{const r=e.getBoundingClientRect();return {row:getComputedStyle(e).gridRowStart,x:r.x,right:r.right,width:r.width,height:r.height,scrollWidth:e.scrollWidth,clientWidth:e.clientWidth};});
+      const es=['#next-menu-toggle','#next-brand-link','#next-website-link','.language-control'].map(sel=>document.querySelector(sel));
+      return es.map(e=>{const r=e.getBoundingClientRect();return {row:getComputedStyle(e).gridRowStart,x:r.x,right:r.right,width:r.width,height:r.height,scrollWidth:e.scrollWidth,clientWidth:e.clientWidth,children:[...e.children].map(c=>({text:c.textContent,display:getComputedStyle(c).display,font:getComputedStyle(c).fontSize,width:c.getBoundingClientRect().width})),after:getComputedStyle(e,'::after').content};});
     });
     assert(layout.every(e=>e.row==='1'),`${label}: all header controls must share the title row`);
+    assert.equal(await p.locator('#next-search-toggle').isVisible(),false,'Autonom header does not show the search icon');
+    if(!label.startsWith('200%'))assert(await p.locator('.brand__autonom').evaluate(e=>e.getBoundingClientRect().height<=parseFloat(getComputedStyle(e).fontSize)*1.2),'Autonom title fits one text line at normal size');
     for(let i=1;i<layout.length;i++)assert(layout[i-1].right<=layout[i].x+1,`${label}: overlapping header controls`);
     assert(layout.filter((_,i)=>i!==1).every(e=>e.width>=44&&e.height>=44),`${label}: header touch target below44px ${JSON.stringify(layout)}`);
     assert(layout.every(e=>e.scrollWidth<=e.clientWidth+1),`${label}: header content clipped ${JSON.stringify(layout)}`);

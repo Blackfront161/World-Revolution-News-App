@@ -167,8 +167,10 @@
     };
   }
 
-  function normalizeRadio(item) {
-    const streams = (item?.streamCandidates || []).map(safeUrl).filter(Boolean);
+  function normalizeRadio(item, health = {}) {
+    const candidates = Array.isArray(item?.streamCandidates) ? item.streamCandidates : [];
+    const checkedStream = health.ok && health.workingStream ? health.workingStream : '';
+    const streams = [...new Set([checkedStream, ...candidates, item?.streamUrl].map(safeUrl).filter(Boolean))];
     return {
       id: text(item?.id || item?.name),
       name: text(item?.name || 'Radio'),
@@ -181,7 +183,8 @@
       website: safeUrl(item?.website),
       streams,
       streamUrl: streams[0] || '',
-      healthStatus: text(item?.healthStatus || 'unknown')
+      healthStatus: text(health.status || item?.healthStatus || 'unknown'),
+      lastChecked: text(health.lastChecked || health.checkedAt || item?.lastChecked)
     };
   }
 

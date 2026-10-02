@@ -57,8 +57,8 @@ def test_current_release_metadata_is_consistent() -> None:
     for version in ("2.1.2", "2.1.2-dev.1-test", "2.1.2-dev.1-preview"):
         assert version in config
     assert "2026.09.27-wrn-2.1.2-release" in config
-    assert "wrn-app-v2.1.2-r21" in worker and "wrn-data-v2.1.2-r1" in worker
-    assert "`${CACHE_PREFIX}v109`" in preview_worker
+    assert "wrn-app-v2.1.2-r22" in worker and "wrn-data-v2.1.2-r1" in worker
+    assert "`${CACHE_PREFIX}v110`" in preview_worker
     for release_contract in (app_check, diagnostics, selftest):
         assert "2.1.2" in release_contract
 

@@ -39,6 +39,8 @@ const flush = () => new Promise(resolve => setImmediate(resolve));
 (async () => {
   const { api } = setup();
   assert.equal(api.getShareData({ kind: 'radio', name: 'Sender', website: 'https://example.org/', streamUrl: 'https://example.org/live' }).url, 'https://example.org/');
+  assert(api.getShareData({kind:'radio',name:'Playable',website:'https://example.org/',streamUrl:'https://example.org/live'}).text.includes('Anhören'));
+  assert(api.getShareData({kind:'radio',name:'Directory only',website:'https://example.org/'}).text.includes('entdecken'));
   assert.equal(api.getShareData({ kind: 'radio', streamUrl: 'https://example.org/live' }).url, 'https://example.org/live');
   assert.equal(api.getShareData({ kind: 'original', episodeUrl: 'https://example.org/episode', audioUrl: 'https://example.org/audio.mp3' }).url, 'https://example.org/episode');
   assert.equal(api.getShareData({ kind: 'original', audioUrl: 'https://example.org/audio.mp3' }).url, 'https://example.org/audio.mp3');
@@ -72,7 +74,7 @@ const flush = () => new Promise(resolve => setImmediate(resolve));
   assert(payload.text.includes('https://play.google.com/store/apps/details?id=com.world.revolution'));
   assert.equal(copied, '');
   web.controls[1].listeners.click(); await flush();
-  assert.equal(copied, payload.url);
+  assert.equal(copied, `${payload.text}\n\n${payload.url}`);
   assert.equal(web.controls[2].textContent, 'Link kopiert.');
 
   for (const error of [{ name: 'AbortError' }, { message: 'Share canceled' }, { code: 'USER_CANCELLED' }]) {
@@ -92,7 +94,8 @@ const flush = () => new Promise(resolve => setImmediate(resolve));
   const manual = setup({ navigator: { clipboard: { writeText: async () => { throw Error('Denied'); } } } });
   manual.controls[1].listeners.click(); await flush();
   assert(!manual.controls[3].hidden && manual.controls[3].selected);
-  assert.equal(manual.controls[3].value, 'https://www.freie-radios.net/143922');
+  assert(manual.controls[3].value.endsWith('https://www.freie-radios.net/143922'));
+  assert(manual.controls[3].value.includes('https://play.google.com/store/apps/details?id=com.world.revolution'));
   assert.equal(manual.controls[2].textContent, 'Diesen Link manuell kopieren:');
   assert.equal(manual.document.activeElement, manual.controls[3]);
   manual.controls[0].listeners.click(); await flush();

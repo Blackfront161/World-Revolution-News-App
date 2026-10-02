@@ -9293,11 +9293,7 @@
     state.radioStations = radioResult.status === 'fulfilled' && Array.isArray(radioResult.value)
       ? radioResult.value.map(item => {
         const health = radioHealth[item.id] || {};
-        return media.normalizeRadio({
-          ...item,
-          streamCandidates: health.ok && health.workingStream ? [health.workingStream] : [],
-          healthStatus: health.status || item.healthStatus
-        });
+        return media.normalizeRadio(item, health);
       })
       : [];
     state.videoItems = videoFeedResult.status === 'fulfilled' && Array.isArray(videoFeedResult.value?.items)

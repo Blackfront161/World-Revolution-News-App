@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-03",
   "releasedBaseline": {
     "version": "2.0.8",
     "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
@@ -392,7 +392,7 @@
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "data-published-website-independent-local-pass-hostinger-login-required",
+      "status": "live-layout-reported-content-and-image-handoff-in-progress",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -476,7 +476,14 @@
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
       "remaining": "Website publication and first-start blocker closed in 4dfbf47; no further website deployment pending for this package.",
-      "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002."
+      "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
+      "latestHandoff": {
+        "imageCommit": "b777198",
+        "manifest": "docs/handoffs/website-media-2026-10-02/image-handoff-v1.json",
+        "webpBytes": 455444,
+        "publicationOwner": "WRN Website – Inhaltsparität",
+        "fullContentParityComplete": false
+      }
     },
     {
       "id": "CONTENT-CATALOG-PARITY",
@@ -774,7 +781,13 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "151weitereBegriffeuebersetzen/Editorialreview; kuratierteDossierverknuepfungen;10weitereDEBibliothekskandidatenpruefen;4automatischeBibliotheksadapternochzuimplementieren; freigegebeneOffline-Lernpakete."
+      "remaining": "151weitereBegriffeuebersetzen/Editorialreview; kuratierteDossierverknuepfungen;10weitereDEBibliothekskandidatenpruefen;4automatischeBibliotheksadapternochzuimplementieren; freigegebeneOffline-Lernpakete.",
+      "currentScope": {
+        "libraryItems": 728,
+        "lexiconTerms": 167,
+        "learningPaths": 4,
+        "note": "Current app content; previous implementation batches above remain historical."
+      }
     },
     {
       "id": "PODCAST-CATALOG-EXPANSION",
@@ -906,6 +919,71 @@
         "freigegebene Offline-Materialien",
         "geprüfte alternative soziale Medien und spätere World-Revolution-Map-Integration"
       ]
+    },
+    {
+      "id": "RADIO-HEALTH-20261003",
+      "priority": 1,
+      "name": "Radios, Ersatzstreams und App-Verweis beim Teilen",
+      "status": "data-published-app-runtime-local",
+      "owner": "Head Chief; editorial review before release",
+      "scope": [
+        "28 directory entries; nine bounded audio responses; nineteen without admitted stream",
+        "Six-hour dated radio check; preserve configured fallback streams",
+        "Copy/share includes original and Play Store URL; directory-only wording avoids direct-playback claim"
+      ],
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+    },
+    {
+      "id": "PRISONER-DIRECTORY-REVIEW-20261003",
+      "priority": 1,
+      "name": "Gefangenensolidarität aktualisieren und erweitern",
+      "status": "planned",
+      "owner": "Head Chief; editorial review before release",
+      "scope": [
+        "Review each existing public support-group entry and address against original evidence",
+        "Aug9 snapshot exceeds45day review window; do not refresh dates without actual checks",
+        "Then review at least five additional public support resources; keep stale copy/print disabled"
+      ],
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+    },
+    {
+      "id": "LIBRARY-ADAPTERS-20261003",
+      "priority": 2,
+      "name": "Vier Bibliotheksadapter und weitere deutsche Titel",
+      "status": "planned",
+      "owner": "Head Chief; editorial review before release",
+      "scope": [
+        "Libcom, Kate Sharpley Library, Zabalaza Books, Anarchist Archive: small metadata intake then pagination",
+        "Review ten further German candidates; preserve authors, editions, original language and stable links",
+        "Validate dedupe, withdrawals, website parity and permitted offline scope"
+      ],
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+    },
+    {
+      "id": "LEXICON-EDITORIAL-20261003",
+      "priority": 2,
+      "name": "Nächste Lexikonredaktion und Lernverknüpfungen",
+      "status": "planned",
+      "owner": "Head Chief; editorial review before release",
+      "scope": [
+        "Ten new or materially revised DE/EN terms after dedupe against167 existing terms",
+        "Indigenous self-determination, commons, syndicalism, prisoner solidarity, transformative justice",
+        "Exact primary references, contrasting views, dated review and real book/podcast relationships"
+      ],
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+    },
+    {
+      "id": "HELP-AUDIO-TRANSLATION-20261003",
+      "priority": 2,
+      "name": "Hilfe für Radio, Teilen, Übersetzung und Offline",
+      "status": "planned",
+      "owner": "Head Chief; editorial review before release",
+      "scope": [
+        "DE/EN task-based guidance: start/pause/stop, station website vs stream, app share link",
+        "Translation source language, shared cache, offline dates and reporting broken sources",
+        "Review seven remaining UI languages and navigation with new-user task checks"
+      ],
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
     }
   ],
   "productScope": [
@@ -1260,12 +1338,14 @@
     },
     "artifactContainsLatestChanges": false,
     "pendingRuntime": {
-      "js": 66,
-      "css": 53,
+      "js": 67,
+      "css": 54,
       "lexicon": 10,
-      "productionCache": "2.1.2-r21",
-      "previewCache": "v109",
-      "core": 6
+      "productionCache": "2.1.2-r22",
+      "previewCache": "v110",
+      "core": 6,
+      "media": 5,
+      "audioTools": 5
     }
   },
   "roadmapPackage20261002": {
@@ -1635,5 +1715,20 @@
       "core": 6
     },
     "next": "Neuen Android-Kandidaten mit Kopfzeile und Offline-Quellen bauen; bisheriges Code33-Artefakt ist historisch."
+  },
+  "roadmapContinuation20261003": {
+    "report": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md",
+    "radio": {
+      "stations": 28,
+      "audioResponses": 9,
+      "directoryOnly": 19,
+      "testedAt": "2026-10-02",
+      "dataPr": "https://github.com/Blackfront161/Revolution-News-Data/pull/43",
+      "publication": "merged-green-gates",
+      "publishedDataCommit": "e1f59d9171ad0f75f57b57123410a768582cda2c"
+    },
+    "appRuntime": "local-only-no-new-android-artifact",
+    "contentExpansion": "concrete-nextWork-items-planned; existing728books/167terms preserved",
+    "website": "image handoff delivered; full export follows"
   }
 }

@@ -4,296 +4,407 @@
     "status": "ok",
     "ok": true,
     "workingStream": "https://streaming.fueralle.org/corax_192.mp3",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:11.821320+00:00",
+    "lastChecked": "2026-10-02T15:22:11.821320+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://streaming.fueralle.org/corax_192.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "radio-blau": {
     "name": "Radio Blau",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:11.821320+00:00",
+    "lastChecked": "2026-10-02T15:22:11.821320+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "rdl": {
     "name": "Radio Dreyeckland",
     "status": "ok",
     "ok": true,
     "workingStream": "https://stream.rdl.de/rdl",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:11.821320+00:00",
+    "lastChecked": "2026-10-02T15:22:11.821320+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://stream.rdl.de/rdl",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "fsk": {
     "name": "FSK Hamburg",
     "status": "ok",
     "ok": true,
     "workingStream": "https://streaming.fueralle.org/fsk.mp3",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:11.821320+00:00",
+    "lastChecked": "2026-10-02T15:22:11.821320+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://streaming.fueralle.org/fsk.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "lora": {
     "name": "LORA München",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:11.821320+00:00",
+    "lastChecked": "2026-10-02T15:22:11.821320+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "orange": {
     "name": "ORANGE 94.0",
     "status": "ok",
     "ok": true,
     "workingStream": "https://securestream.o94.at/live.mp3",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:11.822859+00:00",
+    "lastChecked": "2026-10-02T15:22:11.822859+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://securestream.o94.at/live.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "helsinki": {
     "name": "Radio Helsinki",
     "status": "ok",
     "ok": true,
     "workingStream": "https://live.helsinki.at:8088/live160.mp3",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:13.717139+00:00",
+    "lastChecked": "2026-10-02T15:22:13.717139+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://live.helsinki.at:8088/live160.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "coloradio": {
     "name": "coloRadio",
     "status": "ok",
     "ok": true,
     "workingStream": "https://streaming.fueralle.org/coloradio_160.mp3",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.021780+00:00",
+    "lastChecked": "2026-10-02T15:22:14.021780+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://streaming.fueralle.org/coloradio_160.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "radio-z": {
     "name": "Radio Z",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.134567+00:00",
+    "lastChecked": "2026-10-02T15:22:14.134567+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-frei": {
     "name": "Radio F.R.E.I.",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.134567+00:00",
+    "lastChecked": "2026-10-02T15:22:14.134567+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "bermuda-funk": {
     "name": "bermuda.funk",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "querfunk": {
     "name": "Querfunk",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-x": {
     "name": "Radio X",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "wueste-welle": {
     "name": "Wüste Welle",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-agora": {
     "name": "Radio Agora 105.5",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-student": {
     "name": "Radio Študent",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "1431am": {
     "name": "1431 AM",
     "status": "ok",
     "ok": true,
     "workingStream": "https://www.1431am.org:8001/1431ogg",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.136134+00:00",
+    "lastChecked": "2026-10-02T15:22:14.136134+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://www.1431am.org:8001/1431ogg",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "application/ogg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "radio-libertaire": {
     "name": "Radio Libertaire",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.249717+00:00",
+    "lastChecked": "2026-10-02T15:22:14.249717+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-blackout": {
     "name": "Radio Blackout",
     "status": "ok",
     "ok": true,
     "workingStream": "https://stream.radioblackout.org/blackout.mp3",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:14.249717+00:00",
+    "lastChecked": "2026-10-02T15:22:14.249717+00:00",
     "audioStatus": "playable",
-    "audioDetail": "Audioantwort erfolgreich."
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://stream.radioblackout.org/blackout.mp3",
+        "status": "playable",
+        "httpStatus": 200,
+        "contentType": "application/ogg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   },
   "onda-rossa": {
     "name": "Radio Onda Rossa",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.017046+00:00",
+    "lastChecked": "2026-10-02T15:22:16.017046+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "onda-urto": {
     "name": "Radio Onda d’Urto",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-klara": {
     "name": "Radio Klara",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-canut": {
     "name": "Radio Canut",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "radio-kurruf": {
     "name": "Radio Kurruf",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "kboo": {
     "name": "KBOO Community Radio",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "ckut": {
     "name": "CKUT 90.3 FM",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
   },
   "wort": {
     "name": "WORT 89.9 FM",
     "status": "unknown",
     "ok": false,
     "workingStream": "",
-    "checkedAt": "",
-    "message": "Prüfung wird beim nächsten Audio-Workflow ausgeführt.",
-    "lastChecked": "",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
     "audioStatus": "unknown",
-    "audioDetail": "Keine Stream-Adresse im Katalog."
+    "message": "No verified HTTPS stream in catalog; use original station page.",
+    "audioDetail": "No verified HTTPS stream in catalog.",
+    "candidateChecks": []
+  },
+  "3cr": {
+    "name": "3CR Community Radio",
+    "status": "ok",
+    "ok": true,
+    "workingStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/3CR.mp3",
+    "checkedAt": "2026-10-02T15:22:16.018078+00:00",
+    "lastChecked": "2026-10-02T15:22:16.018078+00:00",
+    "audioStatus": "playable",
+    "message": "Audioantwort erfolgreich.",
+    "audioDetail": "Audioantwort erfolgreich.",
+    "candidateChecks": [
+      {
+        "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/3CR.mp3",
+        "status": "playable",
+        "httpStatus": 206,
+        "contentType": "audio/mpeg",
+        "detail": "Audioantwort erfolgreich."
+      }
+    ]
   }
 }

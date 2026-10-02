@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "All 21 canonical topics plus All; nine languages and four widths without page overflow or clipped topic labels.",
+    "Topic labels wrap at 200% text size in four widths.",
+    "Every topic routes to its matching article, preserves all topic buttons, marks selection and keeps it in view.",
+    "All resets the topic filter; keyboard reaches and activates the final topic.",
+    "Four learning paths with 33 bound entries; all 12 new terms visible in DE/EN with debate, exact primary link and dated independent editorial review."
+  ],
+  "errors": []
+}

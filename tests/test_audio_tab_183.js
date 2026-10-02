@@ -11,7 +11,9 @@ assert(source.includes('legacyAudioTab181?.close?.()'), 'legacy audio tab is not
 assert(!/function ensureRoot\(\)\s*\{\s*window\.WRNAudioTab181\?\.close/.test(source), 'the current audio tab closes itself while opening');
 assert(source.includes("version:'1.8.4'"), 'audio hotfix version is missing');
 assert(source.includes('if (!candidates.length && !originalUrl) return null;'), 'stations without a direct stream are hidden instead of linking to their website');
-assert.strictEqual(radioStations.length, 27, 'the configured radio catalog changed unexpectedly');
+assert.strictEqual(radioStations.length, 28, 'the reviewed radio catalog includes 3CR');
+assert.strictEqual(new Set(radioStations.map(s => s.id)).size, radioStations.length);
+assert(radioStations.some(s => s.id === '3cr' && s.streamEvidenceUrl === 'https://www.3cr.org.au/streaming'));
 assert(radioStations.every(station => station.website), 'every radio station needs a website fallback');
 assert(source.includes("oceania: 'Ozeanien'"), 'German Oceania label is missing');
 assert(!source.includes('Australia & Oceania'), 'old Australia & Oceania label remains');

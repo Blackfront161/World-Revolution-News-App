@@ -110,9 +110,11 @@
         const heading = source && source !== title ? `${title} · ${source}` : title;
         const locale = String(language || 'en').toLowerCase().slice(0, 2);
         // Metadata-only sources remain original links, never an invented in-app player.
-        const listening = item.kind === 'radio' || !window.WRNPodcastContentPolicy.isMetadataOnly(item);
+        const listening = item.kind === 'radio'
+            ? Boolean((item.streams || item.streamCandidates || []).some(publicShareUrl) || publicShareUrl(item.streamUrl))
+            : !window.WRNPodcastContentPolicy.isMetadataOnly(item);
         const note = listening ? (appListeningTexts[locale] || appListeningTexts.en)
-            : (locale === 'de' ? 'Originalfolge über die World Revolution News App entdecken:' : 'Discover the original episode with the World Revolution News App:');
+            : (locale === 'de' ? 'Originalangebot über die World Revolution News App entdecken:' : 'Discover the original source with the World Revolution News App:');
         return { title, text: `${heading}\n\n${note}\nhttps://play.google.com/store/apps/details?id=com.world.revolution`, url };
     }
 
@@ -150,7 +152,7 @@
         field.className = 'audio-share-link';
         field.rows = 3;
         field.readOnly = true;
-        field.value = data.url;
+        field.value = `${data.text}\n\n${data.url}`;
         field.hidden = true;
         field.setAttribute('aria-label', labels[4]);
         const share = document.createElement('button');
@@ -185,7 +187,7 @@
                         if (shareWasCancelled(error)) return;
                     }
                 }
-                const copyText = copyOnly ? data.url : `${data.text}\n\n${data.url}`;
+                const copyText = `${data.text}\n\n${data.url}`;
                 field.value = copyText;
                 const copied = await copyAudioLink(copyText, field);
                 field.hidden = copied;
