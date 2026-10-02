@@ -28,6 +28,10 @@ Die nachträglichen Buildnachweise, die vorbereitete Signiererdatei und die aktu
 
 Belege: [Build 1](evidence/knowledge-translation-code33-2026-10-02/build1-report.json), [Build 2](evidence/knowledge-translation-code33-2026-10-02/build2-report.json), [Root-Artefaktprüfung](evidence/knowledge-translation-code33-2026-10-02/root-artifact-verification.json).
 
+Der WRN Kontrolleur hat beide konkreten AABs unabhängig als unsignierte Kandidaten abgenommen: ZIP/CRC, beide Berichte, 356/356 Webdateien gegen beide erhaltenen Build-Stagings, identischer Gesamtpayload, Cachebindungen und native Plugins bestehen. Alle 24 Launcher-PNGs in sechs Dichten sind zusätzlich pixelidentisch zum vorigen Code-32-Symbol. Der neue Signierer besteht auch seine unabhängig ausgeführte lesende Vorprüfung; gegenüber der bisherigen Vorlage ändern sich nur Pfade, Quellbindung und Hashes sowie das BOM. [Unabhängige Abnahme](evidence/knowledge-translation-code33-2026-10-02/controller-artifact-acceptance.json).
+
+Offene Prüfgrenze: Das AAB-Protobufmanifest ist vorhanden, wurde ohne verfügbare Bundletool-/Apkanalyzer-Werkzeuge aber nicht separat decodiert. Paket-/SDK-/Versionswerte wurden aus dem passenden erzeugten Merged-Manifest gelesen. Diese Grenze und die noch ausstehenden Signatur-/Geräteprüfungen werden ausdrücklich nicht als erledigt ausgegeben.
+
 ## Validierung
 
 57 JavaScript-Verträge, 151 Python-Tests, vier Subtests und vier zusätzliche Python-Main-Verträge bestanden; drei historische Skips. Validator bestanden, Release-Audit 161/161 ohne Warnung oder Fehler. Nach der isolierten Buildkorrektur zusätzlich zwölf gezielte Python-Tests bestanden, ein historischer Skip; darunter vier Windows-Proben für Erfolg/Fehler mit und ohne verschachtelte Junction. Externe Sentinel-Dateien bleiben beim abgelehnten Cleanup unverändert.

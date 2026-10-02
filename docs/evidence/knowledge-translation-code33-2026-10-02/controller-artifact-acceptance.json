@@ -1,0 +1,57 @@
+{
+  "status": "PASS-unsigned-candidate",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewedAt": "2026-10-02",
+  "sourceCommit": "34e22d99834c66d67114e1b796e181e87d021c5f",
+  "aabSha256": "8DF3D03E02EC1AC355332AA776D5C005CAB331349C8C75E6F12528F6BAF1F15E",
+  "versionName": "2.1.2",
+  "versionCode": 33,
+  "aabBytes": 44349593,
+  "zipEntries": 802,
+  "duplicateEntries": 0,
+  "crcErrors": 0,
+  "signatureEntries": [],
+  "buildsByteIdentical": true,
+  "webFiles": 356,
+  "assetComparison": "Both AABs exactly match their respective retained native build staging trees; all356 webfiles. Native1/AAB1,Native2/AAB2,AABwebandfullpayload differences0. Buildreports bind both to exact detached commit.",
+  "runtime": {
+    "js": 65,
+    "css": 52,
+    "lexicon": 10,
+    "productionCache": "2.1.2-r19",
+    "previewCache": "v107"
+  },
+  "nativePlugins": [
+    "LocalNotifications",
+    "Share"
+  ],
+  "launcherPngVariants": 24,
+  "launcherDensities": 6,
+  "launcherPixels": "All24 decoded variants identical to native source and previousCode32 icon",
+  "mergedManifest": {
+    "package": "com.world.revolution",
+    "versionName": "2.1.2",
+    "versionCode": 33,
+    "minSdk": 24,
+    "targetSdk": 36
+  },
+  "signerReview": {
+    "status": "PASS-preflight-only",
+    "script": "scripts/sign-google-play-aab-2.1.2-code33-34e22d9-gui.ps1",
+    "comparedTemplate": "scripts/sign-google-play-aab-2.1.2-code33-ce2b556-gui.ps1",
+    "changes": "Only paths, commit and hashes plus removal of BOM; no logic changes",
+    "preflight": "Independently executed read-only; both AAB/report hashes,356assets/802payload entries,0signatures,absent output/report anduploadPerformed=false",
+    "guiOpened": false,
+    "keystoreContentsRead": false,
+    "signed": false
+  },
+  "releaseReady": false,
+  "uploadPerformed": false,
+  "limits": [
+    "AAB protobuf manifest present but not separately decoded without bundletool/apkanalyzer; matching merged manifest inspected",
+    "Common local dependency/Gradle caches; not a fully cache-free reproducibility claim",
+    "Signing with expected certificate then signature/payload validation pending",
+    "Physical Code33 upgrade/start/offline/share acceptance pending",
+    "Play upload/publication pending"
+  ]
+}
