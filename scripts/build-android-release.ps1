@@ -398,7 +398,11 @@ try {
     $report.error = $_.Exception.Message
     throw
 } finally {
+    if (Test-Path -LiteralPath $temporaryRoot) {
+        Assert-WrnPathHasNoReparsePoints -Directory $temporaryRoot -AllowedParent ([System.IO.Path]::GetTempPath()) | Out-Null
+    }
     if (-not $UseWorkingTree -and (Test-Path -LiteralPath $sourceRoot)) {
+        Assert-WrnPathHasNoReparsePoints -Directory $sourceRoot -AllowedParent $temporaryRoot | Out-Null
         git worktree remove --force $sourceRoot 2>$null
     }
     if (Test-Path -LiteralPath $temporaryRoot) {
