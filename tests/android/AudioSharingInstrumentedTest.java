@@ -42,7 +42,9 @@ public class AudioSharingInstrumentedTest {
         assertEquals("true", InstrumentationRegistry.getArguments().getString("wrnIsolatedUpgradeTest"));
         Context c=InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.world.revolution.autonomtest", c.getPackageName());
-        assertEquals(32L,c.getPackageManager().getPackageInfo(c.getPackageName(),0).getLongVersionCode());
+        long expected = Long.parseLong(InstrumentationRegistry.getArguments().getString("wrnExpectedVersionCode", "32"));
+        assertTrue("Only isolated Code32/33 QA allowed", expected == 32L || expected == 33L);
+        assertEquals(expected,c.getPackageManager().getPackageInfo(c.getPackageName(),0).getLongVersionCode());
     }
     private void ready(ActivityScenario<MainActivity> scenario) throws Exception {
         waitTrue(scenario,"Boolean(window.WRNAudioTools?.appendShareActions && document.querySelector('#next-menu-theme') && document.querySelector('#next-view article'))");

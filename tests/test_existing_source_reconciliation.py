@@ -38,7 +38,11 @@ def test_stable_ids_unaffected_archives_and_languages_are_preserved():
         old_sources = json.loads(subprocess.check_output(['git','-C',str(root),'show',f'{ref}:podcast-sources.json']))
         assert all(s.get('feedUrls') == next(x for x in sources if x['id']==s['id']).get('feedUrls') for s in old_sources if s['id'] not in ids)
         assert next(s for s in sources if s['id']=='leftover-talk')['enabled'] is False
-        assert next(s for s in sources if s['id']=='twelve-rules-for-what')['enabled'] is False
+        red_flare = next(s for s in sources if s['id']=='twelve-rules-for-what')
+        assert red_flare['enabled'] is True
+        assert red_flare['feedUrls'] == ['https://feeds.soundcloud.com/users/soundcloud:users:542584203/sounds.rss']
+        assert red_flare['homepage'] == 'https://redflare.info/podcast/'
+        assert red_flare['contentPolicy'] == 'metadata_and_links_only'
         for e in current.values():
             if e['sourceId'] in ids:
                 assert not e['audioUrl'] and not e['artwork'] and not e['description']
@@ -81,8 +85,8 @@ def test_stale_mixed_channel_language_cannot_override_review_hold():
 @local_snapshot
 def test_common_library_contains_all_input_ids_and_german_books():
     app=read(ROOT,'library-feed.json');data=read(DATA,'library-feed.json')
-    assert app==data and len(app)==715
-    assert sum('de' in b['languages'] for b in app)==53
+    assert app==data and len(app)==728
+    assert sum('de' in b['languages'] for b in app)==66
     ids={b['id'] for b in app}
     for root,ref in INPUTS:
         previous=json.loads(subprocess.check_output(['git','-C',str(root),'show',f'{ref}:library-feed.json']))

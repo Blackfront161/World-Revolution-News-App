@@ -1,12 +1,14 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v99`;
+const CACHE_NAME = `${CACHE_PREFIX}v100`;
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
 const SHELL = [
   './learning-paths.json',
+  './lexicon-locales.json',
+  './media-directory-sources.json',
   './index.html?preview=8',
   './next.html',
   './privacy.html',
@@ -25,9 +27,9 @@ const SHELL = [
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
   './news-app-2-core.js?release=5',
-  './news-app-2-specialty.js?release=5',
+  './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
-  './podcast-content-policy.js?release=3',
+  './podcast-content-policy.js?release=4',
   './news-app-2-media.js?release=4',
   './news-app-2-release.js?release=3',
   './article-summary-core.js?preview=1',
@@ -45,7 +47,7 @@ const SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=57',
+  './news-app-2.js?release=58',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -59,6 +61,8 @@ const SHELL = [
 ];
 const CORE_SHELL = [
   './learning-paths.json',
+  './lexicon-locales.json',
+  './media-directory-sources.json',
   './index.html?preview=8',
   './news-app-2.css?release=50',
   './news-app-2-release.css?release=5',
@@ -68,9 +72,9 @@ const CORE_SHELL = [
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
   './news-app-2-core.js?release=5',
-  './news-app-2-specialty.js?release=5',
+  './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
-  './podcast-content-policy.js?release=3',
+  './podcast-content-policy.js?release=4',
   './news-app-2-media.js?release=4',
   './news-app-2-release.js?release=3',
   './article-summary-core.js?preview=1',
@@ -88,7 +92,7 @@ const CORE_SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=57'
+  './news-app-2.js?release=58'
 ];
 const INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${CACHE_NAME}`, self.location.href)
