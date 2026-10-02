@@ -1440,5 +1440,28 @@
       "Add further language versions and source-bound library/podcast expansions"
     ],
     "libraryTitles": 728
+  },
+  "translationCacheRelease20261002": {
+    "status": "published-independent-code-and-live-acceptance-pass",
+    "sourceCommit": "0e525637d6f3e122976ab574f04941e01580ee2e",
+    "workerVersion": "13f8710b-7eb3-4a6a-a7fb-85b3769bd730",
+    "workerVersionNumber": 11,
+    "healthVersion": "1.7.8",
+    "cacheSchema": "v2",
+    "etag": "c21748d3febb4532067beaf76d617a8cc9831ad9bbcdaa50464350288303dab1",
+    "publishedAtUTC": "2026-10-02T11:31:08.876197Z",
+    "report": "docs/TRANSLATION-CACHE-RELEASE-2026-10-02.md",
+    "previousVersion": "4652db41-9023-42ce-87ce-ecdb603765b0",
+    "localTestsPassed": 26,
+    "rootLiveProbesPassed": 9,
+    "bindingsAndQuotas": "verified unchanged; existing vars/secrets preserved",
+    "legacyEntries": "retained without reads or promotion",
+    "appAndProxyChanged": false,
+    "nextSteps": [
+      "Review references/traffic before retiring old wrn-shared-translations worker",
+      "Keep App content/source review and new Android build separate",
+      "Push/Admin activation requires its own operational configuration"
+    ],
+    "independentLiveReport": "docs/evidence/translation-cache-2026-10-02/controller-live-review.json"
   }
 }

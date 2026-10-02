@@ -1,0 +1,85 @@
+{
+  "id": "13f8710b-7eb3-4a6a-a7fb-85b3769bd730",
+  "number": 11,
+  "metadata": {
+    "created_on": "2026-10-02T11:31:08.876197Z"
+  },
+  "resources": {
+    "script": {
+      "etag": "c21748d3febb4532067beaf76d617a8cc9831ad9bbcdaa50464350288303dab1",
+      "handlers": [
+        "fetch"
+      ],
+      "named_handlers": [
+        {
+          "name": "QuotaCoordinator",
+          "handlers": [
+            "class"
+          ]
+        }
+      ],
+      "last_deployed_from": "wrangler"
+    },
+    "script_runtime": {
+      "migration_tag": "quota-v1",
+      "compatibility_date": "2026-07-27",
+      "compatibility_flags": [
+        "global_fetch_strictly_public"
+      ],
+      "usage_model": "standard"
+    },
+    "bindings": [
+      {
+        "name": "ALLOWED_ORIGINS",
+        "text": "https://blackfront161.github.io,https://solinaridao.com,https://www.solinaridao.com,capacitor://localhost,http://localhost,https://localhost,http://127.0.0.1:8765",
+        "type": "plain_text"
+      },
+      {
+        "name": "CACHE_RATE_LIMITER",
+        "namespace_id": "1003",
+        "simple": {
+          "limit": 60,
+          "period": 60
+        },
+        "type": "ratelimit"
+      },
+      {
+        "name": "CACHE_TTL_SECONDS",
+        "text": "604800",
+        "type": "plain_text"
+      },
+      {
+        "environment": "production",
+        "name": "PROXY_SERVICE",
+        "service": "revolution-proxy",
+        "type": "service"
+      },
+      {
+        "class_name": "QuotaCoordinator",
+        "name": "QUOTA_COORDINATOR",
+        "namespace_id": "a4cdf28f3dd8405291246c0b02a148d1",
+        "type": "durable_object_namespace"
+      },
+      {
+        "name": "TRANSLATION_KV_DAILY_WRITE_LIMIT",
+        "text": "950",
+        "type": "plain_text"
+      },
+      {
+        "name": "TRANSLATIONS",
+        "namespace_id": "bd8fdf0723b148ce90c654cef94b7ef6",
+        "type": "kv_namespace"
+      },
+      {
+        "name": "UPSTREAM_URL",
+        "text": "https://revolution-proxy.paghklo.workers.dev",
+        "type": "plain_text"
+      },
+      {
+        "name": "WRN_TRANSLATION_ENABLED",
+        "text": "true",
+        "type": "plain_text"
+      }
+    ]
+  }
+}

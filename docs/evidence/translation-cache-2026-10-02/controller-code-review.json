@@ -1,0 +1,11 @@
+{
+  "status": "PASS-cache-only-publication",
+  "reviewedCommit": "0e525637d6f3e122976ab574f04941e01580ee2e",
+  "reviewerThread": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewer": "WRN Kontrolleur",
+  "independentlyReproduced": ["26/26 Node tests", "Wrangler4.114 dry-run"],
+  "accepted": ["v2 KV and edge isolation; no legacy reads or promotion", "server content key ignores supplied keys", "actual40000byte bound including missing/false Content-Length and UTF8", "edge-derived limiter independent of X-Client-Id and fail-closed", "constructed service request forwards incoming edge CF-Connecting-IP", "unchanged bindings, origins, quota and compatibility; traces enabled"],
+  "scope": "Exactly three code/config/test files; no Proxy, Push, Admin, Website or old wrn-shared-translations changes",
+  "liveAcceptance": "pending until publication and live verification",
+  "evidenceSource": "Direct controller message to root on2026-10-02"
+}

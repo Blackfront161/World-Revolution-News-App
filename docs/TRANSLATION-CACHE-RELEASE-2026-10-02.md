@@ -1,0 +1,19 @@
+# Übersetzungs-Cache: veröffentlichte Korrektur
+
+Der aktive Cache-Worker war noch auf Version10 vom11.August. Dadurch war die bereits lokale Korrektur gegen manipulierte Cache-Schlüssel nicht produktiv. Veröffentlicht ist jetzt der unabhängig geprüfte Quellstand `0e525637d6f3e122976ab574f04941e01580ee2e`, Worker-Version11 `13f8710b-7eb3-4a6a-a7fb-85b3769bd730`, Health `1.7.8`, Cache-Schema `v2`.
+
+Der Worker berechnet Schlüssel aus dem tatsächlichen Übersetzungsinhalt. Gelieferte Header- und Body-Schlüssel können keine andere Übersetzung auswählen. Neue KV- und Edge-Einträge verwenden einen getrennten v2-Bereich; ältere v1-Einträge bleiben erhalten, werden aber weder gelesen noch übernommen. Neue Erstaufrufe können daher wieder normale Übersetzungsquote verbrauchen.
+
+Anfragen werden vor JSON-Verarbeitung auf tatsächlich empfangene40.000Bytes begrenzt. Das Rate-Limit verwendet einen Hash der eingehenden Cloudflare-IP; wechselnde Client-IDs eröffnen keine neuen Zähler. Bei fehlender IP oder fehlendem/fehlerhaftem Limiter wird die Anfrage abgewiesen. Der neu gebaute Service-Binding-Request gibt die eingehende Edge-IP an den bestehenden Proxy weiter.
+
+Der WRN Kontrolleur akzeptierte genau diesen Drei-Dateien-Commit und reproduzierte alle26Tests sowie den Wrangler-Dry-Run. Nach Veröffentlichung bestand Root neun Live-Proben: Health, erlaubte/fremde CORS-Anfragen, ungültiges JSON400, tatsächlicher Stream mit40.001Bytes ohne Content-Length413 und drei kleine eigene Übersetzungsanfragen. Zwei verschiedene Texte mit identischem geliefertem Schlüssel lieferten jeweils die passende Übersetzung als MISS; der erste Text wurde anschließend unverändert als HIT zurückgegeben. Bei diesen drei Anfragen wechselte die Client-ID. Die tatsächliche Limit-Erschöpfung wurde lokal getestet; ein Lasttest gegen die Produktion wurde nicht durchgeführt.
+
+Die Ressourcen-Bindings, Origins,60Anfragen/Minute,950KV-Schreibvorgänge/Tag, TTL und Kompatibilitätsdatum wurden gegen die frühere Version abgeglichen und beibehalten. Secrets wurden weder gelesen noch geändert. Der Proxy mit Gemini3.5Flash-Lite blieb auf seiner bisherigen Version. Cache-Traces sind zusätzlich aktiviert. Die neuen Autonom-Inhalte bleiben davon getrennt: lokaler App-Quellstand, noch kein neuer Android-Build.
+
+Grenzen: Die Edge-IP ist keine Benutzeridentität. Menschen im selben Netz teilen ein Limit; Cloudflares Rate-Limit ist pro Standort und annähernd konsistent. Diese Korrektur ersetzt weder Anmeldung noch ein globales minutengenaues Personenlimit. Der alte Worker `wrn-shared-translations` bleibt bis zur getrennten Referenz-/Nutzungsprüfung bestehen. Push/Admin-Aktivierung ist weiterhin ein eigener Roadmap-Punkt.
+
+Der Kontrolleur bestätigte anschließend unabhängig die aktive100%-Version, ETag `c21748d3febb4532067beaf76d617a8cc9831ad9bbcdaa50464350288303dab1`, unveränderte Bindings/Runtime sowie Health und beide CORS-Preflights. Quotenverbrauchende Übersetzungs-POSTs und Limit-Erschöpfung wurden durch ihn live nicht wiederholt; Root-Evidenz und lokale Tests werden entsprechend getrennt ausgewiesen.
+
+Evidenz: [Metadaten vorher](evidence/translation-cache-2026-10-02/previous-version.json), [veröffentlichte Metadaten](evidence/translation-cache-2026-10-02/published-version.json), [Code-Abnahme](evidence/translation-cache-2026-10-02/controller-code-review.json), [Live-Prüfungen](evidence/translation-cache-2026-10-02/live-verification.json), [unabhängige Live-Abnahme](evidence/translation-cache-2026-10-02/controller-live-review.json).
+
+Cloudflare-Referenzen: [Edge-HTTP-Header](https://developers.cloudflare.com/fundamentals/reference/http-headers/), [HTTP-Service-Bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/http/), [Rate-Limit-Bindings und Grenzen](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/).

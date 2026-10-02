@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-02T11:31:34.726Z",
+  "sourceCommit": "0e525637d6f3e122976ab574f04941e01580ee2e",
+  "results": [
+    {
+      "name": "health",
+      "status": 200,
+      "cache": null,
+      "cors": "https://blackfront161.github.io",
+      "body": {
+        "ok": true,
+        "service": "wrn-shared-translation-cache",
+        "version": "1.7.8",
+        "cacheSchema": "v2",
+        "storage": "kv",
+        "upstreamConfigured": true,
+        "ttlSeconds": 604800
+      }
+    },
+    {
+      "name": "allowed-preflight",
+      "status": 204,
+      "cache": null,
+      "cors": "https://solinaridao.com",
+      "body": ""
+    },
+    {
+      "name": "foreign-preflight",
+      "status": 403,
+      "cache": null,
+      "cors": null,
+      "body": ""
+    },
+    {
+      "name": "foreign-post",
+      "status": 403,
+      "cache": null,
+      "cors": "https://blackfront161.github.io",
+      "body": {
+        "error": "Origin not allowed"
+      }
+    },
+    {
+      "name": "malformed-json",
+      "status": 400,
+      "cache": null,
+      "cors": "https://solinaridao.com",
+      "body": {
+        "error": "Invalid JSON"
+      }
+    },
+    {
+      "name": "actual-chunked-40001-bytes",
+      "status": 413,
+      "cache": null,
+      "cors": "https://solinaridao.com",
+      "body": {
+        "error": true,
+        "code": "BODY_TOO_LARGE",
+        "message": "Request body too large."
+      }
+    },
+    {
+      "name": "translation-library-miss",
+      "status": 200,
+      "cache": "MISS",
+      "cors": "https://solinaridao.com",
+      "body": {
+        "ok": true,
+        "text": "WRN Cache-Überprüfung 2026-10-02T11:31:30.486Z\n---\nDie Bibliothek öffnet am Montag. Freiwillige bereiten die Bücher vor.",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "protocol": "structured-v2",
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "WRN Cache-Überprüfung 2026-10-02T11:31:30.486Z\n---\nDie Bibliothek öffnet am Montag. Freiwillige bereiten die Bücher vor."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "same-supplied-key-radio-miss",
+      "status": 200,
+      "cache": "MISS",
+      "cors": "https://solinaridao.com",
+      "body": {
+        "ok": true,
+        "text": "WRN cache verification 2026-10-02T11:31:30.486Z\n---\nDas Radioprogramm beginnt am Freitag. Hörer*innen können den Sender teilen.",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "protocol": "structured-v2",
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "WRN cache verification 2026-10-02T11:31:30.486Z\n---\nDas Radioprogramm beginnt am Freitag. Hörer*innen können den Sender teilen."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "original-library-hit",
+      "status": 200,
+      "cache": "HIT",
+      "cors": "https://solinaridao.com",
+      "body": {
+        "ok": true,
+        "text": "WRN Cache-Überprüfung 2026-10-02T11:31:30.486Z\n---\nDie Bibliothek öffnet am Montag. Freiwillige bereiten die Bücher vor.",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "protocol": "structured-v2",
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "WRN Cache-Überprüfung 2026-10-02T11:31:30.486Z\n---\nDie Bibliothek öffnet am Montag. Freiwillige bereiten die Bücher vor."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "limits": "Only three small synthetic translations; no load test or real user records."
+}
