@@ -34,4 +34,8 @@ Worker-Syntax, elf Worker-Tests und Wrangler-Dry-run bestehen. Die Cloudflare-An
 
 Die echte Browseraufnahme unter `evidence/translation-autonom-2026-10-02/autonom-live-390.jpg` verwendet reale aktuelle Inhalte, keine Testdaten. Temporäre Browserbreite wurde anschließend zurückgesetzt.
 
-Produktgeneration: JS60, CSS51, Shared-Translation-Client5, Audio-Tools4, Produktionscache `2.1.2-r14`, Vorschaucache `v102`. Code33 wird aus einem neuen sauberen Freeze unsigniert gebaut. Signierung, physischer Test, Play-Upload und Cloudflare-Modellmigration sind getrennte offene Schritte. Status und Artefaktbindung folgen in `ROADMAP.json`; frühere Belege bleiben historisch erhalten.
+Produktgeneration: JS60, CSS51, Shared-Translation-Client5, Audio-Tools4, Produktionscache `2.1.2-r14`, Vorschaucache `v102`.
+
+Neuer Produkt-Freeze: `465442ab6526afafdd2030d09b59f4982f934de4`. Zwei bytegleiche unsignierte AABs für 2.1.2 / Code33 bestehen: je 44.338.550 Byte, 356 gebundene Quellassets, 802 Payload-Dateien, keine Signaturdateien. SHA-256 `508C1DA603CB79335774137DBC2A18ACB1ED548AE88B82369EBD95E58580C41D`. Pfade: `outputs/translation-autonom-code33/build1/WorldRevolutionNews-2.1.2-code33-465442a-unsigned.aab` und entsprechendes `build2`. Beide Buildberichte bestätigen sauberen detached Quellstand und null Kopier-/Paketunterschiede; die zusätzliche Root-Prüfung bestätigt Bytegleichheit, fehlende Signatur und eingebettete Generations-/Verhaltenstokens.
+
+Diese Artefakte enthalten den damaligen ROADMAP-Snapshot des Produkt-Freeze. Die nachgepflegte Artefaktbindung ist ein Dokumentations-Folgecommit und verändert sie nicht. Signierung, unabhängige Abnahme, physischer Test, Play-Upload und Cloudflare-Modellmigration sind getrennte offene Schritte. Status und Artefaktbindung stehen in `ROADMAP.json`; frühere Belege bleiben historisch erhalten.

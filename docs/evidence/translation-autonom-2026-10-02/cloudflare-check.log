@@ -1,0 +1,24 @@
+$ node --check revolution-proxy/src/index.js && node --check revolution-proxy/src/operations.js && node --check revolution-proxy/src/push-gateway.js && node --check wrn-translation-cache/src/index.js && node --test tests/*.test.mjs
+✔ quota thresholds are reported at 80, 90 and 100 percent (1.3618ms)
+✔ a threshold is notified once per quota window (1.2463ms)
+✔ public operations status contains counters but no request content (0.3181ms)
+Quota reservation failed closed {
+  metric: 'translation_upstream',
+  message: 'QUOTA_COORDINATOR binding is missing'
+}
+✔ daily quota blocks at the configured ceiling and reactivates next UTC day (2.0631ms)
+✔ monthly Azure quota reactivates without a manual switch (0.9152ms)
+✔ feedback has an independent daily ceiling (0.2405ms)
+✔ failed work can release its reservation (0.4747ms)
+✔ missing coordinator fails closed (1.0504ms)
+✔ manual switches default to enabled and accept explicit off values (0.1512ms)
+✔ defaults retain a small reserve below the free quota (0.1598ms)
+✔ a supplied cache key cannot select a translation for different text (10.0762ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 127.4375

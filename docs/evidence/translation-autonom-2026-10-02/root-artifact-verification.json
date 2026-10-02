@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "sourceCommit": "465442ab6526afafdd2030d09b59f4982f934de4",
+  "versionCode": 33,
+  "versionName": "2.1.2",
+  "sha256": "508C1DA603CB79335774137DBC2A18ACB1ED548AE88B82369EBD95E58580C41D",
+  "bytes": 44338550,
+  "payloadFiles": 802,
+  "sourceAssets": 356,
+  "twoBuildsByteEqual": true,
+  "signed": false,
+  "checks": [
+    "No JAR signature files",
+    "Embedded runtime cache/generation and requested behavior tokens",
+    "Build reports: clean source and zero source/packaged differences"
+  ],
+  "limitations": [
+    "No signed production artifact or physical-device acceptance",
+    "No Cloudflare model deployment"
+  ]
+}

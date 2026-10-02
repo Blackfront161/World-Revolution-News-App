@@ -19,7 +19,9 @@ Datenstand `d7da528c9a996a2ec13bf3912c45e18e7d58bdfa` wurde regulär veröffentl
 
 Website-Inhaltsbasis `7533fe1d487ccf702428485d7d104035271ec9e4` wurde lokal mit 45 Website-Dateien / 48 Hosting-Dateien unabhängig abgenommen. Sie enthält dasselbe Wissens- und Podcastpaket. Das bedeutet keine Live-Veröffentlichung. **WRN Website – Inhaltsparität** bearbeitet inzwischen den neueren direkten Nutzerauftrag für das 20min-Layout und besitzt Website und Hostinger-Veröffentlichung. Head Chief veröffentlicht das ältere Paket nicht parallel. Das allgemeine Hostinger-Backup meldete Erfolg; ein privates Webroot-Archiv wurde angelegt, durch Head Chief aber noch nicht heruntergeladen und vollständig verifiziert. Der Website-Writer muss Backup, beide alten Inhaltszeiger, Rücknahmen, Header und Offline-Neustart vor beziehungsweise nach seinem Transfer prüfen.
 
-## Finaler Android-Kandidat
+## Historischer Android-Kandidat
+
+**Durch den anschließenden Nutzerauftrag zu Übersetzung, Sharing und Autonom überholt.** `fb937dd` und sein Signer bleiben historische Belege und dürfen nicht als neuer Kandidat signiert werden. Der neue unsignierte Freeze und sein Status stehen in [Übersetzung-/Sharing-Folgeauftrag](TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md).
 
 - Produkt-Freeze: `fb937dd73355b9bb6f037c2b0e547da9cdb6bbaf`.
 - VersionName `2.1.2`, VersionCode **33**.

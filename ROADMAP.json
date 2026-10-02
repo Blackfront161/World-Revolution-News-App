@@ -1212,15 +1212,18 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "translation-sharing-autonom-fix-local-pass-pending-new-build-review",
-    "sourceCommit": null,
+    "status": "translation-sharing-autonom-unsigned-reproducible-pending-independent-review",
+    "sourceCommit": "465442ab6526afafdd2030d09b59f4982f934de4",
     "signatureVerified": false,
     "uploadPerformed": false,
     "releaseReady": false,
     "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
     "signing": "not-performed-new-artifact-required",
     "physicalCode33Test": "pending",
-    "note": "New product freeze and unsigned build will be bound in a later documentation commit."
+    "note": "New product freeze and unsigned build will be bound in a later documentation commit.",
+    "artifactSha256": "508C1DA603CB79335774137DBC2A18ACB1ED548AE88B82369EBD95E58580C41D",
+    "artifactBytes": 44338550,
+    "artifactReport": "docs/evidence/translation-autonom-2026-10-02/root-artifact-verification.json"
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
@@ -1297,6 +1300,7 @@
       "Independent review of new source freeze and unsigned candidate",
       "Authenticated Cloudflare model smoke test and migration",
       "Signed artifact review, physical device test and bound Play upload"
-    ]
+    ],
+    "sourceCommit": "465442ab6526afafdd2030d09b59f4982f934de4"
   }
 }
