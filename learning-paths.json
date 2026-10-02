@@ -514,6 +514,58 @@
           "relationType": "editorial-listening-context"
         }
       ]
+    },
+    {
+      "id": "digital-commons-and-self-organisation",
+      "title": {
+        "de": "Digitale Gemeingüter und Selbstorganisation",
+        "en": "Digital commons and self-organisation"
+      },
+      "entries": [
+        {
+          "bookId": "anarchist-library-en-be99c01a3aa1ea6b91052506",
+          "termIds": [
+            "digital-commons",
+            "digital-autonomy",
+            "free-software"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/frank-miroslav-the-future-of-digital-proudhonism.epub",
+          "note": {
+            "de": "Miroslavs Beitrag zur Debatte über Technik und Eigentum kritisch lesen: Welche Machtverhältnisse bleiben trotz offener Werkzeuge bestehen?",
+            "en": "Read Miroslav’s contribution to the technology and ownership debate critically: which power relations remain despite open tools?"
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-en-382b0793ed8dc09bb061d1e5",
+          "termIds": [
+            "commons",
+            "commoning",
+            "digital-commons"
+          ],
+          "originalUrl": "https://theanarchistlibrary.org/library/kevin-carson-communal-property-a-libertarian-analysis.epub",
+          "note": {
+            "de": "Carsons Analyse gemeinschaftlichen Eigentums mit digitalen Gemeingütern vergleichen. Die Verbindung ist eine redaktionelle Vergleichsfrage, keine Gleichsetzung von Land und Daten.",
+            "en": "Compare Carson’s analysis of communal property with digital commons. This is an editorial comparison, not an equation of land and data."
+          },
+          "relationType": "editorial-reading-context"
+        },
+        {
+          "bookId": "anarchist-library-es-0c5bf7f229abce215a1d6ebc",
+          "termIds": [
+            "self-organisation",
+            "federation",
+            "federated-networks"
+          ],
+          "originalUrl": "https://es.anarchistlibraries.net/library/colin-ward-anarquismo-como-teoria-de-organizacion.epub",
+          "note": {
+            "de": "Wards historischen Organisationsentwurf in spanischer Übersetzung lesen und mit der Leitung heutiger Netzwerke vergleichen. Der Text erklärt keine Internetprotokolle.",
+            "en": "Read Ward’s historical organisational proposal in Spanish translation and compare it with governance of present networks. The text does not explain internet protocols."
+          },
+          "relationType": "editorial-reading-context"
+        }
+      ],
+      "podcastEntries": []
     }
   ]
 }

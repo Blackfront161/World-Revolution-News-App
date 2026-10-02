@@ -44,12 +44,12 @@ try{
   }
   await page.goto(`${origin}/index.html?preview=8`);
   await openLibrary();
-  await page.waitForFunction(async()=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===715;});
-  await page.waitForFunction(()=>document.querySelector('.library-index-section .section-heading')?.innerText.includes('714'));
-  assert((await page.locator('.library-index-section .section-heading').innerText()).includes('714'));
+  await page.waitForFunction(async count=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===count;},books.length);
+  await page.waitForFunction(count=>document.querySelector('.library-index-section .section-heading')?.innerText.includes(String(count)),books.length-1);
+  assert((await page.locator('.library-index-section .section-heading').innerText()).includes(String(books.length-1)));
   const paths=JSON.parse(fs.readFileSync(path.join(root,'learning-paths.json'),'utf8'));
   const expectedRelations=paths.paths.flatMap(p=>p.entries).filter(e=>e.bookId!==removed.id).length;
-  assert.equal(await page.locator('.learning-paths details').count(),3);
+  assert.equal(await page.locator('.learning-paths details').count(),paths.paths.length);
   assert.equal(await page.locator('[data-learning-book]').count(),expectedRelations);
   await page.locator('.learning-paths summary').first().click();
   await page.locator('.learning-paths [data-action="article-lexicon-open"]').first().click();
@@ -57,7 +57,7 @@ try{
   assert((await page.locator('#next-lexicon-query').inputValue()).length>0);
   await openLibrary();
   await page.locator('[data-action="library-language"][data-value="de"]').click();
-  assert((await page.locator('.library-index-section .section-heading').innerText()).includes('52'));
+  assert((await page.locator('.library-index-section .section-heading').innerText()).includes(String(books.filter(b=>b.id!==removed.id&&b.languages.includes('de')).length)));
   await page.locator('#next-library-query').fill('ABC des Anarchismus');
   await page.waitForTimeout(350);
   assert.equal(await page.locator('.library-item-card').count(),1);
@@ -77,12 +77,12 @@ try{
     assert(await page.locator('#next-library-query').isVisible());
     assert.equal(await page.locator('.library-item-card').count(),1);
   }
-  result.checks.push('715 stable records merged despite partial remote snapshot; withdrawal hides one title; DE search, author, format, keyboard and four widths/nine UI languages passed.');
-  result.checks.push('Three learning paths resolve their current book records and open the associated glossary term.');
+  result.checks.push(`${books.length} stable records merged despite partial remote snapshot; withdrawal hides one title; DE search, author, format, keyboard and four widths/nine UI languages passed.`);
+  result.checks.push('Learning paths resolve their current book records and open the associated glossary term.');
   failed=true;
   await page.reload();await openLibrary();
-  await page.waitForFunction(async()=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===715;});
-  assert((await page.locator('.library-index-section .section-heading').innerText()).includes('714'));
+  await page.waitForFunction(async count=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===count;},books.length);
+  assert((await page.locator('.library-index-section .section-heading').innerText()).includes(String(books.length-1)));
   const saved=await page.evaluate(()=>window.WRNStorage.getDataset('news-app-2-library-feed'));
   assert.equal(saved.find(b=>b.id===removed.id).status,'withdrawn');
   result.checks.push('All catalog requests failed on reload: last saved archive and persistent withdrawal remain.');

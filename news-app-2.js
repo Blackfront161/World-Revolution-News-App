@@ -4137,12 +4137,30 @@
     </section>`;
   }
 
+  function autonomTopics() {
+    return [...new Set([
+      ...TOPIC_GROUPS.flatMap(([, topics]) => topics),
+      ...state.facets.topics.filter(Boolean).sort((a, b) => classificationLabel(a).localeCompare(classificationLabel(b), state.language))
+    ])];
+  }
+
   function autonomTopicsMarkup() {
-    const topics = ['Labor Struggles', 'Squatting & Housing', 'Antifascism', 'Queer-Feminism', 'No Borders'];
+    const topics = autonomTopics();
+    const selected = state.view === 'discover' ? state.discover.topic : '';
+    const topicButton = topic => `<button type="button" class="${topic === selected ? 'is-active' : ''}" aria-pressed="${topic === selected}" data-action="autonom-topic" data-topic="${escapeHtml(topic)}">${escapeHtml(topic ? classificationLabel(topic) : t('all'))}</button>`;
     return `<nav class="autonom-topics" aria-label="${escapeHtml(t('topics'))}">
-      <button type="button" class="is-active" data-action="autonom-topic" data-topic="">${escapeHtml(t('all'))}</button>
-      ${topics.map(topic => `<button type="button" data-action="autonom-topic" data-topic="${escapeHtml(topic)}">${escapeHtml(classificationLabel(topic))}</button>`).join('')}
+      ${['', ...topics].map(topicButton).join('')}
     </nav>`;
+  }
+
+  function revealSelectedAutonomTopic() {
+    const nav = viewRoot.querySelector('.autonom-topics');
+    const selected = nav?.querySelector('[aria-pressed="true"]');
+    if (!nav || !selected || !nav.clientWidth) return;
+    const bounds = nav.getBoundingClientRect();
+    const item = selected.getBoundingClientRect();
+    if (item.left < bounds.left) nav.scrollLeft += item.left - bounds.left;
+    else if (item.right > bounds.right) nav.scrollLeft += item.right - bounds.right;
   }
 
   function renderHome() {
@@ -4878,6 +4896,7 @@
     const topics = [...state.facets.topics].sort((a, b) => a.localeCompare(b, state.language));
 
     viewRoot.innerHTML = `
+      ${autonomTopicsMarkup()}
       ${headingMarkup(t('discover'), t('discover'), t('discoverIntro'))}
       ${state.discover.sportOnly ? `<div class="home-sport-filter"><strong>Sport &amp; Fankultur</strong><button type="button" data-action="home-sport-clear">${escapeHtml(state.language === 'de' ? 'Filter löschen' : 'Clear filter')} ×</button></div>` : ''}
       <section class="feature-grid feature-grid--compact" aria-label="${escapeHtml(t('specialty'))}">
@@ -4914,6 +4933,7 @@
       ${cardsMarkup(results)}
       ${results.length < total ? `<div class="load-more-row"><button class="secondary-button" type="button" data-action="discover-more">${escapeHtml(t('showMore'))}</button></div>` : ''}
     `;
+    revealSelectedAutonomTopic();
   }
 
   function featureCard(icon, title, description, view) {
@@ -5544,6 +5564,22 @@
     }).join('')}</div>`;
   }
 
+  function glossaryTermSourcesMarkup(term) {
+    const references = (state.lexiconSnapshot.sources || []).filter(source => (term.sources || []).includes(source.id));
+    return references.map(source => {
+      const url = core.safeHttpUrl(source.url);
+      return url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.name)}</a>` : '';
+    }).join('');
+  }
+
+  function glossaryDraftLabel() {
+    return ({ de: 'Redaktioneller Entwurf · Prüfung ausstehend', en: 'Editorial draft · review pending',
+      es: 'Borrador editorial · revisión pendiente', fr: 'Brouillon éditorial · révision en attente',
+      it: 'Bozza editoriale · revisione in attesa', pt: 'Rascunho editorial · revisão pendente',
+      ru: 'Редакционный черновик · ожидает проверки', el: 'Συντακτικό προσχέδιο · εκκρεμεί έλεγχος',
+      tr: 'Editoryal taslak · inceleme bekliyor' })[state.language] || 'Editorial draft · review pending';
+  }
+
   function renderLexicon() {
     state.cardArticles = [];
     const sections = ['all', 'basics', 'organisation', 'justice', 'power', 'tactics', 'ecology', 'struggles', 'sources'];
@@ -5562,6 +5598,8 @@
               ${term.displayPractice ? `<h4>${escapeHtml(t('practice'))}</h4><p>${escapeHtml(term.displayPractice)}</p>` : ''}
               ${term.displayDebate ? `<h4>${escapeHtml(t('debate'))}</h4><p>${escapeHtml(term.displayDebate)}</p>` : ''}
               ${(term.related || []).length ? `<h4>${escapeHtml(t('related'))}</h4><div class="meta-line">${term.related.map(value => `<span class="tag">${escapeHtml(value)}</span>`).join('')}</div>` : ''}
+              ${(term.sources || []).length ? `<h4>${escapeHtml(t('glossarySources'))}</h4><div class="source-actions">${glossaryTermSourcesMarkup(term)}</div>` : ''}
+              ${term.revision?.note?.includes('review pending') ? `<small>${escapeHtml(glossaryDraftLabel())}</small>` : ''}
               ${!term.summary?.[state.language] ? `<small>${escapeHtml(t('fallbackLanguage'))}</small>` : ''}
               ${term.translationRevision && ['fr', 'es'].includes(state.language) ? `<small lang="en">WRN editorial translation · ${escapeHtml(term.translationStatus)} · ${escapeHtml(term.translationRevision)}</small>` : ''}
             </div>
@@ -8216,7 +8254,7 @@
       const action = target.dataset.action;
       if (action === 'autonom-topic') {
         const topic = core.text(target.dataset.topic);
-        if (!['', 'Labor Struggles', 'Squatting & Housing', 'Antifascism', 'Queer-Feminism', 'No Borders'].includes(topic)) return;
+        if (topic && !autonomTopics().includes(topic)) return;
         state.discover.topic = topic;
         state.discover.query = '';
         state.discover.sportOnly = false;
@@ -8229,6 +8267,7 @@
         state.discover.limit = 24;
         persistArchiveFilters();
         changeView('discover');
+        viewRoot.querySelector('.autonom-topics [aria-pressed="true"]')?.focus({ preventScroll: true });
         return;
       }
       const article = Number.isInteger(Number(target.dataset.index))

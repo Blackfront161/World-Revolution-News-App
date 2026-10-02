@@ -5775,7 +5775,10 @@ button.feature-card {
   :root[data-theme="autonom"] .classic-link { display: none; }
   :root[data-theme="autonom"] .icon-button { background: transparent; border-color: transparent; color: var(--text); }
   :root[data-theme="autonom"] .autonom-topics {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, minmax(44px, auto));
+    grid-auto-columns: max-content;
     gap: 8px;
     margin: 4px 0 18px;
     padding: 4px 1px 8px;
@@ -5785,7 +5788,11 @@ button.feature-card {
   }
   :root[data-theme="autonom"] .autonom-topics button {
     flex: 0 0 auto;
+    min-width: 44px;
     min-height: 44px;
+    max-width: min(280px, calc(100vw - 36px));
+    white-space: normal;
+    overflow-wrap: anywhere;
     padding: 8px 15px;
     border: 1px solid var(--border);
     border-radius: 999px;
