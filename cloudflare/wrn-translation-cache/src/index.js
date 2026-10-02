@@ -5,11 +5,12 @@ import {
   serviceEnabled
 } from '../../shared/quota-client.js';
 import { translationCacheKey } from '../../shared/translation-cache-key.js';
+import { BodyTooLargeError, readBoundedJson } from '../../revolution-proxy/src/request-body.js';
 
 export { QuotaCoordinator };
 
 /**
- * World Revolution News – Shared Translation Cache Worker 1.7.7
+ * World Revolution News – Shared Translation Cache Worker 1.7.8
  */
 
 const DEFAULT_UPSTREAM =
@@ -42,13 +43,17 @@ function originAllowed(request, env) {
 }
 
 async function requestAllowed(request, env) {
-  if (!env.CACHE_RATE_LIMITER?.limit) return true;
-  const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
-  const client = String(request.headers.get('X-Client-Id') || 'unknown')
-    .replace(/[^a-zA-Z0-9_-]/g, '')
-    .slice(0, 100);
-  const result = await env.CACHE_RATE_LIMITER.limit({ key: `${ip}:${client}` });
-  return result.success;
+  const ip = request.headers.get('CF-Connecting-IP') || '';
+  if (!ip || !env.CACHE_RATE_LIMITER?.limit) return false;
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`translation-cache:${ip}`));
+  const key = [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2, '0')).join('');
+  try {
+    const result = await env.CACHE_RATE_LIMITER.limit({ key });
+    return result?.success === true;
+  } catch {
+    console.error('Translation cache rate limiter unavailable');
+    return false;
+  }
 }
 
 function corsHeaders(request, env) {
@@ -88,12 +93,14 @@ function cacheTtl(env) {
 }
 
 function kvKey(stableKey) {
-  return `translation:v1:${stableKey}`;
+  // Legacy entries could have been selected by a caller-controlled key.
+  // Retain them for recovery but never promote them into the trusted namespace.
+  return `translation:v2:${stableKey}`;
 }
 
 function edgeCacheRequest(stableKey) {
   return new Request(
-    `https://wrn-translation-cache.invalid/v1/${stableKey}`,
+    `https://wrn-translation-cache.invalid/v2/${stableKey}`,
     { method: 'GET' }
   );
 }
@@ -226,7 +233,8 @@ export default {
         {
           ok: true,
           service: 'wrn-shared-translation-cache',
-          version: '1.7.7',
+          version: '1.7.8',
+          cacheSchema: 'v2',
           storage: env.TRANSLATIONS
             ? 'kv'
             : 'edge-cache-fallback',
@@ -265,8 +273,11 @@ export default {
     let body;
 
     try {
-      body = await request.json();
-    } catch {
+      body = await readBoundedJson(request);
+    } catch (error) {
+      if (error instanceof BodyTooLargeError) {
+        return jsonResponse({ error: true, code: 'BODY_TOO_LARGE', message: 'Request body too large.' }, 413, cors);
+      }
       return jsonResponse(
         { error: 'Invalid JSON' },
         400,
@@ -345,6 +356,7 @@ export default {
       headers: {
         'Content-Type': 'application/json',
         'Origin': request.headers.get('Origin') || '',
+        'CF-Connecting-IP': request.headers.get('CF-Connecting-IP'),
         'X-Client-Id':
           request.headers.get('X-Client-Id') ||
           'wrn-shared-cache'
