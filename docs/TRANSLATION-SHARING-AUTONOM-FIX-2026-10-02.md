@@ -47,3 +47,9 @@ Neuer Produkt-Freeze: `465442ab6526afafdd2030d09b59f4982f934de4`. Zwei bytegleic
 Diese Artefakte enthalten den damaligen ROADMAP-Snapshot des Produkt-Freeze. Die nachgepflegte Artefaktbindung ist ein Dokumentations-Folgecommit und verändert sie nicht. Signierung, unabhängige Abnahme, physischer Test, Play-Upload und Cloudflare-Modellmigration sind getrennte offene Schritte. Status und Artefaktbindung stehen in `ROADMAP.json`; frühere Belege bleiben historisch erhalten.
 
 Der einzelne Aufmacher-Retry verwendet direkt den bereits deduplizierten Anforderungsweg. Er kann deshalb nicht durch den Abbruch des anderen Startseitenbatches nach drei Fehlern verloren gehen.
+
+## Endgültiger korrigierter Kandidat
+
+Freeze `ce2b5565e539cbd1373fef5684cf1997fab5b6e2` ist unabhängig vom Kontrolleur als Runtime-PASS abgenommen. Zwei neue bytegleiche **unsignierte** AABs: je 44.339.190 Byte, SHA-256 `3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD`, 356 gebundene Quellassets und 802 Payload-Dateien, null Quell-/Paketunterschiede, keine Signaturdateien. Pfade: `outputs/translation-autonom-code33-controller/build1/WorldRevolutionNews-2.1.2-code33-ce2b556-unsigned.aab` und entsprechend `build2`.
+
+Aktuelle Belege: `evidence/translation-autonom-2026-10-02/controller-followup/`. Die Aufnahme `autonom-live-js62-390.jpg` zeigt die echte endgültige Vorschau. Die AABs wurden zur separaten unabhängigen Paketabnahme übergeben. Keine Signierung, kein Play-Upload und kein Cloudflare-Deployment. ROADMAP-/Artefaktstatus ist nachgepflegte Dokumentation; die AABs bleiben unverändert an `ce2b556` gebunden.

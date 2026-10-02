@@ -1212,15 +1212,23 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "controller-followup-local-pass-pending-new-build-and-independent-review",
-    "sourceCommit": null,
+    "status": "controller-runtime-pass-reproducible-unsigned-awaiting-artifact-review",
+    "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
     "signatureVerified": false,
     "uploadPerformed": false,
     "releaseReady": false,
     "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
     "signing": "not-performed-new-artifact-required",
     "physicalCode33Test": "pending",
-    "note": "New product freeze and unsigned build will be bound in a later documentation commit."
+    "note": "New product freeze and unsigned build will be bound in a later documentation commit.",
+    "artifactSha256": "3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD",
+    "artifactBytes": 44339190,
+    "artifactReport": "docs/evidence/translation-autonom-2026-10-02/controller-followup/root-artifact-verification.json",
+    "runtimeReview": {
+      "result": "PASS",
+      "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
+      "report": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-runtime-review.md"
+    }
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
@@ -1274,7 +1282,7 @@
     }
   ],
   "translationSharingAutonom20261002": {
-    "status": "controller-followup-fixed-local-contract-browser-audit-pass",
+    "status": "controller-runtime-pass-reproducible-unsigned",
     "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
     "runtime": {
       "js": 62,
@@ -1303,7 +1311,7 @@
       "Authenticated Cloudflare model smoke test and migration",
       "Signed artifact review, physical device test and bound Play upload"
     ],
-    "sourceCommit": null,
+    "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
     "controllerFollowup": {
       "manualLeadButton": "preserved-by-updating-button-label",
       "transientLeadRetry": "one-direct-bounded-retry-after-30-seconds-independent-of-batch-failure-cutoff",
