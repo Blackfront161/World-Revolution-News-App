@@ -1,0 +1,344 @@
+{
+  "sourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69",
+  "terms": 167,
+  "references": 44,
+  "newTerms": [
+    {
+      "id": "agroecology",
+      "title": {
+        "de": "Agrarökologie",
+        "en": "Agroecology"
+      },
+      "sources": [
+        "knowledge-agroecology"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "seed-sovereignty",
+      "title": {
+        "de": "Saatgutsouveränität",
+        "en": "Seed sovereignty"
+      },
+      "sources": [
+        "knowledge-seed-sovereignty"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "energy-democracy",
+      "title": {
+        "de": "Energiedemokratie",
+        "en": "Energy democracy"
+      },
+      "sources": [
+        "knowledge-energy-democracy"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "climate-reparations",
+      "title": {
+        "de": "Klimareparationen",
+        "en": "Climate reparations"
+      },
+      "sources": [
+        "knowledge-climate-reparations"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "environmental-racism",
+      "title": {
+        "de": "Umweltrassismus",
+        "en": "Environmental racism"
+      },
+      "sources": [
+        "knowledge-environmental-racism"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "community-supported-agriculture",
+      "title": {
+        "de": "Solidarische Landwirtschaft",
+        "en": "Community-supported agriculture"
+      },
+      "sources": [
+        "knowledge-community-supported-agriculture"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "digital-commons",
+      "title": {
+        "de": "Digitale Gemeingüter",
+        "en": "Digital commons"
+      },
+      "sources": [
+        "knowledge-digital-commons"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "federated-networks",
+      "title": {
+        "de": "Föderierte Netzwerke",
+        "en": "Federated networks"
+      },
+      "sources": [
+        "knowledge-federated-networks"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "interoperability",
+      "title": {
+        "de": "Interoperabilität",
+        "en": "Interoperability"
+      },
+      "sources": [
+        "knowledge-interoperability"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "open-standards",
+      "title": {
+        "de": "Offene Standards",
+        "en": "Open standards"
+      },
+      "sources": [
+        "knowledge-open-standards"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "free-knowledge",
+      "title": {
+        "de": "Freies Wissen",
+        "en": "Free knowledge"
+      },
+      "sources": [
+        "knowledge-free-knowledge"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    },
+    {
+      "id": "collective-access",
+      "title": {
+        "de": "Kollektive Zugänglichkeit",
+        "en": "Collective access"
+      },
+      "sources": [
+        "knowledge-collective-access"
+      ],
+      "revision": {
+        "version": "knowledge-expansion-3",
+        "date": "2026-10-02",
+        "note": "Original WRN DE/EN draft with a specific primary reference; independent editorial review pending."
+      }
+    }
+  ],
+  "newReferences": [
+    {
+      "id": "knowledge-agroecology",
+      "name": "FAO · The ten elements of agroecology",
+      "language": "English",
+      "url": "https://www.fao.org/agroecology/overview/the-10-elements-of-agroecology/the-10-elements-of-agroecology/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-seed-sovereignty",
+      "name": "La Via Campesina · Our Seeds, Our Future (2013)",
+      "language": "English",
+      "url": "https://www.ipcinfo.org/fileadmin/user_upload/aahm/docs/viacampesinaEN-notebook6.pdf",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-energy-democracy",
+      "name": "Energy Democracy · Principles",
+      "language": "English",
+      "url": "https://energy-democracy.net/principals/index.html",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-climate-reparations",
+      "name": "Climate Justice Alliance · About",
+      "language": "English",
+      "url": "https://climatejusticealliance.org/about/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-environmental-racism",
+      "name": "Bullard Center · Land use and planning",
+      "language": "English",
+      "url": "https://www.bullardcenter.org/policy-areas/land-use-urban-and-regional-planning",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-community-supported-agriculture",
+      "name": "URGENCI · European CSA Declaration",
+      "language": "English",
+      "url": "https://urgenci.net/our-european-declaration/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-digital-commons",
+      "name": "Creative Commons · Who we are",
+      "language": "English",
+      "url": "https://creativecommons.org/who-we-are/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-federated-networks",
+      "name": "W3C · ActivityPub",
+      "language": "English",
+      "url": "https://www.w3.org/TR/activitypub/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-interoperability",
+      "name": "W3C · Web standards",
+      "language": "English",
+      "url": "https://www.w3.org/standards/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-open-standards",
+      "name": "FSFE · Open standards definition",
+      "language": "English",
+      "url": "https://fsfe.org/freesoftware/standards/def.en.html",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-free-knowledge",
+      "name": "Wikimedia Foundation · Mission",
+      "language": "English",
+      "url": "https://wikimediafoundation.org/who-we-are/mission/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    },
+    {
+      "id": "knowledge-collective-access",
+      "name": "Sins Invalid · Ten principles of disability justice",
+      "language": "English",
+      "url": "https://sinsinvalid.org/10-principles/",
+      "downloads": [],
+      "description": {
+        "de": "Primärquelle: eigener Ansatz der genannten Organisation. Referenz für den WRN-Entwurf; keine allgemeine Rechtefreigabe.",
+        "en": "Primary source: the named organisation’s own approach. Reference for the WRN draft; no general reuse grant."
+      }
+    }
+  ],
+  "books": 728,
+  "paths": [
+    {
+      "id": "foundations-self-organisation",
+      "bookRelationships": 10,
+      "podcastRelationships": 2
+    },
+    {
+      "id": "work-housing",
+      "bookRelationships": 10,
+      "podcastRelationships": 3
+    },
+    {
+      "id": "ecology-commons",
+      "bookRelationships": 10,
+      "podcastRelationships": 2
+    },
+    {
+      "id": "digital-commons-and-self-organisation",
+      "bookRelationships": 3,
+      "podcastRelationships": 0
+    }
+  ]
+}

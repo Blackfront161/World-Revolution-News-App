@@ -1,0 +1,57 @@
+{
+  "sourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69",
+  "files": {
+    "news-app-2.js": {
+      "sha256": "67d4526d325cc138347cb721834a3b46f5220cfcc95f462262584d10222bbac7",
+      "bytes": 757127
+    },
+    "news-app-2.css": {
+      "sha256": "a02141d06a24bc5ba51e5729beaa274a939fc2d52839e2953662304c57c78737",
+      "bytes": 135353
+    },
+    "lexicon-tab.js": {
+      "sha256": "311fb4b03d778fc4e65491940c7a78c75fc149e8d2e2e6e2ee36b0501c3a5096",
+      "bytes": 263735
+    },
+    "learning-paths.json": {
+      "sha256": "d2255f2a4f82d8c80b138adb3607db6407a64ba813c165fd29666956351868c4",
+      "bytes": 23707
+    },
+    "index.html": {
+      "sha256": "683baec70ee6754541f580ed2654fe12c7a2bdfbf4f6b27c01a7efc4ee0d18a6",
+      "bytes": 25507
+    },
+    "service-worker.js": {
+      "sha256": "5172b624de369d43fa54f68aa0976a6f8bb4249da6fd12ed7d726c944cf51375",
+      "bytes": 20100
+    },
+    "news-app-2-sw.js": {
+      "sha256": "e224696fac45b9bd8b3fd94c7891691ad8db6d643c240fcdd6a67fb336b66300",
+      "bytes": 13042
+    },
+    "app-check.html": {
+      "sha256": "1073c462d9cd011d6bc867f5ec070dc78b731dd69ab3bb7d25772be335a8b4e2",
+      "bytes": 12207
+    },
+    "release_audit_183.py": {
+      "sha256": "035d4d04d0b27a7ea6064879611643013383106adb932e2bc42dcb5f16c2156f",
+      "bytes": 23042
+    },
+    "tests/validate_app.py": {
+      "sha256": "808570cf00ee807e941665ae066298b5cebcbe36dd49e72779709d3530dac69a",
+      "bytes": 25878
+    },
+    "tests/test_autonom_behavior.js": {
+      "sha256": "0ba434b61c818fb96c991790dbfbf9628c0e6c2678fe7a2b43c8186ae3f711c4",
+      "bytes": 7970
+    },
+    "tests/test_quality_release_185.py": {
+      "sha256": "19fed5e2e34468581f7d69df6e00300ba118cbb2df43b8982ef20d5f5f0cdd82",
+      "bytes": 5699
+    },
+    "tests/browser_autonom_topics_content.mjs": {
+      "sha256": "9a36d30a2905e188d500254bbe08e8d7791cf91b84db2418c54494cc3504ad60",
+      "bytes": 8825
+    }
+  }
+}

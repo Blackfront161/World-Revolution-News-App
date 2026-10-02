@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Actual lead translated and rendered while other requests remain unresolved.",
+    "Autonom headline-only rows, substantial cover images, nine languages x four widths without overflow.",
+    "200% text size stays within the homepage at four widths.",
+    "Manual lead translation preserves the clickable headline button.",
+    "Actual reader shares translated headline, translated-with-app attribution, original URL and Play link.",
+    "Reader translation labels stay inside their buttons in five languages and four widths."
+  ],
+  "errors": []
+}

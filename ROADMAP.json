@@ -12,7 +12,7 @@
     "status": "Google Play verfuegbar; vollstaendiger Rollout100% in178 Laendern am2.Oktober sichtbar verifiziert",
     "verifiedAt": "2026-10-02",
     "evidence": "docs/ROADMAP-PACKAGE-2026-10-02.md",
-    "note": "Code32 ist live. Neue Roadmap-Inhalte werden separat inCode33 gebaut."
+    "note": "Code32 remains live; latest App source needs a newly bound Code33 artifact."
   },
   "current": {
     "version": "2.1.2",
@@ -20,7 +20,7 @@
     "versionCode": 32,
     "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
     "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
-    "status": "Code32 / 2.1.2 is live: Google Play100% rollout in178 countries, verified2026-10-02. Roadmap contents belong to the separate unsigned Code33 candidate.",
+    "status": "Code32 / 2.1.2 is live. The new Autonom/content source freeze is local preview only; no matching AAB built or uploaded.",
     "artifactReport": "docs/evidence/audio-sharing-2026-10-01/code32-signature-report.json",
     "artifactSha256": "66D6D96D6234FA7D390EDD58A3640602187ECFBFEAFAA8AF8A4D72D982F7975A",
     "artifactMode": "signed-local-candidate",
@@ -1169,7 +1169,7 @@
     "serverseitige Standortverfolgung"
   ],
   "releaseGates": [
-    "Code33 local signing requires explicit user approval and masked keystore entry; automatic review rejected opening signer on2026-10-02.",
+    "Previous ce2b556 Code33 artifact/signing preflight is superseded; prepare a new reviewed source-bound artifact before signing and device testing.",
     "Independent verification of signed Code33 and physical Code33 test remain pending; upload authorization must bind the final signed artifact.",
     "Website newer PO20min-layout publication belongs to WRN Website - Inhaltsparitaet; preserve full backup, old pointers and rights/revocation/SW gates."
   ],
@@ -1212,29 +1212,16 @@
   "nextCandidate": {
     "version": "2.1.2",
     "versionCode": 33,
-    "status": "independently-accepted-reproducible-unsigned-candidate",
-    "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
+    "status": "new-source-freeze-awaiting-independent-review-and-new-unsigned-build",
+    "sourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69",
     "signatureVerified": false,
     "uploadPerformed": false,
     "releaseReady": false,
-    "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
-    "signing": "not-performed-new-artifact-required",
+    "artifactMode": "not-built",
+    "report": "docs/AUTONOM-CONTENT-EXPANSION-2026-10-02.md",
     "physicalCode33Test": "pending",
-    "note": "New product freeze and unsigned build will be bound in a later documentation commit.",
-    "artifactSha256": "3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD",
-    "artifactBytes": 44339190,
-    "artifactReport": "docs/evidence/translation-autonom-2026-10-02/controller-followup/root-artifact-verification.json",
-    "runtimeReview": {
-      "result": "PASS",
-      "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
-      "report": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-runtime-review.md"
-    },
-    "independentReview": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-artifact-review.md",
-    "artifactReview": {
-      "result": "PASS-unsigned-only",
-      "report": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-artifact-review.md",
-      "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2"
-    }
+    "signing": "not-performed-new-artifact-required",
+    "note": "New content and complete topic tabs are in local preview. Previous ce2b556 unsigned AAB does not contain them and must not be signed for this release."
   },
   "roadmapPackage20261002": {
     "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
@@ -1285,6 +1272,34 @@
       "sourceCommit": "465442ab6526afafdd2030d09b59f4982f934de4",
       "sha256": "508C1DA603CB79335774137DBC2A18ACB1ED548AE88B82369EBD95E58580C41D",
       "status": "superseded-controller-found-manual-lead-button-removal-do-not-sign"
+    },
+    {
+      "version": "2.1.2",
+      "versionCode": 33,
+      "status": "superseded-autonom-content-expansion-do-not-sign",
+      "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
+      "signatureVerified": false,
+      "uploadPerformed": false,
+      "releaseReady": false,
+      "report": "docs/TRANSLATION-SHARING-AUTONOM-FIX-2026-10-02.md",
+      "signing": "not-performed-new-artifact-required",
+      "physicalCode33Test": "pending",
+      "note": "New product freeze and unsigned build will be bound in a later documentation commit.",
+      "artifactSha256": "3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD",
+      "artifactBytes": 44339190,
+      "artifactReport": "docs/evidence/translation-autonom-2026-10-02/controller-followup/root-artifact-verification.json",
+      "runtimeReview": {
+        "result": "PASS",
+        "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
+        "report": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-runtime-review.md"
+      },
+      "independentReview": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-artifact-review.md",
+      "artifactReview": {
+        "result": "PASS-unsigned-only",
+        "report": "docs/evidence/translation-autonom-2026-10-02/controller-followup/controller-artifact-review.md",
+        "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2"
+      },
+      "supersededBySourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69"
     }
   ],
   "translationSharingAutonom20261002": {
@@ -1313,8 +1328,8 @@
       "releaseAudit": "161/161"
     },
     "nextSteps": [
-      "Local protected signing of the exact ce2b556 Code33 candidate",
-      "Signed artifact review, physical Code33 device test and bound Play upload"
+      "Build a new source-bound candidate including the latest Autonom/content expansion",
+      "Independent unsigned/signed artifact verification and physical device test before distribution"
     ],
     "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
     "controllerFollowup": {
@@ -1356,12 +1371,13 @@
     "originalRollbackVersion": "039864f6-f4dc-41be-a820-16dda00607ae"
   },
   "code33ProtectedSigning20261002": {
-    "status": "independent-preflight-pass-not-signed-not-uploaded",
+    "status": "superseded-by-autonom-content-expansion-do-not-launch",
     "sourceCommit": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
     "script": "scripts/sign-google-play-aab-2.1.2-code33-ce2b556-gui.ps1",
     "scriptSha256": "2C0E5382DED5793C950EFA3E8175613772B5994CDCECFBAC3B15BFC0C7F8C4B6",
     "unsignedSha256": "3B833A549CC8B4B3085AA9701620883A20150AD1D268FDF3625043BBC04277AD",
-    "evidence": "docs/evidence/cloudflare-model-2026-10-02/code33-ce2b556-preflight.json"
+    "evidence": "docs/evidence/cloudflare-model-2026-10-02/code33-ce2b556-preflight.json",
+    "note": "Historical preflight only. ce2b556 AAB excludes the new content and topic tabs; retain files, require a new artifact bound to current source."
   },
   "cloudflareSecurityFollowup20261002": {
     "status": "independent-exact-code-review-pass-published-live-smoke-pass",
@@ -1381,5 +1397,48 @@
     "localDurableObjectProbe": "50 of60 concurrent subscriptions admitted,10 capacity rejections; local fixture2026-07-29, production2026-08-05 unchanged",
     "independentLiveReview": "PASS: public health, CORS, oversized stream413 and push-config independently reproduced",
     "independentLiveReport": "docs/evidence/cloudflare-model-2026-10-02/controller-live-review.md"
+  },
+  "autonomContentExpansion20261002": {
+    "status": "implemented-local-preview-root-qa-pass-independent-review-pending",
+    "sourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69",
+    "runtimeCommit": "fcbd5cdf65db85b63bf7444a5788b6498d09e5ee",
+    "report": "docs/AUTONOM-CONTENT-EXPANSION-2026-10-02.md",
+    "autonomCanonicalTopics": 21,
+    "additionalRuntimeTopics": "included automatically; duplicates removed",
+    "lexiconTerms": 167,
+    "lexiconReferences": 44,
+    "newOriginalTermsDE_EN": 12,
+    "learningPaths": 4,
+    "bookRelationships": 33,
+    "podcastRelationships": 7,
+    "editorialStatus": "draft-independent-editorial-review-pending",
+    "newFeedAdmissions": 0,
+    "runtime": {
+      "js": 63,
+      "css": 52,
+      "lexicon": 9,
+      "productionCache": "2.1.2-r17",
+      "previewCache": "v105"
+    },
+    "checks": {
+      "javascriptModules": 56,
+      "pythonPassed": 151,
+      "historicalSkips": 3,
+      "subtests": 4,
+      "mainOnly": 4,
+      "targetedPythonPassed": 42,
+      "releaseAudit": "161/161",
+      "browserSuites": 3
+    },
+    "previewUrl": "http://127.0.0.1:8765/index.html?preview=8",
+    "publicationPerformed": false,
+    "androidArtifactBuilt": false,
+    "nextSteps": [
+      "Independent technical review of the exact source freeze",
+      "Editorial review of 12 original terms and 3 new reading relationships",
+      "Build and verify a new Android candidate from the final reviewed source",
+      "Add further language versions and source-bound library/podcast expansions"
+    ],
+    "libraryTitles": 728
   }
 }

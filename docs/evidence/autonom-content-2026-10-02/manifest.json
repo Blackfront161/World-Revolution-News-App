@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "dbc5df0e3635822ace50e2f1c09f1c43984aff69",
+  "files": {
+    "autonom-live-preview.png": {
+      "sha256": "b9431381cc54d2f9c4bdb5d28115c31fc36d286fbae2bc635ff654b230f199cb",
+      "bytes": 31332
+    },
+    "browser-library.json": {
+      "sha256": "f776769ba2647390200c340901f64b8e4d85b8b149bf0f90ca10d028570c999e",
+      "bytes": 426
+    },
+    "browser-topics-content.json": {
+      "sha256": "ca73a8f88e480c8fcff4b0cfe71a8646ee0d6bff63cd32aaed6d5113e4b27718",
+      "bytes": 565
+    },
+    "browser-translation-sharing.json": {
+      "sha256": "2685875243192ea6bc36e9882cb64dc5c6c6dfd31ecb1705f166da7573198e60",
+      "bytes": 588
+    },
+    "content-inventory.json": {
+      "sha256": "9e1944ee6cb7ad4717569d31606804edf6b1ef305fc09bcccb4694440d9c3e13",
+      "bytes": 12092
+    },
+    "contract-matrix.log": {
+      "sha256": "5a1b3bef6db8aba1d194f6ef72fa4b13611f9caba1eb0ca9349b35440c5a0131",
+      "bytes": 6566
+    },
+    "release-audit.json": {
+      "sha256": "3f6a221fbf5b45a4f17c42ebacf3ad5b74d6d7ab42bfa8b62fd365df1a5cfc00",
+      "bytes": 33093
+    },
+    "source-hashes.json": {
+      "sha256": "76090eab401a3448ee3cca411cf6d4bf422bde0d1a9fa52438a1753f742f8bed",
+      "bytes": 1929
+    }
+  }
+}
