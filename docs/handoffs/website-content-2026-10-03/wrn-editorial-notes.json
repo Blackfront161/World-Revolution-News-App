@@ -1,0 +1,281 @@
+{
+  "schema": "wrn.website-home-editorial.v1",
+  "directoryCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+  "feedSha256": "471f6e6d3baefe8f6e4bc9a4dd91f75c002096ab58be840d3e69387020f307d1",
+  "authorship": "WRN editorial reading notes; no copied source body",
+  "entries": [
+    {
+      "articleId": "news-d66b8d407e0eb4adcb2e5d17d2e9bdb1b85660b8c28b758d128f6ed58356f685",
+      "originalUrl": "https://www.anred.org/se-vuelven-a-encender-las-calles-tras-el-fallo-de-la-corte-que-reactivo-la-extranjerizacion-de-la-tierra/",
+      "originalTitle": "«Se vuelven a encender las calles» tras el fallo de la Corte que reactivó la extranjerización de la tierra",
+      "headlineDe": "Argentinien: Streit um Landgesetz führt zu neuen Protesten",
+      "summaryDe": "ANRed berichtet über ein Gerichtsurteil, das die Aufhebung von Beschränkungen für ausländischen Landbesitz wieder wirksam macht. Gewerkschaften und soziale Organisationen bereiten Proteste vor.",
+      "summaryEn": "ANRed reports that a court ruling has reinstated the repeal of restrictions on foreign ownership of rural land. Unions and social organisations are preparing protests.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.anred.org/se-vuelven-a-encender-las-calles-tras-el-fallo-de-la-corte-que-reactivo-la-extranjerizacion-de-la-tierra/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-98ecd49aeb72e7bdcba4bc929017c856a38a216b12c664413c50f48a7eac1f53",
+      "originalUrl": "https://www.evrensel.net/haber/6003046/husiler-suudi-arabistan-baskent-sana-ve-diger-bazi-kentlere-hava-saldirilari-duzenliyor",
+      "originalTitle": "Husiler: Suudi Arabistan, başkent Sana ve diğer bazı kentlere hava saldırıları düzenliyor",
+      "headlineDe": "Huthi melden saudische Luftangriffe auf Sanaa",
+      "summaryDe": "Evrensel berichtet über die Angaben der Huthi zu saudischen Luftangriffen auf Sanaa und weitere Städte. Die Meldung gibt die Darstellung der Huthi wieder.",
+      "summaryEn": "Evrensel reports the Houthis’ account of Saudi air strikes on Sana’a and other cities. The report presents the Houthis’ claim.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.evrensel.net/haber/6003046/husiler-suudi-arabistan-baskent-sana-ve-diger-bazi-kentlere-hava-saldirilari-duzenliyor"
+      ],
+      "sourceLanguage": "tr"
+    },
+    {
+      "articleId": "news-d68eb3eba71982ef703ecdf9cc1ae377e2e2f778c838979b236ef321cea1fc77",
+      "originalUrl": "https://laborforpalestine.net/2026/10/01/the-struggle-for-class-independent-unionism-in-the-face-of-state-intervention-uawd-daily-struggle/",
+      "originalTitle": "The Struggle for Class-Independent Unionism in the Face of State Intervention (UAWD Daily Struggle)",
+      "headlineDe": "Gewerkschaftliche Unabhängigkeit unter staatlicher Aufsicht",
+      "summaryDe": "Ein von Labor for Palestine veröffentlichter UAWD-Beitrag diskutiert staatliche Eingriffe in die UAW. Der Autor wirbt für demokratische Gewerkschaften und eine unabhängige Organisierung der Beschäftigten.",
+      "summaryEn": "An UAWD commentary republished by Labor for Palestine discusses state intervention in the UAW. The author argues for democratic unions and independent worker organising.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://laborforpalestine.net/2026/10/01/the-struggle-for-class-independent-unionism-in-the-face-of-state-intervention-uawd-daily-struggle/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-5cd76619b67a58f87537f3c36d6451e2d10c706bd9f4a0695ede8605b972214e",
+      "originalUrl": "https://infolibre.gr/2026/10/02/2o-eleytheriako-festival-gia-ton-organomeno-anarchismo-2-3-10-parko-chanth/",
+      "originalTitle": "2ο Ελευθεριακό φεστιβάλ για τον οργανωμένο αναρχισμό, 2-3/10 Πάρκο ΧΑΝΘ",
+      "headlineDe": "Libertäres Festival am 2. und 3. Oktober in Thessaloniki",
+      "summaryDe": "Infolibre veröffentlicht das Programm des zweiten libertären Festivals im Park der ΧΑΝΘ. Im Mittelpunkt stehen organisierter Anarchismus sowie soziale und Arbeitskämpfe.",
+      "summaryEn": "Infolibre publishes the programme for the second libertarian festival in Thessaloniki’s ΧΑΝΘ park. Its focus is organised anarchism and social and labour struggles.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://infolibre.gr/2026/10/02/2o-eleytheriako-festival-gia-ton-organomeno-anarchismo-2-3-10-parko-chanth/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-921fcc9bef43bfa916947824646785e171bfa0bcf6f1b03a7c8b1aa19a8ed3c3",
+      "originalUrl": "https://www.eff.org/deeplinks/2026/10/we-demand-more-information-how-marin-cops-illegally-shared-flock-alpr-data",
+      "originalTitle": "We Demand More Information on How Marin Cops Illegally Shared Flock ALPR Data",
+      "headlineDe": "EFF fordert Aufklärung über weitergegebene Kennzeichendaten",
+      "summaryDe": "EFF und ACLU verlangen Auskunft über die Weitergabe von Flock-Kennzeichendaten durch das Sheriffbüro von Marin County. Sie sehen darin einen Verstoß gegen kalifornisches Recht und eine frühere Vereinbarung.",
+      "summaryEn": "EFF and the ACLU demand records about Marin County Sheriff’s sharing of Flock licence-plate data. They argue that the sharing violates California law and a previous settlement.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.eff.org/deeplinks/2026/10/we-demand-more-information-how-marin-cops-illegally-shared-flock-alpr-data"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-712d66bf4c905af4e90b9d6b1353bd96423028611dc53b832ec7ee83e6906a75",
+      "originalUrl": "https://apublica.org/nota/flavio-bolsonaro-criticou-juiza-patricia-acioli-executada-por-pms/",
+      "originalTitle": "Morta por PMs, juíza Patrícia Acioli “humilhava policiais”, disse Flávio Bolsonaro em 2011",
+      "headlineDe": "Pública greift Bolsonaros Äußerung über Patrícia Acioli auf",
+      "summaryDe": "Agência Pública berichtet über einen erneut verbreiteten Kommentar Flávio Bolsonaros nach der Ermordung der Richterin Patrícia Acioli. Die Veröffentlichung ordnet die damalige Äußerung ein.",
+      "summaryEn": "Agência Pública examines a resurfaced comment by Flávio Bolsonaro following the murder of judge Patrícia Acioli. The article places the statement in context.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://apublica.org/nota/flavio-bolsonaro-criticou-juiza-patricia-acioli-executada-por-pms/"
+      ],
+      "sourceLanguage": "pt"
+    },
+    {
+      "articleId": "news-32600c56c2ca69d7aaf19feb276436952695e2dfedb273867156974a24a772b0",
+      "originalUrl": "https://english.anf-news.com/human-rights/yilmaz-visually-impaired-people-face-barriers-to-sport-87461",
+      "originalTitle": "Yılmaz: Visually impaired people face barriers to sport",
+      "headlineDe": "Barrieren halten sehbehinderte Menschen vom Sport fern",
+      "summaryDe": "ANF spricht mit Abdülmecit Yılmaz über fehlende Zugänglichkeit im Sport. Er nennt unter anderem unzugängliche Anlagen, Transportprobleme und wirtschaftliche Hindernisse.",
+      "summaryEn": "ANF discusses access to sport with Abdülmecit Yılmaz. He identifies inaccessible facilities, transport difficulties and financial barriers faced by visually impaired people.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://english.anf-news.com/human-rights/yilmaz-visually-impaired-people-face-barriers-to-sport-87461"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-a58445cf002768b75b8bb50efb9df1d6047ad0890b29b4ff17fc1bda9c694754",
+      "originalUrl": "https://www.aptnnews.ca/national-news/parole-board-revokes-statutory-release-for-man-convicted-of-killing-two-first-nations-women/",
+      "originalTitle": "Parole board revokes statutory release for man convicted of killing two First Nations women",
+      "headlineDe": "Kanadische Bewährungsbehörde widerruft Freilassung",
+      "summaryDe": "APTN berichtet über den Widerruf der bedingten Freilassung eines wegen der Tötung zweier First-Nations-Frauen verurteilten Mannes. Die Behörde begründet die Entscheidung mit Regelverstößen und ihrer Risikobewertung.",
+      "summaryEn": "APTN reports that Canada’s parole board revoked the release of a man convicted of killing two First Nations women, citing breaches of conditions and its assessment of risk.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.aptnnews.ca/national-news/parole-board-revokes-statutory-release-for-man-convicted-of-killing-two-first-nations-women/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-0fc6e8f3caf790b0b890a57cdf58836d2437fae9d77915a0c568634ef46198c1",
+      "originalUrl": "https://worldbeyondwar.org/wbw-latin-america-organizer-addresses-un-human-rights-council-event-in-geneva/",
+      "originalTitle": "WBW Latin America Organizer Addresses UN Human Rights Council Event in Geneva",
+      "headlineDe": "World BEYOND War spricht beim Menschenrechtsrat in Genf",
+      "summaryDe": "Gabriel Aguirre veröffentlicht seinen Beitrag zu einer Veranstaltung im Umfeld des UN-Menschenrechtsrats. Er behandelt Menschenrechte, internationales Recht und die Forderung nach Entmilitarisierung.",
+      "summaryEn": "Gabriel Aguirre shares his address to an event alongside the UN Human Rights Council. He discusses human rights, international law and demilitarisation.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://worldbeyondwar.org/wbw-latin-america-organizer-addresses-un-human-rights-council-event-in-geneva/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-1cf06938edc2dec293c98980c564f3636a79c1824d29d2061219501a6e21cbea",
+      "originalUrl": "https://radiokurruf.org/discurso-sobre-la-desigualdad-ante-la-justicia-y-la-violencia-del-estado-contra-el-pueblo-mapuche/",
+      "originalTitle": "Discurso sobre la desigualdad ante la justicia y la violencia del Estado contra el pueblo Mapuche",
+      "headlineDe": "Mapuche-Perspektive auf Justiz und staatliche Gewalt",
+      "summaryDe": "Radio Kurruf veröffentlicht eine Reflexion von Martín Curiche zum Fall Huracán und einer erneut verschobenen Anhörung. Der Beitrag beschreibt seine Kritik am Umgang der Justiz mit Mapuche.",
+      "summaryEn": "Radio Kurruf publishes Martín Curiche’s reflection on the Huracán case and a postponed hearing. It presents his criticism of the justice system’s treatment of Mapuche people.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://radiokurruf.org/discurso-sobre-la-desigualdad-ante-la-justicia-y-la-violencia-del-estado-contra-el-pueblo-mapuche/"
+      ],
+      "sourceLanguage": "es"
+    },
+    {
+      "articleId": "news-cd8e2ff31c612cf88cb0c6542d66f7e19e59e211ef2ee9ba9d32f41b88ec47de",
+      "originalUrl": "https://labornotes.org/blogs/2026/10/how-unions-can-reverse-privatization-medicaid-and-why-it-matters",
+      "originalTitle": "How Unions Can Reverse Privatization of Medicaid and Why It Matters",
+      "headlineDe": "Wie Gewerkschaften die Medicaid-Privatisierung bekämpfen können",
+      "summaryDe": "Labor Notes veröffentlicht einen aus einer Rede von Rose Roach entwickelten Beitrag. Sie erläutert Folgen von Kürzungen und Privatisierung im Gesundheitswesen und diskutiert gewerkschaftliche Handlungsmöglichkeiten.",
+      "summaryEn": "Labor Notes publishes an article adapted from a speech by Rose Roach. She discusses healthcare cuts and privatisation and possible responses by unions.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://labornotes.org/blogs/2026/10/how-unions-can-reverse-privatization-medicaid-and-why-it-matters"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-6c92ab6b6abe7ce329b581eaa145f2576b56a8516ee1b499a2c91d72367411a2",
+      "originalUrl": "https://bianet.org/haber/soma-maden-cinayetinin-ardindan-ortak-talep-ihmal-arastirilsin-sorumlular-hesap-versin-324009",
+      "originalTitle": "Soma maden cinayetinin ardından ortak talep: “İhmal araştırılsın, sorumlular hesap versin”",
+      "headlineDe": "Nach Grubenunglück in Soma: Forderung nach Aufklärung",
+      "summaryDe": "Bianet berichtet über Reaktionen von Gewerkschaften und Parteien auf einen Einsturz im Bergwerk von Soma. Sie fordern eine Untersuchung der Ursachen, des Arbeitsschutzes und der öffentlichen Kontrolle.",
+      "summaryEn": "Bianet reports union and political responses to a mine collapse in Soma. They call for investigation of its causes, workplace safety and public oversight.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://bianet.org/haber/soma-maden-cinayetinin-ardindan-ortak-talep-ihmal-arastirilsin-sorumlular-hesap-versin-324009"
+      ],
+      "sourceLanguage": "tr"
+    },
+    {
+      "articleId": "news-4c449c29d008695cd45c6680e3fcb1da4061197db4ad75d57a789db849940f57",
+      "originalUrl": "https://unicornriot.ninja/2026/nikos-romanos-acquitted-as-greek-government-pushes-terrorism-cases/",
+      "originalTitle": "Nikos Romanos Acquitted As Greek Government Pushes Terrorism Cases",
+      "headlineDe": "Unicorn Riot berichtet über Freispruch für Nikos Romanos",
+      "summaryDe": "Der Beitrag untersucht das Verfahren nach einer Explosion in Athen und den Freispruch für Nikos Romanos. Er stellt die unterschiedlichen Urteile und die Anwendung griechischer Terrorismusgesetze dar.",
+      "summaryEn": "Unicorn Riot examines the case following an explosion in Athens and Nikos Romanos’s acquittal, discussing the different verdicts and Greece’s terrorism laws.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://unicornriot.ninja/2026/nikos-romanos-acquitted-as-greek-government-pushes-terrorism-cases/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-c5f7f1b8152f814231d0746a2812d88878dc775550146a1ed6c83ac6ab912756",
+      "originalUrl": "https://nunatsiaq.com/stories/article/tusaajiapik-elders-home-residents-being-relocated-to-montreal/",
+      "originalTitle": "Tusaajiapik elders home residents being relocated to Montreal",
+      "headlineDe": "Bewohner des Tusaajiapik-Altersheims werden verlegt",
+      "summaryDe": "Nunatsiaq berichtet über die Verlegung aus dem Altersheim in Kuujjuaq in Einrichtungen bei Montreal. Als Anlass nennt die Veröffentlichung technische Probleme am Gebäude.",
+      "summaryEn": "Nunatsiaq reports that residents of the Tusaajiapik elders home in Kuujjuaq are being moved to facilities near Montreal because of technical problems with the building.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://nunatsiaq.com/stories/article/tusaajiapik-elders-home-residents-being-relocated-to-montreal/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-d99ce40b3f63bd958aeaa9dfa51ddd03cf78655e83e026fb1d3d822e5b230711",
+      "originalUrl": "https://avtonom.org/author_columns/konec-istorii-kak-gorizont-rol-sposoba-prepodavaniya-istorii-formirovanii-obshchestva",
+      "originalTitle": "«Конец истории» как горизонт: роль способа преподавания истории при формировании общества",
+      "headlineDe": "Wie Geschichtsunterricht gesellschaftliche Horizonte prägt",
+      "summaryDe": "Ein Kommentar bei Avtonom nimmt die Vorstellung vom Ende der Geschichte zum Ausgangspunkt. Er diskutiert, wie die Vermittlung von Geschichte gesellschaftliche Zukunftsbilder beeinflusst.",
+      "summaryEn": "An Avtonom commentary starts from the idea of the end of history and discusses how teaching history can shape society’s expectations of the future.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://avtonom.org/author_columns/konec-istorii-kak-gorizont-rol-sposoba-prepodavaniya-istorii-formirovanii-obshchestva"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-a7fc56d51e29c8016ae4abc48c48253f21f2cec19089fb06497cc38ff89d3f19",
+      "originalUrl": "https://indiginews.com/news/tkemlups-gathers-to-denounce-white-nationalism/",
+      "originalTitle": "In Tk̓emlúps, community gathers to ‘reclaim our space’ and denounce white nationalism",
+      "headlineDe": "Tk̓emlúps: Gemeinschaft setzt Zeichen gegen weißen Nationalismus",
+      "summaryDe": "IndigiNews berichtet über eine Zusammenkunft von Secwépemc und Unterstützenden nach einer nationalistischen Demonstration. Die Teilnehmenden kamen zusammen, um den Ort durch Gesang, Trommeln und Gebete zurückzugewinnen.",
+      "summaryEn": "IndigiNews reports on a gathering of Secwépemc people and allies following a white-nationalist demonstration. Participants reclaimed the space through singing, drumming and prayer.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://indiginews.com/news/tkemlups-gathers-to-denounce-white-nationalism/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-3edbd3ee75cc8ce29fe68dd5bc4b7353ef28ba8c52d0cbbfc3ce2db8390eefdb",
+      "originalUrl": "https://www.evrensel.net/haber/6003045/bolu-belediyesi-ne-yonelik-zimmet-sorusturmasi-gozaltina-alinan-11-kisiden-5-i-tutuklandi",
+      "originalTitle": "Bolu Belediyesi'ne yönelik zimmet soruşturması: Gözaltına alınan 11 kişiden 5'i tutuklandı",
+      "headlineDe": "Bolu: Fünf Festnahmen in Ermittlungen wegen Veruntreuung",
+      "summaryDe": "Evrensel meldet die Festnahme von fünf Personen im Rahmen einer Untersuchung zur Stadtverwaltung von Bolu. Die Meldung betrifft ein laufendes Verfahren; eine Verurteilung wird damit nicht festgestellt.",
+      "summaryEn": "Evrensel reports that five people were detained in an embezzlement investigation concerning Bolu’s municipal administration. The report concerns an ongoing investigation, not a conviction.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.evrensel.net/haber/6003045/bolu-belediyesi-ne-yonelik-zimmet-sorusturmasi-gozaltina-alinan-11-kisiden-5-i-tutuklandi"
+      ],
+      "sourceLanguage": "tr"
+    },
+    {
+      "articleId": "news-af6277b60e663ae65a85b785ecbe00718fd203e338f700f77b5f0b085012d077",
+      "originalUrl": "https://www.aptnnews.ca/national-news/manitobas-handling-of-moose-hunting-an-infringement-on-treaty-rights-court-documents/",
+      "originalTitle": "Manitoba’s handling of moose hunting an ‘infringement’ on Treaty rights: court documents",
+      "headlineDe": "Pimicikamak streitet um Elchjagd und Vertragsrechte",
+      "summaryDe": "APTN berichtet über den erneuten Rechtsstreit zwischen Pimicikamak und Manitoba. Die First Nation kritisiert die Vergabe von Jagdlizenzen und sieht ihre vertraglich zugesicherten Rechte verletzt.",
+      "summaryEn": "APTN reports on renewed litigation between Pimicikamak and Manitoba over moose-hunting licences. The First Nation argues that the province is infringing its Treaty rights.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.aptnnews.ca/national-news/manitobas-handling-of-moose-hunting-an-infringement-on-treaty-rights-court-documents/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-78427d30aa9d8c969cdfdbb9f76908dce9ea15d0d1046a332bfa027d3e96701f",
+      "originalUrl": "https://www.evrensel.net/haber/6003042/fransadaki-lise-ogrencilerinin-eylemleri-belcikaya-sicradi",
+      "originalTitle": "Fransa'daki lise öğrencilerinin eylemleri Belçika'ya sıçradı",
+      "headlineDe": "Schülerproteste erreichen Belgien",
+      "summaryDe": "Evrensel berichtet, dass Proteste von Schülerinnen und Schülern aus Frankreich auch Belgien erreicht haben. Weitere Angaben sind in der Originalmeldung nachzulesen.",
+      "summaryEn": "Evrensel reports that student protests in France have spread to Belgium. Further details are available in the original report.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.evrensel.net/haber/6003042/fransadaki-lise-ogrencilerinin-eylemleri-belcikaya-sicradi"
+      ],
+      "sourceLanguage": "tr"
+    },
+    {
+      "articleId": "news-7835793017091df1109c1d909d7ab90088107ccec7802f75e15ff70418def3c9",
+      "originalUrl": "https://www.eff.org/deeplinks/2026/10/challengers-approach-third-party-app-stores-arrive-google-play",
+      "originalTitle": "Challengers Approach: Third Party App Stores Arrive to Google Play",
+      "headlineDe": "Alternative App-Stores kommen in den Google Play Store",
+      "summaryDe": "EFF erläutert neue Möglichkeiten für die Verteilung alternativer App-Stores und für App-Zahlungen. Der Beitrag ordnet die Änderungen in den Rechtsstreit zwischen Epic Games und Google ein.",
+      "summaryEn": "EFF explains new options for distributing alternative app stores and handling app payments, placing the changes in the context of Epic Games’s lawsuit against Google.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.eff.org/deeplinks/2026/10/challengers-approach-third-party-app-stores-arrive-google-play"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-853a9b37afe4e3c8c26e86e82d77a2cf3078ecda1a3861142b132a37b0108242",
+      "originalUrl": "https://infolibre.gr/2026/10/02/https-infolibre-gr-2026-09-29-to-kilkis-axizei-iomichanikes-ape/",
+      "originalTitle": "Το Κιλκίς αξίζει καλύτερο μέλλον – Κάλεσμα στήριξης του αγώνα ενάντια στις Βιομηχανικές ΑΠΕ. Παρασκευή 2/10 Εργατικό Κέντρο Κιλκίς",
+      "headlineDe": "Kilkís: Protest gegen industrielle Energieprojekte",
+      "summaryDe": "Infolibre veröffentlicht einen Aufruf aus Kilkís gegen große Energieprojekte. Er informiert über eine Veranstaltung am 2. Oktober und die Unterstützung eines Rechtsmittels zum Schutz von Land und Umwelt.",
+      "summaryEn": "Infolibre publishes a call from Kilkís opposing large energy projects, with details of an October 2 event and support for a legal challenge concerning land and environmental protection.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://infolibre.gr/2026/10/02/https-infolibre-gr-2026-09-29-to-kilkis-axizei-iomichanikes-ape/"
+      ],
+      "sourceLanguage": "und"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "wrn.app-home-selection-handoff.v1",
+  "appCommit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+  "dataCommit": "9ce5fa03151e230f26c6b09be77620d2f7398e63",
+  "mode": "anonymous-published-data-snapshot-DE",
+  "feedSha256": "1a3f995285fa1a922f271f98b93934051c16c84919c69921d9d549beb663e005",
+  "selectionSourceSha256": "4b4aeb74bf45a5e8337627f0b382f69a5538b15d5589e05534f82125819dc1f3",
+  "roles": {
+    "lead": [
+      "news-bf7f81a0916bf3c8e14fd76c3ea38c65a8c8ac67c2a6008059ef42a8f74b4fcc"
+    ],
+    "top": [
+      "news-4805e4b7cf59c5de9e527df647913b42b2e7a9e98c41c0b38e024c33da7d511b",
+      "news-19ec580a27780de2a9af0ed4eb0fc0441bc442f30d9954d78686e6c655a04cee",
+      "news-cf022a0fd6b1dff18da08d530fe6f0fd9ec23a743d1ac65cd8cbc212c00d5f63",
+      "news-4aebfed2089e5861f814b47fdc387997351b655643f164d0fec4fe551a6752e0",
+      "news-e8532636992ed876eefb26694f27f3726fe015c24893f6e7decadacdf1900a00"
+    ],
+    "sport": [],
+    "more": [
+      "news-89996c282207e65c3097efb6adccbc8c85fe46c009854f1cad5386ab1cd96389",
+      "news-f6e3c002e7c2304d8328565c09551f82af3051f1800ec8a83f618df06c96bacf",
+      "news-d52cfaa043f0bce20c31fa5f04fcc8bce9e50adb2be12f2f366dc19402769081",
+      "news-71160ece10d3968bc4eef086b079366f9219621d283b98ea3405ab8e49c7dbfe",
+      "news-d24f42223b892eb38ec28385fa4e5ccaeb79fb2cedfae3e41560a0d7ae4983fd",
+      "news-4477980f56597e2f0462e36f3d89653f080a521476160fc92f97cc594b29d927",
+      "news-7861eaeeeab2dcb2decc157a80b2cbe3bb6acfb431767c97b8c7b3de7cd9451d",
+      "news-18819c41d5e1448ddcd93cd96786c015b5ee6afeca445d7095a61f8c47555433",
+      "news-63288e1130f25b9db71b153e08bf4f31c1825824bcc602af45c99b8bd208d8fd"
+    ],
+    "briefing": [
+      "news-ced541655bbddcfadc012cbfbf3991f3453ca77a69d1c165e0eb0ed27e021197",
+      "news-15bd626de2c3273c503e5e56575ba5f1237b486aed69af133d425062d8ddad5a",
+      "news-a37bea00300e766dbeecd9293b3e85e75c4b19f67422e5e963eb50a3091ca27e",
+      "news-666950a407216f3604842055c309b462cc056f33cc64b0c1417ba48793f36b7d",
+      "news-d576bb384df539b059557e499aa9f62da650491da4a96162a30f0ef378a39b2c"
+    ]
+  },
+  "limits": "Actual frozen App selection code and exact frozen feed revision; not user-personalized groups or a promise of continuing live identity. New directory entries still require Website admission."
+}

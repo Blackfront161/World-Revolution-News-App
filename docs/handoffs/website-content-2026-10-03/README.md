@@ -1,0 +1,15 @@
+# App-Inhalte für den Website-Arbeiter
+
+App-Code und Wissens-/Medienkataloge sind aus dem geprüften Commit `74e92546a4133ddc92ce51213f8d3f4a1eff7a68` exportiert. Der Nachrichteninput ist ausdrücklich der veröffentlichte Datenstand `9ce5fa03151e230f26c6b09be77620d2f7398e63`, nicht der ältere Offline-Feed im App-Bundle. Eingabe- und Ausgabedateien besitzen SHA256 und Bytezahl im Manifest.
+
+Der aktuelle Feed enthält500 Zeilen;426 davon sind nach den tatsächlichen App-Sichtbarkeits- und redaktionellen Regeln sichtbar. `articles-metadata.json` enthält nur deren Titel, Quellen, Originaladressen, Sprache, Klassifikation und Rollen.292 Artikel sind im früheren Website-Verzeichnis vorhanden;134 benötigen weitere Website-Aufnahme.20 der aktuellen Zeilen haben eine der21 bereits akzeptierten WRN-Notizen. Die21 eigenen Notizen bleiben zusätzlich unverändert als eigenes Paket erhalten. Keine fremden Artikeltexte oder Bilder werden durch diesen Export freigegeben.
+
+`app-home-selection.json` verwendet die Auswahl-Funktionen aus dem tatsächlichen eingefrorenen App-Code: Aufmacher, fünf Topmeldungen, ein Sportartikel, neun weitere Artikel und fünf Briefingmeldungen. Die Auswahl ist eine anonyme deutsche Momentaufnahme dieses Datenstands. Sie umfasst weder die später eintreffenden Live-Nachrichten noch individuelle Nutzervorlieben. `website-accepted-selection.json` hält die bisher akzeptierte Website-Auswahl aus ihrem früheren Freeze getrennt fest; eine neue Auswahl ersetzt diese erst nach Website-Abnahme.
+
+Weitere Dateien:728 Bibliothekstitel mit Originalverweisen,1778 Podcastmetadaten ohne Audiodateien oder Cover,167 Lexikonbegriffe mit Projekt-Erklärungen und Belegen, vier Lernpfade,28 Sender und deren datierte Health sowie Quellenmetadaten. `appMetadataKey` ist ein aus dem bestehenden URL-/Namensschlüssel abgeleiteter Handoff-Schlüssel, keine neue Behauptung einer kanonischen Herausgeber-ID. Die Dateigruppen dürfen nicht als unterschiedliche Herausgeber zusammengerechnet werden. Podcast-Metadatenregeln bleiben zusätzlich im eigenen Policy-JSON erhalten.
+
+Der Gefangenenhandoff enthält nur Quellen und Prüfregeln. Der ältere Adressstand ist abgelaufen; Adressen sind nicht exportiert und Kopieren/Drucken ist nicht freigegeben. Ein neuer Prüfstand braucht tatsächliche Quellenkontrolle.
+
+Das eigene Bild liegt im separaten, unabhängig GREEN geprüften Handoff `b777198`: `../website-media-2026-10-02/image-handoff-v1.json`. Es ist an genau eine bereits zugelassene ANRed-Artikel-ID gebunden.455444-Byte-WebP, sichtbarer Credit/Caption und Alttexte sind vorgegeben; keine Zuordnung zu einer anderen aktuellen Überschrift und kein Einsatz als Ereignisfoto.
+
+Integration und Veröffentlichung bleiben bei **WRN Website – Inhaltsparität**. Der Exportgenerator schreibt ausschließlich hier, niemals in den Website-Arbeitsstand. Neue Artikel brauchen weiterhin Aufnahme; fehlende eigene Zusammenfassungen dürfen als fehlend sichtbar bleiben. Eine pauschale Volltext- oder Bildfreigabe folgt aus dem Handoff nicht.

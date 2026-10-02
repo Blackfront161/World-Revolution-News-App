@@ -1,0 +1,201 @@
+{
+  "schema": "wrn.website-content-handoff.v1",
+  "createdAt": "2026-10-02T21:54:41.954Z",
+  "appCommit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+  "generator": {
+    "path": "scripts/build_website_content_handoff.mjs",
+    "sha256": "a240980775a83df176a0f244f93f6dfaf387ff23edf438953cf81bfc8716a614"
+  },
+  "source": "Frozen App assets plus exact published data-feed revision when supplied",
+  "publishedDataCommit": "9ce5fa03151e230f26c6b09be77620d2f7398e63",
+  "websiteDirectoryCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+  "rights": "Article/book/podcast metadata and original links; WRN editorial notes/lexicon/learning paths. No publisher bodies, transcripts, artwork, audio downloads or unreviewed addresses.",
+  "imageHandoffCommit": "b777198",
+  "imageManifest": "docs/handoffs/website-media-2026-10-02/image-handoff-v1.json",
+  "counts": {
+    "rawFeedRows": 500,
+    "offlineAppFeedRows": 500,
+    "appVisibleRows": 426,
+    "libraryItems": 728,
+    "podcastRows": 1778,
+    "lexiconTerms": 167,
+    "radios": 28,
+    "wrnAcceptedNotes": 21
+  },
+  "inputs": {
+    "news-app-2-core.js": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "dafc26d6a4b0ce5685a95659d58a54b9a0898919ff1da1afccd0f6202ed9b57c",
+      "bytes": 31162
+    },
+    "news-card-copy.js": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "71eac30f18bd5f2c8e0b9f94239635e2fef27a2b2166ac9b4d5cb420437aea67",
+      "bytes": 6739
+    },
+    "news-feed.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "c1882bce808176b8237d13e706088c27f54a638fda6ab5a696dff93ebf1c431c",
+      "bytes": 2248038
+    },
+    "published-data:news-feed.json": {
+      "commit": "9ce5fa03151e230f26c6b09be77620d2f7398e63",
+      "sha256": "1a3f995285fa1a922f271f98b93934051c16c84919c69921d9d549beb663e005",
+      "bytes": 2326043
+    },
+    "editorial-decisions.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "8a87971fd06c66d5544d6a25ff3d24eabbdcdef965e4b60bf679922b1eade146",
+      "bytes": 83
+    },
+    "news-app-2.js": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "83e1e1fe4ca07e142de03ac5f78a5f6a2db3cdbd3a4a62fec9b1263714bb4d87",
+      "bytes": 752727
+    },
+    "website:apps/website/src/features/projection/data/content-directory-v1.json": {
+      "sha256": "3e73cac43faf5ce71b2b79680dee197b7c98d7bc4bed667e6e175e956f91e136",
+      "bytes": 1953524
+    },
+    "website:apps/website/src/features/home/app-home-editorial-v1.json": {
+      "sha256": "0f1ac005faedad216416576227cfed009eae3cc06fc47a40ed1544c328f57fca",
+      "bytes": 22841
+    },
+    "website:apps/website/src/features/home/app-home-layout-v1.json": {
+      "sha256": "59455ab4bff9b446f32f79d7fcadcb994c34fe9286b414e077ca2f9fc254e20a",
+      "bytes": 2331
+    },
+    "library-feed.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "3be196134dba9c994a27999398d71c5311764e093a14fcf20cf2db74ce829449",
+      "bytes": 402330
+    },
+    "podcasts.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "0961c293c8c847f45eaf71a88aba4a51fc4ef07c7d8e6651d314842763846221",
+      "bytes": 3162161
+    },
+    "radio-stations.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "19546104f211dcd8a16dcdf359f99518e66996eb9ddef9f20e069161d0bf17a9",
+      "bytes": 13644
+    },
+    "radio-health.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "af389df621b93b28706489063e0dc0348f38e55f369f2c1e248081ba6c93571c",
+      "bytes": 13733
+    },
+    "lexicon-tab.js": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "25ee801345617eb3fe8e0bfe4235394d49e93a66469ebbc217c33c510d9bcaed",
+      "bytes": 261584
+    },
+    "lexicon-locales.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "5b59354be8a764fef375e63a3ddae53e21d15c2d63320b224f43ea17067f30b0",
+      "bytes": 6589
+    },
+    "learning-paths.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "d2255f2a4f82d8c80b138adb3607db6407a64ba813c165fd29666956351868c4",
+      "bytes": 23707
+    },
+    "source-catalog.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "c612d0c3e0eb914bd54c3d47b9b1dd4606ec1e894b716642a765bed4de40fd41",
+      "bytes": 117718
+    },
+    "sources-registry.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "fda3969083afc1f9108b912a4672499813602cf672a263141673c03d96ea3712",
+      "bytes": 338555
+    },
+    "multilingual-source-registry.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "707162e61b79d89456932a76737156b91ebf97e3194bb9025b07c80d5aecd6d4",
+      "bytes": 10263
+    },
+    "library-sources.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "a498bb6d672d4edb8af99d3b337c34d1292bf4e04924a3bedb3b364c4cd81f66",
+      "bytes": 5324
+    },
+    "podcast-sources.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "9d092dfcc4b4646dab570a5130ec4a3ec36406b61a5835578275efd644a291aa",
+      "bytes": 47881
+    },
+    "podcast-content-policy.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "fc2ba6698bb30bb1ba741f1b8f57801b7b806f5489edadc9fa0c6f0dee81d53d",
+      "bytes": 20988
+    },
+    "prisoner-solidarity.json": {
+      "commit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "sha256": "01424a6628d8fe37f2ec8300ae83bb70bb94a0f29b1df67b19fb38823424a1e9",
+      "bytes": 56794
+    }
+  },
+  "outputs": {
+    "articles-metadata.json": {
+      "sha256": "a5ce6d375d58d5de3161b2db8af284507986281fb8da428a7e92de960f2f3a63",
+      "bytes": 401292
+    },
+    "app-home-selection.json": {
+      "sha256": "e8527d95a36950a65f0bb89fdde88d582027073d792c00fe1ccacd5790660763",
+      "bytes": 2303
+    },
+    "website-accepted-selection.json": {
+      "sha256": "ec0a62925b623bffe0377a2df0876bb01ed18661a1b06d0d60d4dfba659b226d",
+      "bytes": 2339
+    },
+    "wrn-editorial-notes.json": {
+      "sha256": "0a793f49a4cd91fec87cda3153e480c3bd7ff80456414f9d9e3a6e4763cae5cb",
+      "bytes": 22857
+    },
+    "library-metadata.json": {
+      "sha256": "ef29b8c9129c05e337807411021814c397cb5a55a61a5af5bd146785ac124679",
+      "bytes": 301378
+    },
+    "podcast-metadata.json": {
+      "sha256": "2fc8d7bb2a36197348c88d00b2005b9ddb6661ffafb229e828173be7b41309ac",
+      "bytes": 1083413
+    },
+    "radios.json": {
+      "sha256": "19546104f211dcd8a16dcdf359f99518e66996eb9ddef9f20e069161d0bf17a9",
+      "bytes": 13644
+    },
+    "radio-health.json": {
+      "sha256": "af389df621b93b28706489063e0dc0348f38e55f369f2c1e248081ba6c93571c",
+      "bytes": 13733
+    },
+    "lexicon.json": {
+      "sha256": "32419d539f47377451b2409f2665b8c13da39becde7fc033ad01d0b7c0a7c8b5",
+      "bytes": 280938
+    },
+    "lexicon-locales.json": {
+      "sha256": "5b59354be8a764fef375e63a3ddae53e21d15c2d63320b224f43ea17067f30b0",
+      "bytes": 6589
+    },
+    "learning-paths.json": {
+      "sha256": "d2255f2a4f82d8c80b138adb3607db6407a64ba813c165fd29666956351868c4",
+      "bytes": 23707
+    },
+    "source-metadata.json": {
+      "sha256": "7362c34cc537529e45c2e7e5e186545a78e6141929f30977e24f0f44eb6091b6",
+      "bytes": 494863
+    },
+    "podcast-content-policy.json": {
+      "sha256": "fc2ba6698bb30bb1ba741f1b8f57801b7b806f5489edadc9fa0c6f0dee81d53d",
+      "bytes": 20988
+    },
+    "prisoner-review-handoff.json": {
+      "sha256": "2e6c2899f6d2b0e5fd18ce30bced5d96866c2b08e66bc00f2bf7f8e61ea1b472",
+      "bytes": 4003
+    },
+    "README.md": {
+      "sha256": "c8256e9215971e93ac8015beeed7f1662b022fa962e7c7ef8cc79456848f0af7",
+      "bytes": 3064
+    }
+  }
+}

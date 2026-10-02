@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-08-09T17:10:00+02:00",
+  "reviewWindowDays": 45,
+  "editorialPolicy": {
+    "scope": "A small, curated directory of people publicly listed by established prisoner-solidarity groups.",
+    "addressRule": "Only public prison mailing addresses shared by the prisoner or a trusted support group are published.",
+    "privacyRule": "Private family, legal-team and release addresses are never included.",
+    "staleRule": "Copying, editing and printing are disabled after the next review date until the address is checked again.",
+    "legalNote": "The directory documents solidarity information and does not make a legal assessment of a case."
+  },
+  "sources": [
+    {
+      "id": "nycabc-guide-19-5",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.5",
+      "url": "https://nycabc.wordpress.com/2026/06/27/guide_19_5/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/06/nycabc_polprislisting_june-2026_legal.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "nycabc-write",
+      "name": "NYC Anarchist Black Cross – Write A Letter",
+      "url": "https://nycabc.wordpress.com/write-a-letter/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "abcf-updates",
+      "name": "Anarchist Black Cross Federation – current updates",
+      "url": "https://www.abcf.net/",
+      "kind": "support-network",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "nycabc-guide-19-6",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.6",
+      "url": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/08/nycabc_polprislisting_july-2026_legal.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-09"
+    },
+    {
+      "id": "abc-dresden-prisoners",
+      "name": "Anarchist Black Cross Dresden – Gefangenenliste",
+      "url": "https://abcdd.org/gefangene/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-04"
+    },
+    {
+      "id": "abc-dresden-letter-writing",
+      "name": "Anarchist Black Cross Dresden – Briefeschreiben",
+      "url": "https://abcdd.org/en/letter-writing/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-08-04"
+    },
+    {
+      "id": "prisoners-for-palestine-writing",
+      "name": "Prisoners for Palestine – Writing to Prisoners",
+      "url": "https://prisonersforpalestine.org/writing-to-prisoners/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-07-29"
+    },
+    {
+      "id": "govuk-prison-letters",
+      "name": "GOV.UK – Staying in touch with someone in prison",
+      "url": "https://www.gov.uk/staying-in-touch-with-someone-in-prison",
+      "kind": "official-mail-guidance",
+      "checkedAt": "2026-07-29"
+    },
+    {
+      "id": "abcf-support-guide",
+      "name": "Anarchist Black Cross Federation – Support Guide",
+      "url": "https://www.abcf.net/support-guide/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "abc-belarus-prisoners",
+      "name": "Anarchist Black Cross Belarus – Prisoners",
+      "url": "https://abc-belarus.org/en/prisoners/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "london-abc",
+      "name": "London Anarchist Black Cross – Prison abolition and letter support",
+      "url": "https://network23.org/londonabc/about/",
+      "kind": "support-network",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "secours-rouge-geneve",
+      "name": "Secours Rouge Genève – Prisoner and repression solidarity",
+      "url": "https://secoursrouge.org/orga/secours-rouge-geneve/",
+      "kind": "support-network",
+      "checkedAt": "2026-08-05"
+    }
+  ],
+  "status": "expired-snapshot-requires-source-review",
+  "copyPrintEnabled": false,
+  "addressesExported": false
+}

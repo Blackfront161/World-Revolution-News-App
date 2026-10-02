@@ -1,0 +1,41 @@
+{
+  "schema": "wrn.website-app-home-layout.v1",
+  "appFreeze": "ce2b5565e539cbd1373fef5684cf1997fab5b6e2",
+  "sourceFiles": {
+    "news-app-2-core.js": "42987c4af10e2754471af1b9b547c5acdb73227446c7f70621c60ba9efbc4baf",
+    "news-card-copy.js": "71eac30f18bd5f2c8e0b9f94239635e2fef27a2b2166ac9b4d5cb420437aea67"
+  },
+  "feedSha256": "471f6e6d3baefe8f6e4bc9a4dd91f75c002096ab58be840d3e69387020f307d1",
+  "directoryCommit": "d7da528c9a996a2ec13bf3912c45e18e7d58bdfa",
+  "lead": "news-d66b8d407e0eb4adcb2e5d17d2e9bdb1b85660b8c28b758d128f6ed58356f685",
+  "top": [
+    "news-98ecd49aeb72e7bdcba4bc929017c856a38a216b12c664413c50f48a7eac1f53",
+    "news-d68eb3eba71982ef703ecdf9cc1ae377e2e2f778c838979b236ef321cea1fc77",
+    "news-5cd76619b67a58f87537f3c36d6451e2d10c706bd9f4a0695ede8605b972214e",
+    "news-921fcc9bef43bfa916947824646785e171bfa0bcf6f1b03a7c8b1aa19a8ed3c3",
+    "news-712d66bf4c905af4e90b9d6b1353bd96423028611dc53b832ec7ee83e6906a75"
+  ],
+  "sport": [
+    "news-32600c56c2ca69d7aaf19feb276436952695e2dfedb273867156974a24a772b0"
+  ],
+  "more": [
+    "news-a58445cf002768b75b8bb50efb9df1d6047ad0890b29b4ff17fc1bda9c694754",
+    "news-0fc6e8f3caf790b0b890a57cdf58836d2437fae9d77915a0c568634ef46198c1",
+    "news-1cf06938edc2dec293c98980c564f3636a79c1824d29d2061219501a6e21cbea",
+    "news-cd8e2ff31c612cf88cb0c6542d66f7e19e59e211ef2ee9ba9d32f41b88ec47de",
+    "news-6c92ab6b6abe7ce329b581eaa145f2576b56a8516ee1b499a2c91d72367411a2",
+    "news-4c449c29d008695cd45c6680e3fcb1da4061197db4ad75d57a789db849940f57",
+    "news-c5f7f1b8152f814231d0746a2812d88878dc775550146a1ed6c83ac6ab912756",
+    "news-d99ce40b3f63bd958aeaa9dfa51ddd03cf78655e83e026fb1d3d822e5b230711",
+    "news-a7fc56d51e29c8016ae4abc48c48253f21f2cec19089fb06497cc38ff89d3f19"
+  ],
+  "briefing": [
+    "news-3edbd3ee75cc8ce29fe68dd5bc4b7353ef28ba8c52d0cbbfc3ce2db8390eefdb",
+    "news-af6277b60e663ae65a85b785ecbe00718fd203e338f700f77b5f0b085012d077",
+    "news-78427d30aa9d8c969cdfdbb9f76908dce9ea15d0d1046a332bfa027d3e96701f",
+    "news-7835793017091df1109c1d909d7ab90088107ccec7802f75e15ff70418def3c9",
+    "news-853a9b37afe4e3c8c26e86e82d77a2cf3078ecda1a3861142b132a37b0108242"
+  ],
+  "excludedSelection": [],
+  "selectionPolicy": "App renderHome release62: balanced22, picture-first lead/top5, sport3, more9, briefing5; display only admitted directory metadata"
+}

@@ -1727,8 +1727,17 @@
       "publication": "merged-green-gates",
       "publishedDataCommit": "e1f59d9171ad0f75f57b57123410a768582cda2c"
     },
-    "appRuntime": "local-only-no-new-android-artifact",
+    "appRuntime": "74e92546 local tested source freeze; no new Android artifact",
     "contentExpansion": "concrete-nextWork-items-planned; existing728books/167terms preserved",
-    "website": "image handoff delivered; full export follows"
+    "website": {
+      "handoff": "docs/handoffs/website-content-2026-10-03/manifest.json",
+      "appSourceFreeze": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+      "dataSourceFreeze": "9ce5fa03151e230f26c6b09be77620d2f7398e63",
+      "articleRows": 426,
+      "libraryItems": 728,
+      "lexiconTerms": 167,
+      "imageHandoff": "b777198",
+      "status": "source-bound-handoff-delivered; website integration owned by writer"
+    }
   }
 }

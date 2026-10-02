@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "appCommit": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+  "dataCommit": "9ce5fa03151e230f26c6b09be77620d2f7398e63",
+  "filesVerified": 15,
+  "manifestSha256": "2b7404b80e62fd55ef1c455c94900ea688b4da0b35da95c3e466bb8f5504236f",
+  "currentArticles": 426,
+  "uniqueArticleIds": 426,
+  "notesMatched": 20,
+  "directoryPresent": 292,
+  "payloadBodiesAndUnreviewedMediaExcluded": true
+}

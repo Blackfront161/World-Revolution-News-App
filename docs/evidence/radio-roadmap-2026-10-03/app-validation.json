@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "runtimeFreeze": "74e92546a4133ddc92ce51213f8d3f4a1eff7a68",
+  "javascriptContracts": 57,
+  "pythonTests": 164,
+  "historicalSkips": 3,
+  "pythonSubtests": 4,
+  "mainOnlyScripts": 4,
+  "validator": "PASS",
+  "audit": {
+    "pass": 161,
+    "warnings": 0,
+    "fail": 0
+  },
+  "browserReports": [
+    "autonom-browser.json",
+    "sharing-browser.json"
+  ],
+  "limits": "No new Android artifact or all-stations sustained-device playback claim."
+}
