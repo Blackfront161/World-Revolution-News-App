@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T14:19:28.974781Z",
+  "generatedAt": "2026-10-02T14:29:32.026400Z",
   "windowDays": 30,
-  "referenceAt": "2026-10-02T14:19:28.974781Z",
-  "cutoffAt": "2026-09-02T14:19:28.974781Z",
+  "referenceAt": "2026-10-02T14:29:32.026400Z",
+  "cutoffAt": "2026-09-02T14:29:32.026400Z",
   "sourceCount": 124,
   "itemCount": 3097,
   "quickIndexCount": 500,
@@ -17,7 +17,7 @@
       "newestAt": "2026-09-25T16:01:38Z",
       "oldestAt": "2026-09-11T10:25:02Z",
       "coverage": "partial",
-      "coverageDays": 21.16,
+      "coverageDays": 21.17,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -29,7 +29,7 @@
       "newestAt": "2026-10-01T15:40:40Z",
       "oldestAt": "2026-09-24T14:21:53Z",
       "coverage": "partial",
-      "coverageDays": 8.0,
+      "coverageDays": 8.01,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -41,7 +41,7 @@
       "newestAt": "2026-10-01T13:00:00Z",
       "oldestAt": "2026-09-14T08:02:28Z",
       "coverage": "partial",
-      "coverageDays": 18.26,
+      "coverageDays": 18.27,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -77,7 +77,7 @@
       "newestAt": "2026-10-02T13:48:28Z",
       "oldestAt": "2026-09-21T16:53:09Z",
       "coverage": "partial",
-      "coverageDays": 10.89,
+      "coverageDays": 10.9,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -89,7 +89,7 @@
       "newestAt": "2026-10-02T09:00:11Z",
       "oldestAt": "2026-09-19T12:05:24Z",
       "coverage": "partial",
-      "coverageDays": 13.09,
+      "coverageDays": 13.1,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -101,7 +101,7 @@
       "newestAt": "2026-10-01T14:42:08Z",
       "oldestAt": "2026-09-11T17:12:25Z",
       "coverage": "partial",
-      "coverageDays": 20.88,
+      "coverageDays": 20.89,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -113,7 +113,7 @@
       "newestAt": "2026-10-02T11:00:00Z",
       "oldestAt": "2026-09-11T11:00:00Z",
       "coverage": "partial",
-      "coverageDays": 21.14,
+      "coverageDays": 21.15,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -125,7 +125,7 @@
       "newestAt": "2026-09-26T09:44:53Z",
       "oldestAt": "2026-09-22T10:59:40Z",
       "coverage": "partial",
-      "coverageDays": 10.14,
+      "coverageDays": 10.15,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -137,7 +137,7 @@
       "newestAt": "2026-09-30T16:58:48Z",
       "oldestAt": "2026-09-24T16:42:56Z",
       "coverage": "partial",
-      "coverageDays": 7.9,
+      "coverageDays": 7.91,
       "trackingStartedAt": "2026-09-30T22:21:59.292819Z"
     },
     {
@@ -149,7 +149,7 @@
       "newestAt": "2026-09-29T01:37:14Z",
       "oldestAt": "2026-09-14T18:17:57Z",
       "coverage": "partial",
-      "coverageDays": 17.83,
+      "coverageDays": 17.84,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -173,7 +173,7 @@
       "newestAt": "2026-10-02T09:23:14Z",
       "oldestAt": "2026-09-26T16:24:30Z",
       "coverage": "partial",
-      "coverageDays": 5.91,
+      "coverageDays": 5.92,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -185,7 +185,7 @@
       "newestAt": "2026-10-02T13:51:49Z",
       "oldestAt": "2026-09-14T17:57:01Z",
       "coverage": "partial",
-      "coverageDays": 17.85,
+      "coverageDays": 17.86,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -197,7 +197,7 @@
       "newestAt": "2026-10-02T07:57:55Z",
       "oldestAt": "2026-09-15T02:00:00Z",
       "coverage": "partial",
-      "coverageDays": 17.51,
+      "coverageDays": 17.52,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -209,7 +209,7 @@
       "newestAt": "2026-10-01T16:31:07Z",
       "oldestAt": "2026-09-11T16:26:24Z",
       "coverage": "partial",
-      "coverageDays": 20.91,
+      "coverageDays": 20.92,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -233,7 +233,7 @@
       "newestAt": "2026-09-23T09:04:48Z",
       "oldestAt": "2026-09-23T09:04:48Z",
       "coverage": "partial",
-      "coverageDays": 9.22,
+      "coverageDays": 9.23,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -257,7 +257,7 @@
       "newestAt": "2026-10-02T11:44:14Z",
       "oldestAt": "2026-09-11T11:13:14Z",
       "coverage": "partial",
-      "coverageDays": 21.13,
+      "coverageDays": 21.14,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -281,7 +281,7 @@
       "newestAt": "2026-10-01T23:39:45Z",
       "oldestAt": "2026-09-25T16:52:37Z",
       "coverage": "partial",
-      "coverageDays": 6.89,
+      "coverageDays": 6.9,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -293,7 +293,7 @@
       "newestAt": "2026-09-18T13:09:56Z",
       "oldestAt": "2026-09-18T13:09:56Z",
       "coverage": "partial",
-      "coverageDays": 14.05,
+      "coverageDays": 14.06,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -341,7 +341,7 @@
       "newestAt": "2026-09-19T23:53:48Z",
       "oldestAt": "2026-09-14T01:50:53Z",
       "coverage": "partial",
-      "coverageDays": 18.52,
+      "coverageDays": 18.53,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -353,7 +353,7 @@
       "newestAt": "2026-10-01T09:33:16Z",
       "oldestAt": "2026-09-17T08:49:42Z",
       "coverage": "partial",
-      "coverageDays": 15.23,
+      "coverageDays": 15.24,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -365,7 +365,7 @@
       "newestAt": "2026-09-30T06:48:20Z",
       "oldestAt": "2026-09-12T09:46:30Z",
       "coverage": "partial",
-      "coverageDays": 20.19,
+      "coverageDays": 20.2,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -377,7 +377,7 @@
       "newestAt": "2026-10-01T12:47:00Z",
       "oldestAt": "2026-09-11T12:07:00Z",
       "coverage": "partial",
-      "coverageDays": 21.09,
+      "coverageDays": 21.1,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -413,7 +413,7 @@
       "newestAt": "2026-09-30T17:43:23Z",
       "oldestAt": "2026-09-15T11:10:06Z",
       "coverage": "partial",
-      "coverageDays": 17.13,
+      "coverageDays": 17.14,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -425,7 +425,7 @@
       "newestAt": "2026-10-02T05:43:20Z",
       "oldestAt": "2026-09-11T09:39:29Z",
       "coverage": "partial",
-      "coverageDays": 21.19,
+      "coverageDays": 21.2,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -449,7 +449,7 @@
       "newestAt": "2026-09-24T08:32:20Z",
       "oldestAt": "2026-09-18T09:40:37Z",
       "coverage": "partial",
-      "coverageDays": 14.19,
+      "coverageDays": 14.2,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -461,7 +461,7 @@
       "newestAt": "2026-10-02T07:25:54Z",
       "oldestAt": "2026-09-14T07:29:47Z",
       "coverage": "partial",
-      "coverageDays": 18.28,
+      "coverageDays": 18.29,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -485,7 +485,7 @@
       "newestAt": "2026-09-24T20:03:06Z",
       "oldestAt": "2026-09-14T17:29:23Z",
       "coverage": "partial",
-      "coverageDays": 17.87,
+      "coverageDays": 17.88,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -497,7 +497,7 @@
       "newestAt": "2026-09-29T22:37:46Z",
       "oldestAt": "2026-09-23T20:04:15Z",
       "coverage": "partial",
-      "coverageDays": 8.76,
+      "coverageDays": 8.77,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -509,7 +509,7 @@
       "newestAt": "2026-10-01T00:55:00Z",
       "oldestAt": "2026-10-01T00:35:00Z",
       "coverage": "partial",
-      "coverageDays": 1.57,
+      "coverageDays": 1.58,
       "trackingStartedAt": "2026-10-02T14:09:42.851833Z"
     },
     {
@@ -545,7 +545,7 @@
       "newestAt": "2026-10-02T13:34:01Z",
       "oldestAt": "2026-09-11T16:56:34Z",
       "coverage": "partial",
-      "coverageDays": 20.89,
+      "coverageDays": 20.9,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -557,7 +557,7 @@
       "newestAt": "2026-09-30T17:49:36Z",
       "oldestAt": "2026-09-16T21:30:49Z",
       "coverage": "partial",
-      "coverageDays": 15.7,
+      "coverageDays": 15.71,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -581,7 +581,7 @@
       "newestAt": "2026-10-02T13:15:06Z",
       "oldestAt": "2026-09-16T10:21:59Z",
       "coverage": "partial",
-      "coverageDays": 16.16,
+      "coverageDays": 16.17,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -593,7 +593,7 @@
       "newestAt": "2026-09-30T12:05:51Z",
       "oldestAt": "2026-09-23T07:30:20Z",
       "coverage": "partial",
-      "coverageDays": 9.28,
+      "coverageDays": 9.29,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -605,7 +605,7 @@
       "newestAt": "2026-10-02T13:28:00Z",
       "oldestAt": "2026-09-11T11:35:00Z",
       "coverage": "partial",
-      "coverageDays": 21.11,
+      "coverageDays": 21.12,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -617,7 +617,7 @@
       "newestAt": "2026-09-25T11:38:00Z",
       "oldestAt": "2026-09-23T06:50:00Z",
       "coverage": "partial",
-      "coverageDays": 9.31,
+      "coverageDays": 9.32,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -629,7 +629,7 @@
       "newestAt": "2026-09-20T16:38:07Z",
       "oldestAt": "2026-09-15T22:09:06Z",
       "coverage": "partial",
-      "coverageDays": 16.67,
+      "coverageDays": 16.68,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -641,7 +641,7 @@
       "newestAt": "2026-10-01T17:26:55Z",
       "oldestAt": "2026-09-11T14:18:10Z",
       "coverage": "partial",
-      "coverageDays": 21.0,
+      "coverageDays": 21.01,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -653,7 +653,7 @@
       "newestAt": "2026-10-01T09:56:13Z",
       "oldestAt": "2026-09-25T11:41:27Z",
       "coverage": "partial",
-      "coverageDays": 7.11,
+      "coverageDays": 7.12,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -677,7 +677,7 @@
       "newestAt": "2026-10-01T08:30:00Z",
       "oldestAt": "2026-09-16T08:45:00Z",
       "coverage": "partial",
-      "coverageDays": 16.23,
+      "coverageDays": 16.24,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -701,7 +701,7 @@
       "newestAt": "2026-10-01T06:55:00Z",
       "oldestAt": "2026-09-18T06:55:00Z",
       "coverage": "partial",
-      "coverageDays": 14.31,
+      "coverageDays": 14.32,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -713,7 +713,7 @@
       "newestAt": "2026-10-01T18:22:42Z",
       "oldestAt": "2026-10-01T18:10:44Z",
       "coverage": "partial",
-      "coverageDays": 0.84,
+      "coverageDays": 0.85,
       "trackingStartedAt": "2026-10-01T22:45:57.513283Z"
     },
     {
@@ -737,7 +737,7 @@
       "newestAt": "2026-10-02T13:43:31Z",
       "oldestAt": "2026-09-11T14:05:10Z",
       "coverage": "partial",
-      "coverageDays": 21.01,
+      "coverageDays": 21.02,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -749,7 +749,7 @@
       "newestAt": "2026-10-02T13:23:02Z",
       "oldestAt": "2026-09-11T14:44:29Z",
       "coverage": "partial",
-      "coverageDays": 20.98,
+      "coverageDays": 20.99,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -761,7 +761,7 @@
       "newestAt": "2026-10-02T07:00:52Z",
       "oldestAt": "2026-09-11T16:14:13Z",
       "coverage": "partial",
-      "coverageDays": 20.92,
+      "coverageDays": 20.93,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -773,7 +773,7 @@
       "newestAt": "2026-09-18T05:16:12Z",
       "oldestAt": "2026-09-14T01:22:20Z",
       "coverage": "partial",
-      "coverageDays": 18.54,
+      "coverageDays": 18.55,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -797,7 +797,7 @@
       "newestAt": "2026-09-26T13:10:11Z",
       "oldestAt": "2026-09-12T06:31:42Z",
       "coverage": "partial",
-      "coverageDays": 20.32,
+      "coverageDays": 20.33,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -821,7 +821,7 @@
       "newestAt": "2026-09-25T15:43:08Z",
       "oldestAt": "2026-09-15T15:30:00Z",
       "coverage": "partial",
-      "coverageDays": 16.95,
+      "coverageDays": 16.96,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -833,7 +833,7 @@
       "newestAt": "2026-10-02T02:05:18Z",
       "oldestAt": "2026-09-15T10:14:13Z",
       "coverage": "partial",
-      "coverageDays": 17.17,
+      "coverageDays": 17.18,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -845,7 +845,7 @@
       "newestAt": "2026-10-01T22:03:55Z",
       "oldestAt": "2026-09-11T17:12:18Z",
       "coverage": "partial",
-      "coverageDays": 20.88,
+      "coverageDays": 20.89,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -857,7 +857,7 @@
       "newestAt": "2026-10-01T20:43:44Z",
       "oldestAt": "2026-09-11T16:12:24Z",
       "coverage": "partial",
-      "coverageDays": 20.92,
+      "coverageDays": 20.93,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -869,7 +869,7 @@
       "newestAt": "2026-10-02T13:44:31Z",
       "oldestAt": "2026-09-11T10:40:56Z",
       "coverage": "partial",
-      "coverageDays": 21.15,
+      "coverageDays": 21.16,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -881,7 +881,7 @@
       "newestAt": "2026-09-17T15:51:35Z",
       "oldestAt": "2026-09-16T09:01:13Z",
       "coverage": "partial",
-      "coverageDays": 16.22,
+      "coverageDays": 16.23,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -905,7 +905,7 @@
       "newestAt": "2026-10-02T10:52:52Z",
       "oldestAt": "2026-09-13T09:11:21Z",
       "coverage": "partial",
-      "coverageDays": 19.21,
+      "coverageDays": 19.22,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -917,7 +917,7 @@
       "newestAt": "2026-09-30T08:38:18Z",
       "oldestAt": "2026-09-11T13:18:34Z",
       "coverage": "partial",
-      "coverageDays": 21.04,
+      "coverageDays": 21.05,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -929,7 +929,7 @@
       "newestAt": "2026-09-28T11:51:19Z",
       "oldestAt": "2026-09-14T13:45:31Z",
       "coverage": "partial",
-      "coverageDays": 18.02,
+      "coverageDays": 18.03,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -941,7 +941,7 @@
       "newestAt": "2026-10-01T13:43:25Z",
       "oldestAt": "2026-09-18T20:32:59Z",
       "coverage": "partial",
-      "coverageDays": 13.74,
+      "coverageDays": 13.75,
       "trackingStartedAt": "2026-09-28T23:21:19.750204Z"
     },
     {
@@ -953,7 +953,7 @@
       "newestAt": "2026-10-01T17:49:01Z",
       "oldestAt": "2026-09-11T15:46:44Z",
       "coverage": "partial",
-      "coverageDays": 20.94,
+      "coverageDays": 20.95,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -977,7 +977,7 @@
       "newestAt": "2026-10-01T14:16:37Z",
       "oldestAt": "2026-09-16T13:50:39Z",
       "coverage": "partial",
-      "coverageDays": 16.02,
+      "coverageDays": 16.03,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -989,7 +989,7 @@
       "newestAt": "2026-09-30T12:09:09Z",
       "oldestAt": "2026-09-12T03:30:00Z",
       "coverage": "partial",
-      "coverageDays": 20.45,
+      "coverageDays": 20.46,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1001,7 +1001,7 @@
       "newestAt": "2026-09-30T20:32:04Z",
       "oldestAt": "2026-09-15T05:27:46Z",
       "coverage": "partial",
-      "coverageDays": 17.37,
+      "coverageDays": 17.38,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1013,7 +1013,7 @@
       "newestAt": "2026-09-29T15:23:54Z",
       "oldestAt": "2026-09-12T08:34:55Z",
       "coverage": "partial",
-      "coverageDays": 20.24,
+      "coverageDays": 20.25,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1025,7 +1025,7 @@
       "newestAt": "2026-09-21T17:49:18Z",
       "oldestAt": "2026-09-13T23:07:00Z",
       "coverage": "partial",
-      "coverageDays": 18.63,
+      "coverageDays": 18.64,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1037,7 +1037,7 @@
       "newestAt": "2026-10-02T07:02:24Z",
       "oldestAt": "2026-09-12T07:08:25Z",
       "coverage": "partial",
-      "coverageDays": 20.3,
+      "coverageDays": 20.31,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1049,7 +1049,7 @@
       "newestAt": "2026-10-02T10:42:43Z",
       "oldestAt": "2026-09-11T09:39:13Z",
       "coverage": "partial",
-      "coverageDays": 21.19,
+      "coverageDays": 21.2,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1073,7 +1073,7 @@
       "newestAt": "2026-10-01T16:24:04Z",
       "oldestAt": "2026-09-12T14:42:55Z",
       "coverage": "partial",
-      "coverageDays": 19.98,
+      "coverageDays": 19.99,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1097,7 +1097,7 @@
       "newestAt": "2026-09-28T11:29:49Z",
       "oldestAt": "2026-09-15T08:32:56Z",
       "coverage": "partial",
-      "coverageDays": 17.24,
+      "coverageDays": 17.25,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1109,7 +1109,7 @@
       "newestAt": "2026-09-16T03:45:40Z",
       "oldestAt": "2026-09-16T03:45:40Z",
       "coverage": "partial",
-      "coverageDays": 16.44,
+      "coverageDays": 16.45,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1121,7 +1121,7 @@
       "newestAt": "2026-10-02T08:40:29Z",
       "oldestAt": "2026-09-11T11:00:39Z",
       "coverage": "partial",
-      "coverageDays": 21.14,
+      "coverageDays": 21.15,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1133,7 +1133,7 @@
       "newestAt": "2026-10-01T09:19:06Z",
       "oldestAt": "2026-09-11T10:28:25Z",
       "coverage": "partial",
-      "coverageDays": 21.16,
+      "coverageDays": 21.17,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1145,7 +1145,7 @@
       "newestAt": "2026-10-01T21:39:42Z",
       "oldestAt": "2026-09-19T20:15:19Z",
       "coverage": "partial",
-      "coverageDays": 12.75,
+      "coverageDays": 12.76,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1157,7 +1157,7 @@
       "newestAt": "2026-10-02T13:34:26Z",
       "oldestAt": "2026-09-11T22:30:00Z",
       "coverage": "partial",
-      "coverageDays": 20.66,
+      "coverageDays": 20.67,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1169,7 +1169,7 @@
       "newestAt": "2026-09-24T02:56:27Z",
       "oldestAt": "2026-09-16T02:58:27Z",
       "coverage": "partial",
-      "coverageDays": 16.47,
+      "coverageDays": 16.48,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1181,7 +1181,7 @@
       "newestAt": "2026-09-30T09:00:08Z",
       "oldestAt": "2026-09-16T08:55:37Z",
       "coverage": "partial",
-      "coverageDays": 16.22,
+      "coverageDays": 16.23,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1193,7 +1193,7 @@
       "newestAt": "2026-09-30T13:23:34Z",
       "oldestAt": "2026-09-11T10:43:11Z",
       "coverage": "partial",
-      "coverageDays": 21.15,
+      "coverageDays": 21.16,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1205,7 +1205,7 @@
       "newestAt": "2026-09-25T12:23:29Z",
       "oldestAt": "2026-09-16T00:50:41Z",
       "coverage": "partial",
-      "coverageDays": 16.56,
+      "coverageDays": 16.57,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1241,7 +1241,7 @@
       "newestAt": "2026-09-30T11:14:33Z",
       "oldestAt": "2026-09-16T05:13:53Z",
       "coverage": "partial",
-      "coverageDays": 16.38,
+      "coverageDays": 16.39,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1253,7 +1253,7 @@
       "newestAt": "2026-09-28T17:34:40Z",
       "oldestAt": "2026-09-28T17:25:36Z",
       "coverage": "partial",
-      "coverageDays": 3.87,
+      "coverageDays": 3.88,
       "trackingStartedAt": "2026-09-28T23:21:19.750204Z"
     },
     {
@@ -1265,7 +1265,7 @@
       "newestAt": "2026-10-02T13:55:14.597476Z",
       "oldestAt": "2026-09-27T05:57:52.709201Z",
       "coverage": "partial",
-      "coverageDays": 5.35,
+      "coverageDays": 5.36,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1277,7 +1277,7 @@
       "newestAt": "2026-09-30T02:12:22Z",
       "oldestAt": "2026-09-14T07:04:15Z",
       "coverage": "partial",
-      "coverageDays": 18.3,
+      "coverageDays": 18.31,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1301,7 +1301,7 @@
       "newestAt": "2026-10-02T08:00:00Z",
       "oldestAt": "2026-09-11T12:10:00Z",
       "coverage": "partial",
-      "coverageDays": 21.09,
+      "coverageDays": 21.1,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1313,7 +1313,7 @@
       "newestAt": "2026-09-14T08:58:40Z",
       "oldestAt": "2026-09-14T08:58:25Z",
       "coverage": "partial",
-      "coverageDays": 18.22,
+      "coverageDays": 18.23,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1337,7 +1337,7 @@
       "newestAt": "2026-09-28T15:15:17Z",
       "oldestAt": "2026-09-14T19:29:23Z",
       "coverage": "partial",
-      "coverageDays": 17.78,
+      "coverageDays": 17.79,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1349,7 +1349,7 @@
       "newestAt": "2026-09-27T03:00:13Z",
       "oldestAt": "2026-09-18T09:00:11Z",
       "coverage": "partial",
-      "coverageDays": 14.22,
+      "coverageDays": 14.23,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1361,7 +1361,7 @@
       "newestAt": "2026-10-01T21:20:30Z",
       "oldestAt": "2026-09-11T14:45:09Z",
       "coverage": "partial",
-      "coverageDays": 20.98,
+      "coverageDays": 20.99,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1397,7 +1397,7 @@
       "newestAt": "2026-09-30T09:47:55Z",
       "oldestAt": "2026-09-24T15:56:14Z",
       "coverage": "partial",
-      "coverageDays": 7.93,
+      "coverageDays": 7.94,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1409,7 +1409,7 @@
       "newestAt": "2026-10-02T06:18:00Z",
       "oldestAt": "2026-09-30T07:34:00Z",
       "coverage": "partial",
-      "coverageDays": 2.28,
+      "coverageDays": 2.29,
       "trackingStartedAt": "2026-10-02T12:45:23.780752Z"
     },
     {
@@ -1421,7 +1421,7 @@
       "newestAt": "2026-09-29T19:21:11Z",
       "oldestAt": "2026-09-11T17:05:48Z",
       "coverage": "partial",
-      "coverageDays": 20.88,
+      "coverageDays": 20.89,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1445,7 +1445,7 @@
       "newestAt": "2026-09-25T07:01:49Z",
       "oldestAt": "2026-09-22T08:17:03Z",
       "coverage": "partial",
-      "coverageDays": 10.25,
+      "coverageDays": 10.26,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1469,7 +1469,7 @@
       "newestAt": "2026-09-20T06:38:58Z",
       "oldestAt": "2026-09-20T06:38:58Z",
       "coverage": "partial",
-      "coverageDays": 12.32,
+      "coverageDays": 12.33,
       "trackingStartedAt": "2026-09-27T08:03:46.526563Z"
     },
     {
@@ -1481,7 +1481,7 @@
       "newestAt": "2026-10-01T15:59:00Z",
       "oldestAt": "2026-09-22T16:15:00Z",
       "coverage": "partial",
-      "coverageDays": 9.92,
+      "coverageDays": 9.93,
       "trackingStartedAt": "2026-09-27T21:25:17.629953Z"
     },
     {

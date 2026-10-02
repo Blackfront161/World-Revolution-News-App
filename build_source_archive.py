@@ -12,6 +12,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
+from source_import_policy import restrict_existing_article
 
 
 ROOT = Path(__file__).resolve().parent
@@ -89,6 +90,7 @@ def build_source_archives(
     quick_feed: list[dict[str, Any]],
     *,
     previous_articles: list[dict[str, Any]] | None = None,
+    source_policies: list[dict[str, Any]] | None = None,
     previous_tracking: dict[str, str] | None = None,
     days: int = DEFAULT_DAYS,
     excerpt_limit: int = DEFAULT_EXCERPT_LIMIT,
@@ -102,6 +104,14 @@ def build_source_archives(
     for article in news:
         if isinstance(article, dict) and stable_article_key(article):
             merged[stable_article_key(article)] = article
+    if source_policies:
+        restricted = {}
+        for key, article in merged.items():
+            admitted = restrict_existing_article(article, source_policies)
+            if admitted is not None:
+                restricted[key] = admitted
+        merged = restricted
+
     dated = [
         (parse_date(article.get("pubDate")), article)
         for article in merged.values()
@@ -205,6 +215,7 @@ def main() -> None:
         news,
         quick_feed,
         previous_articles=previous_articles,
+        source_policies=read_json(ROOT / "multilingual-source-registry.json", {}).get("sources", []),
         previous_tracking=previous_tracking,
         days=max(1, args.days),
         excerpt_limit=max(240, args.excerpt_limit),

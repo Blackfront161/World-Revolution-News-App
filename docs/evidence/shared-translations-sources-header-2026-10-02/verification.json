@@ -1,11 +1,11 @@
 {
   "status": "PASS",
-  "pythonTestsPassed": 162,
+  "pythonTestsPassed": 164,
   "pythonTestsSkipped": 3,
   "pythonSubtestsPassed": 4,
   "javascriptTestFilesPassed": 57,
   "translationCacheTestsPassed": 8,
-  "dataPolicyTestsPassed": 9,
+  "dataPolicyTestsPassed": 10,
   "appValidator": "PASS",
   "releaseAuditChecksPassed": 161,
   "dataPullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/40",
@@ -17,5 +17,7 @@
   "aliasOrderRegression": "PASS",
   "dataArchivePullRequest": "https://github.com/Blackfront161/Revolution-News-Data/pull/41",
   "archiveSources": 124,
-  "archiveItems": 3097
+  "archiveItems": 3097,
+  "retainedArchivePolicyRegression": "PASS",
+  "mapuexpressRestrictedArchiveRows": 6
 }

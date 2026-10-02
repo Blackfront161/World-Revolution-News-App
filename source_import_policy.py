@@ -29,10 +29,20 @@ def metadata_article(feed, entry, continent):
     title = str(entry.get("title") or "").strip()
     if not title:
         return None
+    categories = metadata_categories(feed.get("categories"), continent)
+    region = next(value for value in categories if value in REGION_ALIASES.values())
+    topic = next(value for value in categories if value in TOPICS)
     # This sentence is WRN-authored. Even an RSS summary may contain a full text.
     return {
         "kontinent": continent,
-        "categories": metadata_categories(feed.get("categories"), continent),
+        "categories": categories,
+        "primaryRegion": region,
+        "primaryTopic": topic,
+        "secondaryTopics": [value for value in categories if value in TOPICS and value != topic],
+        "classificationConfidence": 0.4,
+        "classificationMethod": "source-metadata-only",
+        "editorialReview": True,
+        "editorialReviewReasons": ["headline-only metadata record"],
         "quelleName": feed["name"],
         "author": str(entry.get("author") or "Unknown").strip(),
         "title": title,
@@ -51,3 +61,23 @@ def metadata_article(feed, entry, continent):
         "importMode": "metadata-only",
         "rightsReview": feed.get("rightsReview", "unknown"),
     }
+
+
+def restrict_existing_article(article, source_policies):
+    """Apply a newly reviewed restricted source policy to old archive rows too."""
+    name = str(article.get("quelleName") or article.get("source") or article.get("sourceName") or "").strip().casefold()
+    feeds = [feed for feed in source_policies or []
+             if str(feed.get("name") or "").strip().casefold() == name
+             and feed.get("status") == "approved" and feed.get("importMode") == "metadata-only"]
+    if not feeds:
+        return article
+    entry = {"title": article.get("title"), "link": article.get("link"),
+             "published": article.get("pubDate"), "author": article.get("author")}
+    for feed in feeds:
+        admitted = metadata_article(feed, entry, article.get("kontinent") or (feed.get("categories") or ["Global"])[0])
+        if admitted is not None:
+            if article.get("id"):
+                admitted["id"] = article["id"]
+            return admitted
+    # An old external/non-HTTPS link cannot bypass a restricted publisher's host guard.
+    return None

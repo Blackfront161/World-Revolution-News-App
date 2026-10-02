@@ -61,3 +61,17 @@ wurden entsprechend korrigiert. Generische unklare Themen bleiben prüfbar.
 Die Aufnahmebegrenzung wurde auch in den archivierten App-Generatorskripten
 übernommen, sodass ein späterer Lauf dort keine Volltexte dieser Quellen kopiert.
 Beide GitHub-Gates bestanden am korrigierten PR-Stand d792478.
+
+
+## Behaltene Altbeiträge
+
+Die zweite unabhängige Abnahme fand noch einen alten Mapuexpress-Beitrag mit
+Fremdtext und Bild im behaltenen Archiv. Der Archiv-Generator wendet die
+explizit freigegebene metadata-only-Policy jetzt auf alle zusammengeführten
+Datensätze an, einschließlich allein im bisherigen Archiv vorhandener Links.
+Alle sechs Mapuexpress-Archivbeiträge sind nun Spanisch, ohne fremde Inhalte oder
+Medien. Fremde/nicht-HTTPS Links unter diesem Publisher werden ausgeschlossen,
+andere Publisher bleiben unverändert. Vierzehn historische Metadatensätze im
+App-news.json wurden ebenfalls begrenzt; Original-Link und vorhandene ID bleiben.
+Der komplette App-Testlauf danach: 164 PASS, drei historische SKIPs, vier Subtests.
+Der Daten-Regressionslauf: zehn PASS. Weitere Veröffentlichung per Folge-PR42.
