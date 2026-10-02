@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T17:10:00+02:00",
+  "generatedAt": "2026-10-03T07:31:18+08:00",
   "reviewWindowDays": 45,
   "editorialPolicy": {
     "scope": "A small, curated directory of people publicly listed by established prisoner-solidarity groups.",
     "addressRule": "Only public prison mailing addresses shared by the prisoner or a trusted support group are published.",
     "privacyRule": "Private family, legal-team and release addresses are never included.",
     "staleRule": "Copying, editing and printing are disabled after the next review date until the address is checked again.",
-    "legalNote": "The directory documents solidarity information and does not make a legal assessment of a case."
+    "legalNote": "The directory documents solidarity information and does not make a legal assessment of a case.",
+    "verificationScope": "Verification means a public mailing address matched to a sufficiently recent dated primary support source, not an independent custody or legal-status finding. Undated individual listings remain locked pending dated confirmation.",
+    "undatedSourceRule": "Live access and an address match are recorded separately; neither automatically extends an expired individual review window."
   },
   "sources": [
     {
@@ -23,7 +25,14 @@
       "name": "NYC Anarchist Black Cross – Write A Letter",
       "url": "https://nycabc.wordpress.com/write-a-letter/",
       "kind": "letter-writing-guidance",
-      "checkedAt": "2026-07-27"
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.523140+00:00",
+        "originalUrl": "https://nycabc.wordpress.com/write-a-letter/",
+        "contentSha256": "55284294577c1f9a8f333ba21bd1b8f3914765011b582c9596680411bcd7626b",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
     },
     {
       "id": "abcf-updates",
@@ -45,21 +54,42 @@
       "name": "Anarchist Black Cross Dresden – Gefangenenliste",
       "url": "https://abcdd.org/gefangene/",
       "kind": "primary-support-group",
-      "checkedAt": "2026-08-04"
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+        "originalUrl": "https://abcdd.org/gefangene/",
+        "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
     },
     {
       "id": "abc-dresden-letter-writing",
       "name": "Anarchist Black Cross Dresden – Briefeschreiben",
       "url": "https://abcdd.org/en/letter-writing/",
       "kind": "letter-writing-guidance",
-      "checkedAt": "2026-08-04"
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.020639+00:00",
+        "originalUrl": "https://abcdd.org/en/letter-writing/",
+        "contentSha256": "08511bd204e633acfdd24c69d7bf31cf8b4027b0904d160318dff09433a87e2c",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
     },
     {
       "id": "prisoners-for-palestine-writing",
       "name": "Prisoners for Palestine – Writing to Prisoners",
       "url": "https://prisonersforpalestine.org/writing-to-prisoners/",
       "kind": "primary-support-group",
-      "checkedAt": "2026-07-29"
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+        "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+        "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
     },
     {
       "id": "govuk-prison-letters",
@@ -95,6 +125,107 @@
       "url": "https://secoursrouge.org/orga/secours-rouge-geneve/",
       "kind": "support-network",
       "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "nycabc-guide-19-8",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.8",
+      "url": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-10-03",
+      "publishedAt": "2026-09-24",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+        "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+        "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+        "httpStatus": 200
+      },
+      "rightsReview": "Metadata and original links only; PDF, portraits and biographies are not bundled or republished."
+    },
+    {
+      "id": "nyc-books-through-bars",
+      "name": "NYC Books Through Bars",
+      "url": "https://www.booksthroughbarsnyc.org/",
+      "kind": "book-support",
+      "checkedAt": "2026-10-03",
+      "description": "Volunteer organisation providing books to incarcerated people.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.020639+00:00",
+        "originalUrl": "https://www.booksthroughbarsnyc.org/",
+        "contentSha256": "7da34d40c46d88efa5288d31e101aa88776152e8013a359f780aba9cbbd6ee6d",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "water-protector-legal-collective",
+      "name": "Water Protector Legal Collective",
+      "url": "https://www.waterprotectorlegal.org/",
+      "kind": "indigenous-legal-support",
+      "checkedAt": "2026-10-03",
+      "description": "Indigenous-led organisation working on rights and legal support for Indigenous communities.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.645873+00:00",
+        "originalUrl": "https://www.waterprotectorlegal.org/",
+        "contentSha256": "93fd27f68932c342019689419114f52ac6e192aa834400a9b8e14d2ec48a5714",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "jericho-movement",
+      "name": "Jericho Movement",
+      "url": "https://www.thejerichomovement.com/",
+      "kind": "support-network",
+      "checkedAt": "2026-10-03",
+      "description": "Organisation supporting people it identifies as political prisoners.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.824592+00:00",
+        "originalUrl": "https://www.thejerichomovement.com/",
+        "contentSha256": "7894bfb0cf10d824e87affec009bd803ae32c394fe9ec2bba47ef48609acf9a7",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "prison-radio-support",
+      "name": "Prison Radio",
+      "url": "https://www.prisonradio.org/",
+      "kind": "prisoner-voices",
+      "checkedAt": "2026-10-03",
+      "description": "Original commentaries and reporting by imprisoned correspondents.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:21.027235+00:00",
+        "originalUrl": "https://www.prisonradio.org/",
+        "contentSha256": "f3550691fe12a7eb3d546ebad440d7fe24974389f3e1b85dd03d93b18713c1fd",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "prisoner-solidarity-directory",
+      "name": "Prisoner Solidarity (Philadelphia ABC)",
+      "url": "https://www.prisonersolidarity.com/",
+      "kind": "support-directory",
+      "checkedAt": "2026-10-03",
+      "description": "Public prisoner-support directory maintained by Philadelphia Anarchist Black Cross; originally started by Los Angeles ABC.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:21.414400+00:00",
+        "originalUrl": "https://www.prisonersolidarity.com/",
+        "contentSha256": "52c09b27d7f1cf25e03368478163f014bed98cd43a828cbe634c924f292cd733",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
     }
   ],
   "profiles": [
@@ -134,13 +265,37 @@
       },
       "verification": {
         "status": "verified",
-        "verifiedAt": "2026-06-29",
-        "nextReviewAt": "2026-08-13",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
         "sourceIds": [
-          "nycabc-guide-19-5",
-          "abcf-updates"
+          "nycabc-guide-19-8",
+          "nycabc-write"
         ],
-        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-06-29",
+          "nextReviewAt": "2026-08-13",
+          "sourceIds": [
+            "nycabc-guide-19-5",
+            "abcf-updates"
+          ],
+          "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 8
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -191,13 +346,37 @@
       },
       "verification": {
         "status": "verified",
-        "verifiedAt": "2026-06-28",
-        "nextReviewAt": "2026-08-12",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
         "sourceIds": [
-          "nycabc-guide-19-5",
-          "abcf-updates"
+          "nycabc-guide-19-8",
+          "nycabc-write"
         ],
-        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-06-28",
+          "nextReviewAt": "2026-08-12",
+          "sourceIds": [
+            "nycabc-guide-19-5",
+            "abcf-updates"
+          ],
+          "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 7
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -246,13 +425,37 @@
       },
       "verification": {
         "status": "verified",
-        "verifiedAt": "2026-06-27",
-        "nextReviewAt": "2026-08-11",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
         "sourceIds": [
-          "nycabc-guide-19-5",
-          "abcf-updates"
+          "nycabc-guide-19-8",
+          "nycabc-write"
         ],
-        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-06-27",
+          "nextReviewAt": "2026-08-11",
+          "sourceIds": [
+            "nycabc-guide-19-5",
+            "abcf-updates"
+          ],
+          "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 6
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -300,13 +503,37 @@
       },
       "verification": {
         "status": "verified",
-        "verifiedAt": "2026-06-25",
-        "nextReviewAt": "2026-08-09",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
         "sourceIds": [
-          "nycabc-guide-19-5",
-          "abcf-updates"
+          "nycabc-guide-19-8",
+          "nycabc-write"
         ],
-        "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-06-25",
+          "nextReviewAt": "2026-08-09",
+          "sourceIds": [
+            "nycabc-guide-19-5",
+            "abcf-updates"
+          ],
+          "profileUrl": "https://www.abcf.net/blog/2026/06/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 6
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -343,7 +570,7 @@
         ],
         "public": true
       },
-      "birthday": "",
+      "birthday": "02-26",
       "movementTags": [
         "Indigenous resistance",
         "anti-colonialism",
@@ -355,13 +582,37 @@
       },
       "verification": {
         "status": "verified",
-        "verifiedAt": "2026-07-05",
-        "nextReviewAt": "2026-08-19",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
         "sourceIds": [
-          "abcf-updates",
-          "nycabc-guide-19-5"
+          "nycabc-guide-19-8",
+          "nycabc-write"
         ],
-        "profileUrl": "https://www.abcf.net/blog/2026/07/"
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-05",
+          "nextReviewAt": "2026-08-19",
+          "sourceIds": [
+            "abcf-updates",
+            "nycabc-guide-19-5"
+          ],
+          "profileUrl": "https://www.abcf.net/blog/2026/07/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 8
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -411,14 +662,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/writing-to-prisoners/"
+        "profileUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/writing-to-prisoners/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -466,14 +740,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/prisoner/qesser-zuhrah/"
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/qesser-zuhrah/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/prisoner/qesser-zuhrah/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -521,14 +818,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/prisoner/amu-gib/"
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/amu-gib/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/prisoner/amu-gib/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -577,14 +897,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/prisoner/heba-muraisi/"
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/heba-muraisi/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/prisoner/heba-muraisi/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -634,14 +977,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/prisoner/jon-cink/"
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/jon-cink/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/prisoner/jon-cink/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -689,14 +1055,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/prisoner/teuta-hoxha/"
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/teuta-hoxha/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/prisoner/teuta-hoxha/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -744,14 +1133,37 @@
         "en": "Supported by Prisoners for Palestine as an imprisoned Palestine-solidarity activist. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-07-29",
         "nextReviewAt": "2026-09-12",
         "sourceIds": [
           "prisoners-for-palestine-writing",
           "govuk-prison-letters"
         ],
-        "profileUrl": "https://prisonersforpalestine.org/prisoner/kamran-ahmed/"
+        "profileUrl": "https://prisonersforpalestine.org/prisoner/kamran-ahmed/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-07-29",
+          "nextReviewAt": "2026-09-12",
+          "sourceIds": [
+            "prisoners-for-palestine-writing",
+            "govuk-prison-letters"
+          ],
+          "profileUrl": "https://prisonersforpalestine.org/prisoner/kamran-ahmed/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+          "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+          "httpStatus": 200,
+          "sourceId": "prisoners-for-palestine-writing",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -767,36 +1179,76 @@
       "id": "paul-muentnich",
       "publicName": "Paul Müntnich",
       "prisonerId": "",
-      "aliases": ["Paul Müntnich"],
+      "aliases": [
+        "Paul Müntnich"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Leipzig",
       "mailingAddress": {
-        "lines": ["Paul Müntnich", "JVA Leipzig", "Leinestraße 111", "04279 Leipzig", "Germany"],
+        "lines": [
+          "Paul Müntnich",
+          "JVA Leipzig",
+          "Leinestraße 111",
+          "04279 Leipzig",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["anarchism", "anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "anarchism",
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Aufnahme dokumentiert die veröffentlichte Solidaritätsinformation und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden for current letter solidarity. This entry documents published solidarity information and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-08-04",
         "nextReviewAt": "2026-09-18",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-04",
+          "nextReviewAt": "2026-09-18",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
         "imagesAllowed": null,
         "returnAddressRequired": true,
         "notes": {
-          "de": "ABC Dresden bittet darum, keine Zeitungsartikel beizulegen. Vor dem Versand die aktuellen Regeln und die Adresse erneut prüfen.",
-          "en": "ABC Dresden asks supporters not to enclose newspaper articles. Recheck the current address and institution rules before mailing."
+          "de": "ABC Dresden nennt ausdrücklich ein Verbot von Zeitungsartikeln, auch Kopien. Adresse und alle weiteren Anstaltsregeln vor dem Versand erneut prüfen.",
+          "en": "ABC Dresden explicitly says newspaper articles, including copies, cannot be received. Recheck the address and all other institution rules before mailing."
         }
       }
     },
@@ -804,28 +1256,68 @@
       "id": "emilie-dieckmann",
       "publicName": "Emilie Dieckmann (Emmi)",
       "prisonerId": "",
-      "aliases": ["Emmi", "Emilie Dieckmann"],
+      "aliases": [
+        "Emmi",
+        "Emilie Dieckmann"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Luckau-Duben",
       "mailingAddress": {
-        "lines": ["Emilie Dieckmann", "JVA Luckau-Duben", "Lehmkietenweg 1", "15926 Luckau OT Duben", "Germany"],
+        "lines": [
+          "Emilie Dieckmann",
+          "JVA Luckau-Duben",
+          "Lehmkietenweg 1",
+          "15926 Luckau OT Duben",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Darstellung folgt dieser Solidaritätsquelle.",
         "en": "Listed by ABC Dresden for current letter solidarity. This description follows that solidarity source."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-08-04",
         "nextReviewAt": "2026-09-18",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-04",
+          "nextReviewAt": "2026-09-18",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -841,28 +1333,68 @@
       "id": "hanna-nuernberg",
       "publicName": "Hanna",
       "prisonerId": "",
-      "aliases": ["Hanna"],
+      "aliases": [
+        "Hanna"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "Post über Rote Hilfe OG Nürnberg",
       "mailingAddress": {
-        "lines": ["Rote Hilfe OG Nürnberg", "z. H. HANNA", "Eberhardshoferstraße 11", "90429 Nürnberg", "Germany"],
+        "lines": [
+          "Rote Hilfe Ortsgruppe Nürnberg",
+          "z. H. HANNA",
+          "Eberhardshoferstraße 11",
+          "90429 Nürnberg",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "antifascism",
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird über die von ABC Dresden veröffentlichte Kontaktadresse der Roten Hilfe Nürnberg für Briefsolidarität geführt. Keine juristische Bewertung des Verfahrens.",
         "en": "Listed for letter solidarity through the Rote Hilfe Nürnberg contact address published by ABC Dresden. This is not a legal assessment of the case."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-08-04",
         "nextReviewAt": "2026-09-18",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-04",
+          "nextReviewAt": "2026-09-18",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -878,28 +1410,68 @@
       "id": "luca-amelie-schaller",
       "publicName": "Luca Amelie Schaller",
       "prisonerId": "",
-      "aliases": ["Luca Amelie Schaller"],
+      "aliases": [
+        "Luca Amelie Schaller"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Bielefeld-Brackwede",
       "mailingAddress": {
-        "lines": ["Luca Amelie Schaller", "JVA Bielefeld-Brackwede", "Postfach 14 04 40", "33625 Bielefeld", "Germany"],
+        "lines": [
+          "Luca Amelie Schaller",
+          "JVA Bielefeld-Brackwede",
+          "Postfach 14 04 40",
+          "33625 Bielefeld",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "antifascism",
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden for current letter solidarity. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-08-04",
         "nextReviewAt": "2026-09-18",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-04",
+          "nextReviewAt": "2026-09-18",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -915,268 +1487,699 @@
       "id": "mumia-abu-jamal",
       "publicName": "Mumia Abu-Jamal",
       "prisonerId": "AM8335",
-      "aliases": ["Mumia Abu-Jamal"],
+      "aliases": [
+        "Mumia Abu-Jamal"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "SCI Mahanoy",
       "mailingAddress": {
-        "lines": ["Mumia Abu-Jamal #AM8335", "SCI Mahanoy", "Post Office Box 33028", "St Petersburg, Florida 33733", "USA"],
+        "lines": [
+          "Mumia Abu-Jamal #AM8335",
+          "SCI Mahanoy",
+          "Post Office Box 33028",
+          "St Petersburg, Florida 33733",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "04-24",
-      "movementTags": ["black liberation", "journalism", "prisoner solidarity"],
+      "movementTags": [
+        "black liberation",
+        "journalism",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden als politischer Gefangener aus der Schwarzen Befreiungsbewegung geführt. Diese Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide as a political prisoner from the Black liberation movement. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 3
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln der Anstalt und des Dienstes prüfen.", "en": "The address uses Smart Communications. Check the institution's and service's current rules before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln der Anstalt und des Dienstes prüfen.",
+          "en": "The address uses Smart Communications. Check the institution's and service's current rules before mailing."
+        }
       }
     },
     {
       "id": "joe-joe-bowen",
       "publicName": "Joe-Joe Bowen",
       "prisonerId": "AM4272",
-      "aliases": ["Joe-Joe Bowen", "Joseph Bowen"],
+      "aliases": [
+        "Joe-Joe Bowen",
+        "Joseph Bowen"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "SCI Fayette",
       "mailingAddress": {
-        "lines": ["Joseph Bowen #AM4272", "SCI Fayette", "Post Office Box 33028", "St Petersburg, Florida 33733", "USA"],
+        "lines": [
+          "Joseph Bowen #AM4272",
+          "SCI Fayette",
+          "Post Office Box 33028",
+          "St Petersburg, Florida 33733",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "01-15",
-      "movementTags": ["black liberation", "prisoner solidarity", "anti-repression"],
+      "movementTags": [
+        "black liberation",
+        "prisoner solidarity",
+        "anti-repression"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden der Schwarzen Befreiungsbewegung zugeordnet. Diese Darstellung dokumentiert die öffentliche Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide under the Black liberation movement. This entry documents the public solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 3
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln prüfen.", "en": "The address uses Smart Communications. Check the current mailing rules before sending."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln prüfen.",
+          "en": "The address uses Smart Communications. Check the current mailing rules before sending."
+        }
       }
     },
     {
       "id": "ronald-reed",
       "publicName": "Ronald Reed",
       "prisonerId": "219531",
-      "aliases": ["Ronald Reed"],
+      "aliases": [
+        "Ronald Reed"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "Minnesota Correctional Facility – Lino Lakes",
       "mailingAddress": {
-        "lines": ["Ronald Reed #219531", "Minnesota Correctional Facility – Lino Lakes", "Post Office Box 247", "Phoenix, Maryland 21131", "USA"],
+        "lines": [
+          "Ronald Reed #219531",
+          "Minnesota Correctional Facility – Lino Lakes",
+          "Post Office Box 247",
+          "Phoenix, Maryland 21131",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "08-31",
-      "movementTags": ["black liberation", "civil rights", "prisoner solidarity"],
+      "movementTags": [
+        "black liberation",
+        "civil rights",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden als ehemaliger Bürgerrechtsaktivist und politischer Gefangener geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide as a former civil-rights activist and political prisoner. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 4
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand die aktuellen Regeln der Anstalt und des Postdienstes prüfen.", "en": "Check the institution's and mail service's current rules before sending."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuellen Regeln der Anstalt und des Postdienstes prüfen.",
+          "en": "Check the institution's and mail service's current rules before sending."
+        }
       }
     },
     {
       "id": "fred-muhammad-burton",
       "publicName": "Fred “Muhammad” Burton",
       "prisonerId": "AF3896",
-      "aliases": ["Fred Burton", "Frederick Burton", "Muhammad Burton"],
+      "aliases": [
+        "Fred Burton",
+        "Frederick Burton",
+        "Muhammad Burton"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "SCI Chester",
       "mailingAddress": {
-        "lines": ["Fred Burton #AF3896", "SCI Chester", "Post Office Box 33028", "St Petersburg, Florida 33733", "USA"],
+        "lines": [
+          "Fred Burton #AF3896",
+          "SCI Chester",
+          "Post Office Box 33028",
+          "St Petersburg, Florida 33733",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "12-15",
-      "movementTags": ["black liberation", "prisoner solidarity", "anti-repression"],
+      "movementTags": [
+        "black liberation",
+        "prisoner solidarity",
+        "anti-repression"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden der Schwarzen Befreiungsbewegung zugeordnet. Diese Kurzbeschreibung folgt der öffentlichen Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide under the Black liberation movement. This short description follows the public solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 4
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln prüfen.", "en": "The address uses Smart Communications. Check the current mailing rules before sending."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Die Adresse läuft über Smart Communications. Vor dem Versand die aktuellen Regeln prüfen.",
+          "en": "The address uses Smart Communications. Check the current mailing rules before sending."
+        }
       }
     },
     {
       "id": "kojo-bomani-sababu",
       "publicName": "Kojo Bomani Sababu",
       "prisonerId": "39384-066",
-      "aliases": ["Kojo Bomani Sababu", "Grailing Brown"],
+      "aliases": [
+        "Kojo Bomani Sababu",
+        "Grailing Brown"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "USP Canaan",
       "mailingAddress": {
-        "lines": ["Grailing Brown #39384-066", "USP Canaan", "Post Office Box 300", "Waymart, Pennsylvania 18472", "USA"],
+        "lines": [
+          "Grailing Brown #39384-066",
+          "USP Canaan",
+          "Post Office Box 300",
+          "Waymart, Pennsylvania 18472",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "05-27",
-      "movementTags": ["black liberation", "prisoner solidarity", "anti-repression"],
+      "movementTags": [
+        "black liberation",
+        "prisoner solidarity",
+        "anti-repression"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden als Gefangener der New-Afrikan-Befreiungsbewegung geführt. Diese Einordnung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide as a prisoner from the New Afrikan liberation movement. This classification follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 5
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand die aktuellen Bundesgefängnis-Regeln und die Adresse erneut prüfen.", "en": "Recheck the current federal prison mailing rules and address before sending."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuellen Bundesgefängnis-Regeln und die Adresse erneut prüfen.",
+          "en": "Recheck the current federal prison mailing rules and address before sending."
+        }
       }
     },
     {
       "id": "kamau-sadiki",
       "publicName": "Kamau Sadiki",
       "prisonerId": "0001150688",
-      "aliases": ["Kamau Sadiki", "Freddie Hilton"],
+      "aliases": [
+        "Kamau Sadiki",
+        "Freddie Hilton"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "Augusta State Medical Prison",
       "mailingAddress": {
-        "lines": ["Freddie Hilton #0001150688", "Augusta State Medical Prison", "3001 Gordon Highway", "Grovetown, Georgia 30813", "USA"],
+        "lines": [
+          "Freddie Hilton #0001150688",
+          "Augusta State Medical Prison",
+          "3001 Gordon Highway",
+          "Grovetown, Georgia 30813",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "02-19",
-      "movementTags": ["black liberation", "black panther party", "prisoner solidarity"],
+      "movementTags": [
+        "black liberation",
+        "black panther party",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden als früheres Mitglied der Black Panther Party und politischer Gefangener geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide as a former Black Panther Party member and political prisoner. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 5
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand die aktuellen Regeln der Anstalt und die Adresse erneut prüfen.", "en": "Recheck the institution's current rules and address before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuellen Regeln der Anstalt und die Adresse erneut prüfen.",
+          "en": "Recheck the institution's current rules and address before mailing."
+        }
       }
     },
     {
       "id": "xinachtli",
       "publicName": "Xinachtli",
       "prisonerId": "255735",
-      "aliases": ["Xinachtli", "Alvaro Hernández"],
+      "aliases": [
+        "Xinachtli",
+        "Alvaro Hernández"
+      ],
       "pronouns": "",
-      "languages": ["en", "es"],
+      "languages": [
+        "en",
+        "es"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "Texas Department of Criminal Justice",
       "mailingAddress": {
-        "lines": ["Alvaro Hernández #255735", "Texas Department of Criminal Justice", "Post Office Box 660400", "Dallas, Texas 75266-0400", "USA"],
+        "lines": [
+          "Alvaro Hernández #255735",
+          "Texas Department of Criminal Justice",
+          "Post Office Box 660400",
+          "Dallas, Texas 75266-0400",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "05-12",
-      "movementTags": ["community organising", "indigenous resistance", "prisoner solidarity"],
+      "movementTags": [
+        "community organising",
+        "indigenous resistance",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden als Community-Organizer und Gefangener im Kontext nationaler Befreiungsbewegungen geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide as a community organiser and prisoner in the context of national liberation movements. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 9
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand die aktuellen TDCJ-Regeln und die zentrale Postadresse prüfen.", "en": "Check the current TDCJ rules and central mail address before sending."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuellen TDCJ-Regeln und die zentrale Postadresse prüfen.",
+          "en": "Check the current TDCJ rules and central mail address before sending."
+        }
       }
     },
     {
       "id": "joy-powell",
       "publicName": "Joy Powell",
       "prisonerId": "07-G-0632",
-      "aliases": ["Joy Powell"],
+      "aliases": [
+        "Joy Powell"
+      ],
       "pronouns": "",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "country": "United States",
       "region": "North America",
       "institution": "Bedford Hills Correctional Facility",
       "mailingAddress": {
-        "lines": ["Joy Powell #07-G-0632", "Bedford Hills Correctional Facility", "Post Office Box 1000", "Bedford Hills, New York 10507-2499", "USA"],
+        "lines": [
+          "Joy Powell #07-G-0632",
+          "Bedford Hills Correctional Facility",
+          "Post Office Box 1000",
+          "Bedford Hills, New York 10507-2499",
+          "USA"
+        ],
         "public": true
       },
       "birthday": "03-05",
-      "movementTags": ["anti-police organising", "community organising", "prisoner solidarity"],
+      "movementTags": [
+        "anti-police organising",
+        "community organising",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird im aktuellen NYC-ABC-Leitfaden im Zusammenhang mit Organisierung gegen Polizeigewalt geführt. Diese Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current NYC ABC guide in connection with organising against police violence. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-09", "nextReviewAt": "2026-09-23",
-        "sourceIds": ["nycabc-guide-19-6", "nycabc-write"],
-        "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        "status": "verified",
+        "verifiedAt": "2026-10-03",
+        "nextReviewAt": "2026-11-08",
+        "sourceIds": [
+          "nycabc-guide-19-8",
+          "nycabc-write"
+        ],
+        "profileUrl": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+        "scope": "Public mailing address matched to the dated support-group guide; no independent legal assessment or delivery guarantee.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-09",
+          "nextReviewAt": "2026-09-23",
+          "sourceIds": [
+            "nycabc-guide-19-6",
+            "nycabc-write"
+          ],
+          "profileUrl": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+          "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+          "httpStatus": 200,
+          "sourceId": "nycabc-guide-19-8",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": "2026-09-24",
+          "pdfPage": 10
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand die aktuellen Regeln der Anstalt und die Adresse erneut prüfen.", "en": "Recheck the institution's current rules and address before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die aktuellen Regeln der Anstalt und die Adresse erneut prüfen.",
+          "en": "Recheck the institution's current rules and address before mailing."
+        }
       }
     },
     {
       "id": "nele-aschoff",
       "publicName": "Nele Aschoff",
       "prisonerId": "",
-      "aliases": ["Nele Aschoff"],
+      "aliases": [
+        "Nele Aschoff"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Chemnitz",
       "mailingAddress": {
-        "lines": ["Nele Aschoff", "JVA Chemnitz", "Thalheimerstraße 29", "09125 Chemnitz", "Germany"],
+        "lines": [
+          "Nele Aschoff",
+          "JVA Chemnitz",
+          "Thalheimerstraße 29",
+          "09125 Chemnitz",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "antifascism",
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden für Briefsolidarität geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden for current letter solidarity. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified",
+        "status": "needs-review",
         "verifiedAt": "2026-08-04",
         "nextReviewAt": "2026-09-18",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-04",
+          "nextReviewAt": "2026-09-18",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
         "status": "check-before-mailing",
@@ -1192,154 +2195,392 @@
       "id": "finn-siebers",
       "publicName": "Finn Siebers",
       "prisonerId": "",
-      "aliases": ["Finn Siebers"],
+      "aliases": [
+        "Finn Siebers"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Waldheim",
       "mailingAddress": {
-        "lines": ["Finn Siebers c/o Scheffel", "JVA Waldheim", "Dresdener Straße 1", "04736 Waldheim", "Germany"],
+        "lines": [
+          "Finn Siebers c/o Scheffel",
+          "JVA Waldheim",
+          "Dresdener Straße 1",
+          "04736 Waldheim",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["environmental movement", "prison conditions", "prisoner solidarity"],
+      "movementTags": [
+        "environmental movement",
+        "prison conditions",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird von ABC Dresden mit öffentlicher Briefadresse geführt und setzt sich laut Quelle gegen Missstände im Gefängnis ein. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden with a public mailing address and, according to the source, active against harmful prison conditions. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "status": "needs-review",
+        "verifiedAt": "2026-08-11",
+        "nextReviewAt": "2026-09-25",
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-11",
+          "nextReviewAt": "2026-09-25",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.",
+          "en": "Recheck the address and institution rules before mailing."
+        }
       }
     },
     {
       "id": "nico-stuttgart",
       "publicName": "Nico",
       "prisonerId": "",
-      "aliases": ["Nico"],
+      "aliases": [
+        "Nico"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Ulm",
       "mailingAddress": {
-        "lines": ["Nico", "c/o Rote Hilfe OG Stuttgart", "Böblinger Straße 105", "70199 Stuttgart", "Germany"],
+        "lines": [
+          "Nico",
+          "c/o Rote Hilfe OG Stuttgart",
+          "Böblinger Straße 105",
+          "70199 Stuttgart",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["antifascism", "anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "antifascism",
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird von ABC Dresden als antifaschistischer Gefangener mit einer öffentlichen Kontaktadresse über die Rote Hilfe geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden as an antifascist prisoner with a public contact address through Rote Hilfe. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "status": "needs-review",
+        "verifiedAt": "2026-08-11",
+        "nextReviewAt": "2026-09-25",
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-11",
+          "nextReviewAt": "2026-09-25",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand die Weiterleitungsadresse bei der Roten Hilfe prüfen.", "en": "Confirm the forwarding address with Rote Hilfe before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand die Weiterleitungsadresse bei der Roten Hilfe prüfen.",
+          "en": "Confirm the forwarding address with Rote Hilfe before mailing."
+        }
       }
     },
     {
       "id": "andreas-krebs",
       "publicName": "Andreas Krebs",
       "prisonerId": "",
-      "aliases": ["Andreas Krebs"],
+      "aliases": [
+        "Andreas Krebs"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Tegel, Haus 2",
       "mailingAddress": {
-        "lines": ["Andreas Krebs", "JVA Tegel Haus 2", "Seidelstraße 39", "13507 Berlin", "Germany"],
+        "lines": [
+          "Andreas Krebs",
+          "JVA Tegel Haus 2",
+          "Seidelstraße 39",
+          "13507 Berlin",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["prison organising", "prison conditions", "prisoner solidarity"],
+      "movementTags": [
+        "prison organising",
+        "prison conditions",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird von ABC Dresden als rebellischer Gefangener und Mitorganisator der Gefangenengewerkschaft GG/BO geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden as a rebellious prisoner and co-organiser of the prisoners' union GG/BO. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "status": "needs-review",
+        "verifiedAt": "2026-08-11",
+        "nextReviewAt": "2026-09-25",
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-11",
+          "nextReviewAt": "2026-09-25",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.",
+          "en": "Recheck the address and institution rules before mailing."
+        }
       }
     },
     {
       "id": "daniela-klette",
       "publicName": "Daniela Klette",
       "prisonerId": "",
-      "aliases": ["Daniela Klette"],
+      "aliases": [
+        "Daniela Klette"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "Frauen JVA Vechta",
       "mailingAddress": {
-        "lines": ["Daniela Klette", "Frauen JVA", "An der Propstei 10", "49377 Vechta", "Germany"],
+        "lines": [
+          "Daniela Klette",
+          "Frauen JVA",
+          "An der Propstei 10",
+          "49377 Vechta",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["anti-repression", "prisoner solidarity"],
+      "movementTags": [
+        "anti-repression",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird in der aktuellen Gefangenenliste von ABC Dresden mit öffentlicher Briefadresse geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed in the current ABC Dresden prisoner guide with a public mailing address. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "status": "needs-review",
+        "verifiedAt": "2026-08-11",
+        "nextReviewAt": "2026-09-25",
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-11",
+          "nextReviewAt": "2026-09-25",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.",
+          "en": "Recheck the address and institution rules before mailing."
+        }
       }
     },
     {
       "id": "carmen-forderer",
       "publicName": "Carmen Forderer",
       "prisonerId": "",
-      "aliases": ["Carmen Forderer"],
+      "aliases": [
+        "Carmen Forderer"
+      ],
       "pronouns": "",
-      "languages": ["de"],
+      "languages": [
+        "de"
+      ],
       "country": "Germany",
       "region": "Europe",
       "institution": "JVA Schwäbisch Gmünd",
       "mailingAddress": {
-        "lines": ["Carmen Forderer", "JVA Schwäbisch Gmünd", "Herlikofer Straße 19", "73527 Schwäbisch Gmünd", "Germany"],
+        "lines": [
+          "Carmen Forderer",
+          "Herlikofer Str. 19",
+          "73527 Schwäbisch Gmünd",
+          "Germany"
+        ],
         "public": true
       },
       "birthday": "",
-      "movementTags": ["prison conditions", "anti-isolation", "prisoner solidarity"],
+      "movementTags": [
+        "prison conditions",
+        "anti-isolation",
+        "prisoner solidarity"
+      ],
       "context": {
         "de": "Wird von ABC Dresden mit öffentlicher Adresse im Kontext langjähriger Isolation und Sicherungsverwahrung geführt. Die Darstellung folgt der Solidaritätsquelle und ist keine juristische Bewertung.",
         "en": "Listed by ABC Dresden with a public address in the context of long-term isolation and preventive detention. This description follows the solidarity source and is not a legal assessment."
       },
       "verification": {
-        "status": "verified", "verifiedAt": "2026-08-11", "nextReviewAt": "2026-09-25",
-        "sourceIds": ["abc-dresden-prisoners", "abc-dresden-letter-writing"],
-        "profileUrl": "https://abcdd.org/gefangene/"
+        "status": "needs-review",
+        "verifiedAt": "2026-08-11",
+        "nextReviewAt": "2026-09-25",
+        "sourceIds": [
+          "abc-dresden-prisoners",
+          "abc-dresden-letter-writing"
+        ],
+        "profileUrl": "https://abcdd.org/gefangene/",
+        "reviewReason": "Address is present in the undated support directory; a sufficiently recent dated individual confirmation is still missing. Previous verification and review deadline are retained.",
+        "previousVerification": {
+          "status": "verified",
+          "verifiedAt": "2026-08-11",
+          "nextReviewAt": "2026-09-25",
+          "sourceIds": [
+            "abc-dresden-prisoners",
+            "abc-dresden-letter-writing"
+          ],
+          "profileUrl": "https://abcdd.org/gefangene/"
+        },
+        "evidence": {
+          "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+          "originalUrl": "https://abcdd.org/gefangene/",
+          "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+          "httpStatus": 200,
+          "sourceId": "abc-dresden-prisoners",
+          "addressObservedAtClientDate": "2026-10-03",
+          "addressComponentsReviewed": true,
+          "custodyIndependentlyVerified": false,
+          "mailPermissionsIndependentlyVerified": false,
+          "sourcePublishedAt": null
+        }
       },
       "mailRules": {
-        "status": "check-before-mailing", "imagesAllowed": null, "returnAddressRequired": true,
-        "notes": {"de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.", "en": "Recheck the address and institution rules before mailing."}
+        "status": "check-before-mailing",
+        "imagesAllowed": null,
+        "returnAddressRequired": true,
+        "notes": {
+          "de": "Vor dem Versand Adresse und Regeln der JVA erneut prüfen.",
+          "en": "Recheck the address and institution rules before mailing."
+        }
       }
     }
   ],
   "changes": [
+    {
+      "date": "2026-10-03",
+      "type": "dated-primary-address-review",
+      "text": "Reviewed all 30 existing profiles: 13 addresses bound to NYC ABC Guide 19.8 (24 September); 17 undated listings remain locked. Added five original-link support resources. No private addresses or foreign media copied."
+    },
     {
       "date": "2026-08-11",
       "type": "abc-dresden-current-list-expansion",

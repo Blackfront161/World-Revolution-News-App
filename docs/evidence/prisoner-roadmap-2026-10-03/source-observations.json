@@ -1,0 +1,129 @@
+{
+  "clientReviewDate": "2026-10-03",
+  "observations": [
+    {
+      "id": "nycabc-guide-19-8",
+      "url": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+      "finalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+      "httpStatus": 200,
+      "contentType": "application/pdf",
+      "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+      "bytes": 4705368,
+      "sha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+      "pages": 16
+    },
+    {
+      "id": "abc-dresden-prisoners",
+      "url": "https://abcdd.org/gefangene/",
+      "finalUrl": "https://abcdd.org/gefangene/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+      "bytes": 152662,
+      "sha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+      "title": "Gefangenenliste – Anarchist Black Cross Dresden Email",
+      "textChars": 15394
+    },
+    {
+      "id": "prisoners-for-palestine-writing",
+      "url": "https://prisonersforpalestine.org/writing-to-prisoners/",
+      "finalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+      "bytes": 90915,
+      "sha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+      "title": "Writing to Prisoners – Prisoners For Palestine",
+      "textChars": 4009
+    },
+    {
+      "id": "nycabc-write",
+      "url": "https://nycabc.wordpress.com/write-a-letter/",
+      "finalUrl": "https://nycabc.wordpress.com/write-a-letter/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "observedAtUTC": "2026-10-02T23:31:18.523140+00:00",
+      "bytes": 208207,
+      "sha256": "55284294577c1f9a8f333ba21bd1b8f3914765011b582c9596680411bcd7626b",
+      "title": "Write A Letter | NYC Anarchist Black Cross",
+      "textChars": 35326
+    },
+    {
+      "id": "abc-dresden-letter-writing",
+      "url": "https://abcdd.org/en/letter-writing/",
+      "finalUrl": "https://abcdd.org/en/letter-writing/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "observedAtUTC": "2026-10-02T23:31:20.020639+00:00",
+      "bytes": 137674,
+      "sha256": "08511bd204e633acfdd24c69d7bf31cf8b4027b0904d160318dff09433a87e2c",
+      "title": "Letter writing – Anarchist Black Cross Dresden Email",
+      "textChars": 6955
+    },
+    {
+      "id": "nyc-books-through-bars",
+      "url": "https://www.booksthroughbarsnyc.org/",
+      "finalUrl": "https://www.booksthroughbarsnyc.org/",
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf-8",
+      "observedAtUTC": "2026-10-02T23:31:20.020639+00:00",
+      "bytes": 222434,
+      "sha256": "7da34d40c46d88efa5288d31e101aa88776152e8013a359f780aba9cbbd6ee6d",
+      "title": "NYC Books Through Bars",
+      "textChars": 145
+    },
+    {
+      "id": "water-protector-legal-collective",
+      "url": "https://www.waterprotectorlegal.org/",
+      "finalUrl": "https://www.waterprotectorlegal.org/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "observedAtUTC": "2026-10-02T23:31:20.645873+00:00",
+      "bytes": 823290,
+      "sha256": "93fd27f68932c342019689419114f52ac6e192aa834400a9b8e14d2ec48a5714",
+      "title": "Water Protector Legal Collective | Indigenous Rights Legal Advocacy",
+      "textChars": 2310
+    },
+    {
+      "id": "jericho-movement",
+      "url": "https://www.thejerichomovement.com/",
+      "finalUrl": "https://www.thejerichomovement.com/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=utf-8",
+      "observedAtUTC": "2026-10-02T23:31:20.824592+00:00",
+      "bytes": 29681,
+      "sha256": "7894bfb0cf10d824e87affec009bd803ae32c394fe9ec2bba47ef48609acf9a7",
+      "title": "Home | Jericho Movement",
+      "textChars": 2207
+    },
+    {
+      "id": "prison-radio-support",
+      "url": "https://www.prisonradio.org/",
+      "finalUrl": "https://www.prisonradio.org/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "observedAtUTC": "2026-10-02T23:31:21.027235+00:00",
+      "bytes": 67480,
+      "sha256": "f3550691fe12a7eb3d546ebad440d7fe24974389f3e1b85dd03d93b18713c1fd",
+      "title": "Prison Radio",
+      "textChars": 1024
+    },
+    {
+      "id": "prisoner-solidarity-directory",
+      "url": "https://www.prisonersolidarity.com/",
+      "finalUrl": "https://www.prisonersolidarity.com/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=utf-8",
+      "observedAtUTC": "2026-10-02T23:31:21.414400+00:00",
+      "bytes": 24466,
+      "sha256": "52c09b27d7f1cf25e03368478163f014bed98cd43a828cbe634c924f292cd733",
+      "title": "About | prisonersolidarity.com",
+      "textChars": 1913
+    }
+  ],
+  "limitations": [
+    "HTTP200 is not independent custody confirmation.",
+    "PDF and source bodies remain temporary reading material and are not published.",
+    "No fundraising destination or private contact imported."
+  ]
+}

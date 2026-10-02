@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,12 +26,24 @@ assert {"abc-dresden-prisoners", "abc-dresden-letter-writing"} <= set(sources)
 
 for source in sources.values():
     assert source["url"].startswith("https://")
-    assert date.fromisoformat(source["checkedAt"]) <= date.today()
+    # Editorial dates use the client review timezone, not the Windows host zone.
+    assert date.fromisoformat(source["checkedAt"]) <= datetime.now(
+        timezone(timedelta(hours=8))
+    ).date()
+    if "accessEvidence" in source:
+        evidence = source["accessEvidence"]
+        assert evidence["httpStatus"] == 200
+        assert len(evidence["contentSha256"]) == 64
+        observed = datetime.fromisoformat(evidence["observedAtUTC"])
+        assert observed.utcoffset() == timedelta(0)
+        assert observed.astimezone(timezone(timedelta(hours=8))).date() == date.fromisoformat(
+            source["checkedAt"]
+        )
 
 for profile in profiles:
     verification = profile["verification"]
     address = profile["mailingAddress"]
-    assert verification["status"] == "verified"
+    assert verification["status"] in {"verified", "needs-review"}
     assert date.fromisoformat(verification["nextReviewAt"]) >= date.fromisoformat(
         verification["verifiedAt"]
     )
@@ -44,6 +56,46 @@ for profile in profiles:
     assert verification["profileUrl"].startswith("https://")
     assert profile["aliases"]
     assert profile["mailRules"]["imagesAllowed"] in (True, False, None)
+
+review = json.loads(
+    (ROOT / "docs/evidence/prisoner-roadmap-2026-10-03/profile-review.json").read_text(encoding="utf-8")
+)
+reviewed_ids = {item["profileId"] for item in review["profiles"]}
+assert reviewed_ids == {profile["id"] for profile in profiles}
+assert review["datedAddressMatches"] == 13
+assert review["pendingUndatedProfiles"] == 17
+for profile in profiles:
+    verification = profile["verification"]
+    evidence = verification["evidence"]
+    assert evidence["addressComponentsReviewed"] is True
+    assert evidence["custodyIndependentlyVerified"] is False
+    assert evidence["mailPermissionsIndependentlyVerified"] is False
+    primary = sources[evidence["sourceId"]]
+    assert evidence["contentSha256"] == primary["accessEvidence"]["contentSha256"]
+    if verification["status"] == "verified":
+        assert evidence["sourcePublishedAt"]
+        assert evidence["sourceId"] == "nycabc-guide-19-8"
+        published = date.fromisoformat(evidence["sourcePublishedAt"])
+        checked = date.fromisoformat(verification["verifiedAt"])
+        deadline = date.fromisoformat(verification["nextReviewAt"])
+        assert published <= checked <= deadline <= published + timedelta(days=data["reviewWindowDays"])
+        assert 1 <= evidence["pdfPage"] <= 16
+    else:
+        assert evidence["sourcePublishedAt"] is None
+        previous = verification["previousVerification"]
+        assert verification["verifiedAt"] == previous["verifiedAt"]
+        assert verification["nextReviewAt"] == previous["nextReviewAt"]
+        assert "dated" in verification["reviewReason"]
+
+new_support_ids = {
+    "nyc-books-through-bars", "water-protector-legal-collective", "jericho-movement",
+    "prison-radio-support", "prisoner-solidarity-directory",
+}
+assert len(new_support_ids) == review["supportResourcesAdded"]
+for source_id in new_support_ids:
+    assert sources[source_id]["admission"] == "directory-only"
+    assert "rightsReview" in sources[source_id]
+    assert not any(source_id in p["verification"]["sourceIds"] for p in profiles)
 
 latest_abc_dresden_ids = {
     "finn-siebers",

@@ -30,4 +30,17 @@ assert.equal(api.isCurrent({
   verification: { status: 'pending', nextReviewAt: '2099-01-01' }
 }), false);
 
+// A reachable undated source must never unlock writing/copying/printing,
+// even if a future deadline is accidentally attached to it.
+assert.equal(api.isCurrent({
+  verification: { status: 'needs-review', nextReviewAt: '2099-01-01' }
+}), false);
+const reviewedData = require('../prisoner-solidarity.json');
+const pendingProfiles = reviewedData.profiles.filter(p => p.verification.status === 'needs-review');
+assert.equal(pendingProfiles.length, 17);
+assert.equal(pendingProfiles.every(p => api.isCurrent(p) === false), true);
+for (const profile of reviewedData.profiles.filter(p => p.verification.status === 'verified')) {
+  assert.equal(api.isCurrent({ ...profile, verification: { ...profile.verification, nextReviewAt: '2020-01-01' } }), false);
+}
+
 console.log('WRN prisoner solidarity contracts: OK');
