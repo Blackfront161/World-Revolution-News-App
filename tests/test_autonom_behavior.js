@@ -26,7 +26,7 @@ let themeColor = '';
 let openedSource = '';
 const context = vm.createContext({
   console, core, release, state: {
-    ui: {}, language: 'de', cardArticles: [], sourceIndex: new Map(),
+    ui: {}, language: 'de', cardArticles: [], sourceIndex: new Map(), facets: { topics: [] },
     sourceArchive: { selectedSources: ['Unrelated Source'] },
     discover: { sort: 'oldest', viewMode: 'cards' },
     articles: [
@@ -42,19 +42,20 @@ const context = vm.createContext({
   document: { documentElement: { dataset }, querySelector: () => ({ setAttribute: (name, value) => { themeColor = value; } }) },
   window: { WRNSourceProfiles: { open: source => { openedSource = source; } } },
   changeView: view => { context.state.view = view; },
+  viewRoot: { querySelector: () => null },
   translationFor: () => null, newsCardTeaser: article => article.intro || '',
   dateLabel: () => '30. Sept.', isSaved: article => article.id === 'antifa',
   isSportArticle: () => false
 });
 
 for (const name of ['readJson', 'writeJson', 'normalizedUiSettings', 'applyUiSettings', 'saveUiSettings',
-  'escapeHtml', 'periodArticles', 'persistArchiveFilters', 'allDiscoverResults', 'homeStoryMarkup', 'autonomTopicsMarkup']) {
+  'escapeHtml', 'periodArticles', 'persistArchiveFilters', 'allDiscoverResults', 'homeStoryMarkup', 'autonomTopics', 'autonomTopicsMarkup']) {
   vm.runInContext(appFunction(name), context);
 }
 
 // Use the real localization dictionaries and translator, not invented test labels.
 for (const name of ['RELEASE_COPY', 'ARTICLE_COPY', 'LIBRARY_COPY', 'PRODUCT_COPY', 'APP_SHARE_COPY',
-  'EVENT_UI_COPY', 'UI_COPY', 'MEDIA_COPY', 'SPECIAL_COPY', 'COPY']) {
+  'EVENT_UI_COPY', 'UI_COPY', 'MEDIA_COPY', 'SPECIAL_COPY', 'COPY', 'TOPIC_GROUPS']) {
   const start = app.indexOf(`  const ${name} = `);
   assert(start >= 0, `Missing ${name}`);
   const next = /\n  (?:(?:async )?function |(?:const|let) |Object\.)/.exec(app.slice(start + 3));
@@ -97,8 +98,12 @@ for (const language of ['de', 'en', 'es', 'fr', 'it', 'pt', 'ru', 'el', 'tr']) {
   assert.equal(context.t('themeAutonom'), 'Autonom');
   const markup = context.autonomTopicsMarkup();
   assert(markup.includes('data-topic="Antifascism"'));
-  assert.equal((markup.match(/data-action="autonom-topic"/g) || []).length, 6);
+  assert.equal((markup.match(/data-action="autonom-topic"/g) || []).length, 22);
 }
+context.state.facets.topics = ['Libraries', 'Additional facet'];
+assert.equal(context.autonomTopics().length,22,'additional runtime facets join the canonical topics without duplicating Libraries');
+assert(context.autonomTopicsMarkup().includes('data-topic="Additional facet"'));
+context.state.facets.topics = [];
 
 Object.assign(context.state.discover, { query: 'unrelated', region: 'Asia', topic: 'No War',
   source: 'other', language: 'tr', origin: 'Asia', format: 'video', period: 'all', sportOnly: true });

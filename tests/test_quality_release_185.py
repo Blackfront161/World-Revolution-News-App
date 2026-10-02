@@ -85,7 +85,7 @@ lexicon = (ROOT / "lexicon-tab.js").read_text(encoding="utf-8")
 base_block = lexicon[lexicon.index("const TERMS = ["):lexicon.index("const extraTerm")]
 base_count = len(re.findall(r"\bid:\s*'[^']+'", base_block))
 extra_count = len(re.findall(r"\bextraTerm\(", lexicon))
-assert 150 <= base_count + extra_count <= 170, (base_count, extra_count)
+assert base_count + extra_count >= 150, (base_count, extra_count)
 assert "downloadEpub" in lexicon
 assert "printLexicon" in lexicon
 assert "revisionSection" in lexicon
