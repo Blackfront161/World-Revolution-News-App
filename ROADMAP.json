@@ -490,7 +490,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Livebasis d738a94 bestätigt. Home/Reader-Kandidat f6649dc angenommen, Upload wartet nach Auto-Review-Ablehnung auf belegte Hostinger-Sitzungsreichweite. Navigation, 177-Begriffe-Handoff und Offline-Bibliotheksadapter separat eingefroren und in unabhängiger Prüfung; Podcast-ID-/Quellenabgleich läuft im bestehenden Website-Chat.",
+      "remaining": "Aktuelle Livebasis d738a94 bestätigt. Neuer kombinierter Reader/Navigation/Knowledge177-Releasekandidat e20c800/95a775e unabhängig paketlokal akzeptiert und offline geprüft. Upload wartet nach Auto-Review-Ablehnung auf die konkrete Hostinger-Sitzungsantwort plus unmittelbare Policy-/Pointer-/Freshness-Prüfung. Podcast- und Buchkandidaten bleiben bis zur redaktionellen Aufnahme unveröffentlicht; Liveabnahme nach Upload offen.",
       "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
       "latestHandoff": {
         "imageCommit": "b777198",
@@ -583,8 +583,41 @@
           "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
           "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
         },
-        "publicationGate": "New navigation/knowledge/adapters are not contained in the separately accepted f6649dc Hosting ZIPs. New package/budget/review required before activation. New Hostinger session approval remains unanswered after automatic scope rejection.",
+        "publicationGate": "New combined package e20c800/95a775e has independent local PASS. Publication waits for the scoped session answer, immediate pre-activation public policy/pointer/freshness checks and post-upload live verification.",
         "podcastReconciliation": "Existing Website worker continues source-policy/ID candidate comparison. No automatic overwrite of 16 Final Straw URL changes or two LORA identity conflicts."
+      },
+      "combinedWebsiteReleaseCandidate": {
+        "sourceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+        "evidenceCommit": "95a775e479ec7cdfc5641c8a36e93e20edfb35ef",
+        "independentReview": "PASS-package-local",
+        "publicationPerformed": false,
+        "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CURRENT-PACKAGE-2026-10-03/REPORT.md",
+        "releasePaths": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CURRENT-PACKAGE-2026-10-03/release-paths.json",
+        "ready": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/work/website-current-reader-nav-knowledge-release-e20c800/READY.json",
+        "websiteFiles": 48,
+        "hostingFiles": 51,
+        "offlineShellBytes": 8026585,
+        "offlineShellByteCap": 8388608,
+        "browserChecks": 16,
+        "fullChromeProcessOfflineRestart": true,
+        "uploadArchives": 5,
+        "rollbackFiles": 49,
+        "rollbackSourceCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+        "newPodcastAdmission": false,
+        "newBookAdmission": false,
+        "hostingerGate": "human answer pending after automatic new-session scope rejection",
+        "reviewTurn": "01a10111-b7b3-7a62-a78d-1f453124eee2",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+        "productBlobsVerified": 71,
+        "evidencePayloadsVerified": 22,
+        "operatorNote": "verify-current-package.mjs is a Playwright Browser harness, not a read-only hash verifier; never use its live/old-commit defaults for operator hash checks.",
+        "activationGates": [
+          "Pending human answer authorizing the new scoped Hostinger session",
+          "Immediately re-read public policies/pointers and evaluate original24h data freshness without re-dating",
+          "Verify solinaridao.com/public_html only",
+          "Use reviewed immutable/policy-SW/index/two-pointer ZIP order",
+          "After upload: public Apache CSP CORS headers hashes browser and full offline restart verification"
+        ]
       }
     },
     {
@@ -2750,7 +2783,7 @@
       "cloudflareWorkersPublished": true,
       "cloudflareLiveReadback": "7 GET checks PASS"
     },
-    "nextExistingTasks": "Independent Website candidate review; source-policy/ID podcast reconciliation; new combined Hosting package/budget/review and scoped session approval; Data baseline and successful real schedule; native/full platform matrix remain open.",
+    "nextExistingTasks": "Scoped Hostinger session answer and immediate pre-activation readback/freshness gate; deploy independently accepted Website package and verify live; editorial Podcast/book intake; Data baseline and genuine schedule; next native App candidate/full platform matrix.",
     "cloudflareLive": {
       "proxyVersion": "aa18e5e2-d095-41b5-af71-71db1eb3d07a",
       "cacheVersion": "da809aa7-3de3-4d83-b178-c13542bfe17e",
@@ -2794,7 +2827,7 @@
         "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
         "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       },
-      "publicationGate": "New navigation/knowledge/adapters are not contained in the separately accepted f6649dc Hosting ZIPs. New package/budget/review required before activation. New Hostinger session approval remains unanswered after automatic scope rejection.",
+      "publicationGate": "New combined package e20c800/95a775e has independent local PASS. Publication waits for the scoped session answer, immediate pre-activation public policy/pointer/freshness checks and post-upload live verification.",
       "podcastReconciliation": "Existing Website worker continues source-policy/ID candidate comparison. No automatic overwrite of 16 Final Straw URL changes or two LORA identity conflicts."
     },
     "podcastIdCandidateReview": {
@@ -2818,6 +2851,39 @@
       "publicationPerformed": false,
       "reviewTurn": "01a100fd-f907-7922-ba72-bf515f8b530c",
       "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
+    },
+    "combinedWebsiteReleaseCandidate": {
+      "sourceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+      "evidenceCommit": "95a775e479ec7cdfc5641c8a36e93e20edfb35ef",
+      "independentReview": "PASS-package-local",
+      "publicationPerformed": false,
+      "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CURRENT-PACKAGE-2026-10-03/REPORT.md",
+      "releasePaths": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CURRENT-PACKAGE-2026-10-03/release-paths.json",
+      "ready": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/work/website-current-reader-nav-knowledge-release-e20c800/READY.json",
+      "websiteFiles": 48,
+      "hostingFiles": 51,
+      "offlineShellBytes": 8026585,
+      "offlineShellByteCap": 8388608,
+      "browserChecks": 16,
+      "fullChromeProcessOfflineRestart": true,
+      "uploadArchives": 5,
+      "rollbackFiles": 49,
+      "rollbackSourceCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+      "newPodcastAdmission": false,
+      "newBookAdmission": false,
+      "hostingerGate": "human answer pending after automatic new-session scope rejection",
+      "reviewTurn": "01a10111-b7b3-7a62-a78d-1f453124eee2",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+      "productBlobsVerified": 71,
+      "evidencePayloadsVerified": 22,
+      "operatorNote": "verify-current-package.mjs is a Playwright Browser harness, not a read-only hash verifier; never use its live/old-commit defaults for operator hash checks.",
+      "activationGates": [
+        "Pending human answer authorizing the new scoped Hostinger session",
+        "Immediately re-read public policies/pointers and evaluate original24h data freshness without re-dating",
+        "Verify solinaridao.com/public_html only",
+        "Use reviewed immutable/policy-SW/index/two-pointer ZIP order",
+        "After upload: public Apache CSP CORS headers hashes browser and full offline restart verification"
+      ]
     }
   }
 }
