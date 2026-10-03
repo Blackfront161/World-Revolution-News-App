@@ -1,0 +1,24 @@
+{
+  "name": "world-revolution-news-ios",
+  "version": "2.1.2",
+  "private": true,
+  "description": "iOS client using the authoritative WRN frontend and backend",
+  "scripts": {
+    "prepare:web": "node ../scripts/prepare-ios-web.mjs",
+    "sync:ios": "npm run prepare:web && cap sync ios && node ../scripts/finalize-ios-sync.mjs && npm run verify",
+    "open:ios": "cap open ios",
+    "verify": "node ../scripts/verify-ios-project.mjs",
+    "build:simulator": "node ../scripts/build-ios.mjs",
+    "build:device:unsigned": "node ../scripts/build-ios.mjs --device",
+    "test": "node --test ../tests/ios/*.test.mjs"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.4.0",
+    "@capacitor/ios": "8.4.0",
+    "@capacitor/local-notifications": "8.0.1",
+    "@capacitor/share": "8.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.4.0"
+  }
+}

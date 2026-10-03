@@ -1,0 +1,8 @@
+/* The existing themes, text scaling and reduced-motion rules stay authoritative. */
+html.wrn-ios .next-header {
+  padding-top: max(9px, env(safe-area-inset-top, 0px));
+}
+html.wrn-ios body {
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}

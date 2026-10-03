@@ -1,0 +1,103 @@
+name: WRN iOS Build
+
+# Compilation is an explicit, manual operation. No signing credentials are used.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wrn-ios-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  compile:
+    runs-on: macos-26
+    timeout-minutes: 40
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build-Umgebung dokumentieren
+        run: |
+          set -euo pipefail
+          mkdir -p outputs/ios/cloud
+          {
+            git rev-parse HEAD
+            sw_vers
+            xcodebuild -version
+            node --version
+            npm --version
+          } | tee outputs/ios/cloud/environment.txt
+          xcode_major=$(xcodebuild -version | awk '/^Xcode / {split($2, parts, "."); print parts[1]}')
+          [[ "$xcode_major" =~ ^[0-9]+$ ]] && (( xcode_major >= 26 ))
+
+      - name: Gepinnte iOS-Abhängigkeiten installieren
+        working-directory: ios-wrapper
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Simulator kompilieren und Quellen prüfen
+        run: |
+          set -euo pipefail
+          npm --prefix ios-wrapper run build:simulator 2>&1 | tee outputs/ios/cloud/simulator-build.log
+
+      - name: iPhone und iPad ohne Signatur kompilieren
+        run: |
+          set -euo pipefail
+          npm --prefix ios-wrapper run build:device:unsigned 2>&1 | tee outputs/ios/cloud/device-build.log
+
+      - name: Pakete und Prüfnachweis bereitstellen
+        run: |
+          set -euo pipefail
+          test -d outputs/ios/simulator/Build/Products/Debug-iphonesimulator/App.app
+          test -d outputs/ios/device/Build/Products/Debug-iphoneos/App.app
+          tar -czf outputs/ios/cloud/WRN-simulator.tar.gz -C outputs/ios/simulator/Build/Products/Debug-iphonesimulator App.app
+          tar -czf outputs/ios/cloud/WRN-device-unsigned.tar.gz -C outputs/ios/device/Build/Products/Debug-iphoneos App.app
+          cp ios-wrapper/.tmp/web-manifest.json outputs/ios/cloud/web-manifest.json
+          shasum -a 256 outputs/ios/cloud/*.tar.gz > outputs/ios/cloud/package-sha256.txt
+          cat > outputs/ios/cloud/STATUS.txt <<'EOF'
+          Xcode compilation succeeded for Simulator and unsigned iPhone/iPad targets.
+          Both builds use CODE_SIGNING_ALLOWED=NO. No IPA was signed or uploaded to Apple.
+          Simulator launch, native dialogs and physical-device acceptance remain untested.
+          The unsigned device App.app cannot be installed on an iPhone without signing.
+          See ios-wrapper/README.md for signing and device acceptance requirements.
+          EOF
+
+      # Upload only explicitly selected outputs. tar preserves executable bits and symlinks.
+      - name: Build-Pakete für drei Tage aufbewahren
+        uses: actions/upload-artifact@v4
+        with:
+          name: wrn-ios-unsigned-${{ github.run_id }}
+          path: |
+            outputs/ios/cloud/WRN-simulator.tar.gz
+            outputs/ios/cloud/WRN-device-unsigned.tar.gz
+            outputs/ios/cloud/package-sha256.txt
+            outputs/ios/cloud/web-manifest.json
+            outputs/ios/cloud/STATUS.txt
+          if-no-files-found: error
+          retention-days: 3
+          compression-level: 0
+
+      - name: Build-Protokolle auch bei Fehlern aufbewahren
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: wrn-ios-build-logs-${{ github.run_id }}
+          path: |
+            outputs/ios/cloud/environment.txt
+            outputs/ios/cloud/simulator-build.log
+            outputs/ios/cloud/device-build.log
+          if-no-files-found: warn
+          retention-days: 3

@@ -1,0 +1,13 @@
+# Portable new iOS sources; evidence hashes retain the original report bytes.
+AGENTS.md text eol=lf
+ios-wrapper/** text eol=lf
+ios-wrapper/**/*.png -text
+scripts/build-ios.mjs text eol=lf
+scripts/finalize-ios-sync.mjs text eol=lf
+scripts/prepare-ios-web.mjs text eol=lf
+scripts/verify-ios-project.mjs text eol=lf
+tests/ios/** text eol=lf
+.github/workflows/ios-build.yml text eol=lf
+docs/IOS-PORT-2026-10-01.md text eol=lf
+docs/IOS-PUBLICATION-SCOPE-2026-10-03.md text eol=lf
+docs/evidence/ios-port-2026-10-01/** -text
