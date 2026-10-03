@@ -23,7 +23,7 @@ const server = createServer((request, response) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const result = {status:'running', checks:[], errors:[]};
-let browser;
+let browser, page;
 try {
   browser = await chromium.launch({channel:'chrome', headless:true});
   const context = await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'});
@@ -33,6 +33,11 @@ try {
   });
   await context.route('**/*', async route => {
     const url = new URL(route.request().url());
+    const action = url.searchParams.get('action');
+    if (url.pathname === '/health' || ['translation.status','podcast.status'].includes(action)) {
+      const metric = url.pathname === '/health' ? 'translation_kv_writes' : action === 'translation.status' ? 'translation_upstream' : 'azure_characters';
+      return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:true,storage:'kv',quotas:[{metric,used:940,limit:950,remaining:10,available:true,resetAt:'2026-10-04T00:00:00.000Z'}]})});
+    }
     if (/\/(news-feed|news)\.json$/.test(url.pathname)) return route.fulfill({contentType:'application/json',body:JSON.stringify(articles)});
     if (/\/(library-feed|library-sources|podcasts|podcast-sources|radio-stations)\.json$/.test(url.pathname)) {
       return route.fulfill({contentType:'application/json',body:fs.readFileSync(path.join(root,path.basename(url.pathname)), 'utf8')});
@@ -40,7 +45,7 @@ try {
     if (url.origin !== origin) return route.fulfill({contentType:'application/json',body:'{}'});
     return route.continue();
   });
-  const page = await context.newPage();
+  page = await context.newPage();
   page.on('pageerror', error => result.errors.push(error.message));
   const ready = async view => {
     await expect(page.locator('#next-view')).toHaveAttribute('data-view', view);
@@ -132,20 +137,83 @@ try {
   assert(!JSON.stringify(helpHistory).includes('private assistance request'));
   assert.equal(helpHistory.focusId, '');
   assert.equal(helpHistory.scrollY, 0);
-  for (const language of ['de','en']) {
+  await page.goto(`${origin}/index.html?preview=8#lexicon?item=indigenous-data-sovereignty`);
+  await ready('lexicon');
+  const term = page.locator('[data-navigation-item="indigenous-data-sovereignty"]');
+  await expect(term).toHaveAttribute('open','');
+  await expect.poll(() => page.evaluate(() => document.activeElement.dataset.navigationItem)).toBe('indigenous-data-sovereignty');
+  await term.locator('[data-action="article-lexicon-open"][data-term="data-commons"]').click();
+  await expect(page.locator('[data-navigation-item="data-commons"]')).toHaveAttribute('open','');
+  assert(page.url().includes('item=data-commons'));
+  const books = JSON.parse(fs.readFileSync('library-feed.json','utf8'));
+  const book = (Array.isArray(books) ? books : books.items).at(-1);
+  await page.goto(`${origin}/index.html?preview=8#library?item=${book.id}`);
+  await ready('library');
+  await expect(page.locator(`[data-navigation-item="${book.id}"]`)).toBeVisible();
+  await expect.poll(() => page.evaluate(() => document.activeElement.dataset.navigationItem)).toBe(book.id);
+  assert.equal(await page.locator('#global-media-player').evaluate(audio => audio.paused),true);
+  await page.goto(`${origin}/index.html?preview=8#media/radio?item=3cr`);
+  await ready('media');
+  await expect.poll(() => page.evaluate(() => document.activeElement.dataset.navigationItem)).toBe('3cr');
+  assert.equal(await page.locator('#global-media-player').evaluate(audio => audio.paused),true,'cold item link must not autoplay');
+  await page.goto(`${origin}/index.html?preview=8#lexicon?item=withdrawn-or-unknown`);
+  await ready('lexicon');
+  await expect(page.getByText('Der verlinkte Eintrag ist nicht verfügbar.',{exact:true})).toBeVisible();
+  result.checks.push('Cold term and off-page book links focus the real item; related terms navigate; radio link never autoplays; unknown ID is explicit.');
+  await page.goto(`${origin}/index.html?preview=8#lexicon?item=worker-cooperative`);
+  await ready('lexicon');
+  const coop = page.locator('[data-navigation-item="worker-cooperative"]');
+  const bookLink = coop.locator('.knowledge-item-links a').first();
+  assert((await bookLink.boundingBox()).height >= 44);
+  await bookLink.click();
+  await ready('library');
+  await expect.poll(() => page.evaluate(() => document.activeElement.dataset.navigationItem)).toBe('anarchist-library-en-23d84c4377c0ec75e9b1dd92');
+  await page.goBack();
+  await ready('lexicon');
+  await expect(coop).toHaveAttribute('open','');
+  await page.goto(`${origin}/index.html?preview=8#lexicon?item=mutual-aid`);
+  await ready('lexicon');
+  const podcastLink=page.locator('[data-navigation-item="mutual-aid"] .knowledge-item-links a[href^="#media/"]').first();
+  await expect(podcastLink).toBeVisible();
+  const podcastId=await podcastLink.getAttribute('data-item');
+  await podcastLink.click();
+  await ready('media');
+  await expect.poll(() => page.evaluate(() => document.activeElement.dataset.navigationItem)).toBe(podcastId);
+  assert.equal(await page.locator('#global-media-player').evaluate(audio => audio.paused),true);
+  await page.goBack();
+  await ready('lexicon');
+  await expect(page.locator('[data-navigation-item="mutual-aid"]')).toHaveAttribute('open','');
+  result.checks.push('Real lexicon/book and lexicon/podcast round trips retain the open term, 44px targets and no autoplay; only validated catalog bindings appear.');
+  await page.goto(`${origin}/index.html?preview=8#lexicon?item=access-intimacy`);
+  await ready('lexicon');
+  for (const language of ['de','en','es','fr','it','pt','ru','el','tr']) {
     await page.locator('#next-language').selectOption(language);
     for (const width of [360,768,1440]) {
       await page.setViewportSize({width,height:900});
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${language}/${width}: horizontal overflow`);
     }
+    await page.setViewportSize({width:360,height:900});
+    await page.evaluate(() => document.documentElement.style.fontSize='200%');
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${language}/360/200%: reflow overflow`);
+    await page.evaluate(() => document.documentElement.style.fontSize='');
+    await page.locator('[data-action="system-status"]').evaluate(button=>button.click());
+    await expect(page.locator('[data-quota-status]')).toBeVisible();
+    await expect(page.locator('[data-quota-status] > div')).toHaveCount(5);
+    await expect(page.locator('[data-quota-status] > div').first()).toContainText('940 / 950');
+    assert(await page.locator('#next-release-dialog').evaluate(dialog=>dialog.scrollWidth<=dialog.clientWidth+1), `${language}: quota dialog overflows`);
+    await page.locator('[data-release-close]').last().click();
   }
-  result.checks.push('Radio, radio shows, video, lexicon and help direct links; private help stays out of URL; DE/EN at 360/768/1440 fit.');
+  result.checks.push('Nine UI languages: lexicon at 360/768/1440 and 200% text reflow; actual quota dialog shows known counters and unknown provider/storage without overflow.');
   assert.deepEqual(result.errors, []);
   await page.goto(`${origin}/index.html?preview=8#library?language=de&format=epub`);
   await ready('library');
   await page.screenshot({path:path.join(output,'library-direct-link.png'),fullPage:true});
   result.status = 'PASS';
 } catch (error) {
+  if (page) {
+    result.diagnostics = await page.evaluate(() => ({hash:location.hash,dialogs:[...document.querySelectorAll('dialog[open]')].map(node=>node.id),focus:document.activeElement?.outerHTML?.slice(0,300),itemOpen:document.querySelector('[data-navigation-item="indigenous-data-sovereignty"]')?.open}));
+    await page.screenshot({path:path.join(output,'failure.png')});
+  }
   result.status = 'FAIL';
   result.error = String(error.stack || error);
   process.exitCode = 1;

@@ -12,8 +12,8 @@ def test_lexicon_assets_are_loaded_and_cached():
     config = read("config.js")
     worker = read("service-worker.js")
 
-    assert "['lexicon-tab.css', 'lexicon-tab-recovery-184']" in config
-    assert "['lexicon-tab.js', 'lexicon-tab-recovery-184']" in config
+    assert "['lexicon-tab.css', 'lexicon-tab-recovery-185']" in config
+    assert "['lexicon-tab.js', 'lexicon-tab-recovery-185']" in config
     assert "'./lexicon-tab.css'" in worker
     assert "'./lexicon-tab.js'" in worker
 

@@ -2118,12 +2118,15 @@
   let closingArticleFromHistory = false;
   let articleReturnFocus = null;
   let helpReturnFocus = null;
+  let navigationItemId = '';
+  let resolvedNavigationItem = '';
   const systemTheme = window.matchMedia?.('(prefers-color-scheme: light)');
 
   function appNavigationSnapshot(extra = {}) {
     return {
       wrnAppNavigation: true,
       view: state.view,
+      itemId: navigationItemId,
       mediaSection: state.media.section,
       zinePanel: state.media.zinePanel,
       lexiconSection: state.lexicon.section,
@@ -2170,12 +2173,55 @@
   function applyAppRoute(route) {
     if (!route) return;
     state.view = route.view;
+    navigationItemId = route.itemId || '';
+    resolvedNavigationItem = '';
     if (route.mediaSection) state.media.section = route.mediaSection;
     Object.entries(core.navigationFilters(route.filters)).forEach(([group, filters]) => Object.assign(state[group], filters));
     if (state.view === 'discover') {
       state.sourceArchive.selectedSources = state.discover.source === 'all' ? [] : [state.discover.source];
       if (state.discover.source !== 'all') state.discover.period = 'all';
     }
+  }
+
+  function resolveNavigationItem() {
+    if (!navigationItemId) return;
+    const alreadyResolved = resolvedNavigationItem === `${state.view}/${state.media.section}/${navigationItemId}`;
+    if (['home', 'following', 'discover', 'saved'].includes(state.view)) {
+      const article = [...state.articles, ...state.savedArticles].find(item => item.id === navigationItemId);
+      if (article) {
+        if (alreadyResolved) return;
+        resolvedNavigationItem = `${state.view}/${state.media.section}/${navigationItemId}`;
+        openArticle(article);
+      }
+      return;
+    }
+    const item = [...viewRoot.querySelectorAll('[data-navigation-item]')].find(node => node.dataset.navigationItem === navigationItemId);
+    if (item) {
+      resolvedNavigationItem = `${state.view}/${state.media.section}/${navigationItemId}`;
+      if (item instanceof HTMLDetailsElement) item.open = true;
+      if (alreadyResolved) return;
+      window.requestAnimationFrame(() => {
+        if (!item.isConnected) return;
+        item.scrollIntoView({block:'center', behavior:'instant'});
+        item.focus({preventScroll:true});
+      });
+    }
+    else if (specialtyDataReady) resolvedNavigationItem = '';
+  }
+
+  function navigationItemCopy() {
+    return ({de:['Direktlink','Der verlinkte Eintrag ist nicht verfügbar.'],en:['Direct link','The linked item is unavailable.'],es:['Enlace directo','El elemento enlazado no está disponible.'],fr:['Lien direct','Cet élément est indisponible.'],it:['Link diretto','L’elemento collegato non è disponibile.'],pt:['Ligação direta','O item ligado não está disponível.'],ru:['Прямая ссылка','Материал по ссылке недоступен.'],el:['Άμεσος σύνδεσμος','Το συνδεδεμένο στοιχείο δεν είναι διαθέσιμο.'],tr:['Doğrudan bağlantı','Bağlantıdaki öğe kullanılamıyor.']})[state.language];
+  }
+
+  function navigationItemLink(id, route = {}, label = navigationItemCopy()[0]) {
+    const hash = core.navigationHash({...appNavigationSnapshot(), ...route, itemId:id});
+    return `<a class="small-action" href="${escapeHtml(hash)}" data-action="navigation-item" data-item="${escapeHtml(id)}">${escapeHtml(label)}</a>`;
+  }
+
+  function includeNavigationItem(items, catalog) {
+    if (!navigationItemId) return items;
+    const selected = catalog.find(item => item.id === navigationItemId);
+    return selected ? [selected, ...items.filter(item => item.id !== selected.id)] : items;
   }
 
   function openArticleDialogWithHistory() {
@@ -2646,6 +2692,7 @@
     document.getElementById('next-donation-paypal').textContent = t('donatePaypal');
     document.getElementById('next-donation-cancel').textContent = t('cancel');
     document.getElementById('next-menu-data').textContent = t('localData');
+    document.getElementById('next-menu-system-status').textContent = t('systemStatus');
     const updates = MENU_UPDATES_COPY[state.language] || MENU_UPDATES_COPY.en;
     document.getElementById('next-menu-updates-title').textContent = updates.title;
     document.getElementById('next-menu-updates-list').innerHTML = updates.items
@@ -3835,6 +3882,9 @@
         <div><span>${escapeHtml(t('statusSources'))}</span><strong class="${sourceOk ? 'system-ok' : 'system-warning'}">${sourceSummary.ok || 0} / ${sourceSummary.total || 0}</strong></div>
         <div><span>${escapeHtml(t('statusTranslation'))}</span><strong class="${translation?.ok ? 'system-ok' : 'system-warning'}">${escapeHtml(translation?.ok ? t('available') : t('offline'))}</strong></div>
         <div><span>${escapeHtml(t('statusOffline'))}</span><strong class="${serviceWorkerActive ? 'system-ok' : ''}">${serviceWorkerActive ? 'Service Worker aktiv' : `${cacheNames.filter(name => name.startsWith('wrn-news-app-2-')).length} Cache`}</strong></div>
+      </div>
+      <div class="status-overview" data-quota-status>
+        ${(window.WRNSharedTranslations?.statusLines?.(translation?.quotas || [], state.language) || []).map(line => `<div><span>${escapeHtml(line.label)}</span><strong class="${line.known ? '' : 'system-warning'}">${escapeHtml(line.value)}${line.reset ? `<br><small>${escapeHtml(line.reset)}</small>` : ''}</strong></div>`).join('')}
       </div>
       <div class="release-action-grid">
         <a href="source-check.html">${escapeHtml(t('sourceCheck'))}</a>
@@ -5191,13 +5241,13 @@
       ${!['de','en'].includes(state.language) ? `<p>${escapeHtml(t('fallbackLanguage'))}</p>` : ''}
       ${state.learningPaths.map(path => `<details class="lexicon-card"><summary><strong lang="${language}">${escapeHtml(path.title[language])}</strong> · ${path.entries.length}</summary><ol>${path.entries.filter(entry => byBook.has(entry.bookId)).map(entry => {
         const book = byBook.get(entry.bookId);
-        return `<li data-learning-book="${escapeHtml(entry.bookId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" lang="${escapeHtml(book.languages?.[0] || 'und')}">${escapeHtml(book.title)}</a> · ${escapeHtml((book.languages || []).join(', '))}<p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`;
-      }).join('')}</ol>${(state.knowledgePodcasts.find(item => item.id === path.id)?.podcastEntries || []).length ? `<h3>Podcasts</h3><ol>${state.knowledgePodcasts.find(item => item.id === path.id).podcastEntries.map(entry => `<li data-learning-podcast="${escapeHtml(entry.episodeId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(entry.episode.title)}</a><p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`).join('')}</ol>` : ''}</details>`).join('')}</section>`;
+        return `<li data-learning-book="${escapeHtml(entry.bookId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" lang="${escapeHtml(book.languages?.[0] || 'und')}">${escapeHtml(book.title)}</a> · ${escapeHtml((book.languages || []).join(', '))} ${navigationItemLink(book.id, {view:'library'})}<p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`;
+      }).join('')}</ol>${(state.knowledgePodcasts.find(item => item.id === path.id)?.podcastEntries || []).length ? `<h3>Podcasts</h3><ol>${state.knowledgePodcasts.find(item => item.id === path.id).podcastEntries.map(entry => `<li data-learning-podcast="${escapeHtml(entry.episodeId)}"><a href="${escapeHtml(entry.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(entry.episode.title)}</a> ${navigationItemLink(entry.episode.id, {view:'media', mediaSection:['free-radio','aggregator'].includes(entry.episode.sourceKind) ? 'radio-podcasts' : 'podcasts'})}<p lang="${language}">${escapeHtml(entry.note[language])}</p><p>${entry.termIds.map(id => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(id)}">${escapeHtml(specialty.localized(byTerm.get(id)?.title, language))}</button>`).join(' ')}</p></li>`).join('')}</ol>` : ''}</details>`).join('')}</section>`;
   }
 
   function renderLibrary() {
     const allResults = libraryResults();
-    const results = allResults.slice(0, state.library.limit);
+    const results = includeNavigationItem(allResults.slice(0, state.library.limit), state.libraryItems);
     const languages = [...new Set([
       ...state.librarySources.flatMap(source => source.languages || []),
       ...state.libraryItems.flatMap(item => item.languages || [])
@@ -5239,12 +5289,13 @@
           <button type="button" class="${state.library.languages.length ? '' : 'active'}" data-action="library-language-all">${escapeHtml(t('libraryAllLanguages'))}</button>
           ${languages.map(language => `<button type="button" class="${state.library.languages.includes(language) ? 'active' : ''}" data-action="library-language" data-value="${escapeHtml(language)}" aria-pressed="${state.library.languages.includes(language)}">${escapeHtml(language.toUpperCase())}</button>`).join('')}
         </div>
-        ${results.length ? `<div class="library-item-grid">${results.map(item => `<article class="library-item-card">
+        ${results.length ? `<div class="library-item-grid">${results.map(item => `<article class="library-item-card" data-navigation-item="${escapeHtml(item.id)}" tabindex="-1">
           <span class="eyebrow">${escapeHtml(item.sourceName || '')} · ${escapeHtml((item.languages || []).map(value => value.toUpperCase()).join(', '))}</span>
           <h3>${escapeHtml(item.title || '')}</h3>
           ${(item.authors || []).length ? `<p>${escapeHtml(item.authors.join(', '))}</p>` : ''}
           <div class="meta-line">${(item.topics || []).slice(0, 4).map(topic => `<span class="tag">${escapeHtml(classificationLabel(topic))}</span>`).join('')}</div>
           <div class="library-downloads" aria-label="${escapeHtml(t('libraryDownloads'))}">${libraryDownloadMarkup(item)}</div>
+          ${navigationItemLink(item.id)}
         </article>`).join('')}</div>` : `<div class="empty-state"><strong>${escapeHtml(t('libraryNoResults'))}</strong></div>`}
         ${results.length < allResults.length ? `<div class="load-more-row"><button type="button" class="secondary-button" data-action="library-more">${escapeHtml(t('libraryMore'))}</button></div>` : ''}
       </section>`;
@@ -5654,6 +5705,18 @@
     }).join('');
   }
 
+  function glossaryKnowledgeLinksMarkup(term) {
+    const books = new Map(state.libraryItems.map(book => [book.id, book]));
+    const relatedBooks = new Map(state.learningPaths.flatMap(path => path.entries)
+      .filter(entry => entry.termIds.includes(term.id) && books.has(entry.bookId))
+      .map(entry => [entry.bookId, books.get(entry.bookId)]));
+    const relatedPodcasts = new Map(state.knowledgePodcasts.flatMap(path => path.podcastEntries)
+      .filter(entry => entry.termIds.includes(term.id))
+      .map(entry => [entry.episode.id, entry.episode]));
+    return `${relatedBooks.size ? `<h4>${escapeHtml(t('library'))}</h4><div class="knowledge-item-links">${[...relatedBooks.values()].map(book => navigationItemLink(book.id, {view:'library'}, book.title)).join('')}</div>` : ''}
+      ${relatedPodcasts.size ? `<h4>${escapeHtml(t('podcastSeries'))}</h4><div class="knowledge-item-links">${[...relatedPodcasts.values()].map(episode => navigationItemLink(episode.id, {view:'media', mediaSection:['free-radio','aggregator'].includes(episode.sourceKind) ? 'radio-podcasts' : 'podcasts'}, episode.title)).join('')}</div>` : ''}`;
+  }
+
   function glossaryDraftLabel() {
     return ({ de: 'Redaktioneller Entwurf · Prüfung ausstehend', en: 'Editorial draft · review pending',
       es: 'Borrador editorial · revisión pendiente', fr: 'Brouillon éditorial · révision en attente',
@@ -5671,9 +5734,10 @@
   }
 
   function renderLexicon() {
+    if (navigationItemId) state.lexicon.section = 'all';
     state.cardArticles = [];
     const sections = ['all', 'basics', 'organisation', 'justice', 'power', 'tactics', 'ecology', 'struggles', 'sources'];
-    const terms = specialty.glossaryEntries(state.lexiconSnapshot, state.language, state.lexicon.section, state.lexicon.query);
+    const terms = includeNavigationItem(specialty.glossaryEntries(state.lexiconSnapshot, state.language, state.lexicon.section, state.lexicon.query), specialty.glossaryEntries(state.lexiconSnapshot, state.language, 'all', ''));
     viewRoot.innerHTML = `
       ${headingMarkup(t('lexicon'), t('lexicon'), t('glossaryIntro'), specialtyBack())}
       <div class="special-tabs lexicon-tabs">${sections.map(section => `<button type="button" class="filter-chip${state.lexicon.section === section ? ' active' : ''}" data-action="lexicon-section" data-value="${section}">${escapeHtml(section === 'sources' ? t('glossarySources') : sectionLabel(section))}</button>`).join('')}</div>
@@ -5682,12 +5746,14 @@
         ${renderLexiconSources()}` : `
         <div class="special-filter-row"><input id="next-lexicon-query" type="search" value="${escapeHtml(state.lexicon.query)}" placeholder="${escapeHtml(t('glossarySearch'))}" aria-label="${escapeHtml(t('glossarySearch'))}"><span class="result-count">${terms.length}</span></div>
         <div class="lexicon-grid">${terms.map(term => `
-          <details class="lexicon-card">
+          <details class="lexicon-card" data-navigation-item="${escapeHtml(term.id)}" tabindex="-1">
             <summary><span class="eyebrow">${escapeHtml(sectionLabel(term.category))}</span><strong>${escapeHtml(term.displayTitle)}</strong><p>${escapeHtml(term.displaySummary)}</p></summary>
             <div class="lexicon-detail">
+              ${navigationItemLink(term.id)}
               ${term.displayPractice ? `<h4>${escapeHtml(t('practice'))}</h4><p>${escapeHtml(term.displayPractice)}</p>` : ''}
               ${term.displayDebate ? `<h4>${escapeHtml(t('debate'))}</h4><p>${escapeHtml(term.displayDebate)}</p>` : ''}
-              ${(term.related || []).length ? `<h4>${escapeHtml(t('related'))}</h4><div class="meta-line">${term.related.map(value => `<span class="tag">${escapeHtml(value)}</span>`).join('')}</div>` : ''}
+              ${(term.related || []).length ? `<h4>${escapeHtml(t('related'))}</h4><div class="meta-line">${term.related.map(value => `<button type="button" class="filter-chip" data-action="article-lexicon-open" data-term="${escapeHtml(value)}">${escapeHtml(specialty.localized(state.lexiconSnapshot.terms.find(item => item.id === value)?.title, state.language) || value)}</button>`).join('')}</div>` : ''}
+              ${glossaryKnowledgeLinksMarkup(term)}
               ${(term.sources || []).length ? `<h4>${escapeHtml(t('glossarySources'))}</h4><div class="source-actions">${glossaryTermSourcesMarkup(term)}</div>` : ''}
               ${term.revision?.note?.includes('review pending') ? `<small>${escapeHtml(glossaryDraftLabel())}</small>` : ''}
               ${term.revision?.status === 'reviewed' ? `<small>${escapeHtml(glossaryReviewedLabel())} · ${escapeHtml(term.revision.reviewedAt || term.revision.date)}</small>` : ''}
@@ -6325,7 +6391,7 @@
   }
 
   function renderVideoSection() {
-    const items = filteredVideoItems();
+    const items = includeNavigationItem(filteredVideoItems(), state.videoItems.map(item => ({...item, id:item.canonicalId})));
     const savedCount = new Set(Array.isArray(state.videoWatchLater) ? state.videoWatchLater : []).size;
     const nonDefaultFilter = Object.entries(state.videoFilters).some(([key, value]) => (
       !['section', 'sort'].includes(key) && value !== (key === 'query' ? '' : 'all')
@@ -6364,7 +6430,7 @@
     const saved = (Array.isArray(state.videoWatchLater) ? state.videoWatchLater : []).includes(item.canonicalId);
     const viewed = videoHistoryIds().has(item.canonicalId);
     const thumbnail = core.safeImageUrl(item.thumbnailUrl);
-    return `<article class="video-portal-card${state.activeVideoId === item.canonicalId ? ' is-playing' : ''}">
+    return `<article class="video-portal-card${state.activeVideoId === item.canonicalId ? ' is-playing' : ''}" data-navigation-item="${escapeHtml(item.canonicalId)}" tabindex="-1">
       <div class="video-portal-card__visual">
         ${thumbnail ? `<img src="${escapeHtml(thumbnail)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '<span aria-hidden="true">▶</span>'}
         <span class="video-platform-badge">${escapeHtml(item.platform)}</span>
@@ -6383,6 +6449,7 @@
           ${viewed ? `<span>✓ ${escapeHtml(t('videoViewed'))}</span>` : ''}
         </div>
         <div class="video-card-actions">
+          ${navigationItemLink(item.canonicalId)}
           <button type="button" class="primary-button" data-action="video-play" data-video-id="${escapeHtml(item.canonicalId)}">▶ ${escapeHtml(t('videoPlay'))}</button>
           <button type="button" class="secondary-button" data-action="video-watch-later" data-video-id="${escapeHtml(item.canonicalId)}" aria-pressed="${saved}">${saved ? '✓' : '+'} ${escapeHtml(t(saved ? 'videoRemoveLater' : 'videoSaveLater'))}</button>
           <a href="${escapeHtml(item.originalUrl)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${escapeHtml(t('videoOriginal'))}</a>
@@ -6460,6 +6527,8 @@
           radioLimit: 50,
           perLanguage: 30
         });
+    filtered = includeNavigationItem(filtered, (source || []).filter(item => generated ||
+      (kind === 'free-radio' ? ['free-radio', 'aggregator'].includes(item.sourceKind) : !['free-radio', 'aggregator'].includes(item.sourceKind))));
     return `
       ${mediaFilters({ categories: true })}
       ${generated ? '' : podcastLibraryControls(source, kind)}
@@ -6467,7 +6536,7 @@
         ${state.podcastService === 'available' ? '' : `<div class="notice-card${state.podcastService === 'unavailable' ? ' release-danger' : ''}" role="status"><strong>${escapeHtml(t(state.podcastService === 'unavailable' ? 'cloudVoiceUnavailable' : 'checking'))}</strong><p>${escapeHtml(t(state.podcastService === 'unavailable' ? 'generatedUnavailable' : 'generatedChecking'))}</p>${state.podcastService === 'unavailable' ? `<button type="button" class="secondary-button" data-action="podcast-service-retry">${escapeHtml(t('retry'))}</button>` : ''}</div>`}` : ''}
       <div class="section-heading"><h2>${escapeHtml(generated ? t('generated') : kind === 'free-radio' ? t('radioShows') : t('podcastSeries'))}</h2><small>${filtered.length}${!generated && state.media.archive ? ` / ${archiveTotal}` : ''} ${escapeHtml(t('episodes'))}</small></div>
       ${filtered.length ? `<div class="media-results">${filtered.map(podcast => `
-        <article class="media-result-card podcast-card">
+        <article class="media-result-card podcast-card" data-navigation-item="${escapeHtml(podcast.id)}" tabindex="-1">
           ${podcast.artwork ? `<img src="${escapeHtml(podcast.artwork)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<div class="media-result-card__icon" aria-hidden="true">◉</div>`}
           <div>
             <div class="meta-line">
@@ -6488,6 +6557,7 @@
               data-audio-url="${escapeHtml(podcast.audioUrl)}"
               data-audio-artwork="${escapeHtml(podcast.artwork)}"></div>` : generated ? `<p class="media-card-status error">${escapeHtml(t(state.podcastService === 'unavailable' ? 'generatedUnavailableShort' : 'generatedChecking'))}</p>` : ''}
             <div class="media-links" data-audio-share-kind="${generated ? 'generated' : 'original'}" data-audio-share-id="${escapeHtml(podcast.id)}">
+              ${navigationItemLink(podcast.id)}
               ${podcast.episodeUrl ? `<a href="${escapeHtml(podcast.episodeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}
             </div>
           </div>
@@ -6502,11 +6572,12 @@
       filtered = filtered.filter(item => window.WRNAudioTools?.isFavorite?.(item.id));
     }
     filtered = window.WRNAudioTools?.favoriteFirst?.(filtered) || filtered;
+    filtered = includeNavigationItem(filtered, state.radioStations);
     return `
       ${mediaFilters()}
       <div class="section-heading"><h2>${escapeHtml(t('radio'))}</h2><small>${filtered.length} ${escapeHtml(t('stations'))}</small></div>
       ${filtered.length ? `<div class="media-results">${filtered.map(station => `
-        <article class="media-result-card radio-card">
+        <article class="media-result-card radio-card" data-navigation-item="${escapeHtml(station.id)}" tabindex="-1">
           <div class="media-result-card__icon" aria-hidden="true">⌁</div>
           <div>
             <div class="meta-line"><span>${escapeHtml(t('station'))}</span><span>${escapeHtml([station.city, station.country].filter(Boolean).join(', '))}</span></div>
@@ -6521,7 +6592,7 @@
                   data-audio-url="${escapeHtml(station.streamUrl)}"
                   data-audio-candidates="${escapeHtml(station.streams.join('|'))}"></div>`
               : `<p class="stream-fallback">${escapeHtml(t('streamFallback'))}</p>`}
-            <div class="media-links" data-audio-share-kind="radio" data-audio-share-id="${escapeHtml(station.id)}">${station.website ? `<a href="${escapeHtml(station.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}</div>
+            <div class="media-links" data-audio-share-kind="radio" data-audio-share-id="${escapeHtml(station.id)}">${navigationItemLink(station.id)}${station.website ? `<a href="${escapeHtml(station.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}</div>
           </div>
         </article>`).join('')}</div>` : mediaEmpty(t('noMedia'))}
     `;
@@ -6762,6 +6833,10 @@
     else if (state.view === 'saved') renderSaved();
     else renderHome();
     applyLanguage();
+    resolveNavigationItem();
+    if (navigationItemId && specialtyDataReady && resolvedNavigationItem !== `${state.view}/${state.media.section}/${navigationItemId}` && !viewRoot.querySelector('[data-navigation-item="' + navigationItemId + '"]')) {
+      viewRoot.insertAdjacentHTML('afterbegin', `<p class="notice-card" role="status">${escapeHtml(navigationItemCopy()[1])}</p>`);
+    }
     if (viewAnnouncer) {
       const heading = viewRoot.querySelector('h1, h2')?.textContent?.trim() || t('home');
       viewAnnouncer.textContent = '';
@@ -6771,7 +6846,7 @@
 
   async function translateTeaser(article, button, card) {
     if (!window.WRNSharedTranslations?.request || !article) {
-      showToast(t('translationFailed'));
+      showToast(window.WRNSharedTranslations?.failureMessage?.(state.language, t('translationFailed')) || t('translationFailed'));
       return;
     }
     const targetLanguage = state.language;
@@ -6824,7 +6899,7 @@
       showToast(t('translatedTitle'));
     } catch (error) {
       console.warn('Teaser translation failed', error);
-      showToast(t('translationFailed'));
+      showToast(window.WRNSharedTranslations?.failureMessage?.(state.language, t('translationFailed')) || t('translationFailed'));
     } finally {
       button.disabled = false;
       button.removeAttribute('aria-busy');
@@ -7698,7 +7773,7 @@
       showToast(t('translationComplete'));
     } catch (error) {
       console.warn('Article translation failed', error);
-      if (stillCurrent()) showToast(t('translationFailed'));
+      if (stillCurrent()) showToast(window.WRNSharedTranslations?.failureMessage?.(state.language, t('translationFailed')) || t('translationFailed'));
     } finally {
       if (generation === articleTranslationGeneration) {
         button.disabled = false;
@@ -8179,6 +8254,8 @@
   function changeView(view) {
     if (!['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved'].includes(view)) return;
     rememberAppPosition();
+    navigationItemId = '';
+    resolvedNavigationItem = '';
     window.clearTimeout(bindEvents.searchTimer);
     const previousView = state.view;
     if (view === 'help' && document.activeElement instanceof HTMLElement
@@ -8357,6 +8434,18 @@
       }
 
       const action = target.dataset.action;
+      if (action === 'navigation-item') {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        rememberAppPosition();
+        const route = core.navigationRoute(target.getAttribute('href'));
+        if (route) {
+          applyAppRoute(route);
+          render();
+          writeAppHistory('push');
+        }
+        return;
+      }
       if (action === 'autonom-topic') {
         const topic = core.text(target.dataset.topic);
         if (topic && !autonomTopics().includes(topic)) return;
@@ -8486,6 +8575,10 @@
         state.lexicon.query = term ? specialty.localized(term.title, state.language) : '';
         if (articleDialog.open) articleDialog.close();
         changeView('lexicon');
+        navigationItemId = term?.id || '';
+        resolvedNavigationItem = '';
+        render();
+        writeAppHistory('replace');
       }
       if (action === 'article-detail-retry' && state.activeArticle) {
         state.activeArticle.detailFailed = false;
@@ -9683,6 +9776,17 @@
     const closedArticle = articleDialog.open;
     const snapshot = event.state;
     if (!snapshot?.wrnAppNavigation) return;
+    // Browser-created fragment entries can copy the previous entry's state.
+    // A new public link takes precedence over that unrelated copied snapshot.
+    const publicRoute = core.navigationRoute(location.hash);
+    if (publicRoute && core.navigationHash(publicRoute) !== core.navigationHash(snapshot)) {
+      window.clearTimeout(bindEvents.searchTimer);
+      if (closedArticle) { closingArticleFromHistory = true; articleDialog.close(); }
+      applyAppRoute(publicRoute);
+      render();
+      writeAppHistory('replace');
+      return;
+    }
     restoringAppHistory = true;
     try {
       if (closedArticle) {
@@ -9690,6 +9794,8 @@
         articleDialog.close();
       }
       state.view = snapshot.view || 'home';
+      navigationItemId = snapshot.itemId || '';
+      resolvedNavigationItem = '';
       state.media.section = snapshot.mediaSection || state.media.section;
       state.media.zinePanel = snapshot.zinePanel || state.media.zinePanel;
       state.lexicon.section = snapshot.lexiconSection || state.lexicon.section;
@@ -9723,6 +9829,7 @@
   window.addEventListener('hashchange', () => {
     const route = core.navigationRoute(location.hash);
     if (!route || core.navigationHash(appNavigationSnapshot()) === location.hash) return;
+    window.clearTimeout(bindEvents.searchTimer);
     applyAppRoute(route);
     render();
     writeAppHistory('replace');

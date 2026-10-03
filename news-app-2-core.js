@@ -824,10 +824,13 @@
     const [view, section, extra] = path.split('/');
     if (!NAVIGATION_VIEWS.has(view) || extra || (section && (view !== 'media' || !NAVIGATION_MEDIA.has(section)))) return null;
     const route = { view, mediaSection: view === 'media' ? section || 'video' : '', filters: {} };
+    const parameters = new URLSearchParams(query);
+    const itemId = parameters.get('item');
+    if (['home', 'following', 'discover', 'saved', 'lexicon', 'library', 'media'].includes(view)
+      && /^[a-zA-Z0-9._:-]{1,128}$/.test(itemId || '')) route.itemId = itemId;
     const group = view === 'media' ? (route.mediaSection === 'video' ? 'videoFilters' : 'media')
       : ['discover', 'library'].includes(view) ? view : '';
     if (group) {
-      const parameters = new URLSearchParams(query);
       const values = {};
       for (const key of ['source', 'language', 'topic', 'format', 'region']) {
         if (!NAVIGATION_FILTERS[group].includes(key) && !(key === 'language' && ['media', 'library'].includes(group))) continue;
@@ -849,6 +852,8 @@
       : ['discover', 'library'].includes(view) ? view : '';
     const filters = navigationFilters(snapshot?.filters)[group] || {};
     const parameters = new URLSearchParams();
+    if (['home', 'following', 'discover', 'saved', 'lexicon', 'library', 'media'].includes(view)
+      && /^[a-zA-Z0-9._:-]{1,128}$/.test(snapshot?.itemId || '')) parameters.set('item', snapshot.itemId);
     for (const key of ['source', 'language', 'topic', 'format', 'region']) {
       const value = key === 'language' && filters.languages ? filters.languages.join(',') : filters[key];
       if (typeof value === 'string' && value && value !== 'all') parameters.set(key, value);

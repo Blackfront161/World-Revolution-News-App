@@ -172,21 +172,39 @@ function uniquePlayableCandidates(values) {
         .filter(Boolean))];
 }
 
+let globalRadioLoadTimer = 0;
+function clearRadioLoadTimer() {
+    window.clearTimeout(globalRadioLoadTimer);
+    globalRadioLoadTimer = 0;
+}
+function armRadioLoadTimer() {
+    clearRadioLoadTimer();
+    if (globalMediaState.kind !== 'radio' || !globalMediaState.id) return;
+    const id = globalMediaState.id;
+    const candidateIndex = globalMediaState.candidateIndex;
+    globalRadioLoadTimer = window.setTimeout(() => {
+        if (globalMediaState.id !== id || globalMediaState.candidateIndex !== candidateIndex) return;
+        tryNextGlobalMediaCandidate();
+    }, 15000);
+}
+
 function getGlobalMediaPlayer() {
     const audio = document.getElementById('global-media-player');
     if (!audio) return null;
     if (!globalMediaState.initialized) {
         globalMediaState.initialized = true;
         audio.addEventListener('loadstart', () => setGlobalMediaStatus(getMediaUiText().loading));
-        audio.addEventListener('waiting', () => setGlobalMediaStatus(getMediaUiText().loading));
+        audio.addEventListener('waiting', () => { setGlobalMediaStatus(getMediaUiText().loading); if (!globalRadioLoadTimer) armRadioLoadTimer(); });
         audio.addEventListener('loadedmetadata', () => { applySavedMediaPosition(); applyGlobalPlaybackRate(); updateGlobalMediaProgress(); });
         audio.addEventListener('playing', () => {
+            clearRadioLoadTimer();
             setGlobalMediaStatus(getMediaUiText().playing, 'playing');
             if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
             updateGlobalMediaButtons();
             dispatchMediaEvent('wrnmediastate', { state:'playing', media:{ ...globalMediaState } });
         });
         audio.addEventListener('pause', () => {
+            clearRadioLoadTimer();
             persistGlobalMediaPosition(true);
             if (!audio.ended && globalMediaState.id) setGlobalMediaStatus(getMediaUiText().paused);
             if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
@@ -236,7 +254,7 @@ function updateGlobalMediaBar() {
     if (bar) bar.hidden = !globalMediaState.id;
     if (title) title.textContent = globalMediaState.title || 'Audio';
     if (subtitle) subtitle.textContent = globalMediaState.artist || '';
-    if (pauseButton) pauseButton.hidden = isLiveRadio;
+    if (pauseButton) pauseButton.hidden = false;
     if (progressRow) progressRow.hidden = isLiveRadio;
     if (backButton) backButton.hidden = isLiveRadio;
     if (forwardButton) forwardButton.hidden = isLiveRadio;
@@ -419,18 +437,20 @@ async function playGlobalMedia(config) {
     updateGlobalMediaBar();
     setMediaSessionMetadata(globalMediaState);
     setGlobalMediaStatus(getMediaUiText().loading);
+    armRadioLoadTimer();
     dispatchMediaEvent('wrnmediachange', { ...globalMediaState });
     try { await audio.play(); }
     catch (error) {
         // Ein echter Medienfehler löst zusätzlich das error-Ereignis aus. Eine
         // Browser-Autoplay-Sperre wird hier verständlich angezeigt.
         console.warn('Audio playback failed', error);
-        if (error?.name === 'NotAllowedError') setGlobalMediaStatus(getMediaUiText().failed, 'error');
+        if (error?.name === 'NotAllowedError') { clearRadioLoadTimer(); setGlobalMediaStatus(getMediaUiText().failed, 'error'); }
         else if (!audio.error) setGlobalMediaStatus(getMediaUiText().failed, 'error');
     }
 }
 
 function tryNextGlobalMediaCandidate() {
+    clearRadioLoadTimer();
     const audio = getGlobalMediaPlayer();
     if (!audio || !globalMediaState.id) return;
     if (globalMediaState.candidateIndex + 1 < globalMediaState.candidates.length) {
@@ -438,6 +458,7 @@ function tryNextGlobalMediaCandidate() {
         globalMediaState.resumeApplied = false;
         audio.src = globalMediaState.candidates[globalMediaState.candidateIndex];
         setGlobalMediaStatus(getMediaUiText().loading);
+        armRadioLoadTimer();
         audio.load();
         audio.play().catch(() => {});
         return;
@@ -455,6 +476,7 @@ function tryNextGlobalMediaCandidate() {
 }
 
 function pauseGlobalMedia() {
+    clearRadioLoadTimer();
     const audio = getGlobalMediaPlayer();
     if (audio && !audio.paused) audio.pause();
     persistGlobalMediaPosition(true);
@@ -463,13 +485,16 @@ function pauseGlobalMedia() {
 async function resumeGlobalMedia() {
     const audio = getGlobalMediaPlayer();
     if (!audio || !globalMediaState.id || !audio.paused) return;
+    armRadioLoadTimer();
     try { await audio.play(); } catch (error) {
+        clearRadioLoadTimer();
         console.warn('Audio playback failed', error);
         setGlobalMediaStatus(getMediaUiText().failed, 'error');
     }
 }
 
 function stopGlobalMedia(options = {}) {
+    clearRadioLoadTimer();
     const audio = getGlobalMediaPlayer();
     if (audio) {
         audio.pause();

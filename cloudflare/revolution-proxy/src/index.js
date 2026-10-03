@@ -166,6 +166,14 @@ export default {
       return handlePodcastStatus(env, originAllowed ? origin : '');
     }
 
+    if (request.method === 'GET' && action === 'translation.status') {
+      if (!originAllowed) return jsonResponse({ error: true, message: 'Origin nicht erlaubt.' }, 403, '');
+      // Public aggregate only: never expose the private operations/feedback state.
+      const status = publicOperationalStatus([await quotaStatus(env, 'translation_upstream')]);
+      return jsonResponse({ ok: true, enabled: serviceEnabled(env, 'WRN_TRANSLATION_ENABLED'),
+        ...status, providerQuota: null, providerTariff: null }, 200, originAllowed ? origin : '');
+    }
+
     if (request.method === 'GET' && action === 'push.config') {
       if (!originAllowed) return jsonResponse({ error: true, message: 'Origin nicht erlaubt.' }, 403, '');
       return jsonResponse({
@@ -1548,6 +1556,10 @@ async function handlePodcastStatus(env, origin) {
     month: state?.month || currentMonthKey(),
     retentionDays: PODCAST_RETENTION_DAYS,
     maxAudioBytes: PODCAST_MAX_AUDIO_BYTES,
+    quotas: availability.quotas
+      ? publicOperationalStatus([availability.quotas.azure, availability.quotas.storage]).quotas : [],
+    providerQuota: null,
+    providerTariff: null,
     usage: {
       characters: state?.characters || 0,
       characterLimit: availability.limits.characterLimit,

@@ -46,3 +46,11 @@ assert.equal(malformed.library.languages, undefined);
 assert.equal(malformed.library.limit, undefined);
 assert.equal(malformed.library.source.length, 256);
 console.log('Navigation routes, independent filter snapshots and URL privacy: PASS');
+for (const [hash,id] of [['#lexicon?item=access-intimacy','access-intimacy'], ['#library?item=book-123','book-123'], ['#media/radio?item=3cr','3cr'], ['#discover?item=news-123','news-123']]) {
+  const route=core.navigationRoute(hash);
+  assert.equal(route.itemId,id);
+  assert.equal(core.navigationHash({...route, filters:route.filters}),hash);
+}
+for (const hash of ['#help?item=private-name','#prisoners?item=private-profile','#lexicon?item=%22%3E','#library?item=https%3A%2F%2Fexternal.test','#media/radio?item='+'x'.repeat(129)]) {
+  assert.equal(core.navigationRoute(hash).itemId,undefined,'only bounded public catalog IDs become item routes');
+}

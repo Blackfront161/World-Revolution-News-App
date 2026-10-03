@@ -1,6 +1,6 @@
 {
   "schema": "wrn.learning-paths.v1",
-  "revision": "2026-10-02",
+  "revision": "2026-10-03",
   "editorialStatus": "draft",
   "availableLanguages": [
     "de",
@@ -298,7 +298,8 @@
           "bookId": "anarchist-library-en-23d84c4377c0ec75e9b1dd92",
           "termIds": [
             "workers-control",
-            "solidarity-economy"
+            "solidarity-economy",
+            "worker-cooperative"
           ],
           "originalUrl": "https://theanarchistlibrary.org/library/logan-marie-glitterbomb-funding-worker-cooperatives.epub",
           "note": {

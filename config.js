@@ -634,7 +634,7 @@ window.WRN_CONFIG = Object.freeze({
             ['briefing-2.css', 'briefing2-recovery-13'],
             ['stories-timeline.css', 'stories-recovery-13'],
             ['video-hub.css', 'video-hub-recovery-14'],
-            ['lexicon-tab.css', 'lexicon-tab-recovery-184'],
+            ['lexicon-tab.css', 'lexicon-tab-recovery-185'],
             ['prisoner-solidarity.css', 'prisoner-solidarity-recovery-190'],
             ['action-radar.css', 'action-radar-recovery-200'],
             ['editorial-review-ui.css', 'editorial-review-recovery-200'],
@@ -655,7 +655,7 @@ window.WRN_CONFIG = Object.freeze({
             ['briefing-2.js', 'briefing2-recovery-13'],
             ['stories-timeline.js', 'stories-recovery-13'],
             ['video-hub.js', 'video-hub-recovery-14'],
-            ['lexicon-tab.js', 'lexicon-tab-recovery-184'],
+            ['lexicon-tab.js', 'lexicon-tab-recovery-185'],
             ['prisoner-solidarity.js', 'prisoner-solidarity-recovery-190'],
             ['about-tab.js', 'about-tab-recovery-184'],
             ['article-summary-core.js', 'article-summary-core-recovery-184'],
@@ -679,7 +679,7 @@ window.WRN_CONFIG = Object.freeze({
             ['recovery-audit.js', 'recovery-audit-recovery-10'],
             ['language-source-status.js', 'language-source-status-recovery-10'],
             ['zine-designer.js', 'zine-designer-recovery-10'],
-            ['shared-translation-client.js', 'translation-client-recovery-10'],
+            ['shared-translation-client.js', 'translation-client-recovery-11'],
             ['translation-dialog-l10n.js', 'translation-dialog-recovery-10']
         ]);
 

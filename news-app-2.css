@@ -5901,3 +5901,6 @@ button.feature-card {
 .learning-paths { overflow-wrap: anywhere; margin-block: 1.5rem; }
 .learning-paths li { margin-block: 1rem; }
 .learning-paths summary { cursor: pointer; }
+
+.small-action[data-action="navigation-item"] { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; overflow-wrap: anywhere; text-decoration: none; }
+.knowledge-item-links { display: flex; flex-wrap: wrap; gap: 8px; }

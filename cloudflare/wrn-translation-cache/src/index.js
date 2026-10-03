@@ -2,6 +2,7 @@ import { QuotaCoordinator } from '../../shared/quota-coordinator.js';
 import {
   releaseQuota,
   reserveQuota,
+  quotaStatus,
   serviceEnabled
 } from '../../shared/quota-client.js';
 import { translationCacheKey } from '../../shared/translation-cache-key.js';
@@ -239,7 +240,8 @@ export default {
             ? 'kv'
             : 'edge-cache-fallback',
           upstreamConfigured: Boolean(env.UPSTREAM_URL),
-          ttlSeconds: cacheTtl(env)
+          ttlSeconds: cacheTtl(env),
+          quotas: [await quotaStatus(env, 'translation_kv_writes')]
         },
         200,
         cors
@@ -264,7 +266,7 @@ export default {
 
     if (!(await requestAllowed(request, env))) {
       return jsonResponse(
-        { error: true, code: 'RATE_LIMITED', message: 'Too many requests. Please wait one minute.' },
+        { error: true, code: 'RATE_LIMITED', retryAfterSeconds: 60, message: 'Too many requests. Please wait one minute.' },
         429,
         cors
       );
