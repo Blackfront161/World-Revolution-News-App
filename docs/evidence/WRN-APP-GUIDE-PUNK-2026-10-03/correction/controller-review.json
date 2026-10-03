@@ -13,9 +13,10 @@
     "next-update candidate PASS",
     "validate_app PASS",
     "source blobs and LF/binary evidence SHA PASS",
-    "stored Chrome lifecycle/cold-offline harness reviewed; not rerun"
+    "stored Chrome lifecycle/cold-offline harness reviewed; not rerun",
+    "33 Python test functions actually executed after initial count-only command correction: PASS"
   ],
-  "pythonChecks": "Root: 33 pytest checks PASS. Controller reports direct functions PASS; observed first count-only runpy command did not execute functions, clarification requested. No unverified independent test count used for acceptance.",
+  "pythonChecks": "Root: 33 pytest checks PASS. Controller corrected the initial count-only command and independently executed all 33 collected test functions in a normal loop: PASS, Exit0.",
   "nonBlockingDocCorrection": "Current cache paragraph now states r30/v118 consistently.",
   "remaining": [
     "Human language/editorial review",
