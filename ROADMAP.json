@@ -407,7 +407,7 @@
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "combined-library-regional-solidarity-live-verified-http3-load-and-parity-open",
+      "status": "e20c800-reader-navigation-knowledge177-published-live-verified-translation-parity-followups-open",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -490,7 +490,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Aktuelle Livebasis d738a94 bestätigt. Neuer kombinierter Reader/Navigation/Knowledge177-Releasekandidat e20c800/95a775e unabhängig paketlokal akzeptiert und offline geprüft. Upload wartet nach Auto-Review-Ablehnung auf die konkrete Hostinger-Sitzungsantwort plus unmittelbare Policy-/Pointer-/Freshness-Prüfung. Podcast- und Buchkandidaten bleiben bis zur redaktionellen Aufnahme unveröffentlicht; Liveabnahme nach Upload offen.",
+      "remaining": "Kombiniertes Websitepaket e20c800/95a775e auf solinaridao.com veröffentlicht; 47 öffentliche Dateiprüfungen und 16 echte Chrome-Szenarien einschließlich vollständigem Offline-Neustart unter explizitem HTTP/1.1 PASS. Frühere Hostinger-Sitzungssperre für diese Veröffentlichung durch menschliche Anmeldung und verifizierten domain-only Dateimanager aufgehoben. Defaulttransport-Ladeverzögerung, automatische Übersetzung fremder Originaltexte, Podcast-/Buchaufnahme und neuer App-Hilfe-Kandidat bleiben separat offen. Keine neue unabhängige Live-Controllerabnahme behauptet.",
       "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
       "latestHandoff": {
         "imageCommit": "b777198",
@@ -618,6 +618,14 @@
           "Use reviewed immutable/policy-SW/index/two-pointer ZIP order",
           "After upload: public Apache CSP CORS headers hashes browser and full offline restart verification"
         ]
+      },
+      "latestPublication": {
+        "sourceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+        "packageEvidence": "95a775e479ec7cdfc5641c8a36e93e20edfb35ef",
+        "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CURRENT-PACKAGE-LIVE-2026-10-03/REPORT.md",
+        "scope": "Reader/navigation/Knowledge177; later App-guide and Game not imported",
+        "date": "2026-10-03",
+        "independentPackageReview": "PASS; live receipt automated/user-Chrome verification only"
       }
     },
     {
