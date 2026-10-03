@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-10-03T08:09:02.083686+00:00",
+  "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+  "independentReviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+  "status": "PASS",
+  "providerCalls": 0,
+  "writesOrReservations": 0,
+  "method": "GET only; health/status/denial checks, Mozilla UA",
+  "initialReadback": "default Python UA returned403; named Mozilla readback returned200; no provider called",
+  "proxyVersion": "aa18e5e2-d095-41b5-af71-71db1eb3d07a",
+  "cacheVersion": "da809aa7-3de3-4d83-b178-c13542bfe17e",
+  "checks": [
+    {
+      "name": "cache-health",
+      "url": "https://wrn-translation-cache.paghklo.workers.dev/health",
+      "origin": "https://solinaridao.com",
+      "httpStatus": 200,
+      "cacheControl": "no-store",
+      "allowedOrigin": "https://solinaridao.com",
+      "bodySha256": "3d5f8df6a50ae0c96b76b1455d459970538f2d93d1bb518faf8a57b6808821c4",
+      "publicBody": {
+        "ok": true,
+        "service": "wrn-shared-translation-cache",
+        "version": "1.7.8",
+        "cacheSchema": "v2",
+        "storage": "kv",
+        "upstreamConfigured": true,
+        "ttlSeconds": 604800,
+        "enabled": true,
+        "schemaVersion": 1,
+        "checkedAt": "2026-10-03T08:08:58.564Z",
+        "healthy": true,
+        "quotas": [
+          {
+            "metric": "translation_kv_writes",
+            "label": "translation_kv_writes",
+            "used": 24,
+            "limit": 950,
+            "remaining": 926,
+            "percent": 2.5,
+            "threshold": 0,
+            "resetAt": "2026-10-04T00:00:00.000Z",
+            "available": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "translation-status",
+      "url": "https://revolution-proxy.paghklo.workers.dev/?action=translation.status",
+      "origin": "https://solinaridao.com",
+      "httpStatus": 200,
+      "cacheControl": "no-store",
+      "allowedOrigin": "https://solinaridao.com",
+      "bodySha256": "3b0bd18a12e917623eca6dd56af687948237a81cecb963e37014c7c98b40e417",
+      "publicBody": {
+        "ok": true,
+        "enabled": true,
+        "schemaVersion": 1,
+        "checkedAt": "2026-10-03T08:08:59.008Z",
+        "healthy": true,
+        "quotas": [
+          {
+            "metric": "translation_upstream",
+            "label": "Cloudflare Übersetzungsanfragen",
+            "used": 24,
+            "limit": 950,
+            "remaining": 926,
+            "percent": 2.5,
+            "threshold": 0,
+            "resetAt": "2026-10-04T00:00:00.000Z",
+            "available": true
+          }
+        ],
+        "providerQuota": null,
+        "providerTariff": null
+      }
+    },
+    {
+      "name": "voice-status",
+      "url": "https://revolution-proxy.paghklo.workers.dev/?action=podcast.status",
+      "origin": "https://solinaridao.com",
+      "httpStatus": 200,
+      "cacheControl": "no-store",
+      "allowedOrigin": "https://solinaridao.com",
+      "bodySha256": "b6434ebebf31fd5f1d9bfbe3dcf6e15e7704baa143628bc35a87b68bb20455cd",
+      "publicBody": {
+        "ok": true,
+        "naturalVoicesAvailable": true,
+        "deviceVoiceAvailable": true,
+        "reason": "",
+        "resetAt": "2026-11-01T00:00:00.000Z",
+        "month": "2026-10",
+        "retentionDays": 30,
+        "maxAudioBytes": 26214400,
+        "quotas": [
+          {
+            "metric": "azure_characters",
+            "label": "Azure Speech Zeichen",
+            "used": 0,
+            "limit": 475000,
+            "remaining": 475000,
+            "percent": 0,
+            "threshold": 0,
+            "resetAt": "2026-11-01T00:00:00.000Z",
+            "available": true
+          },
+          {
+            "metric": "podcast_storage",
+            "label": "Cloudflare R2 Podcast-Speicher",
+            "used": 0,
+            "limit": 9663676416,
+            "remaining": 9663676416,
+            "percent": 0,
+            "threshold": 0,
+            "resetAt": "2026-11-01T00:00:00.000Z",
+            "available": true
+          }
+        ],
+        "providerQuota": null,
+        "providerTariff": null,
+        "usage": {
+          "characters": 0,
+          "characterLimit": 475000,
+          "storageBytes": 0,
+          "storageLimitBytes": 9663676416,
+          "generatedCount": 0
+        }
+      }
+    },
+    {
+      "name": "cache-rejected-origin",
+      "url": "https://wrn-translation-cache.paghklo.workers.dev/health",
+      "origin": "https://untrusted.test",
+      "httpStatus": 403,
+      "cacheControl": "no-store",
+      "allowedOrigin": "https://blackfront161.github.io",
+      "bodySha256": "cdff0e6d49779947678157cd612bb814afc3a38f79c6a98e97ce579f738e5879"
+    },
+    {
+      "name": "proxy-rejected-origin",
+      "url": "https://revolution-proxy.paghklo.workers.dev/?action=translation.status",
+      "origin": "https://untrusted.test",
+      "httpStatus": 403,
+      "cacheControl": "no-store",
+      "allowedOrigin": null,
+      "bodySha256": "022957dc665d375e68459342724678be230d2111ef60ebed2ecbf77c6b927f92"
+    },
+    {
+      "name": "private-admin-no-token",
+      "url": "https://revolution-proxy.paghklo.workers.dev/?action=admin.operations.status",
+      "origin": "https://solinaridao.com",
+      "httpStatus": 401,
+      "cacheControl": "no-store",
+      "allowedOrigin": "https://solinaridao.com",
+      "bodySha256": "a6e7e2a48f86f2aa1768a1e507436e6923b3c6ceffaec1973e8b6a797e007968"
+    },
+    {
+      "name": "cache-public-no-origin",
+      "url": "https://wrn-translation-cache.paghklo.workers.dev/health",
+      "origin": "",
+      "httpStatus": 200,
+      "cacheControl": "no-store",
+      "allowedOrigin": "https://blackfront161.github.io",
+      "bodySha256": "41b332082fdd8c41f3558c8a61d07280c52eb8e940a2e41e19d028eb50146376",
+      "publicBody": {
+        "ok": true,
+        "service": "wrn-shared-translation-cache",
+        "version": "1.7.8",
+        "cacheSchema": "v2",
+        "storage": "kv",
+        "upstreamConfigured": true,
+        "ttlSeconds": 604800,
+        "enabled": true,
+        "schemaVersion": 1,
+        "checkedAt": "2026-10-03T08:09:01.955Z",
+        "healthy": true,
+        "quotas": [
+          {
+            "metric": "translation_kv_writes",
+            "label": "translation_kv_writes",
+            "used": 24,
+            "limit": 950,
+            "remaining": 926,
+            "percent": 2.5,
+            "threshold": 0,
+            "resetAt": "2026-10-04T00:00:00.000Z",
+            "available": true
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": "No live translation generation or provider tariff validation; no App/Play/native publication."
+}

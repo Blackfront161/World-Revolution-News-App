@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+  "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "closingTurnId": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+  "initialDecision": "FAIL",
+  "initialProduct": "ad9074b72dd22bc8f121ea4487a4207fb73dc78d",
+  "firstCorrectionDecision": "FAIL-missing-field-rest-case",
+  "firstCorrectionProduct": "99bb9cc29c515b95a0c7e4ba9a19cf8f106d9c12",
+  "findings": [
+    {
+      "id": "raw-public-cache-quota-object",
+      "status": "fixed",
+      "correction": "publicOperationalStatus allowlist/no-store and Origin-before-DO"
+    },
+    {
+      "id": "cache-health-misrepresents-proxy-availability",
+      "status": "fixed",
+      "correction": "UI uses dedicated translationAvailable"
+    },
+    {
+      "id": "missing-health-fields-fail-open",
+      "status": "fixed",
+      "correction": "six exact true comparisons; four missing-field cases plus six partial failures"
+    }
+  ],
+  "verified": {
+    "productBlobs": "31/31",
+    "strictEvidence": "4/4",
+    "cloudflareTests": 30,
+    "nodeContracts": 9,
+    "lexiconTerms": 177,
+    "lexiconReferences": 54,
+    "learningPaths": 4,
+    "bookBindings": 33
+  },
+  "scope": "Accepted source/metadata handoff; no native/App/Play publication approval or controller deployment; root authorized Worker publication separately."
+}

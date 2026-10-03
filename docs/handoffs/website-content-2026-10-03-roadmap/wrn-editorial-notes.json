@@ -1,0 +1,263 @@
+{
+  "schema": "wrn.website-home-editorial.v1",
+  "directoryCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+  "feedSha256": "b888a16d1f659e31cab3bbb3c487734ad5259531af908d16f50525d2892efc56",
+  "authorship": "WRN editorial reading notes; no copied source body",
+  "entries": [
+    {
+      "articleId": "news-bf7f81a0916bf3c8e14fd76c3ea38c65a8c8ac67c2a6008059ef42a8f74b4fcc",
+      "originalUrl": "https://elitshanews.org.za/2026/10/02/make-the-wealthy-pay-aidc-lays-out-alternative-to-austerity/",
+      "originalTitle": "Make the wealthy pay: AIDC lays out alternative to austerity",
+      "sourceName": "Elitsha",
+      "sourcePassId": "wrn-source-pass-bde2134385a71edcb4f6a8255a8985f5",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Südafrika: Vorschläge gegen Sparpolitik",
+      "summaryDe": "Elitsha berichtet über Vorschläge des AIDC für eine progressivere Besteuerung in Südafrika. Vermögens- und Dividendensteuern werden als Alternativen zu Ausgabenkürzungen vorgestellt.",
+      "summaryEn": "Elitsha reports on AIDC proposals for more progressive taxation in South Africa. Wealth and dividend taxes are presented as alternatives to spending cuts.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://elitshanews.org.za/2026/10/02/make-the-wealthy-pay-aidc-lays-out-alternative-to-austerity/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-4805e4b7cf59c5de9e527df647913b42b2e7a9e98c41c0b38e024c33da7d511b",
+      "originalUrl": "https://nunatsiaq.com/stories/article/nunavut-sport-hall-of-fame-inductions-begin/",
+      "originalTitle": "Nunavut sports hall of fame inductions begin",
+      "sourceName": "Nunatsiaq News",
+      "sourcePassId": "wrn-source-pass-435baeef61bacc40e9e518eb4bbd4062",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Nunavut ehrt seine ersten Sportlegenden",
+      "summaryDe": "Nunatsiaq berichtet über die ersten geplanten Aufnahmen in Nunavuts Sport Hall of Fame. Geehrt werden sollen Jordin Tootoo und Attima Hadlari.",
+      "summaryEn": "Nunatsiaq reports on the first planned inductions into Nunavut’s sports hall of fame. Jordin Tootoo and Attima Hadlari are to be honoured.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://nunatsiaq.com/stories/article/nunavut-sport-hall-of-fame-inductions-begin/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-19ec580a27780de2a9af0ed4eb0fc0441bc442f30d9954d78686e6c655a04cee",
+      "originalUrl": "https://autonomies.org/2026/10/if-bolsonaro-wins-they-kill-us-if-lula-wins-they-let-us-die/",
+      "originalTitle": "“If Bolsonaro wins, they kill us; if Lula wins, they let us die.”",
+      "sourceName": "Autonomies",
+      "sourcePassId": "wrn-source-pass-c840b7eeb9c0bc283310cd4c33502b31",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "commentary",
+      "headlineDe": "Brasiliens Wahl aus anarchistischer Perspektive",
+      "summaryDe": "Autonomies veröffentlicht einen CrimethInc.-Kommentar zu Brasiliens Wahlen. Der Text kritisiert beide politischen Lager und diskutiert autonome Organisierung.",
+      "summaryEn": "Autonomies republishes a CrimethInc. commentary on Brazil’s elections. It criticises both political camps and discusses autonomous organising.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://autonomies.org/2026/10/if-bolsonaro-wins-they-kill-us-if-lula-wins-they-let-us-die/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-cf022a0fd6b1dff18da08d530fe6f0fd9ec23a743d1ac65cd8cbc212c00d5f63",
+      "originalUrl": "https://wagingnonviolence.org/2026/10/iran-teachers-movement-perseveres-against-odds/",
+      "originalTitle": "Iran’s teachers movement perseveres against all odds",
+      "sourceName": "Waging Nonviolence",
+      "sourcePassId": "wrn-source-pass-e11ff9c35957b2a85dea18977795c7e5",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Irans Lehrkräfte halten an ihren Forderungen fest",
+      "summaryDe": "Waging Nonviolence berichtet über Irans Lehrkräftebewegung. Befragte beschreiben ihren Einsatz für faire Löhne, öffentliche Bildung und die Freilassung inhaftierter Kollegen.",
+      "summaryEn": "Waging Nonviolence reports on Iran’s teachers movement. Interviewees describe their struggle for fair pay, public education and the release of detained colleagues.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://wagingnonviolence.org/2026/10/iran-teachers-movement-perseveres-against-odds/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-4aebfed2089e5861f814b47fdc387997351b655643f164d0fec4fe551a6752e0",
+      "originalUrl": "https://www.eff.org/deeplinks/2026/10/site-blocking-will-not-defend-ip-no-matter-bills-name",
+      "originalTitle": "Site-Blocking Will Not Defend IP, No Matter the Bill’s Name",
+      "sourceName": "Electronic Frontier Foundation",
+      "sourcePassId": "wrn-source-pass-4f938bf89f0b4fa3a7472161d8b92dc4",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "commentary",
+      "headlineDe": "EFF kritisiert neuen Vorschlag für Website-Sperren",
+      "summaryDe": "Die EFF kritisiert den US-Gesetzesvorschlag DEFEND IP. Die Organisation warnt, dass Sperren ganzer Websites auch rechtmäßige Inhalte und freie Meinungsäußerung treffen könnten.",
+      "summaryEn": "EFF criticises the US DEFEND IP bill. The organisation warns that blocking entire websites could harm lawful content and freedom of expression.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.eff.org/deeplinks/2026/10/site-blocking-will-not-defend-ip-no-matter-bills-name"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-89996c282207e65c3097efb6adccbc8c85fe46c009854f1cad5386ab1cd96389",
+      "originalUrl": "https://agenciatierraviva.com.ar/sastre-sin-fumigaciones-lo-que-deberia-venir-es-la-agroecologia-para-las-futuras-generaciones/",
+      "originalTitle": "Sastre sin fumigaciones: “Lo que debería venir es la agroecología para las futuras generaciones”",
+      "sourceName": "Agencia Tierra Viva",
+      "sourcePassId": "wrn-source-pass-85fe6ba944db112372c974914dc2bd17",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Sastre: Nach dem Urteil wird über Agrarökologie diskutiert",
+      "summaryDe": "Agencia Tierra Viva berichtet über den Rechtsstreit zu Pestizideinsätzen bei Sastre. Eine beteiligte Anwohnerin beschreibt die gemeinsame Initiative und ihre Forderung nach Agrarökologie.",
+      "summaryEn": "Agencia Tierra Viva reports on the dispute over pesticide spraying near Sastre. A resident describes the community initiative and its call for agroecology.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://agenciatierraviva.com.ar/sastre-sin-fumigaciones-lo-que-deberia-venir-es-la-agroecologia-para-las-futuras-generaciones/"
+      ],
+      "sourceLanguage": "es"
+    },
+    {
+      "articleId": "news-f6e3c002e7c2304d8328565c09551f82af3051f1800ec8a83f618df06c96bacf",
+      "originalUrl": "https://mars-infos.org/les-dependances-artificielles-8757",
+      "originalTitle": "Les dépendances artificielles / mayday / podcast",
+      "sourceName": "MIA Marseille (FR)",
+      "sourcePassId": "wrn-source-pass-cf1577885f6c083bea286a469be86134",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "podcast-announcement",
+      "headlineDe": "Mayday diskutiert Abhängigkeiten und künstliche Intelligenz",
+      "summaryDe": "MIA stellt eine Mayday-Podcastfolge über Abhängigkeiten von Drogen und KI-Systemen vor. Die Sendung diskutiert soziale Beziehungen und den zunehmenden Einsatz von Automatisierung.",
+      "summaryEn": "MIA introduces a Mayday podcast episode about dependency on drugs and AI systems. The programme discusses social relationships and expanding automation.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://mars-infos.org/les-dependances-artificielles-8757"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-d24f42223b892eb38ec28385fa4e5ccaeb79fb2cedfae3e41560a0d7ae4983fd",
+      "originalUrl": "https://africasacountry.com/2026/10/the-north-african-family-french-critics-couldnt-see",
+      "originalTitle": "The North African family French critics couldn’t see",
+      "sourceName": "Africa Is a Country",
+      "sourcePassId": "wrn-source-pass-9175a51652444964a513864dd68f3db2",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "commentary",
+      "headlineDe": "Eine nordafrikanische Perspektive auf den Film Alpha",
+      "summaryDe": "Ein Kommentar auf Africa Is a Country untersucht die nordafrikanische Familie im Film Alpha. Der Autor fragt, warum diese Perspektive in der französischen Filmkritik wenig Beachtung findet.",
+      "summaryEn": "A commentary on Africa Is a Country examines the North African family in the film Alpha. The author asks why French film criticism has given this perspective little attention.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://africasacountry.com/2026/10/the-north-african-family-french-critics-couldnt-see"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-4477980f56597e2f0462e36f3d89653f080a521476160fc92f97cc594b29d927",
+      "originalUrl": "https://argentina.indymedia.org/2026/10/02/sin-la-ayuda-de-mis-hijos-no-puedo-llegar-a-fin-de-mes-otro-miercoles-de-protesta-de-jubilados-por-una-vida-digna/",
+      "originalTitle": "“Sin la ayuda de mis hijos no puedo llegar a fin de mes”: otro miércoles de protesta de jubilados por una vida digna",
+      "sourceName": "Indymedia Argentina",
+      "sourcePassId": "wrn-source-pass-7cb33779fa0e809d5210643abb0cbce8",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Argentinien: Rentnerproteste gehen weiter",
+      "summaryDe": "Indymedia Argentina berichtet über eine weitere Protestaktion von Rentnerinnen und Rentnern. Teilnehmende schildern finanzielle Belastungen und fordern würdige Lebensbedingungen.",
+      "summaryEn": "Indymedia Argentina reports on another pensioners’ protest. Participants describe financial pressures and demand dignified living conditions.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://argentina.indymedia.org/2026/10/02/sin-la-ayuda-de-mis-hijos-no-puedo-llegar-a-fin-de-mes-otro-miercoles-de-protesta-de-jubilados-por-una-vida-digna/"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-7861eaeeeab2dcb2decc157a80b2cbe3bb6acfb431767c97b8c7b3de7cd9451d",
+      "originalUrl": "https://radiokurruf.org/comunicado-publico-de-los-presos-politicos-mapuche-de-la-franja-lavkenche-condenados-en-el-caso-grollmus/",
+      "originalTitle": "Comunicado Público de los Presos políticos mapuche de la Franja lavkenche condenados en el Caso Grollmus",
+      "sourceName": "Radio Kurruf Noticias",
+      "sourcePassId": "wrn-source-pass-d8d640c2c49985371ce712692037e63b",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "press-release",
+      "headlineDe": "Mapuche-Erklärung zum Verfahren im Fall Grollmus",
+      "summaryDe": "Radio Kurruf veröffentlicht eine eingesandte Erklärung von Mapuche-Verurteilten im Fall Grollmus. Die Verfasser kritisieren das Verfahren und fordern einen fairen Prozess.",
+      "summaryEn": "Radio Kurruf publishes a submitted statement by Mapuche people convicted in the Grollmus case. Its authors criticise the proceedings and call for a fair trial.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://radiokurruf.org/comunicado-publico-de-los-presos-politicos-mapuche-de-la-franja-lavkenche-condenados-en-el-caso-grollmus/"
+      ],
+      "sourceLanguage": "es"
+    },
+    {
+      "articleId": "news-63288e1130f25b9db71b153e08bf4f31c1825824bcc602af45c99b8bd208d8fd",
+      "originalUrl": "https://apublica.org/2026/10/levantamento-aponta-um-caso-de-violencia-politica-a-cada-37-horas-durante-campanha-de-2026/",
+      "originalTitle": "Levantamento aponta um caso de violência política a cada 37 horas durante campanha de 2026",
+      "sourceName": "Agência Pública",
+      "sourcePassId": "wrn-source-pass-8346bf16656945bc57e086d95952c1af",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Pública untersucht politische Gewalt im Wahlkampf",
+      "summaryDe": "Agência Pública stellt ihre Erhebung zu gemeldeter politischer Gewalt im brasilianischen Wahlkampf vor. Die Redaktion berichtet über Angriffe und Einschüchterung gegen Kandidierende.",
+      "summaryEn": "Agência Pública presents its survey of reported political violence during Brazil’s election campaign. The newsroom reports attacks and intimidation against candidates.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://apublica.org/2026/10/levantamento-aponta-um-caso-de-violencia-politica-a-cada-37-horas-durante-campanha-de-2026/"
+      ],
+      "sourceLanguage": "pt"
+    },
+    {
+      "articleId": "news-ced541655bbddcfadc012cbfbf3991f3453ca77a69d1c165e0eb0ed27e021197",
+      "originalUrl": "https://nunatsiaq.com/stories/article/iqaluit-northmart-unveils-completed-in-store-renovations/",
+      "originalTitle": "Iqaluit Northmart unveils completed in-store renovations",
+      "sourceName": "Nunatsiaq News",
+      "sourcePassId": "wrn-source-pass-435baeef61bacc40e9e518eb4bbd4062",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "news",
+      "headlineDe": "Iqaluit: Northmart meldet Abschluss des Ladenumbaus",
+      "summaryDe": "Nunatsiaq berichtet über den Abschluss der Innenrenovierung des Northmart in Iqaluit. Der Beitrag beschreibt den veränderten Laden und Erfahrungen von Beschäftigten und Kunden.",
+      "summaryEn": "Nunatsiaq reports that interior renovations at Iqaluit’s Northmart are complete. The article describes the redesigned store and staff and customer experiences.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://nunatsiaq.com/stories/article/iqaluit-northmart-unveils-completed-in-store-renovations/"
+      ],
+      "sourceLanguage": "en"
+    },
+    {
+      "articleId": "news-15bd626de2c3273c503e5e56575ba5f1237b486aed69af133d425062d8ddad5a",
+      "originalUrl": "https://mars-infos.org/formation-psycho-trauma-spaam-8750",
+      "originalTitle": "FORMATION PSYCHO TRAUMA SPAAM",
+      "sourceName": "MIA Marseille (FR)",
+      "sourcePassId": "wrn-source-pass-cf1577885f6c083bea286a469be86134",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "event-announcement",
+      "headlineDe": "Marseille: Veranstaltung zum Thema Psychotrauma",
+      "summaryDe": "MIA veröffentlicht eine Ankündigung des SPAAM für eine Veranstaltung am 17. Oktober in Marseille. Thema sind Psychotrauma und gegenseitige Unterstützung.",
+      "summaryEn": "MIA publishes a SPAAM announcement for an event in Marseille on 17 October. Its subjects are psychological trauma and mutual support.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://mars-infos.org/formation-psycho-trauma-spaam-8750"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-a37bea00300e766dbeecd9293b3e85e75c4b19f67422e5e963eb50a3091ca27e",
+      "originalUrl": "https://mars-infos.org/fiertes-veneres-pride-radicale-du-8754",
+      "originalTitle": "FIERTÉS VÉNÈRES — Pride radicale du Sud",
+      "sourceName": "MIA Marseille (FR)",
+      "sourcePassId": "wrn-source-pass-cf1577885f6c083bea286a469be86134",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "event-announcement",
+      "headlineDe": "Nîmes: Aufruf zur Pride am 10. Oktober",
+      "summaryDe": "MIA veröffentlicht den Aufruf und das Programm der Fiertés Vénères in Nîmes. Die Veranstalter verbinden die Pride am 10. Oktober mit queeren und antifaschistischen Forderungen.",
+      "summaryEn": "MIA publishes the call and programme for Fiertés Vénères in Nîmes. Organisers connect the 10 October Pride with queer and antifascist demands.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://mars-infos.org/fiertes-veneres-pride-radicale-du-8754"
+      ],
+      "sourceLanguage": "und"
+    },
+    {
+      "articleId": "news-d576bb384df539b059557e499aa9f62da650491da4a96162a30f0ef378a39b2c",
+      "originalUrl": "https://www.eff.org/deeplinks/2026/10/congress-has-another-site-blocking-bill-and-one-targets-vpns",
+      "originalTitle": "Congress Has Another Site-Blocking Bill, And This One Targets VPNs",
+      "sourceName": "Electronic Frontier Foundation",
+      "sourcePassId": "wrn-source-pass-4f938bf89f0b4fa3a7472161d8b92dc4",
+      "admission": "metadata-only-with-wrn-note",
+      "format": "commentary",
+      "headlineDe": "EFF: Website-Sperrvorschlag betrifft auch VPN-Anbieter",
+      "summaryDe": "Die EFF untersucht den US-Gesetzesvorschlag ACPA, der auch VPN-Anbieter zu Website-Sperren verpflichten könnte. Sie erkennt Verfahrensgarantien an, kritisiert aber Risiken für das offene Internet.",
+      "summaryEn": "EFF examines the US ACPA bill, which could require VPN providers to block websites. It acknowledges procedural safeguards while criticising risks to the open internet.",
+      "rights": "wrn-original-reading-note",
+      "evidence": [
+        "https://www.eff.org/deeplinks/2026/10/congress-has-another-site-blocking-bill-and-one-targets-vpns"
+      ],
+      "sourceLanguage": "und"
+    }
+  ]
+}

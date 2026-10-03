@@ -1,0 +1,38 @@
+[
+  {
+    "worker": "revolution-proxy",
+    "priorVersion": "b4344450-d9f3-4e2e-9889-1c961c725508",
+    "currentVersion": "aa18e5e2-d095-41b5-af71-71db1eb3d07a",
+    "allPlainVarsIdentical": true,
+    "modelVarPreserved": true,
+    "secretBindingNameSetUnchanged": true,
+    "plainVarNames": [
+      "ALLOWED_ORIGINS",
+      "AZURE_MONTHLY_CHAR_LIMIT",
+      "FEEDBACK_DAILY_LIMIT",
+      "FEEDBACK_TO_ADDRESS",
+      "GEMINI_MODEL",
+      "PODCAST_STORAGE_LIMIT_BYTES",
+      "TRANSLATION_DAILY_LIMIT",
+      "WRN_PODCAST_GENERATION_ENABLED",
+      "WRN_TRANSLATION_ENABLED"
+    ],
+    "secretValuesReadOrStored": false
+  },
+  {
+    "worker": "wrn-translation-cache",
+    "priorVersion": "13f8710b-7eb3-4a6a-a7fb-85b3769bd730",
+    "currentVersion": "da809aa7-3de3-4d83-b178-c13542bfe17e",
+    "allPlainVarsIdentical": true,
+    "modelVarPreserved": null,
+    "secretBindingNameSetUnchanged": true,
+    "plainVarNames": [
+      "ALLOWED_ORIGINS",
+      "CACHE_TTL_SECONDS",
+      "TRANSLATION_KV_DAILY_WRITE_LIMIT",
+      "UPSTREAM_URL",
+      "WRN_TRANSLATION_ENABLED"
+    ],
+    "secretValuesReadOrStored": false
+  }
+]

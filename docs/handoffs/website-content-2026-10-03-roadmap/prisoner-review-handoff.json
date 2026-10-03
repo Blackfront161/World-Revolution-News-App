@@ -1,0 +1,237 @@
+{
+  "generatedAt": "2026-10-03T07:31:18+08:00",
+  "reviewWindowDays": 45,
+  "editorialPolicy": {
+    "scope": "A small, curated directory of people publicly listed by established prisoner-solidarity groups.",
+    "addressRule": "Only public prison mailing addresses shared by the prisoner or a trusted support group are published.",
+    "privacyRule": "Private family, legal-team and release addresses are never included.",
+    "staleRule": "Copying, editing and printing are disabled after the next review date until the address is checked again.",
+    "legalNote": "The directory documents solidarity information and does not make a legal assessment of a case.",
+    "verificationScope": "Verification means a public mailing address matched to a sufficiently recent dated primary support source, not an independent custody or legal-status finding. Undated individual listings remain locked pending dated confirmation.",
+    "undatedSourceRule": "Live access and an address match are recorded separately; neither automatically extends an expired individual review window.",
+    "reviewDayRule": "Date-only review deadlines expire at the start of the following local calendar day on the reader device."
+  },
+  "sources": [
+    {
+      "id": "nycabc-guide-19-5",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.5",
+      "url": "https://nycabc.wordpress.com/2026/06/27/guide_19_5/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/06/nycabc_polprislisting_june-2026_legal.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "nycabc-write",
+      "name": "NYC Anarchist Black Cross – Write A Letter",
+      "url": "https://nycabc.wordpress.com/write-a-letter/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.523140+00:00",
+        "originalUrl": "https://nycabc.wordpress.com/write-a-letter/",
+        "contentSha256": "55284294577c1f9a8f333ba21bd1b8f3914765011b582c9596680411bcd7626b",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
+    },
+    {
+      "id": "abcf-updates",
+      "name": "Anarchist Black Cross Federation – current updates",
+      "url": "https://www.abcf.net/",
+      "kind": "support-network",
+      "checkedAt": "2026-07-27"
+    },
+    {
+      "id": "nycabc-guide-19-6",
+      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.6",
+      "url": "https://nycabc.wordpress.com/2026/07/25/guide_19_6/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/08/nycabc_polprislisting_july-2026_legal.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-09"
+    },
+    {
+      "id": "abc-dresden-prisoners",
+      "name": "Anarchist Black Cross Dresden – Gefangenenliste",
+      "url": "https://abcdd.org/gefangene/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+        "originalUrl": "https://abcdd.org/gefangene/",
+        "contentSha256": "3b42b97ce3c5fac958b2bd126ed8632fd72fc4a5353c33066758ddedc029b46f",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
+    },
+    {
+      "id": "abc-dresden-letter-writing",
+      "name": "Anarchist Black Cross Dresden – Briefeschreiben",
+      "url": "https://abcdd.org/en/letter-writing/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.020639+00:00",
+        "originalUrl": "https://abcdd.org/en/letter-writing/",
+        "contentSha256": "08511bd204e633acfdd24c69d7bf31cf8b4027b0904d160318dff09433a87e2c",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
+    },
+    {
+      "id": "prisoners-for-palestine-writing",
+      "name": "Prisoners for Palestine – Writing to Prisoners",
+      "url": "https://prisonersforpalestine.org/writing-to-prisoners/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-10-03",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+        "originalUrl": "https://prisonersforpalestine.org/writing-to-prisoners/",
+        "contentSha256": "be194afa500affa55f38d4d9904cd729bef48b008e16dbd47e11f99f4144e33f",
+        "httpStatus": 200
+      },
+      "reviewScope": "Original page read; reachability alone does not verify individual custody or mailing permissions."
+    },
+    {
+      "id": "govuk-prison-letters",
+      "name": "GOV.UK – Staying in touch with someone in prison",
+      "url": "https://www.gov.uk/staying-in-touch-with-someone-in-prison",
+      "kind": "official-mail-guidance",
+      "checkedAt": "2026-07-29"
+    },
+    {
+      "id": "abcf-support-guide",
+      "name": "Anarchist Black Cross Federation – Support Guide",
+      "url": "https://www.abcf.net/support-guide/",
+      "kind": "letter-writing-guidance",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "abc-belarus-prisoners",
+      "name": "Anarchist Black Cross Belarus – Prisoners",
+      "url": "https://abc-belarus.org/en/prisoners/",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "london-abc",
+      "name": "London Anarchist Black Cross – Prison abolition and letter support",
+      "url": "https://network23.org/londonabc/about/",
+      "kind": "support-network",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "secours-rouge-geneve",
+      "name": "Secours Rouge Genève – Prisoner and repression solidarity",
+      "url": "https://secoursrouge.org/orga/secours-rouge-geneve/",
+      "kind": "support-network",
+      "checkedAt": "2026-08-05"
+    },
+    {
+      "id": "nycabc-guide-19-8",
+      "name": "NYC Anarchist Black Cross – September 2026 (announcement 19.8 / PDF edition 19.9)",
+      "url": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
+      "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+      "kind": "primary-support-group",
+      "checkedAt": "2026-10-03",
+      "publishedAt": "2026-09-24",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:18.521805+00:00",
+        "originalUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
+        "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
+        "httpStatus": 200
+      },
+      "rightsReview": "Metadata and original links only; PDF, portraits and biographies are not bundled or republished.",
+      "announcementEdition": "19.8",
+      "linkedPdfEdition": "19.9",
+      "editionNote": "The dated announcement says Guide 19.8; the exact linked PDF title page says Edition 19.9 September 2026. Publisher discrepancy recorded, not silently resolved; URL and SHA256 identify the reviewed file."
+    },
+    {
+      "id": "nyc-books-through-bars",
+      "name": "NYC Books Through Bars",
+      "url": "https://www.booksthroughbarsnyc.org/",
+      "kind": "book-support",
+      "checkedAt": "2026-10-03",
+      "description": "Volunteer organisation providing books to incarcerated people.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.020639+00:00",
+        "originalUrl": "https://www.booksthroughbarsnyc.org/",
+        "contentSha256": "7da34d40c46d88efa5288d31e101aa88776152e8013a359f780aba9cbbd6ee6d",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "water-protector-legal-collective",
+      "name": "Water Protector Legal Collective",
+      "url": "https://www.waterprotectorlegal.org/",
+      "kind": "indigenous-legal-support",
+      "checkedAt": "2026-10-03",
+      "description": "Indigenous-led organisation working on rights and legal support for Indigenous communities.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.645873+00:00",
+        "originalUrl": "https://www.waterprotectorlegal.org/",
+        "contentSha256": "93fd27f68932c342019689419114f52ac6e192aa834400a9b8e14d2ec48a5714",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "jericho-movement",
+      "name": "Jericho Movement",
+      "url": "https://www.thejerichomovement.com/",
+      "kind": "support-network",
+      "checkedAt": "2026-10-03",
+      "description": "Organisation supporting people it identifies as political prisoners.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:20.824592+00:00",
+        "originalUrl": "https://www.thejerichomovement.com/",
+        "contentSha256": "7894bfb0cf10d824e87affec009bd803ae32c394fe9ec2bba47ef48609acf9a7",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "prison-radio-support",
+      "name": "Prison Radio",
+      "url": "https://www.prisonradio.org/",
+      "kind": "prisoner-voices",
+      "checkedAt": "2026-10-03",
+      "description": "Original commentaries and reporting by imprisoned correspondents.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:21.027235+00:00",
+        "originalUrl": "https://www.prisonradio.org/",
+        "contentSha256": "f3550691fe12a7eb3d546ebad440d7fe24974389f3e1b85dd03d93b18713c1fd",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    },
+    {
+      "id": "prisoner-solidarity-directory",
+      "name": "Prisoner Solidarity (Philadelphia ABC)",
+      "url": "https://www.prisonersolidarity.com/",
+      "kind": "support-directory",
+      "checkedAt": "2026-10-03",
+      "description": "Public prisoner-support directory maintained by Philadelphia Anarchist Black Cross; originally started by Los Angeles ABC.",
+      "admission": "directory-only",
+      "accessEvidence": {
+        "observedAtUTC": "2026-10-02T23:31:21.414400+00:00",
+        "originalUrl": "https://www.prisonersolidarity.com/",
+        "contentSha256": "52c09b27d7f1cf25e03368478163f014bed98cd43a828cbe634c924f292cd733",
+        "httpStatus": 200
+      },
+      "rightsReview": "Original link and own description only; no copied body, audio, portrait, donation destination or private contact.",
+      "reviewScope": "Organisation and public support offering; does not verify any individual profile or legal advice."
+    }
+  ],
+  "status": "expired-snapshot-requires-source-review",
+  "copyPrintEnabled": false,
+  "addressesExported": false
+}
