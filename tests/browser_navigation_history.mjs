@@ -37,8 +37,9 @@ try {
     if (url.pathname === '/health' || ['translation.status','podcast.status'].includes(action)) {
       if(action==='translation.status' && healthMode==='proxy-http') return route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({ok:false})});
       if(action==='translation.status' && healthMode==='proxy-disabled') return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:false,quotas:[]})});
+      if((url.pathname==='/health' && healthMode==='cache-missing-fields') || (action==='translation.status' && healthMode==='proxy-missing-fields')) return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:true,quotas:[]})});
       const metric = url.pathname === '/health' ? 'translation_kv_writes' : action === 'translation.status' ? 'translation_upstream' : 'azure_characters';
-      return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:true,storage:'kv',quotas:[{metric,used:940,limit:950,remaining:10,available:true,resetAt:'2026-10-04T00:00:00.000Z'}]})});
+      return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:true,healthy:true,storage:'kv',quotas:[{metric,used:940,limit:950,remaining:10,available:true,resetAt:'2026-10-04T00:00:00.000Z'}]})});
     }
     if (/\/(news-feed|news)\.json$/.test(url.pathname)) return route.fulfill({contentType:'application/json',body:JSON.stringify(articles)});
     if (/\/(library-feed|library-sources|podcasts|podcast-sources|radio-stations)\.json$/.test(url.pathname)) {
@@ -208,7 +209,7 @@ try {
   }
   result.checks.push('Nine UI languages: lexicon at 360/768/1440 and 200% text reflow; actual quota dialog shows known counters and unknown provider/storage without overflow.');
   await page.locator('#next-language').selectOption('de');
-  for(const mode of ['proxy-http','proxy-disabled']) {
+  for(const mode of ['proxy-http','proxy-disabled','cache-missing-fields','proxy-missing-fields']) {
     healthMode=mode;
     await page.locator('[data-action="system-status"]').evaluate(button=>button.click());
     await expect(page.locator('[data-quota-status]')).toBeVisible();
@@ -217,7 +218,7 @@ try {
     await page.locator('[data-release-close]').last().click();
   }
   healthMode='';
-  result.checks.push('Actual quota UI never labels translation available when cache is healthy but proxy fails or translation is disabled.');
+  result.checks.push('Actual quota UI never labels translation available when cache is healthy but proxy fails, translation is disabled, or health fields are missing.');
   assert.deepEqual(result.errors, []);
   await page.goto(`${origin}/index.html?preview=8#library?language=de&format=epub`);
   await ready('library');

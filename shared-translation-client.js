@@ -258,8 +258,8 @@
       ]);
       const result = {...cache, quotas:[cache, translation, voice].flatMap(result => result.ok && Array.isArray(result.quotas) ? result.quotas : []),
         translationEnabled:translation.ok ? translation.enabled : null,
-        translationAvailable:cache.ok === true && cache.enabled !== false && cache.healthy !== false
-          && translation.ok === true && translation.enabled === true && translation.healthy !== false,
+        translationAvailable:cache.ok === true && cache.enabled === true && cache.healthy === true
+          && translation.ok === true && translation.enabled === true && translation.healthy === true,
         providerQuota:null, providerTariff:null};
       dispatchState({ type: 'health', ...result });
       return result;

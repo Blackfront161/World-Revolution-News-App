@@ -679,7 +679,7 @@ window.WRN_CONFIG = Object.freeze({
             ['recovery-audit.js', 'recovery-audit-recovery-10'],
             ['language-source-status.js', 'language-source-status-recovery-10'],
             ['zine-designer.js', 'zine-designer-recovery-10'],
-            ['shared-translation-client.js', 'translation-client-recovery-12'],
+            ['shared-translation-client.js', 'translation-client-recovery-13'],
             ['translation-dialog-l10n.js', 'translation-dialog-recovery-10']
         ]);
 

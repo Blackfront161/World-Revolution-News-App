@@ -20,7 +20,10 @@ vm.runInNewContext(code, {window,document:{documentElement:{lang:'de'}},AbortCon
     const failed=rateLimited || (healthMode==='proxy-http' && proxy) || (healthMode==='cache-http' && cache);
     const enabled=!((healthMode==='proxy-disabled' && proxy) || (healthMode==='cache-disabled' && cache));
     const healthy=!((healthMode==='proxy-guard' && proxy) || (healthMode==='cache-guard' && cache));
-    return {ok:!failed,status:failed?503:200,json:async()=>({ok:true,enabled,healthy,quotas:[quota(metric)]})};
+    const data={ok:true,enabled,healthy,quotas:[quota(metric)]};
+    if((healthMode==='cache-missing-enabled' && cache) || (healthMode==='proxy-missing-enabled' && proxy)) delete data.enabled;
+    if((healthMode==='cache-missing-healthy' && cache) || (healthMode==='proxy-missing-healthy' && proxy)) delete data.healthy;
+    return {ok:!failed,status:failed?503:200,json:async()=>data};
   }});
 (async () => {
   const api = window.WRNSharedTranslations;
@@ -36,7 +39,7 @@ vm.runInNewContext(code, {window,document:{documentElement:{lang:'de'}},AbortCon
   }
   assert(!api.statusLines([{...quota('translation_upstream'),reason:'quota_guard_unavailable',used:0,remaining:0}])[0].known);
   assert(!api.statusLines([{...quota('translation_upstream'),used:null}])[0].known);
-  for(const mode of ['proxy-http','proxy-disabled','cache-http','cache-disabled','proxy-guard','cache-guard']) {
+  for(const mode of ['proxy-http','proxy-disabled','cache-http','cache-disabled','proxy-guard','cache-guard','cache-missing-enabled','proxy-missing-enabled','cache-missing-healthy','proxy-missing-healthy']) {
     healthMode=mode;
     const status=await api.health();
     assert.equal(status.translationAvailable,false, mode+' must never claim translation availability');
