@@ -1,7 +1,7 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v117`;
+const CACHE_NAME = `${CACHE_PREFIX}v118`;
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
@@ -62,6 +62,8 @@ const SHELL = [
   './wrn-logo.webp'
 ];
 const CORE_SHELL = [
+  './app-guide.js?release=1',
+  './world-revolution-atlas-punk.svg',
   './learning-paths.json',
   './lexicon-locales.json',
   './media-directory-sources.json',

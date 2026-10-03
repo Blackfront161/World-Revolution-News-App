@@ -101,7 +101,7 @@ def test_preview_and_production_offline_caches_are_distinct():
     assert "./next.html" in preview_worker
     assert "./index.html?preview=8" in preview_worker
     assert "navigationFirst(request)" in preview_worker
-    assert "wrn-app-v2.1.2-r29" in live_worker
+    assert "wrn-app-v2.1.2-r30" in live_worker
 
 
 def test_specialty_views_are_native_preview_routes():
@@ -538,7 +538,7 @@ def test_release_checklist_is_readable_and_available():
     assert 'href="news-app-2-release-checklist.html"' not in html
     assert "news-app-2-release-checklist.html" in worker
     assert "news-app-2-release-checklist.css" in worker
-    assert "`${CACHE_PREFIX}v117`" in worker
+    assert "`${CACHE_PREFIX}v118`" in worker
     assert "if (request.mode === 'navigate')" in worker
     assert 'class="release-checklist-page"' in checklist
     assert "Bestanden" in checklist

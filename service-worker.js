@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r29';
+const APP_CACHE = 'wrn-app-v2.1.2-r30';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -178,6 +178,8 @@ const APP_SHELL = [
 // must never replace the currently active worker. Everything else in APP_SHELL
 // is an offline enhancement and may be cached best-effort.
 const CORE_APP_SHELL = [
+  './app-guide.js?release=1',
+  './world-revolution-atlas-punk.svg',
   './index.html',
   './news-app-2.css?release=57',
   './news-app-2-release.css?release=5',
