@@ -1,0 +1,18 @@
+{
+  "productCommit": "99bb9cc29c515b95a0c7e4ba9a19cf8f106d9c12",
+  "pythonAssetTests": 39,
+  "cloudflareTests": 30,
+  "clientTests": [
+    "quota_visibility with6 partial failures",
+    "shared_translation_client",
+    "translation_client_resilience",
+    "next_update_candidate"
+  ],
+  "chromeNavigationChecks": 8,
+  "cacheDryRunKiB": 22.54,
+  "proxySourceUnchangedSinceOriginalDryRun": true,
+  "radioPlayerSourceUnchanged": true,
+  "nativeArtifactBuilt": false,
+  "deploymentPerformed": false,
+  "independentReview": "pending"
+}

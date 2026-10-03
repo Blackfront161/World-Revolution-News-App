@@ -1,0 +1,30 @@
+{
+  "productCommit": "99bb9cc29c515b95a0c7e4ba9a19cf8f106d9c12",
+  "files": [
+    {
+      "path": "library-direct-link.png",
+      "bytes": 149190,
+      "sha256": "a844cc2168238890eb6c837c344e81172c1924cac9d2a3bb549eb148b83e3574"
+    },
+    {
+      "path": "navigation-browser.json",
+      "bytes": 997,
+      "sha256": "8931c7bb5afbc26a3cf5adb53f16f257427dc8af964438066137d4f0ff47d938"
+    },
+    {
+      "path": "product-manifest.json",
+      "bytes": 5437,
+      "sha256": "a7a8c344be570d90e609e023f0dc105f9475559ed970437a694705ac604485f8"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 2276,
+      "sha256": "32f68e829c91cd04470afe566bf5ed2837243e641b023f3c1b7b1c5f88e66f1f"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 549,
+      "sha256": "1888f9e23dd9a52fce425fd9fa77b7568fbafe991b3d3ec8800566a342238887"
+    }
+  ]
+}
