@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "productCommit": "7f60477b1deabf8229f7040f2ff542ee1345acc5",
+  "status": "PASS-local-independent-review-pending",
+  "pythonTests": 52,
+  "pythonSubtests": 4,
+  "navigationBrowser": "PASS",
+  "libraryBrowser": "passed",
+  "coreAndCacheContracts": "PASS",
+  "appValidator": "PASS",
+  "nodeVersion": "24.19.0",
+  "libraryRecords": 731,
+  "newMetadataRecords": 3,
+  "existingRecordsChanged": 0,
+  "nativeArtifactBuilt": false,
+  "publicationPerformed": false,
+  "independentReview": "PENDING"
+}
