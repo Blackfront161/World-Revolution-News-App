@@ -1,10 +1,76 @@
 {
-  "sourceCommit": "96e0aeafbaedb45c7f3c0fecf75bd55ce8d1dad2",
+  "sourceCommit": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
+  "supersedesSourceCommit": "96e0aeafbaedb45c7f3c0fecf75bd55ce8d1dad2",
   "files": [
     {
       "path": "prisoner-solidarity.json",
-      "bytes": 102243,
-      "sha256": "9c014e2c9a835e7e71672075682c39ae6eb63e4dbafd47b39d53c443327fb710"
+      "bytes": 105211,
+      "sha256": "a4cde7bbac10cb62826fed1222c8c7d20b787e105ad553d63299b309530a477c"
+    },
+    {
+      "path": "prisoner-solidarity.js",
+      "bytes": 48061,
+      "sha256": "2ef709db78bc1801f6b54520a4f9a256cf5b88e7205095c179623140f85eaf04"
+    },
+    {
+      "path": "index.html",
+      "bytes": 25508,
+      "sha256": "60c6a8ac99aa2183fa28cd04db43821cdf9c7940342682f48dbd2dda0b1fffc3"
+    },
+    {
+      "path": "classic.html",
+      "bytes": 40143,
+      "sha256": "488d6d971f1b848c1d2d67ecec0d98bd07e7d6dcf9433c45643a1b754020f293"
+    },
+    {
+      "path": "service-worker.js",
+      "bytes": 20102,
+      "sha256": "ddecaa155b22690ab98953684594754b07672ff8f4847b8a095433f2032f3722"
+    },
+    {
+      "path": "news-app-2-sw.js",
+      "bytes": 13044,
+      "sha256": "6aab84dbbee4bda989c382acdc8005d23c426d2161011ac4871a6b79e37a9400"
+    },
+    {
+      "path": "app-check.html",
+      "bytes": 12207,
+      "sha256": "48aa1b2855c9528fc2e2bb952c238a61a42269809da8a14878937404f77492aa"
+    },
+    {
+      "path": "release_audit_183.py",
+      "bytes": 23042,
+      "sha256": "8fa5499d7a84149bb88eb9301808bd458971532e00fc58f9a5194bd7209207bf"
+    },
+    {
+      "path": "tests/validate_app.py",
+      "bytes": 25269,
+      "sha256": "b85e0b511d29e8afad02653348c3aa176d8badee554102524e7964e78fc76bba"
+    },
+    {
+      "path": "tests/browser_prisoner_review.mjs",
+      "bytes": 6155,
+      "sha256": "e0d6d9e39046ecf9a172abd117084dbbf8ee51bd04a430bd6ccf9245544971e2"
+    },
+    {
+      "path": "tests/test_prisoner_solidarity.js",
+      "bytes": 1966,
+      "sha256": "52bfba8ac36a5c10f099047186d6858bbad197aa8b4f96f3c6010cf89ac7cde8"
+    },
+    {
+      "path": "tests/test_prisoner_solidarity_assets.py",
+      "bytes": 6833,
+      "sha256": "3d08faf35568f894282f254fc928c686c692e912ad9ecd5ca330768c2707187a"
+    },
+    {
+      "path": "tests/test_fast_start_atomic_cache.js",
+      "bytes": 6620,
+      "sha256": "37c2c2c07a394ff88ef0f97fd91dd40abe4355ff0e00853b49c65498483154df"
+    },
+    {
+      "path": "docs/PRISONER-REVIEW-2026-10-03.md",
+      "bytes": 6593,
+      "sha256": "d188a6245043001853a05d6e067550269745d90c2cfa5fd5c14a4853a6ce0e29"
     },
     {
       "path": "docs/evidence/prisoner-roadmap-2026-10-03/profile-review.json",
@@ -18,14 +84,26 @@
     },
     {
       "path": "docs/evidence/prisoner-roadmap-2026-10-03/browser-result.json",
-      "bytes": 483,
-      "sha256": "04752717d018d191d50134b60cc8e3796419e15e7abe6cf3b9438ae15cca5c07"
+      "bytes": 750,
+      "sha256": "10763b5bfd44a03b25490b37f64797976bfd54378c93378cfad62df2d2025807"
     },
     {
       "path": "docs/evidence/prisoner-roadmap-2026-10-03/app-audit.json",
-      "bytes": 33093,
-      "sha256": "103efb9521a6256fadd8a2c804aa212148516b1218d62f8131f39d29f0f02b06"
+      "bytes": 31950,
+      "sha256": "3647f6b9374afae6b64dc9254b4abdafdc5a6564691987a3b705a77584474597"
+    },
+    {
+      "path": "docs/evidence/prisoner-roadmap-2026-10-03/contract-matrix.json",
+      "bytes": 905,
+      "sha256": "006cc2e7d41b65ff6356651d4eac7482cb154d4b3bc464838984edd3c3be02a3"
+    },
+    {
+      "path": "docs/evidence/prisoner-roadmap-2026-10-03/controller-initial-review.json",
+      "bytes": 3375,
+      "sha256": "1ab59ea83d41d0206a5da470b2a1368f7d34f2fc7f03c532cdcd06b9a1ac7a53"
     }
   ],
-  "scope": "Source-only prisoner/support candidate; no Android release or new cache generation"
+  "byteBasis": "Immutable Git blob bytes; working CRLF conversion of text files does not alter the reviewed Git objects",
+  "scope": "Corrected prisoner data/module with local-calendar expiry and explicit announcement19.8/PDF19.9 discrepancy; caches r23/v111, module5/classic4; no Android artifact, Cloudflare deployment or website prisoner integration",
+  "review": "Independent re-review pending; initial findings preserved in controller-initial-review.json"
 }
