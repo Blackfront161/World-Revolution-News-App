@@ -786,7 +786,82 @@
     return { segments, matchCount: accepted.length };
   }
 
+  const NAVIGATION_VIEWS = new Set(['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved']);
+  const NAVIGATION_MEDIA = new Set(['video', 'podcasts', 'generated', 'radio', 'radio-podcasts', 'zine']);
+  const NAVIGATION_FILTERS = Object.freeze({
+    discover: ['query', 'region', 'topic', 'sportOnly', 'period', 'limit', 'sort', 'language', 'origin', 'source', 'format', 'viewMode'],
+    library: ['query', 'languages', 'source', 'format', 'limit'],
+    media: ['section', 'videoMode', 'query', 'region', 'category', 'favoritesOnly', 'languages', 'source', 'archive', 'archiveShown', 'zinePanel', 'stencilId'],
+    videoFilters: ['section', 'query', 'language', 'topic', 'region', 'source', 'platform', 'duration', 'sort'],
+    lexicon: ['section', 'query'],
+    prisoners: ['section'],
+    helpFilters: ['query', 'region', 'location', 'language', 'topic'],
+    eventFilter: ['query', 'country', 'city', 'category', 'group', 'date', 'archived', 'radius', 'regions', 'limit']
+  });
+
+  // Browser history is local. Only explicitly listed UI filters are copied;
+  // article bodies, draft letters and geolocation coordinates are excluded.
+  function navigationFilters(input = {}) {
+    const result = {};
+    Object.entries(NAVIGATION_FILTERS).forEach(([group, fields]) => {
+      const source = input[group];
+      if (!source || typeof source !== 'object' || Array.isArray(source)) return;
+      const values = {};
+      fields.forEach(key => {
+        const value = source[key];
+        if (typeof value === 'string') values[key] = value.slice(0, 256);
+        else if (typeof value === 'boolean') values[key] = value;
+        else if (typeof value === 'number' && Number.isFinite(value) && value >= 0 && value <= 10000) values[key] = value;
+        else if (Array.isArray(value) && value.every(item => typeof item === 'string')) values[key] = value.slice(0, 64).map(item => item.slice(0, 256));
+      });
+      result[group] = values;
+    });
+    return result;
+  }
+
+  function navigationRoute(hash) {
+    if (typeof hash !== 'string' || hash.length > 2048) return null;
+    const [path, query = ''] = hash.replace(/^#/, '').split('?');
+    const [view, section, extra] = path.split('/');
+    if (!NAVIGATION_VIEWS.has(view) || extra || (section && (view !== 'media' || !NAVIGATION_MEDIA.has(section)))) return null;
+    const route = { view, mediaSection: view === 'media' ? section || 'video' : '', filters: {} };
+    const group = view === 'media' ? (route.mediaSection === 'video' ? 'videoFilters' : 'media')
+      : ['discover', 'library'].includes(view) ? view : '';
+    if (group) {
+      const parameters = new URLSearchParams(query);
+      const values = {};
+      for (const key of ['source', 'language', 'topic', 'format', 'region']) {
+        if (!NAVIGATION_FILTERS[group].includes(key) && !(key === 'language' && ['media', 'library'].includes(group))) continue;
+        const value = parameters.get(key);
+        if (!value || value.length > 256 || /[\u0000-\u001f]/.test(value)) continue;
+        if (key === 'language' && ['media', 'library'].includes(group)) values.languages = value === 'all' ? [] : value.split(',').filter(Boolean).slice(0, 9);
+        else values[key] = value;
+      }
+      route.filters[group] = values;
+    }
+    return route;
+  }
+
+  function navigationHash(snapshot) {
+    const view = NAVIGATION_VIEWS.has(snapshot?.view) ? snapshot.view : 'home';
+    const section = NAVIGATION_MEDIA.has(snapshot?.mediaSection) ? snapshot.mediaSection : 'video';
+    const path = view === 'media' ? `${view}/${section}` : view;
+    const group = view === 'media' ? (section === 'video' ? 'videoFilters' : 'media')
+      : ['discover', 'library'].includes(view) ? view : '';
+    const filters = navigationFilters(snapshot?.filters)[group] || {};
+    const parameters = new URLSearchParams();
+    for (const key of ['source', 'language', 'topic', 'format', 'region']) {
+      const value = key === 'language' && filters.languages ? filters.languages.join(',') : filters[key];
+      if (typeof value === 'string' && value && value !== 'all') parameters.set(key, value);
+    }
+    // Search text, help details and locations never become shareable URL data.
+    return `#${path}${parameters.size ? `?${parameters}` : ''}`;
+  }
+
   return {
+    navigationFilters,
+    navigationRoute,
+    navigationHash,
     annotateGlossaryText,
     applyEditorialDecisions,
     articleContentParagraphs,

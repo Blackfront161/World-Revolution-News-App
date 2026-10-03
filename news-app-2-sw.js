@@ -1,7 +1,7 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v111`;
+const CACHE_NAME = `${CACHE_PREFIX}v112`;
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
@@ -26,7 +26,7 @@ const SHELL = [
   './offline-db.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=6',
+  './news-app-2-core.js?release=7',
   './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
   './podcast-content-policy.js?release=4',
@@ -47,7 +47,7 @@ const SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=67',
+  './news-app-2.js?release=68',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -71,7 +71,7 @@ const CORE_SHELL = [
   './offline-db.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=6',
+  './news-app-2-core.js?release=7',
   './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
   './podcast-content-policy.js?release=4',
@@ -92,7 +92,7 @@ const CORE_SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=67'
+  './news-app-2.js?release=68'
 ];
 const INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${CACHE_NAME}`, self.location.href)

@@ -2115,6 +2115,7 @@
   let sourceArchiveManifestGeneration = -1;
   let savedDataGeneration = 0;
   let restoringAppHistory = false;
+  let closingArticleFromHistory = false;
   let articleReturnFocus = null;
   let helpReturnFocus = null;
   const systemTheme = window.matchMedia?.('(prefers-color-scheme: light)');
@@ -2130,6 +2131,12 @@
       savedMode: state.savedMode,
       videoSection: state.videoFilters.section,
       activeVideoId: state.activeVideoId,
+      filters: core.navigationFilters(state),
+      archiveSources: [...state.sourceArchive.selectedSources],
+      archiveSourceQuery: state.sourceArchive.sourceQuery,
+      developmentsWatchedOnly: state.developmentsWatchedOnly,
+      scrollY: Math.max(0, window.scrollY || 0),
+      focusId: document.activeElement?.id || '',
       ...extra
     };
   }
@@ -2138,13 +2145,38 @@
     if (restoringAppHistory) return;
     const snapshot = appNavigationSnapshot(extra);
     try {
-      if (mode === 'replace') history.replaceState(snapshot, '', location.href);
-      else history.pushState(snapshot, '', location.href);
+      const url = new URL(location.href);
+      url.hash = core.navigationHash(snapshot);
+      if (mode === 'replace') history.replaceState(snapshot, '', url.href);
+      else history.pushState(snapshot, '', url.href);
     } catch {}
+  }
+
+  function rememberAppPosition() {
+    if (restoringAppHistory || !history.state?.wrnAppNavigation || articleDialog.open) return;
+    try {
+      history.replaceState({
+        ...history.state,
+        scrollY: Math.max(0, window.scrollY || 0),
+        focusId: document.activeElement?.id || ''
+      }, '', location.href);
+    } catch {}
+  }
+
+  function applyAppRoute(route) {
+    if (!route) return;
+    state.view = route.view;
+    if (route.mediaSection) state.media.section = route.mediaSection;
+    Object.entries(core.navigationFilters(route.filters)).forEach(([group, filters]) => Object.assign(state[group], filters));
+    if (state.view === 'discover') {
+      state.sourceArchive.selectedSources = state.discover.source === 'all' ? [] : [state.discover.source];
+      if (state.discover.source !== 'all') state.discover.period = 'all';
+    }
   }
 
   function openArticleDialogWithHistory() {
     if (articleDialog.open) return;
+    rememberAppPosition();
     const activeElement = document.activeElement;
     if (activeElement instanceof HTMLElement
       && activeElement !== document.body
@@ -8142,6 +8174,8 @@
 
   function changeView(view) {
     if (!['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved'].includes(view)) return;
+    rememberAppPosition();
+    window.clearTimeout(bindEvents.searchTimer);
     const previousView = state.view;
     if (view === 'help' && document.activeElement instanceof HTMLElement
       && document.activeElement.dataset.viewTarget === 'help') {
@@ -8819,6 +8853,7 @@
       }
       window.clearTimeout(bindEvents.searchTimer);
       if (id === 'next-discover-query') state.discover.limit = 24;
+      writeAppHistory('replace');
       bindEvents.searchTimer = window.setTimeout(() => {
         if (id === 'next-help-query') renderHelp();
         else if (id === 'next-event-query') renderEvents();
@@ -9025,6 +9060,10 @@
       if (state.activeArticle) storeReadingPosition(state.activeArticle, articleContent, true);
       stopArticlePodcast();
       stopArticleCloudPodcast();
+      if (closingArticleFromHistory) {
+        closingArticleFromHistory = false;
+        return;
+      }
       if (!restoringAppHistory) {
         window.requestAnimationFrame(() => restoreArticleReturnFocus());
       }
@@ -9642,7 +9681,10 @@
     if (!snapshot?.wrnAppNavigation) return;
     restoringAppHistory = true;
     try {
-      if (closedArticle) articleDialog.close();
+      if (closedArticle) {
+        closingArticleFromHistory = true;
+        articleDialog.close();
+      }
       state.view = snapshot.view || 'home';
       state.media.section = snapshot.mediaSection || state.media.section;
       state.media.zinePanel = snapshot.zinePanel || state.media.zinePanel;
@@ -9651,16 +9693,47 @@
       state.savedMode = snapshot.savedMode || state.savedMode;
       state.videoFilters.section = snapshot.videoSection || state.videoFilters.section;
       state.activeVideoId = snapshot.activeVideoId || '';
+      Object.entries(core.navigationFilters(snapshot.filters)).forEach(([group, filters]) => Object.assign(state[group], filters));
+      if (Array.isArray(snapshot.archiveSources)) state.sourceArchive.selectedSources = snapshot.archiveSources.filter(item => typeof item === 'string').slice(0, 64);
+      state.sourceArchive.sourceQuery = typeof snapshot.archiveSourceQuery === 'string' ? snapshot.archiveSourceQuery : '';
+      state.developmentsWatchedOnly = Boolean(snapshot.developmentsWatchedOnly);
+      window.clearTimeout(bindEvents.searchTimer);
       render();
       window.requestAnimationFrame(() => {
+        window.scrollTo({ top: Math.max(0, Number(snapshot.scrollY) || 0), behavior: 'instant' });
         if (closedArticle && restoreArticleReturnFocus()) return;
+        const focus = snapshot.focusId && document.getElementById(snapshot.focusId);
+        if (focus instanceof HTMLElement) {
+          focus.focus({ preventScroll: true });
+          return;
+        }
         document.getElementById('next-main')?.focus({ preventScroll: true });
       });
+      if (state.view === 'events') void ensureAllEventsLoaded();
+      if (state.view === 'discover' && ['30d', 'all'].includes(state.discover.period)) void loadSelectedSourceArchives();
     } finally {
       restoringAppHistory = false;
     }
   });
 
+  window.addEventListener('hashchange', () => {
+    const route = core.navigationRoute(location.hash);
+    if (!route || core.navigationHash(appNavigationSnapshot()) === location.hash) return;
+    applyAppRoute(route);
+    render();
+    writeAppHistory('replace');
+    if (state.view === 'events') void ensureAllEventsLoaded();
+    if (state.view === 'discover' && ['30d', 'all'].includes(state.discover.period)) void loadSelectedSourceArchives();
+  });
+
+  // Save the outgoing position before a control changes/replaces the DOM.
+  document.addEventListener('click', rememberAppPosition, true);
+  viewRoot.addEventListener('change', () => queueMicrotask(() => writeAppHistory('replace')));
+  viewRoot.addEventListener('click', () => queueMicrotask(() => {
+    if (!articleDialog.open) writeAppHistory('replace');
+  }));
+
+  applyAppRoute(core.navigationRoute(location.hash));
   applyUiSettings();
   applyLanguage();
   bindEvents();

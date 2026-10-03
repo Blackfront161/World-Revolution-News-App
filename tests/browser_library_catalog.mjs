@@ -81,6 +81,11 @@ try{
   result.checks.push('Learning paths resolve their current book records and open the associated glossary term.');
   failed=true;
   await page.reload();await openLibrary();
+  // The route now intentionally keeps DE/EPUB after reload. Count the full
+  // retained archive only after explicitly clearing these public filters.
+  await page.locator('[data-action="library-language-all"]').click();
+  await page.locator('#next-library-format').selectOption('all');
+  await page.locator('#next-library-source').selectOption('all');
   await page.waitForFunction(async count=>{const rows=await window.WRNStorage?.getDataset?.('news-app-2-library-feed');return rows?.length===count;},books.length);
   assert((await page.locator('.library-index-section .section-heading').innerText()).includes(String(books.length-1)));
   const saved=await page.evaluate(()=>window.WRNStorage.getDataset('news-app-2-library-feed'));

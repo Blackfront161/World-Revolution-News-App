@@ -145,14 +145,14 @@ async function verifyWorker({ workerName, oldCache, newCache, optionalAsset, for
   await verifyWorker({
     workerName: 'service-worker.js',
     oldCache: 'wrn-app-v2.1.2-r3',
-    newCache: 'wrn-app-v2.1.2-r23',
+    newCache: 'wrn-app-v2.1.2-r24',
     optionalAsset: 'classic.html',
     foreignCaches: ['wrn-news-app-2-v85', 'wrn-foreign-cache-v1', 'unrelated-cache']
   });
   await verifyWorker({
     workerName: 'news-app-2-sw.js',
     oldCache: 'wrn-news-app-2-v91',
-    newCache: 'wrn-news-app-2-v111',
+    newCache: 'wrn-news-app-2-v112',
     optionalAsset: 'next.html',
     foreignCaches: ['wrn-app-v2.1.1-r1', 'wrn-data-v2.1.1-r1', 'wrn-foreign-cache-v1']
   });

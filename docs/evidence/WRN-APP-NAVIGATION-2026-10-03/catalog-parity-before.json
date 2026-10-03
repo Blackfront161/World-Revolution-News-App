@@ -1,0 +1,1704 @@
+{
+  "schemaVersion": 1,
+  "status": "review_required_not_admission_not_merge_not_live_parity",
+  "bindings": {
+    "app": {
+      "commit": "2130e024f565f744e39f3eb4e68408884623236a",
+      "inputKind": "worktree_snapshot_hashes_are_authoritative_commit_is_context",
+      "files": {
+        "podcast-sources.json": {
+          "bytes": 49648,
+          "sha256": "fa29a65aac737c699a95faa27b5b04674cc388c8623dece48703ffb1a7ba46da"
+        },
+        "podcasts.json": {
+          "bytes": 3226272,
+          "sha256": "8812bc5b3a0acac6d500854831ee3274cefd4e6f3f67fe573c6616abf833d93d"
+        },
+        "podcast-health.json": {
+          "bytes": 18730,
+          "sha256": "c953e15eaf87bbea8089219cb3fe522b6ec65ee39b12f5ed76675c6cad147158"
+        },
+        "library-sources.json": {
+          "bytes": 5529,
+          "sha256": "5defa43d30ddd6e23d4c1667b6d14e1170ef77862606987fad40e2beb8ce8a54"
+        },
+        "library-feed.json": {
+          "bytes": 417774,
+          "sha256": "c30586e88a7519d80e1892a85cae016efe447eb6b1c0f29f4128c187875a9728"
+        },
+        "library-health.json": {
+          "bytes": 1825,
+          "sha256": "94ae0ff2b48cd92cc772c267cad17a558ad043530c0f972c2f957bc9bd506052"
+        }
+      }
+    },
+    "data": {
+      "commit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+      "inputKind": "immutable_git_commit_snapshot",
+      "files": {
+        "podcast-sources.json": {
+          "sha256": "9d092dfcc4b4646dab570a5130ec4a3ec36406b61a5835578275efd644a291aa",
+          "bytes": 47881
+        },
+        "podcasts.json": {
+          "sha256": "fcbcc68007d839973b447fcff6b8eb5e3110290571b56a5eb19ed849e12524d6",
+          "bytes": 3359153
+        },
+        "podcast-health.json": {
+          "sha256": "c9c4d9a746fae15e98fc02962ab70a157b2823f3726724ac5f5d10e4d7302302",
+          "bytes": 20873
+        },
+        "library-sources.json": {
+          "sha256": "a498bb6d672d4edb8af99d3b337c34d1292bf4e04924a3bedb3b364c4cd81f66",
+          "bytes": 5324
+        },
+        "library-feed.json": {
+          "sha256": "283f3661c2b528e3fe39da753f9ef4b18d5e07109c082705e509f5f4d75e5db8",
+          "bytes": 403986
+        },
+        "library-health.json": {
+          "sha256": "690363e30f49968dcb5f09910c7470fef39b7bd2ac2101fb5ad4518a51450d27",
+          "bytes": 1665
+        }
+      }
+    }
+  },
+  "podcastSources": {
+    "appRows": 56,
+    "dataRows": 56,
+    "sharedUniqueIds": 56,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "podcastEpisodes": {
+    "appRows": 1778,
+    "dataRows": 1865,
+    "sharedUniqueIds": 1778,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [
+      "019d22e4efad67778ba31b18",
+      "0dc1618526f0310e2bf1ae6d",
+      "13242defc1f201d3a166d4b6",
+      "1389b6568e61d4b6fea101de",
+      "16374a915016a9868aef33a8",
+      "16cbc058f9e925b0f979b4e4",
+      "176eb0356f7510a5d94ec3eb",
+      "1e1cbbc54fe47bda207f57ff",
+      "2337717558f9877fd97e119a",
+      "26529560a4ac778463789975",
+      "2662f50866665e6e72bbe97c",
+      "280ae33f3e40a32c1978b794",
+      "2b8891ba99c89e42a3bcf07e",
+      "2ba293d918aaac60262fb246",
+      "32c8d211b4b280ccf7547435",
+      "3a5ef2f879ddd2f50abbc869",
+      "3b31b9206837e70726edcd33",
+      "3be64ef1f67af27aa5c89728",
+      "3e453f965c60db92c6c29745",
+      "3f6a13eea4a82ca98785581d",
+      "3f8a8d918d918f25d84bfacf",
+      "41bd63aa3a4282d577340f11",
+      "49b5b039824a55b25eeae0a5",
+      "4d52180a130dfe2cddafbefe",
+      "505a35d28a34489596acf0c2",
+      "507baf1418ee954cd245d181",
+      "53da02f253887e295a7fd621",
+      "543fc8ff5714f10c0a4a3e4d",
+      "56ec5f16a649a8ec1d8a4411",
+      "5e26fce9d98aaa1412477a8c",
+      "60482d2442b235d703dbb34a",
+      "61d828283954235ef954ba7f",
+      "68b2faab6bfad1b616083098",
+      "69458b516df9dafe8fa21f26",
+      "6b123dc52f0081dfbee46612",
+      "6dc2cc4b788f69c50489c2d2",
+      "6ea8709413472b7399c32b34",
+      "6f1a5fbe16b3d9eb5d48bb9d",
+      "7163bf0824776abdb9be82e7",
+      "7371df5358e2c0e6145337c5",
+      "73eb8c018e0da22fc51a5f06",
+      "77aeb757eec06a8f834758da",
+      "7afdcf55c34e41aeaf38ddb9",
+      "7c4454924bcf5d84fa6faed4",
+      "7c8108aa8e6710decbe91078",
+      "7ddb914b8a6e93fe59c5f56a",
+      "7e52c83d8ea4c5b3a976400d",
+      "7ee0ed894fd0c6f40ac5b8bd",
+      "7ee7322ddfd62b04b17ae1bf",
+      "806859dcfa779a53e81a8a38",
+      "8371e25759715b2a922e0343",
+      "87f28e9b345f5713fb853272",
+      "8d09e5d2aab9d2b4b2b21e63",
+      "9636b9fd608baa6867956733",
+      "96b63fde870bfa7216e9a949",
+      "999f0bd1c678ad702de32849",
+      "a115c4474d801a0699e9e409",
+      "a27c64959daf8edf26f865af",
+      "a73a5ce7a715c34690b7f97e",
+      "a7b473d0c706cacd2be7ed68",
+      "abf317009cfd4e89afd0569f",
+      "aeb31ab3de0c5edc14f52427",
+      "afbbf46015400e5b5895d981",
+      "b13e669826d3ad45488c765b",
+      "b66b08daa6246b189c6f2c15",
+      "bb9a7668791c61829cc66dd2",
+      "c06dacfea2a2f21283437b8a",
+      "c18d6d7d42aa8484a6561516",
+      "c4ce74e28d90f31ccfcf9863",
+      "c83d7b7fa8d0fe205b7678e5",
+      "c8675e669e0cb601e141cc82",
+      "cb94448dfcf95de7b5f2a4e2",
+      "cc213d04f4fe95c5644641fb",
+      "cc39723476a23282e3175d24",
+      "cc64b0b9d1dc0ef7543f7fb5",
+      "ce0e6cc0e0a1f6e0f5d68925",
+      "cf21bcadcfb8c85a37b39cae",
+      "d4b9425b301a8a1b8079ac83",
+      "d9eaded1bb1fdcbf6b4f0bea",
+      "dab65efa6c5fbc303612362f",
+      "dc4c1b976d69fcca29dd67af",
+      "dea12384977df080251d3978",
+      "df4e2a0f3ffd168c5082b6ce",
+      "e1b3722cae689ddf5169e62b",
+      "f10bd5ae9b24b022ec00cf85",
+      "f6ee7f4f4641835188a7d655",
+      "ff958a03fc63253ccbeeaca5"
+    ],
+    "sharedIdFieldChanges": [
+      {
+        "id": "0b8ba0d74c08ae2911d6f3f7",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "2b41470c1ff6e0688d1a63cc",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "32c31c73091163ff9abc4e87",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "353c3fe1afa90bc631c11ab0",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "35ae67d13d7b4483de96f839",
+        "fields": [
+          "episodeUrl",
+          "published"
+        ]
+      },
+      {
+        "id": "3b81ee67adc7725475704cdb",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "3f7be1258f7c96ea1ebfa2ce",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "45d074093a82cbcea2aacc46",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "499c99f3d0da981ca49b29c6",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6c8dbc75038e4ed3e8b8126b",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "7c73633afa2f217ba9336b4f",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "87194b19c4e6cf09d2204628",
+        "fields": [
+          "episodeUrl",
+          "published"
+        ]
+      },
+      {
+        "id": "8b22e2cb009f9e863a0fb334",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "9a48dce5272037ba856c5949",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "9fb7e4f8d1d6b28a685be834",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b00b23cc6993206f2a6785b6",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b4551355733affb99f9bc552",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b5c6989de4abdd6899e458ce",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "c49623b0137474726052a452",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "e9e40c4ffbb347c811ef1162",
+        "fields": [
+          "episodeUrl"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "podcastFindings": {
+    "app": {
+      "sourcesWithoutId": [],
+      "episodesWithoutResolvableSource": [],
+      "episodesFromExplicitlyDisabledSource": [
+        {
+          "episodeId": "62c15a2655e9477e8fa88cc4",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "95861a53ccc511bbfeffc189",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b171337f4b8a6c4b4983d36a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "38604f4a9c0bbf787c201d91",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "42ee8a050ccf6c1633964478",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "26910a36a630b8462b6b98c7",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "183ee9ca46cfd943721b4e0e",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e2400410a27352b32cb68630",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "32025edc7b8e461455feaf3d",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c04740521350383414217381",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a5d77c4b1b629fb47751c0e5",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "0386121b9210af657dba553f",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6faf70eedf0703c672c2fdf9",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "2e559359c88ae1ff5893f568",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "29e017aa8c280dff4a2777ea",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06b2389f9f424850314c794a",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "dfa2b63d0f68fa731fb9cda3",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c389b3f211650e3549483bfd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "67376ce93adf162a190f50a3",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8db06f50b104709688638d47",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a14b7f6707e9abc4b37209fd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e75562f6eda080ad3dc9c7b2",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f5b5c77a6d25b895179b9a17",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a7b76ddf46b71b02d790356e",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f062bca03df64f250d6c886e",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "2cb96d2ed5536f491005bdaa",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "cb8eb9b14ca95836ffd2c65a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "027504aeaeb15689209b49e9",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f955642e5ecfaf488ef7aad7",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e865bc15b6556d20ce90348d",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9d11b518db7852363d9eda91",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4c0bfe3b9a8e7f022cf74697",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "372925cd9cdc9fe124357cfd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e01c1d2b1d29b238c8b9dd74",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "051189bb06d39b4a64bc6885",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "91df442e662f04e3d53f15d5",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "038cb05863bb970100de4414",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "5e569738433159a711fea988",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "2e478770731f1a3813441af9",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "02693a1930b1d6ce6a159b9a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9458240651941c71f6facadf",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "dc799f10cf4eb6208c7a7772",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8037904d8a5a5a15dcd369d8",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a01c8981c96e32e5b3f00446",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e0c833cf680c81be405daae9",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "48b66a9c8ef1d53ef63e92b0",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "77ba88e2a5ec4608b2c35eb5",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4e50ee266931f7a911cd8a6a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "480e5036d413966333651a31",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f3e1e6d746d96424e61c55df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "746703ca6df9df74311326ef",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "64be65dd6f49cffe1ac96ba0",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9475ca71d46b1e8474579fbd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06cbc9f12ae5e543511d7cd5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bacd278345cac4c595a5fea8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "ef3cd47bb5d09f092bd57342",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6a6ca578894b7eced85a0ca6",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b83e77ecbe480abc5e485dac",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "7263e67ff0d284b0e5d862ac",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "af54b9c284ea7c10011ba6df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "095c48e0669879057e89eeb5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "719eeacb2de223fe7e6454ee",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c2856b150dc5e6bade935792",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "83a6d26dd467171388939174",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1c1552fcc832c3ea332d6881",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "23949da7031e04c33b66c365",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8f66b2de892c86f8b4b3184c",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "101c4cf058a16b5effa74af1",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "ed74a555ad194e7fb7d37940",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bda498ac547e3a976af333eb",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1abee1f5cd2b4c6a759c675d",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6d38b6f11b0159717394a840",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f725868747f981281c13f9f8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b4aa7f7af9494ce1fcc74f6b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e840b24d812f0952251c031b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "49cbfbf1111d292c735edfd2",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "cd62104f395370dd5fbb7fcf",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9d49f3bf4e6a186910ba95e5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a892fd5a564b25b4fb64e661",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "7d4029f4db23162378b17a12",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f0d3243439a8b78e8d0d1ead",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06c265a0fa9f63548cd6f120",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4ce94ed963430edad2e50407",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "586ab2afef56b2cb6b3b1bf7",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "668f6a3ade457110cbaeaa11",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6880d1bb1963c73491990477",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "653ef582b2acdbedcb5f279e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "898dcf42a464098b4a49548e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "fcf4244714784849176f731f",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        }
+      ]
+    },
+    "data": {
+      "sourcesWithoutId": [],
+      "episodesWithoutResolvableSource": [],
+      "episodesFromExplicitlyDisabledSource": [
+        {
+          "episodeId": "62c15a2655e9477e8fa88cc4",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "95861a53ccc511bbfeffc189",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b171337f4b8a6c4b4983d36a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "38604f4a9c0bbf787c201d91",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "42ee8a050ccf6c1633964478",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "26910a36a630b8462b6b98c7",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "183ee9ca46cfd943721b4e0e",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e2400410a27352b32cb68630",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "32025edc7b8e461455feaf3d",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c04740521350383414217381",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a5d77c4b1b629fb47751c0e5",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "0386121b9210af657dba553f",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6faf70eedf0703c672c2fdf9",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "2e559359c88ae1ff5893f568",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "29e017aa8c280dff4a2777ea",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06b2389f9f424850314c794a",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "dfa2b63d0f68fa731fb9cda3",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c389b3f211650e3549483bfd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "67376ce93adf162a190f50a3",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8db06f50b104709688638d47",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a14b7f6707e9abc4b37209fd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e75562f6eda080ad3dc9c7b2",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f5b5c77a6d25b895179b9a17",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a7b76ddf46b71b02d790356e",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f062bca03df64f250d6c886e",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "2cb96d2ed5536f491005bdaa",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "cb8eb9b14ca95836ffd2c65a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "027504aeaeb15689209b49e9",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f955642e5ecfaf488ef7aad7",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e865bc15b6556d20ce90348d",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9d11b518db7852363d9eda91",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4c0bfe3b9a8e7f022cf74697",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "372925cd9cdc9fe124357cfd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e01c1d2b1d29b238c8b9dd74",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "051189bb06d39b4a64bc6885",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "91df442e662f04e3d53f15d5",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "038cb05863bb970100de4414",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "5e569738433159a711fea988",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "2e478770731f1a3813441af9",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "02693a1930b1d6ce6a159b9a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9458240651941c71f6facadf",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "dc799f10cf4eb6208c7a7772",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8037904d8a5a5a15dcd369d8",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a01c8981c96e32e5b3f00446",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e0c833cf680c81be405daae9",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "48b66a9c8ef1d53ef63e92b0",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "77ba88e2a5ec4608b2c35eb5",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4e50ee266931f7a911cd8a6a",
+          "sourceId": "infowar-greece",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "480e5036d413966333651a31",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f3e1e6d746d96424e61c55df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "746703ca6df9df74311326ef",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "64be65dd6f49cffe1ac96ba0",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9475ca71d46b1e8474579fbd",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06cbc9f12ae5e543511d7cd5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bacd278345cac4c595a5fea8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "ef3cd47bb5d09f092bd57342",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6a6ca578894b7eced85a0ca6",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b83e77ecbe480abc5e485dac",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "7263e67ff0d284b0e5d862ac",
+          "sourceId": "l-orage",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "af54b9c284ea7c10011ba6df",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "095c48e0669879057e89eeb5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "719eeacb2de223fe7e6454ee",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "c2856b150dc5e6bade935792",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "83a6d26dd467171388939174",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1c1552fcc832c3ea332d6881",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "23949da7031e04c33b66c365",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "8f66b2de892c86f8b4b3184c",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "101c4cf058a16b5effa74af1",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "ed74a555ad194e7fb7d37940",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "bda498ac547e3a976af333eb",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "1abee1f5cd2b4c6a759c675d",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6d38b6f11b0159717394a840",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f725868747f981281c13f9f8",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "b4aa7f7af9494ce1fcc74f6b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "e840b24d812f0952251c031b",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "49cbfbf1111d292c735edfd2",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "cd62104f395370dd5fbb7fcf",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "9d49f3bf4e6a186910ba95e5",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "a892fd5a564b25b4fb64e661",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "7d4029f4db23162378b17a12",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "f0d3243439a8b78e8d0d1ead",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "06c265a0fa9f63548cd6f120",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "4ce94ed963430edad2e50407",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "586ab2afef56b2cb6b3b1bf7",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "668f6a3ade457110cbaeaa11",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "6880d1bb1963c73491990477",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "653ef582b2acdbedcb5f279e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "898dcf42a464098b4a49548e",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        },
+        {
+          "episodeId": "fcf4244714784849176f731f",
+          "sourceId": "contrabanda-specials",
+          "disposition": "exclude_from_active_intake_retention_requires_review"
+        }
+      ]
+    }
+  },
+  "dataEpisodesBlockedByExplicitAppPolicy": [
+    {
+      "episodeId": "62c15a2655e9477e8fa88cc4",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "95861a53ccc511bbfeffc189",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b171337f4b8a6c4b4983d36a",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "38604f4a9c0bbf787c201d91",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "42ee8a050ccf6c1633964478",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "26910a36a630b8462b6b98c7",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "183ee9ca46cfd943721b4e0e",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e2400410a27352b32cb68630",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "32025edc7b8e461455feaf3d",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c04740521350383414217381",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "a5d77c4b1b629fb47751c0e5",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "0386121b9210af657dba553f",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "6faf70eedf0703c672c2fdf9",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "2e559359c88ae1ff5893f568",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "29e017aa8c280dff4a2777ea",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "06b2389f9f424850314c794a",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "dfa2b63d0f68fa731fb9cda3",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c389b3f211650e3549483bfd",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "67376ce93adf162a190f50a3",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8db06f50b104709688638d47",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "a14b7f6707e9abc4b37209fd",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e75562f6eda080ad3dc9c7b2",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f5b5c77a6d25b895179b9a17",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "a7b76ddf46b71b02d790356e",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f062bca03df64f250d6c886e",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "2cb96d2ed5536f491005bdaa",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "cb8eb9b14ca95836ffd2c65a",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "027504aeaeb15689209b49e9",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f955642e5ecfaf488ef7aad7",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e865bc15b6556d20ce90348d",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "9d11b518db7852363d9eda91",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "4c0bfe3b9a8e7f022cf74697",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "372925cd9cdc9fe124357cfd",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e01c1d2b1d29b238c8b9dd74",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "051189bb06d39b4a64bc6885",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "91df442e662f04e3d53f15d5",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "038cb05863bb970100de4414",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "5e569738433159a711fea988",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "2e478770731f1a3813441af9",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "02693a1930b1d6ce6a159b9a",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "9458240651941c71f6facadf",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "dc799f10cf4eb6208c7a7772",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8037904d8a5a5a15dcd369d8",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "a01c8981c96e32e5b3f00446",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e0c833cf680c81be405daae9",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "48b66a9c8ef1d53ef63e92b0",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "77ba88e2a5ec4608b2c35eb5",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "4e50ee266931f7a911cd8a6a",
+      "sourceId": "infowar-greece",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "480e5036d413966333651a31",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f3e1e6d746d96424e61c55df",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "746703ca6df9df74311326ef",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "64be65dd6f49cffe1ac96ba0",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "9475ca71d46b1e8474579fbd",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "06cbc9f12ae5e543511d7cd5",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "bacd278345cac4c595a5fea8",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ef3cd47bb5d09f092bd57342",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "6a6ca578894b7eced85a0ca6",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b83e77ecbe480abc5e485dac",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "7263e67ff0d284b0e5d862ac",
+      "sourceId": "l-orage",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "af54b9c284ea7c10011ba6df",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "095c48e0669879057e89eeb5",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "719eeacb2de223fe7e6454ee",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c2856b150dc5e6bade935792",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "83a6d26dd467171388939174",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "1c1552fcc832c3ea332d6881",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "23949da7031e04c33b66c365",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8f66b2de892c86f8b4b3184c",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "101c4cf058a16b5effa74af1",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ed74a555ad194e7fb7d37940",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "bda498ac547e3a976af333eb",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "1abee1f5cd2b4c6a759c675d",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "6d38b6f11b0159717394a840",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f725868747f981281c13f9f8",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b4aa7f7af9494ce1fcc74f6b",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e840b24d812f0952251c031b",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "49cbfbf1111d292c735edfd2",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "cd62104f395370dd5fbb7fcf",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "9d49f3bf4e6a186910ba95e5",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "a892fd5a564b25b4fb64e661",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "7d4029f4db23162378b17a12",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f0d3243439a8b78e8d0d1ead",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "06c265a0fa9f63548cd6f120",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "4ce94ed963430edad2e50407",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "586ab2afef56b2cb6b3b1bf7",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "668f6a3ade457110cbaeaa11",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "6880d1bb1963c73491990477",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "653ef582b2acdbedcb5f279e",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "898dcf42a464098b4a49548e",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "fcf4244714784849176f731f",
+      "sourceId": "contrabanda-specials",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    }
+  ],
+  "librarySources": {
+    "appRows": 9,
+    "dataRows": 9,
+    "sharedUniqueIds": 9,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "libraryTitles": {
+    "appRows": 728,
+    "dataRows": 731,
+    "sharedUniqueIds": 728,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [
+      "anarchist-library-en-2d5b6e24f14f5d4522fd6da6",
+      "anarchist-library-en-49398dbbcd44de50d9e268e6",
+      "anarchist-library-es-ef9b13d1c8cc429a6d3cd9c0"
+    ],
+    "sharedIdFieldChanges": [],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "possibleAliasesByExactOriginalLink": []
+  },
+  "mergeRules": [
+    "Preserve stable episode/book IDs and saved state; do not infer admission from presence.",
+    "Review incoming-only and archive-only records separately against revocations and retention rights.",
+    "Same source origin or original link proposes a review; it does not prove issuer identity or rights.",
+    "Respect explicit disabled-language/source policy before any active projection.",
+    "Do not publish bodies, audio, artwork or descriptions based on a generic license label."
+  ]
+}

@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r23';
+const APP_CACHE = 'wrn-app-v2.1.2-r24';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -30,7 +30,7 @@ const APP_SHELL = [
   './native-device-bridge.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=6',
+  './news-app-2-core.js?release=7',
   './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
   './podcast-content-policy.js?release=4',
@@ -51,7 +51,7 @@ const APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=67',
+  './news-app-2.js?release=68',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -184,7 +184,7 @@ const CORE_APP_SHELL = [
   './offline-db.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=6',
+  './news-app-2-core.js?release=7',
   './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
   './podcast-content-policy.js?release=4',
@@ -205,7 +205,7 @@ const CORE_APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=67'
+  './news-app-2.js?release=68'
 ];
 const APP_INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${APP_CACHE}`, self.location.href)

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS-metadata-only-local-candidate",
+  "upstreamCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+  "upstreamLibrarySha256": "283f3661c2b528e3fe39da753f9ef4b18d5e07109c082705e509f5f4d75e5db8",
+  "previousLibrarySha256": "c30586e88a7519d80e1892a85cae016efe447eb6b1c0f29f4128c187875a9728",
+  "candidateLibrarySha256": "283f3661c2b528e3fe39da753f9ef4b18d5e07109c082705e509f5f4d75e5db8",
+  "preservedRecords": 728,
+  "candidateRecords": 731,
+  "addedIds": [
+    "anarchist-library-es-ef9b13d1c8cc429a6d3cd9c0",
+    "anarchist-library-en-49398dbbcd44de50d9e268e6",
+    "anarchist-library-en-2d5b6e24f14f5d4522fd6da6"
+  ],
+  "existingRecordsChanged": 0,
+  "existingRecordsRemoved": 0,
+  "newSources": 0,
+  "bookBodiesOrFilesFetched": false,
+  "publicationPerformed": false,
+  "reviewBasis": "Exact metadata from independently accepted Website candidate d738a94; all App source IDs and existing source fields match Data5304fa0. Existing merge/takedown contract used."
+}
