@@ -407,7 +407,7 @@
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "combined-library-regional-solidarity-reviewed-rollout-final-evidence-pending",
+      "status": "combined-library-regional-solidarity-live-verified-http3-load-and-parity-open",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -490,7 +490,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Bestehender Website-Arbeiter veröffentlicht akzeptierten Kombinationsstand d738a94/2d890ff:731Bücher,4frischeRegionaltermine,5Solidaritätslinks. Unabhängiger Paketreview PASS; abschließendes Live-/Offlineprotokoll steht bei diesem Roadmap-Update noch aus. Gemessene HTTP/3-Kataloglatenz12–19s überschreitet im separaten Testbrowser das Ladefenster; HTTPS/HTTP1.1 liefert dieselben geprüften Bytes in unter1s. Produktions-Ladeverhalten gezielt prüfen/verbessern, keine Quota-/Offlineguards abschalten. Danach Podcastkonflikte im gleichen Workflow lösen; kein zweiter Websitewriter.",
+      "remaining": "Kombinationsstand d738a94 live:731Bücher,4Regionaltermine,5Solidaritätslinks;45/45öffentlicheDatei-/Headerprüfungen und voller Offline-Neustart über HTTPS/HTTP1.1 PASS. HTTP/3-Kataloglatenz12–19s bleibt offen. Bestehender Website-Arbeiter setzt Podcast-ID-/Rechteabgleich fort; neuere Homeauswahl/Videoangleichung noch offen, kein zweiter Websitewriter.",
       "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
       "latestHandoff": {
         "imageCommit": "b777198",
@@ -526,7 +526,27 @@
         "websiteFiles": 46,
         "hostingFiles": 49,
         "offlineShellBytes": 7830361,
-        "finalLiveEvidence": "pending at capture; existing Website worker owns rollout"
+        "finalLiveEvidence": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIVE-D738A94-2026-10-03/REPORT.md"
+      },
+      "liveResult": {
+        "productCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+        "status": "PUBLISHED-VERIFIED-WITH-HTTP3-LOAD-LIMITATION",
+        "evidence": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIVE-D738A94-2026-10-03/REPORT.md",
+        "receiptSha256": "e379e49da9605dc8754c390f51d3d0bd6cd229a7f6961b40973cfbe13f49c4e2",
+        "publicFilesVerified": 45,
+        "headerChecks": "PASS",
+        "offlineRestart": "PASS over HTTPS/HTTP1.1",
+        "transportLimitation": "HTTP/3 catalogue12–19s exceeds10s load window; existing Website task remains open",
+        "counts": {
+          "books": 731,
+          "terms": 167,
+          "learningPaths": 4,
+          "regionalEvents": 4,
+          "publicSupportLinks": 5,
+          "radios": 28,
+          "podcastOriginalLinks": 1722,
+          "videoOriginalLinks": 16
+        }
       }
     },
     {
@@ -729,7 +749,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "App-Kandidat und Data haben dieselben731Bibliotheksmetadaten;728Alt-Records feldgleich, genau3geprüfteErgänzungen. Website-Kandidat731 unabhängig PASS, Live-/Offlineabschluss beim bestehenden Website-Arbeiter prüfen. App-Podcastabgleich:1778gemeinsameIDs,87zusätzlicheDataIDs,20Feldänderungen; zweiLORA-Wiederverwendungen und16Final-Straw-Migrationen getrennt prüfen.89Data-Altzeilen aus3explizitgesperrtenAppquellen bleiben gesperrt; keine der87neuenIDs ist betroffen. Keine pauschale Audio-/Volltextfreigabe.",
+      "remaining": "App-Kandidat und Data haben dieselben731Bibliotheksmetadaten;728Alt-Records feldgleich, genau3geprüfteErgänzungen. Website731 live und Offline über HTTPS/HTTP1.1 geprüft; HTTP/3-Ladeproblem separat offen. App-Podcastabgleich:1778gemeinsameIDs,87zusätzlicheDataIDs,20Feldänderungen; zweiLORA-Wiederverwendungen und16Final-Straw-Migrationen getrennt prüfen.89Data-Altzeilen aus3explizitgesperrtenAppquellen bleiben gesperrt; keine der87neuenIDs ist betroffen. Keine pauschale Audio-/Volltextfreigabe.",
       "projects": [
         "Data",
         "App",
@@ -860,13 +880,13 @@
       "currentScope": {
         "appBundledLibraryItems": 731,
         "dataLibraryItems": 731,
-        "websiteLiveLibraryItems": 728,
+        "websiteLiveLibraryItems": 731,
         "lexiconTerms": 167,
         "learningPaths": 4,
         "note": "Anzahlen belegen Katalogumfang, keine Volltextrechte oder vollständige Mehrsprachigkeit.",
         "appBundleStatus": "reviewed source candidate; no new native artifact or Store upload",
         "websiteCandidateLibraryItems": 731,
-        "websiteLiveLibraryItemsNote": "Earlier live728 observation; final new rollout evidence pending at capture."
+        "websiteLiveEvidence": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIVE-D738A94-2026-10-03/REPORT.md"
       },
       "projects": [
         "Data",
@@ -1054,7 +1074,7 @@
         "Next Android",
         "Data"
       ],
-      "remaining": "Regionalrevision4 akzeptiert und in bestehenden Website-Kombinationsstand d738a94 integriert; finaler Live-/Offlinebeleg noch beim Website-Arbeiter ausstehend. Andere redaktionelle Dossiers unverändert offen.",
+      "remaining": "Regionalrevision4 im bestehenden Website-Kombinationsstand d738a94 veröffentlicht und gebunden live geprüft. Interner nativer Code27 wurde nicht verändert; nächste Nativepaketquelle/Abnahme und andere redaktionelle Dossiers bleiben offen.",
       "priorityScope": "Nur Regionalterminkatalog P0; übrige Claims/Dossiers/Solidaritätsaktionen bleiben P2.",
       "regionalBlocker": {
         "path": "C:\\Users\\patri\\Documents\\World Revolution News\\wrn-next-live-work\\packages\\browser-content\\src\\regional-events\\events.json",
@@ -1076,9 +1096,9 @@
         {
           "id": "regional-package-renewed",
           "priority": 0,
-          "status": "source-and-combined-website-package-independent-PASS-final-live-evidence-pending",
+          "status": "source-combined-website-package-and-live-PASS-native-package-followup-open",
           "acceptance": "Tatsächliche Quellenprüfung, neue Regionalrevision/Hashpins, Paketvorprüfung und Livezustand belegt.",
-          "remaining": "Existing Website worker finishes actual live/readback/offline acceptance; no native Code27 update performed."
+          "remaining": "Website path complete; immutable internal nativeCode27 unchanged, next native package validation separate."
         },
         {
           "id": "editorial-claims-dossiers",
@@ -1101,7 +1121,27 @@
         "packageFiles": 46,
         "packageShellId": "e0a50e0cd362402653bd5257b7e9a41a551900d070d31f2ccdf1230039da2c82",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal/docs/evidence/WRN-REGIONAL-REVIEW-2026-10-03/REPORT.md",
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "websitePublication": {
+          "productCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+          "status": "PUBLISHED-VERIFIED-WITH-HTTP3-LOAD-LIMITATION",
+          "evidence": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIVE-D738A94-2026-10-03/REPORT.md",
+          "receiptSha256": "e379e49da9605dc8754c390f51d3d0bd6cd229a7f6961b40973cfbe13f49c4e2",
+          "publicFilesVerified": 45,
+          "headerChecks": "PASS",
+          "offlineRestart": "PASS over HTTPS/HTTP1.1",
+          "transportLimitation": "HTTP/3 catalogue12–19s exceeds10s load window; existing Website task remains open",
+          "counts": {
+            "books": 731,
+            "terms": 167,
+            "learningPaths": 4,
+            "regionalEvents": 4,
+            "publicSupportLinks": 5,
+            "radios": 28,
+            "podcastOriginalLinks": 1722,
+            "videoOriginalLinks": 16
+          }
+        }
       }
     },
     {
@@ -2306,7 +2346,7 @@
     ],
     "firstPackage": {
       "name": "Inhalte zuverlässig finden, öffnen und wiederfinden",
-      "status": "in-progress; podcast publication repaired, combined Website reviewed/rolling out, App library and navigation subset independently accepted",
+      "status": "in-progress; podcast publication and combined Website live verified, App library/navigation subset independently accepted; transport/content/platform follow-ups remain",
       "phases": [
         {
           "order": 1,
@@ -2449,14 +2489,16 @@
       "packageFiles": 46,
       "packageShellId": "e0a50e0cd362402653bd5257b7e9a41a551900d070d31f2ccdf1230039da2c82",
       "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal/docs/evidence/WRN-REGIONAL-REVIEW-2026-10-03/REPORT.md",
-      "publicationPerformed": false,
+      "publicationPerformed": true,
       "combinedWebsiteProductCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
-      "combinedWebsiteReview": "PASS; rollout final evidence pending at P1 capture"
+      "combinedWebsiteReview": "PASS; Website live/readback/offline verified with HTTP/3 load limitation",
+      "publicationScope": "Website d738a94; no native artifact",
+      "liveEvidence": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIVE-D738A94-2026-10-03/REPORT.md"
     },
     "websiteCoordination": "Bestehender Chat WRN Website – Inhaltsparität (01a0f307-a269-7461-afd0-3daf4309da0f) erhielt Quell-/Belegcommits und Paketpfade und bestätigte die laufende Integration in seinen bestehenden Zweig. Podcast-/Bibliotheksabgleich folgt dort; fremder WIP erhalten.",
     "currentPlay": "Code32 Produktion und Code27 interner Test unverändert; kein neuer nativer Build oder Upload in diesem Schritt.",
     "firstPackageComplete": false,
-    "next": "Existing Website rollout final evidence, podcast identities/restrictions, remaining navigation/platform scenarios and existing radio/quota/help tasks."
+    "next": "Resolve existing podcast identity/policy drift and Website HTTP/3 load issue; finish navigation/platform and radio/quota/help scenarios."
   },
   "roadmapImplementationP120261003": {
     "report": "docs/ROADMAP-P1-FORTSETZUNG-2026-10-03.md",
@@ -2504,6 +2546,26 @@
     "websiteCandidateLibrary": 731,
     "appDeploymentPerformed": false,
     "nativeArtifactBuilt": false,
-    "wholeFirstPackageComplete": false
+    "wholeFirstPackageComplete": false,
+    "websiteLive": {
+      "productCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+      "status": "PUBLISHED-VERIFIED-WITH-HTTP3-LOAD-LIMITATION",
+      "evidence": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIVE-D738A94-2026-10-03/REPORT.md",
+      "receiptSha256": "e379e49da9605dc8754c390f51d3d0bd6cd229a7f6961b40973cfbe13f49c4e2",
+      "publicFilesVerified": 45,
+      "headerChecks": "PASS",
+      "offlineRestart": "PASS over HTTPS/HTTP1.1",
+      "transportLimitation": "HTTP/3 catalogue12–19s exceeds10s load window; existing Website task remains open",
+      "counts": {
+        "books": 731,
+        "terms": 167,
+        "learningPaths": 4,
+        "regionalEvents": 4,
+        "publicSupportLinks": 5,
+        "radios": 28,
+        "podcastOriginalLinks": 1722,
+        "videoOriginalLinks": 16
+      }
+    }
   }
 }
