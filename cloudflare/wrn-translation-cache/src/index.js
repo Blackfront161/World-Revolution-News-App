@@ -6,6 +6,7 @@ import {
   serviceEnabled
 } from '../../shared/quota-client.js';
 import { translationCacheKey } from '../../shared/translation-cache-key.js';
+import { publicOperationalStatus } from '../../revolution-proxy/src/operations.js';
 import { BodyTooLargeError, readBoundedJson } from '../../revolution-proxy/src/request-body.js';
 
 export { QuotaCoordinator };
@@ -230,6 +231,9 @@ export default {
       request.method === 'GET' &&
       (url.pathname === '/' || url.pathname === '/health')
     ) {
+      if (request.headers.get('Origin') && !originAllowed(request, env)) {
+        return jsonResponse({error:'Origin not allowed'}, 403, {...cors, 'Cache-Control':'no-store'});
+      }
       return jsonResponse(
         {
           ok: true,
@@ -241,10 +245,11 @@ export default {
             : 'edge-cache-fallback',
           upstreamConfigured: Boolean(env.UPSTREAM_URL),
           ttlSeconds: cacheTtl(env),
-          quotas: [await quotaStatus(env, 'translation_kv_writes')]
+          enabled: serviceEnabled(env, 'WRN_TRANSLATION_ENABLED'),
+          ...publicOperationalStatus([await quotaStatus(env, 'translation_kv_writes')])
         },
         200,
-        cors
+        {...cors, 'Cache-Control': 'no-store'}
       );
     }
 

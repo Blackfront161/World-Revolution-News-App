@@ -27,5 +27,19 @@ test('missing coordinator reports unknown and never reserves quota or calls a pr
   const data=await (await proxy.fetch(new Request('https://proxy.test/?action=translation.status'),{},{})).json();
   assert.equal(data.healthy,false); assert.equal(data.quotas[0].available,false);
   const health=await (await cache.fetch(new Request('https://cache.test/health'),{},{})).json();
-  assert.equal(health.quotas[0].reason,'quota_guard_unavailable');
+  assert.equal(health.healthy,false); assert.equal(health.quotas[0].available,false);
+});
+
+test('cache health allowlists aggregate counters and is never stored by HTTP caches',async()=>{
+  const reads=[];
+  const env={WRN_TRANSLATION_ENABLED:'false',QUOTA_COORDINATOR:{getByName(name){reads.push(name);return {async status(input){return {...input,used:945,remaining:5,privateMessage:'SECRET',internalTenant:'admin',trace:{requestText:'private article'}};}};}}};
+  const response=await cache.fetch(new Request('https://cache.test/health',{headers:{Origin:'https://solinaridao.com'}}),env,{});
+  const data=await response.json();
+  assert.equal(data.enabled,false); assert.equal(data.healthy,true); assert.equal(data.quotas[0].used,945);
+  assert.deepEqual(Object.keys(data.quotas[0]).sort(),['metric','label','used','limit','remaining','percent','threshold','resetAt','available'].sort());
+  for(const secret of ['SECRET','privateMessage','internalTenant','requestText','private article']) assert(!JSON.stringify(data).includes(secret));
+  assert.deepEqual(reads,['wrn-quota:translation_kv_writes']);
+  assert.equal(response.headers.get('Cache-Control'),'no-store');
+  assert.equal((await cache.fetch(new Request('https://cache.test/health',{headers:{Origin:'https://untrusted.test'}}),env,{})).status,403);
+  assert.equal(reads.length,1);
 });

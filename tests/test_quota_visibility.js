@@ -7,7 +7,7 @@ const calls = [], states = [], timers = [];
 const window = {WRN_CONFIG:{sharedTranslationUrl:'https://cache.test',proxyUrl:'https://proxy.test'},
   setTimeout(fn, ms) {timers.push(ms); return setTimeout(fn, ms);}, clearTimeout,
   dispatchEvent(event) {states.push(event.detail);}};
-let rateLimited = false;
+let rateLimited = false, healthMode = '';
 const quota = metric => ({metric,used:940,limit:950,remaining:10,resetAt:'2026-10-04T00:00:00.000Z',available:true});
 vm.runInNewContext(code, {window,document:{documentElement:{lang:'de'}},AbortController,URL,Intl,Date,
   CustomEvent:class {constructor(type, options) {this.detail=options.detail;}},
@@ -15,12 +15,17 @@ vm.runInNewContext(code, {window,document:{documentElement:{lang:'de'}},AbortCon
     calls.push({url,options});
     if (options.method === 'POST') return {ok:false,status:429,headers:{get:()=>null},text:async()=>JSON.stringify({code:'RATE_LIMITED',retryAfterSeconds:60})};
     const metric = url.includes('/health') ? 'translation_kv_writes' : url.includes('translation.status') ? 'translation_upstream' : 'azure_characters';
-    return {ok:!rateLimited,status:rateLimited?503:200,json:async()=>({ok:true,quotas:[quota(metric)]})};
+    const cache=url.includes('/health');
+    const proxy=url.includes('translation.status');
+    const failed=rateLimited || (healthMode==='proxy-http' && proxy) || (healthMode==='cache-http' && cache);
+    const enabled=!((healthMode==='proxy-disabled' && proxy) || (healthMode==='cache-disabled' && cache));
+    const healthy=!((healthMode==='proxy-guard' && proxy) || (healthMode==='cache-guard' && cache));
+    return {ok:!failed,status:failed?503:200,json:async()=>({ok:true,enabled,healthy,quotas:[quota(metric)]})};
   }});
 (async () => {
   const api = window.WRNSharedTranslations;
   const health = await api.health();
-  assert.equal(calls.length,3); assert.equal(health.quotas.length,3);
+  assert.equal(calls.length,3); assert.equal(health.quotas.length,3); assert.equal(health.translationAvailable,true);
   assert(calls.every(call => call.options.cache === 'no-store' && call.options.signal));
   assert(timers.every(ms => ms === 8000));
   for (const lang of ['de','en','es','fr','it','pt','ru','el','tr']) {
@@ -31,6 +36,13 @@ vm.runInNewContext(code, {window,document:{documentElement:{lang:'de'}},AbortCon
   }
   assert(!api.statusLines([{...quota('translation_upstream'),reason:'quota_guard_unavailable',used:0,remaining:0}])[0].known);
   assert(!api.statusLines([{...quota('translation_upstream'),used:null}])[0].known);
+  for(const mode of ['proxy-http','proxy-disabled','cache-http','cache-disabled','proxy-guard','cache-guard']) {
+    healthMode=mode;
+    const status=await api.health();
+    assert.equal(status.translationAvailable,false, mode+' must never claim translation availability');
+    if(mode==='proxy-http') assert.equal(status.ok,true,'cache transport can remain healthy while translation is unavailable');
+  }
+  healthMode='';
   rateLimited=true;
   assert.equal((await api.health()).quotas.length,0,'failed HTTP must not trust a payload claiming ok:true');
   const count=calls.length;

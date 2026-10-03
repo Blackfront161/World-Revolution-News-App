@@ -3880,7 +3880,7 @@
         <div><span>${escapeHtml(t('statusData'))}</span><strong class="${state.articles.length ? 'system-ok' : 'system-warning'}">${state.articles.length}</strong></div>
         <div><span>${escapeHtml(t('statusEvents'))}</span><strong class="${state.events.length ? 'system-ok' : 'system-warning'}">${state.events.length}</strong></div>
         <div><span>${escapeHtml(t('statusSources'))}</span><strong class="${sourceOk ? 'system-ok' : 'system-warning'}">${sourceSummary.ok || 0} / ${sourceSummary.total || 0}</strong></div>
-        <div><span>${escapeHtml(t('statusTranslation'))}</span><strong class="${translation?.ok ? 'system-ok' : 'system-warning'}">${escapeHtml(translation?.ok ? t('available') : t('offline'))}</strong></div>
+        <div data-translation-status><span>${escapeHtml(t('statusTranslation'))}</span><strong class="${translation?.translationAvailable === true ? 'system-ok' : 'system-warning'}">${escapeHtml(translation?.translationAvailable === true ? t('available') : t('offline'))}</strong></div>
         <div><span>${escapeHtml(t('statusOffline'))}</span><strong class="${serviceWorkerActive ? 'system-ok' : ''}">${serviceWorkerActive ? 'Service Worker aktiv' : `${cacheNames.filter(name => name.startsWith('wrn-news-app-2-')).length} Cache`}</strong></div>
       </div>
       <div class="status-overview" data-quota-status>

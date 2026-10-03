@@ -23,7 +23,7 @@ const server = createServer((request, response) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const result = {status:'running', checks:[], errors:[]};
-let browser, page;
+let browser, page, healthMode='';
 try {
   browser = await chromium.launch({channel:'chrome', headless:true});
   const context = await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'});
@@ -35,6 +35,8 @@ try {
     const url = new URL(route.request().url());
     const action = url.searchParams.get('action');
     if (url.pathname === '/health' || ['translation.status','podcast.status'].includes(action)) {
+      if(action==='translation.status' && healthMode==='proxy-http') return route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({ok:false})});
+      if(action==='translation.status' && healthMode==='proxy-disabled') return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:false,quotas:[]})});
       const metric = url.pathname === '/health' ? 'translation_kv_writes' : action === 'translation.status' ? 'translation_upstream' : 'azure_characters';
       return route.fulfill({contentType:'application/json',body:JSON.stringify({ok:true,enabled:true,storage:'kv',quotas:[{metric,used:940,limit:950,remaining:10,available:true,resetAt:'2026-10-04T00:00:00.000Z'}]})});
     }
@@ -198,12 +200,24 @@ try {
     await page.evaluate(() => document.documentElement.style.fontSize='');
     await page.locator('[data-action="system-status"]').evaluate(button=>button.click());
     await expect(page.locator('[data-quota-status]')).toBeVisible();
+    await expect(page.locator('[data-translation-status] strong')).toHaveClass('system-ok');
     await expect(page.locator('[data-quota-status] > div')).toHaveCount(5);
     await expect(page.locator('[data-quota-status] > div').first()).toContainText('940 / 950');
     assert(await page.locator('#next-release-dialog').evaluate(dialog=>dialog.scrollWidth<=dialog.clientWidth+1), `${language}: quota dialog overflows`);
     await page.locator('[data-release-close]').last().click();
   }
   result.checks.push('Nine UI languages: lexicon at 360/768/1440 and 200% text reflow; actual quota dialog shows known counters and unknown provider/storage without overflow.');
+  await page.locator('#next-language').selectOption('de');
+  for(const mode of ['proxy-http','proxy-disabled']) {
+    healthMode=mode;
+    await page.locator('[data-action="system-status"]').evaluate(button=>button.click());
+    await expect(page.locator('[data-quota-status]')).toBeVisible();
+    await expect(page.locator('[data-translation-status] strong')).toHaveClass('system-warning');
+    await expect(page.locator('[data-translation-status] strong')).toHaveText('Offline');
+    await page.locator('[data-release-close]').last().click();
+  }
+  healthMode='';
+  result.checks.push('Actual quota UI never labels translation available when cache is healthy but proxy fails or translation is disabled.');
   assert.deepEqual(result.errors, []);
   await page.goto(`${origin}/index.html?preview=8#library?language=de&format=epub`);
   await ready('library');
