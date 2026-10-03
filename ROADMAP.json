@@ -407,7 +407,7 @@
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "current-catalog-live-partial-functional-parity",
+      "status": "combined-library-regional-solidarity-reviewed-rollout-final-evidence-pending",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -490,7 +490,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Laufenden Gefangenenkandidaten und akzeptierten Regionalfix beim bestehenden Website-Arbeiter koordinieren. Danach neue Podcastrevision5304fa0 und3neueBibliotheks-IDs für Parität übernehmen; kein paralleler Websitewriter.",
+      "remaining": "Bestehender Website-Arbeiter veröffentlicht akzeptierten Kombinationsstand d738a94/2d890ff:731Bücher,4frischeRegionaltermine,5Solidaritätslinks. Unabhängiger Paketreview PASS; abschließendes Live-/Offlineprotokoll steht bei diesem Roadmap-Update noch aus. Gemessene HTTP/3-Kataloglatenz12–19s überschreitet im separaten Testbrowser das Ladefenster; HTTPS/HTTP1.1 liefert dieselben geprüften Bytes in unter1s. Produktions-Ladeverhalten gezielt prüfen/verbessern, keine Quota-/Offlineguards abschalten. Danach Podcastkonflikte im gleichen Workflow lösen; kein zweiter Websitewriter.",
       "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
       "latestHandoff": {
         "imageCommit": "b777198",
@@ -517,13 +517,23 @@
         "fullFunctionalParity": false
       },
       "reconciledAt": "2026-10-03",
-      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "combinedWebsiteCandidate": {
+        "productCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+        "evidenceCommit": "2d890ffd0ae09af219ce124c4dbb951191db210b",
+        "independentReview": "PASS",
+        "reviewTurn": "01a0ffc2-66e5-78e2-a1af-28b12bbc47e9",
+        "websiteFiles": 46,
+        "hostingFiles": 49,
+        "offlineShellBytes": 7830361,
+        "finalLiveEvidence": "pending at capture; existing Website worker owns rollout"
+      }
     },
     {
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "shared-catalog-published-current-drift-and-visibility-open",
+      "status": "library-source-parity-reviewed-podcast-identity-policy-drift-open",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -719,7 +729,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Data enthält jetzt1865Podcastzeilen/1806eindeutige URLs; Website-Live1722. Abweichende IDs/Policy/Versionen beim bestehenden Website-Arbeiter abgleichen, keinen84Folgen-Zuwachs ohne Setvergleich behaupten. Bibliothek Data731 vsWebsite/App-Bundle728;3neueIDs und tatsächliche Runtimeprojektion bleiben offen.",
+      "remaining": "App-Kandidat und Data haben dieselben731Bibliotheksmetadaten;728Alt-Records feldgleich, genau3geprüfteErgänzungen. Website-Kandidat731 unabhängig PASS, Live-/Offlineabschluss beim bestehenden Website-Arbeiter prüfen. App-Podcastabgleich:1778gemeinsameIDs,87zusätzlicheDataIDs,20Feldänderungen; zweiLORA-Wiederverwendungen und16Final-Straw-Migrationen getrennt prüfen.89Data-Altzeilen aus3explizitgesperrtenAppquellen bleiben gesperrt; keine der87neuenIDs ist betroffen. Keine pauschale Audio-/Volltextfreigabe.",
       "projects": [
         "Data",
         "App",
@@ -735,7 +745,20 @@
         "PODCAST-CATALOG-EXPANSION": "pipeline-publication-recovered",
         "EDITORIAL-DATA": "regional-package-renewed"
       },
-      "dependencyNote": "Für das erste Paket gelten die benannten P0-Meilensteine. Spätere Podcastkuratierung oder alle redaktionellen Dossiers sind keine Voraussetzung der Navigation."
+      "dependencyNote": "Für das erste Paket gelten die benannten P0-Meilensteine. Spätere Podcastkuratierung oder alle redaktionellen Dossiers sind keine Voraussetzung der Navigation.",
+      "currentIdComparison": {
+        "report": "docs/evidence/WRN-APP-NAVIGATION-2026-10-03/catalog-parity-before.json",
+        "upstreamCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+        "appPodcastRows": 1778,
+        "dataPodcastRows": 1865,
+        "sharedEpisodeIds": 1778,
+        "dataOnlyEpisodeIds": 87,
+        "sharedIdFieldChanges": 20,
+        "dataRowsBlockedByExplicitAppPolicy": 89,
+        "newIdsAmongBlocked": 0,
+        "candidateAppLibraryRecords": 731,
+        "dataLibraryRecords": 731
+      }
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
@@ -835,12 +858,15 @@
       },
       "remaining": "167 Begriffe und vier Lernpfade existieren; neue Redaktion über LEXICON-EDITORIAL-20261003, Adapter über LIBRARY-ADAPTERS-20261003 führen. Begriffs-, Sprach- und Beziehungslücken priorisieren; unübersetzte Texte und ungeprüfte Positionen sichtbar lassen.",
       "currentScope": {
-        "appBundledLibraryItems": 728,
+        "appBundledLibraryItems": 731,
         "dataLibraryItems": 731,
         "websiteLiveLibraryItems": 728,
         "lexiconTerms": 167,
         "learningPaths": 4,
-        "note": "Anzahlen belegen Katalogumfang, keine Volltextrechte oder vollständige Mehrsprachigkeit."
+        "note": "Anzahlen belegen Katalogumfang, keine Volltextrechte oder vollständige Mehrsprachigkeit.",
+        "appBundleStatus": "reviewed source candidate; no new native artifact or Store upload",
+        "websiteCandidateLibraryItems": 731,
+        "websiteLiveLibraryItemsNote": "Earlier live728 observation; final new rollout evidence pending at capture."
       },
       "projects": [
         "Data",
@@ -1028,7 +1054,7 @@
         "Next Android",
         "Data"
       ],
-      "remaining": "Isolierter Regionalfix03c2aaa unabhängig akzeptiert:4bestätigteTermine,1temporärerHold. Freshness/Hash/Workflowprüfungen und lokales46Dateien-PaketPASS. Bestehender Website-Arbeiter übernimmt in seinen Integrationsweg; finale Paketabnahme und Live-Readback bleiben offen. Keine Änderung am bestehenden internen Code27.",
+      "remaining": "Regionalrevision4 akzeptiert und in bestehenden Website-Kombinationsstand d738a94 integriert; finaler Live-/Offlinebeleg noch beim Website-Arbeiter ausstehend. Andere redaktionelle Dossiers unverändert offen.",
       "priorityScope": "Nur Regionalterminkatalog P0; übrige Claims/Dossiers/Solidaritätsaktionen bleiben P2.",
       "regionalBlocker": {
         "path": "C:\\Users\\patri\\Documents\\World Revolution News\\wrn-next-live-work\\packages\\browser-content\\src\\regional-events\\events.json",
@@ -1050,9 +1076,9 @@
         {
           "id": "regional-package-renewed",
           "priority": 0,
-          "status": "source-reviewed-pinned-precheck-and-local-package-PASS-live-pending",
+          "status": "source-and-combined-website-package-independent-PASS-final-live-evidence-pending",
           "acceptance": "Tatsächliche Quellenprüfung, neue Regionalrevision/Hashpins, Paketvorprüfung und Livezustand belegt.",
-          "remaining": "Existing Website integration and independent final package/live acceptance."
+          "remaining": "Existing Website worker finishes actual live/readback/offline acceptance; no native Code27 update performed."
         },
         {
           "id": "editorial-claims-dossiers",
@@ -1238,7 +1264,7 @@
       "id": "NAV-FINDABILITY-20261003",
       "name": "Bestehende WRN-Navigation, Direktlinks und Rückkehrkontext vervollständigen",
       "priority": 1,
-      "status": "planned-user-approved-implementation",
+      "status": "app-area-links-filter-history-reviewed-remaining-scenarios-open",
       "projects": [
         "App",
         "Next Website"
@@ -1247,7 +1273,7 @@
         "CONTENT-CATALOG-PARITY"
       ],
       "owner": "Bestehende App-/Website-Verantwortliche; gemeinsame Schnittstellenabnahme",
-      "remaining": "Kein neuer Router oder neues Designsystem. Persistenz der kompletten Filter-/Listenrückkehr sowie Medienunterbereich-Direktlinks sind noch nicht vollständig belegt.",
+      "remaining": "App-Bereichs-/Medienlinks, lokale Filterrückkehr, Scroll/Fokus und Browser-Back→Forward unabhängig akzeptiert. Hilfeprivacy: keine Hilfefilter im Verlauf. Item-ID-Direktlinks, volle neunsprachige Navigations-/200%-Reflowmatrix, Website-Rückkehrkontext und native Nutzungsszenarien bleiben offen; kein neuer Router oder Designsystem.",
       "acceptance": [
         "News, Videos, Originalpodcasts, Hörfassungen, Live-Radio, Lexikon, Bibliothek und Atlas-Einstieg sind eindeutig erreichbar; Atlasstatus bis Integration ehrlich benennen.",
         "Bestehende App-history-/Website-hash-Navigation erweitern: Bereich/ID/Quelle/Sprache/Thema per Direktlink; Browser-Back, App-Back, Liste/Filter/Scroll/Fokus und Artikelposition erhalten.",
@@ -1256,7 +1282,54 @@
         "Geprüfte Szenarien der requirementsReconciliation20261003.scenarios mit aktuellen Paketen durchführen; schmaler Source-Assertion-Test allein erfüllt keine UI-Abnahme."
       ],
       "reconciledAt": "2026-10-03",
-      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "implementation": {
+        "productCommit": "b96111dc1f1f2e865d2682844392406d95449161",
+        "evidenceCommit": "7a8c3252ab4662fab19896b5fd1d89bb94792da3",
+        "report": "docs/evidence/WRN-APP-NAVIGATION-2026-10-03/correction/REPORT.md",
+        "independentReview": {
+          "schemaVersion": 1,
+          "result": "PASS",
+          "productCommit": "b96111dc1f1f2e865d2682844392406d95449161",
+          "evidenceCommit": "7a8c3252ab4662fab19896b5fd1d89bb94792da3",
+          "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+          "initialReviewTurnId": "01a0ffd3-060e-7e72-b581-3464665884d3",
+          "initialDecision": "RED",
+          "correctionReviewTurnId": "01a0ffdc-fdcc-7160-9168-b53100192aa5",
+          "findings": [
+            {
+              "priority": 1,
+              "finding": "Help filters persisted contrary to visible privacy promise",
+              "status": "closed"
+            },
+            {
+              "priority": 2,
+              "finding": "Outgoing scroll and focus lost on browser Back without DOM click",
+              "status": "closed"
+            }
+          ],
+          "reproduced": {
+            "nodeTests": 2,
+            "syntax": "PASS",
+            "chromeNavigation": "PASS",
+            "adversarialHelpSnapshot": "no help query, place, coordinates or draft",
+            "browserBackForward": "media/podcasts; scrollY650; focus next-media-query restored",
+            "productGitBlobs": "25/25",
+            "correctionEvidence": "4/4"
+          },
+          "scope": "Independent completion review of App navigation/library source candidate; no deployment/native release approval",
+          "remaining": [
+            "Item-ID direct links",
+            "full nine-language/200-percent reflow matrix",
+            "published offline restart",
+            "native release scenarios"
+          ]
+        },
+        "areas": 11,
+        "mediaSections": 6,
+        "nativeArtifactBuilt": false,
+        "appDeploymentPerformed": false
+      }
     },
     {
       "id": "VIDEO-EDITORIAL-QUALITY-20261003",
@@ -2171,7 +2244,7 @@
     "areas": [
       {
         "area": "navigation",
-        "status": "teilweise vorhanden; vollständige Nutzungsabnahme offen",
+        "status": "App-Bereichslinks und Rückkehrkontext unabhängig akzeptiert; vollständige Sprach-/Reflow-/Plattformmatrix und Website-Rückkehrkontext offen",
         "taskIds": [
           "NAV-FINDABILITY-20261003"
         ]
@@ -2201,7 +2274,7 @@
       },
       {
         "area": "knowledge",
-        "status": "167 Begriffe/vier Lernpfade; Ausbau geplant, drei Bibliotheks-IDs Drift",
+        "status": "167 Begriffe/vier Lernpfade vorhanden; drei Bibliotheks-IDs in App/Data731 angeglichen, Website731 Kandidat angenommen; redaktioneller Ausbau bleibt offen",
         "taskIds": [
           "KNOWLEDGE-LEXICON-LIBRARY",
           "LIBRARY-ADAPTERS-20261003",
@@ -2233,7 +2306,7 @@
     ],
     "firstPackage": {
       "name": "Inhalte zuverlässig finden, öffnen und wiederfinden",
-      "status": "in-progress; podcast publication repaired, regional candidate reviewed, live integration and P1 follow",
+      "status": "in-progress; podcast publication repaired, combined Website reviewed/rolling out, App library and navigation subset independently accepted",
       "phases": [
         {
           "order": 1,
@@ -2376,11 +2449,61 @@
       "packageFiles": 46,
       "packageShellId": "e0a50e0cd362402653bd5257b7e9a41a551900d070d31f2ccdf1230039da2c82",
       "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal/docs/evidence/WRN-REGIONAL-REVIEW-2026-10-03/REPORT.md",
-      "publicationPerformed": false
+      "publicationPerformed": false,
+      "combinedWebsiteProductCommit": "d738a9454161f1f6aff624bcb9c2a9f0bc2ccf60",
+      "combinedWebsiteReview": "PASS; rollout final evidence pending at P1 capture"
     },
     "websiteCoordination": "Bestehender Chat WRN Website – Inhaltsparität (01a0f307-a269-7461-afd0-3daf4309da0f) erhielt Quell-/Belegcommits und Paketpfade und bestätigte die laufende Integration in seinen bestehenden Zweig. Podcast-/Bibliotheksabgleich folgt dort; fremder WIP erhalten.",
     "currentPlay": "Code32 Produktion und Code27 interner Test unverändert; kein neuer nativer Build oder Upload in diesem Schritt.",
     "firstPackageComplete": false,
-    "next": "Complete existing Website package/live integration; current ID-based catalog parity, then navigation/availability improvements."
+    "next": "Existing Website rollout final evidence, podcast identities/restrictions, remaining navigation/platform scenarios and existing radio/quota/help tasks."
+  },
+  "roadmapImplementationP120261003": {
+    "report": "docs/ROADMAP-P1-FORTSETZUNG-2026-10-03.md",
+    "appProductCommit": "b96111dc1f1f2e865d2682844392406d95449161",
+    "appEvidenceCommit": "7a8c3252ab4662fab19896b5fd1d89bb94792da3",
+    "independentReview": {
+      "schemaVersion": 1,
+      "result": "PASS",
+      "productCommit": "b96111dc1f1f2e865d2682844392406d95449161",
+      "evidenceCommit": "7a8c3252ab4662fab19896b5fd1d89bb94792da3",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+      "initialReviewTurnId": "01a0ffd3-060e-7e72-b581-3464665884d3",
+      "initialDecision": "RED",
+      "correctionReviewTurnId": "01a0ffdc-fdcc-7160-9168-b53100192aa5",
+      "findings": [
+        {
+          "priority": 1,
+          "finding": "Help filters persisted contrary to visible privacy promise",
+          "status": "closed"
+        },
+        {
+          "priority": 2,
+          "finding": "Outgoing scroll and focus lost on browser Back without DOM click",
+          "status": "closed"
+        }
+      ],
+      "reproduced": {
+        "nodeTests": 2,
+        "syntax": "PASS",
+        "chromeNavigation": "PASS",
+        "adversarialHelpSnapshot": "no help query, place, coordinates or draft",
+        "browserBackForward": "media/podcasts; scrollY650; focus next-media-query restored",
+        "productGitBlobs": "25/25",
+        "correctionEvidence": "4/4"
+      },
+      "scope": "Independent completion review of App navigation/library source candidate; no deployment/native release approval",
+      "remaining": [
+        "Item-ID direct links",
+        "full nine-language/200-percent reflow matrix",
+        "published offline restart",
+        "native release scenarios"
+      ]
+    },
+    "appLibrary": 731,
+    "websiteCandidateLibrary": 731,
+    "appDeploymentPerformed": false,
+    "nativeArtifactBuilt": false,
+    "wholeFirstPackageComplete": false
   }
 }

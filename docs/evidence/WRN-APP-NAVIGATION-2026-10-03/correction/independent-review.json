@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS",
+  "productCommit": "b96111dc1f1f2e865d2682844392406d95449161",
+  "evidenceCommit": "7a8c3252ab4662fab19896b5fd1d89bb94792da3",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "initialReviewTurnId": "01a0ffd3-060e-7e72-b581-3464665884d3",
+  "initialDecision": "RED",
+  "correctionReviewTurnId": "01a0ffdc-fdcc-7160-9168-b53100192aa5",
+  "findings": [
+    {"priority": 1, "finding": "Help filters persisted contrary to visible privacy promise", "status": "closed"},
+    {"priority": 2, "finding": "Outgoing scroll and focus lost on browser Back without DOM click", "status": "closed"}
+  ],
+  "reproduced": {
+    "nodeTests": 2,
+    "syntax": "PASS",
+    "chromeNavigation": "PASS",
+    "adversarialHelpSnapshot": "no help query, place, coordinates or draft",
+    "browserBackForward": "media/podcasts; scrollY650; focus next-media-query restored",
+    "productGitBlobs": "25/25",
+    "correctionEvidence": "4/4"
+  },
+  "scope": "Independent completion review of App navigation/library source candidate; no deployment/native release approval",
+  "remaining": ["Item-ID direct links", "full nine-language/200-percent reflow matrix", "published offline restart", "native release scenarios"]
+}
