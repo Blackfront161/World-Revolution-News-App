@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Keyboard icon, #atlas route, original SVG, no iframe; Back/Forward retains search and focus.",
+    "Nine labels/themes; 320/360/768/1440px, 44px icon target; Autonom200%.",
+    "Menu search works; cold #atlas fallback returns safely; zero game requests/page errors."
+  ],
+  "errors": []
+}

@@ -15,7 +15,7 @@ checker = (ROOT / "check_news_sources.py").read_text(encoding="utf-8")
 roadmap = json.loads((ROOT / "ROADMAP.json").read_text(encoding="utf-8"))
 
 assert "? '2.1.2'" in release_config
-assert "wrn-app-v2.1.2-r27" in worker
+assert "wrn-app-v2.1.2-r28" in worker
 assert "action-radar.js" in legacy_config and "action-radar.js" in worker
 assert "editorial-review-ui.js" in legacy_config and "editorial-review-ui.js" in worker
 assert "source-health-freshness.js" in legacy_config and "source-health-freshness.js" in worker

@@ -22,7 +22,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://blackfront161.github.io https://raw.githubusercontent.com https://wrn-translation-cache.paghklo.workers.dev https://revolution-proxy.paghklo.workers.dev; media-src 'self' blob: https:; worker-src 'self'; manifest-src 'self'; frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com https://kolektiva.media; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
   <link rel="canonical" href="https://solinaridao.com/">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="news-app-2.css?release=55">
+  <link rel="stylesheet" href="news-app-2.css?release=56">
   <link rel="stylesheet" href="news-app-2-release.css?release=5">
   <link rel="stylesheet" href="prisoner-solidarity.css?release=2">
   <link rel="stylesheet" href="zine-designer.css?release=5">
@@ -53,8 +53,8 @@
         <button class="icon-button menu-button" id="next-menu-toggle" type="button" aria-label="Menü öffnen" aria-haspopup="dialog">
           <span aria-hidden="true">☰</span>
         </button>
-        <button class="icon-button" id="next-search-toggle" type="button" aria-label="Suche öffnen" aria-expanded="false">
-          <span aria-hidden="true">⌕</span>
+        <button class="icon-button atlas-button" id="next-atlas-toggle" type="button" aria-label="World Revolution Atlas öffnen" aria-controls="next-view">
+          <img src="world-revolution-atlas-icon.svg" alt="" width="32" height="32" aria-hidden="true">
         </button>
         <label class="language-control">
           <span class="sr-only" data-i18n="language">Sprache</span>
@@ -243,6 +243,7 @@
           <span aria-hidden="true">↗</span>
           <span id="next-menu-share-app-label">App weiterempfehlen</span>
         </button>
+        <button type="button" id="next-menu-search" data-action="open-search">Suche öffnen</button>
         <button type="button" id="next-menu-about" data-action="about">Über das Projekt</button>
         <button type="button" id="next-menu-feedback" data-action="feedback-open">Feedback &amp; neue Quellen</button>
         <button type="button" id="next-menu-notifications" data-action="notifications-open">Benachrichtigungen</button>
@@ -437,7 +438,7 @@
   <script src="offline-db.js?release=2"></script>
   <script src="local-diagnostics.js?release=1"></script>
   <script src="news-card-copy.js?release=1"></script>
-  <script src="news-app-2-core.js?release=8"></script>
+  <script src="news-app-2-core.js?release=9"></script>
   <script src="news-app-2-specialty.js?release=6"></script>
   <script src="wrn-product-21.js?release=1"></script>
   <script src="podcast-content-policy.js?release=4"></script>
@@ -458,6 +459,6 @@
   <script src="source-health-freshness.js?release=1"></script>
   <script src="editorial-review-ui.js?release=1"></script>
   <script src="language-origin.js?release=1"></script>
-  <script src="news-app-2.js?release=71"></script>
+  <script src="news-app-2.js?release=72"></script>
 </body>
 </html>

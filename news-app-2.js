@@ -32,6 +32,20 @@
   const BRIEFING_HISTORY_KEY = 'wrn_briefing_history_v1';
   const LAST_VISIT_KEY = 'wrn_last_visit_v1';
   const DEVELOPMENT_SNAPSHOT_KEY = 'wrn_development_snapshot_v1';
+  // Branding and a host entry only. No game module, iframe, data or network activation.
+  let atlasOpenedFromApp = false;
+  const ATLAS_ENTRY_COPY = Object.freeze({
+    de: ['World Revolution Atlas öffnen', 'Das Game ist noch nicht eingebunden. Dieser Bereich ist für den späteren Einbau vorbereitet.'],
+    en: ['Open World Revolution Atlas', 'The game has not been added yet. This area is ready for its future integration.'],
+    es: ['Abrir World Revolution Atlas', 'El juego aún no está integrado. Este espacio está preparado para incorporarlo más adelante.'],
+    fr: ['Ouvrir World Revolution Atlas', 'Le jeu n’est pas encore intégré. Cet espace est préparé pour son intégration ultérieure.'],
+    it: ['Apri World Revolution Atlas', 'Il gioco non è ancora integrato. Quest’area è pronta per la futura integrazione.'],
+    pt: ['Abrir World Revolution Atlas', 'O jogo ainda não está integrado. Esta área está preparada para a sua futura integração.'],
+    ru: ['Открыть World Revolution Atlas', 'Игра пока не встроена. Этот раздел подготовлен для её последующего подключения.'],
+    el: ['Άνοιγμα του World Revolution Atlas', 'Το παιχνίδι δεν έχει ενσωματωθεί ακόμη. Αυτή η ενότητα είναι έτοιμη για τη μελλοντική ενσωμάτωσή του.'],
+    tr: ['World Revolution Atlas’ı aç', 'Oyun henüz eklenmedi. Bu alan, oyunun daha sonra eklenmesi için hazırlandı.']
+  });
+  function atlasEntryCopy() { return ATLAS_ENTRY_COPY[state.language] || ATLAS_ENTRY_COPY.en; }
   const HOME_COUNT = 10;
   const BRIEFING_DURATIONS = Object.freeze([3, 5, 10, 20]);
   const DAILY_EDITION_ITEM_COUNTS = Object.freeze([5, 7, 10]);
@@ -2642,7 +2656,9 @@
       element.placeholder = t(element.dataset.i18nPlaceholder);
     });
     searchInput.placeholder = t('searchPlaceholder');
-    document.getElementById('next-search-toggle').setAttribute('aria-label', t('menuSearch'));
+    document.getElementById('next-atlas-toggle').setAttribute('aria-label', atlasEntryCopy()[0]);
+    document.getElementById('next-atlas-toggle').title = atlasEntryCopy()[0];
+    document.getElementById('next-menu-search').textContent = t('menuSearch');
     document.getElementById('next-menu-toggle').setAttribute('aria-label', t('menuOpen'));
     document.querySelector('[data-dialog-close]').setAttribute('aria-label', t('close'));
     document.querySelector('[data-menu-close]').setAttribute('aria-label', t('close'));
@@ -6807,10 +6823,22 @@
       </div>`;
   }
 
+  function renderAtlasEntry() {
+    viewRoot.innerHTML = `<section class="atlas-entry" aria-labelledby="next-atlas-title" data-no-swipe>
+      <img class="atlas-entry__mark" src="world-revolution-atlas-icon.svg" alt="" width="88" height="88">
+      <h1 id="next-atlas-title" tabindex="-1">World Revolution Atlas</h1>
+      <p class="atlas-entry__subtitle">World Revolution Game</p>
+      <div id="next-atlas-mount" data-atlas-status="not-imported" aria-describedby="next-atlas-status">
+        <p id="next-atlas-status" role="status">${escapeHtml(atlasEntryCopy()[1])}</p>
+      </div>
+      <button class="secondary-button" type="button" data-action="atlas-return">${escapeHtml(t('back'))}</button>
+    </section>`;
+  }
+
   function render() {
     viewRoot.dataset.view = state.view;
     loading.hidden = true;
-    const discoverViews = new Set(['discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments']);
+    const discoverViews = new Set(['discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'atlas']);
     document.querySelectorAll('[data-view-target]').forEach(button => {
       const active = button.dataset.viewTarget === state.view
         || (button.dataset.viewTarget === 'discover' && discoverViews.has(state.view));
@@ -6821,7 +6849,8 @@
       }
     });
 
-    if (state.view === 'following') renderFollowing();
+    if (state.view === 'atlas') renderAtlasEntry();
+    else if (state.view === 'following') renderFollowing();
     else if (state.view === 'discover') renderDiscover();
     else if (state.view === 'events') renderEvents();
     else if (state.view === 'lexicon') renderLexicon();
@@ -8252,7 +8281,7 @@
   }
 
   function changeView(view) {
-    if (!['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved'].includes(view)) return;
+    if (!['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved', 'atlas'].includes(view)) return;
     rememberAppPosition();
     navigationItemId = '';
     resolvedNavigationItem = '';
@@ -8287,7 +8316,7 @@
   }
 
   const MAIN_VIEW_ORDER = ['home', 'following', 'discover', 'media', 'saved'];
-  const DISCOVER_SUBVIEWS = new Set(['events', 'lexicon', 'library', 'prisoners', 'help', 'developments']);
+  const DISCOVER_SUBVIEWS = new Set(['events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'atlas']);
 
   function adjacentMainView(direction) {
     const current = DISCOVER_SUBVIEWS.has(state.view) ? 'discover' : state.view;
@@ -8604,6 +8633,17 @@
       if (action === 'share-app') void shareApp();
       if (action === 'translation-report') reportTranslationProblem();
       if (action === 'article-tool-close') closeArticleTool();
+      if (action === 'atlas-return') {
+        if (atlasOpenedFromApp) window.history.back();
+        else changeView('discover');
+        return;
+      }
+      if (action === 'open-search') {
+        menuDialog.close();
+        searchPanel.hidden = false;
+        searchInput.focus();
+        return;
+      }
       if (action === 'about') {
         if (menuDialog.open) menuDialog.close();
         renderAbout();
@@ -8913,11 +8953,11 @@
       void submitFeedbackDirectly();
     });
 
-    document.getElementById('next-search-toggle').addEventListener('click', event => {
-      const open = searchPanel.hidden;
-      searchPanel.hidden = !open;
-      event.currentTarget.setAttribute('aria-expanded', String(open));
-      if (open) searchInput.focus();
+    document.getElementById('next-atlas-toggle').addEventListener('click', () => {
+      if (state.view === 'atlas') return;
+      atlasOpenedFromApp = true;
+      searchPanel.hidden = true;
+      changeView('atlas');
     });
 
     document.getElementById('next-global-search').addEventListener('submit', event => {
@@ -8926,7 +8966,6 @@
       state.discover.period = 'all';
       state.discover.limit = 24;
       searchPanel.hidden = true;
-      document.getElementById('next-search-toggle').setAttribute('aria-expanded', 'false');
       changeView('discover');
       void loadSelectedSourceArchives();
     });

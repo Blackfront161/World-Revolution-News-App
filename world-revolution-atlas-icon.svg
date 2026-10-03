@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">World Revolution Atlas</title>
+  <desc id="desc">Transparentes Signet aus Globus und Kompassrose in Cyan, Rot und Weiß.</desc>
+  <g transform="translate(256 256)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="206" stroke="#ffffff" stroke-width="16"/>
+    <ellipse rx="96" ry="206" stroke="#33d9ef" stroke-width="10" opacity=".9"/>
+    <ellipse rx="166" ry="206" stroke="#33d9ef" stroke-width="7" opacity=".48"/>
+    <path d="M-196-70C-104-29 104-29 196-70M-206 0H206M-196 70C-104 29 104 29 196 70" stroke="#33d9ef" stroke-width="8" opacity=".72"/>
+    <path d="M-158-113l39-30 44 12 22 34 40 13 25 43-33 18-38-15-36 25-48-17-8-35-31-16zM60 13l43-25 57 19 13 40-32 26-17 57-42 20-19-50-39-25z" fill="#ffffff" stroke="#071711" stroke-width="7"/>
+    <circle r="86" fill="#071711" fill-opacity=".94" stroke="#ffffff" stroke-width="10"/>
+    <path d="M0-164 29-37 0-62-29-37z" fill="#ff4b55" stroke="#ffffff" stroke-width="5"/>
+    <path d="M0 164 29 37 0 62-29 37z" fill="#ff4b55" stroke="#ffffff" stroke-width="5"/>
+    <path d="M164 0 37 29 62 0 37-29zM-164 0-37 29-62 0-37-29z" fill="#33d9ef" stroke="#ffffff" stroke-width="5"/>
+    <path d="M106-106 31-19 46-46 19-31zM106 106 19 31 46 46 31 19zM-106 106-31 19-46 46-19 31zM-106-106-19-31-46-46-31-19z" fill="#ffffff"/>
+    <circle r="24" fill="#ffffff" stroke="#071711" stroke-width="7"/>
+    <circle r="10" fill="#ff4b55"/>
+  </g>
+</svg>

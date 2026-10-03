@@ -786,7 +786,7 @@
     return { segments, matchCount: accepted.length };
   }
 
-  const NAVIGATION_VIEWS = new Set(['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved']);
+  const NAVIGATION_VIEWS = new Set(['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'media', 'saved', 'atlas']);
   const NAVIGATION_MEDIA = new Set(['video', 'podcasts', 'generated', 'radio', 'radio-podcasts', 'zine']);
   const NAVIGATION_FILTERS = Object.freeze({
     discover: ['query', 'region', 'topic', 'sportOnly', 'period', 'limit', 'sort', 'language', 'origin', 'source', 'format', 'viewMode'],

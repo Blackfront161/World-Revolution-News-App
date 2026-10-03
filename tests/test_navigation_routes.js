@@ -2,7 +2,7 @@
 const assert = require('node:assert/strict');
 const core = require('../news-app-2-core.js');
 
-for (const view of ['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'saved']) {
+for (const view of ['home', 'following', 'discover', 'events', 'lexicon', 'library', 'prisoners', 'help', 'developments', 'saved', 'atlas']) {
   assert.equal(core.navigationRoute(`#${view}`).view, view);
 }
 for (const section of ['video', 'podcasts', 'generated', 'radio', 'radio-podcasts', 'zine']) {

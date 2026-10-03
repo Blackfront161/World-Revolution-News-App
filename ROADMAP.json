@@ -1629,7 +1629,7 @@
       "id": "ATLAS-HOST-INTEGRATION-20261003",
       "name": "Eigenständigen World Revolution Atlas als optionalen WRN-Bereich wiederverwenden",
       "priority": 2,
-      "status": "planned-user-approved-implementation",
+      "status": "header-entry-prepared-game-not-imported",
       "projects": [
         "World Revolution Atlas / Map repository",
         "App",
@@ -1640,16 +1640,25 @@
         "NAV-FINDABILITY-20261003"
       ],
       "owner": "Bestehender Atlas-Arbeiter liefert eingefrorenes Paket; App/Website integrieren",
-      "remaining": "Eigenständiger Atlas vorhanden, WRN-Integration fehlt. 674 Ereignisse/669 sichtbare stammen aus laufendem Workerstand; 178 behauptete Tests sind kein WRN-Host-/Geräte-PASS.",
+      "remaining": "App-Header mit originalem kompaktem Atlas-Signet und lokaler #atlas-Hostansicht vorbereitet. Nutzer verlangt ausdrücklich noch keinen Game-Import. Freigegebener unveränderlicher Atlas-Handoff und eigentliche Integration/Offline-/Geräteprüfung bleiben offen; Website und iOS unverändert.",
       "acceptance": [
-        "Aktuellen r73-WIP gegen r68-Embeddingpaket vergleichen und vom Atlas-Projekt unveränderlichen freigegebenen Handoff mit Versions-/Dateihashes und Herkunft erhalten; fremden WIP nicht ändern.",
+        "Aktuellen Atlas-Workerstand gegen älteres r68-Embeddingpaket vergleichen und vom Atlas-Projekt unveränderlichen freigegebenen Handoff mit Versions-/Dateihashes und Herkunft erhalten; fremden WIP nicht ändern. Game-Import erst nach neuer Nutzerfreigabe.",
         "Historische Karte/Globus mit Zeitfilter, Ereignisdetails, exakten Quellen und WRN-Beziehungen integriert. Next-Quellenliste/Länderquiz, Map-Repositoryname und Game-Labor nicht als erfüllte Atlasintegration zählen.",
         "Embeddingvertrag (Origin/PostMessage/API, Sprache, Themes, Rücknavigation, Attribution, sensible Koordinaten) prüfen; eingebettetes Paket aktiviert keinen konkurrierenden Service Worker oder ungeprüften Supabasezugriff.",
         "Atlas/Medien erst beim Öffnen laden; Start-, Transfer-, RAM-/Cachebudget vor Integration messen und explizit festlegen. Bestehendes Website-Shelllimit 8 MiB nicht pauschal abschalten.",
         "Hostverantwortetes Offlinepaket, kalter Offline-Neustart, mobile Zoom-/Zeitbedienung und Abbruch prüfen; r68 offlineInEmbed=false und überwiegend deutsche historische Texte bleiben offen bis nachgewiesen."
       ],
       "reconciledAt": "2026-10-03",
-      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "headerPreparation": {
+        "report": "docs/ATLAS-HEADER-PREPARATION-2026-10-03.md",
+        "route": "#atlas",
+        "mountId": "next-atlas-mount",
+        "gameImported": false,
+        "browserResult": "docs/evidence/WRN-ATLAS-HEADER-2026-10-03/browser-result.json",
+        "localRuntime": "PASS: nine languages/themes, four widths, keyboard, Back/Forward, cold entry, menu search; zero game requests",
+        "distribution": "local App source only; native/Store/Website unchanged"
+      }
     },
     {
       "id": "IOS-NATIVE-VALIDATION-20261003",
@@ -2535,7 +2544,7 @@
       },
       {
         "area": "atlas",
-        "status": "eigenständiges Projekt in Arbeit; historische WRN-Hostintegration fehlt",
+        "status": "App-Headereinstieg vorbereitet; Game ausdrücklich nicht importiert; vollständige Hostintegration offen",
         "taskIds": [
           "ATLAS-HOST-INTEGRATION-20261003"
         ]

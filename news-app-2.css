@@ -5458,9 +5458,6 @@ button.feature-card {
     gap: 4px;
   }
 
-  #next-search-toggle {
-    display: none;
-  }
 
   .website-button {
     min-width: 48px;
@@ -5749,7 +5746,7 @@ button.feature-card {
   :root[data-theme="autonom"] .next-header::after { background: var(--border); }
   :root[data-theme="autonom"] .next-header__inner {
     display: grid;
-    grid-template-columns: 44px minmax(0, 1fr) 44px 44px;
+    grid-template-columns: 44px minmax(0, 1fr) 44px 44px 44px;
     align-items: center;
     gap: 6px;
     min-height: 0;
@@ -5771,7 +5768,7 @@ button.feature-card {
   }
   :root[data-theme="autonom"] .brand__autonom em { color: var(--red); font-style: normal; }
   :root[data-theme="autonom"] #next-menu-toggle { grid-area: 1 / 1; }
-  :root[data-theme="autonom"] #next-search-toggle { display: none; }
+  :root[data-theme="autonom"] #next-atlas-toggle { grid-area: 1 / 5; }
   :root[data-theme="autonom"] .website-button { grid-area: 1 / 3; justify-self: center; width: 44px; min-width: 44px; min-height: 44px; padding: 0; border-radius: 9px; }
   :root[data-theme="autonom"] .website-button > span:not(.website-button__short) { display: none; }
   :root[data-theme="autonom"] .website-button__short { display: inline; font-size: 11px; }
@@ -5904,3 +5901,12 @@ button.feature-card {
 
 .small-action[data-action="navigation-item"] { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; overflow-wrap: anywhere; text-decoration: none; }
 .knowledge-item-links { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* Atlas entry: branding only; the game mount stays empty until reviewed integration. */
+#next-atlas-toggle { width: 44px; min-width: 44px; min-height: 44px; padding: 0; }
+#next-atlas-toggle img { display: block; width: 32px; height: 32px; object-fit: contain; }
+.atlas-entry { display: grid; justify-items: center; gap: 16px; max-width: 44rem; margin: 24px auto; padding: 24px 16px; text-align: center; }
+.atlas-entry h1 { margin: 0; overflow-wrap: anywhere; }
+.atlas-entry__subtitle { margin: 0; color: var(--muted); }
+#next-atlas-mount { width: 100%; min-width: 0; border: 1px solid var(--border); border-radius: 16px; padding: 20px; background: var(--surface); overflow-wrap: anywhere; }
+.atlas-entry .secondary-button { min-height: 44px; white-space: normal; }
