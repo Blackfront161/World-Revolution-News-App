@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "result": "PASS-candidate-dossier-only",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewTurn": "01a100fd-f907-7922-ba72-bf515f8b530c",
+  "evidenceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+  "evidenceFiles": 7,
+  "manifestPayloads": 6,
+  "websiteCatalogueSha256": "ac2c2f944b814be0fce19129791c39d87c0940f8c82caf47bdc868cc5bcb8b15",
+  "candidateReview": {
+    "evidenceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+    "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-PODCAST-ID-REVIEW-2026-10-03/REPORT.md",
+    "independentReview": "PASS-candidate-dossier-only",
+    "dataCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+    "appCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+    "addedUpstreamIds": 87,
+    "newOriginalCandidates": 84,
+    "structurallyConsistentLanguageVerifiedPriorHttp200": 74,
+    "unknownLanguageCandidates": 5,
+    "redirectCandidates": 4,
+    "unavailableOriginalCandidates": 1,
+    "urlMigrationsHeld": 18,
+    "websiteExistingFieldChangesHeld": 24,
+    "sourceHeldDataRows": 89,
+    "explicitlyRestrictedDataIds": 61,
+    "sourceAdmissionPerformed": false,
+    "productChanged": false,
+    "publicationPerformed": false,
+    "reviewTurn": "01a100fd-f907-7922-ba72-bf515f8b530c",
+    "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
+  },
+  "limits": [
+    "Every candidate remains NOT-ADMITTED and metadata-original-link-only",
+    "No product catalogue change, fresh network test, media fetch, Hosting/Offline or publication approval",
+    "24 historical field changes remain separate; old IDs URLs dates are preserved",
+    "Four source holds, 89 held rows and61 restricted IDs remain intact",
+    "Raw five-collection projection is not publishable; no partial catalogue replacement"
+  ]
+}

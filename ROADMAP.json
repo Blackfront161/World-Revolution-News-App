@@ -787,7 +787,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "App/Data-Bibliothek 731 gemeinsame Metadaten; Website 731 live. Gebundener Podcast-Abgleich: 87 zusätzliche Data-IDs ergeben84 neue Originalseiten.74 Kandidaten sind nur strukturell/sprachlich konsistent; fünf unbekannte Sprachen, vier Redirects und eine404 bleiben offen.18 URL-Migrationen und24 Website-Bestandsfeldänderungen werden nicht automatisch überschrieben. Vier Quellen-Holds,89 gehaltene Data-Zeilen und61 eingeschränkte IDs bleiben erhalten. Aufnahme/Integration und unabhängige Kandidatenabnahme offen; kein pauschales Audio-/Volltextrecht.",
+      "remaining": "App/Data-Bibliothek 731 gemeinsame Metadaten; Website 731 live. Gebundener Podcast-Abgleich: 87 zusätzliche Data-IDs ergeben84 neue Originalseiten.74 Kandidaten sind nur strukturell/sprachlich konsistent; fünf unbekannte Sprachen, vier Redirects und eine404 bleiben offen.18 URL-Migrationen und24 Website-Bestandsfeldänderungen werden nicht automatisch überschrieben. Vier Quellen-Holds,89 gehaltene Data-Zeilen und61 eingeschränkte IDs bleiben erhalten. Kandidatendossier unabhängig akzeptiert; redaktionelle Aufnahme/Integration offen; kein pauschales Audio-/Volltextrecht.",
       "projects": [
         "Data",
         "App",
@@ -820,7 +820,7 @@
       "podcastIdCandidateReview": {
         "evidenceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-PODCAST-ID-REVIEW-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
+        "independentReview": "PASS-candidate-dossier-only",
         "dataCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
         "appCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
         "addedUpstreamIds": 87,
@@ -835,7 +835,9 @@
         "explicitlyRestrictedDataIds": 61,
         "sourceAdmissionPerformed": false,
         "productChanged": false,
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "reviewTurn": "01a100fd-f907-7922-ba72-bf515f8b530c",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       }
     },
     {
@@ -2798,7 +2800,7 @@
     "podcastIdCandidateReview": {
       "evidenceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
       "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-PODCAST-ID-REVIEW-2026-10-03/REPORT.md",
-      "independentReview": "PENDING",
+      "independentReview": "PASS-candidate-dossier-only",
       "dataCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
       "appCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
       "addedUpstreamIds": 87,
@@ -2813,7 +2815,9 @@
       "explicitlyRestrictedDataIds": 61,
       "sourceAdmissionPerformed": false,
       "productChanged": false,
-      "publicationPerformed": false
+      "publicationPerformed": false,
+      "reviewTurn": "01a100fd-f907-7922-ba72-bf515f8b530c",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
     }
   }
 }
