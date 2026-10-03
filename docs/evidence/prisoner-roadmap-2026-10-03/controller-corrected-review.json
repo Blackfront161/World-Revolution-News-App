@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "WRN Kontrolleur",
+  "threadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "turnId": "01a0ff1b-9c9f-7d52-b788-a1d11d5816b5",
+  "decision": "PASS",
+  "productCommit": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
+  "evidenceCommit": "1a87a404e56d884fdc1924557b7a2cf9690bfcb0",
+  "finalMessages": [
+    {
+      "type": "agentMessage",
+      "id": "msg_01f53eef20522207016ac0495a4acc819194212dce03809a6b",
+      "text": "PASS – Gefangenensolidaritäts-Freeze akzeptiert.\n\nGeprüft:\n\n- Produktfreeze `8c0c0d90a119b7a95b5154fa64c49dfb97c8842e`\n- Evidenzcommit `1a87a404e56d884fdc1924557b7a2cf9690bfcb0`\n- Alle 20 Manifestdateien stimmen gegen die unveränderlichen Git-Blob-Bytes: Größe und SHA-256 vollständig korrekt.\n- P1 geschlossen: Ablauf erfolgt jetzt am lokalen Kalenderwechsel. Unabhängig reproduziert für Singapur, Kiritimati und Los Angeles jeweils 23:59 `true`, 00:01 `false`.\n- Ungültige Kalenderdaten bleiben gesperrt.\n- P2 geschlossen: Beitrag `19.8` und PDF-Titelseite `19.9` werden ausdrücklich getrennt dokumentiert; URL, SHA und stabile Quellen-ID bleiben erhalten.\n- Daten unverändert: 30 Profile, 13 bestätigt, 17 `needs-review`, fünf reine Unterstützungsverweise.\n- Nach Entfernung ausschließlich der erwarteten neuen Editions-/Datumsfelder ist der Datensatz semantisch identisch mit dem vorherigen Freeze.\n- Runtimebindung konsistent:\n  - Solidaritätsmodul `release=5`\n  - Classic `190-solidarity-4`\n  - Produktionscache `wrn-app-v2.1.2-r23`\n  - Previewcache `wrn-news-app-2-v111`\n  - keine veralteten aktiven Referenzen gefunden.\n- Atomare Cachetests, Solidaritätsverträge und Release-Round: 3/3 bestanden.\n- App-Validator: PASS.\n- Audit: 161/161, keine Warnungen oder Fehler.\n\nFreigabe: Korrekturfreeze akzeptiert – nächste App-Integrations-/Buildphase zulässig. Dies ist keine Android-, Signier-, Play- oder Deploymentfreigabe.\n\nWährend der Prüfung entstanden durch einen parallelen Website-Vorgang ausschließlich fremde Änderungen an ROADMAP-/Website-Evidenzdateien. Sie überlappen den geprüften Gefangenen-Freeze nicht; die Abnahme basiert auf den exakten Git-Commits.",
+      "phase": "final_answer"
+    }
+  ]
+}

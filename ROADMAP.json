@@ -1748,7 +1748,10 @@
       "guidePublicationDate": "2026-09-24",
       "datedAddressReviewDeadline": "2026-11-08",
       "checks": "Full matrix PASS:57JS,164pytest,3skips,4subtests,4PythonMain; real-browser midnight/date checks in3timezones; validator PASS; audit161/161,0warnings,0failures",
-      "independentReview": "96e0aea-correction-required; local-midnight-expiry and announcement19.8/PDF19.9 discrepancy corrected, re-review pending",
+      "independentReview": "PASS corrected8c0c0d9/evidence1a87a40;20Git-blob-bindings;local-midnight-expiry and announcement19.8/PDF19.9 findings closed",
+      "sourceFreeze": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
+      "freezeEvidenceCommit": "1a87a404e56d884fdc1924557b7a2cf9690bfcb0",
+      "independentReviewEvidence": "docs/evidence/prisoner-roadmap-2026-10-03/controller-corrected-review.json",
       "runtime": {"productionCache": "2.1.2-r23", "previewCache": "v111", "prisonerSolidarity": 5, "classicPrisonerSolidarity": 4},
       "release": "corrected-source-candidate-with-fresh-cache-generation; no new Android artifact"
     },
