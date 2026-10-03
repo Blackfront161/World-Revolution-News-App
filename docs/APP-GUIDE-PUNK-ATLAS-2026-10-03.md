@@ -6,7 +6,7 @@ Aktuelle Produktquelle mit Offlinekorrektur: `7a3574aaf4f180a4a435bf174ee4ec2b46
 
 Das vorhandene Atlas-Signet wurde als repo-natives SVG weiterentwickelt: rot-schwarze Windrose, gebrochener Stencil-Rand, warme helle Kontur und dezente Globuslinien. Header und vorbereitete Atlas-Hostansicht verwenden `world-revolution-atlas-punk.svg`. Die ursprüngliche bytegenaue Vorlage `world-revolution-atlas-icon.svg` und ihr historischer Herkunftsnachweis bleiben erhalten; die neue Variante ist eine eigene App-Bearbeitung, keine Behauptung eines unveränderten Atlas-Originals. Keine Rastergenerierung oder externe Grafikdaten.
 
-`#atlas` und `#next-atlas-mount` bleiben vorbereitet. Kein Game wurde importiert oder aktiviert. [Bisheriger Einbauvertrag](ATLAS-HEADER-PREPARATION-2026-10-03.md) gilt weiterhin. Die dortigen ursprünglichen Pins/Assethashes beschreiben den vorigen Quellstand; aktuell sind JS73, Core9, CSS57, Appcache r29 und Previewcache v117.
+`#atlas` und `#next-atlas-mount` bleiben vorbereitet. Kein Game wurde importiert oder aktiviert. [Bisheriger Einbauvertrag](ATLAS-HEADER-PREPARATION-2026-10-03.md) gilt weiterhin. Die dortigen ursprünglichen Pins/Assethashes beschreiben den vorigen Quellstand; aktuell sind JS73, Core9, CSS57, Appcache r30 und Previewcache v118.
 
 ## Roadmap-Schritt HELP-AUDIO-TRANSLATION-20261003
 
@@ -38,4 +38,4 @@ Die ersten Testversuche mit langen Profilpfaden stießen auf CacheStorage-Fehler
 
 Die korrigierten Assethashes sind ausdrücklich SHA256 der LF-normalisierten Git-Blobbytes. Der frühere SVG-Hash bezeichnete Windows-Checkoutbytes mit CRLF; er bleibt historisch erhalten und wird nicht als kanonischer Git-Dateihash ausgegeben. Neuer Nachweis: `correction/source-report.json` und `correction/sha256.json`.
 
-Damit ist der kalte lokale Chrome-Offlinepfad geprüft. Menschliche Sprachabnahme, native Geräte-/Hintergrund-/Sperrbildschirmprüfung und Website/iOS-Verteilung bleiben offen. Die korrigierte Quelle wird gesondert unabhängig nachgeprüft.
+Damit ist der kalte lokale Chrome-Offlinepfad geprüft. Menschliche Sprachabnahme, native Geräte-/Hintergrund-/Sperrbildschirmprüfung und Website/iOS-Verteilung bleiben offen. Die korrigierte Quelle wurde im Controller-Turn `01a101f8-4db6-7e71-ba5f-cf22e2bcdccd` unabhängig mit SOURCE PASS angenommen; P1-Coregraph und P2-LF-Hashdefinition sind geschlossen. Die aktualisierte Cache-Angabe beseitigt den gemeldeten nicht blockierenden Dokumentationswiderspruch.

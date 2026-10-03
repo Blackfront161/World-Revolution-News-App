@@ -1447,7 +1447,7 @@
       "id": "HELP-AUDIO-TRANSLATION-20261003",
       "priority": 2,
       "name": "Hilfe für Radio, Teilen, Übersetzung und Offline",
-      "status": "App-guide-nine-languages-cold-offline-PASS-corrected-source-independent-review-pending",
+      "status": "App-guide-nine-languages-cold-offline-independent-source-PASS-native-editorial-distribution-open",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "DE/EN task-based guidance: start/pause/stop, station website vs stream, app share link",
@@ -1470,7 +1470,7 @@
         "Aufgabenhilfe unterscheidet Original-Link, direkt abspielbare Folge, lokal vorgelesenen Text und gemeinsame erzeugte Datei; Kontingent/Wartezeit/Reset/Offlinezustand verständlich erklären.",
         "DE/EN Erstnutzer finden Inhalt, spielen/lesen, übersetzen und kehren zurück; übrige sieben Oberflächensprachen auf fehlende/überlaufende Texte prüfen."
       ],
-      "remaining": "App-Aufgabenhilfe mit sechs Themen und Direktaktionen in neun Sprachen implementiert; Chrome-Sprach-/Reflow-/Fokusprüfung sowie echte abgewiesene Updates und kompletter kalter Offline-Neustart beider Worker PASS. P1-Pflichtdateilücke korrigiert; unabhängige Nachprüfung offen. Menschliche Sprachabnahme, native Geräte- und Website/iOS-Verteilung bleiben offen; kein neuer Storestand.",
+      "remaining": "App-Aufgabenhilfe mit sechs Themen und Direktaktionen in neun Sprachen implementiert; Chrome-Sprach-/Reflow-/Fokusprüfung, abgewiesene Updates und kompletter kalter Offline-Neustart beider Worker PASS. Korrigierte Quelle unabhängig akzeptiert; P1-Coregraph/P2-LF-Hash geschlossen. Menschliche Sprachabnahme, native Geräte- und Website/iOS-Verteilung bleiben offen; kein neuer Storestand.",
       "implementation": {
         "sourceCommit": "2481ef1a0cdd23a839c38f0058cfc9b73c0c90a6",
         "report": "docs/APP-GUIDE-PUNK-ATLAS-2026-10-03.md",
@@ -1478,7 +1478,13 @@
         "gameImported": false,
         "publicationPerformed": false,
         "correctedSourceCommit": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d",
-        "coldOfflineEvidence": "docs/evidence/WRN-APP-GUIDE-PUNK-2026-10-03/correction/browser-result.json"
+        "coldOfflineEvidence": "docs/evidence/WRN-APP-GUIDE-PUNK-2026-10-03/correction/browser-result.json",
+        "independentReview": {
+          "result": "SOURCE PASS",
+          "sourceCommit": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d",
+          "report": "docs/evidence/WRN-APP-GUIDE-PUNK-2026-10-03/correction/controller-review.json",
+          "reviewTurn": "01a101f8-4db6-7e71-ba5f-cf22e2bcdccd"
+        }
       }
     },
     {
@@ -1671,7 +1677,8 @@
         "punkSourceCommit": "2481ef1a0cdd23a839c38f0058cfc9b73c0c90a6",
         "punkReport": "docs/APP-GUIDE-PUNK-ATLAS-2026-10-03.md",
         "icon": "world-revolution-atlas-punk.svg",
-        "correctedOfflineSource": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d"
+        "correctedOfflineSource": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d",
+        "independentCorrectedSourceReview": "SOURCE PASS: 7a3574a; guide and icon core; no game import"
       }
     },
     {
@@ -2372,11 +2379,16 @@
       "Refresh outdated cloudflare/DEPLOYMENT-REPORT.md with current deployment evidence",
       "Review enabling proxy observability.traces separately from existing logs",
       "Keep Push/VAPID, ADMIN_TOKEN and Email operational configuration explicit before activation",
-      "Document shared Rate-Limiter namespace1003 with separated hashed scope keys or plan separate ID"
+      "Document shared Rate-Limiter namespace1003 with separated hashed scope keys or plan separate ID",
+      "Abgelehnte Cache-Originantworten ohne ACAO statt allowed[0] senden; bestehendes 403 bleibt erhalten.",
+      "Proxy-Service-/fetch-Ausnahmen im Cacheworker als kontrolliertes 502/503 behandeln statt Worker1101.",
+      "Rate-Limit-Binding-Ausnahmen im Proxy fail-closed mit definierter Fehlerantwort behandeln statt Worker1101.",
+      "ADMIN_TOKEN-/VAPID-/send_email-Betrieb getrennt einrichten: Administration/Feedbackmoderation und Push derzeit nicht vollständig aktiviert."
     ],
     "runtimeChanged": false,
     "deploymentPerformed": false,
-    "releaseBlocker": false
+    "releaseBlocker": false,
+    "latestReadOnlyReview": "Controller 2026-10-03: current Cloudflare unchanged since e9c8088; three P2 failure/header follow-ups recorded separately from Atlas source PASS; no deployment performed."
   },
   "sharedTranslationsAndIndigenousSources20261002": {
     "status": "implemented-and-verified",
