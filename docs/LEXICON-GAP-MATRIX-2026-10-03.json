@@ -1,0 +1,199 @@
+{
+  "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+  "baselineCount": 167,
+  "candidateCount": 177,
+  "existingTermsRetained": true,
+  "editorialStatus": "draft; independent metadata-only handoff reviewed; terminology source review does not grant reuse rights",
+  "rows": [
+    {
+      "id": "free-prior-informed-consent",
+      "title": {
+        "de": "Freie, vorherige und informierte Zustimmung",
+        "en": "Free, prior and informed consent"
+      },
+      "closestExistingIds": [
+        "land-back",
+        "self-organisation",
+        "anti-colonialism"
+      ],
+      "gap": "Land Back ist bereits vorhanden; verbindliche freie, vorherige und informierte Zustimmung ist ein eigener Entscheidungsprozess.",
+      "references": [
+        "knowledge-fpic"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "indigenous-data-sovereignty",
+      "title": {
+        "de": "Indigene Datensouveränität",
+        "en": "Indigenous data sovereignty"
+      },
+      "closestExistingIds": [
+        "data-commons",
+        "digital-autonomy",
+        "anti-colonialism"
+      ],
+      "gap": "Data Commons und digitale Autonomie sind vorhanden; kollektive indigene Kontrolle und CARE-Prinzipien benötigen eine eigene Abgrenzung.",
+      "references": [
+        "knowledge-indigenous-data"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "language-revitalisation",
+      "title": {
+        "de": "Sprachrevitalisierung",
+        "en": "Language revitalisation"
+      },
+      "closestExistingIds": [
+        "anti-colonialism",
+        "collective-care"
+      ],
+      "gap": "Antikolonialismus und kollektive Fürsorge sind vorhanden; gemeinschaftlich verantwortete Sprachweitergabe benötigt einen eigenen Praxisbegriff.",
+      "references": [
+        "knowledge-language-revitalisation"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "popular-education",
+      "title": {
+        "de": "Bildung von unten",
+        "en": "Popular education"
+      },
+      "closestExistingIds": [
+        "self-organisation",
+        "facilitation",
+        "collective-access"
+      ],
+      "gap": "Moderation und Selbstorganisation sind vorhanden; Bildung aus gelebter Erfahrung ist eine eigenständige Methode.",
+      "references": [
+        "knowledge-popular-education"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "social-insertion",
+      "title": {
+        "de": "Soziale Verankerung",
+        "en": "Social insertion"
+      },
+      "closestExistingIds": [
+        "especifismo",
+        "self-organisation",
+        "entryism"
+      ],
+      "gap": "Especifismo und Entrismus sind vorhanden; soziale Verankerung wird von organisationsstrategischer Vereinnahmung unterschieden.",
+      "references": [
+        "knowledge-social-insertion"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "non-reformist-reforms",
+      "title": {
+        "de": "Nichtreformistische Reformen",
+        "en": "Non-reformist reforms"
+      },
+      "closestExistingIds": [
+        "abolition",
+        "prison-abolition",
+        "counter-power"
+      ],
+      "gap": "Abolition und Gegenmacht sind vorhanden; Kriterien für Reformen ohne Ausbau repressiver Institutionen werden gesondert erklärt.",
+      "references": [
+        "knowledge-non-reformist-reforms"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "access-intimacy",
+      "title": {
+        "de": "Access Intimacy / Vertrautheit mit Zugangsbedürfnissen",
+        "en": "Access intimacy"
+      },
+      "closestExistingIds": [
+        "collective-access",
+        "disability-justice",
+        "collective-care"
+      ],
+      "gap": "Disability Justice und Collective Access sind vorhanden; das relationale Verständnis von Zugangsbedürfnissen ist ein eigener Begriff.",
+      "references": [
+        "knowledge-access-intimacy"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "participatory-budgeting",
+      "title": {
+        "de": "Partizipatives Budget",
+        "en": "Participatory budgeting"
+      },
+      "closestExistingIds": [
+        "direct-democracy",
+        "assembly",
+        "delegation-mandate"
+      ],
+      "gap": "Direkte Demokratie, Versammlung und Mandat sind vorhanden; Entscheidungen über konkrete Haushaltsmittel benötigen eine eigene Abgrenzung.",
+      "references": [
+        "knowledge-participatory-budgeting"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "worker-cooperative",
+      "title": {
+        "de": "Produktivgenossenschaft",
+        "en": "Worker cooperative"
+      },
+      "closestExistingIds": [
+        "workers-control",
+        "solidarity-economy",
+        "informal-hierarchy"
+      ],
+      "gap": "Workers Control und Solidarökonomie sind vorhanden; mitgliedereigene Produktivgenossenschaften als konkrete Organisationsform werden gesondert erläutert.",
+      "references": [
+        "knowledge-worker-cooperative"
+      ],
+      "bookBindings": [
+        "anarchist-library-en-23d84c4377c0ec75e9b1dd92"
+      ],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    },
+    {
+      "id": "abolitionist-divestment",
+      "title": {
+        "de": "Abolitionistischer Ressourcenentzug",
+        "en": "Abolitionist divestment"
+      },
+      "closestExistingIds": [
+        "police-abolition",
+        "prison-abolition"
+      ],
+      "gap": "Polizei-/Gefängnisabolition sind vorhanden; Entzug und Umverteilung von Ressourcen als Strategie werden getrennt erklärt.",
+      "references": [
+        "knowledge-abolitionist-divestment"
+      ],
+      "bookBindings": [],
+      "newEpisodeBindings": [],
+      "reviewDate": "2026-10-03"
+    }
+  ]
+}

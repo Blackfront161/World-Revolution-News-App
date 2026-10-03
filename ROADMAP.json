@@ -88,10 +88,10 @@
       "liveVerifiedAt": "2026-10-02"
     },
     "latestReviewedSource": {
-      "commit": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
-      "evidenceCommit": "1a87a404e56d884fdc1924557b7a2cf9690bfcb0",
-      "status": "independently accepted current source; not a new Android/Play release",
-      "auditStartHead": "d157a6dce3e4ed8e333c27c6cb700e02aa9156f4"
+      "commit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+      "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+      "status": "independently accepted App source; existing Worker updates published and verified; not a new Android/Play release",
+      "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a"
     }
   },
   "storeListingMedia": {
@@ -490,7 +490,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Kombinationsstand d738a94 live:731Bücher,4Regionaltermine,5Solidaritätslinks;45/45öffentlicheDatei-/Headerprüfungen und voller Offline-Neustart über HTTPS/HTTP1.1 PASS. HTTP/3-Kataloglatenz12–19s bleibt offen. Bestehender Website-Arbeiter setzt Podcast-ID-/Rechteabgleich fort; neuere Homeauswahl/Videoangleichung noch offen, kein zweiter Websitewriter.",
+      "remaining": "Livebasisd738a94 bestätigt. Neuer Home/Reader/Bilder/HTTP3-Ladefix-Kandidatf6649dc unabhängig angenommen, Upload noch durch unbestätigte Hostinger-Sitzungsreichweite gesperrt. Bestehender Websitearbeiter baut Itemlinks/Rückwege, Podcastabgleich und Bibliotheksadapter weiter.",
       "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
       "latestHandoff": {
         "imageCommit": "b777198",
@@ -894,7 +894,18 @@
         "Next Website"
       ],
       "reconciledAt": "2026-10-03",
-      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "latestSourceProgress": {
+        "terms": 177,
+        "references": 54,
+        "books": 731,
+        "paths": 4,
+        "bookBindings": 33,
+        "newTermsEditorialStatus": "draft",
+        "handoffManifest": "docs/handoffs/website-content-2026-10-03-roadmap/manifest.json",
+        "gapMatrix": "docs/LEXICON-GAP-MATRIX-2026-10-03.json",
+        "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a"
+      }
     },
     {
       "id": "PODCAST-CATALOG-EXPANSION",
@@ -1004,7 +1015,7 @@
           "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
         }
       },
-      "remaining": "Main-Workflowdispatch37085213675 veröffentlicht korrekt samt Archiv. Nächsten normalen Schedulelauf gesondert beobachten; Quellen-Holds, Serien-/Sprach-/Themenerschließung und echte Playbacktests bleiben offen.",
+      "remaining": "Main-Dispatch37085213675 veröffentlicht samt Archiv. Späterer Schedule37100648981 cancelled/jobs[]. Queue:max-Patch PR45 unabhängig akzeptiert, CI durch bestehende Asien-Katalogprüfung rot; kein Bypass/Merge. Website-ID-/Rechteabgleich läuft, App1778IDs unverändert, Holds bleiben. Serien- und Geräteabnahme weiterhin offen.",
       "projects": [
         "Data",
         "App",
@@ -1056,6 +1067,18 @@
         "publishedCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
         "publicPagesReadback": "byte-identical pinned feed",
         "evidence": "docs/evidence/roadmap-continuation-2026-10-03/podcast-publication.json"
+      },
+      "queueCandidate": {
+        "pr": "https://github.com/Blackfront161/Revolution-News-Data/pull/45",
+        "commit": "16154104105018a7707de725ae2dc4147e991bf9",
+        "independentPatchReview": "PASS",
+        "mergePerformed": false,
+        "ciRun": 37106392158,
+        "ciStatus": "FAIL-existing-baseline",
+        "failure": "unchanged news.json has7 eligible Asia source labels; unchanged test_feed_ux_185.py requires8",
+        "cancelledScheduleRun": 37100648981,
+        "diagnosis": "cancelled with jobs[] is compatible with default single-pending queue replacement; concrete triggering run unproven",
+        "remaining": "Resolve underlying baseline quality failure without weakening checks; merge reviewed queue patch; observe successful real schedule publication and read back all artifacts."
       }
     },
     {
@@ -1164,7 +1187,7 @@
       "id": "RADIO-HEALTH-20261003",
       "priority": 1,
       "name": "Radios, Ersatzstreams und App-Verweis beim Teilen",
-      "status": "data-published-app-runtime-local",
+      "status": "three-live-Chrome-playbacks-and-fallbacks-independent-source-PASS-native-open",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "28 directory entries; nine bounded audio responses; nineteen without admitted stream",
@@ -1178,7 +1201,7 @@
         "Next Website",
         "iOS"
       ],
-      "remaining": "PR43 und regelmäßiger Health-Check sind erledigt. Neun begrenzte Audioantworten sind kein Geräte-Playback-PASS; App-Player und Website-Originalsenderpfad samt Ausfall/Ersatzstream prüfen. Neue Sender erst nach Bedarfs-/Quellenreview.",
+      "remaining": "3CR/CORAX/ORANGE im echten Chrome: Start/Pause/Fortsetzen/Stop und Fehler-/15-Sekunden-Hangfallback bestanden; Sharing mit Appverweis bestanden. Quelle unabhängig akzeptiert. Nur drei Sender, kein pauschaler Katalog-/Android-/iOS-Hintergrund-/Sperrbildschirm-PASS; neue Appverteilung offen.",
       "dependsOn": [],
       "reconciledAt": "2026-10-03",
       "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
@@ -1186,7 +1209,19 @@
         "28 Verzeichniseinträge, neun Audioantworten und 19 Einträge ohne freigegebenen Stream getrennt anzeigen; keine pauschale Direktwiedergabe zusagen.",
         "Mindestens 3CR und zwei weitere zulässige funktionierende Sender: echtes Start/Pause/Stop, Streamausfall/Fallback und Hintergrund/Sperrbildschirm je Zielplattform mit Datum nachweisen.",
         "Teilen nennt Originalsender und WRN-App; Metadaten-/Verzeichniseinträge versprechen keine unbestätigte App-Wiedergabe."
-      ]
+      ],
+      "currentCandidate": {
+        "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+        "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+        "liveEvidenceCommit": "2eebc35e67a88f385f612a93027f2689b29c9df2",
+        "report": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/REPORT.md",
+        "review": "PASS",
+        "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+        "appDeploymentPerformed": false,
+        "nativeArtifactBuilt": false,
+        "cloudflareWorkersPublished": true,
+        "cloudflareLiveReadback": "7 GET checks PASS"
+      }
     },
     {
       "id": "PRISONER-DIRECTORY-REVIEW-20261003",
@@ -1220,7 +1255,7 @@
       "id": "LIBRARY-ADAPTERS-20261003",
       "priority": 2,
       "name": "Vier Bibliotheksadapter und weitere deutsche Titel",
-      "status": "planned",
+      "status": "implementation-in-progress-existing-Website-writer",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "Libcom, Kate Sharpley Library, Zabalaza Books, Anarchist Archive: small metadata intake then pagination",
@@ -1236,7 +1271,7 @@
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
-      "remaining": "Vier bisher nur verlinkte Anbieter benötigen echte Metadatenadapter; zehn DE-Kandidaten nach Lückenprüfung bewerten. Nicht die vorhandenen 731/728 Titel erneut importieren.",
+      "remaining": "Bestehender Websitearbeiter baut vier Metadatenadapter und einzelne deutsche Kandidaten; keine automatischen Aufnahme- oder Volltextrechte.",
       "reconciledAt": "2026-10-03",
       "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
       "acceptance": [
@@ -1248,7 +1283,7 @@
       "id": "LEXICON-EDITORIAL-20261003",
       "priority": 2,
       "name": "Nächste Lexikonredaktion und Lernverknüpfungen",
-      "status": "planned",
+      "status": "ten-DE-EN-drafts-source-accepted-metadata-handoff-created",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "Ten new or materially revised DE/EN terms after dedupe against167 existing terms",
@@ -1264,13 +1299,25 @@
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
-      "remaining": "Lückenmatrix gegen 167 bestehende Begriffe zuerst erstellen; nächste zehn neue oder wesentlich verbesserte DE/EN Begriffe nach Nutzen auswählen, bestehende Begriffe nicht nochmals anlegen.",
+      "remaining": "177 Begriffe/54 Referenzen; zehn eigene DE/EN Entwürfe, bestehende167 erhalten. Controller bestätigt die Inhalts-/Referenzbindungen als Metadaten-Handoff mit Entwurfsstatus, validierte Bücher-/Podcast-Direktlinks. Vollständige redaktionelle Abnahme, Data-/Websitepublikation und weitere reale Beziehungen bleiben offen.",
       "reconciledAt": "2026-10-03",
       "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
       "acceptance": [
         "Jeder bearbeitete Begriff enthält fundierte Erklärung, Beispiel, belegte unterschiedliche Positionen, exakte Quellen, Reviewdatum und verwandte Begriffe.",
         "Stabile Beziehungen zu echten Artikeln/Büchern/Podcastfolgen prüfen; Suche und Lernpfad zeigen Originalsprache, Übersetzungs-/KI-Status und Rückkehrkontext."
-      ]
+      ],
+      "currentCandidate": {
+        "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+        "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+        "liveEvidenceCommit": "2eebc35e67a88f385f612a93027f2689b29c9df2",
+        "report": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/REPORT.md",
+        "review": "PASS",
+        "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+        "appDeploymentPerformed": false,
+        "nativeArtifactBuilt": false,
+        "cloudflareWorkersPublished": true,
+        "cloudflareLiveReadback": "7 GET checks PASS"
+      }
     },
     {
       "id": "HELP-AUDIO-TRANSLATION-20261003",
@@ -1304,7 +1351,7 @@
       "id": "NAV-FINDABILITY-20261003",
       "name": "Bestehende WRN-Navigation, Direktlinks und Rückkehrkontext vervollständigen",
       "priority": 1,
-      "status": "app-area-links-filter-history-reviewed-remaining-scenarios-open",
+      "status": "app-item-links-return-context-independent-PASS-platform-and-website-open",
       "projects": [
         "App",
         "Next Website"
@@ -1313,7 +1360,7 @@
         "CONTENT-CATALOG-PARITY"
       ],
       "owner": "Bestehende App-/Website-Verantwortliche; gemeinsame Schnittstellenabnahme",
-      "remaining": "App-Bereichs-/Medienlinks, lokale Filterrückkehr, Scroll/Fokus und Browser-Back→Forward unabhängig akzeptiert. Hilfeprivacy: keine Hilfefilter im Verlauf. Item-ID-Direktlinks, volle neunsprachige Navigations-/200%-Reflowmatrix, Website-Rückkehrkontext und native Nutzungsszenarien bleiben offen; kein neuer Router oder Designsystem.",
+      "remaining": "App-ID-Direktlinks, Begriff→Buch/Podcast→Back, unknown/no-autoplay/helpprivacy und neun UI-Sprachen im Lexikon360/768/1440+200% unabhängig akzeptiert. Volle alle-Ansichten-/Plattformmatrix und native Nutzung offen; Websiteabschluss im vorhandenen Chat.",
       "acceptance": [
         "News, Videos, Originalpodcasts, Hörfassungen, Live-Radio, Lexikon, Bibliothek und Atlas-Einstieg sind eindeutig erreichbar; Atlasstatus bis Integration ehrlich benennen.",
         "Bestehende App-history-/Website-hash-Navigation erweitern: Bereich/ID/Quelle/Sprache/Thema per Direktlink; Browser-Back, App-Back, Liste/Filter/Scroll/Fokus und Artikelposition erhalten.",
@@ -1369,6 +1416,18 @@
         "mediaSections": 6,
         "nativeArtifactBuilt": false,
         "appDeploymentPerformed": false
+      },
+      "currentCandidate": {
+        "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+        "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+        "liveEvidenceCommit": "2eebc35e67a88f385f612a93027f2689b29c9df2",
+        "report": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/REPORT.md",
+        "review": "PASS",
+        "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+        "appDeploymentPerformed": false,
+        "nativeArtifactBuilt": false,
+        "cloudflareWorkersPublished": true,
+        "cloudflareLiveReadback": "7 GET checks PASS"
       }
     },
     {
@@ -1400,7 +1459,7 @@
       "id": "PROVIDER-QUOTA-VISIBILITY-20261003",
       "name": "Bestehende Übersetzung und Stimmen mit ehrlichen Kontingentanzeigen ergänzen",
       "priority": 1,
-      "status": "planned-user-approved-implementation",
+      "status": "existing-workers-published-readback-PASS-app-UI-source-accepted",
       "projects": [
         "App",
         "Cloudflare active workers",
@@ -1409,7 +1468,7 @@
       ],
       "dependsOn": [],
       "owner": "Bestehende Backend-/App-Verantwortliche",
-      "remaining": "Public health/status ist erreichbar, tatsächliche Accounttarife nicht belegt. Bereits geprüfte gemeinsame Übersetzungen nicht nochmals grundlegend implementieren.",
+      "remaining": "Beide bestehenden Worker publiziert und sieben GET-Readbacks bestanden; alle Variablen inklusive GEMINI_MODEL erhalten. UI mit strikt bestätigtem Status, WRN-Quoten/Reset/429-Fallback unabhängig akzeptiert, aber nicht als neuer App-/Storebuild verteilt. Tatsächliche Providerkonto-Tarife und vollständige Plattform-/Fehlermatrix bleiben offen.",
       "acceptance": [
         "Aktiven Gemini-Proxy/KV-Cache/Azure-TTS/R2-Pfad von Next-Serviceentwürfen und lokalen Gerätestimmen trennen; Google-Projektkontingent, Azure-Tarif und WRN-eigene Guards separat dokumentieren.",
         "Vorhandenen gemeinsamen Cache und R2-Wiederverwendung erweitern statt zweiten Cache bauen; identischer zulässiger Inhalt/Sprache/Version erzeugt HIT für zweiten Nutzer, Widerruf/Änderung invalidiert korrekt.",
@@ -1419,7 +1478,19 @@
         "Data Draft PR20 gegen bestehende aktive Cost Guards abgleichen; nur echte Lücken übernehmen, keine parallele Quota-/Cachearchitektur."
       ],
       "reconciledAt": "2026-10-03",
-      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "currentCandidate": {
+        "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+        "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+        "liveEvidenceCommit": "2eebc35e67a88f385f612a93027f2689b29c9df2",
+        "report": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/REPORT.md",
+        "review": "PASS",
+        "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+        "appDeploymentPerformed": false,
+        "nativeArtifactBuilt": false,
+        "cloudflareWorkersPublished": true,
+        "cloudflareLiveReadback": "7 GET checks PASS"
+      }
     },
     {
       "id": "ATLAS-HOST-INTEGRATION-20261003",
@@ -2566,6 +2637,27 @@
         "podcastOriginalLinks": 1722,
         "videoOriginalLinks": 16
       }
+    },
+    "currentAppCandidate": {
+      "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+      "evidenceCommit": "972c56cd9aee208d9a5e2259518c3b2aba48d1a6",
+      "liveEvidenceCommit": "2eebc35e67a88f385f612a93027f2689b29c9df2",
+      "report": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/REPORT.md",
+      "review": "PASS",
+      "reviewTurn": "01a100c9-a90f-7ff0-9088-b3353b03300a",
+      "appDeploymentPerformed": false,
+      "nativeArtifactBuilt": false,
+      "cloudflareWorkersPublished": true,
+      "cloudflareLiveReadback": "7 GET checks PASS"
+    },
+    "nextExistingTasks": "Source-bound current App review then existing Worker deploy/readback; Website writer finishes nav/podcast/library candidates; Data CI baseline and real scheduled publication, native/full matrix remain open.",
+    "cloudflareLive": {
+      "proxyVersion": "aa18e5e2-d095-41b5-af71-71db1eb3d07a",
+      "cacheVersion": "da809aa7-3de3-4d83-b178-c13542bfe17e",
+      "report": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/REPORT.md",
+      "plainVarsAndModelPreserved": true,
+      "readbackChecks": 7,
+      "providerGenerationTested": false
     }
   }
 }

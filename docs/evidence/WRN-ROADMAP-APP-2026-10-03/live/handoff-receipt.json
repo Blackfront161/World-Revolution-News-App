@@ -1,0 +1,10 @@
+{
+  "appCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+  "manifestPath": "docs/handoffs/website-content-2026-10-03-roadmap/manifest.json",
+  "manifestSha256": "ba0687a53acb3d4e72ee8bf20439847c2e4ac02c088ac0de6aa43f0c74dc6a12",
+  "payloadHashCount": 14,
+  "totalFilesIncludingManifest": 15,
+  "lexiconTerms": 177,
+  "rights": "Article/book/podcast metadata and original links; WRN editorial notes/lexicon/learning paths. No publisher bodies, transcripts, artwork, audio downloads or unreviewed addresses.",
+  "handoffSentToThread": "01a0f307-a269-7461-afd0-3daf4309da0f"
+}

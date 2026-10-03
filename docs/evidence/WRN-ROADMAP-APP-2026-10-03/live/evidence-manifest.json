@@ -12,14 +12,24 @@
       "sha256": "b123b86b692f01b6e42385d080e5e467e27b7d630e44e458cea05c847d034cec"
     },
     {
+      "path": "handoff-receipt.json",
+      "bytes": 588,
+      "sha256": "a89fbb4c5a709822e6df93ded900ce88e9634639f4630acf0b932acf002438a4"
+    },
+    {
+      "path": "independent-live-review.json",
+      "bytes": 962,
+      "sha256": "e34987c3ab6da95585e389bde36185a2e239b2212e5dd1c3c4f58100dc573e9b"
+    },
+    {
       "path": "independent-review.json",
       "bytes": 1463,
       "sha256": "57361a1356888ba90db1847b4f5198eaf5f63b65008e62a403cd4d80fa1fc286"
     },
     {
       "path": "REPORT.md",
-      "bytes": 2511,
-      "sha256": "d6952298dedddc67470e175f2673ac362abdadc824e353bfa3de3e56f32c9cf5"
+      "bytes": 2556,
+      "sha256": "c44e9132c98402a6d264d2ed6a204b2bb2cd5d9f43533118de81f416909de20e"
     }
   ]
 }
