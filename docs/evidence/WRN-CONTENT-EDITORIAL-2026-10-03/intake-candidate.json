@@ -1,0 +1,2528 @@
+{
+  "baselineBooks": 731,
+  "baselinePodcastRows": 1778,
+  "bookRecords": [
+    {
+      "id": "anarchist-library-de-ba62ecff09594a0105cded9a",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Anarchismus und Organisation",
+      "authors": [
+        "Anton Constandse"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/anton-constandse-anarchismus-und-organisation",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/anton-constandse-anarchismus-und-organisation",
+      "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "292156d046ad968243d01a48367da0f25028164f009b5d58a8035855d988a373"
+      }
+    },
+    {
+      "id": "anarchist-library-de-174b8a1c8b31483104c78134",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Nietzsche und Anarchie",
+      "authors": [
+        "Shahin"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/shahin-nietzsche-und-anarchie",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/shahin-nietzsche-und-anarchie",
+      "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "ea8aa7fc83cfd3491299051a103ed79c21056b21d26408600f369a3879c61376"
+      }
+    },
+    {
+      "id": "anarchist-library-de-53f177951cf6dc3525a55ad2",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Aufhebung und Überwindung",
+      "authors": [
+        "Alfredo M. Bonanno"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/alfredo-m-bonanno-aufhebung-und-uberwindung",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/alfredo-m-bonanno-aufhebung-und-uberwindung",
+      "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "d38239812417edc63289887ea0964167162832261b5239e2815508ab67668591"
+      }
+    },
+    {
+      "id": "anarchist-library-de-433b2ba94777b2cbc1a40583",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Plena sind das Opium der Basis",
+      "authors": [
+        "Projektgruppe „HierarchNie!“"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/projektgruppe-hierarchnie-plena-sind-das-opium-der-basis-1",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/projektgruppe-hierarchnie-plena-sind-das-opium-der-basis-1",
+      "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "3e11fa1a4bb1ad384cbdb9e62c5fd667d41d198c95b6229ee79b546b2cc53b27"
+      }
+    },
+    {
+      "id": "anarchist-library-de-cdd0f47e1835707d18dfbc69",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Gegenmacht oder chaotischer Kampf ?",
+      "authors": [],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/anonym-gegenmacht-oder-chaotischer-kampf",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/anonym-gegenmacht-oder-chaotischer-kampf",
+      "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "40960262efea82a45aa1f26f17299a95166d2ba680fbf943ebc21542dfcd7b4f"
+      }
+    },
+    {
+      "id": "anarchist-library-de-a66f144a48eed29e9330ce16",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "ANARCHISMUS!",
+      "authors": [],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/anonym-anarchismus",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/anonym-anarchismus",
+      "updatedAt": "2026-10-03T14:14:00.010103+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "91e9bd5562e2c564b893687b7cefc7ff3b1cf0b4aeff7a3d84593a6e39d1d271"
+      }
+    },
+    {
+      "id": "anarchist-library-de-dbfc419a36310497917860c0",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Leben als Totalität",
+      "authors": [
+        "Wolfi Landstreicher"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/wolfi-landstreicher-leben-als-totalitaet",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/wolfi-landstreicher-leben-als-totalitaet",
+      "updatedAt": "2026-10-03T14:14:00.027206+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "c0efe82c1c6ee95244ba3793b6bcf2fcbfa41e7d504b747a89c1d014cd42eeec"
+      }
+    },
+    {
+      "id": "anarchist-library-de-37f710aeecdeffbe215e526b",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Realität ohne Regierung",
+      "authors": [
+        "Ito Noe"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/ito-noe-realitat-ohne-regierung",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/ito-noe-realitat-ohne-regierung",
+      "updatedAt": "2026-10-03T14:14:00.125266+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "6b696b227dbe9bf4975680313192631fc030dc282fa788ada512f01dbc1c97ae"
+      }
+    },
+    {
+      "id": "anarchist-library-de-4bf827a262200fb3dc1dcf0b",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Die Korporation Belarus",
+      "authors": [
+        "Alinevich, Ihar"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/alinevich-ihar-die-korporation-belarus",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/alinevich-ihar-die-korporation-belarus",
+      "updatedAt": "2026-10-03T14:14:00.228784+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "f28de4be47b657606d2bba797d04887c98b68a4aa049109cd4031f3d4faaf687"
+      }
+    },
+    {
+      "id": "anarchist-library-de-b3828bd26e2871d376d62575",
+      "sourceId": "anarchist-library-de",
+      "sourceName": "Anarchistische Bibliothek (Deutsch)",
+      "title": "Empörung und Entrüstung oder Zerstörung und Verwüstung",
+      "authors": [
+        "Bert Papenfuß"
+      ],
+      "languages": [
+        "de"
+      ],
+      "languageSource": "individual-original-html-language",
+      "languageVerified": true,
+      "topics": [],
+      "formats": [
+        "html"
+      ],
+      "readUrl": "https://de.anarchistlibraries.net/library/bert-papenfuss-emporung-und-entrustung-oder-zerstorung-und-verwustung",
+      "downloads": {},
+      "upstreamId": "https://de.anarchistlibraries.net/library/bert-papenfuss-emporung-und-entrustung-oder-zerstorung-und-verwustung",
+      "updatedAt": "2026-10-03T14:14:01.451784+00:00",
+      "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+      "contentPolicy": "metadata_and_links_only",
+      "rightsStatus": "unverified",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+        "decision": "metadata-original-link-admitted",
+        "evidenceSha256": "36289546503fcc3cb136eafa1dbecc61cfe9cd94b79b41463d9a66027d80c7c6"
+      }
+    }
+  ],
+  "podcastRecords": [
+    {
+      "id": "ff958a03fc63253ccbeeaca5",
+      "type": "original-podcast",
+      "sourceId": "radio-onda-rossa",
+      "sourceName": "Radio Onda Rossa",
+      "title": "[Le faremo sapere] Pearl Moth",
+      "published": "2026-10-02T16:00:00+00:00",
+      "language": "it",
+      "country": "IT",
+      "region": "Europa",
+      "episodeUrl": "https://www.ondarossa.info/newstrasmissioni/faremo-sapere/2026/10/pearl-moth",
+      "feedUrl": "https://www.ondarossa.info/feed",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-6bba991d8cbabbd04cbdfe1c90b13666de23322a48e4e1f2054f3f154c267718"
+      }
+    },
+    {
+      "id": "16374a915016a9868aef33a8",
+      "type": "original-podcast",
+      "sourceId": "radio-onda-rossa",
+      "sourceName": "Radio Onda Rossa",
+      "title": "Francia: ancora repressione nelle piazze",
+      "published": "2026-10-02T15:30:00+00:00",
+      "language": "it",
+      "country": "IT",
+      "region": "Europa",
+      "episodeUrl": "https://www.ondarossa.info/newsredazione/2026/10/francia-ancora-repressione-nelle-piazze",
+      "feedUrl": "https://www.ondarossa.info/feed",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-3b4b1c4e49492e8521828dc867626057000ea5b6fff20ebaea3904832420f8d2"
+      }
+    },
+    {
+      "id": "d9eaded1bb1fdcbf6b4f0bea",
+      "type": "original-podcast",
+      "sourceId": "radio-onda-rossa",
+      "sourceName": "Radio Onda Rossa",
+      "title": "[split] Urban essence",
+      "published": "2026-10-02T15:03:07+00:00",
+      "language": "it",
+      "country": "IT",
+      "region": "Europa",
+      "episodeUrl": "https://www.ondarossa.info/newstrasmissioni/split/2026/10/urban-essence",
+      "feedUrl": "https://www.ondarossa.info/feed",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-a18b963ee16a6e9de7585e96ce3422354fd63e0216e7be8003d5b87189d4dc32"
+      }
+    },
+    {
+      "id": "dea12384977df080251d3978",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Vogel der Woche - der Tannenhäher - the northern nutcracker (Serie 204: Vogel der Woche)",
+      "published": "2026-10-02T14:31:07+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144896",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-4619926dc35d0e1a8d02cb2216c0c1cb0b9d8bab53bd1984a84d1dfaa0a5c235"
+      }
+    },
+    {
+      "id": "999f0bd1c678ad702de32849",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "UCK Prozeß in Den Haag: \"Die Geschichte des souveränen deutschen Militarismus nach 1990 ist ohne die Geschichte der Jugoslawienkriege nicht zu schreiben.\"",
+      "published": "2026-10-02T13:43:17+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144895",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-14aec75a682b71dce5b08608bbcbdde660a56ff1483fa0fe50ad057148ec14a8"
+      }
+    },
+    {
+      "id": "7afdcf55c34e41aeaf38ddb9",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Bored Teenagers - 50 Jahre Punk (Serie 1002: CX - Corax - Kultur - Protur)",
+      "published": "2026-10-02T10:14:56+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144884",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-1a33521e4627443b6c0fb9058b38436fc8490d7aef5dac8faed5981a9fa37770"
+      }
+    },
+    {
+      "id": "1e1cbbc54fe47bda207f57ff",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Trittstein: Der Trauerschnäpper steht zur Wahl für den Vogel des Jahres 2027 (Serie 1584: Wild & Wunderbar)",
+      "published": "2026-10-02T10:10:58+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144883",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-9e93ace73969217bf15ae6f9c1e5d5e1ee82fd56a8d0786c1970b61ab552bb78"
+      }
+    },
+    {
+      "id": "49b5b039824a55b25eeae0a5",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Trittstein: Die Mehlschwalbe steht zur Wahl für den Vogel des Jahres 2027 (Serie 1584: Wild & Wunderbar)",
+      "published": "2026-10-02T10:10:04+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144882",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-1085193e9b0354492d9aaa49e90990799abc3a93cff9d294ea2736d59b978cbf"
+      }
+    },
+    {
+      "id": "543fc8ff5714f10c0a4a3e4d",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Trittstein: Die Wasseramsel steht zur Wahl für den Vogel des Jahres 2027 (Serie 1584: Wild & Wunderbar)",
+      "published": "2026-10-02T10:09:28+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144881",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-cdc16815eb566d347f44f46a10f57cbb1c3b9f424577564715e68b9919f35005"
+      }
+    },
+    {
+      "id": "5e26fce9d98aaa1412477a8c",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Trittstein: Der Kolkrabe steht zur Wahl für den Vogel des Jahres 2027 (Serie 1584: Wild & Wunderbar)",
+      "published": "2026-10-02T10:08:31+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144880",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-81ab84ca9fd119d2c9c4239e878b2f1363b1d5c8849c290ab20b7da7ba4e84fd"
+      }
+    },
+    {
+      "id": "bb9a7668791c61829cc66dd2",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Trittstein: Der Kranich steht zur Wahl für den Vogel des Jahres 2027 (Serie 1584: Wild & Wunderbar)",
+      "published": "2026-10-02T10:06:42+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144879",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-46a752761164468b239f1debfe471836da1629179884e80b4e6862899f5568bc"
+      }
+    },
+    {
+      "id": "3e453f965c60db92c6c29745",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Bolsonaro gegen Lula: Brasilien wählt",
+      "published": "2026-10-02T09:12:28+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144875",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-5b51deb5dcb45e4e36e0f13a8f1ba89cc0901c2bf5308ce8da52e672aa1ff442"
+      }
+    },
+    {
+      "id": "019d22e4efad67778ba31b18",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Nachtentfalter-Symposium (Serie 1002: CX - Corax - Kultur - Protur)",
+      "published": "2026-10-02T09:00:52+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144874",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-c19171de834ad6f49d6bf15751463b7d47fe40474076fdc4dd9ac776ae4280de"
+      }
+    },
+    {
+      "id": "6f1a5fbe16b3d9eb5d48bb9d",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Gehen die Proteste gegen Zwangsräumung in einen Generalstreik gegen die Wohnungsmisere über",
+      "published": "2026-10-02T08:41:05+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144873",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-53ad43b0404195788a4a5446e5bad15b6fbff14e6b925fddd5116f0c9b418392"
+      }
+    },
+    {
+      "id": "c8675e669e0cb601e141cc82",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Große Proteste an französischen Schulen stoßen auf u.a. rassistische Gegenkampagne",
+      "published": "2026-10-02T08:17:48+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144872",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-f1978a08fffe4e9967ca011b00202c83de5ef71c5922285e50e7e911fe0b0fc1"
+      }
+    },
+    {
+      "id": "7c8108aa8e6710decbe91078",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "axel springer award an peter thiel verliehen",
+      "published": "2026-10-02T07:40:40+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144868",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-9fe225f1ae76af433f3eb19cc3aa2c92604090b64aaf3d69ec085b2cbbd9c67c"
+      }
+    },
+    {
+      "id": "7ee7322ddfd62b04b17ae1bf",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Red Pepper with Eric Shonkwiler",
+      "published": "2026-10-02T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/bea3d5ab/red-pepper-with-eric-shonkwiler",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-6b50efa2437991c8d8ea99058cc0e533b98ba60747874c9b7de1354214a800a1"
+      }
+    },
+    {
+      "id": "6ea8709413472b7399c32b34",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Der Preis der \"Freiheit\" - Die Friedrich-Naumann-Stiftung kümmert sich um den Iran",
+      "published": "2026-10-02T06:42:47+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144867",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-10e0d28fdac7d6452ed6b488992ee4593596673d0f8decc98642619cbc7313c0"
+      }
+    },
+    {
+      "id": "2ba293d918aaac60262fb246",
+      "type": "original-podcast",
+      "sourceId": "radio-corax",
+      "sourceName": "Radio CORAX – Nachhören",
+      "title": "Umweltfolgen von KI: \"Die Politik muss die Rahmenbedingungen setzen\" (Serie 998: CX - Corax - Umwelt - Grünes)",
+      "published": "2026-10-01T15:14:44+00:00",
+      "language": "de",
+      "country": "DE",
+      "region": "DACH",
+      "episodeUrl": "https://www.freie-radios.net/144852",
+      "feedUrl": "https://www.freie-radios.net/portal/podcast.php?radio=corax&rss=",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-bbf08014c4cf43237c55144e231f9077e67a5f7f09c64c77ae9edc25f7edb2a7"
+      }
+    },
+    {
+      "id": "6b123dc52f0081dfbee46612",
+      "type": "original-podcast",
+      "sourceId": "working-class-history",
+      "sourceName": "Working Class History",
+      "title": "E126: [TEASER] Fireside Chat - How we won the weekend",
+      "published": "2026-09-30T15:54:14+00:00",
+      "language": "en",
+      "country": "GB",
+      "region": "Europa",
+      "episodeUrl": "https://workingclasshistory.com/podcast/e126-the-radical-history-of-the-weekend/",
+      "feedUrl": "https://www.spreaker.com/show/5711490/episodes/feed",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-593f57c9a5318c81503c1208cb60b79ba5f87a0d1fb6fc74d0b69f8b75bbe798"
+      }
+    },
+    {
+      "id": "26529560a4ac778463789975",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: Fat Bear Week Edition",
+      "published": "2026-09-29T16:28:28+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/f15a0659/this-week-in-the-apocalypse-fat-bear-week-edition",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-e6592dbf422469ab7cf252d76a37c72ec1c1501365410fd2052d0c1ffdfc5519"
+      }
+    },
+    {
+      "id": "df4e2a0f3ffd168c5082b6ce",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Penelope Swales Fringe Back to me: A musical journey of Survival.",
+      "published": "2026-09-27T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/penelope-swales-fringe-back-me-musical-journey-survival",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-fe0078c6387a405d7c00568f80445817839fff13b7b51ce1b5f83e72e8b775af"
+      }
+    },
+    {
+      "id": "13242defc1f201d3a166d4b6",
+      "type": "original-podcast",
+      "sourceId": "chroniques-rebelles",
+      "sourceName": "Chroniques rebelles – Radio Libertaire",
+      "title": "Émission du 26 septembre 2026",
+      "published": "2026-09-26T11:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/2026/09/26/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-bab687ca5b543a886509603322089b3e3238cdbea7fcc9c5c511ddc81e2b38ff"
+      }
+    },
+    {
+      "id": "507baf1418ee954cd245d181",
+      "type": "original-podcast",
+      "sourceId": "radio-onda-rossa",
+      "sourceName": "Radio Onda Rossa",
+      "title": "[Ponte Radio] Tecnologiche ingerenze",
+      "published": "2026-09-25T14:14:57+00:00",
+      "language": "it",
+      "country": "IT",
+      "region": "Europa",
+      "episodeUrl": "https://www.ondarossa.info/newstrasmissioni/ponte-radio/2026/10/tecnologiche-ingerenze",
+      "feedUrl": "https://www.ondarossa.info/feed",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-ca853e4fda18f756e85479efccf00b03a7eef79ff75ecb23c029674e931df72a"
+      }
+    },
+    {
+      "id": "2662f50866665e6e72bbe97c",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Circle Aleph on Publishing Jewish Anarchist Tradition",
+      "published": "2026-09-25T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/7dfd04f5/circle-aleph-on-publishing-jewish-anarchist-tradition",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-98493bab795e4a9c20c3f65fb09f115db3f7d6d4a56751efc827cbfeb906d19f"
+      }
+    },
+    {
+      "id": "a73a5ce7a715c34690b7f97e",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: September 22nd, 2026",
+      "published": "2026-09-22T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/fbc0a77b/this-week-in-the-apocalypse-september-22nd-2026",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-c3d120d382b54f47627ae5545a9d764a4c34754d3319fe64d7aa683c7e39e549"
+      }
+    },
+    {
+      "id": "cf21bcadcfb8c85a37b39cae",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Luke Red Stitch Theatre Radical Computing",
+      "published": "2026-09-20T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/luke-red-stitch-theatre-radical-computing",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-8cccfc51746f2ce8270a60f3233c26a8652c5bf896a08f09da7392a66c8d7360"
+      }
+    },
+    {
+      "id": "69458b516df9dafe8fa21f26",
+      "type": "original-podcast",
+      "sourceId": "chroniques-rebelles",
+      "sourceName": "Chroniques rebelles – Radio Libertaire",
+      "title": "Émission du 19 septembre 2026",
+      "published": "2026-09-19T11:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/2026/09/19/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-ed90bbe49d7fc7dd52f851451a01e1420a10dedd1c7a9ffc8280567638f938c3"
+      }
+    },
+    {
+      "id": "a115c4474d801a0699e9e409",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Woven Ends on Death & Dying pt. I (Rerun)",
+      "published": "2026-09-18T15:59:12+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/6e5d1126/woven-ends-on-death-dying-pt-i-rerun-",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-502372eb49fdd6dfc01402d01e7ffceb3887166509735386a8852255f24e50ae"
+      }
+    },
+    {
+      "id": "7371df5358e2c0e6145337c5",
+      "type": "original-podcast",
+      "sourceId": "working-class-history",
+      "sourceName": "Working Class History",
+      "title": "WCL15: Literature of the 1926 General Strike",
+      "published": "2026-09-16T16:06:00+00:00",
+      "language": "en",
+      "country": "GB",
+      "region": "Europa",
+      "episodeUrl": "https://workingclasshistory.com/podcast/wcl15-literature-of-the-1926-general-strike/",
+      "feedUrl": "https://www.spreaker.com/show/5711490/episodes/feed",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-752c86b3e60a1b3764d0b63652a329e7c389c2ebf92f3bba8b65a937f131a563"
+      }
+    },
+    {
+      "id": "41bd63aa3a4282d577340f11",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: Sept 15, 2026",
+      "published": "2026-09-15T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/ffa1be03/this-week-in-the-apocalypse-sept-15-2026",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-abf99cd6ff940cf09b1ed5388dda7879ed4049f6a183a1cb3ef50f754359abb0"
+      }
+    },
+    {
+      "id": "a7b473d0c706cacd2be7ed68",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Sarah Feagan Living Positive Victoria Bi++",
+      "published": "2026-09-13T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/sarah-feagan-living-positive-victoria-bi",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-2b64a850c3eb5232f9b6ab1de5c92393b22e47b38354c32ef3f6eb6916f9deb7"
+      }
+    },
+    {
+      "id": "7ddb914b8a6e93fe59c5f56a",
+      "type": "original-podcast",
+      "sourceId": "chroniques-rebelles",
+      "sourceName": "Chroniques rebelles – Radio Libertaire",
+      "title": "Émission du 12 septembre 2026",
+      "published": "2026-09-12T11:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/2026/09/12/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-ef51afdc9046fe6a4026e1d35ef6260c0ddead7a857bbbf9e5b4e9748f6751cd"
+      }
+    },
+    {
+      "id": "2337717558f9877fd97e119a",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Nolan on Perennial Food Systems",
+      "published": "2026-09-11T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/0ca4e765/nolan-on-perennial-food-systems",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-c21a8439f9f0228496614b9f74e847db10bdcaed55a5cb187cb57301f1c09318"
+      }
+    },
+    {
+      "id": "dab65efa6c5fbc303612362f",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: Sept 8, 2026",
+      "published": "2026-09-08T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/c47cecc6/this-week-in-the-apocalypse-sept-8-2026",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-ae18d430497040391fde4ea9a867db4641e4fd034914deb263bf1a8650967ea3"
+      }
+    },
+    {
+      "id": "a27c64959daf8edf26f865af",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Dolly Parton Tim Curry Celebrate bi month current political climate",
+      "published": "2026-09-06T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/dolly-parton-tim-curry-celebrate-bi-month-current-political-climate",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-5b60253876b10e1bb65e7806e9d92a9cd5d9dd0c3f3c34be1a0c8f7523023b7b"
+      }
+    },
+    {
+      "id": "abf317009cfd4e89afd0569f",
+      "type": "original-podcast",
+      "sourceId": "chroniques-rebelles",
+      "sourceName": "Chroniques rebelles – Radio Libertaire",
+      "title": "Émission du 5 septembre 2026",
+      "published": "2026-09-05T11:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/2026/09/05/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-8ddeba1d0a9369b7b5c70d912971312fb13ef58f86410d163b51a2319bd85442"
+      }
+    },
+    {
+      "id": "cb94448dfcf95de7b5f2a4e2",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Micro, Pocket, or Miyawaki Forests with Rotglow Farm",
+      "published": "2026-09-04T06:37:02+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/153f9051/micro-pocket-or-miyawaki-forests-with-rotglow-farm",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-3baf6769abadc879d759a5e49dc72e03df0e81583c48e9de08f804f49843e63c"
+      }
+    },
+    {
+      "id": "dc4c1b976d69fcca29dd67af",
+      "type": "original-podcast",
+      "sourceId": "carapatage",
+      "sourceName": "Carapatage – Radio Libertaire",
+      "title": "Émission du 2 septembre 2026",
+      "published": "2026-09-02T18:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/2026/09/02/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-0f5e35d870981133c3e1091f44b48ae17040166a428b229db9215075ef96a707"
+      }
+    },
+    {
+      "id": "87f28e9b345f5713fb853272",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: Sept 1, 2026",
+      "published": "2026-09-01T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/76c429e1/this-week-in-the-apocalypse-sept-1-2026",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-a1d2048d9a42f34afcebf84385e3efd9f822e7cb0e28ea1b860beb559daa0e2f"
+      }
+    },
+    {
+      "id": "6dc2cc4b788f69c50489c2d2",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Smash the patriarchy",
+      "published": "2026-08-30T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/smash-patriarchy",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-e7db3ff816c0fa2b6e2ee45c0640b68906f0f32329bd16356c37762cbda5f5f2"
+      }
+    },
+    {
+      "id": "56ec5f16a649a8ec1d8a4411",
+      "type": "original-podcast",
+      "sourceId": "chroniques-rebelles",
+      "sourceName": "Chroniques rebelles – Radio Libertaire",
+      "title": "Émission du 29 août 2026",
+      "published": "2026-08-29T09:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/2026/08/29/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-1d41823adfe357ac3376556dda866e3a526036d905e411822821b23cb9a13d23"
+      }
+    },
+    {
+      "id": "b13e669826d3ad45488c765b",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Doing Good Journalism with James and Miriam",
+      "published": "2026-08-28T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/188b8ffc/doing-good-journalism-with-james-and-miriam",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-34ba5ae9546838f4ceabe4d14259b79785990a53455e162e4e17218afdd207aa"
+      }
+    },
+    {
+      "id": "505a35d28a34489596acf0c2",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: August 25, 2026",
+      "published": "2026-08-25T07:51:56+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/dcde10e6/this-week-in-the-apocalypse-august-25-2026",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-13fe363b5fff51c6c0cb4908d4bbe0382aee2fd4e22a78a62e32fb7127c59320"
+      }
+    },
+    {
+      "id": "c83d7b7fa8d0fe205b7678e5",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Paul Byrne-Moroney intersex advocate and speaker",
+      "published": "2026-08-23T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/paul-byrne-moroney-intersex-advocate-and-speaker",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-9f89f13061a307603c346d29738ba52750ef6d969e82738d4968d66832f5ae8c"
+      }
+    },
+    {
+      "id": "3b31b9206837e70726edcd33",
+      "type": "original-podcast",
+      "sourceId": "chroniques-rebelles",
+      "sourceName": "Chroniques rebelles – Radio Libertaire",
+      "title": "Émission du 22 août 2026",
+      "published": "2026-08-22T11:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/2026/08/22/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/chroniques-rebelles/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-df1f297cc8863a80d76971ad43655fc62e9632562e9b585d2c586fffe9b99671"
+      }
+    },
+    {
+      "id": "c4ce74e28d90f31ccfcf9863",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Clare Follmann on \"Scapegoat: What the Invasive Species Story Gets Wrong\"",
+      "published": "2026-08-21T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/b69fe3ed/clare-follmann-on-scapegoat-what-the-invasive-species-story-gets-wrong-",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-1ec3a71b4c27f24b131712eeb45a94c384c9b4e50d637c4d14022fc7521167bb"
+      }
+    },
+    {
+      "id": "4d52180a130dfe2cddafbefe",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "This Week in the Apocalypse: August 18, 2026",
+      "published": "2026-08-18T08:16:58+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/a438d383/this-week-in-the-apocalypse-august-18-2026",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-753e49d963a656691d8878f29221d1a3cca88881c82f3b2ad8e7b1f28f618589"
+      }
+    },
+    {
+      "id": "9636b9fd608baa6867956733",
+      "type": "original-podcast",
+      "sourceId": "out-of-the-pan",
+      "sourceName": "Out of the Pan (3CR)",
+      "title": "Luka and Unpack Your S--t! Trans film Fundraiser",
+      "published": "2026-08-16T02:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/outofthepan/episode/luka-and-unpack-your-s-t-trans-film-fundraiser",
+      "feedUrl": "https://www.3cr.org.au/outofthepan/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-9cc09a8e4cafd215b9b4f7501197c5fa23e24548bbe211ad386deecadd5d9c0c"
+      }
+    },
+    {
+      "id": "3a5ef2f879ddd2f50abbc869",
+      "type": "original-podcast",
+      "sourceId": "live-like-the-world-is-dying",
+      "sourceName": "Live Like the World Is Dying",
+      "title": "Know Your Rights with Mo (Rerun)",
+      "published": "2026-08-14T07:00:00+00:00",
+      "language": "en",
+      "country": "US",
+      "region": "North America",
+      "episodeUrl": "https://live-like-the-world-is-dying.pinecast.co/episode/e4315eb6/know-your-rights-with-mo-rerun-",
+      "feedUrl": "https://pinecast.com/feed/live-like-the-world-is-dying",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-e5929fcd20c6f23d297cc4e50b97bde51a71dbc4ce71ccb94c343561eb717ea1"
+      }
+    },
+    {
+      "id": "16cbc058f9e925b0f979b4e4",
+      "type": "original-podcast",
+      "sourceId": "yeah-nah-pasaran",
+      "sourceName": "Yeah Nah Pasaran! (3CR)",
+      "title": "Ariel Bogle on 764 (and more)",
+      "published": "2026-07-30T06:30:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/yeahnahpasaran/episode/ariel-bogle-764-and-more",
+      "feedUrl": "https://www.3cr.org.au/yeahnahpasaran/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-1fc0a53565719dd44b24371d62e7e570804e0c9e73dd9d458e629f16a77a9be8"
+      }
+    },
+    {
+      "id": "cc213d04f4fe95c5644641fb",
+      "type": "original-podcast",
+      "sourceId": "carapatage",
+      "sourceName": "Carapatage – Radio Libertaire",
+      "title": "Émission du 21 juillet 2025 (rediffusion)",
+      "published": "2025-07-21T11:00:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/2025/07/21/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-e942b9116b3539d64d2f24f41236e5be43169334de90fb3c436f3649264b1481"
+      }
+    },
+    {
+      "id": "e1b3722cae689ddf5169e62b",
+      "type": "original-podcast",
+      "sourceId": "carapatage",
+      "sourceName": "Carapatage – Radio Libertaire",
+      "title": "La répression au service de la guerre (rediffusion)",
+      "published": "2025-07-16T18:30:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/2025/07/16/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-d7a7fb738328a2f5ad1c2b957eacc7cb8676ad0bfcf508bfc910d782c031c6bb"
+      }
+    },
+    {
+      "id": "53da02f253887e295a7fd621",
+      "type": "original-podcast",
+      "sourceId": "queering-the-air",
+      "sourceName": "Queering The Air (3CR)",
+      "title": "Improving the world one book at a time, with Melbourne legendary queer bookseller, Roland from Hares and Hyenas!",
+      "published": "2025-07-13T05:00:00+00:00",
+      "language": "en",
+      "country": "AU",
+      "region": "Oceania",
+      "episodeUrl": "https://www.3cr.org.au/queeringtheair/episode/improving-world-one-book-time-melbourne-legendary-queer-bookseller-roland",
+      "feedUrl": "https://www.3cr.org.au/queeringtheair/itunes",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-ee9e17d9ba11f0da7bd15e70373b7c34f8af015ecbdfc1e23fb8ee88036ff2a6"
+      }
+    },
+    {
+      "id": "8371e25759715b2a922e0343",
+      "type": "original-podcast",
+      "sourceId": "carapatage",
+      "sourceName": "Carapatage – Radio Libertaire",
+      "title": "La répression au service de la guerre (rediffusion)",
+      "published": "2025-07-07T11:00:00+00:00",
+      "language": "fr",
+      "country": "FR",
+      "region": "Europe",
+      "episodeUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/2025/07/07/",
+      "feedUrl": "https://www.anarchiste.info/radio/libertaire/emission/carapatage/podcast.rss",
+      "contentPolicy": "metadata_and_links_only",
+      "description": "",
+      "audioUrl": "",
+      "artwork": "",
+      "languageVerified": true,
+      "languageSource": "upstream-item-metadata; no new audio language verification",
+      "editorialReview": {
+        "date": "2026-10-03",
+        "scope": "metadata-original-link only",
+        "decision": "admitted",
+        "source": "existing configured independent/community radio, movement culture, queer or labour-history source",
+        "candidateId": "app-5ee74e3151f53dbf5802d5a93b357e5fcd6ae7ea838dc50b505708f10e2003f1"
+      }
+    }
+  ],
+  "podcastDecisions": [
+    {
+      "id": "app-9b50e3e44498d87545c8fedce0253da7cf565b2512538682de8877c0565f9727",
+      "upstreamIds": [
+        "3f6a13eea4a82ca98785581d"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-099dba774725b0243ead22eccf229db8e07c7851256d36e24d1a40fcf4cc3960",
+      "upstreamIds": [
+        "0dc1618526f0310e2bf1ae6d"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-1cfca80f74c55fc3d87a746c3d77be39a964747a3f8bc8e6eddfd36dbdac1695",
+      "upstreamIds": [
+        "cc39723476a23282e3175d24"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-8269e6d2187cd1c6bbcfcd0e81ac7fe6f02d4bcd8921274ae2a7b9ae430bc09f",
+      "upstreamIds": [
+        "ce0e6cc0e0a1f6e0f5d68925"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-a9c16551f4f7a06c8788ed01f8a2e70ded47df23413f200b6c6ca5b0e655a9ea",
+      "upstreamIds": [
+        "68b2faab6bfad1b616083098"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-6bba991d8cbabbd04cbdfe1c90b13666de23322a48e4e1f2054f3f154c267718",
+      "upstreamIds": [
+        "ff958a03fc63253ccbeeaca5"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-3b4b1c4e49492e8521828dc867626057000ea5b6fff20ebaea3904832420f8d2",
+      "upstreamIds": [
+        "16374a915016a9868aef33a8"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-1eb0c6894a287fc983192916bb3a3451405dbc3f9b9764fec1b8520c484b0cb2",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-a18b963ee16a6e9de7585e96ce3422354fd63e0216e7be8003d5b87189d4dc32",
+      "upstreamIds": [
+        "d9eaded1bb1fdcbf6b4f0bea"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-4619926dc35d0e1a8d02cb2216c0c1cb0b9d8bab53bd1984a84d1dfaa0a5c235",
+      "upstreamIds": [
+        "dea12384977df080251d3978"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-14aec75a682b71dce5b08608bbcbdde660a56ff1483fa0fe50ad057148ec14a8",
+      "upstreamIds": [
+        "999f0bd1c678ad702de32849"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-128610e991e7d8d50a291587fe91fa959cacca67e1481864f65e12d162d0fb18",
+      "upstreamIds": [
+        "c06dacfea2a2f21283437b8a"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-91c2099e10dbedb5cf2a459b3bcf835d63affc585b43635c901646f674598e67",
+      "upstreamIds": [
+        "cc64b0b9d1dc0ef7543f7fb5",
+        "73eb8c018e0da22fc51a5f06"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-1a33521e4627443b6c0fb9058b38436fc8490d7aef5dac8faed5981a9fa37770",
+      "upstreamIds": [
+        "7afdcf55c34e41aeaf38ddb9"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-9e93ace73969217bf15ae6f9c1e5d5e1ee82fd56a8d0786c1970b61ab552bb78",
+      "upstreamIds": [
+        "1e1cbbc54fe47bda207f57ff"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-1085193e9b0354492d9aaa49e90990799abc3a93cff9d294ea2736d59b978cbf",
+      "upstreamIds": [
+        "49b5b039824a55b25eeae0a5"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-cdc16815eb566d347f44f46a10f57cbb1c3b9f424577564715e68b9919f35005",
+      "upstreamIds": [
+        "543fc8ff5714f10c0a4a3e4d"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-81ab84ca9fd119d2c9c4239e878b2f1363b1d5c8849c290ab20b7da7ba4e84fd",
+      "upstreamIds": [
+        "5e26fce9d98aaa1412477a8c"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-46a752761164468b239f1debfe471836da1629179884e80b4e6862899f5568bc",
+      "upstreamIds": [
+        "bb9a7668791c61829cc66dd2"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-5b51deb5dcb45e4e36e0f13a8f1ba89cc0901c2bf5308ce8da52e672aa1ff442",
+      "upstreamIds": [
+        "3e453f965c60db92c6c29745"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-c19171de834ad6f49d6bf15751463b7d47fe40474076fdc4dd9ac776ae4280de",
+      "upstreamIds": [
+        "019d22e4efad67778ba31b18"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-39ef9ebd6c84dd9fc11afd47784b546d9d491687cdf795f582f85b6152bee109",
+      "upstreamIds": [
+        "f6ee7f4f4641835188a7d655"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-53ad43b0404195788a4a5446e5bad15b6fbff14e6b925fddd5116f0c9b418392",
+      "upstreamIds": [
+        "6f1a5fbe16b3d9eb5d48bb9d"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-29ef35cadcf9c39792b2aa03ebc8afe38d482dd0c9c11453b4ef2a115fd46db5",
+      "upstreamIds": [
+        "176eb0356f7510a5d94ec3eb"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-f1978a08fffe4e9967ca011b00202c83de5ef71c5922285e50e7e911fe0b0fc1",
+      "upstreamIds": [
+        "c8675e669e0cb601e141cc82"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-ca2db86044ff75f313cf492a2ffba6a5a844f9e531b57f5029136ef3006a745a",
+      "upstreamIds": [
+        "c18d6d7d42aa8484a6561516"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-d069738d8adbe8b57d5d2cac3adeb07e3fc8063111fd56bfa3c072ce330fa820",
+      "upstreamIds": [
+        "aeb31ab3de0c5edc14f52427"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-9fe225f1ae76af433f3eb19cc3aa2c92604090b64aaf3d69ec085b2cbbd9c67c",
+      "upstreamIds": [
+        "7c8108aa8e6710decbe91078"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-f92ddc0dc5daf2a934f2e563588272f2843f3fdabe18edb7ff84c6b8d2cfefbc",
+      "upstreamIds": [
+        "d4b9425b301a8a1b8079ac83"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-429b687efb4d4bee4c8b8a36e95a1246c40dd6f30aba973d588a45414f64ee8c",
+      "upstreamIds": [
+        "1389b6568e61d4b6fea101de"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-53b6a3817df8366a8ced78316dbf0c6b27ed1310e094397fcff1e0960b8ee263",
+      "upstreamIds": [
+        "3be64ef1f67af27aa5c89728"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-6b50efa2437991c8d8ea99058cc0e533b98ba60747874c9b7de1354214a800a1",
+      "upstreamIds": [
+        "7ee7322ddfd62b04b17ae1bf"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-10e0d28fdac7d6452ed6b488992ee4593596673d0f8decc98642619cbc7313c0",
+      "upstreamIds": [
+        "6ea8709413472b7399c32b34"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-bbf08014c4cf43237c55144e231f9077e67a5f7f09c64c77ae9edc25f7edb2a7",
+      "upstreamIds": [
+        "2ba293d918aaac60262fb246"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-2186e7bbecdc32f7747891fb224a09fc5bba956248ce7df2de19086435efd01e",
+      "upstreamIds": [
+        "280ae33f3e40a32c1978b794"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-e32d0cc8a2fa43f8a8aeb6de1e896b191279cbd8eb474b1bd8825e983fc77472",
+      "upstreamIds": [
+        "7e52c83d8ea4c5b3a976400d"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-7351ade9744ffeaef68c926e79da41878e08f4f7da10133821de280f379506a0",
+      "upstreamIds": [
+        "8d09e5d2aab9d2b4b2b21e63"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-593f57c9a5318c81503c1208cb60b79ba5f87a0d1fb6fc74d0b69f8b75bbe798",
+      "upstreamIds": [
+        "6b123dc52f0081dfbee46612"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-dfc8e42bc11622fe267262970dbba983efd4b1d39fc3e45c35fbfa429ed6bb9a",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-e6592dbf422469ab7cf252d76a37c72ec1c1501365410fd2052d0c1ffdfc5519",
+      "upstreamIds": [
+        "26529560a4ac778463789975"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-fe0078c6387a405d7c00568f80445817839fff13b7b51ce1b5f83e72e8b775af",
+      "upstreamIds": [
+        "df4e2a0f3ffd168c5082b6ce"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-bab687ca5b543a886509603322089b3e3238cdbea7fcc9c5c511ddc81e2b38ff",
+      "upstreamIds": [
+        "13242defc1f201d3a166d4b6"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-ca853e4fda18f756e85479efccf00b03a7eef79ff75ecb23c029674e931df72a",
+      "upstreamIds": [
+        "507baf1418ee954cd245d181"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-feb5283deb86d8e56fa87531c849400bffa3043533e3362e9898be8fb9d264d9",
+      "upstreamIds": [
+        "7163bf0824776abdb9be82e7"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-98493bab795e4a9c20c3f65fb09f115db3f7d6d4a56751efc827cbfeb906d19f",
+      "upstreamIds": [
+        "2662f50866665e6e72bbe97c"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-68639d72be06e66dd63122ee25cdf6229a7c365aa5f0309affbf1533e4c72aec",
+      "upstreamIds": [
+        "afbbf46015400e5b5895d981"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-c3d120d382b54f47627ae5545a9d764a4c34754d3319fe64d7aa683c7e39e549",
+      "upstreamIds": [
+        "a73a5ce7a715c34690b7f97e"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-8cccfc51746f2ce8270a60f3233c26a8652c5bf896a08f09da7392a66c8d7360",
+      "upstreamIds": [
+        "cf21bcadcfb8c85a37b39cae"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-ed90bbe49d7fc7dd52f851451a01e1420a10dedd1c7a9ffc8280567638f938c3",
+      "upstreamIds": [
+        "69458b516df9dafe8fa21f26"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-502372eb49fdd6dfc01402d01e7ffceb3887166509735386a8852255f24e50ae",
+      "upstreamIds": [
+        "a115c4474d801a0699e9e409"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-de4af96bf59e98f44c3831bb502fe4ba30884a33abcad4b6d2529cf7c3507771",
+      "upstreamIds": [
+        "2b8891ba99c89e42a3bcf07e"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-f022824c888fdafd7ce4c0dddfc15ff62b177ae50e58250d0bbf47d4202bf8c6",
+      "upstreamIds": [
+        "32c8d211b4b280ccf7547435"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-752c86b3e60a1b3764d0b63652a329e7c389c2ebf92f3bba8b65a937f131a563",
+      "upstreamIds": [
+        "7371df5358e2c0e6145337c5"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-abf99cd6ff940cf09b1ed5388dda7879ed4049f6a183a1cb3ef50f754359abb0",
+      "upstreamIds": [
+        "41bd63aa3a4282d577340f11"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-2b64a850c3eb5232f9b6ab1de5c92393b22e47b38354c32ef3f6eb6916f9deb7",
+      "upstreamIds": [
+        "a7b473d0c706cacd2be7ed68"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-ef51afdc9046fe6a4026e1d35ef6260c0ddead7a857bbbf9e5b4e9748f6751cd",
+      "upstreamIds": [
+        "7ddb914b8a6e93fe59c5f56a"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-857d37cd52183aee8e8547a3b1d3d3e7792f0776f3fc36e788870636c7cae231",
+      "upstreamIds": [
+        "806859dcfa779a53e81a8a38"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-c21a8439f9f0228496614b9f74e847db10bdcaed55a5cb187cb57301f1c09318",
+      "upstreamIds": [
+        "2337717558f9877fd97e119a"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-2adbebc11df85a380e666977db193b5a07ec0650d820be36d3372e464ef8c53d",
+      "upstreamIds": [
+        "77aeb757eec06a8f834758da"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-ae18d430497040391fde4ea9a867db4641e4fd034914deb263bf1a8650967ea3",
+      "upstreamIds": [
+        "dab65efa6c5fbc303612362f"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-5b60253876b10e1bb65e7806e9d92a9cd5d9dd0c3f3c34be1a0c8f7523023b7b",
+      "upstreamIds": [
+        "a27c64959daf8edf26f865af"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-8ddeba1d0a9369b7b5c70d912971312fb13ef58f86410d163b51a2319bd85442",
+      "upstreamIds": [
+        "abf317009cfd4e89afd0569f"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-9539a1b1181f77efb093fe8b930a5612e9ce203f69a6bf446854b4e260ab08b0",
+      "upstreamIds": [
+        "61d828283954235ef954ba7f"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-3baf6769abadc879d759a5e49dc72e03df0e81583c48e9de08f804f49843e63c",
+      "upstreamIds": [
+        "cb94448dfcf95de7b5f2a4e2"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-c71ec28e226e2e43835d0e1a9c3ee478ffe28dc7b1989acffff2dca9f75856da",
+      "upstreamIds": [
+        "b66b08daa6246b189c6f2c15"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-0f5e35d870981133c3e1091f44b48ae17040166a428b229db9215075ef96a707",
+      "upstreamIds": [
+        "dc4c1b976d69fcca29dd67af"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-a1d2048d9a42f34afcebf84385e3efd9f822e7cb0e28ea1b860beb559daa0e2f",
+      "upstreamIds": [
+        "87f28e9b345f5713fb853272"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-e7db3ff816c0fa2b6e2ee45c0640b68906f0f32329bd16356c37762cbda5f5f2",
+      "upstreamIds": [
+        "6dc2cc4b788f69c50489c2d2"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-1d41823adfe357ac3376556dda866e3a526036d905e411822821b23cb9a13d23",
+      "upstreamIds": [
+        "56ec5f16a649a8ec1d8a4411"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-34ba5ae9546838f4ceabe4d14259b79785990a53455e162e4e17218afdd207aa",
+      "upstreamIds": [
+        "b13e669826d3ad45488c765b"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-3e321800b2617419cade4f0afca6c4f5e69375c1e96b19bc4fc99c8675e9ca54",
+      "upstreamIds": [
+        "7c4454924bcf5d84fa6faed4"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-13fe363b5fff51c6c0cb4908d4bbe0382aee2fd4e22a78a62e32fb7127c59320",
+      "upstreamIds": [
+        "505a35d28a34489596acf0c2"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-9f89f13061a307603c346d29738ba52750ef6d969e82738d4968d66832f5ae8c",
+      "upstreamIds": [
+        "c83d7b7fa8d0fe205b7678e5"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-df1f297cc8863a80d76971ad43655fc62e9632562e9b585d2c586fffe9b99671",
+      "upstreamIds": [
+        "3b31b9206837e70726edcd33"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-1ec3a71b4c27f24b131712eeb45a94c384c9b4e50d637c4d14022fc7521167bb",
+      "upstreamIds": [
+        "c4ce74e28d90f31ccfcf9863"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-139f11069262e16b5fca152f7342a88fed1cb3505e1f2ed202f672f86d6d2d22",
+      "upstreamIds": [
+        "7ee0ed894fd0c6f40ac5b8bd"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-a7847685035ca207f6e543adc391393cdf4dd738792676255e7c14b5f8e79d7f",
+      "upstreamIds": [
+        "60482d2442b235d703dbb34a"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-753e49d963a656691d8878f29221d1a3cca88881c82f3b2ad8e7b1f28f618589",
+      "upstreamIds": [
+        "4d52180a130dfe2cddafbefe"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-9cc09a8e4cafd215b9b4f7501197c5fa23e24548bbe211ad386deecadd5d9c0c",
+      "upstreamIds": [
+        "9636b9fd608baa6867956733"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-e5929fcd20c6f23d297cc4e50b97bde51a71dbc4ce71ccb94c343561eb717ea1",
+      "upstreamIds": [
+        "3a5ef2f879ddd2f50abbc869"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-b514e5f03fbb369b40505ca1094b566bfd9af22ecd66e6531407ae5c46c4b0b0",
+      "upstreamIds": [
+        "96b63fde870bfa7216e9a949"
+      ],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-7e54c8246f8b94cde92030f8ecc3a5b6af8137d0e11bfe0df454f4c24b95d1c4",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-83a3079b594a4a4a64d500a9df64cce9b8eb18a9ecc29479ba89e243d4a672ec",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-1fc0a53565719dd44b24371d62e7e570804e0c9e73dd9d458e629f16a77a9be8",
+      "upstreamIds": [
+        "16cbc058f9e925b0f979b4e4"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-08d09a1c2d945e603d30fc43ac5a271673ad1017cbe3e4ea9520694385082ac0",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-b93ab87d8dbae2b1a8835c28a18aa9d5f675bd2eec954d5d487fc0269fffc112",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-652572c3178a15c32a5a6d07dde762295c7da27e3154b6e3bdc4383e704188b6",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-4bc7a09b1942f245424c5ab16dd8a81ea603b353650010a15e57e94bff7965b6",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-8c2090c8b9b853bdaefb89eb702efc80d594c60bed2795590f86770578728fb5",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-40bfff5e76ef883ca4988cb6d9176fa3ab5b438de9fab6feb05e558e814c1f3e",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-5607c7316516b4316266d70073a5d7a1d7fe059b22738607d494363dab8ef43d",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-0e1682badabfb85861f617d936e8fda586ee1ecea2c64c717231c92b3441c08c",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-1391bb6f097da91074ed2fa3234225ae2bf416f3ef54d713803f3c6ba27a80c3",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-5fc80dc37415abf503101e047d54555e38c1ba041ed3626fc32d6f042db4bc3f",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-9475663347a48e0fe45e60ef83c8ec1bc76caf62a0bde72a80af548e5dce18c8",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-19f6d158b06eeced89201d26b4c37777dcbf7afffa845c4ed62330a48b2f338f",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-896174504da3007f5c2f40b8afd862d54e3fe47dfc207af8cafd5fa51fc1f371",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-f9f3200f534c8c91bbc56d1e9c115152714d6a1f777c6f3e1e40c3e5a2ba18fa",
+      "upstreamIds": [],
+      "decision": "hold",
+      "reason": "language/redirect/availability/identity review unresolved or newsletter excluded"
+    },
+    {
+      "id": "app-e942b9116b3539d64d2f24f41236e5be43169334de90fb3c436f3649264b1481",
+      "upstreamIds": [
+        "cc213d04f4fe95c5644641fb"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-d7a7fb738328a2f5ad1c2b957eacc7cb8676ad0bfcf508bfc910d782c031c6bb",
+      "upstreamIds": [
+        "e1b3722cae689ddf5169e62b"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-ee9e17d9ba11f0da7bd15e70373b7c34f8af015ecbdfc1e23fb8ee88036ff2a6",
+      "upstreamIds": [
+        "53da02f253887e295a7fd621"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    },
+    {
+      "id": "app-5ee74e3151f53dbf5802d5a93b357e5fcd6ae7ea838dc50b505708f10e2003f1",
+      "upstreamIds": [
+        "8371e25759715b2a922e0343"
+      ],
+      "decision": "metadata-original-link-admitted",
+      "reason": "known-source/item-metadata/original reviewed; media rights not admitted"
+    }
+  ],
+  "preservation": "All previous records retained byte-field-equivalent; no URL/date/ID migrations; all existing source/episode holds unchanged"
+}
