@@ -38,7 +38,7 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     assert "language-origin.js?release=1" in index
     assert "news-app-2.js?release=73" in index
     assert "news-app-2.css?release=57" in index
-    assert "news-app-2-specialty.js?release=6" in index
+    assert "news-app-2-specialty.js?release=7" in index
     assert "stories-core.js?release=3" in index
     assert "app.js" in classic
     assert "classic.html" in index
@@ -47,7 +47,7 @@ def test_release_entry_point_is_news_app_2_and_classic_is_preserved():
     assert "target.searchParams.has('preview')" in redirect
     assert "language-origin.js?release=1" in service_worker
     assert "news-app-2.js?release=73" in service_worker
-    assert "news-app-2-specialty.js?release=6" in service_worker
+    assert "news-app-2-specialty.js?release=7" in service_worker
     assert "stories-core.js?release=3" in service_worker
     assert "classic.html" in service_worker
 
@@ -101,7 +101,7 @@ def test_preview_and_production_offline_caches_are_distinct():
     assert "./next.html" in preview_worker
     assert "./index.html?preview=8" in preview_worker
     assert "navigationFirst(request)" in preview_worker
-    assert "wrn-app-v2.1.2-r31" in live_worker
+    assert "wrn-app-v2.1.2-r32" in live_worker
 
 
 def test_specialty_views_are_native_preview_routes():
@@ -538,7 +538,7 @@ def test_release_checklist_is_readable_and_available():
     assert 'href="news-app-2-release-checklist.html"' not in html
     assert "news-app-2-release-checklist.html" in worker
     assert "news-app-2-release-checklist.css" in worker
-    assert "`${CACHE_PREFIX}v119`" in worker
+    assert "`${CACHE_PREFIX}v120`" in worker
     assert "if (request.mode === 'navigate')" in worker
     assert 'class="release-checklist-page"' in checklist
     assert "Bestanden" in checklist

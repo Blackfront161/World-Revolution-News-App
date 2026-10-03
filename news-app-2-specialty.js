@@ -272,6 +272,16 @@
     const allowed = new Set((sources || []).filter(source => source?.status === 'active').map(source => source.id));
     const items = new Map();
     const withdrawn = new Set();
+    const restricted = new Map();
+    for (const catalog of catalogs) {
+      if (!Array.isArray(catalog)) throw new TypeError('Library catalog must be an array');
+      for (const item of catalog) {
+        if (item?.id && allowed.has(item.sourceId) && item.contentPolicy === 'metadata_and_links_only') {
+          const previous = restricted.get(item.id);
+          if (!previous || (Date.parse(item.updatedAt) || 0) >= (Date.parse(previous.updatedAt) || 0)) restricted.set(item.id, item);
+        }
+      }
+    }
     for (const catalog of catalogs) {
       if (!Array.isArray(catalog)) throw new TypeError('Library catalog must be an array');
       for (const item of catalog) {
@@ -285,7 +295,9 @@
         }
       }
     }
-    return [...items.values()];
+    return [...items.values()].map(item => !withdrawn.has(item.id) && restricted.get(item.id)?.sourceId === item.sourceId
+      ? { ...restricted.get(item.id), downloads: {}, formats: ['html'] }
+      : item);
   }
 
   function mediaDirectories(document) {

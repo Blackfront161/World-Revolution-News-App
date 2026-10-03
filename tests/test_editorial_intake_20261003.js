@@ -1,6 +1,7 @@
 'use strict';
 const assert = require('node:assert/strict'), fs = require('node:fs'), vm = require('node:vm');
 const media = require('../news-app-2-media.js');
+const specialty = require('../news-app-2-specialty.js');
 const candidate = JSON.parse(fs.readFileSync('docs/evidence/WRN-CONTENT-EDITORIAL-2026-10-03/intake-candidate.json','utf8'));
 const sources = JSON.parse(fs.readFileSync('podcast-sources.json','utf8'));
 const podcasts = JSON.parse(fs.readFileSync('podcasts.json','utf8'));
@@ -19,6 +20,12 @@ for (const row of candidate.podcastRecords) {
   assert.equal(media.visiblePodcastCatalog(withdrawn,sources).length,0,'Withdrawal must beat a later stale playable snapshot');
 }
 for (const row of candidate.bookRecords) {
+  const stale = {...row, contentPolicy:'playable', authors:['Unreviewed author'], updatedAt:'2099-01-01T00:00:00Z', readUrl:row.readUrl+'.epub', downloads:{epub:row.readUrl+'.epub'}, formats:['epub']};
+  const librarySources = JSON.parse(fs.readFileSync('library-sources.json','utf8'));
+  for (const catalogs of [[[row],[stale]], [[stale],[row]]]) {
+    assert.deepEqual(specialty.mergeLibraryCatalogs(catalogs,librarySources)[0], row);
+  }
+  assert.equal(specialty.mergeLibraryCatalogs([[row],[{...stale,status:'withdrawn'}]],librarySources)[0].status,'withdrawn');
   assert(books.some(r=>r.id===row.id && r.readUrl===row.readUrl));
   assert.equal(new URL(row.readUrl).hostname,'de.anarchistlibraries.net');
   assert.equal(row.contentPolicy,'metadata_and_links_only');
