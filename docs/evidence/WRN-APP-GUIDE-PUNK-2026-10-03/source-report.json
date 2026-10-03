@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-03",
+  "sourceCommit": "2481ef1a0cdd23a839c38f0058cfc9b73c0c90a6",
+  "sourceBlobs": {
+    "app-guide.js": "8d159aadc4d4b9e472942a299acd3142b27b4e61",
+    "world-revolution-atlas-punk.svg": "a086e438c2a52dd8541490fc545ac29b8ffbde7e",
+    "index.html": "e2a1238b9497e8850d8b5f3abbaea53043606b96",
+    "news-app-2.js": "1bf75ab6753225ed415279e6b1ef525d124af31c",
+    "news-app-2.css": "8cdb320006c43607869ac522d889e4171cc01269",
+    "service-worker.js": "0917207fbbadae9b9e76aa698d84ee4ea0e65eab",
+    "news-app-2-sw.js": "4b36f6321f13e56ecc205eec15945886d9ffe342",
+    "app-check.html": "0b45237d1446ef0d0f9ba65f66b7869ac8e2e850"
+  },
+  "browser": "PASS: actual Chrome App DOM with local fixtures; provider calls isolated",
+  "pythonTests": 33,
+  "nodeChecks": [
+    "navigation routes",
+    "navigation history",
+    "next-update integration",
+    "translation sharing regressions"
+  ],
+  "validateApp": "PASS",
+  "gameImported": false,
+  "publicationPerformed": false,
+  "versionCode": 32,
+  "scope": "local App source: punk Atlas SVG and nine-language task help",
+  "remaining": [
+    "Independent focused source review",
+    "Human language/editorial review of help wording",
+    "Cold offline/native background and screen-lock device checks",
+    "Website/iOS adaptation and distribution"
+  ],
+  "assetHashes": {
+    "app-guide.js": "e0ba6fdd0b0379f9150672067823630a9e4ec80356b5dd6b0d385d8b5e693498",
+    "world-revolution-atlas-punk.svg": "3803ef58fe128b6e4143bd68ef8e0de116d05bec620ad6365f36602b3c9d1cad"
+  }
+}

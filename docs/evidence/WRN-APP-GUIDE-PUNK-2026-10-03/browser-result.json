@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Nine guide languages; six complete tasks; 320/360/768/1440px; Escape restores header focus and news search.",
+    "Guide Radio/Library links and browser Back preserve selection; search focus and close button; 200% reflow.",
+    "Real System status/local data/feedback destinations and mocked app Share; nine guide themes at360; no feedback transmission.",
+    "Punk SVG loads in Autonom/light/dark; zero autoplay/speech or POSTs; local help opens warm offline (not cold offline/Android proof)."
+  ],
+  "errors": []
+}

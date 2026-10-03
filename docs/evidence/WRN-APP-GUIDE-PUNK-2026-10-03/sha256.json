@@ -1,0 +1,14 @@
+{
+  "textAlgorithm": "sha256 of UTF-8 text with CRLF normalized to LF",
+  "binaryAlgorithm": "sha256 of exact bytes",
+  "files": {
+    "atlas-punk-autonom-360.png": "9ece1ad8152d293c70471ecf40447f111b24357b8dfee17f47199bc48fd0fe3b",
+    "atlas-punk-dark-360.png": "881c6e9a04ac9e56152a577dc75ba62e775d8e851274f8941887a52cc75480fc",
+    "atlas-punk-light-360.png": "fd69e70e904d1a1663caf7ac550b0299709f39c2059e2d3731f6e105ea4c185f",
+    "browser-check.mjs": "f273c2116292c236b9091d253a7168a77292b969926e492dabf4f25fe9b45357",
+    "browser-result.json": "b92058973c76c614f75680d012688c60bf612308d63c18afbf42f6535b6fc384",
+    "guide-de-360-200.png": "283806ee875e3f7c853ab4fe985dd10d12cbace9f6003a82fc6be8e4d7003fd3",
+    "guide-de-warm-offline.png": "b6ef2b3bfd7ad3bb3a463a2bbd49e11900c67c9b640de32895de97adf28a5fdc",
+    "source-report.json": "23034792a510a54ce161940c25802a939ab0a021fd15cc5f4096e610134470d1"
+  }
+}
