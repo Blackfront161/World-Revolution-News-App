@@ -39,6 +39,8 @@ Der Kontrolleur akzeptierte im Turn `01a100f2-fab4-7ff3-a563-170ee699e2b5` drei 
 
 Diese neueren Quellpakete sind nicht Teil der bereits geprüften f6649dc-Hosting-ZIPs. Vor ihrer Veröffentlichung sind ein neues gebundenes Hosting-/Offlinepaket mit Budgetprüfung und unabhängige Paketabnahme nötig. Der bestehende Website-Arbeiter führt inzwischen den Podcast-ID-/Quellenabgleich fort; Final-Straw-URL-Änderungen, LORA-Identitätskonflikte und Quellen-Holds bleiben gesondert offen.
 
+Der Podcast-ID-Abgleich ist als unveränderndes Dossier `e20c800` eingefroren und zur unabhängigen Prüfung eingereicht. Die 87 zusätzlichen Data-IDs ergeben 84 neue Originalseiten; 74 Kandidaten haben konsistente Metadaten, deklarierte Episodensprache und zuvor beobachtetes HTTP 200. Das ist keine redaktionelle Aufnahme. Fünf unbekannte Sprachen, vier Weiterleitungen, eine HTTP 404, 18 URL-Migrationen und 24 vorhandene Website-Feldänderungen bleiben gesondert offen. Quellen-Holds und 61 explizit eingeschränkte IDs bleiben erhalten; der aktive Katalog wurde nicht ersetzt. [Konkrete Fallliste](<C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-PODCAST-ID-REVIEW-2026-10-03/REPORT.md>).
+
 ## Podcast-Warteschlange und offene Abnahmen
 
 Die Veröffentlichung samt Archiv wurde durch [PR44](https://github.com/Blackfront161/Revolution-News-Data/pull/44) repariert; Main-Dispatch 37085213675 und öffentlicher Feedreadback sind bestätigt. Der spätere Schedule 37100648981 endete cancelled mit jobs[]. Das passt zur bisherigen Einzelwarteschlange, beweist aber keinen konkreten verdrängenden Lauf.

@@ -787,7 +787,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "App-Kandidat und Data haben dieselben731Bibliotheksmetadaten;728Alt-Records feldgleich, genau3geprüfteErgänzungen. Website731 live und Offline über HTTPS/HTTP1.1 geprüft; HTTP/3-Ladeproblem separat offen. App-Podcastabgleich:1778gemeinsameIDs,87zusätzlicheDataIDs,20Feldänderungen; zweiLORA-Wiederverwendungen und16Final-Straw-Migrationen getrennt prüfen.89Data-Altzeilen aus3explizitgesperrtenAppquellen bleiben gesperrt; keine der87neuenIDs ist betroffen. Keine pauschale Audio-/Volltextfreigabe.",
+      "remaining": "App/Data-Bibliothek 731 gemeinsame Metadaten; Website 731 live. Gebundener Podcast-Abgleich: 87 zusätzliche Data-IDs ergeben84 neue Originalseiten.74 Kandidaten sind nur strukturell/sprachlich konsistent; fünf unbekannte Sprachen, vier Redirects und eine404 bleiben offen.18 URL-Migrationen und24 Website-Bestandsfeldänderungen werden nicht automatisch überschrieben. Vier Quellen-Holds,89 gehaltene Data-Zeilen und61 eingeschränkte IDs bleiben erhalten. Aufnahme/Integration und unabhängige Kandidatenabnahme offen; kein pauschales Audio-/Volltextrecht.",
       "projects": [
         "Data",
         "App",
@@ -816,6 +816,26 @@
         "newIdsAmongBlocked": 0,
         "candidateAppLibraryRecords": 731,
         "dataLibraryRecords": 731
+      },
+      "podcastIdCandidateReview": {
+        "evidenceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+        "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-PODCAST-ID-REVIEW-2026-10-03/REPORT.md",
+        "independentReview": "PENDING",
+        "dataCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+        "appCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+        "addedUpstreamIds": 87,
+        "newOriginalCandidates": 84,
+        "structurallyConsistentLanguageVerifiedPriorHttp200": 74,
+        "unknownLanguageCandidates": 5,
+        "redirectCandidates": 4,
+        "unavailableOriginalCandidates": 1,
+        "urlMigrationsHeld": 18,
+        "websiteExistingFieldChangesHeld": 24,
+        "sourceHeldDataRows": 89,
+        "explicitlyRestrictedDataIds": 61,
+        "sourceAdmissionPerformed": false,
+        "productChanged": false,
+        "publicationPerformed": false
       }
     },
     {
@@ -2774,6 +2794,26 @@
       },
       "publicationGate": "New navigation/knowledge/adapters are not contained in the separately accepted f6649dc Hosting ZIPs. New package/budget/review required before activation. New Hostinger session approval remains unanswered after automatic scope rejection.",
       "podcastReconciliation": "Existing Website worker continues source-policy/ID candidate comparison. No automatic overwrite of 16 Final Straw URL changes or two LORA identity conflicts."
+    },
+    "podcastIdCandidateReview": {
+      "evidenceCommit": "e20c8002f32103a7f888e907e6603fed792c8b52",
+      "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-PODCAST-ID-REVIEW-2026-10-03/REPORT.md",
+      "independentReview": "PENDING",
+      "dataCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+      "appCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+      "addedUpstreamIds": 87,
+      "newOriginalCandidates": 84,
+      "structurallyConsistentLanguageVerifiedPriorHttp200": 74,
+      "unknownLanguageCandidates": 5,
+      "redirectCandidates": 4,
+      "unavailableOriginalCandidates": 1,
+      "urlMigrationsHeld": 18,
+      "websiteExistingFieldChangesHeld": 24,
+      "sourceHeldDataRows": 89,
+      "explicitlyRestrictedDataIds": 61,
+      "sourceAdmissionPerformed": false,
+      "productChanged": false,
+      "publicationPerformed": false
     }
   }
 }
