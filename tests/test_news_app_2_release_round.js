@@ -116,8 +116,10 @@ for (const source of ['ABC Dresden', 'Bristol ABC']) {
 }
 for (const id of ['paul-muentnich', 'emilie-dieckmann', 'hanna-nuernberg', 'luca-amelie-schaller', 'nele-aschoff']) {
   const profile = prisoners.profiles.find(item => item.id === id);
-  assert(profile, `Verified prisoner profile ${id} is missing`);
-  assert.strictEqual(profile.verification.status, 'verified');
+  assert(profile, `Curated prisoner profile ${id} is missing`);
+  assert.strictEqual(profile.verification.status, 'needs-review');
+  assert.strictEqual(profile.verification.evidence.sourcePublishedAt, null);
+  assert.strictEqual(profile.verification.nextReviewAt, profile.verification.previousVerification.nextReviewAt);
   assert(profile.verification.sourceIds.includes('abc-dresden-prisoners'));
 }
 

@@ -35,6 +35,9 @@ assert.equal(api.isCurrent({
 assert.equal(api.isCurrent({
   verification: { status: 'needs-review', nextReviewAt: '2099-01-01' }
 }), false);
+for (const invalidDate of ['2099-13-01', '2099-02-30', '2099-01-00', 'bad-date']) {
+  assert.equal(api.isCurrent({verification: {status: 'verified', nextReviewAt: invalidDate}}), false);
+}
 const reviewedData = require('../prisoner-solidarity.json');
 const pendingProfiles = reviewedData.profiles.filter(p => p.verification.status === 'needs-review');
 assert.equal(pendingProfiles.length, 17);

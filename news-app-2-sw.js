@@ -1,7 +1,7 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v110`;
+const CACHE_NAME = `${CACHE_PREFIX}v111`;
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
@@ -36,7 +36,7 @@ const SHELL = [
   './shared-translation-client.js?release=5',
   './stories-core.js?release=3',
   './lexicon-tab.js?release=10',
-  './prisoner-solidarity.js?release=4',
+  './prisoner-solidarity.js?release=5',
   './zine-designer.js?release=3',
   './media-player.js?release=5',
   './audio-tools.js?release=5',
@@ -81,7 +81,7 @@ const CORE_SHELL = [
   './shared-translation-client.js?release=5',
   './stories-core.js?release=3',
   './lexicon-tab.js?release=10',
-  './prisoner-solidarity.js?release=4',
+  './prisoner-solidarity.js?release=5',
   './zine-designer.js?release=3',
   './media-player.js?release=5',
   './audio-tools.js?release=5',

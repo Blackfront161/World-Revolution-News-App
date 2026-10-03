@@ -64,6 +64,10 @@ reviewed_ids = {item["profileId"] for item in review["profiles"]}
 assert reviewed_ids == {profile["id"] for profile in profiles}
 assert review["datedAddressMatches"] == 13
 assert review["pendingUndatedProfiles"] == 17
+guide_source = sources["nycabc-guide-19-8"]
+assert guide_source["announcementEdition"] == "19.8"
+assert guide_source["linkedPdfEdition"] == "19.9"
+assert "title page" in guide_source["editionNote"]
 for profile in profiles:
     verification = profile["verification"]
     evidence = verification["evidence"]
@@ -130,7 +134,7 @@ for token in [
 
 assert "key: 'solidarity'" in navigation
 assert "WRNPrisonerSolidarity190" in navigation
-assert "prisoner-solidarity.js?v=190-solidarity-3" in index
+assert "prisoner-solidarity.js?v=190-solidarity-4" in index
 assert "prisoner-solidarity.css?v=190-solidarity-2" in index
 assert "wrn_prisoner_letter_" in module
 assert "openTranslationLanguageDialog" in module
@@ -142,6 +146,10 @@ assert "function insertStarter(dialog, profile)" in module
 assert "starterInserted" in module
 assert "profile.mailRules?.imagesAllowed !== true" in module
 assert "if (!profile || !isCurrent(profile)) return" in module
+assert "now.getFullYear()" in module
+assert "now.getMonth()" in module
+assert "now.getDate()" in module
+assert "new Date().toISOString().slice(0, 10)" not in module
 assert "@media print" in styles
 assert "@media (max-width: 760px)" in styles
 assert "z-index: 1000000" in styles

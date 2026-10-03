@@ -1349,11 +1349,13 @@
       "js": 67,
       "css": 54,
       "lexicon": 10,
-      "productionCache": "2.1.2-r22",
-      "previewCache": "v110",
+      "productionCache": "2.1.2-r23",
+      "previewCache": "v111",
       "core": 6,
       "media": 5,
-      "audioTools": 5
+      "audioTools": 5,
+      "prisonerSolidarity": 5,
+      "classicPrisonerSolidarity": 4
     }
   },
   "roadmapPackage20261002": {
@@ -1745,9 +1747,10 @@
       "newSupportResources": 5,
       "guidePublicationDate": "2026-09-24",
       "datedAddressReviewDeadline": "2026-11-08",
-      "checks": "FocusedJS/data and real-browser lock/expiry checks PASS; validator PASS; read-only audit161/161,0warnings,0failures",
-      "independentReview": "pending",
-      "release": "candidate-only; fresh cache generation and Android artifact still required"
+      "checks": "Full matrix PASS:57JS,164pytest,3skips,4subtests,4PythonMain; real-browser midnight/date checks in3timezones; validator PASS; audit161/161,0warnings,0failures",
+      "independentReview": "96e0aea-correction-required; local-midnight-expiry and announcement19.8/PDF19.9 discrepancy corrected, re-review pending",
+      "runtime": {"productionCache": "2.1.2-r23", "previewCache": "v111", "prisonerSolidarity": 5, "classicPrisonerSolidarity": 4},
+      "release": "corrected-source-candidate-with-fresh-cache-generation; no new Android artifact"
     },
     "website": {
       "handoff": "docs/handoffs/website-content-2026-10-03/manifest.json",
@@ -1778,7 +1781,7 @@
         "uniquePodcastEpisodesAlreadyMatch": 1722,
         "appPodcastRows": 1778,
         "newPodcastEpisodesFromRowDifference": 0,
-        "implementationStatus": "implemented-5664227; independent-review-and-publication-pending; newHome-not-yet-admitted",
+        "implementationStatus": "implemented-5664227; independent-product-and-release-review-PASS; publication-in-progress; newHome-not-yet-admitted",
         "preparedProductCommit": "566422758241190f432d8c8a09d67a5f589d90ac",
         "preparedEvidenceCommit": "9a072ef"
       }

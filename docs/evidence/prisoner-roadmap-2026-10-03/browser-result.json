@@ -4,7 +4,10 @@
   "checks": [
     "30 profiles rendered; 17 undated profiles have 34 disabled actions; direct workshop entry denied",
     "13 dated profiles in current list; 18 sources including five new original-link support resources",
-    "Dated profile workshop opens before deadline; all 30 profiles lock after November8 review deadline"
+    "Dated profile workshop opens before deadline; all 30 profiles lock after November8 review deadline",
+    "Asia/Singapore: expiry and date label correct across local23:59/00:01 boundary",
+    "Pacific/Kiritimati: expiry and date label correct across local23:59/00:01 boundary",
+    "America/Los_Angeles: expiry and date label correct across local23:59/00:01 boundary"
   ],
   "errors": []
 }

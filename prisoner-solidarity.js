@@ -159,8 +159,14 @@
   }
 
   function safeDate(value) {
-    const date = new Date(`${String(value || '')}T12:00:00Z`);
-    return Number.isFinite(date.getTime()) ? date : null;
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || ''));
+    if (!match) return null;
+    const year = Number(match[1]), month = Number(match[2]), day = Number(match[3]);
+    // Date-only editorial fields belong to the reader's local calendar.
+    // UTC noon can move the displayed day forward in UTC+14.
+    const date = new Date(year, month - 1, day, 12);
+    return date.getFullYear() === year && date.getMonth() === month - 1
+      && date.getDate() === day ? date : null;
   }
 
   function formatDate(value) {
@@ -170,9 +176,10 @@
 
   function isCurrent(profile) {
     const review = String(profile?.verification?.nextReviewAt || '');
-    const today = new Date().toISOString().slice(0, 10);
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     return profile?.verification?.status === 'verified'
-      && /^\d{4}-\d{2}-\d{2}$/.test(review)
+      && safeDate(review) !== null
       && review >= today;
   }
 

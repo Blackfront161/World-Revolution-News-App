@@ -15,7 +15,7 @@ DATASET = "./verified-solidarity-actions.json"
 
 
 def test_preview_worker_precaches_product_21_and_bumps_cache():
-    assert "`${CACHE_PREFIX}v110`" in PREVIEW
+    assert "`${CACHE_PREFIX}v111`" in PREVIEW
     assert "`${CACHE_PREFIX}v87`" not in PREVIEW
     for asset in SCRIPTS:
         assert f"'{asset}'" in PREVIEW
@@ -38,9 +38,9 @@ def test_workers_keep_distinct_cache_names():
     preview_cache = re.search(r"CACHE_NAME = `\$\{CACHE_PREFIX\}(v\d+)`", PREVIEW)
     production_app = re.search(r"APP_CACHE = '([^']+)'", PRODUCTION)
     production_data = re.search(r"DATA_CACHE = '([^']+)'", PRODUCTION)
-    assert preview_cache and preview_cache.group(1) == "v110"
+    assert preview_cache and preview_cache.group(1) == "v111"
     assert production_app and production_data
-    assert production_app.group(1) == "wrn-app-v2.1.2-r22"
+    assert production_app.group(1) == "wrn-app-v2.1.2-r23"
     assert production_data.group(1) == "wrn-data-v2.1.2-r1"
     assert "wrn-app-v2.1.2-dev.1-r1" not in PRODUCTION
     assert "wrn-data-v2.1.2-dev.1-r1" not in PRODUCTION

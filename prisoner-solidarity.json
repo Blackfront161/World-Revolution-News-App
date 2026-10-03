@@ -9,7 +9,8 @@
     "staleRule": "Copying, editing and printing are disabled after the next review date until the address is checked again.",
     "legalNote": "The directory documents solidarity information and does not make a legal assessment of a case.",
     "verificationScope": "Verification means a public mailing address matched to a sufficiently recent dated primary support source, not an independent custody or legal-status finding. Undated individual listings remain locked pending dated confirmation.",
-    "undatedSourceRule": "Live access and an address match are recorded separately; neither automatically extends an expired individual review window."
+    "undatedSourceRule": "Live access and an address match are recorded separately; neither automatically extends an expired individual review window.",
+    "reviewDayRule": "Date-only review deadlines expire at the start of the following local calendar day on the reader device."
   },
   "sources": [
     {
@@ -128,7 +129,7 @@
     },
     {
       "id": "nycabc-guide-19-8",
-      "name": "NYC Anarchist Black Cross – Illustrated Guide 19.8",
+      "name": "NYC Anarchist Black Cross – September 2026 (announcement 19.8 / PDF edition 19.9)",
       "url": "https://nycabc.wordpress.com/2026/09/24/guide_19_8/",
       "downloadUrl": "https://nycabc.wordpress.com/wp-content/uploads/2026/09/nycabc_polprislisting_september-2026_legal_v02-2.pdf",
       "kind": "primary-support-group",
@@ -140,7 +141,10 @@
         "contentSha256": "d7b19d149db3c1aa63df4b3a414d89bf313e2f72b443da7dd49ccc3f2745c4ab",
         "httpStatus": 200
       },
-      "rightsReview": "Metadata and original links only; PDF, portraits and biographies are not bundled or republished."
+      "rightsReview": "Metadata and original links only; PDF, portraits and biographies are not bundled or republished.",
+      "announcementEdition": "19.8",
+      "linkedPdfEdition": "19.9",
+      "editionNote": "The dated announcement says Guide 19.8; the exact linked PDF title page says Edition 19.9 September 2026. Publisher discrepancy recorded, not silently resolved; URL and SHA256 identify the reviewed file."
     },
     {
       "id": "nyc-books-through-bars",
@@ -294,7 +298,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 8
+          "pdfPage": 8,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -375,7 +381,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 7
+          "pdfPage": 7,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -454,7 +462,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 6
+          "pdfPage": 6,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -532,7 +542,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 6
+          "pdfPage": 6,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -611,7 +623,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 8
+          "pdfPage": 8,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -1548,7 +1562,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 3
+          "pdfPage": 3,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -1627,7 +1643,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 3
+          "pdfPage": 3,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -1705,7 +1723,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 4
+          "pdfPage": 4,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -1785,7 +1805,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 4
+          "pdfPage": 4,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -1864,7 +1886,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 5
+          "pdfPage": 5,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -1943,7 +1967,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 5
+          "pdfPage": 5,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -2023,7 +2049,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 9
+          "pdfPage": 9,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {
@@ -2101,7 +2129,9 @@
           "custodyIndependentlyVerified": false,
           "mailPermissionsIndependentlyVerified": false,
           "sourcePublishedAt": "2026-09-24",
-          "pdfPage": 10
+          "pdfPage": 10,
+          "publicationDateBasis": "24 September announcement associated with the exact linked PDF; title-page edition19.9 differs from announcement19.8.",
+          "linkedPdfEdition": "19.9"
         }
       },
       "mailRules": {

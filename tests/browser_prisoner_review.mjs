@@ -23,7 +23,7 @@ const result={status:'running',scope:'Actual module and committed data in isolat
 let browser;
 try{
  browser=await chromium.launch({channel:'chrome',headless:true});
- const context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'});
+ const context=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block',timezoneId:'Asia/Singapore'});
  await context.route('**/*',r=>r.request().url().startsWith(origin+'/')?r.continue():r.abort());
  const page=await context.newPage();
  page.on('pageerror',e=>result.errors.push(e.message));
@@ -55,6 +55,28 @@ try{
  assert.equal(await page.locator('.wrn-solidarity-profile-190 button:disabled').count(),60);
  assert.equal(await page.evaluate(()=>window.WRNPrisonerSolidarity190.openWorkshop('bill-dunne')),false);
  result.checks.push('Dated profile workshop opens before deadline; all 30 profiles lock after November8 review deadline');
+ for (const [timezoneId,before,after] of [
+  ['Asia/Singapore','2026-11-08T15:59:00Z','2026-11-08T16:01:00Z'],
+  ['Pacific/Kiritimati','2026-11-08T09:59:00Z','2026-11-08T10:01:00Z'],
+  ['America/Los_Angeles','2026-11-09T07:59:00Z','2026-11-09T08:01:00Z'],
+ ]) {
+  const zoneContext=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block',timezoneId});
+  await zoneContext.route('**/*',r=>r.request().url().startsWith(origin+'/')?r.continue():r.abort());
+  const zonePage=await zoneContext.newPage();
+  zonePage.on('pageerror',e=>result.errors.push(e.message));
+  await zonePage.clock.install({time:new Date(before)});
+  await zonePage.goto(origin);
+  await zonePage.evaluate(()=>window.WRNPrisonerSolidarity190.show('current'));
+  assert.equal(await zonePage.locator('.wrn-solidarity-profile-190').count(),13,timezoneId+' before local midnight');
+  const labels=await zonePage.locator('.wrn-solidarity-review-190').allTextContents();
+  assert(labels.every(label=>label.includes('8. Nov. 2026')),timezoneId+' correct date-only label');
+  await zonePage.clock.setFixedTime(new Date(after));
+  await zonePage.evaluate(()=>window.WRNPrisonerSolidarity190.show('people'));
+  assert.equal(await zonePage.locator('.wrn-solidarity-profile-190 button:disabled').count(),60,timezoneId+' after local midnight');
+  assert.equal(await zonePage.evaluate(()=>window.WRNPrisonerSolidarity190.openWorkshop('bill-dunne')),false);
+  await zoneContext.close();
+  result.checks.push(timezoneId+': expiry and date label correct across local23:59/00:01 boundary');
+ }
  assert.deepEqual(result.errors,[]);
  result.status='PASS';
 }catch(e){result.status='FAIL';result.errors.push(e.stack||String(e));process.exitCode=1;}

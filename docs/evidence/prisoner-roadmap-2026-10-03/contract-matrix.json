@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Corrected prisoner source/module and cache generations; no Android build or deployment",
+  "javascriptContracts": 57,
+  "pytestPassed": 164,
+  "pytestSkipped": 3,
+  "pytestSubtestsPassed": 4,
+  "pytestModules": 44,
+  "pythonMainScripts": 4,
+  "logSha256": "08000863c99f412058c9335ed783f9341857ea663bcd52aba08bdd0a86bd94e7",
+  "runtime": {
+    "productionCache": "wrn-app-v2.1.2-r23",
+    "previewCache": "wrn-news-app-2-v111",
+    "prisonerModuleRelease": 5,
+    "classicPrisonerModule": "190-solidarity-4"
+  },
+  "environment": "Bundled Python 3.12; pinned requirements plus pytest9.1.1 isolated in owned .tmp; TEMP/TMP and pytest basetemp set to owned workspace temp for Windows cleanup contracts",
+  "initialEnvironmentFailures": "Default pytest temp denied; workspace basetemp initially outside OS temp guard. Corrected process TEMP/TMP; no build guards weakened."
+}

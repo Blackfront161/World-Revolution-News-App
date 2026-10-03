@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "WRN Kontrolleur",
+  "threadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "turnId": "01a0ff04-b4cd-73d3-9efd-a2eb8f1eb39c",
+  "websiteProduct": "566422758241190f432d8c8a09d67a5f589d90ac",
+  "websiteDecision": "PASS for separate hosting/live step; fresh revocations and live MIME/CSP/CORS/cache/smoke still required",
+  "prisonerProduct": "96e0aeafbaedb45c7f3c0fecf75bd55ce8d1dad2",
+  "prisonerDecision": "FAIL; corrected source freeze and re-review required",
+  "finalMessages": [
+    {
+      "type": "agentMessage",
+      "id": "msg_01f53eef20522207016ac043dc8d888191916bfa5ffceeac63",
+      "text": "## 1. Website-Freeze `5664227`: PASS\n\nDer lokale Website-Kandidat ist vollständig und reproduzierbar gebunden. Produktcommit, Paket, fünf Uploadarchive und Rollback stimmen bytegenau überein. Tests: 28/28 Website-Tests, 50/50 Offline-/Paketverträge und TypeScript ohne Fehler.\n\nFreigabe: Der Freeze ist für den nächsten getrennten Hosting-/Live-Schritt akzeptiert, aber noch keine Deploymentfreigabe.\n\nGrenzen:\n\n- 20 neue Home-Kandidaten wurden bewusst nicht integriert.\n- Die IPC-PDF blieb wegen HTTP 403 unverifiziert; daraus wird keine Inhalts- oder Rechtebehauptung abgeleitet.\n- Beim späteren Rollout bleiben Revocation-Receipt, Apache/CSP/CORS und Live-Smoke-Test Pflicht.\n\nBericht: [REPORT.md](/C:/Users/patri/Documents/World%20Revolution%20News/wrn-next-live-work/docs/evidence/WRN-APP-HANDOFF-INTEGRATION-2026-10-03/REPORT.md)\n\n## 2. Gefangenensolidaritäts-Freeze `96e0aea`: FAIL\n\nEin Korrekturcommit ist erforderlich.\n\n- P1 – falsche Zeitzone bei der Ablaufsperre: [prisoner-solidarity.js](/C:/Users/patri/Documents/World%20Rev%20Ne/wrn-github-app-current/prisoner-solidarity.js:171) bestimmt den Tag über `toISOString()`, also UTC. Am 9. November 2026 um 00:01 Uhr in Singapur liefert `isCurrent()` für die am 8. November abgelaufenen Profile weiterhin `true`. Damit bleiben Schreiben, Kopieren und Drucken bis zu acht Stunden länger freigeschaltet. Die dokumentierte Behauptung „nach dem 8. November gesperrt“ stimmt daher nicht überall.\n\n- P2 – widersprüchliche Quellenbezeichnung: Der veröffentlichte NYC-ABC-Beitrag nennt „Guide 19.8“, die gebundene PDF mit dem bestätigten SHA `d7b19d…` trägt auf der Titelseite jedoch „Edition 19.9 September 2026“. Daten und Bericht nennen ausschließlich 19.8, unter anderem in [prisoner-solidarity.json](/C:/Users/patri/Documents/World%20Rev%20Ne/wrn-github-app-current/prisoner-solidarity.json:130) und [PRISONER-REVIEW-2026-10-03.md](/C:/Users/patri/Documents/World%20Rev%20Ne/wrn-github-app-current/docs/PRISONER-REVIEW-2026-10-03.md:7). Die Abweichung muss ausdrücklich dokumentiert werden; der SHA und die geprüften Adressen können erhalten bleiben.\n\nBestätigt grün:\n\n- 30 Profile: 13 datiert bestätigt, 17 weiterhin `needs-review`.\n- Alle 17 offenen Profile bleiben unabhängig vom Datum gesperrt.\n- Fünf neue Angebote sind nur als Originalverweise aufgenommen.\n- Keine privaten Kontakte, Fotos, Audios oder Spendenziele importiert.\n- PDF-Hash, Seiten und substantielle Adressbestandteile stimmen.\n- Freeze-Manifest: alle fünf Dateien byte- und hashgenau.\n- JS-/Datenverträge grün; Validator grün; Audit 161/161.\n\nEs wurde nichts geändert oder deployt.",
+      "phase": "final_answer"
+    }
+  ]
+}
