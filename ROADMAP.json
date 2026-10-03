@@ -9,10 +9,10 @@
   "confirmedLiveDistribution": {
     "version": "2.1.2",
     "versionCode": 32,
-    "status": "Google Play verfuegbar; vollstaendiger Rollout100% in178 Laendern am2.Oktober sichtbar verifiziert",
-    "verifiedAt": "2026-10-02",
-    "evidence": "docs/ROADMAP-PACKAGE-2026-10-02.md",
-    "note": "Code32 remains confirmed live. Reviewed current content and translation repair have a new local unsigned Code33 artifact."
+    "status": "Google Play verfügbar; vollständiger Produktionsrollout Code32 / 2.1.2 in 178/178 Ländern im Browser bestätigt",
+    "verifiedAt": "2026-10-03",
+    "evidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+    "note": "Code28 ist historisch/inaktiv; Next Code27 / 2.2.0 ist interner Test. Code33 ist lokal vorbereitet, nicht als Play-Release bestätigt."
   },
   "current": {
     "version": "2.1.2",
@@ -86,6 +86,12 @@
         "report": "docs/evidence/store-media-2026-10-01/store-media-submission.json"
       },
       "liveVerifiedAt": "2026-10-02"
+    },
+    "latestReviewedSource": {
+      "commit": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
+      "evidenceCommit": "1a87a404e56d884fdc1924557b7a2cf9690bfcb0",
+      "status": "independently accepted current source; not a new Android/Play release",
+      "auditStartHead": "d157a6dce3e4ed8e333c27c6cb700e02aa9156f4"
     }
   },
   "storeListingMedia": {
@@ -276,30 +282,29 @@
       "id": "RELEASE-29",
       "priority": 1,
       "name": "Korrigierten Autonom-App-Kandidaten mit Code31 abschließen",
-      "status": "verified_local_unsigned_candidate",
+      "status": "superseded-by-published-code32",
       "dependsOn": [
         "CONTROL-CORRECTIONS-20260930"
       ],
-      "remaining": [
-        "Produktionszertifikat und physisches Gerät nach Signierfreigabe prüfen",
-        "Produktionsbrowser bei vollständig fehlendem Netz separat prüfen",
-        "Signierung und Play-Veröffentlichung an Code31 aus8d2ef23 binden"
-      ],
+      "remaining": [],
       "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
       "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
-      "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+      "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6",
+      "supersededBy": "confirmedLiveDistribution",
+      "note": "Historischen lokalen Code31 erhalten; keine zusätzliche Code31-Veröffentlichung einplanen.",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "DESIGN-AUTONOM",
       "priority": 1,
       "name": "Wählbares Design Autonom",
-      "status": "implemented_browser_android_verified_local",
+      "status": "published-code32-with-later-local-refinements",
       "verifiedAt": "2026-10-01",
       "acceptedCommit": "0c8aa3d7972aca99ff8127d917181d2c98a4410b",
       "remaining": [
-        "physische Geräte-/Produktionszertifikatsprüfung",
-        "vollständiger Netzausfall des Produktionsbrowsers",
-        "Signierung und Veröffentlichung separat"
+        "Aktuellen Quellstand in neuem Artefakt separat prüfen; Releasezuordnung der späteren Header-/Inhaltskorrekturen belegen.",
+        "Offene Reflow-/Tastatur-/Fokusprüfungen unter NAV-FINDABILITY-20261003 führen."
       ],
       "requestedAt": "2026-09-30",
       "reference": "Vom Nutzer gelieferter Screenshot ChatGPT Image 13. Sept. 2026, 19_55_31.png",
@@ -313,7 +318,9 @@
       ],
       "reference20Minutes": "20min.ch und offizielle Play-Store-Appansichten bleiben ungefähre Vorlage für Nachrichtenhierarchie und Navigation; kein Zugriff auf eine installierte native20-Minuten-App behauptet",
       "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
-      "runtimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408"
+      "runtimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "SOURCES-AUTONOM",
@@ -386,13 +393,21 @@
           "Untergrund-Blaettle: metadata-only"
         ],
         "websiteProjection": "7533fe1 includes both explicit directory-only modes; hosting publication pending"
-      }
+      },
+      "remaining": "Veröffentlichte Quellen und Reviews erhalten; nur bestehende zurückgestellte Kandidaten weiter prüfen, keine erneute Aufnahme derselben Betreiber.",
+      "latestPublication": {
+        "status": "data-main-published",
+        "evidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+        "note": "Historische Batchfelder bleiben erhalten; published-data ist der aktuelle Zustand."
+      },
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "WEBSITE-CONTENT-PARITY",
       "priority": 1,
       "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
-      "status": "live-layout-reported-content-and-image-handoff-in-progress",
+      "status": "current-catalog-live-partial-functional-parity",
       "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
       "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
       "liveObservation": {
@@ -475,7 +490,7 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Website publication and first-start blocker closed in 4dfbf47; no further website deployment pending for this package.",
+      "remaining": "Laufenden Gefangenenkandidaten und akzeptierten Regionalfix beim bestehenden Website-Arbeiter koordinieren. Danach neue Podcastrevision5304fa0 und3neueBibliotheks-IDs für Parität übernehmen; kein paralleler Websitewriter.",
       "publicationCoordination": "Sole Website writer published 4dfbf47; independent live PASS recorded in websiteCurrentRelease20261002.",
       "latestHandoff": {
         "imageCommit": "b777198",
@@ -483,13 +498,32 @@
         "webpBytes": 455444,
         "publicationOwner": "WRN Website – Inhaltsparität",
         "fullContentParityComplete": false
-      }
+      },
+      "projects": [
+        "App",
+        "Data",
+        "Next Website"
+      ],
+      "latestLive": {
+        "productCommit": "566422758241190f432d8c8a09d67a5f589d90ac",
+        "evidenceCommit": "737a4fe7a5751e0315fda33c4eb96c7547420ff0",
+        "radioDirectory": 28,
+        "books": 728,
+        "lexiconTerms": 167,
+        "learningPaths": 4,
+        "uniqueEpisodeLinks": 1722,
+        "videoEntries": 16,
+        "evidence": "docs/evidence/radio-roadmap-2026-10-03/website-followup-live-review.json",
+        "fullFunctionalParity": false
+      },
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "CONTENT-CATALOG-PARITY",
       "priority": 1,
       "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
-      "status": "data-published-website-independent-local-pass-hostinger-login-required",
+      "status": "shared-catalog-published-current-drift-and-visibility-open",
       "audit": {
         "tool": "scripts/audit_content_catalog_parity.py",
         "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
@@ -543,7 +577,9 @@
         "jeder sichtbare Podcast und Bibliothekstitel besitzt eine auflösbare stabile Quellen-ID",
         "gleiche freigegebene Eingabe erzeugt gleiche zulässige Inhalts-IDs in App und Website; Abweichungen werden begründet",
         "kein Datensync löscht unbetroffene gültige Archive oder setzt gespeicherte Einträge und Nutzereinstellungen zurück",
-        "Datei-/Netzwerkfehler erhalten den letzten gültigen Stand mit ehrlicher Aktualitätsanzeige"
+        "Datei-/Netzwerkfehler erhalten den letzten gültigen Stand mit ehrlicher Aktualitätsanzeige",
+        "Paritätsbericht unterscheidet freigegebene Data-IDs, gebündelte Assets, Runtime-Nachladung, Live-Website und sichtbare Bedienung einschließlich Rechteklassen.",
+        "Drei neue Bibliotheks-IDs sowie unterschiedliche Videostände werden aufgenommen oder mit konkretem Ausschlussgrund belegt; 718 Downloadlinks zählen nicht als verfügbare Volltexte."
       ],
       "evidence": "docs/CONTENT-EXPANSION-INVENTORY-2026-10-01.json",
       "firstImplementationBatch": {
@@ -662,7 +698,7 @@
           }
         }
       },
-      "next": "Bestehende Code32-Play-Prüfung weiterlaufen lassen. Neue Inhalte als separate Release-Artefakte behandeln; native App-/Upgradeprüfung und Website-Live-/Rollback-Nachweise vor neuer Veröffentlichung. Danach sechs Podcastkandidaten und vier Intake-Holds fachlich prüfen.",
+      "next": "P0 Podcast-Veröffentlichung und Next-Terminkatalog stabilisieren; danach bestehende gemeinsame Projektion mit aktuellen Eingabehashes und sichtbarem Stand prüfen. Login/Upload des alten Website-Pakets ist kein aktueller Blocker.",
       "latestImplementation": {
         "appContentCommit": "c5181b500bccba682f61644a6f77672bb810dcc8",
         "appReleaseCommit": null,
@@ -683,7 +719,23 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "Website48FileCandidateund5UploadZIPsgeprueft. Hostingeranmelden; vollstaendigenLiveRoot/2PointerBackupverifizieren; geordnethochladen; oeffentlicheHash-/CSP-/Rollback-/Offlinetests."
+      "remaining": "Data enthält jetzt1865Podcastzeilen/1806eindeutige URLs; Website-Live1722. Abweichende IDs/Policy/Versionen beim bestehenden Website-Arbeiter abgleichen, keinen84Folgen-Zuwachs ohne Setvergleich behaupten. Bibliothek Data731 vsWebsite/App-Bundle728;3neueIDs und tatsächliche Runtimeprojektion bleiben offen.",
+      "projects": [
+        "Data",
+        "App",
+        "Next Website"
+      ],
+      "dependsOn": [
+        "PODCAST-CATALOG-EXPANSION",
+        "EDITORIAL-DATA"
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "dependencyMilestones": {
+        "PODCAST-CATALOG-EXPANSION": "pipeline-publication-recovered",
+        "EDITORIAL-DATA": "regional-package-renewed"
+      },
+      "dependencyNote": "Für das erste Paket gelten die benannten P0-Meilensteine. Spätere Podcastkuratierung oder alle redaktionellen Dossiers sind keine Voraussetzung der Navigation."
     },
     {
       "id": "KNOWLEDGE-LEXICON-LIBRARY",
@@ -781,22 +833,29 @@
         "rights": "Metadata/original links only; no new fulltext/audio/artwork reuse rights",
         "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
       },
-      "remaining": "151weitereBegriffeuebersetzen/Editorialreview; kuratierteDossierverknuepfungen;10weitereDEBibliothekskandidatenpruefen;4automatischeBibliotheksadapternochzuimplementieren; freigegebeneOffline-Lernpakete.",
+      "remaining": "167 Begriffe und vier Lernpfade existieren; neue Redaktion über LEXICON-EDITORIAL-20261003, Adapter über LIBRARY-ADAPTERS-20261003 führen. Begriffs-, Sprach- und Beziehungslücken priorisieren; unübersetzte Texte und ungeprüfte Positionen sichtbar lassen.",
       "currentScope": {
-        "libraryItems": 728,
+        "appBundledLibraryItems": 728,
+        "dataLibraryItems": 731,
+        "websiteLiveLibraryItems": 728,
         "lexiconTerms": 167,
         "learningPaths": 4,
-        "note": "Current app content; previous implementation batches above remain historical."
-      }
+        "note": "Anzahlen belegen Katalogumfang, keine Volltextrechte oder vollständige Mehrsprachigkeit."
+      },
+      "projects": [
+        "Data",
+        "App",
+        "Next Website"
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "PODCAST-CATALOG-EXPANSION",
       "priority": 2,
       "name": "Podcastquellen und nutzbaren Archivumfang erweitern",
-      "status": "four-new-programs-and-433-reviewed-metadata-rows-published",
-      "dependsOn": [
-        "CONTENT-CATALOG-PARITY"
-      ],
+      "status": "pipeline-repaired-main-publication-PASS-further-expansion-open",
+      "dependsOn": [],
       "technicalObservation": {
         "evidence": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.json",
         "report": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md",
@@ -833,7 +892,12 @@
         "jede Aufnahme hat einen belegten Betreiber und Originalpfad; unbekannte Rechte aktivieren keine kopierten Audios, Bilder oder Transkripte",
         "keine zukünftigen Veröffentlichungen, doppelten GUIDs, fehlenden Quellen-IDs oder vermischten Sprachgruppen",
         "mindestens drei Serien mit nachvollziehbar erweitertem Archiv oder dokumentierter tatsächlicher Verfügbarkeitsgrenze; keine aufgefüllten Mengen",
-        "Pagination, Ladefehler, Feedausfall, abgesagte/widerrufene Folge und unveränderte gespeicherte IDs geprüft; Start- und Offlinebudgets eingehalten"
+        "Pagination, Ladefehler, Feedausfall, abgesagte/widerrufene Folge und unveränderte gespeicherte IDs geprüft; Start- und Offlinebudgets eingehalten",
+        "Alle tatsächlich erzeugten freigegebenen Pipeline-Dateien einschließlich podcast-archive.json werden validiert und zusammen gestagt; Dirty-tree-/Rebase-/Archiv-/Rechte-Guards bleiben wirksam.",
+        "Ein echter geplanter Workflowlauf endet erfolgreich; veröffentlichte Revision/Hashes einschließlich Archiv werden zurückgelesen.",
+        "Working-Class-History feedUrl/feedUrls-Korrektur wird als vorhanden geführt und mit aktuellem Feed geprüft, nicht neu implementiert.",
+        "Originalserie, erzeugte Hörfassung und Live-Radio sind unterscheidbar; Audio-Link, Metadatenstatus, letzte Prüfung und tatsächlicher Playback-Nachweis werden getrennt ausgewiesen.",
+        "Auf zulässigen Folgen Start/Pause/Suche/30-s-Fortsetzen nach Neustart prüfen; Hintergrund, Sperrbildschirm und Unterbrechungen je Android/iOS separat dokumentieren."
       ],
       "evidence": "docs/PODCAST-CANDIDATES-2026-10-01.md",
       "existingSourceProgress": {
@@ -894,19 +958,125 @@
           "report": "docs/ROADMAP-PACKAGE-2026-10-02.md"
         }
       },
-      "remaining": "3Intakeholds und2Verzeichnis-RSS-Pfadeweiterpruefen; individuelleSprachverifikation/Serienfortsetzen/Dossiercurationoffen."
+      "remaining": "Main-Workflowdispatch37085213675 veröffentlicht korrekt samt Archiv. Nächsten normalen Schedulelauf gesondert beobachten; Quellen-Holds, Serien-/Sprach-/Themenerschließung und echte Playbacktests bleiben offen.",
+      "projects": [
+        "Data",
+        "App",
+        "Next Website"
+      ],
+      "pipelineBlocker": {
+        "originalFailedRun": 37023481297,
+        "laterFailedRun": 37063775566,
+        "laterFailure": "Saving step stages podcasts.json, podcast-health.json and generated-podcasts.json; podcast-archive.json remains modified; clean-tree rebase guard correctly fails. Current remote workflow still omits archive.",
+        "workingClassHistory": "aggregate_podcasts.py already prefers feedUrl then feedUrls; current source carries official Spreaker feed. Do not reimplement.",
+        "radioSuccessRun": 37067219561,
+        "status": "resolved-by-PR44",
+        "resolutionEvidence": "docs/evidence/roadmap-continuation-2026-10-03/podcast-publication.json"
+      },
+      "currentInventory": {
+        "rows": 1865,
+        "uniqueEpisodeUrls": 1806,
+        "audioLinks": 860,
+        "metadataAndLinksOnlyRows": 1005,
+        "archiveRows": 1901,
+        "generatedCatalogRows": 0,
+        "sourceCatalogRows": 56,
+        "playbackVerified": false,
+        "capturedAt": "2026-10-03"
+      },
+      "priorityScope": "P0-Veröffentlichungsfehler behoben; weitere Quellen/Serienerschließung P2.",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "milestones": [
+        {
+          "id": "pipeline-publication-recovered",
+          "priority": 0,
+          "status": "source-fix-integrated-real-main-dispatch-publication-verified",
+          "acceptance": "Geplanter Lauf mit Archiv-Staging erfolgreich und öffentliche Ausgaben zurückgelesen.",
+          "remaining": "Schedule-triggered success separately unobserved; exact same production workflow has succeeded via dispatch."
+        },
+        {
+          "id": "series-editorial-expansion",
+          "priority": 2,
+          "status": "partially-implemented",
+          "acceptance": "Serienerschließung und bestehende Intake-Holds nach den vorhandenen Kriterien abnehmen."
+        }
+      ],
+      "pipelineResolution": {
+        "pr": "https://github.com/Blackfront161/Revolution-News-Data/pull/44",
+        "fixCommit": "ae688f2fd9b0810ef4b790b6c5b00f6d5d280d38",
+        "mergeCommit": "445979a32f9d8e11e74e6f912bbbd1cc05ed542d",
+        "run": 37085213675,
+        "publishedCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+        "publicPagesReadback": "byte-identical pinned feed",
+        "evidence": "docs/evidence/roadmap-continuation-2026-10-03/podcast-publication.json"
+      }
     },
     {
       "id": "EDITORIAL-DATA",
-      "priority": 2,
+      "priority": 0,
       "name": "Echte Inhalte für bestehende2.1-Funktionen",
-      "status": "planned",
+      "status": "regional-source-accepted-local-package-built-publication-pending",
       "scope": [
         "strukturierte redaktionelle Claims und Perspektivenvergleich",
         "erste geprüfte Solidaritätsaktionen",
         "geprüfte Dossiers mit stabilen Direktlinks",
         "Quellenpassdaten und Terminpflege"
-      ]
+      ],
+      "projects": [
+        "Next Website",
+        "Next Android",
+        "Data"
+      ],
+      "remaining": "Isolierter Regionalfix03c2aaa unabhängig akzeptiert:4bestätigteTermine,1temporärerHold. Freshness/Hash/Workflowprüfungen und lokales46Dateien-PaketPASS. Bestehender Website-Arbeiter übernimmt in seinen Integrationsweg; finale Paketabnahme und Live-Readback bleiben offen. Keine Änderung am bestehenden internen Code27.",
+      "priorityScope": "Nur Regionalterminkatalog P0; übrige Claims/Dossiers/Solidaritätsaktionen bleiben P2.",
+      "regionalBlocker": {
+        "path": "C:\\Users\\patri\\Documents\\World Revolution News\\wrn-next-live-work\\packages\\browser-content\\src\\regional-events\\events.json",
+        "sha256": "4ccb0da681444a8970e16113c7160c840f4cc9d777aafaba82923478ad9672a3",
+        "revision": 3,
+        "validUntil": "2026-10-02T00:00:00.000Z",
+        "checkerExitCode": 1,
+        "checkerOutput": "WRN regional events check failed: regional-events-renewal-required",
+        "liveEffect": "Website home shows stale-catalog warning and valid-until date; no upcoming regional event list. News/media still reachable. Legacy App Code32 uses separate event input; Code27 device behaviour not retested.",
+        "sourceCandidateStatus": "resolved-in-isolated-reviewed-revision4; current live snapshot remains older"
+      },
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "acceptance": [
+        "Aktuelle Primärquellenprüfung begründet neue Katalogrevision und Ablaufdatum; Validator, Hashpins, Widerrufe und 48-h-Frischeminimum bleiben aktiv.",
+        "Vorbereitung aller betroffenen Next-Pakete besteht wieder; Live-Regionalansicht zeigt nur tatsächlich gültige Einträge. Legacy-App- und Next-Code27-Auswirkungen sind getrennt dokumentiert."
+      ],
+      "milestones": [
+        {
+          "id": "regional-package-renewed",
+          "priority": 0,
+          "status": "source-reviewed-pinned-precheck-and-local-package-PASS-live-pending",
+          "acceptance": "Tatsächliche Quellenprüfung, neue Regionalrevision/Hashpins, Paketvorprüfung und Livezustand belegt.",
+          "remaining": "Existing Website integration and independent final package/live acceptance."
+        },
+        {
+          "id": "editorial-claims-dossiers",
+          "priority": 2,
+          "status": "planned",
+          "acceptance": "Bestehende redaktionelle Claims/Dossiers/Aktionen nach ihren vorhandenen Verträgen ausbauen."
+        }
+      ],
+      "regionalResolution": {
+        "projectPath": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal",
+        "sourceCommit": "03c2aaadcc4988a4911a97522aafd4246fae04bb",
+        "evidenceCommit": "20bb8746eec1cb34c360b775e4438acc051fac98",
+        "revision": 4,
+        "validUntil": "2026-10-10T01:10:45.000Z",
+        "eventCount": 4,
+        "heldEventCount": 1,
+        "inputSha256": "571eb5866536482dc6f5c046b8d82824bc85adedaf127316ac4b79b771d40236",
+        "independentSourceReview": "PASS",
+        "localBuild": "PASS",
+        "packageFiles": 46,
+        "packageShellId": "e0a50e0cd362402653bd5257b7e9a41a551900d070d31f2ccdf1230039da2c82",
+        "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal/docs/evidence/WRN-REGIONAL-REVIEW-2026-10-03/REPORT.md",
+        "publicationPerformed": false
+      }
     },
     {
       "id": "MEDIA-PRINT-OFFLINE",
@@ -917,8 +1087,12 @@
         "Tagesausgaben-Audioentscheidung",
         "A3, Stickerbögen und reproduzierbare PDFs",
         "freigegebene Offline-Materialien",
-        "geprüfte alternative soziale Medien und spätere World-Revolution-Map-Integration"
-      ]
+        "geprüfte alternative soziale Medien"
+      ],
+      "atlasTask": "ATLAS-HOST-INTEGRATION-20261003",
+      "note": "Atlas-Wiederverwendung wird ausschließlich im referenzierten Hostintegrationsauftrag geführt; kein paralleler Kartenneubau.",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "RADIO-HEALTH-20261003",
@@ -931,7 +1105,22 @@
         "Six-hour dated radio check; preserve configured fallback streams",
         "Copy/share includes original and Play Store URL; directory-only wording avoids direct-playback claim"
       ],
-      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md",
+      "projects": [
+        "Data",
+        "App",
+        "Next Website",
+        "iOS"
+      ],
+      "remaining": "PR43 und regelmäßiger Health-Check sind erledigt. Neun begrenzte Audioantworten sind kein Geräte-Playback-PASS; App-Player und Website-Originalsenderpfad samt Ausfall/Ersatzstream prüfen. Neue Sender erst nach Bedarfs-/Quellenreview.",
+      "dependsOn": [],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "acceptance": [
+        "28 Verzeichniseinträge, neun Audioantworten und 19 Einträge ohne freigegebenen Stream getrennt anzeigen; keine pauschale Direktwiedergabe zusagen.",
+        "Mindestens 3CR und zwei weitere zulässige funktionierende Sender: echtes Start/Pause/Stop, Streamausfall/Fallback und Hintergrund/Sperrbildschirm je Zielplattform mit Datum nachweisen.",
+        "Teilen nennt Originalsender und WRN-App; Metadaten-/Verzeichniseinträge versprechen keine unbestätigte App-Wiedergabe."
+      ]
     },
     {
       "id": "PRISONER-DIRECTORY-REVIEW-20261003",
@@ -952,7 +1141,14 @@
         "supportResourcesAdded": 5,
         "sourcesTotal": 18,
         "remaining": "Dated individual confirmation for17 profiles; no independent custody/legal-status finding, new cache-bound Android candidate still required"
-      }
+      },
+      "projects": [
+        "App",
+        "Next Website"
+      ],
+      "websiteFollowup": "Bestehender Website-Arbeiter integriert die geprüfte Quelle; WIP nicht überschreiben. 17 datierte Einzelbestätigungen bleiben offen, keine erneute Grundimplementierung.",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     },
     {
       "id": "LIBRARY-ADAPTERS-20261003",
@@ -965,7 +1161,22 @@
         "Review ten further German candidates; preserve authors, editions, original language and stable links",
         "Validate dedupe, withdrawals, website parity and permitted offline scope"
       ],
-      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md",
+      "projects": [
+        "Data",
+        "App",
+        "Next Website"
+      ],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "remaining": "Vier bisher nur verlinkte Anbieter benötigen echte Metadatenadapter; zehn DE-Kandidaten nach Lückenprüfung bewerten. Nicht die vorhandenen 731/728 Titel erneut importieren.",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "acceptance": [
+        "Thema/Sprache/Format/Quelle filtern, Titel öffnen und zur unveränderten Auswahl zurückkehren; stabile Werk-/Ausgabenidentität, Pagination, Deduplizierung und Widerrufe belegen.",
+        "Herkunft und Rechte je Metadatum/Volltext/Download/Offline getrennt; externes Verzeichnis und 718 Downloadverweise nicht als gespeicherte Bücher zählen."
+      ]
     },
     {
       "id": "LEXICON-EDITORIAL-20261003",
@@ -978,7 +1189,22 @@
         "Indigenous self-determination, commons, syndicalism, prisoner solidarity, transformative justice",
         "Exact primary references, contrasting views, dated review and real book/podcast relationships"
       ],
-      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md",
+      "projects": [
+        "App",
+        "Data",
+        "Next Website"
+      ],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "remaining": "Lückenmatrix gegen 167 bestehende Begriffe zuerst erstellen; nächste zehn neue oder wesentlich verbesserte DE/EN Begriffe nach Nutzen auswählen, bestehende Begriffe nicht nochmals anlegen.",
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "acceptance": [
+        "Jeder bearbeitete Begriff enthält fundierte Erklärung, Beispiel, belegte unterschiedliche Positionen, exakte Quellen, Reviewdatum und verwandte Begriffe.",
+        "Stabile Beziehungen zu echten Artikeln/Büchern/Podcastfolgen prüfen; Suche und Lernpfad zeigen Originalsprache, Übersetzungs-/KI-Status und Rückkehrkontext."
+      ]
     },
     {
       "id": "HELP-AUDIO-TRANSLATION-20261003",
@@ -991,7 +1217,147 @@
         "Translation source language, shared cache, offline dates and reporting broken sources",
         "Review seven remaining UI languages and navigation with new-user task checks"
       ],
-      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md"
+      "evidence": "docs/ROADMAP-RADIO-CONTENT-WEBSITE-2026-10-03.md",
+      "projects": [
+        "App",
+        "Next Website",
+        "iOS"
+      ],
+      "dependsOn": [
+        "NAV-FINDABILITY-20261003",
+        "PROVIDER-QUOTA-VISIBILITY-20261003"
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+      "acceptance": [
+        "Aufgabenhilfe unterscheidet Original-Link, direkt abspielbare Folge, lokal vorgelesenen Text und gemeinsame erzeugte Datei; Kontingent/Wartezeit/Reset/Offlinezustand verständlich erklären.",
+        "DE/EN Erstnutzer finden Inhalt, spielen/lesen, übersetzen und kehren zurück; übrige sieben Oberflächensprachen auf fehlende/überlaufende Texte prüfen."
+      ]
+    },
+    {
+      "id": "NAV-FINDABILITY-20261003",
+      "name": "Bestehende WRN-Navigation, Direktlinks und Rückkehrkontext vervollständigen",
+      "priority": 1,
+      "status": "planned-user-approved-implementation",
+      "projects": [
+        "App",
+        "Next Website"
+      ],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "owner": "Bestehende App-/Website-Verantwortliche; gemeinsame Schnittstellenabnahme",
+      "remaining": "Kein neuer Router oder neues Designsystem. Persistenz der kompletten Filter-/Listenrückkehr sowie Medienunterbereich-Direktlinks sind noch nicht vollständig belegt.",
+      "acceptance": [
+        "News, Videos, Originalpodcasts, Hörfassungen, Live-Radio, Lexikon, Bibliothek und Atlas-Einstieg sind eindeutig erreichbar; Atlasstatus bis Integration ehrlich benennen.",
+        "Bestehende App-history-/Website-hash-Navigation erweitern: Bereich/ID/Quelle/Sprache/Thema per Direktlink; Browser-Back, App-Back, Liste/Filter/Scroll/Fokus und Artikelposition erhalten.",
+        "Eigene WRN- und Autonom-Gestaltung erhalten; vorhandene Website-Aufmacher/Ressorts nutzen. Audio-/Video-Einstieg auch auf Startseite sichtbar, ohne ungeprüfte Inhalte als Empfehlungen auszugeben.",
+        "360/768/1440 px, Tastatur, sichtbarer Fokus und 200% Schrift/Reflow: kein Textüberlauf, Kernaktionen erreichbar; angestrebte 44-px-Touchfläche ohne abgeschnittene Labels.",
+        "Geprüfte Szenarien der requirementsReconciliation20261003.scenarios mit aktuellen Paketen durchführen; schmaler Source-Assertion-Test allein erfüllt keine UI-Abnahme."
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+    },
+    {
+      "id": "VIDEO-EDITORIAL-QUALITY-20261003",
+      "name": "Ausgewählte Videos prüfen, Kanalverweise getrennt erschließen",
+      "priority": 2,
+      "status": "planned-user-approved-implementation",
+      "projects": [
+        "Data",
+        "App",
+        "Next Website"
+      ],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "owner": "Bestehende Daten-/Website-Verantwortliche mit redaktioneller Quellenprüfung",
+      "remaining": "Bestehende Quellen wie Andrewism/Audible Anarchist/subMedia nicht erneut anlegen. Noch keine neuen Quellen in diesem Audit aufgenommen.",
+      "acceptance": [
+        "16 ausgewählte Videos und zehn Kanal-/Herausgeberverweise getrennt zählen; aktuelle App-/Website-IDs und Aktualisierungsstände vergleichen.",
+        "Jeden ausgewählten Beitrag auf Relevanz, Qualität, Datum, Episodensprache und Herkunft prüfen; zehn fehlende Datumswerte als unbekannt kennzeichnen, nicht frisch rechnen.",
+        "Plattformübergreifend gleiche Episode/Doppeltitel redaktionell abgleichen; Kryptothemen nicht allein wegen Kolektiva-Hosting als thematisch freigegeben ansehen.",
+        "Erlaubte iframe-/Direktvideo-Wiedergabe tatsächlich prüfen, Original- und Ausfallweg anbieten; HTTP200 ersetzt keine Einbett-/Decoder-/Rechteprüfung.",
+        "Vorübergehenden antimilitarismus-Timeout datiert erneut prüfen, Quelle nicht automatisch dauerhaft entfernen; erst danach Lücken nach Thema/Region/Sprache und neue anarchistische/libertär-sozialistische unabhängige Kandidaten einzeln reviewen."
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+    },
+    {
+      "id": "PROVIDER-QUOTA-VISIBILITY-20261003",
+      "name": "Bestehende Übersetzung und Stimmen mit ehrlichen Kontingentanzeigen ergänzen",
+      "priority": 1,
+      "status": "planned-user-approved-implementation",
+      "projects": [
+        "App",
+        "Cloudflare active workers",
+        "Next Website",
+        "Next draft services"
+      ],
+      "dependsOn": [],
+      "owner": "Bestehende Backend-/App-Verantwortliche",
+      "remaining": "Public health/status ist erreichbar, tatsächliche Accounttarife nicht belegt. Bereits geprüfte gemeinsame Übersetzungen nicht nochmals grundlegend implementieren.",
+      "acceptance": [
+        "Aktiven Gemini-Proxy/KV-Cache/Azure-TTS/R2-Pfad von Next-Serviceentwürfen und lokalen Gerätestimmen trennen; Google-Projektkontingent, Azure-Tarif und WRN-eigene Guards separat dokumentieren.",
+        "Vorhandenen gemeinsamen Cache und R2-Wiederverwendung erweitern statt zweiten Cache bauen; identischer zulässiger Inhalt/Sprache/Version erzeugt HIT für zweiten Nutzer, Widerruf/Änderung invalidiert korrekt.",
+        "UI zeigt verfügbare/verbrauchte WRN-Quote, Wartezeit/Retry und Reset; unbekannte Providerquote als unbekannt. 429, Timeout, kein Netz und erschöpftes Kontingent führen zu verständlichem Fallback ohne unkontrollierte Wiederholungen.",
+        "KI-Übersetzung und Originalsprache kennzeichnen; lokale Stimme vs gemeinsam erzeugte Hördatei und deren 30-Tage-Verfügbarkeit klar unterscheiden.",
+        "Vor Anbieter-/Modellwechsel Qualität/Terminologie/Latenz in neun UI-Sprachen, Kosten pro repräsentativem Text und aktuelle Accountlimits vergleichen; HF/WorkersAI/GeminiTTS nicht als unbegrenzt kostenlose aktive Dienste behaupten.",
+        "Data Draft PR20 gegen bestehende aktive Cost Guards abgleichen; nur echte Lücken übernehmen, keine parallele Quota-/Cachearchitektur."
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+    },
+    {
+      "id": "ATLAS-HOST-INTEGRATION-20261003",
+      "name": "Eigenständigen World Revolution Atlas als optionalen WRN-Bereich wiederverwenden",
+      "priority": 2,
+      "status": "planned-user-approved-implementation",
+      "projects": [
+        "World Revolution Atlas / Map repository",
+        "App",
+        "Next Website",
+        "iOS"
+      ],
+      "dependsOn": [
+        "NAV-FINDABILITY-20261003"
+      ],
+      "owner": "Bestehender Atlas-Arbeiter liefert eingefrorenes Paket; App/Website integrieren",
+      "remaining": "Eigenständiger Atlas vorhanden, WRN-Integration fehlt. 674 Ereignisse/669 sichtbare stammen aus laufendem Workerstand; 178 behauptete Tests sind kein WRN-Host-/Geräte-PASS.",
+      "acceptance": [
+        "Aktuellen r73-WIP gegen r68-Embeddingpaket vergleichen und vom Atlas-Projekt unveränderlichen freigegebenen Handoff mit Versions-/Dateihashes und Herkunft erhalten; fremden WIP nicht ändern.",
+        "Historische Karte/Globus mit Zeitfilter, Ereignisdetails, exakten Quellen und WRN-Beziehungen integriert. Next-Quellenliste/Länderquiz, Map-Repositoryname und Game-Labor nicht als erfüllte Atlasintegration zählen.",
+        "Embeddingvertrag (Origin/PostMessage/API, Sprache, Themes, Rücknavigation, Attribution, sensible Koordinaten) prüfen; eingebettetes Paket aktiviert keinen konkurrierenden Service Worker oder ungeprüften Supabasezugriff.",
+        "Atlas/Medien erst beim Öffnen laden; Start-, Transfer-, RAM-/Cachebudget vor Integration messen und explizit festlegen. Bestehendes Website-Shelllimit 8 MiB nicht pauschal abschalten.",
+        "Hostverantwortetes Offlinepaket, kalter Offline-Neustart, mobile Zoom-/Zeitbedienung und Abbruch prüfen; r68 offlineInEmbed=false und überwiegend deutsche historische Texte bleiben offen bis nachgewiesen."
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
+    },
+    {
+      "id": "IOS-NATIVE-VALIDATION-20261003",
+      "name": "Laufende native iOS-Umsetzung mit aktueller App-Basis prüfen",
+      "priority": 2,
+      "status": "planned-user-approved-implementation",
+      "projects": [
+        "App shared frontend",
+        "iOS own branch",
+        "Cloudflare active backend"
+      ],
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "owner": "IOS Experte, bestehender Chat 01a0f54e-fd7f-7260-b65a-7daa84eab441",
+      "remaining": "Capacitor8.4.0/native Swift-Einrichtung existiert. Noch kein App-PR offen bei Abschlussprüfung, kein Xcodebuild/IPA/Gerätetest belegt; aktueller gemeinsamer Export älter als App-Quellfreeze.",
+      "acceptance": [
+        "Eigenen codex/ios-app-Stand und Draft-PR verwenden; gemeinsame Export-/Hashbasis gegen aktuellen geprüften App-Stand aktualisieren. Keine zweite iOS-Portierung oder abweichende Backendkopie.",
+        "Ersten Xcode26/iOS17+-Build auf zulässigem Mac/Runner belegen; unsigned Simulator-/Devicebuild von signierter IPA und Storefreigabe unterscheiden.",
+        "Gerätetests für native Share, Safe Area, AVAudioSession, Hintergrund/Lockscreen/Unterbrechung/Fortsetzen, persistentes Offline und vorhandene Speichergrenzen durchführen.",
+        "Android-only APIs, WKWebView capacitor:// ohne PWA-Serviceworker, Berechtigungen, native APNs-Lücke, Datenschutz/App-Store-Metadaten und Apple-Signing erfassen.",
+        "Apple Developer Mitgliedschaft (99 USD/Jahr bzw. lokale Währung), Mac/Runner/Signierungszugang und laufende Providerkosten vor Storephase bestätigen; keine Mitgliedschaft oder Upload aus Planstatus ableiten."
+      ],
+      "reconciledAt": "2026-10-03",
+      "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json"
     }
   ],
   "productScope": [
@@ -1752,7 +2118,12 @@
       "sourceFreeze": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
       "freezeEvidenceCommit": "1a87a404e56d884fdc1924557b7a2cf9690bfcb0",
       "independentReviewEvidence": "docs/evidence/prisoner-roadmap-2026-10-03/controller-corrected-review.json",
-      "runtime": {"productionCache": "2.1.2-r23", "previewCache": "v111", "prisonerSolidarity": 5, "classicPrisonerSolidarity": 4},
+      "runtime": {
+        "productionCache": "2.1.2-r23",
+        "previewCache": "v111",
+        "prisonerSolidarity": 5,
+        "classicPrisonerSolidarity": 4
+      },
       "release": "corrected-source-candidate-with-fresh-cache-generation; no new Android artifact"
     },
     "website": {
@@ -1791,5 +2162,225 @@
         "liveEvidence": "docs/evidence/radio-roadmap-2026-10-03/website-followup-live-review.json"
       }
     }
+  },
+  "requirementsReconciliation20261003": {
+    "status": "user-approved-implementation-started-P0-publication-repaired-regional-candidate-reviewed",
+    "report": "docs/ROADMAP-ABGLEICH-2026-10-03.md",
+    "evidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
+    "priorityConvention": "0=P0 blocker;1=P1 first product package;2=P2 content/Atlas/iOS stream;3=P3 later work",
+    "areas": [
+      {
+        "area": "navigation",
+        "status": "teilweise vorhanden; vollständige Nutzungsabnahme offen",
+        "taskIds": [
+          "NAV-FINDABILITY-20261003"
+        ]
+      },
+      {
+        "area": "appWebsiteParity",
+        "status": "gemeinsame Kataloge live; aktuelle Drift und Funktionsparität offen",
+        "taskIds": [
+          "WEBSITE-CONTENT-PARITY",
+          "CONTENT-CATALOG-PARITY"
+        ]
+      },
+      {
+        "area": "video",
+        "status": "Katalog und Kanalregister vorhanden; Redaktion/Playback ungeprüft",
+        "taskIds": [
+          "VIDEO-EDITORIAL-QUALITY-20261003"
+        ]
+      },
+      {
+        "area": "podcastAudio",
+        "status": "RSS-/Archiv-Veröffentlichung repariert und öffentlicher Feed verifiziert; weitere Serienerschließung und Gerätewiedergabe offen",
+        "taskIds": [
+          "PODCAST-CATALOG-EXPANSION",
+          "RADIO-HEALTH-20261003"
+        ]
+      },
+      {
+        "area": "knowledge",
+        "status": "167 Begriffe/vier Lernpfade; Ausbau geplant, drei Bibliotheks-IDs Drift",
+        "taskIds": [
+          "KNOWLEDGE-LEXICON-LIBRARY",
+          "LIBRARY-ADAPTERS-20261003",
+          "LEXICON-EDITORIAL-20261003"
+        ]
+      },
+      {
+        "area": "translationVoices",
+        "status": "aktive gemeinsame Anbindung vorhanden; Quotenanzeige/Accountnachweis offen",
+        "taskIds": [
+          "PROVIDER-QUOTA-VISIBILITY-20261003",
+          "HELP-AUDIO-TRANSLATION-20261003"
+        ]
+      },
+      {
+        "area": "atlas",
+        "status": "eigenständiges Projekt in Arbeit; historische WRN-Hostintegration fehlt",
+        "taskIds": [
+          "ATLAS-HOST-INTEGRATION-20261003"
+        ]
+      },
+      {
+        "area": "ios",
+        "status": "native Einrichtung in Arbeit; Build/Signatur/Geräte/Store offen",
+        "taskIds": [
+          "IOS-NATIVE-VALIDATION-20261003"
+        ]
+      }
+    ],
+    "firstPackage": {
+      "name": "Inhalte zuverlässig finden, öffnen und wiederfinden",
+      "status": "in-progress; podcast publication repaired, regional candidate reviewed, live integration and P1 follow",
+      "phases": [
+        {
+          "order": 1,
+          "priority": "P0",
+          "taskIds": [
+            "PODCAST-CATALOG-EXPANSION",
+            "EDITORIAL-DATA"
+          ],
+          "outcome": "Podcastworkflow samt Archiv veröffentlicht erfolgreich; frisch geprüfter Next-Terminkatalog lässt Inhaltspaketvorprüfung wieder bestehen."
+        },
+        {
+          "order": 2,
+          "priority": "P1",
+          "taskIds": [
+            "CONTENT-CATALOG-PARITY",
+            "WEBSITE-CONTENT-PARITY"
+          ],
+          "outcome": "Aktuelle ID-/Rechte-/Standmatrix einschließlich drei neuer Bibliotheks-IDs und Videodrift; bestehende Website-Arbeit weiterverwenden."
+        },
+        {
+          "order": 3,
+          "priority": "P1",
+          "taskIds": [
+            "NAV-FINDABILITY-20261003",
+            "RADIO-HEALTH-20261003",
+            "PROVIDER-QUOTA-VISIBILITY-20261003",
+            "HELP-AUDIO-TRANSLATION-20261003"
+          ],
+          "outcome": "Bestehende Navigation mit Medien-/Wissenseinstiegen, Direktlinks und Rückkehrkontext; verlässliche Zustandsanzeigen und nutzbare aktuelle Inhalte."
+        }
+      ],
+      "firstPackageScenarios": [
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6"
+      ],
+      "laterIntegrationScenarios": [
+        "J7",
+        "J8"
+      ],
+      "releaseGate": "Aktueller geprüfter Quellstand → neue gehashte Pakete → UI-/Plattformnachweise → unabhängige Abnahme. Data PR44 veröffentlicht; Website-Kombination und native Paketabnahme stehen noch aus."
+    },
+    "scenarios": [
+      {
+        "id": "J1",
+        "journey": "Start → Ressort/Suche → Artikel → lesen/übersetzen → Zurück",
+        "expected": "Aufmacher und Listenartikel verwenden gleiche Übersetzungs-/KI-Kennzeichnung; Quelle/Sprache/Filter/Fokus/Scroll und Artikelposition bleiben erhalten."
+      },
+      {
+        "id": "J2",
+        "journey": "Bereichsdirektlink → Podcastserie → Sprache/Thema → Folge → Player oder Original → Zurück",
+        "expected": "Originalpodcast, Metadatenverweis und erzeugte Hörfassung sind unterscheidbar; sichere zugelassene Audios starten, reine Links versprechen keine Wiedergabe."
+      },
+      {
+        "id": "J3",
+        "journey": "Radio → 3CR → Start/Pause/Stop → Hintergrund/Unterbrechung → Teilen",
+        "expected": "Echte Plattformwiedergabe geprüft; Fehler/Fallback datiert; Share nennt WRN-App und Original, ohne Verzeichnisstatus zu verschleiern."
+      },
+      {
+        "id": "J4",
+        "journey": "Video → Sprache/Quelle → Einzelvideo → embed/original → Zurück",
+        "expected": "Ausgewähltes Video vs Kanal klar; Rechte-/Embedfehler sichtbar; Filter erhalten; tatsächlicher Playbacknachweis separat."
+      },
+      {
+        "id": "J5",
+        "journey": "Wissen → Begriff → Beispiel/Position/Quelle → Buch oder Podcast → Zurück",
+        "expected": "Verwandte IDs lösen auf; Originalsprache/Rechteklasse erkennbar; Bibliotheksformat-/Sprach-/Quellenfilter erhalten."
+      },
+      {
+        "id": "J6",
+        "journey": "Artikel übersetzen → zweiter Nutzer → identischer Cache-HIT → Quote erschöpft/Timeout/Offline",
+        "expected": "Gemeinsame Wiederverwendung ohne doppelte Erzeugung; korrekte Versions-/Widerrufsgrenzen; verständliche Wartezeit/Reset/Alternative."
+      },
+      {
+        "id": "J7",
+        "journey": "Atlas öffnen → historisches Ereignis/Zeit/Quelle → WRN-Beziehung → Zurück → Offline-Neustart",
+        "expected": "Optionales Paket; keine Quellenquiz-Ersatzabnahme; Sprache/Themes/Hostcache/Attribution und Budgets geprüft."
+      },
+      {
+        "id": "J8",
+        "journey": "iOS kalter Start → gespeicherter Inhalt → Audio/Share → Hintergrund/Lockscreen → Wiederaufnahme",
+        "expected": "Native Build-/Devicebelege; persistentes Offline und Berechtigungen; keine Mobile-Webseite als native Abnahme."
+      }
+    ],
+    "reviewMatrix": {
+      "widths": [
+        360,
+        768,
+        1440
+      ],
+      "languages": "DE/EN vollständige Szenarien, alle neun UI-Sprachen auf fehlende Labels/Overflow prüfen",
+      "accessibility": "Tastatur/Fokus/200%-Reflow; Plattform-Back und Browser-Back",
+      "evidence": "Eingabehash, konkrete Version, Browser/Gerät, Datum, Ergebnis, begründete Auslassungen; Fixtures und Live getrennt"
+    },
+    "alreadyDoneDoNotReplan": [
+      "Data PR41/42 Archiv und Inhaltsbeschränkungen",
+      "Data PR43 3CR/regelmäßige Radiohealth",
+      "Working-Class-History feedUrl-Vorrang",
+      "Vier Programme und 433 geprüfte Metadatenzeilen",
+      "Autonom-Grunddesign und Audio-Teilen",
+      "Gemeinsamer KV-Übersetzungscache und aktive Kosten-Guards",
+      "Website-Livekatalog 728 Bücher/167 Begriffe/4 Lernpfade/1722 Episoden/28 Radios"
+    ],
+    "decisions": [
+      "Native Website-Player je Audio-/Video-Rechteklasse oder bewusster Originalpfad entscheiden; Sichtbarkeit nicht mit Playback gleichsetzen.",
+      "Atlas unveränderliches Hostpaket und Budgets vor Integration vereinbaren; r73 WIP nicht direkt übernehmen.",
+      "Providerkonto/Tarif belegen und monatliche Budgetobergrenze vor kostenpflichtiger Nutzung festlegen; keine Accountquote aus lokaler Guardzahl ableiten.",
+      "iOS Mac/Runner-/Apple-Signierungsweg für bestehenden Arbeiter klären; Mitgliedschaft/Storeupload separat."
+    ],
+    "coordination": "Der ursprüngliche Audit war ausschließlich Planung. Nach direkter Nutzerfreigabe läuft die Umsetzung; bestehende Website- und Kontrolleur-Chats wurden koordiniert. Fremde laufende Arbeiten bleiben erhalten. Aktuelle Umsetzung: roadmapImplementation20261003.",
+    "validation": "Historischer Audit: docs/evidence/roadmap-reconciliation-2026-10-03/validation.json. Aktueller Roadmap-Stand: docs/evidence/roadmap-continuation-2026-10-03/validation.json. Produkttests und Veröffentlichungsgrenzen getrennt im Umsetzungsbericht.",
+    "implementationAuthorizedAt": "2026-10-03",
+    "authorization": "Direkte Nutzernachricht: fahre fort in der roadmap"
+  },
+  "roadmapImplementation20261003": {
+    "report": "docs/ROADMAP-P0-UMSETZUNG-2026-10-03.md",
+    "podcast": {
+      "pr": "https://github.com/Blackfront161/Revolution-News-Data/pull/44",
+      "fixCommit": "ae688f2fd9b0810ef4b790b6c5b00f6d5d280d38",
+      "mergeCommit": "445979a32f9d8e11e74e6f912bbbd1cc05ed542d",
+      "run": 37085213675,
+      "publishedCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+      "publicPagesReadback": "byte-identical pinned feed",
+      "evidence": "docs/evidence/roadmap-continuation-2026-10-03/podcast-publication.json"
+    },
+    "regional": {
+      "projectPath": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal",
+      "sourceCommit": "03c2aaadcc4988a4911a97522aafd4246fae04bb",
+      "evidenceCommit": "20bb8746eec1cb34c360b775e4438acc051fac98",
+      "revision": 4,
+      "validUntil": "2026-10-10T01:10:45.000Z",
+      "eventCount": 4,
+      "heldEventCount": 1,
+      "inputSha256": "571eb5866536482dc6f5c046b8d82824bc85adedaf127316ac4b79b771d40236",
+      "independentSourceReview": "PASS",
+      "localBuild": "PASS",
+      "packageFiles": 46,
+      "packageShellId": "e0a50e0cd362402653bd5257b7e9a41a551900d070d31f2ccdf1230039da2c82",
+      "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-regional-renewal/docs/evidence/WRN-REGIONAL-REVIEW-2026-10-03/REPORT.md",
+      "publicationPerformed": false
+    },
+    "websiteCoordination": "Bestehender Chat WRN Website – Inhaltsparität (01a0f307-a269-7461-afd0-3daf4309da0f) erhielt Quell-/Belegcommits und Paketpfade und bestätigte die laufende Integration in seinen bestehenden Zweig. Podcast-/Bibliotheksabgleich folgt dort; fremder WIP erhalten.",
+    "currentPlay": "Code32 Produktion und Code27 interner Test unverändert; kein neuer nativer Build oder Upload in diesem Schritt.",
+    "firstPackageComplete": false,
+    "next": "Complete existing Website package/live integration; current ID-based catalog parity, then navigation/availability improvements."
   }
 }

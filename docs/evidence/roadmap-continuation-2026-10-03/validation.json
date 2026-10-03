@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-03T01:38:10.386408+00:00",
+  "status": "PASS-roadmap-and-evidence-integrity",
+  "roadmapSha256": "ae615bfe403c5e8b68085df3cd4b40549dbee63aa4584d61e459e3085f5e8e9e",
+  "reportSha256": "4a9c550608da7612fb19ff2bf0f338dccfa2e9bafdcd6d300bcc616b83748eb8",
+  "podcastEvidenceSha256": "4e3a430ce5fd2d7505598ab3ad719a0b08623db81fab44fd25f9cbbe26149a99",
+  "taskIds": 22,
+  "preservedExistingTaskIds": 17,
+  "dependencyCycles": 0,
+  "scopedDependencyMilestones": "PASS",
+  "scenarioReferences": "PASS",
+  "localReportLinks": "PASS",
+  "historicalRootFields": "preserved; current and confirmedLiveDistribution were separately reconciled in the earlier audit",
+  "historicalAuditValidation": "Snapshot before implementation; its earlier ROADMAP hash is not the current hash.",
+  "implementationScope": "Data publication fix merged/live; Next regional source independently accepted and local candidate built; App diff documentation only.",
+  "firstPackageComplete": false,
+  "regionalPublicationPerformed": false,
+  "nativeArtifactBuilt": false
+}

@@ -1,0 +1,908 @@
+{
+  "schemaVersion": 1,
+  "observedAtUTC": "2026-10-03T00:44:39.986267+00:00",
+  "catalogCapturedAtUTC": "2026-10-03T00:26:58.821527+00:00",
+  "scope": "Read-only reconciliation plus existing roadmap/documentation update. No implementation, source admission, merge, build, generation or deployment.",
+  "method": "Repository code and existing immutable reviews; fresh gh API PR/run reads; bounded public GETs; live browser DOM on Website and authenticated Google Play Console. Worker claims separately identified.",
+  "skill": "wrn-newsroom:wrn-content-audit",
+  "baseline": {
+    "appBranch": "codex/code26-home-correction-20260927",
+    "appAuditStartHead": "d157a6dce3e4ed8e333c27c6cb700e02aa9156f4",
+    "appReviewedProductFreeze": "8c0c0d90a119b7a95b5154fa64c49dfb97c8842e",
+    "appRemoteMain": "c1506f3d7ef53a4bc3c0f35e96e93b55091142d9",
+    "dataRemoteMain": "19a9013fca77ce88fe55d21e4a3d8b28cedf3cfe",
+    "nextRemoteMain": "8be0fae28b555ff9080efc6af7dbc59f68dcd53b",
+    "mapRemoteMain": "9fb2bf26ca4326cb129bcd9ef3fb0ff8386de8f9",
+    "websiteLiveProduct": "566422758241190f432d8c8a09d67a5f589d90ac",
+    "websiteLiveEvidenceHead": "737a4fe7a5751e0315fda33c4eb96c7547420ff0",
+    "websiteReview": "docs/evidence/radio-roadmap-2026-10-03/website-followup-live-review.json",
+    "iosHeadAtCapture": "7c150fc591eea55efb3cca983a3cfed8ee0a4fb5",
+    "iosSharedBaseline": "83db91794d0e2f167eca3037fb7d725b31f52ab7",
+    "iosThread": "01a0f54e-fd7f-7260-b65a-7daa84eab441",
+    "atlasRemotePrHead": "09c0b1c5097b1689a129fab43b06f6ded5dd2fa4",
+    "atlasThread": "01a07a3c-b07a-7cf3-b274-42e6989c0145",
+    "atlasCurrentHandoff": "r73 uncommitted worker WIP; r68 integration package older, draft and not WRN-integrated"
+  },
+  "publicFacts": [
+    {
+      "name": "podcasts.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/podcasts.json",
+      "http": 200,
+      "bytes": 3162161,
+      "sha256": "0961c293c8c847f45eaf71a88aba4a51fc4ef07c7d8e6651d314842763846221",
+      "counts": {
+        "rows": 1778,
+        "uniqueEpisodeUrls": 1722,
+        "audioLinks": 829,
+        "policies": {
+          "metadata_and_links_only": 949,
+          "null": 829
+        },
+        "sourceIds": 50,
+        "publishedLatest": "2026-10-01T20:07:01+00:00"
+      }
+    },
+    {
+      "name": "podcast-archive.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/podcast-archive.json",
+      "http": 200,
+      "bytes": 3363683,
+      "sha256": "367405895461441ab720c2e4f638b32aa22bf72bea3e9fa38388b782559c511e",
+      "counts": {
+        "rows": 1814,
+        "uniqueEpisodeUrls": 1758
+      }
+    },
+    {
+      "name": "podcast-health.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/podcast-health.json",
+      "http": 200,
+      "bytes": 19546,
+      "sha256": "f70565520e8507310cf3bd694f36837fe7ca9411794021d192e32b73850f71b6"
+    },
+    {
+      "name": "podcast-sources.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/podcast-sources.json",
+      "http": 200,
+      "bytes": 47881,
+      "sha256": "9d092dfcc4b4646dab570a5130ec4a3ec36406b61a5835578275efd644a291aa",
+      "counts": {
+        "sourceRows": 56
+      }
+    },
+    {
+      "name": "generated-podcasts.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/generated-podcasts.json",
+      "http": 200,
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "counts": {
+        "rows": 0
+      }
+    },
+    {
+      "name": "library-feed.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/library-feed.json",
+      "http": 200,
+      "bytes": 403986,
+      "sha256": "283f3661c2b528e3fe39da753f9ef4b18d5e07109c082705e509f5f4d75e5db8",
+      "counts": {
+        "dataRows": 731,
+        "appBundledRows": 728,
+        "addedIds": [
+          "anarchist-library-en-2d5b6e24f14f5d4522fd6da6",
+          "anarchist-library-en-49398dbbcd44de50d9e268e6",
+          "anarchist-library-es-ef9b13d1c8cc429a6d3cd9c0"
+        ],
+        "removedIds": [],
+        "withDownloadLinks": 718
+      }
+    },
+    {
+      "name": "library-health.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/library-health.json",
+      "http": 200,
+      "bytes": 1665,
+      "sha256": "690363e30f49968dcb5f09910c7470fef39b7bd2ac2101fb5ad4518a51450d27"
+    },
+    {
+      "name": "video-feed.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/video-feed.json",
+      "http": 200,
+      "bytes": 24831,
+      "sha256": "ee1e763f1039e98fd732705d5ecfbcb6187875034374e284635bc9c01b4987ed",
+      "counts": {
+        "selectedItems": 16
+      }
+    },
+    {
+      "name": "video-health.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/video-health.json",
+      "http": 200,
+      "bytes": 19938,
+      "sha256": "a00c81a50cb9c8e260b1b0a63e4b1402adb8a84a62e3d2ce61bd1310a0625770",
+      "counts": {
+        "checked": 40,
+        "reachable": 39,
+        "failed": 1,
+        "originalPagesReachable": 16,
+        "embedUrlsReachable": 14,
+        "registrySources": 10,
+        "missingPublishedAt": 10
+      },
+      "limitation": "Published bounded HTTP checks; no decoder, iframe, rights or playback PASS."
+    },
+    {
+      "name": "radio-health.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/main/radio-health.json",
+      "http": 200,
+      "bytes": 13733,
+      "sha256": "6c217dddaae5621329a0747f1a6f434af676b0bb0d3a44f79d5f1886d7a1123d"
+    },
+    {
+      "name": "proxy-health",
+      "url": "https://revolution-proxy.paghklo.workers.dev/?action=health",
+      "http": 200,
+      "bytes": 64,
+      "sha256": "9d6eddc8a935f1b21e556e5c173b326c6b017ee4a56a55caf590c2a48fd8bc89",
+      "publicStatus": {
+        "ok": true,
+        "service": "World Revolution News service",
+        "api": "v2"
+      }
+    },
+    {
+      "name": "shared-cache-health",
+      "url": "https://wrn-translation-cache.paghklo.workers.dev/health",
+      "http": 200,
+      "bytes": 150,
+      "sha256": "5efd06e2a0f9f5cf225ad21e8b9d125d524158ca24f5d16e75441d9667674a69",
+      "publicStatus": {
+        "ok": true,
+        "service": "wrn-shared-translation-cache",
+        "version": "1.7.8",
+        "cacheSchema": "v2",
+        "storage": "kv",
+        "upstreamConfigured": true,
+        "ttlSeconds": 604800
+      }
+    },
+    {
+      "name": "podcast-status",
+      "url": "https://revolution-proxy.paghklo.workers.dev/?action=podcast.status",
+      "http": 200,
+      "bytes": 296,
+      "sha256": "cdbe5838ca3bac55421525932262155c2fb62fb70efe30f39c1cc3363ce96b4f",
+      "publicStatus": {
+        "ok": true,
+        "naturalVoicesAvailable": true,
+        "deviceVoiceAvailable": true,
+        "reason": "",
+        "resetAt": "2026-11-01T00:00:00.000Z",
+        "month": "2026-10",
+        "retentionDays": 30,
+        "maxAudioBytes": 26214400,
+        "usage": {
+          "characters": 0,
+          "characterLimit": 475000,
+          "storageBytes": 0,
+          "storageLimitBytes": 9663676416,
+          "generatedCount": 0
+        }
+      }
+    }
+  ],
+  "pullRequests": {
+    "Revolution-News-Data": [
+      {
+        "number": 43,
+        "title": "Check dated radio health and add 3CR live link",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-10-02T21:30:15Z",
+        "head": "e2c57b71114a5ec852397842170db7074234bf0c",
+        "headRef": "codex/autonom-sources-20261001",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/43"
+      },
+      {
+        "number": 42,
+        "title": "Apply metadata restrictions to retained source archives",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-10-02T14:35:50Z",
+        "head": "cd77957e130df583c683cb4c29cc8a88cb3f2d82",
+        "headRef": "codex/autonom-sources-20261001",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/42"
+      },
+      {
+        "number": 41,
+        "title": "Keep new sources selectable after news refresh",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-10-02T14:23:14Z",
+        "head": "d7924788768342e47c34a2ff8f14caa9529cf3b9",
+        "headRef": "codex/autonom-sources-20261001",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/41"
+      },
+      {
+        "number": 40,
+        "title": "Add reviewed indigenous metadata feeds",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-10-02T13:53:27Z",
+        "head": "d763931c92f0ebf782ff2054866bd50f145623e2",
+        "headRef": "codex/autonom-sources-20261001",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/40"
+      },
+      {
+        "number": 39,
+        "title": "Publish live media, library and source archives",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-09-27T10:07:59Z",
+        "head": "737ad5e0697ffca5393f34cb0b7cb61112a9059c",
+        "headRef": "media-library-pipeline",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/39"
+      },
+      {
+        "number": 38,
+        "title": "Fix feed freshness for future-dated entries",
+        "state": "open",
+        "draft": false,
+        "merged_at": null,
+        "head": "2c0706a5be1167b9fc0dfbe3d8d5c2228faf70d2",
+        "headRef": "codex/fix-feed-freshness",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/38"
+      },
+      {
+        "number": 37,
+        "title": "Add Exa discovery prototype for WRN",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-30T18:23:08Z",
+        "head": "0e82869b486ae76eca9abec921e9d26f29d5cf09",
+        "headRef": "feature/exa-discovery-prototype",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/37"
+      },
+      {
+        "number": 36,
+        "title": "Keep archive topic fields consistent after repair",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-10T08:57:32Z",
+        "head": "5e1a10ef8e0ea3e2f65a83c1e241257e28c62c41",
+        "headRef": "agent/fix-archive-classification-consistency",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/36"
+      },
+      {
+        "number": 35,
+        "title": "Prevent broken entries from leading the live feed",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-10T08:52:29Z",
+        "head": "396ebb63468965c8345c540e885fbbf05d587f20",
+        "headRef": "agent/fix-feed-lead-quality",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/35"
+      },
+      {
+        "number": 34,
+        "title": "Repair existing Evrensel article text",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-09T15:54:41Z",
+        "head": "701870c19f254b0ef1efd4b7fb03e4487a50ebbb",
+        "headRef": "agent/repair-evrensel-inline-text",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/34"
+      },
+      {
+        "number": 33,
+        "title": "Fix inline article text spacing",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-09T15:37:55Z",
+        "head": "9fbf99dcd0cf5ef8261fe0ff72a5794e24509bb3",
+        "headRef": "agent/fix-inline-feed",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/33"
+      },
+      {
+        "number": 32,
+        "title": "Keep fast feed refresh on the latest main state",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-06T22:32:52Z",
+        "head": "8b4b9720aac96907427500056f02d3e7aeed7c85",
+        "headRef": "agent/remove-delayed-status",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/32"
+      },
+      {
+        "number": 31,
+        "title": "Terminbestand beim News-Schnelllauf unverändert lassen",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-06T12:15:11Z",
+        "head": "1114335a06a879fff14a28be03fd412d9ab5f836",
+        "headRef": "agent/feed-refresh-push-clean",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/31"
+      },
+      {
+        "number": 30,
+        "title": "Live-Feed stündlich und ohne Volltextlauf aktualisieren",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-06T12:10:22Z",
+        "head": "57edcfc8a0b1acdb47dff7e6d66e139bfe87d1f4",
+        "headRef": "agent/feed-refresh-cadence",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/30"
+      },
+      {
+        "number": 29,
+        "title": "Fix feed refresh and restore generated podcasts",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-30T21:32:55Z",
+        "head": "1b8c0667d04e3b4de809630f149bc6f9551519f3",
+        "headRef": "agent/live-feed-podcast-hotfix",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/29"
+      },
+      {
+        "number": 28,
+        "title": "Fix Android cloud podcast controls",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T22:58:52Z",
+        "head": "5211c609f7c035d3f27bdfff9629b070e796a13c",
+        "headRef": "agent/podcast-android-hotfix",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/28"
+      },
+      {
+        "number": 27,
+        "title": "Erzeugte Podcasts in News App 2 wiederherstellen",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T14:40:33Z",
+        "head": "d93b8710da73f97dd4dfe74c0d8abe92e9cadcac",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/27"
+      },
+      {
+        "number": 26,
+        "title": "Release tooling: Capacitor-Shims korrekt behandeln",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T02:01:39Z",
+        "head": "9f713ce17d907deb90120453161ecd1dd3790de6",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/26"
+      },
+      {
+        "number": 25,
+        "title": "Hotfix: Briefübersetzung mit gewählter Sprache",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T01:42:35Z",
+        "head": "589992c874439c8889dce946cfbe3fad556551e6",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/25"
+      },
+      {
+        "number": 24,
+        "title": "Release: Solidaritätswerkstatt, Quellen und mobile Stabilität",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T01:29:49Z",
+        "head": "9ae577ed395f0072e67dd0420ea7ccedf9a19b1d",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/24"
+      },
+      {
+        "number": 23,
+        "title": "Show hero translation status consistently",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T00:33:20Z",
+        "head": "eae80034ea4ea8497f63b9f7635388126e93a75f",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/23"
+      },
+      {
+        "number": 22,
+        "title": "Fix immediate hero article translation",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T00:28:36Z",
+        "head": "07198f3e877660598d052065e1f187195c80b913",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/22"
+      },
+      {
+        "number": 21,
+        "title": "Release News App 2 to production",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-29T00:23:24Z",
+        "head": "17b4f712dafcafae1f0461a5c9bd5a6cfb1eeb6c",
+        "headRef": "agent/news-app-2-preview",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/21"
+      },
+      {
+        "number": 20,
+        "title": "Cloudflare-Kostenschutz aktivieren und Lexikon erweitern",
+        "state": "open",
+        "draft": true,
+        "merged_at": null,
+        "head": "b33d97b3c0bd03950604dcc9a067ec99217cb2c5",
+        "headRef": "agent/roadmap-without-social",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/20"
+      },
+      {
+        "number": 19,
+        "title": "Add action radar and editorial quality tools",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-27T08:51:41Z",
+        "head": "ed014daa7bddcb82694c8cb5f91671127f260aa2",
+        "headRef": "agent/roadmap-without-social",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/19"
+      },
+      {
+        "number": 18,
+        "title": "Add prisoner solidarity and private letter workshop",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-27T08:22:10Z",
+        "head": "3c374542cd8786838755faba6adef3a10955e1fc",
+        "headRef": "agent/prisoner-solidarity-mvp",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/18"
+      },
+      {
+        "number": 17,
+        "title": "Balance sources and fix corruption topic",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-26T18:32:39Z",
+        "head": "c6cacd7f1c5fd026bc3427b638af3ede51e37842",
+        "headRef": "agent/source-balance-prisoners-concept",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/17"
+      },
+      {
+        "number": 16,
+        "title": "Prepare WRN 1.8.5 quality release",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-26T17:24:19Z",
+        "head": "93315881ced38e359d0ab998b171789b3dee4715",
+        "headRef": "agent/release-1.8.5-points-1-12",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/16"
+      },
+      {
+        "number": 15,
+        "title": "Fix mobile Entwicklungen heading layout",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-26T12:27:16Z",
+        "head": "bcfec46566a75fc648331dfd8f1bc3e8f8c7413d",
+        "headRef": "agent/fix-developments-title-hotfix",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/15"
+      },
+      {
+        "number": 14,
+        "title": "Add intelligent topics, expanded glossary, and new events",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-26T03:43:38Z",
+        "head": "ca8a2ad9b1f44a1bfc40dd5a225014a6c6e2b7f2",
+        "headRef": "agent/intelligent-topics-lexicon-events-1.8.4",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/14"
+      },
+      {
+        "number": 13,
+        "title": "Repair sources and mobile article workflows",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-25T21:32:37Z",
+        "head": "47072917f639019cd756d1796b5d12adaa68165c",
+        "headRef": "agent/content-ux-1.8.5",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/13"
+      },
+      {
+        "number": 12,
+        "title": "Improve feed classification, sources, and article UX",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-25T19:16:47Z",
+        "head": "9b43893764a64329bbd59cd4392a3d51e261c23f",
+        "headRef": "agent/feed-ux-1.8.5",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/12"
+      },
+      {
+        "number": 11,
+        "title": "Improve article workspace, feed diversity and media",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-25T17:19:15Z",
+        "head": "e1be569acdb2f999b69e32344020f4b18887a8fc",
+        "headRef": "agent/play-store-1.5",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/11"
+      },
+      {
+        "number": 10,
+        "title": "Release WRN 1.8.4 and prepare Play Store 1.5",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-24T04:04:28Z",
+        "head": "ea6f04dd891243851c95dfdada8383561566ce7c",
+        "headRef": "agent/play-store-1.5",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/10"
+      },
+      {
+        "number": 9,
+        "title": "Polish loading, header, light theme, and security defaults",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-24T01:49:59Z",
+        "head": "d7c852f4df160d8ea2281226344faaf00523c779",
+        "headRef": "agent/ui-security-hardening",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/9"
+      },
+      {
+        "number": 8,
+        "title": "Fix briefing translations and move Video after Topics",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-23T23:09:41Z",
+        "head": "e9ac19476ab9ecfcee0fc5e47933be6c79144562",
+        "headRef": "hotfix/briefing-voice-i18n",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/8"
+      },
+      {
+        "number": 7,
+        "title": "WRN 1.8.4 Vorabversion: Quellen, Audio und Oberfläche stabilisieren",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-23T23:01:02Z",
+        "head": "4d56260ea5989675f059d086d0dd6ec47d939539",
+        "headRef": "wrn-1.8.4-prerelease",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/7"
+      },
+      {
+        "number": 6,
+        "title": "Improve feeds, media hubs and responsive navigation",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-23T10:12:17Z",
+        "head": "336d8214771c9c138e8039f095eef2ac739c1783",
+        "headRef": "wrn-1.8.4-phase2",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/6"
+      },
+      {
+        "number": 5,
+        "title": "Stabilize audio, translations, and source filters",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-23T07:26:19Z",
+        "head": "48c86c0f6776d06547295de1bd09bbda95ad93e2",
+        "headRef": "wrn-1.8.4-phase1",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/5"
+      },
+      {
+        "number": 4,
+        "title": "Prepare WRN 1.8.3 release and refresh header",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-22T19:06:21Z",
+        "head": "308d39570714eeeef23c684cb0762b0d8a50aec5",
+        "headRef": "wrn-1.8.3",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/4"
+      },
+      {
+        "number": 3,
+        "title": "Release 1.8.2 Turkish Kurdish sources and filters",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-21T16:07:11Z",
+        "head": "eb62f6ee7695ba8df39af64adb7222edc2d70d9b",
+        "headRef": "wrn-1.8.2",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/3"
+      },
+      {
+        "number": 2,
+        "title": "Release 1.8.1 video hub audio filters and source verification",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-21T11:29:26Z",
+        "head": "b15519401a3217e2008f4054d111f68d1b38ed6a",
+        "headRef": "wrn-1.8.1",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/2"
+      },
+      {
+        "number": 1,
+        "title": "Release 1.8.0 stories timelines and briefing 2",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-07-21T09:54:37Z",
+        "head": "4fa253afef9a5755fc6adbc68a5e8bf12aad75e8",
+        "headRef": "wrn-1.8.0",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/Revolution-News-Data/pull/1"
+      }
+    ],
+    "World-Revolution-Map": [
+      {
+        "number": 1,
+        "title": "Repair atlas integrity and add history-from-below methodology",
+        "state": "open",
+        "draft": true,
+        "merged_at": null,
+        "head": "09c0b1c5097b1689a129fab43b06f6ded5dd2fa4",
+        "headRef": "codex/atlas-game-expansion",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-Map/pull/1"
+      }
+    ],
+    "World-Revolution-News-App": [
+      {
+        "number": 9,
+        "title": "WRN 2.1.2: live home, reader and safe local data controls",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-09-27T10:08:31Z",
+        "head": "1683ebdafc6e59406d500740c09507d741f8112e",
+        "headRef": "codex/release-2.1.2-code28",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/9"
+      },
+      {
+        "number": 8,
+        "title": "Add hash-bound signer for 2.1.1 code 26",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-21T00:37:30Z",
+        "head": "53bc9258da36aff37e7eadd03de8039edd667f13",
+        "headRef": "codex/signer-2.1.1-code26-968c320",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/8"
+      },
+      {
+        "number": 7,
+        "title": "Prepare release 2.1.1 code 26",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T14:15:33Z",
+        "head": "c1982f0b723576531e2cf36d7c63f8e145a9313a",
+        "headRef": "codex/release-2.1.1-code26",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/7"
+      },
+      {
+        "number": 6,
+        "title": "Fix AAB transaction helper scope",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T13:33:26Z",
+        "head": "9431fd117afb10903b20fec91920b43d1ffdc0e4",
+        "headRef": "codex/aab-transaction-scope-fix",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/6"
+      },
+      {
+        "number": 5,
+        "title": "Android: Play-Update-Instrumentierung stabilisieren",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T12:46:22Z",
+        "head": "8a179f4e550677656939f021978e8b754d318df8",
+        "headRef": "codex/android-update-test-await",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/5"
+      },
+      {
+        "number": 4,
+        "title": "Android: Ressourcen-Lintfehler beheben",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T12:20:15Z",
+        "head": "0d3ec1b24e6db45d8053ab100b13b5dce51fa536",
+        "headRef": "codex/android-lint-resources",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/4"
+      },
+      {
+        "number": 3,
+        "title": "Android: Capacitor-Lifecycle korrekt überschreiben",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T12:13:51Z",
+        "head": "894cc1a6ad86f4613aad5a99f7073da0990aaf69",
+        "headRef": "codex/android-lifecycle-visibility-fix",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/3"
+      },
+      {
+        "number": 2,
+        "title": "Android: Native Google-Play-Aktualisierung ergänzen",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T12:00:09Z",
+        "head": "188c614dcaadcb128a2ca4519bceb522b69beaaa",
+        "headRef": "codex/android-in-app-update",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/2"
+      },
+      {
+        "number": 1,
+        "title": "Android: Toolchain-Grundlage für 2.1.0 vereinheitlichen",
+        "state": "closed",
+        "draft": false,
+        "merged_at": "2026-08-20T11:41:43Z",
+        "head": "75922cf7db85c8553717264186595a22d2eca171",
+        "headRef": "codex/android-toolchain-foundation",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-App/pull/1"
+      }
+    ],
+    "World-Revolution-News-Next": [
+      {
+        "number": 4,
+        "title": "Give the WRN website a compact, image-led news homepage",
+        "state": "open",
+        "draft": true,
+        "merged_at": null,
+        "head": "bc95c2b4a35dad8d60cab7ae6a9c7128875a0ee2",
+        "headRef": "codex/next-editorial-home-20260928",
+        "baseRef": "codex/live-home-freshness",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-Next/pull/4"
+      },
+      {
+        "number": 3,
+        "title": "Show current source reports on the live website home",
+        "state": "open",
+        "draft": false,
+        "merged_at": null,
+        "head": "8e235ddb3ce386d1031fcf3fe2b859e4ebf437d7",
+        "headRef": "codex/live-home-freshness",
+        "baseRef": "codex/src04-release-candidate",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-Next/pull/3"
+      },
+      {
+        "number": 1,
+        "title": "Prepare WRN 2.2 release candidate with Atlas beta",
+        "state": "open",
+        "draft": true,
+        "merged_at": null,
+        "head": "0b93b66a4ac68620d74f51fc03d550e3cc66e5af",
+        "headRef": "codex/src04-release-candidate",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-Next/pull/1"
+      },
+      {
+        "number": 2,
+        "title": "Prepare guarded feed-directory publisher separately",
+        "state": "open",
+        "draft": true,
+        "merged_at": null,
+        "head": "645885826de7db74c24c808ec38bc07498f946c9",
+        "headRef": "codex/guarded-directory-publisher",
+        "baseRef": "main",
+        "html_url": "https://github.com/Blackfront161/World-Revolution-News-Next/pull/2"
+      }
+    ]
+  },
+  "pipeline": {
+    "originalFailedRun": 37023481297,
+    "laterFailedRun": 37063775566,
+    "laterFailure": "Saving step stages podcasts.json, podcast-health.json and generated-podcasts.json; podcast-archive.json remains modified; clean-tree rebase guard correctly fails. Current remote workflow still omits archive.",
+    "workingClassHistory": "aggregate_podcasts.py already prefers feedUrl then feedUrls; current source carries official Spreaker feed. Do not reimplement.",
+    "radioSuccessRun": 37067219561,
+    "workflowEvidence": {
+      "url": "https://github.com/Blackfront161/Revolution-News-Data/blob/19a9013fca77ce88fe55d21e4a3d8b28cedf3cfe/.github/workflows/update-podcasts.yml",
+      "capturedFileSha256": "3d5811e958c25d92174b13dbb12ed9be328352911318b312acd9b9f21e356150",
+      "stagingCommand": "git add podcasts.json podcast-health.json generated-podcasts.json",
+      "archiveIsStaged": false,
+      "laterRunUrl": "https://github.com/Blackfront161/Revolution-News-Data/actions/runs/37063775566",
+      "failureStep": "Saving / safe rebase: dirty working tree (M podcast-archive.json)"
+    }
+  },
+  "regional": {
+    "path": "C:\\Users\\patri\\Documents\\World Revolution News\\wrn-next-live-work\\packages\\browser-content\\src\\regional-events\\events.json",
+    "sha256": "4ccb0da681444a8970e16113c7160c840f4cc9d777aafaba82923478ad9672a3",
+    "revision": 3,
+    "validUntil": "2026-10-02T00:00:00.000Z",
+    "checkerExitCode": 1,
+    "checkerOutput": "WRN regional events check failed: regional-events-renewal-required",
+    "liveEffect": "Website home shows stale-catalog warning and valid-until date; no upcoming regional event list. News/media still reachable. Legacy App Code32 uses separate event input; Code27 device behaviour not retested."
+  },
+  "browserObservations": {
+    "observedDate": "2026-10-03",
+    "type": "Agent-observed live DOM; navigation only, no media playback or mutation",
+    "play": {
+      "productionVersion": "2.1.2",
+      "productionCode": 32,
+      "productionLabel": "AutonomAudioTeilen",
+      "status": "Available on Google Play; full rollout 178/178 countries",
+      "internalVersion": "2.2.0",
+      "internalCode": 27,
+      "code28": "inactive historical bundle",
+      "code33": "not uploaded at observation",
+      "consoleUrl": "https://play.google.com/console/u/1/developers/8812037282040696596/app/4974507251844219576/tracks"
+    },
+    "website": {
+      "url": "https://solinaridao.com/",
+      "catalogSnapshot": "2026-10-02 06:06 UTC",
+      "radioDirectory": 28,
+      "podcastUniqueOriginalLinks": 1722,
+      "videoOriginalLinkCards": 16,
+      "libraryEntriesFromLiveRelease": 728,
+      "lexiconTermsFromLiveRelease": 167,
+      "learningPathsFromLiveRelease": 4,
+      "currentAudioStatus": "Aktuelles Audio ist nicht verfügbar.",
+      "regionalStatus": "Dieser Stand ist nicht mehr aktuell. Prüfe neue Termine und Änderungen direkt bei den Quellen.",
+      "regionalExpiryLabel": "Stand gültig bis: 02.10.2026, 00:00 UTC",
+      "mediaCatalogMode": "Metadata and original links; 3CR external original-sender live link. No blanket Website playback PASS.",
+      "videoEditorialObservation": "Same SPX6900 episode title on two platform URLs; cryptocurrency-themed items need relevance review. Relevance and cross-platform identity not inferred from publisher hosting.",
+      "restoredView": "#home"
+    }
+  },
+  "limits": {
+    "activeTranslation": "Gemini via revolution-proxy; previous reviewed live translation used gemini-3.5-flash-lite. Shared KV cache v1.7.8 health reachable, TTL 604800 seconds.",
+    "activeCloudTTS": "Azure Neural Speech, shared R2 output; status endpoint is not proof of successful synthesis.",
+    "configuredGuards": {
+      "translationPerDay": 950,
+      "kvWritesPerDay": 950,
+      "azureCharactersPerMonth": 475000,
+      "storageBytes": 9663676416,
+      "retentionDays": 30,
+      "maxAudioBytes": 26214400
+    },
+    "providerAccountQuotasAndBilling": "Not independently verified; Google project quota and Azure F0/S0 plan require account evidence. Next services are separate drafts, not active App providers."
+  },
+  "qualityBoundary": "No new App device playback, native background audio, lock-screen, end-to-end translation generation or iOS Xcode compilation performed in this audit. Existing source/test/health evidence does not imply those passes.",
+  "costReferences": [
+    "https://developer.apple.com/programs/enroll/",
+    "https://ai.google.dev/gemini-api/docs/rate-limits",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://azure.microsoft.com/en-us/pricing/details/speech/",
+    "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  ]
+}

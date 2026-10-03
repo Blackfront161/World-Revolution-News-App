@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "pr": "https://github.com/Blackfront161/Revolution-News-Data/pull/44",
+  "fixCommit": "ae688f2fd9b0810ef4b790b6c5b00f6d5d280d38",
+  "mergeCommit": "445979a32f9d8e11e74e6f912bbbd1cc05ed542d",
+  "run": 37085213675,
+  "runConclusion": "success",
+  "trigger": "workflow_dispatch on main using normal production workflow",
+  "scheduledRunStillRequired": "A later schedule-triggered run is not yet observed; this dispatch exercises the same unmodified publication steps.",
+  "publishedCommit": "5304fa0032a6761071962e4b74b66cb6f114c49f",
+  "pushResult": "WRN Push erfolgreich",
+  "localTests": {
+    "workflowIntegration": 4,
+    "existingPodcastContracts": 9
+  },
+  "independentReview": {
+    "result": "PASS",
+    "threadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+    "turnId": "01a0ff4e-7945-7cd3-9e72-4a624147a55c",
+    "scope": "three-path source fix; actual 4 tests independently reproduced"
+  },
+  "publicReadback": [
+    {
+      "kind": "pinned",
+      "name": "podcasts.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/5304fa0032a6761071962e4b74b66cb6f114c49f/podcasts.json",
+      "http": 200,
+      "sha256": "fcbcc68007d839973b447fcff6b8eb5e3110290571b56a5eb19ed849e12524d6",
+      "bytes": 3359153,
+      "rows": 1865,
+      "uniqueEpisodeUrls": 1806,
+      "audioLinks": 860,
+      "metadataAndLinksOnlyRows": 1005
+    },
+    {
+      "kind": "pinned",
+      "name": "podcast-archive.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/5304fa0032a6761071962e4b74b66cb6f114c49f/podcast-archive.json",
+      "http": 200,
+      "sha256": "ab1185f3e491b6d40f1cac0e8466ad2d1d455235b24b18c16bb73cc14de2e9c5",
+      "bytes": 3560675,
+      "rows": 1901,
+      "uniqueEpisodeUrls": 1842,
+      "audioLinks": 896,
+      "metadataAndLinksOnlyRows": 1005
+    },
+    {
+      "kind": "pinned",
+      "name": "podcast-health.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/5304fa0032a6761071962e4b74b66cb6f114c49f/podcast-health.json",
+      "http": 200,
+      "sha256": "c9c4d9a746fae15e98fc02962ab70a157b2823f3726724ac5f5d10e4d7302302",
+      "bytes": 20873,
+      "sourceHealthEntries": 56
+    },
+    {
+      "kind": "pinned",
+      "name": "generated-podcasts.json",
+      "url": "https://raw.githubusercontent.com/Blackfront161/Revolution-News-Data/5304fa0032a6761071962e4b74b66cb6f114c49f/generated-podcasts.json",
+      "http": 200,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "rows": 0
+    },
+    {
+      "kind": "public-pages",
+      "name": "podcasts.json",
+      "url": "https://blackfront161.github.io/Revolution-News-Data/podcasts.json",
+      "http": 200,
+      "sha256": "fcbcc68007d839973b447fcff6b8eb5e3110290571b56a5eb19ed849e12524d6",
+      "bytes": 3359153,
+      "rows": 1865,
+      "uniqueEpisodeUrls": 1806,
+      "audioLinks": 860,
+      "metadataAndLinksOnlyRows": 1005
+    }
+  ],
+  "limitation": "Catalog availability and audio URL presence do not prove actual media playback."
+}
