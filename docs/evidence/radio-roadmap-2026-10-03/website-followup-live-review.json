@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "basis": "Website writer live proof; root verified immutable evidence Git blob SHA/byte bindings and 45 recorded HTTP/hash results, not a duplicate browser run",
+  "origin": "https://solinaridao.com",
+  "productCommit": "566422758241190f432d8c8a09d67a5f589d90ac",
+  "evidenceCommit": "737a4fe7a5751e0315fda33c4eb96c7547420ff0",
+  "evidenceManifestFilesVerified": 28,
+  "publicFilesVerified": 45,
+  "observedAtUTC": "2026-10-03T00:09:13.728Z",
+  "revocationsObservedAtUTC": "2026-10-03T00:09:08.807Z",
+  "revocationsSha256": "030aa883148b5378ac0821a7ddc0f48935178fe13058508439155423f83bb617",
+  "shellId": "0d72ef4f9334f6a7cc1fec884931157ed3ed3f3ecb2f6214c5ecd6d29fefc7a8",
+  "hostingManifestSha256": "8fde3d56b7ab784c02308947418ef7d6b668217e9922215f77707e173747234d",
+  "websiteManifestSha256": "599f6db1a4f1dec174d5ac8b53c1b0baf6dfbdf2eb6764547a8a980649aa1d22",
+  "liveBrowserOffline": "Website writer PASS in bound live-browser-result.json",
+  "independentProductReview": "WRN Kontrolleur PASS5664227, captured controller-initial-review.json",
+  "publishedCounts": {
+    "radios": 28,
+    "lexiconTerms": 167,
+    "learningPaths": 4,
+    "books": 728,
+    "uniquePodcastEpisodes": 1722
+  },
+  "scopeLimits": "20 new Home candidates and prisoner block excluded; no Android release"
+}

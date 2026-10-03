@@ -1781,9 +1781,11 @@
         "uniquePodcastEpisodesAlreadyMatch": 1722,
         "appPodcastRows": 1778,
         "newPodcastEpisodesFromRowDifference": 0,
-        "implementationStatus": "implemented-5664227; independent-product-and-release-review-PASS; publication-in-progress; newHome-not-yet-admitted",
+        "implementationStatus": "published-5664227; independent-product-and-release-review-PASS;45/45public-file-readback-and-live-offline-PASS;newHome-not-yet-admitted",
         "preparedProductCommit": "566422758241190f432d8c8a09d67a5f589d90ac",
-        "preparedEvidenceCommit": "9a072ef"
+        "preparedEvidenceCommit": "9a072ef",
+        "liveEvidenceCommit": "737a4fe7a5751e0315fda33c4eb96c7547420ff0",
+        "liveEvidence": "docs/evidence/radio-roadmap-2026-10-03/website-followup-live-review.json"
       }
     }
   }
