@@ -1,0 +1,41 @@
+{
+  "engine": "WebKit",
+  "nativeBridge": "mocked",
+  "sourceMode": "local-fixtures",
+  "checks": [
+    "Generated WRN UI starts in WebKit with the iOS adapters and local fixtures.",
+    "Classic and Autonom fit 320/390/430/1024 CSS pixels without page overflow.",
+    "Real blob export reaches the native adapter with exact filename and bytes.",
+    "Saved image survives reload; failed GET and img rendering restore it; abort/POST never use the offline response.",
+    "Clear removes saved image bytes; delayed downloads cannot resurrect cleared data.",
+    "No page runtime errors. Native dialogs/downloads are mocked; no Swift/device claim."
+  ],
+  "startup": {
+    "platform": "ios",
+    "iosClass": "wrn-ios",
+    "assets": "object"
+  },
+  "consoleErrors": [
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via an HTML meta element.",
+    "Service Worker registration blocked by Playwright",
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via an HTML meta element.",
+    "Service Worker registration blocked by Playwright",
+    "Automatic briefing translation is currently unavailable Error: Shared translation request failed.",
+    "Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.",
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via an HTML meta element.",
+    "Service Worker registration blocked by Playwright",
+    "Automatic briefing translation is currently unavailable Error: Shared translation request failed.",
+    "Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.",
+    "Generated podcast library unavailable; using static fallback Error: Generated podcast library returned an invalid response",
+    "The Content Security Policy directive 'frame-ancestors' is ignored when delivered via an HTML meta element.",
+    "Service Worker registration blocked by Playwright",
+    "Automatic briefing translation is currently unavailable Error: Shared translation request failed.",
+    "Refused to connect to https://example.org/saved.png because it does not appear in the connect-src directive of the Content Security Policy.",
+    "Generated podcast library unavailable; using static fallback Error: Generated podcast library returned an invalid response",
+    "Refused to connect to https://example.org/saved.png because it does not appear in the connect-src directive of the Content Security Policy.",
+    "Refused to connect to https://example.org/saved.png because it does not appear in the connect-src directive of the Content Security Policy.",
+    "iOS article asset storage failed Error"
+  ],
+  "status": "PASS",
+  "observedAtUTC": "2026-10-01T03:01:30.929Z"
+}

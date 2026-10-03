@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "product": "World Revolution News App",
+  "appVersion": "2.1.2",
+  "frontendBaselineCommit": "83db91794d0e2f167eca3037fb7d725b31f52ab7",
+  "frontendSource": "Repository root",
+  "backendConfiguration": "news-app-2-config.js",
+  "note": "The source archive fallback identifies the common frontend baseline; actual input and packaged bytes are hashed on every sync. Native compilation and signing require macOS."
+}
