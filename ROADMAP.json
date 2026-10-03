@@ -553,29 +553,35 @@
           "productCommit": "5d45eeb8a9b8c6bd6dd988ad74525e6f5f30bfca",
           "evidenceCommit": "531b6552eb0fbcde178ae059baf53271fc53735d",
           "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CATALOGUE-NAVIGATION-2026-10-03/REPORT.md",
-          "independentReview": "PENDING",
-          "publicationPerformed": false
+          "independentReview": "PASS-source-only",
+          "publicationPerformed": false,
+          "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+          "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
         },
         "knowledge": {
           "productCommit": "c334e20d8844c83d9f01e89712b01997b2059dea",
           "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
           "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-KNOWLEDGE-177-2026-10-03/REPORT.md",
-          "independentReview": "PENDING",
+          "independentReview": "PASS-source-only",
           "terms": 177,
           "references": 54,
           "newEditorialDrafts": 10,
-          "publicationPerformed": false
+          "publicationPerformed": false,
+          "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+          "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
         },
         "libraryAdapters": {
           "productCommit": "a2352e83fff17cf5419a8e369d12691f64c86f2c",
           "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
           "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIBRARY-ADAPTERS-2026-10-03/REPORT.md",
-          "independentReview": "PENDING",
+          "independentReview": "PASS-source-only",
           "adapters": 4,
           "newGermanMetadataCandidates": 10,
           "runtimeIntegrated": false,
           "sourceAdmissionPerformed": false,
-          "publicationPerformed": false
+          "publicationPerformed": false,
+          "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+          "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
         },
         "publicationGate": "New navigation/knowledge/adapters are not contained in the separately accepted f6649dc Hosting ZIPs. New package/budget/review required before activation. New Hostinger session approval remains unanswered after automatic scope rejection.",
         "podcastReconciliation": "Existing Website worker continues source-policy/ID candidate comparison. No automatic overwrite of 16 Final Straw URL changes or two LORA identity conflicts."
@@ -942,11 +948,13 @@
         "productCommit": "c334e20d8844c83d9f01e89712b01997b2059dea",
         "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-KNOWLEDGE-177-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
+        "independentReview": "PASS-source-only",
         "terms": 177,
         "references": 54,
         "newEditorialDrafts": 10,
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       }
     },
     {
@@ -1303,7 +1311,7 @@
       "id": "LIBRARY-ADAPTERS-20261003",
       "priority": 2,
       "name": "Vier Bibliotheksadapter und weitere deutsche Titel",
-      "status": "four-offline-metadata-adapters-and-ten-German-candidates-frozen-independent-review-pending",
+      "status": "four-offline-adapters-and-ten-German-candidates-independent-PASS-admission-open",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "Libcom, Kate Sharpley Library, Zabalaza Books, Anarchist Archive: small metadata intake then pagination",
@@ -1319,7 +1327,7 @@
       "dependsOn": [
         "CONTENT-CATALOG-PARITY"
       ],
-      "remaining": "Vier Offline-Metadatenadapter und zehn ausdrücklich deutsche Kandidaten eingefroren. Unabhängige Prüfung läuft; redaktionelle Aufnahme, HTTPS-Kanons für Kate Sharpley und Runtime-Integration offen. Keine neuen Volltexte oder automatisch aufgenommenen Bücher.",
+      "remaining": "Vier Offline-Metadatenadapter und zehn ausdrücklich deutsche Kandidaten unabhängig geprüft. Redaktionelle Aufnahme, einzelne HTTPS-Kanons für Kate Sharpley und Runtime-Integration bleiben offen; keine neuen Volltexte oder automatisch aufgenommenen Bücher.",
       "reconciledAt": "2026-10-03",
       "reconciliationEvidence": "docs/evidence/roadmap-reconciliation-2026-10-03/audit.json",
       "acceptance": [
@@ -1330,12 +1338,14 @@
         "productCommit": "a2352e83fff17cf5419a8e369d12691f64c86f2c",
         "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIBRARY-ADAPTERS-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
+        "independentReview": "PASS-source-only",
         "adapters": 4,
         "newGermanMetadataCandidates": 10,
         "runtimeIntegrated": false,
         "sourceAdmissionPerformed": false,
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       }
     },
     {
@@ -1492,8 +1502,10 @@
         "productCommit": "5d45eeb8a9b8c6bd6dd988ad74525e6f5f30bfca",
         "evidenceCommit": "531b6552eb0fbcde178ae059baf53271fc53735d",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CATALOGUE-NAVIGATION-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
-        "publicationPerformed": false
+        "independentReview": "PASS-source-only",
+        "publicationPerformed": false,
+        "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       }
     },
     {
@@ -2730,29 +2742,35 @@
         "productCommit": "5d45eeb8a9b8c6bd6dd988ad74525e6f5f30bfca",
         "evidenceCommit": "531b6552eb0fbcde178ae059baf53271fc53735d",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CATALOGUE-NAVIGATION-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
-        "publicationPerformed": false
+        "independentReview": "PASS-source-only",
+        "publicationPerformed": false,
+        "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       },
       "knowledge": {
         "productCommit": "c334e20d8844c83d9f01e89712b01997b2059dea",
         "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-KNOWLEDGE-177-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
+        "independentReview": "PASS-source-only",
         "terms": 177,
         "references": 54,
         "newEditorialDrafts": 10,
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       },
       "libraryAdapters": {
         "productCommit": "a2352e83fff17cf5419a8e369d12691f64c86f2c",
         "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
         "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIBRARY-ADAPTERS-2026-10-03/REPORT.md",
-        "independentReview": "PENDING",
+        "independentReview": "PASS-source-only",
         "adapters": 4,
         "newGermanMetadataCandidates": 10,
         "runtimeIntegrated": false,
         "sourceAdmissionPerformed": false,
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+        "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
       },
       "publicationGate": "New navigation/knowledge/adapters are not contained in the separately accepted f6649dc Hosting ZIPs. New package/budget/review required before activation. New Hostinger session approval remains unanswered after automatic scope rejection.",
       "podcastReconciliation": "Existing Website worker continues source-policy/ID candidate comparison. No automatic overwrite of 16 Final Straw URL changes or two LORA identity conflicts."

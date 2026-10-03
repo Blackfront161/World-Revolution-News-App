@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+  "result": "PASS-source-only",
+  "receivedAtDate": "2026-10-03",
+  "packages": {
+    "navigation": {
+      "productCommit": "5d45eeb8a9b8c6bd6dd988ad74525e6f5f30bfca",
+      "evidenceCommit": "531b6552eb0fbcde178ae059baf53271fc53735d",
+      "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-CATALOGUE-NAVIGATION-2026-10-03/REPORT.md",
+      "independentReview": "PASS-source-only",
+      "publicationPerformed": false,
+      "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
+    },
+    "knowledge": {
+      "productCommit": "c334e20d8844c83d9f01e89712b01997b2059dea",
+      "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
+      "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-KNOWLEDGE-177-2026-10-03/REPORT.md",
+      "independentReview": "PASS-source-only",
+      "terms": 177,
+      "references": 54,
+      "newEditorialDrafts": 10,
+      "publicationPerformed": false,
+      "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
+    },
+    "libraryAdapters": {
+      "productCommit": "a2352e83fff17cf5419a8e369d12691f64c86f2c",
+      "evidenceCommit": "d835b603b69db6fd763ab6177303f988baf7d7c2",
+      "report": "C:/Users/patri/Documents/World Revolution News/wrn-next-live-work/docs/evidence/WRN-WEBSITE-LIBRARY-ADAPTERS-2026-10-03/REPORT.md",
+      "independentReview": "PASS-source-only",
+      "adapters": 4,
+      "newGermanMetadataCandidates": 10,
+      "runtimeIntegrated": false,
+      "sourceAdmissionPerformed": false,
+      "publicationPerformed": false,
+      "reviewTurn": "01a100f2-fab4-7ff3-a563-170ee699e2b5",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e"
+    }
+  },
+  "verifiedFiles": {
+    "navigation": {
+      "product": 10,
+      "evidence": 6
+    },
+    "knowledge": {
+      "product": 11,
+      "evidence": 5
+    },
+    "libraryAdapters": {
+      "product": 2,
+      "evidence": 3,
+      "independentTests": 15
+    }
+  },
+  "limits": [
+    "No new Hosting/Offline/Live release approval",
+    "Ten DE/EN knowledge entries remain editorial drafts; absent translations visibly fall back to EN",
+    "Adapter outputs remain needs-individual-review; admissionPerformed=false and mediaFetched=false",
+    "3 MiB inputs / 200 records; DOCTYPE and ENTITY rejected; HTTPS host credential checks, conflicts and tombstones preserved",
+    "Existing foreign Website WIP preserved; live d738a94 and old reader f6649dc unchanged",
+    "New Hostinger session requires pending human answer after automatic scope rejection"
+  ]
+}
