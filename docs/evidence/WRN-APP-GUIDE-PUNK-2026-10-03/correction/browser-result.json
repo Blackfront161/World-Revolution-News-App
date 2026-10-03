@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "service-worker.js: actual old r29/v117 worker survives guide and SVG HTTP503 candidates; exact current worker activates after complete core fetch.",
+    "service-worker.js: wrn-app-v2.1.2-r30 validated core, warm guide then complete Chrome shutdown/profile reopen offline; App boot, punk icon, six help topics, no game import PASS.",
+    "news-app-2-sw.js: actual old r29/v117 worker survives guide and SVG HTTP503 candidates; exact current worker activates after complete core fetch.",
+    "news-app-2-sw.js: wrn-news-app-2-v118 validated core, warm guide then complete Chrome shutdown/profile reopen offline; App boot, punk icon, six help topics, no game import PASS."
+  ],
+  "errors": []
+}

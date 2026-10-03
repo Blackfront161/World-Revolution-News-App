@@ -1,0 +1,9 @@
+{
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewTurn": "01a101e2-af25-7d03-8fbb-8ff318857999",
+  "reviewedSource": "2481ef1a0cdd23a839c38f0058cfc9b73c0c90a6",
+  "result": "FAIL",
+  "P1": "Mandatory guide and header SVG absent from CORE_APP_SHELL/CORE_SHELL; optional install could activate with missing mandatory assets.",
+  "P2": "Initial SVG asset hash described Windows CRLF checkout bytes; corrected report labels canonical LF Git-blob SHA256 explicitly.",
+  "otherSourceChecks": "PASS with limits; no Game import or provider calls in guide; source/evidence blob bindings intact"
+}

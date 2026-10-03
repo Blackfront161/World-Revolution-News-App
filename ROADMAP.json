@@ -1447,7 +1447,7 @@
       "id": "HELP-AUDIO-TRANSLATION-20261003",
       "priority": 2,
       "name": "Hilfe für Radio, Teilen, Übersetzung und Offline",
-      "status": "local-App-task-guide-nine-languages-browser-PASS-editorial-platform-review-open",
+      "status": "App-guide-nine-languages-cold-offline-PASS-corrected-source-independent-review-pending",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "DE/EN task-based guidance: start/pause/stop, station website vs stream, app share link",
@@ -1470,13 +1470,15 @@
         "Aufgabenhilfe unterscheidet Original-Link, direkt abspielbare Folge, lokal vorgelesenen Text und gemeinsame erzeugte Datei; Kontingent/Wartezeit/Reset/Offlinezustand verständlich erklären.",
         "DE/EN Erstnutzer finden Inhalt, spielen/lesen, übersetzen und kehren zurück; übrige sieben Oberflächensprachen auf fehlende/überlaufende Texte prüfen."
       ],
-      "remaining": "Lokale App-Aufgabenhilfe mit sechs Themen und direkten Aktionen in neun Sprachen implementiert; echtes Chrome, Such-/Fokus-Rückkehr, Reflow und warm offline PASS. Menschliche Sprach-/Redaktionsabnahme, kalter Offline-/Gerätenachweis und Website/iOS-Anpassung bleiben offen. Nicht als neuer Storestand veröffentlicht.",
+      "remaining": "App-Aufgabenhilfe mit sechs Themen und Direktaktionen in neun Sprachen implementiert; Chrome-Sprach-/Reflow-/Fokusprüfung sowie echte abgewiesene Updates und kompletter kalter Offline-Neustart beider Worker PASS. P1-Pflichtdateilücke korrigiert; unabhängige Nachprüfung offen. Menschliche Sprachabnahme, native Geräte- und Website/iOS-Verteilung bleiben offen; kein neuer Storestand.",
       "implementation": {
         "sourceCommit": "2481ef1a0cdd23a839c38f0058cfc9b73c0c90a6",
         "report": "docs/APP-GUIDE-PUNK-ATLAS-2026-10-03.md",
         "browserEvidence": "docs/evidence/WRN-APP-GUIDE-PUNK-2026-10-03/browser-result.json",
         "gameImported": false,
-        "publicationPerformed": false
+        "publicationPerformed": false,
+        "correctedSourceCommit": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d",
+        "coldOfflineEvidence": "docs/evidence/WRN-APP-GUIDE-PUNK-2026-10-03/correction/browser-result.json"
       }
     },
     {
@@ -1668,7 +1670,8 @@
         "distribution": "local App source only; native/Store/Website unchanged",
         "punkSourceCommit": "2481ef1a0cdd23a839c38f0058cfc9b73c0c90a6",
         "punkReport": "docs/APP-GUIDE-PUNK-ATLAS-2026-10-03.md",
-        "icon": "world-revolution-atlas-punk.svg"
+        "icon": "world-revolution-atlas-punk.svg",
+        "correctedOfflineSource": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d"
       }
     },
     {

@@ -1,0 +1,36 @@
+{
+  "sourceCommit": "7a3574aaf4f180a4a435bf174ee4ec2b46c5ba1d",
+  "sourceBlobs": {
+    "service-worker.js": "b5daf09e7dfcf9f018993fca0170a794a64567db",
+    "news-app-2-sw.js": "ed355186df1714126cfc679c64934fd5ef8f7c2c",
+    "app-check.html": "406c7c8cb1a256db9bf18eaca94b08ec7cb99f1d",
+    "tests/test_worker_install_contract.js": "a6192956681c747172fc51f7993285cb921edf92",
+    "app-guide.js": "8d159aadc4d4b9e472942a299acd3142b27b4e61",
+    "world-revolution-atlas-punk.svg": "a086e438c2a52dd8541490fc545ac29b8ffbde7e",
+    "index.html": "e2a1238b9497e8850d8b5f3abbaea53043606b96",
+    "news-app-2.js": "1bf75ab6753225ed415279e6b1ef525d124af31c",
+    "news-app-2.css": "8cdb320006c43607869ac522d889e4171cc01269"
+  },
+  "assetHashesCanonicalLF": {
+    "app-guide.js": "e0ba6fdd0b0379f9150672067823630a9e4ec80356b5dd6b0d385d8b5e693498",
+    "world-revolution-atlas-punk.svg": "56919cd0cb28c04932b20f3ba857d1f1dcba87549ea21b108c083f8469eb9ed1"
+  },
+  "assetHashAlgorithm": "sha256 of Git blob bytes normalized to LF, not Windows checkout CRLF bytes",
+  "cacheGenerations": {
+    "production": "wrn-app-v2.1.2-r30",
+    "preview": "wrn-news-app-2-v118"
+  },
+  "nodeInstallContract": "PASS: full index script graph, guide/SVG install failure, activation rejected, old caches retained, fresh VM offline asset response",
+  "realChrome": "PASS: actual baseline old workers retained on two forced HTTP503 updates per worker; successful corrected install; warm + full browser/profile reopen while local server destroys all incoming requests and context is offline",
+  "externalServices": "HTTPS requests fulfilled with local empty fixtures; no live provider calls used for proof",
+  "pythonTests": 33,
+  "appValidation": "PASS",
+  "gameImported": false,
+  "nativeStoreUploadPerformed": false,
+  "remaining": [
+    "Focused independent correction review",
+    "Human language/editorial review",
+    "Native background/screen-lock/device validation",
+    "Website/iOS adaptation and distribution"
+  ]
+}

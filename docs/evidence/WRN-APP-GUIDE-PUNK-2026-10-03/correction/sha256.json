@@ -1,0 +1,12 @@
+{
+  "textAlgorithm": "sha256 of UTF-8 text normalized to LF",
+  "binaryAlgorithm": "sha256 of exact bytes",
+  "files": {
+    "browser-cold-offline.mjs": "a61237a7f846a48f25f98e3038afe5a1f7440247524d8e406be7fe703e43aad2",
+    "browser-result.json": "8c09a79711685ff9cdee014033507a2824aead93e445bc407cc462ee0f98e4eb",
+    "initial-controller-findings.json": "745f82934412fca4a51518a91b4d6839d2ec1cf48f0475e6c4a0535b7c9ef07c",
+    "news-app-2-sw.js-cold-offline.png": "25f454df531612f18aae7898f50cdd9151822093e72b00855f5c39ee03d44e99",
+    "service-worker.js-cold-offline.png": "25f454df531612f18aae7898f50cdd9151822093e72b00855f5c39ee03d44e99",
+    "source-report.json": "a4eb9adf0a084e4ba8d1dd169c1b6a176ce5d27142608e597184ca9cd5394083"
+  }
+}
