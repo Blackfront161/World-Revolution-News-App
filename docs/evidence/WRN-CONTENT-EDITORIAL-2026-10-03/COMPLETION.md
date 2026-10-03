@@ -1,0 +1,13 @@
+# Abgeschlossenes Inhaltspaket – 4. Oktober 2026 (Asia/Singapore)
+
+Die unabhängige Kontrolle akzeptierte die zehn korrigierten DE/EN-Lexikontexte im unveränderlichen App-Commit c85f524 und den Intake von zehn deutschen Bibliothekstiteln sowie 55 Podcast-Originalverweisen als Metadaten. Die Runtimeintegration bewahrt sämtliche Felder der bisherigen 731 Bücher und 1778 Podcast-Rohdatensätze unverändert. Jetzt: 741 Bücher, 1833 Podcast-Rohdatensätze, 177 Lexikonbegriffe und 55 Referenzen. Rohdatensätze sind keine Zusage unabhängiger Sendungen oder direkt abspielbarer Audios.
+
+Neue Einträge enthalten keine übernommenen Volltexte, Downloads, Audiodateien oder Bilder. Vier gehaltene Podcastquellen und 61 besonders eingeschränkte IDs bleiben geschützt; 47 weitere Intake-Fälle bleiben zurückgestellt. Die globale Metadata-only-Liste wächst von 444 auf 499 IDs und schützt beide Reihenfolgen beim Zusammenführen mit veralteten Katalogen. Die gleiche Policy wurde im getrennten Datenkandidaten auf aktuelle und archivierte Podcasts angewendet.
+
+Prüfungen: 164 Python-Tests, 3 dokumentierte Plattform-/Umgebungsskips, 4 Subtests; alle 61 JavaScript-Vertragsdateien; App-Validator; read-only Release-Audit während der Testausführung; git diff --check. Chrome-Katalogprüfung mit realen lokalen Buchdaten, partieller Remoteantwort, persistenter Rücknahme, fehlgeschlagenem Offline-Refresh, vier Breiten und neun UI-Sprachen bestanden. Native iOS-/Android-Kompilierung und Store-Veröffentlichung gehören nicht zu diesem Paket.
+
+`runtime-preservation.json` bindet alle alten Datensatzfelder sowie die neuen Kandidaten; `library-browser-result.json` enthält den echten Chrome-Nachweis. Der abschließende Runtime-Review bleibt bis zu dessen eigener Antwort getrennt von der bereits erteilten Intake-/Lexikonfreigabe.
+
+Die Cachegenerationen sind r31 / v119, mit Lexikon-Assetrelease12 und Podcastpolicy-Assetrelease5. Android VersionCode32 / 2.1.2 bleibt unverändert. Atlas bleibt nur als vorbereiteter Host ohne importierten Spielinhalt.
+
+Bei der vollständigen Prüfung wurden überholte Cache-Pins im Audit/Vertragstest und eine historische Bibliotheks-Gleichheitsannahme aktualisiert. Der Cache-Promotionstest ermittelt die tatsächliche neue Generation, statt einen früheren Cache zu simulieren. Die Windows-Cleanup-Testfixture setzt ausschließlich im Prüfsubprozess ihre eigenen TEMP/TMP-Pfade; die produktiven Löschschutzfunktionen bleiben unverändert. Ein fremder alter Data-Checkout wird nicht mehr ungefragt als aktuelle Policynorm benutzt: der externe Paritätslauf erhält WRN_DATA_POLICY_REPOSITORY explizit und prüft weiterhin JSON-/JavaScript-/Collector-Parität.

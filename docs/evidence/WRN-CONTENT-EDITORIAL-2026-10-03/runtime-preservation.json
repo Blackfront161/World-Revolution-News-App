@@ -1,0 +1,38 @@
+{
+  "baselineCommit": "c85f524f1abb9e7d39d7463fc676395923826745",
+  "catalogs": [
+    {
+      "file": "library-feed.json",
+      "before": 731,
+      "after": 741,
+      "added": 10,
+      "oldIdsUrlsDatesAllFieldsIdentical": true,
+      "candidateRecordsExact": true,
+      "sha256": "d692eb872be4820c87d26da98af59ed1c922356a4dc3a59b9e1e9d3c19c295d9"
+    },
+    {
+      "file": "podcasts.json",
+      "before": 1778,
+      "after": 1833,
+      "added": 55,
+      "oldIdsUrlsDatesAllFieldsIdentical": true,
+      "candidateRecordsExact": true,
+      "sha256": "9abea2cef2fb15f5af39b9761e9fcd341e39690d9c4049a90d2b83f42bff8fb0"
+    }
+  ],
+  "reviewerThread": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "lexiconReview": "accepted immutable c85f524; ten corrected DE/EN terms, 177 total terms and 55 references",
+  "intakeReview": "accepted as pre-runtime metadata-only; final runtime review requested separately",
+  "holds": {
+    "restrictedIds": 61,
+    "metadataOnlyIdsBefore": 444,
+    "metadataOnlyIdsAfter": 499,
+    "heldSourcesExcluded": [
+      "contrabanda-specials",
+      "infowar-greece",
+      "l-orage",
+      "leftover-talk"
+    ],
+    "remainingIntakeDecisionsHeld": 47
+  }
+}

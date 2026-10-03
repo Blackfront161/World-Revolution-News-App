@@ -85,11 +85,19 @@ def test_stale_mixed_channel_language_cannot_override_review_hold():
 @local_snapshot
 def test_common_library_contains_all_input_ids_and_german_books():
     app=read(ROOT,'library-feed.json')
-    # The accepted shared snapshot must not drift when the data worktree updates.
+    # Historical admission remains present when the independently reviewed
+    # additive candidate extends the immutable pre-intake App snapshot.
     data=json.loads(subprocess.check_output(['git','-C',str(DATA),'show',
         'd7da528c9a996a2ec13bf3912c45e18e7d58bdfa:library-feed.json']))
-    assert app==data and len(app)==728
-    assert sum('de' in b['languages'] for b in app)==66
+    assert {b['id'] for b in data} <= {b['id'] for b in app}
+    baseline=json.loads(subprocess.check_output(['git','-C',str(ROOT),'show',
+        'c85f524f1abb9e7d39d7463fc676395923826745:library-feed.json']))
+    candidate=read(ROOT,'docs/evidence/WRN-CONTENT-EDITORIAL-2026-10-03/intake-candidate.json')['bookRecords']
+    current={b['id']:b for b in app}
+    assert all(current[b['id']]==b for b in baseline)
+    assert set(current)=={b['id'] for b in baseline+candidate}
+    assert all(current[b['id']]==b for b in candidate)
+    assert sum('de' in b['languages'] for b in app)>=66
     ids={b['id'] for b in app}
     for root,ref in INPUTS:
         previous=json.loads(subprocess.check_output(['git','-C',str(root),'show',f'{ref}:library-feed.json']))

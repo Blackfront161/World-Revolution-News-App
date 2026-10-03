@@ -15503,5 +15503,311 @@
       "epub": "https://theanarchistlibrary.org/library/return-fire-no-path-a-web-of-relations-tensions.epub"
     },
     "updatedAt": "2026-07-20T17:24:37+00:00"
+  },
+  {
+    "id": "anarchist-library-de-ba62ecff09594a0105cded9a",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Anarchismus und Organisation",
+    "authors": [
+      "Anton Constandse"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/anton-constandse-anarchismus-und-organisation",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/anton-constandse-anarchismus-und-organisation",
+    "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "292156d046ad968243d01a48367da0f25028164f009b5d58a8035855d988a373"
+    }
+  },
+  {
+    "id": "anarchist-library-de-174b8a1c8b31483104c78134",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Nietzsche und Anarchie",
+    "authors": [
+      "Shahin"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/shahin-nietzsche-und-anarchie",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/shahin-nietzsche-und-anarchie",
+    "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "ea8aa7fc83cfd3491299051a103ed79c21056b21d26408600f369a3879c61376"
+    }
+  },
+  {
+    "id": "anarchist-library-de-53f177951cf6dc3525a55ad2",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Aufhebung und Überwindung",
+    "authors": [
+      "Alfredo M. Bonanno"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/alfredo-m-bonanno-aufhebung-und-uberwindung",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/alfredo-m-bonanno-aufhebung-und-uberwindung",
+    "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "d38239812417edc63289887ea0964167162832261b5239e2815508ab67668591"
+    }
+  },
+  {
+    "id": "anarchist-library-de-433b2ba94777b2cbc1a40583",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Plena sind das Opium der Basis",
+    "authors": [
+      "Projektgruppe „HierarchNie!“"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/projektgruppe-hierarchnie-plena-sind-das-opium-der-basis-1",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/projektgruppe-hierarchnie-plena-sind-das-opium-der-basis-1",
+    "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "3e11fa1a4bb1ad384cbdb9e62c5fd667d41d198c95b6229ee79b546b2cc53b27"
+    }
+  },
+  {
+    "id": "anarchist-library-de-cdd0f47e1835707d18dfbc69",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Gegenmacht oder chaotischer Kampf ?",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/anonym-gegenmacht-oder-chaotischer-kampf",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/anonym-gegenmacht-oder-chaotischer-kampf",
+    "updatedAt": "2026-10-03T14:13:57.878623+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "40960262efea82a45aa1f26f17299a95166d2ba680fbf943ebc21542dfcd7b4f"
+    }
+  },
+  {
+    "id": "anarchist-library-de-a66f144a48eed29e9330ce16",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "ANARCHISMUS!",
+    "authors": [],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/anonym-anarchismus",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/anonym-anarchismus",
+    "updatedAt": "2026-10-03T14:14:00.010103+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "91e9bd5562e2c564b893687b7cefc7ff3b1cf0b4aeff7a3d84593a6e39d1d271"
+    }
+  },
+  {
+    "id": "anarchist-library-de-dbfc419a36310497917860c0",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Leben als Totalität",
+    "authors": [
+      "Wolfi Landstreicher"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/wolfi-landstreicher-leben-als-totalitaet",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/wolfi-landstreicher-leben-als-totalitaet",
+    "updatedAt": "2026-10-03T14:14:00.027206+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "c0efe82c1c6ee95244ba3793b6bcf2fcbfa41e7d504b747a89c1d014cd42eeec"
+    }
+  },
+  {
+    "id": "anarchist-library-de-37f710aeecdeffbe215e526b",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Realität ohne Regierung",
+    "authors": [
+      "Ito Noe"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/ito-noe-realitat-ohne-regierung",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/ito-noe-realitat-ohne-regierung",
+    "updatedAt": "2026-10-03T14:14:00.125266+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "6b696b227dbe9bf4975680313192631fc030dc282fa788ada512f01dbc1c97ae"
+    }
+  },
+  {
+    "id": "anarchist-library-de-4bf827a262200fb3dc1dcf0b",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Die Korporation Belarus",
+    "authors": [
+      "Alinevich, Ihar"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/alinevich-ihar-die-korporation-belarus",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/alinevich-ihar-die-korporation-belarus",
+    "updatedAt": "2026-10-03T14:14:00.228784+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "f28de4be47b657606d2bba797d04887c98b68a4aa049109cd4031f3d4faaf687"
+    }
+  },
+  {
+    "id": "anarchist-library-de-b3828bd26e2871d376d62575",
+    "sourceId": "anarchist-library-de",
+    "sourceName": "Anarchistische Bibliothek (Deutsch)",
+    "title": "Empörung und Entrüstung oder Zerstörung und Verwüstung",
+    "authors": [
+      "Bert Papenfuß"
+    ],
+    "languages": [
+      "de"
+    ],
+    "languageSource": "individual-original-html-language",
+    "languageVerified": true,
+    "topics": [],
+    "formats": [
+      "html"
+    ],
+    "readUrl": "https://de.anarchistlibraries.net/library/bert-papenfuss-emporung-und-entrustung-oder-zerstorung-und-verwustung",
+    "downloads": {},
+    "upstreamId": "https://de.anarchistlibraries.net/library/bert-papenfuss-emporung-und-entrustung-oder-zerstorung-und-verwustung",
+    "updatedAt": "2026-10-03T14:14:01.451784+00:00",
+    "updatedAtMeaning": "WRN metadata review, not publisher publication date",
+    "contentPolicy": "metadata_and_links_only",
+    "rightsStatus": "unverified",
+    "editorialReview": {
+      "date": "2026-10-03",
+      "scope": "title/author/language/original/edition identity only; no body/media/download permission",
+      "decision": "metadata-original-link-admitted",
+      "evidenceSha256": "36289546503fcc3cb136eafa1dbecc61cfe9cd94b79b41463d9a66027d80c7c6"
+    }
   }
 ]

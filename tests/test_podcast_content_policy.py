@@ -3,6 +3,8 @@ import json
 from pathlib import Path
 import importlib.util
 import sys
+import os
+import re
 from unittest.mock import patch
 
 import feedparser
@@ -10,7 +12,9 @@ import aggregate_podcasts as app
 from podcast_content_policy import MODE, RULES, metadata_only, project_episode, episode_key
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT.parent / 'wrn-data-autonom-current'
+# Cross-repository parity must bind an explicitly selected current checkout,
+# rather than an unrelated historical sibling snapshot.
+DATA = Path(os.environ['WRN_DATA_POLICY_REPOSITORY']) if os.environ.get('WRN_DATA_POLICY_REPOSITORY') else ROOT / '.tmp/no-external-policy-checkout'
 
 
 def test_strongest_policy_and_projection():
@@ -27,6 +31,9 @@ def test_strongest_policy_and_projection():
 
 
 def test_catalog_identity_and_policy_are_preserved():
+    embedded = re.search(r'/\* POLICY_RULES_START \*/(.*?)/\* POLICY_RULES_END \*/',
+                         (ROOT/'podcast-content-policy.js').read_text(encoding='utf-8'), re.S)
+    assert embedded and json.loads(embedded.group(1)) == RULES
     roots = [ROOT]
     if DATA.exists(): roots.append(DATA)
     for root in roots:

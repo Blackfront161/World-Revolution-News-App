@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r30';
+const APP_CACHE = 'wrn-app-v2.1.2-r31';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -34,13 +34,13 @@ const APP_SHELL = [
   './news-app-2-core.js?release=9',
   './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
-  './podcast-content-policy.js?release=4',
+  './podcast-content-policy.js?release=5',
   './news-app-2-media.js?release=5',
   './news-app-2-release.js?release=3',
   './article-summary-core.js?release=1',
   './shared-translation-client.js?release=8',
   './stories-core.js?release=3',
-  './lexicon-tab.js?release=11',
+  './lexicon-tab.js?release=12',
   './prisoner-solidarity.js?release=5',
   './zine-designer.js?release=3',
   './media-player.js?release=6',
@@ -191,13 +191,13 @@ const CORE_APP_SHELL = [
   './news-app-2-core.js?release=9',
   './news-app-2-specialty.js?release=6',
   './wrn-product-21.js?release=1',
-  './podcast-content-policy.js?release=4',
+  './podcast-content-policy.js?release=5',
   './news-app-2-media.js?release=5',
   './news-app-2-release.js?release=3',
   './article-summary-core.js?release=1',
   './shared-translation-client.js?release=8',
   './stories-core.js?release=3',
-  './lexicon-tab.js?release=11',
+  './lexicon-tab.js?release=12',
   './prisoner-solidarity.js?release=5',
   './zine-designer.js?release=3',
   './media-player.js?release=6',

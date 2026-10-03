@@ -228,6 +228,7 @@ def test_build_finally_cleanup_rejects_nested_junction(tmp_path: Path, build_err
     link = nested / "unexpected-link"
     command = (
         "$ErrorActionPreference = 'Stop'; "
+        f"$env:TEMP = '{ps_quote(tmp_path)}'; $env:TMP = '{ps_quote(tmp_path)}'; "
         f". '{ps_quote(HELPERS)}'; "
         f"$temporaryRoot = '{ps_quote(build_root)}'; $sourceRoot = Join-Path $temporaryRoot 'source'; "
         "$UseWorkingTree = $true; "

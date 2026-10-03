@@ -1877,7 +1877,7 @@
       'A funding cut alone does not create provision. Movements debate where resources go and whether replacement institutions reproduce control under a new name.',
       ['police-abolition', 'prison-abolition', 'non-reformist-reforms'])
   ].map(term => ({...term, revision:{version:'knowledge-expansion-4-editorial-correction', date:'2026-10-03',
-    note:'Original WRN DE/EN draft with specific primary references and dated or hypothetical examples; independent editorial review pending.'}})));
+    note:'Original WRN DE/EN explanation with individually described references and dated or hypothetical examples; independent editorial review passed on 2026-10-03 (App c85f524).'}})));
 
   // Keep the public glossary stable when an editorial expansion replaces an older draft entry.
   const uniqueTerms = [...new Map(TERMS.map(term => [term.id, term])).values()];
