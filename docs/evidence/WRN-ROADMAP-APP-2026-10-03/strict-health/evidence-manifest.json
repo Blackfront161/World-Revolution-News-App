@@ -1,0 +1,25 @@
+{
+  "productCommit": "e9c8088806f60ad8b9605705f686cc91f2536f90",
+  "files": [
+    {
+      "path": "live-config-comparison.json",
+      "bytes": 4269,
+      "sha256": "a0448ec5b94b43dd753bf115eed13e14943907e8759a392723dbb2b98a0d026d"
+    },
+    {
+      "path": "navigation-browser.json",
+      "bytes": 1025,
+      "sha256": "3eefd5e2af63ab5b5f3becd4c1709545d57f815eed00151f6d39c9b0c69368f2"
+    },
+    {
+      "path": "product-manifest.json",
+      "bytes": 5434,
+      "sha256": "41c4512aa1d9050c09456b34673465dac369d4ad0297441215ff26e139fae3ec"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 1635,
+      "sha256": "c0fc7663ef55879d012bd5a308bc4168b417bb41747cf5235391777786071871"
+    }
+  ]
+}

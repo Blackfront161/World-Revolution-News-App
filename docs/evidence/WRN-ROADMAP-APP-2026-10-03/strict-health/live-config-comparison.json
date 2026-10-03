@@ -1,0 +1,189 @@
+[
+  {
+    "worker": "revolution-proxy",
+    "priorVersion": "b4344450-d9f3-4e2e-9889-1c961c725508",
+    "topLevelFields": [
+      "id",
+      "number",
+      "metadata",
+      "annotations",
+      "resources"
+    ],
+    "resourceFields": [
+      "script",
+      "script_runtime",
+      "bindings"
+    ],
+    "bindingNamesAndTypes": [
+      {
+        "name": "ALLOWED_ORIGINS",
+        "type": "plain_text"
+      },
+      {
+        "name": "AZURE_MONTHLY_CHAR_LIMIT",
+        "type": "plain_text"
+      },
+      {
+        "name": "AZURE_SPEECH_KEY",
+        "type": "secret_text"
+      },
+      {
+        "name": "AZURE_SPEECH_REGION",
+        "type": "secret_text"
+      },
+      {
+        "name": "FEEDBACK_DAILY_LIMIT",
+        "type": "plain_text"
+      },
+      {
+        "name": "FEEDBACK_RATE_LIMITER",
+        "type": "ratelimit"
+      },
+      {
+        "name": "FEEDBACK_TO_ADDRESS",
+        "type": "plain_text"
+      },
+      {
+        "name": "GEMINI_KEY_1",
+        "type": "secret_text"
+      },
+      {
+        "name": "GEMINI_KEY_3",
+        "type": "secret_text"
+      },
+      {
+        "name": "GEMINI_KEY_4",
+        "type": "secret_text"
+      },
+      {
+        "name": "GEMINI_KEY_5",
+        "type": "secret_text"
+      },
+      {
+        "name": "GEMINI_MODEL",
+        "type": "plain_text"
+      },
+      {
+        "name": "HF_TOKEN",
+        "type": "secret_text"
+      },
+      {
+        "name": "PODCAST_BUCKET",
+        "type": "r2_bucket"
+      },
+      {
+        "name": "PODCAST_RATE_LIMITER",
+        "type": "ratelimit"
+      },
+      {
+        "name": "PODCAST_STORAGE_LIMIT_BYTES",
+        "type": "plain_text"
+      },
+      {
+        "name": "PUSH_GATEWAY",
+        "type": "durable_object_namespace"
+      },
+      {
+        "name": "PUSH_RATE_LIMITER",
+        "type": "ratelimit"
+      },
+      {
+        "name": "QUOTA_COORDINATOR",
+        "type": "durable_object_namespace"
+      },
+      {
+        "name": "TRANSLATION_DAILY_LIMIT",
+        "type": "plain_text"
+      },
+      {
+        "name": "TRANSLATION_RATE_LIMITER",
+        "type": "ratelimit"
+      },
+      {
+        "name": "WRN_PODCAST_GENERATION_ENABLED",
+        "type": "plain_text"
+      },
+      {
+        "name": "WRN_TRANSLATION_ENABLED",
+        "type": "plain_text"
+      }
+    ],
+    "localVarKeys": [
+      "ALLOWED_ORIGINS",
+      "WRN_TRANSLATION_ENABLED",
+      "WRN_PODCAST_GENERATION_ENABLED",
+      "TRANSLATION_DAILY_LIMIT",
+      "FEEDBACK_DAILY_LIMIT",
+      "AZURE_MONTHLY_CHAR_LIMIT",
+      "PODCAST_STORAGE_LIMIT_BYTES",
+      "FEEDBACK_TO_ADDRESS"
+    ],
+    "localVarsDifferFromLiveKeys": [],
+    "extraLiveVarNamesPreservedByKeepVars": [
+      "GEMINI_MODEL"
+    ]
+  },
+  {
+    "worker": "wrn-translation-cache",
+    "priorVersion": "13f8710b-7eb3-4a6a-a7fb-85b3769bd730",
+    "topLevelFields": [
+      "id",
+      "number",
+      "metadata",
+      "annotations",
+      "resources"
+    ],
+    "resourceFields": [
+      "script",
+      "script_runtime",
+      "bindings"
+    ],
+    "bindingNamesAndTypes": [
+      {
+        "name": "ALLOWED_ORIGINS",
+        "type": "plain_text"
+      },
+      {
+        "name": "CACHE_RATE_LIMITER",
+        "type": "ratelimit"
+      },
+      {
+        "name": "CACHE_TTL_SECONDS",
+        "type": "plain_text"
+      },
+      {
+        "name": "PROXY_SERVICE",
+        "type": "service"
+      },
+      {
+        "name": "QUOTA_COORDINATOR",
+        "type": "durable_object_namespace"
+      },
+      {
+        "name": "TRANSLATION_KV_DAILY_WRITE_LIMIT",
+        "type": "plain_text"
+      },
+      {
+        "name": "TRANSLATIONS",
+        "type": "kv_namespace"
+      },
+      {
+        "name": "UPSTREAM_URL",
+        "type": "plain_text"
+      },
+      {
+        "name": "WRN_TRANSLATION_ENABLED",
+        "type": "plain_text"
+      }
+    ],
+    "localVarKeys": [
+      "ALLOWED_ORIGINS",
+      "CACHE_TTL_SECONDS",
+      "UPSTREAM_URL",
+      "WRN_TRANSLATION_ENABLED",
+      "TRANSLATION_KV_DAILY_WRITE_LIMIT"
+    ],
+    "localVarsDifferFromLiveKeys": [],
+    "extraLiveVarNamesPreservedByKeepVars": []
+  }
+]
