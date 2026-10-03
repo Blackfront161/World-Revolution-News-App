@@ -1,0 +1,31 @@
+
+> world-revolution-news-ios@2.1.2 sync:ios
+> npm run prepare:web && cap sync ios && node ../scripts/finalize-ios-sync.mjs && npm run verify
+
+
+> world-revolution-news-ios@2.1.2 prepare:web
+> node ../scripts/prepare-ios-web.mjs
+
+Prepared 392 iOS assets from 94f8153ddd893d6ada39a906c9f42674667fa333; manifest: ios-wrapper/.tmp/web-manifest.json
+√ Copying web assets from www to ios\App\App\public in 161.95ms
+√ Creating capacitor.config.json in ios\App\App in 616.40μs
+√ copy ios in 174.05ms
+√ Updating iOS plugins in 406.50μs
+[info] All Capacitor plugins have a Package.swift file and will be included in Package.swift
+[info] Writing Package.swift
+[info] Found 2 Capacitor plugins for ios:
+       @capacitor/local-notifications@8.0.1
+       @capacitor/share@8.0.1
+√ update ios in 19.02ms
+[info] Sync finished in 0.206s
+
+> world-revolution-news-ios@2.1.2 verify
+> node ../scripts/verify-ios-project.mjs
+
+{
+  "verifiedWebFiles": 392,
+  "capacitor": "8.4.0",
+  "minimumIOS": "17.0",
+  "nativeCompilation": "pending-macOS-Xcode",
+  "signedIPA": "not-produced"
+}
