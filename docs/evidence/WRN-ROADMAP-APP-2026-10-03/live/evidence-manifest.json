@@ -7,6 +7,11 @@
       "sha256": "e76965ca09b13abeea8a6709389659c6b6636d8f3deb295c9409d925ef02c068"
     },
     {
+      "path": "data-baseline-diagnosis.json",
+      "bytes": 1846,
+      "sha256": "a5e901c156366f05bb79d06495285644f6dfaaaf5d4476cef383f3f50f5190a4"
+    },
+    {
       "path": "deployment-config-preservation.json",
       "bytes": 1160,
       "sha256": "b123b86b692f01b6e42385d080e5e467e27b7d630e44e458cea05c847d034cec"

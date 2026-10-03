@@ -1078,7 +1078,8 @@
         "failure": "unchanged news.json has7 eligible Asia source labels; unchanged test_feed_ux_185.py requires8",
         "cancelledScheduleRun": 37100648981,
         "diagnosis": "cancelled with jobs[] is compatible with default single-pending queue replacement; concrete triggering run unproven",
-        "remaining": "Resolve underlying baseline quality failure without weakening checks; merge reviewed queue patch; observe successful real schedule publication and read back all artifacts."
+        "remaining": "Resolve underlying baseline quality failure without weakening checks; merge reviewed queue patch; observe successful real schedule publication and read back all artifacts.",
+        "latestBaselineDiagnosis": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/data-baseline-diagnosis.json"
       }
     },
     {
@@ -1165,6 +1166,11 @@
             "videoOriginalLinks": 16
           }
         }
+      },
+      "archiveDiversityFollowup": {
+        "scope": "Genuine Asia metadata coverage and bounded archive retention; independent publishers vs source labels separated",
+        "evidence": "docs/evidence/WRN-ROADMAP-APP-2026-10-03/live/data-baseline-diagnosis.json",
+        "status": "diagnosed-no-admission-or-rule-change"
       }
     },
     {

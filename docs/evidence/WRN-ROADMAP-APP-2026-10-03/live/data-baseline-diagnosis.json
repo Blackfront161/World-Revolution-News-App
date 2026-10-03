@@ -1,0 +1,43 @@
+{
+  "dataMainCommit": "b218125a2755ab43efd9c5945a232e75ce7327e5",
+  "latestFastSchedule": {
+    "run": 37102982556,
+    "conclusion": "success",
+    "createdAt": "2026-10-03T06:25:06Z"
+  },
+  "newsRows": 2000,
+  "oldestRetainedDateUTC": "2026-09-18T15:48:36Z",
+  "eligibleAsiaSourceLabels": 7,
+  "independentPublishersNotCounted": true,
+  "archiveBehavior": "date-sorted incomplete-content cap followed by hard2000 limit; no explicit30-day retention gate observed in aggregate.py",
+  "boundedReadOnlyFeedDates": {
+    "The Polis Project": [
+      "2026-07-03",
+      "2026-07-02",
+      "2026-01-31"
+    ],
+    "Karapatan": [
+      "2026-09-18T05:16:12Z",
+      "2026-09-14"
+    ],
+    "Rojava Info Center": [
+      "2026-09-08"
+    ]
+  },
+  "otherStrictXMLProbes": {
+    "Asian Labour Review": "ParseError, not proof of permanent outage or aggregator parser failure",
+    "Chuang": "ParseError, not proof of permanent outage or aggregator parser failure"
+  },
+  "inference": "Some reachable registered feeds publish less frequently and newest items can fall behind the current global archive cap. This explains a possible diversity loss; it is not a validated archive selection fix or8-source publication proof.",
+  "importedArticles": 0,
+  "copiedPublisherText": false,
+  "testChanges": 0,
+  "remaining": "Review bounded archive diversity/retention against admitted metadata and genuine recent source availability; do not invent data, relax the minimum or merge a red required check.",
+  "feedUrls": {
+    "The Polis Project": "https://www.thepolisproject.com/feed/",
+    "Karapatan": "https://www.karapatan.org/feed/",
+    "Rojava Info Center": "https://rojavainformationcenter.org/feed/",
+    "Asian Labour Review": "https://labourreview.org/feed/",
+    "Chuang": "https://chuangcn.org/feed/"
+  }
+}
