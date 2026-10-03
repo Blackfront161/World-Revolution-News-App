@@ -2659,6 +2659,7 @@
     document.getElementById('next-atlas-toggle').setAttribute('aria-label', atlasEntryCopy()[0]);
     document.getElementById('next-atlas-toggle').title = atlasEntryCopy()[0];
     document.getElementById('next-menu-search').textContent = t('menuSearch');
+    document.getElementById('next-menu-app-guide').textContent = window.WRNAppGuide.copy(state.language).title;
     document.getElementById('next-menu-toggle').setAttribute('aria-label', t('menuOpen'));
     document.querySelector('[data-dialog-close]').setAttribute('aria-label', t('close'));
     document.querySelector('[data-menu-close]').setAttribute('aria-label', t('close'));
@@ -3476,12 +3477,32 @@
 
   function openReleaseDialog(kicker, title, body, actions = '') {
     const dialog = document.getElementById('next-release-dialog');
+    dialog.dataset.panel = '';
     document.getElementById('next-release-kicker').textContent = kicker;
     document.getElementById('next-release-title').textContent = title;
     document.getElementById('next-release-content').innerHTML = body;
     document.getElementById('next-release-actions').innerHTML = actions;
     if (!dialog.open) dialog.showModal();
     return dialog;
+  }
+
+  function renderAppGuide() {
+    const copy = window.WRNAppGuide.copy(state.language);
+    const action = (name, label, extra = '') => `<button class="secondary-button" type="button" data-action="${name}" ${extra}>${escapeHtml(label)}</button>`;
+    const links = {
+      radio: action('app-guide-view', copy.radioAction, 'data-view="media" data-section="radio"'),
+      podcasts: action('app-guide-view', t('podcasts'), 'data-view="media" data-section="podcasts"'),
+      sharing: action('share-app', t('shareApp')),
+      translation: action('system-status', t('systemStatus')),
+      offline: action('data-control', t('localData')),
+      feedback: action('feedback-open', t('feedback'))
+    };
+    const dialog = openReleaseDialog('World Revolution News', copy.title,
+      `<div class="app-guide" lang="${escapeHtml(state.language)}"><p>${escapeHtml(copy.intro)}</p>
+      <div class="app-guide__links">${action('open-search', t('menuSearch'))}${action('app-guide-view', copy.libraryAction, 'data-view="library"')}</div>
+      ${['radio', 'podcasts', 'sharing', 'translation', 'offline', 'feedback'].map(key => `<details data-guide-topic="${key}"${key === 'radio' ? ' open' : ''}><summary>${escapeHtml(copy[key][0])}</summary><p>${escapeHtml(copy[key][1])}</p>${links[key]}</details>`).join('')}</div>`,
+      `<button type="button" class="primary-button" data-release-close>${escapeHtml(t('close'))}</button>`);
+    dialog.dataset.panel = 'app-guide';
   }
 
   function renderAbout() {
@@ -6825,7 +6846,7 @@
 
   function renderAtlasEntry() {
     viewRoot.innerHTML = `<section class="atlas-entry" aria-labelledby="next-atlas-title" data-no-swipe>
-      <img class="atlas-entry__mark" src="world-revolution-atlas-icon.svg" alt="" width="88" height="88">
+      <img class="atlas-entry__mark" src="world-revolution-atlas-punk.svg" alt="" width="88" height="88">
       <h1 id="next-atlas-title" tabindex="-1">World Revolution Atlas</h1>
       <p class="atlas-entry__subtitle">World Revolution Game</p>
       <div id="next-atlas-mount" data-atlas-status="not-imported" aria-describedby="next-atlas-status">
@@ -8463,6 +8484,23 @@
       }
 
       const action = target.dataset.action;
+      const guideDialog = document.getElementById('next-release-dialog');
+      if (guideDialog.dataset.panel === 'app-guide' && ['app-guide-view', 'open-search', 'system-status', 'data-control', 'feedback-open'].includes(action)) {
+        guideDialog.dataset.panel = '';
+        guideDialog.close();
+      }
+      if (action === 'app-guide') {
+        if (menuDialog.open) menuDialog.close();
+        renderAppGuide();
+        return;
+      }
+      if (action === 'app-guide-view') {
+        if (target.dataset.view === 'media' && ['radio', 'podcasts'].includes(target.dataset.section)) {
+          state.media.section = target.dataset.section;
+          changeView('media');
+        } else if (target.dataset.view === 'library') changeView('library');
+        return;
+      }
       if (action === 'navigation-item') {
         if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
@@ -9227,6 +9265,11 @@
     });
     developmentReviewDialog?.addEventListener('click', event => {
       if (event.target === developmentReviewDialog) developmentReviewDialog.close();
+    });
+    document.getElementById('next-release-dialog').addEventListener('close', event => {
+      if (event.currentTarget.dataset.panel !== 'app-guide') return;
+      event.currentTarget.dataset.panel = '';
+      document.getElementById('next-menu-toggle').focus({ preventScroll: true });
     });
     document.getElementById('next-release-dialog').addEventListener('click', event => {
       if (event.target.id === 'next-release-dialog') event.currentTarget.close();

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">World Revolution Atlas</title>
+  <desc id="desc">Rot-schwarze Windrose auf einem rauen Globus-Signet im Punk-Stencil-Stil.</desc>
+  <path d="M62 5 82 9 99 20 112 37 121 60 117 82 106 103 85 116 62 122 39 116 20 104 8 83 5 62 11 39 23 21 43 10Z" fill="#101010" stroke="#f3ead7" stroke-width="4" stroke-linejoin="bevel"/>
+  <g fill="none" stroke="#e52b35" stroke-linecap="square">
+    <path d="M26 25 42 15 62 11M81 14 98 25 111 44M116 65 111 85 99 101M78 114 60 117 39 109M22 98 12 78 11 57" stroke-width="4"/>
+    <path d="M54 15C29 43 29 82 55 112M74 15C98 44 98 81 73 112M16 46 40 39 90 39 111 46M13 82 39 89 89 89 113 81M13 63H114" stroke-width="2.5" opacity=".7"/>
+  </g>
+  <path d="M25 31 36 26 43 30 46 39 36 44 28 40ZM88 78 98 73 108 81 97 96 88 104 83 92Z" fill="#f3ead7" opacity=".9"/>
+  <path d="M64 16 76 49 108 31 86 58 116 64 86 74 105 103 75 84 64 116 53 84 24 104 43 74 13 64 43 54 26 26 53 45Z" fill="#101010" stroke="#f3ead7" stroke-width="3" stroke-linejoin="bevel"/>
+  <path d="M64 16V64L53 45ZM116 64H64L86 58ZM64 116V64L75 84ZM13 64H64L43 74Z" fill="#e52b35"/>
+  <path d="M108 31 64 64 76 49ZM105 103 64 64 86 74ZM24 104 64 64 53 84ZM26 26 64 64 43 54Z" fill="#e52b35"/>
+  <path d="M64 51 77 64 64 77 51 64Z" fill="#101010" stroke="#f3ead7" stroke-width="3"/>
+  <path d="M64 57 71 64 64 71 57 64Z" fill="#e52b35"/>
+  <g stroke="#101010" stroke-width="2.5"><path d="M47 37 54 40M80 34 84 40M96 76 101 80M35 89 40 95M61 95 65 99"/></g>
+</svg>

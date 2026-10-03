@@ -5910,3 +5910,11 @@ button.feature-card {
 .atlas-entry__subtitle { margin: 0; color: var(--muted); }
 #next-atlas-mount { width: 100%; min-width: 0; border: 1px solid var(--border); border-radius: 16px; padding: 20px; background: var(--surface); overflow-wrap: anywhere; }
 .atlas-entry .secondary-button { min-height: 44px; white-space: normal; }
+
+/* Local task guide; summary and action controls remain usable with enlarged text. */
+.app-guide { min-width: 0; overflow-wrap: anywhere; }
+.app-guide__links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.app-guide details { border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin: 12px 0; }
+.app-guide summary { min-height: 44px; padding: 10px 0; cursor: pointer; font-weight: 700; }
+.app-guide p { line-height: 1.6; }
+.app-guide button { min-height: 44px; max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
