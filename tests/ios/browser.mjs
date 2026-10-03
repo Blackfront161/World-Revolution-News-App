@@ -24,7 +24,9 @@ const server = createServer(async (request, response) => {
   } catch { response.writeHead(404); response.end(); }
 });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-const origin = `http://127.0.0.1:${server.address().port}`;
+// Route-fulfilled HTTPS fixtures keep 'self' consistent with upgrade-insecure-
+// requests. HTTP navigation would turn later loopback fetches cross-origin.
+const origin = `https://127.0.0.1:${server.address().port}`;
 const result = { engine: 'WebKit', nativeBridge: 'mocked', sourceMode: 'local-fixtures', checks: [] };
 let browser;
 try {
@@ -60,7 +62,7 @@ try {
       catch { return route.fulfill({ status: 404 }); }
     }
     if (url.hostname === 'example.org') return route.abort();
-    return route.fulfill({ contentType: 'application/json', body: '{}' });
+    return route.fulfill({ contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': origin }, body: '{}' });
   });
   const page = await context.newPage();
   const errors = []; page.on('pageerror', error => errors.push(error.message));
