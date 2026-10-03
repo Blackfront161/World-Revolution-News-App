@@ -1,0 +1,37 @@
+{
+  "productCommit": "ad9074b72dd22bc8f121ea4487a4207fb73dc78d",
+  "pythonAssetTests": {
+    "passed": 39,
+    "cacheProvider": false
+  },
+  "nodeContracts": [
+    "test_navigation_routes.js",
+    "test_quota_visibility.js",
+    "test_shared_translation_client.js",
+    "test_translation_client_resilience.js",
+    "test_learning_paths.js",
+    "test_lexicon_relationships.js",
+    "test_next_update_candidate.js",
+    "test_audio_sharing.js",
+    "test_podcast_content_policy.js"
+  ],
+  "cloudflareNodeTests": {
+    "passed": 29,
+    "failed": 0
+  },
+  "workerDryRuns": {
+    "wrangler": "4.114.0",
+    "proxyKiB": 354.14,
+    "cacheKiB": 20.52,
+    "uploaded": false
+  },
+  "native": "not tested: adb has no attached Android devices",
+  "scopeLimits": [
+    "No new App/Play deployment or Android build",
+    "No provider tariff/free quota or model availability asserted",
+    "Full nine-language/all-view/platform matrix remains open",
+    "Three broadcasts only, not all station URLs or native background playback",
+    "Ten terms are WRN-authored DE/EN editorial drafts pending independent review",
+    "No foreign book files, text, podcast audio or images copied"
+  ]
+}

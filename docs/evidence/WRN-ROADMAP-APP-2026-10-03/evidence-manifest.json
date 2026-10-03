@@ -1,0 +1,45 @@
+{
+  "productCommit": "ad9074b72dd22bc8f121ea4487a4207fb73dc78d",
+  "files": [
+    {
+      "path": "audio-sharing-browser.json",
+      "bytes": 739,
+      "sha256": "f73a5c3b4a4789899aaa9f0af625a4de7c189acf36de6539c19fe77eb395cafc"
+    },
+    {
+      "path": "knowledge-candidate.json",
+      "bytes": 25032,
+      "sha256": "5cdea1ce918a7d027ff3735c27738ac95a0a630006afeaf2f6ea7ee8faeb23f4"
+    },
+    {
+      "path": "library-direct-link.png",
+      "bytes": 148833,
+      "sha256": "074eba07af4224247b9812b38c0fd76770a865e55ac9affa02aeca7310a711bd"
+    },
+    {
+      "path": "navigation-browser.json",
+      "bytes": 873,
+      "sha256": "74c431ee72832a35d382e04784c7516f61a5d786f1765e648c8fdbc853ea9c2d"
+    },
+    {
+      "path": "product-manifest.json",
+      "bytes": 5379,
+      "sha256": "eb05883107c61c6d8a6c87eb25466ca5b1b59d9f00cb001de714947ce7a7fc78"
+    },
+    {
+      "path": "radio-browser.json",
+      "bytes": 737,
+      "sha256": "9fd6c3c6b3987983090ded0549ad0826b119c445dbb52759c6d00055f51ebd08"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 3333,
+      "sha256": "2f88bc100fac16a93389ac3443a4d05e9e6654f82e29adea9ebb587172d336d6"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1213,
+      "sha256": "80358978876375dfa826bb251e182c2691d4f10887258997a5489528f2a4ee89"
+    }
+  ]
+}

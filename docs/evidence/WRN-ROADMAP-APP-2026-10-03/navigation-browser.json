@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Cold next.html redirect preserves library route and DE/EPUB filters.",
+    "Back/Forward restores independent library and media searches, languages and format.",
+    "News list restores query, actual scroll position and focus; article close restores its opener.",
+    "Browser Back then Forward without a DOM click preserves the outgoing media scroll and focus.",
+    "Cold term and off-page book links focus the real item; related terms navigate; radio link never autoplays; unknown ID is explicit.",
+    "Real lexicon/book and lexicon/podcast round trips retain the open term, 44px targets and no autoplay; only validated catalog bindings appear.",
+    "Nine UI languages: lexicon at 360/768/1440 and 200% text reflow; actual quota dialog shows known counters and unknown provider/storage without overflow."
+  ],
+  "errors": []
+}

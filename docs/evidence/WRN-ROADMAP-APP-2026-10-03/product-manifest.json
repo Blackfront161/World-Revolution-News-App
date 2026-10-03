@@ -1,0 +1,162 @@
+{
+  "productCommit": "ad9074b72dd22bc8f121ea4487a4207fb73dc78d",
+  "baseCommit": "563c56d",
+  "hashKind": "SHA256 of canonical Git blob bytes, not checkout line-ending representation",
+  "files": [
+    {
+      "path": "app-check.html",
+      "bytes": 12207,
+      "sha256": "9f368fe65d6d7c145c228044c6e982570cb1ff9654bd202313e27b9ea6588c6f"
+    },
+    {
+      "path": "cloudflare/revolution-proxy/src/index.js",
+      "bytes": 68566,
+      "sha256": "d662164f0dfc9d627433c9afcb5b5edf00487ddd2c05930ba6dc0e60943470b6"
+    },
+    {
+      "path": "cloudflare/tests/public-quota-status.test.mjs",
+      "bytes": 2310,
+      "sha256": "3d7e4bfa52cf88b8ac0c3bb38af3cccd377fbf670f24396b66d2e4cb8e58aa14"
+    },
+    {
+      "path": "cloudflare/wrn-translation-cache/src/index.js",
+      "bytes": 10171,
+      "sha256": "50d6e0b53b4ab460120c1fd569ef5c8bd255dc070952c5da07fcf678827d8b1b"
+    },
+    {
+      "path": "config.js",
+      "bytes": 27917,
+      "sha256": "f1380e41f436ac4409f7845fe4dc955f138a7bde7d1e93cbc95f4c23a2cdcfd0"
+    },
+    {
+      "path": "index.html",
+      "bytes": 25617,
+      "sha256": "c642ceaf7c5bd9c3beb2fd5adfe7b94453d5a03a71ae2a4b1580dbe24c87e13c"
+    },
+    {
+      "path": "learning-paths.json",
+      "bytes": 23741,
+      "sha256": "169185cbf4c8be46dce9ccfb26593857de9ece5dcb630518e6e61f02de82a2ee"
+    },
+    {
+      "path": "lexicon-tab.js",
+      "bytes": 277309,
+      "sha256": "7b6fbd2d214fdde5f1df4c88da2771b0026e1083d68942d742b27024e06f40b5"
+    },
+    {
+      "path": "media-player.js",
+      "bytes": 28768,
+      "sha256": "6b94a805f60eae860bbc54353c4517b71aad718a94ee4421ca9f29caf9f7e316"
+    },
+    {
+      "path": "news-app-2-core.js",
+      "bytes": 35905,
+      "sha256": "16c84e165461e8cd0a321acbd58e142354e5d929f7bafeecac477efb8f828f7d"
+    },
+    {
+      "path": "news-app-2-sw.js",
+      "bytes": 13044,
+      "sha256": "570df9f2d82c670673224a97a21c4633c53f5818b5f060de2bdf511d81ee17fe"
+    },
+    {
+      "path": "news-app-2.css",
+      "bytes": 130295,
+      "sha256": "bf79fec727ec4971174e767e6f24c4a40de22cbcf9f97fa3959a5d61f22f8110"
+    },
+    {
+      "path": "news-app-2.js",
+      "bytes": 764746,
+      "sha256": "36d371d5c67732446bddddadbbe7be24b5e9597d6e6b4df9e64d83a6e612ec31"
+    },
+    {
+      "path": "service-worker.js",
+      "bytes": 20102,
+      "sha256": "b393c1173f3797302239b5c0ed5ca61cffa2a6f179c46cad14382c0bdc6b9095"
+    },
+    {
+      "path": "shared-translation-client.js",
+      "bytes": 14376,
+      "sha256": "861d6eb9f4e91738634046f1efadec06b20eccd1843207a5210e222214ce363c"
+    },
+    {
+      "path": "tests/browser_navigation_history.mjs",
+      "bytes": 14911,
+      "sha256": "7c1872eff65ee4acb6c99e354435ce9f524303166993a48d12e2e5d9e2cb958e"
+    },
+    {
+      "path": "tests/browser_radio_playback.mjs",
+      "bytes": 6920,
+      "sha256": "0f7be6b4dd31bf03e468a7d73f2c788e038d1ce5ba7defb03cdd067de6a8e66b"
+    },
+    {
+      "path": "tests/test_audio_block2_assets.py",
+      "bytes": 1258,
+      "sha256": "7950c78c8993e3c433251aa385d37de2dd3f48aa41d53f151329938f4e46feee"
+    },
+    {
+      "path": "tests/test_lexicon_assets.py",
+      "bytes": 2666,
+      "sha256": "d6319d8e03d8ad6fb478399492a3dda5472efeef8d8376921ec6d967f62e92df"
+    },
+    {
+      "path": "tests/test_navigation_routes.js",
+      "bytes": 3903,
+      "sha256": "69c799a80c97085af83bf1eae50496795fec33debb28232737b8ffe0bcd9c1bd"
+    },
+    {
+      "path": "tests/test_news_app_2_assets.py",
+      "bytes": 31580,
+      "sha256": "22141705d4fe9986cc094de1670aafec670e813164982dae63df0a5b0a247cd2"
+    },
+    {
+      "path": "tests/test_next_update_candidate.js",
+      "bytes": 2824,
+      "sha256": "a8ed73a36789e5bdbe15f40d83de9a4d24f0072e905882c288e3e4285a542464"
+    },
+    {
+      "path": "tests/test_product_21_offline_assets.py",
+      "bytes": 3669,
+      "sha256": "10b884e8ef303f44bdec5b1be00d6dfb5a8d471a1d1db27a2f7fbe0560ba91a8"
+    },
+    {
+      "path": "tests/test_quota_visibility.js",
+      "bytes": 2912,
+      "sha256": "20a8590d01928e48d404e2ca38360bdcfaa52694ba6062ac7cbccbd2333b99fe"
+    },
+    {
+      "path": "tests/test_release_181.py",
+      "bytes": 3505,
+      "sha256": "a7f1a8884ffc2b7cd31960bd923b2e4a2604e3acaafd5632d217349b36c73cae"
+    },
+    {
+      "path": "tests/test_release_182.py",
+      "bytes": 2656,
+      "sha256": "c4f4242e73fe4d266e9ae85589397b680bc910b6baf5ce2014e979bcb36bbb9b"
+    },
+    {
+      "path": "tests/test_release_200_assets.py",
+      "bytes": 2314,
+      "sha256": "1c8b183493490f321e53ce9974b827fa584ec7c8eb1d5f660c82a8d97d11e835"
+    },
+    {
+      "path": "tests/test_release_211_code26.py",
+      "bytes": 4123,
+      "sha256": "1ccf9f153b7718e4b9bb60c982263a47492f686746f37177201c5231cf951042"
+    },
+    {
+      "path": "tests/test_source_recovery_assets.py",
+      "bytes": 2253,
+      "sha256": "5200e27725bc45f28475fa420fca406b59bff313fd897af65b5e1eda160e5252"
+    },
+    {
+      "path": "tests/test_video_assets.py",
+      "bytes": 2473,
+      "sha256": "56cb0f37ecfddbaecaff09827de57d6063b374299b145c8cef2062958751975c"
+    },
+    {
+      "path": "tests/validate_app.py",
+      "bytes": 25269,
+      "sha256": "9dc28ebd06f1a0db3713171c10ecb160369a6fe4d03bb0389a7439e47f209da3"
+    }
+  ]
+}

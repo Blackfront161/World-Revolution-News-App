@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "observedAtUTC": "2026-10-03T07:43:46.567Z",
+  "checks": [
+    "Actual original podcast card copies its episode URL together with the App reference.",
+    "Canceling the browser share does not copy or show a success message.",
+    "Denied clipboard reveals the selected, labeled manual copy field.",
+    "A radio without a direct stream still opens the Capacitor share bridge with its station website.",
+    "Generated podcast shares the exact audio key and full version, rather than the article.",
+    "Four widths have no page overflow; touch targets >=44px; language change updates sharing; no page errors.",
+    "Actual Classic Audio-Hub shares directory-only radio and copies episode plus App reference."
+  ]
+}

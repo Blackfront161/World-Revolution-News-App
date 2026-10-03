@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-03T07:38:03.850Z",
+  "status": "PASS",
+  "stations": [
+    {
+      "id": "3cr",
+      "status": "PASS",
+      "decodedSeconds": 6.918169,
+      "mediaSession": "3CR Community Radio"
+    },
+    {
+      "id": "corax",
+      "status": "PASS",
+      "decodedSeconds": 6.103496,
+      "mediaSession": "Radio CORAX"
+    },
+    {
+      "id": "orange",
+      "status": "PASS",
+      "decodedSeconds": 6.329613,
+      "mediaSession": "ORANGE 94.0"
+    }
+  ],
+  "errors": [],
+  "native": "not tested: no attached Android device",
+  "fallback": "PASS: failed first URL advances to a real decoding second stream",
+  "timeout": "PASS: hung first stream times out after the real 15-second budget and second stream decodes"
+}
