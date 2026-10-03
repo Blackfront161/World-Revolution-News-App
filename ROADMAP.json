@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-01",
   "releasedBaseline": {
     "version": "2.0.8",
     "status": "lokal geprüft; nicht durch diesen Arbeitsgang veröffentlicht, signiert oder hochgeladen",
@@ -14,9 +14,530 @@
   },
   "current": {
     "version": "2.1.2",
-    "branch": "codex/release-2.1.2-code28",
-    "status": "Lokaler Produktionskandidat; nicht signiert, hochgeladen, veröffentlicht oder deployt"
+    "branch": "codex/code26-home-correction-20260927",
+    "versionCode": 32,
+    "baselineCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+    "status": "Lokaler Produktionskandidat: Code32 commitgenau aus6821a02 unsigniert gebaut; Audio-Sharing-Teil fe2c527 unabhängig akzeptiert. Gradle lintRelease/testReleaseUnitTest/bundleRelease und350 eingebettete Webassets ohne Abweichung geprüft. Native Windrose pixelgleich zum Original und bytegleich zuCode31. Physische Android-Prüfung, redaktionelle Freigabe des lokalen Lexikon-Drafts, Signierung und Veröffentlichung bleiben offen.",
+    "artifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json",
+    "artifactSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+    "artifactMode": "unsigned-candidate",
+    "releaseReady": false,
+    "runtimeReview": {
+      "scope": "Audio-Sharing",
+      "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
+      "result": "PASS"
+    },
+    "artifactReview": {
+      "status": "accepted",
+      "scope": "Code32 hash/source/assets/plugin/icon/unsigned only",
+      "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+      "reviewedAt": "2026-10-01",
+      "report": "docs/evidence/audio-sharing-2026-10-01/code32-controller-acceptance.json"
+    },
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus"
   },
+  "projectBoundary": {
+    "repository": "World-Revolution-News-App",
+    "sourceDirectory": "wrn-github-app-current",
+    "note": "World-Revolution-News-Next und die separate Website sind eigene Projekte. Deren Funktionen zählen hier erst nach ausdrücklich beauftragter, geprüfter Portierung als umgesetzt."
+  },
+  "nextWork": [
+    {
+      "id": "AUDIO-SHARING-20261001",
+      "priority": 1,
+      "name": "Radios und Podcasts teilen",
+      "status": "accepted-local",
+      "scope": "Aktuelle App und Classic-Audio-Hub: Teilen-Dialog, Link kopieren und manueller Kopierweg in neun Sprachen.",
+      "links": {
+        "radio": "Senderseite; Stream nur als Fallback",
+        "originalPodcast": "Konkrete Episodenseite; Audio-Link als Fallback",
+        "generatedPodcast": "Konkreter Audio-Link mit Sprach-/Kurz-/Vollversion; bestehende 30-Tage-Verfügbarkeit gilt"
+      },
+      "verification": {
+        "behavior": "8 gezielte JS-Verträge bestanden; 10 Python-Module mit 37 direkt aufgerufenen Funktionen (kein pytest-Lauf); App-Validator bestanden.",
+        "browser": "Isolierter Chrome mit Fixtures: echte App/Classic-Karten, native Bridge gemockt, Web Share/Abbruch/Kopieren/manueller Fallback, vier Breiten, Sprachwechsel bestanden.",
+        "report": "docs/evidence/audio-sharing-2026-10-01/browser-result.json",
+        "review": "Unabhängige Read-only-Abnahme durch WRN Kontrolleur am 2026-10-01: PASS; keine P1/P2-Codebefunde. Native Geräteprüfung und neuer Android-Build bleiben offen."
+      },
+      "runtime": {
+        "productionCache": "wrn-app-v2.1.2-r8",
+        "previewCache": "wrn-news-app-2-v96",
+        "appScriptRelease": 54,
+        "appCssRelease": 49,
+        "audioToolsRelease": 2
+      },
+      "distribution": "Im lokalen unsignierten2.1.2/Code32-Kandidaten aus6821a02 enthalten; keine Signierung oder Veröffentlichung. Physischer Android-Systemdialog noch nicht geprüft.",
+      "reviewedCommit": "fe2c527f08d4284f4d97b828a74dc9451a25374a",
+      "candidateArtifactReport": "docs/evidence/audio-sharing-2026-10-01/release-report-code32.json"
+    },
+    {
+      "id": "CONTROL-CORRECTIONS-20260930",
+      "priority": 1,
+      "name": "Kontrolleur-Befunde korrigieren und unabhängig abnehmen",
+      "status": "accepted",
+      "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
+      "reviewedCommit": "0c8aa3d7972aca99ff8127d917181d2c98a4410b",
+      "reviewedAt": "2026-09-30",
+      "scope": "Bestehende App mit commitgebundenem Autonom-/Korrekturpaket0c8aa3d; Zwischenstand46/52/r3/v91 nicht wiederherstellen",
+      "followup": {
+        "status": "accepted",
+        "scope": "Eng begrenzte Status-/Diagnosenachpflege; keine Runtime- oder Cacheänderung",
+        "checks": "45 JS-Module,118 Pytest-Tests und4 main-only-Skripte bestanden;3 historische Skips; Validator und Read-only-Audit160/160 bestanden",
+        "note": "Zusätzlicher negativer Diagnosetest erhöht Python-Testzahl um1; gesonderten Folgecommit unabhängig prüfen",
+        "reviewedCommit": "0b315a65f9a52f4274e368d71b1dda35733948b2"
+      },
+      "externalGates": [
+        "Produktions-/physische Geräteprüfung sowie vollständiger Produktionsbrowser-Netzausfall",
+        "artefaktgebundene Signierung und Play-Veröffentlichung"
+      ],
+      "findings": [
+        {
+          "id": "CACHE-ATOMIC",
+          "status": "accepted",
+          "file": "tests/test_fast_start_atomic_cache.js",
+          "note": "Cachegenerationen r4/v92, echte Fetch-/Promotionfehler und Erhalt alter Caches unabhängig in der vollständigen Matrix von0c8aa3d bestätigt."
+        },
+        {
+          "id": "IMAGE-LINE-ENDINGS",
+          "status": "accepted",
+          "file": "tests/test_news_app_2_release_round.js",
+          "note": "Bildlayout semantisch und unabhängig von CRLF/LF geprüft; Vollmatrix und unabhängige Abnahme von0c8aa3d bestanden."
+        },
+        {
+          "id": "ANDROID-POLICY",
+          "status": "accepted",
+          "files": [
+            "tests/test_android_toolchain_foundation.py",
+            "tests/test_release_211_code26.py"
+          ],
+          "note": "VersionName2.1.2/Code29-Vertrag in vollständiger Python-Matrix unabhängig bestätigt; das ist kein Android-Geräte- oder Buildnachweis."
+        },
+        {
+          "id": "CACHE-ASSET-CONSISTENCY",
+          "status": "accepted",
+          "files": [
+            "index.html",
+            "app-check.html",
+            "service-worker.js",
+            "news-app-2-sw.js",
+            "tests/test_product_21_offline_assets.py"
+          ],
+          "note": "CSS47/JS53, App-Cache2.1.2-r4 und Preview-v92 synchron; Daten-Cache r1 unverändert. Vollständige Matrix und unabhängige Abnahme von0c8aa3d bestanden."
+        },
+        {
+          "id": "PYTHON-POLICY-REMAINDERS",
+          "status": "accepted",
+          "priority": 1,
+          "files": [
+            "tests/test_audio_block2_assets.py",
+            "tests/test_release_181.py",
+            "tests/test_release_182.py",
+            "tests/test_source_recovery_assets.py",
+            "tests/test_video_assets.py",
+            "tests/validate_app.py",
+            "release_audit_183.py"
+          ],
+          "note": "r4/v92-Erwartungen, unveränderte Garantien und Daten-Cache r1 durch unabhängige Vollmatrix und Audit160/160 von0c8aa3d bestätigt. Fehlertextnachpflege erfolgt gesondert."
+        },
+        {
+          "id": "AUTONOM-BEHAVIOR",
+          "status": "accepted_scoped_coverage",
+          "implemented": [
+            "tests/test_autonom_behavior.js führt tatsächliche App-Funktionen und Dispatchzweige aus",
+            "Auswahl/Persistenz/Rückwechsel, neun UI-Sprachen, reale Core-/Release-Themenfilter und Quellenprofilaktion unabhängig geprüft"
+          ],
+          "remaining": [
+            "reproduzierbare Browserregression für Tastatur/Fokus, reduced motion und 200%-Reflow in allen Zielviewports"
+          ],
+          "note": "Node-Abdeckung von0c8aa3d akzeptiert; sie beweist keine DOM-Geometrie oder native Geräteeigenschaften. Browserregression bleibt ein separates Gate."
+        },
+        {
+          "id": "FULL-MATRIX",
+          "status": "accepted",
+          "javascript": "45/45 Module einschließlich neuem Autonom-Verhaltenstest bestanden",
+          "python": "Echte Collection;117 bestanden,3 historische AAB-/Signaturfixturetests übersprungen;36 Pytest-Module plus4 main-only-Skripte",
+          "note": "Matrix von0c8aa3d unabhängig reproduziert; Validator und Audit160/160 bestanden. CI/Browser/Gerätegates separat, keine Releasefreigabe.",
+          "evidence": "docs/evidence/autonom-2026-09-30/full-contract-matrix.txt"
+        },
+        {
+          "id": "IMMUTABLE-REVIEW",
+          "status": "accepted",
+          "note": "WRN Kontrolleur hat0c8aa3d gegen8e95685 ausschließlich lesend geprüft, funktional akzeptiert und unveränderten sauberen Arbeitsbaum bestätigt. Status-/Diagnosenachpflege gesondert nachprüfen."
+        }
+      ],
+      "evidence": "docs/COORDINATION-2026-09-30.md",
+      "newPackageReview": {
+        "appCommit": "fd2afe0d613e769e97bd870e69b889ab3fa26aa3",
+        "appStatus": "changes_requested_classic_focus",
+        "dataCommit": "17b3604979a27411666048c082345b704261af93",
+        "dataStatus": "accepted_scoped",
+        "finding": "Classic closeAllModals schloss das Quellenprofil und löschte den Rückkehrfokus; lokale Erfassung vor await und Zuweisung nach closeAllModals behebt den Ablauf.",
+        "correctionStatus": "accepted_runtime",
+        "correctedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+        "evidenceStatus": "accepted",
+        "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+      }
+    },
+    {
+      "id": "RELEASE-29",
+      "priority": 1,
+      "name": "Korrigierten Autonom-App-Kandidaten mit Code31 abschließen",
+      "status": "verified_local_unsigned_candidate",
+      "dependsOn": [
+        "CONTROL-CORRECTIONS-20260930"
+      ],
+      "remaining": [
+        "Produktionszertifikat und physisches Gerät nach Signierfreigabe prüfen",
+        "Produktionsbrowser bei vollständig fehlendem Netz separat prüfen",
+        "Signierung und Play-Veröffentlichung an Code31 aus8d2ef23 binden"
+      ],
+      "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+      "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
+      "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+    },
+    {
+      "id": "DESIGN-AUTONOM",
+      "priority": 1,
+      "name": "Wählbares Design Autonom",
+      "status": "implemented_browser_android_verified_local",
+      "verifiedAt": "2026-10-01",
+      "acceptedCommit": "0c8aa3d7972aca99ff8127d917181d2c98a4410b",
+      "remaining": [
+        "physische Geräte-/Produktionszertifikatsprüfung",
+        "vollständiger Netzausfall des Produktionsbrowsers",
+        "Signierung und Veröffentlichung separat"
+      ],
+      "requestedAt": "2026-09-30",
+      "reference": "Vom Nutzer gelieferter Screenshot ChatGPT Image 13. Sept. 2026, 19_55_31.png",
+      "scope": [
+        "explizit wählbar unter Menü / Darstellung; bestehende Themes erhalten",
+        "schwarze Flächen, rote Akzente, weiße Serifentitel und WRN-Wortmarke",
+        "bebilderter Aufmacher, kompakte Bild-/Textkarten und erreichbare Quellenprofile",
+        "Themenchips mit echtem Entdecken-Filter",
+        "lokal gespeicherte Auswahl, neun UI-Sprachen, kleine Displays und große Schrift",
+        "echte vorhandene Artikel/Bilder; keine erfundenen Beispielmeldungen aus dem Screenshot"
+      ],
+      "reference20Minutes": "20min.ch und offizielle Play-Store-Appansichten bleiben ungefähre Vorlage für Nachrichtenhierarchie und Navigation; kein Zugriff auf eine installierte native20-Minuten-App behauptet",
+      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
+      "runtimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408"
+    },
+    {
+      "id": "SOURCES-AUTONOM",
+      "priority": 2,
+      "name": "Autonome und antifaschistische Quellen erweitern",
+      "status": "implemented_local_pending_data_publication",
+      "scope": [
+        "regionale autonome Antifa und unabhängige Bewegungsmedien",
+        "kanonische Identitäten gegen bestehendes Register abgleichen",
+        "Eigenbeschreibung, Redaktion/Betreiber, Sprache, Region, Aktualität und Feed einzeln belegen",
+        "Rechte für Volltext/Bild/Audio gesondert prüfen",
+        "erst freigegebene Quellen in Datenrepository und Produktprojektion übernehmen"
+      ],
+      "candidates": [
+        {
+          "name": "Autonome Antifa Freiburg",
+          "url": "https://autonome-antifa.org/",
+          "status": "directory-only",
+          "observation": "Primärseiten und XML-Feed erreichbar. Kein automatischer Artikelimport; Rechte und sensible Beiträge einzeln prüfen."
+        },
+        {
+          "name": "antifa-frankfurt.org",
+          "url": "https://www.antifa-frankfurt.org/",
+          "status": "directory-only",
+          "observation": "Primärseiten und XML-Feed erreichbar. Kein automatischer Artikelimport; Rechte und sensible Beiträge einzeln prüfen."
+        },
+        {
+          "name": "Untergrund-Blättle",
+          "url": "https://www.xn--untergrund-blttle-2qb.ch/",
+          "status": "metadata-only",
+          "observation": "Offizieller RSS-Feed und Impressum geprüft. Nur Überschrift, Autor, Datum und Originalverweis; keine Volltexte oder Medienübernahme."
+        },
+        {
+          "name": "Plattform Radikale Linke / Autonome Antifa Wien",
+          "url": "https://radikale-linke.at/",
+          "status": "pending",
+          "observation": "Suchhinweis vorhanden; direkter Abruf scheitert am Rechercheproxy. Kanonische Beziehung und aktuelle Inhalte nicht bestätigt."
+        },
+        {
+          "name": "Enough 14 D",
+          "url": "https://enough-is-enough14.org/",
+          "status": "needs-review",
+          "observation": "Homepage erreichbar; oberste sichtbare Beiträge aus2023. Archiv-/Aktualitätsprüfung erforderlich; nicht als aktuelle Feedquelle freigegeben."
+        }
+      ],
+      "existingSourcesToReview": [
+        "Antifa Bern",
+        "Antifa Infoblatt",
+        "Barrikade (CH)",
+        "Montreal Antifasciste",
+        "Kontrapolis"
+      ],
+      "note": "Vom Nutzer beauftragte lokale Aufnahme umgesetzt. Bestehende Identitäten erhalten; keine Live-Veröffentlichung und keine neuen Inhalte als redaktionell verifiziert ausgegeben.",
+      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
+      "dataRepository": {
+        "directory": "wrn-data-autonom-current",
+        "branch": "codex/autonom-sources-20261001",
+        "baseCommit": "33509ac",
+        "status": "accepted_local_pending_publication",
+        "commit": "17b3604979a27411666048c082345b704261af93"
+      },
+      "dataCommit": "17b3604979a27411666048c082345b704261af93",
+      "reviewStatus": "accepted_scoped_20261001"
+    },
+    {
+      "id": "WEBSITE-CONTENT-PARITY",
+      "priority": 1,
+      "name": "Website mit dem freigegebenen App-/Datenbestand versorgen",
+      "status": "news_directory_projection_published_independent_live_pass_full_content_parity_pending",
+      "owner": "WRN Website – Inhaltsparität; unabhängige Abnahme durch WRN Kontrolleur",
+      "repository": "World-Revolution-News-Next; keine konkurrierenden Website-Schreibarbeiten im App-Repository",
+      "liveObservation": {
+        "date": "2026-10-01",
+        "url": "https://solinaridao.com/",
+        "productionRevision": "wrn-production-news-2026-09-26-v8",
+        "sourcePassRevision": "wrn-source-pass-2026-09-25-v2",
+        "status": "news_and_directory_projection_independently_live_verified",
+        "websiteSourceCommit": "f202ec5d702e875127c01292b26b6e0b9edfe38e",
+        "directorySequence": 202609301530,
+        "directorySha256": "72fea07011df07b18ea274524530a53bc6485b1b17f575c050d8e4857bbf71ff"
+      },
+      "localWriterReport": {
+        "upstreamCommit": "33509ace3d3b2f7f275ebc05fe3522a59d62964f",
+        "feedRows": 500,
+        "acceptedLinkOnlyRows": 480,
+        "excludedFeedRows": 20,
+        "linksWithoutMatchingSourcePass": 476,
+        "registryEndpoints": 406,
+        "acceptedRegistryEndpoints": 397,
+        "existingAdmittedFullTexts": 12,
+        "status": "projection_counts_independently_accepted_and_live_verified"
+      },
+      "scope": [
+        "Nachrichtenlinks und Quellenverzeichnis aus einem gehashten kanonischen Datenstand übernehmen; Endpunkte, Herausgeber und Quellenpässe getrennt zählen",
+        "alle Ausschlüsse mit stabiler ID und Grund belegen; ungeprüfte Links nie als geprüfte Artikel kennzeichnen",
+        "App-exklusive Quellen, Lexikon, Bibliothek und Podcasts als weitere gemeinsame Inhaltsklassen einplanen statt nur Nachrichtenparität zu behaupten",
+        "Aktualisierungen, gespeicherten Stand, Offlinezustand und ausstehende Quellenprüfung in allen neun UI-Sprachen sichtbar machen"
+      ],
+      "acceptance": [
+        "Kontrolleur prüft konkreten Website-Commit, Paket und Paritätsbericht unabhängig",
+        "Widerrufe und Rechteklassen bleiben auf Startseite, Suche, Verzeichnis und gespeicherten Ansichten wirksam",
+        "erst nach gesondert autorisierter Veröffentlichung die reale Live-Website samt Revision, Zählungen, Smartphoneansicht und Aktualisierung prüfen",
+        "Website-Abweichung bleibt bis erfolgreicher Live-Abnahme offen; lokaler Test-PASS ersetzt kein Live-PASS"
+      ],
+      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md",
+      "publication": {
+        "status": "published_independent_live_pass",
+        "date": "2026-10-01",
+        "sourceCommit": "5df01f13937b4c7957aeb097b7116587b86eb144",
+        "shellId": "2cf0f8ba57ca78142efbd38fca1197f652ac3b48ff59b7d20044c966a5e7f1cf",
+        "evidence": "docs/WEBSITE-PUBLICATION-2026-10-01.json",
+        "report": "docs/WEBSITE-PUBLICATION-2026-10-01.md",
+        "livePublicFilesVerified": 43,
+        "fullContentParityComplete": false,
+        "offlineVerification": "explicit_UI_save_full_Chrome_process_close_same_profile_restart_without_network",
+        "remaining": "Lexikon, Bibliothek und Podcasts als weitere Inhaltsklassen; keine neuen Volltexte oder Medien aufgenommen",
+        "metadataReview": "accepted_exact_evidence_bindings",
+        "reviewedMetadataCommit": "df82b67f566e52392b9654c8360581ccbe74dc11",
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md",
+        "iconCorrection": {
+          "status": "published_independent_live_pass",
+          "sourceCommit": "f202ec5d702e875127c01292b26b6e0b9edfe38e",
+          "shellId": "91367d2e6f35cf42d45f0a7d4e84adcca00b74a225e71b64bbba786293f64506",
+          "evidence": "docs/WEBSITE-STAR-ICON-CORRECTION-2026-10-01.json",
+          "report": "docs/WEBSITE-STAR-ICON-CORRECTION-2026-10-01.md",
+          "livePublicFilesVerified": 44,
+          "iconSha256": "78b3dbd6c6de3876c6a15012dd0ea683136ace682382f50036d68d2250d2314f",
+          "scope": "website_favicon_and_bound_offline_shell_only",
+          "androidOrPwaAppPublication": false
+        }
+      }
+    },
+    {
+      "id": "CONTENT-CATALOG-PARITY",
+      "priority": 1,
+      "name": "App, kanonische Daten und Website auf einen gemeinsamen Katalog bringen",
+      "status": "offline_audit_tool_implemented_merge_and_projection_pending",
+      "audit": {
+        "tool": "scripts/audit_content_catalog_parity.py",
+        "report": "docs/CONTENT-CATALOG-PARITY-AUDIT-2026-10-01.json",
+        "inputAppCommit": "5e12d8433604b078413766b3c22d37022190cae0",
+        "inputDataCommit": "17b3604979a27411666048c082345b704261af93",
+        "sharedEpisodeIds": 312,
+        "episodesOnlyInApp": 596,
+        "episodesOnlyInData": 437,
+        "sharedEpisodeIdsWithFieldChanges": 28,
+        "sharedLibraryTitleIds": 160,
+        "libraryTitlesOnlyInApp": 449,
+        "libraryTitlesOnlyInData": 106,
+        "sharedLibraryTitleIdsWithFieldChanges": 2,
+        "dataEpisodesBlockedByExplicitAppPolicy": 35,
+        "regressionTests": "11/11 unittest bestanden, einschließlich beider Ausschlusspfade mit Objekt-/Listen-IDs; kein Runtime-/Release-PASS",
+        "reviewStatus": "independent_tool_fix_accepted_20261001",
+        "reviewedCommit": "eaf55e2fdfff3e3bab9b3a08e7a40e2d13c8330b",
+        "reviewScope": "Prüfwerkzeug einschließlich beider adversarial geprüften Ausschlusspfade; keine Inhaltsaufnahme oder Zusammenführung",
+        "sourceIdentityPreparation": {
+          "status": "candidate_only_not_applied",
+          "candidate": "docs/RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.json",
+          "evidence": "docs/RDL-SOURCE-IDENTITY-PROPOSAL-2026-10-01.md",
+          "appRecordChangesProposed": 33,
+          "dataRecordChangesProposed": 28,
+          "requiredBeforeApplication": "Betreiber-/Endpointreview und restriktive Pipeline-/Playerprojektion für metadata_and_links_only; Episoden-IDs erhalten",
+          "reviewStatus": "accepted_scoped_non_applied_proposal",
+          "reviewedCommit": "a1eea9c9cf4cf5adbad61c71781170c9d847e67d",
+          "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
+        },
+        "status": "Prüfwerkzeug umgesetzt; keine Zusammenführung, Aufnahme oder Aktivierung"
+      },
+      "baseline": {
+        "appCommit": "a84d979423267187898afdc6ca960600189727bf",
+        "dataCommit": "17b3604979a27411666048c082345b704261af93",
+        "appPodcastSourceRows": 52,
+        "dataPodcastSourceRows": 36,
+        "appEpisodeRows": 908,
+        "dataEpisodeRows": 749,
+        "appLibraryRows": 609,
+        "dataLibraryRows": 266,
+        "podcastSourceIdsOnlyInApp": 16,
+        "note": "Lokale Dateibestände, keine Live- oder Aufnahmebestätigung. Mehr Zeilen bedeutet weder aktueller noch vollständig."
+      },
+      "scope": [
+        "die 16 bislang nur im App-Katalog vorhandenen Podcastquellen im kanonischen Datenrepository einzeln prüfen und freigeben",
+        "den zusätzlichen Radio-Dreyeckland-Eintrag ohne ID und Episoden ohne sourceId auf die vorhandene Identität zurückführen; stabile Episoden-IDs und gespeicherte Zustände erhalten",
+        "Bibliotheksbestände per Werk-/Quellen-ID zusammenführen: 53 deutsche Titel im neueren Datenstand, ältere Titel im App-Paket; Löschung, Widerruf und neue Ausgabe unterscheiden",
+        "bewusst zurückgestellte Sprachen nicht durch einen Datensync aktivieren; Sprach- und Rechteentscheidungen ausdrücklich erhalten",
+        "reproduzierbare gemeinsame Projektionen mit Eingabehash, Zeit, Neuaufnahmen, Ausschlüssen und Last-known-good-Stand für App und Website liefern"
+      ],
+      "acceptance": [
+        "jeder sichtbare Podcast und Bibliothekstitel besitzt eine auflösbare stabile Quellen-ID",
+        "gleiche freigegebene Eingabe erzeugt gleiche zulässige Inhalts-IDs in App und Website; Abweichungen werden begründet",
+        "kein Datensync löscht unbetroffene gültige Archive oder setzt gespeicherte Einträge und Nutzereinstellungen zurück",
+        "Datei-/Netzwerkfehler erhalten den letzten gültigen Stand mit ehrlicher Aktualitätsanzeige"
+      ],
+      "evidence": "docs/CONTENT-EXPANSION-INVENTORY-2026-10-01.json"
+    },
+    {
+      "id": "KNOWLEDGE-LEXICON-LIBRARY",
+      "priority": 2,
+      "name": "Lexikon und Wissensbibliothek zu einem verknüpften Wissensbereich ausbauen",
+      "status": "local_first_definition_and_relationship_fix_technical_review_accepted_editorial_pending",
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "localProgress": {
+        "evidence": "docs/LEXICON-FIRST-CONTENT-BATCH-2026-10-01.md",
+        "lexiconTerms": 155,
+        "lexiconReferenceSources": 13,
+        "newDefinitions": 1,
+        "repairedRelatedReferences": 5,
+        "independentEditorialReview": "pending",
+        "publicationStatus": "local_only_not_in_accepted_code31_or_website",
+        "remaining": "19 weitere neue oder wesentlich überarbeitete Begriffe, 30 Lernpfadzuordnungen, Bibliothekssync; nächste Runtime-/Cache-/Browser-/Buildabnahme separat",
+        "independentTechnicalReview": "accepted_scoped_local_draft",
+        "reviewedCommit": "d58746d020325ae6357a8f8b4bf268de001c7ef7",
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
+      },
+      "baseline": {
+        "lexiconTerms": 154,
+        "lexiconReferenceSources": 12,
+        "definitionLanguages": [
+          "de",
+          "en"
+        ],
+        "libraryConfiguredSources": 9,
+        "librarySourcesWithIndexedTitlesInApp": 4,
+        "librarySourcesWithIndexedTitlesInData": 5
+      },
+      "scope": [
+        "erste redaktionelle Runde: mindestens 20 neue oder wesentlich überarbeitete Begriffe, nach Dublettenprüfung; Schwerpunkt Ökologie/Gemeingüter, Arbeitskämpfe, autonome Organisierung und regionale Begriffsvarianten",
+        "eigene DE-/EN-Erklärungen mit konkreten Belegen, unterschiedlichen Perspektiven, verwandten Begriffen und datierter Revision; sieben weitere Definitionensprachen schrittweise prüfen und Fallback ehrlich anzeigen",
+        "stabile Direktlinks zwischen Begriff, Bibliothekstitel, Podcastfolge und Dossier statt bloßer Schlagwortähnlichkeit",
+        "erste drei Lernpfade mit jeweils mindestens zehn vorhandenen passenden Texten: Grundlagen/Selbstorganisation, Arbeit/Wohnen sowie Ökologie/Gemeingüter",
+        "Suche und Filter nach Thema, Autor, Originalsprache, Format und Quelle; Einstieg nach Schwierigkeitsgrad und Lesedauer nur mit belegten Angaben",
+        "Katalogadapter für Libcom, Kate Sharpley Library, Zabalaza Books und Anarchist Archive prüfen; bisher nur externe Kataloglinks, kein erfundener importierter Bestand",
+        "Merkliste und kuratierte Offline-Lernpakete erst für tatsächlich freigegebene Texte und Medien; direkte Originaldownloads von WRN-Speicherung unterscheiden"
+      ],
+      "acceptance": [
+        "keine fehlenden Quellen- oder internen Verweisziele; revisionsgebundene Links sind auch nach Aktualisierung auflösbar",
+        "DE-Bibliothekstitel aus dem freigegebenen Datenstand sind tatsächlich auffindbar; Übersetzungen und Originalausgaben bleiben unterscheidbar",
+        "erste 20 Begriffsänderungen und 30 Lernpfadzuordnungen werden inhaltlich geprüft, nicht allein als Test-PASS gezählt",
+        "Suche, Filter, Tastatur, 320/390/768/1440 Pixel und neun UI-Sprachen geprüft; Offlineansicht zeigt Datum und Rechteumfang"
+      ],
+      "evidence": "docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md"
+    },
+    {
+      "id": "PODCAST-CATALOG-EXPANSION",
+      "priority": 2,
+      "name": "Podcastquellen und nutzbaren Archivumfang erweitern",
+      "status": "six_candidates_researched_four_rss_metadata_probes_completed_admission_pending",
+      "dependsOn": [
+        "CONTENT-CATALOG-PARITY"
+      ],
+      "technicalObservation": {
+        "evidence": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.json",
+        "report": "docs/PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.md",
+        "reachableParsedFeeds": 4,
+        "observedFeedRows": 1673,
+        "futureDatedRows": 1,
+        "rowsWithOnlyInsecureEnclosure": 73,
+        "duplicateEpisodeLinkRows": 1,
+        "admittedSources": 0,
+        "importedEpisodes": 0,
+        "remaining": "Betreiber-/Sprachen-/Rechtereview, sichere Originalpfade, Enclosure-Erreichbarkeit und Pagination; Green Left/Rebel Steps als Archiv statt aktuelle Sendungen einordnen",
+        "reviewStatus": "accepted_scoped_observation_not_admission",
+        "reviewedCommit": "22919b351d35cb32fc83efe08471165f0179e786",
+        "reviewEvidence": "docs/CONTENT-EXPANSION-CONTROLLER-REVIEW-2026-10-01.md"
+      },
+      "candidateNames": [
+        "Anarchist World This Week (3CR)",
+        "Stick Together (3CR)",
+        "Green Left Radio (3CR)",
+        "Rebel Steps",
+        "Radio Kurruf – Podcastprogramme",
+        "Radio LoRa Zürich – politische Audiothek"
+      ],
+      "scope": [
+        "zuerst bestehende 16 App-exklusive Quellen im kanonischen Feed erschließen; Sprachabdeckung und tatsächliche Folgenzahl getrennt von konfigurierten Quellen ausweisen",
+        "sechs neue Programme/Kataloge von vier Anbietern einzeln prüfen; Radio LoRa Zürich nicht mit vorhandenem LORA München verwechseln",
+        "offiziell verlinkte RSS-Endpunkte, stabile GUIDs, Sprache, Datum, aktuelle/archivierte Sendung und Herausgeberidentität prüfen; Rechte für Metadaten, Stream, Artwork und Offlineaudio separat dokumentieren",
+        "bisherige 35-Folgen-Grenze je Quelle konfigurierbar machen und zunächst für drei geprüfte Serien bis zu 100 unterschiedliche verfügbare Folgen erschließen",
+        "aktuelle Auswahl von 30 unabhängigen Folgen je Sprache bzw. 50 Radiobeiträgen erhalten und einen getrennten paginierten Serien-/Archivzugang anbieten",
+        "größere Archive nach Quelle und Sprache balancieren; feste 240-Folgen-Sprachgrenze nicht still als Vollarchiv darstellen",
+        "Serienseiten, Themen-/Sprach-/Quellenfilter, Fortsetzen und gespeicherte Folgen mit Lexikon und Lernpfaden verbinden"
+      ],
+      "acceptance": [
+        "jede Aufnahme hat einen belegten Betreiber und Originalpfad; unbekannte Rechte aktivieren keine kopierten Audios, Bilder oder Transkripte",
+        "keine zukünftigen Veröffentlichungen, doppelten GUIDs, fehlenden Quellen-IDs oder vermischten Sprachgruppen",
+        "mindestens drei Serien mit nachvollziehbar erweitertem Archiv oder dokumentierter tatsächlicher Verfügbarkeitsgrenze; keine aufgefüllten Mengen",
+        "Pagination, Ladefehler, Feedausfall, abgesagte/widerrufene Folge und unveränderte gespeicherte IDs geprüft; Start- und Offlinebudgets eingehalten"
+      ],
+      "evidence": "docs/PODCAST-CANDIDATES-2026-10-01.md"
+    },
+    {
+      "id": "EDITORIAL-DATA",
+      "priority": 2,
+      "name": "Echte Inhalte für bestehende2.1-Funktionen",
+      "status": "planned",
+      "scope": [
+        "strukturierte redaktionelle Claims und Perspektivenvergleich",
+        "erste geprüfte Solidaritätsaktionen",
+        "geprüfte Dossiers mit stabilen Direktlinks",
+        "Quellenpassdaten und Terminpflege"
+      ]
+    },
+    {
+      "id": "MEDIA-PRINT-OFFLINE",
+      "priority": 3,
+      "name": "Audio, Druckstudio und Offline-Materialien vervollständigen",
+      "status": "planned",
+      "scope": [
+        "Tagesausgaben-Audioentscheidung",
+        "A3, Stickerbögen und reproduzierbare PDFs",
+        "freigegebene Offline-Materialien",
+        "geprüfte alternative soziale Medien und spätere World-Revolution-Map-Integration"
+      ]
+    }
+  ],
   "productScope": [
     {
       "id": "A",
@@ -99,42 +620,93 @@
       "id": "F",
       "name": "Tagesausgabe",
       "status": "partially_implemented",
-      "implemented": ["konfigurierbare 5/7/10 Meldungen", "Morgen-, Tages- und Wochenausgabe", "Sprachauswahl und Textvorschau", "beitragsweise Gerätestimme mit Fortsetzung an exakter Beitragsgrenze", "stabiler eigener Dataset-Key je Historieneintrag mit bestätigtem Schreiben und Readback", "offlineReady aus dem tatsächlich passenden Datensatz", "Offline-only-Artikel in gespeicherter Reihenfolge", "zwei getrennte Ausgaben nach vollständigem Offline-Neustart mit 7 und 5 Artikeln im Browser geöffnet", "Abbruch und Fortsetzung bei Beitrag 3 im Browser nachgewiesen", "Gerätestimme und fehlende erzeugte Audiodatei werden klar getrennt"],
-      "missing": ["echte erzeugte Audiodateien oder dokumentierte dauerhafte Produktentscheidung dagegen"]
+      "implemented": [
+        "konfigurierbare 5/7/10 Meldungen",
+        "Morgen-, Tages- und Wochenausgabe",
+        "Sprachauswahl und Textvorschau",
+        "beitragsweise Gerätestimme mit Fortsetzung an exakter Beitragsgrenze",
+        "stabiler eigener Dataset-Key je Historieneintrag mit bestätigtem Schreiben und Readback",
+        "offlineReady aus dem tatsächlich passenden Datensatz",
+        "Offline-only-Artikel in gespeicherter Reihenfolge",
+        "zwei getrennte Ausgaben nach vollständigem Offline-Neustart mit 7 und 5 Artikeln im Browser geöffnet",
+        "Abbruch und Fortsetzung bei Beitrag 3 im Browser nachgewiesen",
+        "Gerätestimme und fehlende erzeugte Audiodatei werden klar getrennt"
+      ],
+      "missing": [
+        "echte erzeugte Audiodateien oder dokumentierte dauerhafte Produktentscheidung dagegen"
+      ]
     },
     {
       "id": "G",
       "name": "Offline-Aktionskoffer",
       "status": "partially_implemented",
-      "implemented": ["Link zu Zine und Schablonen", "getrenntes Ressourcenschema mit konkreter Rechte- und Aktualitätsprüfliste", "geprüfte Organisationsprofile als Regionalpakete offline"],
-      "missing": ["eigener vollständiger Downloadbereich", "rechtlich und redaktionell geprüfte Ländergrundlagen, Erste Hilfe, digitale Sicherheit, Festnahme, Briefe, Kontakte und gespeicherte Veranstaltungen", "solidarity-resources.json bleibt bis zum Nachweis der Offline-Verbreitungsrechte leer"]
+      "implemented": [
+        "Link zu Zine und Schablonen",
+        "getrenntes Ressourcenschema mit konkreter Rechte- und Aktualitätsprüfliste",
+        "geprüfte Organisationsprofile als Regionalpakete offline"
+      ],
+      "missing": [
+        "eigener vollständiger Downloadbereich",
+        "rechtlich und redaktionell geprüfte Ländergrundlagen, Erste Hilfe, digitale Sicherheit, Festnahme, Briefe, Kontakte und gespeicherte Veranstaltungen",
+        "solidarity-resources.json bleibt bis zum Nachweis der Offline-Verbreitungsrechte leer"
+      ]
     },
     {
       "id": "H",
       "name": "Quellenpass 2.0",
       "status": "partially_implemented",
-      "implemented": ["alle verlangten Felder und Erklärungen in DE/EN/ES/FR/IT/PT/RU/EL/TR", "Verknüpfung mit lokalem Quellenregister und technischer Feedprüfung", "unbekannte Angaben werden als unbekannt angezeigt", "Warum wird diese Quelle angezeigt?", "keine Qualitätspunktzahl", "Pure Tests gegen reale Registry- und Objekt-Healthmap-Schemata"],
-      "missing": ["automatisierter DOM-/Dialog-Regressionsstest in allen neun Sprachen", "breitere redaktionelle Betreiber-, Finanzierungs-, Nähe- und Provenienzdaten"]
+      "implemented": [
+        "alle verlangten Felder und Erklärungen in DE/EN/ES/FR/IT/PT/RU/EL/TR",
+        "Verknüpfung mit lokalem Quellenregister und technischer Feedprüfung",
+        "unbekannte Angaben werden als unbekannt angezeigt",
+        "Warum wird diese Quelle angezeigt?",
+        "keine Qualitätspunktzahl",
+        "Pure Tests gegen reale Registry- und Objekt-Healthmap-Schemata"
+      ],
+      "missing": [
+        "automatisierter DOM-/Dialog-Regressionsstest in allen neun Sprachen",
+        "breitere redaktionelle Betreiber-, Finanzierungs-, Nähe- und Provenienzdaten"
+      ]
     },
     {
       "id": "I",
       "name": "Internationales Bewegungswörterbuch",
       "status": "partially_implemented",
-      "implemented": ["Lexikon, Originalsprache in Artikeln, lokale Änderungs-/Reviewfunktionen"],
-      "missing": ["Terminologieschutz in der Übersetzungspipeline", "regionale Varianten neben Übersetzung", "Vorrang geprüfter Terminologie", "redaktionell geprüfte dauerhafte Übersetzungskorrekturen mit Versionen"]
+      "implemented": [
+        "Lexikon, Originalsprache in Artikeln, lokale Änderungs-/Reviewfunktionen"
+      ],
+      "missing": [
+        "Terminologieschutz in der Übersetzungspipeline",
+        "regionale Varianten neben Übersetzung",
+        "Vorrang geprüfter Terminologie",
+        "redaktionell geprüfte dauerhafte Übersetzungskorrekturen mit Versionen",
+        "weitere belegte Begriffe und konkrete Verknüpfung mit Bibliothek, Podcastfolgen und Lernpfaden gemäß KNOWLEDGE-LEXICON-LIBRARY"
+      ]
     },
     {
       "id": "J",
       "name": "Zine- und Druckstudio",
       "status": "partially_implemented",
-      "implemented": ["A4/A5/Quadrat/Story, Druckansicht, tintensparende Vorlage, Zines, Plakate und kuratierte Schablonen"],
-      "missing": ["A3", "Stickerbögen", "verlässliche programmgenerierte PDF-Ausgabe", "mehrsprachiger Variantenworkflow", "verifizierte Zitate sowie vollständige Quellen- und Rechteprüfung"]
+      "implemented": [
+        "A4/A5/Quadrat/Story, Druckansicht, tintensparende Vorlage, Zines, Plakate und kuratierte Schablonen"
+      ],
+      "missing": [
+        "A3",
+        "Stickerbögen",
+        "verlässliche programmgenerierte PDF-Ausgabe",
+        "mehrsprachiger Variantenworkflow",
+        "verifizierte Zitate sowie vollständige Quellen- und Rechteprüfung"
+      ]
     },
     {
       "id": "K",
       "name": "Ehrliche Statusangaben",
       "status": "fully_newly_implemented",
-      "implemented": ["Status pro A–K mit vorhandenen und fehlenden Funktionen", "Trennung 2.0.8-Baseline und 2.1-Entwicklung", "keine Freigabe aus UI-Texten oder Schaltflächen abgeleitet"],
+      "implemented": [
+        "Status pro A–K mit vorhandenen und fehlenden Funktionen",
+        "Trennung 2.0.8-Baseline und 2.1-Entwicklung",
+        "keine Freigabe aus UI-Texten oder Schaltflächen abgeleitet"
+      ],
       "missing": []
     }
   ],
@@ -170,13 +742,40 @@
     ]
   },
   "qualityEvidence": {
+    "scope": "Die bisherigen Vollmatrix- und Android-Angaben in diesem Objekt sind historische Code26-Belege; sie sind keine neue Abnahme des aktuellen Code29-Arbeitsstands.",
+    "autonomLocal20260930": {
+      "status": "passed_local_contract_matrix",
+      "report": "docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md",
+      "browserEvidence": "docs/evidence/autonom-2026-09-30/browser-checks.json",
+      "assetVersions": "CSS47 / JS53; App-Cache2.1.2-r4 / Worker-v92",
+      "checks": "45 JavaScript-Module,117 Pytest-Tests und4 main-only-Skripte bestanden;3 historische Fixturetests übersprungen; echte Collection. Validator und Read-only-Audit160/160 bestanden. Manuelle Browser-Themes, neun UI-Sprachen, vier Viewports, Schrift200%, Reader, Themenfilter und Quellenprofil geprüft.",
+      "matrixEvidence": "docs/evidence/autonom-2026-09-30/full-contract-matrix.txt",
+      "independentReview": "0c8aa3d am30.09.2026 funktional akzeptiert; Matrix/Validator/Audit unabhängig reproduziert; Status-/Diagnosenachpflege gesondert prüfen",
+      "remaining": "automatisierte Browserregression; kein neuer Android-Build und kein vollständiger Offline-Neustart für diese Änderungen"
+    },
     "localAndCiMatrix": "derselbe sortierte Discovery-Runner erzwingt alle tests/test_*.js, klassifiziert Python-Verträge über echte Pytest-Collection und führt disjunkt alle expliziten main-only-test_*.py-Skripte aus; helper-via-main wird erkannt, leere Module, Mischformen und Collectionfehler blockieren",
     "verifiedAtThisCorrection": "37 JavaScript-Vertragstests, 102 Pytest-Tests, 4 Python-main()-Vertragsskripte und Read-only-Audit 158/158",
     "auditArtifact": "CI erzeugt und verifiziert den aktuellen Bericht in RUNNER_TEMP; die versionierte release-readiness-183.json bleibt eine historische Baseline und wird nicht als aktuelles CI-Artefakt hochgeladen",
     "cacheConsistency": "app-check.html wird für App- und Daten-Cache direkt gegen service-worker.js geprüft; Produktionskandidat 2.1.1 nutzt App/Daten r1, Vorschau bleibt getrennt auf 2.1.1-dev.1-preview mit eigenem Vorschaucache",
     "browserBoundary": "Native Tab/Shift-Tab/Enter-Abnahme in lokal installiertem Chrome: Skip-Link, Headersteuerung, Hauptnavigation, Artikel und Hilfe; Dialoge schließen mit Fokus-Rückgabe auf den jeweiligen Auslöser. Vier Viewports und die bereits nachgewiesenen echten Worker-Offline-Neustartpfade bleiben Teil der Vollmatrix.",
     "androidCandidate": "Nach dem finalen sauberen Commit ist ein strikt offline gebauter, unsignierter 2.1.1/code26-Kandidat vorgeschrieben; Hash, Größe, ZIP/Manifest/Asset- und Signaturstatus werden im Übergabebericht aus demselben Build belegt. Keine Signierung, kein Upload und kein Deployment.",
-    "artifactTransaction": "durables Write-Through-Recovery-Journal, exklusiver Lock und Windows-Hartabbruchtests nach Move 1/2/Commit; Traversal/Junction/Hardlink/stale-lock grün"
+    "artifactTransaction": "durables Write-Through-Recovery-Journal, exklusiver Lock und Windows-Hartabbruchtests nach Move 1/2/Commit; Traversal/Junction/Hardlink/stale-lock grün",
+    "autonomAcceptance20261001": {
+      "status": "accepted_local_unsigned_candidate",
+      "browser": "12 aktuelle CUA-Checks bestanden. Tatsächliche 320/390/768/1440x900 bei200%; clientWidth=scrollWidth305/375/753/1425, overflow0. Width/height und clientHeight hart geprüft. Vorheriger r7-Beleg verworfen (aktiverTab vs versteckterTab).",
+      "offline": "Neuer Tab nach beendetem App-/Daten-Testserver bestanden, gespeicherter Reader6254 Zeichen. Snapshotmodus; Host-Internet aktiv.",
+      "sources": "Freiburg/Frankfurt directory-only; UB metadata-only, tatsächlicher Aggregatorzweig geschützt; kanonische Datenbasis33509ac,52 Python-Tests bestanden.",
+      "android": "Code29->31 in separatem Testpaket mit erhaltenen Einstellungen/Lesezeichen und Autonom-Persistenz OK(1)+OK(1). QA ohne INTERNET-Permission: vollständiger gespeicherter Reader und echte Android-reduced-motion-Präferenz/CSS OK(2), nach Prozessstop OK(1). Kein physischer Geräte-/Produktionszertifikatsnachweis.",
+      "evidence": "docs/AUTONOM-ACCEPTANCE-2026-10-01.md",
+      "dataCommit": "17b3604979a27411666048c082345b704261af93",
+      "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+      "browserEvidence": "docs/evidence/autonom-2026-09-30/browser-acceptance-verified-viewport.json",
+      "invalidatedBrowserEvidence": "docs/evidence/autonom-2026-09-30/browser-acceptance-r7.json",
+      "androidEvidence": "docs/AUTONOM-ANDROID-CODE31-2026-10-01.md",
+      "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
+      "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+      "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+    }
   },
   "excluded": [
     "öffentliche Kommentare",
@@ -186,7 +785,21 @@
   ],
   "releaseGates": [
     "HTTPS-, Geräte-, Play-Console- und Post-Rollout-Prüfungen",
-    "autorisierte Signierung und Store-Freigabe; der lokale Code-26-Kandidat bleibt bis dahin nicht uploadfähig",
-    "Signierung, Upload und Deployment sind nicht autorisiert"
-  ]
+    "Autorisierte Signierung und Store-Freigabe an den neuen commitgenauen Code31-Kandidaten binden; Code29-Baseline enthält Autonom nicht.",
+    "Android-Signierung und Store-Upload bleiben nicht autorisiert; separat autorisierte Website-Nachrichten-/Directoryveröffentlichung am 01.10.2026 abgeschlossen."
+  ],
+  "previousUnsignedCandidate": {
+    "version": "2.1.2",
+    "branch": "codex/code26-home-correction-20260927",
+    "versionCode": 31,
+    "baselineCommit": "8e9568577e8ce1fcc97bf5a4f3d5a42a779e41e3",
+    "reviewedCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "status": "Lokaler Produktionskandidat: Autonom, drei lokale Quellenaufnahmen und Classic-Korrekturen umgesetzt; Runtime8d2ef23 und Nachweiscommitd55e471 unabhängig akzeptiert. Code31 unsigniert und commitgenau gebaut; Browser mit vier echten Zielbreiten sowie isoliertes Android-Upgrade/Offline/Prozessneustart/Systembewegung bestanden. Produktionssignatur, physisches Gerät, vollständiger Produktionsbrowser-Netzausfall und Veröffentlichung bleiben offen.",
+    "artifactReport": "docs/evidence/autonom-2026-09-30/release-report-code31.json",
+    "previousSignedCandidate": "2.1.2/Code28 aus14bfcf8 liegt signiert vor; kein Beleg für dessen Play-Annahme oder aktuellen Trackstatus",
+    "sourceCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "reviewedRuntimeCommit": "8d2ef2346a7ce85e1a07904aef90f21b65657408",
+    "artifactSha256": "17B0D27E8BFF5913DE4A5A950AF2E19EC50F6D005416511ACBE934C010DE54D7",
+    "reviewedEvidenceCommit": "d55e471c7d2e2b11a80b34db165a70eca1b858a6"
+  }
 }

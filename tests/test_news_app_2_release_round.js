@@ -102,7 +102,7 @@ const paragraphs = core.articleContentParagraphs('<p>First paragraph.</p><p>Seco
 assert.deepStrictEqual(paragraphs, ['First paragraph.', 'Second paragraph.']);
 assert(script.includes('article-inline-image--inferred'), 'Legacy full-text articles do not place images through the article');
 assert(script.includes('class="article-lead-image-link"'), 'The full lead image cannot be opened directly');
-assert(css.includes('.article-inline-image img {\n  height: auto;\n  max-height: none;'), 'Full article images can still be height-clipped');
+assert(/\.article-inline-image img\s*\{[^}]*\bheight:\s*auto\s*;[^}]*\bmax-height:\s*none\s*;[^}]*\bobject-fit:\s*contain\s*;/m.test(css), 'Full article images can still be height-clipped');
 assert(script.includes("addEventListener?.('voiceschanged', refreshArticleVoiceOptions)"), 'Late-loading Android device voices do not refresh the selector');
 assert(script.includes("data-action=\"${article.offlineReady ? 'offline-remove' : 'offline-save'}\""), 'Saved articles have no individual offline control');
 assert(script.includes('removeSavedArticleAssets'), 'Offline assets cannot be removed per article');

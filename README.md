@@ -12,8 +12,10 @@ libertäre Perspektiven.
 | Historische verifizierte Store-Baseline | 2.0.8 | früherer veröffentlichter mobiler Ausgangsstand |
 | Aktuelle Live-/Verteilungs-AAB | 2.1.0, Code 25 | vom Nutzer als aktueller signierter Stand bestätigt; Play-Trackstatus nicht unabhängig geprüft |
 | GitHub-Pages-PWA | 2.0.0 laut öffentlicher Konfiguration | veralteter Legacy-Stand, nicht der 2.0.8-Nachweis |
-| Dieses Arbeitsverzeichnis | 2.1.1 | lokaler, noch nicht veröffentlichter Release-Kandidat |
-| Android / Google Play | 2.1.1, Code 26 | erst nach Webasset-Sync, Gerätetest und autorisierter Signierung |
+| Dieses Arbeitsverzeichnis | 2.1.2 | lokale Weiterentwicklung mit wählbarem Autonom-Design; nicht veröffentlicht |
+| Android / Google Play | 2.1.2, Code 29 | historische Wrapper-/Upgrade-Baseline8e95685; kein neuer Store-Nachweis |
+| Aktueller Android-Kandidat | 2.1.2, Code 31 | unsigniert aus8d2ef23 gebaut; isoliertes Emulator-Upgrade/Offline/Systembewegung bestanden; Signierung und Veröffentlichung offen |
+| Vorheriger signierter Kandidat | 2.1.2, Code 28 | Signaturbericht vorhanden; Play-Annahme und Trackstatus nicht belegt |
 
 Der derzeitige GitHub-Pages-Legacy-Stand ist unter
 [blackfront161.github.io/Revolution-News-Data](https://blackfront161.github.io/Revolution-News-Data/)
@@ -25,8 +27,21 @@ Android-VersionCode 25 ist bereits vergeben und darf nicht erneut verwendet
 werden. Der bekannte lokale Signaturnachweis ist an das erwartete Zertifikat
 `7E4E000A93698A50DBF331A8C6931A0A276830BF34D24E3B50F9734DF82D79A8`
 gebunden. Der Play-Console-Trackstatus konnte unter den aktuellen Bedingungen
-nicht unabhängig geprüft werden. Der nächste Release-Kandidat beginnt deshalb
-verbindlich mit Code 26.
+nicht unabhängig geprüft werden. Die frühere Code26-Übergabe ist historisch;
+der korrigierte lokale Kandidat wurde mit Code31 aus `8d2ef23` erstellt. Code30 ist ein
+unabhängig geprüfter unsignierter Zwischenstand vor der Classic-Fokuskorrektur.
+Der vorhandene Code29-Build
+bleibt die Vorversion für die Upgrade-Prüfung.
+
+Aktuelle Reihenfolge und Quellkandidaten: [ROADMAP.json](ROADMAP.json).
+Ergänzung um Website-Inhaltsparität, gemeinsamen Katalog, Lexikon,
+Wissensbibliothek und Podcastarchive:
+[Inhaltsausbau](docs/CONTENT-EXPANSION-ROADMAP-2026-10-01.md).
+Design-/Rechercheauftrag und lokale Prüfergebnisse:
+[Autonom-Abnahme](docs/AUTONOM-ACCEPTANCE-2026-10-01.md).
+Der [erste Designbericht](docs/AUTONOM-DESIGN-AND-SOURCES-2026-09-30.md)
+beschreibt den bereits akzeptierten Ausgangsstand.
+Commitbindung, Build- und Gerätebelege: [Code31](docs/AUTONOM-ANDROID-CODE31-2026-10-01.md).
 
 ## Produktumfang
 
@@ -173,7 +188,7 @@ wenn Aktualität und Verbreitungsrecht dokumentiert sind.
 1. Risikofreie Altbestände und generierte Artefakte bereinigen; relevante
    Arbeitsstände sichern, den Legacy-Mischbestand kontrolliert in App und Daten
    trennen und GitHub über geprüfte Pull Requests aktualisieren.
-2. Den 2.1.1-Kandidaten einschließlich „Hilfe finden“, Start/Offline-Cache und
+2. Den 2.1.2-Kandidaten einschließlich Autonom, „Hilfe finden“, Start/Offline-Cache und
    Barrierefreiheit abschließen.
 3. Android-Wrapper versionieren, Webassets atomar synchronisieren, native
    Play-Aktualisierung integrieren und eine vollständig geprüfte AAB erzeugen.

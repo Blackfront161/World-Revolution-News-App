@@ -1,0 +1,18 @@
+# Podcastfeeds: konkrete Archivbeobachtung
+
+Direkter HTTPS-Abruf am 30. September 2026 um 22:11:51 UTC, entsprechend 1. Oktober in Asia/Singapore. Alle vier bereits auf offiziellen Programm-/Aboseiten belegten RSS-Adressen antworteten HTTP 200 und wurden als XML/RSS geparst. Die TLS-Prüfung blieb aktiv; Redirects endeten jeweils unverändert auf der ursprünglichen HTTPS-Adresse. [JSON-Beobachtungsbericht mit Antwortlängen und SHA-256](PODCAST-CANDIDATE-FEED-PROBE-2026-10-01.json). SHA-256 bindet die zu diesem Zeitpunkt gelesene Antwort; spätere dynamische Feeds können andere Bytes liefern. Rohfeeds, Beschreibungen, Bilder und Audioadressen werden nicht im Bericht gespeichert.
+
+| Offiziell belegter Feed | RSS-Zeilen | Deklarierte Sprache | Letztes nicht zukünftiges RSS-Datum (UTC) | Einschränkung |
+| --- | ---: | --- | --- | --- |
+| [Anarchist World This Week](https://www.3cr.org.au/anarchistworld/itunes) | 588 | en-au | 23.09.2026 00:00 | Ein zukünftiger Eintrag; vier Zeilen nur mit HTTP-Audioverweis |
+| [Stick Together](https://www.3cr.org.au/sticktogether/itunes) | 669 | en-au | 29.09.2026 22:30 | 69 Zeilen nur mit HTTP-Audioverweis |
+| [Green Left Radio](https://www.3cr.org.au/greenleftweeklyradio/itunes) | 381 | en-au | 30.07.2026 21:00 | Feedaktualität weicht vom Playerdatum der Programmseite ab |
+| [Rebel Steps](https://feeds.acast.com/public/shows/5cd3502455b9e4f12ddc860e) | 35 | en | 20.04.2021 01:47 | Archivkandidat; eine Episodenseite gehört zu zwei verschiedenen GUIDs |
+
+Zusammen sind das **1.673 beobachtete Feedzeilen**, keine neu aufgenommenen oder technisch vollständig abgenommenen Folgen. Keine GUID fehlt; innerhalb jedes Feeds wurde keine doppelte GUID gefunden. Episodenseiten und GUIDs sind getrennt geprüft: Rebel Steps hat unterschiedliche GUIDs mit einem wiederholten Episodenlink. Feedübergreifende Audio-/Inhaltsdubletten wurden nicht untersucht. Die Sprachangabe stammt aus dem Feedkanal und bestätigt keine einzelne gesprochene Episode.
+
+Die drei 3CR-Feeds weisen konkrete Archivfenster bis 2015, 2013 bzw. 2015 aus und damit jeweils mehr als 100 Datensätze. Das belegt einen möglichen größeren Katalogumfang, keine Streaming-/Offlinefreigabe und keine bestätigte Erreichbarkeit älterer Audiodateien. Rebel Steps zeigt in dieser Antwort nur 35 Zeilen; eine Erhöhung des WRN-Limits kann daraus nicht allein mehr Folgen machen. Green Left Radio und Rebel Steps werden in der nächsten Aufnahmeprüfung als Archive behandelt. Das Juli-Datum bei Green Left löst die zuvor dokumentierte Seiten-/Playerabweichung nicht automatisch zugunsten eines aktuellen September-Feeds auf.
+
+Vor Aufnahme: den zukünftigen Eintrag ausschließen; die 73 reinen HTTP-Enclosures nicht als sichere abspielbare Audioquelle aktivieren; die doppelte Episodenseite bei Rebel Steps anhand tatsächlicher GUID-/Originalbeziehungen aufklären. Keine automatische HTTPS-Umbenennung alter URLs. Betreiber-/Serienbeziehungen, erlaubte Metadaten, konkrete Episodensprachen, Medienrechte, sichere Originalpfade und Aktualisierungsverhalten sind gesondert zu prüfen. Der erste Abruf umfasst nur die zurückgegebenen RSS-Einträge; Pagination und Vollständigkeit des Anbieterarchivs wurden nicht getestet. Audio wurde weder heruntergeladen noch abgespielt, auch keine Enclosure-HEAD-Anfrage durchgeführt.
+
+App- und Datenkatalog bleiben unverändert. Die Angaben werden als technischer Recherchefortschritt in der aktuellen Roadmap erfasst; `admitted:false`, `rightsAccepted:false` und `mediaFetched:false` gelten für alle vier Kandidaten. Diese Beobachtung erweitert nicht das Website-Veröffentlichungspaket und ändert keine Code31-Bindung.

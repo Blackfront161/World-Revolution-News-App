@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "scope": "Read-only local inventory; not a live admission or publication claim",
+  "observedAtUTC": "2026-09-30T17:58:30.726Z",
+  "app": {
+    "commit": "a84d979423267187898afdc6ca960600189727bf",
+    "files": {
+      "podcast-sources.json": {
+        "sha256": "9b5676fa402c060b9ab1a3f29e49dec3b0bcf92199ea36e5c11fcdba599a721e"
+      },
+      "podcasts.json": {
+        "sha256": "efc435266d3048c32d6aaa75ba9f18e504155e91a847492863b97bb45b9361d6"
+      },
+      "podcast-health.json": {
+        "sha256": "0aab7d340f68af7ae760c713128a70fd55e2f5409a132af8046ce0ff14cacaab"
+      },
+      "library-sources.json": {
+        "sha256": "01de7d72725471e7144c9a9105d63dee1c0a54c6cfae01b049ced7c5885ec2cc"
+      },
+      "library-feed.json": {
+        "sha256": "13f47c6b94bdfedc3bd31fa1d84ba52e540a8d12e36b76c7d62d2eed0186d696"
+      },
+      "library-health.json": {
+        "sha256": "cb36f473bfb141e24b8f984a7fc8f0004b97924e00341d973b0a3aa4c32bee85"
+      }
+    },
+    "podcasts": {
+      "sourceRows": 52,
+      "stableSourceIds": 51,
+      "rowsWithoutId": [
+        "Radio Dreyeckland"
+      ],
+      "explicitlyDisabled": [
+        "leftover-talk"
+      ],
+      "episodeRows": 908,
+      "duplicateEpisodeIds": 0,
+      "episodesWithoutSourceId": 33,
+      "episodesWithUnknownSourceId": 0,
+      "byLanguage": {
+        "de": 150,
+        "it": 29,
+        "en": 345,
+        "fr": 114,
+        "tr": 70,
+        "pt": 35,
+        "el": 70,
+        "es": 70,
+        "ar": 25
+      },
+      "bySourceId": {
+        "radio-corax": 15,
+        "radio-onda-rossa": 10,
+        "(missing)": 33,
+        "live-like-the-world-is-dying": 25,
+        "radio-blau": 14,
+        "wise-the-dome": 29,
+        "radio-blackout": 19,
+        "rev-left-radio": 33,
+        "black-myths": 11,
+        "final-straw": 22,
+        "out-of-the-pan": 35,
+        "chroniques-rebelles": 35,
+        "the-dugout-black-anarchist": 22,
+        "iklim-kusagi-konusuyor": 35,
+        "red-menace": 7,
+        "srsly-wrong": 10,
+        "lora-muenchen": 7,
+        "the-east-is-a-podcast": 24,
+        "guerrilla-history": 11,
+        "fumaca": 35,
+        "the-response": 4,
+        "working-class-history": 13,
+        "acik-yesil": 35,
+        "dissens": 35,
+        "a-radio-wien": 33,
+        "asian-labor-futures": 11,
+        "epanastasi-greece": 35,
+        "infowar-greece": 35,
+        "yeah-nah-pasaran": 35,
+        "radio-ambulante": 35,
+        "frequenz-a": 10,
+        "its-going-down": 3,
+        "queering-the-air": 35,
+        "millennials-killing-capitalism": 7,
+        "black-autonomy": 1,
+        "real-sankara-hours": 2,
+        "carapatage": 35,
+        "jalsa-arabic": 15,
+        "histoires-d-a": 25,
+        "l-orage": 19,
+        "contrabanda-specials": 35,
+        "mudawanat-arabic": 10,
+        "aradio-berlin": 8
+      },
+      "latestRecordedPublication": "2026-08-11T10:38:54+00:00",
+      "sourceIds": [
+        "a-radio-wien",
+        "acik-yesil",
+        "aradio-berlin",
+        "asian-labor-futures",
+        "black-autonomy",
+        "black-myths",
+        "carapatage",
+        "chroniques-rebelles",
+        "coloradio",
+        "contrabanda-specials",
+        "crimethinc-ex-worker",
+        "dissens",
+        "epanastasi-greece",
+        "final-straw",
+        "freie-radios",
+        "frequenz-a",
+        "fsk-hamburg",
+        "fumaca",
+        "guerrilla-history",
+        "histoires-d-a",
+        "iklim-kusagi-konusuyor",
+        "indigenous-action",
+        "infowar-greece",
+        "its-going-down",
+        "jalsa-arabic",
+        "l-orage",
+        "leftover-talk",
+        "live-like-the-world-is-dying",
+        "lora-muenchen",
+        "millennials-killing-capitalism",
+        "mudawanat-arabic",
+        "out-of-the-pan",
+        "queering-the-air",
+        "radio-ambulante",
+        "radio-blackout",
+        "radio-blau",
+        "radio-corax",
+        "radio-dreyeckland",
+        "radio-onda-rossa",
+        "radio-z",
+        "real-sankara-hours",
+        "red-menace",
+        "rev-left-radio",
+        "srsly-wrong",
+        "the-dugout-black-anarchist",
+        "the-east-is-a-podcast",
+        "the-response",
+        "twelve-rules-for-what",
+        "wise-the-dome",
+        "working-class-history",
+        "yeah-nah-pasaran"
+      ]
+    },
+    "library": {
+      "configuredSources": 9,
+      "itemRows": 609,
+      "duplicateItemIds": 0,
+      "bySourceId": {
+        "anarchist-library-it": 123,
+        "anarchist-library-es": 152,
+        "anarchist-library-fr": 165,
+        "anarchist-library-en": 169
+      },
+      "byLanguage": {
+        "it": 123,
+        "es": 152,
+        "fr": 165,
+        "en": 169
+      },
+      "healthGeneratedAt": "2026-08-05T15:22:22.376307+00:00",
+      "emptyConfiguredSources": [
+        {
+          "id": "anarchist-library-de",
+          "healthStatus": "empty"
+        },
+        {
+          "id": "libcom-library",
+          "healthStatus": "catalog-link-only"
+        },
+        {
+          "id": "kate-sharpley-library",
+          "healthStatus": "catalog-link-only"
+        },
+        {
+          "id": "zabalaza-books",
+          "healthStatus": "catalog-link-only"
+        },
+        {
+          "id": "anarchist-archive",
+          "healthStatus": "catalog-link-only"
+        }
+      ]
+    }
+  },
+  "canonicalData": {
+    "commit": "17b3604979a27411666048c082345b704261af93",
+    "files": {
+      "podcast-sources.json": {
+        "sha256": "398ca567038a97138de82f6baf8057c980c44e8cb87f8cde4120347fb42adc79"
+      },
+      "podcasts.json": {
+        "sha256": "e0fcf9c940553b910e38c7ba3aadafa8ee3d8fd7f07cbce69c0a6bde19bca4df"
+      },
+      "podcast-health.json": {
+        "sha256": "766cf008593b7c0548a6b9536a4c324ba3303e2a873ac873fca86b13c55e2891"
+      },
+      "library-sources.json": {
+        "sha256": "b6a3d785774840127172b2a9a199e5591423ce00edfe4e771bb7e3389661f415"
+      },
+      "library-feed.json": {
+        "sha256": "5e9c31f9acca12b9337e2c007cd3f3045b0462654c55613a8a8f20c187e5f1d0"
+      },
+      "library-health.json": {
+        "sha256": "e3d45274e1913564434c5969606a8ed70378aa0a747e0e861a4c5de197b82001"
+      }
+    },
+    "podcasts": {
+      "sourceRows": 36,
+      "stableSourceIds": 35,
+      "rowsWithoutId": [
+        "Radio Dreyeckland"
+      ],
+      "explicitlyDisabled": [],
+      "episodeRows": 749,
+      "duplicateEpisodeIds": 0,
+      "episodesWithoutSourceId": 28,
+      "episodesWithUnknownSourceId": 0,
+      "byLanguage": {
+        "de": 140,
+        "it": 30,
+        "en": 509,
+        "zh": 35,
+        "es": 35
+      },
+      "bySourceId": {
+        "radio-corax": 15,
+        "radio-blackout": 20,
+        "(missing)": 28,
+        "rev-left-radio": 35,
+        "lora-muenchen": 4,
+        "radio-onda-rossa": 10,
+        "dissens": 35,
+        "millennials-killing-capitalism": 35,
+        "radio-blau": 14,
+        "the-east-is-a-podcast": 35,
+        "wise-the-dome": 35,
+        "final-straw": 35,
+        "leftover-talk": 35,
+        "red-menace": 35,
+        "a-radio-wien": 35,
+        "guerrilla-history": 35,
+        "its-going-down": 29,
+        "black-myths": 31,
+        "radio-ambulante": 35,
+        "the-dugout-black-anarchist": 35,
+        "srsly-wrong": 35,
+        "the-response": 17,
+        "yeah-nah-pasaran": 35,
+        "black-autonomy": 5,
+        "real-sankara-hours": 35,
+        "crimethinc-ex-worker": 35,
+        "indigenous-action": 7,
+        "aradio-berlin": 9
+      },
+      "latestRecordedPublication": "2026-09-30T15:07:40+00:00",
+      "sourceIds": [
+        "a-radio-wien",
+        "aradio-berlin",
+        "asian-labor-futures",
+        "black-autonomy",
+        "black-myths",
+        "coloradio",
+        "crimethinc-ex-worker",
+        "dissens",
+        "final-straw",
+        "freie-radios",
+        "frequenz-a",
+        "fsk-hamburg",
+        "guerrilla-history",
+        "indigenous-action",
+        "its-going-down",
+        "leftover-talk",
+        "lora-muenchen",
+        "millennials-killing-capitalism",
+        "radio-ambulante",
+        "radio-blackout",
+        "radio-blau",
+        "radio-corax",
+        "radio-dreyeckland",
+        "radio-onda-rossa",
+        "radio-z",
+        "real-sankara-hours",
+        "red-menace",
+        "rev-left-radio",
+        "srsly-wrong",
+        "the-dugout-black-anarchist",
+        "the-east-is-a-podcast",
+        "the-response",
+        "wise-the-dome",
+        "working-class-history",
+        "yeah-nah-pasaran"
+      ]
+    },
+    "library": {
+      "configuredSources": 9,
+      "itemRows": 266,
+      "duplicateItemIds": 0,
+      "bySourceId": {
+        "anarchist-library-de": 53,
+        "anarchist-library-it": 51,
+        "anarchist-library-es": 52,
+        "anarchist-library-fr": 55,
+        "anarchist-library-en": 55
+      },
+      "byLanguage": {
+        "de": 53,
+        "it": 51,
+        "es": 52,
+        "fr": 55,
+        "en": 55
+      },
+      "healthGeneratedAt": "2026-09-30T12:43:13.842595+00:00",
+      "emptyConfiguredSources": [
+        {
+          "id": "libcom-library",
+          "healthStatus": "catalog-link-only"
+        },
+        {
+          "id": "kate-sharpley-library",
+          "healthStatus": "catalog-link-only"
+        },
+        {
+          "id": "zabalaza-books",
+          "healthStatus": "catalog-link-only"
+        },
+        {
+          "id": "anarchist-archive",
+          "healthStatus": "catalog-link-only"
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "podcastSourceIdsOnlyInApp": [
+      "acik-yesil",
+      "carapatage",
+      "chroniques-rebelles",
+      "contrabanda-specials",
+      "epanastasi-greece",
+      "fumaca",
+      "histoires-d-a",
+      "iklim-kusagi-konusuyor",
+      "infowar-greece",
+      "jalsa-arabic",
+      "l-orage",
+      "live-like-the-world-is-dying",
+      "mudawanat-arabic",
+      "out-of-the-pan",
+      "queering-the-air",
+      "twelve-rules-for-what"
+    ],
+    "podcastSourceIdsOnlyInData": []
+  },
+  "lexicon": {
+    "terms": 154,
+    "sources": 12,
+    "byCategory": {
+      "basics": 13,
+      "organisation": 33,
+      "justice": 17,
+      "struggles": 22,
+      "power": 27,
+      "tactics": 34,
+      "ecology": 8
+    },
+    "definitionLanguages": [
+      "de",
+      "en"
+    ],
+    "sha256": "89bfff5767220b9d77e3a208303afba3bcbdd1d20a09657319c0961f94d1c07c"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "reviewerThreadId": "019ff285-63dc-7ed2-88a8-cab5f06ed26e",
+  "reviewedAt": "2026-10-01",
+  "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+  "versionName": "2.1.2",
+  "versionCode": 32,
+  "aabSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+  "aabBytes": 43168897,
+  "zipEntries": 796,
+  "duplicateEntries": 0,
+  "readErrors": 0,
+  "signatureEntries": [],
+  "webFiles": 350,
+  "preBuildDifferences": [],
+  "packagedDifferences": [],
+  "reviewedEmbeddedFiles": [
+    "audio-tools.js",
+    "news-app-2.js",
+    "news-app-2.css",
+    "index.html",
+    "service-worker.js",
+    "news-app-2-sw.js",
+    "capacitor.plugins.json"
+  ],
+  "homeTranslationTests": "test_home_translation_layout.js and test_shared_translation_client.js PASS",
+  "launcherPixels": "identical to original 72x72 windrose",
+  "releaseReady": false,
+  "limits": [
+    "Controller did not independently dump protobuf binary manifest",
+    "Physical Android sharing, upgrade and offline smoke pending",
+    "Production signing and certificate comparison pending",
+    "Play upload and publication pending"
+  ]
+}

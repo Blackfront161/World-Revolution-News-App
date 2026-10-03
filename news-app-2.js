@@ -387,7 +387,6 @@
       selectionSaved: 'Deine Auswahl wurde lokal gespeichert.', articleSaved: 'Artikel gespeichert.',
       articleRemoved: 'Artikel entfernt.', translatedTitle: 'Übersetzter Titel und Einleitung',
       previewNotice: 'Parallele Vorschau – die veröffentlichte App bleibt unverändert.',
-      liveNotice: 'Unabhängige Nachrichten aus Bewegungen und sozialen Kämpfen.'
     },
     en: {
       preview: 'News App 2 · Preview', language: 'Language', classic: 'Current app',
@@ -426,7 +425,6 @@
       selectionSaved: 'Your selection was saved locally.', articleSaved: 'Article saved.',
       articleRemoved: 'Article removed.', translatedTitle: 'Translated title and introduction',
       previewNotice: 'Parallel preview – the published app remains unchanged.',
-      liveNotice: 'Independent news from movements and social struggles.'
     },
     es: {
       preview:'News App 2 · Vista previa', language:'Idioma', classic:'Aplicación actual', searchLabel:'Buscar noticias', search:'Buscar',
@@ -454,7 +452,6 @@
       fileModeTitle:'La vista previa se abrió como archivo.', fileModeText:'Las fuentes de noticias no pueden cargarse en modo file://. Abre la vista previa mediante el servidor de prueba local.', openLocalPreview:'Abrir vista previa local',
       articleSaved:'Artículo guardado.', articleRemoved:'Artículo eliminado.', translatedTitle:'Título e introducción traducidos',
       previewNotice:'Vista previa paralela: la aplicación publicada no cambia.',
-      liveNotice:'Noticias independientes de movimientos y luchas sociales.'
     },
     fr: {
       preview:'News App 2 · Aperçu', language:'Langue', classic:'Application actuelle', searchLabel:'Rechercher des actualités', search:'Rechercher',
@@ -482,7 +479,6 @@
       fileModeTitle:'L’aperçu a été ouvert comme fichier.', fileModeText:'Les flux d’actualités ne peuvent pas être chargés en mode file://. Ouvrez l’aperçu avec le serveur de test local.', openLocalPreview:'Ouvrir l’aperçu local',
       articleSaved:'Article enregistré.', articleRemoved:'Article supprimé.', translatedTitle:'Titre et introduction traduits',
       previewNotice:'Aperçu parallèle – l’application publiée reste inchangée.',
-      liveNotice:'Actualités indépendantes des mouvements et des luttes sociales.'
     },
     it: {
       preview:'News App 2 · Anteprima', language:'Lingua', classic:'App attuale', searchLabel:'Cerca notizie', search:'Cerca',
@@ -510,7 +506,6 @@
       fileModeTitle:'L’anteprima è stata aperta come file.', fileModeText:'I feed delle notizie non possono essere caricati in modalità file://. Apri l’anteprima tramite il server di prova locale.', openLocalPreview:'Apri anteprima locale',
       articleSaved:'Articolo salvato.', articleRemoved:'Articolo rimosso.', translatedTitle:'Titolo e introduzione tradotti',
       previewNotice:'Anteprima parallela: l’app pubblicata non cambia.',
-      liveNotice:'Notizie indipendenti da movimenti e lotte sociali.'
     },
     pt: {
       preview:'News App 2 · Pré-visualização', language:'Idioma', classic:'Aplicação atual', searchLabel:'Pesquisar notícias', search:'Pesquisar',
@@ -538,7 +533,6 @@
       fileModeTitle:'A pré-visualização foi aberta como ficheiro.', fileModeText:'Os feeds de notícias não podem ser carregados no modo file://. Abre a pré-visualização através do servidor de teste local.', openLocalPreview:'Abrir pré-visualização local',
       articleSaved:'Artigo guardado.', articleRemoved:'Artigo removido.', translatedTitle:'Título e introdução traduzidos',
       previewNotice:'Pré-visualização paralela: a aplicação publicada não muda.',
-      liveNotice:'Notícias independentes de movimentos e lutas sociais.'
     },
     ru: {
       preview:'News App 2 · Предпросмотр', language:'Язык', classic:'Текущее приложение', searchLabel:'Поиск новостей', search:'Поиск',
@@ -566,7 +560,6 @@
       fileModeTitle:'Предпросмотр открыт как файл.', fileModeText:'Новостные ленты нельзя загрузить в режиме file://. Откройте предпросмотр через локальный тестовый сервер.', openLocalPreview:'Открыть локальный предпросмотр',
       articleSaved:'Статья сохранена.', articleRemoved:'Статья удалена.', translatedTitle:'Переведённые заголовок и введение',
       previewNotice:'Параллельный предпросмотр — опубликованное приложение не меняется.',
-      liveNotice:'Независимые новости движений и социальной борьбы.'
     },
     el: {
       preview:'News App 2 · Προεπισκόπηση', language:'Γλώσσα', classic:'Τρέχουσα εφαρμογή', searchLabel:'Αναζήτηση ειδήσεων', search:'Αναζήτηση',
@@ -594,7 +587,6 @@
       fileModeTitle:'Η προεπισκόπηση ανοίχτηκε ως αρχείο.', fileModeText:'Οι ροές ειδήσεων δεν φορτώνονται σε λειτουργία file://. Ανοίξτε την προεπισκόπηση μέσω του τοπικού διακομιστή δοκιμών.', openLocalPreview:'Άνοιγμα τοπικής προεπισκόπησης',
       articleSaved:'Το άρθρο αποθηκεύτηκε.', articleRemoved:'Το άρθρο αφαιρέθηκε.', translatedTitle:'Μεταφρασμένος τίτλος και εισαγωγή',
       previewNotice:'Παράλληλη προεπισκόπηση — η δημοσιευμένη εφαρμογή δεν αλλάζει.',
-      liveNotice:'Ανεξάρτητες ειδήσεις από κινήματα και κοινωνικούς αγώνες.'
     },
     tr: {
       preview:'News App 2 · Önizleme', language:'Dil', classic:'Mevcut uygulama', searchLabel:'Haberlerde ara', search:'Ara',
@@ -622,7 +614,6 @@
       fileModeTitle:'Önizleme dosya olarak açıldı.', fileModeText:'Haber akışları file:// modunda yüklenemez. Önizlemeyi yerel test sunucusu üzerinden açın.', openLocalPreview:'Yerel önizlemeyi aç',
       articleSaved:'Haber kaydedildi.', articleRemoved:'Haber kaldırıldı.', translatedTitle:'Çevrilmiş başlık ve giriş',
       previewNotice:'Paralel önizleme — yayımlanmış uygulama değişmez.',
-      liveNotice:'Hareketlerden ve toplumsal mücadelelerden bağımsız haberler.'
     }
   };
 
@@ -1949,6 +1940,9 @@
     readJson(DEVELOPMENT_SNAPSHOT_KEY, null)
   );
 
+  // Autonom is the name of the optional design in every interface language.
+  Object.values(MEDIA_COPY).forEach(copy => { copy.themeAutonom = 'Autonom'; });
+
   const storedArchiveFilters = readJson(ARCHIVE_FILTERS_KEY, {});
   const storedDiscoverFilters = storedArchiveFilters?.discover && typeof storedArchiveFilters.discover === 'object'
     ? storedArchiveFilters.discover
@@ -1959,10 +1953,11 @@
 
   const state = {
     articles: [],
+    quickArticleIds: new Set(),
     facets: { regions: [], topics: [], sources: [] },
     view: 'home',
     language: supportedLanguage(localStorage.getItem(LANGUAGE_KEY) || navigator.language || 'de'),
-    ui: readJson(UI_SETTINGS_KEY, { theme: 'violet', fontSize: 'normal', density: 'standard' }),
+    ui: readJson(UI_SETTINGS_KEY, { theme: 'dark', fontSize: 'normal', density: 'standard' }),
     preferences: normalizedPreferences(readJson(PREFS_KEY, {})),
     translations: readJson(TRANSLATIONS_KEY, {}),
     discover: {
@@ -2079,6 +2074,9 @@
   const briefingTranslationsInFlight = new Set();
   const briefingTranslationsAttempted = new Set();
   let briefingTranslationWarningShown = false;
+  let homeTranslationRun = null;
+  let homeTranslationQueue = [];
+  let homeTranslationLanguage = '';
   let articleTranslationGeneration = 0;
   let dataRefreshInFlight = false;
   let lastSuccessfulDataLoad = 0;
@@ -2176,9 +2174,6 @@
 
   function t(key) {
     if (isProduction && key === 'preview') return 'World Revolution News';
-    if (isProduction && key === 'previewNotice') {
-      return COPY[state.language]?.liveNotice || COPY.en.liveNotice;
-    }
     return RELEASE_COPY[state.language]?.[key]
       || RELEASE_COPY.en[key]
       || ARTICLE_COPY[state.language]?.[key]
@@ -2349,7 +2344,7 @@
 
   function normalizedUiSettings(value = {}) {
     return {
-      theme: ['violet', 'dark', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'violet',
+      theme: ['violet', 'dark', 'autonom', 'oled', 'soft', 'pink', 'light', 'system', 'contrast'].includes(value.theme) ? value.theme : 'dark',
       fontSize: ['normal', 'large', 'xlarge', '200'].includes(value.fontSize) ? value.fontSize : 'normal',
       density: ['compact', 'standard', 'spacious'].includes(value.density) ? value.density : 'standard'
     };
@@ -2365,7 +2360,7 @@
     document.documentElement.dataset.density = state.ui.density;
     document.querySelector('meta[name="theme-color"]')?.setAttribute(
       'content',
-      resolvedTheme === 'light' ? '#f3eee5' : resolvedTheme === 'pink' ? '#160710' : '#05080b'
+      resolvedTheme === 'light' ? '#f3eee5' : resolvedTheme === 'pink' ? '#160710' : resolvedTheme === 'autonom' ? '#080a0b' : '#05080b'
     );
     themeSelect.value = state.ui.theme;
     fontSizeSelect.value = state.ui.fontSize;
@@ -2563,7 +2558,7 @@
     document.getElementById('next-menu-font-label').textContent = t('fontSize');
     document.getElementById('next-menu-density-label').textContent = t('density');
     [
-      [themeSelect, [['violet', 'themeViolet'], ['dark', 'themeDark'], ['oled', 'themeOled'], ['soft', 'themeSoft'], ['pink', 'themePink'], ['light', 'themeLight'], ['system', 'themeSystem'], ['contrast', 'themeContrast']]],
+      [themeSelect, [['violet', 'themeViolet'], ['dark', 'themeDark'], ['autonom', 'themeAutonom'], ['oled', 'themeOled'], ['soft', 'themeSoft'], ['pink', 'themePink'], ['light', 'themeLight'], ['system', 'themeSystem'], ['contrast', 'themeContrast']]],
       [fontSizeSelect, [['normal', 'normal'], ['large', 'large'], ['xlarge', 'xlarge'], ['200', 'font200']]],
       [densitySelect, [['compact', 'compact'], ['standard', 'standard'], ['spacious', 'spacious']]]
     ].forEach(([select, options]) => {
@@ -3826,6 +3821,7 @@
           ${readingProgressMarkup(article)}
           <div class="card-actions">
             <button class="small-action" type="button" data-action="open" data-index="${cardIndex}">${escapeHtml(t('openArticle'))}</button>
+            <button class="small-action autonom-source-action" type="button" data-action="source-profile" data-source="${escapeHtml(article.source)}">${escapeHtml(t('sourceProfile'))}</button>
             ${offlineControl}
             <button class="translate-card" type="button" data-action="translate" data-index="${cardIndex}">
               <span class="red-black-star" aria-hidden="true">★</span>
@@ -4095,6 +4091,10 @@
         ${sport ? `<span class="home-sport__category">${escapeHtml(/\b(fußball|fussball|futbol|football|soccer)\b/i.test(article.title) ? (state.language === 'de' ? 'Fußball' : 'Football') : 'Sport')}</span>` : ''}
         <small>${escapeHtml(article.source)} · ${escapeHtml(dateLabel(article))}</small>
         <button type="button" data-action="open" data-index="${index}"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(intro)}</span></button>
+        <div class="autonom-story-actions">
+          <button class="save-card" type="button" data-action="save" data-index="${index}" aria-label="${escapeHtml(isSaved(article) ? t('removeSaved') : t('save'))}" aria-pressed="${isSaved(article)}">${isSaved(article) ? '★' : '☆'}</button>
+          <button class="small-action" type="button" data-action="source-profile" data-source="${escapeHtml(article.source)}">${escapeHtml(t('sourceProfile'))}</button>
+        </div>
       </div>
     </article>`;
   }
@@ -4104,8 +4104,8 @@
     return sportWords.test([article.primaryTopic, ...(article.categories || []), article.title].join(' '));
   }
 
-  function homeSportArticles(excludedIds) {
-    return core.balanceBySource(state.articles.filter(article =>
+  function homeSportArticles(excludedIds, articles = state.articles) {
+    return core.balanceBySource(articles.filter(article =>
       !excludedIds.has(article.id)
       && core.isLeadEligible(article)
       && isSportArticle(article)
@@ -4122,17 +4122,26 @@
     </section>`;
   }
 
+  function autonomTopicsMarkup() {
+    const topics = ['Labor Struggles', 'Squatting & Housing', 'Antifascism', 'Queer-Feminism', 'No Borders'];
+    return `<nav class="autonom-topics" aria-label="${escapeHtml(t('topics'))}">
+      <button type="button" class="is-active" data-action="autonom-topic" data-topic="">${escapeHtml(t('all'))}</button>
+      ${topics.map(topic => `<button type="button" data-action="autonom-topic" data-topic="${escapeHtml(topic)}">${escapeHtml(classificationLabel(topic))}</button>`).join('')}
+    </nav>`;
+  }
+
   function renderHome() {
     state.cardArticles = [];
-    const balanced = core.balanceEditorially(state.articles, HOME_COUNT + 12, {
+    const quickArticles = state.articles.filter(article => state.quickArticleIds.has(article.id));
+    const balanced = core.balanceEditorially(quickArticles, HOME_COUNT + 12, {
       maxPerFamily: 2,
       poolSize: 90
     });
     const hero = balanced.find(article => core.isLeadEligible(article) && article.image)
       || balanced.find(core.isLeadEligible)
-      || state.articles.find(core.isLeadEligible);
+      || quickArticles.find(core.isLeadEligible);
     if (!hero) return renderError();
-    const sportStories = homeSportArticles(new Set([hero.id]));
+    const sportStories = homeSportArticles(new Set([hero.id]), quickArticles);
     const sportIds = new Set(sportStories.map(article => article.id));
     const candidates = balanced.filter(article =>
       article.id !== hero.id
@@ -4145,10 +4154,11 @@
     const topIds = new Set([hero.id, ...topStories.map(article => article.id)]);
     const occupiedIds = new Set([...topIds, ...sportStories.map(article => article.id)]);
     const moreStories = balanced.filter(article => !occupiedIds.has(article.id)).slice(0, HOME_COUNT - 1);
+    const homeGroups = personalizedHomeGroups(moreStories, [...occupiedIds]);
     const selected = [hero, ...topStories, ...moreStories];
     const visibleIds = new Set([...selected, ...sportStories].map(article => article.id));
     const briefingSeen = new Set();
-    const briefingItems = state.articles
+    const briefingItems = quickArticles
       .filter(article => {
         if (!core.isLeadEligible(article) || visibleIds.has(article.id) || briefingSeen.has(article.id)) return false;
         briefingSeen.add(article.id);
@@ -4169,11 +4179,23 @@
       : '';
 
     viewRoot.innerHTML = `
-      <div class="meta-line">
-        <span class="tag">${escapeHtml(t('previewNotice'))}</span>
+      ${!isProduction || state.dataStatus.mode === 'snapshot' ? `<div class="meta-line">
+        ${!isProduction ? `<span class="tag">${escapeHtml(t('previewNotice'))}</span>` : ''}
         ${state.dataStatus.mode === 'snapshot' ? `<button class="tag data-status-action" type="button" data-action="live-data">${escapeHtml(t('openLiveData'))} →</button>` : ''}
-      </div>
+      </div>` : ''}
+      ${autonomTopicsMarkup()}
       <div class="section-heading"><h2>${escapeHtml(t('latest'))}</h2><small>${selected.length}</small></div>
+      <p class="home-translation-disclosure">${escapeHtml({
+        de:'Öffentliche Überschriften und Kurztexte werden für deine Sprache automatisch übersetzt.',
+        en:'Public headlines and short teasers are translated automatically for your language.',
+        es:'Los titulares y textos breves públicos se traducen automáticamente a tu idioma.',
+        fr:'Les titres et courts extraits publics sont traduits automatiquement dans votre langue.',
+        it:'Titoli e brevi estratti pubblici vengono tradotti automaticamente nella tua lingua.',
+        pt:'Títulos e excertos públicos são traduzidos automaticamente para o teu idioma.',
+        ru:'Публичные заголовки и краткие описания автоматически переводятся на ваш язык.',
+        el:'Οι δημόσιοι τίτλοι και οι σύντομες περιγραφές μεταφράζονται αυτόματα στη γλώσσα σας.',
+        tr:'Herkese açık başlıklar ve kısa özetler dilinize otomatik olarak çevrilir.'
+      }[state.language] || 'Public headlines and short teasers are translated automatically for your language.')}</p>
       <article class="home-hero">
         ${heroImage}
         <div class="home-hero__content">
@@ -4187,6 +4209,7 @@
           ${heroTranslation ? `<small class="translation-note">${escapeHtml(translationNoteLabel(hero, heroTranslation))}</small>` : ''}
           <div class="card-actions">
             <button class="small-action" type="button" data-action="open" data-index="${heroIndex}">${escapeHtml(t('openArticle'))}</button>
+            <button class="small-action autonom-source-action" type="button" data-action="source-profile" data-source="${escapeHtml(hero.source)}">${escapeHtml(t('sourceProfile'))}</button>
             <button class="translate-card" type="button" data-action="translate" data-index="${heroIndex}">
               <span class="red-black-star" aria-hidden="true">★</span><span>${escapeHtml(t('translate'))}</span>
             </button>
@@ -4199,11 +4222,12 @@
       </section>
       ${homeSportMarkup(sportStories)}
       ${homeServiceMarkup(homeServices)}
+      ${personalizedHomeMarkup(homeGroups.personalized)}
       <div class="section-heading">
         <h2>${escapeHtml(t('moreNews'))}</h2>
         <button class="section-text-action" type="button" data-action="open-archive" data-period="7d">${escapeHtml(t('archiveBrowse'))} →</button>
       </div>
-      ${cardsMarkup(moreStories)}
+      ${cardsMarkup(homeGroups.remaining)}
       <div class="section-heading briefing-heading">
         <div><h2>${escapeHtml(t('briefing'))}</h2><small>${escapeHtml(t('briefingHint'))}</small></div>
         <button class="secondary-button" type="button" data-action="briefing-open">${escapeHtml(t('briefingCreate'))}</button>
@@ -4219,6 +4243,13 @@
       </div>
       ${homeTodayMarkup(todayData)}
     `;
+    void ensureHomeTranslations([
+      hero,
+      ...topStories,
+      ...sportStories,
+      ...briefingItems,
+      ...homeServices.developments.map(story => story.items?.at(-1)).filter(Boolean)
+    ]);
   }
 
   function articleNeedsTeaserTranslation(article, targetLanguage) {
@@ -4299,31 +4330,45 @@
     }));
   }
 
-  async function ensureHomeTranslations(items) {
-    if (!Array.isArray(items) || state.view !== 'home') return;
+  function ensureHomeTranslations(items) {
+    if (!Array.isArray(items) || state.view !== 'home') return Promise.resolve();
     const language = state.language;
-    const uniqueItems = [...new Map(
-      items
-        .filter(item => item?.id)
-        .map(item => [item.id, item])
-    ).values()];
-    const needsTranslation = uniqueItems.filter(item => articleNeedsTeaserTranslation(item, language));
-    if (!needsTranslation.length) return;
-
-    const visibleBriefingIds = new Set(
-      [...viewRoot.querySelectorAll('.briefing-item[data-briefing-id]')]
-        .map(element => element.dataset.briefingId)
-    );
-    await ensureBriefingTranslations(
-      uniqueItems.filter(item => visibleBriefingIds.has(String(item.id)))
-    );
-
-    const remaining = needsTranslation.filter(item => articleNeedsTeaserTranslation(item, language));
-    const results = await Promise.allSettled(
-      remaining.map(item => requestBriefingTranslation(item, language))
-    );
-    const changed = results.some(result => result.status === 'fulfilled' && result.value);
-    if (changed && state.view === 'home' && state.language === language) renderHome();
+    const queue = [...new Map(items.filter(item => item?.id).map(item => [item.id, item])).values()]
+      .filter(item => articleNeedsTeaserTranslation(item, language));
+    if (homeTranslationRun) {
+      if (homeTranslationLanguage === language) {
+        const queuedIds = new Set(homeTranslationQueue.map(item => item.id));
+        queue.forEach(item => {
+          if (!queuedIds.has(item.id)) homeTranslationQueue.push(item);
+        });
+      }
+      return homeTranslationRun;
+    }
+    if (!queue.length) return Promise.resolve();
+    homeTranslationQueue = queue;
+    homeTranslationLanguage = language;
+    let changed = false;
+    let failures = 0;
+    homeTranslationRun = (async () => {
+      for (let attempt = 0; attempt < 12 && !window.WRNSharedTranslations?.request; attempt += 1) {
+        await new Promise(resolve => window.setTimeout(resolve, 250));
+      }
+      if (!window.WRNSharedTranslations?.request) return;
+      await Promise.all(Array.from({ length: Math.min(3, homeTranslationQueue.length) }, async () => {
+        while (homeTranslationQueue.length && failures < 3 && state.view === 'home' && state.language === language) {
+          const article = homeTranslationQueue.shift();
+          if (!articleNeedsTeaserTranslation(article, language)) continue;
+          if (await requestBriefingTranslation(article, language)) changed = true;
+          else failures += 1;
+        }
+      }));
+    })().finally(() => {
+      homeTranslationRun = null;
+      homeTranslationQueue = [];
+      homeTranslationLanguage = '';
+      if (state.view === 'home' && (changed || state.language !== language)) renderHome();
+    });
+    return homeTranslationRun;
   }
 
   function hasPreferences() {
@@ -4415,6 +4460,9 @@
   ];
 
   function periodArticles(items) {
+    if (state.discover.period === 'current') {
+      return items.filter(article => state.quickArticleIds.has(article.id));
+    }
     if (!['7d', '30d'].includes(state.discover.period)) return items;
     const newest = Math.max(...state.articles.map(article => Number(article.timestamp) || 0));
     if (!Number.isFinite(newest) || newest <= 0) return items;
@@ -4766,7 +4814,10 @@
           ${formats.map(([value, label]) => `<option value="${value}"${state.discover.format === value ? ' selected' : ''}>${escapeHtml(label)}</option>`).join('')}
         </select></label>
         <label><span>${escapeHtml(t('exactSource'))}</span><select id="next-discover-source">${
-          selectOptions(state.facets.sources, state.discover.source, 'all', t('allSources'))
+          selectOptions([...new Set([
+            ...state.facets.sources,
+            ...(state.sourceArchive.manifest?.sources || []).map(source => source.name)
+          ])].sort((first, second) => first.localeCompare(second, state.language)), state.discover.source, 'all', t('allSources'))
         }</select></label>
         <div class="view-mode-switch" aria-label="${escapeHtml(t('cardsView'))}">${
           viewModes.map(([value, label]) => `<button type="button" class="${state.discover.viewMode === value ? 'active' : ''}" data-action="discover-view" data-value="${value}" aria-pressed="${state.discover.viewMode === value}">${escapeHtml(label)}</button>`).join('')
@@ -6234,7 +6285,7 @@
               data-audio-artist="${escapeHtml(podcast.source)}"
               data-audio-url="${escapeHtml(podcast.audioUrl)}"
               data-audio-artwork="${escapeHtml(podcast.artwork)}"></div>` : generated ? `<p class="media-card-status error">${escapeHtml(t(state.podcastService === 'unavailable' ? 'generatedUnavailableShort' : 'generatedChecking'))}</p>` : ''}
-            <div class="media-links">
+            <div class="media-links" data-audio-share-kind="${generated ? 'generated' : 'original'}" data-audio-share-id="${escapeHtml(podcast.id)}">
               ${podcast.episodeUrl ? `<a href="${escapeHtml(podcast.episodeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}
             </div>
           </div>
@@ -6267,13 +6318,19 @@
                   data-audio-url="${escapeHtml(station.streamUrl)}"
                   data-audio-candidates="${escapeHtml(station.streams.join('|'))}"></div>`
               : `<p class="stream-fallback">${escapeHtml(t('streamFallback'))}</p>`}
-            <div class="media-links">${station.website ? `<a href="${escapeHtml(station.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}</div>
+            <div class="media-links" data-audio-share-kind="radio" data-audio-share-id="${escapeHtml(station.id)}">${station.website ? `<a href="${escapeHtml(station.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('openEpisode'))}</a>` : ''}</div>
           </div>
         </article>`).join('')}</div>` : mediaEmpty(t('noMedia'))}
     `;
   }
 
   function installMediaControls(root = viewRoot) {
+    root.querySelectorAll('[data-audio-share-id]').forEach(host => {
+      const kind = host.dataset.audioShareKind;
+      const items = kind === 'radio' ? state.radioStations : kind === 'generated' ? state.generatedPodcasts : state.podcasts;
+      const item = items.find(entry => entry.id === host.dataset.audioShareId);
+      if (item) window.WRNAudioTools?.appendShareActions?.(host, { ...item, kind });
+    });
     root.querySelectorAll('[data-audio-control]').forEach((host, index) => {
       if (host.dataset.audioInstalled === 'true' || !host.dataset.audioUrl) return;
       host.dataset.audioInstalled = 'true';
@@ -7906,7 +7963,12 @@
     state.view = view;
     render();
     if (view === 'events') void ensureAllEventsLoaded();
-    if (view === 'discover') void loadSelectedSourceArchives();
+    if (view === 'discover') {
+      if (['30d', 'all'].includes(state.discover.period)) void loadSelectedSourceArchives();
+      else void ensureSourceArchiveManifest().then(() => {
+        if (state.view === 'discover') renderDiscover();
+      });
+    }
     const helpTrigger = helpReturnFocus?.isConnected
       ? helpReturnFocus
       : document.querySelector('[data-view-target="help"]');
@@ -7920,8 +7982,81 @@
     if (changed || !history.state?.wrnAppNavigation) writeAppHistory('push');
   }
 
+  const MAIN_VIEW_ORDER = ['home', 'following', 'discover', 'media', 'saved'];
+  const DISCOVER_SUBVIEWS = new Set(['events', 'lexicon', 'library', 'prisoners', 'help', 'developments']);
+
+  function adjacentMainView(direction) {
+    const current = DISCOVER_SUBVIEWS.has(state.view) ? 'discover' : state.view;
+    const index = MAIN_VIEW_ORDER.indexOf(current);
+    return index < 0 ? '' : MAIN_VIEW_ORDER[index + direction] || '';
+  }
+
+  function isHorizontalControl(target) {
+    if (!(target instanceof Element)) return false;
+    if (target.closest('input, textarea, select, [contenteditable="true"], [role="slider"], [data-no-swipe]')) return true;
+    for (let element = target; element && element !== viewRoot; element = element.parentElement) {
+      if (element.scrollWidth <= element.clientWidth + 8) continue;
+      const overflow = window.getComputedStyle(element).overflowX;
+      if (overflow === 'auto' || overflow === 'scroll') return true;
+    }
+    return false;
+  }
+
+  function bindMainViewSwipe() {
+    const main = document.getElementById('next-main');
+    if (!main) return;
+    let touchStart = null;
+    let wheelDistance = 0;
+    let lastWheelAt = 0;
+    let lastNavigationAt = 0;
+    const canNavigate = target => !document.querySelector('dialog[open]')
+      && document.getElementById('fb-overlay')?.hidden !== false
+      && !window.getSelection()?.toString()
+      && !isHorizontalControl(target);
+    const navigate = direction => {
+      const next = adjacentMainView(direction);
+      if (!next || Date.now() - lastNavigationAt < 850) return false;
+      lastNavigationAt = Date.now();
+      changeView(next);
+      return true;
+    };
+    main.addEventListener('touchstart', event => {
+      touchStart = null;
+      if (event.touches.length !== 1 || !canNavigate(event.target)) return;
+      const touch = event.touches[0];
+      touchStart = { x: touch.clientX, y: touch.clientY, at: Date.now() };
+    }, { passive: true });
+    main.addEventListener('touchend', event => {
+      if (!touchStart || event.changedTouches.length !== 1) return;
+      const start = touchStart;
+      touchStart = null;
+      const touch = event.changedTouches[0];
+      const dx = touch.clientX - start.x;
+      const dy = touch.clientY - start.y;
+      if (Date.now() - start.at > 850 || Math.abs(dx) < 65 || Math.abs(dx) < Math.abs(dy) * 1.4) return;
+      if (!canNavigate(event.target)) return;
+      if (navigate(dx < 0 ? 1 : -1)) event.preventDefault();
+    }, { passive: false });
+    main.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
+    main.addEventListener('wheel', event => {
+      if (event.ctrlKey || !canNavigate(event.target)) return;
+      const horizontal = event.deltaX * (event.deltaMode === 1 ? 16 : 1);
+      const vertical = event.deltaY * (event.deltaMode === 1 ? 16 : 1);
+      if (Math.abs(horizontal) <= Math.abs(vertical) * 1.4) return;
+      const now = Date.now();
+      wheelDistance = now - lastWheelAt > 450 || Math.sign(horizontal) !== Math.sign(wheelDistance)
+        ? horizontal : wheelDistance + horizontal;
+      lastWheelAt = now;
+      if (Math.abs(wheelDistance) < 90) return;
+      const direction = wheelDistance > 0 ? 1 : -1;
+      wheelDistance = 0;
+      if (navigate(direction)) event.preventDefault();
+    }, { passive: false });
+  }
+
   function bindEvents() {
     window.speechSynthesis?.addEventListener?.('voiceschanged', refreshArticleVoiceOptions);
+    bindMainViewSwipe();
     viewRoot.addEventListener('error', event => {
       const image = event.target;
       if (!(image instanceof HTMLImageElement)) return;
@@ -7995,6 +8130,23 @@
       }
 
       const action = target.dataset.action;
+      if (action === 'autonom-topic') {
+        const topic = core.text(target.dataset.topic);
+        if (!['', 'Labor Struggles', 'Squatting & Housing', 'Antifascism', 'Queer-Feminism', 'No Borders'].includes(topic)) return;
+        state.discover.topic = topic;
+        state.discover.query = '';
+        state.discover.sportOnly = false;
+        state.discover.region = '';
+        state.discover.source = 'all';
+        state.discover.language = 'all';
+        state.discover.origin = 'all';
+        state.discover.format = 'all';
+        state.discover.period = 'current';
+        state.discover.limit = 24;
+        persistArchiveFilters();
+        changeView('discover');
+        return;
+      }
       const article = Number.isInteger(Number(target.dataset.index))
         ? state.cardArticles[Number(target.dataset.index)]
         : null;
@@ -8503,8 +8655,10 @@
       };
       if (discoverMap[event.target.id]) {
         state.discover[discoverMap[event.target.id]] = event.target.value;
-        if (discoverMap[event.target.id] === 'source' && event.target.value !== 'all') {
-          state.sourceArchive.selectedSources = [event.target.value];
+        if (discoverMap[event.target.id] === 'source') {
+          state.sourceArchive.selectedSources = event.target.value === 'all'
+            ? [] : [event.target.value];
+          if (event.target.value !== 'all') state.discover.period = 'all';
         }
         state.discover.limit = 24;
         persistArchiveFilters();
@@ -9027,6 +9181,7 @@
     const completeArticles = normalizedNewsPayload(candidate, payload);
     rememberVisibleReadSnapshots(completeArticles);
     state.articles = completeArticles;
+    state.quickArticleIds = new Set(completeArticles.map(article => article.id));
     state.sourceArchive.generation += 1;
     state.sourceArchive.manifest = null;
     state.sourceArchive.manifestLoading = false;

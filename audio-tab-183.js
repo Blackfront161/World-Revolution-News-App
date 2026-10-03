@@ -251,6 +251,7 @@
       candidates,
       artwork: safeUrl(item.artwork || item.image || item.cover),
       originalUrl: safeUrl(item.articleUrl || item.originalUrl || item.episodeUrl || item.link || item.homepage || source?.homepage),
+      episodeUrl: safeUrl(item.episodeUrl || item.link || item.articleUrl || item.originalUrl),
       feedUrl: safeUrl(item.feedUrl || source?.feedUrl || source?.feedUrls?.[0]),
       createdAt: created,
       duration: clean(item.duration || item.durationText),
@@ -493,6 +494,7 @@
     const links = document.createElement('div'); links.className = 'wrn-audio-links-183';
     if (item.originalUrl) { const link = document.createElement('a'); link.href=item.originalUrl; link.target='_blank'; link.rel='noopener noreferrer'; link.referrerPolicy='no-referrer'; link.textContent=t.originalLink; links.append(link); }
     if (item.feedUrl) { const link = document.createElement('a'); link.href=item.feedUrl; link.target='_blank'; link.rel='noopener noreferrer'; link.referrerPolicy='no-referrer'; link.textContent=t.feedLink; links.append(link); }
+    window.WRNAudioTools?.appendShareActions?.(links, item);
     card.append(links); return card;
   }
 

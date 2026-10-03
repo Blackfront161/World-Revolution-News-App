@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "sourceCommit": "6821a0245b581b0268e5f7fcbb9b2688c7b5a12f",
+  "aabSha256": "2919E8A0C3ADC9DAFB6045184DF4439E22A6CA5B562E34D98907549C142B8C85",
+  "aabBytes": 43168897,
+  "signatureEntries": [],
+  "embeddedShareActions": true,
+  "embeddedHomeAutoTranslation": true,
+  "embeddedSharePlugin": true,
+  "embeddedAppCache": "wrn-app-v2.1.2-r8",
+  "nativeWindrose": {
+    "sourceSha256": "78b3dbd6c6de3876c6a15012dd0ea683136ace682382f50036d68d2250d2314f",
+    "packagedSha256": "90775e9dbd7d89fe520c66041d13b101b8d0da2221a5afb47d8656056c6f9a9c",
+    "dimensions": [
+      72,
+      72
+    ],
+    "identicalDecodedPixels": true,
+    "identicalPackagedBytesToCode31": true,
+    "note": "Android resource compilation recompresses the PNG; encoded source and packaged file hashes differ."
+  },
+  "compiledManifest": {
+    "package": "com.world.revolution",
+    "versionCode": "32",
+    "versionName": "2.1.2"
+  },
+  "compiledManifestCheck": "Root decoded attributes directly from AAB protobuf; separate from controller report, which does not claim a binary manifest dump."
+}

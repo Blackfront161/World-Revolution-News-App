@@ -1,0 +1,2729 @@
+{
+  "schemaVersion": 1,
+  "status": "review_required_not_admission_not_merge_not_live_parity",
+  "bindings": {
+    "app": {
+      "commit": "5e12d8433604b078413766b3c22d37022190cae0",
+      "inputKind": "worktree_snapshot_hashes_are_authoritative_commit_is_context",
+      "files": {
+        "podcast-sources.json": {
+          "bytes": 34877,
+          "sha256": "9b5676fa402c060b9ab1a3f29e49dec3b0bcf92199ea36e5c11fcdba599a721e"
+        },
+        "podcasts.json": {
+          "bytes": 1948800,
+          "sha256": "efc435266d3048c32d6aaa75ba9f18e504155e91a847492863b97bb45b9361d6"
+        },
+        "podcast-health.json": {
+          "bytes": 19911,
+          "sha256": "0aab7d340f68af7ae760c713128a70fd55e2f5409a132af8046ce0ff14cacaab"
+        },
+        "library-sources.json": {
+          "bytes": 4241,
+          "sha256": "01de7d72725471e7144c9a9105d63dee1c0a54c6cfae01b049ced7c5885ec2cc"
+        },
+        "library-feed.json": {
+          "bytes": 346700,
+          "sha256": "13f47c6b94bdfedc3bd31fa1d84ba52e540a8d12e36b76c7d62d2eed0186d696"
+        },
+        "library-health.json": {
+          "bytes": 1851,
+          "sha256": "cb36f473bfb141e24b8f984a7fc8f0004b97924e00341d973b0a3aa4c32bee85"
+        }
+      }
+    },
+    "data": {
+      "commit": "17b3604979a27411666048c082345b704261af93",
+      "inputKind": "worktree_snapshot_hashes_are_authoritative_commit_is_context",
+      "files": {
+        "podcast-sources.json": {
+          "bytes": 23208,
+          "sha256": "398ca567038a97138de82f6baf8057c980c44e8cb87f8cde4120347fb42adc79"
+        },
+        "podcasts.json": {
+          "bytes": 1902002,
+          "sha256": "e0fcf9c940553b910e38c7ba3aadafa8ee3d8fd7f07cbce69c0a6bde19bca4df"
+        },
+        "podcast-health.json": {
+          "bytes": 14428,
+          "sha256": "766cf008593b7c0548a6b9536a4c324ba3303e2a873ac873fca86b13c55e2891"
+        },
+        "library-sources.json": {
+          "bytes": 4347,
+          "sha256": "b6a3d785774840127172b2a9a199e5591423ce00edfe4e771bb7e3389661f415"
+        },
+        "library-feed.json": {
+          "bytes": 151311,
+          "sha256": "5e9c31f9acca12b9337e2c007cd3f3045b0462654c55613a8a8f20c187e5f1d0"
+        },
+        "library-health.json": {
+          "bytes": 1739,
+          "sha256": "e3d45274e1913564434c5969606a8ed70378aa0a747e0e861a4c5de197b82001"
+        }
+      }
+    }
+  },
+  "podcastSources": {
+    "appRows": 52,
+    "dataRows": 36,
+    "sharedUniqueIds": 35,
+    "idsOnlyInApp": [
+      "acik-yesil",
+      "carapatage",
+      "chroniques-rebelles",
+      "contrabanda-specials",
+      "epanastasi-greece",
+      "fumaca",
+      "histoires-d-a",
+      "iklim-kusagi-konusuyor",
+      "infowar-greece",
+      "jalsa-arabic",
+      "l-orage",
+      "live-like-the-world-is-dying",
+      "mudawanat-arabic",
+      "out-of-the-pan",
+      "queering-the-air",
+      "twelve-rules-for-what"
+    ],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [
+      {
+        "id": "a-radio-wien",
+        "fields": [
+          "languages"
+        ]
+      },
+      {
+        "id": "aradio-berlin",
+        "fields": [
+          "languages"
+        ]
+      },
+      {
+        "id": "dissens",
+        "fields": [
+          "languages"
+        ]
+      },
+      {
+        "id": "leftover-talk",
+        "fields": [
+          "enabled"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [
+        27
+      ],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [
+        27
+      ],
+      "duplicateIds": []
+    }
+  },
+  "podcastEpisodes": {
+    "appRows": 908,
+    "dataRows": 749,
+    "sharedUniqueIds": 312,
+    "idsOnlyInApp": [
+      "00a17893d18ad1b2917d11b6",
+      "00f8d032681ad1de2b234056",
+      "0182112604c8589c45c73643",
+      "02693a1930b1d6ce6a159b9a",
+      "027504aeaeb15689209b49e9",
+      "02806f02c1a56f5710577ded",
+      "02b2ca32a67eb6489c0bb474",
+      "035068e32bc413f190b4feb6",
+      "0386121b9210af657dba553f",
+      "038cb05863bb970100de4414",
+      "04506f13bee79716139a5a68",
+      "0488c36beeb2aa8b3318219f",
+      "04fb66912549aa16aee23408",
+      "051189bb06d39b4a64bc6885",
+      "05a1474583c9d04ceea564f5",
+      "06b2389f9f424850314c794a",
+      "06c265a0fa9f63548cd6f120",
+      "06c77c0b7fcc8a7a3d65e726",
+      "06cbc9f12ae5e543511d7cd5",
+      "071b25de391c3ba4861fd7e3",
+      "08715d8ae60d996fc268c14a",
+      "08caecfc712209062e594d55",
+      "095c48e0669879057e89eeb5",
+      "095e3837dd0deac2582eb4b7",
+      "09756cf38a308f52c2ca9818",
+      "0990d044dfcc64e1b338e252",
+      "0a16fe2c46a043794b45129e",
+      "0a946ad05c809a1f71cc3aad",
+      "0ac3779af714bf9f23b3b726",
+      "0ac59894319262f99c6da05d",
+      "0b6c53d803d06ee2a381dc07",
+      "0b78dcf34795638681cb089c",
+      "0cdeef218696fe72abd015f9",
+      "0d734e4071829b458fc12a4c",
+      "0dae6f404c3f41120d6f920f",
+      "0dcdf06aa0a91c8270372790",
+      "0e40d8e266fb66767a893bce",
+      "101c4cf058a16b5effa74af1",
+      "105b269c1165ab4a54c5a020",
+      "106779e37b5fcf784cb6983d",
+      "11612e3a41c31398f55d7182",
+      "119566c55bd000a1e99baeec",
+      "11ee93e5be47666cea32ee3e",
+      "121f8b6a6c85ef8813557dd7",
+      "1230bfb093270695d8e05c8e",
+      "126bc3aafd334d82aab2c577",
+      "12fd542e8dbadaeb27ea90cf",
+      "1327b6291e627ea29a9da750",
+      "133939dd32750910426fc214",
+      "13a1e9f2cb4cecb57cc405f6",
+      "15fe1a87a3398d4c8358d1be",
+      "16cbd59cbbb7461e72dd1d26",
+      "18131ba4ef8afc79222fed06",
+      "183ee9ca46cfd943721b4e0e",
+      "185fa2445e50d757ca590829",
+      "186397f6d96c2d291e6ab505",
+      "18769796835aa08a45275347",
+      "18f639dd4e83766040d0597e",
+      "1a8dfa97478369deda857ec0",
+      "1abee1f5cd2b4c6a759c675d",
+      "1b05ec86b1e00f2d1ee1e584",
+      "1bcad6f4fd77b2d353cb78f8",
+      "1c1552fcc832c3ea332d6881",
+      "1c21a4b4bd22aafc9d5a5a83",
+      "1c70ca886151f8995694ce9f",
+      "1cb4ccc1c76503aee6c44939",
+      "1d4311a2a15a51a890631678",
+      "1dd52aa3c8d3f7b6c7fda777",
+      "1eaa1709fa77a9bd610ffffe",
+      "20527f9c512cc0dd88926ed9",
+      "2118b8b18d8f14cf4281342d",
+      "21da46b624c5c9c15cc6a16c",
+      "21ffb5b110bc184ef9e6bb98",
+      "2201fe6aafa6f59c713ef5e1",
+      "22a3c4f90908898d92d56e6e",
+      "2309e6e1079a17cc2b7e8acf",
+      "234ad582b4674f5aa29635a3",
+      "235e125bcc01b5b32e5112f4",
+      "23949da7031e04c33b66c365",
+      "2399c06d9e77d82a18178b1d",
+      "24f0b1e8f98b8ba89656c576",
+      "25975525dbce3c8aa91be0d4",
+      "26910a36a630b8462b6b98c7",
+      "270c28b03d8a97e6f95db3bd",
+      "27859fefd542d0e8898cd8f0",
+      "2797b2c733cc00f19f7ca681",
+      "27e1c7e0e0532ec59b95d449",
+      "28e9ff02943fecfbdd6d65f5",
+      "291414926797199a160b9460",
+      "294f352fb78af97876bb8dc6",
+      "29688ea53c2d196587113345",
+      "29e017aa8c280dff4a2777ea",
+      "29fc31aa7ded1eaeb2e21f48",
+      "2b2b4ae9829dde1898c44e16",
+      "2b32728ddb9661045a1c8e1c",
+      "2b86a30672cd0a13ffe95184",
+      "2c55022d783e65b14bca3e63",
+      "2cb96d2ed5536f491005bdaa",
+      "2da0894becaf3cc7009a9c1b",
+      "2db5eb09f0dcf6760453bb3e",
+      "2db80c4e57a08704af7e17f2",
+      "2e478770731f1a3813441af9",
+      "2e559359c88ae1ff5893f568",
+      "2ec321cf9c4deec84f5ba36c",
+      "2f2e224bedea978905a798b4",
+      "2fafa759113d17847cff8e59",
+      "3002bbc6985f3aa6788359d5",
+      "300ff46ef055ef3ebf8535b8",
+      "30fa5d4dd9714d3624bed9f4",
+      "31b0596585ae02d0ac9d0734",
+      "31b593a81600046739ec0fb5",
+      "32025edc7b8e461455feaf3d",
+      "329f35882e57bbd1a26939de",
+      "33b5465f5217f7f8d83149a4",
+      "34da9afe85b8157c04452176",
+      "35890758b25f74d78cf2c363",
+      "359c4730a710e23eec2b3808",
+      "359f0a8959be1d8da5bc49c0",
+      "35ae67d13d7b4483de96f839",
+      "35e1158a29eee256c585b0af",
+      "35ece5f8df00beb3748346e2",
+      "35f364069939d4165d5e7cc9",
+      "367f54bed9136a725f8c5532",
+      "36a9bdd2a28ec8d45f87d18f",
+      "36fc7840e2bea2822b6ad678",
+      "36ffe2f3289acc8e517a41be",
+      "372925cd9cdc9fe124357cfd",
+      "372b1dbf8a5c00f82c7b8510",
+      "374967727267e1966099931f",
+      "374b7421c927d679bb0a7a43",
+      "38604f4a9c0bbf787c201d91",
+      "39fc6f9869dddd4b0ae151e9",
+      "3a0dbacb6dddea1d93fa70d1",
+      "3ae4c67c917bc7a0dc972484",
+      "3b2e4954b3663bf9239c4fcd",
+      "3bd53664152d2fe187eb3d30",
+      "3c06da3fbb3d0fe8e7eb4ef8",
+      "3c9618159b7a10f0f70a1fd6",
+      "3d868897b62369e190f7abe4",
+      "3f4b0ef9e5de5002eeb2a798",
+      "3fa27905d5f3966ba44edbb8",
+      "403f707c534488b78510f1ee",
+      "40657e8882259578ab0b5129",
+      "407e5ba03fa31fba2bb76da4",
+      "40953468495d59b111dac263",
+      "409d4777c71370ab3ddf3681",
+      "40ed432e2a31130666481a22",
+      "417b9b81c67611f16b9aee0f",
+      "4224ee39aa52b703b91b1447",
+      "425275fcd6a0406559fd0ee7",
+      "428eecf4170dff94bd737e06",
+      "42914e71579b7cf067f41661",
+      "42c9253b2b3637fb6ef9401b",
+      "42cd6c65d24462b34428479e",
+      "42ee8a050ccf6c1633964478",
+      "43249b037bea9a95381cfd77",
+      "4390de24047b79aa89d61d1a",
+      "43bfbbf704c80934fa59cf48",
+      "4406e62623e4c400cbf002ee",
+      "442dc5aa31cadc3d7273e8f4",
+      "4498e2ab884f651bcb679a59",
+      "45042d2648b67ecb958f08c7",
+      "4535e4f2913a1a68b63cd191",
+      "461cfdbef2161f041d1eebb2",
+      "480e5036d413966333651a31",
+      "4835205cf0420b0809dbcd95",
+      "48a10d616c3aa934b7917004",
+      "48b49370cbceb17ac4e70fe5",
+      "48b66a9c8ef1d53ef63e92b0",
+      "4906ae7f0d945faaad929f4f",
+      "493e01ed41534fb7e4a99a54",
+      "49b45196cb08ae7bc1567437",
+      "49cbfbf1111d292c735edfd2",
+      "49f4ad4f1dbc1f7d90dfab2e",
+      "4a1654de4e2c08bc7f3d21d7",
+      "4af64b644270f0527b28dc2f",
+      "4b81525f4597176da6c7746c",
+      "4c0bfe3b9a8e7f022cf74697",
+      "4cc65a75333e1d1b62fd6068",
+      "4ce94ed963430edad2e50407",
+      "4d097e33913fff6eaf352c07",
+      "4d70cd73abbed12dc237ca3b",
+      "4d7d9cb44df4eba601b5fc81",
+      "4df2f0b68bea09d9eb935d78",
+      "4e50ee266931f7a911cd8a6a",
+      "4e63d51db7b75ea5bb02cbc1",
+      "4edf9c2d69242bb58034af67",
+      "4fd397b72bb18e568dc47f56",
+      "51a503e4fb9f3801cbc440b0",
+      "51f01594dd3971ab93364e3e",
+      "52435cbbe2b152d8d65a355f",
+      "553a95ff5962ff9e94b05169",
+      "55caab8d4016b2e9e55e1de0",
+      "56a19767e6330dd7fbfc4e44",
+      "586ab2afef56b2cb6b3b1bf7",
+      "5882ee285fbfd43319c4a84d",
+      "5a67476ec5a20a7b93772295",
+      "5ae27094f618e991045253d8",
+      "5aec3ecd334e595896961559",
+      "5d37178d9d7227be152016e3",
+      "5d6bf53a4c5d1f320a2ecaa4",
+      "5dc8ddadca1e07b1770b2d7a",
+      "5e2a1de65cda91654a93abb7",
+      "5e569738433159a711fea988",
+      "5ef4c3a91ad66e421d1f4e83",
+      "5fe33896bfb5ae2690c55685",
+      "6033747d87f30a308701eb93",
+      "6078a655ea337383bc6a636e",
+      "61a11e6b677e3e11f72d883e",
+      "61da655f6c09102715dd8e78",
+      "620bd8fdbdd4e37af414dad2",
+      "62c15a2655e9477e8fa88cc4",
+      "636781cf7b5cd8aa595afe60",
+      "64be65dd6f49cffe1ac96ba0",
+      "64d5c297d901153fe3639ec1",
+      "64fe3d74600ec407012b0f36",
+      "65086fd3a92140b9faf7bcd1",
+      "652519bc03d219e766146401",
+      "653865fc8cc1e37831b21ea6",
+      "653ef582b2acdbedcb5f279e",
+      "65c484801a8ddd2b36571f7f",
+      "65d969bd1224d7614fcf2d9f",
+      "668f6a3ade457110cbaeaa11",
+      "67152d5f381168aac27e8782",
+      "67376ce93adf162a190f50a3",
+      "67395254983062c37db792e9",
+      "675d829108754d6e72152629",
+      "684a6515159b1bb474fff610",
+      "685b48523234179f50bf4e86",
+      "6880d1bb1963c73491990477",
+      "68e5b44cc54eb87ae5dc10a9",
+      "68f61dcf6ddb3b28d33eeb6f",
+      "6902576e731ca55e8851c48a",
+      "69a1efee2aba525644340508",
+      "69b36cbbdc0656f777c1343b",
+      "6a431b262d7f9a6265a8ab6e",
+      "6a6ca578894b7eced85a0ca6",
+      "6b825992b5ea3ddddb945c89",
+      "6bf563c6a6d8e7201fc05406",
+      "6c1e57ff91680cdcffa4347e",
+      "6c2154c9979de05b369ef99e",
+      "6ce062733ff6dd6bc17c0c03",
+      "6ceb6884ebf071402850bf75",
+      "6d2fceebe6177ea490882f60",
+      "6d38b6f11b0159717394a840",
+      "6da4ac55c5c6dccc6749af73",
+      "6e150ccc6aa8edf546d5ef26",
+      "6eaaf8487f32fbfaf5b27a56",
+      "6fa980b41a02c5acc16e5596",
+      "6faf70eedf0703c672c2fdf9",
+      "7081d985d40b1bcd9f009393",
+      "710758df5a5058aa0e6ceb89",
+      "719eeacb2de223fe7e6454ee",
+      "7263e67ff0d284b0e5d862ac",
+      "734ed89b48905ed7b317af98",
+      "746703ca6df9df74311326ef",
+      "75a770a070ed1db4ae81db9a",
+      "75c1b7380aee97ab357e168d",
+      "76314768ed7163e4340f3528",
+      "7643b62f3944d68d7d1fb5a6",
+      "7723e74f1272c9950fbf6822",
+      "77942427ceb3624bc7867702",
+      "77ba88e2a5ec4608b2c35eb5",
+      "78f3ff1ce996550dcd30b3f0",
+      "790c3c21c6ca48b409da3a35",
+      "7916e849a73828b6fc7730f6",
+      "798717e506dbe29ef7de805d",
+      "7ace8363dda50cf9e37b0e8f",
+      "7b3864de6e71fed80d67cbe4",
+      "7bdab3cca58ecce5f83a2e9e",
+      "7c4f95d308cd4ed8d9c7c530",
+      "7cbc21afa7056fd255629f27",
+      "7d3254292b4ded30de70c04e",
+      "7d4029f4db23162378b17a12",
+      "7d52363b3170b03ab7aa8e99",
+      "7d7d5f9529d7d756d6f1b345",
+      "7d9b033cb7c4b91f737caf96",
+      "7e314c2c74351ca82cd803f0",
+      "7e66c8f36f914d965b5ca675",
+      "7e7602e11feaaf48c66dee68",
+      "7ef7b8dc484faefa0e138d53",
+      "7f4c956591ffb925856067ff",
+      "7fe4f1bcecc87eaf3207edd6",
+      "803372b42dd95f907fa4f70e",
+      "8037904d8a5a5a15dcd369d8",
+      "8158c07bdf20c11e9c9d3312",
+      "81a8eb62837d9a42acc80212",
+      "821efeed55dc8022c791e994",
+      "8302622a5e7996164d0060a8",
+      "83a6d26dd467171388939174",
+      "8413e873af76c2b9c6ea3907",
+      "844fd5ec36e04e957b7f6ac1",
+      "859d828b836dc808bb5fbdc2",
+      "86cb26ed27f55a37ae45c13b",
+      "875013e12265b2947b6989df",
+      "8792e7e1508ac06d21a15f2f",
+      "880f2b37f4a977fcee8ca3f1",
+      "8855323cda17ddd468e23208",
+      "885949b6f5f46d9f807f11ce",
+      "88773c76991c281450023c20",
+      "889e54074e74b5d57c94ff3b",
+      "88b2b1e9495a7ed06a04e5fe",
+      "88edb2284fe807177f74d2b8",
+      "8979804d971561eb61c79d6d",
+      "898dcf42a464098b4a49548e",
+      "89fee037ce92fa4041329085",
+      "8b68d2f25c6a41ecbb656180",
+      "8bd82af10b2eb4497bb0eb5e",
+      "8bf56a8779161ab91c473c27",
+      "8c6facf64362113c1ef26c56",
+      "8cbdf4b09cceddb306f88040",
+      "8d0ffbe3500f080ad1b85113",
+      "8d106c10ecb139572f3e8f10",
+      "8db06f50b104709688638d47",
+      "8e06d7165e23c15ba96bbb53",
+      "8e0f5d7140fde5825b6afd20",
+      "8e7268ba5d6b9bc121b6caa6",
+      "8f0d3852d557adbd8af9e611",
+      "8f66b2de892c86f8b4b3184c",
+      "90a6d1c339a886f08bc406d0",
+      "911a2ce64a4e5e4a0150a7fb",
+      "918c9b3ee7a3e232c7893b0a",
+      "919a9ba42e671aed01d6eff9",
+      "91bf67bb9605c04ccc17294a",
+      "91c50a543766f6910866fd93",
+      "91df442e662f04e3d53f15d5",
+      "91ed1fa6694ede1924393924",
+      "93018f7c86ea51b89ae26f5f",
+      "93251095939a30cdfeeb3063",
+      "93411ef1be3f9a4cbe3e5bee",
+      "940aa3313a1d5371faaf6a87",
+      "94401f6e389f4f85d7336ac8",
+      "94510fcf15cb10db6633b12f",
+      "9458240651941c71f6facadf",
+      "9475ca71d46b1e8474579fbd",
+      "958304109ad1b32c0268f967",
+      "95861a53ccc511bbfeffc189",
+      "9622a782a3d3ecec87f7e2ca",
+      "9669962751f50b0165a84ee7",
+      "968295f33bd8206b1a2731fa",
+      "96d59a0f4a4f5c86517c8f51",
+      "970ef32a830211b55953d5d7",
+      "97f18ee6fed7ef4b11a070c2",
+      "98c52e12b53d651bfe82e9c8",
+      "9a26ce1b3cd9dac7ed667b88",
+      "9ae0793ae05ef545b35676ac",
+      "9b73322a4564641bc6d7afcd",
+      "9bdb0a9223ce7a61c7455ba8",
+      "9c1ddcecaa8230ba56faba7d",
+      "9ca409de20d17a982919369c",
+      "9cd158b9cd415662110255f6",
+      "9d11b518db7852363d9eda91",
+      "9d49f3bf4e6a186910ba95e5",
+      "9de4fa37243790193330d4fa",
+      "9e6a189e1591d86a54ad13f9",
+      "9fb3c2cde93b01d404e8caf9",
+      "9fe23e7c077ed0ee00f67325",
+      "a01c8981c96e32e5b3f00446",
+      "a07a74b2c3a8b3b01710f0dd",
+      "a14b7f6707e9abc4b37209fd",
+      "a1ab4a0ffc81351c2a1f3702",
+      "a1fe77be8a6da6f7615e2aa2",
+      "a28dff0ab7cc7ab92c503ec4",
+      "a42ca4738b48967c4ed19a0a",
+      "a531b3f05572a8d4c07f71d4",
+      "a5a0ef6ef549c28d58d4aa29",
+      "a5d77c4b1b629fb47751c0e5",
+      "a65d814ac8973ef77153e679",
+      "a665e83e645374e686c4ede8",
+      "a6ada9d93ed452b26cb64098",
+      "a73cb7dab235faecad7a776f",
+      "a7b76ddf46b71b02d790356e",
+      "a7b9f66be139b7ba0ba0c72e",
+      "a7c5a3ef594f999f9bc431d2",
+      "a80ad0d9b04c10a998812195",
+      "a8279125eb1ec04daf21ada0",
+      "a88b1f036b5fcbb931407f7a",
+      "a892fd5a564b25b4fb64e661",
+      "a89b73ee9c915848108cb765",
+      "a8b8678d5a94b945d8a6f38b",
+      "a8d807a48ff312dcec69952b",
+      "aa3989e7d749d090fda3d76d",
+      "aa9c4022c827e2e1a08f26aa",
+      "ab102507f15473c3b58d8e11",
+      "ac64a480d0a9714f3154b2a8",
+      "acc6894cf8629a3d1f85a49f",
+      "ad92b2442f3d875b13b83dec",
+      "ada5d8949deffc15d882d008",
+      "add6255004121c113ab335a4",
+      "ae7e54d371f97a974127a4d4",
+      "af54b9c284ea7c10011ba6df",
+      "af56021eee8fa35ff6f72c54",
+      "af68fb7da8ec4388dfe632e3",
+      "afa88556d23aa9fe9ecb98a7",
+      "b00748f9b37ba269df67f982",
+      "b04802c68c993d7ac92f016b",
+      "b092d6219b624bc621b1014e",
+      "b0a2aabb7a4611fcf31a15fb",
+      "b171337f4b8a6c4b4983d36a",
+      "b17878b284c58dd1630fa913",
+      "b190fa63351465ff3fa30226",
+      "b1c93a56bee3a46bf854739a",
+      "b1d1772c0325fae9a2ea9749",
+      "b2f279b6da5286b32ba192a2",
+      "b30de5e8409537f03879a1ac",
+      "b358d4762914593c1fd9bd53",
+      "b413f4c2ae4b0742d664e107",
+      "b4aa7f7af9494ce1fcc74f6b",
+      "b4f823c5748bb11087e05b31",
+      "b51e866149413731e9573764",
+      "b597920d5c4ec783326e7f6b",
+      "b60e173fbcda1e3ca688d405",
+      "b610219bccfa4e2059b35609",
+      "b682558e6f7e4c9e32822cb8",
+      "b7ac6719f217b5a8b66f919e",
+      "b83e77ecbe480abc5e485dac",
+      "b95f0be2b29498171bd449ce",
+      "b9704bbdc576b02ae30ce640",
+      "ba080b07de834442439d5a74",
+      "ba9750f81cf56a488d03e6cb",
+      "bacd278345cac4c595a5fea8",
+      "baf03e133bb78159928cf3df",
+      "bc15fb473dc9ffcb71705d30",
+      "bc688f9a740ffdf3e5b96288",
+      "bc7ac3c8f677e0c5da32a5dc",
+      "bcacf85a86e87bd11be85f2d",
+      "bccde8624ca64e586bf9bb15",
+      "bda498ac547e3a976af333eb",
+      "bdb6e818b7c53a5771b38846",
+      "bdfd367ff91ff17192e0eee5",
+      "beebf6de87db1e6416e81dbc",
+      "bf2e65fd598c3c1037d6d353",
+      "bf47f8f8303a4ebe21729e47",
+      "bffd455209c9a6c03ba58509",
+      "c04740521350383414217381",
+      "c0fdba265eeb69ac8dfa975d",
+      "c2856b150dc5e6bade935792",
+      "c2c91dc910af279d2b5e13fd",
+      "c2d20d860954bfb90415d397",
+      "c2f2ae6fd238aedae197cac6",
+      "c389b3f211650e3549483bfd",
+      "c430b07fe2f019e8c92b875c",
+      "c4585c0f15cf22bbe0986ea0",
+      "c4de7baeeefb7a830895b96c",
+      "c4efa5f1c4cad6be569eebdf",
+      "c5f1ec8a8af28a89abd87f4a",
+      "c62d708793728a1e180b1cb2",
+      "c762abb1083b7b48173d99af",
+      "c7816edc635c82878378162c",
+      "c7e70d7d2e930e53c42defea",
+      "c8273365004930f3a2c2f60f",
+      "c86a63d9c9b883f851262b44",
+      "c8a8ff51a6f6d7ee602e161e",
+      "c92d62053ffb385b598e32a6",
+      "c95588c59f6d684befe666e9",
+      "c9936b0532fe7245efb86cfd",
+      "ca0f4189fc28f152a526e788",
+      "ca2fd12b754327d83c04f833",
+      "ca7a1927e68ebd31579022c3",
+      "cb1876ba5bf0a66b2050f5a2",
+      "cb8eb9b14ca95836ffd2c65a",
+      "cd62104f395370dd5fbb7fcf",
+      "cd98102130697d1bc5bed403",
+      "cdd45015b4020f881896d546",
+      "ce50ae39a67d2cf8132df581",
+      "ce65fca5d06edebc2292b509",
+      "cebaaa53b13e3a7345f4ed84",
+      "cfcbfe0a9a125fe0bd7cf9f8",
+      "cff5cdf0a8d029eaa1029e22",
+      "d0be615edf339c376962ce29",
+      "d10fba75db2dac9344ff29c7",
+      "d149b38db92583e93f097a5c",
+      "d22acd86b612b7e97b828de1",
+      "d2cf8548170762a28c1abee6",
+      "d2f46b23ac1cf450b91a8e59",
+      "d30a71a63dbf1a71d752047c",
+      "d3104356383f3cdc8c97c63f",
+      "d3540c0676026f241156399e",
+      "d3ac996a5fd8ccaf8c11420f",
+      "d3c720df62691373e937f74a",
+      "d42a39ac42bf1d0065d202af",
+      "d460783f46e84e3fa6f9d874",
+      "d481584d0a9cf26a04d75c9b",
+      "d4888732a4c8144856e08df1",
+      "d4bad9c4b00e6169bf08abed",
+      "d4c40a5bfcc6ec3441b5b16f",
+      "d4c636bd384f4ab1c32ef418",
+      "d500de034b6ee8dcdbd004d9",
+      "d5c6c2460ef43f437361416f",
+      "d5fa93a2b90f385beeb7e779",
+      "d6273f1588bfc5e0f48080ae",
+      "d788f453f82a25f944fd9ec0",
+      "d7abf1c52361dc93942844ce",
+      "d82ab1ee55587e800ed6ac27",
+      "d8b48ec45f2bfc97c74030b5",
+      "d92337cabc31d8c9489434ef",
+      "d9ba81ed1d2b64c74ef5d040",
+      "da434dfde3f6504450498398",
+      "da812b843d846e774d1b4ab3",
+      "db935a5d7b62bb703479a92b",
+      "dc799f10cf4eb6208c7a7772",
+      "dce35196d0f45dcfa6aa9cf1",
+      "dd1fbe78a7e4ef3b0d945f76",
+      "deb91f2739a144d4133320b4",
+      "df6562612728781e9c926688",
+      "dfa2b63d0f68fa731fb9cda3",
+      "dfd2d000695802f004b7720b",
+      "e01c1d2b1d29b238c8b9dd74",
+      "e051f7fd6eee3c8eca35968d",
+      "e07912b688fdbe930e48629e",
+      "e0c833cf680c81be405daae9",
+      "e0ec9b9872c4278e981dacaa",
+      "e1e3612e100d7a869dbf9110",
+      "e2400410a27352b32cb68630",
+      "e24be9f1fe97782f52c2bb15",
+      "e2d647038ea6ab598cd96769",
+      "e3e6264c32aafc6e395fb6b1",
+      "e56774c21a4cd3561ea75d98",
+      "e6258c159e5f565a3829f9ac",
+      "e633ddfa4f7771b6bd5315e5",
+      "e670f5a3ebb24c8e8d9624c2",
+      "e75562f6eda080ad3dc9c7b2",
+      "e840b24d812f0952251c031b",
+      "e8503f53f139a092935d902d",
+      "e865bc15b6556d20ce90348d",
+      "e88e0a8f008c42898b415786",
+      "e8f0cc6fa71a35ebb2aa25da",
+      "ea1beef5d5ae7fa3c7aeeb9a",
+      "ea1e1f24caf7b4c609cd68b8",
+      "eae9d53c3eb7a761f7c5cf2e",
+      "eb3a83dba61762aea43f409e",
+      "eba2f0caf32cfa7c6e17a74e",
+      "ebbe6aff7d16e3520d2b4c94",
+      "ebf7322a3fa02d09fcf32cda",
+      "ec2b06373a080303d6e3d3ab",
+      "ec59cf4daff763fe4dd984bf",
+      "ec6b24a8e07e0a097ed10eb9",
+      "ec8621accce6c201dc75f839",
+      "ec9d5f163e00368971330804",
+      "ecfe99bdf57a6864cada6bf9",
+      "ed1c62a10b1f92430d9ecb58",
+      "ed74a555ad194e7fb7d37940",
+      "ee32112e739ae66114aa932a",
+      "ee34318807238fbef744c76b",
+      "ee4d9e2bcd2ad3b79136f6d0",
+      "ee867a15587e9ebef620b187",
+      "eeef341ef3431466cfb045aa",
+      "ef3cd47bb5d09f092bd57342",
+      "efad192b5e765db774ea97b2",
+      "efc739f5ee203c6adffa4644",
+      "f062bca03df64f250d6c886e",
+      "f081a1f843ae89df45291a12",
+      "f0d3243439a8b78e8d0d1ead",
+      "f24cf99070baa094591647e1",
+      "f2858a76a43cb2db760ee180",
+      "f2f8cd2372c19591dcae3a6a",
+      "f30ab158d3f66dbc6a6f91d3",
+      "f31f8dee043f14aa62a04830",
+      "f3a738a946a5b6fc553f9420",
+      "f3e1e6d746d96424e61c55df",
+      "f510672cfe906ed86ae5cfdb",
+      "f51481b55ad900ecfd454bc6",
+      "f56968efdde463ddb73412ee",
+      "f5789024660b838046224dcb",
+      "f59ec1182b976586c2d6a47f",
+      "f5b5c77a6d25b895179b9a17",
+      "f6984cafd60dbb33fcb20096",
+      "f6b8cf503372b2c5f86ddd33",
+      "f6d9fe8121fdff569270bd6b",
+      "f725868747f981281c13f9f8",
+      "f76dbf35d8ba095dffcab5e6",
+      "f784bf8d6666ab4460b27837",
+      "f7957218870d2e2162d73926",
+      "f82113f329a72a7111b24d70",
+      "f87d6bbbe2a35677fa27cd08",
+      "f8ee5af271526067a6148722",
+      "f955642e5ecfaf488ef7aad7",
+      "f97fc84aee7c6f54ca314e84",
+      "f9ba4c185267af06525bc02c",
+      "faa14b021687bf468d7eb421",
+      "fabbd2a1613052e93323adfa",
+      "facdd65e66b86ed32e65dd6d",
+      "fbe125aa48f7ef11ee67bc61",
+      "fbf21955ecc7437cc208e320",
+      "fc1aa3dfee83f9fc755496a8",
+      "fc1affba2e6f5fe8315bfb7c",
+      "fc3eb764105841b53aa84f31",
+      "fcf4244714784849176f731f",
+      "fd450040e51a207cdb25ad11",
+      "fd4ffcbc0878cfba855a8ee2",
+      "fd9a6ba2fa27dad3f753a2b8",
+      "fda3f3204d54ddebd542914d",
+      "fed2fccf53f5dfdffa0f24fc",
+      "ff8c1d7f5fb36a372526cc55",
+      "ff9ed4befbdcce82209d030b",
+      "ffd3386861725b10bf693fea"
+    ],
+    "idsOnlyInData": [
+      "00079ccbba2cd072126dcb87",
+      "004eb3c0c8fccd6829084eaf",
+      "00570720cf366c46d6735d79",
+      "01d9a5ec51a1ef9d68a4a3c4",
+      "01f6f7708095504d6e909296",
+      "01fcfad24a7dc690564bed9c",
+      "02f6f03749f7d3682a460707",
+      "03030dad00754c9685a6e4d2",
+      "03f04d1d9168dfe5a0396325",
+      "045b1e4286c5ee6935bd5b07",
+      "05c3c8977d53a19411f30bb7",
+      "05db5ec808817923792bf3ee",
+      "060e7100f8389541d92b4d89",
+      "068f60cd360acfac6c644d57",
+      "06bd0085890e2f32fc4a44d6",
+      "078cd3c1dab77522c35f5d34",
+      "085a9dc65c8d2d01451024cb",
+      "09974ef32e37a8b10a085bb4",
+      "0a578f7f1b49b661e1826f10",
+      "0af05ed070f7a1fdfe57e51f",
+      "0b17a79217155353ce801410",
+      "0b8d4f62a58ce82f1f25e81d",
+      "0ba0d158b63bd741d82f2fb6",
+      "0c3aae44c301a9f3c8f9c21d",
+      "0c795d40fd9f51401e9115a2",
+      "0cf9ac900a281edc65bf57b6",
+      "0d90d631e8184ec009400074",
+      "0e23cb7776bc414244d06184",
+      "0ec1d837f9e2214231565dc5",
+      "1088d3d281c3cf05e4018af5",
+      "10bc8c1317919740354956f1",
+      "1180d8a934756900316e3cad",
+      "12927e4aa7e50eb18531b7d6",
+      "13c072c939aaab0ffdeb04a5",
+      "14b76595fed9d3fe2126641d",
+      "153ddb267ac1486b2288bda5",
+      "1544b7533719c8e566c5492f",
+      "15f312d0a7a90c4f856cb9d2",
+      "163ef23d8ad4b5b415796721",
+      "17050acfa506715a3b13901e",
+      "17ffd80639d3fb031cac8202",
+      "183879f91caa331eff10ef54",
+      "1905f9fd120bc07f153096e1",
+      "1ae75a80984ce6aa325f4744",
+      "1b380f271c7e669ce64357b8",
+      "1b5d35e3d022122f270119ce",
+      "1b7d6d017edb9a00910574ca",
+      "1c23983a1ce7a48d50cd0353",
+      "1c5b5853c067abbc2ae2194b",
+      "1ca5be2ba31ca01a87480972",
+      "22c5be9bde68144db947c5eb",
+      "22e5a645b247f27453059bd2",
+      "239a64340173be69526a229a",
+      "23cbf639ec12f748d047cf93",
+      "2448edc9d134637045857b77",
+      "246bde09585e8c45190a6e8e",
+      "246d16139985d7d8a94537d4",
+      "2573e1540576236fef680134",
+      "26ee86d01d1b5fc2bcf7764c",
+      "270fc5f8f2dc21b1ad087a65",
+      "27201903411e32c5e3a32eb0",
+      "27584df83bc03e138ffd50ad",
+      "27c3404ad2f88854448b6887",
+      "2995a88f2cd99265a73f53ca",
+      "2a5f9698703faa88a723657d",
+      "2a687e829d5286e2140a83c3",
+      "2abd4f11e6fb0694441bf27c",
+      "2afdc57e24a1b5b28a113f02",
+      "2b066dfe2c33e0395f75d58c",
+      "2b2409eeaca011664a64c76d",
+      "2b41470c1ff6e0688d1a63cc",
+      "2b4c21e9bee7c9ca9ca2879f",
+      "2c1793f96b75a72359fe1036",
+      "2c86fba0fd9b1637ea96eb1a",
+      "2d2f9305ded1359afbf0f5e0",
+      "2d4183f88bc9bf0a262d2a32",
+      "2d7a99df5191dd7ed6f09901",
+      "2dcebe66f189956012abe101",
+      "2de44f4b1fdf65fdaeddeed4",
+      "2de57546b70ca62dd0e96696",
+      "2df41c6c2a66c8cf0937b58e",
+      "2e7686695c6b4deee2c1a8c5",
+      "305e69d930f8c8f269eb7284",
+      "312e00d468731dc097c514d1",
+      "3141ec3550db51abf5957c56",
+      "32d20b9312c99029220994b8",
+      "32f0eff51ba85c7601c56565",
+      "3414c808470f5678cf4c8754",
+      "35332d7c90521f6921b8e3f5",
+      "359cac9c0f331185b00a65e4",
+      "3623230676bdbf1a7a15a8ed",
+      "3736669500e303c2cd652d5f",
+      "38621fbd726673c048bebcd6",
+      "38fb936f6845745f24cb1f08",
+      "3984d1d804c5ae78e8031160",
+      "398587662cb06b500bbe3ade",
+      "3a317752435fc1d024593474",
+      "3adb1e5a36b43ca81969c881",
+      "3afd2ed1040b9309e500ed96",
+      "3b397bd7bf26acc5f717a5cd",
+      "3b77881a6e269c11a1218ee2",
+      "3b77e1cb948bfd71ed2b45ca",
+      "3bd240394b3bc2541df28627",
+      "3be5d35363c025f535adfa1d",
+      "3cea736881314a1cb6e5c589",
+      "3d6c7d2561146618b1236c55",
+      "3e0e919d89d2392defffa012",
+      "3e1bb4d4e8f17bdc3c837def",
+      "3e49c0a89919ff5f0038f159",
+      "3e5b2faf1709a359daffb236",
+      "3e8d3af1a10e2d15098969af",
+      "3eeb963368392da7db0a20b4",
+      "3fcd0e0700c03b72053262b9",
+      "40951c172f1c3a78dbae20cf",
+      "42049a882788c7cdb0f3177e",
+      "424af4915ef4605c677b9465",
+      "432d0840ed7a0fa85d3e1d6e",
+      "445c77c7318ede8fa3f81e3e",
+      "4476396ccb2060d7aa579793",
+      "45cd3577c0e8190e118f6814",
+      "462275351f408b45cf7917c5",
+      "46341db09158ad0d09fe969a",
+      "47171020f988ef02bf98ee4f",
+      "47cd2a03a74f279e43c3556e",
+      "482b909396997c17b08e8d2e",
+      "49da984cad47c5ba0cf87623",
+      "4afdadce14a9cc679bc165bf",
+      "4b91a3e8cdd23854fb594f8c",
+      "4c95582badc47cd28aa361c2",
+      "4e4482d1d1f053311c7a8a16",
+      "4e8faa460baa77ef579ac742",
+      "4f049f6d9dd339c2d27d011d",
+      "4fcbfc7c55b05be1410d3986",
+      "501edd4ba0716f9b4d07c0da",
+      "504a2fde5695ac6315046cb6",
+      "5123afc9cf38a3fff36f9af8",
+      "523063e9b907d1395b9d3800",
+      "5297a63fdb0d02e79038a89e",
+      "53a62e063bea0d5f404ac75a",
+      "53a927afb8b900dc8698e686",
+      "5441cf7b1c3b38d0c2ede8ec",
+      "555e43ff61146a300e9d0f7a",
+      "556555f7c9d6e89e384631d4",
+      "5618f6c0ab420bd17335cf97",
+      "5653748add4f5b10708861c0",
+      "567cce1ae7e7c01738cd2b7a",
+      "5685023e4c837c499c3bb853",
+      "5715dd5b1866ed76cd712beb",
+      "57ea10ede526637c879e074f",
+      "5831579c4b05307579f6d667",
+      "584a0c74db4974cc7c51ac39",
+      "584cef78edb79ea0aad4dc20",
+      "589770aaecf9e4d4ce134a40",
+      "58eaa43886e99d76dab4f918",
+      "59a6dec5a2e37a63d77b9c6a",
+      "59b4524370ffbb558ec06194",
+      "5b30ac0fa30feaead45de42f",
+      "5b56f93d3ccb4e304d25975f",
+      "5b63d587cccc9ea368d642e3",
+      "5b94ab0218fc7db0c76d542b",
+      "5c0b376fe94039f3045cbd41",
+      "5c450f4379c6d858af74db26",
+      "5d3811cff81ae183021087ca",
+      "5d6427586af7b46070da5e93",
+      "5e7d06dafd50c250e07d8c19",
+      "5ed5d295b5d1aa91187ad22f",
+      "5f9d45f812f092820f2e646f",
+      "5fbbb458a6def1a366a96251",
+      "5fc4b26acc459f173c5204a6",
+      "604ec3c681084532e83eb382",
+      "612decc59206fe0aa8ad7847",
+      "61cdb0e6b52d3dd3c12ea44f",
+      "626074239b77b420e3dd1132",
+      "62e41e881fd56f7eade61fe2",
+      "635a06cbc2a844335e8bdcc8",
+      "63f1698b924fbc9386ab2399",
+      "63f9ada647366413fcf7d9d6",
+      "653032d0d8dbd4dcc954b6eb",
+      "653061a3ed42682e12be8bc8",
+      "655dd8e84843b356eddd596c",
+      "65991b188557b5a675800beb",
+      "65b06247a719ed397c905da6",
+      "65c459a878241fd5add0d82b",
+      "66f5a9a5d49a5317db627f20",
+      "672e0325494855429ba2d614",
+      "67ddb7de7a41669aa475fd22",
+      "68ec583b6992a41131462396",
+      "6b10af9bb7eacf8276bdeee3",
+      "6b31a8f8efffe132589ca683",
+      "6c4a875cd0e41373c26d5faf",
+      "6c9e6a7ac2dbe10d95116bc7",
+      "6cd80b11df66712240f7a717",
+      "6d5f375bb03ccfe95e0d100d",
+      "6e8dc5ccb2c5303a040058f3",
+      "6f0c25400b2c10c0a44881c1",
+      "6f9a2161e4edf68341c85b95",
+      "6fd784be5a47e8312486cae3",
+      "6fdca862b866872307eea0d1",
+      "702576ebdc59feff2482d8a9",
+      "703aed1be06aad432feb6eaf",
+      "704b0309a566c5a0cf8c25f2",
+      "72042277f3caa60a4fb37734",
+      "732737997370899688c1f8bc",
+      "73ebd2dfa0528cffc19cb40c",
+      "74fd1473746ef5833d664a6c",
+      "759e3bf34962f48e22688747",
+      "764187a4ecf8d9205844b7fe",
+      "76e44b0b82b6edfa51dbe377",
+      "77e836d93cc3cff006d06246",
+      "7879c7ac155fe3b7957ba600",
+      "796357dcb71899d97b9cf82f",
+      "7baae440fcdb7398f67aa76b",
+      "8095e426f2bc56ad52d4314d",
+      "822bdfc4d6632fbc1c4047e9",
+      "837cca8aef040d75c77b7497",
+      "83ad8cc6384aaccc05ccfc49",
+      "84016cb4c4fac1da97ada99f",
+      "8491db0ce4f897da14c1758f",
+      "856153004e7429f8cf28cac8",
+      "8706f5282d01f9278a3cee40",
+      "87175d5d422dba81699384d6",
+      "871ce62a4d62e0d698a8e06a",
+      "8762b307eaf006e4b0a893f1",
+      "87748930c421f5720c7e2849",
+      "89116c3ece8988991bf32cd5",
+      "8939cf74b6d095d341a0f3fe",
+      "89df4d2aa6ea8f477d49f8ff",
+      "8a8f99c188d0e33d01733fa9",
+      "8acaea618f3fbab168643e28",
+      "8ae8b844f1f006a0ba16b9aa",
+      "8b1cbd0f62eb08d5f5f3cc10",
+      "8b5dd9244abd2772b4e8f506",
+      "8c3d85ce973133d5c26ad41d",
+      "8d7ea06757e4a0bc1509175a",
+      "8df4e2b9fc1ead886fa36722",
+      "8dfc778a13c272a775617139",
+      "8e82fee8292c734bf5b00daa",
+      "8e931411cc2b66f0f8872091",
+      "8ee47466714c4f0de6ca9af4",
+      "8ff190384cc72fac9163b873",
+      "8ffed05a86a8be90713f3eb5",
+      "905ec3f2d66b74b628734dd0",
+      "90b59c267dfc40b218fb472e",
+      "9187397aa16e3204f816da45",
+      "91b2284d76e1e02defedbb30",
+      "91f3ea8460827dfb9243f4ca",
+      "9220fb44924a42bef6badda7",
+      "93139900c046c930815a7785",
+      "93a9aaeac7efc2ac4c21cb99",
+      "9403d64fcd5af49f93c4b8ab",
+      "940a228a2ee5f57683d2b44b",
+      "94cb8663a15735970d832a25",
+      "960d618684a681e9a0871fd8",
+      "97dcc884f4528509416696a3",
+      "97fd4a888ecee00941bbaba1",
+      "98ede672a26ee209b28a7eb8",
+      "99127ae81de836a61f92cdf3",
+      "994225a429248ea0f32d99e7",
+      "9a86036cc106277edc0d5ebd",
+      "9b58765d8f8a91a55eb2eeaf",
+      "9b8d3b2cc62eb47281490916",
+      "9bf2c6930b1a2ddd7dff0c9e",
+      "9c558d68c8b27456b3e7befe",
+      "9c55d6107f4355c986758738",
+      "9c7e085e1433f48e5ea3b5f5",
+      "9e76e39ff0a80cbced2f6470",
+      "a006164a8ed48f4e99677bea",
+      "a14a29c57d36f5c0fc4d34ed",
+      "a1ab74b1302f0a15fe89ca69",
+      "a259026494a737b9e406f00d",
+      "a38f72de0416449561ef0ec7",
+      "a3e5aa2359905774c8bae69d",
+      "a3fc24b0b22d8aa1cb8ba2ef",
+      "a402cea82df2f578e488823e",
+      "a46dde099098ec349692a589",
+      "a5dae304614dbb8ef19cc2c6",
+      "a6141935947c5f49e783920f",
+      "a67842363faca2d1fdc193a2",
+      "a701385aba674f61bc14b58f",
+      "a862c3a01ccff32f0bf67b1d",
+      "ab86a16e76dbbbe9ff89a163",
+      "add5b3d39a901fcb8961dca6",
+      "adf1d45642333ef6175cbf09",
+      "ae09ff39dbb6cc90444d4f72",
+      "af50de29217bf7aa1711fe93",
+      "afa29b2b8e5a8ada5d858b20",
+      "b038c0a77937230de58c07fc",
+      "b09813825a7c38d9f1c93599",
+      "b0ff8e38bb5b8c63763b881e",
+      "b1512c00988a2d893533dc1e",
+      "b180b75f803619dc5733afff",
+      "b18975ba17cd48640b782607",
+      "b2b957e72f3eb7c0aebc9889",
+      "b3296dd566abcb8b3bce372a",
+      "b345f528730ec15f858ff15f",
+      "b3debe45b41d1beec94e2865",
+      "b54433ec6c29e0f396e59109",
+      "b57bb5b23a854f83437bfac2",
+      "b611ad5551c4dab45593dce4",
+      "b63ed3ba04a8c71dc28a9e67",
+      "b668259e3e290473d169ed6b",
+      "b6993231f1a5e0a06275ebe5",
+      "b7fcd5b3f1fd7a45e77d0780",
+      "b831517ffd6d4336d9c2abcf",
+      "b91cc0e672810b4b743d6983",
+      "b9b958f99054ef8e42603c67",
+      "ba4a003140ff20f1b4e41147",
+      "baa8a560ae401ed723996359",
+      "bb812e3611a6c0daf91c9598",
+      "bb96843a484fda19766f1538",
+      "bbb3bda5ec5a6bcac65806ed",
+      "bc3459b9fbd756f1aaf2e4f9",
+      "bc4d65f229c96e7ee2e6bcf6",
+      "bda0d0e537fd66111bb0b752",
+      "be6b4f9b50c26da1dad2bb1b",
+      "bedc5e0aa6ec56ef77e4f2b6",
+      "bef4f3d48d3c530bf562025f",
+      "bf0d9ffcf5568d0020c69cd1",
+      "bf9d6d3a26ca0a7cc69c4553",
+      "bfc8607966556aaafb079c49",
+      "c021c323de1024fc9888654e",
+      "c11f91776dfb4049d0e9535b",
+      "c1ec97ee6d31efeb4634b7a3",
+      "c27ebf5a75fb636c63e318ea",
+      "c2db58a7b53089672b1fdd69",
+      "c2f23081ef8103c9fc848cc6",
+      "c362259c38666bf580ea7b57",
+      "c36250a8c2946ce93f497141",
+      "c3b725af71ef19014a45c16e",
+      "c407aa95873c80c0fb4b0f4c",
+      "c4888336a4a24f4f0bea62ed",
+      "c49623b0137474726052a452",
+      "c56939933a0044fe22bdd8b8",
+      "c5804a21a302c32264a22963",
+      "c696a25778ae04c3911c60aa",
+      "c7e5792413a91c235be748ea",
+      "c8a17e1b034b55566cbc77fd",
+      "c8aacb1418d31455426b473d",
+      "c8ca9b927aa6be6b4085e0f7",
+      "c9511465d2d44474a6006193",
+      "cac9442a499aa9070ea7e503",
+      "cc7c438eb9a15c910c06cd5e",
+      "cc96b929600e2b03a740ab81",
+      "cd174971bf7b2c050e8b25f6",
+      "cda72e17644355f8e35c0b8c",
+      "ce4e3d45f0933a5fc8984a9b",
+      "ce8755b3c07ef5f310a604a2",
+      "cf13cc088d1788bd2c36a0c2",
+      "cf5a728406014fc128de3230",
+      "cf75cc36db35bcb21432a2c0",
+      "d067482ab5c232bfd5918e3e",
+      "d12e8fb662d6b1b0af72d3ba",
+      "d2c916a645c4c987f3f93fd1",
+      "d335bdd060e15f9ee30cc72d",
+      "d37c9dd0f2d2d15457d7832e",
+      "d4586bee0cb47731c7b2f208",
+      "d52eb019b629280acf2f9f19",
+      "d5ae250616eaa70072a0c957",
+      "d640df8d5bf50f1f328ad629",
+      "d7065689900570b978a1459e",
+      "d7af5e06a21edbcb2ec8ef9f",
+      "d83582d5d433e27db13dfbc5",
+      "d91ffbb5a47f09616a18c148",
+      "d93bdf09e2256fd49774972c",
+      "d9666e0b276b62d8b0a4229c",
+      "db1a1bcdf36f0be1136b17fb",
+      "dc1e09ae69f6dd420c18ff44",
+      "dc2b95f2685c62ab063a0de0",
+      "dd37f8aa512a495c04569fbb",
+      "de25ec56eec8d6890aa204dc",
+      "de8f8d8e3c272c285dd9ddb1",
+      "df271b72dd9f221c59ad9652",
+      "df7ae5f0d38dabd135e58617",
+      "dffd56dfbd6db854aff9e7dc",
+      "e04f4fd12ca6f37919dd55ea",
+      "e07dd4090bb1c5ee5ca53258",
+      "e16d1056d028f971c30f0674",
+      "e1f03db243859ddd6b25faba",
+      "e3fa29ceef6109d7d4ced253",
+      "e4093c778bc1e2c0b302a5de",
+      "e4ba1c1e802cf91a64b98bc6",
+      "e50d2e018204db1e276f2fbb",
+      "e55af85cf92e1f73e89be77d",
+      "e5779a50abcc72c1bbd01cfd",
+      "e60ce0caa5cf21ef1a09dcc2",
+      "e6e36a5461435fab72c9f699",
+      "e71abe0721bb89d80712ff62",
+      "e794ad67d76c9b4768d1070e",
+      "e7e9d71164942bfbfcef7753",
+      "e888bfdc808ae72eab25ae22",
+      "e89a49a174777d8e1d6dbc6e",
+      "e8bb640eb7903263a39efbaf",
+      "e9b29136ea0e011a2f4ddc53",
+      "e9c3be6fc46cd9f98e3ec477",
+      "ea114414861112b86d707024",
+      "ea59934c05a78320d73c891b",
+      "ea9091144e0ecebc6af3e599",
+      "ebdfe478056ddf004941e27a",
+      "ec86293d954bdbfaeaefd858",
+      "ed313b50e666f46c1d03b16b",
+      "ee07b632989342fd80207f1d",
+      "ee7a1a5d821cc0cb3f68a785",
+      "eeb5c7c61a3562e6ed472296",
+      "f1a752c640df17aad803e1e5",
+      "f1a85901e83eba40f3c04fa2",
+      "f1f2754b36aebe465ae98a81",
+      "f2a75bb3b3b2fb1217b1908e",
+      "f2af2fbc09ab1765e8517c7d",
+      "f2e97d1cedd9c157559ed8e7",
+      "f3da6b2a416c7428157d7fc9",
+      "f405475145c3cb3d82286635",
+      "f40624dbf0a44e885ea97270",
+      "f579f0ea87e43a4afe48d291",
+      "f6dbf9ce2c8710953bc8b0f5",
+      "f716c75c8993658631597dee",
+      "f74d8fcec4dd130c0b93d327",
+      "f76e69342eda2ce622e0c620",
+      "f818fd54e5e8b4cb2ad6c925",
+      "f83835701e64e12329915684",
+      "f8abb6543c2f59a16502cb7c",
+      "f9151ae81f0758ba701b4a4c",
+      "f9e89bb4f026149cc75f8f63",
+      "f9ed8fd49cb89d3db1a2873f",
+      "fa016aca5301646a60a91fbb",
+      "fa82c822eff5c13cb3a07e27",
+      "fb29150f653b08bac831dd71",
+      "fc3833099383237d9b1913b8",
+      "fcab035c3924b885aeeec520",
+      "fcca01cdac467eaf5087de42",
+      "fd36f70b96b1f623135e790b",
+      "fd979c4a87978cfd7564e2d8",
+      "fdb8f0617379b14ecbe78e03",
+      "fe0a6aff363a1755b5fb217c",
+      "fe1a5d26e59dec5eb34424b4",
+      "fe1de69bb36f345f3290bb99",
+      "ff0145fd807a41cc1df23f76",
+      "ff5d5061ae93300233bd877b"
+    ],
+    "sharedIdFieldChanges": [
+      {
+        "id": "045b7b0e651390a75651ca4a",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "0b8ba0d74c08ae2911d6f3f7",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "32c31c73091163ff9abc4e87",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "353c3fe1afa90bc631c11ab0",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "3b81ee67adc7725475704cdb",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "3f7be1258f7c96ea1ebfa2ce",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "45d074093a82cbcea2aacc46",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "499c99f3d0da981ca49b29c6",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "673a7d08e343d8fe84991679",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6c8dbc75038e4ed3e8b8126b",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6d03faa2e5e033fa2efd366d",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "6d9af0ff24ebf959501b3fec",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "7c73633afa2f217ba9336b4f",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "87194b19c4e6cf09d2204628",
+        "fields": [
+          "episodeUrl",
+          "published"
+        ]
+      },
+      {
+        "id": "8b22e2cb009f9e863a0fb334",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "90e0f5e59b5dcddd80d9672a",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "9a48dce5272037ba856c5949",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "9fb7e4f8d1d6b28a685be834",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "a252638bd7eaced6779a019b",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "b00b23cc6993206f2a6785b6",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b4551355733affb99f9bc552",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b5c6989de4abdd6899e458ce",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "b8399d8fd6deae5811268a37",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "ccbbf3f5f4596ff9d7f3ca38",
+        "fields": [
+          "language"
+        ]
+      },
+      {
+        "id": "cdc6d829426fa7af46ccf907",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "df1b1186782c2774d0cd3beb",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "e9e40c4ffbb347c811ef1162",
+        "fields": [
+          "episodeUrl"
+        ]
+      },
+      {
+        "id": "ea34e302372de1d1c256df49",
+        "fields": [
+          "episodeUrl"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "podcastFindings": {
+    "app": {
+      "sourcesWithoutId": [
+        {
+          "row": 27,
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "basis": "same_https_origin_only",
+          "disposition": "review_required_no_identity_or_rights_approval",
+          "restrictedMetadataOnly": true
+        }
+      ],
+      "episodesWithoutResolvableSource": [
+        {
+          "row": 7,
+          "episodeId": "1c21a4b4bd22aafc9d5a5a83",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 9,
+          "episodeId": "fda3f3204d54ddebd542914d",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 12,
+          "episodeId": "2c55022d783e65b14bca3e63",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 17,
+          "episodeId": "d6273f1588bfc5e0f48080ae",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 18,
+          "episodeId": "2db5eb09f0dcf6760453bb3e",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 22,
+          "episodeId": "30fa5d4dd9714d3624bed9f4",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 23,
+          "episodeId": "9669962751f50b0165a84ee7",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 26,
+          "episodeId": "18f639dd4e83766040d0597e",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 27,
+          "episodeId": "5ae27094f618e991045253d8",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 33,
+          "episodeId": "367f54bed9136a725f8c5532",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 35,
+          "episodeId": "9ae0793ae05ef545b35676ac",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 37,
+          "episodeId": "121f8b6a6c85ef8813557dd7",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 38,
+          "episodeId": "ae7e54d371f97a974127a4d4",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 40,
+          "episodeId": "af68fb7da8ec4388dfe632e3",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 41,
+          "episodeId": "bcacf85a86e87bd11be85f2d",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 44,
+          "episodeId": "ea1beef5d5ae7fa3c7aeeb9a",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 45,
+          "episodeId": "3d868897b62369e190f7abe4",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 46,
+          "episodeId": "4a1654de4e2c08bc7f3d21d7",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 47,
+          "episodeId": "1c70ca886151f8995694ce9f",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 49,
+          "episodeId": "4d7d9cb44df4eba601b5fc81",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 56,
+          "episodeId": "b413f4c2ae4b0742d664e107",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 58,
+          "episodeId": "968295f33bd8206b1a2731fa",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 59,
+          "episodeId": "4535e4f2913a1a68b63cd191",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 64,
+          "episodeId": "aa9c4022c827e2e1a08f26aa",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 69,
+          "episodeId": "b358d4762914593c1fd9bd53",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 71,
+          "episodeId": "61da655f6c09102715dd8e78",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 75,
+          "episodeId": "ca7a1927e68ebd31579022c3",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 76,
+          "episodeId": "0b6c53d803d06ee2a381dc07",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 77,
+          "episodeId": "acc6894cf8629a3d1f85a49f",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 82,
+          "episodeId": "374b7421c927d679bb0a7a43",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 85,
+          "episodeId": "a8b8678d5a94b945d8a6f38b",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 86,
+          "episodeId": "91bf67bb9605c04ccc17294a",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 91,
+          "episodeId": "675d829108754d6e72152629",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        }
+      ],
+      "episodesFromExplicitlyDisabledSource": []
+    },
+    "data": {
+      "sourcesWithoutId": [
+        {
+          "row": 27,
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "basis": "same_https_origin_only",
+          "disposition": "review_required_no_identity_or_rights_approval",
+          "restrictedMetadataOnly": true
+        }
+      ],
+      "episodesWithoutResolvableSource": [
+        {
+          "row": 3,
+          "episodeId": "5618f6c0ab420bd17335cf97",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 6,
+          "episodeId": "65c459a878241fd5add0d82b",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 16,
+          "episodeId": "bedc5e0aa6ec56ef77e4f2b6",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 17,
+          "episodeId": "4afdadce14a9cc679bc165bf",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 19,
+          "episodeId": "6fd784be5a47e8312486cae3",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 24,
+          "episodeId": "fcca01cdac467eaf5087de42",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 39,
+          "episodeId": "8dfc778a13c272a775617139",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 41,
+          "episodeId": "2b066dfe2c33e0395f75d58c",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 43,
+          "episodeId": "b9b958f99054ef8e42603c67",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 47,
+          "episodeId": "5685023e4c837c499c3bb853",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 56,
+          "episodeId": "3e1bb4d4e8f17bdc3c837def",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 57,
+          "episodeId": "5c450f4379c6d858af74db26",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 58,
+          "episodeId": "3e5b2faf1709a359daffb236",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 61,
+          "episodeId": "26ee86d01d1b5fc2bcf7764c",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 64,
+          "episodeId": "6c4a875cd0e41373c26d5faf",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 66,
+          "episodeId": "0b8d4f62a58ce82f1f25e81d",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 68,
+          "episodeId": "fc3833099383237d9b1913b8",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 69,
+          "episodeId": "d067482ab5c232bfd5918e3e",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 70,
+          "episodeId": "3414c808470f5678cf4c8754",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 71,
+          "episodeId": "584a0c74db4974cc7c51ac39",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 72,
+          "episodeId": "0b17a79217155353ce801410",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 73,
+          "episodeId": "e9c3be6fc46cd9f98e3ec477",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 74,
+          "episodeId": "5b56f93d3ccb4e304d25975f",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 75,
+          "episodeId": "38621fbd726673c048bebcd6",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 76,
+          "episodeId": "068f60cd360acfac6c644d57",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 77,
+          "episodeId": "8491db0ce4f897da14c1758f",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 79,
+          "episodeId": "af50de29217bf7aa1711fe93",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        },
+        {
+          "row": 80,
+          "episodeId": "9b58765d8f8a91a55eb2eeaf",
+          "reason": "missing_source_id",
+          "possibleExistingSourceIds": [
+            "radio-dreyeckland"
+          ],
+          "disposition": "review_required_preserve_episode_id_and_restrictions"
+        }
+      ],
+      "episodesFromExplicitlyDisabledSource": []
+    }
+  },
+  "dataEpisodesBlockedByExplicitAppPolicy": [
+    {
+      "episodeId": "22c5be9bde68144db947c5eb",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "856153004e7429f8cf28cac8",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c11f91776dfb4049d0e9535b",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "4fcbfc7c55b05be1410d3986",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "bc4d65f229c96e7ee2e6bcf6",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "40951c172f1c3a78dbae20cf",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8a8f99c188d0e33d01733fa9",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "445c77c7318ede8fa3f81e3e",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b1512c00988a2d893533dc1e",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ff5d5061ae93300233bd877b",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "14b76595fed9d3fe2126641d",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b54433ec6c29e0f396e59109",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "5b94ab0218fc7db0c76d542b",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "3afd2ed1040b9309e500ed96",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b611ad5551c4dab45593dce4",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "2995a88f2cd99265a73f53ca",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "3bd240394b3bc2541df28627",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "078cd3c1dab77522c35f5d34",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "653032d0d8dbd4dcc954b6eb",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "b0ff8e38bb5b8c63763b881e",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "8b1cbd0f62eb08d5f5f3cc10",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "994225a429248ea0f32d99e7",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "5e7d06dafd50c250e07d8c19",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "871ce62a4d62e0d698a8e06a",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f579f0ea87e43a4afe48d291",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "f2e97d1cedd9c157559ed8e7",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "796357dcb71899d97b9cf82f",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "76e44b0b82b6edfa51dbe377",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "e50d2e018204db1e276f2fbb",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "c8ca9b927aa6be6b4085e0f7",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "93a9aaeac7efc2ac4c21cb99",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "63f9ada647366413fcf7d9d6",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "ee07b632989342fd80207f1d",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "27c3404ad2f88854448b6887",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    },
+    {
+      "episodeId": "fe1de69bb36f345f3290bb99",
+      "sourceId": "leftover-talk",
+      "disposition": "app_policy_blocks_activation_even_if_data_contains_record"
+    }
+  ],
+  "librarySources": {
+    "appRows": 9,
+    "dataRows": 9,
+    "sharedUniqueIds": 9,
+    "idsOnlyInApp": [],
+    "idsOnlyInData": [],
+    "sharedIdFieldChanges": [
+      {
+        "id": "anarchist-library-de",
+        "fields": [
+          "homepage",
+          "opdsUrl"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    }
+  },
+  "libraryTitles": {
+    "appRows": 609,
+    "dataRows": 266,
+    "sharedUniqueIds": 160,
+    "idsOnlyInApp": [
+      "anarchist-library-en-0100810c338037b2310fdbbd",
+      "anarchist-library-en-0151466b535fdd673942609c",
+      "anarchist-library-en-03d1a9ce92c40deafc408d4a",
+      "anarchist-library-en-047e2ecc5e218f01de16d23f",
+      "anarchist-library-en-0707ebbf122b034a770600a7",
+      "anarchist-library-en-0b3b3169e9b154727cc7c884",
+      "anarchist-library-en-0ba74f59733f40434f93187a",
+      "anarchist-library-en-0ccda4ce16da2f3e09b38958",
+      "anarchist-library-en-107e66014aa2fcb452d39898",
+      "anarchist-library-en-11caf1ed7e38cd1794169a30",
+      "anarchist-library-en-151b744de9e9f8de698c5795",
+      "anarchist-library-en-15aaa891ab5ca6b6600a5d1c",
+      "anarchist-library-en-164b94667108c9ce3a722758",
+      "anarchist-library-en-1900d79281477938ad622d5d",
+      "anarchist-library-en-211166ace4e86cc66e51e325",
+      "anarchist-library-en-2145404d755f6e5e10fadabf",
+      "anarchist-library-en-215bcc72f9db906e918ee8e2",
+      "anarchist-library-en-23d84c4377c0ec75e9b1dd92",
+      "anarchist-library-en-251e9daf40a0309b233759e0",
+      "anarchist-library-en-26508167001f1bf876aa2a64",
+      "anarchist-library-en-26c1cbf3ab2783a80d3d0506",
+      "anarchist-library-en-2a772ed720227c84e32eea34",
+      "anarchist-library-en-2a8f794142f8d07dafb78dd3",
+      "anarchist-library-en-2b1b6c10206f6e5eb397ac38",
+      "anarchist-library-en-2e55541bfd2bd2f8cf1a71b1",
+      "anarchist-library-en-308ce5c5daf2da5522270e80",
+      "anarchist-library-en-321da36a1aea40713ea0a8ed",
+      "anarchist-library-en-35a9714bf7a43f8f2ff5e501",
+      "anarchist-library-en-382b0793ed8dc09bb061d1e5",
+      "anarchist-library-en-3a788700ee78dc19cb91c639",
+      "anarchist-library-en-3b33d4f797208b1fdbb0fb5d",
+      "anarchist-library-en-3e12428f3ab329f5412aa4ee",
+      "anarchist-library-en-3f0f43fc3118d6b64f701284",
+      "anarchist-library-en-406b8541137a39546c98199a",
+      "anarchist-library-en-4122aa553dcd497c7ad7fe36",
+      "anarchist-library-en-43f4bf614f8b00ecc06ffb30",
+      "anarchist-library-en-4446fb5ac28eef7ebadfeca9",
+      "anarchist-library-en-4b37893cb040a071ed5488c9",
+      "anarchist-library-en-4c8f31658a6ca11699030a39",
+      "anarchist-library-en-5181c8a65ed2d3d537497963",
+      "anarchist-library-en-542f36d263aa8307d25529dd",
+      "anarchist-library-en-54c25d4cf48cb4284e5f24fa",
+      "anarchist-library-en-5845d97f6e89cfa44420b474",
+      "anarchist-library-en-5ac16c5ea38f3fd60871cc1a",
+      "anarchist-library-en-5e6592963113064048ea0a8c",
+      "anarchist-library-en-614b6e80d613ec39ac282194",
+      "anarchist-library-en-6183e14ec4c3c9a855822d62",
+      "anarchist-library-en-62b647c9ee0a06a02b739586",
+      "anarchist-library-en-638baff085326ddb8881df0e",
+      "anarchist-library-en-65827d87007b91c4828172c1",
+      "anarchist-library-en-67763dd7e08eb926acebfc26",
+      "anarchist-library-en-6a36139eb1aa4e6a7dacd508",
+      "anarchist-library-en-6b3b671ba31663147496d119",
+      "anarchist-library-en-6c3ac86af10d1434378ec18c",
+      "anarchist-library-en-6d1ffc4dc5dfc9435e85488a",
+      "anarchist-library-en-6faa1aa962ea93ace82e09c4",
+      "anarchist-library-en-70023bb997ccc9f89aab30a6",
+      "anarchist-library-en-708abc3600f9329adce34911",
+      "anarchist-library-en-70d8811a610420245f5538e6",
+      "anarchist-library-en-726ac3e67372bd0165eead96",
+      "anarchist-library-en-747df51d87c57c576145a399",
+      "anarchist-library-en-759a3e668e0e3efc9cd9ca22",
+      "anarchist-library-en-76802d27858cecf73b88ff9b",
+      "anarchist-library-en-7979c1fcbb6e4126cb163042",
+      "anarchist-library-en-7ac283b03a6df576d7775601",
+      "anarchist-library-en-7acb5b4e7d47bcc963e9089e",
+      "anarchist-library-en-7b174fb4a8b27a179a563b79",
+      "anarchist-library-en-7b2acf5c2921911e3a7b3cad",
+      "anarchist-library-en-7b60ad1835ccb028a30cf18e",
+      "anarchist-library-en-7b8b4d4c519c1201d73daf8c",
+      "anarchist-library-en-7d245f9502e4ef2ef8fb1f04",
+      "anarchist-library-en-7dc75523b0a0244da7b61a8e",
+      "anarchist-library-en-7df42f9a7f271b8551c80428",
+      "anarchist-library-en-7ed907921b8db0bda6ffe587",
+      "anarchist-library-en-7f709c541136911b37563157",
+      "anarchist-library-en-80bc5e707c2e31f19e94e86a",
+      "anarchist-library-en-817e4605bdeb0f0bcdd5f931",
+      "anarchist-library-en-81d32d1819111a640d221637",
+      "anarchist-library-en-838fca2c63816373f46d9815",
+      "anarchist-library-en-84326607d106576fa6f65d05",
+      "anarchist-library-en-8489b11f3539e5f0faebd759",
+      "anarchist-library-en-85409b3d101f2c5bdb0cb0ea",
+      "anarchist-library-en-854fbc60291a2e4b61db78c0",
+      "anarchist-library-en-88ad2a657059e9c03954a303",
+      "anarchist-library-en-8b2690d6bbc9bab04465b6d8",
+      "anarchist-library-en-8b7a2ffc011fcaf14e90a8fe",
+      "anarchist-library-en-8dd9614efbe5cd3f283086e9",
+      "anarchist-library-en-8e2fbd4522030a63a10a5276",
+      "anarchist-library-en-8fea96c22792abe2b3b5137c",
+      "anarchist-library-en-92a9bfe4862a8c73c2c5276f",
+      "anarchist-library-en-9d36c9a61ee6abe0ded8367b",
+      "anarchist-library-en-9fb146b9cca3bc62de1fe8c2",
+      "anarchist-library-en-a71b49f31530beb8cc23ca95",
+      "anarchist-library-en-a83b6d73e3aabecc7d6f0727",
+      "anarchist-library-en-ac448b145cd13eb4784b01b2",
+      "anarchist-library-en-af082003ce5015bf3564b820",
+      "anarchist-library-en-af2928236e79ed0360cee5fd",
+      "anarchist-library-en-af3b3bfe12f456b61f156783",
+      "anarchist-library-en-b1eada8e2af4c2b3c33317b4",
+      "anarchist-library-en-b254564987edb244907db20d",
+      "anarchist-library-en-b2eab7b55441a1eb73af4eb2",
+      "anarchist-library-en-b4ea2d21542d61a4e21fc6e3",
+      "anarchist-library-en-b5f9af463e8c5129da61c58c",
+      "anarchist-library-en-b63435c245869e4de68fee6d",
+      "anarchist-library-en-b6d842e9d279459cfbc77d97",
+      "anarchist-library-en-b72141f9035f9ccf61bfb7c9",
+      "anarchist-library-en-b9bcfc520082b0e39826943b",
+      "anarchist-library-en-bb9838a80fe66e3d061dfe58",
+      "anarchist-library-en-be99c01a3aa1ea6b91052506",
+      "anarchist-library-en-bef10baac430988c569a911f",
+      "anarchist-library-en-c43394557b6b0c3e60e87ef8",
+      "anarchist-library-en-c506ff6d3fc777f69e7a866b",
+      "anarchist-library-en-c5dfbf4031ba40a4da09236c",
+      "anarchist-library-en-c621c6f139b916b6f0b27ca9",
+      "anarchist-library-en-c70a69f5c37fa16f62e07a46",
+      "anarchist-library-en-c8bf231a83027b8c03b1a9e1",
+      "anarchist-library-en-cc4a4911b2ff3aa9bfb5c45b",
+      "anarchist-library-en-d2df3d5abf3e6aeb7aac87dd",
+      "anarchist-library-en-d41ebd9089dd7b1a3d4052f2",
+      "anarchist-library-en-d4c8ee09bfe8dd047484d029",
+      "anarchist-library-en-d537e7560eaf3d638bf36451",
+      "anarchist-library-en-d722fc40c33bf31a18804b10",
+      "anarchist-library-en-d921524a50a86fa5df1c73cd",
+      "anarchist-library-en-d93437b9242ec35938a6469a",
+      "anarchist-library-en-dab7431311a3817c3c51ff90",
+      "anarchist-library-en-dde831637b9a4f861e02c3ad",
+      "anarchist-library-en-e2f8f41e137e2c7848630c85",
+      "anarchist-library-en-e502facac2cdc8c99465c51e",
+      "anarchist-library-en-e99af460efca493effcd9867",
+      "anarchist-library-en-ed5db9926808d00a23f7d344",
+      "anarchist-library-en-ed96945b821776d4bbeb2ea0",
+      "anarchist-library-en-edcee11fa1fa6d4060a414eb",
+      "anarchist-library-en-ee362c5738936bc1a25b0f45",
+      "anarchist-library-en-f16a4f11d8d50e6aa0636a7b",
+      "anarchist-library-en-f187301788cbebad5292a50e",
+      "anarchist-library-en-f2d2b16922952e05609a0aa9",
+      "anarchist-library-en-f750a8f6f3014a0cd9b2ab8b",
+      "anarchist-library-en-f7e62e00e563f240d2d8ecf5",
+      "anarchist-library-en-f81bccfb1607bf670352ae79",
+      "anarchist-library-en-f9700ce479e5e0380de8ec32",
+      "anarchist-library-en-fa7c360feab5f78750b84d7f",
+      "anarchist-library-en-fb327152c65b70752b0f1fed",
+      "anarchist-library-en-fefac852ef4adbf350911eac",
+      "anarchist-library-en-ffea82e77a0568daeca554f8",
+      "anarchist-library-es-04218ca8fb12b6c0ae888946",
+      "anarchist-library-es-0494795e79c40679303cbd5a",
+      "anarchist-library-es-04c466a1b745d5c99edddbe0",
+      "anarchist-library-es-0645b527feb6085730eb934d",
+      "anarchist-library-es-07f512115d4aca4e0cd58ad5",
+      "anarchist-library-es-081de59bce7e07f3b4ceacdc",
+      "anarchist-library-es-08c0963b24c3af34abb0a399",
+      "anarchist-library-es-0b9a839b1db091ef1ddc055c",
+      "anarchist-library-es-0c5bf7f229abce215a1d6ebc",
+      "anarchist-library-es-1053aecd0dedc53eec9cf75f",
+      "anarchist-library-es-117a7d90e776ea75d2e15487",
+      "anarchist-library-es-11dd2f552fc64c57abe6f34b",
+      "anarchist-library-es-1529b39c2dc29808507e0076",
+      "anarchist-library-es-16757e9c0630eeaab17ce61e",
+      "anarchist-library-es-1937998323bffc0992508cea",
+      "anarchist-library-es-1f6f77b18ab05d7c5fbecce9",
+      "anarchist-library-es-27d0c0d86884209542e993e9",
+      "anarchist-library-es-28a10ecc57866ae3f66a1dbf",
+      "anarchist-library-es-2aeb52d181c342ea3dcfdac6",
+      "anarchist-library-es-2e299edd93e9e51492698e0f",
+      "anarchist-library-es-2e7dd7a6079e45cd8c878d0b",
+      "anarchist-library-es-2ea03480b0cc898628a3049c",
+      "anarchist-library-es-2f8ec4bbeaaae3185ffa8ae4",
+      "anarchist-library-es-2fa75afa7bc019cb725a5b35",
+      "anarchist-library-es-31de3a380f2ba2ec79b731af",
+      "anarchist-library-es-38b028fdd67ca059656ab49f",
+      "anarchist-library-es-3a746d5d4734b371c1093870",
+      "anarchist-library-es-3e2b57194f06e5cb6a1f16d6",
+      "anarchist-library-es-3feb76521b6b58dfa1db3ac9",
+      "anarchist-library-es-40189babf071d7ea1577a371",
+      "anarchist-library-es-42e6915812ee9b7d9ba74e81",
+      "anarchist-library-es-42e8a817ab54203407af1f3c",
+      "anarchist-library-es-44753ec3a457582d51cdeb90",
+      "anarchist-library-es-44aab6bde05aec662e65b8c3",
+      "anarchist-library-es-46e7caf4e86b948bc64db305",
+      "anarchist-library-es-4ce566bd3dbacb49b77abb4a",
+      "anarchist-library-es-4f7d5e6b13f79edc653ea17d",
+      "anarchist-library-es-51b5d01c81c506779dcac9ad",
+      "anarchist-library-es-5882cc8866be5ceee60d2163",
+      "anarchist-library-es-5c1946e13389abcd4b378873",
+      "anarchist-library-es-5c8dabf7295e0efe8ff5a0e9",
+      "anarchist-library-es-62c6eb4a05224d2e422a95b6",
+      "anarchist-library-es-6419e9fc2815f5d9e83f8f4c",
+      "anarchist-library-es-68dfdf92c4095bff3e889252",
+      "anarchist-library-es-6971bf2b98b34d529dad5b96",
+      "anarchist-library-es-69cb0f34b351239c39b4145a",
+      "anarchist-library-es-754d3418947aa4f130bdee24",
+      "anarchist-library-es-811044519f3e99cdaf5b4314",
+      "anarchist-library-es-831034492fe4c2dde4df7c93",
+      "anarchist-library-es-8358c4d961f1e395b9296fa0",
+      "anarchist-library-es-85e5718cd97006e5767e95f0",
+      "anarchist-library-es-866975652021ad1da7b3455f",
+      "anarchist-library-es-8716355e71b7ae401ef9ff6a",
+      "anarchist-library-es-8a272356114a101330710e88",
+      "anarchist-library-es-8d50e37c60ab7c1e629ae383",
+      "anarchist-library-es-8dec434afd901e00a425843b",
+      "anarchist-library-es-91e699c5b13cb202f74f224f",
+      "anarchist-library-es-934d73715457e26611a96d0e",
+      "anarchist-library-es-94efeec7e9e42f6f34a79b3a",
+      "anarchist-library-es-997b0c97031bb9aee400d758",
+      "anarchist-library-es-999a6274d151fb6ece45966c",
+      "anarchist-library-es-9a390ef8e5cea1b5105469ef",
+      "anarchist-library-es-9a65c044ea7d5edae7f43dc8",
+      "anarchist-library-es-9afca16629b5565ee560463c",
+      "anarchist-library-es-9d214cef5146f64d5f9e41b0",
+      "anarchist-library-es-9e007fb20533be6547163c94",
+      "anarchist-library-es-9e8f5f3c3cdd0203ad9d44e5",
+      "anarchist-library-es-9eec67d96c57077d5175db1e",
+      "anarchist-library-es-9f37ab965c1848f0c0981b59",
+      "anarchist-library-es-a04511fc6848f5bca3565cd7",
+      "anarchist-library-es-a110245c3d99cbd2663afa41",
+      "anarchist-library-es-a2e7eb0ca972d6f1a335dc55",
+      "anarchist-library-es-a3a04b0d6ac1fde136ababc9",
+      "anarchist-library-es-a609fb1fef91bf9436737fe5",
+      "anarchist-library-es-a7a2daeb3e89348070a17d4a",
+      "anarchist-library-es-ac1c2a5117f82f1651f5bfcc",
+      "anarchist-library-es-acf4724376a79eebadd5faf6",
+      "anarchist-library-es-add28ebc7937d472ad2092bd",
+      "anarchist-library-es-af228cfa9b25266cf5a2002b",
+      "anarchist-library-es-b121181eca350236551724db",
+      "anarchist-library-es-b1a429bfede6b7feba87cb67",
+      "anarchist-library-es-b2091b72127f1a2c17574bfb",
+      "anarchist-library-es-b213b16bb7d8a32a388fdfc3",
+      "anarchist-library-es-b2ba345ceb89f4237881dd8b",
+      "anarchist-library-es-b51fa29f0d7208c49b569099",
+      "anarchist-library-es-bfa63f74e0f0318680da0765",
+      "anarchist-library-es-c7aaa0277cba490ac54b1cf8",
+      "anarchist-library-es-ca010625c99003e16be61789",
+      "anarchist-library-es-ca276e257c2181c28891bf82",
+      "anarchist-library-es-ca66fafaed818abaf8f24670",
+      "anarchist-library-es-cba223a7887632a48759799e",
+      "anarchist-library-es-d6c069b884b7900a5b0204c7",
+      "anarchist-library-es-d9c379bfbfc543dabe7e75f6",
+      "anarchist-library-es-dc1bd3430389c2c892ee6d98",
+      "anarchist-library-es-de428f250cecc365c8f94c1c",
+      "anarchist-library-es-df5b16f315fb7d2e6bac0b53",
+      "anarchist-library-es-e39c95b3bb2c2510b07614a1",
+      "anarchist-library-es-f317ff37b09b346a746833a4",
+      "anarchist-library-es-f6203e1e3813e043898bbc84",
+      "anarchist-library-es-f7e8df4f659668559a7b9ea1",
+      "anarchist-library-es-fa736f18b72c0d3db9db2e54",
+      "anarchist-library-es-fc944e9af39b6c5d988d1af4",
+      "anarchist-library-es-fd34c35287efaed7d2e85695",
+      "anarchist-library-es-ff3f791d9ff9935f0698a37e",
+      "anarchist-library-fr-01341699931c41f1addfcb9f",
+      "anarchist-library-fr-014f093b46cd9bdee67b325d",
+      "anarchist-library-fr-02a1d69ecc4e4f4b0e261403",
+      "anarchist-library-fr-0619a1864922c4ee44a96f3c",
+      "anarchist-library-fr-07cf92b3fda587499f745ff8",
+      "anarchist-library-fr-07dc5b6506be51d634e7d7aa",
+      "anarchist-library-fr-09add9a07cf5cd6f4226483d",
+      "anarchist-library-fr-0ae5ef0d07be65549cea5d00",
+      "anarchist-library-fr-0afcc69df92001af6d202bee",
+      "anarchist-library-fr-0e427ba55ccbeef35cf97c6a",
+      "anarchist-library-fr-1103ce3659336a6170444c6d",
+      "anarchist-library-fr-118d5c5b0cff34fbecf7ef91",
+      "anarchist-library-fr-1267d101421c6f1308f26dcc",
+      "anarchist-library-fr-13c57b31fed4fc9b67efa318",
+      "anarchist-library-fr-14edcb606a744f264aa67fd0",
+      "anarchist-library-fr-1753ce76381e0a859e8b5aa9",
+      "anarchist-library-fr-17db194a2cd88460587e2ba4",
+      "anarchist-library-fr-1f7b289aa3e8d58b9d9f9c17",
+      "anarchist-library-fr-21c1a0fc3c197becb28b5af8",
+      "anarchist-library-fr-22898488f73f939edf01d712",
+      "anarchist-library-fr-22e044219b943abbcb649024",
+      "anarchist-library-fr-272fbe38405b4b5741a5a0ac",
+      "anarchist-library-fr-27b2b4470b3dec53bcfdc94a",
+      "anarchist-library-fr-27cf7706122d3bd4268286c4",
+      "anarchist-library-fr-297a09dbbd597e25fe97eae5",
+      "anarchist-library-fr-2d13f69ee5601be6937b0de6",
+      "anarchist-library-fr-32ddb99544cc9c6930469646",
+      "anarchist-library-fr-37f519f071c8f2e0695b1a90",
+      "anarchist-library-fr-38c25766eb175f16e82643d8",
+      "anarchist-library-fr-39f0bad8ad0ab201014e9c33",
+      "anarchist-library-fr-3c7031a65482dbe05ff4611b",
+      "anarchist-library-fr-3d34ffa6963aa79d5c29eb83",
+      "anarchist-library-fr-419d7ad3478ae82c26806693",
+      "anarchist-library-fr-423f0fb0d0b9b6f85118fc99",
+      "anarchist-library-fr-433378c2168e3adffd34c1ff",
+      "anarchist-library-fr-44ae2c0ce2aec259ca5b9638",
+      "anarchist-library-fr-45c5bda6248e9ff1027ff073",
+      "anarchist-library-fr-45e8a615e4c6475f216d5830",
+      "anarchist-library-fr-49e6aa0c7db0b885ded2abaf",
+      "anarchist-library-fr-4ec78494fb0ccf7d5b7e93f9",
+      "anarchist-library-fr-4f929b552d62cee05216f27b",
+      "anarchist-library-fr-500814379f24f0ba4e75806b",
+      "anarchist-library-fr-50d7c4be0b2386fb342ce5b8",
+      "anarchist-library-fr-551616025ddd8195258531ea",
+      "anarchist-library-fr-55a5ffad52ae125c9d5468d9",
+      "anarchist-library-fr-5f8c4e8fadda9939cfd9555c",
+      "anarchist-library-fr-5fe279026626e0d310113cbb",
+      "anarchist-library-fr-616fe827058a8b902cf71b2f",
+      "anarchist-library-fr-648993362e026da899678efb",
+      "anarchist-library-fr-658884136ccaeef971612ea6",
+      "anarchist-library-fr-66ab4fa3d0d8702258d73f0a",
+      "anarchist-library-fr-6976170d39810edab4477e4e",
+      "anarchist-library-fr-6f735a84d02ba74293531830",
+      "anarchist-library-fr-724dab1ad4ae8e12152ce46d",
+      "anarchist-library-fr-76f18fdc64b9b423b32ab9ed",
+      "anarchist-library-fr-7772ada6fc6e127018db3f0a",
+      "anarchist-library-fr-7795089d737dc80751bf0c24",
+      "anarchist-library-fr-7af3dbe514beb66b1d1d26b1",
+      "anarchist-library-fr-7b523665475c5bbb87b5ea70",
+      "anarchist-library-fr-7b8bdf131cf936f566229258",
+      "anarchist-library-fr-7c90e20626e2f7d525231e87",
+      "anarchist-library-fr-7f14f98d0357fad152478f83",
+      "anarchist-library-fr-8c265b0e9c31fff72d0a29e0",
+      "anarchist-library-fr-8d2f1c0c2fad84dec4b82165",
+      "anarchist-library-fr-8e955149a57e6afb95caab2f",
+      "anarchist-library-fr-8e9e2c35a942f53cfd5fb220",
+      "anarchist-library-fr-8f33d226f4da5657321e844d",
+      "anarchist-library-fr-9016e8afb2da3447ef0831d2",
+      "anarchist-library-fr-91649c4b44ba87eb73a496cd",
+      "anarchist-library-fr-91db1e000ba8fc82c9688bd1",
+      "anarchist-library-fr-92ac3cbd64d1e665cad50d39",
+      "anarchist-library-fr-92f11e7cb0c948bd5a14f47e",
+      "anarchist-library-fr-943594f0b8345cd5aaef7dd1",
+      "anarchist-library-fr-94924ee74059afc6e86f3125",
+      "anarchist-library-fr-96ffe4697bad81c4bf38ba08",
+      "anarchist-library-fr-9866831bbe71a0bc795e0a4c",
+      "anarchist-library-fr-9899dbce11188ec52d089328",
+      "anarchist-library-fr-990f0274f4f5b1a2420028a0",
+      "anarchist-library-fr-9a0c40d881e6dde03e3cd322",
+      "anarchist-library-fr-9a837e54c472eace638c5d3a",
+      "anarchist-library-fr-9adbc9d94f401cb2aeb3ae74",
+      "anarchist-library-fr-9dcf922e5876883f1b9449b5",
+      "anarchist-library-fr-a450ad2c2ecc7d26c478f2c1",
+      "anarchist-library-fr-aa0536586785d908f385838e",
+      "anarchist-library-fr-aa48d13cdf67640414884fca",
+      "anarchist-library-fr-aafe73f75e4fef18524ce6f9",
+      "anarchist-library-fr-ab3816ce9496e8e066fa555e",
+      "anarchist-library-fr-ab91701f8e335df219143b80",
+      "anarchist-library-fr-afad7bfdbbe395e81098e7bd",
+      "anarchist-library-fr-b23fda5c3aaa8ecc8aaa37eb",
+      "anarchist-library-fr-b298ae1f02bb2a0e1837746d",
+      "anarchist-library-fr-b2a6c2d0bea4345e664fb405",
+      "anarchist-library-fr-b3331f922d403f756471cca0",
+      "anarchist-library-fr-b47d2cbf303c8b3ecc886a25",
+      "anarchist-library-fr-b5a40256b811d100f47960fe",
+      "anarchist-library-fr-b6a19497a9b5f0906840d24b",
+      "anarchist-library-fr-ba09a76798f9cb87c2f3bfed",
+      "anarchist-library-fr-bab1499be10337c21428ed79",
+      "anarchist-library-fr-be7822bdb99ae55f6523b760",
+      "anarchist-library-fr-bef7b125f92ff6177fcfb776",
+      "anarchist-library-fr-c0b9e0cb9330807097459a8b",
+      "anarchist-library-fr-c25158d67f9d4e5cf9330675",
+      "anarchist-library-fr-c2b5e2b3cfc278373f32df5b",
+      "anarchist-library-fr-c5df4b5e2e9b3a07544d43aa",
+      "anarchist-library-fr-c63db77a6e41250b4d0f62dc",
+      "anarchist-library-fr-c68fe24bcf783e92728527aa",
+      "anarchist-library-fr-c6e70be07ca61279d913cb1b",
+      "anarchist-library-fr-c8cb2bfbcd23e47040d6fb7e",
+      "anarchist-library-fr-ce148f7ef17dbabe0d31009e",
+      "anarchist-library-fr-d07fb49fe0f0f456036b9988",
+      "anarchist-library-fr-d0d5651384e6586c29c622ec",
+      "anarchist-library-fr-d1f1a07a9fefb94e72d53800",
+      "anarchist-library-fr-d435c8ebf7b7ba3400280df8",
+      "anarchist-library-fr-d787dbf3bd949ccf77182197",
+      "anarchist-library-fr-dae122b4978ac685ef517535",
+      "anarchist-library-fr-db371cd6be126cac87b5d794",
+      "anarchist-library-fr-dd493f378e69474364e51327",
+      "anarchist-library-fr-def9c1652decf4564884db6c",
+      "anarchist-library-fr-e0751164df51f5e44734fdc7",
+      "anarchist-library-fr-e1c023e5900b6e39bbce01ad",
+      "anarchist-library-fr-e467bbb9368f0bc179261a5e",
+      "anarchist-library-fr-e4a005b48a0c0686cc0bcb63",
+      "anarchist-library-fr-e91ddd1492ad09b35897c36e",
+      "anarchist-library-fr-e9aaf03a3ada53f9e52c3029",
+      "anarchist-library-fr-ea585ae70eb68f2416172e7f",
+      "anarchist-library-fr-fbd62c821ea7aaee4cf74263",
+      "anarchist-library-fr-fc84d75cf3debf0cb9374aaf",
+      "anarchist-library-fr-fee99f486eda53fdb59c8090",
+      "anarchist-library-fr-ffc9336dca66e9bb4ff8cb41",
+      "anarchist-library-it-088104d19c579408f9316ef9",
+      "anarchist-library-it-08af14719e649db177edd02b",
+      "anarchist-library-it-0a8762c224ee61f2696c48c2",
+      "anarchist-library-it-0b4f1ca4d387be458b5aa3a6",
+      "anarchist-library-it-0c61b3f126d3da6432403bce",
+      "anarchist-library-it-0c8079a722fb8cea6d8adc17",
+      "anarchist-library-it-119d2662505861953ab6b2bf",
+      "anarchist-library-it-128fbd1ca20c770e216ef8a8",
+      "anarchist-library-it-13f0e29a2514bffa4bab6ffc",
+      "anarchist-library-it-22e5ef9b73a5d6b08361605f",
+      "anarchist-library-it-2316b2e6418264e4c735d27e",
+      "anarchist-library-it-24343f6b54e0ed3866ee1c29",
+      "anarchist-library-it-26ae5b9aa85bb10108df1bc1",
+      "anarchist-library-it-28c66663dad573d6fd825197",
+      "anarchist-library-it-2edc4df5773d413e974dc7e7",
+      "anarchist-library-it-3073860cf773f1b232b0eef4",
+      "anarchist-library-it-3479fb99b44febee2a8b0e7c",
+      "anarchist-library-it-36df61b6b8abbbe998aa603e",
+      "anarchist-library-it-476caf0ceac7d485bed77f7c",
+      "anarchist-library-it-49d4b22e7a8f145b80712e5c",
+      "anarchist-library-it-4ec744cb941efc884eeb2301",
+      "anarchist-library-it-536e79e5c7f42b850910c3c4",
+      "anarchist-library-it-5381824840be3e260afbd963",
+      "anarchist-library-it-54b62af079bf8af0bc011a5d",
+      "anarchist-library-it-54ccbec384fafbe088cf55ae",
+      "anarchist-library-it-5720e383bfaefd2525736441",
+      "anarchist-library-it-5dd8a6f60afd7c11903f89d7",
+      "anarchist-library-it-66750da372731b1eb44bf22d",
+      "anarchist-library-it-6689c668f0116943914e0f92",
+      "anarchist-library-it-67bcf93dfe710bbdae2884ee",
+      "anarchist-library-it-697040fe51beb27799d43a7a",
+      "anarchist-library-it-6baa7b343ba3fe38cbdb6710",
+      "anarchist-library-it-6ec5f799a54025da7e714b68",
+      "anarchist-library-it-6fb9a4ee13fddd1a831a643d",
+      "anarchist-library-it-77d029b16f43f98bdc7a491b",
+      "anarchist-library-it-77f1822161b8ac4a32813bbe",
+      "anarchist-library-it-7c57c58ce2b70a9590aaf0c0",
+      "anarchist-library-it-7dc60bd5d3dd374127a894d3",
+      "anarchist-library-it-7e3ddaaf5154f69be7d97f62",
+      "anarchist-library-it-7fd42368f37c0db65b5cfacb",
+      "anarchist-library-it-847baaa8a13a7b0944be978c",
+      "anarchist-library-it-8562fe79e1c791eb7f10da33",
+      "anarchist-library-it-865bf45326f7cc314cc52779",
+      "anarchist-library-it-888d919f4873bdc500c1b5ef",
+      "anarchist-library-it-8e022cfa5d3c7c1dc2d0138d",
+      "anarchist-library-it-8f4379552477918dc6c4f58c",
+      "anarchist-library-it-982da2bb71d124b4da6c1429",
+      "anarchist-library-it-9b85603d70c4847ba53efbaa",
+      "anarchist-library-it-9cedd9c4a528a008991b4c28",
+      "anarchist-library-it-a3a25a5e6f7d318136ba3d45",
+      "anarchist-library-it-a6e897fcc16df08929e1fd39",
+      "anarchist-library-it-ae6124bd6cf79de0b8136f3d",
+      "anarchist-library-it-b6d7a8231d2f9909742cf38c",
+      "anarchist-library-it-b8cb39ac46d32328c78c1973",
+      "anarchist-library-it-bd01725af60f686747733e69",
+      "anarchist-library-it-bde427e1a0a6c28a6a33bde3",
+      "anarchist-library-it-c136f3279420f5276775708b",
+      "anarchist-library-it-c1d408e443591a5582289274",
+      "anarchist-library-it-c3f64a5e7d1b532d358d6559",
+      "anarchist-library-it-c9eb78c80e69982c58dad180",
+      "anarchist-library-it-cb59371fe79ca02ec1a7b061",
+      "anarchist-library-it-d46e4a56ec2b256b35376439",
+      "anarchist-library-it-d8130c848dc9d81b43571aa3",
+      "anarchist-library-it-db1354d7f3c5756341dd0f78",
+      "anarchist-library-it-db247837d8c06e0fc59c665d",
+      "anarchist-library-it-dd7e0a15c4f2fae0fe4b9e13",
+      "anarchist-library-it-e21a03634dcba6f00a9b2527",
+      "anarchist-library-it-e6815ef835141adefc43ae4a",
+      "anarchist-library-it-e87e15bb5a5572aedbeadd99",
+      "anarchist-library-it-fe799efd063b594bf7a919e9",
+      "anarchist-library-it-feef4d72545f406b3cff4aac",
+      "anarchist-library-it-ff7a5d5b87108949c2badf69"
+    ],
+    "idsOnlyInData": [
+      "anarchist-library-de-04bbb3ae52aa0f43b75dc49b",
+      "anarchist-library-de-0bd8153228a6bf27ed35c50d",
+      "anarchist-library-de-0e0581fe928986458410b727",
+      "anarchist-library-de-1680e238b153c0128ed741e3",
+      "anarchist-library-de-1955dda905d18e882d13b8f4",
+      "anarchist-library-de-1d200a12dea33dd3edf9d36e",
+      "anarchist-library-de-21c734ec024ffabb3cd34fea",
+      "anarchist-library-de-28a2251c0b7066d125452860",
+      "anarchist-library-de-2dcb057bb061b79f054df91c",
+      "anarchist-library-de-2e1b771d90cd8c1c328bad50",
+      "anarchist-library-de-2ed1c5e573ed3eff547e83c1",
+      "anarchist-library-de-33595f993ff09b6a984656d3",
+      "anarchist-library-de-3abe6fff711fc1fdc8767ed1",
+      "anarchist-library-de-414a7910fdecf9bbc895fba7",
+      "anarchist-library-de-466b34a92e981c5772f1cd92",
+      "anarchist-library-de-49b427a6832efc5b36006728",
+      "anarchist-library-de-4c728a9603fa423edfc5d95d",
+      "anarchist-library-de-4e73880c7a05f0ac15ea0df6",
+      "anarchist-library-de-4f3e3e7e530214572fb8fb7e",
+      "anarchist-library-de-5496d800b460478ac6b88935",
+      "anarchist-library-de-54e35673b9de98381c237171",
+      "anarchist-library-de-5924f7e50c45dad908669af7",
+      "anarchist-library-de-5997ae3507f87bb9b5908a53",
+      "anarchist-library-de-64153b82db94cd8258f618a8",
+      "anarchist-library-de-68342aa52b86195caa25560f",
+      "anarchist-library-de-6bb588216beffa0170ec37d8",
+      "anarchist-library-de-6cc094e0e8b12c7d4739f216",
+      "anarchist-library-de-7738ff26c266bef4832be058",
+      "anarchist-library-de-86163f8406340cf07269815f",
+      "anarchist-library-de-8af3a77ac55861ca18239f39",
+      "anarchist-library-de-91cd5e7b9a4a8e2b23ca7cbf",
+      "anarchist-library-de-9a3379e9395d6f3fcb78971d",
+      "anarchist-library-de-9c4be2dfa92dc560cb48bb95",
+      "anarchist-library-de-a00e2643152d534c0f4dee8f",
+      "anarchist-library-de-a4bc83e64b5170e8f642038a",
+      "anarchist-library-de-a693845b3fb2805c75910fa0",
+      "anarchist-library-de-a6f8034835ced5aea88e6b11",
+      "anarchist-library-de-ad142b083c94b12e11ad0537",
+      "anarchist-library-de-b2d9b0283f509dcab1406852",
+      "anarchist-library-de-b53edb368258841e51f9fde8",
+      "anarchist-library-de-b6c621c60a84c9d7580ef477",
+      "anarchist-library-de-bf1eea58a4bed7796db2d0ec",
+      "anarchist-library-de-c130371fccc9284dabfbc29d",
+      "anarchist-library-de-c9df69672ae97c87b3c4127e",
+      "anarchist-library-de-d5446e5ce8d8fa35a1c4af51",
+      "anarchist-library-de-d9649a9d60d5d518b40e0257",
+      "anarchist-library-de-e068cfd1bbbc0bbf1c83144b",
+      "anarchist-library-de-eeeb23bbaec085aa067ca5fa",
+      "anarchist-library-de-f38f1f632bc1426206e59aeb",
+      "anarchist-library-de-f39e68e079ba2b59d9681167",
+      "anarchist-library-de-f4316456aa1f6adaeff74518",
+      "anarchist-library-de-f43f61e8ff53e2ab82048f3b",
+      "anarchist-library-de-fc28abc7b596827412743972",
+      "anarchist-library-en-060d8e9568a5aed1934ac391",
+      "anarchist-library-en-08ddd320dfce51e98feac687",
+      "anarchist-library-en-0b03ff018dc651a69b109071",
+      "anarchist-library-en-113990bf9fb5d3a0f07db22e",
+      "anarchist-library-en-1581be6071d72aeffdacae43",
+      "anarchist-library-en-17f4c5dca724f5f365abcdef",
+      "anarchist-library-en-180453c973816bc2d9d7835d",
+      "anarchist-library-en-28a77230240e0e219e1961ea",
+      "anarchist-library-en-2ace16a397148c2e1c6cb46b",
+      "anarchist-library-en-37684b0b30ab4c2041380439",
+      "anarchist-library-en-3f6d09642042964a4041c36c",
+      "anarchist-library-en-44dfa022351a08efd2f023c1",
+      "anarchist-library-en-489eddfb541ae1db9a0f8604",
+      "anarchist-library-en-570dcff5b553a9bda1e28411",
+      "anarchist-library-en-6d64e4cc35e49dc9f65a7b4b",
+      "anarchist-library-en-7304477e9ad6b5696bc2af31",
+      "anarchist-library-en-7bd71a8be41972519070584b",
+      "anarchist-library-en-7bdabed55baaf88892525cd5",
+      "anarchist-library-en-7d64cfe2259ac0da503ea0a7",
+      "anarchist-library-en-812cb87fa92506d259604d4e",
+      "anarchist-library-en-8a593e6356dbb3c11b0c4b3c",
+      "anarchist-library-en-a88c47796cd86b7da17394b0",
+      "anarchist-library-en-ba684b9a3b65a775db73549f",
+      "anarchist-library-en-c6af7b51678955cd982e967b",
+      "anarchist-library-en-cbff2c00327b4dbc63f33bf0",
+      "anarchist-library-en-d222f57b93c29cd3462f8e87",
+      "anarchist-library-en-d49f41ba511f80b3f37eba85",
+      "anarchist-library-en-d6fb4e4ffd1cadcaa79bbb5c",
+      "anarchist-library-en-de663832dd97b002ec34fd17",
+      "anarchist-library-en-de86affda9491f649b7e293f",
+      "anarchist-library-es-4c014a62cadcb908f9c48602",
+      "anarchist-library-es-77a9118ccff956a57e34e573",
+      "anarchist-library-es-86b2780a5e895dce97e920a9",
+      "anarchist-library-es-ff72efe59251c4b68cd7db2c",
+      "anarchist-library-fr-0ad8b5541db7321ae2d6730a",
+      "anarchist-library-fr-1042ad6c2a3c56e5e3a6f5ef",
+      "anarchist-library-fr-18e1fc1412e9ea47e6726b10",
+      "anarchist-library-fr-221ac0cda6e7b73cad5f850b",
+      "anarchist-library-fr-38232bac2b00fd46889bae55",
+      "anarchist-library-fr-3f368b05d7f26f916a5a6c5f",
+      "anarchist-library-fr-5f2e57b483c042036bd935e7",
+      "anarchist-library-fr-6416feddb2fb290f2fda76e7",
+      "anarchist-library-fr-6e54a5a403df1cbb2398e9e7",
+      "anarchist-library-fr-84404256b11e58a78171b5ac",
+      "anarchist-library-fr-87cdaf1b260483d6ddb4e5bc",
+      "anarchist-library-fr-9742e57e2240a79453745473",
+      "anarchist-library-fr-bce89dba40879a7fa60e7284",
+      "anarchist-library-fr-c0711b6373d0972a3820a308",
+      "anarchist-library-fr-c77276335850f2bfc8723141",
+      "anarchist-library-fr-d0cd7675e7f3ae9f296eab0a",
+      "anarchist-library-fr-d3da676b6667bafb1d480bd2",
+      "anarchist-library-fr-dbc52937f9bef251aef7991d",
+      "anarchist-library-fr-e9997d1618da4a2a02fd06aa"
+    ],
+    "sharedIdFieldChanges": [
+      {
+        "id": "anarchist-library-en-9e1e51dca7625eb35d910b7b",
+        "fields": [
+          "authors"
+        ]
+      },
+      {
+        "id": "anarchist-library-en-b5e83f0675b1c5ba255687e2",
+        "fields": [
+          "authors"
+        ]
+      }
+    ],
+    "appIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "dataIdFindings": {
+      "missingOrInvalidIdRows": [],
+      "duplicateIds": []
+    },
+    "possibleAliasesByExactOriginalLink": []
+  },
+  "mergeRules": [
+    "Preserve stable episode/book IDs and saved state; do not infer admission from presence.",
+    "Review incoming-only and archive-only records separately against revocations and retention rights.",
+    "Same source origin or original link proposes a review; it does not prove issuer identity or rights.",
+    "Respect explicit disabled-language/source policy before any active projection.",
+    "Do not publish bodies, audio, artwork or descriptions based on a generic license label."
+  ],
+  "observedAtUTC": "2026-09-30T18:48:50.540493+00:00",
+  "toolSha256": "ee47eb3899830277834e64beaa3bcab473cfa7f722d24076f69e2f5af15e59a9"
+}

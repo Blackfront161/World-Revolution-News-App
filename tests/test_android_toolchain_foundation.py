@@ -34,7 +34,7 @@ class AndroidToolchainFoundationTest(unittest.TestCase):
         self.assertNotIn("pnpm", package["scripts"]["sync:android"])
 
         gradle = (WRAPPER / "android/app/build.gradle").read_text(encoding="utf-8")
-        self.assertIn("versionCode 28", gradle)
+        self.assertIn("versionCode 29", gradle)
         self.assertIn('versionName "2.1.2"', gradle)
 
     def test_generated_capacitor_settings_and_pnpm_workspace_are_not_sources(self) -> None:

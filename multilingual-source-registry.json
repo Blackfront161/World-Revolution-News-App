@@ -198,6 +198,85 @@
       "originRegion": "Kurdistan Region",
       "status": "approved",
       "addedIn": "1.8.2"
+    },
+    {
+      "name": "Autonome Antifa Freiburg",
+      "homepage": "https://autonome-antifa.org/",
+      "kind": "news",
+      "languages": [
+        "de"
+      ],
+      "status": "directory-only",
+      "action": "register_only",
+      "adapter": "directory",
+      "importMode": "disabled",
+      "originCountry": "Deutschland",
+      "originCountryCode": "DE",
+      "originRegion": "Europa",
+      "categories": [
+        "Europa",
+        "Antifaschismus"
+      ],
+      "operator": "Autonome Antifa Freiburg (Eigenbezeichnung)",
+      "sourceType": "Bewegungspublikation",
+      "rightsReview": "Volltext, Bilder, Audio und Video nicht freigegeben; Beiträge einzeln prüfen.",
+      "reviewEvidence": [
+        "https://autonome-antifa.org/",
+        "https://autonome-antifa.org/spip.php?page=backend"
+      ]
+    },
+    {
+      "name": "antifa-frankfurt.org",
+      "homepage": "https://www.antifa-frankfurt.org/",
+      "kind": "news",
+      "languages": [
+        "de"
+      ],
+      "status": "directory-only",
+      "action": "register_only",
+      "adapter": "directory",
+      "importMode": "disabled",
+      "originCountry": "Deutschland",
+      "originCountryCode": "DE",
+      "originRegion": "Europa",
+      "categories": [
+        "Europa",
+        "Antifaschismus"
+      ],
+      "operator": "Redaktionskollektiv antifa-frankfurt.org (Selbstauskunft)",
+      "sourceType": "Bewegungspublikation",
+      "rightsReview": "Keine allgemeine Weiterveröffentlichungserlaubnis; Beiträge mit Personenbezug einzeln prüfen.",
+      "reviewEvidence": [
+        "https://www.antifa-frankfurt.org/20-jahre-sind-nicht-genug/",
+        "https://www.antifa-frankfurt.org/impressum/",
+        "https://www.antifa-frankfurt.org/feed/"
+      ]
+    },
+    {
+      "name": "Untergrund-Blättle",
+      "homepage": "https://www.xn--untergrund-blttle-2qb.ch/",
+      "feedUrl": "https://www.xn--untergrund-blttle-2qb.ch/rss/aktuelle_artikel.rss",
+      "kind": "news",
+      "languages": [
+        "de"
+      ],
+      "status": "already_present",
+      "action": "enrich_only",
+      "adapter": "rss",
+      "importMode": "metadata-only",
+      "originCountry": "Schweiz",
+      "originCountryCode": "CH",
+      "originRegion": "Europa",
+      "categories": [
+        "Europa"
+      ],
+      "operator": "UB-Redaktions-Kollektiv (Selbstauskunft)",
+      "sourceType": "Kritisches Online-Magazin",
+      "rightsReview": "Nur Überschrift, Autor, Datum und Originalverweis. Textlizenz gilt laut Impressum bedingt; Fremdtexte und Medien gesondert prüfen.",
+      "reviewEvidence": [
+        "https://www.xn--untergrund-blttle-2qb.ch/impressum/",
+        "https://www.xn--untergrund-blttle-2qb.ch/rss/"
+      ]
     }
   ]
 }

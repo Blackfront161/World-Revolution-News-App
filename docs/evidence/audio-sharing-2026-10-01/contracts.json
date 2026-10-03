@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "javascriptContracts": 8,
+  "pythonModules": 10,
+  "directPythonFunctions": 37,
+  "runner": "runpy / direct functions + unittest.mock fixture, not pytest"
+}
