@@ -937,7 +937,7 @@
       "id": "PRISONER-DIRECTORY-REVIEW-20261003",
       "priority": 1,
       "name": "Gefangenensolidarität aktualisieren und erweitern",
-      "status": "implemented-reviewed-source-candidate; independent-review-pending",
+      "status": "implemented-independent-review-PASS;17-individual-confirmations-and-new-Android-release-open",
       "owner": "Head Chief; editorial review before release",
       "scope": [
         "Review each existing public support-group entry and address against original evidence",
