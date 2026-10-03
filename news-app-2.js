@@ -2135,8 +2135,8 @@
       archiveSources: [...state.sourceArchive.selectedSources],
       archiveSourceQuery: state.sourceArchive.sourceQuery,
       developmentsWatchedOnly: state.developmentsWatchedOnly,
-      scrollY: Math.max(0, window.scrollY || 0),
-      focusId: document.activeElement?.id || '',
+      scrollY: state.view === 'help' ? 0 : Math.max(0, window.scrollY || 0),
+      focusId: state.view === 'help' ? '' : document.activeElement?.id || '',
       ...extra
     };
   }
@@ -2154,11 +2154,15 @@
 
   function rememberAppPosition() {
     if (restoringAppHistory || !history.state?.wrnAppNavigation || articleDialog.open) return;
+    if (history.state.view !== state.view || history.state.mediaSection !== state.media.section) return;
+    const scrollY = state.view === 'help' ? 0 : Math.max(0, window.scrollY || 0);
+    const focusId = state.view === 'help' ? '' : document.activeElement?.id || '';
+    if (history.state.scrollY === scrollY && history.state.focusId === focusId) return;
     try {
       history.replaceState({
         ...history.state,
-        scrollY: Math.max(0, window.scrollY || 0),
-        focusId: document.activeElement?.id || ''
+        scrollY,
+        focusId
       }, '', location.href);
     } catch {}
   }
@@ -8201,7 +8205,7 @@
     } else {
       document.getElementById('next-main').focus({ preventScroll: true });
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
     if (changed || !history.state?.wrnAppNavigation) writeAppHistory('push');
   }
 
@@ -9728,12 +9732,16 @@
 
   // Save the outgoing position before a control changes/replaces the DOM.
   document.addEventListener('click', rememberAppPosition, true);
+  document.addEventListener('focusin', rememberAppPosition);
+  window.addEventListener('scroll', rememberAppPosition, { passive: true });
   viewRoot.addEventListener('change', () => queueMicrotask(() => writeAppHistory('replace')));
   viewRoot.addEventListener('click', () => queueMicrotask(() => {
     if (!articleDialog.open) writeAppHistory('replace');
   }));
 
   applyAppRoute(core.navigationRoute(location.hash));
+  // Our history snapshots restore scroll; prevent competing native restoration.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   applyUiSettings();
   applyLanguage();
   bindEvents();

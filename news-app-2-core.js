@@ -795,12 +795,11 @@
     videoFilters: ['section', 'query', 'language', 'topic', 'region', 'source', 'platform', 'duration', 'sort'],
     lexicon: ['section', 'query'],
     prisoners: ['section'],
-    helpFilters: ['query', 'region', 'location', 'language', 'topic'],
     eventFilter: ['query', 'country', 'city', 'category', 'group', 'date', 'archived', 'radius', 'regions', 'limit']
   });
 
   // Browser history is local. Only explicitly listed UI filters are copied;
-  // article bodies, draft letters and geolocation coordinates are excluded.
+  // article bodies, help filters, draft letters and geolocation coordinates are excluded.
   function navigationFilters(input = {}) {
     const result = {};
     Object.entries(NAVIGATION_FILTERS).forEach(([group, fields]) => {

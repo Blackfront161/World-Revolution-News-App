@@ -104,6 +104,22 @@ try {
   await expect.poll(() => page.evaluate(() => document.activeElement.dataset.action)).toBe('open');
   result.checks.push('News list restores query, actual scroll position and focus; article close restores its opener.');
 
+  // Browser Back has no preceding DOM click to save the outgoing entry.
+  await page.locator('[data-view-target="media"]').first().click();
+  await page.locator('[data-action="media-section"][data-value="video"]').click();
+  await page.locator('[data-action="media-section"][data-value="podcasts"]').click();
+  await page.evaluate(() => window.scrollTo({top:650,behavior:'instant'}));
+  await page.locator('#next-media-query').focus();
+  const mediaPosition = await page.evaluate(() => window.scrollY);
+  assert(mediaPosition > 200);
+  await expect.poll(() => page.evaluate(() => history.state.scrollY)).toBe(mediaPosition);
+  await page.goBack();
+  await expect(page.locator('[data-action="media-section"][data-value="video"]')).toHaveAttribute('aria-selected', 'true');
+  await page.goForward();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(mediaPosition);
+  await expect.poll(() => page.evaluate(() => document.activeElement.id)).toBe('next-media-query');
+  result.checks.push('Browser Back then Forward without a DOM click preserves the outgoing media scroll and focus.');
+
   for (const [hash, view] of [['#media/radio','media'],['#media/radio-podcasts','media'],['#media/video','media'],['#lexicon','lexicon'],['#help','help']]) {
     await page.goto(`${origin}/index.html?preview=8${hash}`);
     await ready(view);
@@ -111,6 +127,11 @@ try {
   }
   await page.locator('#next-help-query').fill('private assistance request');
   assert(!page.url().includes('private'));
+  const helpHistory = await page.evaluate(() => history.state);
+  assert.equal(helpHistory.filters.helpFilters, undefined);
+  assert(!JSON.stringify(helpHistory).includes('private assistance request'));
+  assert.equal(helpHistory.focusId, '');
+  assert.equal(helpHistory.scrollY, 0);
   for (const language of ['de','en']) {
     await page.locator('#next-language').selectOption(language);
     for (const width of [360,768,1440]) {
