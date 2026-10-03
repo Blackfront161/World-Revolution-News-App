@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "94f8153ddd893d6ada39a906c9f42674667fa333",
+  "sourceCommit": "93a1ff91377f33c81b19b8b53362a53d5f426297",
   "sourceMode": "working-tree",
   "files": {
     "AUDIO-PRUEFBERICHT.txt": {
@@ -84,8 +84,8 @@
       "packagedSha256": "cba5eb9bbfb9e20d2dad86ebc9295c5d48f04ee080087a42f7e6ca85adef1167"
     },
     "app-check.html": {
-      "sourceSha256": "6bfd6ad30877a598ba1f786e865933fe23178eb9ed74f099bf790db9f9d2e2b6",
-      "packagedSha256": "6bfd6ad30877a598ba1f786e865933fe23178eb9ed74f099bf790db9f9d2e2b6"
+      "sourceSha256": "bf6b4f93ca512e6316effe51f097050f7670f0d704572fe1e2a7916e065b976e",
+      "packagedSha256": "bf6b4f93ca512e6316effe51f097050f7670f0d704572fe1e2a7916e065b976e"
     },
     "app-diagnostics.css": {
       "sourceSha256": "17c5bdb40c63210916c5199d7f56816a07872f1b19e2433850c1ddbf5a8f111c",
@@ -300,8 +300,8 @@
       "packagedSha256": "08d3feb89366f4039447b81f9e30b7885f38c035d2f764611f60af1d3c5d035a"
     },
     "index.html": {
-      "sourceSha256": "429c7f17140ef2d336f215936cdd8c8f40ad65d37627e990ba91806759690eab",
-      "packagedSha256": "e8c146d2424fe3f7dc0d6b0ab2b2c6e98f147456dad8100de8ea557a96944c5b"
+      "sourceSha256": "69122bb71d09f70324074badb66326cc1379e7f4cca51c7c5ddc20578b2a0094",
+      "packagedSha256": "2888ae714d323b981811cc6c34f9877a2efdae75bcb6d7718db99928a8690f15"
     },
     "interface-block3.css": {
       "sourceSha256": "efd2c3e21264708c55aab6b9a600037126929e23404e77f77a5bcec38c64bd43",
@@ -436,12 +436,12 @@
       "packagedSha256": "1baecc1cb4377553c03ef61ce3d290e6dc9c52b8a2b5f5381217334138040bee"
     },
     "news-app-2-specialty.js": {
-      "sourceSha256": "7d01901386028be1eba8c55e1ad695013213544471271f5a833a471837c41f9c",
-      "packagedSha256": "7d01901386028be1eba8c55e1ad695013213544471271f5a833a471837c41f9c"
+      "sourceSha256": "2f29a89a90a4e3d637f6efaf3f15fd3dfca33c61de5c77952f95f7e0cd3b31ef",
+      "packagedSha256": "2f29a89a90a4e3d637f6efaf3f15fd3dfca33c61de5c77952f95f7e0cd3b31ef"
     },
     "news-app-2-sw.js": {
-      "sourceSha256": "2f2de5cfeed62c96024d3a3167e7ba6b14aefd792f5919652805071a02870555",
-      "packagedSha256": "2f2de5cfeed62c96024d3a3167e7ba6b14aefd792f5919652805071a02870555"
+      "sourceSha256": "f80e60bb1505caf38e48b473fe85c5b0282ddbd1ee6d9cb771fe5e2e1e24178f",
+      "packagedSha256": "f80e60bb1505caf38e48b473fe85c5b0282ddbd1ee6d9cb771fe5e2e1e24178f"
     },
     "news-app-2-website.css": {
       "sourceSha256": "80a16ef68eadd5b8a6c94b5669f687acec1c48ebb7e781e6473065c994db9269",
@@ -1296,8 +1296,8 @@
       "packagedSha256": "68671c7fbbfce53ee4852ec38c81ca5652f88eef4b3ca3ecbf8eb8e79f010084"
     },
     "service-worker.js": {
-      "sourceSha256": "8470e70869e7cc61860ad8f8783e6f6983a39212500c7b2a5d17ca710e2e6d74",
-      "packagedSha256": "8470e70869e7cc61860ad8f8783e6f6983a39212500c7b2a5d17ca710e2e6d74"
+      "sourceSha256": "3ebd84fa39a29398f18ca2bcba0f0c091803743914de707367f8ba183752c5e9",
+      "packagedSha256": "3ebd84fa39a29398f18ca2bcba0f0c091803743914de707367f8ba183752c5e9"
     },
     "shared-translation-client.js": {
       "sourceSha256": "6d39988de688434aa08d107cbdea2a7ab7a58c11c91f6e2388047ba3376ff469",

@@ -2,17 +2,17 @@
 > world-revolution-news-ios@2.1.2 test
 > node --test ../tests/ios/*.test.mjs
 
-✔ web and Android keep their existing download behavior (2.4605ms)
-✔ iOS attaches a capturing download handler (1.0863ms)
-✔ blob export reaches native share sheet with filename and exact bytes (0.8419ms)
-✔ ordinary HTTPS links are untouched (0.5565ms)
-✔ native cancellation leaves clipboard and app data untouched and silent (0.6708ms)
-✔ failed native export produces a visible localized error (0.7584ms)
-✔ synchronized native bundle preserves source hashes and iOS configuration (409.2725ms)
-✔ public packaging excludes backend, admin UI, credentials and tests (2.4318ms)
-✔ an incomplete source cannot replace an existing generated app package (3.083ms)
-✔ native functions remain user-triggered and calendar uses the system editor (0.4699ms)
-✔ a missing declared guide or header asset cannot replace a working native web bundle (159.4738ms)
+✔ web and Android keep their existing download behavior (3.834ms)
+✔ iOS attaches a capturing download handler (1.7839ms)
+✔ blob export reaches native share sheet with filename and exact bytes (0.9932ms)
+✔ ordinary HTTPS links are untouched (0.6699ms)
+✔ native cancellation leaves clipboard and app data untouched and silent (0.7638ms)
+✔ failed native export produces a visible localized error (0.8945ms)
+✔ synchronized native bundle preserves source hashes and iOS configuration (421.9064ms)
+✔ public packaging excludes backend, admin UI, credentials and tests (2.8532ms)
+✔ an incomplete source cannot replace an existing generated app package (4.1261ms)
+✔ native functions remain user-triggered and calendar uses the system editor (0.8257ms)
+✔ a missing declared guide or header asset cannot replace a working native web bundle (14.6048ms)
 ℹ tests 11
 ℹ suites 0
 ℹ pass 11
@@ -20,4 +20,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 645.9445
+ℹ duration_ms 527.7673
