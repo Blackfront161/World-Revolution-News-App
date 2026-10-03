@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Cold next.html redirect preserves library route and DE/EPUB filters.",
+    "Back/Forward restores independent library and media searches, languages and format.",
+    "News list restores query, actual scroll position and focus; article close restores its opener.",
+    "Browser Back then Forward without a DOM click preserves the outgoing media scroll and focus.",
+    "Radio, radio shows, video, lexicon and help direct links; private help stays out of URL; DE/EN at 360/768/1440 fit."
+  ],
+  "errors": []
+}
