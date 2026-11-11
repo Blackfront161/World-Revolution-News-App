@@ -263,6 +263,9 @@
 
     return {
       ...article,
+      // Keep the backend card bytes before entity/HTML normalization for revision binding.
+      ...(article?.detailRevision ? { detailExcerptRaw: typeof article.detailExcerptRaw === 'string'
+        ? article.detailExcerptRaw : String(article.content || '') } : {}),
       id: articleId(article),
       type: text(article?.type || 'article'),
       title: text(article?.title || 'Untitled'),
