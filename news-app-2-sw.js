@@ -1,7 +1,9 @@
 'use strict';
 
 const CACHE_PREFIX = 'wrn-news-app-2-';
-const CACHE_NAME = `${CACHE_PREFIX}v88`;
+const CACHE_NAME = `${CACHE_PREFIX}v92`;
+const LEGACY_DATA_CACHES = [`${CACHE_PREFIX}v88`];
+const PRESERVED_PREVIEW_CACHES = [88, 89, 90, 91].map(version => `${CACHE_PREFIX}v${version}`);
 const INSTALL_CACHE_NAME = `${CACHE_NAME}-installing`;
 const SOLIDARITY_FALLBACK_HEADER = 'X-WRN-Synthetic-Offline-Fallback';
 const SOLIDARITY_FALLBACK_VALUE = 'solidarity-network-empty-v1';
@@ -23,7 +25,7 @@ const SHELL = [
   './offline-db.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=5',
+  './news-app-2-core.js?release=6',
   './news-app-2-specialty.js?release=3',
   './wrn-product-21.js?release=1',
   './news-app-2-media.js?release=2',
@@ -43,7 +45,7 @@ const SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49',
+  './news-app-2.js?release=52',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -64,7 +66,7 @@ const CORE_SHELL = [
   './offline-db.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=5',
+  './news-app-2-core.js?release=6',
   './news-app-2-specialty.js?release=3',
   './wrn-product-21.js?release=1',
   './news-app-2-media.js?release=2',
@@ -84,7 +86,7 @@ const CORE_SHELL = [
   './source-health-freshness.js?preview=1',
   './editorial-review-ui.js?preview=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49'
+  './news-app-2.js?release=52'
 ];
 const INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${CACHE_NAME}`, self.location.href)
@@ -190,24 +192,35 @@ self.addEventListener('activate', event => {
     await assertValidShell();
     const names = await caches.keys();
     await Promise.all(names
-      .filter(name => name.startsWith(CACHE_PREFIX) && name !== CACHE_NAME)
+      .filter(name => name.startsWith(CACHE_PREFIX) && name !== CACHE_NAME && !PRESERVED_PREVIEW_CACHES.includes(name))
       .map(name => caches.delete(name)));
     await self.clients.claim();
   })());
 });
 
 async function networkFirst(request, fallbackBody = '', fallbackHeaders = {}) {
-  const cache = await caches.open(CACHE_NAME);
   try {
     const response = stripReservedFallbackHeader(await fetch(request));
-    if (response.ok) await cache.put(request, response.clone());
+    if (response.ok) {
+      try { const cache = await caches.open(CACHE_NAME); await cache.put(request, response.clone()); }
+      catch (error) { console.warn('Cache write failed; serving network response', error); }
+    }
     return response;
   } catch {
-    const cached = await cache.match(request);
-    if (cached) return stripReservedFallbackHeader(cached);
+    const dataRequest = /\/news-archive(?:-manifest\.json|\/)/i.test(new URL(request.url).pathname);
+    for (const name of [CACHE_NAME, ...(dataRequest ? LEGACY_DATA_CACHES : [])]) {
+      try { const cached = await (await caches.open(name)).match(request, { ignoreSearch: true });
+        if (cached) return stripReservedFallbackHeader(cached);
+      } catch {}
+    }
+    const url = new URL(request.url);
+    if (/\/news-archive(?:-manifest\.json|\/)/i.test(url.pathname) || /\/news-detail-\d+\.json$/i.test(url.pathname)) {
+      return new Response(JSON.stringify({ error: 'Article archive unavailable offline' }), {
+        status: 503, headers: { 'Content-Type': 'application/json; charset=utf-8' }
+      });
+    }
     return new Response(fallbackBody, {
-      status: 200,
-      headers: { 'Content-Type': 'application/json; charset=utf-8', ...fallbackHeaders }
+      status: 200, headers: { 'Content-Type': 'application/json; charset=utf-8', ...fallbackHeaders }
     });
   }
 }
@@ -254,7 +267,7 @@ self.addEventListener('fetch', event => {
   if (
     DATA_PATHS.has(url.pathname)
     || /\/news-detail-\d+\.json$/i.test(url.pathname)
-    || /\/news-archive\/[a-z0-9_-]+\.json$/i.test(url.pathname)
+    || /\/news-archive\/(?:details\/)?[a-z0-9_-]+\.json$/i.test(url.pathname)
   ) {
     const fallbackHeaders = url.pathname === new URL('./solidarity-network.json', self.location.href).pathname
       ? { [SOLIDARITY_FALLBACK_HEADER]: SOLIDARITY_FALLBACK_VALUE }

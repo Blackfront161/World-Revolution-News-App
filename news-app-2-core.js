@@ -141,7 +141,7 @@
 
   function normalizeContentBlocks(values) {
     if (!Array.isArray(values)) return [];
-    return values.slice(0, 400).map(block => {
+    return values.map(block => {
       if (!block || typeof block !== 'object') return null;
       const type = text(block.type).toLocaleLowerCase();
       if (type === 'image') {
@@ -263,6 +263,9 @@
 
     return {
       ...article,
+      // Keep the backend card bytes before entity/HTML normalization for revision binding.
+      ...(article?.detailRevision ? { detailExcerptRaw: typeof article.detailExcerptRaw === 'string'
+        ? article.detailExcerptRaw : String(article.content || '') } : {}),
       id: articleId(article),
       type: text(article?.type || 'article'),
       title: text(article?.title || 'Untitled'),

@@ -1,7 +1,7 @@
 /* World Revolution News – Offline Service Worker · News App 2 production 2.1.2 */
 'use strict';
 
-const APP_CACHE = 'wrn-app-v2.1.2-r1';
+const APP_CACHE = 'wrn-app-v2.1.2-r5';
 const DATA_CACHE = 'wrn-data-v2.1.2-r1';
 const APP_INSTALL_CACHE = `${APP_CACHE}-installing`;
 const APP_CACHE_PREFIX = 'wrn-app-';
@@ -27,7 +27,7 @@ const APP_SHELL = [
   './native-device-bridge.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=5',
+  './news-app-2-core.js?release=6',
   './news-app-2-specialty.js?release=3',
   './wrn-product-21.js?release=1',
   './news-app-2-media.js?release=2',
@@ -47,7 +47,7 @@ const APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49',
+  './news-app-2.js?release=52',
   './solinaridao-header-logo-light-transparent.png',
   './solinaridao-header-mark-filled.png',
   './solinaridao-world-revolution-news-mask.png',
@@ -180,7 +180,7 @@ const CORE_APP_SHELL = [
   './offline-db.js?release=2',
   './local-diagnostics.js?release=1',
   './news-card-copy.js?release=1',
-  './news-app-2-core.js?release=5',
+  './news-app-2-core.js?release=6',
   './news-app-2-specialty.js?release=3',
   './wrn-product-21.js?release=1',
   './news-app-2-media.js?release=2',
@@ -200,7 +200,7 @@ const CORE_APP_SHELL = [
   './source-health-freshness.js?release=1',
   './editorial-review-ui.js?release=1',
   './language-origin.js?release=1',
-  './news-app-2.js?release=49'
+  './news-app-2.js?release=52'
 ];
 const APP_INSTALL_MARKER = new Request(
   new URL(`./__wrn-cache-ready-${APP_CACHE}`, self.location.href)
@@ -402,7 +402,7 @@ self.addEventListener('fetch', event => {
   if (
     DATA_FILES.has(url.pathname)
     || /\/news-detail-\d+\.json$/i.test(url.pathname)
-    || /\/news-archive\/[a-z0-9_-]+\.json$/i.test(url.pathname)
+    || /\/news-archive\/(?:details\/)?[a-z0-9_-]+\.json$/i.test(url.pathname)
   ) {
     event.respondWith(networkFirstData(request));
     return;
@@ -470,30 +470,29 @@ async function networkFirstNavigation(request) {
 }
 
 async function networkFirstData(request) {
-  const cache = await caches.open(DATA_CACHE);
-  const appCache = await caches.open(APP_CACHE);
   try {
     const response = stripReservedFallbackHeader(await fetchWithTimeout(request, 8000));
-    if (response?.ok) await cache.put(request, response.clone());
+    if (response?.ok) {
+      try { const cache = await caches.open(DATA_CACHE); await cache.put(request, response.clone()); }
+      catch (error) { console.warn('Data cache write failed; serving network response', error); }
+    }
     return response;
   } catch {
-    const cached = await cache.match(
-      request,
-      { ignoreSearch: true }
-    );
+    for (const name of [DATA_CACHE, APP_CACHE]) {
+      try { const cached = await (await caches.open(name)).match(request, { ignoreSearch: true });
+        if (cached) return stripReservedFallbackHeader(cached);
+      } catch {}
+    }
     const url = new URL(request.url);
-    const fallback = /\/news-archive\/[a-z0-9_-]+\.json$/i.test(url.pathname)
-      ? '[]'
-      : JSON_FALLBACKS.get(url.pathname) || 'null';
-    const preloaded = await appCache.match(request, { ignoreSearch: true });
+    if (/\/news-archive(?:-manifest\.json|\/)/i.test(url.pathname) || /\/news-detail-\d+\.json$/i.test(url.pathname)) {
+      return new Response(JSON.stringify({ error: 'Article archive unavailable offline' }), {
+        status: 503, headers: { 'Content-Type': 'application/json; charset=utf-8' }
+      });
+    }
     const solidarityFallback = url.pathname === new URL('./solidarity-network.json', self.location.href).pathname;
-    return stripReservedFallbackHeader(cached) || stripReservedFallbackHeader(preloaded) || new Response(fallback, {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        'X-WRN-Offline-Fallback': 'empty',
-        ...(solidarityFallback ? { [SOLIDARITY_FALLBACK_HEADER]: SOLIDARITY_FALLBACK_VALUE } : {})
-      }
+    return new Response(JSON_FALLBACKS.get(url.pathname) || 'null', {
+      status: 200, headers: { 'Content-Type': 'application/json; charset=utf-8',
+        'X-WRN-Offline-Fallback': 'empty', ...(solidarityFallback ? { [SOLIDARITY_FALLBACK_HEADER]: SOLIDARITY_FALLBACK_VALUE } : {}) }
     });
   }
 }
