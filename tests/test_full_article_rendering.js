@@ -13,7 +13,7 @@ const ctx=vm.createContext({core,console:{warn(){}},state:{dataStatus:{revision:
  classificationLabel:v=>v||'',articleHistoryMarkup:()=>'',contextualHelpMarkup:()=>'',hydrateArticleFromArchive:async()=>{throw Error('archive unavailable');},
  hydrateRevisionDetail:async()=>{throw Error('not part of legacy test');}
 });
-for(const name of ['detailPolicyName','detailPolicyAllows','markArticleDetailRestricted','structuredArticleMarkup','mergeHydratedArticle','hydrateArticleDetail','resetArticleDetailForRetry','openArticle'])vm.runInContext(fn(name),ctx);
+for(const name of ['detailPolicyName','detailPolicyAllows','articleHasExplicitDetailRestriction','markArticleDetailRestricted','structuredArticleMarkup','mergeHydratedArticle','hydrateArticleDetail','resetArticleDetailForRetry','renderArticleLoadState','openArticle'])vm.runInContext(fn(name),ctx);
 const call=(name,...args)=>{ctx.args=args;return vm.runInContext(`${name}(...args)`,ctx);};
 const base={title:'Full article',link:'https://example.org/a',quelleName:'Source',contentComplete:true,pubDate:'2026-11-11T12:00:00Z'};
 const blocks=Array.from({length:405},(_,i)=>({type:'paragraph',text:`PARAGRAPH_${i}`}));
@@ -48,7 +48,37 @@ for(const restriction of [{importMode:'metadata-only'},{status:'withdrawn'},{sta
  assert.equal(core.normalizeArticle(prior).content,'');assert.equal(core.normalizeArticle(prior).image,'');
  assert(html.includes('fullArticleUnavailable')&&html.includes('https://example.org/a'));
 }
+// Summary/audio retain their original independent intro fallback.
+for(const name of ['renderArticleSummary','renderArticlePodcast']) assert(fn(name).includes('translation?.fullContent ? translation.content : (article.content || article.intro)'));
 async function main(){
+ for(const restriction of [{status:'withdrawn'},{status:'revoked'},{deleted:true},{importMode:'metadata-only'}]){
+  for(const sourcePolicy of [false,true]) for(const options of [{},{allowPartial:true}]) {
+   ctx.state.sourceCatalog=sourcePolicy?{sources:[{name:'Source',...restriction}]}:null;
+   ctx.translationFor=()=>({title:'Protected translated title',intro:'PROTECTED_TRANSLATED_INTRO',content:'PROTECTED_TRANSLATED_BODY',fullContent:true});
+   const protectedArticle=core.normalizeArticle({...base,content:'PROTECTED_COMPLETE_BODY',intro:'PROTECTED_INTRO',contentBlocks:[{type:'paragraph',text:'PROTECTED_BLOCK'}],...(sourcePolicy?{}:restriction)});
+   call('openArticle',protectedArticle,options);
+   await new Promise(resolve=>setImmediate(resolve));
+   const html=getNode('next-article-content').innerHTML;
+   assert(!html.includes('PROTECTED'),JSON.stringify({restriction,sourcePolicy,options}));
+   assert(html.includes('fullArticleUnavailable')&&html.includes('https://example.org/a'));
+  }
+ }
+ ctx.translationFor=()=>null;ctx.state.sourceCatalog=null;
+ for(const flags of [{detailHydrated:true},{detailFailed:true}]){
+  const restricted=core.normalizeArticle({...base,content:'PROTECTED_PREHYDRATED',status:'withdrawn',...flags});
+  assert.equal(await call('hydrateArticleDetail',restricted),false);assert.equal(restricted.content,'');
+ }
+
+ for(const catalog of [null,{malformed:true},{sources:[{missingName:true}]}]){
+  ctx.state.sourceCatalog=catalog;
+  const blockOnly={...base,content:'',intro:'Only a teaser',contentBlocks:blocks};
+  call('openArticle',blockOnly);
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(blockOnly.contentBlocks.length,405);
+  assert(getNode('next-article-content').innerHTML.includes('PARAGRAPH_404'));
+ }
+ ctx.state.sourceCatalog=null;
+
  let requests=0;ctx.fetchJson=async()=>{requests++;return [{...base,content:requests===1?'x'.repeat(980):'COMPLETE_AFTER_RETRY',contentComplete:requests!==1}];};
  const a=core.normalizeArticle({...base,content:'x'.repeat(1000),contentComplete:false,webFeedTruncated:true,detailUrl:'https://data.example/detail.json'});
  assert.equal(await call('hydrateArticleDetail',a),false);assert.equal(requests,1);

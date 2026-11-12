@@ -6583,6 +6583,16 @@
     }
   }
 
+  function articleHasExplicitDetailRestriction(article) {
+    const stopped = row => row?.deleted === true || row?.importMode === 'metadata-only'
+      || ['withdrawn', 'revoked', 'deleted'].includes(String(row?.status || '').toLowerCase());
+    if (stopped(article)) return true;
+    const sources = Array.isArray(state.sourceCatalog) ? state.sourceCatalog : state.sourceCatalog?.sources;
+    const name = detailPolicyName(article?.quelleName);
+    return Boolean(name && Array.isArray(sources) && sources.some(source =>
+      source && detailPolicyName(source.name) === name && stopped(source)));
+  }
+
   function markArticleDetailRestricted(article) {
     // A new restriction invalidates old body/media too, not only the download.
     Object.assign(article, {
@@ -6596,7 +6606,8 @@
 
   function mergeHydratedArticle(article, detail, detailMeta = {}) {
     if (!article || !detail) return false;
-    if (!detailPolicyAllows(article) || !detailPolicyAllows(detail)) return markArticleDetailRestricted(article);
+    if (articleHasExplicitDetailRestriction(article) || articleHasExplicitDetailRestriction(detail)) return markArticleDetailRestricted(article);
+    if (!detailPolicyAllows(article) || !detailPolicyAllows(detail)) return false;
     const existingImages = Array.isArray(article.images) ? article.images : [];
     const detailImages = Array.isArray(detail.images) ? detail.images : [];
     const mergedImages = [...new Set([...existingImages, ...detailImages])];
@@ -6820,13 +6831,18 @@
   // End WRN immutable details.
 
   async function hydrateArticleDetail(article) {
+    if (!article) return false;
+    if (articleHasExplicitDetailRestriction(article)) return markArticleDetailRestricted(article);
     if (
-      !article
-      || article.detailHydrated
+      article.detailHydrated
       || article.detailLoading
       || article.detailFailed
     ) return false;
-    if (!detailPolicyAllows(article)) return markArticleDetailRestricted(article);
+    if (!detailPolicyAllows(article)) {
+      article.detailLoading = false;
+      article.detailFailed = true;
+      return false;
+    }
     article.detailLoading = true;
     if (article.detailRevision || /^news-archive\/details\//.test(article.detailPath || '')) {
       try { return await hydrateRevisionDetail(article); }
@@ -6904,6 +6920,7 @@
   }
 
   function openArticle(article, options = {}) {
+    if (articleHasExplicitDetailRestriction(article)) markArticleDetailRestricted(article);
     articleTranslationGeneration += 1;
     state.activeArticle = article;
     const translateButton = document.getElementById('next-dialog-translate');
@@ -6934,7 +6951,7 @@
     const renderedContentMode = core.articleContentMode(article, article.content);
     const isMetadataOnly = allowPartial && renderedContentMode === 'metadata';
     const isPartial = allowPartial && renderedContentMode === 'excerpt';
-    const translation = translationFor(article);
+    const translation = articleHasExplicitDetailRestriction(article) ? null : translationFor(article);
     const articleBodyText = translation?.fullContent ? translation.content : (article.content || '');
     const articleBody = structuredArticleMarkup(article, Boolean(translation?.fullContent), articleBodyText);
     const continuationMarkup = isMetadataOnly
@@ -7089,7 +7106,7 @@
     const article = state.activeArticle;
     if (!article || !window.WRNSummaryCore?.summarizeText) return;
     const translation = translationFor(article);
-    const text = translation?.fullContent ? translation.content : (article.content || '');
+    const text = translation?.fullContent ? translation.content : (article.content || article.intro);
     const summary = window.WRNSummaryCore.summarizeText(text, {
       title: translation?.title || article.title,
       length,
@@ -7257,7 +7274,7 @@
       : String(article.language || article.lang || state.language).toLowerCase().split(/[-_]/)[0];
     articlePodcast.chunks = deviceSpeechAvailable
       ? splitTextForArticleSpeech(
-        `${translation?.title || article.title}. ${translation?.fullContent ? translation.content : (article.content || '')}`
+        `${translation?.title || article.title}. ${translation?.fullContent ? translation.content : (article.content || article.intro)}`
       )
       : [];
     const voices = AZURE_PODCAST_VOICES[state.language] || AZURE_PODCAST_VOICES.en;
