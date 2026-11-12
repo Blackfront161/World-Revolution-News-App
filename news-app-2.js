@@ -2430,8 +2430,12 @@
   }
 
   function structuredArticleMarkup(article, translated = false, contentOverride = '') {
+    const bodyText = contentOverride || article?.content || article?.intro || '';
     const blocks = translated ? [] : core.normalizeContentBlocks(article?.contentBlocks);
-    if (!blocks.length) {
+    // Formatting may never hide an available body behind stale or partial blocks.
+    const bodyCopy = core.text(core.articleContentParagraphs(contentOverride || article?.content || '').join(' '));
+    const blockCopy = core.text(blocks.filter(block => block.type !== 'image').map(block => block.text).join(' '));
+    if (!blocks.length || (bodyCopy && blockCopy !== bodyCopy)) {
       const paragraphs = core.articleContentParagraphs(
         contentOverride || article?.content || article?.intro || ''
       );
@@ -6579,29 +6583,35 @@
     }
   }
 
+  function markArticleDetailRestricted(article) {
+    // A new restriction invalidates old body/media too, not only the download.
+    Object.assign(article, {
+      content: '', intro: '', description: '', summary: '', detailExcerptRaw: '',
+      contentBlocks: [], image: '', imageUrl: '', images: [],
+      contentComplete: false, contentMode: 'metadata', webFeedTruncated: false,
+      detailHydrated: false, detailFailed: true, detailLoading: false
+    });
+    return false;
+  }
+
   function mergeHydratedArticle(article, detail, detailMeta = {}) {
     if (!article || !detail) return false;
+    if (!detailPolicyAllows(article) || !detailPolicyAllows(detail)) return markArticleDetailRestricted(article);
     const existingImages = Array.isArray(article.images) ? article.images : [];
     const detailImages = Array.isArray(detail.images) ? detail.images : [];
     const mergedImages = [...new Set([...existingImages, ...detailImages])];
-    const content = detail.content.length >= article.content.length
-      ? detail.content
-      : article.content;
-    const expectedLength = Math.max(
-      article.content.length,
-      Number(article.webFeedOriginalLength) || 0
-    );
-    const archiveRecoveredTruncation = Boolean(
-      article.webFeedTruncated
-      && expectedLength > 0
-      && content.length >= Math.floor(expectedLength * 0.98)
-    );
-    const contentComplete = detail.contentComplete !== false || archiveRecoveredTruncation;
+    const detailComplete = detail.contentComplete === true && !detail.webFeedTruncated
+      && core.articleContentMode(detail, detail.content) === 'full';
+    // An admitted complete revision is used exactly, even if it is shorter.
+    // A longer old excerpt cannot borrow another body's completeness flag.
+    const content = detailComplete ? detail.content
+      : (detail.content.length >= article.content.length ? detail.content : article.content);
+    const contentComplete = detailComplete;
     const contentMode = core.articleContentMode({
       ...detail,
       content,
       contentComplete,
-      webFeedTruncated: false
+      webFeedTruncated: !contentComplete
     }, content);
     Object.assign(article, detail, detailMeta, {
       content,
@@ -6610,8 +6620,8 @@
       images: mergedImages,
       contentComplete,
       contentMode,
-      webFeedTruncated: false,
-      detailHydrated: true,
+      webFeedTruncated: !contentComplete,
+      detailHydrated: contentComplete,
       detailLoading: false,
       detailFailed: false
     });
@@ -6816,6 +6826,7 @@
       || article.detailLoading
       || article.detailFailed
     ) return false;
+    if (!detailPolicyAllows(article)) return markArticleDetailRestricted(article);
     article.detailLoading = true;
     if (article.detailRevision || /^news-archive\/details\//.test(article.detailPath || '')) {
       try { return await hydrateRevisionDetail(article); }
@@ -6847,7 +6858,13 @@
       if (!detail) throw new Error('Article missing from detail chunk');
       const detailUrl = article.detailUrl;
       const detailPath = article.detailPath;
-      return mergeHydratedArticle(article, detail, { detailUrl, detailPath, detailSource: 'chunk' });
+      const complete = mergeHydratedArticle(article, detail, { detailUrl, detailPath, detailSource: 'chunk' });
+      if (!complete && detailPolicyAllows(article)) {
+        // A valid partial chunk is not the last resort: try the admitted archive once.
+        try { return await hydrateArticleFromArchive(article); }
+        catch { return false; }
+      }
+      return complete;
     } catch (error) {
       try {
         return await hydrateArticleFromArchive(article);
@@ -6858,6 +6875,14 @@
         return false;
       }
     }
+  }
+
+  function resetArticleDetailForRetry(article) {
+    article.detailFailed = false;
+    article.detailLoading = false;
+    article.detailHydrated = false;
+    if (article.detailUrl) articleDetailChunkCache.delete(`${article.detailUrl}|${state.dataStatus.revision || ''}`);
+    articleArchivePromise = null;
   }
 
   function renderArticleLoadState(article) {
@@ -6910,7 +6935,7 @@
     const isMetadataOnly = allowPartial && renderedContentMode === 'metadata';
     const isPartial = allowPartial && renderedContentMode === 'excerpt';
     const translation = translationFor(article);
-    const articleBodyText = translation?.fullContent ? translation.content : (article.content || article.intro);
+    const articleBodyText = translation?.fullContent ? translation.content : (article.content || '');
     const articleBody = structuredArticleMarkup(article, Boolean(translation?.fullContent), articleBodyText);
     const continuationMarkup = isMetadataOnly
       ? `<aside class="article-continuation article-metadata-only" role="note" aria-label="${escapeHtml(t('fullArticleUnavailable'))}">
@@ -7064,7 +7089,7 @@
     const article = state.activeArticle;
     if (!article || !window.WRNSummaryCore?.summarizeText) return;
     const translation = translationFor(article);
-    const text = translation?.fullContent ? translation.content : (article.content || article.intro);
+    const text = translation?.fullContent ? translation.content : (article.content || '');
     const summary = window.WRNSummaryCore.summarizeText(text, {
       title: translation?.title || article.title,
       length,
@@ -7232,7 +7257,7 @@
       : String(article.language || article.lang || state.language).toLowerCase().split(/[-_]/)[0];
     articlePodcast.chunks = deviceSpeechAvailable
       ? splitTextForArticleSpeech(
-        `${translation?.title || article.title}. ${translation?.fullContent ? translation.content : (article.content || article.intro)}`
+        `${translation?.title || article.title}. ${translation?.fullContent ? translation.content : (article.content || '')}`
       )
       : [];
     const voices = AZURE_PODCAST_VOICES[state.language] || AZURE_PODCAST_VOICES.en;
@@ -8279,8 +8304,7 @@
         changeView('lexicon');
       }
       if (action === 'article-detail-retry' && state.activeArticle) {
-        state.activeArticle.detailFailed = false;
-        state.activeArticle.detailLoading = false;
+        resetArticleDetailForRetry(state.activeArticle);
         openArticle(state.activeArticle);
       }
       if (action === 'article-summary') renderArticleSummary();

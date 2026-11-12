@@ -110,6 +110,9 @@ jobs:
           python release_audit_183.py --no-write --artifact "${RUNNER_TEMP}/release-readiness-183.json"
           node tests/test_solidarity_worker_fallback.js
           node tests/test_runtime_selftest_183.js
+          node tests/test_immutable_article_details.js
+          node tests/test_archive_cache_delivery.js
+          node tests/test_full_article_rendering.js
           python tests/test_release_candidate_183.py
 
       - name: Alle Python-Dateien prüfen

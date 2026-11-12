@@ -141,7 +141,7 @@
 
   function normalizeContentBlocks(values) {
     if (!Array.isArray(values)) return [];
-    return values.slice(0, 400).map(block => {
+    return values.map(block => {
       if (!block || typeof block !== 'object') return null;
       const type = text(block.type).toLocaleLowerCase();
       if (type === 'image') {
